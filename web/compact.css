@@ -136,3 +136,6 @@ body[data-screen=map] .header-bridge { margin-left:auto; }
  .tree-panel { padding:17px 14px 0; }
  .member-register,.map-view { height:calc(100dvh - var(--header-height) - 62px); }
 }
+/* Map-only records retain their source status and never advertise a 3D workspace. */
+.bridge-card.map-only{grid-template-columns:minmax(0,1fr)}
+.bridge-card .map-only-note,.leaflet-popup-content .map-only-note{margin-top:8px;font-size:11px;color:var(--muted)}

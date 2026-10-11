@@ -13,6 +13,8 @@ A local bridge review workspace combining 3D models, a component database, sourc
 
 The collection includes Beechwood Road, 21st Street over I-465, US 421 over South Fork Wildcat Creek, US 52 over Mud Creek, SR 58 over White Creek, SR 159 over Branch Spencer Creek, and three SR 62 crossings: CSX Railroad, Tekoppel Avenue and Carpentier Creek.
 
+The **3D workspace shows four bridges**, with completed exterior models first. A fresh visit opens **Beechwood Road Bridge**, currently the only model with complete exterior coverage. The five SR-series records are **map only**: their locations and basic attributes remain visible, and all existing models, drawings and component records remain stored. They are excluded from the bridge selector and 3D entry points. Old SR model links open the corresponding map location.
+
 Ownership and maintenance information is shown only where present in the sources. The SR 62 railroad/NBI association is provisional. See [source provenance](data/sources.json) and the in-app coverage notes.
 
 ## Run locally
@@ -98,6 +100,8 @@ Runtime files are generated locally and excluded from Git: `data/bridges.sqlite3
 
 An optional ignored `source_overrides.json` can point to private local source PDFs. Do not commit it. Existing bridges omitted from a partial import are retained; deletion is not automated.
 
+Set a bridge's `workspace_enabled` field to `false` for map-only presentation, or `true` to include it in the 3D workspace (the default for new records). The flag is a presentation choice, independent of span count, ownership or model-detail status. Restarting the server synchronizes these settings into SQLite and upgrades older databases without deleting records; importing also applies the settings. Eligible bridges are sorted by complete exterior coverage first, retaining registry/import order within each status.
+
 ## Development and tests
 
 Node.js is needed only to rebuild the bundled viewer or run browser tests:
@@ -117,7 +121,7 @@ npm run test:browser
 
 Set `BRIDGE_TEST_URL` to test another port. Set `BROWSER_EXECUTABLE` to use an installed Chromium/Edge binary instead of Playwright's browser.
 
-Backend checks cover repeat imports, integrity, stable IDs, all bridge APIs, source pages, exports, byte ranges and path restrictions. Browser checks load all nine models and exercise isolation, search, selection, drawings, opacity, sectioning, mobile layouts and rapid navigation. See [verification notes](docs/verification.md).
+Backend checks cover repeat imports, integrity, stable IDs, all nine bridge APIs, presentation migration, complete-first ordering, source pages, exports, byte ranges and path restrictions. Browser checks load the four workspace models, verify map-only routing for all five SR records, and exercise isolation, search, selection, drawings, opacity, sectioning, mobile layouts and rapid navigation. See [verification notes](docs/verification.md).
 
 ## Dependencies and attribution
 

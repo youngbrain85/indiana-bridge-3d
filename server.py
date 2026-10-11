@@ -12,11 +12,13 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import quote, unquote, urlsplit
 
-from import_data import ROOT, DEFAULT_DB, connect, import_all
+from import_data import ROOT, DEFAULT_DB, DEFAULT_REGISTRY, connect, import_all, sync_presentation
 
 
 def decode(row):
     result = dict(row)
+    if 'workspace_enabled' in result:
+        result['workspace_enabled'] = bool(result['workspace_enabled'])
     for key in list(result):
         if key.endswith('_json'):
             result[key[:-5]] = json.loads(result.pop(key))
@@ -37,7 +39,7 @@ def summary(db):
 def bridges(db):
     rows = db.execute('''SELECT b.*, (SELECT COUNT(*) FROM components c WHERE c.bridge_id=b.id) component_count,
         (SELECT page_count FROM assets a WHERE a.bridge_id=b.id AND kind='drawing') drawing_pages
-        FROM bridges b ORDER BY b.rowid''').fetchall()
+        FROM bridges b ORDER BY b.workspace_enabled DESC, (b.detail_status='complete') DESC, b.rowid''').fetchall()
     result = []
     for row in rows:
         b = decode(row)
@@ -169,7 +171,7 @@ class Handler(BaseHTTPRequestHandler):
         path = unquote(urlsplit(self.path).path)
         with closing(connect(self.server.db_path)) as db:
             if path == '/api/health':
-                return self.data({'app': 'indiana-bridge-manager', 'schema': 1})
+                return self.data({'app': 'indiana-bridge-manager', 'schema': 2})
             if path == '/api/catalog':
                 return self.data({'summary': summary(db), 'bridges': bridges(db)})
             match = re.fullmatch(r'/api/bridges/([a-z0-9-]+)', path)
@@ -243,7 +245,8 @@ class Handler(BaseHTTPRequestHandler):
         return self.error('Not found')
 
 
-def make_server(port=8766, db_path=DEFAULT_DB):
+def make_server(port=8766, db_path=DEFAULT_DB, registry_path=DEFAULT_REGISTRY):
+    sync_presentation(db_path, registry_path)
     server = ThreadingHTTPServer(('127.0.0.1', port), Handler)
     server.db_path = db_path
     server.daemon_threads = True

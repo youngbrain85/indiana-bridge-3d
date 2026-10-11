@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS bridges (
  latitude REAL NOT NULL, longitude REAL NOT NULL, owner TEXT, maintenance TEXT,
  ownership_data_year INTEGER, nbi_json TEXT NOT NULL, location_source_json TEXT NOT NULL,
  detail_status TEXT NOT NULL, detail_note TEXT, revision TEXT, scope TEXT,
+ workspace_enabled INTEGER NOT NULL DEFAULT 1 CHECK(workspace_enabled IN (0,1)),
  deck_length_m REAL, spans INTEGER, assumptions_json TEXT NOT NULL,
  source_note TEXT, source_metadata_json TEXT NOT NULL
 );

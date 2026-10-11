@@ -1,8 +1,9 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "bridges": [
     {
       "id": "beechwood",
+      "workspace_enabled": true,
       "name": "Beechwood Road Bridge",
       "county": "Crawford",
       "waterway": "Little Blue River",
@@ -32,6 +33,7 @@
     },
     {
       "id": "21st-street-i465",
+      "workspace_enabled": true,
       "name": "21st Street over I-465",
       "county": "Marion",
       "waterway": "I-465",
@@ -66,6 +68,7 @@
     },
     {
       "id": "us421-wildcat",
+      "workspace_enabled": true,
       "name": "US 421 over South Fork Wildcat Creek",
       "county": "Clinton",
       "waterway": "South Fork Wildcat Creek",
@@ -100,6 +103,7 @@
     },
     {
       "id": "us52-mud",
+      "workspace_enabled": true,
       "name": "US 52 over Mud Creek",
       "county": "Rush",
       "waterway": "Mud Creek",
@@ -135,6 +139,7 @@
     },
     {
       "id": "sr58-white",
+      "workspace_enabled": false,
       "name": "SR 58 over White Creek",
       "county": "Bartholomew",
       "waterway": "White Creek",
@@ -170,6 +175,7 @@
     },
     {
       "id": "sr159-spencer",
+      "workspace_enabled": false,
       "name": "SR 159 over Branch Spencer Creek",
       "county": "Sullivan",
       "waterway": "Branch Spencer Creek",
@@ -205,6 +211,7 @@
     },
     {
       "id": "sr62-csx",
+      "workspace_enabled": false,
       "name": "SR 62 over CSX Railroad",
       "county": "Vanderburgh",
       "waterway": "CSX Railroad",
@@ -240,6 +247,7 @@
     },
     {
       "id": "sr62-tekoppel",
+      "workspace_enabled": false,
       "name": "SR 62 over Tekoppel Avenue",
       "county": "Vanderburgh",
       "waterway": "Tekoppel Avenue",
@@ -275,6 +283,7 @@
     },
     {
       "id": "sr62-carpentier",
+      "workspace_enabled": false,
       "name": "SR 62 over Carpentier Creek",
       "county": "Vanderburgh",
       "waterway": "Carpentier Creek",

@@ -65,6 +65,33 @@ def put(db, table, values):
     db.execute(f'INSERT INTO {table} ({columns}) VALUES ({",".join("?" for _ in values)})', list(values.values()))
 
 
+def workspace_enabled(bridge):
+    value = bridge.get('workspace_enabled', True)
+    if not isinstance(value, bool):
+        raise ValueError(f'{bridge["id"]}: workspace_enabled must be true or false')
+    return int(value)
+
+
+def migrate_presentation(db):
+    """Upgrade existing catalogs without rebuilding or removing source records."""
+    if 'workspace_enabled' not in {row['name'] for row in db.execute('PRAGMA table_info(bridges)')}:
+        db.execute('ALTER TABLE bridges ADD COLUMN workspace_enabled INTEGER NOT NULL DEFAULT 1 '
+                   'CHECK(workspace_enabled IN (0,1))')
+
+
+def sync_presentation(db_path, registry_path=DEFAULT_REGISTRY):
+    """Apply the registry's display settings at startup, including older databases."""
+    catalog = json.loads(Path(registry_path).read_text(encoding='utf-8'))
+    settings = [(workspace_enabled(b), b['id']) for b in catalog['bridges']]
+    db = connect(db_path)
+    try:
+        with db:
+            migrate_presentation(db)
+            db.executemany('UPDATE bridges SET workspace_enabled=? WHERE id=?', settings)
+    finally:
+        db.close()
+
+
 def import_all(db_path=DEFAULT_DB, registry_path=None):
     db_path = Path(db_path)
     db_path.parent.mkdir(parents=True, exist_ok=True)
@@ -76,6 +103,7 @@ def import_all(db_path=DEFAULT_DB, registry_path=None):
     # Validate every source before touching the last successful catalog.
     for bridge in catalog['bridges']:
         bid = bridge['id']
+        workspace_enabled(bridge)
         if not re.fullmatch(r'[a-z0-9-]+', bid):
             raise ValueError(f'Unsupported bridge id: {bid}')
         glb = (registry_path.parent / bridge['model']['glb']).resolve()
@@ -104,6 +132,7 @@ def import_all(db_path=DEFAULT_DB, registry_path=None):
     db = connect(db_path)
     db.executescript((ROOT / 'schema.sql').read_text(encoding='utf-8'))
     with db:
+        migrate_presentation(db)
         for bridge, manifest, manifest_path, glb, source, pages in prepared:
             bid, model = bridge['id'], bridge['model']
             db.execute('DELETE FROM bridges WHERE id=?', (bid,))
@@ -116,6 +145,7 @@ def import_all(db_path=DEFAULT_DB, registry_path=None):
                 ownership_data_year=bridge.get('ownership_data_year'), nbi_json=js(bridge.get('nbi_ids', [])),
                 location_source_json=js(bridge.get('location_source', {})),
                 detail_status=model['detail_status'], detail_note=model.get('detail_status_note'),
+                workspace_enabled=workspace_enabled(bridge),
                 revision=model.get('revision'), scope=model.get('scope'),
                 deck_length_m=model.get('deck_length_m'), spans=model.get('spans'),
                 assumptions_json=js(manifest.get('assumptions', [])), source_note=manifest.get('source_note'),

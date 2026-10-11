@@ -7,8 +7,8 @@ from pathlib import Path
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
-from import_data import import_all, connect, explicit_location
-from server import make_server
+from import_data import import_all, connect, explicit_location, sync_presentation
+from server import make_server, bridges
 
 
 class CatalogTests(unittest.TestCase):
@@ -58,6 +58,40 @@ class CatalogTests(unittest.TestCase):
                 self.assertEqual(part['mesh_name'], part['source_id'])
                 self.assertGreater(len(part['basis']), 0)
         self.assertEqual(len(seen), 4012)
+
+    def test_map_only_records_and_complete_first_order(self):
+        with self.get('/api/catalog') as r:
+            catalog = json.load(r)
+        self.assertEqual(catalog['summary']['bridges'], 9)
+        records = catalog['bridges']
+        self.assertTrue(all(isinstance(b['workspace_enabled'], bool) for b in records))
+        self.assertEqual([b['id'] for b in records if b['workspace_enabled']],
+                         ['beechwood', '21st-street-i465', 'us421-wildcat', 'us52-mud'])
+        self.assertEqual({b['id'] for b in records if not b['workspace_enabled']},
+                         {'sr58-white', 'sr159-spencer', 'sr62-csx', 'sr62-tekoppel', 'sr62-carpentier'})
+        with connect(self.db_path) as db:
+            self.assertEqual(db.execute('SELECT COUNT(*) FROM assets a JOIN bridges b ON b.id=a.bridge_id '
+                                        'WHERE b.workspace_enabled=0').fetchone()[0], 20)
+            # Ranking follows detail status, even when the complete record is not first in the source file.
+            try:
+                db.execute("UPDATE bridges SET detail_status='needs_detail' WHERE id='beechwood'")
+                db.execute("UPDATE bridges SET detail_status='complete' WHERE id='us52-mud'")
+                self.assertEqual(bridges(db)[0]['id'], 'us52-mud')
+            finally:
+                db.rollback()
+
+    def test_existing_database_presentation_upgrade_preserves_rows(self):
+        legacy = Path(self.temp.name) / 'legacy.sqlite3'
+        registry = Path(self.temp.name) / 'presentation.json'
+        with sqlite3.connect(legacy) as db:
+            db.execute('CREATE TABLE bridges (id TEXT PRIMARY KEY, name TEXT NOT NULL)')
+            db.executemany('INSERT INTO bridges VALUES (?,?)', [('kept', 'Kept bridge'), ('map-only', 'Map record')])
+        registry.write_text(json.dumps({'bridges': [{'id': 'kept'}, {'id': 'map-only', 'workspace_enabled': False}]}), encoding='utf-8')
+        sync_presentation(legacy, registry)
+        sync_presentation(legacy, registry)
+        with sqlite3.connect(legacy) as db:
+            self.assertEqual(db.execute('SELECT id,name,workspace_enabled FROM bridges ORDER BY id').fetchall(),
+                             [('kept', 'Kept bridge', 1), ('map-only', 'Map record', 0)])
 
     def test_pdf_range_suffix_and_invalid_range(self):
         with self.get('/assets/beechwood/drawing', {'Range': 'bytes=0-4'}) as r:
