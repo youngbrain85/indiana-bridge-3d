@@ -6,6 +6,7 @@
 - **Leaflet 1.9.4** — BSD 2-Clause license. License text is included in [web/vendor/leaflet/LICENSE](web/vendor/leaflet/LICENSE).
 - **PyMuPDF** — installed separately through `requirements.txt`; distributed under GNU AGPL v3 or a commercial license. See the package's own license and [licensing information](https://pymupdf.readthedocs.io/en/latest/about.html#license).
 - **esbuild** and **Playwright** are development dependencies installed separately. Their licenses are included in their packages.
+- **OpenSees / OpenSeesPy** — optional and installed separately using `requirements-fem.txt`; no solver binaries are bundled. Use is subject to the project's license, including its commercial redistribution terms. See the [official OpenSeesPy license notice](https://github.com/zhuminjie/OpenSeesPy/blob/openseespy/README.md).
 
 ## Source documents and maps
 

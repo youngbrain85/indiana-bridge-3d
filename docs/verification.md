@@ -15,3 +15,13 @@ The English release is checked against the existing nine-bridge collection.
 - PDF and GLB SHA-256 comparison with the existing source collection; geometry and plan content are unchanged.
 
 Commands are documented in the README. Detailed test output and screenshots are generated under `data/` and are excluded from Git. No structural analysis or field validation is implied by these software checks.
+
+
+## Beechwood FEM pilot
+
+- Six physics tests include ten closed-form checks, transformed section sanity, all input evidence, three actual cases, force/moment balance, mesh refinement, symmetry, stress signs and linear load scaling.
+- Three service tests cover real solver execution, frozen inputs, result hashes, persistence through catalog reimports, JSON/CSV export, rejected invalid/cross-origin requests and interrupted-job recovery.
+- A separate browser test runs all three cases, reopens saved results, checks all twelve component mappings, deformation magnification, restoring original geometry/materials, member selection, mobile layout and clearing results on a bridge switch.
+- The original nine backend tests and four-model browser regression still apply.
+
+These checks verify the stated incremental beam model numerically. They do not validate actual bridge support stiffness, effective prestress, construction history, local stress concentrations or field condition. See [analysis scope](fem.md).

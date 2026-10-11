@@ -1,0 +1,28 @@
+.fem-inspector h2 { font-size:18px; margin:8px 0; }
+.fem-inspector h3 { margin:20px 0 8px; font-size:13px; }
+.fem-inspector .source-note { font-size:12px; line-height:1.6; }
+.fem-form { display:grid; gap:10px; margin:14px 0; }
+.fem-form label { display:grid; gap:5px; font-size:11px; color:#45616f; }
+.fem-form select,.fem-form input { width:100%; min-width:0; font-size:12px; padding:8px; }
+.fem-form button { font-size:12px; }
+.fem-status { border-left:3px solid #178177; padding:8px 10px; background:#e6f4ef; font-size:12px; line-height:1.5; }
+.fem-error { color:#9b2e29; background:#fff0ec; padding:10px; font-size:12px; overflow-wrap:anywhere; }
+.fem-result-case { font-size:12px; font-weight:600; line-height:1.5; }
+.fem-hotspots { display:grid; gap:5px; }
+.fem-hotspots button { text-align:left; font-size:11px; padding:8px; }
+.fem-hotspots small { display:block; color:#647a88; margin-top:4px; }
+.fem-details { border-top:1px solid #dae3e8; padding:12px 0; font-size:11px; line-height:1.6; overflow-wrap:anywhere; }
+.fem-details summary { font-weight:650; font-size:12px; cursor:pointer; }
+.fem-details ul { padding-left:17px; }
+.fem-details li { margin:8px 0; }
+.fem-evidence { border-bottom:1px solid #e1e8ec; padding:12px 0; }
+.fem-evidence b { color:#28706d; text-transform:uppercase; font-size:10px; }
+.fem-evidence a { margin-right:9px; }
+.fem-downloads { display:flex; gap:16px; margin:14px 0; font-size:12px; }
+#femLegend { position:absolute; left:14px; bottom:14px; z-index:3; background:#13232deb; color:#e6eff3; border:1px solid #53646c; border-radius:6px; padding:11px 14px; width:min(345px,calc(100% - 28px)); pointer-events:none; }
+#femLegend b { display:block; font-size:12px; margin-bottom:5px; }
+#femLegend>span { display:block; font-size:10px; }
+#femLegend small { display:block; font-size:10px; margin-top:6px; color:#c1d1da; }
+.fem-color-ramp { height:9px; border-radius:3px; margin-top:10px; background:linear-gradient(to right,#335cde,#17b7ce,#7cdb99,#ffcb55,#ed5947); }
+.fem-legend-ends { display:flex; justify-content:space-between; font-size:10px; margin-top:4px; }
+.canvas-host:has(#femLegend:not([hidden])) .axis-note { bottom:157px; }

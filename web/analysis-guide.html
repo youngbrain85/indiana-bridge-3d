@@ -1,0 +1,134 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Beechwood FEM | Method and sources</title><style>*{box-sizing:border-box}body{margin:0;background:#edf2f3;color:#203945;font:16px/1.7 system-ui,sans-serif}main{max-width:1000px;margin:32px auto;background:#fff;padding:48px 54px;border-radius:12px}h1{font-size:36px;line-height:1.2}h2{margin-top:40px;font-size:23px;border-top:1px solid #dce7e9;padding-top:24px}a{color:#087780}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}th,td{border-bottom:1px solid #dce7e9;padding:12px;text-align:left;vertical-align:top}th{background:#e8f1f1}pre{padding:18px;background:#132b36;color:#e5f0f0;border-radius:6px;overflow:auto}code{font-size:13px;overflow-wrap:anywhere}li{margin:8px 0}.back{font-size:14px}@media(max-width:700px){main{margin:0;border-radius:0;padding:22px}h1{font-size:29px}table{font-size:12px}}</style></head><body><main><a class="back" href="/#bridge/beechwood">← Beechwood workspace</a><h1>Beechwood FEM pilot</h1>
+<p>Open the Beechwood model and click <strong>FEM</strong> in the view toolbar or details panel. Select a load case and end-rotation assumption, then <strong>Run analysis</strong>. Completed runs can be reopened from <strong>Saved runs</strong>. No AI API key or paid API call is needed.</p>
+<p>This first implementation calculates <strong>incremental nominal girder response</strong>, using four independent longitudinal beam lines and the twelve girder component IDs. The color scale is the maximum absolute top/bottom girder fiber stress at each longitudinal section, or absolute vertical deflection. It is not a local 3D solid stress field, total prestressed-concrete stress or structural safety rating. Gray components have not been analyzed.</p>
+<h2>Install the optional solver</h2>
+<p>The asset viewer still runs on Python 3.9+. Use Python <strong>3.12</strong> for the separate solver environment. Windows PowerShell, from the repository:</p>
+<pre><code class="language-powershell">py -3.12 -m venv .venv-fem
+.\.venv-fem\Scripts\python.exe -m pip install -r requirements-fem.txt
+python server.py
+</code></pre>
+<p>macOS/Linux:</p>
+<pre><code class="language-sh">python3.12 -m venv .venv-fem
+.venv-fem/bin/python -m pip install -r requirements-fem.txt
+python server.py
+</code></pre>
+<p>The server automatically discovers <code>.venv-fem</code>. Alternatively set <code>BRIDGE_FEM_PYTHON</code> to the absolute path of an existing Python executable with OpenSeesPy installed. The runtime and solver versions are recorded in every result. Other operating systems may need additional OpenSees runtime libraries; consult the solver's installation documentation. OpenSees has its own redistribution/commercial licensing terms; it is not bundled in this repository.</p>
+<h2>Materials found in the original drawings</h2>
+<p>The original plan set is bundled at <code>data/bridges/beechwood/drawings.pdf</code>. PDF page numbers are one greater than the printed sheet labels.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+<th>Evidence</th>
+<th>Applied in this pilot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Girder concrete, 28 days</td>
+<td>8,000 psi = 55.158 MPa</td>
+<td>PDF 45, beam note 3</td>
+<td>Strength input used to estimate E</td>
+</tr>
+<tr>
+<td>Girder concrete at prestressing</td>
+<td>7,000 psi = 48.263 MPa</td>
+<td>PDF 45, beam note 3</td>
+<td>Recorded only</td>
+</tr>
+<tr>
+<td>Deck / end-bent Class C concrete</td>
+<td>4,000 psi = 27.579 MPa</td>
+<td>PDF 32, design stresses and general note 2</td>
+<td>Deck/haunch E</td>
+</tr>
+<tr>
+<td>Interior bent Class A concrete</td>
+<td>3,500 psi = 24.132 MPa</td>
+<td>PDF 32</td>
+<td>Recorded only; substructure not solved</td>
+</tr>
+<tr>
+<td>Reinforcement yield strength</td>
+<td>60 ksi = 413.685 MPa</td>
+<td>PDF 32 and 45</td>
+<td>Recorded only; no capacity analysis</td>
+</tr>
+<tr>
+<td>Prestressing strand</td>
+<td>ASTM A416, 270 ksi, 0.6 in, 0.217 in²</td>
+<td>PDF 45</td>
+<td>Recorded only</td>
+</tr>
+<tr>
+<td>Strand jacking force</td>
+<td>43,943 lbf per strand</td>
+<td>PDF 45</td>
+<td><strong>Not</strong> effective prestress after losses; excluded</td>
+</tr>
+<tr>
+<td>Strand count per girder</td>
+<td>A/C: 26; B: 30</td>
+<td>PDF 43–44, section rows</td>
+<td>Recorded only</td>
+</tr>
+</tbody>
+</table>
+<p>The material and input ledger is <code>fem/beechwood.json</code>. Every numeric input has an evidence record. Source files and solver code are hashed for each run.</p>
+<h2>Reference estimates and explicit assumptions</h2>
+<p>Concrete E is derived as <strong>E(ksi) = 120000 × K1 × wc(kcf)² × fc(ksi)^0.33</strong>. This gives about <strong>36.975 GPa</strong> for the girder and <strong>29.415 GPa</strong> for the deck. Unit weight <strong>150 pcf (23.563 kN/m³)</strong> and aggregate factor <strong>K1 = 1.0</strong> are assumed reference values, not site measurements. The equation and an example using 0.150 kcf are in <a href="https://www.fhwa.dot.gov/bridge/loadrating/pubs/hif22025.pdf#page=79">FHWA-HIF-22-025, PDF page 79 / printed page 65</a>.</p>
+<p>Poisson ratio <strong>0.2</strong> is recorded from <a href="https://www.in.gov/dot/div/contracts/design/Part%204/Chapter%20406%20-%20Prestressed-Concrete%20Structure.pdf#page=8">INDOT Chapter 406, section 406-4.02(02), PDF page 8</a>. It is not used by this Euler–Bernoulli element. Steel E values <strong>29,000 ksi</strong> for reinforcement and <strong>28,500 ksi</strong> for strand are recorded from FHWA-HIF-22-025, PDF page 127 / printed page 113; neither is applied in the current gross-concrete sections.</p>
+<p>The dimensioned BT 36x49 polygon is integrated to obtain area, centroid and inertia. The typical midspan section is used throughout; local beam-end thickening, holes and steel are excluded. The deck has an 8 in total thickness but only <strong>7.5 in structural thickness</strong> is credited, as specified on PDF page 32. Composite effective width equals tributary width; a <strong>constant 2 in haunch</strong> is provisional. Actual haunch variation has not been verified for analysis. Nominal girder/deck quantities are included in JSON for traceability; they are not procurement takeoffs.</p>
+<h2>Cases and boundaries</h2>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Included load</th>
+<th>Section and support idealization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Full-width test</td>
+<td>1 kPa × 33 ft width × 250 ft between end-bent centers</td>
+<td>Composite continuous beam, 80/90/80 ft spans; internal support at bent centerlines</td>
+</tr>
+<tr>
+<td>Future wearing surface</td>
+<td>Drawing's 35 psf × assumed 30 ft roadway × 250 ft</td>
+<td>Same composite model; external girder load strips are narrower</td>
+</tr>
+<tr>
+<td>Bare girder self-weight</td>
+<td>Girder polygon area × 150 pcf; physical beam lengths including end overhangs</td>
+<td>Individual simple bearings at 0/79, 81/169, 171/250 ft; girder extents −0.5/79.75, 80.25/169.75, 170.25/250.5 ft</td>
+</tr>
+</tbody>
+</table>
+<p>All load multipliers are <strong>research scenario multipliers</strong>, not prescribed code load factors. Composite cases enforce continuous rotation through interior supports. The two end-rotation choices compare free and fully restrained ends; neither is claimed to reproduce the integral-abutment stiffness. Vertical bearing displacement is zero. The opposite end-rotation case is also solved and its peak response shown as a sensitivity comparison. It is not a guaranteed upper/lower bound.</p>
+<p>The FE model uses straight horizontal reference lines. Original grade/camber/crossfall remain in the visual mesh but do not alter the calculation. Deformation is mapped to the GLB's vertical Y axis, with the chosen display magnification stated in the legend. Stress and deflection remain in their physical units regardless of magnification.</p>
+<h2>What the results do not establish</h2>
+<ul>
+<li>Effective prestress, prestress losses and steel stiffness have not been included. Self-weight-only tensile increments must not be interpreted as actual concrete tension or cracking.</li>
+<li>There is no staged deck/diaphragm/barrier construction load history, creep, shrinkage, cracking or nonlinear contact.</li>
+<li>Transverse distribution is by tributary width. There is no grillage, shell mesh, truck positioning, HL-93 envelope, dynamic impact or load rating.</li>
+<li>Substructure, bearings, foundations, railings and local anchorage details are not analyzed. Solid stress concentrations and fatigue require a later validated local model.</li>
+<li>Numerical checks establish that these idealized equations are solved consistently. They do not validate the bridge assumptions or its field condition.</li>
+</ul>
+<h2>Verification and reproducibility</h2>
+<p>Each accepted run includes 10 closed-form checks: simple and fixed beam deflection/moment/reaction, two-span support moment/reaction, and polygon area/inertia. Equilibrium relative errors must be below <strong>1e−7</strong>. A second mesh doubles the target density (24 to 48 elements over the longest interval); sampled peak moment/stress and deflection must change by less than <strong>1%</strong>. Very short overhangs are not excessively subdivided. Uniform-load moment recovery includes the shear-zero station; displacement recovery includes the distributed-load particular solution.</p>
+<p>Run the checks:</p>
+<pre><code class="language-powershell">.\.venv-fem\Scripts\python.exe test_fem.py
+python test_fem_service.py
+python test_manager.py
+npm run build
+</code></pre>
+<p><code>test_fem_service.py</code> invokes the optional solver as a separate process and checks source hashes, persistence, CSV/JSON export, source reimports and result-tampering rejection. It skips the real-solver test if no optional runtime is installed. The CI FEM job installs and runs the real solver on Linux.</p>
+<p>SQLite tables <code>analysis_inputs</code>, <code>analysis_runs</code> and <code>analysis_member_results</code> retain the input snapshot, status, software metadata and per-member peaks. Full samples, reactions and verification are in <code>data/analysis_runs/&lt;run-id&gt;/result.json</code>; download <strong>Run JSON</strong> and <strong>Samples CSV</strong> from the panel. Runtime files are ignored by Git. The database export contains run summaries and input snapshots; download the JSON separately for full sample data. Historical analysis rows survive catalog reimports.</p>
+<p>A run executes in a separate subprocess with a 180-second limit and one active job at a time. The request is restricted to registered cases, end restraint and a 0.1–5 load multiplier. It cannot execute user-provided code. Interrupted runs are marked failed after a server restart. Changed source/model/code hashes mark historical results as archived and prevent automatic coloring of the current model.</p>
+<p>To reproduce a downloaded run, save its <code>snapshot</code> object as <code>input.json</code> and run with the matching solver source version:</p>
+<pre><code class="language-powershell">.\.venv-fem\Scripts\python.exe -m fem.solver --input input.json --output result.json
+</code></pre>
+<p>The next structural step is a reviewed staged prestress/dead-load model, reinforcement-aware stiffness and support flexibility, followed by transverse grillage or shells. A local solid submodel comes after the global response is credible.</p></main></body></html>

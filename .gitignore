@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 .venv/
+.venv-fem/
+data/fem_research/
+data/analysis_runs/
 node_modules/
 .env
 .env.*

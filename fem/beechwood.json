@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "bridge_id": "beechwood",
+  "title": "Beechwood incremental longitudinal beam analysis",
+  "revision": "2026-10-11-pilot-1",
+  "drawing_sha256": "5e23f9c89075bcd9481b704c17b47311f67da8898f0c63d4bb92f4049bf976f5",
+  "source_pdf": "data/bridges/beechwood/drawings.pdf",
+  "sources": {
+    "plans": {
+      "title": "Beechwood contract B-37711, design 1400825, November 2022",
+      "url": "/assets/beechwood/drawing",
+      "note": "PDF page = printed sheet + 1."
+    },
+    "fhwa": {
+      "title": "FHWA-HIF-22-025, April 2022",
+      "url": "https://www.fhwa.dot.gov/bridge/loadrating/pubs/hif22025.pdf",
+      "note": "PDF p. 79 / printed p. 65: E equation, example wc=0.150 kcf and transformed deck width. PDF p. 127 / printed p. 113: steel moduli. Values are reference estimates, not Beechwood tests."
+    },
+    "indot406": {
+      "title": "Indiana Design Manual, Chapter 406, section 406-4.02(02)",
+      "url": "https://www.in.gov/dot/div/contracts/design/Part%204/Chapter%20406%20-%20Prestressed-Concrete%20Structure.pdf",
+      "note": "PDF p. 8: Poisson ratio 0.2 and reference to LRFD E equation; accessed 2026-10-11."
+    },
+    "solver": {
+      "title": "OpenSeesPy elasticBeamColumn",
+      "url": "https://openseespydoc.readthedocs.io/en/latest/src/elasticBeamColumn.html"
+    }
+  },
+  "values": {
+    "girder_fc_psi": 8000,
+    "girder_transfer_fc_psi": 7000,
+    "deck_fc_psi": 4000,
+    "pier_fc_psi": 3500,
+    "rebar_fy_ksi": 60,
+    "strand_fpu_ksi": 270,
+    "strand_area_in2": 0.217,
+    "strand_jacking_lbf": 43943,
+    "strand_count_AC": 26,
+    "strand_count_B": 30,
+    "concrete_unit_weight_pcf": 150,
+    "aggregate_factor_K1": 1,
+    "concrete_poisson": 0.2,
+    "rebar_E_ksi": 29000,
+    "strand_E_ksi": 28500,
+    "deck_total_thickness_in": 8,
+    "deck_structural_thickness_in": 7.5,
+    "haunch_in": 2,
+    "deck_width_ft": 33,
+    "roadway_width_ft": 30,
+    "deck_length_ft": 252,
+    "girder_spacing_ft": 8.75,
+    "girder_y_ft": [
+      -13.125,
+      -4.375,
+      4.375,
+      13.125
+    ],
+    "bent_x_ft": [
+      0,
+      80,
+      170,
+      250
+    ],
+    "bearing_x_ft": [
+      [
+        0,
+        79
+      ],
+      [
+        81,
+        169
+      ],
+      [
+        171,
+        250
+      ]
+    ],
+    "beam_extents_ft": [
+      [
+        -0.5,
+        79.75
+      ],
+      [
+        80.25,
+        169.75
+      ],
+      [
+        170.25,
+        250.5
+      ]
+    ],
+    "wearing_psf": 35,
+    "forms_psf": 15,
+    "test_pressure_kPa": 1,
+    "girder_profile_in": [
+      [
+        -24.5,
+        36
+      ],
+      [
+        24.5,
+        36
+      ],
+      [
+        24.5,
+        31
+      ],
+      [
+        7,
+        28
+      ],
+      [
+        4,
+        25
+      ],
+      [
+        4,
+        14.5
+      ],
+      [
+        6,
+        12.5
+      ],
+      [
+        20,
+        5.5
+      ],
+      [
+        20,
+        0.75
+      ],
+      [
+        19.25,
+        0
+      ],
+      [
+        -19.25,
+        0
+      ],
+      [
+        -20,
+        0.75
+      ],
+      [
+        -20,
+        5.5
+      ],
+      [
+        -6,
+        12.5
+      ],
+      [
+        -4,
+        14.5
+      ],
+      [
+        -4,
+        25
+      ],
+      [
+        -7,
+        28
+      ],
+      [
+        -24.5,
+        31
+      ]
+    ]
+  },
+  "evidence": [
+    {
+      "fields": [
+        "girder_fc_psi",
+        "girder_transfer_fc_psi"
+      ],
+      "status": "drawing",
+      "source": "plans",
+      "pdf_pages": [
+        45
+      ],
+      "note": "Beam notes 3: 8000 psi at 28 days, 7000 psi at prestressing."
+    },
+    {
+      "fields": [
+        "deck_fc_psi",
+        "pier_fc_psi",
+        "rebar_fy_ksi"
+      ],
+      "status": "drawing",
+      "source": "plans",
+      "pdf_pages": [
+        32
+      ],
+      "note": "Design stresses and general note 2. Superstructure/end bents Class C; interior bents Class A."
+    },
+    {
+      "fields": [
+        "strand_fpu_ksi",
+        "strand_area_in2",
+        "strand_jacking_lbf"
+      ],
+      "status": "drawing_not_applied",
+      "source": "plans",
+      "pdf_pages": [
+        45
+      ],
+      "note": "ASTM A416 low-relaxation 0.6 in strand. Jacking force is not effective force after losses; prestress is not applied in this incremental pilot."
+    },
+    {
+      "fields": [
+        "strand_count_AC",
+        "strand_count_B"
+      ],
+      "status": "drawing_not_applied",
+      "source": "plans",
+      "pdf_pages": [
+        43,
+        44
+      ],
+      "note": "End-section rows total 26 (17+4+3+2) and 30 (17+8+3+2). Recorded only; strand stiffness and force excluded."
+    },
+    {
+      "fields": [
+        "concrete_unit_weight_pcf",
+        "aggregate_factor_K1"
+      ],
+      "status": "assumed_reference",
+      "source": "fhwa",
+      "note": "150 pcf and K1=1 normal-weight reference defaults. Not measured density or aggregate factor. Used for E derivation and gravity unit weight."
+    },
+    {
+      "fields": [
+        "concrete_poisson"
+      ],
+      "status": "reference_not_applied",
+      "source": "indot406",
+      "note": "0.2; not needed by the Euler-Bernoulli beam formulation."
+    },
+    {
+      "fields": [
+        "rebar_E_ksi",
+        "strand_E_ksi"
+      ],
+      "status": "reference_not_applied",
+      "source": "fhwa",
+      "note": "Recorded for later reinforced/prestressed analysis. Steel stiffness is not included now."
+    },
+    {
+      "fields": [
+        "deck_total_thickness_in",
+        "deck_structural_thickness_in",
+        "deck_width_ft",
+        "roadway_width_ft",
+        "deck_length_ft",
+        "girder_spacing_ft",
+        "bent_x_ft"
+      ],
+      "status": "drawing",
+      "source": "plans",
+      "pdf_pages": [
+        32
+      ],
+      "note": "8 in slab includes 0.5 in sacrificial surface; only 7.5 in credited for stiffness. Spans 80/90/80 ft."
+    },
+    {
+      "fields": [
+        "girder_y_ft"
+      ],
+      "status": "derived_drawing",
+      "source": "plans",
+      "pdf_pages": [
+        32
+      ],
+      "note": "Four symmetric girder lines at 8 ft 9 in spacing."
+    },
+    {
+      "fields": [
+        "bearing_x_ft",
+        "beam_extents_ft"
+      ],
+      "status": "derived_drawing",
+      "source": "plans",
+      "pdf_pages": [
+        42,
+        43,
+        44
+      ],
+      "note": "Bearing centers 1 ft either side of interior bent centers; beam lengths 80 ft 3 in / 89 ft 6 in / 80 ft 3 in."
+    },
+    {
+      "fields": [
+        "girder_profile_in"
+      ],
+      "status": "derived_drawing",
+      "source": "plans",
+      "pdf_pages": [
+        43,
+        44
+      ],
+      "note": "Dimensioned typical midspan polygon: 36 in depth, 49 in top flange, 40 in bottom flange, 8 in web; 3/4 in bottom chamfers included. Used throughout; local end-section changes, holes and embedded steel are excluded. Section properties are integrated, not manufacturer-certified."
+    },
+    {
+      "fields": [
+        "haunch_in"
+      ],
+      "status": "assumed",
+      "source": "plans",
+      "pdf_pages": [
+        46,
+        47,
+        50
+      ],
+      "note": "Uniform 2 in provisional haunch for composite section. Actual haunch varies with beam camber and profile; no uniform 2 in value is claimed in the drawings."
+    },
+    {
+      "fields": [
+        "wearing_psf",
+        "forms_psf"
+      ],
+      "status": "drawing",
+      "source": "plans",
+      "pdf_pages": [
+        32
+      ],
+      "note": "Future wearing 35 psf is a separate post-composite increment applied over 30 ft roadway by assumption. 15 psf forms are recorded but excluded from current cases."
+    },
+    {
+      "fields": [
+        "test_pressure_kPa"
+      ],
+      "status": "assumed",
+      "source": "solver",
+      "note": "Research test pressure, uniform over full deck width; not HL-93 or a load rating case."
+    }
+  ],
+  "assumptions": [
+    "Only incremental, longitudinal, nominal elastic girder stresses are computed; no total stress or local stress concentrations.",
+    "Four independent beam lines; transverse deck load distribution uses tributary width. No torsion, transverse grillage or local plate action.",
+    "After-composite cases use continuous gross uncracked transformed sections over bent centerlines, with ideal vertical restraints. Integral-abutment and semi-fixed-pier flexibility are not modeled.",
+    "Free versus fixed end rotation is a sensitivity comparison, not actual support identification or guaranteed bounds.",
+    "Structural deck thickness 7.5 in, full composite action, effective width equal to tributary width, constant assumed 2 in haunch of width 49 in.",
+    "Camber, grade and crossfall are omitted from the analysis axes. Original geometry is retained for display only.",
+    "Prestress and losses, reinforcing/strand stiffness, cracking, creep, shrinkage, deck-pour sequence, diaphragm/barrier/form loads, thermal/seismic loads and moving vehicles are excluded.",
+    "The bare-girder case uses 28-day E and the individual bearing locations. Its downward gravity displacement is not net camber or transfer-stage response.",
+    "Unanalyzed parts remain gray. Color does not indicate structural safety; no load factors or capacity checks are applied."
+  ]
+}

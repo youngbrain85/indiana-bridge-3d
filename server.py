@@ -1,4 +1,4 @@
-"""Local, read-only bridge asset service. Run import_data.py to update the catalog."""
+"""Local bridge asset service with isolated, optional structural analysis jobs."""
 import argparse
 import csv
 import io
@@ -13,6 +13,7 @@ from pathlib import Path
 from urllib.parse import quote, unquote, urlsplit
 
 from import_data import ROOT, DEFAULT_DB, DEFAULT_REGISTRY, connect, import_all, sync_presentation
+from fem.service import AnalysisService, BusyError
 
 
 def decode(row):
@@ -155,6 +156,32 @@ class Handler(BaseHTTPRequestHandler):
     def do_HEAD(self):
         self.do_GET()
 
+    def do_POST(self):
+        host = self.headers.get('Host', '')
+        if host.split(':')[0] not in ('127.0.0.1', 'localhost'):
+            return self.error('Localhost access only', 403)
+        # Browser mutations must originate on this server, with JSON and a custom header.
+        origin = self.headers.get('Origin')
+        if (origin and origin != 'http://' + host) or self.headers.get('X-Bridge-Analysis') != '1':
+            return self.error('Same-origin analysis requests only', 403)
+        match = re.fullmatch(r'/api/analysis/([a-z0-9-]+)/runs', urlsplit(self.path).path)
+        if not match:
+            return self.error('Not found')
+        try:
+            length = int(self.headers.get('Content-Length', '0'))
+            if self.headers.get('Content-Type', '').split(';')[0] != 'application/json' or not 1 <= length <= 2048:
+                return self.error('Send a JSON object smaller than 2048 bytes.', 400)
+            options = json.loads(self.rfile.read(length))
+            run = self.server.analysis.start(match[1], options)
+            return self.data(run, status=202)
+        except BusyError as exc:
+            return self.error(str(exc), 409)
+        except (ValueError, UnicodeDecodeError) as exc:
+            return self.error(str(exc), 400)
+        except Exception as exc:
+            print(f'Analysis start failed: {type(exc).__name__}: {exc}', flush=True)
+            return self.error('Analysis could not start. See local server log.', 500)
+
     def do_GET(self):
         host = self.headers.get('Host', '').split(':')[0]
         if host not in ('127.0.0.1', 'localhost'):
@@ -169,6 +196,22 @@ class Handler(BaseHTTPRequestHandler):
 
     def dispatch(self):
         path = unquote(urlsplit(self.path).path)
+        match = re.fullmatch(r'/api/analysis/([a-z0-9-]+)', path)
+        if match:
+            return self.data(self.server.analysis.info(match[1]))
+        match = re.fullmatch(r'/api/analysis/runs/([0-9a-f]{32})(/result\.json|/samples\.csv)?', path)
+        if match:
+            try:
+                if match[2] == '/result.json':
+                    target = self.server.analysis.result_path(match[1])
+                    return self.file(target, filename='beechwood_'+match[1]+'.json') if target else self.error('Completed run not found')
+                if match[2] == '/samples.csv':
+                    content = self.server.analysis.csv(match[1])
+                    return self.data(content, 'text/csv; charset=utf-8', extra={'Content-Disposition':'attachment; filename="beechwood_fem_samples.csv"'}) if content is not None else self.error('Completed run not found')
+                run = self.server.analysis.get(match[1])
+                return self.data(run) if run else self.error('Run not found')
+            except ValueError as exc:
+                return self.error(str(exc), 409)
         with closing(connect(self.server.db_path)) as db:
             if path == '/api/health':
                 return self.data({'app': 'indiana-bridge-manager', 'schema': 2})
@@ -229,6 +272,9 @@ class Handler(BaseHTTPRequestHandler):
                   '/app.css': ROOT / 'web/app.css', '/app.js': ROOT / 'web/app.js',
                   '/workspace.css': ROOT / 'web/workspace.css',
                   '/compact.css': ROOT / 'web/compact.css',
+                  '/analysis.js': ROOT / 'web/analysis.js',
+                  '/analysis.css': ROOT / 'web/analysis.css',
+                  '/analysis-guide': ROOT / 'web/analysis-guide.html',
                   '/review': ROOT / 'web/ui_review.html',
                   '/viewer.bundle.js': ROOT / 'web/viewer.bundle.js',
                   '/map/counties.json': ROOT / 'web/vendor/indiana_counties.geojson',
@@ -249,6 +295,7 @@ def make_server(port=8766, db_path=DEFAULT_DB, registry_path=DEFAULT_REGISTRY):
     sync_presentation(db_path, registry_path)
     server = ThreadingHTTPServer(('127.0.0.1', port), Handler)
     server.db_path = db_path
+    server.analysis = AnalysisService(db_path)
     server.daemon_threads = True
     return server
 

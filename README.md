@@ -61,6 +61,7 @@ The application binds to localhost. It is a local viewer, not an authenticated m
 - **Components:** searchable, paginated register with CSV export and direct links back to 3D.
 - **Indiana map:** county boundaries, road layer, bridge markers and model-detail status. Green means exterior detail coverage is complete within the stated scope; amber means additional detail is needed. These are **not structural condition ratings**.
 - **Drawings:** locally rendered PDF pages and original plan downloads.
+- **FEM pilot (Beechwood):** source-traceable material inputs, isolated OpenSees runs, incremental girder stress/deflection colors, support sensitivity, numerical verification and JSON/CSV results. See [setup, material evidence and limitations](docs/fem.md). The optional solver requires a separate Python 3.12 environment; no AI API key is needed.
 - **Exports:** GLB model, component CSV and the current SQLite database.
 - **UI review:** visit `/review` to annotate a reference screenshot, add numbered notes and export PNG or JSON. Notes are stored only in the browser.
 
@@ -77,7 +78,7 @@ Original PDF and GLB hashes are recorded in [data/sources.json](data/sources.jso
 ## Repository layout
 
 ```text
-server.py                 Local HTTP service and read-only API
+server.py                 Local HTTP service and bounded analysis API
 import_data.py            Validated, repeatable SQLite importer
 schema.sql                Database schema
 data/registry.json        Portable bridge registry
@@ -85,8 +86,11 @@ data/bridges/<id>/         Model, manifest, plan PDF and preview
 data/sources.json          Plan URLs and asset hashes
 web/                      English frontend and bundled viewer
 viewer.js                 Three.js viewer source
+fem/                      Material ledger, optional solver and analysis job service
 docs/                     Architecture and verification notes
 ```
+
+The FEM pilot is a longitudinal beam idealization for three separate load increments, not a local solid stress analysis or bridge load rating. Known prestress data is recorded but effective prestress and construction-stage effects are not yet applied. See the in-app FEM sources and assumptions before interpreting colors.
 
 Runtime files are generated locally and excluded from Git: `data/bridges.sqlite3`, `data/assets/`, PDF preview caches, logs, process IDs and test screenshots. The database can be rebuilt with `python import_data.py` or downloaded from the app. Back up the repository and any locally added source assets together.
 
@@ -117,6 +121,8 @@ With `python server.py` running in another terminal:
 
 ```sh
 npm run test:browser
+# With the optional FEM solver installed:
+node test_fem_browser.cjs
 ```
 
 Set `BRIDGE_TEST_URL` to test another port. Set `BROWSER_EXECUTABLE` to use an installed Chromium/Edge binary instead of Playwright's browser.

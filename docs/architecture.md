@@ -1,6 +1,6 @@
 # Architecture
 
-The application is a local, read-only bridge review service. Python's `ThreadingHTTPServer` serves an allowlisted frontend, SQLite-backed JSON APIs and registered assets. PyMuPDF renders individual source PDF pages into a local cache. Three.js renders models; Leaflet provides the Indiana map.
+The application is a local bridge review service. Python's `ThreadingHTTPServer` serves an allowlisted frontend, SQLite-backed JSON APIs and registered assets. PyMuPDF renders individual source PDF pages into a local cache. Three.js renders models; Leaflet provides the Indiana map. An optional isolated OpenSees worker calculates the Beechwood incremental longitudinal beam pilot.
 
 ## Relationships
 
@@ -18,7 +18,9 @@ The catalog orders eligible records before map-only entries, and complete exteri
 
 The repository contains a portable registry and source assets. First launch creates SQLite and content-addressed runtime asset copies. Neither setup nor rebuilding depends on another checkout, an API key or the original author's filesystem.
 
-Database and model APIs are read-only. New content is added through the validated importer. The service listens only on localhost, rejects non-local Host headers and serves registered paths only. PDF range requests and atomic preview generation support browser viewing without exposing arbitrary files.
+Catalog and model APIs are read-only. New assets are added through the validated importer. Analysis requests use a bounded same-origin POST with a custom header and JSON input. The service listens only on localhost, rejects non-local Host headers and serves registered paths only. PDF range requests and atomic preview generation support browser viewing without exposing arbitrary files.
+
+The separate `fem/schema.sql` adds historical `analysis_inputs`, `analysis_runs` and `analysis_member_results` tables on startup. Input snapshots and source/code hashes survive catalog reimports. The solver is process-global, so every run is a separate subprocess with one active job and a 180-second timeout. Failed or interrupted runs never become completed results. Full JSON samples are stored outside Git under `data/analysis_runs`; file hashes are checked before serving. See [FEM method and scope](fem.md).
 
 The selected bridge is encoded in the URL; legacy last-selection browser storage is ignored so fresh visits consistently show a complete model first. The separate annotation page stores its notes in browser storage. API credentials, uploaded inspection data and operational maintenance histories are not part of this application.
 

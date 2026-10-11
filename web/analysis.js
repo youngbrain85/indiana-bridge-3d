@@ -1,0 +1,89 @@
+/* Finite-element results are separate from visual model completeness. */
+(() => {
+  const node=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
+  const fmt=(n,d=3)=>Number(n).toLocaleString('en-US',{maximumFractionDigits:d});
+  const action=(text,fn)=>{const b=node('button',text);b.type='button';b.onclick=fn;return b;};
+  const link=(text,url)=>{const a=node('a',text,'reference-link');a.href=url;a.target='_blank';a.rel='noopener';return a;};
+  async function api(url,options){const r=await fetch(url,options),v=await r.json();if(!r.ok)throw Error(v.error||'Analysis request failed.');return v;}
+  class AnalysisPanel {
+    constructor(){this.epoch=0;this.field='stress_MPa';this.scale=0;this.options={case:'uniform',end_restraint:'free',load_factor:1};}
+    reset(){this.epoch++;clearTimeout(this.timer);this.viewer?.clearAnalysis();this.host=null;this.info=null;this.result=null;this.run=null;this.message='';this.applied=false;this.loading=false;this.pending=false;this.field='stress_MPa';this.scale=0;const legend=document.getElementById('femLegend');if(legend)legend.hidden=true;}
+    detach(){this.host=null;}
+    mount(host,data,viewer,selected,onSelect){this.host=host;this.data=data;this.viewer=viewer;this.selected=selected;this.onSelect=onSelect;if(this.info){this.render();return;}this.render();if(this.loading)return;this.loading=true;const epoch=this.epoch;
+      api('/api/analysis/'+data.id).then(async info=>{if(epoch!==this.epoch)return;this.info=info;this.loading=false;this.run=info.latest;
+        if(this.run)this.options={...this.run.settings};this.render();
+        if(this.run?.status==='completed')await this.loadResult(this.run.id,epoch);
+        else if(this.run&&['queued','running'].includes(this.run.status))this.poll(this.run.id,epoch);
+      }).catch(e=>{if(epoch===this.epoch){this.loading=false;this.message=e.message;this.render();}});
+    }
+    async start(){if(this.pending)return;this.pending=true;this.message='';const epoch=this.epoch;this.render();
+      try{const run=await api('/api/analysis/'+this.data.id+'/runs',{method:'POST',headers:{'Content-Type':'application/json','X-Bridge-Analysis':'1'},body:JSON.stringify(this.options)});if(epoch!==this.epoch)return;
+        this.run=run;this.result=null;this.viewer.clearAnalysis();this.applied=false;this.updateLegend();this.render();this.poll(run.id,epoch);
+      }catch(e){if(epoch===this.epoch)this.message=e.message;}finally{if(epoch===this.epoch){this.pending=false;this.render();}}
+    }
+    async poll(id,epoch){clearTimeout(this.timer);try{const run=await api('/api/analysis/runs/'+id);if(epoch!==this.epoch)return;this.run=run;this.render();
+      if(run.status==='completed')await this.loadResult(id,epoch);
+      else if(run.status==='failed'){this.message=run.error;this.render();}
+      else this.timer=setTimeout(()=>this.poll(id,epoch),700);
+    }catch(e){if(epoch===this.epoch){this.message=e.message;this.render();}}}
+    async loadResult(id,epoch){const result=await api('/api/analysis/runs/'+id+'/result.json');if(epoch!==this.epoch||this.run?.id!==id)return;this.result=result;
+      const info=await api('/api/analysis/'+this.data.id);if(epoch!==this.epoch||this.run?.id!==id)return;this.info=info;
+      if(this.run.current_inputs){this.apply();this.viewer.fit(result.members.map(m=>m.component_id));}
+      else{this.message='Archived result: current inputs differ. Rerun before applying colors to this model.';this.applied=false;}
+      this.render();
+    }
+    apply(){if(!this.result||!this.run.current_inputs)return;this.viewer.setAnalysis(this.result,this.field,this.scale);this.applied=true;this.updateLegend();}
+    updateLegend(){const legend=document.getElementById('femLegend');legend.hidden=!this.applied;if(!this.applied)return;
+      const stress=this.field==='stress_MPa';legend.replaceChildren(node('b',stress?'Incremental girder stress |σ|':'Incremental deflection |δ|'),node('span',this.result.case_title),node('div',undefined,'fem-color-ramp'));
+      const ends=node('div',undefined,'fem-legend-ends');ends.append(node('span','0'),node('span',fmt(stress?this.result.max_stress_MPa:this.result.max_deflection_mm)+(stress?' MPa':' mm')));legend.append(ends,node('small','Gray: not analyzed · '+(this.scale?'Deformation ×'+this.scale:'Original geometry')),node('small','Nominal beam response · Not total stress or a safety rating'));
+    }
+    render(){if(!this.host)return;const h=this.host;h.replaceChildren();h.classList.add('fem-inspector');
+      h.append(node('div','STRUCTURAL ANALYSIS / PILOT','eyebrow'),node('h2','Incremental response'));
+      if(this.message)h.append(node('p',this.message,'fem-error'));
+      if(!this.info){h.append(node('p',this.loading?'Loading inputs…':'Preparing inputs…'));return;}
+      if(!this.info.available){h.append(node('p',this.info.reason,'source-note'));return;}
+      h.append(node('p','12 girders · longitudinal beam model. Each case shows only the additional effect of its selected load.','source-note'));
+      const busy=this.pending||['queued','running'].includes(this.run?.status);
+      const form=node('div',undefined,'fem-form');
+      const label=node('label','Load case'),select=node('select');select.id='femCase';select.disabled=busy;
+      for(const [value,text] of Object.entries(this.info.cases)){const o=node('option',text);o.value=value;select.append(o);}select.value=this.options.case;
+      select.onchange=()=>{this.options.case=select.value;if(select.value==='girder_weight')this.options.end_restraint='free';this.render();};label.append(select);form.append(label);
+      const supportLabel=node('label','End-rotation assumption'),support=node('select');support.id='femSupport';support.disabled=busy||this.options.case==='girder_weight';
+      for(const [value,text] of [['free','Free rotation'],['fixed','Fully restrained rotation']]){const o=node('option',text);o.value=value;support.append(o);}support.value=this.options.end_restraint;support.onchange=()=>{this.options.end_restraint=support.value;this.render();};supportLabel.append(support);form.append(supportLabel);
+      const multiplier=node('label','Load multiplier (research scenario)'),input=node('input');input.id='femFactor';input.type='number';input.min='.1';input.max='5';input.step='.1';input.value=this.options.load_factor;input.disabled=busy;input.oninput=()=>{this.options.load_factor=Number(input.value);};multiplier.append(input);form.append(multiplier);
+      const run=action(busy?'Analysis running…':'Run analysis',()=>this.start());run.id='femRun';run.className='primary';run.disabled=busy;form.append(run);h.append(form);
+      if(this.run){const status=node('p',this.run.status==='completed'?'Numerical checks passed · Not field validated':this.run.status==='failed'?'Analysis failed':this.run.status==='queued'?'Queued':'Solving and checking equilibrium…','fem-status');status.id='femRunStatus';status.setAttribute('role','status');h.append(status);if(this.run.error)h.append(node('p',this.run.error,'fem-error'));}
+      const history=(this.info.runs||[]).filter(r=>r.status==='completed');
+      if(history.length){const label=node('label','Saved runs'),choices=node('select');label.className='fem-form';choices.id='femHistory';choices.disabled=busy;const blank=node('option','Select a saved run');blank.value='';choices.append(blank);
+        for(const run of history){const o=node('option',new Date(run.created_utc).toLocaleTimeString('en-US')+' · '+run.settings.case+' · '+run.settings.end_restraint+' · '+run.settings.load_factor+'×');o.value=run.id;choices.append(o);}choices.value=history.some(r=>r.id===this.run?.id)?this.run.id:'';
+        choices.onchange=async()=>{if(!choices.value)return;const epoch=this.epoch;try{const run=await api('/api/analysis/runs/'+choices.value);if(epoch!==this.epoch)return;this.viewer.clearAnalysis();this.applied=false;this.updateLegend();this.run=run;this.options={...run.settings};this.result=null;this.message='';await this.loadResult(run.id,epoch);}catch(e){if(epoch===this.epoch){this.message=e.message;this.render();}}};label.append(choices);h.append(label);
+      }
+      if(this.result)this.renderResults(h);
+      this.renderInputs(h);
+      h.append(link('Method, scope and reproducibility ↗','/analysis-guide'));
+    }
+    renderResults(h){const r=this.result;h.append(node('h3','Displayed result'),node('p',r.case_title+' · '+r.settings.load_factor+'× · '+r.settings.end_restraint+' end rotation','fem-result-case'));
+      if(this.options.case!==r.case||this.options.end_restraint!==r.settings.end_restraint||this.options.load_factor!==r.settings.load_factor)h.append(node('p','Controls differ from the displayed run. Run analysis to calculate those settings.','source-note'));
+      const metrics=node('dl',undefined,'property-list');for(const [name,value] of [['Peak |girder fiber stress|',fmt(r.max_stress_MPa)+' MPa'],['Peak |vertical displacement|',fmt(r.max_deflection_mm)+' mm'],['Applied / reaction',fmt(r.total_load_kN,2)+' / '+fmt(r.total_reaction_kN,2)+' kN'],['Elements / nodes',r.element_count+' / '+r.node_count]]){const row=node('div');row.append(node('dt',name),node('dd',value));metrics.append(row);}h.append(metrics);
+      const visuals=node('div',undefined,'fem-form'),fieldLabel=node('label','Color field'),field=node('select');field.id='femField';for(const [v,t] of [['stress_MPa','Max |top/bottom girder stress|'],['deflection_mm','Absolute vertical displacement']]){const o=node('option',t);o.value=v;field.append(o);}field.value=this.field;field.disabled=!this.run.current_inputs;field.onchange=()=>{this.field=field.value;this.apply();};fieldLabel.append(field);visuals.append(fieldLabel);
+      const deformation=node('label','Deformation display'),scale=node('select');scale.id='femScale';for(const v of [0,1,20,100,300]){const o=node('option',v?'Magnified ×'+v:'Original geometry');o.value=v;scale.append(o);}scale.value=this.scale;scale.disabled=!this.run.current_inputs;scale.onchange=()=>{this.scale=Number(scale.value);this.apply();};deformation.append(scale);visuals.append(deformation);
+      const toggle=action(this.applied?'Clear result colors':'Show result colors',()=>{if(this.applied){this.viewer.clearAnalysis();this.applied=false;this.updateLegend();}else this.apply();this.render();});toggle.id='femToggle';toggle.disabled=!this.run.current_inputs;visuals.append(toggle,action('Focus analyzed girders',()=>this.viewer.fit(r.members.map(m=>m.component_id))));h.append(visuals);
+      const ranked=[...r.members].sort((a,b)=>b.peak.stress_MPa-a.peak.stress_MPa);h.append(node('h3','Locations with larger nominal stress'));
+      const list=node('div',undefined,'fem-hotspots');for(const m of ranked.slice(0,4)){const b=action(m.component_id.split(':')[1]+' · '+fmt(m.peak.stress_MPa)+' MPa',()=>this.onSelect([m.component_id]));b.append(node('small','x = '+fmt(m.peak.x_m)+' m · span '+m.span));list.append(b);}h.append(list);
+      const selected=r.members.find(m=>this.selected.includes(m.component_id));if(selected){h.append(node('h3',selected.component_id.split(':')[1]),node('p','At this member’s peak: top '+fmt(selected.peak.top_MPa)+' MPa; bottom '+fmt(selected.peak.bottom_MPa)+' MPa. Positive = tension.','source-note'));}
+      if(r.support_sensitivity){const s=r.support_sensitivity;h.append(node('h3','Support sensitivity'),node('p',s.end_restraint+' end rotation: '+fmt(s.max_stress_MPa)+' MPa and '+fmt(s.max_deflection_mm)+' mm. Alternative idealization; actual support stiffness is unverified.','source-note'));}
+      const verification=node('details',undefined,'fem-details');verification.append(node('summary','Numerical verification'));
+      const maxError=Math.max(...r.equilibrium.map(c=>Math.max(c.force_error,c.moment_error)));
+      verification.append(node('p',r.verification.benchmarks.length+' analytical checks passed. Maximum equilibrium relative error '+maxError.toExponential(2)+'.'));
+      for(const c of r.verification.mesh_refinement)verification.append(node('p',c.quantity+': '+fmt(100*c.relative_change,5)+'% change at twice the mesh density (limit 1%).'));
+      verification.append(node('p',r.solver.name+' '+r.solver.version+' · Python '+r.solver.python),node('p','Input hash: '+this.run.input_hash));h.append(verification);
+      const downloads=node('div',undefined,'fem-downloads');downloads.append(link('Run JSON ↓','/api/analysis/runs/'+this.run.id+'/result.json'),link('Samples CSV ↓','/api/analysis/runs/'+this.run.id+'/samples.csv'));h.append(downloads);
+    }
+    renderInputs(h){const ledger=this.info.ledger,details=node('details',undefined,'fem-details');details.append(node('summary','Materials, inputs and sources'));
+      details.append(node('p','Derived E: girder '+fmt(this.info.derived.girder_E_GPa)+' GPa; deck '+fmt(this.info.derived.deck_E_GPa)+' GPa. These are estimates, not test results.'));
+      for(const row of ledger.evidence){const card=node('article',undefined,'fem-evidence');card.append(node('b',row.status.replaceAll('_',' ')));for(const f of row.fields)card.append(node('div',f+': '+JSON.stringify(ledger.values[f])));card.append(node('p',row.note));const s=ledger.sources[row.source];if(row.pdf_pages)for(const p of row.pdf_pages)card.append(link('PDF p. '+p,s.url+'#page='+p));else card.append(link(s.title,s.url));details.append(card);}h.append(details);
+      const scope=node('details',undefined,'fem-details');scope.append(node('summary','Assumptions and excluded effects'));const ul=node('ul');for(const text of ledger.assumptions)ul.append(node('li',text));scope.append(ul);h.append(scope);
+    }
+  }
+  window.bridgeAnalysis=new AnalysisPanel();
+})();
