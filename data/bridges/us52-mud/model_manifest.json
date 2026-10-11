@@ -1,0 +1,4883 @@
+{
+  "title": "US 52 over Mud Creek",
+  "structure_id": "052-70-10277",
+  "designation": "1006266",
+  "units": "metres",
+  "spans_ft": [
+    27,
+    36,
+    27
+  ],
+  "deck_length_ft": 91.5,
+  "deck_width_ft": 40.333333333333336,
+  "skew_deg": 0,
+  "source_pdf": "drawings.pdf",
+  "source_note": "2020-03-27 Stage 3 · DRAFT / NOT FOR CONSTRUCTION · Exterior detail modeling candidate",
+  "source_sha256": "d02d098ad77cba77ca3301917568557325b2a4262bbc7260f2c50205e2518ad4",
+  "assumptions": [
+    "The public document is a design draft, not final as-built plans. This model reconstructs that drawing version. A separate 12-page scanned plan set for the existing bridge is available and is not mixed with the new design.",
+    "Internal reinforcing bars, tendons and embedded hardware are excluded. Fabrication details absent from the drawings are not claimed as reconstructed.",
+    "Colors distinguish components. Individual volumes may overlap at assembly boundaries and must not be summed as a quantity takeoff.",
+    "The default view hides the LMC overlay to expose 24 panels and their joints. Enable the overlay layer to view the finished surface.",
+    "Elevation 910.80 ft is assigned local vertical coordinate 0. The 135 ft vertical curve and +/-0.5% tangents are modeled parabolically.",
+    "Deck, railings and bedding layers are separate model components. Their descriptions identify actual monolithic or precast integration where known."
+  ],
+  "layers": {
+    "deck": "Deck panels and structural slab",
+    "wearing": "Surface overlay",
+    "joints": "UHPC connections and joints",
+    "piers": "Pier module",
+    "abutments": "Abutments and wingwalls",
+    "foundations": "Foundations and piles",
+    "rails": "Railings and transitions",
+    "approaches": "Approach slab",
+    "bearings": "Bearing"
+  },
+  "parts": [
+    {
+      "id": "deck_1_1",
+      "name": "Span 1 Deck module I · row 1",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        39
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 26.166666666666664,
+        "width_ft": 4.833333333333332,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          -6.1468,
+          5.720671
+        ],
+        [
+          -5.6388,
+          -4.6736,
+          6.276794
+        ]
+      ],
+      "volume_m3": 5.96882419
+    },
+    {
+      "id": "deck_1_2",
+      "name": "Span 1 Deck module II · row 2",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        43
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 26.166666666666664,
+        "width_ft": 4.333333333333332,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          -4.4704,
+          5.754199
+        ],
+        [
+          -5.6388,
+          -3.1496,
+          6.307274
+        ]
+      ],
+      "volume_m3": 5.35135962
+    },
+    {
+      "id": "deck_1_3",
+      "name": "Span 1 Deck module II · row 3",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        43
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 26.166666666666664,
+        "width_ft": 4.333333333333333,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          -2.9464,
+          5.784679
+        ],
+        [
+          -5.6388,
+          -1.6256,
+          6.337754
+        ]
+      ],
+      "volume_m3": 5.35135962
+    },
+    {
+      "id": "deck_1_4",
+      "name": "Span 1 Deck module II · row 4",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        43
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 26.166666666666664,
+        "width_ft": 4.333333333333333,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          -1.4224,
+          5.815159
+        ],
+        [
+          -5.6388,
+          -0.1016,
+          6.368234
+        ]
+      ],
+      "volume_m3": 5.35135962
+    },
+    {
+      "id": "deck_1_5",
+      "name": "Span 1 Deck module II · row 5",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        43
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 26.166666666666664,
+        "width_ft": 4.333333333333333,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          0.1016,
+          5.815159
+        ],
+        [
+          -5.6388,
+          1.4224,
+          6.368234
+        ]
+      ],
+      "volume_m3": 5.35135962
+    },
+    {
+      "id": "deck_1_6",
+      "name": "Span 1 Deck module II · row 6",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        43
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 26.166666666666664,
+        "width_ft": 4.333333333333332,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          1.6256,
+          5.784679
+        ],
+        [
+          -5.6388,
+          2.9464,
+          6.337754
+        ]
+      ],
+      "volume_m3": 5.35135962
+    },
+    {
+      "id": "deck_1_7",
+      "name": "Span 1 Deck module II · row 7",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        43
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 26.166666666666664,
+        "width_ft": 4.333333333333332,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          3.1496,
+          5.754199
+        ],
+        [
+          -5.6388,
+          4.4704,
+          6.307274
+        ]
+      ],
+      "volume_m3": 5.35135962
+    },
+    {
+      "id": "deck_1_8",
+      "name": "Span 1 Deck module I · row 8",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        39
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 26.166666666666664,
+        "width_ft": 4.833333333333332,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          4.6736,
+          5.720671
+        ],
+        [
+          -5.6388,
+          6.1468,
+          6.276794
+        ]
+      ],
+      "volume_m3": 5.96882419
+    },
+    {
+      "id": "long_closure_1_1",
+      "name": "Span 1 longitudinal UHPC joint 1",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          -4.6736,
+          5.750135
+        ],
+        [
+          -5.6388,
+          -4.4704,
+          6.280858
+        ]
+      ],
+      "volume_m3": 0.8232861
+    },
+    {
+      "id": "long_closure_1_2",
+      "name": "Span 1 longitudinal UHPC joint 2",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          -3.1496,
+          5.780615
+        ],
+        [
+          -5.6388,
+          -2.9464,
+          6.311338
+        ]
+      ],
+      "volume_m3": 0.8232861
+    },
+    {
+      "id": "long_closure_1_3",
+      "name": "Span 1 longitudinal UHPC joint 3",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          -1.6256,
+          5.811095
+        ],
+        [
+          -5.6388,
+          -1.4224,
+          6.341818
+        ]
+      ],
+      "volume_m3": 0.8232861
+    },
+    {
+      "id": "long_closure_1_4",
+      "name": "Span 1 longitudinal UHPC joint 4",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          -0.1016,
+          5.841575
+        ],
+        [
+          -5.6388,
+          0.1016,
+          6.370266
+        ]
+      ],
+      "volume_m3": 0.8232861
+    },
+    {
+      "id": "long_closure_1_5",
+      "name": "Span 1 longitudinal UHPC joint 5",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          1.4224,
+          5.811095
+        ],
+        [
+          -5.6388,
+          1.6256,
+          6.341818
+        ]
+      ],
+      "volume_m3": 0.8232861
+    },
+    {
+      "id": "long_closure_1_6",
+      "name": "Span 1 longitudinal UHPC joint 6",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          2.9464,
+          5.780615
+        ],
+        [
+          -5.6388,
+          3.1496,
+          6.311338
+        ]
+      ],
+      "volume_m3": 0.8232861
+    },
+    {
+      "id": "long_closure_1_7",
+      "name": "Span 1 longitudinal UHPC joint 7",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          4.4704,
+          5.750135
+        ],
+        [
+          -5.6388,
+          4.6736,
+          6.280858
+        ]
+      ],
+      "volume_m3": 0.8232861
+    },
+    {
+      "id": "deck_2_1",
+      "name": "Span 2 Deck module III · row 1",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        47
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 35.0,
+        "width_ft": 4.833333333333332,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          -6.1468,
+          5.739737
+        ],
+        [
+          5.334,
+          -4.6736,
+          6.280646
+        ]
+      ],
+      "volume_m3": 7.98377758
+    },
+    {
+      "id": "deck_2_2",
+      "name": "Span 2 Deck module IV · row 2",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        49
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 35.0,
+        "width_ft": 4.333333333333332,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          -4.4704,
+          5.773265
+        ],
+        [
+          5.334,
+          -3.1496,
+          6.311126
+        ]
+      ],
+      "volume_m3": 7.15786956
+    },
+    {
+      "id": "deck_2_3",
+      "name": "Span 2 Deck module IV · row 3",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        49
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 35.0,
+        "width_ft": 4.333333333333333,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          -2.9464,
+          5.803745
+        ],
+        [
+          5.334,
+          -1.6256,
+          6.341606
+        ]
+      ],
+      "volume_m3": 7.15786956
+    },
+    {
+      "id": "deck_2_4",
+      "name": "Span 2 Deck module IV · row 4",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        49
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 35.0,
+        "width_ft": 4.333333333333333,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          -1.4224,
+          5.834225
+        ],
+        [
+          5.334,
+          -0.1016,
+          6.372086
+        ]
+      ],
+      "volume_m3": 7.15786956
+    },
+    {
+      "id": "deck_2_5",
+      "name": "Span 2 Deck module IV · row 5",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        49
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 35.0,
+        "width_ft": 4.333333333333333,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          0.1016,
+          5.834225
+        ],
+        [
+          5.334,
+          1.4224,
+          6.372086
+        ]
+      ],
+      "volume_m3": 7.15786956
+    },
+    {
+      "id": "deck_2_6",
+      "name": "Span 2 Deck module IV · row 6",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        49
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 35.0,
+        "width_ft": 4.333333333333332,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          1.6256,
+          5.803745
+        ],
+        [
+          5.334,
+          2.9464,
+          6.341606
+        ]
+      ],
+      "volume_m3": 7.15786956
+    },
+    {
+      "id": "deck_2_7",
+      "name": "Span 2 Deck module IV · row 7",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        49
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 35.0,
+        "width_ft": 4.333333333333332,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          3.1496,
+          5.773265
+        ],
+        [
+          5.334,
+          4.4704,
+          6.311126
+        ]
+      ],
+      "volume_m3": 7.15786956
+    },
+    {
+      "id": "deck_2_8",
+      "name": "Span 2 Deck module III · row 8",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        47
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 35.0,
+        "width_ft": 4.833333333333332,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          4.6736,
+          5.739737
+        ],
+        [
+          5.334,
+          6.1468,
+          6.280646
+        ]
+      ],
+      "volume_m3": 7.98377758
+    },
+    {
+      "id": "long_closure_2_1",
+      "name": "Span 2 longitudinal UHPC joint 1",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          -4.6736,
+          5.769201
+        ],
+        [
+          5.334,
+          -4.4704,
+          6.28471
+        ]
+      ],
+      "volume_m3": 1.1012107
+    },
+    {
+      "id": "long_closure_2_2",
+      "name": "Span 2 longitudinal UHPC joint 2",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          -3.1496,
+          5.799681
+        ],
+        [
+          5.334,
+          -2.9464,
+          6.31519
+        ]
+      ],
+      "volume_m3": 1.1012107
+    },
+    {
+      "id": "long_closure_2_3",
+      "name": "Span 2 longitudinal UHPC joint 3",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          -1.6256,
+          5.830161
+        ],
+        [
+          5.334,
+          -1.4224,
+          6.34567
+        ]
+      ],
+      "volume_m3": 1.1012107
+    },
+    {
+      "id": "long_closure_2_4",
+      "name": "Span 2 longitudinal UHPC joint 4",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          -0.1016,
+          5.860641
+        ],
+        [
+          5.334,
+          0.1016,
+          6.374118
+        ]
+      ],
+      "volume_m3": 1.1012107
+    },
+    {
+      "id": "long_closure_2_5",
+      "name": "Span 2 longitudinal UHPC joint 5",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          1.4224,
+          5.830161
+        ],
+        [
+          5.334,
+          1.6256,
+          6.34567
+        ]
+      ],
+      "volume_m3": 1.1012107
+    },
+    {
+      "id": "long_closure_2_6",
+      "name": "Span 2 longitudinal UHPC joint 6",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          2.9464,
+          5.799681
+        ],
+        [
+          5.334,
+          3.1496,
+          6.31519
+        ]
+      ],
+      "volume_m3": 1.1012107
+    },
+    {
+      "id": "long_closure_2_7",
+      "name": "Span 2 longitudinal UHPC joint 7",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          4.4704,
+          5.769201
+        ],
+        [
+          5.334,
+          4.6736,
+          6.28471
+        ]
+      ],
+      "volume_m3": 1.1012107
+    },
+    {
+      "id": "deck_3_1",
+      "name": "Span 3 Deck module I · row 1",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        41
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 26.166666666666664,
+        "width_ft": 4.833333333333332,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          -6.1468,
+          5.720671
+        ],
+        [
+          13.6144,
+          -4.6736,
+          6.276794
+        ]
+      ],
+      "volume_m3": 5.96882419
+    },
+    {
+      "id": "deck_3_2",
+      "name": "Span 3 Deck module II · row 2",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        45
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 26.166666666666664,
+        "width_ft": 4.333333333333332,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          -4.4704,
+          5.754199
+        ],
+        [
+          13.6144,
+          -3.1496,
+          6.307274
+        ]
+      ],
+      "volume_m3": 5.35135962
+    },
+    {
+      "id": "deck_3_3",
+      "name": "Span 3 Deck module II · row 3",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        45
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 26.166666666666664,
+        "width_ft": 4.333333333333333,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          -2.9464,
+          5.784679
+        ],
+        [
+          13.6144,
+          -1.6256,
+          6.337754
+        ]
+      ],
+      "volume_m3": 5.35135962
+    },
+    {
+      "id": "deck_3_4",
+      "name": "Span 3 Deck module II · row 4",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        45
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 26.166666666666664,
+        "width_ft": 4.333333333333333,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          -1.4224,
+          5.815159
+        ],
+        [
+          13.6144,
+          -0.1016,
+          6.368234
+        ]
+      ],
+      "volume_m3": 5.35135962
+    },
+    {
+      "id": "deck_3_5",
+      "name": "Span 3 Deck module II · row 5",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        45
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 26.166666666666664,
+        "width_ft": 4.333333333333333,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          0.1016,
+          5.815159
+        ],
+        [
+          13.6144,
+          1.4224,
+          6.368234
+        ]
+      ],
+      "volume_m3": 5.35135962
+    },
+    {
+      "id": "deck_3_6",
+      "name": "Span 3 Deck module II · row 6",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        45
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 26.166666666666664,
+        "width_ft": 4.333333333333332,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          1.6256,
+          5.784679
+        ],
+        [
+          13.6144,
+          2.9464,
+          6.337754
+        ]
+      ],
+      "volume_m3": 5.35135962
+    },
+    {
+      "id": "deck_3_7",
+      "name": "Span 3 Deck module II · row 7",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        45
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 26.166666666666664,
+        "width_ft": 4.333333333333332,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          3.1496,
+          5.754199
+        ],
+        [
+          13.6144,
+          4.4704,
+          6.307274
+        ]
+      ],
+      "volume_m3": 5.35135962
+    },
+    {
+      "id": "deck_3_8",
+      "name": "Span 3 Deck module I · row 8",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        37,
+        38,
+        41
+      ],
+      "basis": "Drawing dimensions; joint surface profiles simplified",
+      "note": "Joint interfaces are represented as straight surfaces. Module lifting pockets are represented in their filled, completed state.",
+      "dimensions": {
+        "length_ft": 26.166666666666664,
+        "width_ft": 4.833333333333332,
+        "depth_in": 20
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          4.6736,
+          5.720671
+        ],
+        [
+          13.6144,
+          6.1468,
+          6.276794
+        ]
+      ],
+      "volume_m3": 5.96882419
+    },
+    {
+      "id": "long_closure_3_1",
+      "name": "Span 3 longitudinal UHPC joint 1",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          -4.6736,
+          5.750135
+        ],
+        [
+          13.6144,
+          -4.4704,
+          6.280858
+        ]
+      ],
+      "volume_m3": 0.8232861
+    },
+    {
+      "id": "long_closure_3_2",
+      "name": "Span 3 longitudinal UHPC joint 2",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          -3.1496,
+          5.780615
+        ],
+        [
+          13.6144,
+          -2.9464,
+          6.311338
+        ]
+      ],
+      "volume_m3": 0.8232861
+    },
+    {
+      "id": "long_closure_3_3",
+      "name": "Span 3 longitudinal UHPC joint 3",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          -1.6256,
+          5.811095
+        ],
+        [
+          13.6144,
+          -1.4224,
+          6.341818
+        ]
+      ],
+      "volume_m3": 0.8232861
+    },
+    {
+      "id": "long_closure_3_4",
+      "name": "Span 3 longitudinal UHPC joint 4",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          -0.1016,
+          5.841575
+        ],
+        [
+          13.6144,
+          0.1016,
+          6.370266
+        ]
+      ],
+      "volume_m3": 0.8232861
+    },
+    {
+      "id": "long_closure_3_5",
+      "name": "Span 3 longitudinal UHPC joint 5",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          1.4224,
+          5.811095
+        ],
+        [
+          13.6144,
+          1.6256,
+          6.341818
+        ]
+      ],
+      "volume_m3": 0.8232861
+    },
+    {
+      "id": "long_closure_3_6",
+      "name": "Span 3 longitudinal UHPC joint 6",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          2.9464,
+          5.780615
+        ],
+        [
+          13.6144,
+          3.1496,
+          6.311338
+        ]
+      ],
+      "volume_m3": 0.8232861
+    },
+    {
+      "id": "long_closure_3_7",
+      "name": "Span 3 longitudinal UHPC joint 7",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          4.4704,
+          5.750135
+        ],
+        [
+          13.6144,
+          4.6736,
+          6.280858
+        ]
+      ],
+      "volume_m3": 0.8232861
+    },
+    {
+      "id": "transverse_closure_0",
+      "name": "Abutment transverse UHPC joint",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38,
+        39
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 1.0833333333333357
+      },
+      "bounds_m": [
+        [
+          -13.9446,
+          -6.1468,
+          5.719566
+        ],
+        [
+          -13.6144,
+          6.1468,
+          6.351607
+        ]
+      ],
+      "volume_m3": 2.06214813
+    },
+    {
+      "id": "transverse_closure_1",
+      "name": "Pier transverse UHPC joint",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38,
+        39
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 1.0
+      },
+      "bounds_m": [
+        [
+          -5.6388,
+          -6.1468,
+          5.73933
+        ],
+        [
+          -5.334,
+          6.1468,
+          6.370673
+        ]
+      ],
+      "volume_m3": 1.90352135
+    },
+    {
+      "id": "transverse_closure_2",
+      "name": "Pier transverse UHPC joint",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38,
+        39
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 1.0
+      },
+      "bounds_m": [
+        [
+          5.334,
+          -6.1468,
+          5.73933
+        ],
+        [
+          5.6388,
+          6.1468,
+          6.370673
+        ]
+      ],
+      "volume_m3": 1.90352135
+    },
+    {
+      "id": "transverse_closure_3",
+      "name": "Abutment transverse UHPC joint",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        37,
+        38,
+        39
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 1.0833333333333357
+      },
+      "bounds_m": [
+        [
+          13.6144,
+          -6.1468,
+          5.719566
+        ],
+        [
+          13.9446,
+          6.1468,
+          6.351607
+        ]
+      ],
+      "volume_m3": 2.06214813
+    },
+    {
+      "id": "deck_overlay",
+      "name": "LMC-VE overlay · 1½ in",
+      "layer": "wearing",
+      "color": "#aebcb8",
+      "pdf_pages": [
+        22,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "thickness_in": 1.5
+      },
+      "bounds_m": [
+        [
+          -13.9446,
+          -5.6896,
+          6.23671
+        ],
+        [
+          13.9446,
+          5.6896,
+          6.412218
+        ]
+      ],
+      "volume_m3": 12.09129349
+    },
+    {
+      "id": "pier_2_module_1",
+      "name": "Pier 2 Precast wall module 1",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        28,
+        29
+      ],
+      "basis": "Drawing dimensions; filled internal pockets integrated",
+      "note": "Outer modules have rounded ends. Internal steel pile pockets are represented by the exterior envelope after SCC filling.",
+      "dimensions": {
+        "thickness_ft": 3
+      },
+      "bounds_m": [
+        [
+          -5.9436,
+          -6.1468,
+          0.3048
+        ],
+        [
+          -5.0292,
+          -4.6736,
+          5.7436
+        ]
+      ],
+      "volume_m3": 6.81838296
+    },
+    {
+      "id": "pier_2_foot_1",
+      "name": "Pier 2 module 1 base enlargement",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        28,
+        29
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 4,
+        "depth_ft": 1
+      },
+      "bounds_m": [
+        [
+          -6.096,
+          -6.2992,
+          0.0
+        ],
+        [
+          -4.8768,
+          -4.6736,
+          0.3048
+        ]
+      ],
+      "volume_m3": 0.60409273
+    },
+    {
+      "id": "pier_2_module_2",
+      "name": "Pier 2 Precast wall module 2",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        28,
+        30
+      ],
+      "basis": "Drawing dimensions; filled internal pockets integrated",
+      "note": "Outer modules have rounded ends. Internal steel pile pockets are represented by the exterior envelope after SCC filling.",
+      "dimensions": {
+        "thickness_ft": 3
+      },
+      "bounds_m": [
+        [
+          -5.9436,
+          -4.4704,
+          0.3048
+        ],
+        [
+          -5.0292,
+          -3.1496,
+          5.77408
+        ]
+      ],
+      "volume_m3": 6.58951426
+    },
+    {
+      "id": "pier_2_foot_2",
+      "name": "Pier 2 module 2 base enlargement",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        28,
+        30
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 4,
+        "depth_ft": 1
+      },
+      "bounds_m": [
+        [
+          -6.096,
+          -4.4704,
+          0.0
+        ],
+        [
+          -4.8768,
+          -3.1496,
+          0.3048
+        ]
+      ],
+      "volume_m3": 0.49082534
+    },
+    {
+      "id": "pier_2_module_3",
+      "name": "Pier 2 Precast wall module 3",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        28,
+        31
+      ],
+      "basis": "Drawing dimensions; filled internal pockets integrated",
+      "note": "Outer modules have rounded ends. Internal steel pile pockets are represented by the exterior envelope after SCC filling.",
+      "dimensions": {
+        "thickness_ft": 3
+      },
+      "bounds_m": [
+        [
+          -5.9436,
+          -2.9464,
+          0.3048
+        ],
+        [
+          -5.0292,
+          -1.6256,
+          5.80456
+        ]
+      ],
+      "volume_m3": 6.62632616
+    },
+    {
+      "id": "pier_2_foot_3",
+      "name": "Pier 2 module 3 base enlargement",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        28,
+        31
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 4,
+        "depth_ft": 1
+      },
+      "bounds_m": [
+        [
+          -6.096,
+          -2.9464,
+          0.0
+        ],
+        [
+          -4.8768,
+          -1.6256,
+          0.3048
+        ]
+      ],
+      "volume_m3": 0.49082534
+    },
+    {
+      "id": "pier_2_module_4",
+      "name": "Pier 2 Precast wall module 4",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        28,
+        32
+      ],
+      "basis": "Drawing dimensions; filled internal pockets integrated",
+      "note": "Outer modules have rounded ends. Internal steel pile pockets are represented by the exterior envelope after SCC filling.",
+      "dimensions": {
+        "thickness_ft": 3
+      },
+      "bounds_m": [
+        [
+          -5.9436,
+          -1.4224,
+          0.3048
+        ],
+        [
+          -5.0292,
+          -0.1016,
+          5.83504
+        ]
+      ],
+      "volume_m3": 6.66313806
+    },
+    {
+      "id": "pier_2_foot_4",
+      "name": "Pier 2 module 4 base enlargement",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        28,
+        32
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 4,
+        "depth_ft": 1
+      },
+      "bounds_m": [
+        [
+          -6.096,
+          -1.4224,
+          0.0
+        ],
+        [
+          -4.8768,
+          -0.1016,
+          0.3048
+        ]
+      ],
+      "volume_m3": 0.49082534
+    },
+    {
+      "id": "pier_2_module_5",
+      "name": "Pier 2 Precast wall module 5",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        28,
+        33
+      ],
+      "basis": "Drawing dimensions; filled internal pockets integrated",
+      "note": "Outer modules have rounded ends. Internal steel pile pockets are represented by the exterior envelope after SCC filling.",
+      "dimensions": {
+        "thickness_ft": 3
+      },
+      "bounds_m": [
+        [
+          -5.9436,
+          0.1016,
+          0.3048
+        ],
+        [
+          -5.0292,
+          1.4224,
+          5.83504
+        ]
+      ],
+      "volume_m3": 6.66313806
+    },
+    {
+      "id": "pier_2_foot_5",
+      "name": "Pier 2 module 5 base enlargement",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        28,
+        33
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 4,
+        "depth_ft": 1
+      },
+      "bounds_m": [
+        [
+          -6.096,
+          0.1016,
+          0.0
+        ],
+        [
+          -4.8768,
+          1.4224,
+          0.3048
+        ]
+      ],
+      "volume_m3": 0.49082534
+    },
+    {
+      "id": "pier_2_module_6",
+      "name": "Pier 2 Precast wall module 6",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        28,
+        34
+      ],
+      "basis": "Drawing dimensions; filled internal pockets integrated",
+      "note": "Outer modules have rounded ends. Internal steel pile pockets are represented by the exterior envelope after SCC filling.",
+      "dimensions": {
+        "thickness_ft": 3
+      },
+      "bounds_m": [
+        [
+          -5.9436,
+          1.6256,
+          0.3048
+        ],
+        [
+          -5.0292,
+          2.9464,
+          5.80456
+        ]
+      ],
+      "volume_m3": 6.62632616
+    },
+    {
+      "id": "pier_2_foot_6",
+      "name": "Pier 2 module 6 base enlargement",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        28,
+        34
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 4,
+        "depth_ft": 1
+      },
+      "bounds_m": [
+        [
+          -6.096,
+          1.6256,
+          0.0
+        ],
+        [
+          -4.8768,
+          2.9464,
+          0.3048
+        ]
+      ],
+      "volume_m3": 0.49082534
+    },
+    {
+      "id": "pier_2_module_7",
+      "name": "Pier 2 Precast wall module 7",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        28,
+        35
+      ],
+      "basis": "Drawing dimensions; filled internal pockets integrated",
+      "note": "Outer modules have rounded ends. Internal steel pile pockets are represented by the exterior envelope after SCC filling.",
+      "dimensions": {
+        "thickness_ft": 3
+      },
+      "bounds_m": [
+        [
+          -5.9436,
+          3.1496,
+          0.3048
+        ],
+        [
+          -5.0292,
+          4.4704,
+          5.77408
+        ]
+      ],
+      "volume_m3": 6.58951426
+    },
+    {
+      "id": "pier_2_foot_7",
+      "name": "Pier 2 module 7 base enlargement",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        28,
+        35
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 4,
+        "depth_ft": 1
+      },
+      "bounds_m": [
+        [
+          -6.096,
+          3.1496,
+          0.0
+        ],
+        [
+          -4.8768,
+          4.4704,
+          0.3048
+        ]
+      ],
+      "volume_m3": 0.49082534
+    },
+    {
+      "id": "pier_2_module_8",
+      "name": "Pier 2 Precast wall module 8",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        28,
+        36
+      ],
+      "basis": "Drawing dimensions; filled internal pockets integrated",
+      "note": "Outer modules have rounded ends. Internal steel pile pockets are represented by the exterior envelope after SCC filling.",
+      "dimensions": {
+        "thickness_ft": 3
+      },
+      "bounds_m": [
+        [
+          -5.9436,
+          4.6736,
+          0.3048
+        ],
+        [
+          -5.0292,
+          6.1468,
+          5.7436
+        ]
+      ],
+      "volume_m3": 6.81838296
+    },
+    {
+      "id": "pier_2_foot_8",
+      "name": "Pier 2 module 8 base enlargement",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        28,
+        36
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 4,
+        "depth_ft": 1
+      },
+      "bounds_m": [
+        [
+          -6.096,
+          4.6736,
+          0.0
+        ],
+        [
+          -4.8768,
+          6.2992,
+          0.3048
+        ]
+      ],
+      "volume_m3": 0.60409273
+    },
+    {
+      "id": "pier_2_closure_1",
+      "name": "Pier 2 vertical UHPC connection 1",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        28
+      ],
+      "basis": "Drawing dimensions; joint surface profiles omitted",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -5.9436,
+          -4.6736,
+          0.0
+        ],
+        [
+          -5.0292,
+          -4.4704,
+          5.745632
+        ]
+      ],
+      "volume_m3": 1.06757343
+    },
+    {
+      "id": "pier_2_closure_2",
+      "name": "Pier 2 vertical UHPC connection 2",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        28
+      ],
+      "basis": "Drawing dimensions; joint surface profiles omitted",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -5.9436,
+          -3.1496,
+          0.0
+        ],
+        [
+          -5.0292,
+          -2.9464,
+          5.776112
+        ]
+      ],
+      "volume_m3": 1.0732368
+    },
+    {
+      "id": "pier_2_closure_3",
+      "name": "Pier 2 vertical UHPC connection 3",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        28
+      ],
+      "basis": "Drawing dimensions; joint surface profiles omitted",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -5.9436,
+          -1.6256,
+          0.0
+        ],
+        [
+          -5.0292,
+          -1.4224,
+          5.806592
+        ]
+      ],
+      "volume_m3": 1.07890017
+    },
+    {
+      "id": "pier_2_closure_4",
+      "name": "Pier 2 vertical UHPC connection 4",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        28
+      ],
+      "basis": "Drawing dimensions; joint surface profiles omitted",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -5.9436,
+          -0.1016,
+          0.0
+        ],
+        [
+          -5.0292,
+          0.1016,
+          5.837072
+        ]
+      ],
+      "volume_m3": 1.08456354
+    },
+    {
+      "id": "pier_2_closure_5",
+      "name": "Pier 2 vertical UHPC connection 5",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        28
+      ],
+      "basis": "Drawing dimensions; joint surface profiles omitted",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -5.9436,
+          1.4224,
+          0.0
+        ],
+        [
+          -5.0292,
+          1.6256,
+          5.806592
+        ]
+      ],
+      "volume_m3": 1.07890017
+    },
+    {
+      "id": "pier_2_closure_6",
+      "name": "Pier 2 vertical UHPC connection 6",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        28
+      ],
+      "basis": "Drawing dimensions; joint surface profiles omitted",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -5.9436,
+          2.9464,
+          0.0
+        ],
+        [
+          -5.0292,
+          3.1496,
+          5.776112
+        ]
+      ],
+      "volume_m3": 1.0732368
+    },
+    {
+      "id": "pier_2_closure_7",
+      "name": "Pier 2 vertical UHPC connection 7",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        28
+      ],
+      "basis": "Drawing dimensions; joint surface profiles omitted",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -5.9436,
+          4.4704,
+          0.0
+        ],
+        [
+          -5.0292,
+          4.6736,
+          5.745632
+        ]
+      ],
+      "volume_m3": 1.06757343
+    },
+    {
+      "id": "pier_2_bed",
+      "name": "Pier 2 1 in UHPC bedding layer",
+      "layer": "bearings",
+      "color": "#465e66",
+      "pdf_pages": [
+        28,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "thickness_in": 1
+      },
+      "bounds_m": [
+        [
+          -5.9436,
+          -6.1468,
+          5.713501
+        ],
+        [
+          -5.0292,
+          6.1468,
+          5.863057
+        ]
+      ],
+      "volume_m3": 0.2855282
+    },
+    {
+      "id": "pier_3_module_1",
+      "name": "Pier 3 Precast wall module 1",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        28,
+        29
+      ],
+      "basis": "Drawing dimensions; filled internal pockets integrated",
+      "note": "Outer modules have rounded ends. Internal steel pile pockets are represented by the exterior envelope after SCC filling.",
+      "dimensions": {
+        "thickness_ft": 3
+      },
+      "bounds_m": [
+        [
+          5.0292,
+          -6.1468,
+          0.3048
+        ],
+        [
+          5.9436,
+          -4.6736,
+          5.7436
+        ]
+      ],
+      "volume_m3": 6.81838296
+    },
+    {
+      "id": "pier_3_foot_1",
+      "name": "Pier 3 module 1 base enlargement",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        28,
+        29
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 4,
+        "depth_ft": 1
+      },
+      "bounds_m": [
+        [
+          4.8768,
+          -6.2992,
+          0.0
+        ],
+        [
+          6.096,
+          -4.6736,
+          0.3048
+        ]
+      ],
+      "volume_m3": 0.60409273
+    },
+    {
+      "id": "pier_3_module_2",
+      "name": "Pier 3 Precast wall module 2",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        28,
+        30
+      ],
+      "basis": "Drawing dimensions; filled internal pockets integrated",
+      "note": "Outer modules have rounded ends. Internal steel pile pockets are represented by the exterior envelope after SCC filling.",
+      "dimensions": {
+        "thickness_ft": 3
+      },
+      "bounds_m": [
+        [
+          5.0292,
+          -4.4704,
+          0.3048
+        ],
+        [
+          5.9436,
+          -3.1496,
+          5.77408
+        ]
+      ],
+      "volume_m3": 6.58951426
+    },
+    {
+      "id": "pier_3_foot_2",
+      "name": "Pier 3 module 2 base enlargement",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        28,
+        30
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 4,
+        "depth_ft": 1
+      },
+      "bounds_m": [
+        [
+          4.8768,
+          -4.4704,
+          0.0
+        ],
+        [
+          6.096,
+          -3.1496,
+          0.3048
+        ]
+      ],
+      "volume_m3": 0.49082534
+    },
+    {
+      "id": "pier_3_module_3",
+      "name": "Pier 3 Precast wall module 3",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        28,
+        31
+      ],
+      "basis": "Drawing dimensions; filled internal pockets integrated",
+      "note": "Outer modules have rounded ends. Internal steel pile pockets are represented by the exterior envelope after SCC filling.",
+      "dimensions": {
+        "thickness_ft": 3
+      },
+      "bounds_m": [
+        [
+          5.0292,
+          -2.9464,
+          0.3048
+        ],
+        [
+          5.9436,
+          -1.6256,
+          5.80456
+        ]
+      ],
+      "volume_m3": 6.62632616
+    },
+    {
+      "id": "pier_3_foot_3",
+      "name": "Pier 3 module 3 base enlargement",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        28,
+        31
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 4,
+        "depth_ft": 1
+      },
+      "bounds_m": [
+        [
+          4.8768,
+          -2.9464,
+          0.0
+        ],
+        [
+          6.096,
+          -1.6256,
+          0.3048
+        ]
+      ],
+      "volume_m3": 0.49082534
+    },
+    {
+      "id": "pier_3_module_4",
+      "name": "Pier 3 Precast wall module 4",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        28,
+        32
+      ],
+      "basis": "Drawing dimensions; filled internal pockets integrated",
+      "note": "Outer modules have rounded ends. Internal steel pile pockets are represented by the exterior envelope after SCC filling.",
+      "dimensions": {
+        "thickness_ft": 3
+      },
+      "bounds_m": [
+        [
+          5.0292,
+          -1.4224,
+          0.3048
+        ],
+        [
+          5.9436,
+          -0.1016,
+          5.83504
+        ]
+      ],
+      "volume_m3": 6.66313806
+    },
+    {
+      "id": "pier_3_foot_4",
+      "name": "Pier 3 module 4 base enlargement",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        28,
+        32
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 4,
+        "depth_ft": 1
+      },
+      "bounds_m": [
+        [
+          4.8768,
+          -1.4224,
+          0.0
+        ],
+        [
+          6.096,
+          -0.1016,
+          0.3048
+        ]
+      ],
+      "volume_m3": 0.49082534
+    },
+    {
+      "id": "pier_3_module_5",
+      "name": "Pier 3 Precast wall module 5",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        28,
+        33
+      ],
+      "basis": "Drawing dimensions; filled internal pockets integrated",
+      "note": "Outer modules have rounded ends. Internal steel pile pockets are represented by the exterior envelope after SCC filling.",
+      "dimensions": {
+        "thickness_ft": 3
+      },
+      "bounds_m": [
+        [
+          5.0292,
+          0.1016,
+          0.3048
+        ],
+        [
+          5.9436,
+          1.4224,
+          5.83504
+        ]
+      ],
+      "volume_m3": 6.66313806
+    },
+    {
+      "id": "pier_3_foot_5",
+      "name": "Pier 3 module 5 base enlargement",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        28,
+        33
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 4,
+        "depth_ft": 1
+      },
+      "bounds_m": [
+        [
+          4.8768,
+          0.1016,
+          0.0
+        ],
+        [
+          6.096,
+          1.4224,
+          0.3048
+        ]
+      ],
+      "volume_m3": 0.49082534
+    },
+    {
+      "id": "pier_3_module_6",
+      "name": "Pier 3 Precast wall module 6",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        28,
+        34
+      ],
+      "basis": "Drawing dimensions; filled internal pockets integrated",
+      "note": "Outer modules have rounded ends. Internal steel pile pockets are represented by the exterior envelope after SCC filling.",
+      "dimensions": {
+        "thickness_ft": 3
+      },
+      "bounds_m": [
+        [
+          5.0292,
+          1.6256,
+          0.3048
+        ],
+        [
+          5.9436,
+          2.9464,
+          5.80456
+        ]
+      ],
+      "volume_m3": 6.62632616
+    },
+    {
+      "id": "pier_3_foot_6",
+      "name": "Pier 3 module 6 base enlargement",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        28,
+        34
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 4,
+        "depth_ft": 1
+      },
+      "bounds_m": [
+        [
+          4.8768,
+          1.6256,
+          0.0
+        ],
+        [
+          6.096,
+          2.9464,
+          0.3048
+        ]
+      ],
+      "volume_m3": 0.49082534
+    },
+    {
+      "id": "pier_3_module_7",
+      "name": "Pier 3 Precast wall module 7",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        28,
+        35
+      ],
+      "basis": "Drawing dimensions; filled internal pockets integrated",
+      "note": "Outer modules have rounded ends. Internal steel pile pockets are represented by the exterior envelope after SCC filling.",
+      "dimensions": {
+        "thickness_ft": 3
+      },
+      "bounds_m": [
+        [
+          5.0292,
+          3.1496,
+          0.3048
+        ],
+        [
+          5.9436,
+          4.4704,
+          5.77408
+        ]
+      ],
+      "volume_m3": 6.58951426
+    },
+    {
+      "id": "pier_3_foot_7",
+      "name": "Pier 3 module 7 base enlargement",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        28,
+        35
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 4,
+        "depth_ft": 1
+      },
+      "bounds_m": [
+        [
+          4.8768,
+          3.1496,
+          0.0
+        ],
+        [
+          6.096,
+          4.4704,
+          0.3048
+        ]
+      ],
+      "volume_m3": 0.49082534
+    },
+    {
+      "id": "pier_3_module_8",
+      "name": "Pier 3 Precast wall module 8",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        28,
+        36
+      ],
+      "basis": "Drawing dimensions; filled internal pockets integrated",
+      "note": "Outer modules have rounded ends. Internal steel pile pockets are represented by the exterior envelope after SCC filling.",
+      "dimensions": {
+        "thickness_ft": 3
+      },
+      "bounds_m": [
+        [
+          5.0292,
+          4.6736,
+          0.3048
+        ],
+        [
+          5.9436,
+          6.1468,
+          5.7436
+        ]
+      ],
+      "volume_m3": 6.81838296
+    },
+    {
+      "id": "pier_3_foot_8",
+      "name": "Pier 3 module 8 base enlargement",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        28,
+        36
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 4,
+        "depth_ft": 1
+      },
+      "bounds_m": [
+        [
+          4.8768,
+          4.6736,
+          0.0
+        ],
+        [
+          6.096,
+          6.2992,
+          0.3048
+        ]
+      ],
+      "volume_m3": 0.60409273
+    },
+    {
+      "id": "pier_3_closure_1",
+      "name": "Pier 3 vertical UHPC connection 1",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        28
+      ],
+      "basis": "Drawing dimensions; joint surface profiles omitted",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          5.0292,
+          -4.6736,
+          0.0
+        ],
+        [
+          5.9436,
+          -4.4704,
+          5.745632
+        ]
+      ],
+      "volume_m3": 1.06757343
+    },
+    {
+      "id": "pier_3_closure_2",
+      "name": "Pier 3 vertical UHPC connection 2",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        28
+      ],
+      "basis": "Drawing dimensions; joint surface profiles omitted",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          5.0292,
+          -3.1496,
+          0.0
+        ],
+        [
+          5.9436,
+          -2.9464,
+          5.776112
+        ]
+      ],
+      "volume_m3": 1.0732368
+    },
+    {
+      "id": "pier_3_closure_3",
+      "name": "Pier 3 vertical UHPC connection 3",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        28
+      ],
+      "basis": "Drawing dimensions; joint surface profiles omitted",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          5.0292,
+          -1.6256,
+          0.0
+        ],
+        [
+          5.9436,
+          -1.4224,
+          5.806592
+        ]
+      ],
+      "volume_m3": 1.07890017
+    },
+    {
+      "id": "pier_3_closure_4",
+      "name": "Pier 3 vertical UHPC connection 4",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        28
+      ],
+      "basis": "Drawing dimensions; joint surface profiles omitted",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          5.0292,
+          -0.1016,
+          0.0
+        ],
+        [
+          5.9436,
+          0.1016,
+          5.837072
+        ]
+      ],
+      "volume_m3": 1.08456354
+    },
+    {
+      "id": "pier_3_closure_5",
+      "name": "Pier 3 vertical UHPC connection 5",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        28
+      ],
+      "basis": "Drawing dimensions; joint surface profiles omitted",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          5.0292,
+          1.4224,
+          0.0
+        ],
+        [
+          5.9436,
+          1.6256,
+          5.806592
+        ]
+      ],
+      "volume_m3": 1.07890017
+    },
+    {
+      "id": "pier_3_closure_6",
+      "name": "Pier 3 vertical UHPC connection 6",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        28
+      ],
+      "basis": "Drawing dimensions; joint surface profiles omitted",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          5.0292,
+          2.9464,
+          0.0
+        ],
+        [
+          5.9436,
+          3.1496,
+          5.776112
+        ]
+      ],
+      "volume_m3": 1.0732368
+    },
+    {
+      "id": "pier_3_closure_7",
+      "name": "Pier 3 vertical UHPC connection 7",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        28
+      ],
+      "basis": "Drawing dimensions; joint surface profiles omitted",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          5.0292,
+          4.4704,
+          0.0
+        ],
+        [
+          5.9436,
+          4.6736,
+          5.745632
+        ]
+      ],
+      "volume_m3": 1.06757343
+    },
+    {
+      "id": "pier_3_bed",
+      "name": "Pier 3 1 in UHPC bedding layer",
+      "layer": "bearings",
+      "color": "#465e66",
+      "pdf_pages": [
+        28,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "thickness_in": 1
+      },
+      "bounds_m": [
+        [
+          5.0292,
+          -6.1468,
+          5.713501
+        ],
+        [
+          5.9436,
+          6.1468,
+          5.863057
+        ]
+      ],
+      "volume_m3": 0.2855282
+    },
+    {
+      "id": "bent_1_0",
+      "name": "Abutment 1 module A",
+      "layer": "abutments",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        23,
+        24,
+        25
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 3,
+        "module_length_ft": 19.666666666666668
+      },
+      "bounds_m": [
+        [
+          -14.1732,
+          -6.1468,
+          4.696968
+        ],
+        [
+          -13.2588,
+          -0.1524,
+          5.814822
+        ]
+      ],
+      "volume_m3": 5.79870025
+    },
+    {
+      "id": "bent_1_1",
+      "name": "Abutment 1 module B",
+      "layer": "abutments",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        23,
+        24,
+        25
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 3,
+        "module_length_ft": 19.666666666666668
+      },
+      "bounds_m": [
+        [
+          -14.1732,
+          0.1524,
+          4.696968
+        ],
+        [
+          -13.2588,
+          6.1468,
+          5.814822
+        ]
+      ],
+      "volume_m3": 5.79870025
+    },
+    {
+      "id": "bent_1_closure",
+      "name": "Abutment 1 central UHPC connection",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        23
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 1
+      },
+      "bounds_m": [
+        [
+          -14.1732,
+          -0.1524,
+          4.696968
+        ],
+        [
+          -13.2588,
+          0.1524,
+          5.81787
+        ]
+      ],
+      "volume_m3": 0.31240561
+    },
+    {
+      "id": "bent_1_bed",
+      "name": "Abutment 1 1 in UHPC bedding layer",
+      "layer": "bearings",
+      "color": "#465e66",
+      "pdf_pages": [
+        23,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "thickness_in": 1
+      },
+      "bounds_m": [
+        [
+          -14.1732,
+          -6.1468,
+          5.693385
+        ],
+        [
+          -13.2588,
+          6.1468,
+          5.844769
+        ]
+      ],
+      "volume_m3": 0.2855282
+    },
+    {
+      "id": "wing_1_-1",
+      "name": "Abutment 1 Wingwall -1",
+      "layer": "abutments",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        23,
+        27
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "length_ft": 9,
+        "width_ft": 3,
+        "height_ft": 3.6666666666666665
+      },
+      "bounds_m": [
+        [
+          -17.2212,
+          -6.1468,
+          4.696968
+        ],
+        [
+          -14.478,
+          -5.2324,
+          5.814568
+        ]
+      ],
+      "volume_m3": 2.80336781
+    },
+    {
+      "id": "wing_joint_1_-1",
+      "name": "Wingwall UHPC connection",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        23,
+        27
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "length_ft": 1
+      },
+      "bounds_m": [
+        [
+          -14.478,
+          -6.1468,
+          4.696968
+        ],
+        [
+          -14.1732,
+          -5.2324,
+          5.814568
+        ]
+      ],
+      "volume_m3": 0.31148531
+    },
+    {
+      "id": "wing_1_1",
+      "name": "Abutment 1 Wingwall 1",
+      "layer": "abutments",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        23,
+        27
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "length_ft": 9,
+        "width_ft": 3,
+        "height_ft": 3.6666666666666665
+      },
+      "bounds_m": [
+        [
+          -17.2212,
+          5.2324,
+          4.696968
+        ],
+        [
+          -14.478,
+          6.1468,
+          5.814568
+        ]
+      ],
+      "volume_m3": 2.80336781
+    },
+    {
+      "id": "wing_joint_1_1",
+      "name": "Wingwall UHPC connection",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        23,
+        27
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "length_ft": 1
+      },
+      "bounds_m": [
+        [
+          -14.478,
+          5.2324,
+          4.696968
+        ],
+        [
+          -14.1732,
+          6.1468,
+          5.814568
+        ]
+      ],
+      "volume_m3": 0.31148531
+    },
+    {
+      "id": "approach_1_1",
+      "name": "Approach slab 1 panel 1",
+      "layer": "approaches",
+      "color": "#c5d1cc",
+      "pdf_pages": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "basis": "Drawing dimensions; transition corners simplified",
+      "note": "",
+      "dimensions": {
+        "length_ft": 20.5,
+        "width_ft": 4.666666666666667,
+        "depth_in": 12
+      },
+      "bounds_m": [
+        [
+          -20.193,
+          -6.1468,
+          5.896846
+        ],
+        [
+          -13.9446,
+          -4.7244,
+          6.256014
+        ]
+      ],
+      "volume_m3": 2.70897832
+    },
+    {
+      "id": "approach_joint_1_1",
+      "name": "Approach slab longitudinal UHPC",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        53
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -20.193,
+          -4.7244,
+          5.925294
+        ],
+        [
+          -13.9446,
+          -4.5212,
+          6.260078
+        ]
+      ],
+      "volume_m3": 0.3869969
+    },
+    {
+      "id": "approach_1_2",
+      "name": "Approach slab 1 panel 2",
+      "layer": "approaches",
+      "color": "#c5d1cc",
+      "pdf_pages": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "basis": "Drawing dimensions; transition corners simplified",
+      "note": "",
+      "dimensions": {
+        "length_ft": 20.5,
+        "width_ft": 6.916666666666667,
+        "depth_in": 12
+      },
+      "bounds_m": [
+        [
+          -20.193,
+          -4.5212,
+          5.929358
+        ],
+        [
+          -13.9446,
+          -2.413,
+          6.302242
+        ]
+      ],
+      "volume_m3": 4.01509287
+    },
+    {
+      "id": "approach_joint_1_2",
+      "name": "Approach slab longitudinal UHPC",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        53
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -20.193,
+          -2.413,
+          5.971522
+        ],
+        [
+          -13.9446,
+          -2.2098,
+          6.306306
+        ]
+      ],
+      "volume_m3": 0.3869969
+    },
+    {
+      "id": "approach_1_3",
+      "name": "Approach slab 1 panel 3",
+      "layer": "approaches",
+      "color": "#c5d1cc",
+      "pdf_pages": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "basis": "Drawing dimensions; transition corners simplified",
+      "note": "",
+      "dimensions": {
+        "length_ft": 20.5,
+        "width_ft": 6.916666666666667,
+        "depth_in": 12
+      },
+      "bounds_m": [
+        [
+          -20.193,
+          -2.2098,
+          5.975586
+        ],
+        [
+          -13.9446,
+          -0.1016,
+          6.34847
+        ]
+      ],
+      "volume_m3": 4.01509287
+    },
+    {
+      "id": "approach_joint_1_3",
+      "name": "Approach slab longitudinal UHPC",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        53
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -20.193,
+          -0.1016,
+          6.01775
+        ],
+        [
+          -13.9446,
+          0.1016,
+          6.350502
+        ]
+      ],
+      "volume_m3": 0.3869969
+    },
+    {
+      "id": "approach_1_4",
+      "name": "Approach slab 1 panel 4",
+      "layer": "approaches",
+      "color": "#c5d1cc",
+      "pdf_pages": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "basis": "Drawing dimensions; transition corners simplified",
+      "note": "",
+      "dimensions": {
+        "length_ft": 20.5,
+        "width_ft": 6.916666666666667,
+        "depth_in": 12
+      },
+      "bounds_m": [
+        [
+          -20.193,
+          0.1016,
+          5.975586
+        ],
+        [
+          -13.9446,
+          2.2098,
+          6.34847
+        ]
+      ],
+      "volume_m3": 4.01509287
+    },
+    {
+      "id": "approach_joint_1_4",
+      "name": "Approach slab longitudinal UHPC",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        53
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -20.193,
+          2.2098,
+          5.971522
+        ],
+        [
+          -13.9446,
+          2.413,
+          6.306306
+        ]
+      ],
+      "volume_m3": 0.3869969
+    },
+    {
+      "id": "approach_1_5",
+      "name": "Approach slab 1 panel 5",
+      "layer": "approaches",
+      "color": "#c5d1cc",
+      "pdf_pages": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "basis": "Drawing dimensions; transition corners simplified",
+      "note": "",
+      "dimensions": {
+        "length_ft": 20.5,
+        "width_ft": 6.916666666666667,
+        "depth_in": 12
+      },
+      "bounds_m": [
+        [
+          -20.193,
+          2.413,
+          5.929358
+        ],
+        [
+          -13.9446,
+          4.5212,
+          6.302242
+        ]
+      ],
+      "volume_m3": 4.01509287
+    },
+    {
+      "id": "approach_joint_1_5",
+      "name": "Approach slab longitudinal UHPC",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        53
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          -20.193,
+          4.5212,
+          5.925294
+        ],
+        [
+          -13.9446,
+          4.7244,
+          6.260078
+        ]
+      ],
+      "volume_m3": 0.3869969
+    },
+    {
+      "id": "approach_1_6",
+      "name": "Approach slab 1 panel 6",
+      "layer": "approaches",
+      "color": "#c5d1cc",
+      "pdf_pages": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "basis": "Drawing dimensions; transition corners simplified",
+      "note": "",
+      "dimensions": {
+        "length_ft": 20.5,
+        "width_ft": 4.666666666666667,
+        "depth_in": 12
+      },
+      "bounds_m": [
+        [
+          -20.193,
+          4.7244,
+          5.896846
+        ],
+        [
+          -13.9446,
+          6.1468,
+          6.256014
+        ]
+      ],
+      "volume_m3": 2.70897832
+    },
+    {
+      "id": "approach_overlay_1",
+      "name": "Approach LMC surface",
+      "layer": "wearing",
+      "color": "#aebcb8",
+      "pdf_pages": [
+        53
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "thickness_in": 1.5
+      },
+      "bounds_m": [
+        [
+          -20.193,
+          -5.6896,
+          6.21079
+        ],
+        [
+          -13.9446,
+          5.6896,
+          6.388602
+        ]
+      ],
+      "volume_m3": 2.70897832
+    },
+    {
+      "id": "sleeper_1",
+      "name": "Approach sleeper slab",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        53,
+        59
+      ],
+      "basis": "Drawing width; thickness approximate",
+      "note": "The 6 ft wide sleeper location is included; detailed steps are simplified.",
+      "dimensions": {
+        "width_ft": 6
+      },
+      "bounds_m": [
+        [
+          -21.1074,
+          -6.1468,
+          5.587457
+        ],
+        [
+          -19.2786,
+          6.1468,
+          6.024168
+        ]
+      ],
+      "volume_m3": 6.85267688
+    },
+    {
+      "id": "approach_rail_1_-1",
+      "name": "Exterior concrete railing 2",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        51,
+        53,
+        54
+      ],
+      "basis": "Drawing layout; transition section approximate",
+      "note": "TFC approach railing transitions are approximated using the FC railing height. Standard transition curvature and section variation are unavailable.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -20.193,
+          -6.1468,
+          6.239746
+        ],
+        [
+          -13.9446,
+          -5.6896,
+          7.10795
+        ]
+      ],
+      "volume_m3": 1.78714203
+    },
+    {
+      "id": "approach_rail_1_1",
+      "name": "Exterior concrete railing 1",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        51,
+        53,
+        54
+      ],
+      "basis": "Drawing layout; transition section approximate",
+      "note": "TFC approach railing transitions are approximated using the FC railing height. Standard transition curvature and section variation are unavailable.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -20.193,
+          5.6896,
+          6.239746
+        ],
+        [
+          -13.9446,
+          6.1468,
+          7.10795
+        ]
+      ],
+      "volume_m3": 1.78714203
+    },
+    {
+      "id": "bent_2_0",
+      "name": "Abutment 2 module A",
+      "layer": "abutments",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        23,
+        24,
+        25
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 3,
+        "module_length_ft": 19.666666666666668
+      },
+      "bounds_m": [
+        [
+          13.2588,
+          -6.1468,
+          4.696968
+        ],
+        [
+          14.1732,
+          -0.1524,
+          5.814822
+        ]
+      ],
+      "volume_m3": 5.79870025
+    },
+    {
+      "id": "bent_2_1",
+      "name": "Abutment 2 module B",
+      "layer": "abutments",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        23,
+        24,
+        25
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 3,
+        "module_length_ft": 19.666666666666668
+      },
+      "bounds_m": [
+        [
+          13.2588,
+          0.1524,
+          4.696968
+        ],
+        [
+          14.1732,
+          6.1468,
+          5.814822
+        ]
+      ],
+      "volume_m3": 5.79870025
+    },
+    {
+      "id": "bent_2_closure",
+      "name": "Abutment 2 central UHPC connection",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        23
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_ft": 1
+      },
+      "bounds_m": [
+        [
+          13.2588,
+          -0.1524,
+          4.696968
+        ],
+        [
+          14.1732,
+          0.1524,
+          5.81787
+        ]
+      ],
+      "volume_m3": 0.31240561
+    },
+    {
+      "id": "bent_2_bed",
+      "name": "Abutment 2 1 in UHPC bedding layer",
+      "layer": "bearings",
+      "color": "#465e66",
+      "pdf_pages": [
+        23,
+        38
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "thickness_in": 1
+      },
+      "bounds_m": [
+        [
+          13.2588,
+          -6.1468,
+          5.693385
+        ],
+        [
+          14.1732,
+          6.1468,
+          5.844769
+        ]
+      ],
+      "volume_m3": 0.2855282
+    },
+    {
+      "id": "wing_2_-1",
+      "name": "Abutment 2 Wingwall -1",
+      "layer": "abutments",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        23,
+        27
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "length_ft": 9,
+        "width_ft": 3,
+        "height_ft": 3.6666666666666665
+      },
+      "bounds_m": [
+        [
+          14.478,
+          -6.1468,
+          4.696968
+        ],
+        [
+          17.2212,
+          -5.2324,
+          5.814568
+        ]
+      ],
+      "volume_m3": 2.80336781
+    },
+    {
+      "id": "wing_joint_2_-1",
+      "name": "Wingwall UHPC connection",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        23,
+        27
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "length_ft": 1
+      },
+      "bounds_m": [
+        [
+          14.1732,
+          -6.1468,
+          4.696968
+        ],
+        [
+          14.478,
+          -5.2324,
+          5.814568
+        ]
+      ],
+      "volume_m3": 0.31148531
+    },
+    {
+      "id": "wing_2_1",
+      "name": "Abutment 2 Wingwall 1",
+      "layer": "abutments",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        23,
+        27
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "length_ft": 9,
+        "width_ft": 3,
+        "height_ft": 3.6666666666666665
+      },
+      "bounds_m": [
+        [
+          14.478,
+          5.2324,
+          4.696968
+        ],
+        [
+          17.2212,
+          6.1468,
+          5.814568
+        ]
+      ],
+      "volume_m3": 2.80336781
+    },
+    {
+      "id": "wing_joint_2_1",
+      "name": "Wingwall UHPC connection",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        23,
+        27
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "length_ft": 1
+      },
+      "bounds_m": [
+        [
+          14.1732,
+          5.2324,
+          4.696968
+        ],
+        [
+          14.478,
+          6.1468,
+          5.814568
+        ]
+      ],
+      "volume_m3": 0.31148531
+    },
+    {
+      "id": "approach_2_1",
+      "name": "Approach slab 2 panel 1",
+      "layer": "approaches",
+      "color": "#c5d1cc",
+      "pdf_pages": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "basis": "Drawing dimensions; transition corners simplified",
+      "note": "",
+      "dimensions": {
+        "length_ft": 20.5,
+        "width_ft": 4.666666666666667,
+        "depth_in": 12
+      },
+      "bounds_m": [
+        [
+          13.9446,
+          -6.1468,
+          5.896846
+        ],
+        [
+          20.193,
+          -4.7244,
+          6.256014
+        ]
+      ],
+      "volume_m3": 2.70897832
+    },
+    {
+      "id": "approach_joint_2_1",
+      "name": "Approach slab longitudinal UHPC",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        53
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          13.9446,
+          -4.7244,
+          5.925294
+        ],
+        [
+          20.193,
+          -4.5212,
+          6.260078
+        ]
+      ],
+      "volume_m3": 0.3869969
+    },
+    {
+      "id": "approach_2_2",
+      "name": "Approach slab 2 panel 2",
+      "layer": "approaches",
+      "color": "#c5d1cc",
+      "pdf_pages": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "basis": "Drawing dimensions; transition corners simplified",
+      "note": "",
+      "dimensions": {
+        "length_ft": 20.5,
+        "width_ft": 6.916666666666667,
+        "depth_in": 12
+      },
+      "bounds_m": [
+        [
+          13.9446,
+          -4.5212,
+          5.929358
+        ],
+        [
+          20.193,
+          -2.413,
+          6.302242
+        ]
+      ],
+      "volume_m3": 4.01509287
+    },
+    {
+      "id": "approach_joint_2_2",
+      "name": "Approach slab longitudinal UHPC",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        53
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          13.9446,
+          -2.413,
+          5.971522
+        ],
+        [
+          20.193,
+          -2.2098,
+          6.306306
+        ]
+      ],
+      "volume_m3": 0.3869969
+    },
+    {
+      "id": "approach_2_3",
+      "name": "Approach slab 2 panel 3",
+      "layer": "approaches",
+      "color": "#c5d1cc",
+      "pdf_pages": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "basis": "Drawing dimensions; transition corners simplified",
+      "note": "",
+      "dimensions": {
+        "length_ft": 20.5,
+        "width_ft": 6.916666666666667,
+        "depth_in": 12
+      },
+      "bounds_m": [
+        [
+          13.9446,
+          -2.2098,
+          5.975586
+        ],
+        [
+          20.193,
+          -0.1016,
+          6.34847
+        ]
+      ],
+      "volume_m3": 4.01509287
+    },
+    {
+      "id": "approach_joint_2_3",
+      "name": "Approach slab longitudinal UHPC",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        53
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          13.9446,
+          -0.1016,
+          6.01775
+        ],
+        [
+          20.193,
+          0.1016,
+          6.350502
+        ]
+      ],
+      "volume_m3": 0.3869969
+    },
+    {
+      "id": "approach_2_4",
+      "name": "Approach slab 2 panel 4",
+      "layer": "approaches",
+      "color": "#c5d1cc",
+      "pdf_pages": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "basis": "Drawing dimensions; transition corners simplified",
+      "note": "",
+      "dimensions": {
+        "length_ft": 20.5,
+        "width_ft": 6.916666666666667,
+        "depth_in": 12
+      },
+      "bounds_m": [
+        [
+          13.9446,
+          0.1016,
+          5.975586
+        ],
+        [
+          20.193,
+          2.2098,
+          6.34847
+        ]
+      ],
+      "volume_m3": 4.01509287
+    },
+    {
+      "id": "approach_joint_2_4",
+      "name": "Approach slab longitudinal UHPC",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        53
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          13.9446,
+          2.2098,
+          5.971522
+        ],
+        [
+          20.193,
+          2.413,
+          6.306306
+        ]
+      ],
+      "volume_m3": 0.3869969
+    },
+    {
+      "id": "approach_2_5",
+      "name": "Approach slab 2 panel 5",
+      "layer": "approaches",
+      "color": "#c5d1cc",
+      "pdf_pages": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "basis": "Drawing dimensions; transition corners simplified",
+      "note": "",
+      "dimensions": {
+        "length_ft": 20.5,
+        "width_ft": 6.916666666666667,
+        "depth_in": 12
+      },
+      "bounds_m": [
+        [
+          13.9446,
+          2.413,
+          5.929358
+        ],
+        [
+          20.193,
+          4.5212,
+          6.302242
+        ]
+      ],
+      "volume_m3": 4.01509287
+    },
+    {
+      "id": "approach_joint_2_5",
+      "name": "Approach slab longitudinal UHPC",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        53
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "width_in": 8
+      },
+      "bounds_m": [
+        [
+          13.9446,
+          4.5212,
+          5.925294
+        ],
+        [
+          20.193,
+          4.7244,
+          6.260078
+        ]
+      ],
+      "volume_m3": 0.3869969
+    },
+    {
+      "id": "approach_2_6",
+      "name": "Approach slab 2 panel 6",
+      "layer": "approaches",
+      "color": "#c5d1cc",
+      "pdf_pages": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "basis": "Drawing dimensions; transition corners simplified",
+      "note": "",
+      "dimensions": {
+        "length_ft": 20.5,
+        "width_ft": 4.666666666666667,
+        "depth_in": 12
+      },
+      "bounds_m": [
+        [
+          13.9446,
+          4.7244,
+          5.896846
+        ],
+        [
+          20.193,
+          6.1468,
+          6.256014
+        ]
+      ],
+      "volume_m3": 2.70897832
+    },
+    {
+      "id": "approach_overlay_2",
+      "name": "Approach LMC surface",
+      "layer": "wearing",
+      "color": "#aebcb8",
+      "pdf_pages": [
+        53
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "thickness_in": 1.5
+      },
+      "bounds_m": [
+        [
+          13.9446,
+          -5.6896,
+          6.21079
+        ],
+        [
+          20.193,
+          5.6896,
+          6.388602
+        ]
+      ],
+      "volume_m3": 2.70897832
+    },
+    {
+      "id": "sleeper_2",
+      "name": "Approach sleeper slab",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        53,
+        59
+      ],
+      "basis": "Drawing width; thickness approximate",
+      "note": "The 6 ft wide sleeper location is included; detailed steps are simplified.",
+      "dimensions": {
+        "width_ft": 6
+      },
+      "bounds_m": [
+        [
+          19.2786,
+          -6.1468,
+          5.587457
+        ],
+        [
+          21.1074,
+          6.1468,
+          6.024168
+        ]
+      ],
+      "volume_m3": 6.85267688
+    },
+    {
+      "id": "approach_rail_2_-1",
+      "name": "Exterior concrete railing 2",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        51,
+        53,
+        54
+      ],
+      "basis": "Drawing layout; transition section approximate",
+      "note": "TFC approach railing transitions are approximated using the FC railing height. Standard transition curvature and section variation are unavailable.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          13.9446,
+          -6.1468,
+          6.239746
+        ],
+        [
+          20.193,
+          -5.6896,
+          7.10795
+        ]
+      ],
+      "volume_m3": 1.78714203
+    },
+    {
+      "id": "approach_rail_2_1",
+      "name": "Exterior concrete railing 1",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        51,
+        53,
+        54
+      ],
+      "basis": "Drawing layout; transition section approximate",
+      "note": "TFC approach railing transitions are approximated using the FC railing height. Standard transition curvature and section variation are unavailable.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          13.9446,
+          5.6896,
+          6.239746
+        ],
+        [
+          20.193,
+          6.1468,
+          7.10795
+        ]
+      ],
+      "volume_m3": 1.78714203
+    },
+    {
+      "id": "rail_1_-1",
+      "name": "Exterior concrete railing 2",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        39,
+        41,
+        47,
+        51
+      ],
+      "basis": "Drawing dimensions; section corners simplified",
+      "note": "Internal reinforcement and small chamfers are excluded.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          -6.1468,
+          6.228671
+        ],
+        [
+          -5.6388,
+          -5.6896,
+          7.089615
+        ]
+      ],
+      "volume_m3": 2.28114876
+    },
+    {
+      "id": "rail_1_1",
+      "name": "Exterior concrete railing 1",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        39,
+        41,
+        47,
+        51
+      ],
+      "basis": "Drawing dimensions; section corners simplified",
+      "note": "Internal reinforcement and small chamfers are excluded.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -13.6144,
+          5.6896,
+          6.228671
+        ],
+        [
+          -5.6388,
+          6.1468,
+          7.089615
+        ]
+      ],
+      "volume_m3": 2.28114876
+    },
+    {
+      "id": "rail_2_-1",
+      "name": "Exterior concrete railing 2",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        39,
+        41,
+        47,
+        51
+      ],
+      "basis": "Drawing dimensions; section corners simplified",
+      "note": "Internal reinforcement and small chamfers are excluded.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          -6.1468,
+          6.247737
+        ],
+        [
+          5.334,
+          -5.6896,
+          7.09345
+        ]
+      ],
+      "volume_m3": 3.05121809
+    },
+    {
+      "id": "rail_2_1",
+      "name": "Exterior concrete railing 1",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        39,
+        41,
+        47,
+        51
+      ],
+      "basis": "Drawing dimensions; section corners simplified",
+      "note": "Internal reinforcement and small chamfers are excluded.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -5.334,
+          5.6896,
+          6.247737
+        ],
+        [
+          5.334,
+          6.1468,
+          7.09345
+        ]
+      ],
+      "volume_m3": 3.05121809
+    },
+    {
+      "id": "rail_3_-1",
+      "name": "Exterior concrete railing 2",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        39,
+        41,
+        47,
+        51
+      ],
+      "basis": "Drawing dimensions; section corners simplified",
+      "note": "Internal reinforcement and small chamfers are excluded.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          -6.1468,
+          6.228671
+        ],
+        [
+          13.6144,
+          -5.6896,
+          7.089615
+        ]
+      ],
+      "volume_m3": 2.28114876
+    },
+    {
+      "id": "rail_3_1",
+      "name": "Exterior concrete railing 1",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        39,
+        41,
+        47,
+        51
+      ],
+      "basis": "Drawing dimensions; section corners simplified",
+      "note": "Internal reinforcement and small chamfers are excluded.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          5.6388,
+          5.6896,
+          6.228671
+        ],
+        [
+          13.6144,
+          6.1468,
+          7.089615
+        ]
+      ],
+      "volume_m3": 2.28114876
+    },
+    {
+      "id": "rail_closure_0_-1",
+      "name": "Exterior concrete railing 2",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        51
+      ],
+      "basis": "Drawing layout; railing joint envelope",
+      "note": "A total 1/2 in joint allowance is provided at each connection segment end.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -13.93825,
+          -6.1468,
+          6.227587
+        ],
+        [
+          -13.62075,
+          -5.6896,
+          7.070935
+        ]
+      ],
+      "volume_m3": 0.09081006
+    },
+    {
+      "id": "rail_closure_0_1",
+      "name": "Exterior concrete railing 1",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        51
+      ],
+      "basis": "Drawing layout; railing joint envelope",
+      "note": "A total 1/2 in joint allowance is provided at each connection segment end.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -13.93825,
+          5.6896,
+          6.227587
+        ],
+        [
+          -13.62075,
+          6.1468,
+          7.070935
+        ]
+      ],
+      "volume_m3": 0.09081006
+    },
+    {
+      "id": "rail_closure_1_-1",
+      "name": "Exterior concrete railing 2",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        51
+      ],
+      "basis": "Drawing layout; railing joint envelope",
+      "note": "A total 1/2 in joint allowance is provided at each connection segment end.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -5.63245,
+          -6.1468,
+          6.247339
+        ],
+        [
+          -5.34035,
+          -5.6896,
+          7.090013
+        ]
+      ],
+      "volume_m3": 0.08354526
+    },
+    {
+      "id": "rail_closure_1_1",
+      "name": "Exterior concrete railing 1",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        51
+      ],
+      "basis": "Drawing layout; railing joint envelope",
+      "note": "A total 1/2 in joint allowance is provided at each connection segment end.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -5.63245,
+          5.6896,
+          6.247339
+        ],
+        [
+          -5.34035,
+          6.1468,
+          7.090013
+        ]
+      ],
+      "volume_m3": 0.08354526
+    },
+    {
+      "id": "rail_closure_2_-1",
+      "name": "Exterior concrete railing 2",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        51
+      ],
+      "basis": "Drawing layout; railing joint envelope",
+      "note": "A total 1/2 in joint allowance is provided at each connection segment end.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          5.34035,
+          -6.1468,
+          6.247339
+        ],
+        [
+          5.63245,
+          -5.6896,
+          7.090013
+        ]
+      ],
+      "volume_m3": 0.08354526
+    },
+    {
+      "id": "rail_closure_2_1",
+      "name": "Exterior concrete railing 1",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        51
+      ],
+      "basis": "Drawing layout; railing joint envelope",
+      "note": "A total 1/2 in joint allowance is provided at each connection segment end.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          5.34035,
+          5.6896,
+          6.247339
+        ],
+        [
+          5.63245,
+          6.1468,
+          7.090013
+        ]
+      ],
+      "volume_m3": 0.08354526
+    },
+    {
+      "id": "rail_closure_3_-1",
+      "name": "Exterior concrete railing 2",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        51
+      ],
+      "basis": "Drawing layout; railing joint envelope",
+      "note": "A total 1/2 in joint allowance is provided at each connection segment end.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          13.62075,
+          -6.1468,
+          6.227587
+        ],
+        [
+          13.93825,
+          -5.6896,
+          7.070935
+        ]
+      ],
+      "volume_m3": 0.09081006
+    },
+    {
+      "id": "rail_closure_3_1",
+      "name": "Exterior concrete railing 1",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        51
+      ],
+      "basis": "Drawing layout; railing joint envelope",
+      "note": "A total 1/2 in joint allowance is provided at each connection segment end.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          13.62075,
+          5.6896,
+          6.227587
+        ],
+        [
+          13.93825,
+          6.1468,
+          7.070935
+        ]
+      ],
+      "volume_m3": 0.09081006
+    },
+    {
+      "id": "delineator_-1_0",
+      "name": "Railing reflector",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        22,
+        51
+      ],
+      "basis": "Layout reference; marker dimensions estimated",
+      "note": "Spacing does not exceed 40 ft. Small marker dimensions are for visualization only.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -12.22248,
+          -6.049264,
+          7.029269
+        ],
+        [
+          -12.16152,
+          -6.030976,
+          7.090229
+        ]
+      ],
+      "volume_m3": 6.796e-05
+    },
+    {
+      "id": "delineator_-1_1",
+      "name": "Railing reflector",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        22,
+        51
+      ],
+      "basis": "Layout reference; marker dimensions estimated",
+      "note": "Spacing does not exceed 40 ft. Small marker dimensions are for visualization only.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -0.03048,
+          -6.049264,
+          7.047332
+        ],
+        [
+          0.03048,
+          -6.030976,
+          7.108292
+        ]
+      ],
+      "volume_m3": 6.796e-05
+    },
+    {
+      "id": "delineator_-1_2",
+      "name": "Railing reflector",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        22,
+        51
+      ],
+      "basis": "Layout reference; marker dimensions estimated",
+      "note": "Spacing does not exceed 40 ft. Small marker dimensions are for visualization only.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          12.16152,
+          -6.049264,
+          7.029269
+        ],
+        [
+          12.22248,
+          -6.030976,
+          7.090229
+        ]
+      ],
+      "volume_m3": 6.796e-05
+    },
+    {
+      "id": "delineator_1_0",
+      "name": "Railing reflector",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        22,
+        51
+      ],
+      "basis": "Layout reference; marker dimensions estimated",
+      "note": "Spacing does not exceed 40 ft. Small marker dimensions are for visualization only.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -12.22248,
+          6.030976,
+          7.029269
+        ],
+        [
+          -12.16152,
+          6.049264,
+          7.090229
+        ]
+      ],
+      "volume_m3": 6.796e-05
+    },
+    {
+      "id": "delineator_1_1",
+      "name": "Railing reflector",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        22,
+        51
+      ],
+      "basis": "Layout reference; marker dimensions estimated",
+      "note": "Spacing does not exceed 40 ft. Small marker dimensions are for visualization only.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -0.03048,
+          6.030976,
+          7.047332
+        ],
+        [
+          0.03048,
+          6.049264,
+          7.108292
+        ]
+      ],
+      "volume_m3": 6.796e-05
+    },
+    {
+      "id": "delineator_1_2",
+      "name": "Railing reflector",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        22,
+        51
+      ],
+      "basis": "Layout reference; marker dimensions estimated",
+      "note": "Spacing does not exceed 40 ft. Small marker dimensions are for visualization only.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          12.16152,
+          6.030976,
+          7.029269
+        ],
+        [
+          12.22248,
+          6.049264,
+          7.090229
+        ]
+      ],
+      "volume_m3": 6.796e-05
+    }
+  ],
+  "detail_coverage": [
+    {
+      "feature": "General arrangement and deck",
+      "status": "modeled",
+      "detail": "Spans 27 + 36 + 27 ft; deck 91 ft 6 in by 40 ft 4 in; 2% crossfall and 135 ft vertical curve.",
+      "sources": [
+        21,
+        22
+      ]
+    },
+    {
+      "feature": "24 deck modules and UHPC",
+      "status": "mixed",
+      "detail": "Separately modeled 24 modules, 8 in longitudinal joints, 12 in transverse pier joints and 13 in abutment joints. Module length follows p39: 26 ft 2 in, distinguished from the p38 overview's 27 ft 3 in notation. Joint profiles and embedded pockets are simplified.",
+      "sources": [
+        37,
+        38,
+        39,
+        43,
+        47,
+        49
+      ]
+    },
+    {
+      "feature": "Piers, abutments and wingwalls",
+      "status": "mixed",
+      "detail": "Includes 8 modules per pier with vertical UHPC, rounded wall ends, segmented abutments and 4 wingwalls. Internal pile pockets are shown as filled envelopes.",
+      "sources": [
+        23,
+        27,
+        28
+      ]
+    },
+    {
+      "feature": "Approach slabs and railings",
+      "status": "mixed",
+      "detail": "Each approach includes 6 panels and connections. FC railing sections are approximate; TFC transition curvature is omitted.",
+      "sources": [
+        51,
+        53,
+        54
+      ]
+    },
+    {
+      "feature": "Internal and site details",
+      "status": "excluded",
+      "detail": "Internal reinforcement, pile lengths, embedded lifting devices, lane markings, continuous roadway and fine surface texture are excluded.",
+      "sources": [
+        14,
+        38,
+        39
+      ]
+    }
+  ],
+  "bounds_m": [
+    [
+      -21.107400000000002,
+      -6.2992,
+      0.0
+    ],
+    [
+      21.107400000000002,
+      6.2992,
+      7.108291600000008
+    ]
+  ],
+  "glb_bounds_m": [
+    [
+      -21.107400000000002,
+      0.0,
+      -6.2992
+    ],
+    [
+      21.107400000000002,
+      7.108291600000008,
+      6.2992
+    ]
+  ],
+  "default_hidden_layers": [
+    "foundations",
+    "wearing"
+  ],
+  "coordinate_system": {
+    "native": "X longitudinal / Y transverse / Z up; metres. Local datum described in assumptions.",
+    "glb": "(X,Z,-Y), metres, Y-up."
+  },
+  "model_scope": "Exterior drawing reconstruction; source-derived and inferred geometry tagged separately."
+}

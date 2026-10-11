@@ -1,0 +1,86 @@
+{
+  "note": "Source links and retrieval provenance retained from the original collection; links were not revalidated for this release. English metadata is translated; PDF and GLB bytes are unchanged.",
+  "bridges": [
+    {
+      "id": "beechwood",
+      "name": "Beechwood Road Bridge",
+      "plan_file": "bridges/beechwood/drawings.pdf",
+      "plan_sha256": "5e23f9c89075bcd9481b704c17b47311f67da8898f0c63d4bb92f4049bf976f5",
+      "model_sha256": "ade65ca82157ac5ed7ff1b6b3a09f04c6ea2b47b1c963e5822146e9c52805ce0",
+      "provenance": "User-provided project plans: Des1400825_Beechwood_Rd_over_Little_Blue_River_plans.pdf. Original public download URL was not recorded.",
+      "pages": 63
+    },
+    {
+      "id": "21st-street-i465",
+      "name": "21st Street over I-465",
+      "plan_file": "bridges/21st-street-i465/drawings.pdf",
+      "plan_sha256": "f799d79030f2faa821e4426f417e0f9036ec8409d3ae35cc97b44ca3f239ffa7",
+      "model_sha256": "a312539a80f32ae5dc472bc1a7eb10c856ba0eb71be260cdb508b4dd6b035c3f",
+      "source_url": "https://engineering.purdue.edu/~frosch/ftp/Pavelchak/Bridge%20Plans.pdf",
+      "pages": 77
+    },
+    {
+      "id": "us421-wildcat",
+      "name": "US 421 over South Fork Wildcat Creek",
+      "plan_file": "bridges/us421-wildcat/drawings.pdf",
+      "plan_sha256": "7164535956200383479db051aff49d347424ab04c047ff4b6cc398b3e1a3975f",
+      "model_sha256": "bfdc7840deffade0bb432be5fe583e6cd81f362d22bb96f315a2e7b430ddba44",
+      "source_url": "https://www.in.gov/indot/files/Design-Plans.pdf",
+      "pages": 30
+    },
+    {
+      "id": "us52-mud",
+      "name": "US 52 over Mud Creek",
+      "plan_file": "bridges/us52-mud/drawings.pdf",
+      "plan_sha256": "d02d098ad77cba77ca3301917568557325b2a4262bbc7260f2c50205e2518ad4",
+      "model_sha256": "a162d1b5edc0e74f7b3812aa03ac6255761d1f6313469bbed71c0ea9b5977720",
+      "source_url": "https://www.in.gov/dot/div/contracts/abc/New%20Files/STG3%20Plans%201006266%20for%20Bridge%20Services.pdf",
+      "pages": 64
+    },
+    {
+      "id": "sr58-white",
+      "name": "SR 58 over White Creek",
+      "plan_file": "bridges/sr58-white/drawings.pdf",
+      "plan_sha256": "ce32e3dccb1837359fc92d3b8904bf33250cc5e6d6837990cbf07ec0e965cbe1",
+      "model_sha256": "779ec247dc811699dbef35af14b3bfb4d41e080ccad7441673decc0a7c722058",
+      "source_url": "https://www.in.gov/indot/files/Plans.pdf",
+      "pages": 52
+    },
+    {
+      "id": "sr159-spencer",
+      "name": "SR 159 over Branch Spencer Creek",
+      "plan_file": "bridges/sr159-spencer/drawings.pdf",
+      "plan_sha256": "0286f119b10aa838fbff7669994d38e0f54a6653849a4c98fe7641bf2fa095c3",
+      "model_sha256": "12787ff2b189b90bb650c1f216bfa6e1452406106dc68aa2346265bad27cd6b7",
+      "source_url": "https://www.in.gov/indot/files/STG1-Design-Plans_SR-159-over-Branch-Spencer-Creek.pdf",
+      "pages": 20
+    },
+    {
+      "id": "sr62-csx",
+      "name": "SR 62 over CSX Railroad",
+      "plan_file": "bridges/sr62-csx/drawings.pdf",
+      "plan_sha256": "9c9ab1a0fdd6407af40e52d58e121544182ead64bcb503b87432aa00546798e5",
+      "model_sha256": "282e18e9d769c6dc6ec435f828af88081013188e8ded6f200bb113341f3e730c",
+      "source_url": "https://thelloyd4u.com/wp-content/uploads/2023/09/SR-62-over-CSX-RR-Bridge-Plans.pdf",
+      "pages": 6
+    },
+    {
+      "id": "sr62-tekoppel",
+      "name": "SR 62 over Tekoppel Avenue",
+      "plan_file": "bridges/sr62-tekoppel/drawings.pdf",
+      "plan_sha256": "0c1603c7f87f14bcabefd3ce01ad0bc81b66012de73444ffc5c0c54d559889a0",
+      "model_sha256": "15e887b28c0612b1c4709f1386832849ba910d9de8694ad78a9eaea06b16d36a",
+      "source_url": "https://thelloyd4u.com/wp-content/uploads/2023/09/SR-62-over-Tekoppel-Avenue-Bridge-Plans.pdf",
+      "pages": 6
+    },
+    {
+      "id": "sr62-carpentier",
+      "name": "SR 62 over Carpentier Creek",
+      "plan_file": "bridges/sr62-carpentier/drawings.pdf",
+      "plan_sha256": "dc334bbc6c008923917626f6f46338a9078652a7a916b020cb35c1e5877c891b",
+      "model_sha256": "bdbd2d000f85f65145b81e7626ddcabe757022194a2a3a7817ebe439cf234e0b",
+      "source_url": "https://thelloyd4u.com/wp-content/uploads/2023/09/SR-62-over-Carpentier-Creek-Bridge-Plans.pdf",
+      "pages": 6
+    }
+  ]
+}

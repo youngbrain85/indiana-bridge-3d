@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "bridges": [
+    {
+      "id": "beechwood",
+      "name": "Beechwood Road Bridge",
+      "county": "Crawford",
+      "waterway": "Little Blue River",
+      "structure_id": "13-00043 B",
+      "designation": "1400825",
+      "structure_type": "Prestressed bulb-tee girder bridge",
+      "latitude": 38.16694444444444,
+      "longitude": -86.41583333333334,
+      "location_source": {
+        "document": "Des1400825_Beechwood_Rd_over_Little_Blue_River_plans.pdf",
+        "page": 1,
+        "latitude_dms": "38°10′01″ N",
+        "longitude_dms": "86°24′57″ W",
+        "note": "Coordinates from the drawing cover. The cover does not identify a geodetic datum; these are displayed as geographic coordinates."
+      },
+      "model": {
+        "thumbnail": "bridges/beechwood/preview.png",
+        "glb": "bridges/beechwood/model.glb",
+        "deck_length_m": 76.8096,
+        "spans": 3,
+        "components": 622,
+        "revision": "Exterior details v2",
+        "scope": "Exterior geometry; internal reinforcement and tendons excluded",
+        "detail_status": "complete",
+        "detail_status_note": "Exterior details v2 completed within the project and standard-drawing scope. See coverage notes for selected product geometry and unresolved site details."
+      }
+    },
+    {
+      "id": "21st-street-i465",
+      "name": "21st Street over I-465",
+      "county": "Marion",
+      "waterway": "I-465",
+      "structure_id": "I-465-149-8974",
+      "designation": "9829512",
+      "structure_type": "2-span prestressed concrete U-girder bridge",
+      "latitude": 39.79388888888889,
+      "longitude": -86.27361111111111,
+      "location_source": {
+        "document": "Bridge%20Plans.pdf",
+        "page": 1,
+        "note": "Drawing-cover coordinates cross-checked against route, crossing and nearby coordinates in the 2025 FHWA NBI.",
+        "url": "https://engineering.purdue.edu/~frosch/ftp/Pavelchak/Bridge%20Plans.pdf"
+      },
+      "owner": "INDOT",
+      "maintenance": "INDOT",
+      "nbi_ids": [
+        "076591"
+      ],
+      "ownership_data_year": 2025,
+      "model": {
+        "thumbnail": "bridges/21st-street-i465/preview.png",
+        "glb": "bridges/21st-street-i465/model.glb",
+        "deck_length_m": 71.35495,
+        "spans": 2,
+        "components": 1944,
+        "revision": "Drawing-based exterior geometry v1",
+        "scope": "Exterior details; see coverage notes for estimates and simplifications",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Fabrication details and site measurements are unavailable. Drainage, electrical equipment and some connections remain unmodeled."
+      }
+    },
+    {
+      "id": "us421-wildcat",
+      "name": "US 421 over South Fork Wildcat Creek",
+      "county": "Clinton",
+      "waterway": "South Fork Wildcat Creek",
+      "structure_id": "(421)39-12-01792C",
+      "designation": "1593276",
+      "structure_type": "Central steel through-truss with concrete box-beam end spans",
+      "latitude": 40.31638888888889,
+      "longitude": -86.54666666666667,
+      "location_source": {
+        "document": "Design-Plans.pdf",
+        "page": 1,
+        "note": "Drawing-cover coordinates cross-checked against route, crossing and nearby coordinates in the 2025 FHWA NBI.",
+        "url": "https://www.in.gov/indot/files/Design-Plans.pdf"
+      },
+      "owner": "INDOT",
+      "maintenance": "INDOT",
+      "nbi_ids": [
+        "032200"
+      ],
+      "ownership_data_year": 2025,
+      "model": {
+        "thumbnail": "bridges/us421-wildcat/preview.png",
+        "glb": "bridges/us421-wildcat/model.glb",
+        "deck_length_m": 59.2836,
+        "spans": 3,
+        "components": 1057,
+        "revision": "Drawing-based exterior geometry v1",
+        "scope": "Exterior details; see coverage notes for estimates and simplifications",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Original truss design standard 1532 and fabrication drawings are unavailable; member sections and connection details are estimated."
+      }
+    },
+    {
+      "id": "us52-mud",
+      "name": "US 52 over Mud Creek",
+      "county": "Rush",
+      "waterway": "Mud Creek",
+      "structure_id": "052-70-10277",
+      "designation": "1006266",
+      "structure_type": "3-span modular concrete slab bridge",
+      "latitude": 39.63305555555556,
+      "longitude": -85.54472222222222,
+      "location_source": {
+        "document": "plans.pdf",
+        "page": 1,
+        "url": "https://www.in.gov/dot/div/contracts/abc/New%20Files/STG3%20Plans%201006266%20for%20Bridge%20Services.pdf",
+        "note": "Drawing-cover coordinates from INDOT project plans, checked against 2025 NBI ownership/maintenance codes 01/01. Replacement plans may represent a different asset version from the existing bridge."
+      },
+      "owner": "INDOT project",
+      "maintenance": "INDOT (NBI 2025 association)",
+      "nbi_ids": [
+        "019331"
+      ],
+      "ownership_data_year": 2025,
+      "ownership_note": "INDOT project plans, checked against 2025 NBI ownership/maintenance codes 01/01. Replacement plans may represent a different version from the existing bridge asset.",
+      "model": {
+        "thumbnail": "bridges/us52-mud/preview.png",
+        "glb": "bridges/us52-mud/model.glb",
+        "deck_length_m": 27.8892,
+        "spans": 3,
+        "components": 164,
+        "revision": "Based on detail drawings; partly approximate v1",
+        "scope": "Exterior geometry from preliminary plans; see coverage notes for estimates",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Deck module details are included. TFC transition railing details are unavailable and joint surface profiles are simplified."
+      }
+    },
+    {
+      "id": "sr58-white",
+      "name": "SR 58 over White Creek",
+      "county": "Bartholomew",
+      "waterway": "White Creek",
+      "structure_id": "058-03-10816",
+      "designation": "2100568",
+      "structure_type": "3-span concrete slab bridge",
+      "latitude": 39.09527777777778,
+      "longitude": -86.02805555555555,
+      "location_source": {
+        "document": "plans.pdf",
+        "page": 1,
+        "url": "https://www.in.gov/indot/files/Plans.pdf",
+        "note": "Drawing-cover coordinates from INDOT project plans, checked against 2025 NBI ownership/maintenance codes 01/01. Replacement plans may represent a different asset version from the existing bridge."
+      },
+      "owner": "INDOT project",
+      "maintenance": "INDOT (NBI 2025 association)",
+      "nbi_ids": [
+        "021100"
+      ],
+      "ownership_data_year": 2025,
+      "ownership_note": "INDOT project plans, checked against 2025 NBI ownership/maintenance codes 01/01. Replacement plans may represent a different version from the existing bridge asset.",
+      "model": {
+        "thumbnail": "bridges/sr58-white/preview.png",
+        "glb": "bridges/sr58-white/model.glb",
+        "deck_length_m": 30.9372,
+        "spans": 3,
+        "components": 41,
+        "revision": "Based on general drawings; includes estimates v1",
+        "scope": "Exterior geometry from preliminary plans; see coverage notes for estimates",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Available information is mainly general arrangement drawings. Pier, abutment, foundation and railing fabrication details are incomplete."
+      }
+    },
+    {
+      "id": "sr159-spencer",
+      "name": "SR 159 over Branch Spencer Creek",
+      "county": "Sullivan",
+      "waterway": "Branch Spencer Creek",
+      "structure_id": "159-77-10338",
+      "designation": "1700148",
+      "structure_type": "precast concrete 3-sided structure",
+      "latitude": 38.971111111111114,
+      "longitude": -87.25972222222222,
+      "location_source": {
+        "document": "plans.pdf",
+        "page": 1,
+        "url": "https://www.in.gov/indot/files/STG1-Design-Plans_SR-159-over-Branch-Spencer-Creek.pdf",
+        "note": "Drawing-cover coordinates from INDOT project plans, checked against 2025 NBI ownership/maintenance codes 01/01. Replacement plans may represent a different asset version from the existing bridge."
+      },
+      "owner": "INDOT project",
+      "maintenance": "INDOT (NBI 2025 association)",
+      "nbi_ids": [
+        "028061"
+      ],
+      "ownership_data_year": 2025,
+      "ownership_note": "INDOT project plans, checked against 2025 NBI ownership/maintenance codes 01/01. Replacement plans may represent a different version from the existing bridge asset.",
+      "model": {
+        "thumbnail": "bridges/sr159-spencer/preview.png",
+        "glb": "bridges/sr159-spencer/model.glb",
+        "deck_length_m": 9.906,
+        "spans": 1,
+        "components": 45,
+        "revision": "Based on general drawings; includes estimates v1",
+        "scope": "Exterior geometry from preliminary plans; see coverage notes for estimates",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Precast manufacturer drawings are unavailable. Roof thickness, segment joints and attachment details remain unconfirmed."
+      }
+    },
+    {
+      "id": "sr62-csx",
+      "name": "SR 62 over CSX Railroad",
+      "county": "Vanderburgh",
+      "waterway": "CSX Railroad",
+      "structure_id": "062-82-02788",
+      "designation": "1500041",
+      "structure_type": "Bulb-tee girder bridge · left skew 45°",
+      "latitude": 37.9775,
+      "longitude": -87.62166666666666,
+      "location_source": {
+        "document": "plans.pdf",
+        "page": 1,
+        "url": "https://thelloyd4u.com/wp-content/uploads/2023/09/SR-62-over-CSX-RR-Bridge-Plans.pdf",
+        "note": "Drawing-cover coordinates from INDOT plans, checked against 2025 NBI ownership/maintenance codes 01/01. Association with NBI 021940 is provisional because CSX and Evansville Western RR crossing names differ."
+      },
+      "owner": "INDOT project",
+      "maintenance": "NBI association tentative",
+      "nbi_ids": [
+        "021940"
+      ],
+      "ownership_data_year": 2025,
+      "ownership_note": "INDOT project plans, checked against 2025 NBI ownership/maintenance codes 01/01. Association with NBI 021940 is provisional because CSX and Evansville Western RR crossing names differ.",
+      "model": {
+        "thumbnail": "bridges/sr62-csx/preview.png",
+        "glb": "bridges/sr62-csx/model.glb",
+        "deck_length_m": 28.787725,
+        "spans": 1,
+        "components": 45,
+        "revision": "Based on general drawings; includes estimates v1",
+        "scope": "Exterior geometry from preliminary plans; see coverage notes for estimates",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Only a 6-page general arrangement extract is available. Bulb-tee girder, integral abutment and T-WALL fabrication details are missing."
+      }
+    },
+    {
+      "id": "sr62-tekoppel",
+      "name": "SR 62 over Tekoppel Avenue",
+      "county": "Vanderburgh",
+      "waterway": "Tekoppel Avenue",
+      "structure_id": "062-82-10333",
+      "designation": "1600060",
+      "structure_type": "Single-span bulb-tee girder bridge · skew 0°",
+      "latitude": 37.9775,
+      "longitude": -87.61888888888888,
+      "location_source": {
+        "document": "plans.pdf",
+        "page": 1,
+        "url": "https://thelloyd4u.com/wp-content/uploads/2023/09/SR-62-over-Tekoppel-Avenue-Bridge-Plans.pdf",
+        "note": "Drawing-cover coordinates from INDOT project plans, checked against 2025 NBI ownership/maintenance codes 01/01. Replacement plans may represent a different asset version from the existing bridge."
+      },
+      "owner": "INDOT project",
+      "maintenance": "INDOT (NBI 2025 association)",
+      "nbi_ids": [
+        "021950"
+      ],
+      "ownership_data_year": 2025,
+      "ownership_note": "INDOT project plans, checked against 2025 NBI ownership/maintenance codes 01/01. Replacement plans may represent a different version from the existing bridge asset.",
+      "model": {
+        "thumbnail": "bridges/sr62-tekoppel/preview.png",
+        "glb": "bridges/sr62-tekoppel/model.glb",
+        "deck_length_m": 24.8412,
+        "spans": 1,
+        "components": 45,
+        "revision": "Based on general drawings; includes estimates v1",
+        "scope": "Exterior geometry from preliminary plans; see coverage notes for estimates",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Only a 6-page general arrangement extract is available. Bulb-tee girder, integral abutment and MSE retaining wall details are incomplete."
+      }
+    },
+    {
+      "id": "sr62-carpentier",
+      "name": "SR 62 over Carpentier Creek",
+      "county": "Vanderburgh",
+      "waterway": "Carpentier Creek",
+      "structure_id": "062-82-10719",
+      "designation": "1602258",
+      "structure_type": "Single-span bulb-tee girder bridge · left skew 15°",
+      "latitude": 37.9775,
+      "longitude": -87.62527777777777,
+      "location_source": {
+        "document": "plans.pdf",
+        "page": 1,
+        "url": "https://thelloyd4u.com/wp-content/uploads/2023/09/SR-62-over-Carpentier-Creek-Bridge-Plans.pdf",
+        "note": "Drawing-cover coordinates from INDOT project plans, checked against 2025 NBI ownership/maintenance codes 01/01. Replacement plans may represent a different asset version from the existing bridge."
+      },
+      "owner": "INDOT project",
+      "maintenance": "INDOT (NBI 2025 association)",
+      "nbi_ids": [
+        "021930"
+      ],
+      "ownership_data_year": 2025,
+      "ownership_note": "INDOT project plans, checked against 2025 NBI ownership/maintenance codes 01/01. Replacement plans may represent a different version from the existing bridge asset.",
+      "model": {
+        "thumbnail": "bridges/sr62-carpentier/preview.png",
+        "glb": "bridges/sr62-carpentier/model.glb",
+        "deck_length_m": 25.549225,
+        "spans": 1,
+        "components": 49,
+        "revision": "Based on general drawings; includes estimates v1",
+        "scope": "Exterior geometry from preliminary plans; see coverage notes for estimates",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Only a 6-page general arrangement extract is available. Girder, abutment, retaining wall and inlet fabrication details are missing."
+      }
+    }
+  ]
+}

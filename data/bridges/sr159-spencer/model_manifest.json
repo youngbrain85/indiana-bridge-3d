@@ -1,0 +1,1292 @@
+{
+  "title": "SR 159 over Branch Spencer Creek",
+  "structure_id": "159-77-10338",
+  "designation": "1700148",
+  "units": "metres",
+  "spans_ft": [
+    30
+  ],
+  "deck_length_ft": 32.5,
+  "deck_width_ft": 32,
+  "skew_deg": 0,
+  "source_pdf": "drawings.pdf",
+  "source_note": "2020 Stage 1 public version · Primarily general arrangement drawings",
+  "source_sha256": "0286f119b10aa838fbff7669994d38e0f54a6653849a4c98fe7641bf2fa095c3",
+  "assumptions": [
+    "This is a 3-sided precast structure rather than a conventional girder bridge. Manufacturer fabrication details and final design documents are needed.",
+    "Internal reinforcing bars, tendons and embedded hardware are excluded. Fabrication details absent from the drawings are not claimed as reconstructed.",
+    "Colors distinguish components. Individual volumes may overlap at assembly boundaries and must not be summed as a quantity takeoff.",
+    "The vertical datum is the frame leg base at EL 491.54 ft. Roof soffit EL 501.54 ft and a rise of 10 ft are applied.",
+    "The alternative 32 ft span is not used; the main drawing's 30 ft span is modeled. No segment count was invented where the drawings did not provide one.",
+    "Post sections and spacing, roof thickness, footing sizes, fill and pavement surfaces are approximate. Differences between wingwall H1/H2 tables and plan elevations require source clarification."
+  ],
+  "layers": {
+    "deck": "Precast roof slab",
+    "foundations": "Foundations and piles",
+    "rails": "W-beam guardrails and posts",
+    "road_surface": "Road surface",
+    "frame_walls": "Precast sidewall",
+    "headwalls": "Headwalls and wingwalls",
+    "fill": "Fill above frame"
+  },
+  "parts": [
+    {
+      "id": "roof",
+      "name": "3-sided precast structure: roof slab",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing opening; roof thickness approximate",
+      "note": "Roof thickness is assumed to be 15 in because fabrication drawings are unavailable. Segment lengths are unspecified, so no arbitrary segment joints are added.",
+      "dimensions": {
+        "clear_span_ft": 30,
+        "roof_thickness_assumed_ft": 1.25
+      },
+      "bounds_m": [
+        [
+          -4.953,
+          -4.8768,
+          3.048
+        ],
+        [
+          4.953,
+          4.8768,
+          3.429
+        ]
+      ],
+      "volume_m3": 36.81190057
+    },
+    {
+      "id": "leg_1",
+      "name": "Precast sidewall 1",
+      "layer": "frame_walls",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing dimensions and stated drawing assumptions",
+      "note": "The sidewall assumption on p10 is applied: 1 ft 3 in.",
+      "dimensions": {
+        "thickness_ft": 1.25,
+        "clear_rise_ft": 10
+      },
+      "bounds_m": [
+        [
+          -4.953,
+          -4.8768,
+          0.0
+        ],
+        [
+          -4.572,
+          4.8768,
+          3.048
+        ]
+      ],
+      "volume_m3": 11.32673864
+    },
+    {
+      "id": "leg_foot_1",
+      "name": "Sidewall strip footing",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Drawing top elevation; width and thickness approximate",
+      "note": "Footing top EL 491.71 ft; wall reference EL 491.54 ft. Footing width 4 ft and thickness 1.5 ft are approximate.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -5.3721,
+          -4.8768,
+          -0.405384
+        ],
+        [
+          -4.1529,
+          4.8768,
+          0.051816
+        ]
+      ],
+      "volume_m3": 5.43683455
+    },
+    {
+      "id": "leg_2",
+      "name": "Precast sidewall 2",
+      "layer": "frame_walls",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing dimensions and stated drawing assumptions",
+      "note": "The sidewall assumption on p10 is applied: 1 ft 3 in.",
+      "dimensions": {
+        "thickness_ft": 1.25,
+        "clear_rise_ft": 10
+      },
+      "bounds_m": [
+        [
+          4.572,
+          -4.8768,
+          0.0
+        ],
+        [
+          4.953,
+          4.8768,
+          3.048
+        ]
+      ],
+      "volume_m3": 11.32673864
+    },
+    {
+      "id": "leg_foot_2",
+      "name": "Sidewall strip footing",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Drawing top elevation; width and thickness approximate",
+      "note": "Footing top EL 491.71 ft; wall reference EL 491.54 ft. Footing width 4 ft and thickness 1.5 ft are approximate.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          4.1529,
+          -4.8768,
+          -0.405384
+        ],
+        [
+          5.3721,
+          4.8768,
+          0.051816
+        ]
+      ],
+      "volume_m3": 5.43683455
+    },
+    {
+      "id": "headwall_-1",
+      "name": "Inlet/outlet headwall",
+      "layer": "headwalls",
+      "color": "#b7bdb0",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Plan dimensions; top profile approximate",
+      "note": "Length 32 ft 6 in and thickness 1 ft. Plan corner elevations differ from the wingwall height table; the top is approximated as a continuous envelope.",
+      "dimensions": {
+        "length_ft": 32.5,
+        "thickness_ft": 1
+      },
+      "bounds_m": [
+        [
+          -4.953,
+          -4.8768,
+          3.429
+        ],
+        [
+          4.953,
+          -4.572,
+          3.91668
+        ]
+      ],
+      "volume_m3": 1.47247602
+    },
+    {
+      "id": "wing_A",
+      "name": "Wingwall A",
+      "layer": "headwalls",
+      "color": "#b7bdb0",
+      "pdf_pages": [
+        10
+      ],
+      "basis": "Drawing wingwall table",
+      "note": "H1, H2 and L1 values are applied. These differ from general plan corner elevations; the two sources are not combined as confirmed dimensions.",
+      "dimensions": {
+        "height_near_ft": 12.8,
+        "height_far_ft": 12.67,
+        "length_ft": 21.5
+      },
+      "bounds_m": [
+        [
+          -11.5062,
+          -4.8768,
+          0.0
+        ],
+        [
+          -4.953,
+          -4.572,
+          3.90144
+        ]
+      ],
+      "volume_m3": 7.75322339
+    },
+    {
+      "id": "wing_foot_A",
+      "name": "Wingwall A Footing",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        10
+      ],
+      "basis": "Drawing layout; footing width and depth approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.5062,
+          -5.1816,
+          -0.405384
+        ],
+        [
+          -4.953,
+          -4.2672,
+          0.0
+        ]
+      ],
+      "volume_m3": 2.42916068
+    },
+    {
+      "id": "wing_D",
+      "name": "Wingwall D",
+      "layer": "headwalls",
+      "color": "#b7bdb0",
+      "pdf_pages": [
+        10
+      ],
+      "basis": "Drawing wingwall table",
+      "note": "H1, H2 and L1 values are applied. These differ from general plan corner elevations; the two sources are not combined as confirmed dimensions.",
+      "dimensions": {
+        "height_near_ft": 12.91,
+        "height_far_ft": 12.93,
+        "length_ft": 21.5
+      },
+      "bounds_m": [
+        [
+          4.953,
+          -4.8768,
+          0.0
+        ],
+        [
+          11.5062,
+          -4.572,
+          3.941064
+        ]
+      ],
+      "volume_m3": 7.86585365
+    },
+    {
+      "id": "wing_foot_D",
+      "name": "Wingwall D Footing",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        10
+      ],
+      "basis": "Drawing layout; footing width and depth approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          4.953,
+          -5.1816,
+          -0.405384
+        ],
+        [
+          11.5062,
+          -4.2672,
+          0.0
+        ]
+      ],
+      "volume_m3": 2.42916068
+    },
+    {
+      "id": "guard_-1",
+      "name": "Steel W-beam guardrail",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing type; section dimensions approximate",
+      "note": "Bolts and fabrication bend radii are excluded.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.5062,
+          -4.890211,
+          3.950589
+        ],
+        [
+          11.5062,
+          -4.81584,
+          4.370451
+        ]
+      ],
+      "volume_m3": 0.02993091
+    },
+    {
+      "id": "guard_-1_post_0",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.542776,
+          -4.882896,
+          3.340989
+        ],
+        [
+          -11.469624,
+          -4.748784,
+          4.194429
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_-1_post_1",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -9.625076,
+          -4.882896,
+          3.350578
+        ],
+        [
+          -9.551924,
+          -4.748784,
+          4.204018
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_-1_post_2",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -7.707376,
+          -4.882896,
+          3.360166
+        ],
+        [
+          -7.634224,
+          -4.748784,
+          4.213606
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_-1_post_3",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -5.789676,
+          -4.882896,
+          3.369755
+        ],
+        [
+          -5.716524,
+          -4.748784,
+          4.223195
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_-1_post_4",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -3.871976,
+          -4.882896,
+          3.379343
+        ],
+        [
+          -3.798824,
+          -4.748784,
+          4.232783
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_-1_post_5",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -1.954276,
+          -4.882896,
+          3.388932
+        ],
+        [
+          -1.881124,
+          -4.748784,
+          4.242372
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_-1_post_6",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -0.036576,
+          -4.882896,
+          3.39852
+        ],
+        [
+          0.036576,
+          -4.748784,
+          4.25196
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_-1_post_7",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          1.881124,
+          -4.882896,
+          3.408109
+        ],
+        [
+          1.954276,
+          -4.748784,
+          4.261549
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_-1_post_8",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          3.798824,
+          -4.882896,
+          3.417697
+        ],
+        [
+          3.871976,
+          -4.748784,
+          4.271137
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_-1_post_9",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          5.716524,
+          -4.882896,
+          3.427286
+        ],
+        [
+          5.789676,
+          -4.748784,
+          4.280726
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_-1_post_10",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          7.634224,
+          -4.882896,
+          3.436874
+        ],
+        [
+          7.707376,
+          -4.748784,
+          4.290314
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_-1_post_11",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          9.551924,
+          -4.882896,
+          3.446463
+        ],
+        [
+          9.625076,
+          -4.748784,
+          4.299903
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_-1_post_12",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          11.469624,
+          -4.882896,
+          3.456051
+        ],
+        [
+          11.542776,
+          -4.748784,
+          4.309491
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "headwall_1",
+      "name": "Inlet/outlet headwall",
+      "layer": "headwalls",
+      "color": "#b7bdb0",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Plan dimensions; top profile approximate",
+      "note": "Length 32 ft 6 in and thickness 1 ft. Plan corner elevations differ from the wingwall height table; the top is approximated as a continuous envelope.",
+      "dimensions": {
+        "length_ft": 32.5,
+        "thickness_ft": 1
+      },
+      "bounds_m": [
+        [
+          -4.953,
+          4.572,
+          3.429
+        ],
+        [
+          4.953,
+          4.8768,
+          3.998976
+        ]
+      ],
+      "volume_m3": 1.72095635
+    },
+    {
+      "id": "wing_B",
+      "name": "Wingwall B",
+      "layer": "headwalls",
+      "color": "#b7bdb0",
+      "pdf_pages": [
+        10
+      ],
+      "basis": "Drawing wingwall table",
+      "note": "H1, H2 and L1 values are applied. These differ from general plan corner elevations; the two sources are not combined as confirmed dimensions.",
+      "dimensions": {
+        "height_near_ft": 12.9,
+        "height_far_ft": 12.57,
+        "length_ft": 21.5
+      },
+      "bounds_m": [
+        [
+          -11.5062,
+          4.572,
+          0.0
+        ],
+        [
+          -4.953,
+          4.8768,
+          3.93192
+        ]
+      ],
+      "volume_m3": 7.75322339
+    },
+    {
+      "id": "wing_foot_B",
+      "name": "Wingwall B Footing",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        10
+      ],
+      "basis": "Drawing layout; footing width and depth approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.5062,
+          4.2672,
+          -0.405384
+        ],
+        [
+          -4.953,
+          5.1816,
+          0.0
+        ]
+      ],
+      "volume_m3": 2.42916068
+    },
+    {
+      "id": "wing_C",
+      "name": "Wingwall C",
+      "layer": "headwalls",
+      "color": "#b7bdb0",
+      "pdf_pages": [
+        10
+      ],
+      "basis": "Drawing wingwall table",
+      "note": "H1, H2 and L1 values are applied. These differ from general plan corner elevations; the two sources are not combined as confirmed dimensions.",
+      "dimensions": {
+        "height_near_ft": 13.31,
+        "height_far_ft": 13.49,
+        "length_ft": 21.5
+      },
+      "bounds_m": [
+        [
+          4.953,
+          4.572,
+          0.0
+        ],
+        [
+          11.5062,
+          4.8768,
+          4.111752
+        ]
+      ],
+      "volume_m3": 8.1580835
+    },
+    {
+      "id": "wing_foot_C",
+      "name": "Wingwall C Footing",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        10
+      ],
+      "basis": "Drawing layout; footing width and depth approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          4.953,
+          4.2672,
+          -0.405384
+        ],
+        [
+          11.5062,
+          5.1816,
+          0.0
+        ]
+      ],
+      "volume_m3": 2.42916068
+    },
+    {
+      "id": "guard_1",
+      "name": "Steel W-beam guardrail",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing type; section dimensions approximate",
+      "note": "Bolts and fabrication bend radii are excluded.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.5062,
+          4.81584,
+          3.950589
+        ],
+        [
+          11.5062,
+          4.890211,
+          4.370451
+        ]
+      ],
+      "volume_m3": 0.02993091
+    },
+    {
+      "id": "guard_1_post_0",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.542776,
+          4.748784,
+          3.340989
+        ],
+        [
+          -11.469624,
+          4.882896,
+          4.194429
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_1_post_1",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -9.625076,
+          4.748784,
+          3.350578
+        ],
+        [
+          -9.551924,
+          4.882896,
+          4.204018
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_1_post_2",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -7.707376,
+          4.748784,
+          3.360166
+        ],
+        [
+          -7.634224,
+          4.882896,
+          4.213606
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_1_post_3",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -5.789676,
+          4.748784,
+          3.369755
+        ],
+        [
+          -5.716524,
+          4.882896,
+          4.223195
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_1_post_4",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -3.871976,
+          4.748784,
+          3.379343
+        ],
+        [
+          -3.798824,
+          4.882896,
+          4.232783
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_1_post_5",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -1.954276,
+          4.748784,
+          3.388932
+        ],
+        [
+          -1.881124,
+          4.882896,
+          4.242372
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_1_post_6",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -0.036576,
+          4.748784,
+          3.39852
+        ],
+        [
+          0.036576,
+          4.882896,
+          4.25196
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_1_post_7",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          1.881124,
+          4.748784,
+          3.408109
+        ],
+        [
+          1.954276,
+          4.882896,
+          4.261549
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_1_post_8",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          3.798824,
+          4.748784,
+          3.417697
+        ],
+        [
+          3.871976,
+          4.882896,
+          4.271137
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_1_post_9",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          5.716524,
+          4.748784,
+          3.427286
+        ],
+        [
+          5.789676,
+          4.882896,
+          4.280726
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_1_post_10",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          7.634224,
+          4.748784,
+          3.436874
+        ],
+        [
+          7.707376,
+          4.882896,
+          4.290314
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_1_post_11",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          9.551924,
+          4.748784,
+          3.446463
+        ],
+        [
+          9.625076,
+          4.882896,
+          4.299903
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "guard_1_post_12",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        9,
+        10
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          11.469624,
+          4.748784,
+          3.456051
+        ],
+        [
+          11.542776,
+          4.882896,
+          4.309491
+        ]
+      ],
+      "volume_m3": 0.00837273
+    },
+    {
+      "id": "roof_cover",
+      "name": "Fill envelope above frame",
+      "layer": "fill",
+      "color": "#c1b392",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Fill location; surface elevation approximate",
+      "note": "The unresolved pavement superelevation transition in Stage 1 drawings is approximated by a representative plane.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -4.953,
+          -4.572,
+          3.429
+        ],
+        [
+          4.953,
+          4.572,
+          3.938397
+        ]
+      ],
+      "volume_m3": 41.41338814
+    },
+    {
+      "id": "road",
+      "name": "HMA pavement envelope",
+      "layer": "road_surface",
+      "color": "#b4beba",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "General drawing road width; pavement thickness and transition alignment approximate",
+      "note": "HMA pavement over fill. Detailed pavement thickness and superelevation transition values remain unconfirmed.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.5062,
+          -4.8006,
+          3.799865
+        ],
+        [
+          11.5062,
+          4.8006,
+          4.048735
+        ]
+      ],
+      "volume_m3": 16.8361351
+    }
+  ],
+  "detail_coverage": [
+    {
+      "feature": "Open-bottom precast frame",
+      "status": "mixed",
+      "detail": "Opening 30 ft by height 10 ft by waterway length 32 ft, with 15 in sidewalls. Roof thickness is approximated as 15 in; no bottom slab is modeled.",
+      "sources": [
+        9,
+        10
+      ]
+    },
+    {
+      "feature": "Headwalls and wingwalls",
+      "status": "mixed",
+      "detail": "Includes 32 ft 6 in headwalls, 21 ft 6 in wingwalls (4 total) and H1/H2 table values. Source conflicts in upper corner elevations are documented as approximations.",
+      "sources": [
+        10
+      ]
+    },
+    {
+      "feature": "Pavement and guardrails",
+      "status": "mixed",
+      "detail": "Pavement over fill with headwall-side W-beam guardrails and posts. Attachment hardware, bolts and roadway transitions are simplified.",
+      "sources": [
+        9,
+        10
+      ]
+    },
+    {
+      "feature": "Unavailable and internal details",
+      "status": "excluded",
+      "detail": "Fabrication segment joints, manufacturer haunches, reinforcement, streambed, bank protection and site fill limits are not modeled. Available general drawings cannot establish detailed fabrication geometry.",
+      "sources": [
+        9,
+        10
+      ]
+    }
+  ],
+  "bounds_m": [
+    [
+      -11.542776,
+      -5.1816,
+      -0.405384
+    ],
+    [
+      11.542776,
+      5.1816,
+      4.370451
+    ]
+  ],
+  "glb_bounds_m": [
+    [
+      -11.542776,
+      -0.405384,
+      -5.1816
+    ],
+    [
+      11.542776,
+      4.370451,
+      5.1816
+    ]
+  ],
+  "default_hidden_layers": [
+    "foundations"
+  ],
+  "coordinate_system": {
+    "native": "X longitudinal / Y transverse / Z up; metres. Local datum described in assumptions.",
+    "glb": "(X,Z,-Y), metres, Y-up."
+  },
+  "model_scope": "Exterior drawing reconstruction; source-derived and inferred geometry tagged separately."
+}

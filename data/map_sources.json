@@ -1,0 +1,18 @@
+{
+  "retrieved": "2026-09-26",
+  "boundary_source": "U.S. Census Bureau TIGERweb, January 1 2026 vintage",
+  "assets": [
+    {
+      "file": "web/vendor/states.geojson",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/10/query?where=STATE+IN+%28%2718%27%2C%2717%27%2C%2721%27%2C%2726%27%2C%2739%27%29&outFields=NAME%2CSTATE%2CGEOID%2CINTPTLAT%2CINTPTLON&outSR=4326&f=geojson&returnGeometry=true&geometryPrecision=5",
+      "features": 5,
+      "sha256": "8c44f0ac717f628760b32eb2105fd74e1638b07d5c6d349fb3a0e6725888d260"
+    },
+    {
+      "file": "web/vendor/indiana_counties.geojson",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/11/query?where=STATE%3D%2718%27&outFields=NAME%2CSTATE%2CGEOID%2CINTPTLAT%2CINTPTLON&outSR=4326&f=geojson&returnGeometry=true&geometryPrecision=5",
+      "features": 92,
+      "sha256": "bbd6f87e4be57ecc267e64014f441116bc4ad20913c85bdfad6fcb72af3395f3"
+    }
+  ]
+}

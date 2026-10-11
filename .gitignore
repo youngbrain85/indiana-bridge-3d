@@ -1,0 +1,19 @@
+# Local runtime state, generated assets and verification output
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+.env
+.env.*
+source_overrides.json
+data/assets/
+data/page_cache/
+data/*.sqlite3*
+data/*.log
+data/*.pid
+data/*.png
+data/*verification.json
+test-results/
+playwright-report/
+.DS_Store
+Thumbs.db

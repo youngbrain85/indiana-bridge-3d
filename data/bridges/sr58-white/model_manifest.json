@@ -1,0 +1,1165 @@
+{
+  "title": "SR 58 over White Creek",
+  "structure_id": "058-03-10816",
+  "designation": "2100568",
+  "units": "metres",
+  "spans_ft": [
+    30,
+    40,
+    30
+  ],
+  "deck_length_ft": 101.5,
+  "deck_width_ft": 33,
+  "skew_deg": 0,
+  "source_pdf": "drawings.pdf",
+  "source_note": "2024-03 Stage 2 · PRELIMINARY · Primarily general arrangement drawings",
+  "source_sha256": "ce32e3dccb1837359fc92d3b8904bf33250cc5e6d6837990cbf07ec0e965cbe1",
+  "assumptions": [
+    "Not all 52 pages contain bridge details. Dedicated abutment, pier and superstructure detail sheets are missing. Additional sources are needed to establish exterior details. NBI matching uses the location of the existing bridge being replaced.",
+    "Internal reinforcing bars, tendons and embedded hardware are excluded. Fabrication details absent from the drawings are not claimed as reconstructed.",
+    "Colors distinguish components. Individual volumes may overlap at assembly boundaries and must not be summed as a quantity takeoff.",
+    "The local origin is center station 408+00 with vertical datum EL 590 ft. Horizontal curvature uses model coordinates; the model is not oriented to geographic north.",
+    "Horizontal radius is 315 ft from the PR-A alignment table; vertical curve tangents are +/-3.21%. Pier base levels and footing thicknesses are estimated from general arrangement proportions."
+  ],
+  "layers": {
+    "deck": "Deck panels and structural slab",
+    "piers": "Pier module",
+    "abutments": "Abutments and wingwalls",
+    "foundations": "Foundations and piles",
+    "rails": "Railings and transitions",
+    "approaches": "Approach slab"
+  },
+  "parts": [
+    {
+      "id": "continuous_slab",
+      "name": "Continuous curved reinforced concrete slab",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        7,
+        25,
+        26
+      ],
+      "basis": "Drawing dimensions; curve interpolation",
+      "note": "Internal reinforcement is excluded. Total slab thickness is 2 ft, including a half-inch wearing allowance.",
+      "dimensions": {
+        "radius_ft": 315.0,
+        "depth_ft": 2
+      },
+      "bounds_m": [
+        [
+          -16.208527,
+          -5.0292,
+          4.980523
+        ],
+        [
+          16.208527,
+          6.207459,
+          6.495593
+        ]
+      ],
+      "volume_m3": 189.69324229
+    },
+    {
+      "id": "pier_2",
+      "name": "Pier 2 · rounded wall",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Plan dimensions; base elevation approximate",
+      "note": "Wall thickness is 2 ft 6 in. With footing details unavailable, wall base EL 594 ft is estimated from elevation drawing proportions.",
+      "dimensions": {
+        "thickness_ft": 2.5
+      },
+      "bounds_m": [
+        [
+          -6.78542,
+          -4.825662,
+          1.2192
+        ],
+        [
+          -5.435111,
+          5.212525,
+          5.870338
+        ]
+      ],
+      "volume_m3": 31.97844628
+    },
+    {
+      "id": "pier_footing_2",
+      "name": "Pier spread footing envelope",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Dimensions unavailable; estimated from elevation proportions",
+      "note": "Pile size and length are marked XX and remain unspecified; piles are not modeled.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -6.987112,
+          -4.860595,
+          0.94488
+        ],
+        [
+          -5.25386,
+          5.246995,
+          1.2192
+        ]
+      ],
+      "volume_m3": 3.02757133
+    },
+    {
+      "id": "pier_3",
+      "name": "Pier 3 · rounded wall",
+      "layer": "piers",
+      "color": "#b9c6c1",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Plan dimensions; base elevation approximate",
+      "note": "Wall thickness is 2 ft 6 in. With footing details unavailable, wall base EL 594 ft is estimated from elevation drawing proportions.",
+      "dimensions": {
+        "thickness_ft": 2.5
+      },
+      "bounds_m": [
+        [
+          5.435111,
+          -4.825662,
+          1.2192
+        ],
+        [
+          6.78542,
+          5.212525,
+          5.870338
+        ]
+      ],
+      "volume_m3": 31.97822989
+    },
+    {
+      "id": "pier_footing_3",
+      "name": "Pier spread footing envelope",
+      "layer": "foundations",
+      "color": "#768b8d",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Dimensions unavailable; estimated from elevation proportions",
+      "note": "Pile size and length are marked XX and remain unspecified; piles are not modeled.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          5.25386,
+          -4.860595,
+          0.94488
+        ],
+        [
+          6.987112,
+          5.246995,
+          1.2192
+        ]
+      ],
+      "volume_m3": 3.02757133
+    },
+    {
+      "id": "end_bent_1",
+      "name": "Integral abutment 1",
+      "layer": "abutments",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing width; height approximate",
+      "note": "Abutment width is 2 ft 6 in; height follows proportions in the general elevation.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -16.366812,
+          -3.821582,
+          4.247007
+        ],
+        [
+          -14.02453,
+          6.230739,
+          5.792983
+        ]
+      ],
+      "volume_m3": 5.6060221
+    },
+    {
+      "id": "approach_1",
+      "name": "Curved approach slab",
+      "layer": "approaches",
+      "color": "#c5d1cc",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing length; thickness approximate",
+      "note": "Approach length is 20 ft 6 in; slab thickness of 1 ft is an assumption for the general arrangement model.",
+      "dimensions": {
+        "length_ft": 20.5
+      },
+      "bounds_m": [
+        [
+          -22.660174,
+          -3.720681,
+          5.187443
+        ],
+        [
+          -14.595008,
+          7.346731,
+          6.394795
+        ]
+      ],
+      "volume_m3": 19.15084105
+    },
+    {
+      "id": "wing_1_-1",
+      "name": "Curved abutment wingwall",
+      "layer": "abutments",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "General arrangement layout; height approximate",
+      "note": "Curved abutment wingwall. Fabrication details for height and thickness are unavailable.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -22.660174,
+          -3.720681,
+          4.120643
+        ],
+        [
+          -16.135185,
+          -2.009906,
+          5.321899
+        ]
+      ],
+      "volume_m3": 3.19993587
+    },
+    {
+      "id": "approach_rail_1_-1",
+      "name": "Exterior concrete railing 2",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25,
+        26
+      ],
+      "basis": "Drawing FC/TFC type; height and transition sections approximate",
+      "note": "A 33 in height is assumed because the general drawings do not specify it. TFC transition sections are approximated by a constant FC envelope.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -22.660174,
+          -3.720681,
+          5.492243
+        ],
+        [
+          -16.135185,
+          -2.009906,
+          6.44466
+        ]
+      ],
+      "volume_m3": 1.87738
+    },
+    {
+      "id": "guard_1_-1",
+      "name": "Steel W-beam guardrail",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing type; section dimensions approximate",
+      "note": "Bolts and fabrication bend radii are excluded.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -28.203722,
+          -2.305159,
+          5.854666
+        ],
+        [
+          -22.608906,
+          -0.781092,
+          6.272531
+        ]
+      ],
+      "volume_m3": 0.00749406
+    },
+    {
+      "id": "guard_1_-1_post_0",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -28.238573,
+          -0.856211,
+          5.245066
+        ],
+        [
+          -28.127334,
+          -0.705974,
+          6.098506
+        ]
+      ],
+      "volume_m3": 0.00879136
+    },
+    {
+      "id": "guard_1_-1_post_1",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -25.460375,
+          -1.621274,
+          5.304768
+        ],
+        [
+          -25.352246,
+          -1.472134,
+          6.158208
+        ]
+      ],
+      "volume_m3": 0.00879136
+    },
+    {
+      "id": "guard_1_-1_post_2",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -22.661395,
+          -2.306642,
+          5.358131
+        ],
+        [
+          -22.556465,
+          -2.15872,
+          6.211571
+        ]
+      ],
+      "volume_m3": 0.00879136
+    },
+    {
+      "id": "wing_1_1",
+      "name": "Curved abutment wingwall",
+      "layer": "abutments",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "General arrangement layout; height approximate",
+      "note": "Curved abutment wingwall. Fabrication details for height and thickness are unavailable.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -20.506945,
+          5.75618,
+          4.888739
+        ],
+        [
+          -14.595008,
+          7.346731,
+          6.089995
+        ]
+      ],
+      "volume_m3": 2.89517795
+    },
+    {
+      "id": "approach_rail_1_1",
+      "name": "Exterior concrete railing 1",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25,
+        26
+      ],
+      "basis": "Drawing FC/TFC type; height and transition sections approximate",
+      "note": "A 33 in height is assumed because the general drawings do not specify it. TFC transition sections are approximated by a constant FC envelope.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -20.506945,
+          5.75618,
+          6.260339
+        ],
+        [
+          -14.595008,
+          7.346731,
+          7.232995
+        ]
+      ],
+      "volume_m3": 1.69683397
+    },
+    {
+      "id": "guard_1_1",
+      "name": "Steel W-beam guardrail",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing type; section dimensions approximate",
+      "note": "Bolts and fabrication bend radii are excluded.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -25.498842,
+          7.123954,
+          6.622762
+        ],
+        [
+          -20.438998,
+          8.508703,
+          7.040627
+        ]
+      ],
+      "volume_m3": 0.00677754
+    },
+    {
+      "id": "guard_1_1_post_0",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -25.550973,
+          8.3632,
+          6.013162
+        ],
+        [
+          -25.446757,
+          8.511393,
+          6.866602
+        ]
+      ],
+      "volume_m3": 0.00795409
+    },
+    {
+      "id": "guard_1_1_post_1",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -23.037189,
+          7.670952,
+          6.072864
+        ],
+        [
+          -22.93614,
+          7.818249,
+          6.926304
+        ]
+      ],
+      "volume_m3": 0.00795409
+    },
+    {
+      "id": "guard_1_1_post_2",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -20.504601,
+          7.050814,
+          6.126227
+        ],
+        [
+          -20.4068,
+          7.197095,
+          6.979667
+        ]
+      ],
+      "volume_m3": 0.00795409
+    },
+    {
+      "id": "end_bent_2",
+      "name": "Integral abutment 2",
+      "layer": "abutments",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing width; height approximate",
+      "note": "Abutment width is 2 ft 6 in; height follows proportions in the general elevation.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          14.02453,
+          -3.821582,
+          4.247007
+        ],
+        [
+          16.366812,
+          6.230739,
+          5.792983
+        ]
+      ],
+      "volume_m3": 5.60733143
+    },
+    {
+      "id": "approach_2",
+      "name": "Curved approach slab",
+      "layer": "approaches",
+      "color": "#c5d1cc",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing length; thickness approximate",
+      "note": "Approach length is 20 ft 6 in; slab thickness of 1 ft is an assumption for the general arrangement model.",
+      "dimensions": {
+        "length_ft": 20.5
+      },
+      "bounds_m": [
+        [
+          14.595008,
+          -3.720681,
+          5.187443
+        ],
+        [
+          22.660174,
+          7.346731,
+          6.394795
+        ]
+      ],
+      "volume_m3": 19.16158195
+    },
+    {
+      "id": "wing_2_-1",
+      "name": "Curved abutment wingwall",
+      "layer": "abutments",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "General arrangement layout; height approximate",
+      "note": "Curved abutment wingwall. Fabrication details for height and thickness are unavailable.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          16.135185,
+          -3.720681,
+          4.120643
+        ],
+        [
+          22.660174,
+          -2.009906,
+          5.321899
+        ]
+      ],
+      "volume_m3": 3.19998025
+    },
+    {
+      "id": "approach_rail_2_-1",
+      "name": "Exterior concrete railing 2",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25,
+        26
+      ],
+      "basis": "Drawing FC/TFC type; height and transition sections approximate",
+      "note": "A 33 in height is assumed because the general drawings do not specify it. TFC transition sections are approximated by a constant FC envelope.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          16.135185,
+          -3.720681,
+          5.492243
+        ],
+        [
+          22.660174,
+          -2.009906,
+          6.44466
+        ]
+      ],
+      "volume_m3": 1.87732885
+    },
+    {
+      "id": "guard_2_-1",
+      "name": "Steel W-beam guardrail",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing type; section dimensions approximate",
+      "note": "Bolts and fabrication bend radii are excluded.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          22.608906,
+          -2.305159,
+          5.854666
+        ],
+        [
+          28.203722,
+          -0.781092,
+          6.272531
+        ]
+      ],
+      "volume_m3": 0.00749809
+    },
+    {
+      "id": "guard_2_-1_post_0",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          22.556465,
+          -2.306642,
+          5.358131
+        ],
+        [
+          22.661395,
+          -2.15872,
+          6.211571
+        ]
+      ],
+      "volume_m3": 0.00879136
+    },
+    {
+      "id": "guard_2_-1_post_1",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          25.352246,
+          -1.621274,
+          5.304768
+        ],
+        [
+          25.460375,
+          -1.472134,
+          6.158208
+        ]
+      ],
+      "volume_m3": 0.00879136
+    },
+    {
+      "id": "guard_2_-1_post_2",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          28.127334,
+          -0.856211,
+          5.245066
+        ],
+        [
+          28.238573,
+          -0.705974,
+          6.098506
+        ]
+      ],
+      "volume_m3": 0.00879136
+    },
+    {
+      "id": "wing_2_1",
+      "name": "Curved abutment wingwall",
+      "layer": "abutments",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "General arrangement layout; height approximate",
+      "note": "Curved abutment wingwall. Fabrication details for height and thickness are unavailable.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          14.595008,
+          5.75618,
+          4.888739
+        ],
+        [
+          20.506945,
+          7.346731,
+          6.089995
+        ]
+      ],
+      "volume_m3": 2.89522234
+    },
+    {
+      "id": "approach_rail_2_1",
+      "name": "Exterior concrete railing 1",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25,
+        26
+      ],
+      "basis": "Drawing FC/TFC type; height and transition sections approximate",
+      "note": "A 33 in height is assumed because the general drawings do not specify it. TFC transition sections are approximated by a constant FC envelope.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          14.595008,
+          5.75618,
+          6.260339
+        ],
+        [
+          20.506945,
+          7.346731,
+          7.232995
+        ]
+      ],
+      "volume_m3": 1.69688512
+    },
+    {
+      "id": "guard_2_1",
+      "name": "Steel W-beam guardrail",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing type; section dimensions approximate",
+      "note": "Bolts and fabrication bend radii are excluded.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          20.438998,
+          7.123954,
+          6.622762
+        ],
+        [
+          25.498842,
+          8.508703,
+          7.040627
+        ]
+      ],
+      "volume_m3": 0.0067735
+    },
+    {
+      "id": "guard_2_1_post_0",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          20.4068,
+          7.050814,
+          6.126227
+        ],
+        [
+          20.504601,
+          7.197095,
+          6.979667
+        ]
+      ],
+      "volume_m3": 0.00795409
+    },
+    {
+      "id": "guard_2_1_post_1",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          22.93614,
+          7.670952,
+          6.072864
+        ],
+        [
+          23.037189,
+          7.818249,
+          6.926304
+        ]
+      ],
+      "volume_m3": 0.00795409
+    },
+    {
+      "id": "guard_2_1_post_2",
+      "name": "Guardrail post",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25
+      ],
+      "basis": "Drawing layout; post spacing and sections approximate",
+      "note": "Repeated posts in the general arrangement are modeled at representative spacing.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          25.446757,
+          8.3632,
+          6.013162
+        ],
+        [
+          25.550973,
+          8.511393,
+          6.866602
+        ]
+      ],
+      "volume_m3": 0.00795409
+    },
+    {
+      "id": "rail_-1",
+      "name": "Exterior concrete railing 2",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25,
+        26
+      ],
+      "basis": "Drawing FC type; height and sections approximate",
+      "note": "The 33 in height approximates an unavailable detail.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -16.208527,
+          -5.027996,
+          5.590123
+        ],
+        [
+          16.208527,
+          -3.269402,
+          6.545366
+        ]
+      ],
+      "volume_m3": 9.29522841
+    },
+    {
+      "id": "delineator_-1_0",
+      "name": "Railing reflector",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        26
+      ],
+      "basis": "Drawing spacing; marker dimensions approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -12.817544,
+          -4.138072,
+          6.412858
+        ],
+        [
+          -12.751649,
+          -4.111814,
+          6.473818
+        ]
+      ],
+      "volume_m3": 7.146e-05
+    },
+    {
+      "id": "delineator_-1_1",
+      "name": "Railing reflector",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        26
+      ],
+      "basis": "Drawing spacing; marker dimensions approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -0.03205,
+          -4.946899,
+          6.475476
+        ],
+        [
+          0.03205,
+          -4.928611,
+          6.536436
+        ]
+      ],
+      "volume_m3": 7.146e-05
+    },
+    {
+      "id": "delineator_-1_2",
+      "name": "Railing reflector",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        26
+      ],
+      "basis": "Drawing spacing; marker dimensions approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          12.751649,
+          -4.138072,
+          6.412858
+        ],
+        [
+          12.817544,
+          -4.111814,
+          6.473818
+        ]
+      ],
+      "volume_m3": 7.146e-05
+    },
+    {
+      "id": "rail_1",
+      "name": "Exterior concrete railing 1",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        25,
+        26
+      ],
+      "basis": "Drawing FC type; height and sections approximate",
+      "note": "The 33 in height approximates an unavailable detail.",
+      "dimensions": {
+        "height_ft": 2.75,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -14.66835,
+          4.57309,
+          6.358219
+        ],
+        [
+          14.66835,
+          6.207459,
+          7.3337
+        ]
+      ],
+      "volume_m3": 8.40155531
+    },
+    {
+      "id": "delineator_1_0",
+      "name": "Railing reflector",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        26
+      ],
+      "basis": "Drawing spacing; marker dimensions approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.563767,
+          5.658331,
+          7.202899
+        ],
+        [
+          -11.504092,
+          5.683795,
+          7.263859
+        ]
+      ],
+      "volume_m3": 6.447e-05
+    },
+    {
+      "id": "delineator_1_1",
+      "name": "Railing reflector",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        26
+      ],
+      "basis": "Drawing spacing; marker dimensions approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -0.028915,
+          4.928621,
+          7.265518
+        ],
+        [
+          0.028915,
+          4.946909,
+          7.326478
+        ]
+      ],
+      "volume_m3": 6.447e-05
+    },
+    {
+      "id": "delineator_1_2",
+      "name": "Railing reflector",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        26
+      ],
+      "basis": "Drawing spacing; marker dimensions approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          11.504092,
+          5.658331,
+          7.202899
+        ],
+        [
+          11.563767,
+          5.683795,
+          7.263859
+        ]
+      ],
+      "volume_m3": 6.447e-05
+    }
+  ],
+  "detail_coverage": [
+    {
+      "feature": "Curved deck and alignment",
+      "status": "modeled",
+      "detail": "Horizontal curve R = 315 ft; spans 30 + 40 + 30 ft; length 101 ft 6 in; width 33 ft; 8% superelevation and 250 ft vertical curve.",
+      "sources": [
+        7,
+        25,
+        26
+      ]
+    },
+    {
+      "feature": "Piers, abutments and approaches",
+      "status": "mixed",
+      "detail": "Radial 2 ft 6 in wall piers and abutments with curved approach slabs. Base elevations, footings and wingwall heights are estimated from general drawing proportions.",
+      "sources": [
+        25
+      ]
+    },
+    {
+      "feature": "Railings and guardrails",
+      "status": "mixed",
+      "detail": "Includes FC railings, W-beam guardrails and reflectors. Fabrication sections and TFC transition sections are unavailable.",
+      "sources": [
+        25,
+        26
+      ]
+    },
+    {
+      "feature": "Unresolved details",
+      "status": "excluded",
+      "detail": "HP12 x XX piles and XXX.XX tip elevations remain unspecified and are not modeled. Internal reinforcement, fine aggregate and stream terrain are excluded.",
+      "sources": [
+        25
+      ]
+    }
+  ],
+  "bounds_m": [
+    [
+      -28.238573126063553,
+      -5.0292,
+      0.9448799999999999
+    ],
+    [
+      28.238573126063553,
+      8.511392909963376,
+      7.333700239818016
+    ]
+  ],
+  "glb_bounds_m": [
+    [
+      -28.238573126063553,
+      0.9448799999999999,
+      -8.511392909963376
+    ],
+    [
+      28.238573126063553,
+      7.333700239818016,
+      5.0292
+    ]
+  ],
+  "default_hidden_layers": [
+    "foundations"
+  ],
+  "coordinate_system": {
+    "native": "X longitudinal / Y transverse / Z up; metres. Local datum described in assumptions.",
+    "glb": "(X,Z,-Y), metres, Y-up."
+  },
+  "model_scope": "Exterior drawing reconstruction; source-derived and inferred geometry tagged separately."
+}

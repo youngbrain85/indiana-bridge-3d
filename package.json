@@ -1,0 +1,12 @@
+{
+  "name": "indiana-bridge-3d",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local Indiana bridge models, component explorer, source drawings and map",
+  "scripts": {
+    "build": "node build.cjs",
+    "test:browser": "node test_browser.cjs"
+  },
+  "dependencies": { "three": "0.180.0" },
+  "devDependencies": { "esbuild": "0.25.10", "playwright": "1.58.2" }
+}

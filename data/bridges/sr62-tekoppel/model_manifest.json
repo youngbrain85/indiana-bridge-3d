@@ -1,0 +1,1340 @@
+{
+  "title": "SR 62 over Tekoppel Avenue",
+  "structure_id": "062-82-10333",
+  "designation": "1600060",
+  "units": "metres",
+  "spans_ft": [
+    79.5
+  ],
+  "deck_length_ft": 81.5,
+  "deck_width_ft": 103,
+  "skew_deg": 0,
+  "source_pdf": "drawings.pdf",
+  "source_note": "2023 public-hearing preliminary design; general arrangement extract",
+  "source_sha256": "0c1603c7f87f14bcabefd3ce01ad0bc81b66012de73444ffc5c0c54d559889a0",
+  "assumptions": [
+    "This is not a full detail drawing set. Girder, bearing, abutment and MSE wall information is needed to reconstruct exterior components. NBI matching uses the existing bridge location.",
+    "Internal reinforcing bars, tendons and embedded hardware are excluded. Fabrication details absent from the drawings are not claimed as reconstructed.",
+    "Colors distinguish components. Individual volumes may overlap at assembly boundaries and must not be summed as a quantity takeoff.",
+    "Vertical datum EL 375 ft; origin station 34668.00. Local X follows the road longitudinal axis and does not represent geographic north.",
+    "Left skew is applied by transforming end lines with tan(skew). Girders are straight precast members; variable haunches fill the difference from the vertical road profile.",
+    "The cross-section's 2% slopes and two-way crown are applied. Crown locations are approximated at roadway centers because exact offsets are unavailable.",
+    "The 42 in FT railing height, bulb-tee web, bottom flange and corners, retaining wall thickness and abutment depth are assumptions based on general drawings, not detailed design dimensions."
+  ],
+  "layers": {
+    "deck": "Deck panels and structural slab",
+    "joints": "UHPC connections and joints",
+    "abutments": "Abutments and wingwalls",
+    "rails": "Railings and transitions",
+    "approaches": "Approach slab",
+    "girders": "Bulb-tee girder",
+    "haunches": "Deck haunches",
+    "walls": "Retaining wall envelope",
+    "road_surface": "Road surface"
+  },
+  "parts": [
+    {
+      "id": "deck_phase_1",
+      "name": "Deck pour region 1",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing dimensions; transverse crown location approximate",
+      "note": "Total thickness 8 in, with a vertical curve and two-way 2% crossfall. Pour boundaries are coplanar divisions, not physical gaps.",
+      "dimensions": {
+        "thickness_in": 8
+      },
+      "bounds_m": [
+        [
+          -12.4206,
+          -15.6972,
+          8.762321
+        ],
+        [
+          12.4206,
+          1.2954,
+          9.993658
+        ]
+      ],
+      "volume_m3": 85.77408806
+    },
+    {
+      "id": "deck_phase_2",
+      "name": "Deck pour region 2",
+      "layer": "deck",
+      "color": "#ccd5ce",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing dimensions; transverse crown location approximate",
+      "note": "Total thickness 8 in, with a vertical curve and two-way 2% crossfall. Pour boundaries are coplanar divisions, not physical gaps.",
+      "dimensions": {
+        "thickness_in": 8
+      },
+      "bounds_m": [
+        [
+          -12.4206,
+          1.2954,
+          8.762321
+        ],
+        [
+          12.4206,
+          15.6972,
+          9.993658
+        ]
+      ],
+      "volume_m3": 72.69642441
+    },
+    {
+      "id": "girder_01",
+      "name": "Bulb-tee girder 01 · 36 × 61 in",
+      "layer": "girders",
+      "color": "#a4b9b4",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing height, top width and layout; remaining section approximate",
+      "note": "Web and bottom flange dimensions, end treatment and minimum haunch thickness are approximate because fabrication drawings are unavailable.",
+      "dimensions": {
+        "depth_in": 36,
+        "top_width_in": 61,
+        "center_y_ft": -47.166666666666664
+      },
+      "bounds_m": [
+        [
+          -11.99388,
+          -15.1511,
+          7.819846
+        ],
+        [
+          11.99388,
+          -13.6017,
+          9.575122
+        ]
+      ],
+      "volume_m3": 10.99080442
+    },
+    {
+      "id": "haunch_01",
+      "name": "Variable concrete haunch above girder",
+      "layer": "haunches",
+      "color": "#c2c6ad",
+      "pdf_pages": [
+        6
+      ],
+      "basis": "Interpolation between deck and straight girders; minimum thickness approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.99388,
+          -15.1511,
+          8.734246
+        ],
+        [
+          11.99388,
+          -13.6017,
+          9.66072
+        ]
+      ],
+      "volume_m3": 2.93412298
+    },
+    {
+      "id": "girder_02",
+      "name": "Bulb-tee girder 02 · 36 × 61 in",
+      "layer": "girders",
+      "color": "#a4b9b4",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing height, top width and layout; remaining section approximate",
+      "note": "Web and bottom flange dimensions, end treatment and minimum haunch thickness are approximate because fabrication drawings are unavailable.",
+      "dimensions": {
+        "depth_in": 36,
+        "top_width_in": 61,
+        "center_y_ft": -37.5
+      },
+      "bounds_m": [
+        [
+          -11.99388,
+          -12.2047,
+          7.878774
+        ],
+        [
+          11.99388,
+          -10.6553,
+          9.63405
+        ]
+      ],
+      "volume_m3": 10.99080442
+    },
+    {
+      "id": "haunch_02",
+      "name": "Variable concrete haunch above girder",
+      "layer": "haunches",
+      "color": "#c2c6ad",
+      "pdf_pages": [
+        6
+      ],
+      "basis": "Interpolation between deck and straight girders; minimum thickness approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.99388,
+          -12.2047,
+          8.793174
+        ],
+        [
+          11.99388,
+          -10.6553,
+          9.719648
+        ]
+      ],
+      "volume_m3": 2.93412298
+    },
+    {
+      "id": "girder_03",
+      "name": "Bulb-tee girder 03 · 36 × 61 in",
+      "layer": "girders",
+      "color": "#a4b9b4",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing height, top width and layout; remaining section approximate",
+      "note": "Web and bottom flange dimensions, end treatment and minimum haunch thickness are approximate because fabrication drawings are unavailable.",
+      "dimensions": {
+        "depth_in": 36,
+        "top_width_in": 61,
+        "center_y_ft": -27.833333333333336
+      },
+      "bounds_m": [
+        [
+          -11.99388,
+          -9.2583,
+          7.937702
+        ],
+        [
+          11.99388,
+          -7.7089,
+          9.692978
+        ]
+      ],
+      "volume_m3": 10.99080442
+    },
+    {
+      "id": "haunch_03",
+      "name": "Variable concrete haunch above girder",
+      "layer": "haunches",
+      "color": "#c2c6ad",
+      "pdf_pages": [
+        6
+      ],
+      "basis": "Interpolation between deck and straight girders; minimum thickness approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.99388,
+          -9.2583,
+          8.852102
+        ],
+        [
+          11.99388,
+          -7.7089,
+          9.774512
+        ]
+      ],
+      "volume_m3": 2.85860038
+    },
+    {
+      "id": "girder_04",
+      "name": "Bulb-tee girder 04 · 36 × 61 in",
+      "layer": "girders",
+      "color": "#a4b9b4",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing height, top width and layout; remaining section approximate",
+      "note": "Web and bottom flange dimensions, end treatment and minimum haunch thickness are approximate because fabrication drawings are unavailable.",
+      "dimensions": {
+        "depth_in": 36,
+        "top_width_in": 61,
+        "center_y_ft": -18.16666666666667
+      },
+      "bounds_m": [
+        [
+          -11.99388,
+          -6.3119,
+          7.905698
+        ],
+        [
+          11.99388,
+          -4.7625,
+          9.660974
+        ]
+      ],
+      "volume_m3": 10.99080442
+    },
+    {
+      "id": "haunch_04",
+      "name": "Variable concrete haunch above girder",
+      "layer": "haunches",
+      "color": "#c2c6ad",
+      "pdf_pages": [
+        6
+      ],
+      "basis": "Interpolation between deck and straight girders; minimum thickness approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.99388,
+          -6.3119,
+          8.820098
+        ],
+        [
+          11.99388,
+          -4.7625,
+          9.746572
+        ]
+      ],
+      "volume_m3": 2.93412298
+    },
+    {
+      "id": "girder_05",
+      "name": "Bulb-tee girder 05 · 36 × 61 in",
+      "layer": "girders",
+      "color": "#a4b9b4",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing height, top width and layout; remaining section approximate",
+      "note": "Web and bottom flange dimensions, end treatment and minimum haunch thickness are approximate because fabrication drawings are unavailable.",
+      "dimensions": {
+        "depth_in": 36,
+        "top_width_in": 61,
+        "center_y_ft": -8.500000000000005
+      },
+      "bounds_m": [
+        [
+          -11.99388,
+          -3.3655,
+          7.84677
+        ],
+        [
+          11.99388,
+          -1.8161,
+          9.602046
+        ]
+      ],
+      "volume_m3": 10.99080442
+    },
+    {
+      "id": "haunch_05",
+      "name": "Variable concrete haunch above girder",
+      "layer": "haunches",
+      "color": "#c2c6ad",
+      "pdf_pages": [
+        6
+      ],
+      "basis": "Interpolation between deck and straight girders; minimum thickness approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.99388,
+          -3.3655,
+          8.76117
+        ],
+        [
+          11.99388,
+          -1.8161,
+          9.687644
+        ]
+      ],
+      "volume_m3": 2.93412298
+    },
+    {
+      "id": "girder_06",
+      "name": "Bulb-tee girder 06 · 36 × 61 in",
+      "layer": "girders",
+      "color": "#a4b9b4",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing height, top width and layout; remaining section approximate",
+      "note": "Web and bottom flange dimensions, end treatment and minimum haunch thickness are approximate because fabrication drawings are unavailable.",
+      "dimensions": {
+        "depth_in": 36,
+        "top_width_in": 61,
+        "center_y_ft": -5.329070518200751e-15
+      },
+      "bounds_m": [
+        [
+          -11.99388,
+          -0.7747,
+          7.794954
+        ],
+        [
+          11.99388,
+          0.7747,
+          9.55023
+        ]
+      ],
+      "volume_m3": 10.99080442
+    },
+    {
+      "id": "haunch_06",
+      "name": "Variable concrete haunch above girder",
+      "layer": "haunches",
+      "color": "#c2c6ad",
+      "pdf_pages": [
+        6
+      ],
+      "basis": "Interpolation between deck and straight girders; minimum thickness approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.99388,
+          -0.7747,
+          8.709354
+        ],
+        [
+          11.99388,
+          0.7747,
+          9.635828
+        ]
+      ],
+      "volume_m3": 3.50998283
+    },
+    {
+      "id": "girder_07",
+      "name": "Bulb-tee girder 07 · 36 × 61 in",
+      "layer": "girders",
+      "color": "#a4b9b4",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing height, top width and layout; remaining section approximate",
+      "note": "Web and bottom flange dimensions, end treatment and minimum haunch thickness are approximate because fabrication drawings are unavailable.",
+      "dimensions": {
+        "depth_in": 36,
+        "top_width_in": 61,
+        "center_y_ft": 8.499999999999995
+      },
+      "bounds_m": [
+        [
+          -11.99388,
+          1.8161,
+          7.84677
+        ],
+        [
+          11.99388,
+          3.3655,
+          9.602046
+        ]
+      ],
+      "volume_m3": 10.99080442
+    },
+    {
+      "id": "haunch_07",
+      "name": "Variable concrete haunch above girder",
+      "layer": "haunches",
+      "color": "#c2c6ad",
+      "pdf_pages": [
+        6
+      ],
+      "basis": "Interpolation between deck and straight girders; minimum thickness approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.99388,
+          1.8161,
+          8.76117
+        ],
+        [
+          11.99388,
+          3.3655,
+          9.687644
+        ]
+      ],
+      "volume_m3": 2.93412298
+    },
+    {
+      "id": "girder_08",
+      "name": "Bulb-tee girder 08 · 36 × 61 in",
+      "layer": "girders",
+      "color": "#a4b9b4",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing height, top width and layout; remaining section approximate",
+      "note": "Web and bottom flange dimensions, end treatment and minimum haunch thickness are approximate because fabrication drawings are unavailable.",
+      "dimensions": {
+        "depth_in": 36,
+        "top_width_in": 61,
+        "center_y_ft": 18.16666666666666
+      },
+      "bounds_m": [
+        [
+          -11.99388,
+          4.7625,
+          7.905698
+        ],
+        [
+          11.99388,
+          6.3119,
+          9.660974
+        ]
+      ],
+      "volume_m3": 10.99080442
+    },
+    {
+      "id": "haunch_08",
+      "name": "Variable concrete haunch above girder",
+      "layer": "haunches",
+      "color": "#c2c6ad",
+      "pdf_pages": [
+        6
+      ],
+      "basis": "Interpolation between deck and straight girders; minimum thickness approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.99388,
+          4.7625,
+          8.820098
+        ],
+        [
+          11.99388,
+          6.3119,
+          9.746572
+        ]
+      ],
+      "volume_m3": 2.93412298
+    },
+    {
+      "id": "girder_09",
+      "name": "Bulb-tee girder 09 · 36 × 61 in",
+      "layer": "girders",
+      "color": "#a4b9b4",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing height, top width and layout; remaining section approximate",
+      "note": "Web and bottom flange dimensions, end treatment and minimum haunch thickness are approximate because fabrication drawings are unavailable.",
+      "dimensions": {
+        "depth_in": 36,
+        "top_width_in": 61,
+        "center_y_ft": 27.83333333333333
+      },
+      "bounds_m": [
+        [
+          -11.99388,
+          7.7089,
+          7.937702
+        ],
+        [
+          11.99388,
+          9.2583,
+          9.692978
+        ]
+      ],
+      "volume_m3": 10.99080442
+    },
+    {
+      "id": "haunch_09",
+      "name": "Variable concrete haunch above girder",
+      "layer": "haunches",
+      "color": "#c2c6ad",
+      "pdf_pages": [
+        6
+      ],
+      "basis": "Interpolation between deck and straight girders; minimum thickness approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.99388,
+          7.7089,
+          8.852102
+        ],
+        [
+          11.99388,
+          9.2583,
+          9.774512
+        ]
+      ],
+      "volume_m3": 2.85860038
+    },
+    {
+      "id": "girder_10",
+      "name": "Bulb-tee girder 10 · 36 × 61 in",
+      "layer": "girders",
+      "color": "#a4b9b4",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing height, top width and layout; remaining section approximate",
+      "note": "Web and bottom flange dimensions, end treatment and minimum haunch thickness are approximate because fabrication drawings are unavailable.",
+      "dimensions": {
+        "depth_in": 36,
+        "top_width_in": 61,
+        "center_y_ft": 37.49999999999999
+      },
+      "bounds_m": [
+        [
+          -11.99388,
+          10.6553,
+          7.878774
+        ],
+        [
+          11.99388,
+          12.2047,
+          9.63405
+        ]
+      ],
+      "volume_m3": 10.99080442
+    },
+    {
+      "id": "haunch_10",
+      "name": "Variable concrete haunch above girder",
+      "layer": "haunches",
+      "color": "#c2c6ad",
+      "pdf_pages": [
+        6
+      ],
+      "basis": "Interpolation between deck and straight girders; minimum thickness approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.99388,
+          10.6553,
+          8.793174
+        ],
+        [
+          11.99388,
+          12.2047,
+          9.719648
+        ]
+      ],
+      "volume_m3": 2.93412298
+    },
+    {
+      "id": "girder_11",
+      "name": "Bulb-tee girder 11 · 36 × 61 in",
+      "layer": "girders",
+      "color": "#a4b9b4",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing height, top width and layout; remaining section approximate",
+      "note": "Web and bottom flange dimensions, end treatment and minimum haunch thickness are approximate because fabrication drawings are unavailable.",
+      "dimensions": {
+        "depth_in": 36,
+        "top_width_in": 61,
+        "center_y_ft": 47.16666666666666
+      },
+      "bounds_m": [
+        [
+          -11.99388,
+          13.6017,
+          7.819846
+        ],
+        [
+          11.99388,
+          15.1511,
+          9.575122
+        ]
+      ],
+      "volume_m3": 10.99080442
+    },
+    {
+      "id": "haunch_11",
+      "name": "Variable concrete haunch above girder",
+      "layer": "haunches",
+      "color": "#c2c6ad",
+      "pdf_pages": [
+        6
+      ],
+      "basis": "Interpolation between deck and straight girders; minimum thickness approximate",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.99388,
+          13.6017,
+          8.734246
+        ],
+        [
+          11.99388,
+          15.1511,
+          9.66072
+        ]
+      ],
+      "volume_m3": 2.93412298
+    },
+    {
+      "id": "bent_1",
+      "name": "Integral abutment 1",
+      "layer": "abutments",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        5
+      ],
+      "basis": "Drawing layout; depth approximate",
+      "note": "Integral abutments are modeled. Girder ends are embedded in the abutments; separate elastomeric bearings are not added.",
+      "dimensions": {
+        "cap_width_ft": 3
+      },
+      "bounds_m": [
+        [
+          -12.573,
+          -15.6972,
+          8.083852
+        ],
+        [
+          -11.6586,
+          15.6972,
+          9.795417
+        ]
+      ],
+      "volume_m3": 43.74952798
+    },
+    {
+      "id": "wall_1",
+      "name": "MSE Retaining wall 1 envelope",
+      "layer": "walls",
+      "color": "#b7bdb0",
+      "pdf_pages": [
+        5
+      ],
+      "basis": "Drawing front layout; thickness and footing unconfirmed",
+      "note": "Only the front envelope is represented. T-WALL stems or MSE reinforcement, actual panel divisions and rear details are unavailable.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -13.07592,
+          -15.6972,
+          0.4572
+        ],
+        [
+          -12.67968,
+          15.6972,
+          8.638016
+        ]
+      ],
+      "volume_m3": 101.68702579
+    },
+    {
+      "id": "approach_1",
+      "name": "20 ft 6 in Approach slab",
+      "layer": "approaches",
+      "color": "#c5d1cc",
+      "pdf_pages": [
+        5
+      ],
+      "basis": "Drawing length; structural thickness approximate",
+      "note": "The 3 in HMA overlay follows drawing notes. Approach slab structural thickness of 1 ft is approximate.",
+      "dimensions": {
+        "length_ft": 20.5
+      },
+      "bounds_m": [
+        [
+          -18.669,
+          -15.6972,
+          9.454924
+        ],
+        [
+          -12.4206,
+          15.6972,
+          10.116795
+        ]
+      ],
+      "volume_m3": 59.79102158
+    },
+    {
+      "id": "approach_hma_1",
+      "name": "Approach 3 in HMA",
+      "layer": "road_surface",
+      "color": "#b4beba",
+      "pdf_pages": [
+        5
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "thickness_in": 3
+      },
+      "bounds_m": [
+        [
+          -18.669,
+          -15.24,
+          9.761248
+        ],
+        [
+          -12.4206,
+          15.24,
+          10.192995
+        ]
+      ],
+      "volume_m3": 14.51238388
+    },
+    {
+      "id": "return_wall_1_-1",
+      "name": "MSE Side extension envelope",
+      "layer": "walls",
+      "color": "#b7bdb0",
+      "pdf_pages": [
+        5
+      ],
+      "basis": "Drawing direction; extension length and height approximate",
+      "note": "Subsequent Stage 3 retaining wall details are unavailable; the envelope is approximated only over the approach slab length.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -18.669,
+          -15.6972,
+          0.46561
+        ],
+        [
+          -12.4206,
+          -15.24,
+          8.825205
+        ]
+      ],
+      "volume_m3": 23.28584427
+    },
+    {
+      "id": "approach_rail_1_-1",
+      "name": "Exterior concrete railing 2",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing FT type; detailed section approximate",
+      "note": "FT concrete railing height is assumed to be 42 in. Agreement with the actual standard section is unverified.",
+      "dimensions": {
+        "height_ft": 3.5,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -18.669,
+          -15.6972,
+          9.835924
+        ],
+        [
+          -12.4206,
+          -15.24,
+          11.106145
+        ]
+      ],
+      "volume_m3": 2.2094524
+    },
+    {
+      "id": "return_wall_1_1",
+      "name": "MSE Side extension envelope",
+      "layer": "walls",
+      "color": "#b7bdb0",
+      "pdf_pages": [
+        5
+      ],
+      "basis": "Drawing direction; extension length and height approximate",
+      "note": "Subsequent Stage 3 retaining wall details are unavailable; the envelope is approximated only over the approach slab length.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -18.669,
+          15.24,
+          0.46561
+        ],
+        [
+          -12.4206,
+          15.6972,
+          8.825205
+        ]
+      ],
+      "volume_m3": 23.28584427
+    },
+    {
+      "id": "approach_rail_1_1",
+      "name": "Exterior concrete railing 1",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing FT type; detailed section approximate",
+      "note": "FT concrete railing height is assumed to be 42 in. Agreement with the actual standard section is unverified.",
+      "dimensions": {
+        "height_ft": 3.5,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -18.669,
+          15.24,
+          9.835924
+        ],
+        [
+          -12.4206,
+          15.6972,
+          11.106145
+        ]
+      ],
+      "volume_m3": 2.2094524
+    },
+    {
+      "id": "terminal_1",
+      "name": "Approach HMA end joint",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        5
+      ],
+      "basis": "Drawing position and type; width approximate",
+      "note": "The modeled 0.3 ft width of the Type HMA Modified joint is assumed.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -18.71472,
+          -15.6972,
+          9.911912
+        ],
+        [
+          -18.62328,
+          15.6972,
+          10.194423
+        ]
+      ],
+      "volume_m3": 0.34999622
+    },
+    {
+      "id": "bent_2",
+      "name": "Integral abutment 2",
+      "layer": "abutments",
+      "color": "#c3c9bc",
+      "pdf_pages": [
+        5
+      ],
+      "basis": "Drawing layout; depth approximate",
+      "note": "Integral abutments are modeled. Girder ends are embedded in the abutments; separate elastomeric bearings are not added.",
+      "dimensions": {
+        "cap_width_ft": 3
+      },
+      "bounds_m": [
+        [
+          11.6586,
+          -15.6972,
+          7.232744
+        ],
+        [
+          12.573,
+          15.6972,
+          8.947936
+        ]
+      ],
+      "volume_m3": 43.74952798
+    },
+    {
+      "id": "wall_2",
+      "name": "MSE Retaining wall 2 envelope",
+      "layer": "walls",
+      "color": "#b7bdb0",
+      "pdf_pages": [
+        5
+      ],
+      "basis": "Drawing front layout; thickness and footing unconfirmed",
+      "note": "Only the front envelope is represented. T-WALL stems or MSE reinforcement, actual panel divisions and rear details are unavailable.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          12.67968,
+          -15.6972,
+          0.4572
+        ],
+        [
+          13.07592,
+          15.6972,
+          7.736841
+        ]
+      ],
+      "volume_m3": 90.46649385
+    },
+    {
+      "id": "approach_2",
+      "name": "20 ft 6 in Approach slab",
+      "layer": "approaches",
+      "color": "#c5d1cc",
+      "pdf_pages": [
+        5
+      ],
+      "basis": "Drawing length; structural thickness approximate",
+      "note": "The 3 in HMA overlay follows drawing notes. Approach slab structural thickness of 1 ft is approximate.",
+      "dimensions": {
+        "length_ft": 20.5
+      },
+      "bounds_m": [
+        [
+          12.4206,
+          -15.6972,
+          8.355892
+        ],
+        [
+          18.669,
+          15.6972,
+          9.047055
+        ]
+      ],
+      "volume_m3": 59.79102158
+    },
+    {
+      "id": "approach_hma_2",
+      "name": "Approach 3 in HMA",
+      "layer": "road_surface",
+      "color": "#b4beba",
+      "pdf_pages": [
+        5
+      ],
+      "basis": "Drawing dimensions",
+      "note": "",
+      "dimensions": {
+        "thickness_in": 3
+      },
+      "bounds_m": [
+        [
+          12.4206,
+          -15.24,
+          8.662216
+        ],
+        [
+          18.669,
+          15.24,
+          9.123255
+        ]
+      ],
+      "volume_m3": 14.51238388
+    },
+    {
+      "id": "return_wall_2_-1",
+      "name": "MSE Side extension envelope",
+      "layer": "walls",
+      "color": "#b7bdb0",
+      "pdf_pages": [
+        5
+      ],
+      "basis": "Drawing direction; extension length and height approximate",
+      "note": "Subsequent Stage 3 retaining wall details are unavailable; the envelope is approximated only over the approach slab length.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          12.4206,
+          -15.6972,
+          0.215894
+        ],
+        [
+          18.669,
+          -15.24,
+          7.755465
+        ]
+      ],
+      "volume_m3": 20.85954404
+    },
+    {
+      "id": "approach_rail_2_-1",
+      "name": "Exterior concrete railing 2",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing FT type; detailed section approximate",
+      "note": "FT concrete railing height is assumed to be 42 in. Agreement with the actual standard section is unverified.",
+      "dimensions": {
+        "height_ft": 3.5,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          12.4206,
+          -15.6972,
+          8.736892
+        ],
+        [
+          18.669,
+          -15.24,
+          10.036405
+        ]
+      ],
+      "volume_m3": 2.2094524
+    },
+    {
+      "id": "return_wall_2_1",
+      "name": "MSE Side extension envelope",
+      "layer": "walls",
+      "color": "#b7bdb0",
+      "pdf_pages": [
+        5
+      ],
+      "basis": "Drawing direction; extension length and height approximate",
+      "note": "Subsequent Stage 3 retaining wall details are unavailable; the envelope is approximated only over the approach slab length.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          12.4206,
+          15.24,
+          0.215894
+        ],
+        [
+          18.669,
+          15.6972,
+          7.755465
+        ]
+      ],
+      "volume_m3": 20.85954404
+    },
+    {
+      "id": "approach_rail_2_1",
+      "name": "Exterior concrete railing 1",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing FT type; detailed section approximate",
+      "note": "FT concrete railing height is assumed to be 42 in. Agreement with the actual standard section is unverified.",
+      "dimensions": {
+        "height_ft": 3.5,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          12.4206,
+          15.24,
+          8.736892
+        ],
+        [
+          18.669,
+          15.6972,
+          10.036405
+        ]
+      ],
+      "volume_m3": 2.2094524
+    },
+    {
+      "id": "terminal_2",
+      "name": "Approach HMA end joint",
+      "layer": "joints",
+      "color": "#b59a66",
+      "pdf_pages": [
+        5
+      ],
+      "basis": "Drawing position and type; width approximate",
+      "note": "The modeled 0.3 ft width of the Type HMA Modified joint is assumed.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          18.62328,
+          -15.6972,
+          8.613299
+        ],
+        [
+          18.71472,
+          15.6972,
+          8.896298
+        ]
+      ],
+      "volume_m3": 0.34999622
+    },
+    {
+      "id": "rail_-1",
+      "name": "Exterior concrete railing 2",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing FT type; height and detailed section approximate",
+      "note": "Drawing width 1 ft 6 in is applied; height 42 in is assumed.",
+      "dimensions": {
+        "height_ft": 3.5,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -12.4206,
+          -15.6972,
+          8.965521
+        ],
+        [
+          12.4206,
+          -15.24,
+          10.906808
+        ]
+      ],
+      "volume_m3": 8.7839205
+    },
+    {
+      "id": "rail_1",
+      "name": "Exterior concrete railing 1",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing FT type; height and detailed section approximate",
+      "note": "Drawing width 1 ft 6 in is applied; height 42 in is assumed.",
+      "dimensions": {
+        "height_ft": 3.5,
+        "base_width_ft": 1.5
+      },
+      "bounds_m": [
+        [
+          -12.4206,
+          15.24,
+          8.965521
+        ],
+        [
+          12.4206,
+          15.6972,
+          10.906808
+        ]
+      ],
+      "volume_m3": 8.7839205
+    },
+    {
+      "id": "median_barrier",
+      "name": "2 ft 6 in Central concrete barrier",
+      "layer": "rails",
+      "color": "#d7d9cb",
+      "pdf_pages": [
+        5,
+        6
+      ],
+      "basis": "Drawing width; height and corners approximate",
+      "note": "",
+      "dimensions": {
+        "width_ft": 2.5
+      },
+      "bounds_m": [
+        [
+          -18.669,
+          -0.381,
+          8.746036
+        ],
+        [
+          18.669,
+          0.381,
+          11.106633
+        ]
+      ],
+      "volume_m3": 22.45623274
+    }
+  ],
+  "detail_coverage": [
+    {
+      "feature": "Spans, width, skew and vertical alignment",
+      "status": "modeled",
+      "detail": "Single span 79.5 ft; deck 81.5 by 103 ft; left skew 0 degrees. The source vertical curve is applied.",
+      "sources": [
+        5,
+        6
+      ]
+    },
+    {
+      "feature": "Girders and slab",
+      "status": "mixed",
+      "detail": "Includes 11 girders with nominal 36 by 61 in sections and drawing spacing, a 8 in slab and 2 pour regions. Detailed girder profiles and haunches are approximate.",
+      "sources": [
+        5,
+        6
+      ]
+    },
+    {
+      "feature": "Abutments, retaining walls and approaches",
+      "status": "mixed",
+      "detail": "Includes integral abutments, MSE front envelopes and approach slabs. Retaining wall panels, rear faces, piles and footing fabrication details are not modeled.",
+      "sources": [
+        5
+      ]
+    },
+    {
+      "feature": "Railings, median and drainage",
+      "status": "mixed",
+      "detail": "Includes FT outer railings and a 2 ft 6 in central concrete barrier. Unspecified heights and fabrication sections are approximate.",
+      "sources": [
+        5,
+        6
+      ]
+    },
+    {
+      "feature": "Unavailable details",
+      "status": "excluded",
+      "detail": "Internal reinforcement, tendons, piles, rear retaining structures, underlying roads/railways, bank protection, terrain and fabrication hardware are excluded. This model uses a 6-page general arrangement extract and is not a detailed design model.",
+      "sources": [
+        5,
+        6
+      ]
+    }
+  ],
+  "bounds_m": [
+    [
+      -18.71472,
+      -15.6972,
+      0.21589441200000617
+    ],
+    [
+      18.71472,
+      15.6972,
+      11.106632632096362
+    ]
+  ],
+  "glb_bounds_m": [
+    [
+      -18.71472,
+      0.21589441200000617,
+      -15.6972
+    ],
+    [
+      18.71472,
+      11.106632632096362,
+      15.6972
+    ]
+  ],
+  "default_hidden_layers": [
+    "foundations"
+  ],
+  "coordinate_system": {
+    "native": "X longitudinal / Y transverse / Z up; metres. Local datum described in assumptions.",
+    "glb": "(X,Z,-Y), metres, Y-up."
+  },
+  "model_scope": "Exterior drawing reconstruction; source-derived and inferred geometry tagged separately."
+}
