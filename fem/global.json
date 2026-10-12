@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "revision": "2026-10-11-global-1",
+  "values": {
+    "column_y_ft": [
+      -11,
+      11
+    ],
+    "column_diameter_ft": 4.5,
+    "column_top_el_ft": [
+      419.42,
+      415.54
+    ],
+    "shaft_top_el_ft": 390,
+    "rock_el_ft": [
+      380,
+      340
+    ],
+    "socket_tip_el_ft": [
+      373,
+      333
+    ],
+    "shaft_concrete_diameter_in": 58.5,
+    "socket_diameter_ft": 4.5,
+    "cap_width_ft": 5,
+    "cap_depth_ft": 4.5,
+    "cap_length_ft": 33,
+    "end_cap_width_ft": 3,
+    "end_cap_depth_ft": 3,
+    "end_cap_length_ft": 35.166666666666664,
+    "end_cap_bottom_el_ft": [
+      424.34,
+      413.64
+    ],
+    "pile_tip_el_ft": [
+      409,
+      340
+    ],
+    "pile_y_ft": [
+      -14.375,
+      -8.625,
+      -2.875,
+      2.875,
+      8.625,
+      14.375
+    ],
+    "pile_depth_in": 12.3,
+    "pile_flange_in": 12.3,
+    "pile_web_in": 0.685,
+    "pile_thickness_in": 0.685,
+    "steel_weight_pcf": 490,
+    "steel_poisson": 0.3,
+    "pad_length_in": 12,
+    "pad_width_in": 36,
+    "pad_rubber_in": 3.0625,
+    "pad_G_MPa": 0.9,
+    "pad_E_compression_MPa": 450,
+    "construction_slide_Npm": 1000,
+    "diaphragm_width_ft": 3,
+    "diaphragm_height_ft": 3,
+    "channel_depth_in": 9,
+    "channel_width_in": 2.65,
+    "channel_web_in": 0.448,
+    "channel_flange_in": 0.413,
+    "channel_station_ft": 125,
+    "strand_z_end_in": [
+      2,
+      4,
+      31,
+      34
+    ],
+    "strand_z_mid_in": [
+      2,
+      4,
+      34
+    ],
+    "draped_count": 3,
+    "depress_distance_ft": [
+      32.625,
+      36,
+      32.625
+    ],
+    "barrier_volume_cyd_per_side": 24.1,
+    "prestress_retained_fraction": 0.8,
+    "debris_wall_thickness_ft": 1,
+    "debris_wall_top_el_ft": 413.13,
+    "girder_torsion_J_m4": 0.014,
+    "haunch_stiffness_included": false,
+    "end_bearing_horizontal_Npm": 2000000000.0,
+    "end_bearing_vertical_Npm": 20000000000.0,
+    "end_connection_rotation_Nm": 1000000000.0,
+    "released_rotation_Nm": 0.001,
+    "seat_offset_m": 0.12
+  },
+  "evidence": [
+    {
+      "fields": [
+        "column_y_ft",
+        "column_diameter_ft",
+        "column_top_el_ft",
+        "shaft_top_el_ft",
+        "rock_el_ft",
+        "socket_tip_el_ft",
+        "socket_diameter_ft",
+        "cap_width_ft",
+        "cap_depth_ft",
+        "cap_length_ft",
+        "debris_wall_thickness_ft",
+        "debris_wall_top_el_ft"
+      ],
+      "status": "drawing",
+      "source": "plans",
+      "pdf_pages": [
+        38
+      ],
+      "note": "Column center spacing is 22 ft. Visual column, shaft, socket and casing positions were corrected to drawing +/-11 ft; debris walls rebuilt."
+    },
+    {
+      "fields": [
+        "shaft_concrete_diameter_in"
+      ],
+      "status": "derived_drawing",
+      "source": "plans",
+      "pdf_pages": [
+        38
+      ],
+      "note": "60 in outside casing diameter minus two 3/4 in casing walls; casing stiffness excluded."
+    },
+    {
+      "fields": [
+        "end_cap_width_ft",
+        "end_cap_depth_ft",
+        "end_cap_length_ft",
+        "end_cap_bottom_el_ft",
+        "pile_tip_el_ft",
+        "pile_y_ft"
+      ],
+      "status": "drawing",
+      "source": "plans",
+      "pdf_pages": [
+        32,
+        33,
+        34
+      ],
+      "note": "Six piles at 5 ft 9 in spacing per end bent. Nominal cap section uses 3 ft depth; stepped seats idealized."
+    },
+    {
+      "fields": [
+        "pile_depth_in",
+        "pile_flange_in",
+        "pile_web_in",
+        "pile_thickness_in"
+      ],
+      "status": "reference_estimate",
+      "source": "plans",
+      "pdf_pages": [
+        33,
+        34
+      ],
+      "note": "HP12x84 rectangular flange/web approximation from current source model; fillets excluded."
+    },
+    {
+      "fields": [
+        "steel_weight_pcf",
+        "steel_poisson",
+        "pad_G_MPa",
+        "pad_E_compression_MPa",
+        "construction_slide_Npm",
+        "girder_torsion_J_m4",
+        "haunch_stiffness_included"
+      ],
+      "status": "assumed",
+      "source": "plans",
+      "pdf_pages": [],
+      "note": "Research defaults: normal structural steel, estimated elastomer moduli, near-sliding construction bearings. Girder torsion J is provisional. Flattened superstructure; actual substructure heights preserved relative to drawing cap levels. Haunch transmits shear through rigid offsets; its own section stiffness omitted."
+    },
+    {
+      "fields": [
+        "pad_length_in",
+        "pad_width_in",
+        "pad_rubber_in"
+      ],
+      "status": "drawing",
+      "source": "plans",
+      "pdf_pages": [
+        45
+      ],
+      "note": "TH1 12 x 36 in; total rubber 5 x 0.5 + 2 x 9/32 in; compression modulus is an assumed effective value, not unconfined rubber E."
+    },
+    {
+      "fields": [
+        "diaphragm_width_ft",
+        "diaphragm_height_ft",
+        "channel_depth_in",
+        "channel_width_in",
+        "channel_web_in",
+        "channel_flange_in",
+        "channel_station_ft"
+      ],
+      "status": "derived_drawing",
+      "source": "plans",
+      "pdf_pages": [
+        42,
+        45,
+        47
+      ],
+      "note": "RC diaphragm equivalent 3 x 3 ft gross section. C9x20 rectangular section approximation; actual end clips and connection slip omitted."
+    },
+    {
+      "fields": [
+        "strand_z_end_in",
+        "strand_z_mid_in",
+        "draped_count",
+        "depress_distance_ft"
+      ],
+      "status": "drawing",
+      "source": "plans",
+      "pdf_pages": [
+        43,
+        44
+      ],
+      "note": "Only three strands per girder drape from z=31 in at ends to z=4 in at depress points; other strands are straight. Equivalent centroid path includes all strands."
+    },
+    {
+      "fields": [
+        "barrier_volume_cyd_per_side"
+      ],
+      "status": "drawing",
+      "source": "plans",
+      "pdf_pages": [
+        49
+      ],
+      "note": "24.1 cubic yards in the one-side barrier schedule; both sides included, transition rails excluded."
+    },
+    {
+      "fields": [
+        "prestress_retained_fraction"
+      ],
+      "status": "assumed",
+      "source": "plans",
+      "pdf_pages": [
+        45
+      ],
+      "note": "Default retained force 80% of specified jacking force. Losses are not calculated; 70/80/90% sensitivity is a scenario, not a measured effective force."
+    },
+    {
+      "fields": [
+        "end_bearing_horizontal_Npm",
+        "end_bearing_vertical_Npm",
+        "end_connection_rotation_Nm",
+        "released_rotation_Nm",
+        "seat_offset_m"
+      ],
+      "status": "assumed",
+      "source": "plans",
+      "pdf_pages": [
+        34,
+        45
+      ],
+      "note": "Explicit idealizations: stiff finite springs at cured end connections, negligible released rotational stiffness, and a flattened 0.12 m bearing/plate offset. No supplier connection tests are available."
+    }
+  ],
+  "assumptions": [
+    "Connected elastic beam-shell research model. Gross uncracked concrete; no capacity, rating, fatigue or local contact/solid stress claim.",
+    "Both visual and analytical column center spacing is 22 ft (corrected from 17.5 ft using PDF 38). Analytical superstructure remains straightened; display values map by component ID and local position.",
+    "Foundation variants fix either estimated tip nodes (unsupported embedment) or rock-line nodes (rigid rock idealization). Neither includes calibrated soil springs, p-y curves, settlement or true rock-socket bond. These are sensitivity scenarios, not bounds.",
+    "Post-cure end-bent connections are rigid offsets; interior TH1 pads use estimated translational stiffness and free rotational releases. RC diaphragms connect the beam ends; keyway contact and bearing uplift are not nonlinear.",
+    "Staged case uses the drawing-permitted alternative continuous wet-deck pour on bare girders, then full composite action for barriers and wearing. Default A/B/C sequential pours, hydration age, creep and shrinkage are not simulated.",
+    "Prestress is applied to the concrete as balanced equivalent tendon forces with a polygonal centroid path; total force is jacking force times a selected retained fraction. No explicit tendon stiffness, transfer length, end-zone bursting or bond model.",
+    "Stage increments use separate stiffness models, with new concrete stress-free at activation. Cumulative signed beam stresses and reactions are superposed; displayed displacement is accumulated small-displacement response, not measured camber.",
+    "Wet loads include 8 in deck, 2 in assumed haunch and 15 psf permanent forms. RC diaphragm and substructure weights are included at idealized sections. Barrier quantities use PDF 49. Approach slabs, wingwalls, soil, utilities and small hardware weights are excluded.",
+    "Grade/crossfall/camber are straightened. Deck extends 1 ft beyond end-bent axes; bearing centers and girder extents follow the drawing. Frame offsets transmit force and moment without stiffness double counting.",
+    "Shell stress is principal surface stress reconstructed from unsmoothed integration-point resultants. Beam stress is axial plus biaxial nominal flexure; bearing output is mean compression only. These are different measures, never a safety score.",
+    "Force and moment equilibrium, shell patch/plate and frame benchmarks are checked. Mesh comparison reports each family; localized peaks at rigid connections may not converge and remain flagged. Field validation is absent.",
+    "Linear bearing springs can carry tension; signed mean pressure is preserved. Tensile increments are not proof of uplift without the existing gravity state. Drilled-shaft concrete uses the pier modulus as an explicit provisional material assignment."
+  ]
+}

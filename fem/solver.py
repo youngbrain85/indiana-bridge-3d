@@ -16,6 +16,9 @@ LBF = 4.4482216152605
 PSI = LBF / IN**2
 PSF = LBF / FT**2
 CASES = {
+    'global_uniform': 'Whole bridge: 1 kPa full-deck increment',
+    'global_eccentric': 'Whole bridge: 1 kPa on left half of deck',
+    'global_staged': 'Whole bridge: staged gravity + assumed retained prestress',
     'uniform': '1 kPa full-width test load (after composite action)',
     'wearing': '35 psf future wearing surface (after composite action)',
     'girder_weight': 'Bare girder self-weight increment (before composite action)',
@@ -23,7 +26,7 @@ CASES = {
 
 
 def settings(raw):
-    if not isinstance(raw, dict) or set(raw) - {'case', 'end_restraint', 'load_factor'}:
+    if not isinstance(raw, dict) or set(raw) - {'case', 'end_restraint', 'load_factor', 'foundation', 'prestress_factor'}:
         raise ValueError('Only case, end_restraint and load_factor may be supplied.')
     result = {'case': raw.get('case', 'uniform'),
               'end_restraint': raw.get('end_restraint', 'free'),
@@ -35,6 +38,14 @@ def settings(raw):
         raise ValueError('Load multiplier must be a finite number from 0.1 to 5.')
     if result['case'] == 'girder_weight' and result['end_restraint'] != 'free':
         raise ValueError('Bare girders use individual simple bearings; select free end rotation.')
+    if result['case'].startswith('global_'):
+        result['foundation']=raw.get('foundation','tip')
+        result['prestress_factor']=raw.get('prestress_factor',.8)
+        if result['end_restraint']!='free': raise ValueError('Whole-bridge cases use their explicit connection model.')
+        if result['foundation'] not in ('tip','rock'): raise ValueError('Unknown foundation scenario.')
+        if isinstance(result['prestress_factor'],bool) or result['prestress_factor'] not in (.7,.8,.9): raise ValueError('Select retained prestress 0.7, 0.8 or 0.9.')
+    elif 'foundation' in raw or 'prestress_factor' in raw:
+        raise ValueError('Whole-bridge options require a whole-bridge load case.')
     return result
 
 
@@ -246,6 +257,9 @@ def solve(snapshot):
     import openseespy.opensees as ops
     ledger = snapshot['ledger']
     options = settings(snapshot['settings'])
+    if options['case'].startswith('global_'):
+        from fem.global_model import solve_global
+        return solve_global(snapshot)
     tests = benchmarks()
     coarse = run_model(ledger, options, 24)
     fine = run_model(ledger, options, 48)
@@ -293,6 +307,8 @@ if __name__ == '__main__':
     payload = json.loads(args.input.read_text(encoding='utf-8'))
     if hashlib.sha256(Path(__file__).read_bytes()).hexdigest() != payload['solver_code_sha256']:
         raise RuntimeError('Solver source changed after the input snapshot was created.')
+    if payload.get('global_code_sha256') and hashlib.sha256(Path(__file__).with_name('global_model.py').read_bytes()).hexdigest()!=payload['global_code_sha256']:
+        raise RuntimeError('Global solver source changed after snapshot creation.')
     result = solve(payload)
     encoded = json.dumps(result, ensure_ascii=True, allow_nan=False, separators=(',',':'))
     temp = args.output.with_suffix('.tmp')

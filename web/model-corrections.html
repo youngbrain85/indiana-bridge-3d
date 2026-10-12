@@ -1,0 +1,55 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Beechwood model-corrections</title><style>body{font:16px/1.7 system-ui,sans-serif;color:#213d4b;background:#f6f9fb;margin:0}main{max-width:1080px;margin:auto;padding:32px}h1{font-size:30px}h2{margin-top:36px}table{width:100%;border-collapse:collapse;background:white}th,td{border:1px solid #d9e4e9;padding:10px;text-align:left}a{color:#087a86}pre{overflow:auto;background:#e6eef2;padding:16px}code{overflow-wrap:anywhere}.table-wrap{overflow:auto}@media(max-width:650px){main{padding:16px}table{font-size:12px}th,td{padding:6px}}</style><main><a href="/#bridge/beechwood">Return to Beechwood</a><h1>Drawing-confirmed Beechwood geometry correction</h1>
+<p>The transverse spacing between the two columns at each interior bent was misread as <strong>17 ft 6 in</strong>. The dimensioned elevation on <strong>PDF page 38 / printed sheet 37</strong> specifies <strong>22 ft between column centers</strong>. The 33 ft cap is divided into 5 ft 6 in + 22 ft + 5 ft 6 in. The nearby 17 ft 6 in dimension describes the central cap step in plan, not column center spacing.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Corrected objects</th>
+<th align="right">Count</th>
+<th>Before</th>
+<th>After</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bent 2 and 3 columns</td>
+<td align="right">4</td>
+<td>Transverse centers ±8.75 ft</td>
+<td>±11 ft; 22 ft center spacing</td>
+<td>PDF 38 elevation</td>
+</tr>
+<tr>
+<td>Concrete drilled shafts</td>
+<td align="right">4</td>
+<td>Aligned at ±8.75 ft</td>
+<td>Moved with columns to ±11 ft</td>
+<td>PDF 38 section/elevation</td>
+</tr>
+<tr>
+<td>Rock sockets</td>
+<td align="right">4</td>
+<td>Aligned at ±8.75 ft</td>
+<td>Moved with columns to ±11 ft</td>
+<td>PDF 38 section/elevation</td>
+</tr>
+<tr>
+<td>Permanent steel casings</td>
+<td align="right">4</td>
+<td>Aligned at ±8.75 ft</td>
+<td>Moved with shaft cores to ±11 ft</td>
+<td>PDF 38 section</td>
+</tr>
+<tr>
+<td>Debris walls</td>
+<td align="right">2</td>
+<td>Cut around the incorrectly spaced columns</td>
+<td>Rebuilt with circular column intersections removed; 17.5 ft clear at the longitudinal centerline</td>
+<td>PDF 38 elevation</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each column/foundation line moves outward <strong>2.25 ft (0.6858 m)</strong>. The original diameters, vertical elevations and cap outline remain as dimensioned. The wall clear distance is 22 − 4.5 = 17.5 ft; it is different from center spacing.</p>
+<p>The correction updates the actual downloadable GLB, component bounds and dimensions, embedded GLB metadata, SQLite catalog and preview. It is not a display-only translation. The component IDs remain stable, so drawing links and tree selections still identify the same objects. Old FEM runs are archived by changed asset hashes and are not automatically recolored onto the revised model.</p>
+<p>The correction record, before/after SHA-256 and all 18 component IDs are embedded in <code>model_manifest.json</code>. <code>scripts/correct_beechwood_columns.py</code> reproduces the correction from the previous version and is idempotent on an already corrected version. Unrelated geometry buffers are preserved. Source drawing bytes are unchanged.</p>
+<p>Verification checks actual GLB vertex bounds as well as the manifest. All four coaxial column/shaft/socket/casing assemblies are centered at ±11 ft. Both regenerated walls are watertight. The connected FEM model independently uses the same 22 ft spacing.</p>
+<p><a href="/assets/beechwood/drawing#page=38">Open source PDF at page 38</a> · <a href="/assets/beechwood/model">Download corrected full GLB</a> · <a href="/#bridge/beechwood">Open bridge</a></p></main></html>

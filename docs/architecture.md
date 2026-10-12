@@ -1,6 +1,6 @@
 # Architecture
 
-The application is a local bridge review service. Python's `ThreadingHTTPServer` serves an allowlisted frontend, SQLite-backed JSON APIs and registered assets. PyMuPDF renders individual source PDF pages into a local cache. Three.js renders models; Leaflet provides the Indiana map. An optional isolated OpenSees worker calculates the Beechwood incremental longitudinal beam pilot.
+The application is a local bridge review service. Python's `ThreadingHTTPServer` serves an allowlisted frontend, SQLite-backed JSON APIs and registered assets. PyMuPDF renders individual source PDF pages into a local cache. Three.js renders models; Leaflet provides the Indiana map. An optional isolated OpenSees worker calculates the Beechwood connected frame/shell model and the earlier longitudinal beam pilot.
 
 ## Relationships
 

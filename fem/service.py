@@ -55,6 +55,8 @@ class AnalysisService:
 
     def freeze(self, options):
         ledger = self.ledger()
+        global_case=options.get('case','').startswith('global_')
+        if global_case: ledger['global']=json.loads((ROOT/'fem/global.json').read_text(encoding='utf-8'))
         source_hash = sha(ROOT/ledger['source_pdf'])
         if source_hash != ledger['drawing_sha256']:
             raise ValueError('The drawing changed. Recheck the material ledger before running.')
@@ -67,8 +69,10 @@ class AnalysisService:
         hashes = {'drawing':source_hash, 'manifest':sha(manifest), 'model':sha(model)}
         if count != 12 or any(assets.get(k)!=v for k,v in hashes.items()):
             raise ValueError('Catalog/source mismatch. Reimport the bridge data before analysis.')
-        return {'ledger':ledger, 'settings':settings(options), 'source_hashes':hashes,
-                'solver_code_sha256':sha(ROOT/'fem/solver.py')}
+        snapshot={'ledger':ledger, 'settings':settings(options), 'source_hashes':hashes,
+                  'solver_code_sha256':sha(ROOT/'fem/solver.py')}
+        if global_case: snapshot['global_code_sha256']=sha(ROOT/'fem/global_model.py')
+        return snapshot
 
     def info(self, bid):
         if bid != 'beechwood':
@@ -80,6 +84,7 @@ class AnalysisService:
                 JOIN analysis_inputs i ON i.input_hash=r.input_hash WHERE r.bridge_id=? ORDER BY r.created_utc DESC LIMIT 20''',(bid,))]
             for r in history:
                 r['settings'] = json.loads(r.pop('snapshot_json'))['settings']
+        ledger['global']=json.loads((ROOT/'fem/global.json').read_text(encoding='utf-8'))
         return {'available':True, 'ledger':ledger, 'cases':CASES,
                 'derived':{'girder_E_GPa':concrete_E(ledger['values']['girder_fc_psi'],ledger['values'])/1e9,
                            'deck_E_GPa':concrete_E(ledger['values']['deck_fc_psi'],ledger['values'])/1e9},
@@ -149,7 +154,11 @@ class AnalysisService:
                     raise RuntimeError('Optional solver is missing. Install requirements-fem.txt in .venv-fem using Python 3.12. See docs/fem.md.')
                 raise RuntimeError('Solver failed; no result was accepted. Inspect the local run log.')
             result = json.loads((folder/'result.json').read_text(encoding='utf-8'))
-            if not result['verification']['passed'] or len(result['members']) != 12:
+            ids=[m['component_id'] for m in result['members']]
+            with closing(connect(self.db_path)) as db:
+                registered={r[0] for r in db.execute("SELECT id FROM components WHERE bridge_id='beechwood'")}
+            expected=72 if result['case'].startswith('global_') else 12
+            if not result['verification']['passed'] or len(ids)!=len(set(ids)) or not set(ids)<=registered or len(ids)!=expected:
                 raise RuntimeError('Result verification failed.')
             summary = {k:result[k] for k in ('case_title','solver','max_stress_MPa','max_deflection_mm','total_load_kN','total_reaction_kN','node_count','element_count','verification')}
             with closing(connect(self.db_path)) as db:
@@ -184,8 +193,8 @@ class AnalysisService:
         result = json.loads(path.read_text(encoding='utf-8'))
         out = io.StringIO(newline='')
         writer = csv.writer(out)
-        writer.writerow(['component_id','x_m','incremental_top_MPa','incremental_bottom_MPa','max_abs_fiber_MPa','downward_mm','sagging_kNm'])
+        writer.writerow(['component_id','x_m','top_or_max_MPa','bottom_or_min_MPa','absolute_stress_measure_MPa','downward_mm','moment_kNm','family','y_m','z_m','tension_MPa','compression_MPa'])
         for m in result['members']:
             for p in m['samples']:
-                writer.writerow([m['component_id'],p['x_m'],p['top_MPa'],p['bottom_MPa'],p['stress_MPa'],p['deflection_mm'],p['moment_kNm']])
+                writer.writerow([m['component_id'],p['x_m'],p['top_MPa'],p['bottom_MPa'],p['stress_MPa'],p['deflection_mm'],p['moment_kNm'],m.get('family','girder'),*(p.get('xyz_m',[0,'',''])[1:]),p.get('tension_MPa',''),p.get('compression_MPa','')])
         return out.getvalue().encode('utf-8')

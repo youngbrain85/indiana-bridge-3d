@@ -68,7 +68,7 @@ class AnalysisAPITests(unittest.TestCase):
         self.assertEqual(result['snapshot']['ledger']['drawing_sha256'],result['snapshot']['source_hashes']['drawing'])
         with self.request('/api/analysis/runs/'+run['id']+'/samples.csv') as r:
             csv=r.read().decode()
-            self.assertIn('incremental_top_MPa',csv)
+            self.assertIn('top_or_max_MPa',csv)
             self.assertIn('beechwood:girder_B2',csv)
         with connect(self.db_path) as db:
             self.assertEqual(db.execute('SELECT COUNT(*) FROM analysis_member_results').fetchone()[0],12)

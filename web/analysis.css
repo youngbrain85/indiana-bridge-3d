@@ -18,7 +18,10 @@
 .fem-evidence { border-bottom:1px solid #e1e8ec; padding:12px 0; }
 .fem-evidence b { color:#28706d; text-transform:uppercase; font-size:10px; }
 .fem-evidence a { margin-right:9px; }
-.fem-downloads { display:flex; gap:16px; margin:14px 0; font-size:12px; }
+.fem-downloads { display:flex; flex-wrap:wrap; gap:8px; margin:14px 0; font-size:12px; }
+.fem-downloads button { font-size:11px; padding:8px; }
+.fem-table { width:100%; border-collapse:collapse; font-size:11px; }
+.fem-table th,.fem-table td { text-align:left; border-bottom:1px solid #dae3e8; padding:7px 3px; }
 #femLegend { position:absolute; left:14px; bottom:14px; z-index:3; background:#13232deb; color:#e6eff3; border:1px solid #53646c; border-radius:6px; padding:11px 14px; width:min(345px,calc(100% - 28px)); pointer-events:none; }
 #femLegend b { display:block; font-size:12px; margin-bottom:5px; }
 #femLegend>span { display:block; font-size:10px; }

@@ -8,7 +8,7 @@ A local bridge review workspace combining 3D models, a component database, sourc
 
 - **9 bridge models**, **4,012 components** and **106 original source groups**.
 - **9 plan sets / 324 PDF pages**, with **5,666 component-to-page links**.
-- **5,852 dimensional attributes** and **76 detail-coverage entries**.
+- **5,872 dimensional attributes** and **76 detail-coverage entries**.
 - Bundled GLB models, PDF drawings, English model manifests and map boundaries.
 
 The collection includes Beechwood Road, 21st Street over I-465, US 421 over South Fork Wildcat Creek, US 52 over Mud Creek, SR 58 over White Creek, SR 159 over Branch Spencer Creek, and three SR 62 crossings: CSX Railroad, Tekoppel Avenue and Carpentier Creek.
@@ -61,7 +61,7 @@ The application binds to localhost. It is a local viewer, not an authenticated m
 - **Components:** searchable, paginated register with CSV export and direct links back to 3D.
 - **Indiana map:** county boundaries, road layer, bridge markers and model-detail status. Green means exterior detail coverage is complete within the stated scope; amber means additional detail is needed. These are **not structural condition ratings**.
 - **Drawings:** locally rendered PDF pages and original plan downloads.
-- **FEM pilot (Beechwood):** source-traceable material inputs, isolated OpenSees runs, incremental girder stress/deflection colors, support sensitivity, numerical verification and JSON/CSV results. See [setup, material evidence and limitations](docs/fem.md). The optional solver requires a separate Python 3.12 environment; no AI API key is needed.
+- **Whole-bridge FEM (Beechwood):** 72 connected structural components, beam/shell stress and displacement, explicit bearings/foundations, staged prestress scenarios, sensitivity, actual FE mesh, convergence warnings and JSON/CSV results. See [setup, material evidence and limitations](docs/fem.md). The optional solver requires a separate Python 3.12 environment; no AI API key is needed.
 - **Exports:** GLB model, component CSV and the current SQLite database.
 - **UI review:** visit `/review` to annotate a reference screenshot, add numbered notes and export PNG or JSON. Notes are stored only in the browser.
 
@@ -90,7 +90,7 @@ fem/                      Material ledger, optional solver and analysis job serv
 docs/                     Architecture and verification notes
 ```
 
-The FEM pilot is a longitudinal beam idealization for three separate load increments, not a local solid stress analysis or bridge load rating. Known prestress data is recorded but effective prestress and construction-stage effects are not yet applied. See the in-app FEM sources and assumptions before interpreting colors.
+The connected FEM model is a gross elastic research idealization. Retained prestress and foundation restraints are assumptions; local wall peaks remain mesh-sensitive. It is not a local solid stress analysis or load rating. Drawing-confirmed column/foundation spacing was corrected from 17.5 ft to 22 ft in the actual GLB and DB; see [the geometry correction record](docs/model-corrections.md).
 
 Runtime files are generated locally and excluded from Git: `data/bridges.sqlite3`, `data/assets/`, PDF preview caches, logs, process IDs and test screenshots. The database can be rebuilt with `python import_data.py` or downloaded from the app. Back up the repository and any locally added source assets together.
 

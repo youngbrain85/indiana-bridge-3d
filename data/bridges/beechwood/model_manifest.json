@@ -69,22 +69,23 @@
         39
       ],
       "basis": "Dimensioned",
-      "note": "",
+      "note": "Corrected to 22 ft column center spacing, PDF 38 / sheet 37.",
       "dimensions": {
         "diameter_ft": 4.5,
         "base_el_ft": 390,
-        "top_el_ft": 419.42
+        "top_el_ft": 419.42,
+        "transverse_center_ft": 11
       },
       "color": "#899fa7",
       "bounds_m": [
         [
           23.6982,
-          1.9812,
+          2.667,
           0.0
         ],
         [
-          25.0698,
-          3.3528,
+          25.069799,
+          4.0386,
           8.967216
         ]
       ],
@@ -101,21 +102,22 @@
         38
       ],
       "basis": "Dimensioned minimum extent",
-      "note": "Minimum 7 ft rock socket; actual rock conditions may alter construction depth.",
+      "note": "Minimum 7 ft rock socket; actual rock conditions may alter construction depth. Corrected to 22 ft column center spacing, PDF 38 / sheet 37.",
       "dimensions": {
         "diameter_ft": 4.5,
-        "length_ft": 7
+        "length_ft": 7,
+        "transverse_center_ft": 11
       },
       "color": "#648e92",
       "bounds_m": [
         [
           23.6982,
-          1.9812,
+          2.667,
           -5.1816
         ],
         [
-          25.0698,
-          3.3528,
+          25.069799,
+          4.0386,
           -3.048
         ]
       ],
@@ -134,22 +136,23 @@
         39
       ],
       "basis": "Dimensioned",
-      "note": "",
+      "note": "Corrected to 22 ft column center spacing, PDF 38 / sheet 37.",
       "dimensions": {
         "diameter_ft": 4.5,
         "base_el_ft": 390,
-        "top_el_ft": 419.42
+        "top_el_ft": 419.42,
+        "transverse_center_ft": -11
       },
       "color": "#899fa7",
       "bounds_m": [
         [
           23.6982,
-          -3.3528,
+          -4.0386,
           0.0
         ],
         [
-          25.0698,
-          -1.9812,
+          25.069799,
+          -2.667,
           8.967216
         ]
       ],
@@ -166,21 +169,22 @@
         38
       ],
       "basis": "Dimensioned minimum extent",
-      "note": "Minimum 7 ft rock socket; actual rock conditions may alter construction depth.",
+      "note": "Minimum 7 ft rock socket; actual rock conditions may alter construction depth. Corrected to 22 ft column center spacing, PDF 38 / sheet 37.",
       "dimensions": {
         "diameter_ft": 4.5,
-        "length_ft": 7
+        "length_ft": 7,
+        "transverse_center_ft": -11
       },
       "color": "#648e92",
       "bounds_m": [
         [
           23.6982,
-          -3.3528,
+          -4.0386,
           -5.1816
         ],
         [
-          25.0698,
-          -1.9812,
+          25.069799,
+          -2.667,
           -3.048
         ]
       ],
@@ -199,27 +203,29 @@
         40
       ],
       "basis": "Dimensioned",
-      "note": "",
+      "note": "Rebuilt between corrected column lines; circular-column intersections removed. PDF 38 / sheet 37.",
       "dimensions": {
         "thickness_ft": 1,
         "total_width_ft": 22,
         "top_el_ft": 413.13,
-        "bottom_el_ft": 390
+        "bottom_el_ft": 390,
+        "column_center_spacing_ft": 22,
+        "clear_width_at_centerline_ft": 17.5
       },
       "color": "#899fa7",
       "bounds_m": [
         [
           24.2316,
-          -3.3528,
+          -2.684839,
           0.0
         ],
         [
           24.5364,
-          3.3528,
+          2.684839,
           7.050024
         ]
       ],
-      "volume_m3": 8.568066
+      "volume_m3": 11.48869
     },
     {
       "id": "b3_column_L",
@@ -234,22 +240,23 @@
         39
       ],
       "basis": "Dimensioned",
-      "note": "",
+      "note": "Corrected to 22 ft column center spacing, PDF 38 / sheet 37.",
       "dimensions": {
         "diameter_ft": 4.5,
         "base_el_ft": 390,
-        "top_el_ft": 415.54
+        "top_el_ft": 415.54,
+        "transverse_center_ft": 11
       },
       "color": "#899fa7",
       "bounds_m": [
         [
-          51.1302,
-          1.9812,
+          51.130199,
+          2.667,
           0.0
         ],
         [
-          52.5018,
-          3.3528,
+          52.501801,
+          4.0386,
           7.784592
         ]
       ],
@@ -266,21 +273,22 @@
         38
       ],
       "basis": "Dimensioned minimum extent",
-      "note": "Minimum 7 ft rock socket; actual rock conditions may alter construction depth.",
+      "note": "Minimum 7 ft rock socket; actual rock conditions may alter construction depth. Corrected to 22 ft column center spacing, PDF 38 / sheet 37.",
       "dimensions": {
         "diameter_ft": 4.5,
-        "length_ft": 7
+        "length_ft": 7,
+        "transverse_center_ft": 11
       },
       "color": "#648e92",
       "bounds_m": [
         [
-          51.1302,
-          1.9812,
+          51.130199,
+          2.667,
           -17.3736
         ],
         [
-          52.5018,
-          3.3528,
+          52.501801,
+          4.0386,
           -15.24
         ]
       ],
@@ -299,22 +307,23 @@
         39
       ],
       "basis": "Dimensioned",
-      "note": "",
+      "note": "Corrected to 22 ft column center spacing, PDF 38 / sheet 37.",
       "dimensions": {
         "diameter_ft": 4.5,
         "base_el_ft": 390,
-        "top_el_ft": 415.54
+        "top_el_ft": 415.54,
+        "transverse_center_ft": -11
       },
       "color": "#899fa7",
       "bounds_m": [
         [
-          51.1302,
-          -3.3528,
+          51.130199,
+          -4.0386,
           0.0
         ],
         [
-          52.5018,
-          -1.9812,
+          52.501801,
+          -2.667,
           7.784592
         ]
       ],
@@ -331,21 +340,22 @@
         38
       ],
       "basis": "Dimensioned minimum extent",
-      "note": "Minimum 7 ft rock socket; actual rock conditions may alter construction depth.",
+      "note": "Minimum 7 ft rock socket; actual rock conditions may alter construction depth. Corrected to 22 ft column center spacing, PDF 38 / sheet 37.",
       "dimensions": {
         "diameter_ft": 4.5,
-        "length_ft": 7
+        "length_ft": 7,
+        "transverse_center_ft": -11
       },
       "color": "#648e92",
       "bounds_m": [
         [
-          51.1302,
-          -3.3528,
+          51.130199,
+          -4.0386,
           -17.3736
         ],
         [
-          52.5018,
-          -1.9812,
+          52.501801,
+          -2.667,
           -15.24
         ]
       ],
@@ -364,27 +374,29 @@
         40
       ],
       "basis": "Dimensioned",
-      "note": "",
+      "note": "Rebuilt between corrected column lines; circular-column intersections removed. PDF 38 / sheet 37.",
       "dimensions": {
         "thickness_ft": 1,
         "total_width_ft": 22,
         "top_el_ft": 413.13,
-        "bottom_el_ft": 390
+        "bottom_el_ft": 390,
+        "column_center_spacing_ft": 22,
+        "clear_width_at_centerline_ft": 17.5
       },
       "color": "#899fa7",
       "bounds_m": [
         [
           51.663601,
-          -3.3528,
+          -2.684838,
           0.0
         ],
         [
           51.968399,
-          3.3528,
+          2.684838,
           7.050024
         ]
       ],
-      "volume_m3": 8.568011
+      "volume_m3": 11.488617
     },
     {
       "id": "haunch_A1",
@@ -13519,23 +13531,24 @@
         38
       ],
       "basis": "Detailed exterior geometry",
-      "note": "Concrete core within permanent casing; 60 in total outside diameter interpretation from sheet 37.",
+      "note": "Concrete core within permanent casing; 60 in total outside diameter interpretation from sheet 37. Corrected to 22 ft column center spacing, PDF 38 / sheet 37.",
       "dimensions": {
         "diameter_ft": 5,
         "top_el_ft": 390,
         "bottom_el_ft": 380,
-        "concrete_diameter_in": 58.5
+        "concrete_diameter_in": 58.5,
+        "transverse_center_ft": 11
       },
       "color": "#648e92",
       "bounds_m": [
         [
           23.64105,
-          1.92405,
+          2.60985,
           -3.048
         ],
         [
-          25.12695,
-          3.40995,
+          25.126949,
+          4.09575,
           0.0
         ]
       ],
@@ -13553,21 +13566,22 @@
         38
       ],
       "basis": "Drawing shell thickness; diameter interpretation",
-      "note": "60 in dimension treated as casing outside diameter.",
+      "note": "60 in dimension treated as casing outside diameter. Corrected to 22 ft column center spacing, PDF 38 / sheet 37.",
       "dimensions": {
         "outside_diameter_in": 60,
-        "wall_in": 0.75
+        "wall_in": 0.75,
+        "transverse_center_ft": 11
       },
       "color": "#48616e",
       "bounds_m": [
         [
           23.622,
-          1.905,
+          2.5908,
           -3.048
         ],
         [
           25.146,
-          3.429,
+          4.1148,
           0.0
         ]
       ],
@@ -13585,23 +13599,24 @@
         38
       ],
       "basis": "Detailed exterior geometry",
-      "note": "Concrete core within permanent casing; 60 in total outside diameter interpretation from sheet 37.",
+      "note": "Concrete core within permanent casing; 60 in total outside diameter interpretation from sheet 37. Corrected to 22 ft column center spacing, PDF 38 / sheet 37.",
       "dimensions": {
         "diameter_ft": 5,
         "top_el_ft": 390,
         "bottom_el_ft": 380,
-        "concrete_diameter_in": 58.5
+        "concrete_diameter_in": 58.5,
+        "transverse_center_ft": -11
       },
       "color": "#648e92",
       "bounds_m": [
         [
           23.64105,
-          -3.40995,
+          -4.09575,
           -3.048
         ],
         [
-          25.12695,
-          -1.92405,
+          25.126949,
+          -2.60985,
           0.0
         ]
       ],
@@ -13619,21 +13634,22 @@
         38
       ],
       "basis": "Drawing shell thickness; diameter interpretation",
-      "note": "60 in dimension treated as casing outside diameter.",
+      "note": "60 in dimension treated as casing outside diameter. Corrected to 22 ft column center spacing, PDF 38 / sheet 37.",
       "dimensions": {
         "outside_diameter_in": 60,
-        "wall_in": 0.75
+        "wall_in": 0.75,
+        "transverse_center_ft": -11
       },
       "color": "#48616e",
       "bounds_m": [
         [
           23.622,
-          -3.429,
+          -4.1148,
           -3.048
         ],
         [
           25.146,
-          -1.905,
+          -2.5908,
           0.0
         ]
       ],
@@ -13651,23 +13667,24 @@
         38
       ],
       "basis": "Detailed exterior geometry",
-      "note": "Concrete core within permanent casing; 60 in total outside diameter interpretation from sheet 37.",
+      "note": "Concrete core within permanent casing; 60 in total outside diameter interpretation from sheet 37. Corrected to 22 ft column center spacing, PDF 38 / sheet 37.",
       "dimensions": {
         "diameter_ft": 5,
         "top_el_ft": 390,
         "bottom_el_ft": 340,
-        "concrete_diameter_in": 58.5
+        "concrete_diameter_in": 58.5,
+        "transverse_center_ft": 11
       },
       "color": "#648e92",
       "bounds_m": [
         [
-          51.07305,
-          1.92405,
+          51.073051,
+          2.60985,
           -15.24
         ],
         [
-          52.55895,
-          3.40995,
+          52.558949,
+          4.09575,
           0.0
         ]
       ],
@@ -13685,21 +13702,22 @@
         38
       ],
       "basis": "Drawing shell thickness; diameter interpretation",
-      "note": "60 in dimension treated as casing outside diameter.",
+      "note": "60 in dimension treated as casing outside diameter. Corrected to 22 ft column center spacing, PDF 38 / sheet 37.",
       "dimensions": {
         "outside_diameter_in": 60,
-        "wall_in": 0.75
+        "wall_in": 0.75,
+        "transverse_center_ft": 11
       },
       "color": "#48616e",
       "bounds_m": [
         [
-          51.054,
-          1.905,
+          51.054001,
+          2.5908,
           -15.24
         ],
         [
-          52.578,
-          3.429,
+          52.577999,
+          4.1148,
           0.0
         ]
       ],
@@ -13717,23 +13735,24 @@
         38
       ],
       "basis": "Detailed exterior geometry",
-      "note": "Concrete core within permanent casing; 60 in total outside diameter interpretation from sheet 37.",
+      "note": "Concrete core within permanent casing; 60 in total outside diameter interpretation from sheet 37. Corrected to 22 ft column center spacing, PDF 38 / sheet 37.",
       "dimensions": {
         "diameter_ft": 5,
         "top_el_ft": 390,
         "bottom_el_ft": 340,
-        "concrete_diameter_in": 58.5
+        "concrete_diameter_in": 58.5,
+        "transverse_center_ft": -11
       },
       "color": "#648e92",
       "bounds_m": [
         [
-          51.07305,
-          -3.40995,
+          51.073051,
+          -4.09575,
           -15.24
         ],
         [
-          52.55895,
-          -1.92405,
+          52.558949,
+          -2.60985,
           0.0
         ]
       ],
@@ -13751,21 +13770,22 @@
         38
       ],
       "basis": "Drawing shell thickness; diameter interpretation",
-      "note": "60 in dimension treated as casing outside diameter.",
+      "note": "60 in dimension treated as casing outside diameter. Corrected to 22 ft column center spacing, PDF 38 / sheet 37.",
       "dimensions": {
         "outside_diameter_in": 60,
-        "wall_in": 0.75
+        "wall_in": 0.75,
+        "transverse_center_ft": -11
       },
       "color": "#48616e",
       "bounds_m": [
         [
-          51.054,
-          -3.429,
+          51.054001,
+          -4.1148,
           -15.24
         ],
         [
-          52.578,
-          -1.905,
+          52.577999,
+          -2.5908,
           0.0
         ]
       ],
@@ -20481,7 +20501,7 @@
       "external_references": []
     }
   ],
-  "revision": "2.0 exterior details",
+  "revision": "2.1-column-spacing",
   "detail_coverage": [
     {
       "feature": "HP12×84 section",
@@ -21142,5 +21162,34 @@
       "id": "INDOT 2022 grooving revision",
       "url": "https://www.in.gov/dot/div/contracts/standards/sc/2022/jan/SC_Approved%20Minutes%20220120.pdf"
     }
-  ]
+  ],
+  "geometry_correction": "column-spacing-22ft",
+  "geometry_correction_record": {
+    "source_pdf_page": 38,
+    "printed_sheet": 37,
+    "old_spacing_ft": 17.5,
+    "new_spacing_ft": 22,
+    "changed_parts": [
+      "b2_column_L",
+      "b2_shaft_L",
+      "b2_socket_L",
+      "b2_casing_L",
+      "b2_column_R",
+      "b2_shaft_R",
+      "b2_socket_R",
+      "b2_casing_R",
+      "b2_wall",
+      "b3_column_L",
+      "b3_shaft_L",
+      "b3_socket_L",
+      "b3_casing_L",
+      "b3_column_R",
+      "b3_shaft_R",
+      "b3_socket_R",
+      "b3_casing_R",
+      "b3_wall"
+    ],
+    "before_glb_sha256": "ade65ca82157ac5ed7ff1b6b3a09f04c6ea2b47b1c963e5822146e9c52805ce0",
+    "after_glb_sha256": "b591ee4f2f032bcec4ebc2a0a151caa631de6e71cc23ce85aa46e3377c263782"
+  }
 }

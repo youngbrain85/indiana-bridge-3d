@@ -3,7 +3,7 @@
 The English release is checked against the existing nine-bridge collection.
 
 - Fresh database creation from the bundled portable registry, without the original atlas directory.
-- 9 bridges, 4,012 components, 106 source groups, 5,666 drawing-page links, 5,852 dimension records and 76 coverage items.
+- 9 bridges, 4,012 components, 106 source groups, 5,666 drawing-page links, 5,872 dimension records and 76 coverage items.
 - Repeated imports, foreign keys, stable mesh IDs, PDF page bounds, registered asset routing, byte ranges and exports.
 - All nine GLBs validated against manifests during import; browser loading and matching component counts for the four workspace models.
 - Complete-first startup despite a previously saved incomplete/SR selection; selectors contain only the four eligible bridges.
@@ -25,3 +25,7 @@ Commands are documented in the README. Detailed test output and screenshots are 
 - The original nine backend tests and four-model browser regression still apply.
 
 These checks verify the stated incremental beam model numerically. They do not validate actual bridge support stiffness, effective prestress, construction history, local stress concentrations or field condition. See [analysis scope](fem.md).
+
+## Connected model and geometry correction
+
+`test_global_fem.py` checks independent frame/shell/prestress benchmarks, complete foundation connectivity, all 11 loaded member families, eccentric transverse distribution, signed staged superposition, foundation reactions, local mesh warnings and actual GLB column-axis coordinates against PDF 38. `test_global_browser.cjs` executes all three whole-bridge cases and checks 72 mapped parts, family filtering, actual mesh display, deformation, exports and the correction report.

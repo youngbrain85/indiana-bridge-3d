@@ -32,3 +32,7 @@ Use Beechwood PDF 32 (sheet 31), 43–45 (sheets 42–44) and official FHWA/INDO
 ## Acceptance
 
 Actual persisted runs must be reproducible from their frozen inputs. Force and moment equilibrium relative errors must be below 1e-7; 24 vs 48 elements per span must change sampled peak moment and deflection by less than 1%. Closed-form benchmarks must agree within 1e-6 relative error at matched positions. Colors must map to computed girder IDs and reset on bridge/model changes. A numerical verification pass is separate from field validation.
+
+## Authorized whole-bridge extension
+
+The next implementation replaces independent-line distribution with a connected ShellMITC4 deck and debris walls, 3D beams for girders/substructure and explicit bearing springs. The user requested correction of confirmed model errors; PDF 38 establishes 22 ft column center spacing. Update the actual GLB, metadata, DB and preview as well as the analytical model. Use the drawing-permitted alternative continuous deck pour for a two-stiffness staged scenario and assume retained prestress fractions explicitly. Preserve old cases and their history. Accept global equilibrium/benchmarks separately from family-level peak convergence; mesh-sensitive local peaks must remain visibly flagged. Whole-bridge display should include family filters, undeformed analytical mesh, stage-aware deformation and exports.

@@ -275,6 +275,7 @@ class Handler(BaseHTTPRequestHandler):
                   '/analysis.js': ROOT / 'web/analysis.js',
                   '/analysis.css': ROOT / 'web/analysis.css',
                   '/analysis-guide': ROOT / 'web/analysis-guide.html',
+                  '/model-corrections': ROOT / 'web/model-corrections.html',
                   '/review': ROOT / 'web/ui_review.html',
                   '/viewer.bundle.js': ROOT / 'web/viewer.bundle.js',
                   '/map/counties.json': ROOT / 'web/vendor/indiana_counties.geojson',
