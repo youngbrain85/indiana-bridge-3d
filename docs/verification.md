@@ -1,5 +1,17 @@
 # Release verification
 
+## October 15, 2026: hosted deployment
+
+- ChatGPT Sites publication succeeded at `https://indiana-bridge-3d.plumibex3.chatgpt.site`, with owner-private access. The separate Railway engine runs Python 3.12 and OpenSees 3.8.0 with persistent SQLite and private release storage.
+- All 21 GLB range requests return the correct glTF header; all 16 workspace analysis endpoints return current completed results. Drawing-page rendering, original supplemental PDFs, CSV and SQLite exports work through the hosted gateway.
+- Five actual cloud calculations passed numerical verification: Six Mile slab, Wabash arch, Wildcat truss, Beechwood whole bridge and Minnich frame/shell. Their completed results remained current after a new server deployment.
+- The browser run form completed two further Six Mile calculations: doubling pressure from 1 to 2 kPa doubled displacement exactly, and restoring 1 kPa restored the baseline. The cloud catalog contains 82 runs after these seven verification runs, including all 75 seeded records.
+- Desktop 3D, map navigation, Minnich's 197 mapped members with the All filter, mobile analysis controls and viewport fit pass without browser page errors. Existing family filters remain available.
+- Requests directly to the engine without the gateway secret return 401; foreign-origin write requests return 403. The Site requires owner authentication. Runtime secrets are absent from Git and browser assets.
+- Four hosted-adapter regression tests pass, including a real native FEM job. Raw solver/evidence bytes are preserved in Git and match the saved provenance fingerprints on Windows and Linux.
+
+This verifies deployment and the existing numerical demonstrations; it does not add missing field information or validate the assumed structural inputs.
+
 ## October 15, 2026: complete researched collection and assumed-input FEM
 
 - Live DB: 21 crossing records, 16 3D workspaces, 6,622 components, 248 groups, 11,728 primary page links, 9,499 dimensions, 137 coverage entries and 984 primary PDF pages. Five older partial models stay map-only.
