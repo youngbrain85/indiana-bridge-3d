@@ -12,7 +12,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import quote, unquote, urlsplit
 
-from import_data import ROOT, DEFAULT_DB, DEFAULT_REGISTRY, connect, import_all, sync_presentation
+from import_data import ROOT, DEFAULT_DB, DEFAULT_REGISTRY, connect, import_all, sync_presentation, sha
 from fem.service import AnalysisService, BusyError
 
 
@@ -65,7 +65,7 @@ def bridge_detail(db, bid):
         part = decode(row)
         source = part.pop('source')
         part['layer'] = source['layer']
-        for key in ('pdf_pages', 'sheets', 'dimensions', 'external_references'):
+        for key in ('pdf_pages', 'sheets', 'dimensions', 'external_references', 'source_refs', 'supplementary_sources'):
             part[key] = source.get(key, {} if key == 'dimensions' else [])
         b['parts'].append(part)
     b['documents'] = [dict(r) | {'url': f'/assets/{bid}/drawing'} for r in db.execute(
@@ -74,6 +74,10 @@ def bridge_detail(db, bid):
     b['coverage_links'] = [dict(r) for r in db.execute('''SELECT cc.* FROM component_coverage cc
         JOIN components c ON c.id=cc.component_id WHERE c.bridge_id=?''', (bid,))]
     b['references'] = [decode(r) for r in db.execute('SELECT * FROM reference_sources WHERE bridge_id=?', (bid,))]
+    for ref in b['references']:
+        metadata = ref['metadata']
+        if metadata.get('local_file') and re.fullmatch(r'[a-zA-Z0-9_-]+', str(metadata.get('id',''))):
+            ref['local_url'] = f'/assets/{bid}/source/{metadata["id"]}.pdf'
     return b
 
 
@@ -204,10 +208,10 @@ class Handler(BaseHTTPRequestHandler):
             try:
                 if match[2] == '/result.json':
                     target = self.server.analysis.result_path(match[1])
-                    return self.file(target, filename='beechwood_'+match[1]+'.json') if target else self.error('Completed run not found')
+                    return self.file(target, filename='bridge_fem_'+match[1]+'.json') if target else self.error('Completed run not found')
                 if match[2] == '/samples.csv':
                     content = self.server.analysis.csv(match[1])
-                    return self.data(content, 'text/csv; charset=utf-8', extra={'Content-Disposition':'attachment; filename="beechwood_fem_samples.csv"'}) if content is not None else self.error('Completed run not found')
+                    return self.data(content, 'text/csv; charset=utf-8', extra={'Content-Disposition':'attachment; filename="bridge_fem_samples.csv"'}) if content is not None else self.error('Completed run not found')
                 run = self.server.analysis.get(match[1])
                 return self.data(run) if run else self.error('Run not found')
             except ValueError as exc:
@@ -221,6 +225,18 @@ class Handler(BaseHTTPRequestHandler):
             if match:
                 result = bridge_detail(db, match[1])
                 return self.data(result) if result else self.error('Bridge not found')
+            match = re.fullmatch(r'/assets/([a-z0-9-]+)/source/([a-zA-Z0-9_-]+)\.pdf', path)
+            if match:
+                bid, source_id = match.groups()
+                refs = [json.loads(r[0]) for r in db.execute('SELECT metadata_json FROM reference_sources WHERE bridge_id=?',(bid,))]
+                source = next((r for r in refs if str(r.get('id')) == source_id), {})
+                base = (ROOT/'data/bridges'/bid).resolve()
+                target = (base/source.get('local_file','')).resolve()
+                if not target.is_relative_to(base/'sources') or not target.is_file() or target.suffix.lower()!='.pdf':
+                    return self.error('Source document not registered')
+                if not source.get('sha256') or sha(target)!=source['sha256']:
+                    return self.error('Source document changed; reconcile the catalog',409)
+                return self.file(target,'application/pdf')
             match = re.fullmatch(r'/assets/([a-z0-9-]+)/(model|drawing|manifest|thumbnail)', path)
             if match:
                 row = db.execute('SELECT * FROM assets WHERE bridge_id=? AND kind=?', match.groups()).fetchone()
@@ -275,6 +291,7 @@ class Handler(BaseHTTPRequestHandler):
                   '/analysis.js': ROOT / 'web/analysis.js',
                   '/analysis.css': ROOT / 'web/analysis.css',
                   '/analysis-guide': ROOT / 'web/analysis-guide.html',
+                  '/collection-status': ROOT / 'web/collection-status.html',
                   '/model-corrections': ROOT / 'web/model-corrections.html',
                   '/review': ROOT / 'web/ui_review.html',
                   '/viewer.bundle.js': ROOT / 'web/viewer.bundle.js',

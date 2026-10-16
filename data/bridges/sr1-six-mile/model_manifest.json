@@ -1,0 +1,799 @@
+{
+  "title": "SR 1 over Six Mile Creek | schematic with assumed supports",
+  "structure_id": "001-90-07052-B",
+  "designation": "2200542",
+  "spans_m": [
+    6.664875,
+    8.5,
+    6.664875
+  ],
+  "deck_thickness_m": 0.45,
+  "source_note": "2026 thin-overlay drawing envelope plus 2025 NBI and explicitly hypothetical structural support geometry.",
+  "assumptions": [
+    "This is a schematic overlay-plan reconstruction with a deliberately hypothetical structural scaffold; it is not a detailed as-built model.",
+    "2025 NBI item 43A=2 and 43B=01 identify continuous concrete slab, not concrete beams. The earlier research candidate type was corrected.",
+    "Source p.4 incorrectly repeats structure 001-90-00230-B (Wabash). The cover identifies 001-90-07052-B, NBI 000370 and Six Mile Creek consistently; the cover identity is retained.",
+    "Source p.4 overall 72 ft 7.25 in governs; p.7 labels a schematic 72 ft overlay length. NBI 22.2 m overall and 8.5 m maximum span are rounded inventory values.",
+    "All supports, foundation envelopes and slab thickness are hypothetical. Original substructure geometry has not been established.",
+    "Native X station, Y transverse and Z up. The 6 m local elevation, level longitudinal grade and skew direction are assumed; NBI gives skew magnitude only.",
+    "No internal reinforcement, pile tips, traffic, observed defects or drainage details are invented."
+  ],
+  "external_sources": [
+    {
+      "id": "2025 NBI Indiana record 000370",
+      "url": "https://www.fhwa.dot.gov/BRIDGE/nbi/2025/delimited/IN25.txt"
+    },
+    {
+      "id": "NBI structure type coding guide, item 43",
+      "url": "https://www.fhwa.dot.gov/bridge/mtguide.pdf"
+    }
+  ],
+  "units": "metres",
+  "deck_length_m": 22.12975,
+  "deck_width_m": 14.363700000000001,
+  "skew_deg": 20,
+  "source_pdf": "drawings.pdf",
+  "source_sha256": "a3520ca96c85e5df175164477f26620dc04d6a5e1a25fe9fbb68061174c09775",
+  "parts": [
+    {
+      "id": "deck",
+      "name": "Continuous slab | assumed 450 mm thickness",
+      "layer": "deck",
+      "color": "#d1d5d0",
+      "pdf_pages": [
+        4,
+        7
+      ],
+      "basis": "Drawing envelope; assumed structural thickness",
+      "note": "72 ft 7.25 in by 47 ft 1.5 in from location table; three-span continuous slab classification from NBI 201. No original structural slab section was supplied.",
+      "dimensions": {
+        "thickness_m": 0.45,
+        "assumed_thickness_m": 0.45,
+        "length_m": 22.12975,
+        "width_m": 14.363700000000001,
+        "crossfall_percent": 1.56
+      },
+      "bounds_m": [
+        [
+          -13.678855,
+          -7.18185,
+          5.437963
+        ],
+        [
+          13.678855,
+          7.18185,
+          6.0
+        ]
+      ],
+      "volume_m3": 143.039290534
+    },
+    {
+      "id": "overlay",
+      "name": "Proposed 2026 polymer overlay | nominal 3/8 in",
+      "layer": "deck",
+      "color": "#d1d5d0",
+      "pdf_pages": [
+        3,
+        7
+      ],
+      "basis": "Overlay thickness stated in general notes",
+      "note": "Existing overlay is removed before the proposed layer; no duplicated old layer.",
+      "dimensions": {
+        "thickness_m": 0.009524999999999999
+      },
+      "bounds_m": [
+        [
+          -13.678855,
+          -7.18185,
+          5.887963
+        ],
+        [
+          13.678855,
+          7.18185,
+          6.009525
+        ]
+      ],
+      "volume_m3": 3.027664983
+    },
+    {
+      "id": "support_0",
+      "name": "Support 1 | hypothetical concrete wall",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        4,
+        7
+      ],
+      "basis": "Hypothetical support geometry, not drawn",
+      "note": "Wall type, height, width, thickness and location are illustrative. Two interior support lines represent the stated three-span topology.",
+      "dimensions": {
+        "station_m": -10.914875,
+        "assumed_thickness_m": 0.8,
+        "assumed_base_elevation_m": 1.25
+      },
+      "bounds_m": [
+        [
+          -13.954526,
+          -7.18185,
+          1.25
+        ],
+        [
+          -7.875224,
+          7.18185,
+          5.55
+        ]
+      ],
+      "volume_m3": 51.897207005
+    },
+    {
+      "id": "footing_0",
+      "name": "Support 1 | hypothetical buried footing",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        4
+      ],
+      "basis": "Hypothetical foundation envelope",
+      "note": "Not an observed or drawing-confirmed foundation; hidden by default.",
+      "dimensions": {
+        "assumed_width_m": 2.2,
+        "assumed_thickness_m": 0.65
+      },
+      "bounds_m": [
+        [
+          -14.845038,
+          -7.58185,
+          0.6
+        ],
+        [
+          -6.984712,
+          7.58185,
+          1.25
+        ]
+      ],
+      "volume_m3": 23.075727659
+    },
+    {
+      "id": "support_1",
+      "name": "Support 2 | hypothetical concrete wall",
+      "layer": "piers",
+      "color": "#b7b2a6",
+      "pdf_pages": [
+        4,
+        7
+      ],
+      "basis": "Hypothetical support geometry, not drawn",
+      "note": "Wall type, height, width, thickness and location are illustrative. Two interior support lines represent the stated three-span topology.",
+      "dimensions": {
+        "station_m": -4.25,
+        "assumed_thickness_m": 0.65,
+        "assumed_base_elevation_m": 1.25
+      },
+      "bounds_m": [
+        [
+          -7.209837,
+          -7.18185,
+          1.25
+        ],
+        [
+          -1.290163,
+          7.18185,
+          5.55
+        ]
+      ],
+      "volume_m3": 42.166480691
+    },
+    {
+      "id": "footing_1",
+      "name": "Support 2 | hypothetical buried footing",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        4
+      ],
+      "basis": "Hypothetical foundation envelope",
+      "note": "Not an observed or drawing-confirmed foundation; hidden by default.",
+      "dimensions": {
+        "assumed_width_m": 2.2,
+        "assumed_thickness_m": 0.65
+      },
+      "bounds_m": [
+        [
+          -8.180163,
+          -7.58185,
+          0.6
+        ],
+        [
+          -0.319837,
+          7.58185,
+          1.25
+        ]
+      ],
+      "volume_m3": 23.075727659
+    },
+    {
+      "id": "support_2",
+      "name": "Support 3 | hypothetical concrete wall",
+      "layer": "piers",
+      "color": "#b7b2a6",
+      "pdf_pages": [
+        4,
+        7
+      ],
+      "basis": "Hypothetical support geometry, not drawn",
+      "note": "Wall type, height, width, thickness and location are illustrative. Two interior support lines represent the stated three-span topology.",
+      "dimensions": {
+        "station_m": 4.25,
+        "assumed_thickness_m": 0.65,
+        "assumed_base_elevation_m": 1.25
+      },
+      "bounds_m": [
+        [
+          1.290163,
+          -7.18185,
+          1.25
+        ],
+        [
+          7.209837,
+          7.18185,
+          5.55
+        ]
+      ],
+      "volume_m3": 42.166480691
+    },
+    {
+      "id": "footing_2",
+      "name": "Support 3 | hypothetical buried footing",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        4
+      ],
+      "basis": "Hypothetical foundation envelope",
+      "note": "Not an observed or drawing-confirmed foundation; hidden by default.",
+      "dimensions": {
+        "assumed_width_m": 2.2,
+        "assumed_thickness_m": 0.65
+      },
+      "bounds_m": [
+        [
+          0.319837,
+          -7.58185,
+          0.6
+        ],
+        [
+          8.180163,
+          7.58185,
+          1.25
+        ]
+      ],
+      "volume_m3": 23.075727659
+    },
+    {
+      "id": "support_3",
+      "name": "Support 4 | hypothetical concrete wall",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        4,
+        7
+      ],
+      "basis": "Hypothetical support geometry, not drawn",
+      "note": "Wall type, height, width, thickness and location are illustrative. Two interior support lines represent the stated three-span topology.",
+      "dimensions": {
+        "station_m": 10.914875,
+        "assumed_thickness_m": 0.8,
+        "assumed_base_elevation_m": 1.25
+      },
+      "bounds_m": [
+        [
+          7.875224,
+          -7.18185,
+          1.25
+        ],
+        [
+          13.954526,
+          7.18185,
+          5.55
+        ]
+      ],
+      "volume_m3": 51.897207005
+    },
+    {
+      "id": "footing_3",
+      "name": "Support 4 | hypothetical buried footing",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        4
+      ],
+      "basis": "Hypothetical foundation envelope",
+      "note": "Not an observed or drawing-confirmed foundation; hidden by default.",
+      "dimensions": {
+        "assumed_width_m": 2.2,
+        "assumed_thickness_m": 0.65
+      },
+      "bounds_m": [
+        [
+          6.984712,
+          -7.58185,
+          0.6
+        ],
+        [
+          14.845038,
+          7.58185,
+          1.25
+        ]
+      ],
+      "volume_m3": 23.075727659
+    },
+    {
+      "id": "wing_0_-1",
+      "name": "End 1 | hypothetical wing -1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        7
+      ],
+      "basis": "Hypothetical wing envelope",
+      "note": "Length, flare and elevation are unverified; shown only to explain a possible end-support arrangement.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -10.410086,
+          -7.33185,
+          1.25
+        ],
+        [
+          -8.2463,
+          -6.88185,
+          5.4
+        ]
+      ],
+      "volume_m3": 3.735
+    },
+    {
+      "id": "wing_0_1",
+      "name": "End 1 | hypothetical wing 1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        7
+      ],
+      "basis": "Hypothetical wing envelope",
+      "note": "Length, flare and elevation are unverified; shown only to explain a possible end-support arrangement.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -15.58345,
+          6.88185,
+          1.25
+        ],
+        [
+          -13.419664,
+          7.33185,
+          5.4
+        ]
+      ],
+      "volume_m3": 3.735
+    },
+    {
+      "id": "wing_1_-1",
+      "name": "End 2 | hypothetical wing -1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        7
+      ],
+      "basis": "Hypothetical wing envelope",
+      "note": "Length, flare and elevation are unverified; shown only to explain a possible end-support arrangement.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          13.419664,
+          -7.33185,
+          1.25
+        ],
+        [
+          15.58345,
+          -6.88185,
+          5.4
+        ]
+      ],
+      "volume_m3": 3.735
+    },
+    {
+      "id": "wing_1_1",
+      "name": "End 2 | hypothetical wing 1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        7
+      ],
+      "basis": "Hypothetical wing envelope",
+      "note": "Length, flare and elevation are unverified; shown only to explain a possible end-support arrangement.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          8.2463,
+          6.88185,
+          1.25
+        ],
+        [
+          10.410086,
+          7.33185,
+          5.4
+        ]
+      ],
+      "volume_m3": 3.735
+    },
+    {
+      "id": "rail_-1_0",
+      "name": "Bridge rail right panel 1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        7
+      ],
+      "basis": "Source 18 in nominal base width; assumed height/profile",
+      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail.",
+      "dimensions": {
+        "height_m": 0.9,
+        "base_width_m": 0.45720000000000005
+      },
+      "bounds_m": [
+        [
+          -8.635501,
+          -7.13185,
+          5.888743
+        ],
+        [
+          -1.092511,
+          -6.67465,
+          6.792175
+        ]
+      ],
+      "volume_m3": 2.470155152
+    },
+    {
+      "id": "rail_-1_1",
+      "name": "Bridge rail right panel 2",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        7
+      ],
+      "basis": "Source 18 in nominal base width; assumed height/profile",
+      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail.",
+      "dimensions": {
+        "height_m": 0.9,
+        "base_width_m": 0.45720000000000005
+      },
+      "bounds_m": [
+        [
+          -1.258918,
+          -7.13185,
+          5.888743
+        ],
+        [
+          6.284073,
+          -6.67465,
+          6.792175
+        ]
+      ],
+      "volume_m3": 2.470155152
+    },
+    {
+      "id": "rail_-1_2",
+      "name": "Bridge rail right panel 3",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        7
+      ],
+      "basis": "Source 18 in nominal base width; assumed height/profile",
+      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail.",
+      "dimensions": {
+        "height_m": 0.9,
+        "base_width_m": 0.45720000000000005
+      },
+      "bounds_m": [
+        [
+          6.117666,
+          -7.13185,
+          5.888743
+        ],
+        [
+          13.660656,
+          -6.67465,
+          6.792175
+        ]
+      ],
+      "volume_m3": 2.470155152
+    },
+    {
+      "id": "rail_1_0",
+      "name": "Bridge rail left panel 1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        7
+      ],
+      "basis": "Source 18 in nominal base width; assumed height/profile",
+      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail.",
+      "dimensions": {
+        "height_m": 0.9,
+        "base_width_m": 0.45720000000000005
+      },
+      "bounds_m": [
+        [
+          -13.660656,
+          6.67465,
+          5.888743
+        ],
+        [
+          -6.117666,
+          7.13185,
+          6.792175
+        ]
+      ],
+      "volume_m3": 2.470155152
+    },
+    {
+      "id": "rail_1_1",
+      "name": "Bridge rail left panel 2",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        7
+      ],
+      "basis": "Source 18 in nominal base width; assumed height/profile",
+      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail.",
+      "dimensions": {
+        "height_m": 0.9,
+        "base_width_m": 0.45720000000000005
+      },
+      "bounds_m": [
+        [
+          -6.284073,
+          6.67465,
+          5.888743
+        ],
+        [
+          1.258918,
+          7.13185,
+          6.792175
+        ]
+      ],
+      "volume_m3": 2.470155152
+    },
+    {
+      "id": "rail_1_2",
+      "name": "Bridge rail left panel 3",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        7
+      ],
+      "basis": "Source 18 in nominal base width; assumed height/profile",
+      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail.",
+      "dimensions": {
+        "height_m": 0.9,
+        "base_width_m": 0.45720000000000005
+      },
+      "bounds_m": [
+        [
+          1.092511,
+          6.67465,
+          5.888743
+        ],
+        [
+          8.635501,
+          7.13185,
+          6.792175
+        ]
+      ],
+      "volume_m3": 2.470155152
+    },
+    {
+      "id": "approach_0",
+      "name": "Approach 1 | 20.5\u201336.5 ft edge lengths",
+      "layer": "approaches",
+      "color": "#bbc4c0",
+      "pdf_pages": [
+        7
+      ],
+      "basis": "Overlay-plan outline; assumed slab thickness",
+      "note": "Unequal approach edge lengths are shown in the schematic. Source is not to scale; exact corner setting-out and 0.30 m slab thickness are assumed.",
+      "dimensions": {
+        "assumed_thickness_m": 0.3,
+        "edge_lengths_ft": [
+          20.5,
+          36.5
+        ]
+      },
+      "bounds_m": [
+        [
+          -19.927255,
+          -7.18185,
+          5.587963
+        ],
+        [
+          -8.450895,
+          7.18185,
+          6.0
+        ]
+      ],
+      "volume_m3": 44.422053337
+    },
+    {
+      "id": "joint_0",
+      "name": "End 1 | Type 1-A joint seal envelope",
+      "layer": "joints",
+      "color": "#39434a",
+      "pdf_pages": [
+        3,
+        7
+      ],
+      "basis": "Joint type/location stated; assumed seal width",
+      "note": "30 mm display width, not a shop or survey dimension.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -13.693855,
+          -7.18185,
+          5.863963
+        ],
+        [
+          -8.435895,
+          7.18185,
+          6.001
+        ]
+      ],
+      "volume_m3": 0.010772775
+    },
+    {
+      "id": "approach_1",
+      "name": "Approach 2 | 20.5\u201336.5 ft edge lengths",
+      "layer": "approaches",
+      "color": "#bbc4c0",
+      "pdf_pages": [
+        7
+      ],
+      "basis": "Overlay-plan outline; assumed slab thickness",
+      "note": "Unequal approach edge lengths are shown in the schematic. Source is not to scale; exact corner setting-out and 0.30 m slab thickness are assumed.",
+      "dimensions": {
+        "assumed_thickness_m": 0.3,
+        "edge_lengths_ft": [
+          20.5,
+          36.5
+        ]
+      },
+      "bounds_m": [
+        [
+          8.450895,
+          -7.18185,
+          5.587963
+        ],
+        [
+          19.927255,
+          7.18185,
+          6.0
+        ]
+      ],
+      "volume_m3": 44.422053337
+    },
+    {
+      "id": "joint_1",
+      "name": "End 2 | Type 1-A joint seal envelope",
+      "layer": "joints",
+      "color": "#39434a",
+      "pdf_pages": [
+        3,
+        7
+      ],
+      "basis": "Joint type/location stated; assumed seal width",
+      "note": "30 mm display width, not a shop or survey dimension.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          8.435895,
+          -7.18185,
+          5.863963
+        ],
+        [
+          13.693855,
+          7.18185,
+          6.001
+        ]
+      ],
+      "volume_m3": 0.010772775
+    }
+  ],
+  "layers": {
+    "deck": "Concrete deck",
+    "piers": "Intermediate piers and bents",
+    "abutments": "End bents and wing walls",
+    "foundations": "Design foundation envelopes",
+    "rails": "Bridge rails",
+    "approaches": "Approach slabs",
+    "joints": "Deck joints"
+  },
+  "default_hidden_layers": [
+    "foundations",
+    "fill"
+  ],
+  "native_axes": "X increasing station, Y transverse, Z up; local metres",
+  "glb_axes": "Y up: (native X, native Z, -native Y); no world georeferencing transform",
+  "detail_coverage": [
+    {
+      "feature": "Drawing envelope and proposed overlay",
+      "status": "modeled_with_simplifications",
+      "detail": "Deck length/width, clear roadway, crossfall and nominal replacement overlay are sourced. Approach edge lengths come from a not-to-scale schematic.",
+      "sources": [
+        "Primary PDF p.3",
+        "Primary PDF p.4",
+        "Primary PDF p.7"
+      ],
+      "part_ids": [
+        "deck",
+        "overlay",
+        "approach_0",
+        "joint_0",
+        "approach_1",
+        "joint_1"
+      ]
+    },
+    {
+      "feature": "Hypothetical load-bearing scaffold",
+      "status": "assumed_for_demonstration",
+      "detail": "450 mm structural slab, symmetric 6.664875 / 8.5 / 6.664875 m support spans, 150 mm end overhangs, wall piers, end walls and foundations are illustrative. NBI supplies three spans, continuous concrete slab type and 20-degree skew, not these details.",
+      "sources": [
+        "Primary PDF p.4",
+        "Primary PDF p.7"
+      ],
+      "part_ids": [
+        "deck",
+        "overlay",
+        "support_0",
+        "footing_0",
+        "support_1",
+        "footing_1",
+        "support_2",
+        "footing_2",
+        "support_3",
+        "footing_3",
+        "wing_0_-1",
+        "wing_0_1",
+        "wing_1_-1",
+        "wing_1_1"
+      ]
+    },
+    {
+      "feature": "Barrier exterior",
+      "status": "modeled_with_simplifications",
+      "detail": "General barrier envelope only. Height, tapered section and rail joints are assumed.",
+      "sources": [
+        "Primary PDF p.7"
+      ],
+      "part_ids": [
+        "rail_-1_0",
+        "rail_-1_1",
+        "rail_-1_2",
+        "rail_1_0",
+        "rail_1_1",
+        "rail_1_2"
+      ]
+    },
+    {
+      "feature": "Missing original structural detail",
+      "status": "not_modeled",
+      "detail": "No original slab reinforcement, verified support section/positions, foundations, drainage, construction joints or exact rail details were obtained.",
+      "sources": [
+        "Primary PDF p.4",
+        "Primary PDF p.7"
+      ],
+      "part_ids": []
+    }
+  ]
+}

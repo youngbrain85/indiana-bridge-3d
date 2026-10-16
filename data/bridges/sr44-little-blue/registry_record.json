@@ -1,0 +1,34 @@
+{
+  "id": "sr44-little-blue",
+  "workspace_enabled": true,
+  "name": "SR 44 over Branch of Little Blue River",
+  "county": "Shelby",
+  "waterway": "Branch of Little Blue River",
+  "structure_id": "044-73-10858",
+  "designation": "2200652",
+  "structure_type": "Simple-span reinforced concrete slab replacement",
+  "latitude": 39.5665694,
+  "longitude": -85.64075,
+  "location_source": {
+    "document": "2025 NBI inventory",
+    "url": "https://www.fhwa.dot.gov/BRIDGE/nbi/2025/delimited/IN25.txt",
+    "note": "2025 NBI existing-crossing position; verify against the selected drawing before placing a replacement model. No surveyed placement transform is embedded in the model."
+  },
+  "owner": "INDOT",
+  "maintenance": "INDOT",
+  "ownership_data_year": 2025,
+  "nbi_ids": [
+    "016440"
+  ],
+  "model": {
+    "thumbnail": "bridges/sr44-little-blue/preview.png",
+    "glb": "bridges/sr44-little-blue/model.glb",
+    "deck_length_m": 9.718675000000001,
+    "spans": 1,
+    "components": 37,
+    "revision": "Proposed 2026 replacement exterior v1",
+    "scope": "Whole-crossing exterior reconstruction with explicit source-state and approximation boundaries.",
+    "detail_status": "needs_detail",
+    "detail_status_note": "Whole proposed replacement crossing present. Amber: local notches, wing batter, approach transitions, terrain and actual pile behavior remain incomplete. Not an as-built or completed-construction claim."
+  }
+}

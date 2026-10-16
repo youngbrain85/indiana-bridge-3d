@@ -1,0 +1,33 @@
+{
+  "id": "sr1-six-mile",
+  "workspace_enabled": true,
+  "name": "SR 1 over Six Mile Creek",
+  "county": "Wells",
+  "waterway": "Six Mile Creek",
+  "structure_id": "001-90-07052-B",
+  "designation": "2200542",
+  "structure_type": "3-span continuous concrete slab | hypothetical support geometry",
+  "latitude": 40.6233889,
+  "longitude": -85.1510194,
+  "location_source": {
+    "document": "2025 NBI record 000370",
+    "url": "https://www.fhwa.dot.gov/BRIDGE/nbi/2025/delimited/IN25.txt"
+  },
+  "owner": "INDOT",
+  "maintenance": "INDOT",
+  "nbi_ids": [
+    "000370"
+  ],
+  "ownership_data_year": 2025,
+  "model": {
+    "glb": "bridges/sr1-six-mile/model.glb",
+    "thumbnail": "bridges/sr1-six-mile/preview.png",
+    "deck_length_m": 22.12975,
+    "spans": 3,
+    "components": 24,
+    "revision": "2026 overlay envelope / hypothetical structural scaffold v1",
+    "scope": "Drawing-backed surface envelope with explicitly assumed structural thickness and supports.",
+    "detail_status": "needs_detail",
+    "detail_status_note": "Schematic demonstration: original structural details unavailable. Slab thickness, support layout and substructure are hypothetical; see Coverage and FEM assumptions."
+  }
+}

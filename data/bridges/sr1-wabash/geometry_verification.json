@@ -1,0 +1,22 @@
+{
+  "component_count": 78,
+  "all_meshes_watertight": true,
+  "all_volumes_positive": true,
+  "exported_glb_reopened": true,
+  "mesh_names_match_manifest": true,
+  "maximum_bearing_contact_error_m": 0,
+  "glb_sha256": "f415b1e60c9591a49cd7414eeac0e76032a8807df24b2e693d04ccba65061d44",
+  "source_pdf_sha256": "6cc8f0283bde2a2285898cad3193f5a44c52b724a1547fa39d048d90668904d6",
+  "checks": {
+    "arch_openings": 4,
+    "clear_span_m": 21.946,
+    "pier_width_chain_m": 1.295,
+    "arch_chain_length_m": 91.66900000000001,
+    "deck_floor_envelope_m": 108.48340000000002,
+    "roadway_width_m": 13.8,
+    "overall_width_m": 17.322,
+    "pedestrian_bridge_excluded": true
+  },
+  "contacts": [],
+  "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation."
+}

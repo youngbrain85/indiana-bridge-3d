@@ -27,7 +27,13 @@ class BridgeViewer {
     });
     new ResizeObserver(()=>this.resize()).observe(host);this.resize();
   }
-  render(){if(this.host.clientWidth&&this.host.clientHeight)this.renderer.render(this.scene,this.camera);}
+  render(){if(this.host.clientWidth&&this.host.clientHeight){
+    // Retain depth precision at whole-bridge scale without clipping close component views.
+    // A fixed sub-millimetre near plane makes the deck's front/back faces flicker at a distance.
+    const near=Math.max(.0001,this.camera.position.distanceTo(this.controls.target)/2000);
+    if(Math.abs(this.camera.near-near)>1e-8){this.camera.near=near;this.camera.updateProjectionMatrix();}
+    this.renderer.render(this.scene,this.camera);
+  }}
   resize(){const w=this.host.clientWidth,h=this.host.clientHeight;if(!w||!h)return;this.renderer.setSize(w,h,false);this.camera.aspect=w/h;this.camera.updateProjectionMatrix();this.render();}
   clear(){this.clearAnalysis();for(const mesh of this.meshes.values()){mesh.geometry.dispose();mesh.material.dispose();}if(this.grid){this.scene.remove(this.grid);this.grid.geometry.dispose();this.grid.material.dispose();this.grid=null;}this.root.clear();this.meshes.clear();this.selected.clear();this.hidden.clear();this.isolated=null;this.helper.visible=false;}
   cancel(){this.loadId++;this.abort?.abort();this.clear();this.render();}
@@ -65,7 +71,7 @@ class BridgeViewer {
     let distance=.5;
     for(const x of [box.min.x,box.max.x])for(const y of [box.min.y,box.max.y])for(const z of [box.min.z,box.max.z]){const p=new THREE.Vector3(x,y,z).sub(center);distance=Math.max(distance,Math.abs(p.dot(right))/tanH+p.dot(direction),Math.abs(p.dot(up))/tanV+p.dot(direction));}
     distance*=1.16;this.camera.position.copy(center).add(direction.multiplyScalar(distance));
-    this.camera.near=Math.max(radius/10000,.0005);this.camera.far=Math.max(10000,distance*30);this.camera.updateProjectionMatrix();this.controls.target.copy(center);this.controls.maxDistance=Math.max(2000,distance*20);this.controls.minDistance=.02;this.controls.update();this.render();
+    this.camera.far=Math.max(10000,distance*30);this.camera.updateProjectionMatrix();this.controls.target.copy(center);this.controls.maxDistance=Math.max(2000,distance*20);this.controls.minDistance=.02;this.controls.update();this.render();
   }
   setDeckOpacity(value){this.opacity=value;for(const mesh of this.meshes.values()){const layer=mesh.userData.part.layer;if(['deck','wearing','road_surface'].includes(layer)){mesh.material.opacity=value;mesh.material.transparent=value<1;mesh.material.depthWrite=value>=1;mesh.material.needsUpdate=true;}}this.render();}
   setClip(enabled,percent){this.clipping=enabled;if(!this.bounds)return;this.plane.constant=THREE.MathUtils.lerp(this.bounds.min.x-.02,this.bounds.max.x+.02,percent/100);for(const m of this.meshes.values()){m.material.clippingPlanes=enabled?[this.plane]:[];m.material.needsUpdate=true;}this.render();}
@@ -112,7 +118,7 @@ class BridgeViewer {
             // Structural axes are straightened. Use actual X/Y for deck, and
             // normalized local positions for vertical/transverse frame members.
             const native=[saved.positions[i*3],-saved.positions[i*3+2],saved.positions[i*3+1]];
-            const target=axes.map(([a,b],axis)=>b-a<1e-7?a:(member.family==='deck'&&axis<2?native[axis]:a+(b-a)*THREE.MathUtils.clamp((native[axis]-visual[0][axis])/Math.max(1e-9,visual[1][axis]-visual[0][axis]),0,1)));
+            const target=result.display_mapping==='native_coordinates'?native:axes.map(([a,b],axis)=>b-a<1e-7?a:(member.family==='deck'&&axis<2?native[axis]:a+(b-a)*THREE.MathUtils.clamp((native[axis]-visual[0][axis])/Math.max(1e-9,visual[1][axis]-visual[0][axis]),0,1)));
             const nearest=closest(spatial,target);
             const c=color(nearest[field]||0);colors.set([c.r,c.g,c.b],i*3);
             if(result.case!=='global_staged'){

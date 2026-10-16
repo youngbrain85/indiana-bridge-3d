@@ -1,0 +1,268 @@
+{
+  "component_count": 474,
+  "all_meshes_watertight": true,
+  "all_volumes_positive": true,
+  "exported_glb_reopened": true,
+  "mesh_names_match_manifest": true,
+  "maximum_bearing_contact_error_m": 1.7763568394002505e-15,
+  "glb_sha256": "be81055027057616b42e4cb9375b5b61973cb7227d7a6288b449bcfb0df6898d",
+  "source_pdf_sha256": "f0faa12db48e58f780dc6b8c518501c531b403733e2ea46c3402506304d3e142",
+  "checks": {
+    "spans_m": [
+      19.939000000000004,
+      44.196000000000005,
+      44.196000000000005,
+      16.891000000000002
+    ],
+    "support_lines": 5,
+    "girder_lines": 8,
+    "girder_segments": 32,
+    "bearings": 40,
+    "continuous_deck_across_former_joint": true,
+    "directional_nbi_records": 2,
+    "minimum_deck_girder_clearance_m": 0.07643383999999998
+  },
+  "contacts": [
+    {
+      "id": "Bent_1_bearing_1",
+      "girder_bottom_m": 8.851309259567714,
+      "bearing_top_m": 8.851309259567714,
+      "seat_m": 8.683034259567712
+    },
+    {
+      "id": "Bent_2_bearing_1",
+      "girder_bottom_m": 8.208087129497239,
+      "bearing_top_m": 8.208087129497237,
+      "seat_m": 8.008087129497241
+    },
+    {
+      "id": "Bent_3_bearing_1",
+      "girder_bottom_m": 8.2748053363518,
+      "bearing_top_m": 8.2748053363518,
+      "seat_m": 8.074805336351801
+    },
+    {
+      "id": "Bent_4_bearing_1",
+      "girder_bottom_m": 7.91543178788721,
+      "bearing_top_m": 7.91543178788721,
+      "seat_m": 7.715431787887209
+    },
+    {
+      "id": "Bent_5_bearing_1",
+      "girder_bottom_m": 8.522793846542159,
+      "bearing_top_m": 8.522793846542159,
+      "seat_m": 8.37356884654216
+    },
+    {
+      "id": "Bent_1_bearing_2",
+      "girder_bottom_m": 8.848332458011555,
+      "bearing_top_m": 8.848332458011555,
+      "seat_m": 8.680057458011554
+    },
+    {
+      "id": "Bent_2_bearing_2",
+      "girder_bottom_m": 8.22300004161093,
+      "bearing_top_m": 8.22300004161093,
+      "seat_m": 8.023000041610931
+    },
+    {
+      "id": "Bent_3_bearing_2",
+      "girder_bottom_m": 8.329371881313309,
+      "bearing_top_m": 8.329371881313307,
+      "seat_m": 8.129371881313311
+    },
+    {
+      "id": "Bent_4_bearing_2",
+      "girder_bottom_m": 8.00965196569654,
+      "bearing_top_m": 8.00965196569654,
+      "seat_m": 7.809651965696539
+    },
+    {
+      "id": "Bent_5_bearing_2",
+      "girder_bottom_m": 8.632169004721488,
+      "bearing_top_m": 8.632169004721488,
+      "seat_m": 8.482944004721489
+    },
+    {
+      "id": "Bent_1_bearing_3",
+      "girder_bottom_m": 8.84166534661391,
+      "bearing_top_m": 8.84166534661391,
+      "seat_m": 8.67339034661391
+    },
+    {
+      "id": "Bent_2_bearing_3",
+      "girder_bottom_m": 8.234222643883134,
+      "bearing_top_m": 8.234222643883133,
+      "seat_m": 8.034222643883137
+    },
+    {
+      "id": "Bent_3_bearing_3",
+      "girder_bottom_m": 8.380248116433334,
+      "bearing_top_m": 8.380248116433332,
+      "seat_m": 8.180248116433336
+    },
+    {
+      "id": "Bent_4_bearing_3",
+      "girder_bottom_m": 8.100181833664383,
+      "bearing_top_m": 8.100181833664383,
+      "seat_m": 7.900181833664383
+    },
+    {
+      "id": "Bent_5_bearing_3",
+      "girder_bottom_m": 8.737853853059333,
+      "bearing_top_m": 8.737853853059333,
+      "seat_m": 8.588628853059333
+    },
+    {
+      "id": "Bent_1_bearing_4",
+      "girder_bottom_m": 8.831307925374782,
+      "bearing_top_m": 8.831307925374782,
+      "seat_m": 8.663032925374782
+    },
+    {
+      "id": "Bent_2_bearing_4",
+      "girder_bottom_m": 8.241754936313857,
+      "bearing_top_m": 8.241754936313857,
+      "seat_m": 8.041754936313858
+    },
+    {
+      "id": "Bent_3_bearing_4",
+      "girder_bottom_m": 8.427434041711875,
+      "bearing_top_m": 8.427434041711873,
+      "seat_m": 8.227434041711877
+    },
+    {
+      "id": "Bent_4_bearing_4",
+      "girder_bottom_m": 8.187021391790745,
+      "bearing_top_m": 8.187021391790744,
+      "seat_m": 7.987021391790744
+    },
+    {
+      "id": "Bent_5_bearing_4",
+      "girder_bottom_m": 8.839848391555696,
+      "bearing_top_m": 8.839848391555696,
+      "seat_m": 8.690623391555697
+    },
+    {
+      "id": "Bent_1_bearing_5",
+      "girder_bottom_m": 8.801768030081773,
+      "bearing_top_m": 8.801768030081773,
+      "seat_m": 8.633493030081773
+    },
+    {
+      "id": "Bent_2_bearing_5",
+      "girder_bottom_m": 8.221656834346602,
+      "bearing_top_m": 8.2216568343466,
+      "seat_m": 8.021656834346604
+    },
+    {
+      "id": "Bent_3_bearing_5",
+      "girder_bottom_m": 8.428264245969858,
+      "bearing_top_m": 8.428264245969856,
+      "seat_m": 8.22826424596986
+    },
+    {
+      "id": "Bent_4_bearing_5",
+      "girder_bottom_m": 8.208779902273967,
+      "bearing_top_m": 8.208779902273967,
+      "seat_m": 8.008779902273968
+    },
+    {
+      "id": "Bent_5_bearing_5",
+      "girder_bottom_m": 8.869605363900861,
+      "bearing_top_m": 8.869605363900861,
+      "seat_m": 8.720380363900862
+    },
+    {
+      "id": "Bent_1_bearing_6",
+      "girder_bottom_m": 8.700184795473708,
+      "bearing_top_m": 8.700184795473708,
+      "seat_m": 8.531909795473709
+    },
+    {
+      "id": "Bent_2_bearing_6",
+      "girder_bottom_m": 8.137963313408386,
+      "bearing_top_m": 8.137963313408385,
+      "seat_m": 7.937963313408385
+    },
+    {
+      "id": "Bent_3_bearing_6",
+      "girder_bottom_m": 8.384224357879464,
+      "bearing_top_m": 8.384224357879464,
+      "seat_m": 8.184224357879465
+    },
+    {
+      "id": "Bent_4_bearing_6",
+      "girder_bottom_m": 8.204393647031393,
+      "bearing_top_m": 8.204393647031392,
+      "seat_m": 8.004393647031396
+    },
+    {
+      "id": "Bent_5_bearing_6",
+      "girder_bottom_m": 8.880374089028289,
+      "bearing_top_m": 8.880374089028289,
+      "seat_m": 8.731149089028289
+    },
+    {
+      "id": "Bent_1_bearing_7",
+      "girder_bottom_m": 8.59491125102416,
+      "bearing_top_m": 8.59491125102416,
+      "seat_m": 8.42663625102416
+    },
+    {
+      "id": "Bent_2_bearing_7",
+      "girder_bottom_m": 8.050579482628688,
+      "bearing_top_m": 8.050579482628688,
+      "seat_m": 7.850579482628688
+    },
+    {
+      "id": "Bent_3_bearing_7",
+      "girder_bottom_m": 8.336494159947584,
+      "bearing_top_m": 8.336494159947584,
+      "seat_m": 8.136494159947585
+    },
+    {
+      "id": "Bent_4_bearing_7",
+      "girder_bottom_m": 8.196317081947335,
+      "bearing_top_m": 8.196317081947335,
+      "seat_m": 7.996317081947334
+    },
+    {
+      "id": "Bent_5_bearing_7",
+      "girder_bottom_m": 8.88745250431423,
+      "bearing_top_m": 8.88745250431423,
+      "seat_m": 8.738227504314228
+    },
+    {
+      "id": "Bent_1_bearing_8",
+      "girder_bottom_m": 8.48594739673313,
+      "bearing_top_m": 8.48594739673313,
+      "seat_m": 8.31767239673313
+    },
+    {
+      "id": "Bent_2_bearing_8",
+      "girder_bottom_m": 7.959505342007505,
+      "bearing_top_m": 7.959505342007505,
+      "seat_m": 7.759505342007505
+    },
+    {
+      "id": "Bent_3_bearing_8",
+      "girder_bottom_m": 8.285073652174223,
+      "bearing_top_m": 8.285073652174223,
+      "seat_m": 8.085073652174223
+    },
+    {
+      "id": "Bent_4_bearing_8",
+      "girder_bottom_m": 8.184550207021793,
+      "bearing_top_m": 8.184550207021793,
+      "seat_m": 7.984550207021792
+    },
+    {
+      "id": "Bent_5_bearing_8",
+      "girder_bottom_m": 8.890840609758687,
+      "bearing_top_m": 8.890840609758687,
+      "seat_m": 8.741615609758686
+    }
+  ],
+  "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation."
+}

@@ -1,0 +1,44 @@
+{
+  "component_count": 37,
+  "all_meshes_watertight": true,
+  "all_volumes_positive": true,
+  "exported_glb_reopened": true,
+  "mesh_names_match_manifest": true,
+  "maximum_bearing_contact_error_m": 0,
+  "glb_sha256": "8542b9701fbfbdfa7dff9494c8395403a3002e0727dfbbb96d967d5124fe6d15",
+  "source_pdf_sha256": "3a672d548a02175fd8d6a1a1d96d169987db015871901d797a6ad55bf64740fc",
+  "checks": {
+    "spans_m": [
+      9.144
+    ],
+    "support_lines": 2,
+    "girder_lines": 0,
+    "discrete_bearings": 0,
+    "integral_end_bents": 2,
+    "pile_count": 16,
+    "piles_per_bent": 8,
+    "pile_spacing_along_skew_m": 2.4384,
+    "pile_y_m": [
+      -6.034732113358471,
+      -4.310522938113194,
+      -2.5863137628679165,
+      -0.8621045876226389,
+      0.8621045876226389,
+      2.5863137628679165,
+      4.310522938113194,
+      6.034732113358471
+    ],
+    "support_u_m": [
+      -4.572,
+      4.572
+    ],
+    "primary_pages_valid": true
+  },
+  "contacts": [],
+  "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation.",
+  "primary_pdf_is_byte_identical": true,
+  "all_original_hashes_verified": true,
+  "primary_pdf_pages": 29,
+  "source_documents": 3,
+  "preview": "preview.png"
+}

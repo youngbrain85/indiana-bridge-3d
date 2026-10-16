@@ -1,0 +1,35 @@
+{
+  "id": "us35-deer",
+  "workspace_enabled": true,
+  "name": "US 35 over Deer Creek",
+  "county": "Grant",
+  "waterway": "Deer Creek",
+  "structure_id": "035-27-10469",
+  "designation": "1900048",
+  "structure_type": "Prestressed concrete Bulb-T replacement bridge",
+  "latitude": 40.4804111,
+  "longitude": -85.6769,
+  "location_source": {
+    "document": "2025 FHWA NBI",
+    "url": "https://www.fhwa.dot.gov/BRIDGE/nbi/2025/delimited/IN25.txt",
+    "note": "2025 NBI existing-crossing position; verify against the selected drawing before placing a replacement model. The GLB uses local axes and is not georeferenced."
+  },
+  "owner": "INDOT",
+  "maintenance": "INDOT",
+  "nbi_ids": [
+    "011190"
+  ],
+  "ownership_data_year": 2025,
+  "ownership_note": "Matched 2025 NBI existing-crossing records: owner 01 and maintenance 01 (State Highway Agency). This is dated inventory evidence, not a new 2026 ownership certification.",
+  "model": {
+    "glb": "bridges/us35-deer/model.glb",
+    "deck_length_m": 35.7886,
+    "deck_width_m": 11.684000000000001,
+    "spans": 1,
+    "components": 72,
+    "revision": "Whole-crossing exterior geometry v1",
+    "scope": "Proposed 2026 full replacement, not the older NBI bridge and not asserted constructed",
+    "detail_status": "needs_detail",
+    "detail_status_note": "Whole crossing is represented. Amber details use explicit approximations; field seats, exact camber, transition hardware and site geometry remain unresolved. Not an as-built model."
+  }
+}

@@ -1,0 +1,2064 @@
+{
+  "schema_version": 1,
+  "engine": "collection_demo",
+  "bridge_id": "sr8-yellow",
+  "title": "SR 8 over Yellow River | 1997 rehabilitation design",
+  "modeled_state": "Primary: INDOT B-23076, 1997 rehabilitation and shop drawings (28-page existing-plans bundle). Later 2026 B-43353 overlay is reference only.",
+  "demonstration": true,
+  "display_scope": "Explicit assumed deck, beam, bearing and selected substructure model; omitted physical components carry no claimed FE stress.",
+  "coordinate_system": "Native metres: X longitudinal, Y transverse, Z up. x=u+skew_dx_dy*y. Flat analytical elevations are explicit.",
+  "source_pdf": "data/bridges/sr8-yellow/drawings.pdf",
+  "drawing_sha256": "d733976fbb1d8628a7fd6538b5d51f618c04e25b4f2384f01b43790f93ff335e",
+  "source_hashes": {
+    "drawing": "d733976fbb1d8628a7fd6538b5d51f618c04e25b4f2384f01b43790f93ff335e",
+    "manifest": "b4b3584b6e475260e0932fb314d034344f79d9d2ac7d7ec362799794a843d36d",
+    "model": "a8a5ede0768eaaf0771504d4a9c9d9b8f96be3fa77415c5d4b1704de9e4b61c9"
+  },
+  "sources": {
+    "drawing": {
+      "title": "Primary: INDOT B-23076, 1997 rehabilitation and shop drawings (28-page existing-plans bundle). Later 2026 B-43353 overlay is reference only.",
+      "url": "/assets/sr8-yellow/drawing"
+    },
+    "demonstration": {
+      "title": "Explicit assumed inputs",
+      "url": "/analysis-guide#collection-demo"
+    }
+  },
+  "evidence": [
+    {
+      "fields": [
+        "deck",
+        "spans_m",
+        "beams",
+        "supports"
+      ],
+      "status": "source-based geometry with explicit idealizations",
+      "source": "drawing",
+      "pdf_pages": [
+        5,
+        6,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "note": "Source-specific recipe transcribes manifest/source-ledger dimensions and original modeling script callouts. Native bounding-box centers locate axes only; bounding rectangles are not used as girder cross sections."
+    },
+    {
+      "fields": [
+        "bearing_horizontal_Npm",
+        "bearing_rotation_Nm",
+        "foundation_stiffness_Npm_Nm",
+        "integral_connection_stiffness_Npm_Nm",
+        "fixed_reference_stiffness_Npm_Nm",
+        "continuity_units"
+      ],
+      "status": "assumed",
+      "source": "demonstration",
+      "note": "All assumptions are frozen in values and assumptions; no test-based material certification is asserted."
+    }
+  ],
+  "values": {
+    "deck": {
+      "u0_m": -40.498,
+      "u1_m": 40.498,
+      "y0_m": -5.91,
+      "y1_m": 5.91,
+      "midplane_z_m": 8.157,
+      "thickness_m": 0.2,
+      "patches": [
+        {
+          "cid": "deck",
+          "u0_m": -40.498,
+          "u1_m": 40.498,
+          "y0_m": -5.91,
+          "y1_m": 5.91
+        }
+      ]
+    },
+    "spans_m": [
+      10.538,
+      18.636,
+      21.946,
+      18.636,
+      10.538
+    ],
+    "skew_dx_dy": -1.1503684072210094,
+    "beams": [
+      {
+        "cid": "beam_0_0",
+        "unit": 0,
+        "u0_m": -40.147,
+        "u1_m": -29.608999999999998,
+        "y_m": -5.029,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_1_0",
+        "unit": 0,
+        "u0_m": -29.608999999999998,
+        "u1_m": -10.972999999999999,
+        "y_m": -5.029,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_2_0",
+        "unit": 0,
+        "u0_m": -10.972999999999999,
+        "u1_m": 10.973000000000003,
+        "y_m": -5.029,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_3_0",
+        "unit": 0,
+        "u0_m": 10.973000000000003,
+        "u1_m": 29.609,
+        "y_m": -5.029,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_4_0",
+        "unit": 0,
+        "u0_m": 29.609,
+        "u1_m": 40.147000000000006,
+        "y_m": -5.029,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_0_1",
+        "unit": 0,
+        "u0_m": -40.147,
+        "u1_m": -29.608999999999998,
+        "y_m": -3.556,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_1_1",
+        "unit": 0,
+        "u0_m": -29.608999999999998,
+        "u1_m": -10.972999999999999,
+        "y_m": -3.556,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_2_1",
+        "unit": 0,
+        "u0_m": -10.972999999999999,
+        "u1_m": 10.973000000000003,
+        "y_m": -3.556,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_3_1",
+        "unit": 0,
+        "u0_m": 10.973000000000003,
+        "u1_m": 29.609,
+        "y_m": -3.556,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_4_1",
+        "unit": 0,
+        "u0_m": 29.609,
+        "u1_m": 40.147000000000006,
+        "y_m": -3.556,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_0_2",
+        "unit": 0,
+        "u0_m": -40.147,
+        "u1_m": -29.608999999999998,
+        "y_m": -1.778,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_1_2",
+        "unit": 0,
+        "u0_m": -29.608999999999998,
+        "u1_m": -10.972999999999999,
+        "y_m": -1.778,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_2_2",
+        "unit": 0,
+        "u0_m": -10.972999999999999,
+        "u1_m": 10.973000000000003,
+        "y_m": -1.778,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_3_2",
+        "unit": 0,
+        "u0_m": 10.973000000000003,
+        "u1_m": 29.609,
+        "y_m": -1.778,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_4_2",
+        "unit": 0,
+        "u0_m": 29.609,
+        "u1_m": 40.147000000000006,
+        "y_m": -1.778,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_0_3",
+        "unit": 0,
+        "u0_m": -40.147,
+        "u1_m": -29.608999999999998,
+        "y_m": 0,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_1_3",
+        "unit": 0,
+        "u0_m": -29.608999999999998,
+        "u1_m": -10.972999999999999,
+        "y_m": 0,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_2_3",
+        "unit": 0,
+        "u0_m": -10.972999999999999,
+        "u1_m": 10.973000000000003,
+        "y_m": 0,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_3_3",
+        "unit": 0,
+        "u0_m": 10.973000000000003,
+        "u1_m": 29.609,
+        "y_m": 0,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_4_3",
+        "unit": 0,
+        "u0_m": 29.609,
+        "u1_m": 40.147000000000006,
+        "y_m": 0,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_0_4",
+        "unit": 0,
+        "u0_m": -40.147,
+        "u1_m": -29.608999999999998,
+        "y_m": 1.778,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_1_4",
+        "unit": 0,
+        "u0_m": -29.608999999999998,
+        "u1_m": -10.972999999999999,
+        "y_m": 1.778,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_2_4",
+        "unit": 0,
+        "u0_m": -10.972999999999999,
+        "u1_m": 10.973000000000003,
+        "y_m": 1.778,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_3_4",
+        "unit": 0,
+        "u0_m": 10.973000000000003,
+        "u1_m": 29.609,
+        "y_m": 1.778,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_4_4",
+        "unit": 0,
+        "u0_m": 29.609,
+        "u1_m": 40.147000000000006,
+        "y_m": 1.778,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_0_5",
+        "unit": 0,
+        "u0_m": -40.147,
+        "u1_m": -29.608999999999998,
+        "y_m": 3.556,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_1_5",
+        "unit": 0,
+        "u0_m": -29.608999999999998,
+        "u1_m": -10.972999999999999,
+        "y_m": 3.556,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_2_5",
+        "unit": 0,
+        "u0_m": -10.972999999999999,
+        "u1_m": 10.973000000000003,
+        "y_m": 3.556,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_3_5",
+        "unit": 0,
+        "u0_m": 10.973000000000003,
+        "u1_m": 29.609,
+        "y_m": 3.556,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_4_5",
+        "unit": 0,
+        "u0_m": 29.609,
+        "u1_m": 40.147000000000006,
+        "y_m": 3.556,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_0_6",
+        "unit": 0,
+        "u0_m": -40.147,
+        "u1_m": -29.608999999999998,
+        "y_m": 5.029,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_1_6",
+        "unit": 0,
+        "u0_m": -29.608999999999998,
+        "u1_m": -10.972999999999999,
+        "y_m": 5.029,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_2_6",
+        "unit": 0,
+        "u0_m": -10.972999999999999,
+        "u1_m": 10.973000000000003,
+        "y_m": 5.029,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_3_6",
+        "unit": 0,
+        "u0_m": 10.973000000000003,
+        "u1_m": 29.609,
+        "y_m": 5.029,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      },
+      {
+        "cid": "beam_4_6",
+        "unit": 0,
+        "u0_m": 29.609,
+        "u1_m": 40.147000000000006,
+        "y_m": 5.029,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            0.84,
+            0.292,
+            0.0147,
+            0.022
+          ]
+        },
+        "centroid_z_m": 7.557
+      }
+    ],
+    "supports": [
+      {
+        "u_m": -40.147,
+        "bearings": [
+          {
+            "cid": "Bent_1_bearing_1",
+            "unit": 0,
+            "u_m": -40.147,
+            "y_m": -5.029,
+            "beam_y_m": -5.029,
+            "z_m": 6.881444,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_1_bearing_2",
+            "unit": 0,
+            "u_m": -40.147,
+            "y_m": -3.556,
+            "beam_y_m": -3.556,
+            "z_m": 6.903074,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_1_bearing_3",
+            "unit": 0,
+            "u_m": -40.147,
+            "y_m": -1.778,
+            "beam_y_m": -1.778,
+            "z_m": 6.928682,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_1_bearing_4",
+            "unit": 0,
+            "u_m": -40.147,
+            "y_m": 0,
+            "beam_y_m": 0,
+            "z_m": 6.95374,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_1_bearing_5",
+            "unit": 0,
+            "u_m": -40.147,
+            "y_m": 1.778,
+            "beam_y_m": 1.778,
+            "z_m": 6.907129,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_1_bearing_6",
+            "unit": 0,
+            "u_m": -40.147,
+            "y_m": 3.556,
+            "beam_y_m": 3.556,
+            "z_m": 6.85997,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_1_bearing_7",
+            "unit": 0,
+            "u_m": -40.147,
+            "y_m": 5.029,
+            "beam_y_m": 5.029,
+            "z_m": 6.820484,
+            "area_m2": 0.08165,
+            "integral": false
+          }
+        ],
+        "walls": [],
+        "columns": [
+          {
+            "cid": "pile_stub_0_0",
+            "y_m": -5.2,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_0_1",
+            "y_m": -3.9,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_0_2",
+            "y_m": -2.5999999999999996,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_0_3",
+            "y_m": -1.3,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_0_4",
+            "y_m": 0.0,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_0_5",
+            "y_m": 1.3,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_0_6",
+            "y_m": 2.5999999999999996,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_0_7",
+            "y_m": 3.9,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_0_8",
+            "y_m": 5.2,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          }
+        ],
+        "top_z_m": 6.352983999999999,
+        "cap": {
+          "cid": "cap_0",
+          "y0_m": -5.91,
+          "y1_m": 5.91,
+          "section": {
+            "kind": "rectangle",
+            "dimensions_m": [
+              0.76,
+              0.7999999999999998
+            ]
+          }
+        }
+      },
+      {
+        "u_m": -29.608999999999998,
+        "bearings": [
+          {
+            "cid": "Bent_2_bearing_1",
+            "unit": 0,
+            "u_m": -29.608999999999998,
+            "y_m": -5.029,
+            "beam_y_m": -5.029,
+            "z_m": 6.921678,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_2_bearing_2",
+            "unit": 0,
+            "u_m": -29.608999999999998,
+            "y_m": -3.556,
+            "beam_y_m": -3.556,
+            "z_m": 6.945651,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_2_bearing_3",
+            "unit": 0,
+            "u_m": -29.608999999999998,
+            "y_m": -1.778,
+            "beam_y_m": -1.778,
+            "z_m": 6.974087,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_2_bearing_4",
+            "unit": 0,
+            "u_m": -29.608999999999998,
+            "y_m": 0,
+            "beam_y_m": 0,
+            "z_m": 7.001974,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_2_bearing_5",
+            "unit": 0,
+            "u_m": -29.608999999999998,
+            "y_m": 1.778,
+            "beam_y_m": 1.778,
+            "z_m": 6.958192,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_2_bearing_6",
+            "unit": 0,
+            "u_m": -29.608999999999998,
+            "y_m": 3.556,
+            "beam_y_m": 3.556,
+            "z_m": 6.913861,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_2_bearing_7",
+            "unit": 0,
+            "u_m": -29.608999999999998,
+            "y_m": 5.029,
+            "beam_y_m": 5.029,
+            "z_m": 6.876719,
+            "area_m2": 0.08165,
+            "integral": false
+          }
+        ],
+        "walls": [],
+        "columns": [
+          {
+            "cid": "pile_stub_1_0",
+            "y_m": -5.2,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_1_1",
+            "y_m": -3.9,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_1_2",
+            "y_m": -2.5999999999999996,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_1_3",
+            "y_m": -1.3,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_1_4",
+            "y_m": 0.0,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_1_5",
+            "y_m": 1.3,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_1_6",
+            "y_m": 2.5999999999999996,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_1_7",
+            "y_m": 3.9,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_1_8",
+            "y_m": 5.2,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          }
+        ],
+        "top_z_m": 6.159219,
+        "cap": {
+          "cid": "cap_1",
+          "y0_m": -5.495,
+          "y1_m": 5.495,
+          "section": {
+            "kind": "rectangle",
+            "dimensions_m": [
+              0.76,
+              1.2999999999999998
+            ]
+          }
+        }
+      },
+      {
+        "u_m": -10.972999999999999,
+        "bearings": [
+          {
+            "cid": "Pier_3_bearing_1",
+            "unit": 0,
+            "u_m": -10.972999999999999,
+            "y_m": -5.029,
+            "beam_y_m": -5.029,
+            "z_m": 6.944654,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Pier_3_bearing_2",
+            "unit": 0,
+            "u_m": -10.972999999999999,
+            "y_m": -3.556,
+            "beam_y_m": -3.556,
+            "z_m": 6.972772,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Pier_3_bearing_3",
+            "unit": 0,
+            "u_m": -10.972999999999999,
+            "y_m": -1.778,
+            "beam_y_m": -1.778,
+            "z_m": 7.00621,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Pier_3_bearing_4",
+            "unit": 0,
+            "u_m": -10.972999999999999,
+            "y_m": 0,
+            "beam_y_m": 0,
+            "z_m": 7.039099,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Pier_3_bearing_5",
+            "unit": 0,
+            "u_m": -10.972999999999999,
+            "y_m": 1.778,
+            "beam_y_m": 1.778,
+            "z_m": 7.000319,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Pier_3_bearing_6",
+            "unit": 0,
+            "u_m": -10.972999999999999,
+            "y_m": 3.556,
+            "beam_y_m": 3.556,
+            "z_m": 6.960991,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Pier_3_bearing_7",
+            "unit": 0,
+            "u_m": -10.972999999999999,
+            "y_m": 5.029,
+            "beam_y_m": 5.029,
+            "z_m": 6.927992,
+            "area_m2": 0.08165,
+            "integral": false
+          }
+        ],
+        "walls": [
+          {
+            "cid": "wall_2",
+            "thickness_m": 1.15,
+            "y0_m": -4.4,
+            "y1_m": 4.4,
+            "bottom_z_m": 1.1
+          }
+        ],
+        "columns": [],
+        "top_z_m": 6.447991999999999,
+        "cap": {
+          "cid": "cap_2",
+          "y0_m": -5.495,
+          "y1_m": 5.495,
+          "section": {
+            "kind": "rectangle",
+            "dimensions_m": [
+              1.3,
+              0.7999999999999998
+            ]
+          }
+        }
+      },
+      {
+        "u_m": 10.973000000000003,
+        "bearings": [
+          {
+            "cid": "Pier_4_bearing_1",
+            "unit": 0,
+            "u_m": 10.973000000000003,
+            "y_m": -5.029,
+            "beam_y_m": -5.029,
+            "z_m": 6.927992,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Pier_4_bearing_2",
+            "unit": 0,
+            "u_m": 10.973000000000003,
+            "y_m": -3.556,
+            "beam_y_m": -3.556,
+            "z_m": 6.960991,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Pier_4_bearing_3",
+            "unit": 0,
+            "u_m": 10.973000000000003,
+            "y_m": -1.778,
+            "beam_y_m": -1.778,
+            "z_m": 7.000319,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Pier_4_bearing_4",
+            "unit": 0,
+            "u_m": 10.973000000000003,
+            "y_m": 0,
+            "beam_y_m": 0,
+            "z_m": 7.039099,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Pier_4_bearing_5",
+            "unit": 0,
+            "u_m": 10.973000000000003,
+            "y_m": 1.778,
+            "beam_y_m": 1.778,
+            "z_m": 7.00621,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Pier_4_bearing_6",
+            "unit": 0,
+            "u_m": 10.973000000000003,
+            "y_m": 3.556,
+            "beam_y_m": 3.556,
+            "z_m": 6.972772,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Pier_4_bearing_7",
+            "unit": 0,
+            "u_m": 10.973000000000003,
+            "y_m": 5.029,
+            "beam_y_m": 5.029,
+            "z_m": 6.944654,
+            "area_m2": 0.08165,
+            "integral": false
+          }
+        ],
+        "walls": [
+          {
+            "cid": "wall_3",
+            "thickness_m": 1.15,
+            "y0_m": -4.4,
+            "y1_m": 4.4,
+            "bottom_z_m": 1.1
+          }
+        ],
+        "columns": [],
+        "top_z_m": 6.447991999999999,
+        "cap": {
+          "cid": "cap_3",
+          "y0_m": -5.495,
+          "y1_m": 5.495,
+          "section": {
+            "kind": "rectangle",
+            "dimensions_m": [
+              1.3,
+              0.7999999999999998
+            ]
+          }
+        }
+      },
+      {
+        "u_m": 29.609,
+        "bearings": [
+          {
+            "cid": "Bent_5_bearing_1",
+            "unit": 0,
+            "u_m": 29.609,
+            "y_m": -5.029,
+            "beam_y_m": -5.029,
+            "z_m": 6.876719,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_5_bearing_2",
+            "unit": 0,
+            "u_m": 29.609,
+            "y_m": -3.556,
+            "beam_y_m": -3.556,
+            "z_m": 6.913861,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_5_bearing_3",
+            "unit": 0,
+            "u_m": 29.609,
+            "y_m": -1.778,
+            "beam_y_m": -1.778,
+            "z_m": 6.958192,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_5_bearing_4",
+            "unit": 0,
+            "u_m": 29.609,
+            "y_m": 0,
+            "beam_y_m": 0,
+            "z_m": 7.001974,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_5_bearing_5",
+            "unit": 0,
+            "u_m": 29.609,
+            "y_m": 1.778,
+            "beam_y_m": 1.778,
+            "z_m": 6.974087,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_5_bearing_6",
+            "unit": 0,
+            "u_m": 29.609,
+            "y_m": 3.556,
+            "beam_y_m": 3.556,
+            "z_m": 6.945651,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_5_bearing_7",
+            "unit": 0,
+            "u_m": 29.609,
+            "y_m": 5.029,
+            "beam_y_m": 5.029,
+            "z_m": 6.921678,
+            "area_m2": 0.08165,
+            "integral": false
+          }
+        ],
+        "walls": [],
+        "columns": [
+          {
+            "cid": "pile_stub_4_0",
+            "y_m": -5.2,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_4_1",
+            "y_m": -3.9,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_4_2",
+            "y_m": -2.5999999999999996,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_4_3",
+            "y_m": -1.3,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_4_4",
+            "y_m": 0.0,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_4_5",
+            "y_m": 1.3,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_4_6",
+            "y_m": 2.5999999999999996,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_4_7",
+            "y_m": 3.9,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_4_8",
+            "y_m": 5.2,
+            "bottom_z_m": 3.9,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          }
+        ],
+        "top_z_m": 6.159219,
+        "cap": {
+          "cid": "cap_4",
+          "y0_m": -5.495,
+          "y1_m": 5.495,
+          "section": {
+            "kind": "rectangle",
+            "dimensions_m": [
+              0.76,
+              1.2999999999999998
+            ]
+          }
+        }
+      },
+      {
+        "u_m": 40.147000000000006,
+        "bearings": [
+          {
+            "cid": "Bent_6_bearing_1",
+            "unit": 0,
+            "u_m": 40.147000000000006,
+            "y_m": -5.029,
+            "beam_y_m": -5.029,
+            "z_m": 6.820484,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_6_bearing_2",
+            "unit": 0,
+            "u_m": 40.147000000000006,
+            "y_m": -3.556,
+            "beam_y_m": -3.556,
+            "z_m": 6.85997,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_6_bearing_3",
+            "unit": 0,
+            "u_m": 40.147000000000006,
+            "y_m": -1.778,
+            "beam_y_m": -1.778,
+            "z_m": 6.907129,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_6_bearing_4",
+            "unit": 0,
+            "u_m": 40.147000000000006,
+            "y_m": 0,
+            "beam_y_m": 0,
+            "z_m": 6.95374,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_6_bearing_5",
+            "unit": 0,
+            "u_m": 40.147000000000006,
+            "y_m": 1.778,
+            "beam_y_m": 1.778,
+            "z_m": 6.928682,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_6_bearing_6",
+            "unit": 0,
+            "u_m": 40.147000000000006,
+            "y_m": 3.556,
+            "beam_y_m": 3.556,
+            "z_m": 6.903074,
+            "area_m2": 0.08165,
+            "integral": false
+          },
+          {
+            "cid": "Bent_6_bearing_7",
+            "unit": 0,
+            "u_m": 40.147000000000006,
+            "y_m": 5.029,
+            "beam_y_m": 5.029,
+            "z_m": 6.881444,
+            "area_m2": 0.08165,
+            "integral": false
+          }
+        ],
+        "walls": [],
+        "columns": [
+          {
+            "cid": "pile_stub_5_0",
+            "y_m": -5.2,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_5_1",
+            "y_m": -3.9,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_5_2",
+            "y_m": -2.5999999999999996,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_5_3",
+            "y_m": -1.3,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_5_4",
+            "y_m": 0.0,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_5_5",
+            "y_m": 1.3,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_5_6",
+            "y_m": 2.5999999999999996,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_5_7",
+            "y_m": 3.9,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_5_8",
+            "y_m": 5.2,
+            "bottom_z_m": 4.5,
+            "section": {
+              "kind": "circle",
+              "diameter_m": 0.355
+            },
+            "material": "concrete",
+            "family": "pile"
+          }
+        ],
+        "top_z_m": 6.352983999999999,
+        "cap": {
+          "cid": "cap_5",
+          "y0_m": -5.91,
+          "y1_m": 5.91,
+          "section": {
+            "kind": "rectangle",
+            "dimensions_m": [
+              0.76,
+              0.7999999999999998
+            ]
+          }
+        }
+      }
+    ],
+    "bearing_horizontal_Npm": 10000000.0,
+    "bearing_rotation_Nm": 1000.0,
+    "foundation_stiffness_Npm_Nm": [
+      200000000.0,
+      200000000.0,
+      800000000.0,
+      200000000.0,
+      200000000.0,
+      200000000.0
+    ],
+    "fixed_reference_stiffness_Npm_Nm": [
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0
+    ],
+    "integral_connection_stiffness_Npm_Nm": [
+      100000000000.0,
+      100000000000.0,
+      100000000000.0,
+      10000000000.0,
+      10000000000.0,
+      10000000000.0
+    ],
+    "mesh_step_u_m": 3.0,
+    "mesh_step_y_m": 1.4,
+    "continuity_units": [
+      {
+        "u0_m": -40.498,
+        "u1_m": 40.498
+      }
+    ]
+  },
+  "assumptions": [
+    "Assumed-input OpenSees linear elastic incremental demonstration; not an as-built model, load rating, field validation or full physical stress history.",
+    "Pressure acts on the full declared structural deck envelope, including sidewalk zones. Left half means native Y below the geometric deck centerline.",
+    "Concrete E=30 GPa, steel E=200 GPa, Poisson ratios 0.20/0.30 are editable assumptions. No cracking, reinforcement, prestress initial stress, creep, shrinkage or self-weight is included.",
+    "All deck nodes are placed on the declared flat midplane. Crossfall, vertical curvature and fabrication camber are omitted. Girder centroids are flattened; native X/Y station and skew are preserved.",
+    "Full beam/deck composite action is assumed through rigid offsets. Haunch stiffness, barriers, walks, diaphragms, cross frames, bolts, local bearing plates and nonstructural pieces are omitted unless expressly listed as analyzed.",
+    "Bearing springs are bilateral with assumed horizontal 10 MN/m and rotational 1 kNm/rad stiffness. Vertical stiffness is editable. Springs may report tension; uplift/contact is not modeled.",
+    "Fixed bases mean fixed at the explicitly modeled wall/column/pile bottom; elastic bases add the frozen six stiffnesses per column or per metre of wall. Soil, buried footing flexibility and actual pile fixity are unverified.",
+    "Integral links use the frozen 100 GN/m translations and 10 GNm/rad rotations, distributed by tributary width for line connections. Cap-only fixed reference supports use 10 TN/m springs to separate the reaction node from its rigid constraint; this is a numerical fixed-base approximation.",
+    "Cap/column/wall sections are explicit idealizations. Shell wall heights extend to the cap reference axis where a cap exists; cap embedment and taper are simplified. Local peaks are nominal, not connection design stresses.",
+    "Deck and longitudinal beams are continuous across intermediate supports. Selectable fabrication/span divisions do not create structural hinges. Integral end connections, where specified, use stiff six-direction links to the modeled end wall/cap.",
+    "W840x193 is the explicit nominal I idealization d=.840, b=.292, tw=.0147, tf=.022 m, not an exact rolled catalog section.",
+    "Retained center walls use the geometric reconstruction assumptions t=1.15 m. Round .355 m pile stubs are equivalent elastic columns, fixed/elastic at their displayed cut bottoms; driven lengths and soil embedment are unknown."
+  ],
+  "analyzed_component_ids": [
+    "Bent_1_bearing_1",
+    "Bent_1_bearing_2",
+    "Bent_1_bearing_3",
+    "Bent_1_bearing_4",
+    "Bent_1_bearing_5",
+    "Bent_1_bearing_6",
+    "Bent_1_bearing_7",
+    "Bent_2_bearing_1",
+    "Bent_2_bearing_2",
+    "Bent_2_bearing_3",
+    "Bent_2_bearing_4",
+    "Bent_2_bearing_5",
+    "Bent_2_bearing_6",
+    "Bent_2_bearing_7",
+    "Bent_5_bearing_1",
+    "Bent_5_bearing_2",
+    "Bent_5_bearing_3",
+    "Bent_5_bearing_4",
+    "Bent_5_bearing_5",
+    "Bent_5_bearing_6",
+    "Bent_5_bearing_7",
+    "Bent_6_bearing_1",
+    "Bent_6_bearing_2",
+    "Bent_6_bearing_3",
+    "Bent_6_bearing_4",
+    "Bent_6_bearing_5",
+    "Bent_6_bearing_6",
+    "Bent_6_bearing_7",
+    "Pier_3_bearing_1",
+    "Pier_3_bearing_2",
+    "Pier_3_bearing_3",
+    "Pier_3_bearing_4",
+    "Pier_3_bearing_5",
+    "Pier_3_bearing_6",
+    "Pier_3_bearing_7",
+    "Pier_4_bearing_1",
+    "Pier_4_bearing_2",
+    "Pier_4_bearing_3",
+    "Pier_4_bearing_4",
+    "Pier_4_bearing_5",
+    "Pier_4_bearing_6",
+    "Pier_4_bearing_7",
+    "beam_0_0",
+    "beam_0_1",
+    "beam_0_2",
+    "beam_0_3",
+    "beam_0_4",
+    "beam_0_5",
+    "beam_0_6",
+    "beam_1_0",
+    "beam_1_1",
+    "beam_1_2",
+    "beam_1_3",
+    "beam_1_4",
+    "beam_1_5",
+    "beam_1_6",
+    "beam_2_0",
+    "beam_2_1",
+    "beam_2_2",
+    "beam_2_3",
+    "beam_2_4",
+    "beam_2_5",
+    "beam_2_6",
+    "beam_3_0",
+    "beam_3_1",
+    "beam_3_2",
+    "beam_3_3",
+    "beam_3_4",
+    "beam_3_5",
+    "beam_3_6",
+    "beam_4_0",
+    "beam_4_1",
+    "beam_4_2",
+    "beam_4_3",
+    "beam_4_4",
+    "beam_4_5",
+    "beam_4_6",
+    "cap_0",
+    "cap_1",
+    "cap_2",
+    "cap_3",
+    "cap_4",
+    "cap_5",
+    "deck",
+    "pile_stub_0_0",
+    "pile_stub_0_1",
+    "pile_stub_0_2",
+    "pile_stub_0_3",
+    "pile_stub_0_4",
+    "pile_stub_0_5",
+    "pile_stub_0_6",
+    "pile_stub_0_7",
+    "pile_stub_0_8",
+    "pile_stub_1_0",
+    "pile_stub_1_1",
+    "pile_stub_1_2",
+    "pile_stub_1_3",
+    "pile_stub_1_4",
+    "pile_stub_1_5",
+    "pile_stub_1_6",
+    "pile_stub_1_7",
+    "pile_stub_1_8",
+    "pile_stub_4_0",
+    "pile_stub_4_1",
+    "pile_stub_4_2",
+    "pile_stub_4_3",
+    "pile_stub_4_4",
+    "pile_stub_4_5",
+    "pile_stub_4_6",
+    "pile_stub_4_7",
+    "pile_stub_4_8",
+    "pile_stub_5_0",
+    "pile_stub_5_1",
+    "pile_stub_5_2",
+    "pile_stub_5_3",
+    "pile_stub_5_4",
+    "pile_stub_5_5",
+    "pile_stub_5_6",
+    "pile_stub_5_7",
+    "pile_stub_5_8",
+    "wall_2",
+    "wall_3"
+  ],
+  "excluded_component_ids": [
+    "approach_-1",
+    "approach_1",
+    "diaphragm_0_0_0",
+    "diaphragm_0_0_1",
+    "diaphragm_0_0_2",
+    "diaphragm_0_0_3",
+    "diaphragm_0_0_4",
+    "diaphragm_0_0_5",
+    "diaphragm_0_1_0",
+    "diaphragm_0_1_1",
+    "diaphragm_0_1_2",
+    "diaphragm_0_1_3",
+    "diaphragm_0_1_4",
+    "diaphragm_0_1_5",
+    "diaphragm_0_2_0",
+    "diaphragm_0_2_1",
+    "diaphragm_0_2_2",
+    "diaphragm_0_2_3",
+    "diaphragm_0_2_4",
+    "diaphragm_0_2_5",
+    "diaphragm_1_0_0",
+    "diaphragm_1_0_1",
+    "diaphragm_1_0_2",
+    "diaphragm_1_0_3",
+    "diaphragm_1_0_4",
+    "diaphragm_1_0_5",
+    "diaphragm_1_1_0",
+    "diaphragm_1_1_1",
+    "diaphragm_1_1_2",
+    "diaphragm_1_1_3",
+    "diaphragm_1_1_4",
+    "diaphragm_1_1_5",
+    "diaphragm_1_2_0",
+    "diaphragm_1_2_1",
+    "diaphragm_1_2_2",
+    "diaphragm_1_2_3",
+    "diaphragm_1_2_4",
+    "diaphragm_1_2_5",
+    "diaphragm_2_0_0",
+    "diaphragm_2_0_1",
+    "diaphragm_2_0_2",
+    "diaphragm_2_0_3",
+    "diaphragm_2_0_4",
+    "diaphragm_2_0_5",
+    "diaphragm_2_1_0",
+    "diaphragm_2_1_1",
+    "diaphragm_2_1_2",
+    "diaphragm_2_1_3",
+    "diaphragm_2_1_4",
+    "diaphragm_2_1_5",
+    "diaphragm_2_2_0",
+    "diaphragm_2_2_1",
+    "diaphragm_2_2_2",
+    "diaphragm_2_2_3",
+    "diaphragm_2_2_4",
+    "diaphragm_2_2_5",
+    "diaphragm_3_0_0",
+    "diaphragm_3_0_1",
+    "diaphragm_3_0_2",
+    "diaphragm_3_0_3",
+    "diaphragm_3_0_4",
+    "diaphragm_3_0_5",
+    "diaphragm_3_1_0",
+    "diaphragm_3_1_1",
+    "diaphragm_3_1_2",
+    "diaphragm_3_1_3",
+    "diaphragm_3_1_4",
+    "diaphragm_3_1_5",
+    "diaphragm_3_2_0",
+    "diaphragm_3_2_1",
+    "diaphragm_3_2_2",
+    "diaphragm_3_2_3",
+    "diaphragm_3_2_4",
+    "diaphragm_3_2_5",
+    "diaphragm_4_0_0",
+    "diaphragm_4_0_1",
+    "diaphragm_4_0_2",
+    "diaphragm_4_0_3",
+    "diaphragm_4_0_4",
+    "diaphragm_4_0_5",
+    "diaphragm_4_1_0",
+    "diaphragm_4_1_1",
+    "diaphragm_4_1_2",
+    "diaphragm_4_1_3",
+    "diaphragm_4_1_4",
+    "diaphragm_4_1_5",
+    "diaphragm_4_2_0",
+    "diaphragm_4_2_1",
+    "diaphragm_4_2_2",
+    "diaphragm_4_2_3",
+    "diaphragm_4_2_4",
+    "diaphragm_4_2_5",
+    "field_splice_0_0",
+    "field_splice_0_0_bolts",
+    "field_splice_0_1",
+    "field_splice_0_1_bolts",
+    "field_splice_1_0",
+    "field_splice_1_0_bolts",
+    "field_splice_1_1",
+    "field_splice_1_1_bolts",
+    "field_splice_2_0",
+    "field_splice_2_0_bolts",
+    "field_splice_2_1",
+    "field_splice_2_1_bolts",
+    "field_splice_3_0",
+    "field_splice_3_0_bolts",
+    "field_splice_3_1",
+    "field_splice_3_1_bolts",
+    "field_splice_4_0",
+    "field_splice_4_0_bolts",
+    "field_splice_4_1",
+    "field_splice_4_1_bolts",
+    "field_splice_5_0",
+    "field_splice_5_0_bolts",
+    "field_splice_5_1",
+    "field_splice_5_1_bolts",
+    "field_splice_6_0",
+    "field_splice_6_0_bolts",
+    "field_splice_6_1",
+    "field_splice_6_1_bolts",
+    "footing_2",
+    "footing_3",
+    "haunch_0_0",
+    "haunch_0_1",
+    "haunch_0_2",
+    "haunch_0_3",
+    "haunch_0_4",
+    "haunch_0_5",
+    "haunch_0_6",
+    "haunch_1_0",
+    "haunch_1_1",
+    "haunch_1_2",
+    "haunch_1_3",
+    "haunch_1_4",
+    "haunch_1_5",
+    "haunch_1_6",
+    "haunch_2_0",
+    "haunch_2_1",
+    "haunch_2_2",
+    "haunch_2_3",
+    "haunch_2_4",
+    "haunch_2_5",
+    "haunch_2_6",
+    "haunch_3_0",
+    "haunch_3_1",
+    "haunch_3_2",
+    "haunch_3_3",
+    "haunch_3_4",
+    "haunch_3_5",
+    "haunch_3_6",
+    "haunch_4_0",
+    "haunch_4_1",
+    "haunch_4_2",
+    "haunch_4_3",
+    "haunch_4_4",
+    "haunch_4_5",
+    "haunch_4_6",
+    "joint_-1",
+    "joint_1",
+    "ped_0_0",
+    "ped_0_1",
+    "ped_0_2",
+    "ped_0_3",
+    "ped_0_4",
+    "ped_0_5",
+    "ped_1_0",
+    "ped_1_1",
+    "ped_1_2",
+    "ped_1_3",
+    "ped_1_4",
+    "ped_1_5",
+    "ped_2_0",
+    "ped_2_1",
+    "ped_2_2",
+    "ped_2_3",
+    "ped_2_4",
+    "ped_2_5",
+    "ped_3_1",
+    "ped_3_2",
+    "ped_3_3",
+    "ped_3_4",
+    "ped_3_5",
+    "ped_3_6",
+    "ped_4_1",
+    "ped_4_2",
+    "ped_4_3",
+    "ped_4_4",
+    "ped_4_5",
+    "ped_4_6",
+    "ped_5_1",
+    "ped_5_2",
+    "ped_5_3",
+    "ped_5_4",
+    "ped_5_5",
+    "ped_5_6",
+    "rail_-1_0",
+    "rail_-1_1",
+    "rail_-1_2",
+    "rail_-1_3",
+    "rail_-1_4",
+    "rail_1_0",
+    "rail_1_1",
+    "rail_1_2",
+    "rail_1_3",
+    "rail_1_4",
+    "wing_0_-1",
+    "wing_0_1",
+    "wing_5_-1",
+    "wing_5_1"
+  ],
+  "excluded_component_reason": "Outside this explicitly scoped analytical idealization; no stress or displacement assigned to these display members."
+}

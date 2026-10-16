@@ -1,0 +1,2557 @@
+{
+  "title": "US 35 over Deer Creek | proposed 2026 replacement",
+  "structure_id": "035-27-10469",
+  "designation": "1900048",
+  "spans_m": [
+    35.052
+  ],
+  "deck_thickness_m": 0.2032,
+  "source_note": "Primary INDOT B-45063 / Des 1900048 proposed 2026 replacement, document 9721578. Source cover and plans describe a 115 ft new crossing; the associated 2025 NBI record describes the older 1931 bridge.",
+  "assumptions": [
+    "Exterior visualization reconstruction of the named design state, not an as-built survey, structural rating or validated finite-element mesh.",
+    "No internal reinforcement, prestressing strands, embedded anchors or fabrication holes. Colors identify visualization layers; amber parts identify explicit approximations.",
+    "Source PDF page references always address drawings.pdf, an unchanged issued PDF. Supplemental historical pages are separately identified by document ID and local file.",
+    "Constructed interfaces and bearing contact checks establish geometric attachment only. Surveyed seats, actual camber, shim thicknesses and installed tolerances remain unknown.",
+    "Site terrain, channel solids, riprap individual stones, buried pile tips, full roadside guardrail terminals and nonstructural utility routing are omitted.",
+    "Local Z datum is the source flowline elevation 837.11 ft; geometry is not surveyed or georeferenced.",
+    "Straight nominal girder lines use a 75 mm center haunch. Nominal integral-bent seats are derived for visual contact; real support rotational restraint is not inferred from bearing display meshes."
+  ],
+  "external_sources": [
+    {
+      "id": "9721578",
+      "title": "FT PlansXsect 1900048 For Contract Services",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9721578",
+      "local_file": "sources/contract_plans_9721578.pdf",
+      "sha256": "fb940a09d31d217f2e13fdcb64bdddfd83cddb816408b1f11ddc4738927d7b23",
+      "original_pages": 36,
+      "role": "primary_issued_pdf",
+      "primary_pdf_start_page": 1
+    }
+  ],
+  "source_index": {
+    "primary_pdf": "drawings.pdf",
+    "primary_document_id": "9721578",
+    "pages": 36,
+    "sha256": "fb940a09d31d217f2e13fdcb64bdddfd83cddb816408b1f11ddc4738927d7b23",
+    "source_documents": [
+      {
+        "id": "9721578",
+        "title": "FT PlansXsect 1900048 For Contract Services",
+        "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9721578",
+        "local_file": "sources/contract_plans_9721578.pdf",
+        "sha256": "fb940a09d31d217f2e13fdcb64bdddfd83cddb816408b1f11ddc4738927d7b23",
+        "original_pages": 36,
+        "role": "primary_issued_pdf",
+        "primary_pdf_start_page": 1
+      }
+    ],
+    "note": "Primary drawings.pdf is byte-for-byte identical to the issued source; no combined or newly authored PDF. Supplemental page numbers do not address the primary PDF."
+  },
+  "completeness": "Whole crossing reconstructed with unresolved detail (amber)",
+  "detail_status": "needs_detail",
+  "units": "metres",
+  "deck_length_m": 35.7886,
+  "deck_width_m": 11.684000000000001,
+  "skew_deg": 15,
+  "source_pdf": "drawings.pdf",
+  "source_sha256": "fb940a09d31d217f2e13fdcb64bdddfd83cddb816408b1f11ddc4738927d7b23",
+  "parts": [
+    {
+      "id": "deck",
+      "name": "Proposed 2026 continuous deck",
+      "layer": "deck",
+      "color": "#d1d5d0",
+      "pdf_pages": [
+        11,
+        12,
+        21,
+        22
+      ],
+      "basis": "Dimensioned exterior slab; 7.5 in structural depth plus 0.5 in sacrificial surface",
+      "note": "",
+      "dimensions": {
+        "length_m": 35.7886,
+        "width_m": 11.684000000000001,
+        "thickness_m": 0.2032
+      },
+      "bounds_m": [
+        [
+          -19.459659,
+          -5.842,
+          4.087266
+        ],
+        [
+          19.459659,
+          5.842,
+          5.285124
+        ]
+      ],
+      "volume_m3": 84.968893288
+    },
+    {
+      "id": "beam_0_0",
+      "name": "BT48x49 beam 1 | proposed 2026",
+      "layer": "girders",
+      "color": "#b8b6a6",
+      "pdf_pages": [
+        18,
+        19,
+        20
+      ],
+      "basis": "Dimensioned source section; nominal straight profile",
+      "note": "48 in depth, 49 in top flange, 40 in bottom flange, 8 in web; 116 ft 6 in beam length. Bottom chamfers, end copes and actual camber omitted.",
+      "dimensions": {
+        "depth_m": 1.2191999999999998,
+        "length_m": 35.5092,
+        "section_profile_yz_m": [
+          [
+            -0.508,
+            0.0
+          ],
+          [
+            0.508,
+            0.0
+          ],
+          [
+            0.508,
+            0.1397
+          ],
+          [
+            0.15239999999999998,
+            0.3175
+          ],
+          [
+            0.1016,
+            0.36829999999999996
+          ],
+          [
+            0.1016,
+            0.9398
+          ],
+          [
+            0.17779999999999999,
+            1.016
+          ],
+          [
+            0.6223,
+            1.0922
+          ],
+          [
+            0.6223,
+            1.2191999999999998
+          ],
+          [
+            -0.6223,
+            1.2191999999999998
+          ],
+          [
+            -0.6223,
+            1.0922
+          ],
+          [
+            -0.17779999999999999,
+            1.016
+          ],
+          [
+            -0.1016,
+            0.9398
+          ],
+          [
+            -0.1016,
+            0.36829999999999996
+          ],
+          [
+            -0.15239999999999998,
+            0.3175
+          ],
+          [
+            -0.508,
+            0.1397
+          ]
+        ]
+      },
+      "bounds_m": [
+        [
+          -16.509119,
+          -5.2705,
+          2.88628
+        ],
+        [
+          19.000081,
+          -4.0259,
+          4.939946
+        ]
+      ],
+      "volume_m3": 22.324933027
+    },
+    {
+      "id": "haunch_0_0",
+      "name": "haunch 0 0",
+      "layer": "haunches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        12,
+        20,
+        24
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "dimensions": {
+        "nominal_center_clearance_m": 0.075,
+        "width_m": 1.2446
+      },
+      "bounds_m": [
+        [
+          -16.509119,
+          -5.2705,
+          4.10548
+        ],
+        [
+          19.000081,
+          -4.0259,
+          5.027392
+        ]
+      ],
+      "volume_m3": 3.314606274,
+      "approximation": true
+    },
+    {
+      "id": "B1_bearing_1",
+      "name": "Bent 1 steel bearing assembly 1",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing.",
+      "dimensions": {
+        "stack_height_m": 0.187325,
+        "base_plate_length_m": 0.2286,
+        "base_plate_width_m": 1.3208
+      },
+      "bounds_m": [
+        [
+          -16.394819,
+          -5.3086,
+          2.704327
+        ],
+        [
+          -16.166219,
+          -3.9878,
+          2.891652
+        ]
+      ],
+      "volume_m3": 0.023496035,
+      "approximation": true
+    },
+    {
+      "id": "B2_bearing_1",
+      "name": "Bent 2 steel bearing assembly 1",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing.",
+      "dimensions": {
+        "stack_height_m": 0.180975,
+        "base_plate_length_m": 0.2286,
+        "base_plate_width_m": 1.3208
+      },
+      "bounds_m": [
+        [
+          18.657181,
+          -5.3086,
+          3.534399
+        ],
+        [
+          18.885781,
+          -3.9878,
+          3.715374
+        ]
+      ],
+      "volume_m3": 0.022414488,
+      "approximation": true
+    },
+    {
+      "id": "beam_0_1",
+      "name": "BT48x49 beam 2 | proposed 2026",
+      "layer": "girders",
+      "color": "#b8b6a6",
+      "pdf_pages": [
+        18,
+        19,
+        20
+      ],
+      "basis": "Dimensioned source section; nominal straight profile",
+      "note": "48 in depth, 49 in top flange, 40 in bottom flange, 8 in web; 116 ft 6 in beam length. Bottom chamfers, end copes and actual camber omitted.",
+      "dimensions": {
+        "depth_m": 1.2191999999999998,
+        "length_m": 35.5092,
+        "section_profile_yz_m": [
+          [
+            -0.508,
+            0.0
+          ],
+          [
+            0.508,
+            0.0
+          ],
+          [
+            0.508,
+            0.1397
+          ],
+          [
+            0.15239999999999998,
+            0.3175
+          ],
+          [
+            0.1016,
+            0.36829999999999996
+          ],
+          [
+            0.1016,
+            0.9398
+          ],
+          [
+            0.17779999999999999,
+            1.016
+          ],
+          [
+            0.6223,
+            1.0922
+          ],
+          [
+            0.6223,
+            1.2191999999999998
+          ],
+          [
+            -0.6223,
+            1.2191999999999998
+          ],
+          [
+            -0.6223,
+            1.0922
+          ],
+          [
+            -0.17779999999999999,
+            1.016
+          ],
+          [
+            -0.1016,
+            0.9398
+          ],
+          [
+            -0.1016,
+            0.36829999999999996
+          ],
+          [
+            -0.15239999999999998,
+            0.3175
+          ],
+          [
+            -0.508,
+            0.1397
+          ]
+        ]
+      },
+      "bounds_m": [
+        [
+          -17.33944,
+          -2.1717,
+          2.928743
+        ],
+        [
+          18.16976,
+          -0.9271,
+          4.982409
+        ]
+      ],
+      "volume_m3": 22.324933027
+    },
+    {
+      "id": "haunch_0_1",
+      "name": "haunch 0 1",
+      "layer": "haunches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        12,
+        20,
+        24
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "dimensions": {
+        "nominal_center_clearance_m": 0.075,
+        "width_m": 1.2446
+      },
+      "bounds_m": [
+        [
+          -17.33944,
+          -2.1717,
+          4.147943
+        ],
+        [
+          18.16976,
+          -0.9271,
+          5.069855
+        ]
+      ],
+      "volume_m3": 3.314606274,
+      "approximation": true
+    },
+    {
+      "id": "B1_bearing_2",
+      "name": "Bent 1 steel bearing assembly 2",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing.",
+      "dimensions": {
+        "stack_height_m": 0.187325,
+        "base_plate_length_m": 0.2286,
+        "base_plate_width_m": 1.3208
+      },
+      "bounds_m": [
+        [
+          -17.22514,
+          -2.2098,
+          2.74679
+        ],
+        [
+          -16.99654,
+          -0.889,
+          2.934115
+        ]
+      ],
+      "volume_m3": 0.023496035,
+      "approximation": true
+    },
+    {
+      "id": "B2_bearing_2",
+      "name": "Bent 2 steel bearing assembly 2",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing.",
+      "dimensions": {
+        "stack_height_m": 0.180975,
+        "base_plate_length_m": 0.2286,
+        "base_plate_width_m": 1.3208
+      },
+      "bounds_m": [
+        [
+          17.82686,
+          -2.2098,
+          3.576862
+        ],
+        [
+          18.05546,
+          -0.889,
+          3.757837
+        ]
+      ],
+      "volume_m3": 0.022414488,
+      "approximation": true
+    },
+    {
+      "id": "beam_0_2",
+      "name": "BT48x49 beam 3 | proposed 2026",
+      "layer": "girders",
+      "color": "#b8b6a6",
+      "pdf_pages": [
+        18,
+        19,
+        20
+      ],
+      "basis": "Dimensioned source section; nominal straight profile",
+      "note": "48 in depth, 49 in top flange, 40 in bottom flange, 8 in web; 116 ft 6 in beam length. Bottom chamfers, end copes and actual camber omitted.",
+      "dimensions": {
+        "depth_m": 1.2191999999999998,
+        "length_m": 35.5092,
+        "section_profile_yz_m": [
+          [
+            -0.508,
+            0.0
+          ],
+          [
+            0.508,
+            0.0
+          ],
+          [
+            0.508,
+            0.1397
+          ],
+          [
+            0.15239999999999998,
+            0.3175
+          ],
+          [
+            0.1016,
+            0.36829999999999996
+          ],
+          [
+            0.1016,
+            0.9398
+          ],
+          [
+            0.17779999999999999,
+            1.016
+          ],
+          [
+            0.6223,
+            1.0922
+          ],
+          [
+            0.6223,
+            1.2191999999999998
+          ],
+          [
+            -0.6223,
+            1.2191999999999998
+          ],
+          [
+            -0.6223,
+            1.0922
+          ],
+          [
+            -0.17779999999999999,
+            1.016
+          ],
+          [
+            -0.1016,
+            0.9398
+          ],
+          [
+            -0.1016,
+            0.36829999999999996
+          ],
+          [
+            -0.15239999999999998,
+            0.3175
+          ],
+          [
+            -0.508,
+            0.1397
+          ]
+        ]
+      },
+      "bounds_m": [
+        [
+          -18.16976,
+          0.9271,
+          2.909231
+        ],
+        [
+          17.33944,
+          2.1717,
+          4.962897
+        ]
+      ],
+      "volume_m3": 22.324933027
+    },
+    {
+      "id": "haunch_0_2",
+      "name": "haunch 0 2",
+      "layer": "haunches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        12,
+        20,
+        24
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "dimensions": {
+        "nominal_center_clearance_m": 0.075,
+        "width_m": 1.2446
+      },
+      "bounds_m": [
+        [
+          -18.16976,
+          0.9271,
+          4.128431
+        ],
+        [
+          17.33944,
+          2.1717,
+          5.050343
+        ]
+      ],
+      "volume_m3": 3.314606274,
+      "approximation": true
+    },
+    {
+      "id": "B1_bearing_3",
+      "name": "Bent 1 steel bearing assembly 3",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing.",
+      "dimensions": {
+        "stack_height_m": 0.187325,
+        "base_plate_length_m": 0.2286,
+        "base_plate_width_m": 1.3208
+      },
+      "bounds_m": [
+        [
+          -18.05546,
+          0.889,
+          2.727278
+        ],
+        [
+          -17.82686,
+          2.2098,
+          2.914603
+        ]
+      ],
+      "volume_m3": 0.023496035,
+      "approximation": true
+    },
+    {
+      "id": "B2_bearing_3",
+      "name": "Bent 2 steel bearing assembly 3",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing.",
+      "dimensions": {
+        "stack_height_m": 0.180975,
+        "base_plate_length_m": 0.2286,
+        "base_plate_width_m": 1.3208
+      },
+      "bounds_m": [
+        [
+          16.99654,
+          0.889,
+          3.55735
+        ],
+        [
+          17.22514,
+          2.2098,
+          3.738325
+        ]
+      ],
+      "volume_m3": 0.022414488,
+      "approximation": true
+    },
+    {
+      "id": "beam_0_3",
+      "name": "BT48x49 beam 4 | proposed 2026",
+      "layer": "girders",
+      "color": "#b8b6a6",
+      "pdf_pages": [
+        18,
+        19,
+        20
+      ],
+      "basis": "Dimensioned source section; nominal straight profile",
+      "note": "48 in depth, 49 in top flange, 40 in bottom flange, 8 in web; 116 ft 6 in beam length. Bottom chamfers, end copes and actual camber omitted.",
+      "dimensions": {
+        "depth_m": 1.2191999999999998,
+        "length_m": 35.5092,
+        "section_profile_yz_m": [
+          [
+            -0.508,
+            0.0
+          ],
+          [
+            0.508,
+            0.0
+          ],
+          [
+            0.508,
+            0.1397
+          ],
+          [
+            0.15239999999999998,
+            0.3175
+          ],
+          [
+            0.1016,
+            0.36829999999999996
+          ],
+          [
+            0.1016,
+            0.9398
+          ],
+          [
+            0.17779999999999999,
+            1.016
+          ],
+          [
+            0.6223,
+            1.0922
+          ],
+          [
+            0.6223,
+            1.2191999999999998
+          ],
+          [
+            -0.6223,
+            1.2191999999999998
+          ],
+          [
+            -0.6223,
+            1.0922
+          ],
+          [
+            -0.17779999999999999,
+            1.016
+          ],
+          [
+            -0.1016,
+            0.9398
+          ],
+          [
+            -0.1016,
+            0.36829999999999996
+          ],
+          [
+            -0.15239999999999998,
+            0.3175
+          ],
+          [
+            -0.508,
+            0.1397
+          ]
+        ]
+      },
+      "bounds_m": [
+        [
+          -19.000081,
+          4.0259,
+          2.827742
+        ],
+        [
+          16.509119,
+          5.2705,
+          4.881408
+        ]
+      ],
+      "volume_m3": 22.324933027
+    },
+    {
+      "id": "haunch_0_3",
+      "name": "haunch 0 3",
+      "layer": "haunches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        12,
+        20,
+        24
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "dimensions": {
+        "nominal_center_clearance_m": 0.075,
+        "width_m": 1.2446
+      },
+      "bounds_m": [
+        [
+          -19.000081,
+          4.0259,
+          4.046942
+        ],
+        [
+          16.509119,
+          5.2705,
+          4.968854
+        ]
+      ],
+      "volume_m3": 3.314606274,
+      "approximation": true
+    },
+    {
+      "id": "B1_bearing_4",
+      "name": "Bent 1 steel bearing assembly 4",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing.",
+      "dimensions": {
+        "stack_height_m": 0.187325,
+        "base_plate_length_m": 0.2286,
+        "base_plate_width_m": 1.3208
+      },
+      "bounds_m": [
+        [
+          -18.885781,
+          3.9878,
+          2.645789
+        ],
+        [
+          -18.657181,
+          5.3086,
+          2.833114
+        ]
+      ],
+      "volume_m3": 0.023496035,
+      "approximation": true
+    },
+    {
+      "id": "B2_bearing_4",
+      "name": "Bent 2 steel bearing assembly 4",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing.",
+      "dimensions": {
+        "stack_height_m": 0.180975,
+        "base_plate_length_m": 0.2286,
+        "base_plate_width_m": 1.3208
+      },
+      "bounds_m": [
+        [
+          16.166219,
+          3.9878,
+          3.475861
+        ],
+        [
+          16.394819,
+          5.3086,
+          3.656836
+        ]
+      ],
+      "volume_m3": 0.022414488,
+      "approximation": true
+    },
+    {
+      "id": "diaphragm_0_0",
+      "name": "Midspan steel diaphragm bay 1",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        12,
+        18,
+        22
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source has one staggered midpoint row. 18 in channel depth follows typical section; framing label MC12x42.7 conflicts. Exact channel, attachments and stagger are unresolved.",
+      "dimensions": {
+        "depth_m": 0.4572
+      },
+      "bounds_m": [
+        [
+          0.830321,
+          -4.5466,
+          3.792957
+        ],
+        [
+          0.935321,
+          -1.651,
+          4.250157
+        ]
+      ],
+      "volume_m3": 0.023326954,
+      "approximation": true
+    },
+    {
+      "id": "diaphragm_0_1",
+      "name": "Midspan steel diaphragm bay 2",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        12,
+        18,
+        22
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source has one staggered midpoint row. 18 in channel depth follows typical section; framing label MC12x42.7 conflicts. Exact channel, attachments and stagger are unresolved.",
+      "dimensions": {
+        "depth_m": 0.4572
+      },
+      "bounds_m": [
+        [
+          -0.0,
+          -1.4478,
+          3.83542
+        ],
+        [
+          0.105,
+          1.4478,
+          4.29262
+        ]
+      ],
+      "volume_m3": 0.023326954,
+      "approximation": true
+    },
+    {
+      "id": "diaphragm_0_2",
+      "name": "Midspan steel diaphragm bay 3",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        12,
+        18,
+        22
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source has one staggered midpoint row. 18 in channel depth follows typical section; framing label MC12x42.7 conflicts. Exact channel, attachments and stagger are unresolved.",
+      "dimensions": {
+        "depth_m": 0.4572
+      },
+      "bounds_m": [
+        [
+          -0.830321,
+          1.651,
+          3.753931
+        ],
+        [
+          -0.725321,
+          4.5466,
+          4.211131
+        ]
+      ],
+      "volume_m3": 0.023326954,
+      "approximation": true
+    },
+    {
+      "id": "cap_1",
+      "name": "Bent 1 lower integral cap",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        13,
+        14,
+        15
+      ],
+      "basis": "Dimensioned 43 ft skew cap length, 3 ft 10 in normal thickness and base elevation; nominal common seat",
+      "note": "Individual modeled bearing risers fit the nominal girder line; exact source seat stepping and upper infill shapes are simplified.",
+      "dimensions": {
+        "normal_width_m": 1.1683999999999999,
+        "skew_length_m": 13.1064
+      },
+      "bounds_m": [
+        [
+          -19.826901,
+          -6.329905,
+          1.453896
+        ],
+        [
+          -15.225099,
+          6.329905,
+          2.645789
+        ]
+      ],
+      "volume_m3": 18.252077476
+    },
+    {
+      "id": "pedestal_0_0",
+      "name": "Bent 1 derived seat riser 1",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        14,
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -16.58261,
+          -5.334,
+          2.645789
+        ],
+        [
+          -15.978427,
+          -3.9624,
+          2.704327
+        ]
+      ],
+      "volume_m3": 0.019001813,
+      "approximation": true
+    },
+    {
+      "id": "pedestal_0_1",
+      "name": "Bent 1 derived seat riser 2",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        14,
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -17.412931,
+          -2.2352,
+          2.645789
+        ],
+        [
+          -16.808748,
+          -0.8636,
+          2.74679
+        ]
+      ],
+      "volume_m3": 0.032785813,
+      "approximation": true
+    },
+    {
+      "id": "pedestal_0_2",
+      "name": "Bent 1 derived seat riser 3",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        14,
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -18.243252,
+          0.8636,
+          2.645789
+        ],
+        [
+          -17.639069,
+          2.2352,
+          2.727278
+        ]
+      ],
+      "volume_m3": 0.026451876,
+      "approximation": true
+    },
+    {
+      "id": "integral_infill_0_0",
+      "name": "Bent 1 integral closure bay 1",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        14,
+        15
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -16.493774,
+          -6.329905,
+          2.645789
+        ],
+        [
+          -15.449907,
+          -5.2705,
+          4.186254
+        ]
+      ],
+      "volume_m3": 1.227268026,
+      "approximation": true
+    },
+    {
+      "id": "integral_infill_0_2",
+      "name": "Bent 1 integral closure bay 2",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        14,
+        15
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -17.324095,
+          -4.0259,
+          2.645789
+        ],
+        [
+          -16.067263,
+          -2.1717,
+          4.228718
+        ]
+      ],
+      "volume_m3": 2.200163516,
+      "approximation": true
+    },
+    {
+      "id": "integral_infill_0_4",
+      "name": "Bent 1 integral closure bay 3",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        14,
+        15
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -18.154416,
+          -0.9271,
+          2.645789
+        ],
+        [
+          -16.897584,
+          0.9271,
+          4.245773
+        ]
+      ],
+      "volume_m3": 2.233873443,
+      "approximation": true
+    },
+    {
+      "id": "integral_infill_0_6",
+      "name": "Bent 1 integral closure bay 4",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        14,
+        15
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -18.984737,
+          2.1717,
+          2.645789
+        ],
+        [
+          -17.727905,
+          4.0259,
+          4.201368
+        ]
+      ],
+      "volume_m3": 2.145169679,
+      "approximation": true
+    },
+    {
+      "id": "integral_infill_0_8",
+      "name": "Bent 1 integral closure bay 5",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        14,
+        15
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -19.602093,
+          5.2705,
+          2.645789
+        ],
+        [
+          -18.558226,
+          6.329905,
+          4.11988
+        ]
+      ],
+      "volume_m3": 1.168455594,
+      "approximation": true
+    },
+    {
+      "id": "backwall_0",
+      "name": "Bent 1 integral back face",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        13,
+        15
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Nominal rear closure strip. Skew beam-end copes and ledge details are unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -19.822093,
+          -6.329905,
+          2.645789
+        ],
+        [
+          -16.219907,
+          6.329905,
+          4.153642
+        ]
+      ],
+      "volume_m3": 3.896192246,
+      "approximation": true
+    },
+    {
+      "id": "pile_stub_0_0",
+      "name": "Bent 1 HP12x53 pile stub 1",
+      "layer": "foundations",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "dimensions": {
+        "display_length_m": 1.5
+      },
+      "bounds_m": [
+        [
+          -16.149944,
+          -5.856675,
+          -0.046104
+        ],
+        [
+          -15.845144,
+          -5.551875,
+          1.453896
+        ]
+      ],
+      "volume_m3": 0.014788567,
+      "approximation": true
+    },
+    {
+      "id": "pile_stub_0_1",
+      "name": "Bent 1 HP12x53 pile stub 2",
+      "layer": "foundations",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "dimensions": {
+        "display_length_m": 1.5
+      },
+      "bounds_m": [
+        [
+          -16.761326,
+          -3.574965,
+          -0.046104
+        ],
+        [
+          -16.456526,
+          -3.270165,
+          1.453896
+        ]
+      ],
+      "volume_m3": 0.014788567,
+      "approximation": true
+    },
+    {
+      "id": "pile_stub_0_2",
+      "name": "Bent 1 HP12x53 pile stub 3",
+      "layer": "foundations",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "dimensions": {
+        "display_length_m": 1.5
+      },
+      "bounds_m": [
+        [
+          -17.372709,
+          -1.293255,
+          -0.046104
+        ],
+        [
+          -17.067909,
+          -0.988455,
+          1.453896
+        ]
+      ],
+      "volume_m3": 0.014788567,
+      "approximation": true
+    },
+    {
+      "id": "pile_stub_0_3",
+      "name": "Bent 1 HP12x53 pile stub 4",
+      "layer": "foundations",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "dimensions": {
+        "display_length_m": 1.5
+      },
+      "bounds_m": [
+        [
+          -17.984091,
+          0.988455,
+          -0.046104
+        ],
+        [
+          -17.679291,
+          1.293255,
+          1.453896
+        ]
+      ],
+      "volume_m3": 0.014788567,
+      "approximation": true
+    },
+    {
+      "id": "pile_stub_0_4",
+      "name": "Bent 1 HP12x53 pile stub 5",
+      "layer": "foundations",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "dimensions": {
+        "display_length_m": 1.5
+      },
+      "bounds_m": [
+        [
+          -18.595474,
+          3.270165,
+          -0.046104
+        ],
+        [
+          -18.290674,
+          3.574965,
+          1.453896
+        ]
+      ],
+      "volume_m3": 0.014788567,
+      "approximation": true
+    },
+    {
+      "id": "pile_stub_0_5",
+      "name": "Bent 1 HP12x53 pile stub 6",
+      "layer": "foundations",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "dimensions": {
+        "display_length_m": 1.5
+      },
+      "bounds_m": [
+        [
+          -19.206856,
+          5.551875,
+          -0.046104
+        ],
+        [
+          -18.902056,
+          5.856675,
+          1.453896
+        ]
+      ],
+      "volume_m3": 0.014788567,
+      "approximation": true
+    },
+    {
+      "id": "wing_0_-1",
+      "name": "Bent 1 wing wall -1",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        13,
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified.",
+      "dimensions": {
+        "length_m": 3.6576000000000004,
+        "thickness_m": 0.3048
+      },
+      "bounds_m": [
+        [
+          -19.569178,
+          -6.329905,
+          1.453896
+        ],
+        [
+          -15.829907,
+          -6.025105,
+          4.280184
+        ]
+      ],
+      "volume_m3": 3.100608468,
+      "approximation": true
+    },
+    {
+      "id": "wing_0_1",
+      "name": "Bent 1 wing wall 1",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        13,
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified.",
+      "dimensions": {
+        "length_m": 3.6576000000000004,
+        "thickness_m": 0.3048
+      },
+      "bounds_m": [
+        [
+          -22.879693,
+          6.025105,
+          1.453896
+        ],
+        [
+          -19.140422,
+          6.329905,
+          4.204306
+        ]
+      ],
+      "volume_m3": 3.01387742,
+      "approximation": true
+    },
+    {
+      "id": "end_bent_drain_0",
+      "name": "Bent 1 6 in drain envelope",
+      "layer": "drainage",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        15
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source diameter; schematic transverse run. Outlets, bends and backfill collection are unresolved.",
+      "dimensions": {
+        "diameter_m": 0.15239999999999998
+      },
+      "bounds_m": [
+        [
+          -18.3022,
+          -6.329905,
+          2.169589
+        ],
+        [
+          -18.1498,
+          6.329905,
+          2.321989
+        ]
+      ],
+      "volume_m3": 0.220525286,
+      "approximation": true
+    },
+    {
+      "id": "cap_2",
+      "name": "Bent 2 lower integral cap",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        13,
+        14,
+        15
+      ],
+      "basis": "Dimensioned 43 ft skew cap length, 3 ft 10 in normal thickness and base elevation; nominal common seat",
+      "note": "Individual modeled bearing risers fit the nominal girder line; exact source seat stepping and upper infill shapes are simplified.",
+      "dimensions": {
+        "normal_width_m": 1.1683999999999999,
+        "skew_length_m": 13.1064
+      },
+      "bounds_m": [
+        [
+          15.225099,
+          -6.329905,
+          2.279904
+        ],
+        [
+          19.826901,
+          6.329905,
+          3.475861
+        ]
+      ],
+      "volume_m3": 18.314311612
+    },
+    {
+      "id": "pedestal_1_0",
+      "name": "Bent 2 derived seat riser 1",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        14,
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          18.46939,
+          -5.334,
+          3.475861
+        ],
+        [
+          19.073573,
+          -3.9624,
+          3.534399
+        ]
+      ],
+      "volume_m3": 0.019001813,
+      "approximation": true
+    },
+    {
+      "id": "pedestal_1_1",
+      "name": "Bent 2 derived seat riser 2",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        14,
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          17.639069,
+          -2.2352,
+          3.475861
+        ],
+        [
+          18.243252,
+          -0.8636,
+          3.576862
+        ]
+      ],
+      "volume_m3": 0.032785813,
+      "approximation": true
+    },
+    {
+      "id": "pedestal_1_2",
+      "name": "Bent 2 derived seat riser 3",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        14,
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          16.808748,
+          0.8636,
+          3.475861
+        ],
+        [
+          17.412931,
+          2.2352,
+          3.55735
+        ]
+      ],
+      "volume_m3": 0.026451876,
+      "approximation": true
+    },
+    {
+      "id": "integral_infill_1_0",
+      "name": "Bent 2 integral closure bay 1",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        14,
+        15
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          18.558226,
+          -6.329905,
+          3.475861
+        ],
+        [
+          19.602093,
+          -5.2705,
+          5.009976
+        ]
+      ],
+      "volume_m3": 1.222155336,
+      "approximation": true
+    },
+    {
+      "id": "integral_infill_1_2",
+      "name": "Bent 2 integral closure bay 2",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        14,
+        15
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          17.727905,
+          -4.0259,
+          3.475861
+        ],
+        [
+          18.984737,
+          -2.1717,
+          5.05244
+        ]
+      ],
+      "volume_m3": 2.191215147,
+      "approximation": true
+    },
+    {
+      "id": "integral_infill_1_4",
+      "name": "Bent 2 integral closure bay 3",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        14,
+        15
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          16.897584,
+          -0.9271,
+          3.475861
+        ],
+        [
+          18.154416,
+          0.9271,
+          5.069495
+        ]
+      ],
+      "volume_m3": 2.224925074,
+      "approximation": true
+    },
+    {
+      "id": "integral_infill_1_6",
+      "name": "Bent 2 integral closure bay 4",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        14,
+        15
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          16.067263,
+          2.1717,
+          3.475861
+        ],
+        [
+          17.324095,
+          4.0259,
+          5.02509
+        ]
+      ],
+      "volume_m3": 2.13622131,
+      "approximation": true
+    },
+    {
+      "id": "integral_infill_1_8",
+      "name": "Bent 2 integral closure bay 5",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        14,
+        15
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          15.449907,
+          5.2705,
+          3.475861
+        ],
+        [
+          16.493774,
+          6.329905,
+          4.943602
+        ]
+      ],
+      "volume_m3": 1.163342905,
+      "approximation": true
+    },
+    {
+      "id": "backwall_1",
+      "name": "Bent 2 integral back face",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        13,
+        15
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Nominal rear closure strip. Skew beam-end copes and ledge details are unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          16.219907,
+          -6.329905,
+          3.475861
+        ],
+        [
+          19.822093,
+          6.329905,
+          5.000629
+        ]
+      ],
+      "volume_m3": 3.941161791,
+      "approximation": true
+    },
+    {
+      "id": "pile_stub_1_0",
+      "name": "Bent 2 HP12x53 pile stub 1",
+      "layer": "foundations",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "dimensions": {
+        "display_length_m": 1.5
+      },
+      "bounds_m": [
+        [
+          18.902056,
+          -5.856675,
+          0.779904
+        ],
+        [
+          19.206856,
+          -5.551875,
+          2.279904
+        ]
+      ],
+      "volume_m3": 0.014788567,
+      "approximation": true
+    },
+    {
+      "id": "pile_stub_1_1",
+      "name": "Bent 2 HP12x53 pile stub 2",
+      "layer": "foundations",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "dimensions": {
+        "display_length_m": 1.5
+      },
+      "bounds_m": [
+        [
+          18.290674,
+          -3.574965,
+          0.779904
+        ],
+        [
+          18.595474,
+          -3.270165,
+          2.279904
+        ]
+      ],
+      "volume_m3": 0.014788567,
+      "approximation": true
+    },
+    {
+      "id": "pile_stub_1_2",
+      "name": "Bent 2 HP12x53 pile stub 3",
+      "layer": "foundations",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "dimensions": {
+        "display_length_m": 1.5
+      },
+      "bounds_m": [
+        [
+          17.679291,
+          -1.293255,
+          0.779904
+        ],
+        [
+          17.984091,
+          -0.988455,
+          2.279904
+        ]
+      ],
+      "volume_m3": 0.014788567,
+      "approximation": true
+    },
+    {
+      "id": "pile_stub_1_3",
+      "name": "Bent 2 HP12x53 pile stub 4",
+      "layer": "foundations",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "dimensions": {
+        "display_length_m": 1.5
+      },
+      "bounds_m": [
+        [
+          17.067909,
+          0.988455,
+          0.779904
+        ],
+        [
+          17.372709,
+          1.293255,
+          2.279904
+        ]
+      ],
+      "volume_m3": 0.014788567,
+      "approximation": true
+    },
+    {
+      "id": "pile_stub_1_4",
+      "name": "Bent 2 HP12x53 pile stub 5",
+      "layer": "foundations",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "dimensions": {
+        "display_length_m": 1.5
+      },
+      "bounds_m": [
+        [
+          16.456526,
+          3.270165,
+          0.779904
+        ],
+        [
+          16.761326,
+          3.574965,
+          2.279904
+        ]
+      ],
+      "volume_m3": 0.014788567,
+      "approximation": true
+    },
+    {
+      "id": "pile_stub_1_5",
+      "name": "Bent 2 HP12x53 pile stub 6",
+      "layer": "foundations",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "dimensions": {
+        "display_length_m": 1.5
+      },
+      "bounds_m": [
+        [
+          15.845144,
+          5.551875,
+          0.779904
+        ],
+        [
+          16.149944,
+          5.856675,
+          2.279904
+        ]
+      ],
+      "volume_m3": 0.014788567,
+      "approximation": true
+    },
+    {
+      "id": "wing_1_-1",
+      "name": "Bent 2 wing wall -1",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        13,
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified.",
+      "dimensions": {
+        "length_m": 3.6576000000000004,
+        "thickness_m": 0.3048
+      },
+      "bounds_m": [
+        [
+          19.140422,
+          -6.329905,
+          2.279904
+        ],
+        [
+          22.879693,
+          -6.025105,
+          5.189859
+        ]
+      ],
+      "volume_m3": 3.193884161,
+      "approximation": true
+    },
+    {
+      "id": "wing_1_1",
+      "name": "Bent 2 wing wall 1",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        13,
+        17
+      ],
+      "basis": "Approximate external envelope",
+      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified.",
+      "dimensions": {
+        "length_m": 3.6576000000000004,
+        "thickness_m": 0.3048
+      },
+      "bounds_m": [
+        [
+          15.829907,
+          6.025105,
+          2.279904
+        ],
+        [
+          19.569178,
+          6.329905,
+          5.113982
+        ]
+      ],
+      "volume_m3": 3.107153112,
+      "approximation": true
+    },
+    {
+      "id": "end_bent_drain_1",
+      "name": "Bent 2 6 in drain envelope",
+      "layer": "drainage",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        15
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source diameter; schematic transverse run. Outlets, bends and backfill collection are unresolved.",
+      "dimensions": {
+        "diameter_m": 0.15239999999999998
+      },
+      "bounds_m": [
+        [
+          18.1498,
+          -6.329905,
+          2.999661
+        ],
+        [
+          18.3022,
+          6.329905,
+          3.152061
+        ]
+      ],
+      "volume_m3": 0.220525286,
+      "approximation": true
+    },
+    {
+      "id": "FC_rail_-1",
+      "name": "FC rail -1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        23
+      ],
+      "basis": "Source nominal concrete barrier envelope; profile corners simplified",
+      "note": "",
+      "dimensions": {
+        "height_m": 0.8382,
+        "base_width_m": 0.4064
+      },
+      "bounds_m": [
+        [
+          -14.157295,
+          -5.792,
+          4.418631
+        ],
+        [
+          17.152324,
+          -5.3856,
+          5.99318
+        ]
+      ],
+      "volume_m3": 8.796573907
+    },
+    {
+      "id": "TFC_transition_-1_-1",
+      "name": "TFC transition -1 -1",
+      "layer": "rails",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        23,
+        25
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved.",
+      "dimensions": {
+        "height_m": 0.8382,
+        "base_width_m": 0.4064
+      },
+      "bounds_m": [
+        [
+          -18.932597,
+          -5.792,
+          4.306411
+        ],
+        [
+          -14.048401,
+          -5.3856,
+          5.259963
+        ]
+      ],
+      "volume_m3": 1.236298247,
+      "approximation": true
+    },
+    {
+      "id": "TFC_transition_1_-1",
+      "name": "TFC transition 1 -1",
+      "layer": "rails",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        23,
+        25
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved.",
+      "dimensions": {
+        "height_m": 0.8382,
+        "base_width_m": 0.4064
+      },
+      "bounds_m": [
+        [
+          17.04343,
+          -5.792,
+          5.151848
+        ],
+        [
+          21.927626,
+          -5.3856,
+          5.99318
+        ]
+      ],
+      "volume_m3": 1.234372236,
+      "approximation": true
+    },
+    {
+      "id": "FC_rail_1",
+      "name": "FC rail 1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        23
+      ],
+      "basis": "Source nominal concrete barrier envelope; profile corners simplified",
+      "note": "",
+      "dimensions": {
+        "height_m": 0.8382,
+        "base_width_m": 0.4064
+      },
+      "bounds_m": [
+        [
+          -17.152324,
+          5.3856,
+          4.345688
+        ],
+        [
+          14.157295,
+          5.792,
+          5.923117
+        ]
+      ],
+      "volume_m3": 8.796573907
+    },
+    {
+      "id": "TFC_transition_-1_1",
+      "name": "TFC transition -1 1",
+      "layer": "rails",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        23,
+        25
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved.",
+      "dimensions": {
+        "height_m": 0.8382,
+        "base_width_m": 0.4064
+      },
+      "bounds_m": [
+        [
+          -21.927626,
+          5.3856,
+          4.233469
+        ],
+        [
+          -17.04343,
+          5.792,
+          5.1899
+        ]
+      ],
+      "volume_m3": 1.236298247,
+      "approximation": true
+    },
+    {
+      "id": "TFC_transition_1_1",
+      "name": "TFC transition 1 1",
+      "layer": "rails",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        23,
+        25
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved.",
+      "dimensions": {
+        "height_m": 0.8382,
+        "base_width_m": 0.4064
+      },
+      "bounds_m": [
+        [
+          14.048401,
+          5.3856,
+          5.078905
+        ],
+        [
+          18.932597,
+          5.792,
+          5.923117
+        ]
+      ],
+      "volume_m3": 1.234372236,
+      "approximation": true
+    },
+    {
+      "id": "approach_-1",
+      "name": "West approach slab",
+      "layer": "approaches",
+      "color": "#bbc4c0",
+      "pdf_pages": [
+        11,
+        25
+      ],
+      "basis": "Dimensioned minimum length, width and thickness; skew-to-square plan",
+      "note": "Narrow corner curb and transition extensions are separate approximate envelopes.",
+      "dimensions": {
+        "min_length_m": 6.2484,
+        "width_m": 10.9474,
+        "thickness_m": 0.3048
+      },
+      "bounds_m": [
+        [
+          -25.634373,
+          -5.4737,
+          3.847926
+        ],
+        [
+          -16.452627,
+          5.4737,
+          4.368497
+        ]
+      ],
+      "volume_m3": 25.743406651
+    },
+    {
+      "id": "joint_-1",
+      "name": "Type IA approach interface",
+      "layer": "joints",
+      "color": "#39434a",
+      "pdf_pages": [
+        15,
+        25
+      ],
+      "basis": "Schematic 24 mm visual joint strip; not an installation opening",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -19.471659,
+          -5.842,
+          4.230184
+        ],
+        [
+          -16.316941,
+          5.842,
+          4.444374
+        ]
+      ],
+      "volume_m3": 0.01682496
+    },
+    {
+      "id": "extension_-1_-1",
+      "name": "Approach transition slab extension -1/-1",
+      "layer": "approaches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        23,
+        25
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Nominal local transition support extension. Exact corner extension limits and integral curb returns remain unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -18.908991,
+          -5.842,
+          4.000926
+        ],
+        [
+          -16.328941,
+          -5.4737,
+          4.369085
+        ]
+      ],
+      "volume_m3": 0.278552574,
+      "approximation": true
+    },
+    {
+      "id": "extension_-1_1",
+      "name": "Approach transition slab extension -1/1",
+      "layer": "approaches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        23,
+        25
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Nominal local transition support extension. Exact corner extension limits and integral curb returns remain unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -21.941023,
+          5.4737,
+          3.927354
+        ],
+        [
+          -19.360973,
+          5.842,
+          4.300151
+        ]
+      ],
+      "volume_m3": 0.278552574,
+      "approximation": true
+    },
+    {
+      "id": "approach_1",
+      "name": "East approach slab",
+      "layer": "approaches",
+      "color": "#bbc4c0",
+      "pdf_pages": [
+        11,
+        25
+      ],
+      "basis": "Dimensioned minimum length, width and thickness; skew-to-square plan",
+      "note": "Narrow corner curb and transition extensions are separate approximate envelopes.",
+      "dimensions": {
+        "min_length_m": 6.2484,
+        "width_m": 10.9474,
+        "thickness_m": 0.3048
+      },
+      "bounds_m": [
+        [
+          16.452627,
+          -5.4737,
+          4.836971
+        ],
+        [
+          25.634373,
+          5.4737,
+          5.357542
+        ]
+      ],
+      "volume_m3": 25.743406651
+    },
+    {
+      "id": "joint_1",
+      "name": "Type IA approach interface",
+      "layer": "joints",
+      "color": "#39434a",
+      "pdf_pages": [
+        15,
+        25
+      ],
+      "basis": "Schematic 24 mm visual joint strip; not an installation opening",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          16.316941,
+          -5.842,
+          5.071216
+        ],
+        [
+          19.471659,
+          5.842,
+          5.285406
+        ]
+      ],
+      "volume_m3": 0.01682496
+    },
+    {
+      "id": "extension_1_-1",
+      "name": "Approach transition slab extension 1/-1",
+      "layer": "approaches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        23,
+        25
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Nominal local transition support extension. Exact corner extension limits and integral curb returns remain unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          19.360973,
+          -5.842,
+          4.90027
+        ],
+        [
+          21.941023,
+          -5.4737,
+          5.268429
+        ]
+      ],
+      "volume_m3": 0.278552574,
+      "approximation": true
+    },
+    {
+      "id": "extension_1_1",
+      "name": "Approach transition slab extension 1/1",
+      "layer": "approaches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        23,
+        25
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Nominal local transition support extension. Exact corner extension limits and integral curb returns remain unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          16.328941,
+          5.4737,
+          4.826698
+        ],
+        [
+          18.908991,
+          5.842,
+          5.199495
+        ]
+      ],
+      "volume_m3": 0.278552574,
+      "approximation": true
+    }
+  ],
+  "layers": {
+    "deck": "Concrete deck",
+    "girders": "Longitudinal girders",
+    "haunches": "Deck haunches",
+    "diaphragms": "Diaphragms",
+    "bearings": "Bearings and pedestals",
+    "abutments": "End bents and wing walls",
+    "foundations": "Design foundation envelopes",
+    "rails": "Bridge rails",
+    "approaches": "Approach slabs",
+    "joints": "Deck joints",
+    "drainage": "Deck drainage"
+  },
+  "default_hidden_layers": [
+    "foundations",
+    "fill"
+  ],
+  "native_axes": "X increasing station, Y transverse, Z up; local metres",
+  "glb_axes": "Y up: (native X, native Z, -native Y); no world georeferencing transform",
+  "detail_coverage": [
+    {
+      "feature": "Whole proposed Bulb-T crossing",
+      "status": "modeled_with_simplifications",
+      "detail": "One 115 ft bearing span; all four dimensioned BT48x49 beams, 8 in deck, 15 degree right skew and full grade.",
+      "sources": [
+        "Primary PDF p.11",
+        "Primary PDF p.12",
+        "Primary PDF p.18",
+        "Primary PDF p.20",
+        "Primary PDF p.22"
+      ],
+      "part_ids": [
+        "deck",
+        "beam_0_0",
+        "haunch_0_0",
+        "beam_0_1",
+        "haunch_0_1",
+        "beam_0_2",
+        "haunch_0_2",
+        "beam_0_3",
+        "haunch_0_3"
+      ]
+    },
+    {
+      "feature": "Integral support topology",
+      "status": "approximate",
+      "detail": "Both integral bents, 8 embedded source steel bearing assemblies, infill, wings and 12 hidden pile display stubs. Seat attachment and end copes remain approximate.",
+      "sources": [
+        "Primary PDF p.13",
+        "Primary PDF p.14",
+        "Primary PDF p.15",
+        "Primary PDF p.17"
+      ],
+      "part_ids": [
+        "B1_bearing_1",
+        "B2_bearing_1",
+        "B1_bearing_2",
+        "B2_bearing_2",
+        "B1_bearing_3",
+        "B2_bearing_3",
+        "B1_bearing_4",
+        "B2_bearing_4",
+        "cap_1",
+        "pedestal_0_0",
+        "pedestal_0_1",
+        "pedestal_0_2",
+        "integral_infill_0_0",
+        "integral_infill_0_2",
+        "integral_infill_0_4",
+        "integral_infill_0_6",
+        "integral_infill_0_8",
+        "backwall_0",
+        "pile_stub_0_0",
+        "pile_stub_0_1",
+        "pile_stub_0_2",
+        "pile_stub_0_3",
+        "pile_stub_0_4",
+        "pile_stub_0_5",
+        "wing_0_-1",
+        "wing_0_1",
+        "cap_2",
+        "pedestal_1_0",
+        "pedestal_1_1",
+        "pedestal_1_2",
+        "integral_infill_1_0",
+        "integral_infill_1_2",
+        "integral_infill_1_4",
+        "integral_infill_1_6",
+        "integral_infill_1_8",
+        "backwall_1",
+        "pile_stub_1_0",
+        "pile_stub_1_1",
+        "pile_stub_1_2",
+        "pile_stub_1_3",
+        "pile_stub_1_4",
+        "pile_stub_1_5",
+        "wing_1_-1",
+        "wing_1_1"
+      ]
+    },
+    {
+      "feature": "External rails and approaches",
+      "status": "modeled_with_simplifications",
+      "detail": "FC barrier, four approximate TFC transitions, skew-to-square approach slabs and nominal extension/drain envelopes.",
+      "sources": [
+        "Primary PDF p.11",
+        "Primary PDF p.23",
+        "Primary PDF p.25"
+      ],
+      "part_ids": [
+        "end_bent_drain_0",
+        "end_bent_drain_1",
+        "FC_rail_-1",
+        "TFC_transition_-1_-1",
+        "TFC_transition_1_-1",
+        "FC_rail_1",
+        "TFC_transition_-1_1",
+        "TFC_transition_1_1",
+        "approach_-1",
+        "joint_-1",
+        "extension_-1_-1",
+        "extension_-1_1",
+        "approach_1",
+        "joint_1",
+        "extension_1_-1",
+        "extension_1_1"
+      ]
+    },
+    {
+      "feature": "Unresolved details",
+      "status": "not_modeled",
+      "detail": "Actual girder camber, end copes, diaphragm designation conflict and exact stagger, buried pile tips, transition hardware, construction joints and site terrain.",
+      "sources": [
+        "Primary PDF p.17",
+        "Primary PDF p.18",
+        "Primary PDF p.19",
+        "Primary PDF p.20",
+        "Primary PDF p.24",
+        "Primary PDF p.25"
+      ],
+      "part_ids": []
+    }
+  ]
+}

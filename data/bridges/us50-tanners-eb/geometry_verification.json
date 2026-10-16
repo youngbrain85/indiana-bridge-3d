@@ -1,0 +1,450 @@
+{
+  "component_count": 283,
+  "all_meshes_watertight": true,
+  "all_volumes_positive": true,
+  "exported_glb_reopened": true,
+  "mesh_names_match_manifest": true,
+  "maximum_bearing_contact_error_m": 1.7763568394002505e-15,
+  "glb_sha256": "9eb68ffce279dc2c623b2ce5e50c219d83d35a5f340b15b33d578494561838c5",
+  "source_pdf_sha256": "e50dafc92e4068b5ad3c04223cc75440598253d11de002cdcadae71c8789cdc0",
+  "checks": {
+    "spans_m": [
+      25.047575,
+      32.194500000000005,
+      34.671,
+      32.194500000000005,
+      24.987250000000003
+    ],
+    "support_lines": 6,
+    "girder_lines": 7,
+    "girder_segments": 35,
+    "bearings": 70,
+    "deck_width_m": 21.9964,
+    "beam_spacing_m": 3.3020000000000005,
+    "westbound_excluded": true,
+    "minimum_deck_girder_clearance_m": 0.08475999999999928
+  },
+  "contacts": [
+    {
+      "id": "Span_A_beam_1_start_bearing",
+      "girder_bottom_m": 10.181039497085575,
+      "bearing_top_m": 10.181039497085575,
+      "seat_m": 10.117539497085573
+    },
+    {
+      "id": "Span_A_beam_1_end_bearing",
+      "girder_bottom_m": 10.257356419979939,
+      "bearing_top_m": 10.257356419979939,
+      "seat_m": 10.193856419979937
+    },
+    {
+      "id": "Span_A_beam_2_start_bearing",
+      "girder_bottom_m": 10.242635047964653,
+      "bearing_top_m": 10.242635047964654,
+      "seat_m": 10.17913504796465
+    },
+    {
+      "id": "Span_A_beam_2_end_bearing",
+      "girder_bottom_m": 10.32035866479161,
+      "bearing_top_m": 10.320358664791613,
+      "seat_m": 10.256858664791608
+    },
+    {
+      "id": "Span_A_beam_3_start_bearing",
+      "girder_bottom_m": 10.30416227156168,
+      "bearing_top_m": 10.30416227156168,
+      "seat_m": 10.240662271561678
+    },
+    {
+      "id": "Span_A_beam_3_end_bearing",
+      "girder_bottom_m": 10.383292582321234,
+      "bearing_top_m": 10.383292582321236,
+      "seat_m": 10.31979258232123
+    },
+    {
+      "id": "Span_A_beam_4_start_bearing",
+      "girder_bottom_m": 10.303645167876658,
+      "bearing_top_m": 10.30364516787666,
+      "seat_m": 10.240145167876655
+    },
+    {
+      "id": "Span_A_beam_4_end_bearing",
+      "girder_bottom_m": 10.384182172568812,
+      "bearing_top_m": 10.384182172568813,
+      "seat_m": 10.320682172568809
+    },
+    {
+      "id": "Span_A_beam_5_start_bearing",
+      "girder_bottom_m": 10.232955736909592,
+      "bearing_top_m": 10.232955736909592,
+      "seat_m": 10.16945573690959
+    },
+    {
+      "id": "Span_A_beam_5_end_bearing",
+      "girder_bottom_m": 10.31489943553434,
+      "bearing_top_m": 10.31489943553434,
+      "seat_m": 10.251399435534339
+    },
+    {
+      "id": "Span_A_beam_6_start_bearing",
+      "girder_bottom_m": 10.162197978660476,
+      "bearing_top_m": 10.162197978660476,
+      "seat_m": 10.098697978660475
+    },
+    {
+      "id": "Span_A_beam_6_end_bearing",
+      "girder_bottom_m": 10.24554837121782,
+      "bearing_top_m": 10.245548371217822,
+      "seat_m": 10.182048371217817
+    },
+    {
+      "id": "Span_A_beam_7_start_bearing",
+      "girder_bottom_m": 10.091371893129315,
+      "bearing_top_m": 10.091371893129317,
+      "seat_m": 10.027871893129312
+    },
+    {
+      "id": "Span_A_beam_7_end_bearing",
+      "girder_bottom_m": 10.176128979619255,
+      "bearing_top_m": 10.176128979619257,
+      "seat_m": 10.112628979619252
+    },
+    {
+      "id": "Span_B_beam_1_start_bearing",
+      "girder_bottom_m": 10.258871131928418,
+      "bearing_top_m": 10.25887113192842,
+      "seat_m": 10.195371131928415
+    },
+    {
+      "id": "Span_B_beam_1_end_bearing",
+      "girder_bottom_m": 10.313300794308406,
+      "bearing_top_m": 10.313300794308407,
+      "seat_m": 10.249800794308403
+    },
+    {
+      "id": "Span_B_beam_2_start_bearing",
+      "girder_bottom_m": 10.321908034155086,
+      "bearing_top_m": 10.321908034155086,
+      "seat_m": 10.258408034155085
+    },
+    {
+      "id": "Span_B_beam_2_end_bearing",
+      "girder_bottom_m": 10.378133383849518,
+      "bearing_top_m": 10.37813338384952,
+      "seat_m": 10.314633383849515
+    },
+    {
+      "id": "Span_B_beam_3_start_bearing",
+      "girder_bottom_m": 10.384876609099704,
+      "bearing_top_m": 10.384876609099706,
+      "seat_m": 10.321376609099701
+    },
+    {
+      "id": "Span_B_beam_3_end_bearing",
+      "girder_bottom_m": 10.44289764610858,
+      "bearing_top_m": 10.44289764610858,
+      "seat_m": 10.379397646108579
+    },
+    {
+      "id": "Span_B_beam_4_start_bearing",
+      "girder_bottom_m": 10.385800856762275,
+      "bearing_top_m": 10.385800856762277,
+      "seat_m": 10.322300856762272
+    },
+    {
+      "id": "Span_B_beam_4_end_bearing",
+      "girder_bottom_m": 10.445617581085594,
+      "bearing_top_m": 10.445617581085596,
+      "seat_m": 10.382117581085591
+    },
+    {
+      "id": "Span_B_beam_5_start_bearing",
+      "girder_bottom_m": 10.3165527771428,
+      "bearing_top_m": 10.3165527771428,
+      "seat_m": 10.253052777142798
+    },
+    {
+      "id": "Span_B_beam_5_end_bearing",
+      "girder_bottom_m": 10.378165188780564,
+      "bearing_top_m": 10.378165188780564,
+      "seat_m": 10.314665188780562
+    },
+    {
+      "id": "Span_B_beam_6_start_bearing",
+      "girder_bottom_m": 10.247236370241275,
+      "bearing_top_m": 10.247236370241275,
+      "seat_m": 10.183736370241274
+    },
+    {
+      "id": "Span_B_beam_6_end_bearing",
+      "girder_bottom_m": 10.310644469193486,
+      "bearing_top_m": 10.310644469193488,
+      "seat_m": 10.247144469193483
+    },
+    {
+      "id": "Span_B_beam_7_start_bearing",
+      "girder_bottom_m": 10.177851636057705,
+      "bearing_top_m": 10.177851636057706,
+      "seat_m": 10.114351636057702
+    },
+    {
+      "id": "Span_B_beam_7_end_bearing",
+      "girder_bottom_m": 10.24305542232436,
+      "bearing_top_m": 10.24305542232436,
+      "seat_m": 10.17955542232436
+    },
+    {
+      "id": "Span_C_beam_1_start_bearing",
+      "girder_bottom_m": 10.313887106722001,
+      "bearing_top_m": 10.313887106722003,
+      "seat_m": 10.250387106721998
+    },
+    {
+      "id": "Span_C_beam_1_end_bearing",
+      "girder_bottom_m": 10.318714984517685,
+      "bearing_top_m": 10.318714984517687,
+      "seat_m": 10.255214984517682
+    },
+    {
+      "id": "Span_C_beam_2_start_bearing",
+      "girder_bottom_m": 10.378754353678108,
+      "bearing_top_m": 10.378754353678108,
+      "seat_m": 10.315254353678107
+    },
+    {
+      "id": "Span_C_beam_2_end_bearing",
+      "girder_bottom_m": 10.385518714536653,
+      "bearing_top_m": 10.385518714536655,
+      "seat_m": 10.32201871453665
+    },
+    {
+      "id": "Span_C_beam_3_start_bearing",
+      "girder_bottom_m": 10.443553273352167,
+      "bearing_top_m": 10.443553273352169,
+      "seat_m": 10.380053273352164
+    },
+    {
+      "id": "Span_C_beam_3_end_bearing",
+      "girder_bottom_m": 10.452254117273574,
+      "bearing_top_m": 10.452254117273576,
+      "seat_m": 10.388754117273571
+    },
+    {
+      "id": "Span_C_beam_4_start_bearing",
+      "girder_bottom_m": 10.446307865744178,
+      "bearing_top_m": 10.446307865744178,
+      "seat_m": 10.382807865744176
+    },
+    {
+      "id": "Span_C_beam_4_end_bearing",
+      "girder_bottom_m": 10.456945192728448,
+      "bearing_top_m": 10.456945192728448,
+      "seat_m": 10.393445192728446
+    },
+    {
+      "id": "Span_C_beam_5_start_bearing",
+      "girder_bottom_m": 10.378890130854142,
+      "bearing_top_m": 10.378890130854142,
+      "seat_m": 10.31539013085414
+    },
+    {
+      "id": "Span_C_beam_5_end_bearing",
+      "girder_bottom_m": 10.391463940901275,
+      "bearing_top_m": 10.391463940901275,
+      "seat_m": 10.327963940901274
+    },
+    {
+      "id": "Span_C_beam_6_start_bearing",
+      "girder_bottom_m": 10.311404068682057,
+      "bearing_top_m": 10.311404068682059,
+      "seat_m": 10.247904068682054
+    },
+    {
+      "id": "Span_C_beam_6_end_bearing",
+      "girder_bottom_m": 10.325914361792055,
+      "bearing_top_m": 10.325914361792055,
+      "seat_m": 10.262414361792054
+    },
+    {
+      "id": "Span_C_beam_7_start_bearing",
+      "girder_bottom_m": 10.243849679227926,
+      "bearing_top_m": 10.243849679227928,
+      "seat_m": 10.180349679227923
+    },
+    {
+      "id": "Span_C_beam_7_end_bearing",
+      "girder_bottom_m": 10.260296455400788,
+      "bearing_top_m": 10.260296455400788,
+      "seat_m": 10.196796455400786
+    },
+    {
+      "id": "Span_D_beam_1_start_bearing",
+      "girder_bottom_m": 10.318301482047557,
+      "bearing_top_m": 10.31830148204756,
+      "seat_m": 10.254801482047554
+    },
+    {
+      "id": "Span_D_beam_1_end_bearing",
+      "girder_bottom_m": 10.272825534863593,
+      "bearing_top_m": 10.272825534863593,
+      "seat_m": 10.209325534863591
+    },
+    {
+      "id": "Span_D_beam_2_start_bearing",
+      "girder_bottom_m": 10.385139869481524,
+      "bearing_top_m": 10.385139869481524,
+      "seat_m": 10.321639869481523
+    },
+    {
+      "id": "Span_D_beam_2_end_bearing",
+      "girder_bottom_m": 10.341459609612002,
+      "bearing_top_m": 10.341459609612002,
+      "seat_m": 10.277959609612001
+    },
+    {
+      "id": "Span_D_beam_3_start_bearing",
+      "girder_bottom_m": 10.451909929633441,
+      "bearing_top_m": 10.451909929633441,
+      "seat_m": 10.38840992963344
+    },
+    {
+      "id": "Span_D_beam_3_end_bearing",
+      "girder_bottom_m": 10.410025357078363,
+      "bearing_top_m": 10.410025357078364,
+      "seat_m": 10.34652535707836
+    },
+    {
+      "id": "Span_D_beam_4_start_bearing",
+      "girder_bottom_m": 10.45663566250331,
+      "bearing_top_m": 10.45663566250331,
+      "seat_m": 10.393135662503308
+    },
+    {
+      "id": "Span_D_beam_4_end_bearing",
+      "girder_bottom_m": 10.416546777262676,
+      "bearing_top_m": 10.416546777262678,
+      "seat_m": 10.353046777262673
+    },
+    {
+      "id": "Span_D_beam_5_start_bearing",
+      "girder_bottom_m": 10.391189068091132,
+      "bearing_top_m": 10.391189068091133,
+      "seat_m": 10.327689068091129
+    },
+    {
+      "id": "Span_D_beam_5_end_bearing",
+      "girder_bottom_m": 10.352895870164943,
+      "bearing_top_m": 10.352895870164943,
+      "seat_m": 10.289395870164942
+    },
+    {
+      "id": "Span_D_beam_6_start_bearing",
+      "girder_bottom_m": 10.325674146396905,
+      "bearing_top_m": 10.325674146396906,
+      "seat_m": 10.262174146396902
+    },
+    {
+      "id": "Span_D_beam_6_end_bearing",
+      "girder_bottom_m": 10.28917663578516,
+      "bearing_top_m": 10.28917663578516,
+      "seat_m": 10.22567663578516
+    },
+    {
+      "id": "Span_D_beam_7_start_bearing",
+      "girder_bottom_m": 10.260090897420634,
+      "bearing_top_m": 10.260090897420636,
+      "seat_m": 10.19659089742063
+    },
+    {
+      "id": "Span_D_beam_7_end_bearing",
+      "girder_bottom_m": 10.225389074123333,
+      "bearing_top_m": 10.225389074123335,
+      "seat_m": 10.16188907412333
+    },
+    {
+      "id": "Span_E_beam_1_start_bearing",
+      "girder_bottom_m": 10.271483632858583,
+      "bearing_top_m": 10.271483632858583,
+      "seat_m": 10.207983632858582
+    },
+    {
+      "id": "Span_E_beam_1_end_bearing",
+      "girder_bottom_m": 10.20238499768507,
+      "bearing_top_m": 10.20238499768507,
+      "seat_m": 10.138884997685068
+    },
+    {
+      "id": "Span_E_beam_2_start_bearing",
+      "girder_bottom_m": 10.340152365021988,
+      "bearing_top_m": 10.34015236502199,
+      "seat_m": 10.276652365021985
+    },
+    {
+      "id": "Span_E_beam_2_end_bearing",
+      "girder_bottom_m": 10.272456994141043,
+      "bearing_top_m": 10.272456994141045,
+      "seat_m": 10.20895699414104
+    },
+    {
+      "id": "Span_E_beam_3_start_bearing",
+      "girder_bottom_m": 10.408752769903343,
+      "bearing_top_m": 10.408752769903344,
+      "seat_m": 10.34525276990334
+    },
+    {
+      "id": "Span_E_beam_3_end_bearing",
+      "girder_bottom_m": 10.34246066331497,
+      "bearing_top_m": 10.34246066331497,
+      "seat_m": 10.278960663314969
+    },
+    {
+      "id": "Span_E_beam_4_start_bearing",
+      "girder_bottom_m": 10.41530884750265,
+      "bearing_top_m": 10.41530884750265,
+      "seat_m": 10.35180884750265
+    },
+    {
+      "id": "Span_E_beam_4_end_bearing",
+      "girder_bottom_m": 10.350420005206848,
+      "bearing_top_m": 10.35042000520685,
+      "seat_m": 10.286920005206845
+    },
+    {
+      "id": "Span_E_beam_5_start_bearing",
+      "girder_bottom_m": 10.351692597819916,
+      "bearing_top_m": 10.351692597819916,
+      "seat_m": 10.288192597819915
+    },
+    {
+      "id": "Span_E_beam_5_end_bearing",
+      "girder_bottom_m": 10.288207019816682,
+      "bearing_top_m": 10.288207019816682,
+      "seat_m": 10.22470701981668
+    },
+    {
+      "id": "Span_E_beam_6_start_bearing",
+      "girder_bottom_m": 10.288008020855129,
+      "bearing_top_m": 10.28800802085513,
+      "seat_m": 10.224508020855126
+    },
+    {
+      "id": "Span_E_beam_6_end_bearing",
+      "girder_bottom_m": 10.225925707144464,
+      "bearing_top_m": 10.225925707144466,
+      "seat_m": 10.162425707144461
+    },
+    {
+      "id": "Span_E_beam_7_start_bearing",
+      "girder_bottom_m": 10.224255116608296,
+      "bearing_top_m": 10.224255116608298,
+      "seat_m": 10.160755116608293
+    },
+    {
+      "id": "Span_E_beam_7_end_bearing",
+      "girder_bottom_m": 10.163576067190204,
+      "bearing_top_m": 10.163576067190206,
+      "seat_m": 10.100076067190201
+    }
+  ],
+  "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation."
+}

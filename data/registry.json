@@ -15,8 +15,8 @@
       "location_source": {
         "document": "Des1400825_Beechwood_Rd_over_Little_Blue_River_plans.pdf",
         "page": 1,
-        "latitude_dms": "38°10′01″ N",
-        "longitude_dms": "86°24′57″ W",
+        "latitude_dms": "38\u00b010\u203201\u2033 N",
+        "longitude_dms": "86\u00b024\u203257\u2033 W",
         "note": "Coordinates from the drawing cover. The cover does not identify a geodetic datum; these are displayed as geographic coordinates."
       },
       "model": {
@@ -217,7 +217,7 @@
       "waterway": "CSX Railroad",
       "structure_id": "062-82-02788",
       "designation": "1500041",
-      "structure_type": "Bulb-tee girder bridge · left skew 45°",
+      "structure_type": "Bulb-tee girder bridge \u00b7 left skew 45\u00b0",
       "latitude": 37.9775,
       "longitude": -87.62166666666666,
       "location_source": {
@@ -253,7 +253,7 @@
       "waterway": "Tekoppel Avenue",
       "structure_id": "062-82-10333",
       "designation": "1600060",
-      "structure_type": "Single-span bulb-tee girder bridge · skew 0°",
+      "structure_type": "Single-span bulb-tee girder bridge \u00b7 skew 0\u00b0",
       "latitude": 37.9775,
       "longitude": -87.61888888888888,
       "location_source": {
@@ -289,7 +289,7 @@
       "waterway": "Carpentier Creek",
       "structure_id": "062-82-10719",
       "designation": "1602258",
-      "structure_type": "Single-span bulb-tee girder bridge · left skew 15°",
+      "structure_type": "Single-span bulb-tee girder bridge \u00b7 left skew 15\u00b0",
       "latitude": 37.9775,
       "longitude": -87.62527777777777,
       "location_source": {
@@ -315,6 +315,419 @@
         "scope": "Exterior geometry from preliminary plans; see coverage notes for estimates",
         "detail_status": "needs_detail",
         "detail_status_note": "Only a 6-page general arrangement extract is available. Girder, abutment, retaining wall and inlet fabrication details are missing."
+      }
+    },
+    {
+      "id": "sr44-mud",
+      "workspace_enabled": true,
+      "name": "SR 44 over Mud Creek",
+      "county": "Rush",
+      "waterway": "Mud Creek",
+      "structure_id": "044-70-06634 A",
+      "designation": "1500342",
+      "structure_type": "3-span continuous composite steel beam bridge",
+      "latitude": 39.57638888888889,
+      "longitude": -85.57888888888888,
+      "location_source": {
+        "document": "drawings.pdf",
+        "page": 1,
+        "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9552113",
+        "note": "Drawing-cover coordinates. Model uses the 2018 rehabilitation state (suffix A); the 2025 NBI/2026 project identifies later suffix B."
+      },
+      "owner": "INDOT",
+      "maintenance": "INDOT",
+      "nbi_ids": [
+        "016450"
+      ],
+      "ownership_data_year": 2025,
+      "model": {
+        "thumbnail": "bridges/sr44-mud/preview.png",
+        "glb": "bridges/sr44-mud/model.glb",
+        "deck_length_m": 46.050200000000004,
+        "spans": 3,
+        "components": 383,
+        "revision": "2018 rehabilitation exterior reconstruction v1",
+        "scope": "Whole three-span bridge; exterior geometry and retained design foundations; see coverage limitations",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Whole bridge modeled. Guardrail terminals, drainage/site detail and some connection finishes remain unmodeled. Some haunch clearances require reconciliation of approximate retained seats and field shim levels. Not a current as-built survey."
+      }
+    },
+    {
+      "id": "sr8-yellow",
+      "workspace_enabled": true,
+      "name": "SR 8 over Yellow River",
+      "county": "Starke",
+      "waterway": "Yellow River",
+      "structure_id": "8-75-4883B",
+      "designation": "8916700",
+      "structure_type": "5-span Continuous composite steel beam",
+      "latitude": 41.28795,
+      "longitude": -86.5499389,
+      "location_source": {
+        "document": "2025 NBI inventory",
+        "url": "https://www.fhwa.dot.gov/BRIDGE/nbi/2025/delimited/IN25.txt",
+        "note": "Existing crossing coordinates from 2025 NBI; the model represents the explicitly stated drawing design version, not surveyed current condition."
+      },
+      "owner": "INDOT",
+      "maintenance": "INDOT",
+      "nbi_ids": [
+        "002240"
+      ],
+      "ownership_data_year": 2025,
+      "model": {
+        "thumbnail": "bridges/sr8-yellow/preview.png",
+        "glb": "bridges/sr8-yellow/model.glb",
+        "deck_length_m": 80.996,
+        "spans": 5,
+        "components": 331,
+        "revision": "1997 rehabilitation exterior reconstruction v1",
+        "scope": "Whole crossing exterior reconstruction with documented approximation boundaries; see coverage and component basis.",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Whole five-span bridge modeled. Central retained piers, old bearings, diaphragm placement, transitions and drainage remain approximate or incomplete."
+      }
+    },
+    {
+      "id": "sr1-wabash",
+      "workspace_enabled": true,
+      "name": "SR 1 over Wabash River",
+      "county": "Wells",
+      "waterway": "Wabash River",
+      "structure_id": "1-90-230B",
+      "designation": "9406690",
+      "structure_type": "4-span Reinforced concrete arch",
+      "latitude": 40.7421611,
+      "longitude": -85.1713306,
+      "location_source": {
+        "document": "2025 NBI inventory",
+        "url": "https://www.fhwa.dot.gov/BRIDGE/nbi/2025/delimited/IN25.txt",
+        "note": "Existing crossing coordinates from 2025 NBI; the model represents the explicitly stated drawing design version, not surveyed current condition."
+      },
+      "owner": "INDOT",
+      "maintenance": "INDOT",
+      "nbi_ids": [
+        "000380"
+      ],
+      "ownership_data_year": 2025,
+      "model": {
+        "thumbnail": "bridges/sr1-wabash/preview.png",
+        "glb": "bridges/sr1-wabash/model.glb",
+        "deck_length_m": 108.48340000000002,
+        "spans": 4,
+        "components": 78,
+        "revision": "2004 roadway and retained arch reconstruction v1",
+        "scope": "Whole crossing exterior reconstruction with documented approximation boundaries; see coverage and component basis.",
+        "detail_status": "needs_detail",
+        "detail_status_note": "All four arches and roadway modeled. Exact arch setting-out, end floor/abutment details, cutwaters, lighting, gauge well and drainage remain incomplete."
+      }
+    },
+    {
+      "id": "us50-tanners-eb",
+      "workspace_enabled": true,
+      "name": "US 50 EB over Tanners Creek",
+      "county": "Dearborn",
+      "waterway": "Tanners Creek",
+      "structure_id": "50-15-0210B",
+      "designation": "0400285",
+      "structure_type": "5-span Continuous composite prestressed concrete Bulb-T",
+      "latitude": 39.0952889,
+      "longitude": -84.8617389,
+      "location_source": {
+        "document": "2025 NBI inventory",
+        "url": "https://www.fhwa.dot.gov/BRIDGE/nbi/2025/delimited/IN25.txt",
+        "note": "Existing crossing coordinates from 2025 NBI; the model represents the explicitly stated drawing design version, not surveyed current condition."
+      },
+      "owner": "INDOT",
+      "maintenance": "INDOT",
+      "nbi_ids": [
+        "018790"
+      ],
+      "ownership_data_year": 2025,
+      "model": {
+        "thumbnail": "bridges/us50-tanners-eb/preview.png",
+        "glb": "bridges/us50-tanners-eb/model.glb",
+        "deck_length_m": 149.964775,
+        "spans": 5,
+        "components": 283,
+        "revision": "2014 eastbound reconstruction design v1",
+        "scope": "Whole crossing exterior reconstruction with documented approximation boundaries; see coverage and component basis.",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Whole eastbound five-span bridge modeled. Cap steps, bearings, end wings, support diaphragms, drainage, lighting and sidewalk ramps remain incomplete."
+      }
+    },
+    {
+      "id": "minnich-road",
+      "workspace_enabled": true,
+      "name": "Minnich Road NB / SB over I-469",
+      "county": "Allen",
+      "waterway": "I-469",
+      "structure_id": "I469-18-07027 ANB / ASB",
+      "designation": "2200710 / 2200711",
+      "structure_type": "4-span Twin continuous composite steel plate girder",
+      "latitude": 41.0400611,
+      "longitude": -85.0007306,
+      "location_source": {
+        "document": "2025 NBI inventory",
+        "url": "https://www.fhwa.dot.gov/BRIDGE/nbi/2025/delimited/IN25.txt",
+        "note": "Existing crossing coordinates from 2025 NBI; the model represents the explicitly stated drawing design version, not surveyed current condition."
+      },
+      "owner": "INDOT",
+      "maintenance": "INDOT",
+      "nbi_ids": [
+        "032852",
+        "032855"
+      ],
+      "ownership_data_year": 2025,
+      "model": {
+        "thumbnail": "bridges/minnich-road/preview.png",
+        "glb": "bridges/minnich-road/model.glb",
+        "deck_length_m": 126.4793,
+        "spans": 4,
+        "components": 474,
+        "revision": "2026 proposed rehabilitation exterior reconstruction v1",
+        "scope": "Whole crossing exterior reconstruction with documented approximation boundaries; see coverage and component basis.",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Proposed rehabilitation, not completed construction. Full crossing geometry is present; original intermediate-pier plans are missing, and steel connection, flange/taper, approach and drainage details remain approximate."
+      }
+    },
+    {
+      "id": "fletcher-avenue",
+      "workspace_enabled": true,
+      "name": "Fletcher Avenue over I-65 / I-70",
+      "county": "Marion",
+      "waterway": "I-65 / I-70 and Ramp 6S-N",
+      "structure_id": "I65-110-05723B",
+      "designation": "2200723",
+      "structure_type": "2-span Continuous composite steel plate girder",
+      "latitude": 39.7596889,
+      "longitude": -86.14335,
+      "location_source": {
+        "document": "2025 NBI inventory",
+        "url": "https://www.fhwa.dot.gov/BRIDGE/nbi/2025/delimited/IN25.txt",
+        "note": "Existing crossing inventory position; no surveyed placement transform is embedded in the GLB."
+      },
+      "owner": "INDOT",
+      "maintenance": "INDOT",
+      "nbi_ids": [
+        "036380"
+      ],
+      "ownership_data_year": 2025,
+      "model": {
+        "thumbnail": "bridges/fletcher-avenue/preview.png",
+        "glb": "bridges/fletcher-avenue/model.glb",
+        "deck_length_m": 91.00185000000002,
+        "spans": 2,
+        "components": 379,
+        "revision": "Proposed 2026 work over retained historical structure v1",
+        "scope": "Whole-crossing exterior reconstruction; proposed work and retained historical geometry are explicitly distinguished.",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Whole crossing available. Exact field seats, fabrication geometry, some interfaces and site/drainage/transition details remain incomplete. Proposed 2026 work is not proof of completed construction."
+      }
+    },
+    {
+      "id": "sr10-i65",
+      "workspace_enabled": true,
+      "name": "SR 10 over I-65",
+      "county": "Jasper",
+      "waterway": "I-65",
+      "structure_id": "010-37-04888C / D",
+      "designation": "2600080",
+      "structure_type": "4-span Continuous steel beam",
+      "latitude": 41.1444694,
+      "longitude": -87.2658111,
+      "location_source": {
+        "document": "2025 NBI inventory",
+        "url": "https://www.fhwa.dot.gov/BRIDGE/nbi/2025/delimited/IN25.txt",
+        "note": "Existing crossing inventory position; no surveyed placement transform is embedded in the GLB."
+      },
+      "owner": "INDOT",
+      "maintenance": "INDOT",
+      "nbi_ids": [
+        "002910"
+      ],
+      "ownership_data_year": 2025,
+      "model": {
+        "thumbnail": "bridges/sr10-i65/preview.png",
+        "glb": "bridges/sr10-i65/model.glb",
+        "deck_length_m": 64.38265,
+        "spans": 4,
+        "components": 312,
+        "revision": "Proposed 2026 work over retained historical structure v1",
+        "scope": "Whole-crossing exterior reconstruction; proposed work and retained historical geometry are explicitly distinguished.",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Whole crossing available. Exact field seats, fabrication geometry, some interfaces and site/drainage/transition details remain incomplete. Proposed 2026 work is not proof of completed construction."
+      }
+    },
+    {
+      "id": "us35-deer",
+      "workspace_enabled": true,
+      "name": "US 35 over Deer Creek",
+      "county": "Grant",
+      "waterway": "Deer Creek",
+      "structure_id": "035-27-10469",
+      "designation": "1900048",
+      "structure_type": "Prestressed concrete Bulb-T replacement bridge",
+      "latitude": 40.4804111,
+      "longitude": -85.6769,
+      "location_source": {
+        "document": "2025 FHWA NBI",
+        "url": "https://www.fhwa.dot.gov/BRIDGE/nbi/2025/delimited/IN25.txt",
+        "note": "2025 NBI existing-crossing position; verify against the selected drawing before placing a replacement model. The GLB uses local axes and is not georeferenced."
+      },
+      "owner": "INDOT",
+      "maintenance": "INDOT",
+      "nbi_ids": [
+        "011190"
+      ],
+      "ownership_data_year": 2025,
+      "ownership_note": "Matched 2025 NBI existing-crossing records: owner 01 and maintenance 01 (State Highway Agency). This is dated inventory evidence, not a new 2026 ownership certification.",
+      "model": {
+        "glb": "bridges/us35-deer/model.glb",
+        "deck_length_m": 35.7886,
+        "deck_width_m": 11.684000000000001,
+        "spans": 1,
+        "components": 72,
+        "revision": "Whole-crossing exterior geometry v1",
+        "scope": "Proposed 2026 full replacement, not the older NBI bridge and not asserted constructed",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Whole crossing is represented. Amber details use explicit approximations; field seats, exact camber, transition hardware and site geometry remain unresolved. Not an as-built model.",
+        "thumbnail": "bridges/us35-deer/preview.png"
+      }
+    },
+    {
+      "id": "us224-eight-mile",
+      "workspace_enabled": true,
+      "name": "US 224 over Eight Mile Creek",
+      "county": "Wells",
+      "waterway": "Eight Mile Creek",
+      "structure_id": "224-90-01545 B",
+      "designation": "2200957",
+      "structure_type": "Spread prestressed concrete box beam",
+      "latitude": 40.8307,
+      "longitude": -85.08145,
+      "location_source": {
+        "document": "2025 FHWA NBI",
+        "url": "https://www.fhwa.dot.gov/BRIDGE/nbi/2025/delimited/IN25.txt",
+        "note": "2025 NBI existing-crossing position; verify against the selected drawing before placing a replacement model. The GLB uses local axes and is not georeferenced."
+      },
+      "owner": "INDOT",
+      "maintenance": "INDOT",
+      "nbi_ids": [
+        "029110"
+      ],
+      "ownership_data_year": 2025,
+      "ownership_note": "Matched 2025 NBI existing-crossing records: owner 01 and maintenance 01 (State Highway Agency). This is dated inventory evidence, not a new 2026 ownership certification.",
+      "model": {
+        "glb": "bridges/us224-eight-mile/model.glb",
+        "deck_length_m": 13.7287,
+        "deck_width_m": 14.224,
+        "spans": 1,
+        "components": 91,
+        "revision": "Whole-crossing exterior geometry v1",
+        "scope": "Retained 1985 replacement/widening geometry with proposed 2026 overlay, beam-end repairs and approaches; completion not established",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Whole crossing is represented. Amber details use explicit approximations; field seats, exact camber, transition hardware and site geometry remain unresolved. Not an as-built model.",
+        "thumbnail": "bridges/us224-eight-mile/preview.png"
+      }
+    },
+    {
+      "id": "virginia-avenue",
+      "workspace_enabled": true,
+      "name": "Virginia Avenue over I-65 NB / I-70 EB",
+      "county": "Marion",
+      "waterway": "I-65 NB / I-70 EB",
+      "structure_id": "I65-110-05719 FNBL",
+      "designation": "2200722",
+      "structure_type": "Steel plate girder",
+      "latitude": 39.7557111,
+      "longitude": -86.1435889,
+      "location_source": {
+        "document": "2025 NBI inventory",
+        "url": "https://www.fhwa.dot.gov/BRIDGE/nbi/2025/delimited/IN25.txt",
+        "note": "2025 NBI existing-crossing position; verify against the selected drawing before placing a replacement model. No surveyed placement transform is embedded in the model."
+      },
+      "owner": "INDOT",
+      "maintenance": "INDOT",
+      "ownership_data_year": 2025,
+      "nbi_ids": [
+        "036340"
+      ],
+      "model": {
+        "thumbnail": "bridges/virginia-avenue/preview.png",
+        "glb": "bridges/virginia-avenue/model.glb",
+        "deck_length_m": 36.76967500000001,
+        "spans": 1,
+        "components": 146,
+        "revision": "Proposed 2026 design with documented historical retention v1",
+        "scope": "Whole-crossing exterior reconstruction with explicit source-state and approximation boundaries.",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Whole crossing present; amber because field elevations, wingwall shape, connections, rail/approach transitions and small fittings remain approximate. Proposed 2026 work is not proof of completion."
+      }
+    },
+    {
+      "id": "sr44-little-blue",
+      "workspace_enabled": true,
+      "name": "SR 44 over Branch of Little Blue River",
+      "county": "Shelby",
+      "waterway": "Branch of Little Blue River",
+      "structure_id": "044-73-10858",
+      "designation": "2200652",
+      "structure_type": "Simple-span reinforced concrete slab replacement",
+      "latitude": 39.5665694,
+      "longitude": -85.64075,
+      "location_source": {
+        "document": "2025 NBI inventory",
+        "url": "https://www.fhwa.dot.gov/BRIDGE/nbi/2025/delimited/IN25.txt",
+        "note": "2025 NBI existing-crossing position; verify against the selected drawing before placing a replacement model. No surveyed placement transform is embedded in the model."
+      },
+      "owner": "INDOT",
+      "maintenance": "INDOT",
+      "ownership_data_year": 2025,
+      "nbi_ids": [
+        "016440"
+      ],
+      "model": {
+        "thumbnail": "bridges/sr44-little-blue/preview.png",
+        "glb": "bridges/sr44-little-blue/model.glb",
+        "deck_length_m": 9.718675000000001,
+        "spans": 1,
+        "components": 37,
+        "revision": "Proposed 2026 replacement exterior v1",
+        "scope": "Whole-crossing exterior reconstruction with explicit source-state and approximation boundaries.",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Whole proposed replacement crossing present. Amber: local notches, wing batter, approach transitions, terrain and actual pile behavior remain incomplete. Not an as-built or completed-construction claim."
+      }
+    },
+    {
+      "id": "sr1-six-mile",
+      "workspace_enabled": true,
+      "name": "SR 1 over Six Mile Creek",
+      "county": "Wells",
+      "waterway": "Six Mile Creek",
+      "structure_id": "001-90-07052-B",
+      "designation": "2200542",
+      "structure_type": "3-span continuous concrete slab | hypothetical support geometry",
+      "latitude": 40.6233889,
+      "longitude": -85.1510194,
+      "location_source": {
+        "document": "2025 NBI record 000370",
+        "url": "https://www.fhwa.dot.gov/BRIDGE/nbi/2025/delimited/IN25.txt"
+      },
+      "owner": "INDOT",
+      "maintenance": "INDOT",
+      "nbi_ids": [
+        "000370"
+      ],
+      "ownership_data_year": 2025,
+      "model": {
+        "glb": "bridges/sr1-six-mile/model.glb",
+        "thumbnail": "bridges/sr1-six-mile/preview.png",
+        "deck_length_m": 22.12975,
+        "spans": 3,
+        "components": 24,
+        "revision": "2026 overlay envelope / hypothetical structural scaffold v1",
+        "scope": "Drawing-backed surface envelope with explicitly assumed structural thickness and supports.",
+        "detail_status": "needs_detail",
+        "detail_status_note": "Schematic demonstration: original structural details unavailable. Slab thickness, support layout and substructure are hypothetical; see Coverage and FEM assumptions."
       }
     }
   ]

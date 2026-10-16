@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "engine": "collection_demo",
+  "bridge_id": "sr1-six-mile",
+  "title": "SR 1 over Six Mile Creek | schematic with assumed supports",
+  "modeled_state": "2026 thin-overlay drawing envelope plus 2025 NBI and explicitly hypothetical structural support geometry.",
+  "demonstration": true,
+  "display_scope": "Explicit assumed deck, beam, bearing and selected substructure model; omitted physical components carry no claimed FE stress.",
+  "coordinate_system": "Native metres: X longitudinal, Y transverse, Z up. x=u+skew_dx_dy*y. Flat analytical elevations are explicit.",
+  "source_pdf": "data/bridges/sr1-six-mile/drawings.pdf",
+  "drawing_sha256": "a3520ca96c85e5df175164477f26620dc04d6a5e1a25fe9fbb68061174c09775",
+  "source_hashes": {
+    "drawing": "a3520ca96c85e5df175164477f26620dc04d6a5e1a25fe9fbb68061174c09775",
+    "manifest": "fc2def5c94f6918fed697512f44117f1d583308719a2573dd2f2f94b7eea875c",
+    "model": "2c4913fcc52f04e580ae84fc283025f74defe256262f7bb7936308ffe0df3cb8"
+  },
+  "sources": {
+    "drawing": {
+      "title": "2026 thin-overlay drawing envelope plus 2025 NBI and explicitly hypothetical structural support geometry.",
+      "url": "/assets/sr1-six-mile/drawing"
+    },
+    "demonstration": {
+      "title": "Explicit assumed inputs",
+      "url": "/analysis-guide#collection-demo"
+    }
+  },
+  "evidence": [
+    {
+      "fields": [
+        "deck",
+        "spans_m",
+        "beams",
+        "supports"
+      ],
+      "status": "source-based geometry with explicit idealizations",
+      "source": "drawing",
+      "pdf_pages": [
+        4,
+        7
+      ],
+      "note": "Source-specific recipe transcribes manifest/source-ledger dimensions and original modeling script callouts. Native bounding-box centers locate axes only; bounding rectangles are not used as girder cross sections."
+    },
+    {
+      "fields": [
+        "bearing_horizontal_Npm",
+        "bearing_rotation_Nm",
+        "foundation_stiffness_Npm_Nm",
+        "integral_connection_stiffness_Npm_Nm",
+        "fixed_reference_stiffness_Npm_Nm",
+        "continuity_units"
+      ],
+      "status": "assumed",
+      "source": "demonstration",
+      "note": "All assumptions are frozen in values and assumptions; no test-based material certification is asserted."
+    }
+  ],
+  "values": {
+    "deck": {
+      "u0_m": -11.064875,
+      "u1_m": 11.064875,
+      "y0_m": -7.18185,
+      "y1_m": 7.18185,
+      "midplane_z_m": 5.775,
+      "thickness_m": 0.45,
+      "patches": [
+        {
+          "cid": "deck",
+          "u0_m": -11.064875,
+          "u1_m": 11.064875,
+          "y0_m": -7.18185,
+          "y1_m": 7.18185
+        }
+      ]
+    },
+    "spans_m": [
+      6.664875,
+      8.5,
+      6.664875
+    ],
+    "skew_dx_dy": -0.36397023426620234,
+    "beams": [],
+    "supports": [
+      {
+        "u_m": -10.914875,
+        "bearings": [],
+        "walls": [
+          {
+            "cid": "support_0",
+            "thickness_m": 0.8,
+            "y0_m": -7.18185,
+            "y1_m": 7.18185,
+            "bottom_z_m": 1.25
+          }
+        ],
+        "columns": [],
+        "top_z_m": 5.55,
+        "line_connection": {
+          "integral": true
+        }
+      },
+      {
+        "u_m": -4.25,
+        "bearings": [],
+        "walls": [
+          {
+            "cid": "support_1",
+            "thickness_m": 0.8,
+            "y0_m": -7.18185,
+            "y1_m": 7.18185,
+            "bottom_z_m": 1.25
+          }
+        ],
+        "columns": [],
+        "top_z_m": 5.55,
+        "line_connection": {
+          "integral": true
+        }
+      },
+      {
+        "u_m": 4.25,
+        "bearings": [],
+        "walls": [
+          {
+            "cid": "support_2",
+            "thickness_m": 0.8,
+            "y0_m": -7.18185,
+            "y1_m": 7.18185,
+            "bottom_z_m": 1.25
+          }
+        ],
+        "columns": [],
+        "top_z_m": 5.55,
+        "line_connection": {
+          "integral": true
+        }
+      },
+      {
+        "u_m": 10.914875,
+        "bearings": [],
+        "walls": [
+          {
+            "cid": "support_3",
+            "thickness_m": 0.8,
+            "y0_m": -7.18185,
+            "y1_m": 7.18185,
+            "bottom_z_m": 1.25
+          }
+        ],
+        "columns": [],
+        "top_z_m": 5.55,
+        "line_connection": {
+          "integral": true
+        }
+      }
+    ],
+    "bearing_horizontal_Npm": 10000000.0,
+    "bearing_rotation_Nm": 1000.0,
+    "foundation_stiffness_Npm_Nm": [
+      200000000.0,
+      200000000.0,
+      800000000.0,
+      200000000.0,
+      200000000.0,
+      200000000.0
+    ],
+    "fixed_reference_stiffness_Npm_Nm": [
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0
+    ],
+    "integral_connection_stiffness_Npm_Nm": [
+      100000000000.0,
+      100000000000.0,
+      100000000000.0,
+      10000000000.0,
+      10000000000.0,
+      10000000000.0
+    ],
+    "mesh_step_u_m": 1.0,
+    "mesh_step_y_m": 0.7,
+    "continuity_units": [
+      {
+        "u0_m": -11.064875,
+        "u1_m": 11.064875
+      }
+    ]
+  },
+  "assumptions": [
+    "Assumed-input OpenSees linear elastic incremental demonstration; not an as-built model, load rating, field validation or full physical stress history.",
+    "Pressure acts on the full declared structural deck envelope, including sidewalk zones. Left half means native Y below the geometric deck centerline.",
+    "Concrete E=30 GPa, steel E=200 GPa, Poisson ratios 0.20/0.30 are editable assumptions. No cracking, reinforcement, prestress initial stress, creep, shrinkage or self-weight is included.",
+    "All deck nodes are placed on the declared flat midplane. Crossfall, vertical curvature and fabrication camber are omitted. Girder centroids are flattened; native X/Y station and skew are preserved.",
+    "Full beam/deck composite action is assumed through rigid offsets. Haunch stiffness, barriers, walks, diaphragms, cross frames, bolts, local bearing plates and nonstructural pieces are omitted unless expressly listed as analyzed.",
+    "Bearing springs are bilateral with assumed horizontal 10 MN/m and rotational 1 kNm/rad stiffness. Vertical stiffness is editable. Springs may report tension; uplift/contact is not modeled.",
+    "Fixed bases mean fixed at the explicitly modeled wall/column/pile bottom; elastic bases add the frozen six stiffnesses per column or per metre of wall. Soil, buried footing flexibility and actual pile fixity are unverified.",
+    "Integral links use the frozen 100 GN/m translations and 10 GNm/rad rotations, distributed by tributary width for line connections. Cap-only fixed reference supports use 10 TN/m springs to separate the reaction node from its rigid constraint; this is a numerical fixed-base approximation.",
+    "Cap/column/wall sections are explicit idealizations. Shell wall heights extend to the cap reference axis where a cap exists; cap embedment and taper are simplified. Local peaks are nominal, not connection design stresses.",
+    "Deck and longitudinal beams are continuous across intermediate supports. Selectable fabrication/span divisions do not create structural hinges. Integral end connections, where specified, use stiff six-direction links to the modeled end wall/cap.",
+    "Original structural drawings are absent. Source plans/NBI establish three continuous concrete slab spans; exact6.664875+8.5+6.664875m arrangement, .45m thickness, .8m walls and base fixity are hypothetical structural assumptions.",
+    "No original bearing/foundation details are available. The displayed hypothetical support walls are included; their bases are fixed/elastic. This response is not a reconstruction of original measured support stiffness."
+  ],
+  "analyzed_component_ids": [
+    "deck",
+    "support_0",
+    "support_1",
+    "support_2",
+    "support_3"
+  ],
+  "excluded_component_ids": [
+    "approach_0",
+    "approach_1",
+    "footing_0",
+    "footing_1",
+    "footing_2",
+    "footing_3",
+    "joint_0",
+    "joint_1",
+    "overlay",
+    "rail_-1_0",
+    "rail_-1_1",
+    "rail_-1_2",
+    "rail_1_0",
+    "rail_1_1",
+    "rail_1_2",
+    "wing_0_-1",
+    "wing_0_1",
+    "wing_1_-1",
+    "wing_1_1"
+  ],
+  "excluded_component_reason": "Outside this explicitly scoped analytical idealization; no stress or displacement assigned to these display members."
+}

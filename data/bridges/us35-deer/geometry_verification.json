@@ -1,0 +1,94 @@
+{
+  "component_count": 72,
+  "all_meshes_watertight": true,
+  "all_volumes_positive": true,
+  "exported_glb_reopened": true,
+  "mesh_names_match_manifest": true,
+  "maximum_bearing_contact_error_m": 0.0,
+  "glb_sha256": "54604cef02d41bba991f9f94774656693698cc31f6127ec37362b0fd97758afd",
+  "source_pdf_sha256": "fb940a09d31d217f2e13fdcb64bdddfd83cddb816408b1f11ddc4738927d7b23",
+  "checks": {
+    "spans_m": [
+      35.052
+    ],
+    "support_lines": 2,
+    "girder_lines": 4,
+    "girder_segments": 4,
+    "bearings": 8,
+    "integral_end_bents": 2,
+    "source_piles_per_bent": 6,
+    "girder_y_m": [
+      -4.6482,
+      -1.5493999999999999,
+      1.5494000000000003,
+      4.6482
+    ],
+    "support_u_m": [
+      -17.526,
+      17.526
+    ],
+    "skew_deg": 15,
+    "beam_length_m": 35.5092,
+    "source_design_state": "Proposed 2026 full replacement; construction not established",
+    "minimum_deck_girder_clearance_m": 0.06255399999999955
+  },
+  "contacts": [
+    {
+      "id": "B1_bearing_1",
+      "girder_bottom_m": 2.891651813752082,
+      "bearing_top_m": 2.891651813752082,
+      "seat_m": 2.704326813752082
+    },
+    {
+      "id": "B2_bearing_1",
+      "girder_bottom_m": 3.715373813752082,
+      "bearing_top_m": 3.715373813752082,
+      "seat_m": 3.534398813752082
+    },
+    {
+      "id": "B1_bearing_2",
+      "girder_bottom_m": 2.934115271250702,
+      "bearing_top_m": 2.934115271250702,
+      "seat_m": 2.746790271250702
+    },
+    {
+      "id": "B2_bearing_2",
+      "girder_bottom_m": 3.757837271250702,
+      "bearing_top_m": 3.757837271250702,
+      "seat_m": 3.576862271250702
+    },
+    {
+      "id": "B1_bearing_3",
+      "girder_bottom_m": 2.914602728749321,
+      "bearing_top_m": 2.914602728749321,
+      "seat_m": 2.727277728749321
+    },
+    {
+      "id": "B2_bearing_3",
+      "girder_bottom_m": 3.738324728749321,
+      "bearing_top_m": 3.738324728749321,
+      "seat_m": 3.5573497287493208
+    },
+    {
+      "id": "B1_bearing_4",
+      "girder_bottom_m": 2.83311418624794,
+      "bearing_top_m": 2.83311418624794,
+      "seat_m": 2.64578918624794
+    },
+    {
+      "id": "B2_bearing_4",
+      "girder_bottom_m": 3.65683618624794,
+      "bearing_top_m": 3.65683618624794,
+      "seat_m": 3.47586118624794
+    }
+  ],
+  "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation.",
+  "primary_pdf_unchanged": true,
+  "source_original_hashes_match": true,
+  "source_page_references_within_primary": true,
+  "approximate_component_count": 59,
+  "actual_exported_bearing_bounds_max_error_m": 1.137076566237738e-07,
+  "nominal_girder_section_net_area_m2": 0.6287084199999998,
+  "nominal_section_area_is_not_solid_bounding_rectangle": true,
+  "source_review": "Key general, framing, section, bearing, support and approach sheets were rendered and visually read before construction. See source_ledger.json evidence entries."
+}

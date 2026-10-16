@@ -256,6 +256,9 @@ def run_model(ledger, options, n=24):
 def solve(snapshot):
     import openseespy.opensees as ops
     ledger = snapshot['ledger']
+    if ledger.get('bridge_id') == 'minnich-road':
+        from fem.minnich_demo import solve_demo
+        return solve_demo(snapshot)
     options = settings(snapshot['settings'])
     if options['case'].startswith('global_'):
         from fem.global_model import solve_global
@@ -309,6 +312,8 @@ if __name__ == '__main__':
         raise RuntimeError('Solver source changed after the input snapshot was created.')
     if payload.get('global_code_sha256') and hashlib.sha256(Path(__file__).with_name('global_model.py').read_bytes()).hexdigest()!=payload['global_code_sha256']:
         raise RuntimeError('Global solver source changed after snapshot creation.')
+    if payload.get('demo_code_sha256') and hashlib.sha256(Path(__file__).with_name('minnich_demo.py').read_bytes()).hexdigest()!=payload['demo_code_sha256']:
+        raise RuntimeError('Demonstration solver source changed after snapshot creation.')
     result = solve(payload)
     encoded = json.dumps(result, ensure_ascii=True, allow_nan=False, separators=(',',':'))
     temp = args.output.with_suffix('.tmp')

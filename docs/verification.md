@@ -1,6 +1,29 @@
 # Release verification
 
-The English release is checked against the existing nine-bridge collection.
+## October 15, 2026: complete researched collection and assumed-input FEM
+
+- Live DB: 21 crossing records, 16 3D workspaces, 6,622 components, 248 groups, 11,728 primary page links, 9,499 dimensions, 137 coverage entries and 984 primary PDF pages. Five older partial models stay map-only.
+- Five new GLBs and their source pages were independently reviewed; all 84 registered asset hashes match the live DB. Supplemental historical pages open their own original PDFs.
+- Ten catalog/API tests, four legacy analysis API tests, five collection-service tests and four archived UI regressions pass. The 12 generic FEM ledgers pass eight dedicated tests (including all 24 default cases); arch passes seven tests and the revised truss passes six tests.
+- All 16 workspaces pass the full browser regression. All 14 new FEM workspaces pass mapped-color, displacement, FE-mesh, export and input-control checks with no page errors. Five new drawing links and two supplemental PDFs were exercised. The load form doubles displacement at twice the pressure and then restores 1 kPa.
+- The truss main-deck shell was extended to its complete display footprint, including end cantilevers. Revised uniform load is 341.768994 kN at 1 kPa; the old shorter-footprint runs remain archived.
+- Both baseline cases are saved for all 14 new analytical models. An additional Beechwood global-uniform example is current, with 72 mapped components; the original Minnich example remains current.
+- All original rows in every pre-update table are unchanged, including 41 analysis runs and 2,752 member results. The live database now has 74 runs and 4,872 member results. SQLite integrity and foreign keys pass. The three legacy solver source files are byte-for-byte unchanged from the pre-update snapshot.
+- New result inputs are checked against the authoritative DB snapshot before launch and acceptance. Missing current source files mark results stale. Archived evidence and mesh return are regression tested.
+- The generated `/collection-status` report has 5 model rows, 16 analytical-scope rows and 28 baseline-case rows. Desktop and 390 px mobile layout checks pass. Numerical convergence does not establish field validation or capacity.
+
+## October 15, 2026: Fletcher Avenue and SR 10 additions
+
+- Nine backend tests pass with a fresh 16-crossing database: 6,252 components, 196 groups, 10,986 page links, 9,014 dimensions and 117 coverage entries.
+- The full browser regression loads all eleven workspace models, preserves the five map-only routes, and passes selection, visibility, source pages, mobile layouts, rapid switching and failed-road-service checks with no JavaScript page errors.
+- `test_indiana_batch3_browser.cjs` additionally checks the 379-part Fletcher and 312-part SR 10 models, isolation of 16 and 36 girder segments, rendered source pages 98 and 59, amber coverage, unavailable FEM states, matching downloaded GLB bytes and county map thumbnails.
+- Original source-file hashes, compiled binder hashes, model hashes and all new page references agree. Geometry reports record closed positive-volume meshes, GLB/manifest correspondence and constructed support contacts.
+- Every row from the pre-import live database is preserved unchanged, including 41 existing analysis runs and 2,752 analysis member results. SQLite integrity and foreign-key checks pass. The saved Minnich demonstration remains available with current inputs.
+- New models remain amber and are not FEM-ready. See [source states and limits](fletcher-sr10-models.md).
+
+## Initial English release
+
+The initial English release was checked against the then-existing nine-bridge collection.
 
 - Fresh database creation from the bundled portable registry, without the original atlas directory.
 - 9 bridges, 4,012 components, 106 source groups, 5,666 drawing-page links, 5,872 dimension records and 76 coverage items.

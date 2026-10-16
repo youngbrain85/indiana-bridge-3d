@@ -1,0 +1,3711 @@
+{
+  "title": "US 224 over Eight Mile Creek | retained bridge with proposed 2026 repairs",
+  "structure_id": "224-90-01545 B",
+  "designation": "2200957",
+  "spans_m": [
+    12.4968
+  ],
+  "deck_thickness_m": 0.24130000000000001,
+  "source_note": "Primary INDOT B-44532 / Des2200957 proposed 2026 repair set, document 9683628. Retained CB21 section and supports are checked against unchanged supplementary 1985/1986 B-16317 plans, document 9548292. Revision9707311 changes closure time only.",
+  "assumptions": [
+    "Exterior visualization reconstruction of the named design state, not an as-built survey, structural rating or validated finite-element mesh.",
+    "No internal reinforcement, prestressing strands, embedded anchors or fabrication holes. Colors identify visualization layers; amber parts identify explicit approximations.",
+    "Source PDF page references always address drawings.pdf, an unchanged issued PDF. Supplemental historical pages are separately identified by document ID and local file.",
+    "Constructed interfaces and bearing contact checks establish geometric attachment only. Surveyed seats, actual camber, shim thicknesses and installed tolerances remain unknown.",
+    "Site terrain, channel solids, riprap individual stones, buried pile tips, full roadside guardrail terminals and nonstructural utility routing are omitted.",
+    "Latest primary coping width controls the 5 in discrepancy with historical revised slab width.",
+    "Native Z uses an illustrative 817 ft flowline datum; source grade and nominal beam contacts are reconstructed, not surveyed.",
+    "Void geometry is included to prevent a solid rectangular visual section from being mistaken for a hollow box. FEM section properties still require independent explicit calculation."
+  ],
+  "external_sources": [
+    {
+      "id": "9683628",
+      "title": "FT Plans 2200957 For Contract Services",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683628",
+      "local_file": "sources/contract_plans_9683628.pdf",
+      "sha256": "1df89fdef9ac73f333ace80589aa645908cecf4fa6c11fc262c5a767ec9f5086",
+      "original_pages": 17,
+      "role": "primary_issued_pdf",
+      "primary_pdf_start_page": 1
+    },
+    {
+      "id": "9548292",
+      "title": "FT ExistingPlans 2200957 For Contract Services",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9548292",
+      "local_file": "sources/existing_plans_9548292.pdf",
+      "sha256": "26524422277b847680b1198e5d19fc05461edd0edbbc8d4b37298ede535b6431",
+      "original_pages": 15,
+      "role": "supplementary_original",
+      "primary_pdf_start_page": null
+    },
+    {
+      "id": "9707311",
+      "title": "B -44532-A REV 1",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9707311",
+      "local_file": "sources/revision_notice_9707311.pdf",
+      "sha256": "592a92a1badbdb49b780a7fb85888f01b2c5dc3e2d6b8ac0068458aacbaf2711",
+      "original_pages": 3,
+      "role": "supplementary_original",
+      "primary_pdf_start_page": null
+    }
+  ],
+  "source_index": {
+    "primary_pdf": "drawings.pdf",
+    "primary_document_id": "9683628",
+    "pages": 17,
+    "sha256": "1df89fdef9ac73f333ace80589aa645908cecf4fa6c11fc262c5a767ec9f5086",
+    "source_documents": [
+      {
+        "id": "9683628",
+        "title": "FT Plans 2200957 For Contract Services",
+        "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683628",
+        "local_file": "sources/contract_plans_9683628.pdf",
+        "sha256": "1df89fdef9ac73f333ace80589aa645908cecf4fa6c11fc262c5a767ec9f5086",
+        "original_pages": 17,
+        "role": "primary_issued_pdf",
+        "primary_pdf_start_page": 1
+      },
+      {
+        "id": "9548292",
+        "title": "FT ExistingPlans 2200957 For Contract Services",
+        "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9548292",
+        "local_file": "sources/existing_plans_9548292.pdf",
+        "sha256": "26524422277b847680b1198e5d19fc05461edd0edbbc8d4b37298ede535b6431",
+        "original_pages": 15,
+        "role": "supplementary_original",
+        "primary_pdf_start_page": null
+      },
+      {
+        "id": "9707311",
+        "title": "B -44532-A REV 1",
+        "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9707311",
+        "local_file": "sources/revision_notice_9707311.pdf",
+        "sha256": "592a92a1badbdb49b780a7fb85888f01b2c5dc3e2d6b8ac0068458aacbaf2711",
+        "original_pages": 3,
+        "role": "supplementary_original",
+        "primary_pdf_start_page": null
+      }
+    ],
+    "note": "Primary drawings.pdf is byte-for-byte identical to the issued source; no combined or newly authored PDF. Supplemental page numbers do not address the primary PDF."
+  },
+  "completeness": "Whole crossing reconstructed with unresolved detail (amber)",
+  "detail_status": "needs_detail",
+  "units": "metres",
+  "deck_length_m": 13.7287,
+  "deck_width_m": 14.224,
+  "skew_deg": -30,
+  "source_pdf": "drawings.pdf",
+  "source_sha256": "1df89fdef9ac73f333ace80589aa645908cecf4fa6c11fc262c5a767ec9f5086",
+  "parts": [
+    {
+      "id": "deck",
+      "name": "Retained deck after nominal 0.5 in milling",
+      "layer": "deck",
+      "color": "#d1d5d0",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "basis": "Source 7.5 in remaining concrete envelope",
+      "note": "Localized hydrodemolition depth and full-depth patches depend on field conditions and are not invented.",
+      "dimensions": {
+        "thickness_m": 0.1905
+      },
+      "bounds_m": [
+        [
+          -10.970465,
+          -7.112,
+          4.208302
+        ],
+        [
+          10.970465,
+          7.112,
+          4.545597
+        ]
+      ],
+      "volume_m3": 37.200273986
+    },
+    {
+      "id": "overlay",
+      "name": "Proposed 2026 minimum 2 in concrete overlay",
+      "layer": "deck",
+      "color": "#d1d5d0",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "basis": "Source minimum overlay envelope",
+      "note": "Structural participation requires an explicit analytical assumption; the visual surface alone does not establish composite stiffness.",
+      "dimensions": {
+        "thickness_m": 0.0508
+      },
+      "bounds_m": [
+        [
+          -10.73583,
+          -6.7056,
+          4.405621
+        ],
+        [
+          10.73583,
+          6.7056,
+          4.596397
+        ]
+      ],
+      "volume_m3": 9.353211745
+    },
+    {
+      "id": "retained_coping_-1",
+      "name": "Retained unmilled coping -1",
+      "layer": "deck",
+      "color": "#d1d5d0",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Retained 8 in coping section reconstructed from 8 in existing slab",
+      "note": "Half-inch residual coping strip above the milled interior slab. Existing barrier bears here; its visible height above overlay is reduced by 1.5 in.",
+      "dimensions": {
+        "thickness_m": 0.0127
+      },
+      "bounds_m": [
+        [
+          -10.970465,
+          -7.112,
+          4.415227
+        ],
+        [
+          2.99287,
+          -6.7056,
+          4.461265
+        ]
+      ],
+      "volume_m3": 0.070857665
+    },
+    {
+      "id": "retained_coping_1",
+      "name": "Retained unmilled coping 1",
+      "layer": "deck",
+      "color": "#d1d5d0",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Retained 8 in coping section reconstructed from 8 in existing slab",
+      "note": "Half-inch residual coping strip above the milled interior slab. Existing barrier bears here; its visible height above overlay is reduced by 1.5 in.",
+      "dimensions": {
+        "thickness_m": 0.0127
+      },
+      "bounds_m": [
+        [
+          -2.99287,
+          6.7056,
+          4.398802
+        ],
+        [
+          10.970465,
+          7.112,
+          4.445779
+        ]
+      ],
+      "volume_m3": 0.070857665
+    },
+    {
+      "id": "beam_0_0",
+      "name": "Retained CB21 hollow box beam 1",
+      "layer": "girders",
+      "color": "#b3b4a6",
+      "pdf_pages": [
+        9,
+        11
+      ],
+      "basis": "Historical dimensioned CB21 profile and primary retained-beam identification",
+      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified.",
+      "dimensions": {
+        "depth_m": 0.5334,
+        "width_m": 1.2191999999999998,
+        "length_m": 12.798425000000002,
+        "void_profile_yz_m": [
+          [
+            -0.4064,
+            0.1397
+          ],
+          [
+            0.4064,
+            0.1397
+          ],
+          [
+            0.4826,
+            0.21589999999999998
+          ],
+          [
+            0.4826,
+            0.381
+          ],
+          [
+            0.4064,
+            0.4572
+          ],
+          [
+            -0.4064,
+            0.4572
+          ],
+          [
+            -0.4826,
+            0.381
+          ],
+          [
+            -0.4826,
+            0.21589999999999998
+          ]
+        ],
+        "endblock_length_m": 0.8382000000000001
+      },
+      "bounds_m": [
+        [
+          -10.160707,
+          -6.5151,
+          3.684011
+        ],
+        [
+          3.341623,
+          -5.2959,
+          4.244416
+        ]
+      ],
+      "volume_m3": 5.043891186,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "detail": "CB21 section, beam plan, six-line transverse spacing and diaphragm topology. Primary p.9 identifies these retained beams."
+        }
+      ]
+    },
+    {
+      "id": "haunch_0_0",
+      "name": "haunch 0 0",
+      "layer": "haunches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "dimensions": {
+        "nominal_center_clearance_m": 0.025,
+        "width_m": 1.2191999999999998
+      },
+      "bounds_m": [
+        [
+          -10.160707,
+          -6.5151,
+          4.217411
+        ],
+        [
+          3.341623,
+          -5.2959,
+          4.277533
+        ]
+      ],
+      "volume_m3": 0.390095994,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "detail": "Historical beam/slab camber note allows varying interface; nominal modeled 25 mm haunch is an explicit assumption."
+        }
+      ]
+    },
+    {
+      "id": "B1_bearing_1",
+      "name": "B1 bearing 1",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "dimensions": {
+        "pad_length_m": 0.23,
+        "pad_width_m": 1.05,
+        "pad_thickness_m": 0.045,
+        "load_plate_thickness_m": 0.005
+      },
+      "bounds_m": [
+        [
+          -9.772942,
+          -6.4305,
+          3.66001
+        ],
+        [
+          -9.542942,
+          -5.3805,
+          3.71001
+        ]
+      ],
+      "volume_m3": 0.012075,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            8,
+            9
+          ],
+          "detail": "Retained bearing type 7B, expansion at abutment 1 and fixed at abutment 2. Standard PB11 dimensional sheet is not included."
+        }
+      ]
+    },
+    {
+      "id": "beam_wrap_0_0",
+      "name": "Proposed beam-end wrap 1/1",
+      "layer": "accessories",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "dimensions": {
+        "display_thickness_m": 0.003,
+        "min_length_m": 0.9144000000000001
+      },
+      "bounds_m": [
+        [
+          -10.162439,
+          -6.5181,
+          3.704776
+        ],
+        [
+          -8.54067,
+          -5.2929,
+          4.244419
+        ]
+      ],
+      "volume_m3": 0.006287414,
+      "approximation": true
+    },
+    {
+      "id": "B2_bearing_1",
+      "name": "B2 bearing 1",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "dimensions": {
+        "pad_length_m": 0.23,
+        "pad_width_m": 1.05,
+        "pad_thickness_m": 0.045,
+        "load_plate_thickness_m": 0.005
+      },
+      "bounds_m": [
+        [
+          2.723858,
+          -6.4305,
+          3.635017
+        ],
+        [
+          2.953858,
+          -5.3805,
+          3.685017
+        ]
+      ],
+      "volume_m3": 0.012075,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            8,
+            9
+          ],
+          "detail": "Retained bearing type 7B, expansion at abutment 1 and fixed at abutment 2. Standard PB11 dimensional sheet is not included."
+        }
+      ]
+    },
+    {
+      "id": "beam_wrap_1_0",
+      "name": "Proposed beam-end wrap 2/1",
+      "layer": "accessories",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "dimensions": {
+        "display_thickness_m": 0.003,
+        "min_length_m": 0.9144000000000001
+      },
+      "bounds_m": [
+        [
+          1.721586,
+          -6.5181,
+          3.681008
+        ],
+        [
+          3.343355,
+          -5.2929,
+          4.220651
+        ]
+      ],
+      "volume_m3": 0.006287414,
+      "approximation": true
+    },
+    {
+      "id": "beam_0_1",
+      "name": "Retained CB21 hollow box beam 2",
+      "layer": "girders",
+      "color": "#b3b4a6",
+      "pdf_pages": [
+        9,
+        11
+      ],
+      "basis": "Historical dimensioned CB21 profile and primary retained-beam identification",
+      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified.",
+      "dimensions": {
+        "depth_m": 0.5334,
+        "width_m": 1.2191999999999998,
+        "length_m": 12.798425000000002,
+        "void_profile_yz_m": [
+          [
+            -0.4064,
+            0.1397
+          ],
+          [
+            0.4064,
+            0.1397
+          ],
+          [
+            0.4826,
+            0.21589999999999998
+          ],
+          [
+            0.4826,
+            0.381
+          ],
+          [
+            0.4064,
+            0.4572
+          ],
+          [
+            -0.4064,
+            0.4572
+          ],
+          [
+            -0.4826,
+            0.381
+          ],
+          [
+            -0.4826,
+            0.21589999999999998
+          ]
+        ],
+        "endblock_length_m": 0.8382000000000001
+      },
+      "bounds_m": [
+        [
+          -8.79689,
+          -4.1529,
+          3.718193
+        ],
+        [
+          4.70544,
+          -2.9337,
+          4.278598
+        ]
+      ],
+      "volume_m3": 5.043891186,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "detail": "CB21 section, beam plan, six-line transverse spacing and diaphragm topology. Primary p.9 identifies these retained beams."
+        }
+      ]
+    },
+    {
+      "id": "haunch_0_1",
+      "name": "haunch 0 1",
+      "layer": "haunches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "dimensions": {
+        "nominal_center_clearance_m": 0.025,
+        "width_m": 1.2191999999999998
+      },
+      "bounds_m": [
+        [
+          -8.79689,
+          -4.1529,
+          4.251593
+        ],
+        [
+          4.70544,
+          -2.9337,
+          4.311715
+        ]
+      ],
+      "volume_m3": 0.390095994,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "detail": "Historical beam/slab camber note allows varying interface; nominal modeled 25 mm haunch is an explicit assumption."
+        }
+      ]
+    },
+    {
+      "id": "B1_bearing_2",
+      "name": "B1 bearing 2",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "dimensions": {
+        "pad_length_m": 0.23,
+        "pad_width_m": 1.05,
+        "pad_thickness_m": 0.045,
+        "load_plate_thickness_m": 0.005
+      },
+      "bounds_m": [
+        [
+          -8.409125,
+          -4.0683,
+          3.694192
+        ],
+        [
+          -8.179125,
+          -3.0183,
+          3.744192
+        ]
+      ],
+      "volume_m3": 0.012075,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            8,
+            9
+          ],
+          "detail": "Retained bearing type 7B, expansion at abutment 1 and fixed at abutment 2. Standard PB11 dimensional sheet is not included."
+        }
+      ]
+    },
+    {
+      "id": "beam_wrap_0_1",
+      "name": "Proposed beam-end wrap 1/2",
+      "layer": "accessories",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "dimensions": {
+        "display_thickness_m": 0.003,
+        "min_length_m": 0.9144000000000001
+      },
+      "bounds_m": [
+        [
+          -8.798622,
+          -4.1559,
+          3.738958
+        ],
+        [
+          -7.176853,
+          -2.9307,
+          4.278601
+        ]
+      ],
+      "volume_m3": 0.006287414,
+      "approximation": true
+    },
+    {
+      "id": "B2_bearing_2",
+      "name": "B2 bearing 2",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "dimensions": {
+        "pad_length_m": 0.23,
+        "pad_width_m": 1.05,
+        "pad_thickness_m": 0.045,
+        "load_plate_thickness_m": 0.005
+      },
+      "bounds_m": [
+        [
+          4.087675,
+          -4.0683,
+          3.669199
+        ],
+        [
+          4.317675,
+          -3.0183,
+          3.719199
+        ]
+      ],
+      "volume_m3": 0.012075,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            8,
+            9
+          ],
+          "detail": "Retained bearing type 7B, expansion at abutment 1 and fixed at abutment 2. Standard PB11 dimensional sheet is not included."
+        }
+      ]
+    },
+    {
+      "id": "beam_wrap_1_1",
+      "name": "Proposed beam-end wrap 2/2",
+      "layer": "accessories",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "dimensions": {
+        "display_thickness_m": 0.003,
+        "min_length_m": 0.9144000000000001
+      },
+      "bounds_m": [
+        [
+          3.085403,
+          -4.1559,
+          3.71519
+        ],
+        [
+          4.707172,
+          -2.9307,
+          4.254833
+        ]
+      ],
+      "volume_m3": 0.006287414,
+      "approximation": true
+    },
+    {
+      "id": "beam_0_2",
+      "name": "Retained CB21 hollow box beam 3",
+      "layer": "girders",
+      "color": "#b3b4a6",
+      "pdf_pages": [
+        9,
+        11
+      ],
+      "basis": "Historical dimensioned CB21 profile and primary retained-beam identification",
+      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified.",
+      "dimensions": {
+        "depth_m": 0.5334,
+        "width_m": 1.2191999999999998,
+        "length_m": 12.798425000000002,
+        "void_profile_yz_m": [
+          [
+            -0.4064,
+            0.1397
+          ],
+          [
+            0.4064,
+            0.1397
+          ],
+          [
+            0.4826,
+            0.21589999999999998
+          ],
+          [
+            0.4826,
+            0.381
+          ],
+          [
+            0.4064,
+            0.4572
+          ],
+          [
+            -0.4064,
+            0.4572
+          ],
+          [
+            -0.4826,
+            0.381
+          ],
+          [
+            -0.4826,
+            0.21589999999999998
+          ]
+        ],
+        "endblock_length_m": 0.8382000000000001
+      },
+      "bounds_m": [
+        [
+          -7.433074,
+          -1.7907,
+          3.752375
+        ],
+        [
+          6.069257,
+          -0.5715,
+          4.312779
+        ]
+      ],
+      "volume_m3": 5.043891186,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "detail": "CB21 section, beam plan, six-line transverse spacing and diaphragm topology. Primary p.9 identifies these retained beams."
+        }
+      ]
+    },
+    {
+      "id": "haunch_0_2",
+      "name": "haunch 0 2",
+      "layer": "haunches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "dimensions": {
+        "nominal_center_clearance_m": 0.025,
+        "width_m": 1.2191999999999998
+      },
+      "bounds_m": [
+        [
+          -7.433074,
+          -1.7907,
+          4.285775
+        ],
+        [
+          6.069257,
+          -0.5715,
+          4.345897
+        ]
+      ],
+      "volume_m3": 0.390095994,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "detail": "Historical beam/slab camber note allows varying interface; nominal modeled 25 mm haunch is an explicit assumption."
+        }
+      ]
+    },
+    {
+      "id": "B1_bearing_3",
+      "name": "B1 bearing 3",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "dimensions": {
+        "pad_length_m": 0.23,
+        "pad_width_m": 1.05,
+        "pad_thickness_m": 0.045,
+        "load_plate_thickness_m": 0.005
+      },
+      "bounds_m": [
+        [
+          -7.045308,
+          -1.7061,
+          3.728374
+        ],
+        [
+          -6.815308,
+          -0.6561,
+          3.778374
+        ]
+      ],
+      "volume_m3": 0.012075,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            8,
+            9
+          ],
+          "detail": "Retained bearing type 7B, expansion at abutment 1 and fixed at abutment 2. Standard PB11 dimensional sheet is not included."
+        }
+      ]
+    },
+    {
+      "id": "beam_wrap_0_2",
+      "name": "Proposed beam-end wrap 1/3",
+      "layer": "accessories",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "dimensions": {
+        "display_thickness_m": 0.003,
+        "min_length_m": 0.9144000000000001
+      },
+      "bounds_m": [
+        [
+          -7.434806,
+          -1.7937,
+          3.773139
+        ],
+        [
+          -5.813036,
+          -0.5685,
+          4.312783
+        ]
+      ],
+      "volume_m3": 0.006287414,
+      "approximation": true
+    },
+    {
+      "id": "B2_bearing_3",
+      "name": "B2 bearing 3",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "dimensions": {
+        "pad_length_m": 0.23,
+        "pad_width_m": 1.05,
+        "pad_thickness_m": 0.045,
+        "load_plate_thickness_m": 0.005
+      },
+      "bounds_m": [
+        [
+          5.451492,
+          -1.7061,
+          3.70338
+        ],
+        [
+          5.681492,
+          -0.6561,
+          3.75338
+        ]
+      ],
+      "volume_m3": 0.012075,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            8,
+            9
+          ],
+          "detail": "Retained bearing type 7B, expansion at abutment 1 and fixed at abutment 2. Standard PB11 dimensional sheet is not included."
+        }
+      ]
+    },
+    {
+      "id": "beam_wrap_1_2",
+      "name": "Proposed beam-end wrap 2/3",
+      "layer": "accessories",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "dimensions": {
+        "display_thickness_m": 0.003,
+        "min_length_m": 0.9144000000000001
+      },
+      "bounds_m": [
+        [
+          4.449219,
+          -1.7937,
+          3.749371
+        ],
+        [
+          6.070989,
+          -0.5685,
+          4.289015
+        ]
+      ],
+      "volume_m3": 0.006287414,
+      "approximation": true
+    },
+    {
+      "id": "beam_0_3",
+      "name": "Retained CB21 hollow box beam 4",
+      "layer": "girders",
+      "color": "#b3b4a6",
+      "pdf_pages": [
+        9,
+        11
+      ],
+      "basis": "Historical dimensioned CB21 profile and primary retained-beam identification",
+      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified.",
+      "dimensions": {
+        "depth_m": 0.5334,
+        "width_m": 1.2191999999999998,
+        "length_m": 12.798425000000002,
+        "void_profile_yz_m": [
+          [
+            -0.4064,
+            0.1397
+          ],
+          [
+            0.4064,
+            0.1397
+          ],
+          [
+            0.4826,
+            0.21589999999999998
+          ],
+          [
+            0.4826,
+            0.381
+          ],
+          [
+            0.4064,
+            0.4572
+          ],
+          [
+            -0.4064,
+            0.4572
+          ],
+          [
+            -0.4826,
+            0.381
+          ],
+          [
+            -0.4826,
+            0.21589999999999998
+          ]
+        ],
+        "endblock_length_m": 0.8382000000000001
+      },
+      "bounds_m": [
+        [
+          -6.069257,
+          0.5715,
+          3.749647
+        ],
+        [
+          7.433074,
+          1.7907,
+          4.310052
+        ]
+      ],
+      "volume_m3": 5.043891186,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "detail": "CB21 section, beam plan, six-line transverse spacing and diaphragm topology. Primary p.9 identifies these retained beams."
+        }
+      ]
+    },
+    {
+      "id": "haunch_0_3",
+      "name": "haunch 0 3",
+      "layer": "haunches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "dimensions": {
+        "nominal_center_clearance_m": 0.025,
+        "width_m": 1.2191999999999998
+      },
+      "bounds_m": [
+        [
+          -6.069257,
+          0.5715,
+          4.283047
+        ],
+        [
+          7.433074,
+          1.7907,
+          4.344577
+        ]
+      ],
+      "volume_m3": 0.390095994,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "detail": "Historical beam/slab camber note allows varying interface; nominal modeled 25 mm haunch is an explicit assumption."
+        }
+      ]
+    },
+    {
+      "id": "B1_bearing_4",
+      "name": "B1 bearing 4",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "dimensions": {
+        "pad_length_m": 0.23,
+        "pad_width_m": 1.05,
+        "pad_thickness_m": 0.045,
+        "load_plate_thickness_m": 0.005
+      },
+      "bounds_m": [
+        [
+          -5.681492,
+          0.6561,
+          3.725646
+        ],
+        [
+          -5.451492,
+          1.7061,
+          3.775646
+        ]
+      ],
+      "volume_m3": 0.012075,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            8,
+            9
+          ],
+          "detail": "Retained bearing type 7B, expansion at abutment 1 and fixed at abutment 2. Standard PB11 dimensional sheet is not included."
+        }
+      ]
+    },
+    {
+      "id": "beam_wrap_0_3",
+      "name": "Proposed beam-end wrap 1/4",
+      "layer": "accessories",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "dimensions": {
+        "display_thickness_m": 0.003,
+        "min_length_m": 0.9144000000000001
+      },
+      "bounds_m": [
+        [
+          -6.070989,
+          0.5685,
+          3.770412
+        ],
+        [
+          -4.449219,
+          1.7937,
+          4.310055
+        ]
+      ],
+      "volume_m3": 0.006287414,
+      "approximation": true
+    },
+    {
+      "id": "B2_bearing_4",
+      "name": "B2 bearing 4",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "dimensions": {
+        "pad_length_m": 0.23,
+        "pad_width_m": 1.05,
+        "pad_thickness_m": 0.045,
+        "load_plate_thickness_m": 0.005
+      },
+      "bounds_m": [
+        [
+          6.815308,
+          0.6561,
+          3.700653
+        ],
+        [
+          7.045308,
+          1.7061,
+          3.750653
+        ]
+      ],
+      "volume_m3": 0.012075,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            8,
+            9
+          ],
+          "detail": "Retained bearing type 7B, expansion at abutment 1 and fixed at abutment 2. Standard PB11 dimensional sheet is not included."
+        }
+      ]
+    },
+    {
+      "id": "beam_wrap_1_3",
+      "name": "Proposed beam-end wrap 2/4",
+      "layer": "accessories",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "dimensions": {
+        "display_thickness_m": 0.003,
+        "min_length_m": 0.9144000000000001
+      },
+      "bounds_m": [
+        [
+          5.813036,
+          0.5685,
+          3.746644
+        ],
+        [
+          7.434806,
+          1.7937,
+          4.286287
+        ]
+      ],
+      "volume_m3": 0.006287414,
+      "approximation": true
+    },
+    {
+      "id": "beam_0_4",
+      "name": "Retained CB21 hollow box beam 5",
+      "layer": "girders",
+      "color": "#b3b4a6",
+      "pdf_pages": [
+        9,
+        11
+      ],
+      "basis": "Historical dimensioned CB21 profile and primary retained-beam identification",
+      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified.",
+      "dimensions": {
+        "depth_m": 0.5334,
+        "width_m": 1.2191999999999998,
+        "length_m": 12.798425000000002,
+        "void_profile_yz_m": [
+          [
+            -0.4064,
+            0.1397
+          ],
+          [
+            0.4064,
+            0.1397
+          ],
+          [
+            0.4826,
+            0.21589999999999998
+          ],
+          [
+            0.4826,
+            0.381
+          ],
+          [
+            0.4064,
+            0.4572
+          ],
+          [
+            -0.4064,
+            0.4572
+          ],
+          [
+            -0.4826,
+            0.381
+          ],
+          [
+            -0.4826,
+            0.21589999999999998
+          ]
+        ],
+        "endblock_length_m": 0.8382000000000001
+      },
+      "bounds_m": [
+        [
+          -4.70544,
+          2.9337,
+          3.71001
+        ],
+        [
+          8.79689,
+          4.1529,
+          4.270415
+        ]
+      ],
+      "volume_m3": 5.043891186,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "detail": "CB21 section, beam plan, six-line transverse spacing and diaphragm topology. Primary p.9 identifies these retained beams."
+        }
+      ]
+    },
+    {
+      "id": "haunch_0_4",
+      "name": "haunch 0 4",
+      "layer": "haunches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "dimensions": {
+        "nominal_center_clearance_m": 0.025,
+        "width_m": 1.2191999999999998
+      },
+      "bounds_m": [
+        [
+          -4.70544,
+          2.9337,
+          4.24341
+        ],
+        [
+          8.79689,
+          4.1529,
+          4.30494
+        ]
+      ],
+      "volume_m3": 0.390095994,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "detail": "Historical beam/slab camber note allows varying interface; nominal modeled 25 mm haunch is an explicit assumption."
+        }
+      ]
+    },
+    {
+      "id": "B1_bearing_5",
+      "name": "B1 bearing 5",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "dimensions": {
+        "pad_length_m": 0.23,
+        "pad_width_m": 1.05,
+        "pad_thickness_m": 0.045,
+        "load_plate_thickness_m": 0.005
+      },
+      "bounds_m": [
+        [
+          -4.317675,
+          3.0183,
+          3.686009
+        ],
+        [
+          -4.087675,
+          4.0683,
+          3.736009
+        ]
+      ],
+      "volume_m3": 0.012075,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            8,
+            9
+          ],
+          "detail": "Retained bearing type 7B, expansion at abutment 1 and fixed at abutment 2. Standard PB11 dimensional sheet is not included."
+        }
+      ]
+    },
+    {
+      "id": "beam_wrap_0_4",
+      "name": "Proposed beam-end wrap 1/5",
+      "layer": "accessories",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "dimensions": {
+        "display_thickness_m": 0.003,
+        "min_length_m": 0.9144000000000001
+      },
+      "bounds_m": [
+        [
+          -4.707172,
+          2.9307,
+          3.730775
+        ],
+        [
+          -3.085403,
+          4.1559,
+          4.270418
+        ]
+      ],
+      "volume_m3": 0.006287414,
+      "approximation": true
+    },
+    {
+      "id": "B2_bearing_5",
+      "name": "B2 bearing 5",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "dimensions": {
+        "pad_length_m": 0.23,
+        "pad_width_m": 1.05,
+        "pad_thickness_m": 0.045,
+        "load_plate_thickness_m": 0.005
+      },
+      "bounds_m": [
+        [
+          8.179125,
+          3.0183,
+          3.661016
+        ],
+        [
+          8.409125,
+          4.0683,
+          3.711016
+        ]
+      ],
+      "volume_m3": 0.012075,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            8,
+            9
+          ],
+          "detail": "Retained bearing type 7B, expansion at abutment 1 and fixed at abutment 2. Standard PB11 dimensional sheet is not included."
+        }
+      ]
+    },
+    {
+      "id": "beam_wrap_1_4",
+      "name": "Proposed beam-end wrap 2/5",
+      "layer": "accessories",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "dimensions": {
+        "display_thickness_m": 0.003,
+        "min_length_m": 0.9144000000000001
+      },
+      "bounds_m": [
+        [
+          7.176853,
+          2.9307,
+          3.707007
+        ],
+        [
+          8.798622,
+          4.1559,
+          4.24665
+        ]
+      ],
+      "volume_m3": 0.006287414,
+      "approximation": true
+    },
+    {
+      "id": "beam_0_5",
+      "name": "Retained CB21 hollow box beam 6",
+      "layer": "girders",
+      "color": "#b3b4a6",
+      "pdf_pages": [
+        9,
+        11
+      ],
+      "basis": "Historical dimensioned CB21 profile and primary retained-beam identification",
+      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified.",
+      "dimensions": {
+        "depth_m": 0.5334,
+        "width_m": 1.2191999999999998,
+        "length_m": 12.798425000000002,
+        "void_profile_yz_m": [
+          [
+            -0.4064,
+            0.1397
+          ],
+          [
+            0.4064,
+            0.1397
+          ],
+          [
+            0.4826,
+            0.21589999999999998
+          ],
+          [
+            0.4826,
+            0.381
+          ],
+          [
+            0.4064,
+            0.4572
+          ],
+          [
+            -0.4064,
+            0.4572
+          ],
+          [
+            -0.4826,
+            0.381
+          ],
+          [
+            -0.4826,
+            0.21589999999999998
+          ]
+        ],
+        "endblock_length_m": 0.8382000000000001
+      },
+      "bounds_m": [
+        [
+          -3.341623,
+          5.2959,
+          3.670373
+        ],
+        [
+          10.160707,
+          6.5151,
+          4.230778
+        ]
+      ],
+      "volume_m3": 5.043891186,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "detail": "CB21 section, beam plan, six-line transverse spacing and diaphragm topology. Primary p.9 identifies these retained beams."
+        }
+      ]
+    },
+    {
+      "id": "haunch_0_5",
+      "name": "haunch 0 5",
+      "layer": "haunches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "dimensions": {
+        "nominal_center_clearance_m": 0.025,
+        "width_m": 1.2191999999999998
+      },
+      "bounds_m": [
+        [
+          -3.341623,
+          5.2959,
+          4.203773
+        ],
+        [
+          10.160707,
+          6.5151,
+          4.265303
+        ]
+      ],
+      "volume_m3": 0.390095994,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9
+          ],
+          "detail": "Historical beam/slab camber note allows varying interface; nominal modeled 25 mm haunch is an explicit assumption."
+        }
+      ]
+    },
+    {
+      "id": "B1_bearing_6",
+      "name": "B1 bearing 6",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "dimensions": {
+        "pad_length_m": 0.23,
+        "pad_width_m": 1.05,
+        "pad_thickness_m": 0.045,
+        "load_plate_thickness_m": 0.005
+      },
+      "bounds_m": [
+        [
+          -2.953858,
+          5.3805,
+          3.646372
+        ],
+        [
+          -2.723858,
+          6.4305,
+          3.696372
+        ]
+      ],
+      "volume_m3": 0.012075,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            8,
+            9
+          ],
+          "detail": "Retained bearing type 7B, expansion at abutment 1 and fixed at abutment 2. Standard PB11 dimensional sheet is not included."
+        }
+      ]
+    },
+    {
+      "id": "beam_wrap_0_5",
+      "name": "Proposed beam-end wrap 1/6",
+      "layer": "accessories",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "dimensions": {
+        "display_thickness_m": 0.003,
+        "min_length_m": 0.9144000000000001
+      },
+      "bounds_m": [
+        [
+          -3.343355,
+          5.2929,
+          3.691138
+        ],
+        [
+          -1.721586,
+          6.5181,
+          4.230781
+        ]
+      ],
+      "volume_m3": 0.006287414,
+      "approximation": true
+    },
+    {
+      "id": "B2_bearing_6",
+      "name": "B2 bearing 6",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "dimensions": {
+        "pad_length_m": 0.23,
+        "pad_width_m": 1.05,
+        "pad_thickness_m": 0.045,
+        "load_plate_thickness_m": 0.005
+      },
+      "bounds_m": [
+        [
+          9.542942,
+          5.3805,
+          3.621379
+        ],
+        [
+          9.772942,
+          6.4305,
+          3.671379
+        ]
+      ],
+      "volume_m3": 0.012075,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            8,
+            9
+          ],
+          "detail": "Retained bearing type 7B, expansion at abutment 1 and fixed at abutment 2. Standard PB11 dimensional sheet is not included."
+        }
+      ]
+    },
+    {
+      "id": "beam_wrap_1_5",
+      "name": "Proposed beam-end wrap 2/6",
+      "layer": "accessories",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "dimensions": {
+        "display_thickness_m": 0.003,
+        "min_length_m": 0.9144000000000001
+      },
+      "bounds_m": [
+        [
+          8.54067,
+          5.2929,
+          3.66737
+        ],
+        [
+          10.162439,
+          6.5181,
+          4.207013
+        ]
+      ],
+      "volume_m3": 0.006287414,
+      "approximation": true
+    },
+    {
+      "id": "diaphragm_0_0",
+      "name": "Concrete diaphragm row 1 bay 1",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "dimensions": {
+        "width_m": 0.2032,
+        "depth_m": 0.381
+      },
+      "bounds_m": [
+        [
+          -9.158402,
+          -5.2959,
+          3.87053
+        ],
+        [
+          -8.29529,
+          -4.1529,
+          4.268476
+        ]
+      ],
+      "volume_m3": 0.088490146,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9,
+            10
+          ],
+          "detail": "Concrete end and interior diaphragms. Primary p.9 shows retained beam/deck system only."
+        }
+      ]
+    },
+    {
+      "id": "diaphragm_0_1",
+      "name": "Concrete diaphragm row 1 bay 2",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "dimensions": {
+        "width_m": 0.2032,
+        "depth_m": 0.381
+      },
+      "bounds_m": [
+        [
+          -7.794585,
+          -2.9337,
+          3.904712
+        ],
+        [
+          -6.931474,
+          -1.7907,
+          4.302658
+        ]
+      ],
+      "volume_m3": 0.088490146,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9,
+            10
+          ],
+          "detail": "Concrete end and interior diaphragms. Primary p.9 shows retained beam/deck system only."
+        }
+      ]
+    },
+    {
+      "id": "diaphragm_0_2",
+      "name": "Concrete diaphragm row 1 bay 3",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "dimensions": {
+        "width_m": 0.2032,
+        "depth_m": 0.381
+      },
+      "bounds_m": [
+        [
+          -6.430768,
+          -0.5715,
+          3.937574
+        ],
+        [
+          -5.567657,
+          0.5715,
+          4.3203
+        ]
+      ],
+      "volume_m3": 0.088490146,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9,
+            10
+          ],
+          "detail": "Concrete end and interior diaphragms. Primary p.9 shows retained beam/deck system only."
+        }
+      ]
+    },
+    {
+      "id": "diaphragm_0_3",
+      "name": "Concrete diaphragm row 1 bay 4",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "dimensions": {
+        "width_m": 0.2032,
+        "depth_m": 0.381
+      },
+      "bounds_m": [
+        [
+          -5.066951,
+          1.7907,
+          3.897937
+        ],
+        [
+          -4.20384,
+          2.9337,
+          4.298522
+        ]
+      ],
+      "volume_m3": 0.088490146,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9,
+            10
+          ],
+          "detail": "Concrete end and interior diaphragms. Primary p.9 shows retained beam/deck system only."
+        }
+      ]
+    },
+    {
+      "id": "diaphragm_0_4",
+      "name": "Concrete diaphragm row 1 bay 5",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "dimensions": {
+        "width_m": 0.2032,
+        "depth_m": 0.381
+      },
+      "bounds_m": [
+        [
+          -3.703135,
+          4.1529,
+          3.8583
+        ],
+        [
+          -2.840023,
+          5.2959,
+          4.258885
+        ]
+      ],
+      "volume_m3": 0.088490146,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9,
+            10
+          ],
+          "detail": "Concrete end and interior diaphragms. Primary p.9 shows retained beam/deck system only."
+        }
+      ]
+    },
+    {
+      "id": "diaphragm_1_0",
+      "name": "Concrete diaphragm row 2 bay 1",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "dimensions": {
+        "width_m": 0.2032,
+        "depth_m": 0.381
+      },
+      "bounds_m": [
+        [
+          -3.159189,
+          -5.2959,
+          3.858532
+        ],
+        [
+          -2.296078,
+          -4.1529,
+          4.256477
+        ]
+      ],
+      "volume_m3": 0.088490146,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9,
+            10
+          ],
+          "detail": "Concrete end and interior diaphragms. Primary p.9 shows retained beam/deck system only."
+        }
+      ]
+    },
+    {
+      "id": "diaphragm_1_1",
+      "name": "Concrete diaphragm row 2 bay 2",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "dimensions": {
+        "width_m": 0.2032,
+        "depth_m": 0.381
+      },
+      "bounds_m": [
+        [
+          -1.795372,
+          -2.9337,
+          3.892713
+        ],
+        [
+          -0.932261,
+          -1.7907,
+          4.290659
+        ]
+      ],
+      "volume_m3": 0.088490146,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9,
+            10
+          ],
+          "detail": "Concrete end and interior diaphragms. Primary p.9 shows retained beam/deck system only."
+        }
+      ]
+    },
+    {
+      "id": "diaphragm_1_2",
+      "name": "Concrete diaphragm row 2 bay 3",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "dimensions": {
+        "width_m": 0.2032,
+        "depth_m": 0.381
+      },
+      "bounds_m": [
+        [
+          -0.431556,
+          -0.5715,
+          3.925575
+        ],
+        [
+          0.431556,
+          0.5715,
+          4.308301
+        ]
+      ],
+      "volume_m3": 0.088490146,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9,
+            10
+          ],
+          "detail": "Concrete end and interior diaphragms. Primary p.9 shows retained beam/deck system only."
+        }
+      ]
+    },
+    {
+      "id": "diaphragm_1_3",
+      "name": "Concrete diaphragm row 2 bay 4",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "dimensions": {
+        "width_m": 0.2032,
+        "depth_m": 0.381
+      },
+      "bounds_m": [
+        [
+          0.932261,
+          1.7907,
+          3.885938
+        ],
+        [
+          1.795372,
+          2.9337,
+          4.286524
+        ]
+      ],
+      "volume_m3": 0.088490146,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9,
+            10
+          ],
+          "detail": "Concrete end and interior diaphragms. Primary p.9 shows retained beam/deck system only."
+        }
+      ]
+    },
+    {
+      "id": "diaphragm_1_4",
+      "name": "Concrete diaphragm row 2 bay 5",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "dimensions": {
+        "width_m": 0.2032,
+        "depth_m": 0.381
+      },
+      "bounds_m": [
+        [
+          2.296078,
+          4.1529,
+          3.846301
+        ],
+        [
+          3.159189,
+          5.2959,
+          4.246887
+        ]
+      ],
+      "volume_m3": 0.088490146,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9,
+            10
+          ],
+          "detail": "Concrete end and interior diaphragms. Primary p.9 shows retained beam/deck system only."
+        }
+      ]
+    },
+    {
+      "id": "diaphragm_2_0",
+      "name": "Concrete diaphragm row 3 bay 1",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "dimensions": {
+        "width_m": 0.2032,
+        "depth_m": 0.381
+      },
+      "bounds_m": [
+        [
+          2.840023,
+          -5.2959,
+          3.846533
+        ],
+        [
+          3.703135,
+          -4.1529,
+          4.244479
+        ]
+      ],
+      "volume_m3": 0.088490146,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9,
+            10
+          ],
+          "detail": "Concrete end and interior diaphragms. Primary p.9 shows retained beam/deck system only."
+        }
+      ]
+    },
+    {
+      "id": "diaphragm_2_1",
+      "name": "Concrete diaphragm row 3 bay 2",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "dimensions": {
+        "width_m": 0.2032,
+        "depth_m": 0.381
+      },
+      "bounds_m": [
+        [
+          4.20384,
+          -2.9337,
+          3.880715
+        ],
+        [
+          5.066951,
+          -1.7907,
+          4.278661
+        ]
+      ],
+      "volume_m3": 0.088490146,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9,
+            10
+          ],
+          "detail": "Concrete end and interior diaphragms. Primary p.9 shows retained beam/deck system only."
+        }
+      ]
+    },
+    {
+      "id": "diaphragm_2_2",
+      "name": "Concrete diaphragm row 3 bay 3",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "dimensions": {
+        "width_m": 0.2032,
+        "depth_m": 0.381
+      },
+      "bounds_m": [
+        [
+          5.567657,
+          -0.5715,
+          3.913577
+        ],
+        [
+          6.430768,
+          0.5715,
+          4.296303
+        ]
+      ],
+      "volume_m3": 0.088490146,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9,
+            10
+          ],
+          "detail": "Concrete end and interior diaphragms. Primary p.9 shows retained beam/deck system only."
+        }
+      ]
+    },
+    {
+      "id": "diaphragm_2_3",
+      "name": "Concrete diaphragm row 3 bay 4",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "dimensions": {
+        "width_m": 0.2032,
+        "depth_m": 0.381
+      },
+      "bounds_m": [
+        [
+          6.931474,
+          1.7907,
+          3.87394
+        ],
+        [
+          7.794585,
+          2.9337,
+          4.274525
+        ]
+      ],
+      "volume_m3": 0.088490146,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9,
+            10
+          ],
+          "detail": "Concrete end and interior diaphragms. Primary p.9 shows retained beam/deck system only."
+        }
+      ]
+    },
+    {
+      "id": "diaphragm_2_4",
+      "name": "Concrete diaphragm row 3 bay 5",
+      "layer": "diaphragms",
+      "color": "#c59a54",
+      "pdf_pages": [
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "dimensions": {
+        "width_m": 0.2032,
+        "depth_m": 0.381
+      },
+      "bounds_m": [
+        [
+          8.29529,
+          4.1529,
+          3.834303
+        ],
+        [
+          9.158402,
+          5.2959,
+          4.234888
+        ]
+      ],
+      "volume_m3": 0.088490146,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            8,
+            9,
+            10
+          ],
+          "detail": "Concrete end and interior diaphragms. Primary p.9 shows retained beam/deck system only."
+        }
+      ]
+    },
+    {
+      "id": "cap_1",
+      "name": "Abutment 1 retained cap",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical 2 ft 6 in cap width; top steps replaced by derived bearing risers. Lateral limits and old/new construction seams approximated.",
+      "dimensions": {
+        "normal_width_m": 0.762
+      },
+      "bounds_m": [
+        [
+          -10.881059,
+          -7.262,
+          3.096372
+        ],
+        [
+          -1.615741,
+          7.262,
+          3.646372
+        ]
+      ],
+      "volume_m3": 7.028671877,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            6,
+            7,
+            9
+          ],
+          "detail": "Widened abutment cap, retained stem and reconstructed wings; source old/new seams are not display material boundaries."
+        }
+      ]
+    },
+    {
+      "id": "pedestal_0_0",
+      "name": "Abutment 1 derived bearing riser 1",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -10.177557,
+          -6.4555,
+          3.646372
+        ],
+        [
+          -9.138327,
+          -5.3555,
+          3.66001
+        ]
+      ],
+      "volume_m3": 0.00606298,
+      "approximation": true
+    },
+    {
+      "id": "pedestal_0_1",
+      "name": "Abutment 1 derived bearing riser 2",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -8.81374,
+          -4.0933,
+          3.646372
+        ],
+        [
+          -7.77451,
+          -2.9933,
+          3.694192
+        ]
+      ],
+      "volume_m3": 0.021258805,
+      "approximation": true
+    },
+    {
+      "id": "pedestal_0_2",
+      "name": "Abutment 1 derived bearing riser 3",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -7.449924,
+          -1.7311,
+          3.646372
+        ],
+        [
+          -6.410693,
+          -0.6311,
+          3.728374
+        ]
+      ],
+      "volume_m3": 0.03645463,
+      "approximation": true
+    },
+    {
+      "id": "pedestal_0_3",
+      "name": "Abutment 1 derived bearing riser 4",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -6.086107,
+          0.6311,
+          3.646372
+        ],
+        [
+          -5.046876,
+          1.7311,
+          3.725646
+        ]
+      ],
+      "volume_m3": 0.035242034,
+      "approximation": true
+    },
+    {
+      "id": "pedestal_0_4",
+      "name": "Abutment 1 derived bearing riser 5",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -4.72229,
+          2.9933,
+          3.646372
+        ],
+        [
+          -3.68306,
+          4.0933,
+          3.686009
+        ]
+      ],
+      "volume_m3": 0.017621017,
+      "approximation": true
+    },
+    {
+      "id": "stem_1",
+      "name": "Abutment 1 retained/widened stem",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical solid-stem topology; nominal 700 mm thickness and simplified widened outline. Field dimensions and existing concrete repairs unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -10.845263,
+          -7.262,
+          0.05
+        ],
+        [
+          -1.651537,
+          7.262,
+          3.096372
+        ]
+      ],
+      "volume_m3": 35.763220739,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "detail": "Retained and widened abutments on continuous shallow footings, not piles."
+        }
+      ]
+    },
+    {
+      "id": "footing_1",
+      "name": "Abutment 1 footing envelope",
+      "layer": "foundations",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical 7 ft footing width and roughly 2 ft thickness; approximate plan extent/elevation. Hidden by default; not a foundation design.",
+      "dimensions": {
+        "normal_width_m": 2.1336
+      },
+      "bounds_m": [
+        [
+          -11.846157,
+          -7.562,
+          -0.6
+        ],
+        [
+          -0.650643,
+          7.562,
+          0.05
+        ]
+      ],
+      "volume_m3": 24.219345147,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            4,
+            5,
+            6
+          ],
+          "detail": "Shallow footing envelopes; retained and widened portions are simplified to one geometric solid."
+        }
+      ]
+    },
+    {
+      "id": "mudwall_1",
+      "name": "Abutment 1 reconstructed mudwall",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source 1 ft reconstructed mudwall. Lower retained portion, ledge and local top return simplify the source detail.",
+      "dimensions": {
+        "normal_width_m": 0.3048
+      },
+      "bounds_m": [
+        [
+          -10.970465,
+          -7.112,
+          3.646372
+        ],
+        [
+          -2.453435,
+          7.112,
+          4.493484
+        ]
+      ],
+      "volume_m3": 3.635706184,
+      "approximation": true
+    },
+    {
+      "id": "wing_0_-1",
+      "name": "Abutment 1 flared wing -1",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        10,
+        12
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source flared wing topology. Nominal 4.7 m length and 400 mm wall thickness; actual irregular old/new outlines, footings and rail returns remain unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -14.638968,
+          -9.736429,
+          0.05
+        ],
+        [
+          -10.343267,
+          -7.087571,
+          4.343003
+        ]
+      ],
+      "volume_m3": 8.041099401,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            6,
+            7
+          ],
+          "detail": "Flared widened wings. Exact historical dimensions and later partial removals require further reconciliation."
+        }
+      ]
+    },
+    {
+      "id": "wing_0_1",
+      "name": "Abutment 1 flared wing 1",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        10,
+        12
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source flared wing topology. Nominal 4.7 m length and 400 mm wall thickness; actual irregular old/new outlines, footings and rail returns remain unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -6.253533,
+          7.087571,
+          0.05
+        ],
+        [
+          -1.957832,
+          9.736429,
+          4.326232
+        ]
+      ],
+      "volume_m3": 8.009563029,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            6,
+            7
+          ],
+          "detail": "Flared widened wings. Exact historical dimensions and later partial removals require further reconciliation."
+        }
+      ]
+    },
+    {
+      "id": "cap_2",
+      "name": "Abutment 2 retained cap",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical 2 ft 6 in cap width; top steps replaced by derived bearing risers. Lateral limits and old/new construction seams approximated.",
+      "dimensions": {
+        "normal_width_m": 0.762
+      },
+      "bounds_m": [
+        [
+          1.615741,
+          -7.262,
+          3.071379
+        ],
+        [
+          10.881059,
+          7.262,
+          3.621379
+        ]
+      ],
+      "volume_m3": 7.028671877,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            6,
+            7,
+            9
+          ],
+          "detail": "Widened abutment cap, retained stem and reconstructed wings; source old/new seams are not display material boundaries."
+        }
+      ]
+    },
+    {
+      "id": "pedestal_1_0",
+      "name": "Abutment 2 derived bearing riser 1",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          2.319243,
+          -6.4555,
+          3.621379
+        ],
+        [
+          3.358473,
+          -5.3555,
+          3.635017
+        ]
+      ],
+      "volume_m3": 0.00606298,
+      "approximation": true
+    },
+    {
+      "id": "pedestal_1_1",
+      "name": "Abutment 2 derived bearing riser 2",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          3.68306,
+          -4.0933,
+          3.621379
+        ],
+        [
+          4.72229,
+          -2.9933,
+          3.669199
+        ]
+      ],
+      "volume_m3": 0.021258805,
+      "approximation": true
+    },
+    {
+      "id": "pedestal_1_2",
+      "name": "Abutment 2 derived bearing riser 3",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          5.046876,
+          -1.7311,
+          3.621379
+        ],
+        [
+          6.086107,
+          -0.6311,
+          3.70338
+        ]
+      ],
+      "volume_m3": 0.03645463,
+      "approximation": true
+    },
+    {
+      "id": "pedestal_1_3",
+      "name": "Abutment 2 derived bearing riser 4",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          6.410693,
+          0.6311,
+          3.621379
+        ],
+        [
+          7.449924,
+          1.7311,
+          3.700653
+        ]
+      ],
+      "volume_m3": 0.035242034,
+      "approximation": true
+    },
+    {
+      "id": "pedestal_1_4",
+      "name": "Abutment 2 derived bearing riser 5",
+      "layer": "bearings",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          7.77451,
+          2.9933,
+          3.621379
+        ],
+        [
+          8.81374,
+          4.0933,
+          3.661016
+        ]
+      ],
+      "volume_m3": 0.017621017,
+      "approximation": true
+    },
+    {
+      "id": "stem_2",
+      "name": "Abutment 2 retained/widened stem",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical solid-stem topology; nominal 700 mm thickness and simplified widened outline. Field dimensions and existing concrete repairs unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          1.651537,
+          -7.262,
+          0.05
+        ],
+        [
+          10.845263,
+          7.262,
+          3.071379
+        ]
+      ],
+      "volume_m3": 35.469805636,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "detail": "Retained and widened abutments on continuous shallow footings, not piles."
+        }
+      ]
+    },
+    {
+      "id": "footing_2",
+      "name": "Abutment 2 footing envelope",
+      "layer": "foundations",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Historical 7 ft footing width and roughly 2 ft thickness; approximate plan extent/elevation. Hidden by default; not a foundation design.",
+      "dimensions": {
+        "normal_width_m": 2.1336
+      },
+      "bounds_m": [
+        [
+          0.650643,
+          -7.562,
+          -0.6
+        ],
+        [
+          11.846157,
+          7.562,
+          0.05
+        ]
+      ],
+      "volume_m3": 24.219345147,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            4,
+            5,
+            6
+          ],
+          "detail": "Shallow footing envelopes; retained and widened portions are simplified to one geometric solid."
+        }
+      ]
+    },
+    {
+      "id": "mudwall_2",
+      "name": "Abutment 2 reconstructed mudwall",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source 1 ft reconstructed mudwall. Lower retained portion, ledge and local top return simplify the source detail.",
+      "dimensions": {
+        "normal_width_m": 0.3048
+      },
+      "bounds_m": [
+        [
+          2.453435,
+          -7.112,
+          3.621379
+        ],
+        [
+          10.970465,
+          7.112,
+          4.466636
+        ]
+      ],
+      "volume_m3": 3.627667346,
+      "approximation": true
+    },
+    {
+      "id": "wing_1_-1",
+      "name": "Abutment 2 flared wing -1",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        10,
+        12
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source flared wing topology. Nominal 4.7 m length and 400 mm wall thickness; actual irregular old/new outlines, footings and rail returns remain unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          1.957832,
+          -9.736429,
+          0.05
+        ],
+        [
+          6.253533,
+          -7.087571,
+          4.317618
+        ]
+      ],
+      "volume_m3": 7.97868131,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            6,
+            7
+          ],
+          "detail": "Flared widened wings. Exact historical dimensions and later partial removals require further reconciliation."
+        }
+      ]
+    },
+    {
+      "id": "wing_1_1",
+      "name": "Abutment 2 flared wing 1",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        10,
+        12
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source flared wing topology. Nominal 4.7 m length and 400 mm wall thickness; actual irregular old/new outlines, footings and rail returns remain unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          10.343267,
+          7.087571,
+          0.05
+        ],
+        [
+          14.638968,
+          9.736429,
+          4.300847
+        ]
+      ],
+      "volume_m3": 7.947144938,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            6,
+            7
+          ],
+          "detail": "Flared widened wings. Exact historical dimensions and later partial removals require further reconciliation."
+        }
+      ]
+    },
+    {
+      "id": "retained_rail_-1",
+      "name": "retained rail -1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        9,
+        12
+      ],
+      "basis": "Source nominal concrete barrier envelope; profile corners simplified",
+      "note": "",
+      "dimensions": {
+        "height_m": 0.8382,
+        "base_width_m": 0.4064
+      },
+      "bounds_m": [
+        [
+          -10.941598,
+          -7.062,
+          4.42865
+        ],
+        [
+          3.021738,
+          -6.6556,
+          5.297615
+        ]
+      ],
+      "volume_m3": 3.870599936
+    },
+    {
+      "id": "TFC_transition_-1_-1",
+      "name": "TFC transition -1 -1",
+      "layer": "rails",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        12,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved.",
+      "dimensions": {
+        "height_m": 0.8000999999999999,
+        "base_width_m": 0.4064
+      },
+      "bounds_m": [
+        [
+          -15.716899,
+          -7.062,
+          4.494207
+        ],
+        [
+          -10.706962,
+          -6.6556,
+          5.297615
+        ]
+      ],
+      "volume_m3": 1.208641845,
+      "approximation": true
+    },
+    {
+      "id": "extension_-1_-1",
+      "name": "TFC approach extension -1/-1",
+      "layer": "approaches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        12,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source three transition extensions; nominal corner width and skew end boundaries.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -15.745767,
+          -7.112,
+          4.188684
+        ],
+        [
+          -10.765159,
+          -6.7564,
+          4.50818
+        ]
+      ],
+      "volume_m3": 0.517580041,
+      "approximation": true
+    },
+    {
+      "id": "TFC_transition_1_-1",
+      "name": "TFC transition 1 -1",
+      "layer": "rails",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        12,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved.",
+      "dimensions": {
+        "height_m": 0.8000999999999999,
+        "base_width_m": 0.4064
+      },
+      "bounds_m": [
+        [
+          2.787102,
+          -7.062,
+          4.457199
+        ],
+        [
+          7.797039,
+          -6.6556,
+          5.270158
+        ]
+      ],
+      "volume_m3": 1.207264696,
+      "approximation": true
+    },
+    {
+      "id": "extension_1_-1",
+      "name": "TFC approach extension 1/-1",
+      "layer": "approaches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        12,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source three transition extensions; nominal corner width and skew end boundaries.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          2.758235,
+          -7.112,
+          4.151676
+        ],
+        [
+          7.738842,
+          -6.7564,
+          4.471172
+        ]
+      ],
+      "volume_m3": 0.517580041,
+      "approximation": true
+    },
+    {
+      "id": "retained_rail_1",
+      "name": "retained rail 1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        9,
+        12
+      ],
+      "basis": "Source nominal concrete barrier envelope; profile corners simplified",
+      "note": "",
+      "dimensions": {
+        "height_m": 0.8382,
+        "base_width_m": 0.4064
+      },
+      "bounds_m": [
+        [
+          -3.021738,
+          6.6556,
+          4.412341
+        ],
+        [
+          10.941598,
+          7.062,
+          5.281834
+        ]
+      ],
+      "volume_m3": 3.870599936
+    },
+    {
+      "id": "TFC_transition_1_1",
+      "name": "TFC transition 1 1",
+      "layer": "rails",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        12,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved.",
+      "dimensions": {
+        "height_m": 0.8000999999999999,
+        "base_width_m": 0.4064
+      },
+      "bounds_m": [
+        [
+          10.706962,
+          6.6556,
+          4.44089
+        ],
+        [
+          15.716899,
+          7.062,
+          5.254377
+        ]
+      ],
+      "volume_m3": 1.207264696,
+      "approximation": true
+    },
+    {
+      "id": "extension_1_1",
+      "name": "TFC approach extension 1/1",
+      "layer": "approaches",
+      "color": "#c59a54",
+      "pdf_pages": [
+        12,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source three transition extensions; nominal corner width and skew end boundaries.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          10.765159,
+          6.7564,
+          4.135251
+        ],
+        [
+          15.745767,
+          7.112,
+          4.455569
+        ]
+      ],
+      "volume_m3": 0.517580041,
+      "approximation": true
+    },
+    {
+      "id": "approach_-1",
+      "name": "West approach slab",
+      "layer": "approaches",
+      "color": "#bbc4c0",
+      "pdf_pages": [
+        13,
+        14,
+        15
+      ],
+      "basis": "Dimensioned minimum length, width and thickness; skew-to-square plan",
+      "note": "Narrow corner curb and transition extensions are separate approximate envelopes.",
+      "dimensions": {
+        "min_length_m": 6.2484,
+        "width_m": 13.512800000000002,
+        "thickness_m": 0.3048
+      },
+      "bounds_m": [
+        [
+          -17.038559,
+          -6.7564,
+          4.178276
+        ],
+        [
+          -2.988541,
+          6.7564,
+          4.511176
+        ]
+      ],
+      "volume_m3": 41.801563201
+    },
+    {
+      "id": "PCF_joint_-1",
+      "name": "Abutment 1 PCF joint envelope",
+      "layer": "joints",
+      "color": "#39434a",
+      "pdf_pages": [
+        11
+      ],
+      "basis": "Schematic 50 mm strip",
+      "note": "Source existing nominal opening is 2 in west and 1 5/8 in east; temperature movement, gland and actual gaps not resolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -10.995465,
+          -7.112,
+          4.397009
+        ],
+        [
+          -2.733235,
+          7.112,
+          4.596447
+        ]
+      ],
+      "volume_m3": 0.056896
+    },
+    {
+      "id": "approach_1",
+      "name": "East approach slab",
+      "layer": "approaches",
+      "color": "#bbc4c0",
+      "pdf_pages": [
+        13,
+        14,
+        15
+      ],
+      "basis": "Dimensioned minimum length, width and thickness; skew-to-square plan",
+      "note": "Narrow corner curb and transition extensions are separate approximate envelopes.",
+      "dimensions": {
+        "min_length_m": 6.2484,
+        "width_m": 13.512800000000002,
+        "thickness_m": 0.3048
+      },
+      "bounds_m": [
+        [
+          2.988541,
+          -6.7564,
+          4.138222
+        ],
+        [
+          17.038559,
+          6.7564,
+          4.471122
+        ]
+      ],
+      "volume_m3": 41.801563201
+    },
+    {
+      "id": "PCF_joint_1",
+      "name": "Abutment 2 PCF joint envelope",
+      "layer": "joints",
+      "color": "#39434a",
+      "pdf_pages": [
+        11
+      ],
+      "basis": "Schematic 50 mm strip",
+      "note": "Source existing nominal opening is 2 in west and 1 5/8 in east; temperature movement, gland and actual gaps not resolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          2.733235,
+          -7.112,
+          4.369552
+        ],
+        [
+          10.995465,
+          7.112,
+          4.568989
+        ]
+      ],
+      "volume_m3": 0.056896
+    },
+    {
+      "id": "midspan_drain_-1",
+      "name": "Retained midspan drain outlet -1",
+      "layer": "drainage",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source 2 in retained drain diameter; outlet route and slab penetration schematic. All other existing deck drains are filled and omitted.",
+      "dimensions": {
+        "diameter_m": 0.0508
+      },
+      "bounds_m": [
+        [
+          -3.879495,
+          -7.036669,
+          4.013281
+        ],
+        [
+          -3.828824,
+          -6.664531,
+          4.228859
+        ]
+      ],
+      "volume_m3": 0.000753098,
+      "approximation": true
+    },
+    {
+      "id": "midspan_drain_1",
+      "name": "Retained midspan drain outlet 1",
+      "layer": "drainage",
+      "color": "#c59a54",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "basis": "Approximate external envelope",
+      "note": "Source 2 in retained drain diameter; outlet route and slab penetration schematic. All other existing deck drains are filled and omitted.",
+      "dimensions": {
+        "diameter_m": 0.0508
+      },
+      "bounds_m": [
+        [
+          3.828824,
+          6.664531,
+          3.997864
+        ],
+        [
+          3.879495,
+          7.036669,
+          4.213443
+        ]
+      ],
+      "volume_m3": 0.000753098,
+      "approximation": true
+    }
+  ],
+  "layers": {
+    "deck": "Concrete deck",
+    "girders": "Longitudinal girders",
+    "haunches": "Deck haunches",
+    "diaphragms": "Diaphragms",
+    "bearings": "Bearings and pedestals",
+    "abutments": "End bents and wing walls",
+    "foundations": "Design foundation envelopes",
+    "rails": "Bridge rails",
+    "approaches": "Approach slabs",
+    "joints": "Deck joints",
+    "drainage": "Deck drainage",
+    "accessories": "External accessories"
+  },
+  "default_hidden_layers": [
+    "foundations",
+    "fill"
+  ],
+  "native_axes": "X increasing station, Y transverse, Z up; local metres",
+  "glb_axes": "Y up: (native X, native Z, -native Y); no world georeferencing transform",
+  "detail_coverage": [
+    {
+      "feature": "Whole retained box-beam crossing",
+      "status": "modeled_with_simplifications",
+      "detail": "One 41 ft bearing span, six hollow CB21 beams at 7 ft 9 in, 30 degree left skew; 7.5 in remaining slab and separate proposed 2 in overlay.",
+      "sources": [
+        "Primary PDF p.8",
+        "Primary PDF p.9",
+        "Primary PDF p.11"
+      ],
+      "part_ids": [
+        "deck",
+        "overlay",
+        "retained_coping_-1",
+        "retained_coping_1",
+        "beam_0_0",
+        "haunch_0_0",
+        "beam_0_1",
+        "haunch_0_1",
+        "beam_0_2",
+        "haunch_0_2",
+        "beam_0_3",
+        "haunch_0_3",
+        "beam_0_4",
+        "haunch_0_4",
+        "beam_0_5",
+        "haunch_0_5"
+      ]
+    },
+    {
+      "feature": "Historical support and framing topology",
+      "status": "approximate",
+      "detail": "Twelve retained Type 7B bearing envelopes, end/interior concrete diaphragms, both solid abutments, shallow footings and four flared wings. Historical source is explicitly supplemental.",
+      "sources": [
+        "Primary PDF p.8",
+        "Primary PDF p.9",
+        "Primary PDF p.11"
+      ],
+      "part_ids": [
+        "B1_bearing_1",
+        "B2_bearing_1",
+        "B1_bearing_2",
+        "B2_bearing_2",
+        "B1_bearing_3",
+        "B2_bearing_3",
+        "B1_bearing_4",
+        "B2_bearing_4",
+        "B1_bearing_5",
+        "B2_bearing_5",
+        "B1_bearing_6",
+        "B2_bearing_6",
+        "diaphragm_0_0",
+        "diaphragm_0_1",
+        "diaphragm_0_2",
+        "diaphragm_0_3",
+        "diaphragm_0_4",
+        "diaphragm_1_0",
+        "diaphragm_1_1",
+        "diaphragm_1_2",
+        "diaphragm_1_3",
+        "diaphragm_1_4",
+        "diaphragm_2_0",
+        "diaphragm_2_1",
+        "diaphragm_2_2",
+        "diaphragm_2_3",
+        "diaphragm_2_4",
+        "cap_1",
+        "pedestal_0_0",
+        "pedestal_0_1",
+        "pedestal_0_2",
+        "pedestal_0_3",
+        "pedestal_0_4",
+        "stem_1",
+        "footing_1",
+        "mudwall_1",
+        "wing_0_-1",
+        "wing_0_1",
+        "cap_2",
+        "pedestal_1_0",
+        "pedestal_1_1",
+        "pedestal_1_2",
+        "pedestal_1_3",
+        "pedestal_1_4",
+        "stem_2",
+        "footing_2",
+        "mudwall_2",
+        "wing_1_-1",
+        "wing_1_1"
+      ]
+    },
+    {
+      "feature": "2026 exterior repair design",
+      "status": "modeled_with_simplifications",
+      "detail": "All twelve beam ends receive nominal wrap skins; reconstructed mudwalls, PCF strips, two approaches, three TFC transition envelopes, and retained midspan drain outlets.",
+      "sources": [
+        "Primary PDF p.8",
+        "Primary PDF p.9",
+        "Primary PDF p.11",
+        "Primary PDF p.12",
+        "Primary PDF p.13",
+        "Primary PDF p.14",
+        "Primary PDF p.15"
+      ],
+      "part_ids": [
+        "beam_wrap_0_0",
+        "beam_wrap_1_0",
+        "beam_wrap_0_1",
+        "beam_wrap_1_1",
+        "beam_wrap_0_2",
+        "beam_wrap_1_2",
+        "beam_wrap_0_3",
+        "beam_wrap_1_3",
+        "beam_wrap_0_4",
+        "beam_wrap_1_4",
+        "beam_wrap_0_5",
+        "beam_wrap_1_5",
+        "retained_rail_-1",
+        "TFC_transition_-1_-1",
+        "extension_-1_-1",
+        "TFC_transition_1_-1",
+        "extension_1_-1",
+        "retained_rail_1",
+        "TFC_transition_1_1",
+        "extension_1_1",
+        "approach_-1",
+        "PCF_joint_-1",
+        "approach_1",
+        "PCF_joint_1",
+        "midspan_drain_-1",
+        "midspan_drain_1"
+      ]
+    },
+    {
+      "feature": "Unresolved details",
+      "status": "not_modeled",
+      "detail": "Actual deterioration and patch boundaries, wrap properties, bearing standard PB11 dimensions, slab/beam camber, wing outlines, guardrail terminals, full drainage and site geometry.",
+      "sources": [
+        "Primary PDF p.8",
+        "Primary PDF p.9",
+        "Primary PDF p.11",
+        "Primary PDF p.12"
+      ],
+      "part_ids": []
+    }
+  ]
+}

@@ -1,0 +1,1680 @@
+{
+  "title": "SR 44 over Branch of Little Blue River | proposed 2026 slab replacement",
+  "structure_id": "044-73-10858",
+  "designation": "2200652",
+  "spans_m": [
+    9.144
+  ],
+  "deck_thickness_m": 0.508,
+  "source_note": "INDOT B-44483 proposed 2026 replacement, document 9683606. The separate 68-page old-plan bundle 9552139 is preserved for provenance but supplies no replacement dimensions. Revision 9710491 changes traffic-control pay quantities, not structural geometry.",
+  "status_note": "Whole proposed replacement crossing present. Amber: local notches, wing batter, approach transitions, terrain and actual pile behavior remain incomplete. Not an as-built or completed-construction claim.",
+  "assumptions": [
+    "Whole-crossing exterior reconstruction of the stated proposed design, not an as-built survey or confirmation of construction completion.",
+    "Amber / needs_detail: fabrication tolerances, exact field seats, local notches and transitions, small fittings, and terrain remain incomplete.",
+    "Internal reinforcement, shear studs, embedded anchors and welds are omitted. No rendered component is a finite element or a solid-stress result.",
+    "Any later FEM must freeze its own material, stiffness, connectivity and support assumptions. Visual mesh volume is not a section-property source.",
+    "Foundations are hidden by default; foundation envelopes are design references and do not establish actual field embedment.",
+    "The source title calls the deck simple-span while the bents are explicitly integral; an FE boundary model must state its rotational idealization and may not silently invent discrete bearings.",
+    "Vertical curve uses the source 170 ft curve, +0.730%/-0.622% slopes and nominal PVI station 507+10; absolute height is shifted to a 3 m local datum.",
+    "Foundation cylinders show exterior envelopes only. Pipe wall thickness and estimated tip elevations are source values, not verified as-driven geometry."
+  ],
+  "external_sources": [
+    {
+      "id": "9683606",
+      "title": "FT PlansXsect 2200652 For Contract Services",
+      "local_file": "sources/contract_plans_9683606.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683606",
+      "sha256": "3a672d548a02175fd8d6a1a1d96d169987db015871901d797a6ad55bf64740fc",
+      "original_pages": 29,
+      "reviewed_pages": [
+        1,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "role": "primary_geometry"
+    },
+    {
+      "id": "9552139",
+      "title": "FT ExistingPlans 2200652 For Contract Services",
+      "local_file": "sources/existing_plans_9552139.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9552139",
+      "sha256": "c89ddbb0272940eaf5671b1b9e7d2207df42b5a906dc0a2f82111f71171899da",
+      "original_pages": 68,
+      "reviewed_pages": [],
+      "role": "historical_evidence"
+    },
+    {
+      "id": "9710491",
+      "title": "B -44483-A REV 1",
+      "local_file": "sources/revision_notice_9710491.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9710491",
+      "sha256": "2a90b024226196e16d7dd3514a1a7173656dc26a1bd417f90838242db0951db1",
+      "original_pages": 8,
+      "reviewed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "role": "revision_evidence"
+    }
+  ],
+  "source_binder": {
+    "primary": "drawings.pdf",
+    "binder": "drawings.pdf",
+    "is_compilation": false,
+    "pages": 29,
+    "sha256": "3a672d548a02175fd8d6a1a1d96d169987db015871901d797a6ad55bf64740fc",
+    "primary_source_id": "9683606",
+    "page_numbering": "Unchanged one-based original primary PDF pages. Secondary sources have independent original PDF page numbers.",
+    "source_documents": [
+      {
+        "id": "9683606",
+        "title": "FT PlansXsect 2200652 For Contract Services",
+        "local_file": "sources/contract_plans_9683606.pdf",
+        "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683606",
+        "sha256": "3a672d548a02175fd8d6a1a1d96d169987db015871901d797a6ad55bf64740fc",
+        "original_pages": 29,
+        "reviewed_pages": [
+          1,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "role": "primary_geometry"
+      },
+      {
+        "id": "9552139",
+        "title": "FT ExistingPlans 2200652 For Contract Services",
+        "local_file": "sources/existing_plans_9552139.pdf",
+        "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9552139",
+        "sha256": "c89ddbb0272940eaf5671b1b9e7d2207df42b5a906dc0a2f82111f71171899da",
+        "original_pages": 68,
+        "reviewed_pages": [],
+        "role": "historical_evidence"
+      },
+      {
+        "id": "9710491",
+        "title": "B -44483-A REV 1",
+        "local_file": "sources/revision_notice_9710491.pdf",
+        "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9710491",
+        "sha256": "2a90b024226196e16d7dd3514a1a7173656dc26a1bd417f90838242db0951db1",
+        "original_pages": 8,
+        "reviewed_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "role": "revision_evidence"
+      }
+    ]
+  },
+  "detail_status": "needs_detail",
+  "status_color": "amber",
+  "model_scope": "whole_crossing_exterior",
+  "units": "metres",
+  "deck_length_m": 9.718675000000001,
+  "deck_width_m": 13.1064,
+  "skew_deg": 45,
+  "source_pdf": "drawings.pdf",
+  "source_sha256": "3a672d548a02175fd8d6a1a1d96d169987db015871901d797a6ad55bf64740fc",
+  "parts": [
+    {
+      "id": "deck",
+      "name": "Proposed 2026 reinforced concrete slab | 30 ft span",
+      "layer": "deck",
+      "color": "#c9cec6",
+      "pdf_pages": [
+        12,
+        13,
+        14
+      ],
+      "basis": "Dimensioned 43 ft wide, 20 in slab envelope",
+      "note": "19.5 in structural depth plus 0.5 in integral wearing surface. Local north coping end notch and 5.25 in edge-length difference simplified; old 1941 bridge is excluded.",
+      "dimensions": {
+        "thickness_m": 0.508,
+        "structural_thickness_m": 0.49529999999999996
+      },
+      "bounds_m": [
+        [
+          -11.412538,
+          -6.5532,
+          2.291111
+        ],
+        [
+          11.412538,
+          6.5532,
+          3.019415
+        ]
+      ],
+      "volume_m3": 64.685386562,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "id": "integral_bent_1",
+      "name": "Bent 1 | integral concrete wall",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        14,
+        15,
+        17
+      ],
+      "basis": "Source 2 ft 10 in normal bent width and bottom elevation; top derived to contact slab",
+      "note": "Integral slab-to-bent connection. No discrete bearings exist. Upper pavement ledge and local fillet are simplified.",
+      "dimensions": {
+        "normal_thickness_m": 0.8636,
+        "bottom_m": 0.6621839999999679
+      },
+      "bounds_m": [
+        [
+          -11.735857,
+          -6.5532,
+          0.662184
+        ],
+        [
+          2.591857,
+          6.5532,
+          2.397298
+        ]
+      ],
+      "volume_m3": 27.39110892,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            14,
+            15,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile_1_1",
+      "name": "Bent 1 | hidden 14 in pipe pile envelope 1",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        12,
+        13,
+        15
+      ],
+      "basis": "Source count, diameter, spacing and estimated tip elevation",
+      "note": "Exterior closed envelope only: not a solid steel section. Nominal pipe wall is 0.25 in; actual driven lengths and soil springs are unknown.",
+      "dimensions": {
+        "diameter_m": 0.35559999999999997,
+        "wall_thickness_m": 0.00635,
+        "estimated_tip_m": -8.17701599999998
+      },
+      "bounds_m": [
+        [
+          1.284932,
+          -6.212532,
+          -8.177016
+        ],
+        [
+          1.640532,
+          -5.856932,
+          1.271784
+        ]
+      ],
+      "volume_m3": 0.923044277,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile_1_2",
+      "name": "Bent 1 | hidden 14 in pipe pile envelope 2",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        12,
+        13,
+        15
+      ],
+      "basis": "Source count, diameter, spacing and estimated tip elevation",
+      "note": "Exterior closed envelope only: not a solid steel section. Nominal pipe wall is 0.25 in; actual driven lengths and soil springs are unknown.",
+      "dimensions": {
+        "diameter_m": 0.35559999999999997,
+        "wall_thickness_m": 0.00635,
+        "estimated_tip_m": -8.17701599999998
+      },
+      "bounds_m": [
+        [
+          -0.439277,
+          -4.488323,
+          -8.177016
+        ],
+        [
+          -0.083677,
+          -4.132723,
+          1.271784
+        ]
+      ],
+      "volume_m3": 0.923044277,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile_1_3",
+      "name": "Bent 1 | hidden 14 in pipe pile envelope 3",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        12,
+        13,
+        15
+      ],
+      "basis": "Source count, diameter, spacing and estimated tip elevation",
+      "note": "Exterior closed envelope only: not a solid steel section. Nominal pipe wall is 0.25 in; actual driven lengths and soil springs are unknown.",
+      "dimensions": {
+        "diameter_m": 0.35559999999999997,
+        "wall_thickness_m": 0.00635,
+        "estimated_tip_m": -8.17701599999998
+      },
+      "bounds_m": [
+        [
+          -2.163486,
+          -2.764114,
+          -8.177016
+        ],
+        [
+          -1.807886,
+          -2.408514,
+          1.271784
+        ]
+      ],
+      "volume_m3": 0.923044277,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile_1_4",
+      "name": "Bent 1 | hidden 14 in pipe pile envelope 4",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        12,
+        13,
+        15
+      ],
+      "basis": "Source count, diameter, spacing and estimated tip elevation",
+      "note": "Exterior closed envelope only: not a solid steel section. Nominal pipe wall is 0.25 in; actual driven lengths and soil springs are unknown.",
+      "dimensions": {
+        "diameter_m": 0.35559999999999997,
+        "wall_thickness_m": 0.00635,
+        "estimated_tip_m": -8.17701599999998
+      },
+      "bounds_m": [
+        [
+          -3.887695,
+          -1.039905,
+          -8.177016
+        ],
+        [
+          -3.532095,
+          -0.684305,
+          1.271784
+        ]
+      ],
+      "volume_m3": 0.923044277,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile_1_5",
+      "name": "Bent 1 | hidden 14 in pipe pile envelope 5",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        12,
+        13,
+        15
+      ],
+      "basis": "Source count, diameter, spacing and estimated tip elevation",
+      "note": "Exterior closed envelope only: not a solid steel section. Nominal pipe wall is 0.25 in; actual driven lengths and soil springs are unknown.",
+      "dimensions": {
+        "diameter_m": 0.35559999999999997,
+        "wall_thickness_m": 0.00635,
+        "estimated_tip_m": -8.17701599999998
+      },
+      "bounds_m": [
+        [
+          -5.611905,
+          0.684305,
+          -8.177016
+        ],
+        [
+          -5.256305,
+          1.039905,
+          1.271784
+        ]
+      ],
+      "volume_m3": 0.923044277,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile_1_6",
+      "name": "Bent 1 | hidden 14 in pipe pile envelope 6",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        12,
+        13,
+        15
+      ],
+      "basis": "Source count, diameter, spacing and estimated tip elevation",
+      "note": "Exterior closed envelope only: not a solid steel section. Nominal pipe wall is 0.25 in; actual driven lengths and soil springs are unknown.",
+      "dimensions": {
+        "diameter_m": 0.35559999999999997,
+        "wall_thickness_m": 0.00635,
+        "estimated_tip_m": -8.17701599999998
+      },
+      "bounds_m": [
+        [
+          -7.336114,
+          2.408514,
+          -8.177016
+        ],
+        [
+          -6.980514,
+          2.764114,
+          1.271784
+        ]
+      ],
+      "volume_m3": 0.923044277,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile_1_7",
+      "name": "Bent 1 | hidden 14 in pipe pile envelope 7",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        12,
+        13,
+        15
+      ],
+      "basis": "Source count, diameter, spacing and estimated tip elevation",
+      "note": "Exterior closed envelope only: not a solid steel section. Nominal pipe wall is 0.25 in; actual driven lengths and soil springs are unknown.",
+      "dimensions": {
+        "diameter_m": 0.35559999999999997,
+        "wall_thickness_m": 0.00635,
+        "estimated_tip_m": -8.17701599999998
+      },
+      "bounds_m": [
+        [
+          -9.060323,
+          4.132723,
+          -8.177016
+        ],
+        [
+          -8.704723,
+          4.488323,
+          1.271784
+        ]
+      ],
+      "volume_m3": 0.923044277,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile_1_8",
+      "name": "Bent 1 | hidden 14 in pipe pile envelope 8",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        12,
+        13,
+        15
+      ],
+      "basis": "Source count, diameter, spacing and estimated tip elevation",
+      "note": "Exterior closed envelope only: not a solid steel section. Nominal pipe wall is 0.25 in; actual driven lengths and soil springs are unknown.",
+      "dimensions": {
+        "diameter_m": 0.35559999999999997,
+        "wall_thickness_m": 0.00635,
+        "estimated_tip_m": -8.17701599999998
+      },
+      "bounds_m": [
+        [
+          -10.784532,
+          5.856932,
+          -8.177016
+        ],
+        [
+          -10.428932,
+          6.212532,
+          1.271784
+        ]
+      ],
+      "volume_m3": 0.923044277,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wing_1_-1",
+      "name": "Bent 1 | 12 ft wingwall -1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        12,
+        15
+      ],
+      "basis": "Source wing length and nominal 1 ft wall; simplified constant top",
+      "note": "Wing A-D top elevations, 1:4 rear batter and local joints are approximate.",
+      "dimensions": {
+        "length_m": 3.6576000000000004,
+        "top_thickness_m": 0.3048
+      },
+      "bounds_m": [
+        [
+          -1.6764,
+          -6.858,
+          0.662184
+        ],
+        [
+          1.9812,
+          -6.5532,
+          2.859252
+        ]
+      ],
+      "volume_m3": 2.449371698,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wing_1_1",
+      "name": "Bent 1 | 12 ft wingwall 1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        12,
+        15
+      ],
+      "basis": "Source wing length and nominal 1 ft wall; simplified constant top",
+      "note": "Wing A-D top elevations, 1:4 rear batter and local joints are approximate.",
+      "dimensions": {
+        "length_m": 3.6576000000000004,
+        "top_thickness_m": 0.3048
+      },
+      "bounds_m": [
+        [
+          -14.7828,
+          6.5532,
+          0.662184
+        ],
+        [
+          -11.1252,
+          6.858,
+          2.904292
+        ]
+      ],
+      "volume_m3": 2.499583663,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "integral_bent_2",
+      "name": "Bent 2 | integral concrete wall",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        14,
+        16,
+        17
+      ],
+      "basis": "Source 2 ft 10 in normal bent width and bottom elevation; top derived to contact slab",
+      "note": "Integral slab-to-bent connection. No discrete bearings exist. Upper pavement ledge and local fillet are simplified.",
+      "dimensions": {
+        "normal_thickness_m": 0.8636,
+        "bottom_m": 0.6195119999999861
+      },
+      "bounds_m": [
+        [
+          -2.591857,
+          -6.5532,
+          0.619512
+        ],
+        [
+          11.735857,
+          6.5532,
+          2.372058
+        ]
+      ],
+      "volume_m3": 27.39656186,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            14,
+            16,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile_2_1",
+      "name": "Bent 2 | hidden 14 in pipe pile envelope 1",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        12,
+        13,
+        16
+      ],
+      "basis": "Source count, diameter, spacing and estimated tip elevation",
+      "note": "Exterior closed envelope only: not a solid steel section. Nominal pipe wall is 0.25 in; actual driven lengths and soil springs are unknown.",
+      "dimensions": {
+        "diameter_m": 0.35559999999999997,
+        "wall_thickness_m": 0.00635,
+        "estimated_tip_m": -8.829287999999991
+      },
+      "bounds_m": [
+        [
+          10.428932,
+          -6.212532,
+          -8.829288
+        ],
+        [
+          10.784532,
+          -5.856932,
+          1.229112
+        ]
+      ],
+      "volume_m3": 0.98259552,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile_2_2",
+      "name": "Bent 2 | hidden 14 in pipe pile envelope 2",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        12,
+        13,
+        16
+      ],
+      "basis": "Source count, diameter, spacing and estimated tip elevation",
+      "note": "Exterior closed envelope only: not a solid steel section. Nominal pipe wall is 0.25 in; actual driven lengths and soil springs are unknown.",
+      "dimensions": {
+        "diameter_m": 0.35559999999999997,
+        "wall_thickness_m": 0.00635,
+        "estimated_tip_m": -8.829287999999991
+      },
+      "bounds_m": [
+        [
+          8.704723,
+          -4.488323,
+          -8.829288
+        ],
+        [
+          9.060323,
+          -4.132723,
+          1.229112
+        ]
+      ],
+      "volume_m3": 0.98259552,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile_2_3",
+      "name": "Bent 2 | hidden 14 in pipe pile envelope 3",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        12,
+        13,
+        16
+      ],
+      "basis": "Source count, diameter, spacing and estimated tip elevation",
+      "note": "Exterior closed envelope only: not a solid steel section. Nominal pipe wall is 0.25 in; actual driven lengths and soil springs are unknown.",
+      "dimensions": {
+        "diameter_m": 0.35559999999999997,
+        "wall_thickness_m": 0.00635,
+        "estimated_tip_m": -8.829287999999991
+      },
+      "bounds_m": [
+        [
+          6.980514,
+          -2.764114,
+          -8.829288
+        ],
+        [
+          7.336114,
+          -2.408514,
+          1.229112
+        ]
+      ],
+      "volume_m3": 0.98259552,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile_2_4",
+      "name": "Bent 2 | hidden 14 in pipe pile envelope 4",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        12,
+        13,
+        16
+      ],
+      "basis": "Source count, diameter, spacing and estimated tip elevation",
+      "note": "Exterior closed envelope only: not a solid steel section. Nominal pipe wall is 0.25 in; actual driven lengths and soil springs are unknown.",
+      "dimensions": {
+        "diameter_m": 0.35559999999999997,
+        "wall_thickness_m": 0.00635,
+        "estimated_tip_m": -8.829287999999991
+      },
+      "bounds_m": [
+        [
+          5.256305,
+          -1.039905,
+          -8.829288
+        ],
+        [
+          5.611905,
+          -0.684305,
+          1.229112
+        ]
+      ],
+      "volume_m3": 0.98259552,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile_2_5",
+      "name": "Bent 2 | hidden 14 in pipe pile envelope 5",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        12,
+        13,
+        16
+      ],
+      "basis": "Source count, diameter, spacing and estimated tip elevation",
+      "note": "Exterior closed envelope only: not a solid steel section. Nominal pipe wall is 0.25 in; actual driven lengths and soil springs are unknown.",
+      "dimensions": {
+        "diameter_m": 0.35559999999999997,
+        "wall_thickness_m": 0.00635,
+        "estimated_tip_m": -8.829287999999991
+      },
+      "bounds_m": [
+        [
+          3.532095,
+          0.684305,
+          -8.829288
+        ],
+        [
+          3.887695,
+          1.039905,
+          1.229112
+        ]
+      ],
+      "volume_m3": 0.98259552,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile_2_6",
+      "name": "Bent 2 | hidden 14 in pipe pile envelope 6",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        12,
+        13,
+        16
+      ],
+      "basis": "Source count, diameter, spacing and estimated tip elevation",
+      "note": "Exterior closed envelope only: not a solid steel section. Nominal pipe wall is 0.25 in; actual driven lengths and soil springs are unknown.",
+      "dimensions": {
+        "diameter_m": 0.35559999999999997,
+        "wall_thickness_m": 0.00635,
+        "estimated_tip_m": -8.829287999999991
+      },
+      "bounds_m": [
+        [
+          1.807886,
+          2.408514,
+          -8.829288
+        ],
+        [
+          2.163486,
+          2.764114,
+          1.229112
+        ]
+      ],
+      "volume_m3": 0.98259552,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile_2_7",
+      "name": "Bent 2 | hidden 14 in pipe pile envelope 7",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        12,
+        13,
+        16
+      ],
+      "basis": "Source count, diameter, spacing and estimated tip elevation",
+      "note": "Exterior closed envelope only: not a solid steel section. Nominal pipe wall is 0.25 in; actual driven lengths and soil springs are unknown.",
+      "dimensions": {
+        "diameter_m": 0.35559999999999997,
+        "wall_thickness_m": 0.00635,
+        "estimated_tip_m": -8.829287999999991
+      },
+      "bounds_m": [
+        [
+          0.083677,
+          4.132723,
+          -8.829288
+        ],
+        [
+          0.439277,
+          4.488323,
+          1.229112
+        ]
+      ],
+      "volume_m3": 0.98259552,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pile_2_8",
+      "name": "Bent 2 | hidden 14 in pipe pile envelope 8",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        12,
+        13,
+        16
+      ],
+      "basis": "Source count, diameter, spacing and estimated tip elevation",
+      "note": "Exterior closed envelope only: not a solid steel section. Nominal pipe wall is 0.25 in; actual driven lengths and soil springs are unknown.",
+      "dimensions": {
+        "diameter_m": 0.35559999999999997,
+        "wall_thickness_m": 0.00635,
+        "estimated_tip_m": -8.829287999999991
+      },
+      "bounds_m": [
+        [
+          -1.640532,
+          5.856932,
+          -8.829288
+        ],
+        [
+          -1.284932,
+          6.212532,
+          1.229112
+        ]
+      ],
+      "volume_m3": 0.98259552,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            13,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wing_2_-1",
+      "name": "Bent 2 | 12 ft wingwall -1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        12,
+        16
+      ],
+      "basis": "Source wing length and nominal 1 ft wall; simplified constant top",
+      "note": "Wing A-D top elevations, 1:4 rear batter and local joints are approximate.",
+      "dimensions": {
+        "length_m": 3.6576000000000004,
+        "top_thickness_m": 0.3048
+      },
+      "bounds_m": [
+        [
+          11.1252,
+          -6.858,
+          0.619512
+        ],
+        [
+          14.7828,
+          -6.5532,
+          2.801286
+        ]
+      ],
+      "volume_m3": 2.432320825,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wing_2_1",
+      "name": "Bent 2 | 12 ft wingwall 1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        12,
+        16
+      ],
+      "basis": "Source wing length and nominal 1 ft wall; simplified constant top",
+      "note": "Wing A-D top elevations, 1:4 rear batter and local joints are approximate.",
+      "dimensions": {
+        "length_m": 3.6576000000000004,
+        "top_thickness_m": 0.3048
+      },
+      "bounds_m": [
+        [
+          -1.9812,
+          6.5532,
+          0.619512
+        ],
+        [
+          1.6764,
+          6.858,
+          2.877596
+        ]
+      ],
+      "volume_m3": 2.517394093,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FC_rail_-1",
+      "name": "South Type FC concrete rail",
+      "layer": "rails",
+      "color": "#d4ccbb",
+      "pdf_pages": [
+        18
+      ],
+      "basis": "Source 2 ft 9 in FC rail section and asymmetric lengths",
+      "note": "Corners and fillets simplified.",
+      "dimensions": {
+        "height_m": 0.8382,
+        "length_m": 9.718675000000001,
+        "base_width_m": 0.4064
+      },
+      "bounds_m": [
+        [
+          1.236662,
+          -6.5024,
+          2.800513
+        ],
+        [
+          11.361738,
+          -6.096,
+          3.70655
+        ]
+      ],
+      "volume_m3": 2.87796813,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TFC_-1_-1",
+      "name": "Type TFC transition | side -1 end -1",
+      "layer": "rails",
+      "color": "#d4ccbb",
+      "pdf_pages": [
+        18
+      ],
+      "basis": "Source 15 ft 8 in transition extent; nominal sloped solid envelope",
+      "note": "Precise TFC mold, tapered curb, guardrail end plate and bolts unresolved.",
+      "dimensions": {
+        "length_m": 4.7752
+      },
+      "bounds_m": [
+        [
+          -3.538538,
+          -6.5024,
+          2.861993
+        ],
+        [
+          1.643062,
+          -6.096,
+          3.710355
+        ]
+      ],
+      "volume_m3": 1.092962345,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TFC_-1_1",
+      "name": "Type TFC transition | side -1 end 1",
+      "layer": "rails",
+      "color": "#d4ccbb",
+      "pdf_pages": [
+        18
+      ],
+      "basis": "Source 15 ft 8 in transition extent; nominal sloped solid envelope",
+      "note": "Precise TFC mold, tapered curb, guardrail end plate and bolts unresolved.",
+      "dimensions": {
+        "length_m": 4.7752
+      },
+      "bounds_m": [
+        [
+          10.955338,
+          -6.5024,
+          2.761275
+        ],
+        [
+          16.136938,
+          -6.096,
+          3.649905
+        ]
+      ],
+      "volume_m3": 1.092962345,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FC_rail_1",
+      "name": "North Type FC concrete rail",
+      "layer": "rails",
+      "color": "#d4ccbb",
+      "pdf_pages": [
+        18
+      ],
+      "basis": "Source 2 ft 9 in FC rail section and asymmetric lengths",
+      "note": "Corners and fillets simplified.",
+      "dimensions": {
+        "height_m": 0.8382,
+        "length_m": 4.7593250000000005,
+        "base_width_m": 0.4064
+      },
+      "bounds_m": [
+        [
+          -8.882062,
+          6.096,
+          2.88682
+        ],
+        [
+          -3.716338,
+          6.5024,
+          3.743463
+        ]
+      ],
+      "volume_m3": 1.409380667,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TFC_1_-1",
+      "name": "Type TFC transition | side 1 end -1",
+      "layer": "rails",
+      "color": "#d4ccbb",
+      "pdf_pages": [
+        18
+      ],
+      "basis": "Source 15 ft 8 in transition extent; nominal sloped solid envelope",
+      "note": "Precise TFC mold, tapered curb, guardrail end plate and bolts unresolved.",
+      "dimensions": {
+        "length_m": 4.7752
+      },
+      "bounds_m": [
+        [
+          -13.657262,
+          6.096,
+          2.900778
+        ],
+        [
+          -8.475662,
+          6.5024,
+          3.746145
+        ]
+      ],
+      "volume_m3": 1.092975993,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TFC_1_1",
+      "name": "Type TFC transition | side 1 end 1",
+      "layer": "rails",
+      "color": "#d4ccbb",
+      "pdf_pages": [
+        18
+      ],
+      "basis": "Source 15 ft 8 in transition extent; nominal sloped solid envelope",
+      "note": "Precise TFC mold, tapered curb, guardrail end plate and bolts unresolved.",
+      "dimensions": {
+        "length_m": 4.7752
+      },
+      "bounds_m": [
+        [
+          -4.122737,
+          6.096,
+          2.866876
+        ],
+        [
+          1.058862,
+          6.5024,
+          3.731683
+        ]
+      ],
+      "volume_m3": 1.092975993,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "approach_1",
+      "name": "Bent 1 | proposed 12 in approach slab",
+      "layer": "approaches",
+      "color": "#bbc4c0",
+      "pdf_pages": [
+        12,
+        17,
+        18
+      ],
+      "basis": "Source 20 ft 6 in minimum length; square terminal reconstruction",
+      "note": "Exact TFC slab extensions and terminal asphalt joints unresolved.",
+      "dimensions": {
+        "minimum_length_m": 6.2484,
+        "thickness_m": 0.30479999999999996
+      },
+      "bounds_m": [
+        [
+          -17.660938,
+          -6.5532,
+          2.55592
+        ],
+        [
+          1.693862,
+          6.5532,
+          3.041068
+        ]
+      ],
+      "volume_m3": 51.14922651,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            17,
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "joint_1",
+      "name": "Bent 1 | Type IA slab interface",
+      "layer": "joints",
+      "color": "#39434a",
+      "pdf_pages": [
+        12,
+        17
+      ],
+      "basis": "Schematic Type IA joint strip; no structural bearing implied",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.424538,
+          -6.5532,
+          2.800659
+        ],
+        [
+          1.705862,
+          6.5532,
+          3.019456
+        ]
+      ],
+      "volume_m3": 0.018871065,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "id": "approach_2",
+      "name": "Bent 2 | proposed 12 in approach slab",
+      "layer": "approaches",
+      "color": "#bbc4c0",
+      "pdf_pages": [
+        12,
+        17,
+        18
+      ],
+      "basis": "Source 20 ft 6 in minimum length; square terminal reconstruction",
+      "note": "Exact TFC slab extensions and terminal asphalt joints unresolved.",
+      "dimensions": {
+        "minimum_length_m": 6.2484,
+        "thickness_m": 0.30479999999999996
+      },
+      "bounds_m": [
+        [
+          -1.693862,
+          -6.5532,
+          2.441684
+        ],
+        [
+          17.660938,
+          6.5532,
+          2.974424
+        ]
+      ],
+      "volume_m3": 51.131223381,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            17,
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "joint_2",
+      "name": "Bent 2 | Type IA slab interface",
+      "layer": "joints",
+      "color": "#39434a",
+      "pdf_pages": [
+        12,
+        17
+      ],
+      "basis": "Schematic Type IA joint strip; no structural bearing implied",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -1.705862,
+          -6.5532,
+          2.739019
+        ],
+        [
+          11.424538,
+          6.5532,
+          2.974494
+        ]
+      ],
+      "volume_m3": 0.018871065,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guardrail_-1_-1",
+      "name": "Guardrail connection envelope | side -1 end -1",
+      "layer": "accessories",
+      "color": "#59676f",
+      "pdf_pages": [
+        12,
+        18
+      ],
+      "basis": "Source guardrail connection presence; representative exterior run",
+      "note": "North-east TGB alignment and curved terminal are not fully reconstructed. Flat strip stands in for W profile.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -4.061138,
+          -6.5032,
+          2.631698
+        ],
+        [
+          -1.951138,
+          -6.2032,
+          3.589388
+        ]
+      ],
+      "volume_m3": 0.077800266,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guardrail_-1_1",
+      "name": "Guardrail connection envelope | side -1 end 1",
+      "layer": "accessories",
+      "color": "#59676f",
+      "pdf_pages": [
+        12,
+        18
+      ],
+      "basis": "Source guardrail connection presence; representative exterior run",
+      "note": "North-east TGB alignment and curved terminal are not fully reconstructed. Flat strip stands in for W profile.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          14.657538,
+          -6.5032,
+          2.509128
+        ],
+        [
+          16.767538,
+          -6.2032,
+          3.476586
+        ]
+      ],
+      "volume_m3": 0.077801372,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guardrail_1_-1",
+      "name": "Guardrail connection envelope | side 1 end -1",
+      "layer": "accessories",
+      "color": "#59676f",
+      "pdf_pages": [
+        12,
+        18
+      ],
+      "basis": "Source guardrail connection presence; representative exterior run",
+      "note": "North-east TGB alignment and curved terminal are not fully reconstructed. Flat strip stands in for W profile.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -16.767538,
+          6.2032,
+          2.662807
+        ],
+        [
+          -14.657538,
+          6.5032,
+          3.613866
+        ]
+      ],
+      "volume_m3": 0.077800005,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guardrail_1_1",
+      "name": "Guardrail connection envelope | side 1 end 1",
+      "layer": "accessories",
+      "color": "#59676f",
+      "pdf_pages": [
+        12,
+        18
+      ],
+      "basis": "Source guardrail connection presence; representative exterior run",
+      "note": "North-east TGB alignment and curved terminal are not fully reconstructed. Flat strip stands in for W profile.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          1.951138,
+          6.2032,
+          2.602296
+        ],
+        [
+          4.061138,
+          6.5032,
+          3.563124
+        ]
+      ],
+      "volume_m3": 0.077800528,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            12,
+            18
+          ]
+        }
+      ]
+    }
+  ],
+  "layers": {
+    "deck": "Concrete deck",
+    "abutments": "End bents and wing walls",
+    "foundations": "Design foundation envelopes",
+    "rails": "Bridge rails",
+    "approaches": "Approach slabs",
+    "joints": "Deck joints",
+    "accessories": "External accessories"
+  },
+  "default_hidden_layers": [
+    "foundations",
+    "fill"
+  ],
+  "native_axes": "X increasing station, Y transverse, Z up; local metres",
+  "glb_axes": "Y up: (native X, native Z, -native Y); no world georeferencing transform",
+  "detail_coverage": [
+    {
+      "feature": "Whole single-span slab replacement",
+      "status": "modeled_with_simplifications",
+      "detail": "Proposed 30 ft span, 43 ft wide slab, both integral bents, four wings and both approach slabs. The removed 1941 structure is not retained.",
+      "sources": [
+        "Primary PDF p.12",
+        "Primary PDF p.13",
+        "Primary PDF p.14",
+        "Primary PDF p.15",
+        "Primary PDF p.16",
+        "Primary PDF p.17"
+      ],
+      "part_ids": [
+        "deck",
+        "integral_bent_1",
+        "wing_1_-1",
+        "wing_1_1",
+        "integral_bent_2",
+        "wing_2_-1",
+        "wing_2_1",
+        "approach_1",
+        "approach_2"
+      ]
+    },
+    {
+      "feature": "Rails and visible accessories",
+      "status": "modeled_with_simplifications",
+      "detail": "Asymmetric FC rail lengths, four TFC transition envelopes, joint strips and representative guardrail attachment runs.",
+      "sources": [
+        "Primary PDF p.12",
+        "Primary PDF p.18"
+      ],
+      "part_ids": [
+        "FC_rail_-1",
+        "TFC_-1_-1",
+        "TFC_-1_1",
+        "FC_rail_1",
+        "TFC_1_-1",
+        "TFC_1_1",
+        "joint_1",
+        "joint_2",
+        "guardrail_-1_-1",
+        "guardrail_-1_1",
+        "guardrail_1_-1",
+        "guardrail_1_1"
+      ]
+    },
+    {
+      "feature": "Design foundations",
+      "status": "modeled_with_simplifications",
+      "detail": "Two rows of eight 14 in pipe pile exterior envelopes; 8 ft spacing is measured along the 45 degree support line. Hidden by default.",
+      "sources": [
+        "Primary PDF p.12",
+        "Primary PDF p.13",
+        "Primary PDF p.15",
+        "Primary PDF p.16"
+      ],
+      "part_ids": [
+        "pile_1_1",
+        "pile_1_2",
+        "pile_1_3",
+        "pile_1_4",
+        "pile_1_5",
+        "pile_1_6",
+        "pile_1_7",
+        "pile_1_8",
+        "pile_2_1",
+        "pile_2_2",
+        "pile_2_3",
+        "pile_2_4",
+        "pile_2_5",
+        "pile_2_6",
+        "pile_2_7",
+        "pile_2_8"
+      ]
+    },
+    {
+      "feature": "Unresolved geometry",
+      "status": "not_modeled",
+      "detail": "Rebar and internal pile material, actual driven lengths, soil and rock, riprap, local slab notch, wing batter, pavement ledge details, exact FC/TFC fillets and roadway terminals.",
+      "sources": [
+        "Primary PDF p.12",
+        "Primary PDF p.14",
+        "Primary PDF p.15",
+        "Primary PDF p.16",
+        "Primary PDF p.17",
+        "Primary PDF p.18"
+      ],
+      "part_ids": []
+    }
+  ]
+}

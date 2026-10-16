@@ -1,0 +1,72 @@
+{
+  "glb_meshes": 383,
+  "reloaded_meshes_closed": true,
+  "deck_dimensions_match_source": true,
+  "seven_girder_sections_match_catalog": true,
+  "served_glb_matches_export": true,
+  "primary_pdf_pages": 34,
+  "model_state": "2018 rehabilitation design; needs detail",
+  "browser_checks": [
+    "383 registered objects loaded",
+    "Beam 4 field splice linked to PDF page 19",
+    "Bearings filter shows 28 pads",
+    "SR 44 map search returns one whole-bridge entry"
+  ],
+  "tested_date": "2026-10-15",
+  "existing_database_rows_preserved": true,
+  "backend_tests_passed": 9,
+  "source_scope": "2018 design reconstruction; amber; see docs/sr44-mud.md",
+  "workspace_browser_regression": {
+    "tested_utc": "2026-10-15T22:02:16.890Z",
+    "models": [
+      {
+        "id": "beechwood",
+        "components": 622,
+        "meshes": 622,
+        "normals": true
+      },
+      {
+        "id": "21st-street-i465",
+        "components": 1944,
+        "meshes": 1944,
+        "normals": true
+      },
+      {
+        "id": "us421-wildcat",
+        "components": 1057,
+        "meshes": 1057,
+        "normals": true
+      },
+      {
+        "id": "us52-mud",
+        "components": 164,
+        "meshes": 164,
+        "normals": true
+      },
+      {
+        "id": "sr44-mud",
+        "components": 383,
+        "meshes": 383,
+        "normals": true
+      }
+    ],
+    "checks": [
+      "Catalog / County / detail-status / empty-search filters",
+      "Fresh visits always open the complete bridge, ignoring previously stored selections",
+      "The five existing partial SR records stay map-only; the whole SR 44 bridge has a 3D workspace",
+      "All five workspace GLBs match database components and have lit geometry",
+      "Parent isolation includes all 12 girders even with one search result",
+      "Component search, real PDF p.38, page navigation and bounds",
+      "Clipping and deck transparency",
+      "3D raycast picking selects the database component",
+      "Rapid bridge switching cancels stale loads",
+      "Map-only popup stays open and inside the mobile map after automatic panning",
+      "390px portrait and 844px landscape panel navigation without horizontal overflow",
+      "Collection summary / database export entry point",
+      "Road-service failure leaves local map and models usable"
+    ],
+    "page_errors": [],
+    "passed": true
+  },
+  "rendering_note": "Camera near clipping distance now adapts to view distance; deck surface depth flicker resolved while component selection and mobile views pass."
+}

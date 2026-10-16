@@ -1,0 +1,168 @@
+{
+  "modeled_state": "Proposed 2026 replacement only",
+  "spans_m": [
+    9.144
+  ],
+  "deck_length_m": 9.718675000000001,
+  "deck_width_m": 13.1064,
+  "deck_thickness_m": 0.508,
+  "structural_deck_thickness_m": 0.49529999999999996,
+  "skew_deg": 45,
+  "support_u_m": [
+    -4.572,
+    4.572
+  ],
+  "girder_y_m": [],
+  "girder_sections": [],
+  "beam_part_ids": [],
+  "deck_part_ids": [
+    "deck"
+  ],
+  "source_pages": {
+    "general": 12,
+    "slab": [
+      13,
+      14
+    ],
+    "bents": [
+      15,
+      16,
+      17
+    ],
+    "rails": 18
+  },
+  "fem_topology": {
+    "type": "single_span_reinforced_concrete_slab",
+    "coordinate_rule": "x = u - tan(45 deg)*y; z up in native geometry",
+    "deck": {
+      "part_id": "deck",
+      "width_m": 13.1064,
+      "length_m": 9.718675000000001,
+      "structural_thickness_m": 0.49529999999999996,
+      "total_thickness_m": 0.508
+    },
+    "support_lines": [
+      {
+        "id": "B1",
+        "u_m": -4.572,
+        "kind": "integral_bent",
+        "part_id": "integral_bent_1",
+        "pile_y_m": [
+          -6.034732113358471,
+          -4.310522938113194,
+          -2.5863137628679165,
+          -0.8621045876226389,
+          0.8621045876226389,
+          2.5863137628679165,
+          4.310522938113194,
+          6.034732113358471
+        ]
+      },
+      {
+        "id": "B2",
+        "u_m": 4.572,
+        "kind": "integral_bent",
+        "part_id": "integral_bent_2",
+        "pile_y_m": [
+          -6.034732113358471,
+          -4.310522938113194,
+          -2.5863137628679165,
+          -0.8621045876226389,
+          0.8621045876226389,
+          2.5863137628679165,
+          4.310522938113194,
+          6.034732113358471
+        ]
+      }
+    ],
+    "continuity": "Monolithic slab-to-bent connection in drawings; single-span title. Any simple-support deck-only demonstration is an explicit analytical approximation.",
+    "sources": [
+      {
+        "source_id": "9683606",
+        "pdf_pages": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      }
+    ],
+    "analysis_assumptions_required": [
+      "Concrete modulus, Poisson ratio and cracking/effective stiffness",
+      "Rotational restraint of integral bents",
+      "Pile and soil stiffness if included",
+      "No beam lines or discrete bearings in the source slab topology",
+      "Exclude approach slabs/rails from default deck pressure area"
+    ]
+  },
+  "schema_version": 1,
+  "bridge_id": "sr44-little-blue",
+  "units": "metres",
+  "detail_status": "needs_detail",
+  "status_color": "amber",
+  "primary_source_id": "9683606",
+  "source_documents": [
+    {
+      "id": "9683606",
+      "title": "FT PlansXsect 2200652 For Contract Services",
+      "local_file": "sources/contract_plans_9683606.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683606",
+      "sha256": "3a672d548a02175fd8d6a1a1d96d169987db015871901d797a6ad55bf64740fc",
+      "original_pages": 29,
+      "reviewed_pages": [
+        1,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "role": "primary_geometry"
+    },
+    {
+      "id": "9552139",
+      "title": "FT ExistingPlans 2200652 For Contract Services",
+      "local_file": "sources/existing_plans_9552139.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9552139",
+      "sha256": "c89ddbb0272940eaf5671b1b9e7d2207df42b5a906dc0a2f82111f71171899da",
+      "original_pages": 68,
+      "reviewed_pages": [],
+      "role": "historical_evidence"
+    },
+    {
+      "id": "9710491",
+      "title": "B -44483-A REV 1",
+      "local_file": "sources/revision_notice_9710491.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9710491",
+      "sha256": "2a90b024226196e16d7dd3514a1a7173656dc26a1bd417f90838242db0951db1",
+      "original_pages": 8,
+      "reviewed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "role": "revision_evidence"
+    }
+  ],
+  "assumptions": [
+    "Whole-crossing exterior reconstruction of the stated proposed design, not an as-built survey or confirmation of construction completion.",
+    "Amber / needs_detail: fabrication tolerances, exact field seats, local notches and transitions, small fittings, and terrain remain incomplete.",
+    "Internal reinforcement, shear studs, embedded anchors and welds are omitted. No rendered component is a finite element or a solid-stress result.",
+    "Any later FEM must freeze its own material, stiffness, connectivity and support assumptions. Visual mesh volume is not a section-property source.",
+    "Foundations are hidden by default; foundation envelopes are design references and do not establish actual field embedment.",
+    "The source title calls the deck simple-span while the bents are explicitly integral; an FE boundary model must state its rotational idealization and may not silently invent discrete bearings.",
+    "Vertical curve uses the source 170 ft curve, +0.730%/-0.622% slopes and nominal PVI station 507+10; absolute height is shifted to a 3 m local datum.",
+    "Foundation cylinders show exterior envelopes only. Pipe wall thickness and estimated tip elevations are source values, not verified as-driven geometry."
+  ],
+  "source_page_policy": "Unchanged one-based original primary PDF pages. Secondary sources have independent original PDF page numbers.",
+  "fem_generated": false
+}

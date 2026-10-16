@@ -1,0 +1,339 @@
+{
+  "modeled_state": "Proposed 2026 full replacement, not the older NBI bridge and not asserted constructed",
+  "spans_m": [
+    35.052
+  ],
+  "deck_length_m": 35.7886,
+  "deck_width_m": 11.684000000000001,
+  "deck_thickness_m": 0.2032,
+  "structural_deck_thickness_m": 0.1905,
+  "wearing_surface_m": 0.0127,
+  "girder_y_m": [
+    -4.6482,
+    -1.5493999999999999,
+    1.5494000000000003,
+    4.6482
+  ],
+  "girder_lines": 4,
+  "spacing_m": 3.0987999999999998,
+  "support_u_m": [
+    -17.526,
+    17.526
+  ],
+  "skew_deg": 15,
+  "skew_direction": "right",
+  "grade": 0.0235,
+  "crossfall": 0.02,
+  "supports": [
+    {
+      "id": "support_1",
+      "u_m": -17.526,
+      "x_by_girder_m": [
+        -16.280518563741655,
+        -17.110839521247218,
+        -17.94116047875278,
+        -18.771481436258345
+      ],
+      "girder_y_m": [
+        -4.6482,
+        -1.5493999999999999,
+        1.5494000000000003,
+        4.6482
+      ],
+      "type": "integral_end_bent_with_embedded_steel_assemblies",
+      "source_topology": true,
+      "analysis_caution": "Geometric support station is source-backed; analytical restraints, rotational fixity and material stiffness require explicit assumed inputs."
+    },
+    {
+      "id": "support_2",
+      "u_m": 17.526,
+      "x_by_girder_m": [
+        18.771481436258345,
+        17.94116047875278,
+        17.110839521247218,
+        16.280518563741655
+      ],
+      "girder_y_m": [
+        -4.6482,
+        -1.5493999999999999,
+        1.5494000000000003,
+        4.6482
+      ],
+      "type": "integral_end_bent_with_embedded_steel_assemblies",
+      "source_topology": true,
+      "analysis_caution": "Geometric support station is source-backed; analytical restraints, rotational fixity and material stiffness require explicit assumed inputs."
+    }
+  ],
+  "girder_section": {
+    "type": "BT48x49",
+    "depth_m": 1.2191999999999998,
+    "top_width_m": 1.2446,
+    "bottom_width_m": 1.016,
+    "web_thickness_m": 0.2032,
+    "outer_profile_yz_m": [
+      [
+        -0.508,
+        0.0
+      ],
+      [
+        0.508,
+        0.0
+      ],
+      [
+        0.508,
+        0.1397
+      ],
+      [
+        0.15239999999999998,
+        0.3175
+      ],
+      [
+        0.1016,
+        0.36829999999999996
+      ],
+      [
+        0.1016,
+        0.9398
+      ],
+      [
+        0.17779999999999999,
+        1.016
+      ],
+      [
+        0.6223,
+        1.0922
+      ],
+      [
+        0.6223,
+        1.2191999999999998
+      ],
+      [
+        -0.6223,
+        1.2191999999999998
+      ],
+      [
+        -0.6223,
+        1.0922
+      ],
+      [
+        -0.17779999999999999,
+        1.016
+      ],
+      [
+        -0.1016,
+        0.9398
+      ],
+      [
+        -0.1016,
+        0.36829999999999996
+      ],
+      [
+        -0.15239999999999998,
+        0.3175
+      ],
+      [
+        -0.508,
+        0.1397
+      ]
+    ],
+    "inner_void_profiles_yz_m": [],
+    "profile_basis": "Dimensioned p.20 polygon, bottom chamfers omitted; nominal straight beam without camber",
+    "beam_length_m": 35.5092,
+    "beam_end_u_m": [
+      -17.7546,
+      17.7546
+    ],
+    "nominal_haunch_m": 0.075,
+    "nominal_net_area_m2": 0.6287084199999998,
+    "profile_centroid_yz_m": [
+      1.8394573390918985e-18,
+      0.6099866256199762
+    ]
+  },
+  "source_evidence": [
+    {
+      "pages": [
+        11,
+        12
+      ],
+      "facts": "115 ft span, 117 ft 5 in deck length, 38 ft 4 in coping width, +2.35 percent grade, 15 degree right skew, 8 in deck."
+    },
+    {
+      "pages": [
+        18,
+        19,
+        20,
+        22
+      ],
+      "facts": "Four beams at 10 ft 2 in, BT48x49 dimensioned shape, 116 ft 6 in beam length; one intermediate diaphragm row."
+    },
+    {
+      "pages": [
+        13,
+        14,
+        15,
+        17
+      ],
+      "facts": "Integral bents with source steel bearing assemblies, six HP12x53 piles per bent, 43 ft skew cap and 12 ft wings."
+    },
+    {
+      "pages": [
+        23,
+        25
+      ],
+      "facts": "FC rail section and 102 ft 4 3/8 in main rail length; 12 in approaches, 20 ft 6 in minimum and 35 ft 11 in width."
+    }
+  ],
+  "unresolved": [
+    "MC18x42.7 on typical section versus MC12x42.7 on framing. Modeled approximate 18 in channel envelope.",
+    "No surveyed screed/camber/seat fit. Nominal 75 mm center haunch and derived seat risers.",
+    "Actual integral rotational restraint requires a dedicated soil/pile/end-bent model or explicit analytical idealization."
+  ],
+  "analytical_member_mapping": [
+    {
+      "member_id": "beam_0_0",
+      "line_index": 0,
+      "span_index": 0,
+      "y_m": -4.6482,
+      "support_indices": [
+        0,
+        1
+      ],
+      "section": "BT48x49"
+    },
+    {
+      "member_id": "beam_0_1",
+      "line_index": 1,
+      "span_index": 0,
+      "y_m": -1.5493999999999999,
+      "support_indices": [
+        0,
+        1
+      ],
+      "section": "BT48x49"
+    },
+    {
+      "member_id": "beam_0_2",
+      "line_index": 2,
+      "span_index": 0,
+      "y_m": 1.5494000000000003,
+      "support_indices": [
+        0,
+        1
+      ],
+      "section": "BT48x49"
+    },
+    {
+      "member_id": "beam_0_3",
+      "line_index": 3,
+      "span_index": 0,
+      "y_m": 4.6482,
+      "support_indices": [
+        0,
+        1
+      ],
+      "section": "BT48x49"
+    }
+  ],
+  "units": "metres",
+  "axes": "X increasing station, Y drawing south, Z up; not geographically rotated",
+  "source_documents": [
+    {
+      "id": "9721578",
+      "title": "FT PlansXsect 1900048 For Contract Services",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9721578",
+      "local_file": "sources/contract_plans_9721578.pdf",
+      "sha256": "fb940a09d31d217f2e13fdcb64bdddfd83cddb816408b1f11ddc4738927d7b23",
+      "original_pages": 36,
+      "role": "primary_issued_pdf",
+      "primary_pdf_start_page": 1
+    }
+  ],
+  "primary_pdf_pages": 36,
+  "detail_status": "needs_detail",
+  "geometry_only": true,
+  "analytical_use": "This ledger describes display geometry and source evidence. A solver must freeze its own materials, section assumptions, connectivity, boundary conditions and pressure cases.",
+  "member_ids": [
+    "beam_0_0",
+    "beam_0_1",
+    "beam_0_2",
+    "beam_0_3"
+  ],
+  "approximate_part_ids": [
+    "haunch_0_0",
+    "B1_bearing_1",
+    "B2_bearing_1",
+    "haunch_0_1",
+    "B1_bearing_2",
+    "B2_bearing_2",
+    "haunch_0_2",
+    "B1_bearing_3",
+    "B2_bearing_3",
+    "haunch_0_3",
+    "B1_bearing_4",
+    "B2_bearing_4",
+    "diaphragm_0_0",
+    "diaphragm_0_1",
+    "diaphragm_0_2",
+    "pedestal_0_0",
+    "pedestal_0_1",
+    "pedestal_0_2",
+    "integral_infill_0_0",
+    "integral_infill_0_2",
+    "integral_infill_0_4",
+    "integral_infill_0_6",
+    "integral_infill_0_8",
+    "backwall_0",
+    "pile_stub_0_0",
+    "pile_stub_0_1",
+    "pile_stub_0_2",
+    "pile_stub_0_3",
+    "pile_stub_0_4",
+    "pile_stub_0_5",
+    "wing_0_-1",
+    "wing_0_1",
+    "end_bent_drain_0",
+    "pedestal_1_0",
+    "pedestal_1_1",
+    "pedestal_1_2",
+    "integral_infill_1_0",
+    "integral_infill_1_2",
+    "integral_infill_1_4",
+    "integral_infill_1_6",
+    "integral_infill_1_8",
+    "backwall_1",
+    "pile_stub_1_0",
+    "pile_stub_1_1",
+    "pile_stub_1_2",
+    "pile_stub_1_3",
+    "pile_stub_1_4",
+    "pile_stub_1_5",
+    "wing_1_-1",
+    "wing_1_1",
+    "end_bent_drain_1",
+    "TFC_transition_-1_-1",
+    "TFC_transition_1_-1",
+    "TFC_transition_-1_1",
+    "TFC_transition_1_1",
+    "extension_-1_-1",
+    "extension_-1_1",
+    "extension_1_-1",
+    "extension_1_1"
+  ],
+  "omissions": [
+    {
+      "feature": "Unresolved details",
+      "status": "not_modeled",
+      "detail": "Actual girder camber, end copes, diaphragm designation conflict and exact stagger, buried pile tips, transition hardware, construction joints and site terrain.",
+      "sources": [
+        "Primary PDF p.17",
+        "Primary PDF p.18",
+        "Primary PDF p.19",
+        "Primary PDF p.20",
+        "Primary PDF p.24",
+        "Primary PDF p.25"
+      ],
+      "part_ids": []
+    }
+  ]
+}

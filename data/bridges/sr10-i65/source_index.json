@@ -1,0 +1,65 @@
+{
+  "binder": "drawings.pdf",
+  "sha256": "19f804e4efc37cb14f0515fdffe4e359e3229046ae88eda3b8227144ac7993e9",
+  "pages": 74,
+  "source_documents": [
+    {
+      "title": "Historical sets: original, 1998 rehabilitation and 2019 overlay design",
+      "local_file": "sources/existing_plans_9492246.pdf",
+      "sha256": "83aeca718edcfbeb8b55a5ef0eb2e69f88df30de13409ac032f448abcb40392a",
+      "original_pages": 48,
+      "binder_start_page": 1,
+      "binder_end_page": 48,
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9492246",
+      "render_checks": [
+        {
+          "original_page": 1,
+          "mean_absolute_pixel_difference": 0.0
+        },
+        {
+          "original_page": 48,
+          "mean_absolute_pixel_difference": 0.0
+        }
+      ]
+    },
+    {
+      "title": "2026 bridge approach replacement",
+      "local_file": "sources/contract_plans_9683528.pdf",
+      "sha256": "c6c82e026c7d2c084611d80d36d73d9091ad892df93718f360a16013b9b131e7",
+      "original_pages": 14,
+      "binder_start_page": 49,
+      "binder_end_page": 62,
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683528",
+      "render_checks": [
+        {
+          "original_page": 1,
+          "mean_absolute_pixel_difference": 0.0
+        },
+        {
+          "original_page": 14,
+          "mean_absolute_pixel_difference": 0.0
+        }
+      ]
+    },
+    {
+      "title": "2026 pay-item/specification revision 1",
+      "local_file": "sources/revision_notice_9713634.pdf",
+      "sha256": "d93745c5224d8bc278e51429d2e64fc223a43726ba5e105809e3e3db3e9da744",
+      "original_pages": 12,
+      "binder_start_page": 63,
+      "binder_end_page": 74,
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9713634",
+      "render_checks": [
+        {
+          "original_page": 1,
+          "mean_absolute_pixel_difference": 0.0
+        },
+        {
+          "original_page": 12,
+          "mean_absolute_pixel_difference": 0.0
+        }
+      ]
+    }
+  ],
+  "note": "Local review compilation, not a new INDOT issuance. Original files retained byte-for-byte. Component references use binder page numbers; selected model state determines which old/proposed details apply."
+}

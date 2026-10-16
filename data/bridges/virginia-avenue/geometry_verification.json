@@ -1,0 +1,153 @@
+{
+  "component_count": 146,
+  "all_meshes_watertight": true,
+  "all_volumes_positive": true,
+  "exported_glb_reopened": true,
+  "mesh_names_match_manifest": true,
+  "maximum_bearing_contact_error_m": 0.0,
+  "glb_sha256": "0e4c8037de3b53a2ab88e790adc71081e5f9f07dae386acecf424fe328cf32e3",
+  "source_pdf_sha256": "cdc29f5f26a75790e1c73f0aa7fe5ecad26631623f235ba738d04b50592ea50e",
+  "checks": {
+    "spans_m": [
+      34.7472
+    ],
+    "support_lines": 2,
+    "girder_lines": 9,
+    "girder_segments": 9,
+    "bearings": 18,
+    "cross_frames": 40,
+    "girder_y_m": [
+      -9.2964,
+      -7.239000000000001,
+      -4.825999999999898,
+      -2.413000000000102,
+      0.0,
+      2.413000000000102,
+      4.825999999999898,
+      7.239000000000001,
+      9.2964
+    ],
+    "support_u_m": [
+      -17.3736,
+      17.3736
+    ],
+    "primary_pages_valid": true,
+    "minimum_deck_girder_clearance_m": 0.04491999999999763
+  },
+  "contacts": [
+    {
+      "id": "B1_bearing_1",
+      "girder_bottom_m": 6.718839561181218,
+      "bearing_top_m": 6.718839561181218,
+      "seat_m": 6.258839561181217
+    },
+    {
+      "id": "B2_bearing_1",
+      "girder_bottom_m": 6.554247561181221,
+      "bearing_top_m": 6.554247561181221,
+      "seat_m": 6.234247561181221
+    },
+    {
+      "id": "B1_bearing_2",
+      "girder_bottom_m": 6.536865363214883,
+      "bearing_top_m": 6.536865363214883,
+      "seat_m": 6.076865363214882
+    },
+    {
+      "id": "B2_bearing_2",
+      "girder_bottom_m": 6.372273363214886,
+      "bearing_top_m": 6.372273363214886,
+      "seat_m": 6.052273363214886
+    },
+    {
+      "id": "B1_bearing_3",
+      "girder_bottom_m": 6.502179575476587,
+      "bearing_top_m": 6.502179575476587,
+      "seat_m": 6.042179575476586
+    },
+    {
+      "id": "B2_bearing_3",
+      "girder_bottom_m": 6.337587575476588,
+      "bearing_top_m": 6.337587575476588,
+      "seat_m": 6.017587575476589
+    },
+    {
+      "id": "B1_bearing_4",
+      "girder_bottom_m": 6.551694787738292,
+      "bearing_top_m": 6.551694787738292,
+      "seat_m": 6.091694787738291
+    },
+    {
+      "id": "B2_bearing_4",
+      "girder_bottom_m": 6.387102787738293,
+      "bearing_top_m": 6.387102787738293,
+      "seat_m": 6.0671027877382935
+    },
+    {
+      "id": "B1_bearing_5",
+      "girder_bottom_m": 6.611115999999997,
+      "bearing_top_m": 6.611115999999997,
+      "seat_m": 6.1511159999999965
+    },
+    {
+      "id": "B2_bearing_5",
+      "girder_bottom_m": 6.446523999999998,
+      "bearing_top_m": 6.446523999999998,
+      "seat_m": 6.126523999999999
+    },
+    {
+      "id": "B1_bearing_6",
+      "girder_bottom_m": 6.634977212261703,
+      "bearing_top_m": 6.634977212261703,
+      "seat_m": 6.174977212261702
+    },
+    {
+      "id": "B2_bearing_6",
+      "girder_bottom_m": 6.470385212261702,
+      "bearing_top_m": 6.470385212261702,
+      "seat_m": 6.150385212261702
+    },
+    {
+      "id": "B1_bearing_7",
+      "girder_bottom_m": 6.597878424523412,
+      "bearing_top_m": 6.597878424523412,
+      "seat_m": 6.137878424523411
+    },
+    {
+      "id": "B2_bearing_7",
+      "girder_bottom_m": 6.433286424523411,
+      "bearing_top_m": 6.433286424523411,
+      "seat_m": 6.1132864245234115
+    },
+    {
+      "id": "B1_bearing_8",
+      "girder_bottom_m": 6.560779636785114,
+      "bearing_top_m": 6.560779636785114,
+      "seat_m": 6.100779636785113
+    },
+    {
+      "id": "B2_bearing_8",
+      "girder_bottom_m": 6.3961876367851165,
+      "bearing_top_m": 6.3961876367851165,
+      "seat_m": 6.076187636785117
+    },
+    {
+      "id": "B1_bearing_9",
+      "girder_bottom_m": 6.5878220388187785,
+      "bearing_top_m": 6.5878220388187785,
+      "seat_m": 6.127822038818778
+    },
+    {
+      "id": "B2_bearing_9",
+      "girder_bottom_m": 6.4232300388187795,
+      "bearing_top_m": 6.4232300388187795,
+      "seat_m": 6.10323003881878
+    }
+  ],
+  "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation.",
+  "primary_pdf_is_byte_identical": true,
+  "all_original_hashes_verified": true,
+  "primary_pdf_pages": 49,
+  "source_documents": 5,
+  "preview": "preview.png"
+}

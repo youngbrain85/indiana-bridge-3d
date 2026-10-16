@@ -1,0 +1,122 @@
+{
+  "binder": "drawings.pdf",
+  "sha256": "4f27ac7a21dcdf32694cd21c9a49a99b9c15809fc5ba7f2f29530d49db50461f",
+  "pages": 122,
+  "source_documents": [
+    {
+      "title": "2026 contract part 1 (Virginia sheets excluded from this model)",
+      "local_file": "sources/contract_plans_9683635.pdf",
+      "sha256": "a67f6822bf9691eb2f3084bb7e4aabe54ce16d9a6cac92294e0ab2ac2bc42195",
+      "original_pages": 32,
+      "binder_start_page": 1,
+      "binder_end_page": 32,
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683635",
+      "render_checks": [
+        {
+          "original_page": 1,
+          "mean_absolute_pixel_difference": 6.072816643804298e-05
+        },
+        {
+          "original_page": 32,
+          "mean_absolute_pixel_difference": 0.0
+        }
+      ]
+    },
+    {
+      "title": "2026 contract part 2: Fletcher Avenue",
+      "local_file": "sources/contract_plans_9683636.pdf",
+      "sha256": "ce63eb86fb8aecb35b672036544ea9e0c1720a04eedf139a6def242eed2c873f",
+      "original_pages": 41,
+      "binder_start_page": 33,
+      "binder_end_page": 73,
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683636",
+      "render_checks": [
+        {
+          "original_page": 1,
+          "mean_absolute_pixel_difference": 0.0
+        },
+        {
+          "original_page": 41,
+          "mean_absolute_pixel_difference": 0.04646061957018747
+        }
+      ]
+    },
+    {
+      "title": "Historical Fletcher Avenue bundle",
+      "local_file": "sources/existing_plans_9548534.pdf",
+      "sha256": "be49851035b83f5e03a42a026a9f21828ae0bc9b77739cdfbe3d083102e5ecac",
+      "original_pages": 38,
+      "binder_start_page": 74,
+      "binder_end_page": 111,
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9548534",
+      "render_checks": [
+        {
+          "original_page": 1,
+          "mean_absolute_pixel_difference": 0.0
+        },
+        {
+          "original_page": 38,
+          "mean_absolute_pixel_difference": 0.0
+        }
+      ]
+    },
+    {
+      "title": "2026 specifications revision 1",
+      "local_file": "sources/revision_notice_9715471.pdf",
+      "sha256": "f37ffb30d36f2a51c373c77ff608b90f3b50f7d91df85e979237a4cb215884e7",
+      "original_pages": 5,
+      "binder_start_page": 112,
+      "binder_end_page": 116,
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9715471",
+      "render_checks": [
+        {
+          "original_page": 1,
+          "mean_absolute_pixel_difference": 0.14730089566690874
+        },
+        {
+          "original_page": 5,
+          "mean_absolute_pixel_difference": 0.18313857529543803
+        }
+      ]
+    },
+    {
+      "title": "2026 specifications revision 2",
+      "local_file": "sources/revision_notice_9715512.pdf",
+      "sha256": "f8f094b9df191a93728f8c166b05b77c9a69147f7992ee4b82dc7d3208e01e92",
+      "original_pages": 2,
+      "binder_start_page": 117,
+      "binder_end_page": 118,
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9715512",
+      "render_checks": [
+        {
+          "original_page": 1,
+          "mean_absolute_pixel_difference": 0.0
+        },
+        {
+          "original_page": 2,
+          "mean_absolute_pixel_difference": 0.25012653770823706
+        }
+      ]
+    },
+    {
+      "title": "TX railing standard, 2012 revision",
+      "local_file": "sources/E706-BRTX.pdf",
+      "sha256": "dc91a747567786729e007565f6507eea5a0474a8575ff6651d690ff04772be17",
+      "original_pages": 4,
+      "binder_start_page": 119,
+      "binder_end_page": 122,
+      "url": "https://secure.in.gov/dot/div/contracts/standards/drawings/sep21/700e/e700%20combined%20pdfs/E706-BRTX.pdf",
+      "render_checks": [
+        {
+          "original_page": 1,
+          "mean_absolute_pixel_difference": 0.0
+        },
+        {
+          "original_page": 4,
+          "mean_absolute_pixel_difference": 0.0
+        }
+      ]
+    }
+  ],
+  "note": "Local review compilation, not a new INDOT issuance. Original files retained byte-for-byte. Component references use binder page numbers; selected model state determines which old/proposed details apply."
+}

@@ -1,0 +1,1103 @@
+{
+  "schema_version": 1,
+  "engine": "collection_demo",
+  "bridge_id": "fletcher-avenue",
+  "title": "Fletcher Avenue over I-65 / I-70 | proposed 2026 deck replacement",
+  "modeled_state": "INDOT B-44576 proposed 2026 Fletcher deck/rail/bearing work over retained 1971-73 steel and substructure. Old I-65-112-5723 alias is matched by crossing, 2 x 147 ft spans, eight lines and identical skew. Construction completion is not established. Drawing download is a local review binder; original source files and page offsets are recorded in source_index.json.",
+  "demonstration": true,
+  "display_scope": "Explicit assumed deck, beam, bearing and selected substructure model; omitted physical components carry no claimed FE stress.",
+  "coordinate_system": "Native metres: X longitudinal, Y transverse, Z up. x=u+skew_dx_dy*y. Flat analytical elevations are explicit.",
+  "source_pdf": "data/bridges/fletcher-avenue/drawings.pdf",
+  "drawing_sha256": "4f27ac7a21dcdf32694cd21c9a49a99b9c15809fc5ba7f2f29530d49db50461f",
+  "source_hashes": {
+    "drawing": "4f27ac7a21dcdf32694cd21c9a49a99b9c15809fc5ba7f2f29530d49db50461f",
+    "manifest": "7ca144acfa90ebde682fcb71dc895be907478a5981797659fb04b627efc2ed28",
+    "model": "bf61f9b21bc080e8ba2b0910db2769921c0fddd42802cb76cd683ebf8c7d8f2d"
+  },
+  "sources": {
+    "drawing": {
+      "title": "INDOT B-44576 proposed 2026 Fletcher deck/rail/bearing work over retained 1971-73 steel and substructure. Old I-65-112-5723 alias is matched by crossing, 2 x 147 ft spans, eight lines and identical skew. Construction completion is not established. Drawing download is a local review binder; original source files and page offsets are recorded in source_index.json.",
+      "url": "/assets/fletcher-avenue/drawing"
+    },
+    "demonstration": {
+      "title": "Explicit assumed inputs",
+      "url": "/analysis-guide#collection-demo"
+    }
+  },
+  "evidence": [
+    {
+      "fields": [
+        "deck",
+        "spans_m",
+        "beams",
+        "supports"
+      ],
+      "status": "source-based geometry with explicit idealizations",
+      "source": "drawing",
+      "pdf_pages": [
+        55,
+        57,
+        58,
+        59,
+        60,
+        94,
+        96,
+        98,
+        99,
+        100,
+        101,
+        103,
+        104
+      ],
+      "note": "Source-specific recipe transcribes manifest/source-ledger dimensions and original modeling script callouts. Native bounding-box centers locate axes only; bounding rectangles are not used as girder cross sections."
+    },
+    {
+      "fields": [
+        "bearing_horizontal_Npm",
+        "bearing_rotation_Nm",
+        "foundation_stiffness_Npm_Nm",
+        "integral_connection_stiffness_Npm_Nm",
+        "fixed_reference_stiffness_Npm_Nm",
+        "continuity_units"
+      ],
+      "status": "assumed",
+      "source": "demonstration",
+      "note": "All assumptions are frozen in values and assumptions; no test-based material certification is asserted."
+    }
+  ],
+  "values": {
+    "deck": {
+      "u0_m": -45.586650000000006,
+      "u1_m": 45.415200000000006,
+      "y0_m": -10.439400000000001,
+      "y1_m": 10.439400000000001,
+      "midplane_z_m": 8.951774,
+      "thickness_m": 0.2032,
+      "patches": [
+        {
+          "cid": "deck",
+          "u0_m": -45.586650000000006,
+          "u1_m": 45.415200000000006,
+          "y0_m": -10.439400000000001,
+          "y1_m": 10.439400000000001
+        }
+      ]
+    },
+    "spans_m": [
+      44.805600000000005,
+      44.805600000000005
+    ],
+    "skew_dx_dy": -0.5494705837061035,
+    "beams": [
+      {
+        "cid": "girder_0_0",
+        "unit": 0,
+        "u0_m": -44.805600000000005,
+        "u1_m": 0.0,
+        "y_m": -9.6012,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            1.6256,
+            0.6604,
+            0.009524999999999999,
+            0.0508
+          ]
+        },
+        "centroid_z_m": 7.957374000000001
+      },
+      {
+        "cid": "girder_1_0",
+        "unit": 0,
+        "u0_m": 0.0,
+        "u1_m": 44.805600000000005,
+        "y_m": -9.6012,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            1.6256,
+            0.6604,
+            0.009524999999999999,
+            0.0508
+          ]
+        },
+        "centroid_z_m": 7.957374000000001
+      },
+      {
+        "cid": "girder_0_1",
+        "unit": 0,
+        "u0_m": -44.805600000000005,
+        "u1_m": 0.0,
+        "y_m": -6.8580000000000005,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            1.6256,
+            0.6095999999999999,
+            0.009524999999999999,
+            0.0508
+          ]
+        },
+        "centroid_z_m": 7.957374000000001
+      },
+      {
+        "cid": "girder_1_1",
+        "unit": 0,
+        "u0_m": 0.0,
+        "u1_m": 44.805600000000005,
+        "y_m": -6.8580000000000005,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            1.6256,
+            0.6095999999999999,
+            0.009524999999999999,
+            0.0508
+          ]
+        },
+        "centroid_z_m": 7.957374000000001
+      },
+      {
+        "cid": "girder_0_2",
+        "unit": 0,
+        "u0_m": -44.805600000000005,
+        "u1_m": 0.0,
+        "y_m": -4.1148,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            1.6256,
+            0.6095999999999999,
+            0.009524999999999999,
+            0.0508
+          ]
+        },
+        "centroid_z_m": 7.957374000000001
+      },
+      {
+        "cid": "girder_1_2",
+        "unit": 0,
+        "u0_m": 0.0,
+        "u1_m": 44.805600000000005,
+        "y_m": -4.1148,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            1.6256,
+            0.6095999999999999,
+            0.009524999999999999,
+            0.0508
+          ]
+        },
+        "centroid_z_m": 7.957374000000001
+      },
+      {
+        "cid": "girder_0_3",
+        "unit": 0,
+        "u0_m": -44.805600000000005,
+        "u1_m": 0.0,
+        "y_m": -1.3716000000000002,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            1.6256,
+            0.6095999999999999,
+            0.009524999999999999,
+            0.0508
+          ]
+        },
+        "centroid_z_m": 7.957374000000001
+      },
+      {
+        "cid": "girder_1_3",
+        "unit": 0,
+        "u0_m": 0.0,
+        "u1_m": 44.805600000000005,
+        "y_m": -1.3716000000000002,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            1.6256,
+            0.6095999999999999,
+            0.009524999999999999,
+            0.0508
+          ]
+        },
+        "centroid_z_m": 7.957374000000001
+      },
+      {
+        "cid": "girder_0_4",
+        "unit": 0,
+        "u0_m": -44.805600000000005,
+        "u1_m": 0.0,
+        "y_m": 1.3716000000000002,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            1.6256,
+            0.6095999999999999,
+            0.009524999999999999,
+            0.0508
+          ]
+        },
+        "centroid_z_m": 7.957374000000001
+      },
+      {
+        "cid": "girder_1_4",
+        "unit": 0,
+        "u0_m": 0.0,
+        "u1_m": 44.805600000000005,
+        "y_m": 1.3716000000000002,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            1.6256,
+            0.6095999999999999,
+            0.009524999999999999,
+            0.0508
+          ]
+        },
+        "centroid_z_m": 7.957374000000001
+      },
+      {
+        "cid": "girder_0_5",
+        "unit": 0,
+        "u0_m": -44.805600000000005,
+        "u1_m": 0.0,
+        "y_m": 4.1148,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            1.6256,
+            0.6095999999999999,
+            0.009524999999999999,
+            0.0508
+          ]
+        },
+        "centroid_z_m": 7.957374000000001
+      },
+      {
+        "cid": "girder_1_5",
+        "unit": 0,
+        "u0_m": 0.0,
+        "u1_m": 44.805600000000005,
+        "y_m": 4.1148,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            1.6256,
+            0.6095999999999999,
+            0.009524999999999999,
+            0.0508
+          ]
+        },
+        "centroid_z_m": 7.957374000000001
+      },
+      {
+        "cid": "girder_0_6",
+        "unit": 0,
+        "u0_m": -44.805600000000005,
+        "u1_m": 0.0,
+        "y_m": 6.8580000000000005,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            1.6256,
+            0.6095999999999999,
+            0.009524999999999999,
+            0.0508
+          ]
+        },
+        "centroid_z_m": 7.957374000000001
+      },
+      {
+        "cid": "girder_1_6",
+        "unit": 0,
+        "u0_m": 0.0,
+        "u1_m": 44.805600000000005,
+        "y_m": 6.8580000000000005,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            1.6256,
+            0.6095999999999999,
+            0.009524999999999999,
+            0.0508
+          ]
+        },
+        "centroid_z_m": 7.957374000000001
+      },
+      {
+        "cid": "girder_0_7",
+        "unit": 0,
+        "u0_m": -44.805600000000005,
+        "u1_m": 0.0,
+        "y_m": 9.6012,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            1.6256,
+            0.6604,
+            0.009524999999999999,
+            0.0508
+          ]
+        },
+        "centroid_z_m": 7.957374000000001
+      },
+      {
+        "cid": "girder_1_7",
+        "unit": 0,
+        "u0_m": 0.0,
+        "u1_m": 44.805600000000005,
+        "y_m": 9.6012,
+        "material": "steel",
+        "section": {
+          "kind": "I",
+          "dimensions_m": [
+            1.6256,
+            0.6604,
+            0.009524999999999999,
+            0.0508
+          ]
+        },
+        "centroid_z_m": 7.957374000000001
+      }
+    ],
+    "supports": [
+      {
+        "u_m": -44.805600000000005,
+        "bearings": [
+          {
+            "cid": "B1_bearing_1",
+            "unit": 0,
+            "u_m": -44.805600000000005,
+            "y_m": -9.6012,
+            "beam_y_m": -9.6012,
+            "z_m": 6.720275,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B1_bearing_2",
+            "unit": 0,
+            "u_m": -44.805600000000005,
+            "y_m": -6.8580000000000005,
+            "beam_y_m": -6.8580000000000005,
+            "z_m": 6.722523,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B1_bearing_3",
+            "unit": 0,
+            "u_m": -44.805600000000005,
+            "y_m": -4.1148,
+            "beam_y_m": -4.1148,
+            "z_m": 6.744243,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B1_bearing_4",
+            "unit": 0,
+            "u_m": -44.805600000000005,
+            "y_m": -1.3716000000000002,
+            "beam_y_m": -1.3716000000000002,
+            "z_m": 6.764862,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B1_bearing_5",
+            "unit": 0,
+            "u_m": -44.805600000000005,
+            "y_m": 1.3716000000000002,
+            "beam_y_m": 1.3716000000000002,
+            "z_m": 6.743231,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B1_bearing_6",
+            "unit": 0,
+            "u_m": -44.805600000000005,
+            "y_m": 4.1148,
+            "beam_y_m": 4.1148,
+            "z_m": 6.6793499999999995,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B1_bearing_7",
+            "unit": 0,
+            "u_m": -44.805600000000005,
+            "y_m": 6.8580000000000005,
+            "beam_y_m": 6.8580000000000005,
+            "z_m": 6.614368,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B1_bearing_8",
+            "unit": 0,
+            "u_m": -44.805600000000005,
+            "y_m": 9.6012,
+            "beam_y_m": 9.6012,
+            "z_m": 6.548285,
+            "area_m2": 0.2064512,
+            "integral": false
+          }
+        ],
+        "walls": [
+          {
+            "cid": "abut_1",
+            "thickness_m": 1.143,
+            "y0_m": -10.6894,
+            "y1_m": 10.6894,
+            "bottom_z_m": 2.593848
+          }
+        ],
+        "columns": [],
+        "top_z_m": 6.388285
+      },
+      {
+        "u_m": 0.0,
+        "bearings": [
+          {
+            "cid": "B2_bearing_1",
+            "unit": 0,
+            "u_m": 0.0,
+            "y_m": -9.6012,
+            "beam_y_m": -9.6012,
+            "z_m": 6.41802,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B2_bearing_2",
+            "unit": 0,
+            "u_m": 0.0,
+            "y_m": -6.8580000000000005,
+            "beam_y_m": -6.8580000000000005,
+            "z_m": 6.465872,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B2_bearing_3",
+            "unit": 0,
+            "u_m": 0.0,
+            "y_m": -4.1148,
+            "beam_y_m": -4.1148,
+            "z_m": 6.520486,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B2_bearing_4",
+            "unit": 0,
+            "u_m": 0.0,
+            "y_m": -1.3716000000000002,
+            "beam_y_m": -1.3716000000000002,
+            "z_m": 6.573987,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B2_bearing_5",
+            "unit": 0,
+            "u_m": 0.0,
+            "y_m": 1.3716000000000002,
+            "beam_y_m": 1.3716000000000002,
+            "z_m": 6.585227,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B2_bearing_6",
+            "unit": 0,
+            "u_m": 0.0,
+            "y_m": 4.1148,
+            "beam_y_m": 4.1148,
+            "z_m": 6.554206,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B2_bearing_7",
+            "unit": 0,
+            "u_m": 0.0,
+            "y_m": 6.8580000000000005,
+            "beam_y_m": 6.8580000000000005,
+            "z_m": 6.522072,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B2_bearing_8",
+            "unit": 0,
+            "u_m": 0.0,
+            "y_m": 9.6012,
+            "beam_y_m": 9.6012,
+            "z_m": 6.476126,
+            "area_m2": 0.2064512,
+            "integral": false
+          }
+        ],
+        "walls": [
+          {
+            "cid": "pier_2_wall",
+            "thickness_m": 1.0668,
+            "y0_m": -10.551647,
+            "y1_m": 10.551647,
+            "bottom_z_m": 0.6096
+          }
+        ],
+        "columns": [],
+        "top_z_m": 6.25802
+      },
+      {
+        "u_m": 44.805600000000005,
+        "bearings": [
+          {
+            "cid": "B3_bearing_1",
+            "unit": 0,
+            "u_m": 44.805600000000005,
+            "y_m": -9.6012,
+            "beam_y_m": -9.6012,
+            "z_m": 5.988208,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B3_bearing_2",
+            "unit": 0,
+            "u_m": 44.805600000000005,
+            "y_m": -6.8580000000000005,
+            "beam_y_m": -6.8580000000000005,
+            "z_m": 6.026014,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B3_bearing_3",
+            "unit": 0,
+            "u_m": 44.805600000000005,
+            "y_m": -4.1148,
+            "beam_y_m": -4.1148,
+            "z_m": 6.086691,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B3_bearing_4",
+            "unit": 0,
+            "u_m": 44.805600000000005,
+            "y_m": -1.3716000000000002,
+            "beam_y_m": -1.3716000000000002,
+            "z_m": 6.149663,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B3_bearing_5",
+            "unit": 0,
+            "u_m": 44.805600000000005,
+            "y_m": 1.3716000000000002,
+            "beam_y_m": 1.3716000000000002,
+            "z_m": 6.173783,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B3_bearing_6",
+            "unit": 0,
+            "u_m": 44.805600000000005,
+            "y_m": 4.1148,
+            "beam_y_m": 4.1148,
+            "z_m": 6.159051,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B3_bearing_7",
+            "unit": 0,
+            "u_m": 44.805600000000005,
+            "y_m": 6.8580000000000005,
+            "beam_y_m": 6.8580000000000005,
+            "z_m": 6.146615000000001,
+            "area_m2": 0.2064512,
+            "integral": false
+          },
+          {
+            "cid": "B3_bearing_8",
+            "unit": 0,
+            "u_m": 44.805600000000005,
+            "y_m": 9.6012,
+            "beam_y_m": 9.6012,
+            "z_m": 6.135595,
+            "area_m2": 0.2064512,
+            "integral": false
+          }
+        ],
+        "walls": [
+          {
+            "cid": "abut_3",
+            "thickness_m": 1.143,
+            "y0_m": -10.6894,
+            "y1_m": 10.6894,
+            "bottom_z_m": 2.593848
+          }
+        ],
+        "columns": [],
+        "top_z_m": 5.808208
+      }
+    ],
+    "bearing_horizontal_Npm": 10000000.0,
+    "bearing_rotation_Nm": 1000.0,
+    "foundation_stiffness_Npm_Nm": [
+      200000000.0,
+      200000000.0,
+      800000000.0,
+      200000000.0,
+      200000000.0,
+      200000000.0
+    ],
+    "fixed_reference_stiffness_Npm_Nm": [
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0
+    ],
+    "integral_connection_stiffness_Npm_Nm": [
+      100000000000.0,
+      100000000000.0,
+      100000000000.0,
+      10000000000.0,
+      10000000000.0,
+      10000000000.0
+    ],
+    "mesh_step_u_m": 3.0,
+    "mesh_step_y_m": 1.4,
+    "continuity_units": [
+      {
+        "u0_m": -45.586650000000006,
+        "u1_m": 45.415200000000006
+      }
+    ]
+  },
+  "assumptions": [
+    "Assumed-input OpenSees linear elastic incremental demonstration; not an as-built model, load rating, field validation or full physical stress history.",
+    "Pressure acts on the full declared structural deck envelope, including sidewalk zones. Left half means native Y below the geometric deck centerline.",
+    "Concrete E=30 GPa, steel E=200 GPa, Poisson ratios 0.20/0.30 are editable assumptions. No cracking, reinforcement, prestress initial stress, creep, shrinkage or self-weight is included.",
+    "All deck nodes are placed on the declared flat midplane. Crossfall, vertical curvature and fabrication camber are omitted. Girder centroids are flattened; native X/Y station and skew are preserved.",
+    "Full beam/deck composite action is assumed through rigid offsets. Haunch stiffness, barriers, walks, diaphragms, cross frames, bolts, local bearing plates and nonstructural pieces are omitted unless expressly listed as analyzed.",
+    "Bearing springs are bilateral with assumed horizontal 10 MN/m and rotational 1 kNm/rad stiffness. Vertical stiffness is editable. Springs may report tension; uplift/contact is not modeled.",
+    "Fixed bases mean fixed at the explicitly modeled wall/column/pile bottom; elastic bases add the frozen six stiffnesses per column or per metre of wall. Soil, buried footing flexibility and actual pile fixity are unverified.",
+    "Integral links use the frozen 100 GN/m translations and 10 GNm/rad rotations, distributed by tributary width for line connections. Cap-only fixed reference supports use 10 TN/m springs to separate the reaction node from its rigid constraint; this is a numerical fixed-base approximation.",
+    "Cap/column/wall sections are explicit idealizations. Shell wall heights extend to the cap reference axis where a cap exists; cap embedment and taper are simplified. Local peaks are nominal, not connection design stresses.",
+    "Deck and longitudinal beams are continuous across intermediate supports. Selectable fabrication/span divisions do not create structural hinges. Integral end connections, where specified, use stiff six-direction links to the modeled end wall/cap.",
+    "Haunched retained plate girders use a documented constant nominal64in total depth,2in flanges,3/8in web and24/26in flange widths. Variable60-72in webs and flange schedules are omitted; this is an assumed stiffness approximation, not original fabrication properties."
+  ],
+  "analyzed_component_ids": [
+    "B1_bearing_1",
+    "B1_bearing_2",
+    "B1_bearing_3",
+    "B1_bearing_4",
+    "B1_bearing_5",
+    "B1_bearing_6",
+    "B1_bearing_7",
+    "B1_bearing_8",
+    "B2_bearing_1",
+    "B2_bearing_2",
+    "B2_bearing_3",
+    "B2_bearing_4",
+    "B2_bearing_5",
+    "B2_bearing_6",
+    "B2_bearing_7",
+    "B2_bearing_8",
+    "B3_bearing_1",
+    "B3_bearing_2",
+    "B3_bearing_3",
+    "B3_bearing_4",
+    "B3_bearing_5",
+    "B3_bearing_6",
+    "B3_bearing_7",
+    "B3_bearing_8",
+    "abut_1",
+    "abut_3",
+    "deck",
+    "girder_0_0",
+    "girder_0_1",
+    "girder_0_2",
+    "girder_0_3",
+    "girder_0_4",
+    "girder_0_5",
+    "girder_0_6",
+    "girder_0_7",
+    "girder_1_0",
+    "girder_1_1",
+    "girder_1_2",
+    "girder_1_3",
+    "girder_1_4",
+    "girder_1_5",
+    "girder_1_6",
+    "girder_1_7",
+    "pier_2_wall"
+  ],
+  "excluded_component_ids": [
+    "B1_seat_0",
+    "B1_seat_1",
+    "B1_seat_2",
+    "B1_seat_3",
+    "B1_seat_4",
+    "B1_seat_5",
+    "B1_seat_6",
+    "B2_seat_1",
+    "B2_seat_2",
+    "B2_seat_3",
+    "B2_seat_4",
+    "B2_seat_5",
+    "B2_seat_6",
+    "B2_seat_7",
+    "B3_seat_1",
+    "B3_seat_2",
+    "B3_seat_3",
+    "B3_seat_4",
+    "B3_seat_5",
+    "B3_seat_6",
+    "B3_seat_7",
+    "OS_drain_-1_-1",
+    "OS_drain_-1_1",
+    "OS_drain_1_-1",
+    "OS_drain_1_1",
+    "abut_1_backwall",
+    "abut_1_footing",
+    "abut_3_backwall",
+    "abut_3_footing",
+    "approach_-1",
+    "approach_1",
+    "approach_walk_-1_-1",
+    "approach_walk_-1_1",
+    "approach_walk_1_-1",
+    "approach_walk_1_1",
+    "crossframe_0_0",
+    "crossframe_0_1",
+    "crossframe_0_2",
+    "crossframe_0_3",
+    "crossframe_0_4",
+    "crossframe_0_5",
+    "crossframe_0_6",
+    "crossframe_10_0",
+    "crossframe_10_1",
+    "crossframe_10_2",
+    "crossframe_10_3",
+    "crossframe_10_4",
+    "crossframe_10_5",
+    "crossframe_10_6",
+    "crossframe_11_0",
+    "crossframe_11_1",
+    "crossframe_11_2",
+    "crossframe_11_3",
+    "crossframe_11_4",
+    "crossframe_11_5",
+    "crossframe_11_6",
+    "crossframe_12_0",
+    "crossframe_12_1",
+    "crossframe_12_2",
+    "crossframe_12_3",
+    "crossframe_12_4",
+    "crossframe_12_5",
+    "crossframe_12_6",
+    "crossframe_1_0",
+    "crossframe_1_1",
+    "crossframe_1_2",
+    "crossframe_1_3",
+    "crossframe_1_4",
+    "crossframe_1_5",
+    "crossframe_1_6",
+    "crossframe_2_0",
+    "crossframe_2_1",
+    "crossframe_2_2",
+    "crossframe_2_3",
+    "crossframe_2_4",
+    "crossframe_2_5",
+    "crossframe_2_6",
+    "crossframe_3_0",
+    "crossframe_3_1",
+    "crossframe_3_2",
+    "crossframe_3_3",
+    "crossframe_3_4",
+    "crossframe_3_5",
+    "crossframe_3_6",
+    "crossframe_4_0",
+    "crossframe_4_1",
+    "crossframe_4_2",
+    "crossframe_4_3",
+    "crossframe_4_4",
+    "crossframe_4_5",
+    "crossframe_4_6",
+    "crossframe_5_0",
+    "crossframe_5_1",
+    "crossframe_5_2",
+    "crossframe_5_3",
+    "crossframe_5_4",
+    "crossframe_5_5",
+    "crossframe_5_6",
+    "crossframe_6_0",
+    "crossframe_6_1",
+    "crossframe_6_2",
+    "crossframe_6_3",
+    "crossframe_6_4",
+    "crossframe_6_5",
+    "crossframe_6_6",
+    "crossframe_7_0",
+    "crossframe_7_1",
+    "crossframe_7_2",
+    "crossframe_7_3",
+    "crossframe_7_4",
+    "crossframe_7_5",
+    "crossframe_7_6",
+    "crossframe_8_0",
+    "crossframe_8_1",
+    "crossframe_8_2",
+    "crossframe_8_3",
+    "crossframe_8_4",
+    "crossframe_8_5",
+    "crossframe_8_6",
+    "crossframe_9_0",
+    "crossframe_9_1",
+    "crossframe_9_2",
+    "crossframe_9_3",
+    "crossframe_9_4",
+    "crossframe_9_5",
+    "crossframe_9_6",
+    "girder_1_splice_1",
+    "girder_1_splice_1_bolts",
+    "girder_1_splice_2",
+    "girder_1_splice_2_bolts",
+    "girder_2_splice_1",
+    "girder_2_splice_1_bolts",
+    "girder_2_splice_2",
+    "girder_2_splice_2_bolts",
+    "girder_3_splice_1",
+    "girder_3_splice_1_bolts",
+    "girder_3_splice_2",
+    "girder_3_splice_2_bolts",
+    "girder_4_splice_1",
+    "girder_4_splice_1_bolts",
+    "girder_4_splice_2",
+    "girder_4_splice_2_bolts",
+    "girder_5_splice_1",
+    "girder_5_splice_1_bolts",
+    "girder_5_splice_2",
+    "girder_5_splice_2_bolts",
+    "girder_6_splice_1",
+    "girder_6_splice_1_bolts",
+    "girder_6_splice_2",
+    "girder_6_splice_2_bolts",
+    "girder_7_splice_1",
+    "girder_7_splice_1_bolts",
+    "girder_7_splice_2",
+    "girder_7_splice_2_bolts",
+    "girder_8_splice_1",
+    "girder_8_splice_1_bolts",
+    "girder_8_splice_2",
+    "girder_8_splice_2_bolts",
+    "haunch_0_0",
+    "haunch_0_1",
+    "haunch_0_2",
+    "haunch_0_3",
+    "haunch_0_4",
+    "haunch_0_5",
+    "haunch_0_6",
+    "haunch_0_7",
+    "haunch_1_0",
+    "haunch_1_1",
+    "haunch_1_2",
+    "haunch_1_3",
+    "haunch_1_4",
+    "haunch_1_5",
+    "haunch_1_6",
+    "haunch_1_7",
+    "joint_-1",
+    "joint_1",
+    "lateral_0_0",
+    "lateral_0_1",
+    "lateral_0_10",
+    "lateral_0_11",
+    "lateral_0_2",
+    "lateral_0_3",
+    "lateral_0_4",
+    "lateral_0_5",
+    "lateral_0_6",
+    "lateral_0_7",
+    "lateral_0_8",
+    "lateral_0_9",
+    "lateral_3_0",
+    "lateral_3_1",
+    "lateral_3_10",
+    "lateral_3_11",
+    "lateral_3_2",
+    "lateral_3_3",
+    "lateral_3_4",
+    "lateral_3_5",
+    "lateral_3_6",
+    "lateral_3_7",
+    "lateral_3_8",
+    "lateral_3_9",
+    "lateral_6_0",
+    "lateral_6_1",
+    "lateral_6_10",
+    "lateral_6_11",
+    "lateral_6_2",
+    "lateral_6_3",
+    "lateral_6_4",
+    "lateral_6_5",
+    "lateral_6_6",
+    "lateral_6_7",
+    "lateral_6_8",
+    "lateral_6_9",
+    "pier_2_footing",
+    "stiffener_0_0",
+    "stiffener_0_1",
+    "stiffener_0_2",
+    "stiffener_0_3",
+    "stiffener_0_4",
+    "stiffener_0_5",
+    "stiffener_0_6",
+    "stiffener_0_7",
+    "stiffener_0_8",
+    "stiffener_1_0",
+    "stiffener_1_1",
+    "stiffener_1_2",
+    "stiffener_1_3",
+    "stiffener_1_4",
+    "stiffener_1_5",
+    "stiffener_1_6",
+    "stiffener_1_7",
+    "stiffener_1_8",
+    "stiffener_2_0",
+    "stiffener_2_1",
+    "stiffener_2_2",
+    "stiffener_2_3",
+    "stiffener_2_4",
+    "stiffener_2_5",
+    "stiffener_2_6",
+    "stiffener_2_7",
+    "stiffener_2_8",
+    "stiffener_3_0",
+    "stiffener_3_1",
+    "stiffener_3_2",
+    "stiffener_3_3",
+    "stiffener_3_4",
+    "stiffener_3_5",
+    "stiffener_3_6",
+    "stiffener_3_7",
+    "stiffener_3_8",
+    "stiffener_4_0",
+    "stiffener_4_1",
+    "stiffener_4_2",
+    "stiffener_4_3",
+    "stiffener_4_4",
+    "stiffener_4_5",
+    "stiffener_4_6",
+    "stiffener_4_7",
+    "stiffener_4_8",
+    "stiffener_5_0",
+    "stiffener_5_1",
+    "stiffener_5_2",
+    "stiffener_5_3",
+    "stiffener_5_4",
+    "stiffener_5_5",
+    "stiffener_5_6",
+    "stiffener_5_7",
+    "stiffener_5_8",
+    "stiffener_6_0",
+    "stiffener_6_1",
+    "stiffener_6_2",
+    "stiffener_6_3",
+    "stiffener_6_4",
+    "stiffener_6_5",
+    "stiffener_6_6",
+    "stiffener_6_7",
+    "stiffener_6_8",
+    "stiffener_7_0",
+    "stiffener_7_1",
+    "stiffener_7_2",
+    "stiffener_7_3",
+    "stiffener_7_4",
+    "stiffener_7_5",
+    "stiffener_7_6",
+    "stiffener_7_7",
+    "stiffener_7_8",
+    "tx_-1_0_0",
+    "tx_-1_0_1",
+    "tx_-1_0_2",
+    "tx_-1_0_3",
+    "tx_-1_0_4",
+    "tx_-1_1_0",
+    "tx_-1_1_1",
+    "tx_-1_1_2",
+    "tx_-1_1_3",
+    "tx_-1_1_4",
+    "tx_1_0_0",
+    "tx_1_0_1",
+    "tx_1_0_2",
+    "tx_1_0_3",
+    "tx_1_0_4",
+    "tx_1_1_0",
+    "tx_1_1_1",
+    "tx_1_1_2",
+    "tx_1_1_3",
+    "tx_1_1_4",
+    "txpost_-1_0_0",
+    "txpost_-1_0_1",
+    "txpost_-1_0_2",
+    "txpost_-1_0_3",
+    "txpost_-1_0_4",
+    "txpost_-1_0_5",
+    "txpost_-1_1_0",
+    "txpost_-1_1_1",
+    "txpost_-1_1_2",
+    "txpost_-1_1_3",
+    "txpost_-1_1_4",
+    "txpost_-1_1_5",
+    "txpost_1_0_0",
+    "txpost_1_0_1",
+    "txpost_1_0_2",
+    "txpost_1_0_3",
+    "txpost_1_0_4",
+    "txpost_1_0_5",
+    "txpost_1_1_0",
+    "txpost_1_1_1",
+    "txpost_1_1_2",
+    "txpost_1_1_3",
+    "txpost_1_1_4",
+    "txpost_1_1_5",
+    "walk_-1",
+    "walk_1",
+    "wing_1_-1",
+    "wing_1_1",
+    "wing_3_-1",
+    "wing_3_1"
+  ],
+  "excluded_component_reason": "Outside this explicitly scoped analytical idealization; no stress or displacement assigned to these display members."
+}

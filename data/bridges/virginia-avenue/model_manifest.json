@@ -1,0 +1,6493 @@
+{
+  "title": "Virginia Avenue over I-65 NB / I-70 EB | proposed 2026 rehabilitation",
+  "structure_id": "I65-110-05719 FNBL",
+  "designation": "2200722",
+  "spans_m": [
+    34.7472
+  ],
+  "deck_thickness_m": 0.2032,
+  "source_note": "INDOT B-44576 primary 2026 design. Retained original framing and 2013 northbound girder replacement are sourced only from identified pages of document 9548460. Separate southbound/I-70, cathodic-protection and lighting pages are not dimensional authority. Original files remain unchanged.",
+  "status_note": "Whole crossing present; amber because field elevations, wingwall shape, connections, rail/approach transitions and small fittings remain approximate. Proposed 2026 work is not proof of completion.",
+  "assumptions": [
+    "Whole-crossing exterior reconstruction of the stated proposed design, not an as-built survey or confirmation of construction completion.",
+    "Amber / needs_detail: fabrication tolerances, exact field seats, local notches and transitions, small fittings, and terrain remain incomplete.",
+    "Internal reinforcement, shear studs, embedded anchors and welds are omitted. No rendered component is a finite element or a solid-stress result.",
+    "Any later FEM must freeze its own material, stiffness, connectivity and support assumptions. Visual mesh volume is not a section-property source.",
+    "Foundations are hidden by default; foundation envelopes are design references and do not establish actual field embedment.",
+    "Linear grade through the primary bearing profile elevations replaces the 90/96 ft vertical curves; deck height is a local visualization datum.",
+    "Historical 54/60 in labels are WEB depths; total I-section depths include both flanges. Plate schedules are source-backed, but fillets and taper details are simplified.",
+    "Source revisions 9715471 and 9715512 concern special provisions and inspection coordination; no replacement geometry sheets were identified."
+  ],
+  "external_sources": [
+    {
+      "id": "9683637",
+      "title": "FT Plans 2200722 For Contract Services",
+      "local_file": "sources/contract_plans_9683637.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683637",
+      "sha256": "cdc29f5f26a75790e1c73f0aa7fe5ecad26631623f235ba738d04b50592ea50e",
+      "original_pages": 49,
+      "reviewed_pages": [
+        1,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        41,
+        43,
+        44,
+        45
+      ],
+      "role": "primary_geometry"
+    },
+    {
+      "id": "9548460",
+      "title": "FT ExistingPlans 2200722 For Contract Services Part 1 of 2",
+      "local_file": "sources/existing_plans_9548460.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9548460",
+      "sha256": "384853c7960cdca9e2699b56f3843518c93f6c04c07d834da42b6d762c1c7f75",
+      "original_pages": 81,
+      "reviewed_pages": [
+        24,
+        25,
+        28,
+        32,
+        33,
+        50,
+        51,
+        52,
+        53,
+        55,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "role": "historical_evidence"
+    },
+    {
+      "id": "9548461",
+      "title": "FT ExistingPlans 2200722 For Contract Services Part 2 of 2",
+      "local_file": "sources/existing_plans_9548461.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9548461",
+      "sha256": "3518ffb1bb3c395bec9b65d8cd0e5b73acdbddd8c4bfff7dc02862259a79e1fb",
+      "original_pages": 23,
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "role": "historical_evidence"
+    },
+    {
+      "id": "9715471",
+      "title": "B -44576-A REV 1",
+      "local_file": "sources/revision_notice_9715471.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9715471",
+      "sha256": "f37ffb30d36f2a51c373c77ff608b90f3b50f7d91df85e979237a4cb215884e7",
+      "original_pages": 5,
+      "reviewed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "role": "revision_evidence"
+    },
+    {
+      "id": "9715512",
+      "title": "B -44576-A REV 2",
+      "local_file": "sources/revision_notice_9715512.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9715512",
+      "sha256": "f8f094b9df191a93728f8c166b05b77c9a69147f7992ee4b82dc7d3208e01e92",
+      "original_pages": 2,
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "role": "revision_evidence"
+    }
+  ],
+  "source_binder": {
+    "primary": "drawings.pdf",
+    "binder": "drawings.pdf",
+    "is_compilation": false,
+    "pages": 49,
+    "sha256": "cdc29f5f26a75790e1c73f0aa7fe5ecad26631623f235ba738d04b50592ea50e",
+    "primary_source_id": "9683637",
+    "page_numbering": "Unchanged one-based original primary PDF pages. Secondary sources have independent original PDF page numbers.",
+    "source_documents": [
+      {
+        "id": "9683637",
+        "title": "FT Plans 2200722 For Contract Services",
+        "local_file": "sources/contract_plans_9683637.pdf",
+        "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683637",
+        "sha256": "cdc29f5f26a75790e1c73f0aa7fe5ecad26631623f235ba738d04b50592ea50e",
+        "original_pages": 49,
+        "reviewed_pages": [
+          1,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          41,
+          43,
+          44,
+          45
+        ],
+        "role": "primary_geometry"
+      },
+      {
+        "id": "9548460",
+        "title": "FT ExistingPlans 2200722 For Contract Services Part 1 of 2",
+        "local_file": "sources/existing_plans_9548460.pdf",
+        "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9548460",
+        "sha256": "384853c7960cdca9e2699b56f3843518c93f6c04c07d834da42b6d762c1c7f75",
+        "original_pages": 81,
+        "reviewed_pages": [
+          24,
+          25,
+          28,
+          32,
+          33,
+          50,
+          51,
+          52,
+          53,
+          55,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67
+        ],
+        "role": "historical_evidence"
+      },
+      {
+        "id": "9548461",
+        "title": "FT ExistingPlans 2200722 For Contract Services Part 2 of 2",
+        "local_file": "sources/existing_plans_9548461.pdf",
+        "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9548461",
+        "sha256": "3518ffb1bb3c395bec9b65d8cd0e5b73acdbddd8c4bfff7dc02862259a79e1fb",
+        "original_pages": 23,
+        "reviewed_pages": [
+          1,
+          2
+        ],
+        "role": "historical_evidence"
+      },
+      {
+        "id": "9715471",
+        "title": "B -44576-A REV 1",
+        "local_file": "sources/revision_notice_9715471.pdf",
+        "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9715471",
+        "sha256": "f37ffb30d36f2a51c373c77ff608b90f3b50f7d91df85e979237a4cb215884e7",
+        "original_pages": 5,
+        "reviewed_pages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "role": "revision_evidence"
+      },
+      {
+        "id": "9715512",
+        "title": "B -44576-A REV 2",
+        "local_file": "sources/revision_notice_9715512.pdf",
+        "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9715512",
+        "sha256": "f8f094b9df191a93728f8c166b05b77c9a69147f7992ee4b82dc7d3208e01e92",
+        "original_pages": 2,
+        "reviewed_pages": [
+          1,
+          2
+        ],
+        "role": "revision_evidence"
+      }
+    ]
+  },
+  "detail_status": "needs_detail",
+  "status_color": "amber",
+  "model_scope": "whole_crossing_exterior",
+  "units": "metres",
+  "deck_length_m": 36.76967500000001,
+  "deck_width_m": 19.6596,
+  "skew_deg": 44.318333333333335,
+  "source_pdf": "drawings.pdf",
+  "source_sha256": "cdc29f5f26a75790e1c73f0aa7fe5ecad26631623f235ba738d04b50592ea50e",
+  "parts": [
+    {
+      "id": "deck",
+      "name": "Proposed 2026 deck | single skew span",
+      "layer": "deck",
+      "color": "#d1d5d0",
+      "pdf_pages": [
+        31,
+        36,
+        37
+      ],
+      "basis": "Dimensioned proposed floor; nominal crossfall and reconstructed grade",
+      "note": "7.5 in structural depth plus 0.5 in integral wearing surface. Removed deck and overlay are excluded.",
+      "dimensions": {
+        "thickness_m": 0.2032,
+        "structural_thickness_m": 0.1905
+      },
+      "bounds_m": [
+        [
+          -27.98348,
+          -9.8298,
+          7.966646
+        ],
+        [
+          27.98348,
+          9.8298,
+          8.494135
+        ]
+      ],
+      "volume_m3": 146.888627254,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "walk_-1",
+      "name": "South shared-use path supporting concrete",
+      "layer": "sidewalks",
+      "color": "#c9c8b8",
+      "pdf_pages": [
+        31,
+        37,
+        43
+      ],
+      "basis": "Dimensioned sidewalk and curb envelope",
+      "note": "South nominal 16 ft 1 in clear path and north 6 ft 1 in clear sidewalk; rail and edge margins excluded from clear widths.",
+      "dimensions": {
+        "clear_width_m": 4.9022
+      },
+      "bounds_m": [
+        [
+          -13.920353,
+          -9.8298,
+          8.169846
+        ],
+        [
+          27.98348,
+          -4.572,
+          8.502147
+        ]
+      ],
+      "volume_m3": 15.95919315,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trail_pavers",
+      "name": "Reset Cultural Trail pavers and setting bed envelope",
+      "layer": "sidewalks",
+      "color": "#c9c8b8",
+      "pdf_pages": [
+        37,
+        43
+      ],
+      "basis": "2.75 in paver and setting-bed envelope",
+      "note": "Individual paver pattern is not fabricated.",
+      "dimensions": {
+        "thickness_m": 0.06985
+      },
+      "bounds_m": [
+        [
+          -13.920353,
+          -9.4742,
+          8.252396
+        ],
+        [
+          27.636242,
+          -4.572,
+          8.566885
+        ]
+      ],
+      "volume_m3": 12.59062321,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            37,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "id": "walk_1",
+      "name": "North sidewalk supporting concrete",
+      "layer": "sidewalks",
+      "color": "#c9c8b8",
+      "pdf_pages": [
+        31,
+        37,
+        43
+      ],
+      "basis": "Dimensioned sidewalk and curb envelope",
+      "note": "South nominal 16 ft 1 in clear path and north 6 ft 1 in clear sidewalk; rail and edge margins excluded from clear widths.",
+      "dimensions": {
+        "clear_width_m": 1.8542
+      },
+      "bounds_m": [
+        [
+          -27.98348,
+          7.62,
+          8.22624
+        ],
+        [
+          10.944029,
+          9.8298,
+          8.64698
+        ]
+      ],
+      "volume_m3": 16.510737172,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beam_1",
+      "name": "Girder 1 | 2013 replacement exterior member",
+      "layer": "girders",
+      "color": "#748c95",
+      "pdf_pages": [
+        31,
+        34,
+        36
+      ],
+      "basis": "Source piecewise welded I-section; straight nominal grade envelope",
+      "note": "Exact fabrication camber, small flange tapers and corrosion are not reconstructed.",
+      "dimensions": {
+        "y_m": -9.2964,
+        "section_zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.3716,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.4064,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.4350999999999998
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.3716,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.4572,
+            "flange_thickness_m": 0.0508,
+            "total_depth_m": 1.4731999999999998
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.3716,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.4064,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.4350999999999998
+          }
+        ]
+      },
+      "bounds_m": [
+        [
+          -8.410114,
+          -9.525,
+          6.545023
+        ],
+        [
+          26.565686,
+          -9.0678,
+          8.154481
+        ]
+      ],
+      "volume_m3": 2.129822611,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            34,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "id": "haunch_1",
+      "name": "Girder 1 | nominal deck haunch",
+      "layer": "haunches",
+      "color": "#b7b6aa",
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "basis": "Derived contact envelope",
+      "note": "50 mm nominal haunch; source minimum fillet is 3/4 in. Actual variable screed and camber are unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -8.519038,
+          -9.525,
+          7.98829
+        ],
+        [
+          26.67461,
+          -9.0678,
+          8.207226
+        ]
+      ],
+      "volume_m3": 0.794320992,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            36,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B1_bearing_1",
+      "name": "B1 bearing 1",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        35
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.12,
+        "load_plate_thickness_m": 0.34
+      },
+      "bounds_m": [
+        [
+          -8.535814,
+          -9.5764,
+          6.25884
+        ],
+        [
+          -8.055814,
+          -9.0164,
+          6.71884
+        ]
+      ],
+      "volume_m3": 0.118932,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B2_bearing_1",
+      "name": "B2 bearing 1",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.1,
+        "load_plate_thickness_m": 0.22
+      },
+      "bounds_m": [
+        [
+          26.211386,
+          -9.5764,
+          6.234248
+        ],
+        [
+          26.691386,
+          -9.0164,
+          6.554248
+        ]
+      ],
+      "volume_m3": 0.082086,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_1_1",
+      "name": "Girder 1 | splice 1 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -2.799814,
+          -9.320337,
+          6.731864
+        ],
+        [
+          -1.599814,
+          -9.272463,
+          8.045064
+        ]
+      ],
+      "volume_m3": 0.05042688,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            28,
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_1_2",
+      "name": "Girder 1 | splice 2 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          19.755386,
+          -9.320337,
+          6.625023
+        ],
+        [
+          20.955386,
+          -9.272463,
+          7.938223
+        ]
+      ],
+      "volume_m3": 0.05042688,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            28,
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beam_2",
+      "name": "Girder 2 | retained original plate girder",
+      "layer": "girders",
+      "color": "#748c95",
+      "pdf_pages": [
+        31,
+        34,
+        36
+      ],
+      "basis": "Source piecewise welded I-section; straight nominal grade envelope",
+      "note": "Exact fabrication camber, small flange tapers and corrosion are not reconstructed.",
+      "dimensions": {
+        "y_m": -7.239000000000001,
+        "section_zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.044449999999999996,
+            "total_depth_m": 1.6129
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          }
+        ]
+      },
+      "bounds_m": [
+        [
+          -10.419132,
+          -7.493,
+          6.371732
+        ],
+        [
+          24.556668,
+          -6.985,
+          8.124907
+        ]
+      ],
+      "volume_m3": 2.26547063,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            34,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "haunch_2",
+      "name": "Girder 2 | nominal deck haunch",
+      "layer": "haunches",
+      "color": "#b7b6aa",
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "basis": "Derived contact envelope",
+      "note": "50 mm nominal haunch; source minimum fillet is 3/4 in. Actual variable screed and camber are unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -10.552859,
+          -7.493,
+          7.958598
+        ],
+        [
+          24.690395,
+          -6.985,
+          8.178016
+        ]
+      ],
+      "volume_m3": 0.88257888,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            36,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B1_bearing_2",
+      "name": "B1 bearing 2",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        35
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.12,
+        "load_plate_thickness_m": 0.34
+      },
+      "bounds_m": [
+        [
+          -10.544832,
+          -7.519,
+          6.076865
+        ],
+        [
+          -10.064832,
+          -6.959,
+          6.536865
+        ]
+      ],
+      "volume_m3": 0.118932,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B2_bearing_2",
+      "name": "B2 bearing 2",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.1,
+        "load_plate_thickness_m": 0.22
+      },
+      "bounds_m": [
+        [
+          24.202368,
+          -7.519,
+          6.052273
+        ],
+        [
+          24.682368,
+          -6.959,
+          6.372273
+        ]
+      ],
+      "volume_m3": 0.082086,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_2_1",
+      "name": "Girder 2 | splice 1 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -4.808832,
+          -7.262938,
+          6.56259
+        ],
+        [
+          -3.608832,
+          -7.215063,
+          8.01549
+        ]
+      ],
+      "volume_m3": 0.05579136,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_2_2",
+      "name": "Girder 2 | splice 2 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          17.746368,
+          -7.262938,
+          6.455749
+        ],
+        [
+          18.946368,
+          -7.215063,
+          7.908649
+        ]
+      ],
+      "volume_m3": 0.05579136,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beam_3",
+      "name": "Girder 3 | retained original plate girder",
+      "layer": "girders",
+      "color": "#748c95",
+      "pdf_pages": [
+        31,
+        34,
+        36
+      ],
+      "basis": "Source piecewise welded I-section; straight nominal grade envelope",
+      "note": "Exact fabrication camber, small flange tapers and corrosion are not reconstructed.",
+      "dimensions": {
+        "y_m": -4.825999999999898,
+        "section_zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.044449999999999996,
+            "total_depth_m": 1.6129
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          }
+        ]
+      },
+      "bounds_m": [
+        [
+          -12.775388,
+          -5.08,
+          6.337046
+        ],
+        [
+          22.200412,
+          -4.572,
+          8.090221
+        ]
+      ],
+      "volume_m3": 2.26547063,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            34,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "haunch_3",
+      "name": "Girder 3 | nominal deck haunch",
+      "layer": "haunches",
+      "color": "#b7b6aa",
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "basis": "Derived contact envelope",
+      "note": "50 mm nominal haunch; source minimum fillet is 3/4 in. Actual variable screed and camber are unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -12.909115,
+          -5.08,
+          7.923913
+        ],
+        [
+          22.334139,
+          -4.572,
+          8.143331
+        ]
+      ],
+      "volume_m3": 0.88257888,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            36,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B1_bearing_3",
+      "name": "B1 bearing 3",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        35
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.12,
+        "load_plate_thickness_m": 0.34
+      },
+      "bounds_m": [
+        [
+          -12.901088,
+          -5.106,
+          6.04218
+        ],
+        [
+          -12.421088,
+          -4.546,
+          6.50218
+        ]
+      ],
+      "volume_m3": 0.118932,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B2_bearing_3",
+      "name": "B2 bearing 3",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.1,
+        "load_plate_thickness_m": 0.22
+      },
+      "bounds_m": [
+        [
+          21.846112,
+          -5.106,
+          6.017588
+        ],
+        [
+          22.326112,
+          -4.546,
+          6.337588
+        ]
+      ],
+      "volume_m3": 0.082086,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_3_1",
+      "name": "Girder 3 | splice 1 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -7.165088,
+          -4.849937,
+          6.527904
+        ],
+        [
+          -5.965088,
+          -4.802062,
+          7.980804
+        ]
+      ],
+      "volume_m3": 0.05579136,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_3_2",
+      "name": "Girder 3 | splice 2 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          15.390112,
+          -4.849937,
+          6.421063
+        ],
+        [
+          16.590112,
+          -4.802062,
+          7.873963
+        ]
+      ],
+      "volume_m3": 0.05579136,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beam_4",
+      "name": "Girder 4 | retained original plate girder",
+      "layer": "girders",
+      "color": "#748c95",
+      "pdf_pages": [
+        31,
+        34,
+        36
+      ],
+      "basis": "Source piecewise welded I-section; straight nominal grade envelope",
+      "note": "Exact fabrication camber, small flange tapers and corrosion are not reconstructed.",
+      "dimensions": {
+        "y_m": -2.413000000000102,
+        "section_zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.044449999999999996,
+            "total_depth_m": 1.6129
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          }
+        ]
+      },
+      "bounds_m": [
+        [
+          -15.131644,
+          -2.667,
+          6.386561
+        ],
+        [
+          19.844156,
+          -2.159,
+          8.139736
+        ]
+      ],
+      "volume_m3": 2.26547063,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            34,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "haunch_4",
+      "name": "Girder 4 | nominal deck haunch",
+      "layer": "haunches",
+      "color": "#b7b6aa",
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "basis": "Derived contact envelope",
+      "note": "50 mm nominal haunch; source minimum fillet is 3/4 in. Actual variable screed and camber are unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -15.265371,
+          -2.667,
+          7.973428
+        ],
+        [
+          19.977883,
+          -2.159,
+          8.19545
+        ]
+      ],
+      "volume_m3": 0.88257888,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            36,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B1_bearing_4",
+      "name": "B1 bearing 4",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        35
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.12,
+        "load_plate_thickness_m": 0.34
+      },
+      "bounds_m": [
+        [
+          -15.257344,
+          -2.693,
+          6.091695
+        ],
+        [
+          -14.777344,
+          -2.133,
+          6.551695
+        ]
+      ],
+      "volume_m3": 0.118932,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B2_bearing_4",
+      "name": "B2 bearing 4",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.1,
+        "load_plate_thickness_m": 0.22
+      },
+      "bounds_m": [
+        [
+          19.489856,
+          -2.693,
+          6.067103
+        ],
+        [
+          19.969856,
+          -2.133,
+          6.387103
+        ]
+      ],
+      "volume_m3": 0.082086,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_4_1",
+      "name": "Girder 4 | splice 1 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -9.521344,
+          -2.436938,
+          6.577419
+        ],
+        [
+          -8.321344,
+          -2.389063,
+          8.030319
+        ]
+      ],
+      "volume_m3": 0.05579136,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_4_2",
+      "name": "Girder 4 | splice 2 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          13.033856,
+          -2.436938,
+          6.470579
+        ],
+        [
+          14.233856,
+          -2.389063,
+          7.923479
+        ]
+      ],
+      "volume_m3": 0.05579136,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beam_5",
+      "name": "Girder 5 | retained original plate girder",
+      "layer": "girders",
+      "color": "#748c95",
+      "pdf_pages": [
+        31,
+        34,
+        36
+      ],
+      "basis": "Source piecewise welded I-section; straight nominal grade envelope",
+      "note": "Exact fabrication camber, small flange tapers and corrosion are not reconstructed.",
+      "dimensions": {
+        "y_m": 0.0,
+        "section_zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.044449999999999996,
+            "total_depth_m": 1.6129
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          }
+        ]
+      },
+      "bounds_m": [
+        [
+          -17.4879,
+          -0.254,
+          6.445983
+        ],
+        [
+          17.4879,
+          0.254,
+          8.199157
+        ]
+      ],
+      "volume_m3": 2.26547063,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            34,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "haunch_5",
+      "name": "Girder 5 | nominal deck haunch",
+      "layer": "haunches",
+      "color": "#b7b6aa",
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "basis": "Derived contact envelope",
+      "note": "50 mm nominal haunch; source minimum fillet is 3/4 in. Actual variable screed and camber are unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -17.621627,
+          -0.254,
+          8.032849
+        ],
+        [
+          17.621627,
+          0.254,
+          8.254871
+        ]
+      ],
+      "volume_m3": 0.88257888,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            36,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B1_bearing_5",
+      "name": "B1 bearing 5",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        35
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.12,
+        "load_plate_thickness_m": 0.34
+      },
+      "bounds_m": [
+        [
+          -17.6136,
+          -0.28,
+          6.151116
+        ],
+        [
+          -17.1336,
+          0.28,
+          6.611116
+        ]
+      ],
+      "volume_m3": 0.118932,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B2_bearing_5",
+      "name": "B2 bearing 5",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.1,
+        "load_plate_thickness_m": 0.22
+      },
+      "bounds_m": [
+        [
+          17.1336,
+          -0.28,
+          6.126524
+        ],
+        [
+          17.6136,
+          0.28,
+          6.446524
+        ]
+      ],
+      "volume_m3": 0.082086,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_5_1",
+      "name": "Girder 5 | splice 1 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.8776,
+          -0.023938,
+          6.63684
+        ],
+        [
+          -10.6776,
+          0.023938,
+          8.08974
+        ]
+      ],
+      "volume_m3": 0.05579136,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_5_2",
+      "name": "Girder 5 | splice 2 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          10.6776,
+          -0.023938,
+          6.53
+        ],
+        [
+          11.8776,
+          0.023938,
+          7.9829
+        ]
+      ],
+      "volume_m3": 0.05579136,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beam_6",
+      "name": "Girder 6 | retained original plate girder",
+      "layer": "girders",
+      "color": "#748c95",
+      "pdf_pages": [
+        31,
+        34,
+        36
+      ],
+      "basis": "Source piecewise welded I-section; straight nominal grade envelope",
+      "note": "Exact fabrication camber, small flange tapers and corrosion are not reconstructed.",
+      "dimensions": {
+        "y_m": 2.413000000000102,
+        "section_zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.044449999999999996,
+            "total_depth_m": 1.6129
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          }
+        ]
+      },
+      "bounds_m": [
+        [
+          -19.844156,
+          2.159,
+          6.469844
+        ],
+        [
+          15.131644,
+          2.667,
+          8.223019
+        ]
+      ],
+      "volume_m3": 2.26547063,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            34,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "haunch_6",
+      "name": "Girder 6 | nominal deck haunch",
+      "layer": "haunches",
+      "color": "#b7b6aa",
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "basis": "Derived contact envelope",
+      "note": "50 mm nominal haunch; source minimum fillet is 3/4 in. Actual variable screed and camber are unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -19.977883,
+          2.159,
+          8.05671
+        ],
+        [
+          15.265371,
+          2.667,
+          8.276382
+        ]
+      ],
+      "volume_m3": 0.88257888,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            36,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B1_bearing_6",
+      "name": "B1 bearing 6",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        35
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.12,
+        "load_plate_thickness_m": 0.34
+      },
+      "bounds_m": [
+        [
+          -19.969856,
+          2.133,
+          6.174977
+        ],
+        [
+          -19.489856,
+          2.693,
+          6.634977
+        ]
+      ],
+      "volume_m3": 0.118932,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B2_bearing_6",
+      "name": "B2 bearing 6",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.1,
+        "load_plate_thickness_m": 0.22
+      },
+      "bounds_m": [
+        [
+          14.777344,
+          2.133,
+          6.150385
+        ],
+        [
+          15.257344,
+          2.693,
+          6.470385
+        ]
+      ],
+      "volume_m3": 0.082086,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_6_1",
+      "name": "Girder 6 | splice 1 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -14.233856,
+          2.389063,
+          6.660701
+        ],
+        [
+          -13.033856,
+          2.436938,
+          8.113601
+        ]
+      ],
+      "volume_m3": 0.05579136,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_6_2",
+      "name": "Girder 6 | splice 2 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          8.321344,
+          2.389063,
+          6.553861
+        ],
+        [
+          9.521344,
+          2.436938,
+          8.006761
+        ]
+      ],
+      "volume_m3": 0.05579136,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beam_7",
+      "name": "Girder 7 | retained original plate girder",
+      "layer": "girders",
+      "color": "#748c95",
+      "pdf_pages": [
+        31,
+        34,
+        36
+      ],
+      "basis": "Source piecewise welded I-section; straight nominal grade envelope",
+      "note": "Exact fabrication camber, small flange tapers and corrosion are not reconstructed.",
+      "dimensions": {
+        "y_m": 4.825999999999898,
+        "section_zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.044449999999999996,
+            "total_depth_m": 1.6129
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          }
+        ]
+      },
+      "bounds_m": [
+        [
+          -22.200412,
+          4.572,
+          6.432745
+        ],
+        [
+          12.775388,
+          5.08,
+          8.18592
+        ]
+      ],
+      "volume_m3": 2.26547063,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            34,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "haunch_7",
+      "name": "Girder 7 | nominal deck haunch",
+      "layer": "haunches",
+      "color": "#b7b6aa",
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "basis": "Derived contact envelope",
+      "note": "50 mm nominal haunch; source minimum fillet is 3/4 in. Actual variable screed and camber are unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -22.334139,
+          4.572,
+          8.019612
+        ],
+        [
+          12.909115,
+          5.08,
+          8.239284
+        ]
+      ],
+      "volume_m3": 0.88257888,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            36,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B1_bearing_7",
+      "name": "B1 bearing 7",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        35
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.12,
+        "load_plate_thickness_m": 0.34
+      },
+      "bounds_m": [
+        [
+          -22.326112,
+          4.546,
+          6.137878
+        ],
+        [
+          -21.846112,
+          5.106,
+          6.597878
+        ]
+      ],
+      "volume_m3": 0.118932,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B2_bearing_7",
+      "name": "B2 bearing 7",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.1,
+        "load_plate_thickness_m": 0.22
+      },
+      "bounds_m": [
+        [
+          12.421088,
+          4.546,
+          6.113286
+        ],
+        [
+          12.901088,
+          5.106,
+          6.433286
+        ]
+      ],
+      "volume_m3": 0.082086,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_7_1",
+      "name": "Girder 7 | splice 1 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -16.590112,
+          4.802062,
+          6.623603
+        ],
+        [
+          -15.390112,
+          4.849937,
+          8.076503
+        ]
+      ],
+      "volume_m3": 0.05579136,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_7_2",
+      "name": "Girder 7 | splice 2 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          5.965088,
+          4.802062,
+          6.516762
+        ],
+        [
+          7.165088,
+          4.849937,
+          7.969662
+        ]
+      ],
+      "volume_m3": 0.05579136,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beam_8",
+      "name": "Girder 8 | retained original plate girder",
+      "layer": "girders",
+      "color": "#748c95",
+      "pdf_pages": [
+        31,
+        34,
+        36
+      ],
+      "basis": "Source piecewise welded I-section; straight nominal grade envelope",
+      "note": "Exact fabrication camber, small flange tapers and corrosion are not reconstructed.",
+      "dimensions": {
+        "y_m": 7.239000000000001,
+        "section_zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.044449999999999996,
+            "total_depth_m": 1.6129
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          }
+        ]
+      },
+      "bounds_m": [
+        [
+          -24.556668,
+          6.985,
+          6.395646
+        ],
+        [
+          10.419132,
+          7.493,
+          8.148821
+        ]
+      ],
+      "volume_m3": 2.26547063,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            34,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "haunch_8",
+      "name": "Girder 8 | nominal deck haunch",
+      "layer": "haunches",
+      "color": "#b7b6aa",
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "basis": "Derived contact envelope",
+      "note": "50 mm nominal haunch; source minimum fillet is 3/4 in. Actual variable screed and camber are unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -24.690395,
+          6.985,
+          7.982513
+        ],
+        [
+          10.552859,
+          7.493,
+          8.202185
+        ]
+      ],
+      "volume_m3": 0.88257888,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            36,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B1_bearing_8",
+      "name": "B1 bearing 8",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        35
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.12,
+        "load_plate_thickness_m": 0.34
+      },
+      "bounds_m": [
+        [
+          -24.682368,
+          6.959,
+          6.10078
+        ],
+        [
+          -24.202368,
+          7.519,
+          6.56078
+        ]
+      ],
+      "volume_m3": 0.118932,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B2_bearing_8",
+      "name": "B2 bearing 8",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.1,
+        "load_plate_thickness_m": 0.22
+      },
+      "bounds_m": [
+        [
+          10.064832,
+          6.959,
+          6.076188
+        ],
+        [
+          10.544832,
+          7.519,
+          6.396188
+        ]
+      ],
+      "volume_m3": 0.082086,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_8_1",
+      "name": "Girder 8 | splice 1 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -18.946368,
+          7.215063,
+          6.586504
+        ],
+        [
+          -17.746368,
+          7.262938,
+          8.039404
+        ]
+      ],
+      "volume_m3": 0.05579136,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_8_2",
+      "name": "Girder 8 | splice 2 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          3.608832,
+          7.215063,
+          6.479663
+        ],
+        [
+          4.808832,
+          7.262938,
+          7.932563
+        ]
+      ],
+      "volume_m3": 0.05579136,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beam_9",
+      "name": "Girder 9 | retained original plate girder",
+      "layer": "girders",
+      "color": "#748c95",
+      "pdf_pages": [
+        31,
+        34,
+        36
+      ],
+      "basis": "Source piecewise welded I-section; straight nominal grade envelope",
+      "note": "Exact fabrication camber, small flange tapers and corrosion are not reconstructed.",
+      "dimensions": {
+        "y_m": 9.2964,
+        "section_zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.044449999999999996,
+            "total_depth_m": 1.6129
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          }
+        ]
+      },
+      "bounds_m": [
+        [
+          -26.565686,
+          9.0424,
+          6.422689
+        ],
+        [
+          8.410114,
+          9.5504,
+          8.175863
+        ]
+      ],
+      "volume_m3": 2.26547063,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            34,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "haunch_9",
+      "name": "Girder 9 | nominal deck haunch",
+      "layer": "haunches",
+      "color": "#b7b6aa",
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "basis": "Derived contact envelope",
+      "note": "50 mm nominal haunch; source minimum fillet is 3/4 in. Actual variable screed and camber are unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -26.699413,
+          9.0424,
+          8.009555
+        ],
+        [
+          8.543841,
+          9.5504,
+          8.230307
+        ]
+      ],
+      "volume_m3": 0.88257888,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            36,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B1_bearing_9",
+      "name": "B1 bearing 9",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        35
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.12,
+        "load_plate_thickness_m": 0.34
+      },
+      "bounds_m": [
+        [
+          -26.691386,
+          9.0164,
+          6.127822
+        ],
+        [
+          -26.211386,
+          9.5764,
+          6.587822
+        ]
+      ],
+      "volume_m3": 0.118932,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B2_bearing_9",
+      "name": "B2 bearing 9",
+      "layer": "bearings",
+      "color": "#414c54",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Bearing envelope; internal laminations and anchors omitted",
+      "note": "Abutment 1: proposed elastomer pad and HP14x89 bolster, simplified as stack. Abutment 2: retained fixed shoe envelope. Field dimension A and anchor hardware unresolved.",
+      "dimensions": {
+        "pad_length_m": 0.45,
+        "pad_width_m": 0.51,
+        "pad_thickness_m": 0.1,
+        "load_plate_thickness_m": 0.22
+      },
+      "bounds_m": [
+        [
+          8.055814,
+          9.0164,
+          6.10323
+        ],
+        [
+          8.535814,
+          9.5764,
+          6.42323
+        ]
+      ],
+      "volume_m3": 0.082086,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_9_1",
+      "name": "Girder 9 | splice 1 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -20.955386,
+          9.272463,
+          6.613546
+        ],
+        [
+          -19.755386,
+          9.320337,
+          8.066446
+        ]
+      ],
+      "volume_m3": 0.05579136,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "splice_9_2",
+      "name": "Girder 9 | splice 2 web cover plates",
+      "layer": "steel",
+      "color": "#8499a0",
+      "pdf_pages": [
+        34
+      ],
+      "basis": "Source 20/74/20 ft splice positions; representative cover plate envelope",
+      "note": "Plate layers, fabrication bolt holes, exact 2013/1971 patterns and inner flange bars omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          1.599814,
+          9.272463,
+          6.506706
+        ],
+        [
+          2.799814,
+          9.320337,
+          7.959606
+        ]
+      ],
+      "volume_m3": 0.05579136,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            34
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_1_1",
+      "name": "Bay 1 | V cross frame 1",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -4.705511,
+          -9.311744,
+          6.688389
+        ],
+        [
+          -4.598735,
+          -7.223656,
+          7.986831
+        ]
+      ],
+      "volume_m3": 0.025800941,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            28,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_1_2",
+      "name": "Bay 1 | V cross frame 2",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          2.000089,
+          -9.311744,
+          6.656626
+        ],
+        [
+          2.106865,
+          -7.223656,
+          7.955067
+        ]
+      ],
+      "volume_m3": 0.025800941,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            28,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_1_3",
+      "name": "Bay 1 | V cross frame 3",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          8.705689,
+          -9.311744,
+          6.624863
+        ],
+        [
+          8.812465,
+          -7.223656,
+          7.923304
+        ]
+      ],
+      "volume_m3": 0.025800941,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            28,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_1_4",
+      "name": "Bay 1 | V cross frame 4",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          15.411289,
+          -9.311744,
+          6.593099
+        ],
+        [
+          15.518065,
+          -7.223656,
+          7.891541
+        ]
+      ],
+      "volume_m3": 0.025800941,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            28,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_1_5",
+      "name": "Bay 1 | V cross frame 5",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          22.116889,
+          -9.311744,
+          6.561336
+        ],
+        [
+          22.223665,
+          -7.223656,
+          7.859777
+        ]
+      ],
+      "volume_m3": 0.025800941,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            28,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_2_1",
+      "name": "Bay 2 | X cross frame 1",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -6.88476,
+          -7.241057,
+          6.652881
+        ],
+        [
+          -6.78476,
+          -4.823943,
+          7.973081
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_2_2",
+      "name": "Bay 2 | X cross frame 2",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -0.17916,
+          -7.241057,
+          6.621118
+        ],
+        [
+          -0.07916,
+          -4.823943,
+          7.941318
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_2_3",
+      "name": "Bay 2 | X cross frame 3",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          6.52644,
+          -7.241057,
+          6.589354
+        ],
+        [
+          6.62644,
+          -4.823943,
+          7.909554
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_2_4",
+      "name": "Bay 2 | X cross frame 4",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          13.23204,
+          -7.241057,
+          6.557591
+        ],
+        [
+          13.33204,
+          -4.823943,
+          7.877791
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_2_5",
+      "name": "Bay 2 | X cross frame 5",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          19.93764,
+          -7.241057,
+          6.525828
+        ],
+        [
+          20.03764,
+          -4.823943,
+          7.846028
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_3_1",
+      "name": "Bay 3 | X cross frame 1",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -9.241016,
+          -4.828057,
+          6.664042
+        ],
+        [
+          -9.141016,
+          -2.410943,
+          7.984242
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_3_2",
+      "name": "Bay 3 | X cross frame 2",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -2.535416,
+          -4.828057,
+          6.632279
+        ],
+        [
+          -2.435416,
+          -2.410943,
+          7.952479
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_3_3",
+      "name": "Bay 3 | X cross frame 3",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          4.170184,
+          -4.828057,
+          6.600516
+        ],
+        [
+          4.270184,
+          -2.410943,
+          7.920716
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_3_4",
+      "name": "Bay 3 | X cross frame 4",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          10.875784,
+          -4.828057,
+          6.568752
+        ],
+        [
+          10.975784,
+          -2.410943,
+          7.888952
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_3_5",
+      "name": "Bay 3 | X cross frame 5",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          17.581384,
+          -4.828057,
+          6.536989
+        ],
+        [
+          17.681384,
+          -2.410943,
+          7.857189
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_4_1",
+      "name": "Bay 4 | X cross frame 1",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.597272,
+          -2.415057,
+          6.713558
+        ],
+        [
+          -11.497272,
+          0.002057,
+          8.033758
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_4_2",
+      "name": "Bay 4 | X cross frame 2",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -4.891672,
+          -2.415057,
+          6.681794
+        ],
+        [
+          -4.791672,
+          0.002057,
+          8.001994
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_4_3",
+      "name": "Bay 4 | X cross frame 3",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          1.813928,
+          -2.415057,
+          6.650031
+        ],
+        [
+          1.913928,
+          0.002057,
+          7.970231
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_4_4",
+      "name": "Bay 4 | X cross frame 4",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          8.519528,
+          -2.415057,
+          6.618267
+        ],
+        [
+          8.619528,
+          0.002057,
+          7.938467
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_4_5",
+      "name": "Bay 4 | X cross frame 5",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          15.225128,
+          -2.415057,
+          6.586504
+        ],
+        [
+          15.325128,
+          0.002057,
+          7.906704
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_5_1",
+      "name": "Bay 5 | X cross frame 1",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -13.953528,
+          -0.002057,
+          6.772979
+        ],
+        [
+          -13.853528,
+          2.415057,
+          8.093179
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_5_2",
+      "name": "Bay 5 | X cross frame 2",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -7.247928,
+          -0.002057,
+          6.741215
+        ],
+        [
+          -7.147928,
+          2.415057,
+          8.061415
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_5_3",
+      "name": "Bay 5 | X cross frame 3",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -0.542328,
+          -0.002057,
+          6.709452
+        ],
+        [
+          -0.442328,
+          2.415057,
+          8.029652
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_5_4",
+      "name": "Bay 5 | X cross frame 4",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          6.163272,
+          -0.002057,
+          6.677689
+        ],
+        [
+          6.263272,
+          2.415057,
+          7.997889
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_5_5",
+      "name": "Bay 5 | X cross frame 5",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          12.868872,
+          -0.002057,
+          6.645925
+        ],
+        [
+          12.968872,
+          2.415057,
+          7.966125
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_6_1",
+      "name": "Bay 6 | X cross frame 1",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -16.309784,
+          2.410943,
+          6.74858
+        ],
+        [
+          -16.209784,
+          4.828057,
+          8.06878
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_6_2",
+      "name": "Bay 6 | X cross frame 2",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -9.604184,
+          2.410943,
+          6.716817
+        ],
+        [
+          -9.504184,
+          4.828057,
+          8.037017
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_6_3",
+      "name": "Bay 6 | X cross frame 3",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -2.898584,
+          2.410943,
+          6.685053
+        ],
+        [
+          -2.798584,
+          4.828057,
+          8.005253
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_6_4",
+      "name": "Bay 6 | X cross frame 4",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          3.807016,
+          2.410943,
+          6.65329
+        ],
+        [
+          3.907016,
+          4.828057,
+          7.97349
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_6_5",
+      "name": "Bay 6 | X cross frame 5",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          10.512616,
+          2.410943,
+          6.621527
+        ],
+        [
+          10.612616,
+          4.828057,
+          7.941727
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_7_1",
+      "name": "Bay 7 | X cross frame 1",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -18.66604,
+          4.823943,
+          6.711481
+        ],
+        [
+          -18.56604,
+          7.241057,
+          8.031681
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_7_2",
+      "name": "Bay 7 | X cross frame 2",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.96044,
+          4.823943,
+          6.679718
+        ],
+        [
+          -11.86044,
+          7.241057,
+          7.999918
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_7_3",
+      "name": "Bay 7 | X cross frame 3",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -5.25484,
+          4.823943,
+          6.647955
+        ],
+        [
+          -5.15484,
+          7.241057,
+          7.968155
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_7_4",
+      "name": "Bay 7 | X cross frame 4",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          1.45076,
+          4.823943,
+          6.616191
+        ],
+        [
+          1.55076,
+          7.241057,
+          7.936391
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_7_5",
+      "name": "Bay 7 | X cross frame 5",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          8.15636,
+          4.823943,
+          6.584428
+        ],
+        [
+          8.25636,
+          7.241057,
+          7.904628
+        ]
+      ],
+      "volume_m3": 0.033715925,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_8_1",
+      "name": "Bay 8 | X cross frame 1",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -20.848677,
+          7.234725,
+          6.72182
+        ],
+        [
+          -20.748677,
+          9.300675,
+          8.04202
+        ]
+      ],
+      "volume_m3": 0.028894351,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_8_2",
+      "name": "Bay 8 | X cross frame 2",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -14.143077,
+          7.234725,
+          6.690057
+        ],
+        [
+          -14.043077,
+          9.300675,
+          8.010257
+        ]
+      ],
+      "volume_m3": 0.028894351,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_8_3",
+      "name": "Bay 8 | X cross frame 3",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -7.437477,
+          7.234725,
+          6.658293
+        ],
+        [
+          -7.337477,
+          9.300675,
+          7.978493
+        ]
+      ],
+      "volume_m3": 0.028894351,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_8_4",
+      "name": "Bay 8 | X cross frame 4",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -0.731877,
+          7.234725,
+          6.62653
+        ],
+        [
+          -0.631877,
+          9.300675,
+          7.94673
+        ]
+      ],
+      "volume_m3": 0.028894351,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_frame_8_5",
+      "name": "Bay 8 | X cross frame 5",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        36
+      ],
+      "basis": "Historical frame type and nominal 22 ft rows",
+      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          5.973723,
+          7.234725,
+          6.594767
+        ],
+        [
+          6.073723,
+          9.300675,
+          7.914967
+        ]
+      ],
+      "volume_m3": 0.028894351,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            36
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abutment_1",
+      "name": "Abutment 1 | retained wall",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        31,
+        32,
+        33,
+        38
+      ],
+      "basis": "Retained 4 ft wall envelope with constructed bearing-seat datum",
+      "note": "Historical abutment wall and footing are retained; exact batter, wing angles and seat steps simplified.",
+      "dimensions": {
+        "normal_thickness_m": 1.2192
+      },
+      "bounds_m": [
+        [
+          -27.824271,
+          -9.8298,
+          0.65
+        ],
+        [
+          -6.922929,
+          9.8298,
+          6.04218
+        ]
+      ],
+      "volume_m3": 180.643784586,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32,
+            33,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            61,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_1_1",
+      "name": "Abutment 1 | bearing seat riser 1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        35,
+        38
+      ],
+      "basis": "Derived seat riser",
+      "note": "Reconstructed to contact nominal shoe stack; not field survey.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -9.101596,
+          -9.6564,
+          6.04218
+        ],
+        [
+          -7.490032,
+          -8.9364,
+          6.25884
+        ]
+      ],
+      "volume_m3": 0.141720804,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_1_2",
+      "name": "Abutment 1 | bearing seat riser 2",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        35,
+        38
+      ],
+      "basis": "Derived seat riser",
+      "note": "Reconstructed to contact nominal shoe stack; not field survey.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -11.110614,
+          -7.599,
+          6.04218
+        ],
+        [
+          -9.499051,
+          -6.879,
+          6.076865
+        ]
+      ],
+      "volume_m3": 0.022688535,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_1_4",
+      "name": "Abutment 1 | bearing seat riser 4",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        35,
+        38
+      ],
+      "basis": "Derived seat riser",
+      "note": "Reconstructed to contact nominal shoe stack; not field survey.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -15.823126,
+          -2.773,
+          6.04218
+        ],
+        [
+          -14.211562,
+          -2.053,
+          6.091695
+        ]
+      ],
+      "volume_m3": 0.032388702,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_1_5",
+      "name": "Abutment 1 | bearing seat riser 5",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        35,
+        38
+      ],
+      "basis": "Derived seat riser",
+      "note": "Reconstructed to contact nominal shoe stack; not field survey.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -18.179382,
+          -0.36,
+          6.04218
+        ],
+        [
+          -16.567818,
+          0.36,
+          6.151116
+        ]
+      ],
+      "volume_m3": 0.071257079,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_1_6",
+      "name": "Abutment 1 | bearing seat riser 6",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        35,
+        38
+      ],
+      "basis": "Derived seat riser",
+      "note": "Reconstructed to contact nominal shoe stack; not field survey.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -20.535638,
+          2.053,
+          6.04218
+        ],
+        [
+          -18.924074,
+          2.773,
+          6.174977
+        ]
+      ],
+      "volume_m3": 0.086865084,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_1_7",
+      "name": "Abutment 1 | bearing seat riser 7",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        35,
+        38
+      ],
+      "basis": "Derived seat riser",
+      "note": "Reconstructed to contact nominal shoe stack; not field survey.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -22.891893,
+          4.466,
+          6.04218
+        ],
+        [
+          -21.28033,
+          5.186,
+          6.137878
+        ]
+      ],
+      "volume_m3": 0.062598166,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_1_8",
+      "name": "Abutment 1 | bearing seat riser 8",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        35,
+        38
+      ],
+      "basis": "Derived seat riser",
+      "note": "Reconstructed to contact nominal shoe stack; not field survey.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -25.248149,
+          6.879,
+          6.04218
+        ],
+        [
+          -23.636586,
+          7.599,
+          6.10078
+        ]
+      ],
+      "volume_m3": 0.038331249,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_1_9",
+      "name": "Abutment 1 | bearing seat riser 9",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        35,
+        38
+      ],
+      "basis": "Derived seat riser",
+      "note": "Reconstructed to contact nominal shoe stack; not field survey.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -27.257168,
+          8.9364,
+          6.04218
+        ],
+        [
+          -25.645604,
+          9.6564,
+          6.127822
+        ]
+      ],
+      "volume_m3": 0.056020122,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footing_1",
+      "name": "Abutment 1 | hidden spread footing envelope",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Historical nominal footing envelope",
+      "note": "Exact eccentricity, toe and wing footing geometry omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -31.228077,
+          -10.4798,
+          0.0
+        ],
+        [
+          -3.519123,
+          10.4798,
+          0.65
+        ]
+      ],
+      "volume_m3": 98.666398482,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            61,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mudwall_1",
+      "name": "Abutment 1 | reconstructed mudwall and ledge",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        38
+      ],
+      "basis": "Source reconstructed mudwall topology; simplified ledge",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -27.772243,
+          -9.8298,
+          6.04218
+        ],
+        [
+          -8.274957,
+          9.8298,
+          8.23958
+        ]
+      ],
+      "volume_m3": 12.884496686,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wing_1_-1",
+      "name": "Abutment 1 | retained wing envelope -1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Historical wing presence; approximate 20 ft parallel envelope",
+      "note": "Source wings are splayed and battered. Their exact plan and top profile remain incomplete.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -13.870957,
+          -10.0098,
+          0.65
+        ],
+        [
+          -7.774957,
+          -9.6498,
+          5.79218
+        ]
+      ],
+      "volume_m3": 11.284821609,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wing_1_1",
+      "name": "Abutment 1 | retained wing envelope 1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Historical wing presence; approximate 20 ft parallel envelope",
+      "note": "Source wings are splayed and battered. Their exact plan and top profile remain incomplete.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -33.068243,
+          9.6498,
+          0.65
+        ],
+        [
+          -26.972243,
+          10.0098,
+          5.79218
+        ]
+      ],
+      "volume_m3": 11.284821609,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abutment_2",
+      "name": "Abutment 2 | retained wall",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        31,
+        32,
+        33,
+        38
+      ],
+      "basis": "Retained 4 ft wall envelope with constructed bearing-seat datum",
+      "note": "Historical abutment wall and footing are retained; exact batter, wing angles and seat steps simplified.",
+      "dimensions": {
+        "normal_thickness_m": 1.2192
+      },
+      "bounds_m": [
+        [
+          6.922929,
+          -9.8298,
+          0.65
+        ],
+        [
+          27.824271,
+          9.8298,
+          6.017588
+        ]
+      ],
+      "volume_m3": 179.819926276,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32,
+            33,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            63,
+            64
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_2_1",
+      "name": "Abutment 2 | bearing seat riser 1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        35,
+        38
+      ],
+      "basis": "Derived seat riser",
+      "note": "Reconstructed to contact nominal shoe stack; not field survey.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          25.645604,
+          -9.6564,
+          6.017588
+        ],
+        [
+          27.257168,
+          -8.9364,
+          6.234248
+        ]
+      ],
+      "volume_m3": 0.141720804,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_2_2",
+      "name": "Abutment 2 | bearing seat riser 2",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        35,
+        38
+      ],
+      "basis": "Derived seat riser",
+      "note": "Reconstructed to contact nominal shoe stack; not field survey.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          23.636586,
+          -7.599,
+          6.017588
+        ],
+        [
+          25.248149,
+          -6.879,
+          6.052273
+        ]
+      ],
+      "volume_m3": 0.022688535,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_2_4",
+      "name": "Abutment 2 | bearing seat riser 4",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        35,
+        38
+      ],
+      "basis": "Derived seat riser",
+      "note": "Reconstructed to contact nominal shoe stack; not field survey.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          18.924074,
+          -2.773,
+          6.017588
+        ],
+        [
+          20.535638,
+          -2.053,
+          6.067103
+        ]
+      ],
+      "volume_m3": 0.032388702,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_2_5",
+      "name": "Abutment 2 | bearing seat riser 5",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        35,
+        38
+      ],
+      "basis": "Derived seat riser",
+      "note": "Reconstructed to contact nominal shoe stack; not field survey.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          16.567818,
+          -0.36,
+          6.017588
+        ],
+        [
+          18.179382,
+          0.36,
+          6.126524
+        ]
+      ],
+      "volume_m3": 0.071257079,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_2_6",
+      "name": "Abutment 2 | bearing seat riser 6",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        35,
+        38
+      ],
+      "basis": "Derived seat riser",
+      "note": "Reconstructed to contact nominal shoe stack; not field survey.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          14.211562,
+          2.053,
+          6.017588
+        ],
+        [
+          15.823126,
+          2.773,
+          6.150385
+        ]
+      ],
+      "volume_m3": 0.086865084,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_2_7",
+      "name": "Abutment 2 | bearing seat riser 7",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        35,
+        38
+      ],
+      "basis": "Derived seat riser",
+      "note": "Reconstructed to contact nominal shoe stack; not field survey.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          11.855307,
+          4.466,
+          6.017588
+        ],
+        [
+          13.46687,
+          5.186,
+          6.113286
+        ]
+      ],
+      "volume_m3": 0.062598166,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_2_8",
+      "name": "Abutment 2 | bearing seat riser 8",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        35,
+        38
+      ],
+      "basis": "Derived seat riser",
+      "note": "Reconstructed to contact nominal shoe stack; not field survey.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          9.499051,
+          6.879,
+          6.017588
+        ],
+        [
+          11.110614,
+          7.599,
+          6.076188
+        ]
+      ],
+      "volume_m3": 0.038331249,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_2_9",
+      "name": "Abutment 2 | bearing seat riser 9",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        35,
+        38
+      ],
+      "basis": "Derived seat riser",
+      "note": "Reconstructed to contact nominal shoe stack; not field survey.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          7.490032,
+          8.9364,
+          6.017588
+        ],
+        [
+          9.101596,
+          9.6564,
+          6.10323
+        ]
+      ],
+      "volume_m3": 0.056020122,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            35,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "footing_2",
+      "name": "Abutment 2 | hidden spread footing envelope",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Historical nominal footing envelope",
+      "note": "Exact eccentricity, toe and wing footing geometry omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          3.519123,
+          -10.4798,
+          0.0
+        ],
+        [
+          31.228077,
+          10.4798,
+          0.65
+        ]
+      ],
+      "volume_m3": 98.666398482,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            63,
+            64
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mudwall_2",
+      "name": "Abutment 2 | reconstructed mudwall and ledge",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        38
+      ],
+      "basis": "Source reconstructed mudwall topology; simplified ledge",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          8.274957,
+          -9.8298,
+          6.017588
+        ],
+        [
+          27.772243,
+          9.8298,
+          8.06883
+        ]
+      ],
+      "volume_m3": 12.022474962,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wing_2_-1",
+      "name": "Abutment 2 | retained wing envelope -1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Historical wing presence; approximate 20 ft parallel envelope",
+      "note": "Source wings are splayed and battered. Their exact plan and top profile remain incomplete.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          26.972243,
+          -10.0098,
+          0.65
+        ],
+        [
+          33.068243,
+          -9.6498,
+          5.767588
+        ]
+      ],
+      "volume_m3": 11.23085299,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wing_2_1",
+      "name": "Abutment 2 | retained wing envelope 1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Historical wing presence; approximate 20 ft parallel envelope",
+      "note": "Source wings are splayed and battered. Their exact plan and top profile remain incomplete.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          7.774957,
+          9.6498,
+          0.65
+        ],
+        [
+          13.870957,
+          10.0098,
+          5.767588
+        ]
+      ],
+      "volume_m3": 11.23085299,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TX_rail_-1_0",
+      "name": "Type TX rail | side -1 panel 1",
+      "layer": "rails",
+      "color": "#dcd2b8",
+      "pdf_pages": [
+        31,
+        37,
+        39
+      ],
+      "basis": "Dimensioned rail extent and window rhythm; nominal window profile",
+      "note": "32 in nominal concrete rail above sidewalk. Exact mold recesses, fillets, pilasters and window curves simplified.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -9.133433,
+          -9.779,
+          8.532051
+        ],
+        [
+          -1.481865,
+          -9.4742,
+          9.384067
+        ]
+      ],
+      "volume_m3": 1.281006847,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TX_rail_-1_1",
+      "name": "Type TX rail | side -1 panel 2",
+      "layer": "rails",
+      "color": "#dcd2b8",
+      "pdf_pages": [
+        31,
+        37,
+        39
+      ],
+      "basis": "Dimensioned rail extent and window rhythm; nominal window profile",
+      "note": "32 in nominal concrete rail above sidewalk. Exact mold recesses, fillets, pilasters and window curves simplified.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -1.779498,
+          -9.779,
+          8.497217
+        ],
+        [
+          5.87207,
+          -9.4742,
+          9.349232
+        ]
+      ],
+      "volume_m3": 1.281006847,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TX_rail_-1_2",
+      "name": "Type TX rail | side -1 panel 3",
+      "layer": "rails",
+      "color": "#dcd2b8",
+      "pdf_pages": [
+        31,
+        37,
+        39
+      ],
+      "basis": "Dimensioned rail extent and window rhythm; nominal window profile",
+      "note": "32 in nominal concrete rail above sidewalk. Exact mold recesses, fillets, pilasters and window curves simplified.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          5.574437,
+          -9.779,
+          8.462382
+        ],
+        [
+          13.226005,
+          -9.4742,
+          9.314398
+        ]
+      ],
+      "volume_m3": 1.281006847,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TX_rail_-1_3",
+      "name": "Type TX rail | side -1 panel 4",
+      "layer": "rails",
+      "color": "#dcd2b8",
+      "pdf_pages": [
+        31,
+        37,
+        39
+      ],
+      "basis": "Dimensioned rail extent and window rhythm; nominal window profile",
+      "note": "32 in nominal concrete rail above sidewalk. Exact mold recesses, fillets, pilasters and window curves simplified.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          12.928372,
+          -9.779,
+          8.427548
+        ],
+        [
+          20.57994,
+          -9.4742,
+          9.279564
+        ]
+      ],
+      "volume_m3": 1.281006847,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TX_rail_-1_4",
+      "name": "Type TX rail | side -1 panel 5",
+      "layer": "rails",
+      "color": "#dcd2b8",
+      "pdf_pages": [
+        31,
+        37,
+        39
+      ],
+      "basis": "Dimensioned rail extent and window rhythm; nominal window profile",
+      "note": "32 in nominal concrete rail above sidewalk. Exact mold recesses, fillets, pilasters and window curves simplified.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          20.282307,
+          -9.779,
+          8.392713
+        ],
+        [
+          27.933875,
+          -9.4742,
+          9.244729
+        ]
+      ],
+      "volume_m3": 1.281006847,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ornamental_rail",
+      "name": "Reset south aluminum ornamental top rail",
+      "layer": "ornament",
+      "color": "#829292",
+      "pdf_pages": [
+        39
+      ],
+      "basis": "Source south-only rail; simplified round members",
+      "note": "25 post locations follow the 24-space elevation rhythm approximately; exact metal profile and anchorage omitted.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -8.687103,
+          -9.9564,
+          9.21327
+        ],
+        [
+          28.082809,
+          -9.9064,
+          9.641257
+        ]
+      ],
+      "volume_m3": 0.079725164,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TX_rail_1_0",
+      "name": "Type TX rail | side 1 panel 1",
+      "layer": "rails",
+      "color": "#dcd2b8",
+      "pdf_pages": [
+        31,
+        37,
+        39
+      ],
+      "basis": "Dimensioned rail extent and window rhythm; nominal window profile",
+      "note": "32 in nominal concrete rail above sidewalk. Exact mold recesses, fillets, pilasters and window curves simplified.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -27.933875,
+          9.4742,
+          8.605167
+        ],
+        [
+          -20.282307,
+          9.779,
+          9.458783
+        ]
+      ],
+      "volume_m3": 1.281006847,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TX_rail_1_1",
+      "name": "Type TX rail | side 1 panel 2",
+      "layer": "rails",
+      "color": "#dcd2b8",
+      "pdf_pages": [
+        31,
+        37,
+        39
+      ],
+      "basis": "Dimensioned rail extent and window rhythm; nominal window profile",
+      "note": "32 in nominal concrete rail above sidewalk. Exact mold recesses, fillets, pilasters and window curves simplified.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -20.57994,
+          9.4742,
+          8.570333
+        ],
+        [
+          -12.928372,
+          9.779,
+          9.423949
+        ]
+      ],
+      "volume_m3": 1.281006847,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TX_rail_1_2",
+      "name": "Type TX rail | side 1 panel 3",
+      "layer": "rails",
+      "color": "#dcd2b8",
+      "pdf_pages": [
+        31,
+        37,
+        39
+      ],
+      "basis": "Dimensioned rail extent and window rhythm; nominal window profile",
+      "note": "32 in nominal concrete rail above sidewalk. Exact mold recesses, fillets, pilasters and window curves simplified.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -13.226005,
+          9.4742,
+          8.535498
+        ],
+        [
+          -5.574437,
+          9.779,
+          9.389114
+        ]
+      ],
+      "volume_m3": 1.281006847,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TX_rail_1_3",
+      "name": "Type TX rail | side 1 panel 4",
+      "layer": "rails",
+      "color": "#dcd2b8",
+      "pdf_pages": [
+        31,
+        37,
+        39
+      ],
+      "basis": "Dimensioned rail extent and window rhythm; nominal window profile",
+      "note": "32 in nominal concrete rail above sidewalk. Exact mold recesses, fillets, pilasters and window curves simplified.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -5.87207,
+          9.4742,
+          8.500664
+        ],
+        [
+          1.779498,
+          9.779,
+          9.35428
+        ]
+      ],
+      "volume_m3": 1.281006847,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TX_rail_1_4",
+      "name": "Type TX rail | side 1 panel 5",
+      "layer": "rails",
+      "color": "#dcd2b8",
+      "pdf_pages": [
+        31,
+        37,
+        39
+      ],
+      "basis": "Dimensioned rail extent and window rhythm; nominal window profile",
+      "note": "32 in nominal concrete rail above sidewalk. Exact mold recesses, fillets, pilasters and window curves simplified.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          1.481865,
+          9.4742,
+          8.465829
+        ],
+        [
+          9.133433,
+          9.779,
+          9.319446
+        ]
+      ],
+      "volume_m3": 1.281006847,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "approach_1",
+      "name": "Abutment 1 | proposed reinforced approach slab",
+      "layer": "approaches",
+      "color": "#bbc4c0",
+      "pdf_pages": [
+        31,
+        41,
+        43
+      ],
+      "basis": "Source minimum approach length with square terminal edge",
+      "note": "12 in nominal depth; exact local transition extensions and terminal joint shapes simplified.",
+      "dimensions": {
+        "minimum_length_m": 4.8006,
+        "thickness_m": 0.30479999999999996
+      },
+      "bounds_m": [
+        [
+          -32.78408,
+          -9.8298,
+          8.039219
+        ],
+        [
+          -8.786195,
+          9.8298,
+          8.555293
+        ]
+      ],
+      "volume_m3": 86.283804696,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            41,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "id": "joint_1",
+      "name": "Abutment 1 | Type IA joint line",
+      "layer": "joints",
+      "color": "#39434a",
+      "pdf_pages": [
+        38,
+        41
+      ],
+      "basis": "Schematic 24 mm joint strip; installation gap unresolved",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -27.99548,
+          -9.8298,
+          8.283962
+        ],
+        [
+          -8.774195,
+          9.8298,
+          8.494192
+        ]
+      ],
+      "volume_m3": 0.028309824,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            38,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "id": "approach_2",
+      "name": "Abutment 2 | proposed reinforced approach slab",
+      "layer": "approaches",
+      "color": "#bbc4c0",
+      "pdf_pages": [
+        31,
+        41,
+        43
+      ],
+      "basis": "Source minimum approach length with square terminal edge",
+      "note": "12 in nominal depth; exact local transition extensions and terminal joint shapes simplified.",
+      "dimensions": {
+        "minimum_length_m": 6.2484,
+        "thickness_m": 0.30479999999999996
+      },
+      "bounds_m": [
+        [
+          8.786195,
+          -9.8298,
+          7.811129
+        ],
+        [
+          34.23188,
+          9.8298,
+          8.319963
+        ]
+      ],
+      "volume_m3": 94.95937857,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            41,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "id": "joint_2",
+      "name": "Abutment 2 | Type IA joint line",
+      "layer": "joints",
+      "color": "#39434a",
+      "pdf_pages": [
+        38,
+        41
+      ],
+      "basis": "Schematic 24 mm joint strip; installation gap unresolved",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          8.774195,
+          -9.8298,
+          8.10979
+        ],
+        [
+          27.99548,
+          9.8298,
+          8.32002
+        ]
+      ],
+      "volume_m3": 0.028309824,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            38,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bollard_1",
+      "name": "Reset Cultural Trail light bollard 1",
+      "layer": "accessories",
+      "color": "#59676f",
+      "pdf_pages": [
+        31,
+        37
+      ],
+      "basis": "Source six-count; nominal housing and evenly distributed positions",
+      "note": "Exact source lighting station offsets and fixture product geometry unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -12.506272,
+          -5.464,
+          8.503582
+        ],
+        [
+          -12.246272,
+          -5.204,
+          9.533582
+        ]
+      ],
+      "volume_m3": 0.024360097,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bollard_2",
+      "name": "Reset Cultural Trail light bollard 2",
+      "layer": "accessories",
+      "color": "#59676f",
+      "pdf_pages": [
+        31,
+        37
+      ],
+      "basis": "Source six-count; nominal housing and evenly distributed positions",
+      "note": "Exact source lighting station offsets and fixture product geometry unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -5.472337,
+          -5.464,
+          8.470264
+        ],
+        [
+          -5.212337,
+          -5.204,
+          9.500264
+        ]
+      ],
+      "volume_m3": 0.024360097,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bollard_3",
+      "name": "Reset Cultural Trail light bollard 3",
+      "layer": "accessories",
+      "color": "#59676f",
+      "pdf_pages": [
+        31,
+        37
+      ],
+      "basis": "Source six-count; nominal housing and evenly distributed positions",
+      "note": "Exact source lighting station offsets and fixture product geometry unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          1.561598,
+          -5.464,
+          8.436945
+        ],
+        [
+          1.821598,
+          -5.204,
+          9.466945
+        ]
+      ],
+      "volume_m3": 0.024360097,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bollard_4",
+      "name": "Reset Cultural Trail light bollard 4",
+      "layer": "accessories",
+      "color": "#59676f",
+      "pdf_pages": [
+        31,
+        37
+      ],
+      "basis": "Source six-count; nominal housing and evenly distributed positions",
+      "note": "Exact source lighting station offsets and fixture product geometry unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          8.595533,
+          -5.464,
+          8.403627
+        ],
+        [
+          8.855533,
+          -5.204,
+          9.433627
+        ]
+      ],
+      "volume_m3": 0.024360097,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bollard_5",
+      "name": "Reset Cultural Trail light bollard 5",
+      "layer": "accessories",
+      "color": "#59676f",
+      "pdf_pages": [
+        31,
+        37
+      ],
+      "basis": "Source six-count; nominal housing and evenly distributed positions",
+      "note": "Exact source lighting station offsets and fixture product geometry unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          15.629468,
+          -5.464,
+          8.370308
+        ],
+        [
+          15.889468,
+          -5.204,
+          9.400308
+        ]
+      ],
+      "volume_m3": 0.024360097,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bollard_6",
+      "name": "Reset Cultural Trail light bollard 6",
+      "layer": "accessories",
+      "color": "#59676f",
+      "pdf_pages": [
+        31,
+        37
+      ],
+      "basis": "Source six-count; nominal housing and evenly distributed positions",
+      "note": "Exact source lighting station offsets and fixture product geometry unresolved.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          22.663403,
+          -5.464,
+          8.336989
+        ],
+        [
+          22.923403,
+          -5.204,
+          9.366989
+        ]
+      ],
+      "volume_m3": 0.024360097,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drain_abutment_2",
+      "name": "Abutment 2 | SQ-A drain and 6 in collector envelope",
+      "layer": "drainage",
+      "color": "#6c8389",
+      "pdf_pages": [
+        36,
+        39
+      ],
+      "basis": "Source drain/collector routing; nominal fittings",
+      "note": "Collector is a straight visual run below the girders; elbows, hangers, cleanouts and deck penetrations are simplified.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          7.718659,
+          -4.552,
+          6.007694
+        ],
+        [
+          20.948388,
+          9.881151,
+          8.198893
+        ]
+      ],
+      "volume_m3": 0.394070142,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            36,
+            39
+          ]
+        }
+      ]
+    }
+  ],
+  "layers": {
+    "deck": "Concrete deck",
+    "girders": "Longitudinal girders",
+    "haunches": "Deck haunches",
+    "steel": "Steel plates and stiffeners",
+    "bracing": "Cross frames",
+    "bearings": "Bearings and pedestals",
+    "abutments": "End bents and wing walls",
+    "foundations": "Design foundation envelopes",
+    "rails": "Bridge rails",
+    "approaches": "Approach slabs",
+    "joints": "Deck joints",
+    "drainage": "Deck drainage",
+    "sidewalks": "Sidewalks and curbs",
+    "ornament": "Architectural rail panels",
+    "accessories": "External accessories"
+  },
+  "default_hidden_layers": [
+    "foundations",
+    "fill"
+  ],
+  "native_axes": "X increasing station, Y transverse, Z up; local metres",
+  "glb_axes": "Y up: (native X, native Z, -native Y); no world georeferencing transform",
+  "detail_coverage": [
+    {
+      "feature": "Whole single-span steel crossing",
+      "status": "modeled_with_simplifications",
+      "detail": "Nine girders, 2026 deck, broad south path, narrow north sidewalk, all bays, both wall abutments and approach slabs.",
+      "sources": [
+        "Primary PDF p.31",
+        "Primary PDF p.36",
+        "Primary PDF p.37",
+        "Primary PDF p.38",
+        "Primary PDF p.41"
+      ],
+      "part_ids": [
+        "deck",
+        "beam_1",
+        "haunch_1",
+        "beam_2",
+        "haunch_2",
+        "beam_3",
+        "haunch_3",
+        "beam_4",
+        "haunch_4",
+        "beam_5",
+        "haunch_5",
+        "beam_6",
+        "haunch_6",
+        "beam_7",
+        "haunch_7",
+        "beam_8",
+        "haunch_8",
+        "beam_9",
+        "haunch_9",
+        "cross_frame_1_1",
+        "cross_frame_1_2",
+        "cross_frame_1_3",
+        "cross_frame_1_4",
+        "cross_frame_1_5",
+        "cross_frame_2_1",
+        "cross_frame_2_2",
+        "cross_frame_2_3",
+        "cross_frame_2_4",
+        "cross_frame_2_5",
+        "cross_frame_3_1",
+        "cross_frame_3_2",
+        "cross_frame_3_3",
+        "cross_frame_3_4",
+        "cross_frame_3_5",
+        "cross_frame_4_1",
+        "cross_frame_4_2",
+        "cross_frame_4_3",
+        "cross_frame_4_4",
+        "cross_frame_4_5",
+        "cross_frame_5_1",
+        "cross_frame_5_2",
+        "cross_frame_5_3",
+        "cross_frame_5_4",
+        "cross_frame_5_5",
+        "cross_frame_6_1",
+        "cross_frame_6_2",
+        "cross_frame_6_3",
+        "cross_frame_6_4",
+        "cross_frame_6_5",
+        "cross_frame_7_1",
+        "cross_frame_7_2",
+        "cross_frame_7_3",
+        "cross_frame_7_4",
+        "cross_frame_7_5",
+        "cross_frame_8_1",
+        "cross_frame_8_2",
+        "cross_frame_8_3",
+        "cross_frame_8_4",
+        "cross_frame_8_5",
+        "abutment_1",
+        "seat_1_1",
+        "seat_1_2",
+        "seat_1_4",
+        "seat_1_5",
+        "seat_1_6",
+        "seat_1_7",
+        "seat_1_8",
+        "seat_1_9",
+        "mudwall_1",
+        "wing_1_-1",
+        "wing_1_1",
+        "abutment_2",
+        "seat_2_1",
+        "seat_2_2",
+        "seat_2_4",
+        "seat_2_5",
+        "seat_2_6",
+        "seat_2_7",
+        "seat_2_8",
+        "seat_2_9",
+        "mudwall_2",
+        "wing_2_-1",
+        "wing_2_1",
+        "approach_1",
+        "approach_2"
+      ]
+    },
+    {
+      "feature": "Retained steel and bearings",
+      "status": "modeled_with_simplifications",
+      "detail": "Piecewise 2013 girder 1 and original girders 2-9; splice covers, V/X frames and 18 bearing envelopes. Historical original PDF references are stored per component.",
+      "sources": [
+        "Primary PDF p.31",
+        "Primary PDF p.34",
+        "Primary PDF p.35"
+      ],
+      "part_ids": [
+        "beam_1",
+        "B1_bearing_1",
+        "B2_bearing_1",
+        "splice_1_1",
+        "splice_1_2",
+        "beam_2",
+        "B1_bearing_2",
+        "B2_bearing_2",
+        "splice_2_1",
+        "splice_2_2",
+        "beam_3",
+        "B1_bearing_3",
+        "B2_bearing_3",
+        "splice_3_1",
+        "splice_3_2",
+        "beam_4",
+        "B1_bearing_4",
+        "B2_bearing_4",
+        "splice_4_1",
+        "splice_4_2",
+        "beam_5",
+        "B1_bearing_5",
+        "B2_bearing_5",
+        "splice_5_1",
+        "splice_5_2",
+        "beam_6",
+        "B1_bearing_6",
+        "B2_bearing_6",
+        "splice_6_1",
+        "splice_6_2",
+        "beam_7",
+        "B1_bearing_7",
+        "B2_bearing_7",
+        "splice_7_1",
+        "splice_7_2",
+        "beam_8",
+        "B1_bearing_8",
+        "B2_bearing_8",
+        "splice_8_1",
+        "splice_8_2",
+        "beam_9",
+        "B1_bearing_9",
+        "B2_bearing_9",
+        "splice_9_1",
+        "splice_9_2",
+        "cross_frame_1_1",
+        "cross_frame_1_2",
+        "cross_frame_1_3",
+        "cross_frame_1_4",
+        "cross_frame_1_5",
+        "cross_frame_2_1",
+        "cross_frame_2_2",
+        "cross_frame_2_3",
+        "cross_frame_2_4",
+        "cross_frame_2_5",
+        "cross_frame_3_1",
+        "cross_frame_3_2",
+        "cross_frame_3_3",
+        "cross_frame_3_4",
+        "cross_frame_3_5",
+        "cross_frame_4_1",
+        "cross_frame_4_2",
+        "cross_frame_4_3",
+        "cross_frame_4_4",
+        "cross_frame_4_5",
+        "cross_frame_5_1",
+        "cross_frame_5_2",
+        "cross_frame_5_3",
+        "cross_frame_5_4",
+        "cross_frame_5_5",
+        "cross_frame_6_1",
+        "cross_frame_6_2",
+        "cross_frame_6_3",
+        "cross_frame_6_4",
+        "cross_frame_6_5",
+        "cross_frame_7_1",
+        "cross_frame_7_2",
+        "cross_frame_7_3",
+        "cross_frame_7_4",
+        "cross_frame_7_5",
+        "cross_frame_8_1",
+        "cross_frame_8_2",
+        "cross_frame_8_3",
+        "cross_frame_8_4",
+        "cross_frame_8_5"
+      ]
+    },
+    {
+      "feature": "Rails, path, lights and drain",
+      "status": "modeled_with_simplifications",
+      "detail": "TX windowed rail, south ornamental top rail, paver envelope, six light bollards and source drain collector.",
+      "sources": [
+        "Primary PDF p.37",
+        "Primary PDF p.39",
+        "Primary PDF p.43"
+      ],
+      "part_ids": [
+        "walk_-1",
+        "trail_pavers",
+        "walk_1",
+        "TX_rail_-1_0",
+        "TX_rail_-1_1",
+        "TX_rail_-1_2",
+        "TX_rail_-1_3",
+        "TX_rail_-1_4",
+        "ornamental_rail",
+        "TX_rail_1_0",
+        "TX_rail_1_1",
+        "TX_rail_1_2",
+        "TX_rail_1_3",
+        "TX_rail_1_4",
+        "bollard_1",
+        "bollard_2",
+        "bollard_3",
+        "bollard_4",
+        "bollard_5",
+        "bollard_6",
+        "drain_abutment_2"
+      ]
+    },
+    {
+      "feature": "Unresolved geometry",
+      "status": "not_modeled",
+      "detail": "Exact field seats and camber, bolts/gussets, splayed wings and local abutment batter, transition rail terminals, paver pattern, exact rail molds, buried utilities and surrounding interstate.",
+      "sources": [
+        "Primary PDF p.31",
+        "Primary PDF p.35",
+        "Primary PDF p.39",
+        "Primary PDF p.41"
+      ],
+      "part_ids": []
+    }
+  ]
+}

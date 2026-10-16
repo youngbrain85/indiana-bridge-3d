@@ -11,3 +11,7 @@
 *.glb binary
 *.pdf binary
 *.png binary
+# These files are identified by raw-byte hashes in saved FEM provenance.
+# Keep the same bytes on Windows and Linux checkouts.
+fem/*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+data/bridges/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

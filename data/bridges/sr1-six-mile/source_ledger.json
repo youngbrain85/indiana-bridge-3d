@@ -1,0 +1,40 @@
+{
+  "modeled_state": "Proposed 2026 overlay on schematic existing slab; hypothetical supports",
+  "deck_length_m": 22.12975,
+  "deck_width_m": 14.363700000000001,
+  "spans_m": [
+    6.664875,
+    8.5,
+    6.664875
+  ],
+  "support_u_m": [
+    -10.914875,
+    -4.25,
+    4.25,
+    10.914875
+  ],
+  "deck_thickness_m": 0.45,
+  "structural_type": "continuous_slab",
+  "skew_deg": 20,
+  "girder_lines": 0,
+  "deck_id": "deck",
+  "overlay_id": "overlay",
+  "slab_thickness_status": "assumed",
+  "support_positions_status": "assumed",
+  "primary_pages": [
+    3,
+    4,
+    7
+  ],
+  "nbi_structure_type": "201",
+  "nbi_max_span_m": 8.5,
+  "assumptions": [
+    "This is a schematic overlay-plan reconstruction with a deliberately hypothetical structural scaffold; it is not a detailed as-built model.",
+    "2025 NBI item 43A=2 and 43B=01 identify continuous concrete slab, not concrete beams. The earlier research candidate type was corrected.",
+    "Source p.4 incorrectly repeats structure 001-90-00230-B (Wabash). The cover identifies 001-90-07052-B, NBI 000370 and Six Mile Creek consistently; the cover identity is retained.",
+    "Source p.4 overall 72 ft 7.25 in governs; p.7 labels a schematic 72 ft overlay length. NBI 22.2 m overall and 8.5 m maximum span are rounded inventory values.",
+    "All supports, foundation envelopes and slab thickness are hypothetical. Original substructure geometry has not been established.",
+    "Native X station, Y transverse and Z up. The 6 m local elevation, level longitudinal grade and skew direction are assumed; NBI gives skew magnitude only.",
+    "No internal reinforcement, pile tips, traffic, observed defects or drainage details are invented."
+  ]
+}

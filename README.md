@@ -1,21 +1,33 @@
 # Indiana Bridge 3D
 
+[Open the hosted application](https://indiana-bridge-3d.plumibex3.chatgpt.site) (owner's ChatGPT sign-in required). The hosted edition retains the model explorer, source drawings, database exports and native FEM calculations. See [hosting and release instructions](docs/deployment.md).
+
 A local bridge review workspace combining 3D models, a component database, source drawings and an Indiana road map. The interface, component descriptions and modeling notes are in English.
 
 ![Indiana Bridge 3D workspace](docs/images/workspace.png)
 
 ## Included collection
 
-- **9 bridge models**, **4,012 components** and **106 original source groups**.
-- **9 plan sets / 324 PDF pages**, with **5,666 component-to-page links**.
-- **5,872 dimensional attributes** and **76 detail-coverage entries**.
+- **21 crossing records**, **6,622 components** and **248 source groups**.
+- **21 primary plan sets or review binders / 984 PDF pages**, with **11,728 component-to-page links**.
+- **9,499 dimensional attributes** and **137 detail-coverage entries**.
 - Bundled GLB models, PDF drawings, English model manifests and map boundaries.
 
 The collection includes Beechwood Road, 21st Street over I-465, US 421 over South Fork Wildcat Creek, US 52 over Mud Creek, SR 58 over White Creek, SR 159 over Branch Spencer Creek, and three SR 62 crossings: CSX Railroad, Tekoppel Avenue and Carpentier Creek.
 
-The **3D workspace shows four bridges**, with completed exterior models first. A fresh visit opens **Beechwood Road Bridge**, currently the only model with complete exterior coverage. The five SR-series records are **map only**: their locations and basic attributes remain visible, and all existing models, drawings and component records remain stored. They are excluded from the bridge selector and 3D entry points. Old SR model links open the corresponding map location.
+The **3D workspace shows sixteen crossings**, with completed exterior models first. A fresh visit opens **Beechwood Road Bridge**, currently the only model with complete exterior coverage. The five older partial SR-series models are **map only**: their locations and basic attributes remain visible, and all existing models, drawings and component records remain stored. Their old 3D links open the corresponding map location.
+
+**SR 44 over Mud Creek** is a new whole three-span reconstruction with 383 selectable components. Its workspace includes the 2018 rehabilitation design: seven continuous steel beam lines, 28 bearings, 48 channel diaphragms, 14 field splices, both wall piers and approach slabs. It remains **more detail needed**, including reconciliation of some retained-seat/haunch levels, approach steel guardrail and drainage. See [model scope and verification](docs/sr44-mud.md). The later 2026 overlay project is kept as a reference, not mixed into the modeled state.
 
 Ownership and maintenance information is shown only where present in the sources. The SR 62 railroad/NBI association is provisional. See [source provenance](data/sources.json) and the in-app coverage notes.
+
+**Four additional whole crossings** are now available: SR 8 over Yellow River, SR 1 over Wabash River, US 50 eastbound over Tanners Creek, and Minnich Road NB/SB over I-469. They add **1,166 selectable objects**, with distinct steel, arch and Bulb-T structural forms. All remain amber because exterior details and some retained support geometry are incomplete. Minnich Road represents a **proposed 2026 rehabilitation**, not completed work. See [source states, limitations and reproduction](docs/additional-crossings-20261015.md).
+
+**Fletcher Avenue over I-65 / I-70 and SR 10 over I-65** add another **691 selectable objects** across two and four spans. Fletcher combines a proposed 2026 deck with retained haunched plate girders and a solid wall pier. SR 10 retains the widened nine-beam structure and integral ends, with proposed 2026 approaches. Both remain amber. Their source PDFs are indexed review binders, with original documents retained separately. See [model states, sources and remaining details](docs/fletcher-sr10-models.md).
+
+**All twelve researched October/November 2026 candidates have now been processed.** The final five additions are US 35 / Deer Creek, US 224 / Eight Mile Creek, Virginia Avenue, SR 44 / Branch of Little Blue River and SR 1 / Six Mile Creek. They add 370 selectable components. Six Mile is an explicitly hypothetical structural scaffold around the source-confirmed deck envelope; the other four are drawing-based exterior reconstructions with incomplete details. See [collection completion and FEM scope](docs/collection-completion.md).
+
+**FEM is available in all sixteen workspaces.** Fourteen new analytical models add 28 baseline pressure cases. Wabash analyzes four arch barrels; Wildcat analyzes the main truss and its complete main-deck footprint. Other analytical models include applicable deck/girder/support components. Every result retains assumptions and source/solver hashes. Open [the local results report](http://127.0.0.1:8766/collection-status) after starting the app.
 
 ## Run locally
 
@@ -61,6 +73,8 @@ The application binds to localhost. It is a local viewer, not an authenticated m
 - **Components:** searchable, paginated register with CSV export and direct links back to 3D.
 - **Indiana map:** county boundaries, road layer, bridge markers and model-detail status. Green means exterior detail coverage is complete within the stated scope; amber means additional detail is needed. These are **not structural condition ratings**.
 - **Drawings:** locally rendered PDF pages and original plan downloads.
+- **Collection FEM:** 12 bridge-specific beam/slab ledgers plus dedicated arch and truss models; editable assumed inputs, full/half-pressure cases, actual FE meshes and saved JSON/CSV. [Scopes, reproduction and limitations](docs/collection-completion.md).
+- **Assumed-input FEM demonstration (Minnich Road):** 197 mapped components with editable hypothetical materials, bearings, column diameter and support bases; real frame/shell solves, pressure scenarios, saved results and explicit uncertainty. [Method and limits](docs/minnich-fem-demo.md).
 - **Whole-bridge FEM (Beechwood):** 72 connected structural components, beam/shell stress and displacement, explicit bearings/foundations, staged prestress scenarios, sensitivity, actual FE mesh, convergence warnings and JSON/CSV results. See [setup, material evidence and limitations](docs/fem.md). The optional solver requires a separate Python 3.12 environment; no AI API key is needed.
 - **Exports:** GLB model, component CSV and the current SQLite database.
 - **UI review:** visit `/review` to annotate a reference screenshot, add numbered notes and export PNG or JSON. Notes are stored only in the browser.
@@ -73,7 +87,7 @@ The app presents existing models; it does not generate geometry or invent inspec
 
 The English release translates metadata while preserving numeric values, stable component IDs, geometric assets and source plan bytes. Each model keeps its original assumptions, approximations and missing-detail notes. Individual component volumes can overlap and are not quantity takeoffs.
 
-Original PDF and GLB hashes are recorded in [data/sources.json](data/sources.json). Source links are inherited from the collection and were not revalidated for this release. Third-party plan documents retain their original notices and attribution.
+Original PDF and GLB hashes are recorded in [data/sources.json](data/sources.json). Older source links are inherited from the collection; later additions retain individual document provenance. Compiled review binders are identified as such, with original source files, hashes and page offsets preserved separately. Third-party plan documents retain their original notices and attribution.
 
 ## Repository layout
 
@@ -127,7 +141,7 @@ node test_fem_browser.cjs
 
 Set `BRIDGE_TEST_URL` to test another port. Set `BROWSER_EXECUTABLE` to use an installed Chromium/Edge binary instead of Playwright's browser.
 
-Backend checks cover repeat imports, integrity, stable IDs, all nine bridge APIs, presentation migration, complete-first ordering, source pages, exports, byte ranges and path restrictions. Browser checks load the four workspace models, verify map-only routing for all five SR records, and exercise isolation, search, selection, drawings, opacity, sectioning, mobile layouts and rapid navigation. See [verification notes](docs/verification.md).
+Backend checks cover repeat imports, integrity, stable IDs, all registered bridge APIs, presentation migration, complete-first ordering, source pages, exports, byte ranges and path restrictions. Browser checks load all eleven workspace models, verify map-only routing for all five SR records, and exercise isolation, search, selection, drawings, opacity, sectioning, mobile layouts and rapid navigation. See [verification notes](docs/verification.md).
 
 ## Dependencies and attribution
 

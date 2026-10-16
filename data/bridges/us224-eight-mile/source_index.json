@@ -1,0 +1,39 @@
+{
+  "primary_pdf": "drawings.pdf",
+  "primary_document_id": "9683628",
+  "pages": 17,
+  "sha256": "1df89fdef9ac73f333ace80589aa645908cecf4fa6c11fc262c5a767ec9f5086",
+  "source_documents": [
+    {
+      "id": "9683628",
+      "title": "FT Plans 2200957 For Contract Services",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683628",
+      "local_file": "sources/contract_plans_9683628.pdf",
+      "sha256": "1df89fdef9ac73f333ace80589aa645908cecf4fa6c11fc262c5a767ec9f5086",
+      "original_pages": 17,
+      "role": "primary_issued_pdf",
+      "primary_pdf_start_page": 1
+    },
+    {
+      "id": "9548292",
+      "title": "FT ExistingPlans 2200957 For Contract Services",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9548292",
+      "local_file": "sources/existing_plans_9548292.pdf",
+      "sha256": "26524422277b847680b1198e5d19fc05461edd0edbbc8d4b37298ede535b6431",
+      "original_pages": 15,
+      "role": "supplementary_original",
+      "primary_pdf_start_page": null
+    },
+    {
+      "id": "9707311",
+      "title": "B -44532-A REV 1",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9707311",
+      "local_file": "sources/revision_notice_9707311.pdf",
+      "sha256": "592a92a1badbdb49b780a7fb85888f01b2c5dc3e2d6b8ac0068458aacbaf2711",
+      "original_pages": 3,
+      "role": "supplementary_original",
+      "primary_pdf_start_page": null
+    }
+  ],
+  "note": "Primary drawings.pdf is byte-for-byte identical to the issued source; no combined or newly authored PDF. Supplemental page numbers do not address the primary PDF."
+}

@@ -1,0 +1,410 @@
+{
+  "modeled_state": "Retained 1985 replacement/widening geometry with proposed 2026 overlay, beam-end repairs and approaches; completion not established",
+  "spans_m": [
+    12.4968
+  ],
+  "deck_length_m": 13.7287,
+  "deck_width_m": 14.224,
+  "deck_thickness_m": 0.24130000000000001,
+  "structural_deck_thickness_m": 0.1905,
+  "overlay_thickness_m": 0.0508,
+  "girder_y_m": [
+    -5.9055,
+    -3.5433,
+    -1.1810999999999998,
+    1.1811000000000007,
+    3.5433000000000003,
+    5.9055
+  ],
+  "girder_lines": 6,
+  "spacing_m": 2.3622,
+  "support_u_m": [
+    -6.2484,
+    6.2484
+  ],
+  "skew_deg": -30,
+  "skew_direction": "left",
+  "grade": -0.002,
+  "crossfall": 0.015625,
+  "supports": [
+    {
+      "id": "support_1",
+      "u_m": -6.2484,
+      "x_by_girder_m": [
+        -9.657942014699335,
+        -8.294125208819601,
+        -6.930308402939867,
+        -5.566491597060133,
+        -4.202674791180399,
+        -2.8388579853006655
+      ],
+      "girder_y_m": [
+        -5.9055,
+        -3.5433,
+        -1.1810999999999998,
+        1.1811000000000007,
+        3.5433000000000003,
+        5.9055
+      ],
+      "type": "expansion_elastomeric_bearing_on_abutment",
+      "source_topology": true,
+      "analysis_caution": "Geometric support station is source-backed; analytical restraints, rotational fixity and material stiffness require explicit assumed inputs."
+    },
+    {
+      "id": "support_2",
+      "u_m": 6.2484,
+      "x_by_girder_m": [
+        2.8388579853006655,
+        4.202674791180399,
+        5.566491597060133,
+        6.930308402939867,
+        8.294125208819601,
+        9.657942014699335
+      ],
+      "girder_y_m": [
+        -5.9055,
+        -3.5433,
+        -1.1810999999999998,
+        1.1811000000000007,
+        3.5433000000000003,
+        5.9055
+      ],
+      "type": "fixed_bearing_on_abutment",
+      "source_topology": true,
+      "analysis_caution": "Geometric support station is source-backed; analytical restraints, rotational fixity and material stiffness require explicit assumed inputs."
+    }
+  ],
+  "girder_section": {
+    "type": "CB21 hollow prestressed box",
+    "depth_m": 0.5334,
+    "width_m": 1.2191999999999998,
+    "outer_profile_yz_m": [
+      [
+        -0.6095999999999999,
+        0
+      ],
+      [
+        0.6095999999999999,
+        0
+      ],
+      [
+        0.6095999999999999,
+        0.5334
+      ],
+      [
+        -0.6095999999999999,
+        0.5334
+      ]
+    ],
+    "inner_void_profiles_yz_m": [
+      [
+        [
+          -0.4064,
+          0.1397
+        ],
+        [
+          0.4064,
+          0.1397
+        ],
+        [
+          0.4826,
+          0.21589999999999998
+        ],
+        [
+          0.4826,
+          0.381
+        ],
+        [
+          0.4064,
+          0.4572
+        ],
+        [
+          -0.4064,
+          0.4572
+        ],
+        [
+          -0.4826,
+          0.381
+        ],
+        [
+          -0.4826,
+          0.21589999999999998
+        ]
+      ]
+    ],
+    "web_thickness_m": 0.127,
+    "nominal_top_wall_m": 0.07619999999999999,
+    "nominal_bottom_wall_m": 0.1397,
+    "profile_basis": "Supplemental 9548292 p.8 dimensioned typical section. Small top ridges, bottom chamfers and local void taper omitted.",
+    "beam_length_m": 12.798425000000002,
+    "beam_end_u_m": [
+      -6.399212500000001,
+      6.399212500000001
+    ],
+    "nominal_solid_endblock_m": 0.8382000000000001,
+    "nominal_haunch_m": 0.025,
+    "nominal_net_area_m2": 0.3554831599999999,
+    "profile_centroid_yz_m": [
+      1.6266344618376183e-17,
+      0.2403665154264972
+    ]
+  },
+  "source_evidence": [
+    {
+      "pages": [
+        8,
+        9
+      ],
+      "facts": "41 ft bearing span, 45 ft 0.5 in floor length, 46 ft 8 in coping width, 44 ft clear roadway, -0.20 percent grade, 30 degree left skew, six CB21 beams at 7 ft 9 in."
+    },
+    {
+      "pages": [
+        9
+      ],
+      "facts": "Existing 8 in slab milled 0.5 in; proposed minimum 2 in overlay; retained 2 in drains open at midspan only."
+    },
+    {
+      "pages": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "facts": "Beam-end wrap minimum 3 ft, reconstructed mudwalls, PCF joints, 12 in approaches minimum 20 ft 6 in and three TFC transitions."
+    },
+    {
+      "document_id": "9548292",
+      "local_file": "sources/existing_plans_9548292.pdf",
+      "pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "facts": "1985/1986 reconstruction and widening; retained substructure topology, Type7B pads, 48 x 21 in CB21 section with voids, skew beam ends and concrete diaphragms."
+    },
+    {
+      "document_id": "9707311",
+      "pages": [
+        1,
+        2
+      ],
+      "facts": "Revision 1 changes closure time for Des2200957 to 70 calendar days, not structural geometry."
+    }
+  ],
+  "unresolved": [
+    "Historical p.9 revised slab width 47 ft 1 in conflicts with latest 46 ft 8 in coping width. Latest primary dimensions control; historical beam spacing remains unchanged.",
+    "Type7B standard PB11 sheet unavailable: 50 mm bearing display stack is assumed; fixed/expansion topology is sourced.",
+    "Nominal 25 mm haunch, straight beams, simplified void-end blocks and support seats do not reproduce fabrication camber.",
+    "Overlay composite action and concrete stiffness must be explicit analysis assumptions. No prestress force or condition-based section loss is inferred."
+  ],
+  "analytical_member_mapping": [
+    {
+      "member_id": "beam_0_0",
+      "line_index": 0,
+      "span_index": 0,
+      "y_m": -5.9055,
+      "support_indices": [
+        0,
+        1
+      ],
+      "section": "CB21"
+    },
+    {
+      "member_id": "beam_0_1",
+      "line_index": 1,
+      "span_index": 0,
+      "y_m": -3.5433,
+      "support_indices": [
+        0,
+        1
+      ],
+      "section": "CB21"
+    },
+    {
+      "member_id": "beam_0_2",
+      "line_index": 2,
+      "span_index": 0,
+      "y_m": -1.1810999999999998,
+      "support_indices": [
+        0,
+        1
+      ],
+      "section": "CB21"
+    },
+    {
+      "member_id": "beam_0_3",
+      "line_index": 3,
+      "span_index": 0,
+      "y_m": 1.1811000000000007,
+      "support_indices": [
+        0,
+        1
+      ],
+      "section": "CB21"
+    },
+    {
+      "member_id": "beam_0_4",
+      "line_index": 4,
+      "span_index": 0,
+      "y_m": 3.5433000000000003,
+      "support_indices": [
+        0,
+        1
+      ],
+      "section": "CB21"
+    },
+    {
+      "member_id": "beam_0_5",
+      "line_index": 5,
+      "span_index": 0,
+      "y_m": 5.9055,
+      "support_indices": [
+        0,
+        1
+      ],
+      "section": "CB21"
+    }
+  ],
+  "units": "metres",
+  "axes": "X increasing station, Y drawing south, Z up; not geographically rotated",
+  "source_documents": [
+    {
+      "id": "9683628",
+      "title": "FT Plans 2200957 For Contract Services",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683628",
+      "local_file": "sources/contract_plans_9683628.pdf",
+      "sha256": "1df89fdef9ac73f333ace80589aa645908cecf4fa6c11fc262c5a767ec9f5086",
+      "original_pages": 17,
+      "role": "primary_issued_pdf",
+      "primary_pdf_start_page": 1
+    },
+    {
+      "id": "9548292",
+      "title": "FT ExistingPlans 2200957 For Contract Services",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9548292",
+      "local_file": "sources/existing_plans_9548292.pdf",
+      "sha256": "26524422277b847680b1198e5d19fc05461edd0edbbc8d4b37298ede535b6431",
+      "original_pages": 15,
+      "role": "supplementary_original",
+      "primary_pdf_start_page": null
+    },
+    {
+      "id": "9707311",
+      "title": "B -44532-A REV 1",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9707311",
+      "local_file": "sources/revision_notice_9707311.pdf",
+      "sha256": "592a92a1badbdb49b780a7fb85888f01b2c5dc3e2d6b8ac0068458aacbaf2711",
+      "original_pages": 3,
+      "role": "supplementary_original",
+      "primary_pdf_start_page": null
+    }
+  ],
+  "primary_pdf_pages": 17,
+  "detail_status": "needs_detail",
+  "geometry_only": true,
+  "analytical_use": "This ledger describes display geometry and source evidence. A solver must freeze its own materials, section assumptions, connectivity, boundary conditions and pressure cases.",
+  "member_ids": [
+    "beam_0_0",
+    "beam_0_1",
+    "beam_0_2",
+    "beam_0_3",
+    "beam_0_4",
+    "beam_0_5"
+  ],
+  "approximate_part_ids": [
+    "haunch_0_0",
+    "B1_bearing_1",
+    "beam_wrap_0_0",
+    "B2_bearing_1",
+    "beam_wrap_1_0",
+    "haunch_0_1",
+    "B1_bearing_2",
+    "beam_wrap_0_1",
+    "B2_bearing_2",
+    "beam_wrap_1_1",
+    "haunch_0_2",
+    "B1_bearing_3",
+    "beam_wrap_0_2",
+    "B2_bearing_3",
+    "beam_wrap_1_2",
+    "haunch_0_3",
+    "B1_bearing_4",
+    "beam_wrap_0_3",
+    "B2_bearing_4",
+    "beam_wrap_1_3",
+    "haunch_0_4",
+    "B1_bearing_5",
+    "beam_wrap_0_4",
+    "B2_bearing_5",
+    "beam_wrap_1_4",
+    "haunch_0_5",
+    "B1_bearing_6",
+    "beam_wrap_0_5",
+    "B2_bearing_6",
+    "beam_wrap_1_5",
+    "diaphragm_0_0",
+    "diaphragm_0_1",
+    "diaphragm_0_2",
+    "diaphragm_0_3",
+    "diaphragm_0_4",
+    "diaphragm_1_0",
+    "diaphragm_1_1",
+    "diaphragm_1_2",
+    "diaphragm_1_3",
+    "diaphragm_1_4",
+    "diaphragm_2_0",
+    "diaphragm_2_1",
+    "diaphragm_2_2",
+    "diaphragm_2_3",
+    "diaphragm_2_4",
+    "cap_1",
+    "pedestal_0_0",
+    "pedestal_0_1",
+    "pedestal_0_2",
+    "pedestal_0_3",
+    "pedestal_0_4",
+    "stem_1",
+    "footing_1",
+    "mudwall_1",
+    "wing_0_-1",
+    "wing_0_1",
+    "cap_2",
+    "pedestal_1_0",
+    "pedestal_1_1",
+    "pedestal_1_2",
+    "pedestal_1_3",
+    "pedestal_1_4",
+    "stem_2",
+    "footing_2",
+    "mudwall_2",
+    "wing_1_-1",
+    "wing_1_1",
+    "TFC_transition_-1_-1",
+    "extension_-1_-1",
+    "TFC_transition_1_-1",
+    "extension_1_-1",
+    "TFC_transition_1_1",
+    "extension_1_1",
+    "midspan_drain_-1",
+    "midspan_drain_1"
+  ],
+  "omissions": [
+    {
+      "feature": "Unresolved details",
+      "status": "not_modeled",
+      "detail": "Actual deterioration and patch boundaries, wrap properties, bearing standard PB11 dimensions, slab/beam camber, wing outlines, guardrail terminals, full drainage and site geometry.",
+      "sources": [
+        "Primary PDF p.8",
+        "Primary PDF p.9",
+        "Primary PDF p.11",
+        "Primary PDF p.12"
+      ],
+      "part_ids": []
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "component_count": 312,
+  "all_meshes_watertight": true,
+  "all_volumes_positive": true,
+  "exported_glb_reopened": true,
+  "mesh_names_match_manifest": true,
+  "maximum_bearing_contact_error_m": 0.0,
+  "glb_sha256": "2e5127f67b41fd607d8ad5875a550eab9bf9d08d87154b18625b3849c965368b",
+  "source_pdf_sha256": "19f804e4efc37cb14f0515fdffe4e359e3229046ae88eda3b8227144ac7993e9",
+  "checks": {
+    "spans_m": [
+      11.8999,
+      20.0406,
+      20.0406,
+      11.8999
+    ],
+    "support_lines": 5,
+    "girder_lines": 9,
+    "girder_segments": 36,
+    "bearings": 27,
+    "integral_end_bents": 2,
+    "discrete_end_bearings": 0,
+    "girder_y_m": [
+      -7.113,
+      -5.08,
+      -3.556,
+      -1.778,
+      0.0,
+      1.778,
+      3.556,
+      5.08,
+      7.113
+    ],
+    "minimum_deck_girder_clearance_m": 0.07195000000000018
+  },
+  "contacts": [
+    {
+      "id": "B2_bearing_1",
+      "girder_bottom_m": 6.089395306853255,
+      "bearing_top_m": 6.089395306853255,
+      "seat_m": 5.964395306853255
+    },
+    {
+      "id": "B3_bearing_1",
+      "girder_bottom_m": 6.11374,
+      "bearing_top_m": 6.11374,
+      "seat_m": 5.653739999999999
+    },
+    {
+      "id": "B4_bearing_1",
+      "girder_bottom_m": 6.089395306853255,
+      "bearing_top_m": 6.089395306853255,
+      "seat_m": 5.964395306853255
+    },
+    {
+      "id": "B2_bearing_2",
+      "girder_bottom_m": 6.050055306853255,
+      "bearing_top_m": 6.050055306853255,
+      "seat_m": 5.925055306853255
+    },
+    {
+      "id": "B3_bearing_2",
+      "girder_bottom_m": 6.0744,
+      "bearing_top_m": 6.0744,
+      "seat_m": 5.8144
+    },
+    {
+      "id": "B4_bearing_2",
+      "girder_bottom_m": 6.050055306853255,
+      "bearing_top_m": 6.050055306853255,
+      "seat_m": 5.925055306853255
+    },
+    {
+      "id": "B2_bearing_3",
+      "girder_bottom_m": 6.080535306853256,
+      "bearing_top_m": 6.080535306853256,
+      "seat_m": 5.955535306853256
+    },
+    {
+      "id": "B3_bearing_3",
+      "girder_bottom_m": 6.1048800000000005,
+      "bearing_top_m": 6.1048800000000005,
+      "seat_m": 5.844880000000001
+    },
+    {
+      "id": "B4_bearing_3",
+      "girder_bottom_m": 6.080535306853256,
+      "bearing_top_m": 6.080535306853256,
+      "seat_m": 5.955535306853256
+    },
+    {
+      "id": "B2_bearing_4",
+      "girder_bottom_m": 6.116095306853255,
+      "bearing_top_m": 6.116095306853255,
+      "seat_m": 5.991095306853255
+    },
+    {
+      "id": "B3_bearing_4",
+      "girder_bottom_m": 6.14044,
+      "bearing_top_m": 6.14044,
+      "seat_m": 5.88044
+    },
+    {
+      "id": "B4_bearing_4",
+      "girder_bottom_m": 6.116095306853255,
+      "bearing_top_m": 6.116095306853255,
+      "seat_m": 5.991095306853255
+    },
+    {
+      "id": "B2_bearing_5",
+      "girder_bottom_m": 6.151655306853256,
+      "bearing_top_m": 6.151655306853256,
+      "seat_m": 6.026655306853256
+    },
+    {
+      "id": "B3_bearing_5",
+      "girder_bottom_m": 6.176,
+      "bearing_top_m": 6.176,
+      "seat_m": 5.916
+    },
+    {
+      "id": "B4_bearing_5",
+      "girder_bottom_m": 6.151655306853256,
+      "bearing_top_m": 6.151655306853256,
+      "seat_m": 6.026655306853256
+    },
+    {
+      "id": "B2_bearing_6",
+      "girder_bottom_m": 6.116095306853255,
+      "bearing_top_m": 6.116095306853255,
+      "seat_m": 5.991095306853255
+    },
+    {
+      "id": "B3_bearing_6",
+      "girder_bottom_m": 6.14044,
+      "bearing_top_m": 6.14044,
+      "seat_m": 5.88044
+    },
+    {
+      "id": "B4_bearing_6",
+      "girder_bottom_m": 6.116095306853255,
+      "bearing_top_m": 6.116095306853255,
+      "seat_m": 5.991095306853255
+    },
+    {
+      "id": "B2_bearing_7",
+      "girder_bottom_m": 6.080535306853256,
+      "bearing_top_m": 6.080535306853256,
+      "seat_m": 5.955535306853256
+    },
+    {
+      "id": "B3_bearing_7",
+      "girder_bottom_m": 6.1048800000000005,
+      "bearing_top_m": 6.1048800000000005,
+      "seat_m": 5.844880000000001
+    },
+    {
+      "id": "B4_bearing_7",
+      "girder_bottom_m": 6.080535306853256,
+      "bearing_top_m": 6.080535306853256,
+      "seat_m": 5.955535306853256
+    },
+    {
+      "id": "B2_bearing_8",
+      "girder_bottom_m": 6.050055306853255,
+      "bearing_top_m": 6.050055306853255,
+      "seat_m": 5.925055306853255
+    },
+    {
+      "id": "B3_bearing_8",
+      "girder_bottom_m": 6.0744,
+      "bearing_top_m": 6.0744,
+      "seat_m": 5.8144
+    },
+    {
+      "id": "B4_bearing_8",
+      "girder_bottom_m": 6.050055306853255,
+      "bearing_top_m": 6.050055306853255,
+      "seat_m": 5.925055306853255
+    },
+    {
+      "id": "B2_bearing_9",
+      "girder_bottom_m": 6.089395306853255,
+      "bearing_top_m": 6.089395306853255,
+      "seat_m": 5.964395306853255
+    },
+    {
+      "id": "B3_bearing_9",
+      "girder_bottom_m": 6.11374,
+      "bearing_top_m": 6.11374,
+      "seat_m": 5.653739999999999
+    },
+    {
+      "id": "B4_bearing_9",
+      "girder_bottom_m": 6.089395306853255,
+      "bearing_top_m": 6.089395306853255,
+      "seat_m": 5.964395306853255
+    }
+  ],
+  "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation."
+}

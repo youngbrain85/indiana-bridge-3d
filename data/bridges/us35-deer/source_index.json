@@ -1,0 +1,19 @@
+{
+  "primary_pdf": "drawings.pdf",
+  "primary_document_id": "9721578",
+  "pages": 36,
+  "sha256": "fb940a09d31d217f2e13fdcb64bdddfd83cddb816408b1f11ddc4738927d7b23",
+  "source_documents": [
+    {
+      "id": "9721578",
+      "title": "FT PlansXsect 1900048 For Contract Services",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9721578",
+      "local_file": "sources/contract_plans_9721578.pdf",
+      "sha256": "fb940a09d31d217f2e13fdcb64bdddfd83cddb816408b1f11ddc4738927d7b23",
+      "original_pages": 36,
+      "role": "primary_issued_pdf",
+      "primary_pdf_start_page": 1
+    }
+  ],
+  "note": "Primary drawings.pdf is byte-for-byte identical to the issued source; no combined or newly authored PDF. Supplemental page numbers do not address the primary PDF."
+}

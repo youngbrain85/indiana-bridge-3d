@@ -33,8 +33,8 @@ class CatalogTests(unittest.TestCase):
         return urlopen(Request(self.url + path, headers=headers or {}), timeout=30)
 
     def test_real_catalog_is_complete_and_idempotent(self):
-        self.assertEqual(self.counts['bridges'], 9)
-        self.assertEqual(self.counts['components'], 4012)
+        self.assertEqual(self.counts['bridges'], 21)
+        self.assertEqual(self.counts['components'], 6622)
         self.assertEqual(import_all(self.db_path), self.counts)
         with connect(self.db_path) as db:
             self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
@@ -57,16 +57,16 @@ class CatalogTests(unittest.TestCase):
                 self.assertIn(part['group_id'], {g['id'] for g in data['groups']})
                 self.assertEqual(part['mesh_name'], part['source_id'])
                 self.assertGreater(len(part['basis']), 0)
-        self.assertEqual(len(seen), 4012)
+        self.assertEqual(len(seen), 6622)
 
     def test_map_only_records_and_complete_first_order(self):
         with self.get('/api/catalog') as r:
             catalog = json.load(r)
-        self.assertEqual(catalog['summary']['bridges'], 9)
+        self.assertEqual(catalog['summary']['bridges'], 21)
         records = catalog['bridges']
         self.assertTrue(all(isinstance(b['workspace_enabled'], bool) for b in records))
         self.assertEqual([b['id'] for b in records if b['workspace_enabled']],
-                         ['beechwood', '21st-street-i465', 'us421-wildcat', 'us52-mud'])
+                         ['beechwood', '21st-street-i465', 'us421-wildcat', 'us52-mud', 'sr44-mud', 'sr8-yellow', 'sr1-wabash', 'us50-tanners-eb', 'minnich-road', 'fletcher-avenue', 'sr10-i65', 'us35-deer', 'us224-eight-mile', 'virginia-avenue', 'sr44-little-blue', 'sr1-six-mile'])
         self.assertEqual({b['id'] for b in records if not b['workspace_enabled']},
                          {'sr58-white', 'sr159-spencer', 'sr62-csx', 'sr62-tekoppel', 'sr62-carpentier'})
         with connect(self.db_path) as db:
@@ -121,12 +121,29 @@ class CatalogTests(unittest.TestCase):
             snapshot = Path(self.temp.name) / 'export.sqlite3'
             snapshot.write_bytes(r.read())
         with sqlite3.connect(snapshot) as db:
-            self.assertEqual(db.execute('SELECT COUNT(*) FROM components').fetchone()[0], 4012)
+            self.assertEqual(db.execute('SELECT COUNT(*) FROM components').fetchone()[0], 6622)
 
     def test_javascript_mime_ignores_windows_registry(self):
         for path in ['/app.js', '/viewer.bundle.js', '/vendor/leaflet/leaflet.js']:
             with self.get(path) as r:
                 self.assertIn('javascript', r.headers['Content-Type'])
+
+    def test_component_supplemental_evidence_keeps_original_page_numbers(self):
+        for bid, cid, source_id, page in [('us224-eight-mile','beam_0_0','9548292',8),
+                                          ('virginia-avenue','beam_1','9548460',28)]:
+            with self.get('/api/bridges/'+bid) as response:
+                detail=json.load(response)
+            component=next(p for p in detail['parts'] if p['source_id']==cid)
+            refs=component['source_refs']+component['supplementary_sources']
+            evidence=next(r for r in refs if str(r.get('source_id',r.get('document_id')))==source_id)
+            self.assertIn(page,evidence['pdf_pages'])
+            reference=next(r for r in detail['references'] if r['metadata']['id']==source_id)
+            with self.get(reference['local_url'],{'Range':'bytes=0-4'}) as response:
+                self.assertEqual(response.status,206)
+                self.assertEqual(response.read(),b'%PDF-')
+        with self.assertRaises(HTTPError) as caught:
+            self.get('/assets/us224-eight-mile/source/unregistered.pdf')
+        self.assertEqual(caught.exception.code,404)
 
     def test_locations_not_guessed_from_mesh_ids(self):
         self.assertEqual(explicit_location({'id':'pier_2', 'name':'Pier footing envelope'}), (None, None))

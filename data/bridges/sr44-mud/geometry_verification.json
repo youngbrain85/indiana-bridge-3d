@@ -1,0 +1,167 @@
+{
+  "component_count": 383,
+  "all_meshes_watertight": true,
+  "all_volumes_positive": true,
+  "minimum_deck_beam_clearance_m": 0.0023776961704626842,
+  "maximum_bearing_contact_error_m": 0.0,
+  "girder_lines": 7,
+  "girder_segments": 21,
+  "bearings": 28,
+  "diaphragms": 48,
+  "splice_assemblies": 14,
+  "splice_bolts": 1456,
+  "deck_dimensions_ft": [
+    151.08333333333334,
+    46.5
+  ],
+  "spans_ft": [
+    49.75,
+    50,
+    49.75
+  ],
+  "source_pdf_sha256": "6e9fba4786bc8c1d05073a8bdcaf0b2c66216bdfffb22ac2e469541773142bf8",
+  "glb_sha256": "89a01751638da26aa01435b06b2830fa45c082082ae63d307824fa3f9a8aafb4",
+  "contacts": [
+    {
+      "support": 1,
+      "beam": 1,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 1,
+      "beam": 2,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 1,
+      "beam": 3,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 1,
+      "beam": 4,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 1,
+      "beam": 5,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 1,
+      "beam": 6,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 1,
+      "beam": 7,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 2,
+      "beam": 1,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 2,
+      "beam": 2,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 2,
+      "beam": 3,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 2,
+      "beam": 4,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 2,
+      "beam": 5,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 2,
+      "beam": 6,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 2,
+      "beam": 7,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 3,
+      "beam": 1,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 3,
+      "beam": 2,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 3,
+      "beam": 3,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 3,
+      "beam": 4,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 3,
+      "beam": 5,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 3,
+      "beam": 6,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 3,
+      "beam": 7,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 4,
+      "beam": 1,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 4,
+      "beam": 2,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 4,
+      "beam": 3,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 4,
+      "beam": 4,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 4,
+      "beam": 5,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 4,
+      "beam": 6,
+      "beam_bearing_gap_m": 0.0
+    },
+    {
+      "support": 4,
+      "beam": 7,
+      "beam_bearing_gap_m": 0.0
+    }
+  ],
+  "limitations": "Geometry checks only. Does not certify completeness, engineering capacity, fabrication tolerances or as-built condition."
+}

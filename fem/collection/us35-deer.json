@@ -1,0 +1,851 @@
+{
+  "schema_version": 1,
+  "engine": "collection_demo",
+  "bridge_id": "us35-deer",
+  "title": "US 35 over Deer Creek | proposed 2026 replacement",
+  "modeled_state": "Primary INDOT B-45063 / Des 1900048 proposed 2026 replacement, document 9721578. Source cover and plans describe a 115 ft new crossing; the associated 2025 NBI record describes the older 1931 bridge.",
+  "demonstration": true,
+  "display_scope": "Explicit assumed deck, beam, bearing and selected substructure model; omitted physical components carry no claimed FE stress.",
+  "coordinate_system": "Native metres: X longitudinal, Y transverse, Z up. x=u+skew_dx_dy*y. Flat analytical elevations are explicit.",
+  "source_pdf": "data/bridges/us35-deer/drawings.pdf",
+  "drawing_sha256": "fb940a09d31d217f2e13fdcb64bdddfd83cddb816408b1f11ddc4738927d7b23",
+  "source_hashes": {
+    "drawing": "fb940a09d31d217f2e13fdcb64bdddfd83cddb816408b1f11ddc4738927d7b23",
+    "manifest": "a8de1c6f075a5c20077cb8402a4675dbcef9b95f8d8a483ac50f1c0be58f3d77",
+    "model": "54604cef02d41bba991f9f94774656693698cc31f6127ec37362b0fd97758afd"
+  },
+  "sources": {
+    "drawing": {
+      "title": "Primary INDOT B-45063 / Des 1900048 proposed 2026 replacement, document 9721578. Source cover and plans describe a 115 ft new crossing; the associated 2025 NBI record describes the older 1931 bridge.",
+      "url": "/assets/us35-deer/drawing"
+    },
+    "demonstration": {
+      "title": "Explicit assumed inputs",
+      "url": "/analysis-guide#collection-demo"
+    }
+  },
+  "evidence": [
+    {
+      "fields": [
+        "deck",
+        "spans_m",
+        "beams",
+        "supports"
+      ],
+      "status": "source-based geometry with explicit idealizations",
+      "source": "drawing",
+      "pdf_pages": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "note": "Source-specific recipe transcribes manifest/source-ledger dimensions and original modeling script callouts. Native bounding-box centers locate axes only; bounding rectangles are not used as girder cross sections."
+    },
+    {
+      "fields": [
+        "bearing_horizontal_Npm",
+        "bearing_rotation_Nm",
+        "foundation_stiffness_Npm_Nm",
+        "integral_connection_stiffness_Npm_Nm",
+        "fixed_reference_stiffness_Npm_Nm",
+        "continuity_units"
+      ],
+      "status": "assumed",
+      "source": "demonstration",
+      "note": "All assumptions are frozen in values and assumptions; no test-based material certification is asserted."
+    }
+  ],
+  "values": {
+    "deck": {
+      "u0_m": -17.8943,
+      "u1_m": 17.8943,
+      "y0_m": -5.8420000000000005,
+      "y1_m": 5.8420000000000005,
+      "midplane_z_m": 5.189874,
+      "thickness_m": 0.1905,
+      "patches": [
+        {
+          "cid": "deck",
+          "u0_m": -17.8943,
+          "u1_m": 17.8943,
+          "y0_m": -5.8420000000000005,
+          "y1_m": 5.8420000000000005
+        }
+      ]
+    },
+    "spans_m": [
+      35.052
+    ],
+    "skew_dx_dy": -0.2679491924311227,
+    "beams": [
+      {
+        "cid": "beam_0_0",
+        "unit": 0,
+        "u0_m": -17.7546,
+        "u1_m": 17.7546,
+        "y_m": -4.6482,
+        "material": "concrete",
+        "section": {
+          "kind": "polygon",
+          "profile_yz_m": [
+            [
+              -0.508,
+              0.0
+            ],
+            [
+              0.508,
+              0.0
+            ],
+            [
+              0.508,
+              0.1397
+            ],
+            [
+              0.15239999999999998,
+              0.3175
+            ],
+            [
+              0.1016,
+              0.36829999999999996
+            ],
+            [
+              0.1016,
+              0.9398
+            ],
+            [
+              0.17779999999999999,
+              1.016
+            ],
+            [
+              0.6223,
+              1.0922
+            ],
+            [
+              0.6223,
+              1.2191999999999998
+            ],
+            [
+              -0.6223,
+              1.2191999999999998
+            ],
+            [
+              -0.6223,
+              1.0922
+            ],
+            [
+              -0.17779999999999999,
+              1.016
+            ],
+            [
+              -0.1016,
+              0.9398
+            ],
+            [
+              -0.1016,
+              0.36829999999999996
+            ],
+            [
+              -0.15239999999999998,
+              0.3175
+            ],
+            [
+              -0.508,
+              0.1397
+            ]
+          ],
+          "void_profiles_yz_m": [],
+          "torsion_J_m4": 0.018
+        },
+        "centroid_z_m": 4.405410625619975
+      },
+      {
+        "cid": "beam_0_1",
+        "unit": 0,
+        "u0_m": -17.7546,
+        "u1_m": 17.7546,
+        "y_m": -1.5493999999999999,
+        "material": "concrete",
+        "section": {
+          "kind": "polygon",
+          "profile_yz_m": [
+            [
+              -0.508,
+              0.0
+            ],
+            [
+              0.508,
+              0.0
+            ],
+            [
+              0.508,
+              0.1397
+            ],
+            [
+              0.15239999999999998,
+              0.3175
+            ],
+            [
+              0.1016,
+              0.36829999999999996
+            ],
+            [
+              0.1016,
+              0.9398
+            ],
+            [
+              0.17779999999999999,
+              1.016
+            ],
+            [
+              0.6223,
+              1.0922
+            ],
+            [
+              0.6223,
+              1.2191999999999998
+            ],
+            [
+              -0.6223,
+              1.2191999999999998
+            ],
+            [
+              -0.6223,
+              1.0922
+            ],
+            [
+              -0.17779999999999999,
+              1.016
+            ],
+            [
+              -0.1016,
+              0.9398
+            ],
+            [
+              -0.1016,
+              0.36829999999999996
+            ],
+            [
+              -0.15239999999999998,
+              0.3175
+            ],
+            [
+              -0.508,
+              0.1397
+            ]
+          ],
+          "void_profiles_yz_m": [],
+          "torsion_J_m4": 0.018
+        },
+        "centroid_z_m": 4.405410625619975
+      },
+      {
+        "cid": "beam_0_2",
+        "unit": 0,
+        "u0_m": -17.7546,
+        "u1_m": 17.7546,
+        "y_m": 1.5494000000000003,
+        "material": "concrete",
+        "section": {
+          "kind": "polygon",
+          "profile_yz_m": [
+            [
+              -0.508,
+              0.0
+            ],
+            [
+              0.508,
+              0.0
+            ],
+            [
+              0.508,
+              0.1397
+            ],
+            [
+              0.15239999999999998,
+              0.3175
+            ],
+            [
+              0.1016,
+              0.36829999999999996
+            ],
+            [
+              0.1016,
+              0.9398
+            ],
+            [
+              0.17779999999999999,
+              1.016
+            ],
+            [
+              0.6223,
+              1.0922
+            ],
+            [
+              0.6223,
+              1.2191999999999998
+            ],
+            [
+              -0.6223,
+              1.2191999999999998
+            ],
+            [
+              -0.6223,
+              1.0922
+            ],
+            [
+              -0.17779999999999999,
+              1.016
+            ],
+            [
+              -0.1016,
+              0.9398
+            ],
+            [
+              -0.1016,
+              0.36829999999999996
+            ],
+            [
+              -0.15239999999999998,
+              0.3175
+            ],
+            [
+              -0.508,
+              0.1397
+            ]
+          ],
+          "void_profiles_yz_m": [],
+          "torsion_J_m4": 0.018
+        },
+        "centroid_z_m": 4.405410625619975
+      },
+      {
+        "cid": "beam_0_3",
+        "unit": 0,
+        "u0_m": -17.7546,
+        "u1_m": 17.7546,
+        "y_m": 4.6482,
+        "material": "concrete",
+        "section": {
+          "kind": "polygon",
+          "profile_yz_m": [
+            [
+              -0.508,
+              0.0
+            ],
+            [
+              0.508,
+              0.0
+            ],
+            [
+              0.508,
+              0.1397
+            ],
+            [
+              0.15239999999999998,
+              0.3175
+            ],
+            [
+              0.1016,
+              0.36829999999999996
+            ],
+            [
+              0.1016,
+              0.9398
+            ],
+            [
+              0.17779999999999999,
+              1.016
+            ],
+            [
+              0.6223,
+              1.0922
+            ],
+            [
+              0.6223,
+              1.2191999999999998
+            ],
+            [
+              -0.6223,
+              1.2191999999999998
+            ],
+            [
+              -0.6223,
+              1.0922
+            ],
+            [
+              -0.17779999999999999,
+              1.016
+            ],
+            [
+              -0.1016,
+              0.9398
+            ],
+            [
+              -0.1016,
+              0.36829999999999996
+            ],
+            [
+              -0.15239999999999998,
+              0.3175
+            ],
+            [
+              -0.508,
+              0.1397
+            ]
+          ],
+          "void_profiles_yz_m": [],
+          "torsion_J_m4": 0.018
+        },
+        "centroid_z_m": 4.405410625619975
+      }
+    ],
+    "supports": [
+      {
+        "u_m": -17.526,
+        "bearings": [
+          {
+            "cid": "B1_bearing_1",
+            "unit": 0,
+            "u_m": -17.526,
+            "y_m": -4.6482,
+            "beam_y_m": -4.6482,
+            "z_m": 4.689874,
+            "area_m2": 1,
+            "integral": true
+          },
+          {
+            "cid": "B1_bearing_2",
+            "unit": 0,
+            "u_m": -17.526,
+            "y_m": -1.5493999999999999,
+            "beam_y_m": -1.5493999999999999,
+            "z_m": 4.689874,
+            "area_m2": 1,
+            "integral": true
+          },
+          {
+            "cid": "B1_bearing_3",
+            "unit": 0,
+            "u_m": -17.526,
+            "y_m": 1.5494000000000003,
+            "beam_y_m": 1.5494000000000003,
+            "z_m": 4.689874,
+            "area_m2": 1,
+            "integral": true
+          },
+          {
+            "cid": "B1_bearing_4",
+            "unit": 0,
+            "u_m": -17.526,
+            "y_m": 4.6482,
+            "beam_y_m": 4.6482,
+            "z_m": 4.689874,
+            "area_m2": 1,
+            "integral": true
+          }
+        ],
+        "walls": [],
+        "columns": [
+          {
+            "cid": "pile_stub_0_0",
+            "y_m": -5.704275,
+            "bottom_z_m": -0.046104,
+            "section": {
+              "kind": "I",
+              "dimensions_m": [
+                0.3048,
+                0.3048,
+                0.01,
+                0.01
+              ]
+            },
+            "material": "steel",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_0_1",
+            "y_m": -3.422565,
+            "bottom_z_m": -0.046104,
+            "section": {
+              "kind": "I",
+              "dimensions_m": [
+                0.3048,
+                0.3048,
+                0.01,
+                0.01
+              ]
+            },
+            "material": "steel",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_0_2",
+            "y_m": -1.140855,
+            "bottom_z_m": -0.046104,
+            "section": {
+              "kind": "I",
+              "dimensions_m": [
+                0.3048,
+                0.3048,
+                0.01,
+                0.01
+              ]
+            },
+            "material": "steel",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_0_3",
+            "y_m": 1.140855,
+            "bottom_z_m": -0.046104,
+            "section": {
+              "kind": "I",
+              "dimensions_m": [
+                0.3048,
+                0.3048,
+                0.01,
+                0.01
+              ]
+            },
+            "material": "steel",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_0_4",
+            "y_m": 3.422565,
+            "bottom_z_m": -0.046104,
+            "section": {
+              "kind": "I",
+              "dimensions_m": [
+                0.3048,
+                0.3048,
+                0.01,
+                0.01
+              ]
+            },
+            "material": "steel",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_0_5",
+            "y_m": 5.704275,
+            "bottom_z_m": -0.046104,
+            "section": {
+              "kind": "I",
+              "dimensions_m": [
+                0.3048,
+                0.3048,
+                0.01,
+                0.01
+              ]
+            },
+            "material": "steel",
+            "family": "pile"
+          }
+        ],
+        "top_z_m": 2.0498425,
+        "cap": {
+          "cid": "cap_1",
+          "y0_m": -6.329905,
+          "y1_m": 6.329905,
+          "section": {
+            "kind": "rectangle",
+            "dimensions_m": [
+              1.1683999999999999,
+              1.191893
+            ]
+          }
+        }
+      },
+      {
+        "u_m": 17.526,
+        "bearings": [
+          {
+            "cid": "B2_bearing_1",
+            "unit": 0,
+            "u_m": 17.526,
+            "y_m": -4.6482,
+            "beam_y_m": -4.6482,
+            "z_m": 4.689874,
+            "area_m2": 1,
+            "integral": true
+          },
+          {
+            "cid": "B2_bearing_2",
+            "unit": 0,
+            "u_m": 17.526,
+            "y_m": -1.5493999999999999,
+            "beam_y_m": -1.5493999999999999,
+            "z_m": 4.689874,
+            "area_m2": 1,
+            "integral": true
+          },
+          {
+            "cid": "B2_bearing_3",
+            "unit": 0,
+            "u_m": 17.526,
+            "y_m": 1.5494000000000003,
+            "beam_y_m": 1.5494000000000003,
+            "z_m": 4.689874,
+            "area_m2": 1,
+            "integral": true
+          },
+          {
+            "cid": "B2_bearing_4",
+            "unit": 0,
+            "u_m": 17.526,
+            "y_m": 4.6482,
+            "beam_y_m": 4.6482,
+            "z_m": 4.689874,
+            "area_m2": 1,
+            "integral": true
+          }
+        ],
+        "walls": [],
+        "columns": [
+          {
+            "cid": "pile_stub_1_0",
+            "y_m": -5.704275,
+            "bottom_z_m": 0.779904,
+            "section": {
+              "kind": "I",
+              "dimensions_m": [
+                0.3048,
+                0.3048,
+                0.01,
+                0.01
+              ]
+            },
+            "material": "steel",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_1_1",
+            "y_m": -3.422565,
+            "bottom_z_m": 0.779904,
+            "section": {
+              "kind": "I",
+              "dimensions_m": [
+                0.3048,
+                0.3048,
+                0.01,
+                0.01
+              ]
+            },
+            "material": "steel",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_1_2",
+            "y_m": -1.140855,
+            "bottom_z_m": 0.779904,
+            "section": {
+              "kind": "I",
+              "dimensions_m": [
+                0.3048,
+                0.3048,
+                0.01,
+                0.01
+              ]
+            },
+            "material": "steel",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_1_3",
+            "y_m": 1.140855,
+            "bottom_z_m": 0.779904,
+            "section": {
+              "kind": "I",
+              "dimensions_m": [
+                0.3048,
+                0.3048,
+                0.01,
+                0.01
+              ]
+            },
+            "material": "steel",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_1_4",
+            "y_m": 3.422565,
+            "bottom_z_m": 0.779904,
+            "section": {
+              "kind": "I",
+              "dimensions_m": [
+                0.3048,
+                0.3048,
+                0.01,
+                0.01
+              ]
+            },
+            "material": "steel",
+            "family": "pile"
+          },
+          {
+            "cid": "pile_stub_1_5",
+            "y_m": 5.704275,
+            "bottom_z_m": 0.779904,
+            "section": {
+              "kind": "I",
+              "dimensions_m": [
+                0.3048,
+                0.3048,
+                0.01,
+                0.01
+              ]
+            },
+            "material": "steel",
+            "family": "pile"
+          }
+        ],
+        "top_z_m": 2.8778825,
+        "cap": {
+          "cid": "cap_2",
+          "y0_m": -6.329905,
+          "y1_m": 6.329905,
+          "section": {
+            "kind": "rectangle",
+            "dimensions_m": [
+              1.1683999999999999,
+              1.195957
+            ]
+          }
+        }
+      }
+    ],
+    "bearing_horizontal_Npm": 10000000.0,
+    "bearing_rotation_Nm": 1000.0,
+    "foundation_stiffness_Npm_Nm": [
+      200000000.0,
+      200000000.0,
+      800000000.0,
+      200000000.0,
+      200000000.0,
+      200000000.0
+    ],
+    "fixed_reference_stiffness_Npm_Nm": [
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0
+    ],
+    "integral_connection_stiffness_Npm_Nm": [
+      100000000000.0,
+      100000000000.0,
+      100000000000.0,
+      10000000000.0,
+      10000000000.0,
+      10000000000.0
+    ],
+    "mesh_step_u_m": 3.0,
+    "mesh_step_y_m": 1.4,
+    "continuity_units": [
+      {
+        "u0_m": -17.8943,
+        "u1_m": 17.8943
+      }
+    ]
+  },
+  "assumptions": [
+    "Assumed-input OpenSees linear elastic incremental demonstration; not an as-built model, load rating, field validation or full physical stress history.",
+    "Pressure acts on the full declared structural deck envelope, including sidewalk zones. Left half means native Y below the geometric deck centerline.",
+    "Concrete E=30 GPa, steel E=200 GPa, Poisson ratios 0.20/0.30 are editable assumptions. No cracking, reinforcement, prestress initial stress, creep, shrinkage or self-weight is included.",
+    "All deck nodes are placed on the declared flat midplane. Crossfall, vertical curvature and fabrication camber are omitted. Girder centroids are flattened; native X/Y station and skew are preserved.",
+    "Full beam/deck composite action is assumed through rigid offsets. Haunch stiffness, barriers, walks, diaphragms, cross frames, bolts, local bearing plates and nonstructural pieces are omitted unless expressly listed as analyzed.",
+    "Bearing springs are bilateral with assumed horizontal 10 MN/m and rotational 1 kNm/rad stiffness. Vertical stiffness is editable. Springs may report tension; uplift/contact is not modeled.",
+    "Fixed bases mean fixed at the explicitly modeled wall/column/pile bottom; elastic bases add the frozen six stiffnesses per column or per metre of wall. Soil, buried footing flexibility and actual pile fixity are unverified.",
+    "Integral links use the frozen 100 GN/m translations and 10 GNm/rad rotations, distributed by tributary width for line connections. Cap-only fixed reference supports use 10 TN/m springs to separate the reaction node from its rigid constraint; this is a numerical fixed-base approximation.",
+    "Cap/column/wall sections are explicit idealizations. Shell wall heights extend to the cap reference axis where a cap exists; cap embedment and taper are simplified. Local peaks are nominal, not connection design stresses.",
+    "Deck and longitudinal beams are continuous across intermediate supports. Selectable fabrication/span divisions do not create structural hinges. Integral end connections, where specified, use stiff six-direction links to the modeled end wall/cap.",
+    "BT48x49 uses the dimensioned polygon from source ledger p20; no solid bounding rectangle. J=.018m4 is assumed; prestress and strand/reinforcement stresses are excluded.",
+    "Integral end bents transfer translations and rotations through stiff links. Source steel bearing assemblies are embedded connection geometry and receive no elastomer-pressure claim. HP12x53 pile stubs use an assumed .3048m I profile with10mm plates, fixed/elastic at the1.5m display cut; no soil restraint or full driven pile response is claimed."
+  ],
+  "analyzed_component_ids": [
+    "beam_0_0",
+    "beam_0_1",
+    "beam_0_2",
+    "beam_0_3",
+    "cap_1",
+    "cap_2",
+    "deck",
+    "pile_stub_0_0",
+    "pile_stub_0_1",
+    "pile_stub_0_2",
+    "pile_stub_0_3",
+    "pile_stub_0_4",
+    "pile_stub_0_5",
+    "pile_stub_1_0",
+    "pile_stub_1_1",
+    "pile_stub_1_2",
+    "pile_stub_1_3",
+    "pile_stub_1_4",
+    "pile_stub_1_5"
+  ],
+  "excluded_component_ids": [
+    "B1_bearing_1",
+    "B1_bearing_2",
+    "B1_bearing_3",
+    "B1_bearing_4",
+    "B2_bearing_1",
+    "B2_bearing_2",
+    "B2_bearing_3",
+    "B2_bearing_4",
+    "FC_rail_-1",
+    "FC_rail_1",
+    "TFC_transition_-1_-1",
+    "TFC_transition_-1_1",
+    "TFC_transition_1_-1",
+    "TFC_transition_1_1",
+    "approach_-1",
+    "approach_1",
+    "backwall_0",
+    "backwall_1",
+    "diaphragm_0_0",
+    "diaphragm_0_1",
+    "diaphragm_0_2",
+    "end_bent_drain_0",
+    "end_bent_drain_1",
+    "extension_-1_-1",
+    "extension_-1_1",
+    "extension_1_-1",
+    "extension_1_1",
+    "haunch_0_0",
+    "haunch_0_1",
+    "haunch_0_2",
+    "haunch_0_3",
+    "integral_infill_0_0",
+    "integral_infill_0_2",
+    "integral_infill_0_4",
+    "integral_infill_0_6",
+    "integral_infill_0_8",
+    "integral_infill_1_0",
+    "integral_infill_1_2",
+    "integral_infill_1_4",
+    "integral_infill_1_6",
+    "integral_infill_1_8",
+    "joint_-1",
+    "joint_1",
+    "pedestal_0_0",
+    "pedestal_0_1",
+    "pedestal_0_2",
+    "pedestal_1_0",
+    "pedestal_1_1",
+    "pedestal_1_2",
+    "wing_0_-1",
+    "wing_0_1",
+    "wing_1_-1",
+    "wing_1_1"
+  ],
+  "excluded_component_reason": "Outside this explicitly scoped analytical idealization; no stress or displacement assigned to these display members."
+}

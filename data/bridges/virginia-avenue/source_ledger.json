@@ -1,0 +1,1011 @@
+{
+  "modeled_state": "Proposed 2026 deck/rail/approach replacement on retained 1971 original steel and 2013 girder 1 replacement",
+  "spans_m": [
+    34.7472
+  ],
+  "deck_length_m": 36.76967500000001,
+  "deck_width_m": 19.6596,
+  "deck_thickness_m": 0.2032,
+  "structural_deck_thickness_m": 0.1905,
+  "skew_deg": 44.318333333333335,
+  "support_u_m": [
+    -17.3736,
+    17.3736
+  ],
+  "girder_y_m": [
+    -9.2964,
+    -7.239000000000001,
+    -4.825999999999898,
+    -2.413000000000102,
+    0.0,
+    2.413000000000102,
+    4.825999999999898,
+    7.239000000000001,
+    9.2964
+  ],
+  "girder_sections": [
+    {
+      "part_id": "beam_1",
+      "y_m": -9.2964,
+      "section_type": "welded_I",
+      "zones": [
+        {
+          "u0_m": -17.3736,
+          "u1_m": -11.2776,
+          "web_depth_m": 1.3716,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.4064,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.4350999999999998
+        },
+        {
+          "u0_m": -11.2776,
+          "u1_m": 11.2776,
+          "web_depth_m": 1.3716,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.4572,
+          "flange_thickness_m": 0.0508,
+          "total_depth_m": 1.4731999999999998
+        },
+        {
+          "u0_m": 11.2776,
+          "u1_m": 17.3736,
+          "web_depth_m": 1.3716,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.4064,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.4350999999999998
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "part_id": "beam_2",
+      "y_m": -7.239000000000001,
+      "section_type": "welded_I",
+      "zones": [
+        {
+          "u0_m": -17.3736,
+          "u1_m": -11.2776,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.5875
+        },
+        {
+          "u0_m": -11.2776,
+          "u1_m": 11.2776,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.044449999999999996,
+          "total_depth_m": 1.6129
+        },
+        {
+          "u0_m": 11.2776,
+          "u1_m": 17.3736,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.5875
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "part_id": "beam_3",
+      "y_m": -4.825999999999898,
+      "section_type": "welded_I",
+      "zones": [
+        {
+          "u0_m": -17.3736,
+          "u1_m": -11.2776,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.5875
+        },
+        {
+          "u0_m": -11.2776,
+          "u1_m": 11.2776,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.044449999999999996,
+          "total_depth_m": 1.6129
+        },
+        {
+          "u0_m": 11.2776,
+          "u1_m": 17.3736,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.5875
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "part_id": "beam_4",
+      "y_m": -2.413000000000102,
+      "section_type": "welded_I",
+      "zones": [
+        {
+          "u0_m": -17.3736,
+          "u1_m": -11.2776,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.5875
+        },
+        {
+          "u0_m": -11.2776,
+          "u1_m": 11.2776,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.044449999999999996,
+          "total_depth_m": 1.6129
+        },
+        {
+          "u0_m": 11.2776,
+          "u1_m": 17.3736,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.5875
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "part_id": "beam_5",
+      "y_m": 0.0,
+      "section_type": "welded_I",
+      "zones": [
+        {
+          "u0_m": -17.3736,
+          "u1_m": -11.2776,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.5875
+        },
+        {
+          "u0_m": -11.2776,
+          "u1_m": 11.2776,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.044449999999999996,
+          "total_depth_m": 1.6129
+        },
+        {
+          "u0_m": 11.2776,
+          "u1_m": 17.3736,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.5875
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "part_id": "beam_6",
+      "y_m": 2.413000000000102,
+      "section_type": "welded_I",
+      "zones": [
+        {
+          "u0_m": -17.3736,
+          "u1_m": -11.2776,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.5875
+        },
+        {
+          "u0_m": -11.2776,
+          "u1_m": 11.2776,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.044449999999999996,
+          "total_depth_m": 1.6129
+        },
+        {
+          "u0_m": 11.2776,
+          "u1_m": 17.3736,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.5875
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "part_id": "beam_7",
+      "y_m": 4.825999999999898,
+      "section_type": "welded_I",
+      "zones": [
+        {
+          "u0_m": -17.3736,
+          "u1_m": -11.2776,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.5875
+        },
+        {
+          "u0_m": -11.2776,
+          "u1_m": 11.2776,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.044449999999999996,
+          "total_depth_m": 1.6129
+        },
+        {
+          "u0_m": 11.2776,
+          "u1_m": 17.3736,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.5875
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "part_id": "beam_8",
+      "y_m": 7.239000000000001,
+      "section_type": "welded_I",
+      "zones": [
+        {
+          "u0_m": -17.3736,
+          "u1_m": -11.2776,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.5875
+        },
+        {
+          "u0_m": -11.2776,
+          "u1_m": 11.2776,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.044449999999999996,
+          "total_depth_m": 1.6129
+        },
+        {
+          "u0_m": 11.2776,
+          "u1_m": 17.3736,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.5875
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "part_id": "beam_9",
+      "y_m": 9.2964,
+      "section_type": "welded_I",
+      "zones": [
+        {
+          "u0_m": -17.3736,
+          "u1_m": -11.2776,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.5875
+        },
+        {
+          "u0_m": -11.2776,
+          "u1_m": 11.2776,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.044449999999999996,
+          "total_depth_m": 1.6129
+        },
+        {
+          "u0_m": 11.2776,
+          "u1_m": 17.3736,
+          "web_depth_m": 1.524,
+          "web_thickness_m": 0.015875,
+          "flange_width_m": 0.508,
+          "flange_thickness_m": 0.03175,
+          "total_depth_m": 1.5875
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ]
+    }
+  ],
+  "beam_part_ids": [
+    "beam_1",
+    "beam_2",
+    "beam_3",
+    "beam_4",
+    "beam_5",
+    "beam_6",
+    "beam_7",
+    "beam_8",
+    "beam_9"
+  ],
+  "deck_part_ids": [
+    "deck"
+  ],
+  "source_pages": {
+    "general": 31,
+    "deck": [
+      36,
+      37
+    ],
+    "bearings": 35,
+    "rails": 39,
+    "approaches": [
+      41,
+      43
+    ]
+  },
+  "fem_topology": {
+    "type": "single_span_composite_steel_girder_deck",
+    "coordinate_rule": "x = u - tan(skew)*y; z up in native geometry",
+    "support_lines": [
+      {
+        "id": "B1",
+        "u_m": -17.3736,
+        "kind": "expansion",
+        "part_ids": [
+          "B1_bearing_1",
+          "B1_bearing_2",
+          "B1_bearing_3",
+          "B1_bearing_4",
+          "B1_bearing_5",
+          "B1_bearing_6",
+          "B1_bearing_7",
+          "B1_bearing_8",
+          "B1_bearing_9"
+        ]
+      },
+      {
+        "id": "B2",
+        "u_m": 17.3736,
+        "kind": "fixed",
+        "part_ids": [
+          "B2_bearing_1",
+          "B2_bearing_2",
+          "B2_bearing_3",
+          "B2_bearing_4",
+          "B2_bearing_5",
+          "B2_bearing_6",
+          "B2_bearing_7",
+          "B2_bearing_8",
+          "B2_bearing_9"
+        ]
+      }
+    ],
+    "continuity": "Single simply supported span; fixed/expansion bearing behavior must be explicitly idealized by analysis.",
+    "sections": [
+      {
+        "part_id": "beam_1",
+        "y_m": -9.2964,
+        "section_type": "welded_I",
+        "zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.3716,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.4064,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.4350999999999998
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.3716,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.4572,
+            "flange_thickness_m": 0.0508,
+            "total_depth_m": 1.4731999999999998
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.3716,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.4064,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.4350999999999998
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "9548460",
+            "pdf_pages": [
+              28
+            ]
+          }
+        ]
+      },
+      {
+        "part_id": "beam_2",
+        "y_m": -7.239000000000001,
+        "section_type": "welded_I",
+        "zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.044449999999999996,
+            "total_depth_m": 1.6129
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "9548460",
+            "pdf_pages": [
+              65,
+              66
+            ]
+          }
+        ]
+      },
+      {
+        "part_id": "beam_3",
+        "y_m": -4.825999999999898,
+        "section_type": "welded_I",
+        "zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.044449999999999996,
+            "total_depth_m": 1.6129
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "9548460",
+            "pdf_pages": [
+              65,
+              66
+            ]
+          }
+        ]
+      },
+      {
+        "part_id": "beam_4",
+        "y_m": -2.413000000000102,
+        "section_type": "welded_I",
+        "zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.044449999999999996,
+            "total_depth_m": 1.6129
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "9548460",
+            "pdf_pages": [
+              65,
+              66
+            ]
+          }
+        ]
+      },
+      {
+        "part_id": "beam_5",
+        "y_m": 0.0,
+        "section_type": "welded_I",
+        "zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.044449999999999996,
+            "total_depth_m": 1.6129
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "9548460",
+            "pdf_pages": [
+              65,
+              66
+            ]
+          }
+        ]
+      },
+      {
+        "part_id": "beam_6",
+        "y_m": 2.413000000000102,
+        "section_type": "welded_I",
+        "zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.044449999999999996,
+            "total_depth_m": 1.6129
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "9548460",
+            "pdf_pages": [
+              65,
+              66
+            ]
+          }
+        ]
+      },
+      {
+        "part_id": "beam_7",
+        "y_m": 4.825999999999898,
+        "section_type": "welded_I",
+        "zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.044449999999999996,
+            "total_depth_m": 1.6129
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "9548460",
+            "pdf_pages": [
+              65,
+              66
+            ]
+          }
+        ]
+      },
+      {
+        "part_id": "beam_8",
+        "y_m": 7.239000000000001,
+        "section_type": "welded_I",
+        "zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.044449999999999996,
+            "total_depth_m": 1.6129
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "9548460",
+            "pdf_pages": [
+              65,
+              66
+            ]
+          }
+        ]
+      },
+      {
+        "part_id": "beam_9",
+        "y_m": 9.2964,
+        "section_type": "welded_I",
+        "zones": [
+          {
+            "u0_m": -17.3736,
+            "u1_m": -11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          },
+          {
+            "u0_m": -11.2776,
+            "u1_m": 11.2776,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.044449999999999996,
+            "total_depth_m": 1.6129
+          },
+          {
+            "u0_m": 11.2776,
+            "u1_m": 17.3736,
+            "web_depth_m": 1.524,
+            "web_thickness_m": 0.015875,
+            "flange_width_m": 0.508,
+            "flange_thickness_m": 0.03175,
+            "total_depth_m": 1.5875
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "9548460",
+            "pdf_pages": [
+              65,
+              66
+            ]
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "9683637",
+        "pdf_pages": [
+          31,
+          35,
+          36,
+          37
+        ]
+      },
+      {
+        "source_id": "9548460",
+        "pdf_pages": [
+          28,
+          32,
+          65,
+          66
+        ]
+      }
+    ],
+    "analysis_assumptions_required": [
+      "Concrete/steel moduli and effective stiffness",
+      "Composite action and deck-shell offset",
+      "Diaphragm properties and exact stagger",
+      "Bearing translational/rotational restraints",
+      "Exclude approach slabs, rails and foundations from default deck pressure area"
+    ]
+  },
+  "schema_version": 1,
+  "bridge_id": "virginia-avenue",
+  "units": "metres",
+  "detail_status": "needs_detail",
+  "status_color": "amber",
+  "primary_source_id": "9683637",
+  "source_documents": [
+    {
+      "id": "9683637",
+      "title": "FT Plans 2200722 For Contract Services",
+      "local_file": "sources/contract_plans_9683637.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683637",
+      "sha256": "cdc29f5f26a75790e1c73f0aa7fe5ecad26631623f235ba738d04b50592ea50e",
+      "original_pages": 49,
+      "reviewed_pages": [
+        1,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        41,
+        43,
+        44,
+        45
+      ],
+      "role": "primary_geometry"
+    },
+    {
+      "id": "9548460",
+      "title": "FT ExistingPlans 2200722 For Contract Services Part 1 of 2",
+      "local_file": "sources/existing_plans_9548460.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9548460",
+      "sha256": "384853c7960cdca9e2699b56f3843518c93f6c04c07d834da42b6d762c1c7f75",
+      "original_pages": 81,
+      "reviewed_pages": [
+        24,
+        25,
+        28,
+        32,
+        33,
+        50,
+        51,
+        52,
+        53,
+        55,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "role": "historical_evidence"
+    },
+    {
+      "id": "9548461",
+      "title": "FT ExistingPlans 2200722 For Contract Services Part 2 of 2",
+      "local_file": "sources/existing_plans_9548461.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9548461",
+      "sha256": "3518ffb1bb3c395bec9b65d8cd0e5b73acdbddd8c4bfff7dc02862259a79e1fb",
+      "original_pages": 23,
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "role": "historical_evidence"
+    },
+    {
+      "id": "9715471",
+      "title": "B -44576-A REV 1",
+      "local_file": "sources/revision_notice_9715471.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9715471",
+      "sha256": "f37ffb30d36f2a51c373c77ff608b90f3b50f7d91df85e979237a4cb215884e7",
+      "original_pages": 5,
+      "reviewed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "role": "revision_evidence"
+    },
+    {
+      "id": "9715512",
+      "title": "B -44576-A REV 2",
+      "local_file": "sources/revision_notice_9715512.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9715512",
+      "sha256": "f8f094b9df191a93728f8c166b05b77c9a69147f7992ee4b82dc7d3208e01e92",
+      "original_pages": 2,
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "role": "revision_evidence"
+    }
+  ],
+  "assumptions": [
+    "Whole-crossing exterior reconstruction of the stated proposed design, not an as-built survey or confirmation of construction completion.",
+    "Amber / needs_detail: fabrication tolerances, exact field seats, local notches and transitions, small fittings, and terrain remain incomplete.",
+    "Internal reinforcement, shear studs, embedded anchors and welds are omitted. No rendered component is a finite element or a solid-stress result.",
+    "Any later FEM must freeze its own material, stiffness, connectivity and support assumptions. Visual mesh volume is not a section-property source.",
+    "Foundations are hidden by default; foundation envelopes are design references and do not establish actual field embedment.",
+    "Linear grade through the primary bearing profile elevations replaces the 90/96 ft vertical curves; deck height is a local visualization datum.",
+    "Historical 54/60 in labels are WEB depths; total I-section depths include both flanges. Plate schedules are source-backed, but fillets and taper details are simplified.",
+    "Source revisions 9715471 and 9715512 concern special provisions and inspection coordination; no replacement geometry sheets were identified."
+  ],
+  "source_page_policy": "Unchanged one-based original primary PDF pages. Secondary sources have independent original PDF page numbers.",
+  "fem_generated": false
+}

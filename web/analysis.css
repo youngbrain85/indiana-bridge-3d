@@ -29,3 +29,8 @@
 .fem-color-ramp { height:9px; border-radius:3px; margin-top:10px; background:linear-gradient(to right,#335cde,#17b7ce,#7cdb99,#ffcb55,#ed5947); }
 .fem-legend-ends { display:flex; justify-content:space-between; font-size:10px; margin-top:4px; }
 .canvas-host:has(#femLegend:not([hidden])) .axis-note { bottom:157px; }
+.fem-demo-notice { padding:12px; border-left:3px solid #bc892e; background:#fff4d9; color:#644812; font-size:12px; line-height:1.5; }
+.fem-demo-notice p { margin:7px 0; }
+.fem-demo-notice small { display:block; }
+.fem-demo-label { color:#ffcf75; }
+#femAssumedProperties[open] { display:grid; gap:10px; }

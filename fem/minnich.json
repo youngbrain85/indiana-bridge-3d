@@ -1,0 +1,665 @@
+{
+  "schema_version": 1,
+  "bridge_id": "minnich-road",
+  "revision": "2026-10-15-assumed-demo-1",
+  "title": "Minnich Road \u2014 assumed-input FEM demonstration",
+  "demonstration": true,
+  "source_pdf": "data/bridges/minnich-road/drawings.pdf",
+  "drawing_sha256": "f0faa12db48e58f780dc6b8c518501c531b403733e2ea46c3402506304d3e142",
+  "values": {
+    "deck_length_m": 126.4793,
+    "deck_width_m": 19.2024,
+    "deck_thickness_m": 0.2032,
+    "spans_m": [
+      19.939000000000004,
+      44.196000000000005,
+      44.196000000000005,
+      16.891000000000002
+    ],
+    "skew_deg": 56.29861111111111,
+    "girder_y_m": [
+      -8.9535,
+      -6.2103,
+      -3.4671000000000003,
+      -0.7239,
+      0.7239,
+      3.4671000000000003,
+      6.2103,
+      8.9535
+    ],
+    "flat_deck_top_m": 10.45,
+    "haunch_m": 0.08,
+    "flange_width_m": 0.4572,
+    "web_thickness_m": 0.0127,
+    "flange_thickness_m": 0.0254,
+    "bearing_horizontal_Npm": 2000000.0,
+    "bearing_rotation_Nm": 1000.0,
+    "bearing_area_m2": 0.12387072,
+    "foundation_stiffness_Npm_Nm": [
+      100000000.0,
+      100000000.0,
+      1000000000.0,
+      200000000.0,
+      200000000.0,
+      200000000.0
+    ],
+    "support_geometry": {
+      "cap_0_0": [
+        [
+          -63.352948,
+          -9.6012,
+          7.367672
+        ],
+        [
+          -47.458422,
+          -0.01,
+          8.317672
+        ]
+      ],
+      "cap_0_1": [
+        [
+          -77.763578,
+          0.01,
+          7.367672
+        ],
+        [
+          -61.869052,
+          9.6012,
+          8.317672
+        ]
+      ],
+      "cap_1_0": [
+        [
+          -43.413948,
+          -9.6012,
+          6.809505
+        ],
+        [
+          -27.519422,
+          -0.01,
+          7.759505
+        ]
+      ],
+      "column_1_0_0": [
+        [
+          -30.075786,
+          -9.1512,
+          1.2
+        ],
+        [
+          -29.175786,
+          -8.2512,
+          6.809505
+        ]
+      ],
+      "column_1_0_1": [
+        [
+          -35.916685,
+          -5.2556,
+          1.2
+        ],
+        [
+          -35.016685,
+          -4.3556,
+          6.809505
+        ]
+      ],
+      "column_1_0_2": [
+        [
+          -41.757584,
+          -1.36,
+          1.2
+        ],
+        [
+          -40.857584,
+          -0.46,
+          6.809505
+        ]
+      ],
+      "cap_1_1": [
+        [
+          -57.824578,
+          0.01,
+          6.809505
+        ],
+        [
+          -41.930052,
+          9.6012,
+          7.759505
+        ]
+      ],
+      "column_1_1_0": [
+        [
+          -44.486416,
+          0.46,
+          1.2
+        ],
+        [
+          -43.586416,
+          1.36,
+          6.809505
+        ]
+      ],
+      "column_1_1_1": [
+        [
+          -50.327315,
+          4.3556,
+          1.2
+        ],
+        [
+          -49.427315,
+          5.2556,
+          6.809505
+        ]
+      ],
+      "column_1_1_2": [
+        [
+          -56.168214,
+          8.2512,
+          1.2
+        ],
+        [
+          -55.268214,
+          9.1512,
+          6.809505
+        ]
+      ],
+      "cap_2_0": [
+        [
+          0.782052,
+          -9.6012,
+          7.124805
+        ],
+        [
+          16.676578,
+          -0.01,
+          8.074805
+        ]
+      ],
+      "column_2_0_0": [
+        [
+          14.120214,
+          -9.1512,
+          1.2
+        ],
+        [
+          15.020214,
+          -8.2512,
+          7.124805
+        ]
+      ],
+      "column_2_0_1": [
+        [
+          8.279315,
+          -5.2556,
+          1.2
+        ],
+        [
+          9.179315,
+          -4.3556,
+          7.124805
+        ]
+      ],
+      "column_2_0_2": [
+        [
+          2.438416,
+          -1.36,
+          1.2
+        ],
+        [
+          3.338416,
+          -0.46,
+          7.124805
+        ]
+      ],
+      "cap_2_1": [
+        [
+          -13.628578,
+          0.01,
+          7.124805
+        ],
+        [
+          2.265948,
+          9.6012,
+          8.074805
+        ]
+      ],
+      "column_2_1_0": [
+        [
+          -0.290416,
+          0.46,
+          1.2
+        ],
+        [
+          0.609584,
+          1.36,
+          7.124805
+        ]
+      ],
+      "column_2_1_1": [
+        [
+          -6.131315,
+          4.3556,
+          1.2
+        ],
+        [
+          -5.231315,
+          5.2556,
+          7.124805
+        ]
+      ],
+      "column_2_1_2": [
+        [
+          -11.972214,
+          8.2512,
+          1.2
+        ],
+        [
+          -11.072214,
+          9.1512,
+          7.124805
+        ]
+      ],
+      "cap_3_0": [
+        [
+          44.978052,
+          -9.6012,
+          6.765432
+        ],
+        [
+          60.872578,
+          -0.01,
+          7.715432
+        ]
+      ],
+      "column_3_0_0": [
+        [
+          58.316214,
+          -9.1512,
+          1.2
+        ],
+        [
+          59.216214,
+          -8.2512,
+          6.765432
+        ]
+      ],
+      "column_3_0_1": [
+        [
+          52.475315,
+          -5.2556,
+          1.2
+        ],
+        [
+          53.375315,
+          -4.3556,
+          6.765432
+        ]
+      ],
+      "column_3_0_2": [
+        [
+          46.634416,
+          -1.36,
+          1.2
+        ],
+        [
+          47.534416,
+          -0.46,
+          6.765432
+        ]
+      ],
+      "cap_3_1": [
+        [
+          30.567422,
+          0.01,
+          6.765432
+        ],
+        [
+          46.461948,
+          9.6012,
+          7.715432
+        ]
+      ],
+      "column_3_1_0": [
+        [
+          43.905584,
+          0.46,
+          1.2
+        ],
+        [
+          44.805584,
+          1.36,
+          6.765432
+        ]
+      ],
+      "column_3_1_1": [
+        [
+          38.064685,
+          4.3556,
+          1.2
+        ],
+        [
+          38.964685,
+          5.2556,
+          6.765432
+        ]
+      ],
+      "column_3_1_2": [
+        [
+          32.223786,
+          8.2512,
+          1.2
+        ],
+        [
+          33.123786,
+          9.1512,
+          6.765432
+        ]
+      ],
+      "cap_4_0": [
+        [
+          61.869052,
+          -9.6012,
+          7.423569
+        ],
+        [
+          77.763578,
+          -0.01,
+          8.373569
+        ]
+      ],
+      "cap_4_1": [
+        [
+          47.458422,
+          0.01,
+          7.423569
+        ],
+        [
+          63.352948,
+          9.6012,
+          8.373569
+        ]
+      ]
+    }
+  },
+  "analyzed_component_ids": [
+    "deck",
+    "plate_0_0",
+    "plate_1_0",
+    "plate_2_0",
+    "plate_3_0",
+    "Bent_1_bearing_1",
+    "Bent_2_bearing_1",
+    "Bent_3_bearing_1",
+    "Bent_4_bearing_1",
+    "Bent_5_bearing_1",
+    "plate_0_1",
+    "plate_1_1",
+    "plate_2_1",
+    "plate_3_1",
+    "Bent_1_bearing_2",
+    "Bent_2_bearing_2",
+    "Bent_3_bearing_2",
+    "Bent_4_bearing_2",
+    "Bent_5_bearing_2",
+    "plate_0_2",
+    "plate_1_2",
+    "plate_2_2",
+    "plate_3_2",
+    "Bent_1_bearing_3",
+    "Bent_2_bearing_3",
+    "Bent_3_bearing_3",
+    "Bent_4_bearing_3",
+    "Bent_5_bearing_3",
+    "plate_0_3",
+    "plate_1_3",
+    "plate_2_3",
+    "plate_3_3",
+    "Bent_1_bearing_4",
+    "Bent_2_bearing_4",
+    "Bent_3_bearing_4",
+    "Bent_4_bearing_4",
+    "Bent_5_bearing_4",
+    "plate_0_4",
+    "plate_1_4",
+    "plate_2_4",
+    "plate_3_4",
+    "Bent_1_bearing_5",
+    "Bent_2_bearing_5",
+    "Bent_3_bearing_5",
+    "Bent_4_bearing_5",
+    "Bent_5_bearing_5",
+    "plate_0_5",
+    "plate_1_5",
+    "plate_2_5",
+    "plate_3_5",
+    "Bent_1_bearing_6",
+    "Bent_2_bearing_6",
+    "Bent_3_bearing_6",
+    "Bent_4_bearing_6",
+    "Bent_5_bearing_6",
+    "plate_0_6",
+    "plate_1_6",
+    "plate_2_6",
+    "plate_3_6",
+    "Bent_1_bearing_7",
+    "Bent_2_bearing_7",
+    "Bent_3_bearing_7",
+    "Bent_4_bearing_7",
+    "Bent_5_bearing_7",
+    "plate_0_7",
+    "plate_1_7",
+    "plate_2_7",
+    "plate_3_7",
+    "Bent_1_bearing_8",
+    "Bent_2_bearing_8",
+    "Bent_3_bearing_8",
+    "Bent_4_bearing_8",
+    "Bent_5_bearing_8",
+    "frame_0_0_0",
+    "frame_0_0_1",
+    "frame_0_0_2",
+    "frame_0_0_4",
+    "frame_0_0_5",
+    "frame_0_0_6",
+    "frame_0_1_0",
+    "frame_0_1_1",
+    "frame_0_1_2",
+    "frame_0_1_4",
+    "frame_0_1_5",
+    "frame_0_1_6",
+    "frame_1_0_0",
+    "frame_1_0_1",
+    "frame_1_0_2",
+    "frame_1_0_4",
+    "frame_1_0_5",
+    "frame_1_0_6",
+    "frame_1_1_0",
+    "frame_1_1_1",
+    "frame_1_1_2",
+    "frame_1_1_4",
+    "frame_1_1_5",
+    "frame_1_1_6",
+    "frame_1_2_0",
+    "frame_1_2_1",
+    "frame_1_2_2",
+    "frame_1_2_4",
+    "frame_1_2_5",
+    "frame_1_2_6",
+    "frame_1_3_0",
+    "frame_1_3_1",
+    "frame_1_3_2",
+    "frame_1_3_4",
+    "frame_1_3_5",
+    "frame_1_3_6",
+    "frame_1_4_0",
+    "frame_1_4_1",
+    "frame_1_4_2",
+    "frame_1_4_4",
+    "frame_1_4_5",
+    "frame_1_4_6",
+    "frame_1_5_0",
+    "frame_1_5_1",
+    "frame_1_5_2",
+    "frame_1_5_4",
+    "frame_1_5_5",
+    "frame_1_5_6",
+    "frame_2_0_0",
+    "frame_2_0_1",
+    "frame_2_0_2",
+    "frame_2_0_4",
+    "frame_2_0_5",
+    "frame_2_0_6",
+    "frame_2_1_0",
+    "frame_2_1_1",
+    "frame_2_1_2",
+    "frame_2_1_4",
+    "frame_2_1_5",
+    "frame_2_1_6",
+    "frame_2_2_0",
+    "frame_2_2_1",
+    "frame_2_2_2",
+    "frame_2_2_4",
+    "frame_2_2_5",
+    "frame_2_2_6",
+    "frame_2_3_0",
+    "frame_2_3_1",
+    "frame_2_3_2",
+    "frame_2_3_4",
+    "frame_2_3_5",
+    "frame_2_3_6",
+    "frame_2_4_0",
+    "frame_2_4_1",
+    "frame_2_4_2",
+    "frame_2_4_4",
+    "frame_2_4_5",
+    "frame_2_4_6",
+    "frame_2_5_0",
+    "frame_2_5_1",
+    "frame_2_5_2",
+    "frame_2_5_4",
+    "frame_2_5_5",
+    "frame_2_5_6",
+    "frame_3_0_0",
+    "frame_3_0_1",
+    "frame_3_0_2",
+    "frame_3_0_4",
+    "frame_3_0_5",
+    "frame_3_0_6",
+    "frame_3_1_0",
+    "frame_3_1_1",
+    "frame_3_1_2",
+    "frame_3_1_4",
+    "frame_3_1_5",
+    "frame_3_1_6",
+    "cap_0_0",
+    "cap_0_1",
+    "cap_1_0",
+    "column_1_0_0",
+    "column_1_0_1",
+    "column_1_0_2",
+    "cap_1_1",
+    "column_1_1_0",
+    "column_1_1_1",
+    "column_1_1_2",
+    "cap_2_0",
+    "column_2_0_0",
+    "column_2_0_1",
+    "column_2_0_2",
+    "cap_2_1",
+    "column_2_1_0",
+    "column_2_1_1",
+    "column_2_1_2",
+    "cap_3_0",
+    "column_3_0_0",
+    "column_3_0_1",
+    "column_3_0_2",
+    "cap_3_1",
+    "column_3_1_0",
+    "column_3_1_1",
+    "column_3_1_2",
+    "cap_4_0",
+    "cap_4_1"
+  ],
+  "sources": {
+    "plans": {
+      "title": "Minnich Road 2026 proposed rehabilitation, 62 sheets",
+      "url": "/assets/minnich-road/drawing"
+    },
+    "assumptions": {
+      "title": "Explicit demonstration assumptions; not verified bridge properties",
+      "url": "/analysis-guide#minnich-demo"
+    },
+    "solver": {
+      "title": "OpenSees frame / shell / spring documentation",
+      "url": "https://openseespydoc.readthedocs.io/en/latest/src/ShellMITC4.html"
+    }
+  },
+  "evidence": [
+    {
+      "fields": [
+        "deck_length_m",
+        "deck_width_m",
+        "deck_thickness_m",
+        "spans_m",
+        "skew_deg",
+        "girder_y_m"
+      ],
+      "status": "drawing_scaffold",
+      "source": "plans",
+      "pdf_pages": [
+        19,
+        20,
+        25,
+        26
+      ],
+      "note": "Dimensions carried from the drawing-based visual reconstruction. The proposed state is retained; this is not verification of existing construction."
+    },
+    {
+      "fields": [
+        "flat_deck_top_m",
+        "haunch_m",
+        "flange_width_m",
+        "web_thickness_m",
+        "flange_thickness_m"
+      ],
+      "status": "assumed_idealization",
+      "source": "assumptions",
+      "note": "Flattened alignment and simplified sections from the visual scaffold, intentionally used as demonstration inputs."
+    },
+    {
+      "fields": [
+        "bearing_horizontal_Npm",
+        "bearing_rotation_Nm",
+        "bearing_area_m2",
+        "foundation_stiffness_Npm_Nm"
+      ],
+      "status": "assumed",
+      "source": "assumptions",
+      "note": "Illustrative bearing and foundation springs, with no calibration or supplier evidence."
+    },
+    {
+      "fields": [
+        "support_geometry"
+      ],
+      "status": "assumed_geometry",
+      "source": "assumptions",
+      "note": "Cap and column bounding envelopes from the unverified visual reconstruction. The full values are frozen in each run JSON."
+    }
+  ],
+  "assumptions": [
+    "HYPOTHETICAL DEMONSTRATION. Unverified values were intentionally supplied to demonstrate a working solver. This is not the actual structural response, a load rating or a safety assessment.",
+    "The 2026 proposed continuous deck, four spans, eight girder lines and 56.30-degree skew provide a geometric scaffold; they do not establish completed construction.",
+    "Pressure increments only. Self-weight, staged construction, moving vehicles, HL-93, temperature, seismic effects and strength checks are excluded.",
+    "Linear gross uncracked materials; default steel E=200 GPa and concrete E=30 GPa are illustrative assumptions, not site tests. No reinforcement stiffness, yielding or cracking.",
+    "Full composite action is assumed using rigid offsets from shell midsurface to steel centroids. Haunch stiffness, stud slip and upper-flange kink are not resolved.",
+    "All four girder spans are treated as continuous. Uniform assumed flange/web dimensions and varying total depth approximate the retained and new steel; exact flange schedules are not verified.",
+    "Cross frames use two 100 x 12 mm rectangular elastic diagonals per displayed frame, aligned with skew support lines. Neither their sections nor their connections are verified. Reported frame stress is nominal for this assumed section.",
+    "Grade and crossfall are flattened for the deck; span lengths, transverse positions and skew are retained. Result colors on the GLB use nearest FE samples, not a solid stress field. Use actual FE mesh to inspect the idealization.",
+    "Caps are assumed 0.84 x 0.95 m rectangles. Eighteen columns use the visual scaffold positions and nominal 0.9 m diameter; none is verified from original substructure drawings. Changed diameter changes FE stiffness only.",
+    "End caps have three hypothetical support bases per directional bank. Interior column bases are fixed or supported by six assumed linear springs. No physical foundation members or foundation stresses are modeled.",
+    "All 40 bearings use bilateral translational springs (default horizontal 2 MN/m, vertical 800 MN/m) and weak rotational springs 1 kNm/rad. All bearing pressure uses a nominal 12 x 16 in area, including unverified intermediate bearings. No contact, uplift release, sliding or friction is solved.",
+    "Rails, approaches, mudwalls, pedestals, haunch bodies, bolts and stiffener plates are not separate FE members and have no applied self-weight. They remain gray in results.",
+    "Local shell/support peaks can remain mesh-sensitive. Numerical equilibrium and mesh checks are not field validation or proof of physical accuracy."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "primary": "drawings.pdf",
+  "binder": "drawings.pdf",
+  "is_compilation": false,
+  "pages": 29,
+  "sha256": "3a672d548a02175fd8d6a1a1d96d169987db015871901d797a6ad55bf64740fc",
+  "primary_source_id": "9683606",
+  "page_numbering": "Unchanged one-based original primary PDF pages. Secondary sources have independent original PDF page numbers.",
+  "source_documents": [
+    {
+      "id": "9683606",
+      "title": "FT PlansXsect 2200652 For Contract Services",
+      "local_file": "sources/contract_plans_9683606.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683606",
+      "sha256": "3a672d548a02175fd8d6a1a1d96d169987db015871901d797a6ad55bf64740fc",
+      "original_pages": 29,
+      "reviewed_pages": [
+        1,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "role": "primary_geometry"
+    },
+    {
+      "id": "9552139",
+      "title": "FT ExistingPlans 2200652 For Contract Services",
+      "local_file": "sources/existing_plans_9552139.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9552139",
+      "sha256": "c89ddbb0272940eaf5671b1b9e7d2207df42b5a906dc0a2f82111f71171899da",
+      "original_pages": 68,
+      "reviewed_pages": [],
+      "role": "historical_evidence"
+    },
+    {
+      "id": "9710491",
+      "title": "B -44483-A REV 1",
+      "local_file": "sources/revision_notice_9710491.pdf",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9710491",
+      "sha256": "2a90b024226196e16d7dd3514a1a7173656dc26a1bd417f90838242db0951db1",
+      "original_pages": 8,
+      "reviewed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "role": "revision_evidence"
+    }
+  ]
+}

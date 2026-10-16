@@ -1,0 +1,319 @@
+{
+  "schema_version": 1,
+  "engine": "collection_demo",
+  "analytical_family": "arch",
+  "bridge_id": "sr1-wabash",
+  "title": "SR 1 over Wabash River | four assumed curved arch barrels",
+  "modeled_state": "Retained arch rings in the 2004 roadway reconstruction display; quadratic setting-out is approximate.",
+  "demonstration": true,
+  "display_scope": "Four arch barrels only; the remaining whole-crossing display is excluded from analytical fields.",
+  "coordinate_system": "Native metres: X longitudinal, Y transverse, Z up; x=u+skew_dx_dy*y. Curved shell reference surfaces follow the frozen arch equations.",
+  "source_pdf": "data/bridges/sr1-wabash/drawings.pdf",
+  "drawing_sha256": "6cc8f0283bde2a2285898cad3193f5a44c52b724a1547fa39d048d90668904d6",
+  "source_hashes": {
+    "drawing": "6cc8f0283bde2a2285898cad3193f5a44c52b724a1547fa39d048d90668904d6",
+    "manifest": "c82004571345776829a657210e5cf1f46d9929895a4252df5a2b0281f468527a",
+    "model": "f415b1e60c9591a49cd7414eeac0e76032a8807df24b2e693d04ccba65061d44"
+  },
+  "sources": {
+    "drawing": {
+      "title": "Historical arch and 2004 roadway reconstruction drawings",
+      "url": "/assets/sr1-wabash/drawing"
+    },
+    "demonstration": {
+      "title": "Explicit arch-barrel assumptions",
+      "url": "/analysis-guide#collection-demo"
+    },
+    "shell": {
+      "title": "OpenSees ShellMITC4 element documentation",
+      "url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/640.htm"
+    },
+    "section": {
+      "title": "OpenSees elastic membrane-plate section",
+      "url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/231.htm"
+    }
+  },
+  "evidence": [
+    {
+      "fields": [
+        "arches.u0_m",
+        "arches.u1_m",
+        "arches.y0_m",
+        "arches.y1_m"
+      ],
+      "status": "source-based with explicit idealization",
+      "source": "drawing",
+      "pdf_pages": [
+        9,
+        23,
+        24
+      ],
+      "note": "Four 21.946 m clear openings, three 1.295 m pier widths, 14.174 m barrel width and 356 mm minimum ring depth. Native skew follows the existing display coordinate transform."
+    },
+    {
+      "fields": [
+        "arches.spring_intrados_z0_m",
+        "arches.spring_intrados_z1_m",
+        "arches.quadratic_crown_reference_z_m",
+        "arches.haunch_extra_vertical_thickness_m"
+      ],
+      "status": "assumed reconstruction",
+      "source": "demonstration",
+      "note": "Exact numeric equations are frozen from scripts/build_indiana_batch2.py:wabash. The display builder expressly labels intrados/haunch geometry approximate; they are not original setting-out dimensions."
+    },
+    {
+      "fields": [
+        "springing",
+        "pressure_projection",
+        "normal_thickness_conversion",
+        "concrete_poisson"
+      ],
+      "status": "assumed",
+      "source": "demonstration",
+      "note": "Independent clamped/elastic springing lines, direct projected pressure and no deck/fill interaction. Concrete elasticity and all restraint stiffnesses are assumptions."
+    },
+    {
+      "fields": [
+        "shell_element",
+        "stress_recovery"
+      ],
+      "status": "solver formulation",
+      "source": "shell",
+      "note": "ShellMITC4 curved surface discretized by planar quads; 4 integration points and membrane/bending resultants. ElasticMembranePlateSection uses normal section thickness."
+    }
+  ],
+  "values": {
+    "arches": [
+      {
+        "cid": "arch_0",
+        "label": "Arch A",
+        "u0_m": -45.834500000000006,
+        "u1_m": -23.888500000000004,
+        "y0_m": -7.087,
+        "y1_m": 7.087,
+        "spring_intrados_z0_m": 3.191,
+        "spring_intrados_z1_m": 4.715,
+        "quadratic_crown_reference_z_m": 8.05,
+        "crown_vertical_thickness_m": 0.356,
+        "haunch_extra_vertical_thickness_m": 0.65
+      },
+      {
+        "cid": "arch_1",
+        "label": "Arch B",
+        "u0_m": -22.593500000000006,
+        "u1_m": -0.6475000000000044,
+        "y0_m": -7.087,
+        "y1_m": 7.087,
+        "spring_intrados_z0_m": 4.715,
+        "spring_intrados_z1_m": 4.715,
+        "quadratic_crown_reference_z_m": 8.05,
+        "crown_vertical_thickness_m": 0.356,
+        "haunch_extra_vertical_thickness_m": 0.65
+      },
+      {
+        "cid": "arch_2",
+        "label": "Arch C",
+        "u0_m": 0.6474999999999937,
+        "u1_m": 22.593499999999995,
+        "y0_m": -7.087,
+        "y1_m": 7.087,
+        "spring_intrados_z0_m": 4.715,
+        "spring_intrados_z1_m": 4.715,
+        "quadratic_crown_reference_z_m": 8.05,
+        "crown_vertical_thickness_m": 0.356,
+        "haunch_extra_vertical_thickness_m": 0.65
+      },
+      {
+        "cid": "arch_3",
+        "label": "Arch D",
+        "u0_m": 23.888499999999993,
+        "u1_m": 45.83449999999999,
+        "y0_m": -7.087,
+        "y1_m": 7.087,
+        "spring_intrados_z0_m": 4.715,
+        "spring_intrados_z1_m": 3.191,
+        "quadratic_crown_reference_z_m": 8.05,
+        "crown_vertical_thickness_m": 0.356,
+        "haunch_extra_vertical_thickness_m": 0.65
+      }
+    ],
+    "spans_m": [
+      21.946,
+      21.946,
+      21.946,
+      21.946
+    ],
+    "pier_gap_m": 1.295,
+    "skew_dx_dy": -0.2679491924311227,
+    "concrete_poisson": 0.2,
+    "mesh_segments_u": 24,
+    "mesh_segments_y": 12,
+    "max_mesh_density": 3,
+    "pressure_projection": {
+      "type": "vertical_on_horizontal_projected_barrel_footprints",
+      "full_area_m2": 1244.250416,
+      "left_half_area_m2": 622.125208,
+      "y_split_m": 0,
+      "excluded": "Pier gaps, deck overhangs and floor outside arch openings",
+      "loaded_ranges": [
+        {
+          "cid": "arch_0",
+          "u0_m": -45.834500000000006,
+          "u1_m": -23.888500000000004,
+          "y0_m": -7.087,
+          "y1_m": 7.087
+        },
+        {
+          "cid": "arch_1",
+          "u0_m": -22.593500000000006,
+          "u1_m": -0.6475000000000044,
+          "y0_m": -7.087,
+          "y1_m": 7.087
+        },
+        {
+          "cid": "arch_2",
+          "u0_m": 0.6474999999999937,
+          "u1_m": 22.593499999999995,
+          "y0_m": -7.087,
+          "y1_m": 7.087
+        },
+        {
+          "cid": "arch_3",
+          "u0_m": 23.888499999999993,
+          "u1_m": 45.83449999999999,
+          "y0_m": -7.087,
+          "y1_m": 7.087
+        }
+      ]
+    },
+    "springing": {
+      "fixed": "all six DOFs clamped per edge node",
+      "elastic": "independent six-direction bilateral line springs",
+      "horizontal_x_ratio_to_kz": 0.25,
+      "horizontal_y_ratio_to_kz": 0.125,
+      "rotational_line_stiffness_Nm_per_rad_per_m": [
+        200000000.0,
+        200000000.0,
+        200000000.0
+      ],
+      "line_length_basis": "actual skew edge length = dy*sqrt(1+skew_dx_dy^2)",
+      "no_shared_pier_coupling": true
+    },
+    "normal_thickness_conversion": "t_normal=t_vertical/sqrt(1+(1+k^2)*(d z_mid/d u)^2)"
+  },
+  "parameter_labels": {
+    "pressure_kPa": "Vertical pressure on projected arch footprint (kPa)",
+    "concrete_E_GPa": "Assumed arch concrete E (GPa)",
+    "bearing_kz_MNpm": "Elastic springing Kz (MN/m2 of support line)",
+    "steel_E_GPa": "Not applicable: no steel in arch-barrel model"
+  },
+  "parameter_notes": {
+    "bearing_kz_MNpm": "Active only with elastic springings; Kx=.25 Kz and Ky=.125 Kz.",
+    "steel_E_GPa": "Accepted for common-setting compatibility only; hidden because no steel stiffness is used."
+  },
+  "case_labels": {
+    "demo_uniform": "Assumed arch model: full projected barrel pressure",
+    "demo_eccentric": "Assumed arch model: left-half projected barrel pressure"
+  },
+  "foundation_labels": {
+    "fixed": "Clamped springings",
+    "elastic": "Elastic springing lines"
+  },
+  "assumptions": [
+    "Assumed-input linear elastic arch-barrel pressure increment, not whole-bridge behavior, an as-built analysis, load rating, condition assessment or field validation.",
+    "All four actual arch-barrel display members are represented by curved ShellMITC4 elements. Deck, sidewalks, spandrel walls, fill, counterforts, piers, abutments, foundations, parapets and utilities are excluded and receive no stress or displacement claim.",
+    "Four barrels are independently restrained at their eight springing faces. Adjacent barrels are not coupled through a modeled pier. Shared-pier bending, thrust cancellation, foundation settlement and construction joints are outside this model.",
+    "Uniform pressure acts vertically on the projected 4 x 21.946 m x 14.174 m arch footprints only. Left-half pressure means native Y < 0. Deck overhangs, pier gaps and the extended floor envelope carry no applied load; no redistribution through fill or deck is invented.",
+    "The quadratic intrados and vertical thickness t=.356+.650*(2r-1)^2 exactly reproduce the current visualization recipe, but that recipe is itself approximate. Original multi-radius arch setting-out, true radial haunch thickness and construction tolerances are unresolved.",
+    "The shell reference surface is the middle of the displayed vertical ring depth. Each element uses normal thickness equal to vertical depth divided by its surface metric, preserving the local vertical-slice volume to first order. This is an explicit shell idealization, not a surveyed ring profile.",
+    "Fixed springings clamp all six degrees of freedom along each springing edge. Elastic springings use bilateral six-direction line springs, independently connected to ground. These brackets are illustrative support assumptions, not measured soil/pier behavior.",
+    "Elastic springing Kz is the editable bearing_kz_MNpm compatibility parameter in MN/m2 of actual skew springing-line length. Kx=.25*Kz, Ky=.125*Kz; all rotational stiffnesses are frozen at 200 MN*m/rad per metre. Tributary line lengths make support stiffness independent of mesh density.",
+    "Concrete E is editable, default 30 GPa; Poisson ratio is assumed 0.20. Steel E is not applicable and does not enter this concrete-only solve. The springing stiffness control applies only when foundation=elastic.",
+    "No self-weight, prestress, reinforcement, cracking, creep, shrinkage, geometric nonlinearity, compression-only contact, fill confinement or actual damage is included. All reported fields are incremental linear-elastic shell response.",
+    "Shell stress is an unaveraged surface principal normal-stress envelope recovered from membrane and bending resultants. It excludes transverse-shear stress, through-thickness normal stress, solid stress tensors and reinforcement stress.",
+    "Local stresses near fixed edges, free edges and variable-thickness transitions may be mesh sensitive. Passing displacement refinement and equilibrium does not validate those local peaks or the physical support assumptions."
+  ],
+  "analyzed_component_ids": [
+    "arch_0",
+    "arch_1",
+    "arch_2",
+    "arch_3"
+  ],
+  "excluded_component_ids": [
+    "deck",
+    "endwall_-1_-1",
+    "endwall_-1_1",
+    "endwall_1_-1",
+    "endwall_1_1",
+    "fill_0",
+    "fill_1",
+    "fill_2",
+    "fill_3",
+    "footing_0",
+    "footing_1",
+    "footing_2",
+    "footing_3",
+    "footing_4",
+    "gas_line",
+    "panels_-1_0",
+    "panels_-1_1",
+    "panels_-1_2",
+    "panels_-1_3",
+    "panels_-1_4",
+    "panels_-1_5",
+    "panels_1_0",
+    "panels_1_1",
+    "panels_1_2",
+    "panels_1_3",
+    "panels_1_4",
+    "panels_1_5",
+    "parapet_-1_0",
+    "parapet_-1_1",
+    "parapet_-1_2",
+    "parapet_-1_3",
+    "parapet_-1_4",
+    "parapet_-1_5",
+    "parapet_1_0",
+    "parapet_1_1",
+    "parapet_1_2",
+    "parapet_1_3",
+    "parapet_1_4",
+    "parapet_1_5",
+    "pier_0",
+    "pier_1",
+    "pier_2",
+    "pier_3",
+    "pier_4",
+    "pilaster_0_-1",
+    "pilaster_0_1",
+    "pilaster_1_-1",
+    "pilaster_1_1",
+    "pilaster_2_-1",
+    "pilaster_2_1",
+    "pilaster_3_-1",
+    "pilaster_3_1",
+    "pilaster_4_-1",
+    "pilaster_4_1",
+    "railpost_-1_0",
+    "railpost_-1_1",
+    "railpost_-1_2",
+    "railpost_-1_3",
+    "railpost_-1_4",
+    "railpost_1_0",
+    "railpost_1_1",
+    "railpost_1_2",
+    "railpost_1_3",
+    "railpost_1_4",
+    "spandrel_0_-1",
+    "spandrel_0_1",
+    "spandrel_1_-1",
+    "spandrel_1_1",
+    "spandrel_2_-1",
+    "spandrel_2_1",
+    "spandrel_3_-1",
+    "spandrel_3_1",
+    "walk_-1",
+    "walk_1"
+  ],
+  "excluded_component_reason": "Outside the four-barrel analytical scope. No FE stresses, displacements or load transfer are assigned to these display components."
+}

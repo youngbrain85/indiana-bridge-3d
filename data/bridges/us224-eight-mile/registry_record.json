@@ -1,0 +1,35 @@
+{
+  "id": "us224-eight-mile",
+  "workspace_enabled": true,
+  "name": "US 224 over Eight Mile Creek",
+  "county": "Wells",
+  "waterway": "Eight Mile Creek",
+  "structure_id": "224-90-01545 B",
+  "designation": "2200957",
+  "structure_type": "Spread prestressed concrete box beam",
+  "latitude": 40.8307,
+  "longitude": -85.08145,
+  "location_source": {
+    "document": "2025 FHWA NBI",
+    "url": "https://www.fhwa.dot.gov/BRIDGE/nbi/2025/delimited/IN25.txt",
+    "note": "2025 NBI existing-crossing position; verify against the selected drawing before placing a replacement model. The GLB uses local axes and is not georeferenced."
+  },
+  "owner": "INDOT",
+  "maintenance": "INDOT",
+  "nbi_ids": [
+    "029110"
+  ],
+  "ownership_data_year": 2025,
+  "ownership_note": "Matched 2025 NBI existing-crossing records: owner 01 and maintenance 01 (State Highway Agency). This is dated inventory evidence, not a new 2026 ownership certification.",
+  "model": {
+    "glb": "bridges/us224-eight-mile/model.glb",
+    "deck_length_m": 13.7287,
+    "deck_width_m": 14.224,
+    "spans": 1,
+    "components": 91,
+    "revision": "Whole-crossing exterior geometry v1",
+    "scope": "Retained 1985 replacement/widening geometry with proposed 2026 overlay, beam-end repairs and approaches; completion not established",
+    "detail_status": "needs_detail",
+    "detail_status_note": "Whole crossing is represented. Amber details use explicit approximations; field seats, exact camber, transition hardware and site geometry remain unresolved. Not an as-built model."
+  }
+}

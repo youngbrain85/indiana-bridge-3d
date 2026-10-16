@@ -1,0 +1,175 @@
+{
+  "id": "sr1-wabash",
+  "design_state": "2004 roadway and retained arch reconstruction v1",
+  "primary_source": "Primary: 50-page existing-plans bundle, original 1933 arch details plus 2004 B-25747 roadway reconstruction. Pages 40-50 concern a separate pedestrian bridge and are not used for this model. 2026 general plan cross-checks the overall floor envelope.",
+  "whole_bridge_dimensions": {
+    "deck_length_m": 108.48340000000002,
+    "deck_width_m": 17.322,
+    "skew_deg": 15,
+    "spans_m": [
+      21.946,
+      21.946,
+      21.946,
+      21.946
+    ]
+  },
+  "verified_source_checks": [
+    {
+      "feature": "Four concrete arches",
+      "status": "modeled_with_simplifications",
+      "detail": "Four whole arch barrels, spandrel walls and hidden fill envelopes. Exact original multi-radius curve and spring haunch thickness remain unresolved.",
+      "sources": [
+        "Primary PDF p.9",
+        "Primary PDF p.23",
+        "Primary PDF p.24"
+      ],
+      "part_ids": [
+        "arch_0",
+        "spandrel_0_-1",
+        "spandrel_0_1",
+        "fill_0",
+        "arch_1",
+        "spandrel_1_-1",
+        "spandrel_1_1",
+        "fill_1",
+        "arch_2",
+        "spandrel_2_-1",
+        "spandrel_2_1",
+        "fill_2",
+        "arch_3",
+        "spandrel_3_-1",
+        "spandrel_3_1",
+        "fill_3",
+        "pilaster_0_-1",
+        "pilaster_0_1",
+        "pilaster_1_-1",
+        "pilaster_1_1",
+        "pilaster_2_-1",
+        "pilaster_2_1",
+        "pilaster_3_-1",
+        "pilaster_3_1",
+        "pilaster_4_-1",
+        "pilaster_4_1"
+      ]
+    },
+    {
+      "feature": "2004 deck and sidewalks",
+      "status": "modeled_with_simplifications",
+      "detail": "13.8 m roadway, 17.322 m overall width, 200 mm slab and both sidewalks. End floor limits follow the later general plan; plan flare and localized curb brackets are simplified.",
+      "sources": [
+        "Primary PDF p.23",
+        "Primary PDF p.24",
+        "Primary PDF p.32"
+      ],
+      "part_ids": [
+        "deck",
+        "walk_-1",
+        "walk_1"
+      ]
+    },
+    {
+      "feature": "Architectural parapets",
+      "status": "modeled_with_simplifications",
+      "detail": "Solid 915 mm parapets, 960 mm pilasters and shallow relief. Panel spacing and texture are representative. Separate pedestrian-bridge sheets 40-50 were excluded.",
+      "sources": [
+        "Primary PDF p.35",
+        "Primary PDF p.36",
+        "Primary PDF p.37"
+      ],
+      "part_ids": [
+        "parapet_-1_0",
+        "panels_-1_0",
+        "parapet_-1_1",
+        "panels_-1_1",
+        "parapet_-1_2",
+        "panels_-1_2",
+        "parapet_-1_3",
+        "panels_-1_3",
+        "parapet_-1_4",
+        "panels_-1_4",
+        "parapet_-1_5",
+        "panels_-1_5",
+        "railpost_-1_0",
+        "railpost_-1_1",
+        "railpost_-1_2",
+        "railpost_-1_3",
+        "railpost_-1_4",
+        "parapet_1_0",
+        "panels_1_0",
+        "parapet_1_1",
+        "panels_1_1",
+        "parapet_1_2",
+        "panels_1_2",
+        "parapet_1_3",
+        "panels_1_3",
+        "parapet_1_4",
+        "panels_1_4",
+        "parapet_1_5",
+        "panels_1_5",
+        "railpost_1_0",
+        "railpost_1_1",
+        "railpost_1_2",
+        "railpost_1_3",
+        "railpost_1_4"
+      ]
+    },
+    {
+      "feature": "Retained substructure",
+      "status": "approximate",
+      "detail": "Three piers and two abutment envelopes. No foundation adequacy or current condition inferred.",
+      "sources": [
+        "Primary PDF p.8",
+        "Primary PDF p.9",
+        "Primary PDF p.23"
+      ],
+      "part_ids": [
+        "endwall_-1_-1",
+        "endwall_-1_1",
+        "endwall_1_-1",
+        "endwall_1_1",
+        "pier_0",
+        "footing_0",
+        "pier_1",
+        "footing_1",
+        "pier_2",
+        "footing_2",
+        "pier_3",
+        "footing_3",
+        "pier_4",
+        "footing_4"
+      ]
+    },
+    {
+      "feature": "Remaining exterior features",
+      "status": "not_modeled",
+      "detail": "Exact arch setting-out, cutwaters, decorative lighting supplied by the city, gauge-well hardware, drainage outlets, rail end flare and approach details remain incomplete.",
+      "sources": [
+        "Primary PDF p.23",
+        "Primary PDF p.24",
+        "Primary PDF p.37"
+      ],
+      "part_ids": []
+    }
+  ],
+  "limits": [
+    "Exterior visualization reconstruction, not an as-built survey, load rating or validated FEM mesh.",
+    "No internal reinforcement, prestressing strands, embedded studs, weld beads or fabrication holes. Material colors are visualization choices.",
+    "Source pages mix historical removals and proposed work. Only the explicitly named design state is modeled; the separately stored later references do not alter that state.",
+    "Buried foundations are hidden by default. Unknown driven pile lengths, terrain and approach-road terminal systems are omitted.",
+    "Bearing contact checks verify constructed geometric attachment only; they do not establish surveyed bearing elevations or fabrication tolerances.",
+    "Arch intrados and variable ring thickness are approximate, not original setting-out. 21.946 m clear arch openings differ from pier-center distances and overall floor length.",
+    "The 2026 overlay and repair operations are not modeled. The 2004 decorative lighting details supplied by the City of Bluffton are not available in this package."
+  ],
+  "references": [
+    {
+      "id": "Historical main-arch and 2004 deck plans",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9548291"
+    },
+    {
+      "id": "2026 rehabilitation general plan, reference",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683627",
+      "local_file": "reference_2026.pdf",
+      "sha256": "acc2016c9b76a1f4966c96c9b1cb19f0ef7b17ca26990e2224bd6534b44c2946"
+    }
+  ]
+}

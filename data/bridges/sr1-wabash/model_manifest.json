@@ -1,0 +1,2380 @@
+{
+  "title": "SR 1 over Wabash River | 2004 roadway reconstruction",
+  "structure_id": "1-90-230B",
+  "designation": "9406690",
+  "spans_m": [
+    21.946,
+    21.946,
+    21.946,
+    21.946
+  ],
+  "source_note": "Primary: 50-page existing-plans bundle, original 1933 arch details plus 2004 B-25747 roadway reconstruction. Pages 40-50 concern a separate pedestrian bridge and are not used for this model. 2026 general plan cross-checks the overall floor envelope.",
+  "assumptions": [
+    "Exterior visualization reconstruction, not an as-built survey, load rating or validated FEM mesh.",
+    "No internal reinforcement, prestressing strands, embedded studs, weld beads or fabrication holes. Material colors are visualization choices.",
+    "Source pages mix historical removals and proposed work. Only the explicitly named design state is modeled; the separately stored later references do not alter that state.",
+    "Buried foundations are hidden by default. Unknown driven pile lengths, terrain and approach-road terminal systems are omitted.",
+    "Bearing contact checks verify constructed geometric attachment only; they do not establish surveyed bearing elevations or fabrication tolerances.",
+    "Arch intrados and variable ring thickness are approximate, not original setting-out. 21.946 m clear arch openings differ from pier-center distances and overall floor length.",
+    "The 2026 overlay and repair operations are not modeled. The 2004 decorative lighting details supplied by the City of Bluffton are not available in this package."
+  ],
+  "external_sources": [
+    {
+      "id": "Historical main-arch and 2004 deck plans",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9548291"
+    },
+    {
+      "id": "2026 rehabilitation general plan, reference",
+      "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683627",
+      "local_file": "reference_2026.pdf",
+      "sha256": "acc2016c9b76a1f4966c96c9b1cb19f0ef7b17ca26990e2224bd6534b44c2946"
+    }
+  ],
+  "units": "metres",
+  "deck_length_m": 108.48340000000002,
+  "deck_width_m": 17.322,
+  "skew_deg": 15,
+  "source_pdf": "drawings.pdf",
+  "source_sha256": "6cc8f0283bde2a2285898cad3193f5a44c52b724a1547fa39d048d90668904d6",
+  "parts": [
+    {
+      "id": "deck",
+      "name": "2004 roadway slab | 200 mm",
+      "layer": "deck",
+      "color": "#d1d5d0",
+      "pdf_pages": [
+        23,
+        24,
+        29,
+        32
+      ],
+      "basis": "Dimensioned roadway cross-section; end floor limits from 2026 general plan",
+      "note": "355 ft 11 in is the floor envelope, not the 91.669 m arch opening/pier chain.",
+      "dimensions": {
+        "width_m": 13.8,
+        "thickness_m": 0.2
+      },
+      "bounds_m": [
+        [
+          -56.090549,
+          -6.9,
+          8.491
+        ],
+        [
+          56.090549,
+          6.9,
+          8.829
+        ]
+      ],
+      "volume_m3": 299.414184
+    },
+    {
+      "id": "walk_-1",
+      "name": "West sidewalk and cantilever",
+      "layer": "sidewalks",
+      "color": "#c9c8b8",
+      "pdf_pages": [
+        24,
+        32
+      ],
+      "basis": "Source widths and nominal slab; curb, bracket and end-flare geometry simplified",
+      "note": "",
+      "dimensions": {
+        "clear_width_m": 1.306,
+        "slab_thickness_m": 0.19
+      },
+      "bounds_m": [
+        [
+          -52.392851,
+          -8.661,
+          8.69378
+        ],
+        [
+          56.562408,
+          -6.9,
+          8.919
+        ]
+      ],
+      "volume_m3": 36.297460806
+    },
+    {
+      "id": "walk_1",
+      "name": "East sidewalk and cantilever",
+      "layer": "sidewalks",
+      "color": "#c9c8b8",
+      "pdf_pages": [
+        24,
+        32
+      ],
+      "basis": "Source widths and nominal slab; curb, bracket and end-flare geometry simplified",
+      "note": "",
+      "dimensions": {
+        "clear_width_m": 1.306,
+        "slab_thickness_m": 0.19
+      },
+      "bounds_m": [
+        [
+          -56.562408,
+          6.9,
+          8.69378
+        ],
+        [
+          52.392851,
+          8.661,
+          8.919
+        ]
+      ],
+      "volume_m3": 36.297460806
+    },
+    {
+      "id": "arch_0",
+      "name": "Span A | full-width concrete arch barrel",
+      "layer": "arches",
+      "color": "#b9ad92",
+      "pdf_pages": [
+        9,
+        23,
+        24
+      ],
+      "basis": "Dimensioned span/width; arch curve approximated",
+      "note": "Quadratic intrados fitted to the general elevation. 356 mm crown ring thickness from the cross-section. Haunch taper and exact original multi-radius setting-out are not reconstructed.",
+      "dimensions": {
+        "clear_span_m": 21.946,
+        "barrel_width_m": 14.174,
+        "crown_thickness_m": 0.356
+      },
+      "bounds_m": [
+        [
+          -47.733456,
+          -7.087,
+          3.191
+        ],
+        [
+          -21.989544,
+          7.087,
+          8.447973
+        ]
+      ],
+      "volume_m3": 178.14981062
+    },
+    {
+      "id": "spandrel_0_-1",
+      "name": "Span A | spandrel wall -1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        9,
+        24
+      ],
+      "basis": "Source wall thickness; arch-dependent envelope approximated",
+      "note": "",
+      "dimensions": {
+        "thickness_m": 0.381
+      },
+      "bounds_m": [
+        [
+          -44.037633,
+          -7.087,
+          4.197
+        ],
+        [
+          -21.989544,
+          -6.706,
+          8.49488
+        ]
+      ],
+      "volume_m3": 10.320669897
+    },
+    {
+      "id": "spandrel_0_1",
+      "name": "Span A | spandrel wall 1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        9,
+        24
+      ],
+      "basis": "Source wall thickness; arch-dependent envelope approximated",
+      "note": "",
+      "dimensions": {
+        "thickness_m": 0.381
+      },
+      "bounds_m": [
+        [
+          -47.733456,
+          6.706,
+          4.197
+        ],
+        [
+          -25.685367,
+          7.087,
+          8.49488
+        ]
+      ],
+      "volume_m3": 10.320669897
+    },
+    {
+      "id": "fill_0",
+      "name": "Span A | concealed fill envelope",
+      "layer": "fill",
+      "color": "#9b987f",
+      "pdf_pages": [
+        24
+      ],
+      "basis": "Concealed fill envelope; not material quantities",
+      "note": "Hidden by default. No inferred material calibration.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -47.631367,
+          -6.706,
+          4.197
+        ],
+        [
+          -22.091633,
+          6.706,
+          8.49488
+        ]
+      ],
+      "volume_m3": 364.430685516
+    },
+    {
+      "id": "arch_1",
+      "name": "Span B | full-width concrete arch barrel",
+      "layer": "arches",
+      "color": "#b9ad92",
+      "pdf_pages": [
+        9,
+        23,
+        24
+      ],
+      "basis": "Dimensioned span/width; arch curve approximated",
+      "note": "Quadratic intrados fitted to the general elevation. 356 mm crown ring thickness from the cross-section. Haunch taper and exact original multi-radius setting-out are not reconstructed.",
+      "dimensions": {
+        "clear_span_m": 21.946,
+        "barrel_width_m": 14.174,
+        "crown_thickness_m": 0.356
+      },
+      "bounds_m": [
+        [
+          -24.492456,
+          -7.087,
+          4.715
+        ],
+        [
+          1.251456,
+          7.087,
+          8.406
+        ]
+      ],
+      "volume_m3": 178.14981062
+    },
+    {
+      "id": "spandrel_1_-1",
+      "name": "Span B | spandrel wall -1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        9,
+        24
+      ],
+      "basis": "Source wall thickness; arch-dependent envelope approximated",
+      "note": "",
+      "dimensions": {
+        "thickness_m": 0.381
+      },
+      "bounds_m": [
+        [
+          -20.796633,
+          -7.087,
+          5.721
+        ],
+        [
+          1.251456,
+          -6.706,
+          8.49488
+        ]
+      ],
+      "volume_m3": 8.196406798
+    },
+    {
+      "id": "spandrel_1_1",
+      "name": "Span B | spandrel wall 1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        9,
+        24
+      ],
+      "basis": "Source wall thickness; arch-dependent envelope approximated",
+      "note": "",
+      "dimensions": {
+        "thickness_m": 0.381
+      },
+      "bounds_m": [
+        [
+          -24.492456,
+          6.706,
+          5.721
+        ],
+        [
+          -2.444367,
+          7.087,
+          8.49488
+        ]
+      ],
+      "volume_m3": 8.196406798
+    },
+    {
+      "id": "fill_1",
+      "name": "Span B | concealed fill envelope",
+      "layer": "fill",
+      "color": "#9b987f",
+      "pdf_pages": [
+        24
+      ],
+      "basis": "Concealed fill envelope; not material quantities",
+      "note": "Hidden by default. No inferred material calibration.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -24.390367,
+          -6.706,
+          5.721
+        ],
+        [
+          1.149367,
+          6.706,
+          8.49488
+        ]
+      ],
+      "volume_m3": 289.652164052
+    },
+    {
+      "id": "arch_2",
+      "name": "Span C | full-width concrete arch barrel",
+      "layer": "arches",
+      "color": "#b9ad92",
+      "pdf_pages": [
+        9,
+        23,
+        24
+      ],
+      "basis": "Dimensioned span/width; arch curve approximated",
+      "note": "Quadratic intrados fitted to the general elevation. 356 mm crown ring thickness from the cross-section. Haunch taper and exact original multi-radius setting-out are not reconstructed.",
+      "dimensions": {
+        "clear_span_m": 21.946,
+        "barrel_width_m": 14.174,
+        "crown_thickness_m": 0.356
+      },
+      "bounds_m": [
+        [
+          -1.251456,
+          -7.087,
+          4.715
+        ],
+        [
+          24.492456,
+          7.087,
+          8.406
+        ]
+      ],
+      "volume_m3": 178.14981062
+    },
+    {
+      "id": "spandrel_2_-1",
+      "name": "Span C | spandrel wall -1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        9,
+        24
+      ],
+      "basis": "Source wall thickness; arch-dependent envelope approximated",
+      "note": "",
+      "dimensions": {
+        "thickness_m": 0.381
+      },
+      "bounds_m": [
+        [
+          2.444367,
+          -7.087,
+          5.721
+        ],
+        [
+          24.492456,
+          -6.706,
+          8.49488
+        ]
+      ],
+      "volume_m3": 8.196406798
+    },
+    {
+      "id": "spandrel_2_1",
+      "name": "Span C | spandrel wall 1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        9,
+        24
+      ],
+      "basis": "Source wall thickness; arch-dependent envelope approximated",
+      "note": "",
+      "dimensions": {
+        "thickness_m": 0.381
+      },
+      "bounds_m": [
+        [
+          -1.251456,
+          6.706,
+          5.721
+        ],
+        [
+          20.796633,
+          7.087,
+          8.49488
+        ]
+      ],
+      "volume_m3": 8.196406798
+    },
+    {
+      "id": "fill_2",
+      "name": "Span C | concealed fill envelope",
+      "layer": "fill",
+      "color": "#9b987f",
+      "pdf_pages": [
+        24
+      ],
+      "basis": "Concealed fill envelope; not material quantities",
+      "note": "Hidden by default. No inferred material calibration.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -1.149367,
+          -6.706,
+          5.721
+        ],
+        [
+          24.390367,
+          6.706,
+          8.49488
+        ]
+      ],
+      "volume_m3": 289.652164052
+    },
+    {
+      "id": "arch_3",
+      "name": "Span D | full-width concrete arch barrel",
+      "layer": "arches",
+      "color": "#b9ad92",
+      "pdf_pages": [
+        9,
+        23,
+        24
+      ],
+      "basis": "Dimensioned span/width; arch curve approximated",
+      "note": "Quadratic intrados fitted to the general elevation. 356 mm crown ring thickness from the cross-section. Haunch taper and exact original multi-radius setting-out are not reconstructed.",
+      "dimensions": {
+        "clear_span_m": 21.946,
+        "barrel_width_m": 14.174,
+        "crown_thickness_m": 0.356
+      },
+      "bounds_m": [
+        [
+          21.989544,
+          -7.087,
+          3.191
+        ],
+        [
+          47.733456,
+          7.087,
+          8.447973
+        ]
+      ],
+      "volume_m3": 178.14981062
+    },
+    {
+      "id": "spandrel_3_-1",
+      "name": "Span D | spandrel wall -1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        9,
+        24
+      ],
+      "basis": "Source wall thickness; arch-dependent envelope approximated",
+      "note": "",
+      "dimensions": {
+        "thickness_m": 0.381
+      },
+      "bounds_m": [
+        [
+          25.685367,
+          -7.087,
+          4.197
+        ],
+        [
+          47.733456,
+          -6.706,
+          8.49488
+        ]
+      ],
+      "volume_m3": 10.320669897
+    },
+    {
+      "id": "spandrel_3_1",
+      "name": "Span D | spandrel wall 1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        9,
+        24
+      ],
+      "basis": "Source wall thickness; arch-dependent envelope approximated",
+      "note": "",
+      "dimensions": {
+        "thickness_m": 0.381
+      },
+      "bounds_m": [
+        [
+          21.989544,
+          6.706,
+          4.197
+        ],
+        [
+          44.037633,
+          7.087,
+          8.49488
+        ]
+      ],
+      "volume_m3": 10.320669897
+    },
+    {
+      "id": "fill_3",
+      "name": "Span D | concealed fill envelope",
+      "layer": "fill",
+      "color": "#9b987f",
+      "pdf_pages": [
+        24
+      ],
+      "basis": "Concealed fill envelope; not material quantities",
+      "note": "Hidden by default. No inferred material calibration.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          22.091633,
+          -6.706,
+          4.197
+        ],
+        [
+          47.631367,
+          6.706,
+          8.49488
+        ]
+      ],
+      "volume_m3": 364.430685516
+    },
+    {
+      "id": "endwall_-1_-1",
+      "name": "Start floor | retaining wall -1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        9,
+        23
+      ],
+      "basis": "Approximate end-floor retaining envelope",
+      "note": "Length follows the later overall floor limit; original end flare, fill and ground level require reconciliation.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -52.393654,
+          -7.277,
+          3.2
+        ],
+        [
+          -45.179634,
+          -6.897,
+          8.49106
+        ]
+      ],
+      "volume_m3": 14.289539217
+    },
+    {
+      "id": "endwall_-1_1",
+      "name": "Start floor | retaining wall 1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        9,
+        23
+      ],
+      "basis": "Approximate end-floor retaining envelope",
+      "note": "Length follows the later overall floor limit; original end flare, fill and ground level require reconciliation.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -56.191566,
+          6.897,
+          3.2
+        ],
+        [
+          -48.977546,
+          7.277,
+          8.49106
+        ]
+      ],
+      "volume_m3": 14.289539217
+    },
+    {
+      "id": "endwall_1_-1",
+      "name": "End floor | retaining wall -1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        9,
+        23
+      ],
+      "basis": "Approximate end-floor retaining envelope",
+      "note": "Length follows the later overall floor limit; original end flare, fill and ground level require reconciliation.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          48.977546,
+          -7.277,
+          3.2
+        ],
+        [
+          56.191566,
+          -6.897,
+          8.49106
+        ]
+      ],
+      "volume_m3": 14.289539217
+    },
+    {
+      "id": "endwall_1_1",
+      "name": "End floor | retaining wall 1",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        9,
+        23
+      ],
+      "basis": "Approximate end-floor retaining envelope",
+      "note": "Length follows the later overall floor limit; original end flare, fill and ground level require reconciliation.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          45.179634,
+          6.897,
+          3.2
+        ],
+        [
+          52.393654,
+          7.277,
+          8.49106
+        ]
+      ],
+      "volume_m3": 14.289539217
+    },
+    {
+      "id": "pier_0",
+      "name": "Abutment 1 | retained concrete support",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        8,
+        9,
+        23
+      ],
+      "basis": "Retained support envelope",
+      "note": "Support width follows clear-span chain; taper, cutwaters and foundation elevation remain approximate.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -49.599956,
+          -7.087,
+          0.9
+        ],
+        [
+          -43.364044,
+          7.087,
+          4.211
+        ]
+      ],
+      "volume_m3": 114.415617932
+    },
+    {
+      "id": "footing_0",
+      "name": "Pier 1 | footing envelope",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "basis": "Approximate foundation envelope",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -50.350811,
+          -7.65,
+          0.0
+        ],
+        [
+          -42.613189,
+          7.65,
+          0.9
+        ]
+      ],
+      "volume_m3": 50.09526
+    },
+    {
+      "id": "pilaster_0_-1",
+      "name": "Pier 1 | outer spandrel pilaster -1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        23,
+        30
+      ],
+      "basis": "Pilaster envelope from elevation; projection simplified",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -45.104202,
+          -7.36,
+          3.691
+        ],
+        [
+          -44.044202,
+          -6.88,
+          8.5
+        ]
+      ],
+      "volume_m3": 2.4468192
+    },
+    {
+      "id": "pilaster_0_1",
+      "name": "Pier 1 | outer spandrel pilaster 1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        23,
+        30
+      ],
+      "basis": "Pilaster envelope from elevation; projection simplified",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -48.919798,
+          6.88,
+          3.691
+        ],
+        [
+          -47.859798,
+          7.36,
+          8.5
+        ]
+      ],
+      "volume_m3": 2.4468192
+    },
+    {
+      "id": "pier_1",
+      "name": "Pier 2 | retained concrete support",
+      "layer": "piers",
+      "color": "#b7b2a6",
+      "pdf_pages": [
+        8,
+        9,
+        23
+      ],
+      "basis": "Retained support envelope",
+      "note": "Support width follows clear-span chain; taper, cutwaters and foundation elevation remain approximate.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -25.787456,
+          -7.087,
+          0.9
+        ],
+        [
+          -20.694544,
+          7.087,
+          5.735
+        ]
+      ],
+      "volume_m3": 88.74802055
+    },
+    {
+      "id": "footing_1",
+      "name": "Pier 2 | footing envelope",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "basis": "Approximate foundation envelope",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -26.538311,
+          -7.65,
+          0.0
+        ],
+        [
+          -19.943689,
+          7.65,
+          0.9
+        ]
+      ],
+      "volume_m3": 34.35615
+    },
+    {
+      "id": "pilaster_1_-1",
+      "name": "Pier 2 | outer spandrel pilaster -1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        23,
+        30
+      ],
+      "basis": "Pilaster envelope from elevation; projection simplified",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -21.863202,
+          -7.36,
+          5.215
+        ],
+        [
+          -20.803202,
+          -6.88,
+          8.5
+        ]
+      ],
+      "volume_m3": 1.671408
+    },
+    {
+      "id": "pilaster_1_1",
+      "name": "Pier 2 | outer spandrel pilaster 1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        23,
+        30
+      ],
+      "basis": "Pilaster envelope from elevation; projection simplified",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -25.678798,
+          6.88,
+          5.215
+        ],
+        [
+          -24.618798,
+          7.36,
+          8.5
+        ]
+      ],
+      "volume_m3": 1.671408
+    },
+    {
+      "id": "pier_2",
+      "name": "Pier 3 | retained concrete support",
+      "layer": "piers",
+      "color": "#b7b2a6",
+      "pdf_pages": [
+        8,
+        9,
+        23
+      ],
+      "basis": "Retained support envelope",
+      "note": "Support width follows clear-span chain; taper, cutwaters and foundation elevation remain approximate.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -2.546456,
+          -7.087,
+          0.9
+        ],
+        [
+          2.546456,
+          7.087,
+          5.735
+        ]
+      ],
+      "volume_m3": 88.74802055
+    },
+    {
+      "id": "footing_2",
+      "name": "Pier 3 | footing envelope",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "basis": "Approximate foundation envelope",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -3.297311,
+          -7.65,
+          0.0
+        ],
+        [
+          3.297311,
+          7.65,
+          0.9
+        ]
+      ],
+      "volume_m3": 34.35615
+    },
+    {
+      "id": "pilaster_2_-1",
+      "name": "Pier 3 | outer spandrel pilaster -1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        23,
+        30
+      ],
+      "basis": "Pilaster envelope from elevation; projection simplified",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          1.377798,
+          -7.36,
+          5.215
+        ],
+        [
+          2.437798,
+          -6.88,
+          8.5
+        ]
+      ],
+      "volume_m3": 1.671408
+    },
+    {
+      "id": "pilaster_2_1",
+      "name": "Pier 3 | outer spandrel pilaster 1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        23,
+        30
+      ],
+      "basis": "Pilaster envelope from elevation; projection simplified",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          -2.437798,
+          6.88,
+          5.215
+        ],
+        [
+          -1.377798,
+          7.36,
+          8.5
+        ]
+      ],
+      "volume_m3": 1.671408
+    },
+    {
+      "id": "pier_3",
+      "name": "Pier 4 | retained concrete support",
+      "layer": "piers",
+      "color": "#b7b2a6",
+      "pdf_pages": [
+        8,
+        9,
+        23
+      ],
+      "basis": "Retained support envelope",
+      "note": "Support width follows clear-span chain; taper, cutwaters and foundation elevation remain approximate.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          20.694544,
+          -7.087,
+          0.9
+        ],
+        [
+          25.787456,
+          7.087,
+          5.735
+        ]
+      ],
+      "volume_m3": 88.74802055
+    },
+    {
+      "id": "footing_3",
+      "name": "Pier 4 | footing envelope",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "basis": "Approximate foundation envelope",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          19.943689,
+          -7.65,
+          0.0
+        ],
+        [
+          26.538311,
+          7.65,
+          0.9
+        ]
+      ],
+      "volume_m3": 34.35615
+    },
+    {
+      "id": "pilaster_3_-1",
+      "name": "Pier 4 | outer spandrel pilaster -1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        23,
+        30
+      ],
+      "basis": "Pilaster envelope from elevation; projection simplified",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          24.618798,
+          -7.36,
+          5.215
+        ],
+        [
+          25.678798,
+          -6.88,
+          8.5
+        ]
+      ],
+      "volume_m3": 1.671408
+    },
+    {
+      "id": "pilaster_3_1",
+      "name": "Pier 4 | outer spandrel pilaster 1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        23,
+        30
+      ],
+      "basis": "Pilaster envelope from elevation; projection simplified",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          20.803202,
+          6.88,
+          5.215
+        ],
+        [
+          21.863202,
+          7.36,
+          8.5
+        ]
+      ],
+      "volume_m3": 1.671408
+    },
+    {
+      "id": "pier_4",
+      "name": "Abutment 5 | retained concrete support",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        8,
+        9,
+        23
+      ],
+      "basis": "Retained support envelope",
+      "note": "Support width follows clear-span chain; taper, cutwaters and foundation elevation remain approximate.",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          43.364044,
+          -7.087,
+          0.9
+        ],
+        [
+          49.599956,
+          7.087,
+          4.211
+        ]
+      ],
+      "volume_m3": 114.415617932
+    },
+    {
+      "id": "footing_4",
+      "name": "Pier 5 | footing envelope",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "basis": "Approximate foundation envelope",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          42.613189,
+          -7.65,
+          0.0
+        ],
+        [
+          50.350811,
+          7.65,
+          0.9
+        ]
+      ],
+      "volume_m3": 50.09526
+    },
+    {
+      "id": "pilaster_4_-1",
+      "name": "Pier 5 | outer spandrel pilaster -1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        23,
+        30
+      ],
+      "basis": "Pilaster envelope from elevation; projection simplified",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          47.859798,
+          -7.36,
+          3.691
+        ],
+        [
+          48.919798,
+          -6.88,
+          8.5
+        ]
+      ],
+      "volume_m3": 2.4468192
+    },
+    {
+      "id": "pilaster_4_1",
+      "name": "Pier 5 | outer spandrel pilaster 1",
+      "layer": "walls",
+      "color": "#c7baa0",
+      "pdf_pages": [
+        23,
+        30
+      ],
+      "basis": "Pilaster envelope from elevation; projection simplified",
+      "note": "",
+      "dimensions": {},
+      "bounds_m": [
+        [
+          44.044202,
+          6.88,
+          3.691
+        ],
+        [
+          45.104202,
+          7.36,
+          8.5
+        ]
+      ],
+      "volume_m3": 2.4468192
+    },
+    {
+      "id": "parapet_-1_0",
+      "name": "Architectural parapet -1, section 1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Dimensioned height/width; rail end flare omitted",
+      "note": "",
+      "dimensions": {
+        "height_m": 0.915,
+        "body_width_m": 0.38
+      },
+      "bounds_m": [
+        [
+          -52.032861,
+          -8.6235,
+          8.88833
+        ],
+        [
+          -44.17134,
+          -8.2435,
+          9.80333
+        ]
+      ],
+      "volume_m3": 2.69804769
+    },
+    {
+      "id": "panels_-1_0",
+      "name": "Architectural parapet -1, recessed-panel borders 1",
+      "layer": "ornament",
+      "color": "#a79a7f",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Simplified architectural relief",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "dimensions": {
+        "relief_m": 0.019
+      },
+      "bounds_m": [
+        [
+          -51.90195,
+          -8.6425,
+          9.01833
+        ],
+        [
+          -44.30225,
+          -8.2245,
+          9.62833
+        ]
+      ],
+      "volume_m3": 0.06467372
+    },
+    {
+      "id": "parapet_-1_1",
+      "name": "Architectural parapet -1, section 2",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Dimensioned height/width; rail end flare omitted",
+      "note": "",
+      "dimensions": {
+        "height_m": 0.915,
+        "body_width_m": 0.38
+      },
+      "bounds_m": [
+        [
+          -44.273161,
+          -8.6235,
+          8.88833
+        ],
+        [
+          -20.93034,
+          -8.2435,
+          9.80333
+        ]
+      ],
+      "volume_m3": 8.0808957
+    },
+    {
+      "id": "panels_-1_1",
+      "name": "Architectural parapet -1, recessed-panel borders 2",
+      "layer": "ornament",
+      "color": "#a79a7f",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Simplified architectural relief",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "dimensions": {
+        "relief_m": 0.019
+      },
+      "bounds_m": [
+        [
+          -44.14225,
+          -8.6425,
+          9.01833
+        ],
+        [
+          -21.06125,
+          -8.2245,
+          9.62833
+        ]
+      ],
+      "volume_m3": 0.1956316
+    },
+    {
+      "id": "parapet_-1_2",
+      "name": "Architectural parapet -1, section 3",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Dimensioned height/width; rail end flare omitted",
+      "note": "",
+      "dimensions": {
+        "height_m": 0.915,
+        "body_width_m": 0.38
+      },
+      "bounds_m": [
+        [
+          -21.032161,
+          -8.6235,
+          8.88833
+        ],
+        [
+          2.31066,
+          -8.2435,
+          9.80333
+        ]
+      ],
+      "volume_m3": 8.0808957
+    },
+    {
+      "id": "panels_-1_2",
+      "name": "Architectural parapet -1, recessed-panel borders 3",
+      "layer": "ornament",
+      "color": "#a79a7f",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Simplified architectural relief",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "dimensions": {
+        "relief_m": 0.019
+      },
+      "bounds_m": [
+        [
+          -20.90125,
+          -8.6425,
+          9.01833
+        ],
+        [
+          2.17975,
+          -8.2245,
+          9.62833
+        ]
+      ],
+      "volume_m3": 0.1956316
+    },
+    {
+      "id": "parapet_-1_3",
+      "name": "Architectural parapet -1, section 4",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Dimensioned height/width; rail end flare omitted",
+      "note": "",
+      "dimensions": {
+        "height_m": 0.915,
+        "body_width_m": 0.38
+      },
+      "bounds_m": [
+        [
+          2.208839,
+          -8.6235,
+          8.88833
+        ],
+        [
+          25.55166,
+          -8.2435,
+          9.80333
+        ]
+      ],
+      "volume_m3": 8.0808957
+    },
+    {
+      "id": "panels_-1_3",
+      "name": "Architectural parapet -1, recessed-panel borders 4",
+      "layer": "ornament",
+      "color": "#a79a7f",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Simplified architectural relief",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "dimensions": {
+        "relief_m": 0.019
+      },
+      "bounds_m": [
+        [
+          2.33975,
+          -8.6425,
+          9.01833
+        ],
+        [
+          25.42075,
+          -8.2245,
+          9.62833
+        ]
+      ],
+      "volume_m3": 0.1956316
+    },
+    {
+      "id": "parapet_-1_4",
+      "name": "Architectural parapet -1, section 5",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Dimensioned height/width; rail end flare omitted",
+      "note": "",
+      "dimensions": {
+        "height_m": 0.915,
+        "body_width_m": 0.38
+      },
+      "bounds_m": [
+        [
+          25.449839,
+          -8.6235,
+          8.88833
+        ],
+        [
+          48.79266,
+          -8.2435,
+          9.80333
+        ]
+      ],
+      "volume_m3": 8.0808957
+    },
+    {
+      "id": "panels_-1_4",
+      "name": "Architectural parapet -1, recessed-panel borders 5",
+      "layer": "ornament",
+      "color": "#a79a7f",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Simplified architectural relief",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "dimensions": {
+        "relief_m": 0.019
+      },
+      "bounds_m": [
+        [
+          25.58075,
+          -8.6425,
+          9.01833
+        ],
+        [
+          48.66175,
+          -8.2245,
+          9.62833
+        ]
+      ],
+      "volume_m3": 0.1956316
+    },
+    {
+      "id": "parapet_-1_5",
+      "name": "Architectural parapet -1, section 6",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Dimensioned height/width; rail end flare omitted",
+      "note": "",
+      "dimensions": {
+        "height_m": 0.915,
+        "body_width_m": 0.38
+      },
+      "bounds_m": [
+        [
+          48.690839,
+          -8.6235,
+          8.88833
+        ],
+        [
+          56.55236,
+          -8.2435,
+          9.80333
+        ]
+      ],
+      "volume_m3": 2.69804769
+    },
+    {
+      "id": "panels_-1_5",
+      "name": "Architectural parapet -1, recessed-panel borders 6",
+      "layer": "ornament",
+      "color": "#a79a7f",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Simplified architectural relief",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "dimensions": {
+        "relief_m": 0.019
+      },
+      "bounds_m": [
+        [
+          48.82175,
+          -8.6425,
+          9.01833
+        ],
+        [
+          56.42145,
+          -8.2245,
+          9.62833
+        ]
+      ],
+      "volume_m3": 0.06467372
+    },
+    {
+      "id": "railpost_-1_0",
+      "name": "Pier 1 | parapet pilaster -1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        37
+      ],
+      "basis": "Dimensioned envelope; minor finishes simplified",
+      "note": "",
+      "dimensions": {
+        "width_m": 1.067,
+        "height_m": 0.96
+      },
+      "bounds_m": [
+        [
+          -44.75575,
+          -8.676,
+          8.88833
+        ],
+        [
+          -43.68875,
+          -8.191,
+          9.84833
+        ]
+      ],
+      "volume_m3": 0.4967952
+    },
+    {
+      "id": "railpost_-1_1",
+      "name": "Pier 2 | parapet pilaster -1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        37
+      ],
+      "basis": "Dimensioned envelope; minor finishes simplified",
+      "note": "",
+      "dimensions": {
+        "width_m": 1.067,
+        "height_m": 0.96
+      },
+      "bounds_m": [
+        [
+          -21.51475,
+          -8.676,
+          8.88833
+        ],
+        [
+          -20.44775,
+          -8.191,
+          9.84833
+        ]
+      ],
+      "volume_m3": 0.4967952
+    },
+    {
+      "id": "railpost_-1_2",
+      "name": "Pier 3 | parapet pilaster -1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        37
+      ],
+      "basis": "Dimensioned envelope; minor finishes simplified",
+      "note": "",
+      "dimensions": {
+        "width_m": 1.067,
+        "height_m": 0.96
+      },
+      "bounds_m": [
+        [
+          1.72625,
+          -8.676,
+          8.88833
+        ],
+        [
+          2.79325,
+          -8.191,
+          9.84833
+        ]
+      ],
+      "volume_m3": 0.4967952
+    },
+    {
+      "id": "railpost_-1_3",
+      "name": "Pier 4 | parapet pilaster -1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        37
+      ],
+      "basis": "Dimensioned envelope; minor finishes simplified",
+      "note": "",
+      "dimensions": {
+        "width_m": 1.067,
+        "height_m": 0.96
+      },
+      "bounds_m": [
+        [
+          24.96725,
+          -8.676,
+          8.88833
+        ],
+        [
+          26.03425,
+          -8.191,
+          9.84833
+        ]
+      ],
+      "volume_m3": 0.4967952
+    },
+    {
+      "id": "railpost_-1_4",
+      "name": "Pier 5 | parapet pilaster -1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        37
+      ],
+      "basis": "Dimensioned envelope; minor finishes simplified",
+      "note": "",
+      "dimensions": {
+        "width_m": 1.067,
+        "height_m": 0.96
+      },
+      "bounds_m": [
+        [
+          48.20825,
+          -8.676,
+          8.88833
+        ],
+        [
+          49.27525,
+          -8.191,
+          9.84833
+        ]
+      ],
+      "volume_m3": 0.4967952
+    },
+    {
+      "id": "parapet_1_0",
+      "name": "Architectural parapet 1, section 1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Dimensioned height/width; rail end flare omitted",
+      "note": "",
+      "dimensions": {
+        "height_m": 0.915,
+        "body_width_m": 0.38
+      },
+      "bounds_m": [
+        [
+          -56.55236,
+          8.2435,
+          8.88833
+        ],
+        [
+          -48.690839,
+          8.6235,
+          9.80333
+        ]
+      ],
+      "volume_m3": 2.69804769
+    },
+    {
+      "id": "panels_1_0",
+      "name": "Architectural parapet 1, recessed-panel borders 1",
+      "layer": "ornament",
+      "color": "#a79a7f",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Simplified architectural relief",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "dimensions": {
+        "relief_m": 0.019
+      },
+      "bounds_m": [
+        [
+          -56.42145,
+          8.2245,
+          9.01833
+        ],
+        [
+          -48.82175,
+          8.6425,
+          9.62833
+        ]
+      ],
+      "volume_m3": 0.06467372
+    },
+    {
+      "id": "parapet_1_1",
+      "name": "Architectural parapet 1, section 2",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Dimensioned height/width; rail end flare omitted",
+      "note": "",
+      "dimensions": {
+        "height_m": 0.915,
+        "body_width_m": 0.38
+      },
+      "bounds_m": [
+        [
+          -48.79266,
+          8.2435,
+          8.88833
+        ],
+        [
+          -25.449839,
+          8.6235,
+          9.80333
+        ]
+      ],
+      "volume_m3": 8.0808957
+    },
+    {
+      "id": "panels_1_1",
+      "name": "Architectural parapet 1, recessed-panel borders 2",
+      "layer": "ornament",
+      "color": "#a79a7f",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Simplified architectural relief",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "dimensions": {
+        "relief_m": 0.019
+      },
+      "bounds_m": [
+        [
+          -48.66175,
+          8.2245,
+          9.01833
+        ],
+        [
+          -25.58075,
+          8.6425,
+          9.62833
+        ]
+      ],
+      "volume_m3": 0.1956316
+    },
+    {
+      "id": "parapet_1_2",
+      "name": "Architectural parapet 1, section 3",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Dimensioned height/width; rail end flare omitted",
+      "note": "",
+      "dimensions": {
+        "height_m": 0.915,
+        "body_width_m": 0.38
+      },
+      "bounds_m": [
+        [
+          -25.55166,
+          8.2435,
+          8.88833
+        ],
+        [
+          -2.208839,
+          8.6235,
+          9.80333
+        ]
+      ],
+      "volume_m3": 8.0808957
+    },
+    {
+      "id": "panels_1_2",
+      "name": "Architectural parapet 1, recessed-panel borders 3",
+      "layer": "ornament",
+      "color": "#a79a7f",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Simplified architectural relief",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "dimensions": {
+        "relief_m": 0.019
+      },
+      "bounds_m": [
+        [
+          -25.42075,
+          8.2245,
+          9.01833
+        ],
+        [
+          -2.33975,
+          8.6425,
+          9.62833
+        ]
+      ],
+      "volume_m3": 0.1956316
+    },
+    {
+      "id": "parapet_1_3",
+      "name": "Architectural parapet 1, section 4",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Dimensioned height/width; rail end flare omitted",
+      "note": "",
+      "dimensions": {
+        "height_m": 0.915,
+        "body_width_m": 0.38
+      },
+      "bounds_m": [
+        [
+          -2.31066,
+          8.2435,
+          8.88833
+        ],
+        [
+          21.032161,
+          8.6235,
+          9.80333
+        ]
+      ],
+      "volume_m3": 8.0808957
+    },
+    {
+      "id": "panels_1_3",
+      "name": "Architectural parapet 1, recessed-panel borders 4",
+      "layer": "ornament",
+      "color": "#a79a7f",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Simplified architectural relief",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "dimensions": {
+        "relief_m": 0.019
+      },
+      "bounds_m": [
+        [
+          -2.17975,
+          8.2245,
+          9.01833
+        ],
+        [
+          20.90125,
+          8.6425,
+          9.62833
+        ]
+      ],
+      "volume_m3": 0.1956316
+    },
+    {
+      "id": "parapet_1_4",
+      "name": "Architectural parapet 1, section 5",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Dimensioned height/width; rail end flare omitted",
+      "note": "",
+      "dimensions": {
+        "height_m": 0.915,
+        "body_width_m": 0.38
+      },
+      "bounds_m": [
+        [
+          20.93034,
+          8.2435,
+          8.88833
+        ],
+        [
+          44.273161,
+          8.6235,
+          9.80333
+        ]
+      ],
+      "volume_m3": 8.0808957
+    },
+    {
+      "id": "panels_1_4",
+      "name": "Architectural parapet 1, recessed-panel borders 5",
+      "layer": "ornament",
+      "color": "#a79a7f",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Simplified architectural relief",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "dimensions": {
+        "relief_m": 0.019
+      },
+      "bounds_m": [
+        [
+          21.06125,
+          8.2245,
+          9.01833
+        ],
+        [
+          44.14225,
+          8.6425,
+          9.62833
+        ]
+      ],
+      "volume_m3": 0.1956316
+    },
+    {
+      "id": "parapet_1_5",
+      "name": "Architectural parapet 1, section 6",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Dimensioned height/width; rail end flare omitted",
+      "note": "",
+      "dimensions": {
+        "height_m": 0.915,
+        "body_width_m": 0.38
+      },
+      "bounds_m": [
+        [
+          44.17134,
+          8.2435,
+          8.88833
+        ],
+        [
+          52.032861,
+          8.6235,
+          9.80333
+        ]
+      ],
+      "volume_m3": 2.69804769
+    },
+    {
+      "id": "panels_1_5",
+      "name": "Architectural parapet 1, recessed-panel borders 6",
+      "layer": "ornament",
+      "color": "#a79a7f",
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "basis": "Simplified architectural relief",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "dimensions": {
+        "relief_m": 0.019
+      },
+      "bounds_m": [
+        [
+          44.30225,
+          8.2245,
+          9.01833
+        ],
+        [
+          51.90195,
+          8.6425,
+          9.62833
+        ]
+      ],
+      "volume_m3": 0.06467372
+    },
+    {
+      "id": "railpost_1_0",
+      "name": "Pier 1 | parapet pilaster 1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        37
+      ],
+      "basis": "Dimensioned envelope; minor finishes simplified",
+      "note": "",
+      "dimensions": {
+        "width_m": 1.067,
+        "height_m": 0.96
+      },
+      "bounds_m": [
+        [
+          -49.27525,
+          8.191,
+          8.88833
+        ],
+        [
+          -48.20825,
+          8.676,
+          9.84833
+        ]
+      ],
+      "volume_m3": 0.4967952
+    },
+    {
+      "id": "railpost_1_1",
+      "name": "Pier 2 | parapet pilaster 1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        37
+      ],
+      "basis": "Dimensioned envelope; minor finishes simplified",
+      "note": "",
+      "dimensions": {
+        "width_m": 1.067,
+        "height_m": 0.96
+      },
+      "bounds_m": [
+        [
+          -26.03425,
+          8.191,
+          8.88833
+        ],
+        [
+          -24.96725,
+          8.676,
+          9.84833
+        ]
+      ],
+      "volume_m3": 0.4967952
+    },
+    {
+      "id": "railpost_1_2",
+      "name": "Pier 3 | parapet pilaster 1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        37
+      ],
+      "basis": "Dimensioned envelope; minor finishes simplified",
+      "note": "",
+      "dimensions": {
+        "width_m": 1.067,
+        "height_m": 0.96
+      },
+      "bounds_m": [
+        [
+          -2.79325,
+          8.191,
+          8.88833
+        ],
+        [
+          -1.72625,
+          8.676,
+          9.84833
+        ]
+      ],
+      "volume_m3": 0.4967952
+    },
+    {
+      "id": "railpost_1_3",
+      "name": "Pier 4 | parapet pilaster 1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        37
+      ],
+      "basis": "Dimensioned envelope; minor finishes simplified",
+      "note": "",
+      "dimensions": {
+        "width_m": 1.067,
+        "height_m": 0.96
+      },
+      "bounds_m": [
+        [
+          20.44775,
+          8.191,
+          8.88833
+        ],
+        [
+          21.51475,
+          8.676,
+          9.84833
+        ]
+      ],
+      "volume_m3": 0.4967952
+    },
+    {
+      "id": "railpost_1_4",
+      "name": "Pier 5 | parapet pilaster 1",
+      "layer": "rails",
+      "color": "#d6cebd",
+      "pdf_pages": [
+        37
+      ],
+      "basis": "Dimensioned envelope; minor finishes simplified",
+      "note": "",
+      "dimensions": {
+        "width_m": 1.067,
+        "height_m": 0.96
+      },
+      "bounds_m": [
+        [
+          43.68875,
+          8.191,
+          8.88833
+        ],
+        [
+          44.75575,
+          8.676,
+          9.84833
+        ]
+      ],
+      "volume_m3": 0.4967952
+    },
+    {
+      "id": "gas_line",
+      "name": "East fascia gas-line envelope",
+      "layer": "accessories",
+      "color": "#59676f",
+      "pdf_pages": [
+        24,
+        33
+      ],
+      "basis": "Approximate external utility",
+      "note": "Presence and side are documented; diameter, joints and hangers are not verified.",
+      "dimensions": {
+        "assumed_diameter_m": 0.2
+      },
+      "bounds_m": [
+        [
+          -56.224524,
+          7.3,
+          7.82
+        ],
+        [
+          52.258876,
+          7.5,
+          8.02
+        ]
+      ],
+      "volume_m3": 3.352321421
+    }
+  ],
+  "layers": {
+    "deck": "Concrete deck",
+    "piers": "Intermediate piers and bents",
+    "abutments": "End bents and wing walls",
+    "foundations": "Design foundation envelopes",
+    "rails": "Bridge rails",
+    "sidewalks": "Sidewalks and curbs",
+    "arches": "Concrete arch barrels",
+    "walls": "Spandrel walls",
+    "ornament": "Architectural rail panels",
+    "fill": "Arch fill envelope",
+    "accessories": "External accessories"
+  },
+  "default_hidden_layers": [
+    "foundations",
+    "fill"
+  ],
+  "native_axes": "X increasing station, Y transverse, Z up; local metres",
+  "glb_axes": "Y up: (native X, native Z, -native Y); no world georeferencing transform",
+  "detail_coverage": [
+    {
+      "feature": "Four concrete arches",
+      "status": "modeled_with_simplifications",
+      "detail": "Four whole arch barrels, spandrel walls and hidden fill envelopes. Exact original multi-radius curve and spring haunch thickness remain unresolved.",
+      "sources": [
+        "Primary PDF p.9",
+        "Primary PDF p.23",
+        "Primary PDF p.24"
+      ],
+      "part_ids": [
+        "arch_0",
+        "spandrel_0_-1",
+        "spandrel_0_1",
+        "fill_0",
+        "arch_1",
+        "spandrel_1_-1",
+        "spandrel_1_1",
+        "fill_1",
+        "arch_2",
+        "spandrel_2_-1",
+        "spandrel_2_1",
+        "fill_2",
+        "arch_3",
+        "spandrel_3_-1",
+        "spandrel_3_1",
+        "fill_3",
+        "pilaster_0_-1",
+        "pilaster_0_1",
+        "pilaster_1_-1",
+        "pilaster_1_1",
+        "pilaster_2_-1",
+        "pilaster_2_1",
+        "pilaster_3_-1",
+        "pilaster_3_1",
+        "pilaster_4_-1",
+        "pilaster_4_1"
+      ]
+    },
+    {
+      "feature": "2004 deck and sidewalks",
+      "status": "modeled_with_simplifications",
+      "detail": "13.8 m roadway, 17.322 m overall width, 200 mm slab and both sidewalks. End floor limits follow the later general plan; plan flare and localized curb brackets are simplified.",
+      "sources": [
+        "Primary PDF p.23",
+        "Primary PDF p.24",
+        "Primary PDF p.32"
+      ],
+      "part_ids": [
+        "deck",
+        "walk_-1",
+        "walk_1"
+      ]
+    },
+    {
+      "feature": "Architectural parapets",
+      "status": "modeled_with_simplifications",
+      "detail": "Solid 915 mm parapets, 960 mm pilasters and shallow relief. Panel spacing and texture are representative. Separate pedestrian-bridge sheets 40-50 were excluded.",
+      "sources": [
+        "Primary PDF p.35",
+        "Primary PDF p.36",
+        "Primary PDF p.37"
+      ],
+      "part_ids": [
+        "parapet_-1_0",
+        "panels_-1_0",
+        "parapet_-1_1",
+        "panels_-1_1",
+        "parapet_-1_2",
+        "panels_-1_2",
+        "parapet_-1_3",
+        "panels_-1_3",
+        "parapet_-1_4",
+        "panels_-1_4",
+        "parapet_-1_5",
+        "panels_-1_5",
+        "railpost_-1_0",
+        "railpost_-1_1",
+        "railpost_-1_2",
+        "railpost_-1_3",
+        "railpost_-1_4",
+        "parapet_1_0",
+        "panels_1_0",
+        "parapet_1_1",
+        "panels_1_1",
+        "parapet_1_2",
+        "panels_1_2",
+        "parapet_1_3",
+        "panels_1_3",
+        "parapet_1_4",
+        "panels_1_4",
+        "parapet_1_5",
+        "panels_1_5",
+        "railpost_1_0",
+        "railpost_1_1",
+        "railpost_1_2",
+        "railpost_1_3",
+        "railpost_1_4"
+      ]
+    },
+    {
+      "feature": "Retained substructure",
+      "status": "approximate",
+      "detail": "Three piers and two abutment envelopes. No foundation adequacy or current condition inferred.",
+      "sources": [
+        "Primary PDF p.8",
+        "Primary PDF p.9",
+        "Primary PDF p.23"
+      ],
+      "part_ids": [
+        "endwall_-1_-1",
+        "endwall_-1_1",
+        "endwall_1_-1",
+        "endwall_1_1",
+        "pier_0",
+        "footing_0",
+        "pier_1",
+        "footing_1",
+        "pier_2",
+        "footing_2",
+        "pier_3",
+        "footing_3",
+        "pier_4",
+        "footing_4"
+      ]
+    },
+    {
+      "feature": "Remaining exterior features",
+      "status": "not_modeled",
+      "detail": "Exact arch setting-out, cutwaters, decorative lighting supplied by the city, gauge-well hardware, drainage outlets, rail end flare and approach details remain incomplete.",
+      "sources": [
+        "Primary PDF p.23",
+        "Primary PDF p.24",
+        "Primary PDF p.37"
+      ],
+      "part_ids": []
+    }
+  ]
+}

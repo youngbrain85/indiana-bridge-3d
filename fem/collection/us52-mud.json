@@ -1,0 +1,669 @@
+{
+  "schema_version": 1,
+  "engine": "collection_demo",
+  "bridge_id": "us52-mud",
+  "title": "US 52 over Mud Creek",
+  "modeled_state": "2020-03-27 Stage 3 \u00b7 DRAFT / NOT FOR CONSTRUCTION \u00b7 Exterior detail modeling candidate",
+  "demonstration": true,
+  "display_scope": "Explicit assumed deck, beam, bearing and selected substructure model; omitted physical components carry no claimed FE stress.",
+  "coordinate_system": "Native metres: X longitudinal, Y transverse, Z up. x=u+skew_dx_dy*y. Flat analytical elevations are explicit.",
+  "source_pdf": "data/bridges/us52-mud/drawings.pdf",
+  "drawing_sha256": "d02d098ad77cba77ca3301917568557325b2a4262bbc7260f2c50205e2518ad4",
+  "source_hashes": {
+    "drawing": "d02d098ad77cba77ca3301917568557325b2a4262bbc7260f2c50205e2518ad4",
+    "manifest": "bae8ec023d43b290b299ca0b50e33c8616edbf32c1a58811ee9ece67045c0a5c",
+    "model": "a162d1b5edc0e74f7b3812aa03ac6255761d1f6313469bbed71c0ea9b5977720"
+  },
+  "sources": {
+    "drawing": {
+      "title": "2020-03-27 Stage 3 \u00b7 DRAFT / NOT FOR CONSTRUCTION \u00b7 Exterior detail modeling candidate",
+      "url": "/assets/us52-mud/drawing"
+    },
+    "demonstration": {
+      "title": "Explicit assumed inputs",
+      "url": "/analysis-guide#collection-demo"
+    }
+  },
+  "evidence": [
+    {
+      "fields": [
+        "deck",
+        "spans_m",
+        "beams",
+        "supports"
+      ],
+      "status": "source-based geometry with explicit idealizations",
+      "source": "drawing",
+      "pdf_pages": [
+        23,
+        24,
+        25,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        41,
+        43,
+        45,
+        47,
+        49
+      ],
+      "note": "Source-specific recipe transcribes manifest/source-ledger dimensions and original modeling script callouts. Native bounding-box centers locate axes only; bounding rectangles are not used as girder cross sections."
+    },
+    {
+      "fields": [
+        "bearing_horizontal_Npm",
+        "bearing_rotation_Nm",
+        "foundation_stiffness_Npm_Nm",
+        "integral_connection_stiffness_Npm_Nm",
+        "fixed_reference_stiffness_Npm_Nm",
+        "continuity_units"
+      ],
+      "status": "assumed",
+      "source": "demonstration",
+      "note": "All assumptions are frozen in values and assumptions; no test-based material certification is asserted."
+    }
+  ],
+  "values": {
+    "deck": {
+      "u0_m": -13.944600000000001,
+      "u1_m": 13.944600000000001,
+      "y0_m": -6.146800000000001,
+      "y1_m": 6.146800000000001,
+      "midplane_z_m": 6.118086,
+      "thickness_m": 0.508,
+      "patches": [
+        {
+          "cid": "deck_1_1",
+          "u0_m": -13.944600000000001,
+          "u1_m": -5.4864000000000015,
+          "y0_m": -6.146800000000001,
+          "y1_m": -4.572
+        },
+        {
+          "cid": "deck_1_2",
+          "u0_m": -13.944600000000001,
+          "u1_m": -5.4864000000000015,
+          "y0_m": -4.572,
+          "y1_m": -3.048
+        },
+        {
+          "cid": "deck_1_3",
+          "u0_m": -13.944600000000001,
+          "u1_m": -5.4864000000000015,
+          "y0_m": -3.048,
+          "y1_m": -1.524
+        },
+        {
+          "cid": "deck_1_4",
+          "u0_m": -13.944600000000001,
+          "u1_m": -5.4864000000000015,
+          "y0_m": -1.524,
+          "y1_m": 0.0
+        },
+        {
+          "cid": "deck_1_5",
+          "u0_m": -13.944600000000001,
+          "u1_m": -5.4864000000000015,
+          "y0_m": 0.0,
+          "y1_m": 1.524
+        },
+        {
+          "cid": "deck_1_6",
+          "u0_m": -13.944600000000001,
+          "u1_m": -5.4864000000000015,
+          "y0_m": 1.524,
+          "y1_m": 3.048
+        },
+        {
+          "cid": "deck_1_7",
+          "u0_m": -13.944600000000001,
+          "u1_m": -5.4864000000000015,
+          "y0_m": 3.048,
+          "y1_m": 4.572
+        },
+        {
+          "cid": "deck_1_8",
+          "u0_m": -13.944600000000001,
+          "u1_m": -5.4864000000000015,
+          "y0_m": 4.572,
+          "y1_m": 6.146800000000001
+        },
+        {
+          "cid": "deck_2_1",
+          "u0_m": -5.4864000000000015,
+          "u1_m": 5.4864,
+          "y0_m": -6.146800000000001,
+          "y1_m": -4.572
+        },
+        {
+          "cid": "deck_2_2",
+          "u0_m": -5.4864000000000015,
+          "u1_m": 5.4864,
+          "y0_m": -4.572,
+          "y1_m": -3.048
+        },
+        {
+          "cid": "deck_2_3",
+          "u0_m": -5.4864000000000015,
+          "u1_m": 5.4864,
+          "y0_m": -3.048,
+          "y1_m": -1.524
+        },
+        {
+          "cid": "deck_2_4",
+          "u0_m": -5.4864000000000015,
+          "u1_m": 5.4864,
+          "y0_m": -1.524,
+          "y1_m": 0.0
+        },
+        {
+          "cid": "deck_2_5",
+          "u0_m": -5.4864000000000015,
+          "u1_m": 5.4864,
+          "y0_m": 0.0,
+          "y1_m": 1.524
+        },
+        {
+          "cid": "deck_2_6",
+          "u0_m": -5.4864000000000015,
+          "u1_m": 5.4864,
+          "y0_m": 1.524,
+          "y1_m": 3.048
+        },
+        {
+          "cid": "deck_2_7",
+          "u0_m": -5.4864000000000015,
+          "u1_m": 5.4864,
+          "y0_m": 3.048,
+          "y1_m": 4.572
+        },
+        {
+          "cid": "deck_2_8",
+          "u0_m": -5.4864000000000015,
+          "u1_m": 5.4864,
+          "y0_m": 4.572,
+          "y1_m": 6.146800000000001
+        },
+        {
+          "cid": "deck_3_1",
+          "u0_m": 5.4864,
+          "u1_m": 13.944600000000001,
+          "y0_m": -6.146800000000001,
+          "y1_m": -4.572
+        },
+        {
+          "cid": "deck_3_2",
+          "u0_m": 5.4864,
+          "u1_m": 13.944600000000001,
+          "y0_m": -4.572,
+          "y1_m": -3.048
+        },
+        {
+          "cid": "deck_3_3",
+          "u0_m": 5.4864,
+          "u1_m": 13.944600000000001,
+          "y0_m": -3.048,
+          "y1_m": -1.524
+        },
+        {
+          "cid": "deck_3_4",
+          "u0_m": 5.4864,
+          "u1_m": 13.944600000000001,
+          "y0_m": -1.524,
+          "y1_m": 0.0
+        },
+        {
+          "cid": "deck_3_5",
+          "u0_m": 5.4864,
+          "u1_m": 13.944600000000001,
+          "y0_m": 0.0,
+          "y1_m": 1.524
+        },
+        {
+          "cid": "deck_3_6",
+          "u0_m": 5.4864,
+          "u1_m": 13.944600000000001,
+          "y0_m": 1.524,
+          "y1_m": 3.048
+        },
+        {
+          "cid": "deck_3_7",
+          "u0_m": 5.4864,
+          "u1_m": 13.944600000000001,
+          "y0_m": 3.048,
+          "y1_m": 4.572
+        },
+        {
+          "cid": "deck_3_8",
+          "u0_m": 5.4864,
+          "u1_m": 13.944600000000001,
+          "y0_m": 4.572,
+          "y1_m": 6.146800000000001
+        }
+      ]
+    },
+    "spans_m": [
+      8.2296,
+      10.972800000000001,
+      8.2296
+    ],
+    "skew_dx_dy": -0.0,
+    "beams": [],
+    "supports": [
+      {
+        "u_m": -13.716000000000001,
+        "bearings": [],
+        "walls": [
+          {
+            "cid": "bent_1_0",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": -6.146800000000001,
+            "y1_m": 0,
+            "bottom_z_m": 4.696968
+          },
+          {
+            "cid": "bent_1_1",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": 0,
+            "y1_m": 6.146800000000001,
+            "bottom_z_m": 4.696968
+          }
+        ],
+        "columns": [],
+        "top_z_m": 5.814822,
+        "line_connection": {
+          "cid": "bent_1_bed",
+          "width_m": 0.9144000000000001
+        }
+      },
+      {
+        "u_m": -5.4864000000000015,
+        "bearings": [],
+        "walls": [
+          {
+            "cid": "pier_2_module_1",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": -6.146800000000001,
+            "y1_m": -4.572,
+            "bottom_z_m": 0.3048
+          },
+          {
+            "cid": "pier_2_module_2",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": -4.572,
+            "y1_m": -3.048,
+            "bottom_z_m": 0.3048
+          },
+          {
+            "cid": "pier_2_module_3",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": -3.048,
+            "y1_m": -1.524,
+            "bottom_z_m": 0.3048
+          },
+          {
+            "cid": "pier_2_module_4",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": -1.524,
+            "y1_m": 0.0,
+            "bottom_z_m": 0.3048
+          },
+          {
+            "cid": "pier_2_module_5",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": 0.0,
+            "y1_m": 1.524,
+            "bottom_z_m": 0.3048
+          },
+          {
+            "cid": "pier_2_module_6",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": 1.524,
+            "y1_m": 3.048,
+            "bottom_z_m": 0.3048
+          },
+          {
+            "cid": "pier_2_module_7",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": 3.048,
+            "y1_m": 4.572,
+            "bottom_z_m": 0.3048
+          },
+          {
+            "cid": "pier_2_module_8",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": 4.572,
+            "y1_m": 6.146800000000001,
+            "bottom_z_m": 0.3048
+          }
+        ],
+        "columns": [],
+        "top_z_m": 5.83504,
+        "line_connection": {
+          "cid": "pier_2_bed",
+          "width_m": 0.9144000000000001
+        }
+      },
+      {
+        "u_m": 5.4864,
+        "bearings": [],
+        "walls": [
+          {
+            "cid": "pier_3_module_1",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": -6.146800000000001,
+            "y1_m": -4.572,
+            "bottom_z_m": 0.3048
+          },
+          {
+            "cid": "pier_3_module_2",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": -4.572,
+            "y1_m": -3.048,
+            "bottom_z_m": 0.3048
+          },
+          {
+            "cid": "pier_3_module_3",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": -3.048,
+            "y1_m": -1.524,
+            "bottom_z_m": 0.3048
+          },
+          {
+            "cid": "pier_3_module_4",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": -1.524,
+            "y1_m": 0.0,
+            "bottom_z_m": 0.3048
+          },
+          {
+            "cid": "pier_3_module_5",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": 0.0,
+            "y1_m": 1.524,
+            "bottom_z_m": 0.3048
+          },
+          {
+            "cid": "pier_3_module_6",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": 1.524,
+            "y1_m": 3.048,
+            "bottom_z_m": 0.3048
+          },
+          {
+            "cid": "pier_3_module_7",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": 3.048,
+            "y1_m": 4.572,
+            "bottom_z_m": 0.3048
+          },
+          {
+            "cid": "pier_3_module_8",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": 4.572,
+            "y1_m": 6.146800000000001,
+            "bottom_z_m": 0.3048
+          }
+        ],
+        "columns": [],
+        "top_z_m": 5.83504,
+        "line_connection": {
+          "cid": "pier_3_bed",
+          "width_m": 0.9144000000000001
+        }
+      },
+      {
+        "u_m": 13.716,
+        "bearings": [],
+        "walls": [
+          {
+            "cid": "bent_2_0",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": -6.146800000000001,
+            "y1_m": 0,
+            "bottom_z_m": 4.696968
+          },
+          {
+            "cid": "bent_2_1",
+            "thickness_m": 0.9144000000000001,
+            "y0_m": 0,
+            "y1_m": 6.146800000000001,
+            "bottom_z_m": 4.696968
+          }
+        ],
+        "columns": [],
+        "top_z_m": 5.814822,
+        "line_connection": {
+          "cid": "bent_2_bed",
+          "width_m": 0.9144000000000001
+        }
+      }
+    ],
+    "bearing_horizontal_Npm": 10000000.0,
+    "bearing_rotation_Nm": 1000.0,
+    "foundation_stiffness_Npm_Nm": [
+      200000000.0,
+      200000000.0,
+      800000000.0,
+      200000000.0,
+      200000000.0,
+      200000000.0
+    ],
+    "fixed_reference_stiffness_Npm_Nm": [
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0,
+      10000000000000.0
+    ],
+    "integral_connection_stiffness_Npm_Nm": [
+      100000000000.0,
+      100000000000.0,
+      100000000000.0,
+      10000000000.0,
+      10000000000.0,
+      10000000000.0
+    ],
+    "mesh_step_u_m": 3.0,
+    "mesh_step_y_m": 1.4,
+    "continuity_units": [
+      {
+        "u0_m": -13.944600000000001,
+        "u1_m": 13.944600000000001
+      }
+    ]
+  },
+  "assumptions": [
+    "Assumed-input OpenSees linear elastic incremental demonstration; not an as-built model, load rating, field validation or full physical stress history.",
+    "Pressure acts on the full declared structural deck envelope, including sidewalk zones. Left half means native Y below the geometric deck centerline.",
+    "Concrete E=30 GPa, steel E=200 GPa, Poisson ratios 0.20/0.30 are editable assumptions. No cracking, reinforcement, prestress initial stress, creep, shrinkage or self-weight is included.",
+    "All deck nodes are placed on the declared flat midplane. Crossfall, vertical curvature and fabrication camber are omitted. Girder centroids are flattened; native X/Y station and skew are preserved.",
+    "Full beam/deck composite action is assumed through rigid offsets. Haunch stiffness, barriers, walks, diaphragms, cross frames, bolts, local bearing plates and nonstructural pieces are omitted unless expressly listed as analyzed.",
+    "Bearing springs are bilateral with assumed horizontal 10 MN/m and rotational 1 kNm/rad stiffness. Vertical stiffness is editable. Springs may report tension; uplift/contact is not modeled.",
+    "Fixed bases mean fixed at the explicitly modeled wall/column/pile bottom; elastic bases add the frozen six stiffnesses per column or per metre of wall. Soil, buried footing flexibility and actual pile fixity are unverified.",
+    "Integral links use the frozen 100 GN/m translations and 10 GNm/rad rotations, distributed by tributary width for line connections. Cap-only fixed reference supports use 10 TN/m springs to separate the reaction node from its rigid constraint; this is a numerical fixed-base approximation.",
+    "Cap/column/wall sections are explicit idealizations. Shell wall heights extend to the cap reference axis where a cap exists; cap embedment and taper are simplified. Local peaks are nominal, not connection design stresses.",
+    "Deck and longitudinal beams are continuous across intermediate supports. Selectable fabrication/span divisions do not create structural hinges. Integral end connections, where specified, use stiff six-direction links to the modeled end wall/cap.",
+    "Whole slab: no invented longitudinal girders. Twenty-inch structural slab modules are represented by continuous ShellMITC4 panels; UHPC closure strips are homogenized to adjacent panel concrete stiffness and reported under panel IDs.",
+    "The 24 source modules are retained as result groups. Module/pier joints are assumed perfectly bonded, with no slip, interface cracking or special UHPC constitutive behavior. Pier and end-bent module walls participate in the load path."
+  ],
+  "analyzed_component_ids": [
+    "bent_1_0",
+    "bent_1_1",
+    "bent_1_bed",
+    "bent_2_0",
+    "bent_2_1",
+    "bent_2_bed",
+    "deck_1_1",
+    "deck_1_2",
+    "deck_1_3",
+    "deck_1_4",
+    "deck_1_5",
+    "deck_1_6",
+    "deck_1_7",
+    "deck_1_8",
+    "deck_2_1",
+    "deck_2_2",
+    "deck_2_3",
+    "deck_2_4",
+    "deck_2_5",
+    "deck_2_6",
+    "deck_2_7",
+    "deck_2_8",
+    "deck_3_1",
+    "deck_3_2",
+    "deck_3_3",
+    "deck_3_4",
+    "deck_3_5",
+    "deck_3_6",
+    "deck_3_7",
+    "deck_3_8",
+    "pier_2_bed",
+    "pier_2_module_1",
+    "pier_2_module_2",
+    "pier_2_module_3",
+    "pier_2_module_4",
+    "pier_2_module_5",
+    "pier_2_module_6",
+    "pier_2_module_7",
+    "pier_2_module_8",
+    "pier_3_bed",
+    "pier_3_module_1",
+    "pier_3_module_2",
+    "pier_3_module_3",
+    "pier_3_module_4",
+    "pier_3_module_5",
+    "pier_3_module_6",
+    "pier_3_module_7",
+    "pier_3_module_8"
+  ],
+  "excluded_component_ids": [
+    "approach_1_1",
+    "approach_1_2",
+    "approach_1_3",
+    "approach_1_4",
+    "approach_1_5",
+    "approach_1_6",
+    "approach_2_1",
+    "approach_2_2",
+    "approach_2_3",
+    "approach_2_4",
+    "approach_2_5",
+    "approach_2_6",
+    "approach_joint_1_1",
+    "approach_joint_1_2",
+    "approach_joint_1_3",
+    "approach_joint_1_4",
+    "approach_joint_1_5",
+    "approach_joint_2_1",
+    "approach_joint_2_2",
+    "approach_joint_2_3",
+    "approach_joint_2_4",
+    "approach_joint_2_5",
+    "approach_overlay_1",
+    "approach_overlay_2",
+    "approach_rail_1_-1",
+    "approach_rail_1_1",
+    "approach_rail_2_-1",
+    "approach_rail_2_1",
+    "bent_1_closure",
+    "bent_2_closure",
+    "deck_overlay",
+    "delineator_-1_0",
+    "delineator_-1_1",
+    "delineator_-1_2",
+    "delineator_1_0",
+    "delineator_1_1",
+    "delineator_1_2",
+    "long_closure_1_1",
+    "long_closure_1_2",
+    "long_closure_1_3",
+    "long_closure_1_4",
+    "long_closure_1_5",
+    "long_closure_1_6",
+    "long_closure_1_7",
+    "long_closure_2_1",
+    "long_closure_2_2",
+    "long_closure_2_3",
+    "long_closure_2_4",
+    "long_closure_2_5",
+    "long_closure_2_6",
+    "long_closure_2_7",
+    "long_closure_3_1",
+    "long_closure_3_2",
+    "long_closure_3_3",
+    "long_closure_3_4",
+    "long_closure_3_5",
+    "long_closure_3_6",
+    "long_closure_3_7",
+    "pier_2_closure_1",
+    "pier_2_closure_2",
+    "pier_2_closure_3",
+    "pier_2_closure_4",
+    "pier_2_closure_5",
+    "pier_2_closure_6",
+    "pier_2_closure_7",
+    "pier_2_foot_1",
+    "pier_2_foot_2",
+    "pier_2_foot_3",
+    "pier_2_foot_4",
+    "pier_2_foot_5",
+    "pier_2_foot_6",
+    "pier_2_foot_7",
+    "pier_2_foot_8",
+    "pier_3_closure_1",
+    "pier_3_closure_2",
+    "pier_3_closure_3",
+    "pier_3_closure_4",
+    "pier_3_closure_5",
+    "pier_3_closure_6",
+    "pier_3_closure_7",
+    "pier_3_foot_1",
+    "pier_3_foot_2",
+    "pier_3_foot_3",
+    "pier_3_foot_4",
+    "pier_3_foot_5",
+    "pier_3_foot_6",
+    "pier_3_foot_7",
+    "pier_3_foot_8",
+    "rail_1_-1",
+    "rail_1_1",
+    "rail_2_-1",
+    "rail_2_1",
+    "rail_3_-1",
+    "rail_3_1",
+    "rail_closure_0_-1",
+    "rail_closure_0_1",
+    "rail_closure_1_-1",
+    "rail_closure_1_1",
+    "rail_closure_2_-1",
+    "rail_closure_2_1",
+    "rail_closure_3_-1",
+    "rail_closure_3_1",
+    "sleeper_1",
+    "sleeper_2",
+    "transverse_closure_0",
+    "transverse_closure_1",
+    "transverse_closure_2",
+    "transverse_closure_3",
+    "wing_1_-1",
+    "wing_1_1",
+    "wing_2_-1",
+    "wing_2_1",
+    "wing_joint_1_-1",
+    "wing_joint_1_1",
+    "wing_joint_2_-1",
+    "wing_joint_2_1"
+  ],
+  "excluded_component_reason": "Outside this explicitly scoped analytical idealization; no stress or displacement assigned to these display members."
+}

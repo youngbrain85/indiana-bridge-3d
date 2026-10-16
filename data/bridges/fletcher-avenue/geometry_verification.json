@@ -1,0 +1,171 @@
+{
+  "component_count": 379,
+  "all_meshes_watertight": true,
+  "all_volumes_positive": true,
+  "exported_glb_reopened": true,
+  "mesh_names_match_manifest": true,
+  "maximum_bearing_contact_error_m": 8.881784197001252e-16,
+  "glb_sha256": "bf61f9b21bc080e8ba2b0910db2769921c0fddd42802cb76cd683ebf8c7d8f2d",
+  "source_pdf_sha256": "4f27ac7a21dcdf32694cd21c9a49a99b9c15809fc5ba7f2f29530d49db50461f",
+  "checks": {
+    "spans_m": [
+      44.805600000000005,
+      44.805600000000005
+    ],
+    "support_lines": 3,
+    "girder_lines": 8,
+    "girder_segments": 16,
+    "bearings": 24,
+    "tx_window_openings": 360,
+    "skew_deg": 28.7875,
+    "solid_wall_pier": true,
+    "minimum_deck_girder_clearance_m": 0.08504699999999943
+  },
+  "contacts": [
+    {
+      "id": "B1_bearing_1",
+      "girder_bottom_m": 6.880275346542113,
+      "bearing_top_m": 6.880275346542113,
+      "seat_m": 6.560275346542114
+    },
+    {
+      "id": "B2_bearing_1",
+      "girder_bottom_m": 6.578020007036772,
+      "bearing_top_m": 6.578020007036772,
+      "seat_m": 6.258020007036772
+    },
+    {
+      "id": "B3_bearing_1",
+      "girder_bottom_m": 6.168207582854644,
+      "bearing_top_m": 6.168207582854643,
+      "seat_m": 5.808207582854644
+    },
+    {
+      "id": "B1_bearing_2",
+      "girder_bottom_m": 6.882522978379173,
+      "bearing_top_m": 6.882522978379173,
+      "seat_m": 6.562522978379174
+    },
+    {
+      "id": "B2_bearing_2",
+      "girder_bottom_m": 6.625872345330021,
+      "bearing_top_m": 6.62587234533002,
+      "seat_m": 6.305872345330021
+    },
+    {
+      "id": "B3_bearing_2",
+      "girder_bottom_m": 6.2060142740526425,
+      "bearing_top_m": 6.206014274052642,
+      "seat_m": 5.846014274052642
+    },
+    {
+      "id": "B1_bearing_3",
+      "girder_bottom_m": 6.904243075960922,
+      "bearing_top_m": 6.904243075960922,
+      "seat_m": 6.584243075960923
+    },
+    {
+      "id": "B2_bearing_3",
+      "girder_bottom_m": 6.680485909222402,
+      "bearing_top_m": 6.680485909222401,
+      "seat_m": 6.360485909222403
+    },
+    {
+      "id": "B3_bearing_3",
+      "girder_bottom_m": 6.266690794540687,
+      "bearing_top_m": 6.266690794540686,
+      "seat_m": 5.906690794540687
+    },
+    {
+      "id": "B1_bearing_4",
+      "girder_bottom_m": 6.924861639287327,
+      "bearing_top_m": 6.924861639287327,
+      "seat_m": 6.604861639287328
+    },
+    {
+      "id": "B2_bearing_4",
+      "girder_bottom_m": 6.7339866987140224,
+      "bearing_top_m": 6.733986698714022,
+      "seat_m": 6.413986698714023
+    },
+    {
+      "id": "B3_bearing_4",
+      "girder_bottom_m": 6.3296631443188485,
+      "bearing_top_m": 6.3296631443188485,
+      "seat_m": 5.969663144318848
+    },
+    {
+      "id": "B1_bearing_5",
+      "girder_bottom_m": 6.903230668358384,
+      "bearing_top_m": 6.903230668358384,
+      "seat_m": 6.583230668358385
+    },
+    {
+      "id": "B2_bearing_5",
+      "girder_bottom_m": 6.745226713804846,
+      "bearing_top_m": 6.745226713804845,
+      "seat_m": 6.425226713804847
+    },
+    {
+      "id": "B3_bearing_5",
+      "girder_bottom_m": 6.353783323387056,
+      "bearing_top_m": 6.353783323387056,
+      "seat_m": 5.993783323387055
+    },
+    {
+      "id": "B1_bearing_6",
+      "girder_bottom_m": 6.839350163174133,
+      "bearing_top_m": 6.839350163174133,
+      "seat_m": 6.519350163174134
+    },
+    {
+      "id": "B2_bearing_6",
+      "girder_bottom_m": 6.714205954494838,
+      "bearing_top_m": 6.714205954494837,
+      "seat_m": 6.394205954494838
+    },
+    {
+      "id": "B3_bearing_6",
+      "girder_bottom_m": 6.339051331745312,
+      "bearing_top_m": 6.339051331745312,
+      "seat_m": 5.979051331745311
+    },
+    {
+      "id": "B1_bearing_7",
+      "girder_bottom_m": 6.774368123734536,
+      "bearing_top_m": 6.774368123734536,
+      "seat_m": 6.454368123734537
+    },
+    {
+      "id": "B2_bearing_7",
+      "girder_bottom_m": 6.682072420784068,
+      "bearing_top_m": 6.682072420784067,
+      "seat_m": 6.362072420784068
+    },
+    {
+      "id": "B3_bearing_7",
+      "girder_bottom_m": 6.326615169393648,
+      "bearing_top_m": 6.326615169393648,
+      "seat_m": 5.9666151693936476
+    },
+    {
+      "id": "B1_bearing_8",
+      "girder_bottom_m": 6.708284550039595,
+      "bearing_top_m": 6.708284550039595,
+      "seat_m": 6.388284550039596
+    },
+    {
+      "id": "B2_bearing_8",
+      "girder_bottom_m": 6.636126112672466,
+      "bearing_top_m": 6.636126112672466,
+      "seat_m": 6.316126112672467
+    },
+    {
+      "id": "B3_bearing_8",
+      "girder_bottom_m": 6.315595459365598,
+      "bearing_top_m": 6.315595459365598,
+      "seat_m": 5.955595459365598
+    }
+  ],
+  "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation."
+}
