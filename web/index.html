@@ -17,7 +17,7 @@
   <span id="detailBadge"></span>
  </div>
  <nav class="modes" id="modes" aria-label="Workspace" hidden>
-  <button data-workspace="model" class="active">Model</button><button data-workspace="drawings">Drawings</button><button data-workspace="analysis" id="openAnalysis">Analysis</button><button data-workspace="members">Data</button>
+  <button data-workspace="model" class="active" title="Model (1)" aria-keyshortcuts="1">Model</button><button data-workspace="drawings" title="Drawings (2)" aria-keyshortcuts="2">Drawings</button><button data-workspace="analysis" id="openAnalysis" title="Analysis (3)" aria-keyshortcuts="3">Analysis</button><button data-workspace="members" title="Data (4)" aria-keyshortcuts="4">Data</button>
  </nav>
  <details class="menu export-menu"><summary>Export<svg aria-hidden="true"><use href="#i-chevron"/></svg></summary>
   <div class="menu-list" role="menu">
@@ -37,7 +37,7 @@
   <div class="catalog-head">
    <h1 id="catalogTitle">Indiana bridges</h1>
    <p id="stats" class="summary" aria-live="polite"></p>
-   <label for="bridgeSearch" class="sr-only">Find a bridge</label><input id="bridgeSearch" type="search" placeholder="Bridge, county or structure ID">
+   <label for="bridgeSearch" class="sr-only">Find a bridge</label><input id="bridgeSearch" type="search" placeholder="Bridge, county or structure ID" aria-keyshortcuts="/">
    <div class="filters"><label><span class="sr-only">County</span><select id="countyFilter" aria-label="County"><option value="">All counties</option></select></label><label><span class="sr-only">Model detail</span><select id="statusFilter" aria-label="Model detail"><option value="">Any model detail</option><option value="complete">Exterior details complete</option><option value="needs_detail">More detail needed</option></select></label></div>
    <div class="list-head"><span id="resultCount"></span><button id="fitResults" class="text-button">Show results on map</button></div>
   </div>
@@ -50,7 +50,7 @@
   <aside class="tree-panel" aria-labelledby="treeTitle">
    <div class="panel-head"><h2 id="treeTitle">Components</h2><span id="partCount" class="count"></span></div>
    <div class="panel-tools">
-    <label for="partSearch" class="sr-only">Search components</label><input id="partSearch" type="search" placeholder="Name or component ID">
+    <label for="partSearch" class="sr-only">Search components</label><input id="partSearch" type="search" placeholder="Name or component ID" aria-keyshortcuts="/">
     <div id="categoryChips" class="category-chips" aria-label="Show in 3D"></div>
     <div class="tree-tools"><span id="treeHint">Expand a category for details</span><button id="showAll" class="text-button" title="Clear search and filters and show all components">Reset view</button></div>
    </div>
@@ -61,7 +61,7 @@
     <div class="viewer-toolbar" aria-label="3D view settings">
      <button id="toggleTree" class="icon-button" aria-pressed="true" aria-label="Components panel" title="Components panel"><svg><use href="#i-panel-left"/></svg></button>
      <div class="segmented" aria-label="Camera view"><button data-view="iso" class="active">3D</button><button data-view="top">Top</button><button data-view="side">Side</button><button data-view="end">End</button></div>
-     <button id="fitModel" title="Fit model">Fit</button>
+     <button id="fitModel" title="Fit model (F)" aria-keyshortcuts="F">Fit</button>
      <label class="tool-label" title="Opacity of deck and pavement surfaces">Deck<input id="deckOpacity" type="range" min="10" max="100" value="100"><output id="opacityValue">100%</output></label>
      <label class="tool-label clip-label"><input id="clipEnabled" type="checkbox">Section</label><input id="clipPosition" aria-label="Longitudinal section position" type="range" min="0" max="100" value="100" disabled hidden>
      <button id="clearIsolation" hidden>Show all</button>

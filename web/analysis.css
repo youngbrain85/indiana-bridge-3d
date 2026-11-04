@@ -7,7 +7,7 @@
 .fem-form select,.fem-form input { width:100%; min-width:0; font-size:13px; height:34px; }
 .fem-form button { font-size:13px; }
 .fem-status { padding:10px 12px; background:var(--raised); border-radius:var(--radius-card); font-size:13px; line-height:1.5; }
-.fem-error { color:#831c1e; background:#ffedea; border-radius:var(--radius-card); padding:10px 12px; font-size:13px; overflow-wrap:anywhere; }
+.fem-error { color:var(--pill-negative-ink); background:var(--pill-negative-bg); border-radius:var(--radius-card); padding:10px 12px; font-size:13px; overflow-wrap:anywhere; }
 .fem-result-case { font-size:13px; font-weight:600; line-height:1.5; }
 .fem-hotspots { display:grid; gap:4px; }
 .fem-hotspots button { justify-content:flex-start; height:auto; min-height:32px; text-align:left; font-size:12px; padding:6px 10px; white-space:normal; display:block; }
