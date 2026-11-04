@@ -2,6 +2,8 @@
 
 [Open the hosted application](https://indiana-bridge-3d.plumibex3.chatgpt.site) (owner's ChatGPT sign-in required). The hosted edition retains the model explorer, source drawings, database exports and native FEM calculations. See [hosting and release instructions](docs/deployment.md).
 
+**Static viewer (GitHub Pages):** https://youngbrain85.github.io/indiana-bridge-3d/ — a read-only build of the full workspace (3D models, components, drawings, map, exports and precomputed FEM baseline runs). New FEM calculations require the local app. See [GitHub Pages viewer](docs/deployment.md#github-pages-static-viewer).
+
 A local bridge review workspace combining 3D models, a component database, source drawings and an Indiana road map. The interface, component descriptions and modeling notes are in English.
 
 ![Indiana Bridge 3D workspace](docs/images/workspace.png)

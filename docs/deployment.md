@@ -33,3 +33,23 @@ The cloud catalog and local catalog are separate after initial deployment. Later
 Solver source and drawing/model evidence retain raw bytes in Git because saved results use SHA-256 fingerprints. Do not normalize or reformat those files merely to prepare a release.
 
 The hosting runtime is independent of the user's PC. Railway compute, volume and object storage are billed to the configured Railway account. Sites access is owner-private; publishing the GitHub source does not make the running Site public.
+
+## GitHub Pages static viewer
+
+The Pages workflow publishes a read-only copy of the workspace to https://youngbrain85.github.io/indiana-bridge-3d/ on every push to the default branch (or manually through **Actions → Deploy static viewer to GitHub Pages → Run workflow**).
+
+One-time setup:
+
+1. Copy [`docs/github-pages-workflow.yml`](github-pages-workflow.yml) to `.github/workflows/pages.yml` (on GitHub: **Add file → Create new file**, name it `.github/workflows/pages.yml`, paste the content and commit to the default branch). It is kept under `docs/` because automated tooling without the `workflows` permission cannot add workflow files.
+2. Open **Settings → Pages** and set **Source** to **GitHub Actions**.
+3. Open **Actions → Deploy static viewer to GitHub Pages → Run workflow** for the first deployment.
+
+The workflow runs `python scripts/build_static_site.py _site --run-fem`, which:
+
+1. builds a fresh SQLite catalog in a temporary directory and starts the local server in-process;
+2. runs every baseline FEM case for each analytical model with the default assumed inputs (OpenSeesPy in `.venv-fem`);
+3. crawls every GET endpoint the browser uses (catalog, bridge details, GLB/PDF assets, source PDFs, rendered drawing pages, CSV and SQLite exports, FEM info, runs and results) and writes them as static files with document-relative URLs.
+
+The static viewer cannot start new FEM calculations: the run button is disabled and the run history lists the precomputed cases. Run IDs linked from `collection-status.html` refer to the author's local results and are not present in the static build. The site is roughly 760 MiB, within the 1 GB GitHub Pages limit; large additions to `data/bridges` may need drawing pages to be rendered at a lower resolution.
+
+To preview locally: `python scripts/build_static_site.py _site --run-fem` and then `python -m http.server -d _site 8000`.
