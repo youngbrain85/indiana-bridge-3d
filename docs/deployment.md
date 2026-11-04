@@ -52,4 +52,6 @@ The workflow runs `python scripts/build_static_site.py _site --run-fem`, which:
 
 The static viewer cannot start new FEM calculations: the run button is disabled and the run history lists the precomputed cases. Run IDs linked from `collection-status.html` refer to the author's local results and are not present in the static build. The site is roughly 760 MiB, within the 1 GB GitHub Pages limit; large additions to `data/bridges` may need drawing pages to be rendered at a lower resolution.
 
+The deploy step uses a 30-minute timeout (`timeout: 1800000`): processing the ~720 MiB artifact can exceed the 10-minute default of `actions/deploy-pages`.
+
 To preview locally: `python scripts/build_static_site.py _site --run-fem` and then `python -m http.server -d _site 8000`.
