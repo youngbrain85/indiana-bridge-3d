@@ -42,7 +42,7 @@
       if(this.result.demonstration)legend.prepend(node('b','ASSUMED-INPUT DEMONSTRATION','fem-demo-label'));
     }
     render(){if(!this.host)return;const h=this.host;h.replaceChildren();h.classList.add('fem-inspector');
-      h.append(node('div','Structural analysis','eyebrow'),node('h2','Bridge FEM'));
+      h.append(node('p','Structural analysis','kicker'),node('h2','Bridge FEM'));
       if(this.message)h.append(node('p',this.message,'fem-error'));
       if(!this.info){h.append(node('p',this.loading?'Loading inputs…':'Preparing inputs…'));return;}
       if(!this.info.available){h.append(node('p',this.info.reason,'source-note'));return;}

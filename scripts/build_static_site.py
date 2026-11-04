@@ -173,6 +173,8 @@ def main():
             crawl.save(url, lambda t: rewrite(t).replace('<html lang="en">', '<html lang="en" data-static="1">', 1))
         for url in STATIC_FILES:
             crawl.save(url, rewrite if url.endswith(('.js', '.css', '.html')) else None)
+        for f in sorted((ROOT / 'web/vendor/fonts').glob('*.woff2')):
+            crawl.save('/vendor/fonts/' + f.name)
         leaflet = ROOT / 'web/vendor/leaflet'
         for f in leaflet.rglob('*'):
             if f.is_file():

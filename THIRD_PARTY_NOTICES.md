@@ -6,6 +6,7 @@
 - **Leaflet 1.9.4** — BSD 2-Clause license. License text is included in [web/vendor/leaflet/LICENSE](web/vendor/leaflet/LICENSE).
 - **PyMuPDF** — installed separately through `requirements.txt`; distributed under GNU AGPL v3 or a commercial license. See the package's own license and [licensing information](https://pymupdf.readthedocs.io/en/latest/about.html#license).
 - **esbuild** and **Playwright** are development dependencies installed separately. Their licenses are included in their packages.
+- **IBM Plex Sans and IBM Plex Mono** (`web/vendor/fonts/`, Latin subset in WOFF2) — SIL Open Font License 1.1, Copyright © 2017 IBM Corp., Reserved Font Name "Plex". License text: [web/vendor/fonts/LICENSE.txt](web/vendor/fonts/LICENSE.txt).
 - **taste-skill v2** (`.claude/skills/taste-skill/`, upstream commit `12af471`) — MIT license, Copyright (c) 2026 Leonxlnx. A Claude Code design skill used only as development tooling; it is not part of the shipped app. License text: [.claude/skills/taste-skill/LICENSE](.claude/skills/taste-skill/LICENSE). Source: https://github.com/leonxlnx/taste-skill
 - **OpenSees / OpenSeesPy** — optional and installed separately using `requirements-fem.txt`; no solver binaries are bundled. Use is subject to the project's license, including its commercial redistribution terms. See the [official OpenSeesPy license notice](https://github.com/zhuminjie/OpenSeesPy/blob/openseespy/README.md).
 
