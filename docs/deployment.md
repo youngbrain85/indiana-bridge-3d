@@ -52,4 +52,6 @@ The workflow runs `python scripts/build_static_site.py _site --run-fem`, which:
 
 The static viewer cannot start new FEM calculations: the run button is disabled and the run history lists the precomputed cases. Run IDs linked from `collection-status.html` refer to the author's local results and are not present in the static build. The site is roughly 760 MiB, within the 1 GB GitHub Pages limit; large additions to `data/bridges` may need drawing pages to be rendered at a lower resolution.
 
+`actions/deploy-pages` waits at most 10 minutes for GitHub Pages to publish; larger `timeout` values are capped at 600000 ms. A publish normally takes under a minute. If the deploy job times out while the status stays `updating_pages`, the delay is on the GitHub Pages side: re-run the deploy job.
+
 To preview locally: `python scripts/build_static_site.py _site --run-fem` and then `python -m http.server -d _site 8000`.

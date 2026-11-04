@@ -8,7 +8,7 @@ const base=process.env.BRIDGE_TEST_URL||'http://127.0.0.1:8766';
   page.on('pageerror',e=>errors.push(String(e)));
   try{
     await page.route('https://carto.nationalmap.gov/**',r=>r.abort());
-    await page.goto(base+'/',{waitUntil:'domcontentloaded'});
+    await page.goto(base+'/#bridge/beechwood',{waitUntil:'domcontentloaded'}); // the collection map is the first screen
     await page.waitForFunction(()=>window.bridgeManager?.ready);
     await page.locator('#openAnalysis').click();await page.locator('#femRun').waitFor();
     const ids={};

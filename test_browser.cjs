@@ -28,10 +28,10 @@ const out=path.join(__dirname,'data');
   for(const saved of ['sr62-carpentier','us421-wildcat']){
    await page.evaluate(id=>localStorage.setItem('indiana-active-bridge',id),saved);
    await page.goto(base+'/',{waitUntil:'domcontentloaded'});
-   await page.waitForFunction(()=>window.bridgeManager?.ready&&bridgeManager.data.id==='beechwood');
-   assert.equal(new URL(page.url()).hash,'#bridge/beechwood');
+   await page.waitForSelector('#mapView',{state:'visible'});
+   assert.equal(new URL(page.url()).hash,'#map');assert.equal(await page.locator('#detailView').isVisible(),false);
   }
-  result.checks.push('Fresh visits always open the complete bridge, ignoring previously stored selections');
+  result.checks.push('Fresh visits open the collection map first, ignoring previously stored selections');
   // Old links must show a map record without fetching its component data or GLB.
   await page.evaluate(()=>location.hash='#map');await page.waitForSelector('#mapView',{state:'visible'});
   await page.locator('#countyFilter').selectOption('Marion');
@@ -46,11 +46,9 @@ const out=path.join(__dirname,'data');
    assert.equal(await page.locator('.bridge-card').count(),21);
   }
   assert.equal(requested.filter(p=>mapOnly.some(b=>p==='/api/bridges/'+b.id||p==='/assets/'+b.id+'/model')).length,0);
-  await page.locator('#catalogButton').click();assert.equal(await page.locator('#catalogContent .data-table tr').count(),22);
-  await page.locator('#catalogContent a[href="#map/sr62-tekoppel"]').click();
+  await page.locator('.bridge-card[data-bridge="sr62-tekoppel"]').getByRole('button',{name:'Show on map'}).click();
   await page.waitForSelector('.leaflet-popup-content [data-bridge="sr62-tekoppel"]');
-  assert.equal(await page.locator('#catalogDialog').isVisible(),false);
-  await page.locator('[data-workspace="model"]').click();await page.waitForFunction(()=>bridgeManager.ready&&bridgeManager.data.id==='beechwood');
+  await page.locator('.bridge-card[data-bridge="beechwood"] a.open-bridge').click();await page.waitForFunction(()=>bridgeManager.ready&&bridgeManager.data.id==='beechwood');
   result.checks.push('The five existing partial SR records stay map-only; whole multi-span SR bridges have 3D workspaces');
   for(const id of ids){await open(id);const model=await page.evaluate(()=>({id:bridgeManager.data.id,components:bridgeManager.data.parts.length,meshes:bridgeManager.viewer.meshes.size,normals:[...bridgeManager.viewer.meshes.values()].every(m=>!!m.geometry.attributes.normal)}));assert.equal(model.components,model.meshes);assert.ok(model.normals);result.models.push(model);}
   result.checks.push('All sixteen workspace GLBs match database components and have lit geometry');
@@ -89,7 +87,7 @@ const out=path.join(__dirname,'data');
   await page.setViewportSize({width:390,height:844});await open('beechwood');
   await page.locator('.mobile-tabs [data-pane="tree"]').click();await page.locator('#partSearch').fill('girder_A1');await page.locator('.part-button').click();
   await page.locator('.mobile-tabs [data-pane="inspector"]').click();assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);await screen('mobile_inspector');
-  await page.locator('.mobile-tabs [data-pane="viewer"]').click();await page.locator('#fitModel').click();await screen('mobile_viewer');
+  assert.equal(await page.locator('#canvasHost').isVisible(),true);await page.locator('#fitModel').click();await screen('mobile_viewer');
   await page.locator('.back-link').click();await page.waitForSelector('#mapView',{state:'visible'});await page.locator('#fitState').click();assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);await screen('mobile_map');
   await page.evaluate(()=>location.hash='#map/sr62-tekoppel');
   await page.waitForSelector('.leaflet-popup-content [data-bridge="sr62-tekoppel"]');
@@ -99,7 +97,7 @@ const out=path.join(__dirname,'data');
   await screen('mobile_map_only');result.checks.push('Map-only popup stays open and inside the mobile map after automatic panning');
   await page.setViewportSize({width:844,height:390});await open('us52-mud');assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);result.checks.push('390px portrait and 844px landscape panel navigation without horizontal overflow');
   await page.setViewportSize({width:1600,height:1000});await page.evaluate(()=>location.hash='#map');await page.waitForSelector('#mapView',{state:'visible'});await page.locator('#fitState').click();await screen('map_desktop');
-  await page.locator('#catalogButton').click();assert.equal(await page.locator('#catalogContent .data-table tr').count(),22);await page.locator('#closeCatalog').click();result.checks.push('Collection summary / database export entry point');
+  await page.locator('.export-menu summary').click();assert.equal(await page.locator('.export-menu a[href="/export/database"]').isVisible(),true);await page.keyboard.press('Escape');result.checks.push('Collection database export entry point');
   // Force the road service to fail while keeping local HTTP available.
   await context.route('https://carto.nationalmap.gov/**',route=>route.abort());
   await page.locator('#roadsToggle').uncheck();await page.locator('#roadsToggle').check();

@@ -33,10 +33,10 @@ import pymupdf  # noqa: E402
 ASSET_EXT = {'model': '.glb', 'drawing': '.pdf', 'manifest': '.json', 'thumbnail': '.png'}
 PAGES = {'/': 'index.html', '/analysis-guide': 'analysis-guide.html', '/collection-status': 'collection-status.html',
          '/model-corrections': 'model-corrections.html', '/review': 'review.html'}
-STATIC_FILES = ['/app.css', '/app.js', '/workspace.css', '/compact.css', '/analysis.js', '/analysis.css',
+STATIC_FILES = ['/ui.css', '/app.js', '/analysis.js', '/analysis.css',
                 '/viewer.bundle.js', '/favicon.svg', '/map/counties.json', '/map/states.json']
 PREFIX = (r'(?:api/|assets/|export/|map/|vendor/|analysis-guide|collection-status|model-corrections|review|'
-          r'favicon\.svg|app\.css|app\.js|workspace\.css|compact\.css|analysis\.js|analysis\.css|viewer\.bundle\.js)')
+          r'favicon\.svg|ui\.css|app\.js|analysis\.js|analysis\.css|viewer\.bundle\.js)')
 
 
 def rewrite(text):
@@ -173,6 +173,8 @@ def main():
             crawl.save(url, lambda t: rewrite(t).replace('<html lang="en">', '<html lang="en" data-static="1">', 1))
         for url in STATIC_FILES:
             crawl.save(url, rewrite if url.endswith(('.js', '.css', '.html')) else None)
+        for f in sorted((ROOT / 'web/vendor/fonts').glob('*.woff2')):
+            crawl.save('/vendor/fonts/' + f.name)
         leaflet = ROOT / 'web/vendor/leaflet'
         for f in leaflet.rglob('*'):
             if f.is_file():

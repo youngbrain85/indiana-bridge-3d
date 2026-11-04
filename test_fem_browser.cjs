@@ -8,7 +8,7 @@ const base=process.env.BRIDGE_TEST_URL||'http://127.0.0.1:8766';
   page.on('pageerror',e=>errors.push(String(e)));
   try{
     await page.route('https://carto.nationalmap.gov/**',r=>r.abort());
-    await page.goto(base+'/',{waitUntil:'domcontentloaded'});
+    await page.goto(base+'/#bridge/beechwood',{waitUntil:'domcontentloaded'}); // the collection map is the first screen
     await page.waitForFunction(()=>window.bridgeManager?.ready);
     await page.locator('#openAnalysis').click();
     await page.locator('#femRun').waitFor();
@@ -46,11 +46,9 @@ const base=process.env.BRIDGE_TEST_URL||'http://127.0.0.1:8766';
     await page.screenshot({path:'data/fem-workspace.png'});
     await page.setViewportSize({width:390,height:844});
     await page.locator('.mobile-tabs button[data-pane="inspector"]').click();
-    await page.locator('[data-tab="analysis"]').click();
     assert(await page.locator('#femRun').isVisible());
     assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
-    await page.locator('.mobile-tabs button[data-pane="viewer"]').click();
-    assert(await page.locator('#femLegend').isVisible());
+    assert(await page.locator('#femLegend').isVisible()); // the 3D view stays on screen above the panel
     assert(await page.evaluate(()=>{const r=document.getElementById('femLegend').getBoundingClientRect();return r.left>=0&&r.right<=innerWidth;}));
     await page.setViewportSize({width:1600,height:1000});
     await page.selectOption('#bridgeSelect','us52-mud');

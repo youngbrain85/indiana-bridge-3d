@@ -5,7 +5,7 @@ import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 class BridgeViewer {
   constructor(host, onSelect, onChange) {
     this.host=host;this.onSelect=onSelect;this.onChange=onChange;this.meshes=new Map();this.selected=new Set();this.hidden=new Set();this.isolated=null;this.loadId=0;
-    this.scene=new THREE.Scene();this.scene.background=new THREE.Color('#182533');
+    this.scene=new THREE.Scene();this.scene.background=new THREE.Color('#1d2124');
     this.camera=new THREE.PerspectiveCamera(38,1,.01,10000);
     this.renderer=new THREE.WebGLRenderer({antialias:true,alpha:false});this.renderer.setPixelRatio(Math.min(devicePixelRatio,2));
     this.renderer.localClippingEnabled=true;this.renderer.outputColorSpace=THREE.SRGBColorSpace;this.renderer.toneMapping=THREE.ACESFilmicToneMapping;this.renderer.toneMappingExposure=1.15;
@@ -18,7 +18,8 @@ class BridgeViewer {
     this.helper=new THREE.Box3Helper(new THREE.Box3(),0x5fe6df);this.helper.visible=false;this.scene.add(this.helper);
     this.grid=null;
     this.raycaster=new THREE.Raycaster();let down=null;
-    host.addEventListener('pointerdown',e=>{if(e.button===0)down=[e.clientX,e.clientY];});
+    // Only presses on the canvas pick; overlays inside the host (toolbar, legend) do not.
+    host.addEventListener('pointerdown',e=>{down=e.button===0&&e.target===this.renderer.domElement?[e.clientX,e.clientY]:null;});
     host.addEventListener('pointerup',e=>{if(!down||Math.hypot(e.clientX-down[0],e.clientY-down[1])>5){down=null;return;}down=null;
       if(this.analysisGeometry)return;
       const r=this.renderer.domElement.getBoundingClientRect();this.raycaster.setFromCamera(new THREE.Vector2((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1),this.camera);
@@ -48,7 +49,7 @@ class BridgeViewer {
       original.geometry.dispose();for(const m of Array.isArray(original.material)?original.material:[original.material])m.dispose();
     });
     if(this.meshes.size!==data.parts.length)throw Error('Component and 3D object counts do not match.');
-    this.bounds=new THREE.Box3().setFromObject(this.root);const center=this.bounds.getCenter(new THREE.Vector3()),size=this.bounds.getSize(new THREE.Vector3());this.grid=new THREE.GridHelper(Math.max(size.x,size.z)*2.5,32,0x426173,0x2b4151);this.grid.position.set(center.x,this.bounds.min.y-.2,center.z);this.grid.material.transparent=true;this.grid.material.opacity=.35;this.scene.add(this.grid);this.view='iso';this.defaultVisibility();this.fit();return true;
+    this.bounds=new THREE.Box3().setFromObject(this.root);const center=this.bounds.getCenter(new THREE.Vector3()),size=this.bounds.getSize(new THREE.Vector3());this.grid=new THREE.GridHelper(Math.max(size.x,size.z)*2.5,32,0x4a5157,0x30363b);this.grid.position.set(center.x,this.bounds.min.y-.2,center.z);this.grid.material.transparent=true;this.grid.material.opacity=.35;this.scene.add(this.grid);this.view='iso';this.defaultVisibility();this.fit();return true;
   }
   ids(){return [...this.meshes.keys()];}
   defaultVisibility(){this.hidden=new Set(this.data.parts.filter(p=>this.data.model.hidden_layers.includes(p.layer)).map(p=>p.id));this.isolated=null;this.sync();}

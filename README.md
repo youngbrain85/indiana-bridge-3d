@@ -17,7 +17,7 @@ A local bridge review workspace combining 3D models, a component database, sourc
 
 The collection includes Beechwood Road, 21st Street over I-465, US 421 over South Fork Wildcat Creek, US 52 over Mud Creek, SR 58 over White Creek, SR 159 over Branch Spencer Creek, and three SR 62 crossings: CSX Railroad, Tekoppel Avenue and Carpentier Creek.
 
-The **3D workspace shows sixteen crossings**, with completed exterior models first. A fresh visit opens **Beechwood Road Bridge**, currently the only model with complete exterior coverage. The five older partial SR-series models are **map only**: their locations and basic attributes remain visible, and all existing models, drawings and component records remain stored. Their old 3D links open the corresponding map location.
+The **3D workspace shows sixteen crossings**, with completed exterior models first. A fresh visit opens the **Indiana collection map**; **Beechwood Road Bridge**, currently the only model with complete exterior coverage, is first in the list. Bridge links (`#bridge/<id>`) still open a workspace directly. The five older partial SR-series models are **map only**: their locations and basic attributes remain visible, and all existing models, drawings and component records remain stored. Their old 3D links open the corresponding map location.
 
 **SR 44 over Mud Creek** is a new whole three-span reconstruction with 383 selectable components. Its workspace includes the 2018 rehabilitation design: seven continuous steel beam lines, 28 bearings, 48 channel diaphragms, 14 field splices, both wall piers and approach slabs. It remains **more detail needed**, including reconciliation of some retained-seat/haunch levels, approach steel guardrail and drainage. See [model scope and verification](docs/sr44-mud.md). The later 2026 overlay project is kept as a reference, not mixed into the modeled state.
 
@@ -68,17 +68,19 @@ The application binds to localhost. It is a local viewer, not an authenticated m
 
 ## Workspace
 
-- **Model explorer:** one compact header, fixed equal-width side panels, camera presets, deck opacity and longitudinal section controls.
+- **Layout:** two levels. The **collection map** (first screen) lists every bridge beside the Indiana map. A **bridge workspace** has one top bar with the bridge switcher and four modes: **Model**, **Drawings**, **Analysis** and **Data**. The left panel is always the component tree and the right panel always describes the current selection, so a selection carries across modes.
+- **Model:** 3D view with camera presets, fit, deck opacity and a longitudinal section on one toolbar over the canvas; the right panel has **Details** and **Coverage** tabs.
 - **Component tree:** initially collapsed Deck, Primary structure, Substructure, Bearings and Accessories categories. Expand them to reach source groups, specified locations and individual components.
 - **3D filters:** category buttons affect both actual mesh visibility and the tree. Group isolation includes every descendant, including members outside a search result.
-- **Details & sources:** component dimensions, modeling basis, assumptions, drawing links and coverage. Selection actions are located here.
-- **Components:** searchable, paginated register with CSV export and direct links back to 3D.
-- **Indiana map:** county boundaries, road layer, bridge markers and model-detail status. Green means exterior detail coverage is complete within the stated scope; amber means additional detail is needed. These are **not structural condition ratings**.
-- **Drawings:** locally rendered PDF pages and original plan downloads.
+- **Details:** component dimensions, modeling basis, assumptions and drawing page links. Selection actions are located here.
+- **Drawings:** the bridge's drawing library in the right panel, locally rendered PDF pages and original plan downloads.
+- **Data:** searchable, paginated component register; a component name opens it in the 3D model.
+- **Collection map:** county boundaries, road layer, bridge markers and model-detail status. Green means exterior detail coverage is complete within the stated scope; amber means additional detail is needed; grey marks map-only records. These are **not structural condition ratings**.
+- **Phones and tablets:** below 900px the 3D view stays at the top and one row of tabs switches the panel under it.
 - **Collection FEM:** 12 bridge-specific beam/slab ledgers plus dedicated arch and truss models; editable assumed inputs, full/half-pressure cases, actual FE meshes and saved JSON/CSV. [Scopes, reproduction and limitations](docs/collection-completion.md).
 - **Assumed-input FEM demonstration (Minnich Road):** 197 mapped components with editable hypothetical materials, bearings, column diameter and support bases; real frame/shell solves, pressure scenarios, saved results and explicit uncertainty. [Method and limits](docs/minnich-fem-demo.md).
 - **Whole-bridge FEM (Beechwood):** 72 connected structural components, beam/shell stress and displacement, explicit bearings/foundations, staged prestress scenarios, sensitivity, actual FE mesh, convergence warnings and JSON/CSV results. See [setup, material evidence and limitations](docs/fem.md). The optional solver requires a separate Python 3.12 environment; no AI API key is needed.
-- **Exports:** GLB model, component CSV and the current SQLite database.
+- **Exports:** the **Export** menu in the top bar offers the GLB model, the component CSV and the current SQLite database.
 - **UI review:** visit `/review` to annotate a reference screenshot, add numbered notes and export PNG or JSON. Notes are stored only in the browser.
 
 The models and drawings work offline. The USGS road layer requires internet access and reports its connection status independently.
