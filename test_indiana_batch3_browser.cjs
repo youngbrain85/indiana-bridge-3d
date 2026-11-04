@@ -35,7 +35,7 @@ const specs=[
    await page.locator('#partSearch').fill('');
    await page.evaluate(()=>bridgeManager.select([]));
    await page.locator('[data-tab="coverage"]').click();
-   assert.ok((await page.locator('#inspector').innerText()).includes('not_modeled'));
+   assert.ok((await page.locator('#inspector').innerText()).includes('Not modeled'));
    await page.locator('#openAnalysis').click();
    await page.waitForSelector('#femRun');
    assert.ok((await page.locator('#femDemoNotice').innerText()).includes('Assumed-input demonstration'));
