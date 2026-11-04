@@ -44,7 +44,7 @@ const specs=[
    const bytes=await response.body();assert.equal(bytes.subarray(0,4).toString(),'glTF');
    const local=fs.readFileSync(path.join(__dirname,'data/bridges',s.id,'model.glb'));
    assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),crypto.createHash('sha256').update(local).digest('hex'));
-   await page.locator('[data-tab="properties"]').click();
+   await page.locator('[data-workspace="model"]').click();await page.locator('[data-tab="properties"]').click();
    await page.evaluate(()=>{bridgeManager.viewer.grid.visible=false;bridgeManager.viewer.fit(null,'iso');});
    await page.screenshot({path:path.join(__dirname,'data',s.id+'_verified.png')});
    result.models.push({...s,...loaded,download_bytes:bytes.length,source_page_rendered:true});

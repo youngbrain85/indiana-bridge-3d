@@ -285,9 +285,7 @@ class Handler(BaseHTTPRequestHandler):
                     'Content-Disposition': f'attachment; filename="{match[1]}_components.csv"'})
 
         static = {'/': ROOT / 'web/index.html', '/index.html': ROOT / 'web/index.html',
-                  '/app.css': ROOT / 'web/app.css', '/app.js': ROOT / 'web/app.js',
-                  '/workspace.css': ROOT / 'web/workspace.css',
-                  '/compact.css': ROOT / 'web/compact.css',
+                  '/ui.css': ROOT / 'web/ui.css', '/app.js': ROOT / 'web/app.js',
                   '/analysis.js': ROOT / 'web/analysis.js',
                   '/analysis.css': ROOT / 'web/analysis.css',
                   '/analysis-guide': ROOT / 'web/analysis-guide.html',

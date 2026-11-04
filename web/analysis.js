@@ -5,7 +5,7 @@
   const action=(text,fn)=>{const b=node('button',text);b.type='button';b.onclick=fn;return b;};
   const link=(text,url)=>{const a=node('a',text,'reference-link');a.href=url;a.target='_blank';a.rel='noopener';return a;};
   // GitHub Pages build: precomputed runs only; run status lives at runs/<id>.json.
-  const STATIC=document.documentElement.dataset.static==='1';
+  const STATIC=document.documentElement?.dataset?.static==='1';
   const runUrl=id=>'/api/analysis/runs/'+id+(STATIC?'.json':'');
   async function api(url,options){if(STATIC&&options?.method==='POST')throw Error('This GitHub Pages viewer is read-only and shows precomputed results. Run the app locally (python server.py) to calculate new settings.');const r=await fetch(url,options),v=await r.json();if(!r.ok)throw Error(v.error||'Analysis request failed.');return v;}
   class AnalysisPanel {
@@ -42,7 +42,7 @@
       if(this.result.demonstration)legend.prepend(node('b','ASSUMED-INPUT DEMONSTRATION','fem-demo-label'));
     }
     render(){if(!this.host)return;const h=this.host;h.replaceChildren();h.classList.add('fem-inspector');
-      h.append(node('div','STRUCTURAL ANALYSIS','eyebrow'),node('h2','Bridge FEM'));
+      h.append(node('div','Structural analysis','eyebrow'),node('h2','Bridge FEM'));
       if(this.message)h.append(node('p',this.message,'fem-error'));
       if(!this.info){h.append(node('p',this.loading?'Loading inputs…':'Preparing inputs…'));return;}
       if(!this.info.available){h.append(node('p',this.info.reason,'source-note'));return;}

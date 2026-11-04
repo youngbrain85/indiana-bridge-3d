@@ -33,10 +33,10 @@ import pymupdf  # noqa: E402
 ASSET_EXT = {'model': '.glb', 'drawing': '.pdf', 'manifest': '.json', 'thumbnail': '.png'}
 PAGES = {'/': 'index.html', '/analysis-guide': 'analysis-guide.html', '/collection-status': 'collection-status.html',
          '/model-corrections': 'model-corrections.html', '/review': 'review.html'}
-STATIC_FILES = ['/app.css', '/app.js', '/workspace.css', '/compact.css', '/analysis.js', '/analysis.css',
+STATIC_FILES = ['/ui.css', '/app.js', '/analysis.js', '/analysis.css',
                 '/viewer.bundle.js', '/favicon.svg', '/map/counties.json', '/map/states.json']
 PREFIX = (r'(?:api/|assets/|export/|map/|vendor/|analysis-guide|collection-status|model-corrections|review|'
-          r'favicon\.svg|app\.css|app\.js|workspace\.css|compact\.css|analysis\.js|analysis\.css|viewer\.bundle\.js)')
+          r'favicon\.svg|ui\.css|app\.js|analysis\.js|analysis\.css|viewer\.bundle\.js)')
 
 
 def rewrite(text):
