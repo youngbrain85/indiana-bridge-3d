@@ -4,7 +4,10 @@
   const fmt=(n,d=3)=>Number(n).toLocaleString('en-US',{maximumFractionDigits:d});
   const action=(text,fn)=>{const b=node('button',text);b.type='button';b.onclick=fn;return b;};
   const link=(text,url)=>{const a=node('a',text,'reference-link');a.href=url;a.target='_blank';a.rel='noopener';return a;};
-  async function api(url,options){const r=await fetch(url,options),v=await r.json();if(!r.ok)throw Error(v.error||'Analysis request failed.');return v;}
+  // GitHub Pages build: precomputed runs only; run status lives at runs/<id>.json.
+  const STATIC=document.documentElement.dataset.static==='1';
+  const runUrl=id=>'/api/analysis/runs/'+id+(STATIC?'.json':'');
+  async function api(url,options){if(STATIC&&options?.method==='POST')throw Error('This GitHub Pages viewer is read-only and shows precomputed results. Run the app locally (python server.py) to calculate new settings.');const r=await fetch(url,options),v=await r.json();if(!r.ok)throw Error(v.error||'Analysis request failed.');return v;}
   class AnalysisPanel {
     constructor(){this.epoch=0;this.field='stress_MPa';this.scale=0;this.family='all';this.options={case:'global_uniform',end_restraint:'free',load_factor:1,foundation:'tip',prestress_factor:.8};}
     reset(){this.epoch++;clearTimeout(this.timer);this.viewer?.clearAnalysis();this.host=null;this.info=null;this.result=null;this.run=null;this.message='';this.applied=false;this.loading=false;this.pending=false;this.field='stress_MPa';this.family='all';this.scale=0;const legend=document.getElementById('femLegend');if(legend)legend.hidden=true;}
@@ -21,7 +24,7 @@
         this.run=run;this.result=null;this.viewer.clearAnalysis();this.applied=false;this.updateLegend();this.render();this.poll(run.id,epoch);
       }catch(e){if(epoch===this.epoch)this.message=e.message;}finally{if(epoch===this.epoch){this.pending=false;this.render();}}
     }
-    async poll(id,epoch){clearTimeout(this.timer);try{const run=await api('/api/analysis/runs/'+id);if(epoch!==this.epoch)return;this.run=run;this.render();
+    async poll(id,epoch){clearTimeout(this.timer);try{const run=await api(runUrl(id));if(epoch!==this.epoch)return;this.run=run;this.render();
       if(run.status==='completed')await this.loadResult(id,epoch);
       else if(run.status==='failed'){this.message=run.error;this.render();}
       else this.timer=setTimeout(()=>this.poll(id,epoch),700);
@@ -54,12 +57,12 @@
       const supportLabel=node('label','End-rotation assumption'),support=node('select');support.id='femSupport';support.disabled=busy||this.options.case==='girder_weight'||whole;
       for(const [value,text] of [['free','Free rotation'],['fixed','Fully restrained rotation']]){const o=node('option',text);o.value=value;support.append(o);}support.value=this.options.end_restraint;support.onchange=()=>{this.options.end_restraint=support.value;this.render();};supportLabel.append(support);if(!whole)form.append(supportLabel);if(demo)this.demoControls(form,busy);else if(whole)this.globalControls(form,busy);
       const multiplier=node('label',this.options.case==='global_staged'?'Scale all loads, including prestress':'Load multiplier (research scenario)'),input=node('input');input.id='femFactor';input.type='number';input.min='.1';input.max='5';input.step='.1';input.value=this.options.load_factor;input.disabled=busy;input.oninput=()=>{this.options.load_factor=Number(input.value);this.showInputChanges();};multiplier.append(input);form.append(multiplier);
-      const run=action(busy?'Analysis running…':demo?'Run demonstration':'Run analysis',()=>this.start());run.id='femRun';run.className='primary';run.disabled=busy;form.append(run);h.append(form);
+      const run=action(busy?'Analysis running…':demo?'Run demonstration':'Run analysis',()=>this.start());run.id='femRun';run.className='primary';run.disabled=busy||STATIC;if(STATIC)run.title='Read-only GitHub Pages viewer: choose a precomputed run below.';form.append(run);h.append(form);
       if(this.run){const status=node('p',this.run.status==='completed'?(this.result?.verification.mesh_warnings?.length?'Equilibrium passed · Local peaks need refinement':'Numerical checks passed · Not field validated'):this.run.status==='failed'?'Analysis failed':this.run.status==='queued'?'Queued':'Solving and checking equilibrium…','fem-status');status.id='femRunStatus';status.setAttribute('role','status');h.append(status);if(this.run.error)h.append(node('p',this.run.error,'fem-error'));}
       const history=(this.info.runs||[]).filter(r=>r.status==='completed');
       if(history.length){const label=node('label','Saved runs'),choices=node('select');label.className='fem-form';choices.id='femHistory';choices.disabled=busy;const blank=node('option','Select a saved run');blank.value='';choices.append(blank);
         for(const run of history){const o=node('option',new Date(run.created_utc).toLocaleTimeString('en-US')+' · '+run.settings.case+' · '+(demo?run.settings.pressure_kPa+' kPa / '+run.settings.foundation:run.settings.end_restraint)+' · '+run.settings.load_factor+'×');o.value=run.id;choices.append(o);}choices.value=history.some(r=>r.id===this.run?.id)?this.run.id:'';
-        choices.onchange=async()=>{if(!choices.value)return;const epoch=this.epoch;try{const run=await api('/api/analysis/runs/'+choices.value);if(epoch!==this.epoch)return;this.viewer.clearAnalysis();this.applied=false;this.updateLegend();this.run=run;this.options={...run.settings};this.family='all';this.result=null;this.message='';await this.loadResult(run.id,epoch);}catch(e){if(epoch===this.epoch){this.message=e.message;this.render();}}};label.append(choices);h.append(label);
+        choices.onchange=async()=>{if(!choices.value)return;const epoch=this.epoch;try{const run=await api(runUrl(choices.value));if(epoch!==this.epoch)return;this.viewer.clearAnalysis();this.applied=false;this.updateLegend();this.run=run;this.options={...run.settings};this.family='all';this.result=null;this.message='';await this.loadResult(run.id,epoch);}catch(e){if(epoch===this.epoch){this.message=e.message;this.render();}}};label.append(choices);h.append(label);
       }
       if(this.result)this.renderResults(h);
       this.renderInputs(h);
