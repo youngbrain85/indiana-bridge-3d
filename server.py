@@ -62,6 +62,9 @@ def bridge_detail(db, bid):
     b = decode(row)
     b['model'] = decode(db.execute('SELECT * FROM models WHERE bridge_id=?', (bid,)).fetchone())
     b['model']['url'] = f'/assets/{bid}/model'
+    # Optional textured display copy (same meshes, baked AO); the plain GLB stays the source of record.
+    if db.execute("SELECT 1 FROM assets WHERE bridge_id=? AND kind='render'", (bid,)).fetchone():
+        b['model']['render_url'] = f'/assets/{bid}/render'
     b['groups'] = [dict(r) for r in db.execute('SELECT * FROM member_groups WHERE bridge_id=? ORDER BY sort_order', (bid,))]
     b['parts'] = []
     for row in db.execute('SELECT * FROM components WHERE bridge_id=? ORDER BY rowid', (bid,)):
@@ -240,7 +243,7 @@ class Handler(BaseHTTPRequestHandler):
                 if not source.get('sha256') or sha(target)!=source['sha256']:
                     return self.error('Source document changed; reconcile the catalog',409)
                 return self.file(target,'application/pdf')
-            match = re.fullmatch(r'/assets/([a-z0-9-]+)/(model|drawing|manifest|thumbnail)', path)
+            match = re.fullmatch(r'/assets/([a-z0-9-]+)/(model|render|drawing|manifest|thumbnail)', path)
             if match:
                 row = db.execute('SELECT * FROM assets WHERE bridge_id=? AND kind=?', match.groups()).fetchone()
                 if not row:

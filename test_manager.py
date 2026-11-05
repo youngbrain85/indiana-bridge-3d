@@ -1,14 +1,62 @@
 import json
+import math
 import sqlite3
+import struct
 import tempfile
 import threading
 import unittest
+from array import array
 from pathlib import Path
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
-from import_data import import_all, connect, explicit_location, sync_presentation
+from import_data import import_all, connect, explicit_location, mesh_names, render_model, sync_presentation
 from server import make_server, bridges
+
+ROOT = Path(__file__).resolve().parent
+
+
+def glb_meshes(path):
+    """Local triangles (in canonical order) and world matrix of every mesh node, read with the standard library."""
+    data = path.read_bytes()
+    length = struct.unpack_from('<I', data, 12)[0]
+    doc, binary = json.loads(data[20:20 + length]), 28 + length
+    def accessor(index):
+        a = doc['accessors'][index]
+        view = doc['bufferViews'][a['bufferView']]
+        start = binary + view.get('byteOffset', 0) + a.get('byteOffset', 0)
+        code, width = {5126: ('f', 4), 5125: ('I', 4), 5123: ('H', 2), 5121: ('B', 1)}[a['componentType']]
+        size = {'SCALAR': 1, 'VEC2': 2, 'VEC3': 3}[a['type']] * a['count']
+        return array(code, data[start:start + size * width])
+    def local(node):
+        if 'matrix' in node:
+            return node['matrix']
+        x, y, z, w = node.get('rotation', [0, 0, 0, 1])
+        sx, sy, sz = node.get('scale', [1, 1, 1])
+        tx, ty, tz = node.get('translation', [0, 0, 0])
+        return [(1 - 2 * (y * y + z * z)) * sx, 2 * (x * y + z * w) * sx, 2 * (x * z - y * w) * sx, 0,
+                2 * (x * y - z * w) * sy, (1 - 2 * (x * x + z * z)) * sy, 2 * (y * z + x * w) * sy, 0,
+                2 * (x * z + y * w) * sz, 2 * (y * z - x * w) * sz, (1 - 2 * (x * x + y * y)) * sz, 0, tx, ty, tz, 1]
+    def times(a, b):  # column-major 4x4 product a @ b
+        return [sum(a[k * 4 + r] * b[c * 4 + k] for k in range(4)) for c in range(4) for r in range(4)]
+    meshes = {}
+    def visit(index, parent):
+        node = doc['nodes'][index]
+        world = times(parent, local(node))
+        if 'mesh' in node:
+            triangles = []
+            for primitive in doc['meshes'][node['mesh']]['primitives']:
+                xyz = accessor(primitive['attributes']['POSITION'])
+                corners = accessor(primitive['indices']) if 'indices' in primitive else range(len(xyz) // 3)
+                points = [tuple(xyz[i * 3:i * 3 + 3]) for i in corners]
+                triangles += [tuple(sorted(points[i:i + 3])) for i in range(0, len(points), 3)]
+            meshes[node['name']] = (sorted(triangles), world)
+        for child in node.get('children', []):
+            visit(child, world)
+    identity = [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+    for root in doc['scenes'][doc.get('scene', 0)]['nodes']:
+        visit(root, identity)
+    return meshes
 
 
 class CatalogTests(unittest.TestCase):
@@ -144,6 +192,34 @@ class CatalogTests(unittest.TestCase):
         with self.assertRaises(HTTPError) as caught:
             self.get('/assets/us224-eight-mile/source/unregistered.pdf')
         self.assertEqual(caught.exception.code,404)
+
+    def test_render_models_are_display_copies_of_their_source(self):
+        registry = ROOT / 'data/registry.json'
+        catalog = json.loads(registry.read_text(encoding='utf-8'))['bridges']
+        rendered = [b for b in catalog if b['model'].get('render_glb')]
+        self.assertTrue(rendered)
+        for bridge in rendered:
+            source, render = ROOT / 'data' / bridge['model']['glb'], ROOT / 'data' / bridge['model']['render_glb']
+            self.assertEqual(render_model(bridge['id'], bridge, registry, source, mesh_names(source)), render.resolve())
+            original, display = glb_meshes(source), glb_meshes(render)
+            self.assertEqual(set(display), set(original))
+            for name, (triangles, world) in original.items():
+                # Same triangles in the same place: only texture coordinates and winding may differ.
+                self.assertEqual(display[name][0], triangles, name)
+                self.assertTrue(all(math.isclose(a, b, abs_tol=1e-6) for a, b in zip(display[name][1], world)), name)
+            with self.get('/api/bridges/' + bridge['id']) as r:
+                model = json.load(r)['model']
+            self.assertEqual(model['render_url'], f'/assets/{bridge["id"]}/render')
+            with self.get(model['render_url']) as r:
+                self.assertEqual(r.read(), render.read_bytes())
+        plain = next(b for b in catalog if not b['model'].get('render_glb'))
+        with self.get('/api/bridges/' + plain['id']) as r:
+            self.assertNotIn('render_url', json.load(r)['model'])
+
+    def test_stale_render_model_is_ignored(self):
+        source = ROOT / 'data/bridges/beechwood/model.glb'
+        unstamped = {'model': {'render_glb': 'bridges/beechwood/model.glb'}}  # right meshes, no build stamp
+        self.assertIsNone(render_model('beechwood', unstamped, ROOT / 'data/registry.json', source, mesh_names(source)))
 
     def test_locations_not_guessed_from_mesh_ids(self):
         self.assertEqual(explicit_location({'id':'pier_2', 'name':'Pier footing envelope'}), (None, None))

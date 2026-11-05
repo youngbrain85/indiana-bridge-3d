@@ -15,7 +15,7 @@ function surfaceFor(p){
 
 class BridgeViewer {
   constructor(host, onSelect, onChange) {
-    this.host=host;this.onSelect=onSelect;this.onChange=onChange;this.meshes=new Map();this.selected=new Set();this.hidden=new Set();this.isolated=null;this.loadId=0;
+    this.host=host;this.onSelect=onSelect;this.onChange=onChange;this.meshes=new Map();this.textures=new Set();this.selected=new Set();this.hidden=new Set();this.isolated=null;this.loadId=0;
     this.scene=new THREE.Scene();this.scene.background=new THREE.Color('#1d2124');
     this.camera=new THREE.PerspectiveCamera(38,1,.01,10000);
     this.renderer=new THREE.WebGLRenderer({antialias:true,alpha:false});this.renderer.setPixelRatio(Math.min(devicePixelRatio,2));
@@ -62,21 +62,30 @@ class BridgeViewer {
     this.renderer.render(this.scene,this.camera);
   }}
   resize(){const w=this.host.clientWidth,h=this.host.clientHeight;if(!w||!h)return;this.renderer.setSize(w,h,false);this.camera.aspect=w/h;this.camera.updateProjectionMatrix();this.render();}
-  clear(){this.clearAnalysis();this.clearTerrain();for(const mesh of this.meshes.values()){mesh.geometry.dispose();mesh.material.dispose();}if(this.grid){this.scene.remove(this.grid);this.grid.geometry.dispose();this.grid.material.dispose();this.grid=null;}this.root.clear();this.meshes.clear();this.selected.clear();this.hidden.clear();this.isolated=null;this.helper.visible=false;}
+  clear(){this.clearAnalysis();this.clearTerrain();for(const mesh of this.meshes.values()){mesh.geometry.dispose();mesh.material.dispose();}if(this.grid){this.scene.remove(this.grid);this.grid.geometry.dispose();this.grid.material.dispose();this.grid=null;}for(const t of this.textures)t.dispose();this.textures.clear();this.root.clear();this.meshes.clear();this.selected.clear();this.hidden.clear();this.isolated=null;this.helper.visible=false;}
   cancel(){this.loadId++;this.abort?.abort();this.clear();this.render();}
   async load(data,progress){const seq=++this.loadId;this.abort?.abort();this.abort=new AbortController();this.clear();this.data=data;this.clipping=false;this.opacity=1;
-    const response=await fetch(data.model.url,{signal:this.abort.signal});if(!response.ok)throw Error('Could not load the GLB file.');const bytes=await response.arrayBuffer();
+    // A textured display copy (same meshes, baked AO) is preferred when the bridge has one.
+    let response=data.model.render_url?await fetch(data.model.render_url,{signal:this.abort.signal}):null;
+    if(!response?.ok)response=await fetch(data.model.url,{signal:this.abort.signal});if(!response.ok)throw Error('Could not load the GLB file.');const bytes=await response.arrayBuffer();
     if(seq!==this.loadId)return false;progress('Preparing 3D objects…');
     const gltf=await new GLTFLoader().parseAsync(bytes,'');if(seq!==this.loadId){gltf.scene.traverse(n=>{n.geometry?.dispose();for(const m of Array.isArray(n.material)?n.material:[n.material])m?.dispose();});return false;}
     const byName=new Map(data.parts.map(p=>[p.mesh_name,p]));gltf.scene.updateMatrixWorld(true);
     gltf.scene.traverse(original=>{if(!original.isMesh)return;const p=byName.get(original.name)||byName.get(original.parent?.name);if(!p)throw Error('Unregistered 3D object: '+original.name);
-      const geom=original.geometry.clone().applyMatrix4(original.matrixWorld);geom.computeVertexNormals();const material=new THREE.MeshStandardMaterial({color:p.color||'#a7b8bc',...surfaceFor(p),side:THREE.DoubleSide,flatShading:true});
+      const geom=original.geometry.clone().applyMatrix4(original.matrixWorld);geom.computeVertexNormals();const material=new THREE.MeshStandardMaterial({color:p.color||'#a7b8bc',...surfaceFor(p),...this.bakedMaps(original.material,geom),side:THREE.DoubleSide,flatShading:true});
       const mesh=new THREE.Mesh(geom,material);mesh.castShadow=true;mesh.receiveShadow=true;mesh.name=p.mesh_name;mesh.userData.part=p;this.meshes.set(p.id,mesh);this.root.add(mesh);
       original.geometry.dispose();for(const m of Array.isArray(original.material)?original.material:[original.material])m.dispose();
     });
     if(this.meshes.size!==data.parts.length)throw Error('Component and 3D object counts do not match.');
     this.bounds=new THREE.Box3().setFromObject(this.root);const center=this.bounds.getCenter(new THREE.Vector3()),size=this.bounds.getSize(new THREE.Vector3());this.grid=new THREE.GridHelper(Math.max(size.x,size.z)*2.5,32,0x4a5157,0x30363b);this.grid.position.set(center.x,this.bounds.min.y-.2,center.z);this.grid.material.transparent=true;this.grid.material.opacity=.35;this.scene.add(this.grid);this.buildTerrain();this.fitShadow();this.warmAnalysis();this.view='iso';this.defaultVisibility();this.fit();return true;
   }
+  // Surface texture, its normal map and baked AO from a display GLB. The part colour still tints the texture,
+  // and the textures are shared, so they are tracked here and disposed with the model.
+  bakedMaps(src,geom){const maps={};if(!src)return maps;const keep=t=>{this.textures.add(t);t.anisotropy=Math.min(8,this.renderer.capabilities.getMaxAnisotropy());return t;};
+    if(src.map&&geom.attributes.uv)maps.map=keep(src.map);
+    if(src.normalMap&&geom.attributes.uv&&!this.lite){maps.normalMap=keep(src.normalMap);maps.normalScale=src.normalScale.clone();}
+    if(src.aoMap&&geom.attributes.uv1){maps.aoMap=keep(src.aoMap);maps.aoMapIntensity=1;}
+    return maps;}
   ids(){return [...this.meshes.keys()];}
   defaultVisibility(){this.hidden=new Set(this.data.parts.filter(p=>this.data.model.hidden_layers.includes(p.layer)).map(p=>p.id));this.isolated=null;this.sync();}
   showAll(){this.hidden.clear();this.isolated=null;this.sync();}

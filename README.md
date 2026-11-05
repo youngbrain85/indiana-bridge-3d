@@ -71,6 +71,7 @@ The application binds to localhost. It is a local viewer, not an authenticated m
 - **Layout:** two levels. The **collection map** (first screen) lists every bridge beside the Indiana map. A **bridge workspace** has one top bar with the bridge switcher and four modes: **Model**, **Drawings**, **Analysis** and **Data**. The left panel is always the component tree and the right panel always describes the current selection, so a selection carries across modes.
 - **Model:** 3D view with camera presets, fit, deck opacity and a longitudinal section on one toolbar over the canvas; the right panel has **Details** and **Coverage** tabs.
 - **Realistic view and terrain:** components render with surface properties by material (concrete, steel, elastomer, asphalt), image-based lighting and soft shadows. An **illustrative terrain** (valley floor at the pier/abutment base, 1:2 approach embankments with the road, a river channel or an overpass road under the longest span) is generated from the model's own levels; it is **not survey data** and says so on screen. The **Terrain** button or `T` hides it; the choice is remembered. On software WebGL (no GPU driver, as in some remote desktops and VMs) image-based lighting and shadows switch off automatically so the view stays responsive.
+- **Textured display model (Beechwood pilot):** Beechwood also has `model_render.glb`, built with Blender: tileable concrete and steel textures, normal maps and ambient occlusion baked from the whole assembly. It has exactly the same meshes and triangles as `model.glb`, which stays the source for the register, FEM and downloads. The viewer shows it when present and falls back to the plain model otherwise. See [textured display models](docs/rendering.md).
 - **Component tree:** initially collapsed Deck, Primary structure, Substructure, Bearings and Accessories categories. Expand them to reach source groups, specified locations and individual components.
 - **3D filters:** category buttons affect both actual mesh visibility and the tree. Group isolation includes every descendant, including members outside a search result.
 - **Details:** component dimensions, modeling basis, assumptions and drawing page links. Selection actions are located here.
@@ -102,11 +103,12 @@ server.py                 Local HTTP service and bounded analysis API
 import_data.py            Validated, repeatable SQLite importer
 schema.sql                Database schema
 data/registry.json        Portable bridge registry
-data/bridges/<id>/         Model, manifest, plan PDF and preview
+data/bridges/<id>/         Model, manifest, plan PDF, preview and optional textured display model
 data/sources.json          Plan URLs and asset hashes
 web/                      English frontend and bundled viewer
 viewer.js                 Three.js viewer source
 fem/                      Material ledger, optional solver and analysis job service
+scripts/                  Model builders, static-site export and the Blender display-model builder
 docs/                     Architecture and verification notes
 ```
 
@@ -120,7 +122,8 @@ Runtime files are generated locally and excluded from Git: `data/bridges.sqlite3
 2. Use a unique lowercase registry ID. GLB mesh names and manifest part IDs must match one-to-one. Each component must have a valid source layer and any PDF page references must be one-based and within the plan set.
 3. Add an entry in `data/registry.json`, following an existing record. Model and thumbnail paths are relative to the registry directory; `source_pdf` is relative to the manifest. Supply actual location provenance and a justified detail status.
 4. Preserve modeling assumptions, limitations and source citations in the manifest. Update `source_sha256` when the source PDF changes.
-5. Run `python import_data.py`, then refresh the app. Import validates all sources before changing the current catalog. Repeated imports do not duplicate components.
+5. Optional: build a textured display model with `python scripts/blender_render_model.py <new-id>` and add `"render_glb": "bridges/<new-id>/model_render.glb"` to the model entry. Rebuild it whenever `model.glb` changes; a stale one is ignored on import. See [textured display models](docs/rendering.md).
+6. Run `python import_data.py`, then refresh the app. Import validates all sources before changing the current catalog. Repeated imports do not duplicate components.
 
 An optional ignored `source_overrides.json` can point to private local source PDFs. Do not commit it. Existing bridges omitted from a partial import are retained; deletion is not automated.
 
