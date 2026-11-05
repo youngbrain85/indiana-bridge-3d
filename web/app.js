@@ -35,6 +35,7 @@
     if(!inWorkspace)return;
     const mode={'1':'model','2':'drawings','3':'analysis','4':'members'}[e.key];if(mode){e.preventDefault();openWorkspace(mode);return;}
     if(workspaceMode==='drawings'&&['ArrowLeft','ArrowRight','PageUp','PageDown'].includes(e.key)){e.preventDefault();drawingPage+=e.key==='ArrowRight'||e.key==='PageDown'?1:-1;renderDrawing();return;}
+    if((e.key==='t'||e.key==='T')&&ready&&['model','analysis'].includes(workspaceMode)){e.preventDefault();toggleTerrain();return;}
     if((e.key==='f'||e.key==='F')&&ready&&['model','analysis'].includes(workspaceMode)){e.preventDefault();viewer.fit(selected.length?selected:null);return;}
     if(e.key==='Escape'&&ready&&selected.length)selectParts([]);
   });
@@ -109,8 +110,8 @@
     const bid=match[1];$('mapView').hidden=true;$('detailView').hidden=false;ready=false;selected=[];data=null;viewer?.cancel();$('memberTree').replaceChildren();$('inspector').replaceChildren();titleTag('h1');$('bridgeTitle').textContent=catalog.bridges.find(b=>b.id===bid)?.name||'Loading bridge…';$('crumb').hidden=false;$('modes').hidden=false;$('detailBadge').replaceChildren();$('modelDownload').removeAttribute('href');$('modelDownload').hidden=true;$('csvDownload').hidden=true;$('partSearch').value='';$('viewerStatus').hidden=false;$('viewerStatus').textContent='Loading bridge data…';$('partCount').textContent='';$('visibleCount').textContent='';mobilePane('inspector');
     activeCategory=null;registerPage=1;registerCategory=null;$('registerSearch').value='';document.body.dataset.screen='review';document.body.dataset.mode=workspaceMode;$('bridgeSelect').value=bid;
     detailAbort=new AbortController();try{const result=await api('/api/bridges/'+bid,{signal:detailAbort.signal});if(seq!==request)return;data=result;$('bridgeTitle').textContent=data.name;document.title=data.name+' · Indiana Bridge 3D';$('detailBadge').append(badge(data));$('modelDownload').href=data.model.url;$('modelDownload').download=bid+'.glb';$('modelDownload').hidden=false;$('csvDownload').href='/export/'+bid+'.csv';$('csvDownload').hidden=false;$('partCount').textContent=fmt(data.parts.length);prepareWorkspace();renderTree();tab='properties';setTab(tab);$('deckOpacity').value=100;$('opacityValue').textContent='100%';$('clipEnabled').checked=false;$('clipPosition').value=100;$('clipPosition').disabled=true;$('clipPosition').hidden=true;
-      if(!viewer)viewer=new window.BridgeViewer($('canvasHost'),id=>selectParts([id]),state=>{$('visibleCount').textContent=fmt(state.visible)+' / '+fmt(state.total)+' visible';$('clearIsolation').hidden=!state.isolated;});
-      const success=await viewer.load(data,text=>{if(seq===request)$('viewerStatus').textContent=text;});if(!success||seq!==request)return;ready=true;$('viewerStatus').hidden=true;renderCategoryChips();renderTree();renderInspector();activateWorkspace();document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view==='iso'));
+      if(!viewer){viewer=new window.BridgeViewer($('canvasHost'),id=>selectParts([id]),state=>{$('visibleCount').textContent=fmt(state.visible)+' / '+fmt(state.total)+' visible';$('clearIsolation').hidden=!state.isolated;});viewer.setTerrain(terrainOn);}
+      const success=await viewer.load(data,text=>{if(seq===request)$('viewerStatus').textContent=text;});if(!success||seq!==request)return;ready=true;syncTerrain();$('viewerStatus').hidden=true;renderCategoryChips();renderTree();renderInspector();activateWorkspace();document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view==='iso'));
       if(new URLSearchParams(location.search).get('fem')==='1')openWorkspace('analysis');
     }catch(e){if(e.name==='AbortError'||seq!==request)return;$('viewerStatus').textContent=e.message;error(e.message);}
   }
@@ -157,6 +158,11 @@
   $('showAll').onclick=()=>{if(ready){$('memberTree').replaceChildren();applyCategory(null);}};
   $('clearIsolation').onclick=()=>{if(ready)applyCategory(null);};
   $('fitModel').onclick=()=>{if(ready)viewer.fit();};
+  // Illustrative terrain: on by default, remembered per browser, never mistaken for survey data (the note says so).
+  let terrainOn=true;try{terrainOn=localStorage.getItem('ib3d-terrain')!=='off';}catch{}
+  function syncTerrain(){const has=!!viewer?.terrain;$('terrainToggle').disabled=!has;$('terrainToggle').setAttribute('aria-pressed',String(has&&terrainOn));$('terrainNote').hidden=!(has&&terrainOn);}
+  function toggleTerrain(){terrainOn=!terrainOn;try{localStorage.setItem('ib3d-terrain',terrainOn?'on':'off');}catch{}viewer?.setTerrain(terrainOn);syncTerrain();}
+  $('terrainToggle').onclick=()=>{if(ready)toggleTerrain();};syncTerrain();
   document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{if(!ready)return;viewer.fit(null,b.dataset.view);document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x===b));});
   $('deckOpacity').oninput=()=>{if(!ready)return;viewer.setDeckOpacity(+$('deckOpacity').value/100);$('opacityValue').textContent=$('deckOpacity').value+'%';};
   const clip=()=>{if(!ready)return;$('clipPosition').disabled=!$('clipEnabled').checked;$('clipPosition').hidden=!$('clipEnabled').checked;viewer.setClip($('clipEnabled').checked,+$('clipPosition').value);};$('clipEnabled').onchange=clip;$('clipPosition').oninput=clip;

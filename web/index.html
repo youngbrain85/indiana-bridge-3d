@@ -64,12 +64,14 @@
      <button id="fitModel" title="Fit model (F)" aria-keyshortcuts="F">Fit</button>
      <label class="tool-label" title="Opacity of deck and pavement surfaces">Deck<input id="deckOpacity" type="range" min="10" max="100" value="100"><output id="opacityValue">100%</output></label>
      <label class="tool-label clip-label"><input id="clipEnabled" type="checkbox">Section</label><input id="clipPosition" aria-label="Longitudinal section position" type="range" min="0" max="100" value="100" disabled hidden>
+     <button id="terrainToggle" aria-pressed="true" aria-keyshortcuts="T" title="Show or hide the illustrative terrain (T)">Terrain</button>
      <button id="clearIsolation" hidden>Show all</button>
      <button id="toggleInspector" class="icon-button" aria-pressed="true" aria-label="Details panel" title="Details panel"><svg><use href="#i-panel-right"/></svg></button>
     </div>
     <div id="viewerStatus" class="viewer-status" role="status">Preparing model…</div>
     <output id="visibleCount" aria-label="Visible component count"></output>
     <div id="femLegend" hidden aria-live="polite"></div>
+    <p id="terrainNote" class="terrain-note"><span class="note-long">Terrain is illustrative: generated from the abutment, pier and deck levels, not from survey data.</span><span class="note-short">Illustrative terrain, not surveyed</span></p>
     <div class="axis-note"><b>Y</b> ↑ <b>X</b> → <span>Local axes · m</span></div>
    </div>
   </section>
