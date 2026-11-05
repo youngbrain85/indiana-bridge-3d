@@ -55,13 +55,15 @@ const base=process.env.BRIDGE_TEST_URL||'http://127.0.0.1:8766';
     await page.waitForFunction(()=>window.bridgeManager.ready&&window.bridgeManager.data.id==='us52-mud');
     assert(await page.locator('#femLegend').isHidden());
     assert.equal(await page.evaluate(()=>window.bridgeManager.viewer.analysis),null);
+    // Every workspace bridge now has an analytical model (US 52 gained a collection model in b08d81e):
+    // switching bridges must load that bridge's own analysis, not keep the previous result.
     await page.locator('#openAnalysis').click();
-    await page.waitForFunction(()=>window.bridgeAnalysis.info?.available===false);
-    assert.equal(await page.locator('#femRun').count(),0);
+    await page.waitForFunction(()=>window.bridgeAnalysis.info?.available===true&&window.bridgeAnalysis.info.ledger?.bridge_id==='us52-mud');
+    assert.equal(await page.locator('#femRun').count(),1);
     await page.goto(base+'/analysis-guide',{waitUntil:'domcontentloaded'});
     assert.equal(await page.locator('h1').innerText(),'Bridge FEM methods and demonstrations');
     assert(await page.locator('#minnich-demo').isVisible());
     assert.equal(errors.length,0,errors.join('\n'));
-    console.log(JSON.stringify({passed:true,checks:['three real load cases','saved run switch','12 mapped girders','scaled vertical deformation','color reset','member selection','mobile overflow','bridge switch clears results','other bridges unavailable','method guide'],run_ids:runIds,page_errors:errors},null,2));
+    console.log(JSON.stringify({passed:true,checks:['three real load cases','saved run switch','12 mapped girders','scaled vertical deformation','color reset','member selection','mobile overflow','bridge switch clears results','switching bridges loads the new bridge analysis','method guide'],run_ids:runIds,page_errors:errors},null,2));
   }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

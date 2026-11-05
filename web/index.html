@@ -73,19 +73,33 @@
     <div class="axis-note"><b>Y</b> ↑ <b>X</b> → <span>Local axes · m</span></div>
    </div>
   </section>
+  <aside class="page-rail" aria-labelledby="pageRailTitle">
+   <div class="panel-head"><h2 id="pageRailTitle">Pages</h2><span id="pageRailCount" class="count"></span></div>
+   <div id="pageRail" class="page-rail-list"></div>
+  </aside>
+  <section class="drawing-stage" aria-labelledby="drawingTitle">
+   <div class="drawing-toolbar">
+    <button id="closeDrawing" hidden>← Back to 3D</button>
+    <h2 id="drawingTitle" class="sr-only">Drawing</h2>
+    <button id="prevPage" aria-label="Previous page" title="Previous page (←)">‹</button><label class="page-field"><span class="sr-only">PDF page</span><input id="pageNumber" type="number" min="1" value="1" aria-label="PDF page"></label><span id="pageTotal" class="muted"></span><button id="nextPage" aria-label="Next page" title="Next page (→)">›</button>
+    <button id="zoomToggle" aria-pressed="false">Actual size</button>
+    <a id="pdfOriginal" class="button" target="_blank" rel="noopener">Original PDF ↗</a>
+   </div>
+   <div class="drawing-sheet" id="drawingSheet"><p id="drawingLoading" role="status">Loading drawing…</p><img id="drawingImage" alt="Selected bridge drawing page"></div>
+  </section>
+ <section id="memberRegister" class="member-register" aria-labelledby="registerTitle">
+   <div class="register-heading"><div><h2 id="registerTitle">Component register</h2><p class="muted">Every modeled component with its type, location, modeling basis and source drawing pages.</p></div><a id="registerExport" class="button" download>Download CSV</a></div>
+   <div class="register-tabs" id="registerTabs" role="tablist" aria-label="Component category"></div>
+   <div class="register-filters"><label for="registerSearch" class="sr-only">Search components</label><input id="registerSearch" type="search" placeholder="Component ID, name or modeling basis"><label for="registerGroup" class="sr-only">Component type</label><select id="registerGroup"><option value="">All types</option></select><span id="registerCount" class="count-text"></span></div>
+   <div class="register-table-wrap"><table class="register-table"><thead><tr><th>Component</th><th>Type</th><th>Specified location</th><th>Modeling basis</th><th>Drawing pages</th></tr></thead><tbody id="registerBody"></tbody></table></div>
+   <div class="register-pagination"><button id="registerPrev">Previous</button><span id="registerPage"></span><button id="registerNext">Next</button></div>
+  </section>
   <aside class="inspector-panel" aria-label="Details">
    <div class="inspector-tabs" role="tablist" aria-label="Details"><button role="tab" data-tab="properties" aria-selected="true">Details</button><button role="tab" data-tab="coverage" aria-selected="false">Coverage</button></div>
    <div id="inspector" class="inspector-content" role="tabpanel"></div>
   </aside>
  </div>
- <section id="memberRegister" class="member-register" hidden aria-labelledby="registerTitle">
-  <div class="register-heading"><div><h2 id="registerTitle">Component register</h2><p class="muted">Every modeled component with its type, location, modeling basis and source drawing pages.</p></div><a id="registerExport" class="button" download>Download CSV</a></div>
-  <div class="register-filters"><label for="registerSearch" class="sr-only">Search components</label><input id="registerSearch" type="search" placeholder="Component ID, name or modeling basis"><label for="registerGroup" class="sr-only">Component type</label><select id="registerGroup"><option value="">All types</option></select><span id="registerCount" class="count-text"></span></div>
-  <div class="register-table-wrap"><table class="register-table"><thead><tr><th>Component</th><th>Type</th><th>Specified location</th><th>Modeling basis</th><th>Drawing pages</th></tr></thead><tbody id="registerBody"></tbody></table></div>
-  <div class="register-pagination"><button id="registerPrev">Previous</button><span id="registerPage"></span><button id="registerNext">Next</button></div>
- </section>
 </section>
 <div id="globalError" class="error-banner" role="alert" hidden></div>
 </main>
-<dialog id="drawingDialog" aria-labelledby="drawingTitle"><div class="dialog-head"><h2 id="drawingTitle"></h2><button id="closeDrawing" aria-label="Close drawing">Close</button></div><div class="drawing-toolbar"><button id="prevPage">Previous</button><label>PDF page <input id="pageNumber" type="number" min="1" value="1"></label><span id="pageTotal"></span><button id="nextPage">Next</button><a id="pdfOriginal" class="button" target="_blank" rel="noopener">Original PDF ↗</a></div><div class="drawing-sheet"><p id="drawingLoading" role="status">Loading drawing…</p><img id="drawingImage" alt="Selected bridge drawing page"></div></dialog>
 </body></html>
