@@ -30,7 +30,7 @@ sys.path.insert(0, str(ROOT))
 import server  # noqa: E402
 import pymupdf  # noqa: E402
 
-ASSET_EXT = {'model': '.glb', 'drawing': '.pdf', 'manifest': '.json', 'thumbnail': '.png'}
+ASSET_EXT = {'model': '.glb', 'render': '.glb', 'drawing': '.pdf', 'manifest': '.json', 'thumbnail': '.png'}
 PAGES = {'/': 'index.html', '/analysis-guide': 'analysis-guide.html', '/collection-status': 'collection-status.html',
          '/model-corrections': 'model-corrections.html', '/review': 'review.html'}
 STATIC_FILES = ['/ui.css', '/app.js', '/analysis.js', '/analysis.css',
@@ -41,7 +41,7 @@ PREFIX = (r'(?:api/|assets/|export/|map/|vendor/|analysis-guide|collection-statu
 
 def rewrite(text):
     """Make root-relative app URLs document-relative and give assets real extensions."""
-    text = re.sub(r'/assets/([a-z0-9-]+)/(model|drawing|manifest|thumbnail)(?![\w/.-])',
+    text = re.sub(r'/assets/([a-z0-9-]+)/(model|render|drawing|manifest|thumbnail)(?![\w/.-])',
                   lambda m: f'/assets/{m[1]}/{m[2]}{ASSET_EXT[m[2]]}', text)
     text = text.replace('/export/database', '/export/indiana_bridges.sqlite3')
     text = re.sub(r'(?<=["\'`(])/(?=' + PREFIX + r'|[?#])', './', text)
@@ -55,7 +55,7 @@ def local_path(url):
     """Map a server URL to the file it is stored as in the static site."""
     if url in PAGES:
         return PAGES[url]
-    m = re.fullmatch(r'/assets/([a-z0-9-]+)/(model|drawing|manifest|thumbnail)', url)
+    m = re.fullmatch(r'/assets/([a-z0-9-]+)/(model|render|drawing|manifest|thumbnail)', url)
     if m:
         return f'assets/{m[1]}/{m[2]}{ASSET_EXT[m[2]]}'
     if url == '/export/database':

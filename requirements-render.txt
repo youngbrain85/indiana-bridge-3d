@@ -1,0 +1,5 @@
+# Only for scripts/blender_render_model.py (textured display models). bpy wheels exist for one
+# Python version per Blender release: bpy 5.2 needs Python 3.13.
+bpy==5.2.3
+numpy
+Pillow

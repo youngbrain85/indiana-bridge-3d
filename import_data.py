@@ -6,6 +6,7 @@ import re
 import shutil
 import sqlite3
 import struct
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -35,7 +36,7 @@ def connect(path=DEFAULT_DB):
     return db
 
 
-def mesh_names(path):
+def glb_json(path):
     with path.open('rb') as stream:
         magic, version, total = struct.unpack('<4sII', stream.read(12))
         if magic != b'glTF' or version != 2 or total != path.stat().st_size:
@@ -43,8 +44,30 @@ def mesh_names(path):
         length, kind = struct.unpack('<II', stream.read(8))
         if kind != 0x4E4F534A:
             raise ValueError('Missing GLB JSON chunk')
-        doc = json.loads(stream.read(length))
-    return [n.get('name') for n in doc.get('nodes', []) if 'mesh' in n]
+        return json.loads(stream.read(length))
+
+
+def render_model(bid, bridge, registry_path, glb, names):
+    """Textured display copy built by scripts/blender_render_model.py, used only if it still matches the source GLB."""
+    rel = bridge['model'].get('render_glb')
+    if not rel:
+        return None
+    path = (registry_path.parent / rel).resolve()
+    if not path.is_file():
+        print(f'{bid}: render model {rel} is missing; the viewer uses the plain model', file=sys.stderr)
+        return None
+    doc = glb_json(path)
+    stamp = json.loads((doc.get('scenes') or [{}])[0].get('extras', {}).get('render_source', '{}'))
+    render_names = [n.get('name') for n in doc.get('nodes', []) if 'mesh' in n]
+    if stamp.get('sha256') != sha(glb) or sorted(render_names) != sorted(names):
+        print(f'{bid}: render model is stale (rebuild it with scripts/blender_render_model.py {bid}); '
+              'the viewer uses the plain model', file=sys.stderr)
+        return None
+    return path
+
+
+def mesh_names(path):
+    return [n.get('name') for n in glb_json(path).get('nodes', []) if 'mesh' in n]
 
 
 def explicit_location(part):
@@ -127,13 +150,14 @@ def import_all(db_path=DEFAULT_DB, registry_path=None):
             for page in part.get('pdf_pages', []):
                 if not isinstance(page, int) or not 1 <= page <= pages:
                     raise ValueError(f'{bid}/{part["id"]}: invalid PDF page {page}')
-        prepared.append((bridge, manifest, manifest_path, glb, source, pages))
+        render = render_model(bid, bridge, registry_path, glb, names)
+        prepared.append((bridge, manifest, manifest_path, glb, source, pages, render))
 
     db = connect(db_path)
     db.executescript((ROOT / 'schema.sql').read_text(encoding='utf-8'))
     with db:
         migrate_presentation(db)
-        for bridge, manifest, manifest_path, glb, source, pages in prepared:
+        for bridge, manifest, manifest_path, glb, source, pages, render in prepared:
             bid, model = bridge['id'], bridge['model']
             db.execute('DELETE FROM bridges WHERE id=?', (bid,))
             put(db, 'bridges', dict(
@@ -167,6 +191,8 @@ def import_all(db_path=DEFAULT_DB, registry_path=None):
                 return aid
 
             model_id = asset('model', glb, 'model.glb', 'model/gltf-binary')
+            if render:
+                asset('render', render, 'model_render.glb', 'model/gltf-binary')
             manifest_id = asset('manifest', manifest_path, 'manifest.json', 'application/json')
             pdf_id = asset('drawing', source, 'drawings.pdf', 'application/pdf', pages)
             thumb = (registry_path.parent / model.get('thumbnail', '')).resolve()

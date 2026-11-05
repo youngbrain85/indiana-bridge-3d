@@ -22,6 +22,7 @@
       "model": {
         "thumbnail": "bridges/beechwood/preview.png",
         "glb": "bridges/beechwood/model.glb",
+        "render_glb": "bridges/beechwood/model_render.glb",
         "deck_length_m": 76.8096,
         "spans": 3,
         "components": 622,
