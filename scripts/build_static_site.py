@@ -46,7 +46,7 @@ def rewrite(text):
     text = text.replace('/export/database', '/export/indiana_bridges.sqlite3')
     text = re.sub(r'(?<=["\'`(])/(?=' + PREFIX + r'|[?#])', './', text)
     text = text.replace('href="/"', 'href="./"')
-    text = text.replace("+'.png'", "+'.jpg'")  # drawing pages are exported as JPEG
+    text = text.replace("+'.png'", "+'.jpg'").replace("-thumb.png'", "-thumb.jpg'")  # drawing pages are exported as JPEG
     text = re.sub(r'\./(analysis-guide|collection-status|model-corrections|review)(?=["\'?#])', r'./\1.html', text)
     return text
 
@@ -99,6 +99,8 @@ def render_pages(pdf_path, out_dir, quality=72):
             scale = min(2.5, 1800 / sheet.rect.width)
             pixels = sheet.get_pixmap(matrix=pymupdf.Matrix(scale, scale), alpha=False)
             (out_dir / f'{number}.jpg').write_bytes(pixels.tobytes('jpeg', jpg_quality=quality))
+            small = sheet.get_pixmap(matrix=pymupdf.Matrix(min(2.5, 360 / sheet.rect.width), min(2.5, 360 / sheet.rect.width)), alpha=False)
+            (out_dir / f'{number}-thumb.jpg').write_bytes(small.tobytes('jpeg', jpg_quality=70))
     return number
 
 

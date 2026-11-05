@@ -9,12 +9,15 @@ import sqlite3
 import tempfile
 from contextlib import closing
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+import threading
 from pathlib import Path
 from urllib.parse import quote, unquote, urlsplit
 
 from import_data import ROOT, DEFAULT_DB, DEFAULT_REGISTRY, connect, import_all, sync_presentation, sha
 from fem.service import AnalysisService, BusyError
 
+
+RENDER_LOCK = threading.Lock()
 
 def decode(row):
     result = dict(row)
@@ -243,25 +246,29 @@ class Handler(BaseHTTPRequestHandler):
                 if not row:
                     return self.error('Asset not found')
                 return self.file(ROOT / row['relative_path'], row['mime'])
-            match = re.fullmatch(r'/api/drawing/([a-z0-9-]+)/(\d+)\.png', path)
+            # Full pages render 1800px wide; "-thumb" pages render 360px wide for the page list.
+            match = re.fullmatch(r'/api/drawing/([a-z0-9-]+)/(\d+)(-thumb)?\.png', path)
             if match:
                 row = db.execute("SELECT * FROM assets WHERE bridge_id=? AND kind='drawing'", (match[1],)).fetchone()
-                page = int(match[2])
+                page, thumb = int(match[2]), bool(match[3])
                 if not row or not 1 <= page <= row['page_count']:
                     return self.error('Drawing page not found')
-                cache = ROOT / 'data' / 'page_cache' / (row['sha256'][:16] + f'_{page}.png')
+                cache = ROOT / 'data' / 'page_cache' / (row['sha256'][:16] + f'_{page}' + ('_t' if thumb else '') + '.png')
                 if not cache.exists():
                     import fitz
-                    with fitz.open(ROOT / row['relative_path']) as pdf:
-                        sheet = pdf[page - 1]
-                        scale = min(2.5, 1800 / sheet.rect.width)
-                        pixels = sheet.get_pixmap(matrix=fitz.Matrix(scale, scale), alpha=False)
-                        cache.parent.mkdir(parents=True, exist_ok=True)
-                        # Atomic rename avoids two simultaneous requests reading a partial PNG.
-                        with tempfile.NamedTemporaryFile(dir=cache.parent, suffix='.png', delete=False) as tmp:
-                            tmp.write(pixels.tobytes('png'))
-                            temp = Path(tmp.name)
-                        temp.replace(cache)
+                    # PyMuPDF is not thread-safe; the threaded server renders one page at a time.
+                    with RENDER_LOCK:
+                        if not cache.exists():
+                            with fitz.open(ROOT / row['relative_path']) as pdf:
+                                sheet = pdf[page - 1]
+                                scale = min(2.5, (360 if thumb else 1800) / sheet.rect.width)
+                                pixels = sheet.get_pixmap(matrix=fitz.Matrix(scale, scale), alpha=False)
+                            cache.parent.mkdir(parents=True, exist_ok=True)
+                            # Atomic rename avoids two simultaneous requests reading a partial PNG.
+                            with tempfile.NamedTemporaryFile(dir=cache.parent, suffix='.png', delete=False) as tmp:
+                                tmp.write(pixels.tobytes('png'))
+                                temp = Path(tmp.name)
+                            temp.replace(cache)
                 return self.file(cache, 'image/png')
             if path == '/export/database':
                 with tempfile.TemporaryDirectory() as temp:
