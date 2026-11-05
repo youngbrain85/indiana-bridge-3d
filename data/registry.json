@@ -58,6 +58,7 @@
       "model": {
         "thumbnail": "bridges/21st-street-i465/preview.png",
         "glb": "bridges/21st-street-i465/model.glb",
+        "render_glb": "bridges/21st-street-i465/model_render.glb",
         "deck_length_m": 71.35495,
         "spans": 2,
         "components": 1944,
@@ -93,6 +94,7 @@
       "model": {
         "thumbnail": "bridges/us421-wildcat/preview.png",
         "glb": "bridges/us421-wildcat/model.glb",
+        "render_glb": "bridges/us421-wildcat/model_render.glb",
         "deck_length_m": 59.2836,
         "spans": 3,
         "components": 1057,
@@ -129,6 +131,7 @@
       "model": {
         "thumbnail": "bridges/us52-mud/preview.png",
         "glb": "bridges/us52-mud/model.glb",
+        "render_glb": "bridges/us52-mud/model_render.glb",
         "deck_length_m": 27.8892,
         "spans": 3,
         "components": 164,
@@ -344,6 +347,7 @@
       "model": {
         "thumbnail": "bridges/sr44-mud/preview.png",
         "glb": "bridges/sr44-mud/model.glb",
+        "render_glb": "bridges/sr44-mud/model_render.glb",
         "deck_length_m": 46.050200000000004,
         "spans": 3,
         "components": 383,
@@ -378,6 +382,7 @@
       "model": {
         "thumbnail": "bridges/sr8-yellow/preview.png",
         "glb": "bridges/sr8-yellow/model.glb",
+        "render_glb": "bridges/sr8-yellow/model_render.glb",
         "deck_length_m": 80.996,
         "spans": 5,
         "components": 331,
@@ -412,6 +417,7 @@
       "model": {
         "thumbnail": "bridges/sr1-wabash/preview.png",
         "glb": "bridges/sr1-wabash/model.glb",
+        "render_glb": "bridges/sr1-wabash/model_render.glb",
         "deck_length_m": 108.48340000000002,
         "spans": 4,
         "components": 78,
@@ -446,6 +452,7 @@
       "model": {
         "thumbnail": "bridges/us50-tanners-eb/preview.png",
         "glb": "bridges/us50-tanners-eb/model.glb",
+        "render_glb": "bridges/us50-tanners-eb/model_render.glb",
         "deck_length_m": 149.964775,
         "spans": 5,
         "components": 283,
@@ -481,6 +488,7 @@
       "model": {
         "thumbnail": "bridges/minnich-road/preview.png",
         "glb": "bridges/minnich-road/model.glb",
+        "render_glb": "bridges/minnich-road/model_render.glb",
         "deck_length_m": 126.4793,
         "spans": 4,
         "components": 474,
@@ -515,6 +523,7 @@
       "model": {
         "thumbnail": "bridges/fletcher-avenue/preview.png",
         "glb": "bridges/fletcher-avenue/model.glb",
+        "render_glb": "bridges/fletcher-avenue/model_render.glb",
         "deck_length_m": 91.00185000000002,
         "spans": 2,
         "components": 379,
@@ -549,6 +558,7 @@
       "model": {
         "thumbnail": "bridges/sr10-i65/preview.png",
         "glb": "bridges/sr10-i65/model.glb",
+        "render_glb": "bridges/sr10-i65/model_render.glb",
         "deck_length_m": 64.38265,
         "spans": 4,
         "components": 312,
@@ -583,6 +593,7 @@
       "ownership_note": "Matched 2025 NBI existing-crossing records: owner 01 and maintenance 01 (State Highway Agency). This is dated inventory evidence, not a new 2026 ownership certification.",
       "model": {
         "glb": "bridges/us35-deer/model.glb",
+        "render_glb": "bridges/us35-deer/model_render.glb",
         "deck_length_m": 35.7886,
         "deck_width_m": 11.684000000000001,
         "spans": 1,
@@ -619,6 +630,7 @@
       "ownership_note": "Matched 2025 NBI existing-crossing records: owner 01 and maintenance 01 (State Highway Agency). This is dated inventory evidence, not a new 2026 ownership certification.",
       "model": {
         "glb": "bridges/us224-eight-mile/model.glb",
+        "render_glb": "bridges/us224-eight-mile/model_render.glb",
         "deck_length_m": 13.7287,
         "deck_width_m": 14.224,
         "spans": 1,
@@ -655,6 +667,7 @@
       "model": {
         "thumbnail": "bridges/virginia-avenue/preview.png",
         "glb": "bridges/virginia-avenue/model.glb",
+        "render_glb": "bridges/virginia-avenue/model_render.glb",
         "deck_length_m": 36.76967500000001,
         "spans": 1,
         "components": 146,
@@ -689,6 +702,7 @@
       "model": {
         "thumbnail": "bridges/sr44-little-blue/preview.png",
         "glb": "bridges/sr44-little-blue/model.glb",
+        "render_glb": "bridges/sr44-little-blue/model_render.glb",
         "deck_length_m": 9.718675000000001,
         "spans": 1,
         "components": 37,
@@ -721,6 +735,7 @@
       "ownership_data_year": 2025,
       "model": {
         "glb": "bridges/sr1-six-mile/model.glb",
+        "render_glb": "bridges/sr1-six-mile/model_render.glb",
         "thumbnail": "bridges/sr1-six-mile/preview.png",
         "deck_length_m": 22.12975,
         "spans": 3,
