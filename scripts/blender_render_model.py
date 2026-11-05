@@ -13,8 +13,8 @@ model_render.glb next to it, which the 3D viewer shows instead when present:
   textures keep the same scale on every part;
 * TEXCOORD_1 is one shared atlas holding ambient occlusion baked with Cycles
   from the whole assembly (deck over girders, bearings under girders, ...).
-  Surfaces with modelled saw grooves only occlude: their 2 cm relief would
-  alias in the atlas;
+  Grooved riding surfaces, fasteners and loose riprap stones only occlude:
+  they are finer than an atlas texel;
 * the surface textures are generated here from seeded periodic noise, so the
   build is reproducible and needs no downloaded image assets.
 
@@ -46,8 +46,9 @@ TILE_M = {'concrete': 2.4, 'steel': 1.2}                     # metres covered by
 # Saw grooves (about 2 cm pitch) are far below an AO texel; baked onto them they only alias, so grooved
 # riding surfaces still occlude their neighbours but receive no baked AO.
 GROOVED = re.compile(r'\bgroove', re.I)
-# Bolts, nuts and washers are smaller than an AO texel but would take thousands of atlas islands.
-OCCLUDE_ONLY_LAYERS = {'fasteners'}
+# Bolts, nuts and washers are smaller than an AO texel, and the loose riprap stones of the (approximate)
+# site layer are hundreds of separate rocks: either would take most of the atlas for no visible gain.
+OCCLUDE_ONLY_LAYERS = {'fasteners', 'site'}
 
 
 def surface_class(part):

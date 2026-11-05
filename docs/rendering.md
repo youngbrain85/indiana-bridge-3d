@@ -32,14 +32,18 @@ transforms, the build stamp and the served bytes.
    1024 px (one repeat per 2.4 m), painted steel at 512 px (one repeat per 1.2 m). No downloaded images are used.
 4. Write `TEXCOORD_0` as a world-space box projection, so the texture scale is the same on every part.
 5. Unwrap all AO receivers into one 2048 px atlas (Smart UV Project, equal texel density, packed with an 8 px
-   margin; about 5 cm per texel on Beechwood).
+   margin; about 7 cm per texel on Beechwood).
 6. Bake AO with Cycles (256 samples, 2.5 m rays) on one joined copy of the assembly, so contact shading between
    deck, girders, bearings, caps and columns comes from the real neighbours. The result is softened slightly and
    never goes below 35 %.
 7. Export GLB with JPEG textures and a scene `extras.render_source` stamp holding the SHA-256 of the source GLB.
 
-The deck and approach slabs model their saw grooves (about 2 cm pitch) as geometry. That relief is far below an
-AO texel and aliases into moiré, so grooved riding surfaces occlude their neighbours but receive no baked AO.
+Some parts occlude their neighbours but receive no baked AO:
+
+- the deck and approach slabs, which model their saw grooves (about 2 cm pitch) as geometry. That relief is far
+  below an AO texel and aliases into moiré;
+- bolts, nuts and washers, which are smaller than a texel;
+- the riprap stones of the approximate site layer: hundreds of loose rocks would take most of the atlas.
 
 ## In the app
 
@@ -49,7 +53,7 @@ AO texel and aliases into moiré, so grooved riding surfaces occlude their neigh
 - `/api/bridges/<id>` then includes `model.render_url` (`/assets/<id>/render`, `assets/<id>/render.glb` in the static site).
 - The viewer keeps the textures, normal map and AO map from the display GLB on its per-part materials. Analysis
   colours, deck opacity, sectioning and selection work as before. On software WebGL the normal maps are skipped.
-- Beechwood's display model is about 16 MiB, compared with 7 MiB for the plain model. The textures are shared,
+- Beechwood's display model is about 14 MiB, compared with 7 MiB for the plain model. The textures are shared,
   so most of the increase is the two texture-coordinate sets.
 
 ## Limits
