@@ -229,6 +229,10 @@ body[data-mode=members] .workbench{grid-template-columns:minmax(0,1fr) 340px}
 #visibleCount{position:absolute;z-index:2;right:16px;bottom:12px;color:var(--canvas-ink);font-size:12px}
 .axis-note{position:absolute;z-index:2;left:14px;bottom:12px;color:var(--canvas-ink);font-size:12px}
 .axis-note span{margin-left:6px}
+.terrain-note{position:absolute;z-index:2;left:14px;bottom:34px;max-width:min(420px,calc(100% - 180px));color:var(--canvas-ink);font-size:12px;line-height:1.4}
+.canvas-host:has(#femLegend:not([hidden])) .terrain-note{display:none}
+.note-short{display:none}
+#terrainToggle[aria-pressed=true]{background:var(--active);font-weight:600}
 .inspector-tabs{display:flex;gap:18px;padding:0 20px;border-bottom:1px solid var(--border);flex:none}
 .inspector-tabs button{height:44px;padding:2px 0 0;border:0;border-bottom:2px solid transparent;border-radius:0;background:none;color:var(--muted)}
 .inspector-tabs button:hover:not(:disabled){background:none;color:var(--text)}
@@ -386,6 +390,9 @@ body[data-mode=members] .workbench{grid-template-columns:minmax(0,1fr) 340px}
   .viewer-toolbar{top:8px;left:8px;right:8px;max-width:calc(100% - 16px);gap:2px}
   .viewer-toolbar .icon-button,.tool-label:first-of-type{display:none}
   .axis-note{display:none}
+  .terrain-note{left:16px;bottom:10px;max-width:55%}
+  .note-long{display:none}
+  .note-short{display:inline}
   .member-register{padding:16px}
   body[data-mode=drawings] .detail-view{grid-template-rows:50vh auto minmax(0,1fr)}
   body[data-mode=drawings] .drawing-stage{grid-row:1}
