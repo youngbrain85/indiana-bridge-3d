@@ -7,8 +7,9 @@ requirements-render.txt). The source model.glb stays the authoritative
 geometry for the register, FEM and downloads. This script writes
 model_render.glb next to it, which the 3D viewer shows instead when present:
 
-* every mesh keeps its node name and its triangles (positions unchanged; only
-  the winding of inward-facing triangles is made consistent);
+* every mesh keeps its node name and its triangles (only the winding of
+  inward-facing triangles is made consistent; after compression positions are
+  16-bit per mesh, within about 1 mm);
 * TEXCOORD_0 is a world-space box projection, so the tileable surface
   textures keep the same scale on every part;
 * TEXCOORD_1 is one shared atlas holding ambient occlusion baked with Cycles
@@ -18,8 +19,10 @@ model_render.glb next to it, which the 3D viewer shows instead when present:
 * the surface textures are generated here from seeded periodic noise, so the
   build is reproducible and needs no downloaded image assets.
 
-The scene extras record the SHA-256 of the source GLB; the importer and the
-tests reject a display model that no longer matches its source.
+The export is then meshopt-compressed (scripts/compress_render_model.mjs) and
+compared with model.glb (scripts/check_render_models.mjs); both need Node.js and
+`npm ci`. The scene extras record the SHA-256 of the source GLB; the importer
+and the tests reject a display model that no longer matches its source.
 """
 import argparse
 import hashlib
