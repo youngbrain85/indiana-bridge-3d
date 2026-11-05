@@ -129,55 +129,108 @@ class BridgeViewer {
   setTerrain(visible){this.terrainVisible=visible;if(this.terrain)this.terrain.visible=visible&&!this.analysisGeometry;if(this.grid)this.grid.visible=!(this.terrain&&visible)&&!this.analysisGeometry;this.render();}
   // Illustrative site, not survey data: a valley floor at the pier/abutment base level, 1:2 approach embankments
   // carrying the road to the deck ends, and (for waterways) a channel with water under the longest span.
-  buildTerrain(){this.clearTerrain();const meshes=[...this.meshes.values()],boxOf=m=>new THREE.Box3().setFromObject(m),boxes=layers=>{const b=new THREE.Box3();for(const m of meshes)if(layers.includes(m.userData.part.layer))b.expandByObject(m);return b;};
-    const deck=boxes(['deck','road_surface','wearing']);if(deck.isEmpty())return false;
+  // Fill follows the model: it stops at the abutment faces (skewed faces included), stays below the
+  // superstructure in the openings and follows the road profile, so grade and skew do not bury the bridge.
+  buildTerrain(){this.clearTerrain();
+    const meshes=[...this.meshes.values()],layer=m=>m.userData.part.layer,pick=layers=>meshes.filter(m=>layers.includes(layer(m)));
+    const boxOf=m=>new THREE.Box3().setFromObject(m),union=list=>{const b=new THREE.Box3();for(const m of list)b.expandByObject(m);return b;};
+    const each=(list,fn)=>{for(const m of list){const a=m.geometry.attributes.position;for(let i=0;i<a.count;i++)fn(a.getX(i),a.getY(i),a.getZ(i));}};
+    const deckMeshes=pick(['deck','road_surface','wearing']),deck=union(deckMeshes);if(deck.isEmpty())return false;
     const x0=deck.min.x,x1=deck.max.x,L=Math.max(x1-x0,5),zc=(deck.min.z+deck.max.z)/2,halfW=(deck.max.z-deck.min.z)/2,mid=(x0+x1)/2;
-    const piers=meshes.filter(m=>m.userData.part.layer==='piers').map(boxOf),abuts=meshes.filter(m=>m.userData.part.layer==='abutments').map(boxOf);
-    const sup=boxes(['girders','box_beams','steel','arches','truss_chords','floor_system']);
+    const supMeshes=pick(['girders','box_beams','steel','arches','truss_chords','floor_system']),sup=union(supMeshes);
+    const piers=pick(['piers']).map(boxOf),abutMeshes=pick(['abutments']),abuts=abutMeshes.map(boxOf);
     let floor=piers.length?Math.min(...piers.map(b=>b.min.y)):abuts.length?Math.min(...abuts.map(b=>b.min.y))+1.5:deck.min.y-6;
     if(!sup.isEmpty())floor=Math.min(floor,sup.min.y-2);floor=Math.min(floor,deck.min.y-2.5);
-    const west=abuts.filter(b=>b.getCenter(new THREE.Vector3()).x<mid),east=abuts.filter(b=>b.getCenter(new THREE.Vector3()).x>=mid);
-    const xw=west.length?Math.max(...west.map(b=>b.max.x)):x0,xe=east.length?Math.min(...east.map(b=>b.min.x)):x1;
-    const ends=meshes.filter(m=>['deck','road_surface','wearing','approaches'].includes(m.userData.part.layer)).map(boxOf);
-    const roadTop=side=>{const near=ends.filter(b=>side<0?b.min.x<x0+4:b.max.x>x1-4);return near.length?Math.max(...near.map(b=>b.max.y)):deck.max.y;};
-    const roadEnd=side=>{const a=meshes.filter(m=>m.userData.part.layer==='approaches').map(boxOf).filter(b=>side<0?b.max.x<mid:b.min.x>mid);return a.length?(side<0?Math.min(...a.map(b=>b.min.x)):Math.max(...a.map(b=>b.max.x))):(side<0?x0:x1);};
-    const rw=roadTop(-1),re=roadTop(1),shoulder=halfW+1.5,slope=2;
-    const embank=(x,z)=>{const dz=Math.max(0,Math.abs(z-zc)-shoulder)/slope;return Math.max((x<=xw?rw:rw-(x-xw)/slope)-dz,(x>=xe?re:re-(xe-x)/slope)-dz)-.25;};
+    // Abutment front face per side: the edge of the abutments' plan footprint (convex hull) that faces the span,
+    // as x(z). Skewed abutments give a skewed face; s is its mean skew across the deck.
+    // Only parts spanning most of the deck width count (caps, stems, bents): wing walls and seats are narrow and,
+    // at the obtuse corners of a skewed bridge, can sit past the centre line.
+    const wide=abutMeshes.filter(m=>{const b=boxOf(m);return b.max.z-b.min.z>=halfW;}),faceParts=wide.length?wide:abutMeshes;
+    // Plan edge x(z) of a group of parts: the convex-hull side with the largest (sign 1) or smallest (sign -1) x.
+    // Past the parts' ends it continues along the fitted skew line, so a skewed opening stays open beyond the deck.
+    const envelope=(list,sign)=>{const byZ=new Map();let bottom=Infinity;
+      // One point per z (the extreme x), so corners shared by an end and a side edge cannot pick the wrong end.
+      each(list,(x,y,z)=>{bottom=Math.min(bottom,y);const k=Math.round(z*1000),v=byZ.get(k);if(v===undefined||sign*(x-v)>0)byZ.set(k,x);});
+      const pts=[...byZ].map(([k,x])=>[k/1000,x]),hull=[];pts.sort((p,q)=>p[0]-q[0]);
+      for(const p of pts){while(hull.length>=2){const a=hull[hull.length-2],b=hull[hull.length-1];if(sign*((b[0]-a[0])*(p[1]-a[1])-(b[1]-a[1])*(p[0]-a[0]))>=0)hull.pop();else break;}hull.push(p);}
+      const onHull=z=>{let i=1;while(i<hull.length-1&&hull[i][0]<z)i++;const a=hull[i-1],b=hull[i]||a;return a[1]+(b[1]-a[1])*(z-a[0])/((b[0]-a[0])||1);};
+      const zs=[...Array(11)].map((_,k)=>zc-halfW+k*halfW/5).map(z=>Math.min(hull[hull.length-1][0],Math.max(hull[0][0],z))),xsF=zs.map(onHull);
+      const mz=zs.reduce((t,z)=>t+z,0)/11,mx=xsF.reduce((t,x)=>t+x,0)/11,var_=zs.reduce((t,z)=>t+(z-mz)**2,0);
+      const s=var_>1e-6?zs.reduce((t,z,k)=>t+(z-mz)*(xsF[k]-mx),0)/var_:0,line=z=>mx+s*(z-mz);
+      const at=z=>z<hull[0][0]||z>hull[hull.length-1][0]?line(z):onHull(z);
+      return {at,a:at(zc),s,bottom};};
+    const face=side=>{const list=faceParts.filter(m=>(boxOf(m).getCenter(new THREE.Vector3()).x<mid)===(side<0));
+      if(!list.length){const x=side<0?x0:x1;return {at:()=>x,a:x,s:0,bottom:null};}
+      return envelope(list,side<0?1:-1);};
+    const W=face(-1),E=face(1),skew=(W.s+E.s)/2,cosW=Math.hypot(1,W.s),cosE=Math.hypot(1,E.s),cosK=Math.hypot(1,skew);
+    const into=(f,side,x,z)=>side<0?(x-f.at(z))/cosW:(f.at(z)-x)/cosE;  // distance into the span
+    // Road surface and soffit profiles along the bridge (1 m bins, nearest value fills gaps and the ends).
+    const sx=L+2*Math.max(30,L*.5),sz=2*Math.max(45,L*.45,halfW*4),cz=zc,xs=mid-sx/2,nb=Math.ceil(sx)+1;
+    const profile=(list,pickY)=>{const v=new Array(nb).fill(null);each(list,(x,y,z)=>{if(Math.abs(z-zc)>halfW+.5)return;const i=Math.round(x-xs);if(i<0||i>=nb)return;v[i]=v[i]===null?y:pickY(v[i],y);});
+      let last=null;for(let i=0;i<nb;i++){if(v[i]!==null)last=v[i];else v[i]=last;}last=null;for(let i=nb-1;i>=0;i--){if(v[i]!==null&&last===null)last=v[i];if(v[i]===null)v[i]=last;}return v;};
+    const tops=profile([...deckMeshes,...pick(['approaches'])],Math.max),soffits=profile([...deckMeshes,...supMeshes],Math.min);
+    // Under the girders (where there are any) the fill also stays clear of the bearing seats behind the faces.
+    const girderBottom=supMeshes.length?profile(supMeshes,Math.min):null,sx0=sup.isEmpty()?0:sup.min.x,sx1=sup.isEmpty()?0:sup.max.x;
+    const at=(v,x)=>v[Math.min(nb-1,Math.max(0,Math.round(x-xs)))]??deck.max.y;
+    const shoulder=halfW+1.5,slope=2,lat=z=>Math.max(0,Math.abs(z-zc)-shoulder)/slope;
+    // In an opening the fill starts just above the abutment footing (or under the soffit) and falls 1:2 to the floor;
+    // behind the face it carries the road.
+    const start=f=>Math.min(at(soffits,f.a)-.4,f.bottom===null?Infinity:f.bottom+.8);
+    const sW=start(W),sE=start(E);
+    // Under the slabs the fill sits a little below the crown, so cross-fall does not bury kerbs and barriers;
+    // past the approach slabs it meets the approach road.
+    const slabs=union([...deckMeshes,...pick(['approaches'])]);
+    const fill=(x,z)=>{const dW=into(W,-1,x,z),dE=into(E,1,x,z),road=at(tops,x)-(x>=slabs.min.x&&x<=slabs.max.x?.2:.08)-lat(z);
+      let h=Math.max(dW<=0?road:sW-dW/slope-lat(z),dE<=0?road:sE-dE/slope-lat(z));
+      if(Math.abs(z-zc)<=halfW+1){if(dW>0&&dE>0)h=Math.min(h,at(soffits,x)-.4);else if(girderBottom&&x>=sx0&&x<=sx1)h=Math.min(h,at(girderBottom,x)-.6);}
+      // In a narrow opening the spill slopes would meet above the water, so the channel is cut into them too
+      // (not at the abutment faces themselves).
+      if(dW>0&&dE>0)h-=channel(x,z)*THREE.MathUtils.smoothstep(Math.min(dW,dE),0,2.5);return h;};
     const crossing=this.data.waterway||'',water=/river|creek|run|branch|fork|ditch|brook|stream/i.test(crossing),road=!water&&/\b(I|US|SR)-? ?\d+|interstate|road|street|avenue|ramp|highway/i.test(crossing);
-    // The channel runs under the longest span between supports (abutment faces and pier centres).
-    const supports=[xw,...piers.map(b=>b.getCenter(new THREE.Vector3()).x).sort((a,b)=>a-b),xe],spans=supports.slice(1).map((x,i)=>[(x+supports[i])/2,x-supports[i]]).sort((a,b)=>b[1]-a[1]);
-    const [cx,gap]=spans[0][1]>1?spans[0]:[mid,Math.max(L,2)];
+    // The channel (or the crossed road) runs under the longest span, parallel to the abutment faces.
+    const supports=[W.a,...piers.map(b=>b.getCenter(new THREE.Vector3()).x).sort((a,b)=>a-b),E.a],spans=supports.slice(1).map((x,i)=>[(x+supports[i])/2,x-supports[i]]).sort((a,b)=>b[1]-a[1]);
+    const [cx,gapX]=spans[0][1]>1?spans[0]:[mid,Math.max(L,2)],gap=gapX/cosK;
+    const across=(x,z)=>Math.abs(x-cx-skew*(z-zc))/cosK;
     const depth=1.8,half=Math.min(gap*.28,14),bank=depth*3;
-    const channel=x=>{if(!water)return 0;const d=Math.abs(x-cx);return d<=half?depth:d>=half+bank?0:depth*(1-(d-half)/bank);};
-    const sx=L+2*Math.max(30,L*.5),sz=2*Math.max(45,L*.45,halfW*4),cxT=mid,cz=zc;
-    // Gentle rolls away from the bridge; none along the river or road corridor, so the water and road stay level.
+    const channel=(x,z)=>{if(!water)return 0;const d=across(x,z);return d<=half?depth:d>=half+bank?0:depth*(1-(d-half)/bank);};
+    // Gentle rolls (never below the floor) away from the bridge; none along the river or road corridor.
     const corridor=water||road?half+bank+3:0;
-    const roll=(x,z)=>{const k=THREE.MathUtils.smoothstep(Math.abs(z-zc),halfW+8,halfW+45)*(corridor?THREE.MathUtils.smoothstep(Math.abs(x-cx),corridor,corridor+12):1);return k*(Math.sin(x*.045+1.3)*Math.cos(z*.038)*.9+Math.sin(x*.11+z*.07)*.25);};
-    const height=(x,z)=>Math.max(floor-channel(x)+roll(x,z),embank(x,z));
+    const roll=(x,z)=>{const k=THREE.MathUtils.smoothstep(Math.abs(z-zc),halfW+8,halfW+45)*(corridor?THREE.MathUtils.smoothstep(across(x,z),corridor,corridor+12):1);return k*(1.15+Math.sin(x*.045+1.3)*Math.cos(z*.038)*.9+Math.sin(x*.11+z*.07)*.25);};
+    const height=(x,z)=>Math.max(floor-channel(x,z)+roll(x,z),fill(x,z));
     const nx=Math.min(360,Math.max(60,Math.round(sx/1.2))),nz=Math.min(240,Math.max(50,Math.round(sz/1.2)));
-    const geom=new THREE.PlaneGeometry(sx,sz,nx,nz);geom.rotateX(-Math.PI/2);geom.translate(cxT,0,cz);
+    const geom=new THREE.PlaneGeometry(sx,sz,nx,nz);geom.rotateX(-Math.PI/2);geom.translate(mid,0,cz);
     const pos=geom.attributes.position;let minY=Infinity;for(let i=0;i<pos.count;i++){const y=height(pos.getX(i),pos.getZ(i));pos.setY(i,y);minY=Math.min(minY,y);}geom.computeVertexNormals();
     const grass=new THREE.Color('#5d6a48'),soil=new THREE.Color('#7a6b52'),colors=new Float32Array(pos.count*3),c=new THREE.Color(),nrm=geom.attributes.normal;
     // Fill slopes (1:2) read as drier grass with a crisp edge at the slope break; only the channel banks read as wet soil.
-    for(let i=0;i<pos.count;i++){const x=pos.getX(i),z=pos.getZ(i),steep=THREE.MathUtils.smoothstep(1-nrm.getY(i),.05,.08)*.55,wet=water?1-THREE.MathUtils.smoothstep(Math.abs(x-cx),half+bank,half+bank+1.5):0;
+    for(let i=0;i<pos.count;i++){const x=pos.getX(i),z=pos.getZ(i),steep=THREE.MathUtils.smoothstep(1-nrm.getY(i),.05,.08)*.55,wet=water?1-THREE.MathUtils.smoothstep(across(x,z),half+bank,half+bank+1.5):0;
       const jitter=.94+.12*(Math.sin(x*12.9898+z*78.233)*43758.5453%1+1)%1;c.copy(grass).lerp(soil,Math.max(steep,wet*.8)).multiplyScalar(jitter);colors.set([c.r,c.g,c.b],i*3);}
     geom.setAttribute('color',new THREE.BufferAttribute(colors,3));
     const group=new THREE.Group();group.name='terrain';
     const ground=new THREE.Mesh(geom,new THREE.MeshStandardMaterial({vertexColors:true,roughness:1,metalness:0}));ground.receiveShadow=true;ground.userData.blocksPick=true;group.add(ground);
     // Skirt: the site reads as a cut-out block, which marks it as illustrative rather than surveyed.
-    const base=minY-4,skirt=[],edge=(ix,iz)=>pos.getY(iz*(nx+1)+ix),px=ix=>cxT-sx/2+ix*sx/nx,pz=iz=>cz-sz/2+iz*sz/nz;
+    const base=Math.min(minY-4,this.bounds.min.y-1),skirt=[],edge=(ix,iz)=>pos.getY(iz*(nx+1)+ix),px=ix=>xs+ix*sx/nx,pz=iz=>cz-sz/2+iz*sz/nz;
     const wall=(pts)=>{for(let i=0;i<pts.length-1;i++){const [a,b]=[pts[i],pts[i+1]];skirt.push(a[0],a[1],a[2],b[0],b[1],b[2],b[0],base,b[2],a[0],a[1],a[2],b[0],base,b[2],a[0],base,a[2]);}};
     wall([...Array(nx+1)].map((_,ix)=>[px(ix),edge(ix,0),pz(0)]));wall([...Array(nx+1)].map((_,ix)=>[px(ix),edge(ix,nz),pz(nz)]));
     wall([...Array(nz+1)].map((_,iz)=>[px(0),edge(0,iz),pz(iz)]));wall([...Array(nz+1)].map((_,iz)=>[px(nx),edge(nx,iz),pz(iz)]));
     const sg=new THREE.BufferGeometry();sg.setAttribute('position',new THREE.Float32BufferAttribute(skirt,3));sg.computeVertexNormals();
     group.add(new THREE.Mesh(sg,new THREE.MeshStandardMaterial({color:'#4a4133',roughness:1,metalness:0,side:THREE.DoubleSide})));
-    if(water){const w=new THREE.Mesh(new THREE.PlaneGeometry(2*(half+bank*(1-.6/depth)),sz),new THREE.MeshStandardMaterial({color:'#38545d',roughness:.12,metalness:0,transparent:true,opacity:.86}));w.rotation.x=-Math.PI/2;w.position.set(cx,floor-.6,cz);w.receiveShadow=true;w.userData.blocksPick=true;group.add(w);}
-    // Approach roads continue from the approach slabs to the edge of the site.
+    // Water fills the whole block at one level; the terrain hides it everywhere but the channel, whatever the skew.
+    if(water){const wg=new THREE.PlaneGeometry(sx,sz);wg.rotateX(-Math.PI/2);const w=new THREE.Mesh(wg,new THREE.MeshStandardMaterial({color:'#38545d',roughness:.12,metalness:0,transparent:true,opacity:.86}));w.position.set(mid,floor-.6,cz);w.receiveShadow=true;w.userData.blocksPick=true;group.add(w);}
     const asphalt=new THREE.MeshStandardMaterial({color:'#36393b',roughness:.95,metalness:0});
+    // A ribbon along a plan line x = cx + s(z - zc), clipped to the block.
+    const ribbon=(width,y,material)=>{const zs=[cz-sz/2,cz+sz/2].map(z=>[cx+skew*(z-zc),z]).map(([x,z])=>x<xs?[xs,zc+(xs-cx)/(skew||1e-9)]:x>xs+sx?[xs+sx,zc+(xs+sx-cx)/(skew||1e-9)]:[x,z]);
+      const len=Math.hypot(zs[1][0]-zs[0][0],zs[1][1]-zs[0][1]),g=new THREE.PlaneGeometry(width,len);g.rotateX(-Math.PI/2);
+      const r=new THREE.Mesh(g,material);r.rotation.y=Math.atan(skew);r.position.set((zs[0][0]+zs[1][0])/2,y,(zs[0][1]+zs[1][1])/2);r.receiveShadow=true;r.userData.blocksPick=true;group.add(r);};
     // Overpasses: the crossed road runs under the longest span (illustrative width).
-    if(road){const width=Math.min(gap*.6,26);const r=new THREE.Mesh(new THREE.PlaneGeometry(width,sz),asphalt.clone());r.rotation.x=-Math.PI/2;r.position.set(cx,floor+.03,cz);r.receiveShadow=true;r.userData.blocksPick=true;group.add(r);
-      const line=new THREE.Mesh(new THREE.PlaneGeometry(.15,sz),new THREE.MeshStandardMaterial({color:'#c9b46a',roughness:.8,metalness:0}));line.rotation.x=-Math.PI/2;line.position.set(cx,floor+.05,cz);line.userData.blocksPick=true;group.add(line);}
-    for(const [side,from,to,y] of [[-1,cxT-sx/2,roadEnd(-1),rw],[1,roadEnd(1),cxT+sx/2,re]]){if(to-from<.5)continue;const r=new THREE.Mesh(new THREE.PlaneGeometry(to-from,2*halfW),asphalt.clone());r.rotation.x=-Math.PI/2;r.position.set((from+to)/2,y-.03,zc);r.receiveShadow=true;r.userData.blocksPick=true;group.add(r);}
+    if(road){ribbon(Math.min(gap*.6,26),floor+.03,asphalt.clone());ribbon(.15,floor+.05,new THREE.MeshStandardMaterial({color:'#c9b46a',roughness:.8,metalness:0}));}
+    // Approach roads continue from the outer ends of the approach slabs (or the deck), cut on the same skew,
+    // to the edge of the block, just under the slab tops.
+    const carriers=[...deckMeshes,...pick(['approaches'])];
+    for(const side of [-1,1]){const list=carriers.filter(m=>(boxOf(m).getCenter(new THREE.Vector3()).x<mid)===(side<0)),end=envelope(list.length?list:carriers,side<0?-1:1);
+      const zA=zc-halfW,zB=zc+halfW,xEdge=side<0?xs:xs+sx,y=at(tops,end.a)-.03,quad=[[xEdge,zA],[end.at(zA),zA],[end.at(zB),zB],[xEdge,zB]];
+      if(Math.abs(end.a-xEdge)<.5)continue;
+      const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(quad.flatMap(([x,z])=>[x,y,z]),3));g.setIndex(side<0?[0,2,1,0,3,2]:[0,1,2,0,2,3]);g.computeVertexNormals();
+      const r=new THREE.Mesh(g,asphalt.clone());r.receiveShadow=true;r.userData.blocksPick=true;group.add(r);}
     asphalt.dispose();group.visible=this.terrainVisible;this.terrain=group;this.scene.add(group);if(this.grid)this.grid.visible=!this.terrainVisible;return true;}
   setDeckOpacity(value){this.opacity=value;for(const mesh of this.meshes.values()){const layer=mesh.userData.part.layer;if(['deck','wearing','road_surface'].includes(layer)&&!mesh.material.userData.shared){mesh.material.opacity=value;mesh.material.transparent=value<1;mesh.material.depthWrite=value>=1;mesh.castShadow=value>=1;mesh.material.needsUpdate=true;}}this.render();}
   setClip(enabled,percent){this.clipping=enabled;if(!this.bounds)return;this.plane.constant=THREE.MathUtils.lerp(this.bounds.min.x-.02,this.bounds.max.x+.02,percent/100);for(const m of [...this.meshes.values(),...(this.terrain?.children||[])]){m.material.clippingPlanes=enabled?[this.plane]:[];m.material.needsUpdate=true;}this.render();}
