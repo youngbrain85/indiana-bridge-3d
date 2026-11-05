@@ -4,9 +4,19 @@
   "private": true,
   "description": "Local Indiana bridge models, component explorer, source drawings and map",
   "scripts": {
-    "build": "node build.cjs",
+    "build": "node build.cjs && node scripts/check_render_models.mjs",
+    "check:render": "node scripts/check_render_models.mjs",
     "test:browser": "node test_browser.cjs"
   },
-  "dependencies": { "three": "0.180.0" },
-  "devDependencies": { "esbuild": "0.25.10", "playwright": "1.58.2" }
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "4.5.1",
+    "@gltf-transform/extensions": "4.5.1",
+    "@gltf-transform/functions": "4.5.1",
+    "esbuild": "0.25.10",
+    "meshoptimizer": "1.2.0",
+    "playwright": "1.58.2"
+  }
 }

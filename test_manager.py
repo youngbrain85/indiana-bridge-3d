@@ -5,7 +5,6 @@ import struct
 import tempfile
 import threading
 import unittest
-from array import array
 from pathlib import Path
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
@@ -16,18 +15,15 @@ from server import make_server, bridges
 ROOT = Path(__file__).resolve().parent
 
 
-def glb_meshes(path):
-    """Local triangles (in canonical order) and world matrix of every mesh node, read with the standard library."""
+def glb_outline(path):
+    """Triangle count, world bounds and quantization step of every mesh node, from the GLB JSON alone.
+
+    Display models are meshopt-compressed, so the standard library cannot read their vertices; the
+    triangle-by-triangle comparison is scripts/check_render_models.mjs (run by `npm run build`).
+    """
     data = path.read_bytes()
-    length = struct.unpack_from('<I', data, 12)[0]
-    doc, binary = json.loads(data[20:20 + length]), 28 + length
-    def accessor(index):
-        a = doc['accessors'][index]
-        view = doc['bufferViews'][a['bufferView']]
-        start = binary + view.get('byteOffset', 0) + a.get('byteOffset', 0)
-        code, width = {5126: ('f', 4), 5125: ('I', 4), 5123: ('H', 2), 5121: ('B', 1)}[a['componentType']]
-        size = {'SCALAR': 1, 'VEC2': 2, 'VEC3': 3}[a['type']] * a['count']
-        return array(code, data[start:start + size * width])
+    doc = json.loads(data[20:20 + struct.unpack_from('<I', data, 12)[0]])
+    scale_of = {5126: 1, 5122: 32767, 5123: 65535, 5120: 127, 5121: 255}
     def local(node):
         if 'matrix' in node:
             return node['matrix']
@@ -42,17 +38,21 @@ def glb_meshes(path):
     meshes = {}
     def visit(index, parent):
         node = doc['nodes'][index]
-        world = times(parent, local(node))
+        m = times(parent, local(node))
         if 'mesh' in node:
-            triangles = []
+            triangles, corners, step = 0, [], 0.0
             for primitive in doc['meshes'][node['mesh']]['primitives']:
-                xyz = accessor(primitive['attributes']['POSITION'])
-                corners = accessor(primitive['indices']) if 'indices' in primitive else range(len(xyz) // 3)
-                points = [tuple(xyz[i * 3:i * 3 + 3]) for i in corners]
-                triangles += [tuple(sorted(points[i:i + 3])) for i in range(0, len(points), 3)]
-            meshes[node['name']] = (sorted(triangles), world)
+                a = doc['accessors'][primitive['attributes']['POSITION']]
+                divisor = scale_of[a['componentType']] if a.get('normalized') else 1
+                low, high = [v / divisor for v in a['min']], [v / divisor for v in a['max']]
+                corners += [[(low, high)[(k >> i) & 1][i] for i in range(3)] for k in range(8)]
+                triangles += doc['accessors'][primitive['indices']]['count'] // 3 if 'indices' in primitive else a['count'] // 3
+                step = max(step, max(math.hypot(*m[c * 4:c * 4 + 3]) for c in range(3)) / divisor if divisor > 1 else 0)
+            world = [[sum(m[k * 4 + r] * p[k] for k in range(3)) + m[12 + r] for r in range(3)] for p in corners]
+            meshes[node['name']] = (triangles, [min(w[i] for w in world) for i in range(3)],
+                                    [max(w[i] for w in world) for i in range(3)], step)
         for child in node.get('children', []):
-            visit(child, world)
+            visit(child, m)
     identity = [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
     for root in doc['scenes'][doc.get('scene', 0)]['nodes']:
         visit(root, identity)
@@ -201,12 +201,13 @@ class CatalogTests(unittest.TestCase):
         for bridge in rendered:
             source, render = ROOT / 'data' / bridge['model']['glb'], ROOT / 'data' / bridge['model']['render_glb']
             self.assertEqual(render_model(bridge['id'], bridge, registry, source, mesh_names(source)), render.resolve())
-            original, display = glb_meshes(source), glb_meshes(render)
-            self.assertEqual(set(display), set(original))
-            for name, (triangles, world) in original.items():
-                # Same triangles in the same place: only texture coordinates and winding may differ.
-                self.assertEqual(display[name][0], triangles, name)
-                self.assertTrue(all(math.isclose(a, b, abs_tol=1e-6) for a, b in zip(display[name][1], world)), name)
+            original, display = glb_outline(source), glb_outline(render)
+            self.assertEqual(set(display), set(original), bridge['id'])
+            for name, (triangles, low, high, _) in original.items():
+                count, display_low, display_high, step = display[name]
+                self.assertEqual(count, triangles, name)
+                for a, b in zip(low + high, display_low + display_high):
+                    self.assertLessEqual(abs(a - b), step + 1e-4, name)
             with self.get('/api/bridges/' + bridge['id']) as r:
                 model = json.load(r)['model']
             self.assertEqual(model['render_url'], f'/assets/{bridge["id"]}/render')

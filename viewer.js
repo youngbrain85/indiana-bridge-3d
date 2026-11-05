@@ -2,6 +2,13 @@ import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
+
+// Display models store positions as 16-bit integers (KHR_mesh_quantization). Placement, analysis deformation
+// and section edits need plain float positions, so they are expanded once on load.
+function floatPositions(geometry){const a=geometry.attributes.position;if(a.array instanceof Float32Array&&!a.isInterleavedBufferAttribute)return geometry;
+  const out=new Float32Array(a.count*3);for(let i=0;i<a.count;i++){out[i*3]=a.getX(i);out[i*3+1]=a.getY(i);out[i*3+2]=a.getZ(i);}
+  geometry.setAttribute('position',new THREE.BufferAttribute(out,3));return geometry;}
 
 // Surface response by what a component is made of. Colours stay the model's own; only roughness/metalness change.
 const METAL=/steel|w\d+\s*[x×]|hp\s?\d+|c\d+\s*[x×]|bolt|nut\b|washer|weld|plate|angle|channel|stiffener|splice|gusset|lacing|chord|truss|casing|guardrail|railing|pipe rail|bracket|anchor/i;
@@ -69,10 +76,10 @@ class BridgeViewer {
     let response=data.model.render_url?await fetch(data.model.render_url,{signal:this.abort.signal}):null;
     if(!response?.ok)response=await fetch(data.model.url,{signal:this.abort.signal});if(!response.ok)throw Error('Could not load the GLB file.');const bytes=await response.arrayBuffer();
     if(seq!==this.loadId)return false;progress('Preparing 3D objects…');
-    const gltf=await new GLTFLoader().parseAsync(bytes,'');if(seq!==this.loadId){gltf.scene.traverse(n=>{n.geometry?.dispose();for(const m of Array.isArray(n.material)?n.material:[n.material])m?.dispose();});return false;}
+    const gltf=await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(bytes,'');if(seq!==this.loadId){gltf.scene.traverse(n=>{n.geometry?.dispose();for(const m of Array.isArray(n.material)?n.material:[n.material])m?.dispose();});return false;}
     const byName=new Map(data.parts.map(p=>[p.mesh_name,p]));gltf.scene.updateMatrixWorld(true);
     gltf.scene.traverse(original=>{if(!original.isMesh)return;const p=byName.get(original.name)||byName.get(original.parent?.name);if(!p)throw Error('Unregistered 3D object: '+original.name);
-      const geom=original.geometry.clone().applyMatrix4(original.matrixWorld);geom.computeVertexNormals();const material=new THREE.MeshStandardMaterial({color:p.color||'#a7b8bc',...surfaceFor(p),...this.bakedMaps(original.material,geom),side:THREE.DoubleSide,flatShading:true});
+      const geom=floatPositions(original.geometry.clone()).applyMatrix4(original.matrixWorld);geom.computeVertexNormals();const material=new THREE.MeshStandardMaterial({color:p.color||'#a7b8bc',...surfaceFor(p),...this.bakedMaps(original.material,geom),side:THREE.DoubleSide,flatShading:true});
       const mesh=new THREE.Mesh(geom,material);mesh.castShadow=true;mesh.receiveShadow=true;mesh.name=p.mesh_name;mesh.userData.part=p;this.meshes.set(p.id,mesh);this.root.add(mesh);
       original.geometry.dispose();for(const m of Array.isArray(original.material)?original.material:[original.material])m.dispose();
     });

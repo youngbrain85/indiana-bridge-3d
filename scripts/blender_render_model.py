@@ -26,6 +26,7 @@ import hashlib
 import json
 import math
 import re
+import subprocess
 import sys
 import tempfile
 import time
@@ -342,18 +343,31 @@ def build(bid, ao_size, samples, distance):
     return out
 
 
+def compress_and_check(bid, out):
+    """Meshopt compression (needs Node.js and `npm ci`), then the geometry check against model.glb."""
+    for command in (['node', 'scripts/compress_render_model.mjs', str(out)], ['node', 'scripts/check_render_models.mjs', bid]):
+        result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
+        print(result.stdout.strip(), flush=True)
+        if result.returncode:
+            sys.exit(f'{command[1]} failed:\n{result.stderr.strip()}')
+    print(f'compressed {out.relative_to(ROOT)} ({out.stat().st_size / 2**20:.1f} MiB)', flush=True)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('bridge')
     parser.add_argument('--ao-size', type=int, default=2048)
     parser.add_argument('--samples', type=int, default=256)
     parser.add_argument('--ao-distance', type=float, default=2.5, help='AO ray length in metres')
+    parser.add_argument('--no-compress', action='store_true', help='keep the uncompressed export (debugging only)')
     args = parser.parse_args()
     try:
         import bpy  # noqa: F401
     except ImportError:
         sys.exit('This script needs the bpy module: pip install -r requirements-render.txt')
-    build(args.bridge, args.ao_size, args.samples, args.ao_distance)
+    out = build(args.bridge, args.ao_size, args.samples, args.ao_distance)
+    if not args.no_compress:
+        compress_and_check(args.bridge, out)
 
 
 if __name__ == '__main__':
