@@ -83,6 +83,7 @@ The application binds to localhost. It is a local viewer, not an authenticated m
 - **Collection FEM:** 12 bridge-specific beam/slab ledgers plus dedicated arch and truss models; editable assumed inputs, full/half-pressure cases, actual FE meshes and saved JSON/CSV. [Scopes, reproduction and limitations](docs/collection-completion.md).
 - **Assumed-input FEM demonstration (Minnich Road):** 197 mapped components with editable hypothetical materials, bearings, column diameter and support bases; real frame/shell solves, pressure scenarios, saved results and explicit uncertainty. [Method and limits](docs/minnich-fem-demo.md).
 - **Whole-bridge FEM (Beechwood):** 72 connected structural components, beam/shell stress and displacement, explicit bearings/foundations, staged prestress scenarios, sensitivity, actual FE mesh, convergence warnings and JSON/CSV results. See [setup, material evidence and limitations](docs/fem.md). The optional solver requires a separate Python 3.12 environment; no AI API key is needed.
+- **Inspection (pilot, Beechwood):** **Inspect** opens the inspection app. Inspectors draw defects on 10 inspection sheets generated from the model (deck top and underside, girder faces, bents, end bents, barriers), pick AASHTO MBEI defects from menus, get a suggested condition state from their measurements and a quantity from the sketch, and add photos. The app works offline (saved in the browser, with JSON backups) and syncs to an optional Supabase project. In the 3D workspace, **Defects** (`D`) places each recorded defect on its member. See [inspection app](docs/inspection.md).
 - **Exports:** the **Export** menu in the top bar offers the GLB model, the component CSV and the current SQLite database.
 - **UI review:** visit `/review` to annotate a reference screenshot, add numbered notes and export PNG or JSON. Notes are stored only in the browser.
 
@@ -105,8 +106,10 @@ schema.sql                Database schema
 data/registry.json        Portable bridge registry
 data/bridges/<id>/         Model, manifest, plan PDF, preview and optional textured display model
 data/sources.json          Plan URLs and asset hashes
-web/                      English frontend and bundled viewer
+web/                      English frontend, bundled viewer and the inspection page
 viewer.js                 Three.js viewer source
+inspect/                  Inspection app source: AASHTO catalogue, sheet geometry, storage, sync, UI
+supabase/schema.sql       Optional cloud store for inspections (tables, row-level security, photo bucket)
 fem/                      Material ledger, optional solver and analysis job service
 scripts/                  Model builders, static-site export and the Blender display-model builder
 docs/                     Architecture and verification notes
@@ -149,6 +152,8 @@ node test_fem_browser.cjs
 ```
 
 `npm run build` also runs `scripts/check_render_models.mjs`, which compares every textured display model with its source model triangle by triangle.
+
+Inspection app: `node --test test_inspection_rules.mjs` (no server needed) and, with the server running, `node test_inspection_browser.cjs`. Rebuild inspection sheets with `python scripts/build_inspection_sheets.py beechwood` (needs `requirements-sheets.txt`) whenever `model.glb` changes.
 
 Set `BRIDGE_TEST_URL` to test another port. Set `BROWSER_EXECUTABLE` to use an installed Chromium/Edge binary instead of Playwright's browser.
 

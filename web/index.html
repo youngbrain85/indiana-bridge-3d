@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Indiana Bridge 3D</title><link rel="icon" href="/favicon.svg">
 <link rel="preload" href="/vendor/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/vendor/leaflet/leaflet.css"><link rel="stylesheet" href="/ui.css?v=shell1"><link rel="stylesheet" href="/analysis.css?v=shell1">
-<script src="/vendor/leaflet/leaflet.js" defer></script><script src="/viewer.bundle.js?v=shell1" defer></script><script src="/analysis.js?v=shell1" defer></script><script src="/app.js?v=shell1" defer></script></head>
+<script src="/vendor/leaflet/leaflet.js" defer></script><script src="/viewer.bundle.js?v=shell1" defer></script><script src="/analysis.js?v=shell1" defer></script><script src="/defects.js?v=insp1" defer></script><script src="/app.js?v=shell1" defer></script></head>
 <body data-screen="map"><a class="skip" href="#main">Skip to content</a>
 <svg class="svg-defs" aria-hidden="true"><defs>
  <symbol id="i-panel-left" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16"/></symbol>
@@ -19,6 +19,7 @@
  <nav class="modes" id="modes" aria-label="Workspace" hidden>
   <button data-workspace="model" class="active" title="Model (1)" aria-keyshortcuts="1">Model</button><button data-workspace="drawings" title="Drawings (2)" aria-keyshortcuts="2">Drawings</button><button data-workspace="analysis" id="openAnalysis" title="Analysis (3)" aria-keyshortcuts="3">Analysis</button><button data-workspace="members" title="Data (4)" aria-keyshortcuts="4">Data</button>
  </nav>
+ <a id="inspectLink" class="button inspect-link" target="inspection" hidden title="Record defects on the inspection sheets">Inspect</a>
  <details class="menu export-menu"><summary>Export<svg aria-hidden="true"><use href="#i-chevron"/></svg></summary>
   <div class="menu-list" role="menu">
    <a id="modelDownload" role="menuitem" download hidden>3D model <small>GLB</small></a>
@@ -65,12 +66,14 @@
      <label class="tool-label" title="Opacity of deck and pavement surfaces">Deck<input id="deckOpacity" type="range" min="10" max="100" value="100"><output id="opacityValue">100%</output></label>
      <label class="tool-label clip-label"><input id="clipEnabled" type="checkbox">Section</label><input id="clipPosition" aria-label="Longitudinal section position" type="range" min="0" max="100" value="100" disabled hidden>
      <button id="terrainToggle" aria-pressed="true" aria-keyshortcuts="T" title="Show or hide the illustrative terrain (T)">Terrain</button>
+     <button id="defectsToggle" aria-pressed="false" aria-keyshortcuts="D" hidden>Defects</button>
      <button id="clearIsolation" hidden>Show all</button>
      <button id="toggleInspector" class="icon-button" aria-pressed="true" aria-label="Details panel" title="Details panel"><svg><use href="#i-panel-right"/></svg></button>
     </div>
     <div id="viewerStatus" class="viewer-status" role="status">Preparing model…</div>
     <output id="visibleCount" aria-label="Visible component count"></output>
     <div id="femLegend" hidden aria-live="polite"></div>
+    <div id="defectLegend" class="defect-legend" hidden></div>
     <p id="terrainNote" class="terrain-note"><span class="note-long">Terrain is illustrative: generated from the abutment, pier and deck levels, not from survey data.</span><span class="note-short">Illustrative terrain, not surveyed</span></p>
     <div class="axis-note"><b>Y</b> ↑ <b>X</b> → <span>Local axes · m</span></div>
    </div>

@@ -3,6 +3,9 @@ import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
+import {CS_COLORS,CS_NAMES,DEFECTS,FIELDS} from './inspect/catalog.js';
+import {densify,planePoint} from './inspect/geometry.js';
+import * as inspectionStore from './inspect/store.js';
 
 // Display models store positions as 16-bit integers (KHR_mesh_quantization). Placement, analysis deformation
 // and section edits need plain float positions, so they are expanded once on load.
@@ -42,6 +45,8 @@ class BridgeViewer {
     const key=this.key=new THREE.DirectionalLight(0xfff6e8,2.7);key.position.set(30,70,40);key.castShadow=!this.lite;key.shadow.mapSize.set(2048,2048);key.shadow.bias=-.0004;this.scene.add(key,key.target);
     const fill=new THREE.DirectionalLight(0xdbeaff,.7);fill.position.set(-30,20,-60);this.scene.add(fill);
     this.terrain=null;this.terrainVisible=true;
+    // Recorded inspection defects, placed on the model from their sheet sketches (see setDefects).
+    this.defectGroup=new THREE.Group();this.defectGroup.name='defects';this.scene.add(this.defectGroup);this.defectsOn=false;this.onDefect=null;
     // Analysis colours use two shared, long-lived materials (analyzed / not analyzed), so their shaders compile once per page.
     this.analysisMaterials={analyzed:new THREE.MeshBasicMaterial({color:0xffffff,side:THREE.DoubleSide,vertexColors:true,toneMapped:false}),
       other:new THREE.MeshBasicMaterial({color:0x71838e,side:THREE.DoubleSide,toneMapped:false,transparent:true,opacity:.12,depthWrite:false})};
@@ -55,6 +60,7 @@ class BridgeViewer {
     host.addEventListener('pointerup',e=>{if(!down||Math.hypot(e.clientX-down[0],e.clientY-down[1])>5){down=null;return;}down=null;
       if(this.analysisGeometry)return;
       const r=this.renderer.domElement.getBoundingClientRect();this.raycaster.setFromCamera(new THREE.Vector2((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1),this.camera);
+      if(this.defectGroup.visible&&this.defectGroup.children.length){const d=this.raycaster.intersectObjects(this.defectGroup.children,true).find(h=>h.object.userData.defect);if(d){this.onDefect?.(d.object.userData.defect);return;}}
       const targets=[...this.meshes.values()].filter(m=>m.visible&&m.material.opacity>.2);if(this.terrain?.visible)targets.push(...this.terrain.children.filter(o=>o.userData.blocksPick));
       const hit=this.raycaster.intersectObjects(targets,false).find(h=>!this.clipping||this.plane.distanceToPoint(h.point)>=0);
       if(hit?.object.userData.part)this.onSelect(hit.object.userData.part.id);
@@ -69,7 +75,7 @@ class BridgeViewer {
     this.renderer.render(this.scene,this.camera);
   }}
   resize(){const w=this.host.clientWidth,h=this.host.clientHeight;if(!w||!h)return;this.renderer.setSize(w,h,false);this.camera.aspect=w/h;this.camera.updateProjectionMatrix();this.render();}
-  clear(){this.clearAnalysis();this.clearTerrain();for(const mesh of this.meshes.values()){mesh.geometry.dispose();mesh.material.dispose();}if(this.grid){this.scene.remove(this.grid);this.grid.geometry.dispose();this.grid.material.dispose();this.grid=null;}for(const t of this.textures)t.dispose();this.textures.clear();this.root.clear();this.meshes.clear();this.selected.clear();this.hidden.clear();this.isolated=null;this.helper.visible=false;}
+  clear(){this.clearAnalysis();this.clearTerrain();this.clearDefects();for(const mesh of this.meshes.values()){mesh.geometry.dispose();mesh.material.dispose();}if(this.grid){this.scene.remove(this.grid);this.grid.geometry.dispose();this.grid.material.dispose();this.grid=null;}for(const t of this.textures)t.dispose();this.textures.clear();this.root.clear();this.meshes.clear();this.selected.clear();this.hidden.clear();this.isolated=null;this.helper.visible=false;}
   cancel(){this.loadId++;this.abort?.abort();this.clear();this.render();}
   async load(data,progress){const seq=++this.loadId;this.abort?.abort();this.abort=new AbortController();this.clear();this.data=data;this.clipping=false;this.opacity=1;
     // A textured display copy (same meshes, baked AO) is preferred when the bridge has one.
@@ -106,7 +112,7 @@ class BridgeViewer {
     if(selectedMeshes.length){this.helper.box.makeEmpty();for(const m of selectedMeshes)this.helper.box.expandByObject(m);}
     this.render();this.onChange?.({visible:[...this.meshes.values()].filter(m=>m.visible).length,total:this.meshes.size,isolated:!!this.isolated});
   }
-  fit(ids=null,view=this.view||'iso'){if(!this.meshes.size)return;this.view=view;const box=new THREE.Box3();if(this.analysisGeometry)box.setFromObject(this.analysisGeometry);else for(const [id,m] of this.meshes){if(ids?ids.includes(id):m.visible)box.expandByObject(m);}if(box.isEmpty())box.copy(this.bounds);
+  fit(ids=null,view=this.view||'iso',frame=null){if(!this.meshes.size)return;this.view=view;const box=new THREE.Box3();if(frame)box.copy(frame);else if(this.analysisGeometry)box.setFromObject(this.analysisGeometry);else for(const [id,m] of this.meshes){if(ids?ids.includes(id):m.visible)box.expandByObject(m);}if(box.isEmpty())box.copy(this.bounds);
     const center=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3());const radius=Math.max(size.length()/2,.2);
     const direction=new THREE.Vector3(...{iso:[1,.65,1.15],top:[0,1,.0001],side:[0,.025,1],end:[1,.025,0]}[view]).normalize();
     const right=new THREE.Vector3().crossVectors(this.camera.up,direction).normalize(),up=new THREE.Vector3().crossVectors(direction,right).normalize();
@@ -300,7 +306,7 @@ class BridgeViewer {
   }
   showAnalysisMesh(mesh){
     if(this.analysisGeometry){this.scene.remove(this.analysisGeometry);this.analysisGeometry.traverse(o=>{o.geometry?.dispose();o.material?.dispose();});this.analysisGeometry=null;}
-    this.root.visible=!mesh;if(this.terrain)this.terrain.visible=!mesh&&this.terrainVisible;if(this.grid)this.grid.visible=!mesh&&!(this.terrain&&this.terrainVisible);
+    this.root.visible=!mesh;this.defectGroup.visible=!mesh&&this.defectsOn;if(this.terrain)this.terrain.visible=!mesh&&this.terrainVisible;if(this.grid)this.grid.visible=!mesh&&!(this.terrain&&this.terrainVisible);
     if(!mesh){this.render();return;}
     const nodes=new Map(mesh.nodes.map(n=>[n.id,new THREE.Vector3(n.xyz_m[0],n.xyz_m[2],-n.xyz_m[1])]));
     const group=new THREE.Group(),lines=[];
@@ -314,5 +320,34 @@ class BridgeViewer {
     const box=new THREE.Box3().setFromObject(group),center=box.getCenter(new THREE.Vector3()),radius=box.getSize(new THREE.Vector3()).length()/2;
     this.camera.position.copy(center).add(new THREE.Vector3(1,.6,1).normalize().multiplyScalar(radius*3));this.controls.target.copy(center);this.controls.update();this.render();
   }
+  // Defects drawn on inspection sheets. Each sketch point maps to the view plane (sheets.json "mapping"); a ray
+  // along -normal then finds the recorded member's surface, so the defect sits on the real face in 3D.
+  clearDefects(){for(const o of [...this.defectGroup.children]){o.traverse(n=>{n.geometry?.dispose();n.material?.map?.dispose();n.material?.dispose();});this.defectGroup.remove(o);}this.defectBoxes=new Map();}
+  setDefects(defects,catalog){this.clearDefects();if(!catalog)return 0;
+    const byName=new Map([...this.meshes.values()].map(m=>[m.name,m])),ray=new THREE.Raycaster();let placed=0;
+    for(const d of defects){const sheet=catalog.sheets.find(s=>s.id===d.sheet_id),view=sheet?.views.find(v=>v.id===d.view_id);const own=byName.get(d.part);if(!view||!own)continue;
+      const N=new THREE.Vector3(...view.normal),back=N.clone().negate(),others=view.parts.map(n=>byName.get(n)).filter(m=>m&&m!==own);
+      const onSurface=uv=>{ray.set(new THREE.Vector3(...planePoint(uv,view)),back);const hit=ray.intersectObject(own,false)[0]||ray.intersectObjects(others,false)[0];return hit?hit.point.addScaledVector(N,.012):null;};
+      const colour=new THREE.Color(CS_COLORS[d.cs]||'#6b7378'),group=new THREE.Group();group.userData.defect=d.id;
+      const pts=(d.kind==='point'?d.path:densify(d.path,.004,d.kind==='area')).map(onSurface).filter(Boolean);if(!pts.length)continue;
+      const solid=new THREE.MeshBasicMaterial({color:colour,toneMapped:false});
+      if(d.kind==='point'){const dot=new THREE.Mesh(new THREE.SphereGeometry(.09,16,12),solid);dot.position.copy(pts[0]);dot.userData.defect=d.id;group.add(dot);}
+      else{if(pts.length>1){const tube=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts,d.kind==='area','centripetal'),Math.min(400,pts.length*3),d.kind==='area'?.012:.018,6,d.kind==='area'),solid);tube.userData.defect=d.id;group.add(tube);}
+        if(d.kind==='area'&&d.path.length>2){const ring=d.path.map(([u,v])=>new THREE.Vector2(u*view.extent_m[0],v*view.extent_m[1]));const tris=THREE.ShapeUtils.triangulateShape(ring,[]);const corners=d.path.map(onSurface);
+          if(corners.every(Boolean)){const geom=new THREE.BufferGeometry().setFromPoints(tris.flat().map(i=>corners[i]));const fill=new THREE.Mesh(geom,new THREE.MeshBasicMaterial({color:colour,transparent:true,opacity:.42,side:THREE.DoubleSide,depthWrite:false,toneMapped:false,polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-4}));fill.userData.defect=d.id;group.add(fill);}}}
+      const tag=this.defectTag('D'+d.number,colour);tag.position.copy(pts.reduce((a,p)=>p.y>a.y?p:a,pts[0])).addScaledVector(N,.25);tag.userData.defect=d.id;group.add(tag);
+      this.defectGroup.add(group);this.defectBoxes.set(d.id,{box:new THREE.Box3().setFromPoints(pts),normal:N});placed++;}
+    this.defectGroup.visible=this.defectsOn&&this.root.visible;this.render();return placed;}
+  defectTag(text,colour){const c=document.createElement('canvas'),x=c.getContext('2d');c.width=128;c.height=56;x.fillStyle='#'+colour.getHexString();x.beginPath();x.roundRect(2,2,124,52,12);x.fill();x.fillStyle='#fff';x.font='600 34px "IBM Plex Sans",Arial,sans-serif';x.textAlign='center';x.textBaseline='middle';x.fillText(text,64,30);
+    const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;const s=new THREE.Sprite(new THREE.SpriteMaterial({map:t,depthTest:false,toneMapped:false}));s.scale.set(.75,.33,1);s.renderOrder=5;return s;}
+  showDefects(on){this.defectsOn=on;this.defectGroup.visible=on&&this.root.visible;this.render();}
+  // Look at the defect square-on from the side of the face it was drawn on. Vertical faces are viewed from slightly
+  // below, so substructure under a deck is not hidden by the deck; plan views are tilted a little for depth.
+  focusDefect(id){const hit=this.defectBoxes?.get(id);if(!hit)return;const box=hit.box.clone().expandByScalar(1.2),center=box.getCenter(new THREE.Vector3());
+    const dir=hit.normal.clone();if(Math.abs(dir.y)<.9)dir.add(new THREE.Vector3(0,-.12,0));else dir.add(new THREE.Vector3(.25,0,.25));dir.normalize();
+    const radius=Math.max(box.getSize(new THREE.Vector3()).length()/2,1.5),distance=radius/Math.tan(THREE.MathUtils.degToRad(this.camera.fov/2))*1.1;
+    this.camera.position.copy(center).addScaledVector(dir,distance);this.controls.target.copy(center);this.controls.update();this.render();}
 }
 window.BridgeViewer=BridgeViewer;
+// The 3D page reads defects saved by the inspection page on this device (same origin, same IndexedDB).
+window.BridgeInspection={store:inspectionStore,catalog:{CS_COLORS,CS_NAMES,DEFECTS,FIELDS}};

@@ -9,6 +9,7 @@
     "test:browser": "node test_browser.cjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "2.117.3",
     "three": "0.180.0"
   },
   "devDependencies": {

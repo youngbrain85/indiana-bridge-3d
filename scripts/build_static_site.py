@@ -32,11 +32,14 @@ import pymupdf  # noqa: E402
 
 ASSET_EXT = {'model': '.glb', 'render': '.glb', 'drawing': '.pdf', 'manifest': '.json', 'thumbnail': '.png'}
 PAGES = {'/': 'index.html', '/analysis-guide': 'analysis-guide.html', '/collection-status': 'collection-status.html',
-         '/model-corrections': 'model-corrections.html', '/review': 'review.html'}
+         '/model-corrections': 'model-corrections.html', '/review': 'review.html', '/inspect': 'inspect.html'}
 STATIC_FILES = ['/ui.css', '/app.js', '/analysis.js', '/analysis.css',
-                '/viewer.bundle.js', '/favicon.svg', '/map/counties.json', '/map/states.json']
-PREFIX = (r'(?:api/|assets/|export/|map/|vendor/|analysis-guide|collection-status|model-corrections|review|'
-          r'favicon\.svg|ui\.css|app\.js|analysis\.js|analysis\.css|viewer\.bundle\.js)')
+                '/viewer.bundle.js', '/favicon.svg', '/map/counties.json', '/map/states.json',
+                '/inspect.css', '/inspect-config.js', '/inspect.webmanifest', '/defects.js']
+# Copied byte for byte: these already use document-relative URLs (the inspection bundle includes a cloud client).
+RAW_FILES = ['/inspect.bundle.js', '/inspect-sw.js']
+PREFIX = (r'(?:api/|assets/|export/|map/|vendor/|inspection/|analysis-guide|collection-status|model-corrections|review|inspect(?=[#"\'?])|'
+          r'favicon\.svg|ui\.css|app\.js|analysis\.js|analysis\.css|viewer\.bundle\.js|defects\.js)')
 
 
 def rewrite(text):
@@ -47,7 +50,7 @@ def rewrite(text):
     text = re.sub(r'(?<=["\'`(])/(?=' + PREFIX + r'|[?#])', './', text)
     text = text.replace('href="/"', 'href="./"')
     text = text.replace("+'.png'", "+'.jpg'").replace("-thumb.png'", "-thumb.jpg'")  # drawing pages are exported as JPEG
-    text = re.sub(r'\./(analysis-guide|collection-status|model-corrections|review)(?=["\'?#])', r'./\1.html', text)
+    text = re.sub(r'\./(analysis-guide|collection-status|model-corrections|review|inspect)(?=["\'?#])', r'./\1.html', text)
     return text
 
 
@@ -175,6 +178,8 @@ def main():
             crawl.save(url, lambda t: rewrite(t).replace('<html lang="en">', '<html lang="en" data-static="1">', 1))
         for url in STATIC_FILES:
             crawl.save(url, rewrite if url.endswith(('.js', '.css', '.html')) else None)
+        for url in RAW_FILES:
+            crawl.save(url)
         for f in sorted((ROOT / 'web/vendor/fonts').glob('*.woff2')):
             crawl.save('/vendor/fonts/' + f.name)
         leaflet = ROOT / 'web/vendor/leaflet'
@@ -197,6 +202,10 @@ def main():
                 return rewrite(text)
             crawl.save('/api/bridges/' + bid, detail_text)
             crawl.save(f'/export/{bid}.csv')
+            if detail.get('inspection'):
+                sheets = json.loads(crawl.save(detail['inspection']['sheets_url']))
+                for sheet in sheets['sheets']:
+                    crawl.save(f'/inspection/{bid}/{sheet["svg"]}')
             for kind in ASSET_EXT:
                 try:
                     crawl.save(f'/assets/{bid}/{kind}')
