@@ -1,10 +1,15 @@
 """Small geometric primitives for source-backed exterior reconstructions.
 
-No bridge is generated on import. Coordinates are X station, Y transverse, Z up.
-These meshes are visualization geometry, not connected finite elements.
+No bridge is generated on import. These meshes are visualization geometry, not connected finite elements.
+
+Coordinates are the collection's right-handed native frame: X increasing station, +Y to the LEFT looking
+up-station, Z up (scripts/bridge_orientation.py). A generator declares the plan orientation with Model.orient()
+before Model.save(); save() refuses to write a model without it, checks part names, the reference part and the
+skew sign against it, and refuses to overwrite a model that correction scripts have changed since.
 """
 import hashlib
 import json
+import os
 import re
 from pathlib import Path
 import numpy as np
@@ -26,6 +31,10 @@ LABELS = dict(deck='Concrete deck', girders='Longitudinal girders', haunches='De
     joints='Deck joints', drainage='Deck drainage', sidewalks='Sidewalks and curbs',
     arches='Concrete arch barrels', walls='Spandrel walls', ornament='Architectural rail panels',
     fill='Arch fill envelope', accessories='External accessories')
+
+# Transverse positions (and the skew sign) that a reflection into the collection frame must negate when a
+# generator records them in part dimensions or build checks. Sizes and steps (e.g. mesh_step_y_m) are not listed.
+TRANSVERSE_KEYS=('y_m','girder_y_m','pile_y_m','beam_y_m','stringer_y_m','truss_y_m','skew_deg')
 
 def sha(path): return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
@@ -73,6 +82,38 @@ class Model:
         self.grade,self.crossfall,self.crown=grade,crossfall,crown
         self.colors=COLORS.copy()
         self.parts=[];self.meshes={};self.coverage=[];self.checks={};self.contacts=[]
+        self.orientation=None;self.reflect=False
+
+    def orient(self,up_station,evidence,reference=None,skew_direction=None,plus_y_note=None,built_plus_y=None):
+        """Declare the plan orientation; required before save().
+
+        up_station: compass direction of increasing station, read from the plan and its north arrow (nearest of
+        eight points). +Y is the side to the left of it. reference=(part_id, compass) names a part whose side the
+        plans show; skew_direction is the drawn 'left'/'right'/'none' skew. A generator that traced the plan with
+        +Y toward the other side passes built_plus_y=<that compass side>: it then builds with the skew sign of its
+        own frame, and save() reflects every part once (Y -> -Y, skew reversed) into the collection frame."""
+        import bridge_orientation as bo
+        self.orientation=bo.record(up_station,evidence,reference,skew_direction,plus_y_note)
+        self.reflect=False
+        if built_plus_y is not None:
+            plus=self.orientation['plus_y']
+            if plus is None:raise ValueError('built_plus_y needs an up-station compass direction')
+            s=bo.side_of(plus,built_plus_y)
+            if s==0:raise ValueError(f'{built_plus_y} lies along the bridge, not on one side of it')
+            self.reflect=s<0
+
+    def side(self,compass):
+        """Sign of Y, in the frame this generator builds in, for the named side of the bridge ('north', ...)."""
+        import bridge_orientation as bo
+        if self.orientation is None or self.orientation['plus_y'] is None:
+            raise RuntimeError('Declare the orientation (Model.orient) with an up-station direction first')
+        s=bo.side_of(self.orientation['plus_y'],compass)
+        if s==0:raise ValueError(f'{compass} lies along the bridge, not on one side of it')
+        return -s if self.reflect else s
+
+    def native_y(self,y):
+        """Transverse value(s) of this generator's frame in the collection frame (for ledgers written with save)."""
+        return -np.asarray(y) if self.reflect else np.asarray(y)
 
     def sx(self,u,y):return u+self.k*y
     def surface(self,x,y):return self.grade(x)-self.crossfall*np.abs(y-self.crown)
@@ -122,11 +163,36 @@ class Model:
         self.contacts.append(dict(id=key,girder_bottom_m=float(bottom),bearing_top_m=float(m.bounds[1,2]),seat_m=float(m.bounds[0,2])))
         return bottom-ph-lh
 
+    def _reflect_into_collection_frame(self):
+        """Y -> -Y for every part (trimesh reverses the winding), skew reversed; run once, by save()."""
+        mirror=np.diag([1.,-1.,1.,1.])
+        def flip(d):
+            for key in TRANSVERSE_KEYS:
+                if key in d:d[key]=(-np.asarray(d[key],float)).tolist()
+        for p in self.parts:
+            m=self.meshes[p['id']];m.apply_transform(mirror)
+            assert m.is_watertight and m.volume>0,p['id']
+            p['bounds_m']=np.round(m.bounds,6).tolist();p['volume_m3']=round(float(m.volume),9)
+            flip(p['dimensions']);m.metadata['dimensions']=p['dimensions']
+        flip(self.checks)                               # build-time checks recorded in the generator's frame
+        self.skew=-self.skew;self.k=-self.k;self.crown=-self.crown;self.reflect=False
+
     def save(self,out,meta):
+        import bridge_orientation as bo
+        if self.orientation is None:
+            raise RuntimeError(f'{self.bid}: declare the plan orientation with Model.orient() before save() '
+                               '(scripts/bridge_orientation.py)')
+        out=Path(out);previous=out/'model_manifest.json'
+        if previous.is_file() and os.environ.get('BRIDGE_REBUILD_CORRECTED')!='1':
+            records=sorted(k for k in json.loads(previous.read_text(encoding='utf-8')) if 'correction' in k)
+            if records:
+                raise RuntimeError(f'{previous} has corrections applied after this generator ran ({", ".join(records[:4])}); '
+                                   'regenerating would discard them. Set BRIDGE_REBUILD_CORRECTED=1 to rebuild anyway.')
         if 'bearings' in self.checks:assert len(self.contacts)==self.checks['bearings']
         if 'girder_segments' in self.checks:
             assert sum(p['layer']=='girders' for p in self.parts)==self.checks['girder_segments']
-        # Check generated coordinates against the deck soffit, including flange edges.
+        # Check generated coordinates against the deck soffit, including flange edges (in the frame the
+        # generator built in, where its surface function applies).
         gaps=[]
         for p in self.parts:
             if p['layer']!='girders':continue
@@ -135,15 +201,23 @@ class Model:
         if gaps:
             assert min(gaps)>0, 'A girder penetrates the deck'
             self.checks['minimum_deck_girder_clearance_m']=float(min(gaps))
-        out=Path(out);scene=tm.Scene();transform=np.array([[1,0,0,0],[0,0,1,0],[0,-1,0,0],[0,0,0,1.]])
+        converted=None
+        if self.reflect:
+            converted='Built with +Y on the other side; reflected into the collection frame by Model.save().'
+            self._reflect_into_collection_frame()
+        orientation=dict(self.orientation,**({'converted':converted} if converted else {}))
+        manifest=dict(meta,units='metres',deck_length_m=self.length,deck_width_m=self.width,skew_deg=self.skew,
+            orientation=orientation,source_pdf='drawings.pdf',source_sha256=sha(out/'drawings.pdf'),parts=self.parts,
+            layers={k:LABELS[k] for k in LABELS if any(p['layer']==k for p in self.parts)},
+            default_hidden_layers=['foundations','fill'],
+            native_axes='X increasing station, +Y left looking up-station, Z up; local metres',
+            glb_axes='Y up: (native X, native Z, -native Y); no world georeferencing transform',detail_coverage=self.coverage)
+        problems=bo.check(manifest)
+        if problems:raise RuntimeError(f'{self.bid}: orientation check failed: '+'; '.join(problems))
+        scene=tm.Scene();transform=np.array([[1,0,0,0],[0,0,1,0],[0,-1,0,0],[0,0,0,1.]])
         for key,m in self.meshes.items():
             cp=m.copy();cp.apply_transform(transform);scene.add_geometry(cp,node_name=key,geom_name=key)
         (out/'model.glb').write_bytes(scene.export(file_type='glb'))
-        manifest=dict(meta,units='metres',deck_length_m=self.length,deck_width_m=self.width,skew_deg=self.skew,
-            source_pdf='drawings.pdf',source_sha256=sha(out/'drawings.pdf'),parts=self.parts,
-            layers={k:LABELS[k] for k in LABELS if any(p['layer']==k for p in self.parts)},
-            default_hidden_layers=['foundations','fill'],native_axes='X increasing station, Y transverse, Z up; local metres',
-            glb_axes='Y up: (native X, native Z, -native Y); no world georeferencing transform',detail_coverage=self.coverage)
         (out/'model_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
         # Reopen the actual artifact, not just in-memory source geometry.
         loaded=tm.load(out/'model.glb',force='scene',process=False)

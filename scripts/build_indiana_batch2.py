@@ -63,6 +63,8 @@ def steel_splice(m,key,u,y,z,depth,pages,width=.50,height=.64,plate=.012,flange_
 def yellow():
     out=BASE/'sr8-yellow';spans=np.array([10.538,18.636,21.946,18.636,10.538]);bs=np.r_[0,np.cumsum(spans)]-sum(spans)/2
     m=Model('sr8-yellow',80.996,11.820,49,lambda x:8.257-.01*np.asarray(x)**2/152.4)
+    m.orient('east','Sheet 5: north arrow up, Bent 1 on the west; sheet 11 framing plan: Beam 1 north.',
+        reference=('beam_0_6','north'))
     ys=np.array([-5.029,-3.556,-1.778,0,1.778,3.556,5.029]);slab=.2;clear=.09;d=.840
     m.add('deck','Continuous 1997 deck | 80.996 m x 11.820 m','deck',m.slab(-m.length/2,m.length/2,-m.width/2,m.width/2,slab),[5,6,14],length_m=m.length,width_m=m.width,thickness_m=slab,crossfall_pct=2)
     # New end-span steel and retained middle three-span beams are separate source objects.
@@ -129,6 +131,7 @@ def yellow():
 def wabash():
     out=BASE/'sr1-wabash';length=(355+11/12)*FT;width=17.322
     m=Model('sr1-wabash',length,width,15,lambda x:np.zeros_like(np.asarray(x))+8.829)
+    m.orient('north','Sheets 6 and 9: the north arrow points up-station, so the plan top (+Y) is west.')
     # 2004 retained main arches: four 21.946 m openings, three 1.295 m piers.
     opening=21.946;pw=1.295;total=opening*4+pw*3;left=-total/2
     starts=[left+i*(opening+pw) for i in range(4)]
@@ -136,7 +139,7 @@ def wabash():
         'Dimensioned roadway cross-section; end floor limits from 2026 general plan','355 ft 11 in is the floor envelope, not the 91.669 m arch opening/pier chain.',width_m=13.8,thickness_m=.2)
     for side in [-1,1]:
         a,b=sorted([side*6.9,side*width/2])
-        m.add(f'walk_{side}',f'{"East" if side>0 else "West"} sidewalk and cantilever','sidewalks',m.slab(-length/2,length/2,a,b,.190,.228),[24,32],
+        m.add(f'walk_{side}',f'{"West" if side==m.side("west") else "East"} sidewalk and cantilever','sidewalks',m.slab(-length/2,length/2,a,b,.190,.228),[24,32],
             'Source widths and nominal slab; curb, bracket and end-flare geometry simplified',clear_width_m=1.306,slab_thickness_m=.190)
     for i,a in enumerate(starts):
         b=a+opening;spring0=4.715 if i else 3.191;spring1=4.715 if i<3 else 3.191
@@ -205,8 +208,9 @@ def wabash():
         for i,u in enumerate(supports):
             x=m.sx(u,y)
             m.add(f'railpost_{side}_{i}',f'Pier {i+1} | parapet pilaster {side}','rails',box(x-.5335,x+.5335,y-.2425,y+.2425,railbase,railbase+.96),[37],width_m=1.067,height_m=.960)
-    # Visible external gas line is shown in the 2004 cross-section; routing/diameter are not fully specified.
-    y=7.4
+    # Visible external gas line is shown in the 2004 cross-section (sheet 15 Section A-A: east side); routing and
+    # diameter are not fully specified. The first release put it on the west.
+    y=7.4*m.side('east')
     m.add('gas_line','East fascia gas-line envelope','accessories',rod([m.sx(-length/2,y),y,7.92],[m.sx(length/2,y),y,7.92],.10,20),[24,33],
         'Approximate external utility','Presence and side are documented; diameter, joints and hangers are not verified.',assumed_diameter_m=.20)
     m.cover('Four concrete arches','modeled_with_simplifications','Four whole arch barrels, spandrel walls and hidden fill envelopes. Exact original multi-radius curve and spring haunch thickness remain unresolved.',[9,23,24],['arches','walls','fill'])
@@ -224,7 +228,13 @@ def tanners():
     out=BASE/'us50-tanners-eb';spans=np.array([82+2.125/12,105+7.5/12,113.75,105+7.5/12,81+11.75/12])*FT
     bs=np.r_[0,np.cumsum(spans)]-sum(spans)/2;length=(492+.125/12)*FT;width=(72+2/12)*FT
     pvi=(38940.58-(38667.49+sum(spans)/FT/2))*FT
-    m=Model('us50-tanners-eb',length,width,20,lambda x:12.47-.0001*(np.asarray(x)-pvi)-.0062*(np.asarray(x)-pvi)**2/(2*430*FT),crown=-(4+7/12)*FT)
+    # This builder was written with +Y toward the south: its "left overhang" (the north side, Beam 1) is at -Y.
+    # So the 20 deg Lt. skew is given with the sign of that frame (-20), and Model.save() reflects the model once
+    # into the collection frame (+Y north). The first release had +20 here and came out mirrored.
+    m=Model('us50-tanners-eb',length,width,-20,lambda x:12.47-.0001*(np.asarray(x)-pvi)-.0062*(np.asarray(x)-pvi)**2/(2*430*FT),crown=-(4+7/12)*FT)
+    m.orient('east','2014 reconstruction sheets 20-23: FT barrier, Beam 1 and Line "A" on the north (left looking up-station); '
+        'north end of every support at the lower station, "Skew 20 deg Lt."',reference=('bulbt_0_0','north'),
+        skew_direction='left',built_plus_y='south')
     m.colors['girders']='#b9b8ad'
     # 4 ft 1 in left overhang, 3 ft 1 in right overhang: beam lines are NOT centered on the deck.
     ys=-width/2+(4+1/12)*FT+np.arange(7)*(10+10/12)*FT
@@ -318,6 +328,8 @@ def minnich():
     out=BASE/'minnich-road';spans=np.array([65+5/12,145,145,55+5/12])*FT
     bs=np.r_[0,np.cumsum(spans)]-sum(spans)/2;length=(414+11.5/12)*FT;width=63*FT
     m=Model('minnich-road',length,width,56+17/60+55/3600,lambda x:10.45-.00005*np.asarray(x)-.0625*np.asarray(x)**2/(2*940*FT),crossfall=.0156)
+    m.orient('south','Sheets 19 and 25: north arrow to page-left, stations increasing to the right, Girder 1 on the east; '
+        'sheets 1, 16 and 19 "Skew 56 deg 17\'55\" Lt."',skew_direction='left')
     ys=np.array([-29.375,-20.375,-11.375,-2.375,2.375,11.375,20.375,29.375])*FT
     slab=8*IN;clear=.08
     def depth(u):

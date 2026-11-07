@@ -27,6 +27,9 @@ def build():
     spans=[end_span,8.5,end_span]
     supports=[-length/2+edge,-4.25,4.25,length/2-edge]
     m=Model('sr1-six-mile',length,width,20,lambda x:np.zeros_like(x)+6,crossfall=.0156)
+    m.orient(None,'Sheet 7 plan; the skew direction is assumed (NBI gives its magnitude only).',
+        plus_y_note='Sheet 7 has no north arrow (the sheet 1 vicinity map shows S.R. 1 running north-south): +Y is the '
+                    'plan top of sheet 7, with stations increasing to the right.')
     m.add('deck','Continuous slab | assumed 450 mm thickness','deck',m.slab(-length/2,length/2,-width/2,width/2,thickness),[4,7],
           'Drawing envelope; assumed structural thickness',
           '72 ft 7.25 in by 47 ft 1.5 in from location table; three-span continuous slab classification from NBI 201. No original structural slab section was supplied.',

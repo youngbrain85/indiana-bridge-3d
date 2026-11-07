@@ -13,6 +13,7 @@ from urllib.request import Request, urlopen
 
 from import_data import import_all, connect, explicit_location, mesh_names, render_model, sync_presentation
 from server import make_server, bridges
+from test_orientation import RuleTests, ModelTests  # noqa: F401  handedness rule, run with these tests (and in CI)
 
 ROOT = Path(__file__).resolve().parent
 

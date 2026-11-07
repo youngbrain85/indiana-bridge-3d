@@ -122,6 +122,12 @@ Runtime files are generated locally and excluded from Git: `data/bridges.sqlite3
 ## Add or update a bridge
 
 1. Add `model.glb`, `model_manifest.json`, `drawings.pdf` and optionally `preview.png` under `data/bridges/<new-id>/`.
+   Build the model in the collection frame: X increasing station, **+Y to the left looking up-station**, Z up, and
+   `skew_deg > 0` for a left ("Lt.") skew. A generator using `scripts/bridge_geometry.Model` declares the plan
+   orientation with `Model.orient()` (the compass direction of increasing station, read from the plan and its north
+   arrow); `save()` checks it and writes the manifest's `orientation` record. Add the bridge to
+   `scripts/record_orientation.py` and run `python scripts/record_orientation.py --check`. See
+   [the handedness rule](docs/model-corrections.md#4-handedness-rule-november-2026).
 2. Use a unique lowercase registry ID. GLB mesh names and manifest part IDs must match one-to-one. Each component must have a valid source layer and any PDF page references must be one-based and within the plan set.
 3. Add an entry in `data/registry.json`, following an existing record. Model and thumbnail paths are relative to the registry directory; `source_pdf` is relative to the manifest. Supply actual location provenance and a justified detail status.
 4. Preserve modeling assumptions, limitations and source citations in the manifest. Update `source_sha256` when the source PDF changes.
