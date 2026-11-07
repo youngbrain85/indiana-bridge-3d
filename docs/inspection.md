@@ -62,9 +62,13 @@ cap) with Pour B (the integral end-bent concrete) above it.
 Each view is a true view (not mirrored): U × V = −normal. Visibility is exact to the model's triangles: where two
 parts overlap on the sheet, every pair of overlapping triangles is compared on its depth planes and the overlap is
 split along the line where the planes cross, so a shaded region is exactly the surface an inspector sees from that
-side. Polygon overlays run on a 1 µm grid (snap rounding), which keeps unions of many small triangles robust. Crease
-lines are drawn only where no surface hides them in 3D. Bent centre lines carry their stations; key plans are
-explanatory and not to the sheet scale.
+side. Members cut by a view's clip box are capped at the cut, so a beam stub in front of an end bent hides the face
+behind it. Polygon overlays run on a 1 µm grid (snap rounding), which keeps unions of many small triangles robust;
+slivers and pinholes narrower than 1 mm that the overlays leave are then removed. Crease lines are drawn only where
+no surface hides them in 3D. Where two recorded members meet flush on one face (a wing and the end of the bent body,
+Pour A and Pour B), the limit between them is drawn thin and dashed, not as an edge. Bent centre lines carry their
+stations, and band ends are marked as match lines. Elevations are in feet, sampled from the model at the plans'
+control points; key plans are explanatory and not to the sheet scale.
 
 `sheets.json` publishes, per view:
 
@@ -80,8 +84,8 @@ P = origin + u * extent_m[0] * U + v * extent_m[1] * V
 
 and the defect lies on the first surface hit by a ray from `P` along `-normal`. The origin lies just in front of the
 nearest surface of the view, so the ray always starts outside the model. The generator checks this on every build: it
-samples points in every region and along its boundary, maps them with the published numbers and casts the ray into
-the model; every point must land on its own part. `test_manager.py` checks that `sheets.json` names the current
+samples points in every region and along its boundary (and one point in each small piece), maps them with the
+published numbers and casts the ray into the model; every point must land on its own part. `test_manager.py` checks that `sheets.json` names the current
 `model.glb` (SHA-256), and the unit tests check that every region resolves to its part.
 
 ### Stable view frames

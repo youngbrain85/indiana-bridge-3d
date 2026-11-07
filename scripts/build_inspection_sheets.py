@@ -264,7 +264,7 @@ class Projected:
         self.polys = np.full(len(tris), None, dtype=object)
         self.polys[self.flat] = shapely.polygons(rings[self.flat])
         live = self.polys[self.flat]
-        self.sil = clean(tidy(union(live)), 1e-6) if len(live) else Polygon()
+        self.sil = clean(tidy(close_gaps(union(live))), 1e-6) if len(live) else Polygon()
         self.bounds = self.sil.bounds if not self.sil.is_empty else None
         self.visible = self.sil
         self._tree = None
@@ -294,7 +294,8 @@ class Projected:
         out = np.full(len(pts), -np.inf)
         if not len(pts) or not self.flat.any():
             return out
-        pi, ti = self.tree.query(shapely.points(pts), predicate='intersects')
+        # Within 20 um: points on region outlines are snapped to the 1 um overlay grid, just off the triangle edges.
+        pi, ti = self.tree.query(shapely.points(pts), predicate='dwithin', distance=2e-5)
         if len(pi):
             ti = self._index[ti]
             pl = self.planes[ti]
@@ -439,17 +440,31 @@ def occluded_by(a, b):
     return open_slivers(out)
 
 
-def tidy(geom, r=TIDY):
-    """Morphological closing then opening: fills slits and pinholes narrower than 2r and removes slivers and spikes
-    thinner than 2r. Snap-rounding overlays of long, thin triangles can leave such artefacts (a fraction of a
-    millimetre wide); real features of the members are far wider."""
+def close_gaps(geom, r=TIDY):
+    """Morphological closing: fills slits and pinholes narrower than 2r. Used on a part's own silhouette and on the
+    area hidden in front of it, where such gaps can only be overlay artefacts (it never uncovers anything)."""
     if geom.is_empty:
         return geom
     with np.errstate(divide='ignore', invalid='ignore'):
-        out = geom.buffer(r, join_style='mitre').buffer(-2 * r, join_style='mitre').buffer(r, join_style='mitre')
-    if not out.is_valid or (not out.is_empty and not np.all(np.isfinite(out.bounds))):
+        out = geom.buffer(r, join_style='mitre').buffer(-r, join_style='mitre')
+    return out if out.is_valid and not out.is_empty and np.all(np.isfinite(out.bounds)) else geom
+
+
+def tidy(geom, r=TIDY):
+    """Remove overlay artefacts narrower than 2r: an opening drops slivers and spikes, and holes thinner than 2r (by
+    twice their area over their perimeter) are filled. Snap-rounding overlays of long, thin triangles can leave such
+    artefacts, a fraction of a millimetre wide. Gaps open to the outside are kept: a thin member in front is real."""
+    if geom.is_empty:
         return geom
-    return out
+    with np.errstate(divide='ignore', invalid='ignore'):
+        out = geom.buffer(-r, join_style='mitre').buffer(r, join_style='mitre')
+    if not out.is_valid or (not out.is_empty and not np.all(np.isfinite(out.bounds))):
+        out = geom
+    polys = []
+    for poly in pieces(out):
+        holes = [h for h in poly.interiors if 2 * Polygon(h).area / max(h.length, 1e-12) >= 2 * r]
+        polys.append(Polygon(poly.exterior, holes))
+    return union(polys) if polys else Polygon()
 
 
 def open_slivers(geom, r=2e-6):
@@ -478,7 +493,7 @@ def resolve_occlusion(items):
             if not hidden.is_empty:
                 cover.append(hidden)
         if cover:
-            a.visible = clean(tidy(shapely.difference(a.sil, union(cover), grid_size=GRID)))
+            a.visible = clean(tidy(shapely.difference(a.sil, close_gaps(union(cover)), grid_size=GRID)))
 
 
 def visible_creases(p, items, step=0.02):
@@ -666,17 +681,24 @@ def beechwood_views(model, manifest):
     for k, (span, _, _) in enumerate(spans):
         top.append(View(f'DK1-{span}', f'SPAN {span} · DECK TOP · LOOKING DOWN', X, nY, Z, ['deck'], ['rail_L', 'rail_R'],
                         clip=((cuts[k], -9, -50), (cuts[k + 1], 9, 50)), edges=False, ends=('SOUTH', 'NORTH'),
-                        sides=('WEST', 'EAST'), bents=True, overlays=['marking_center', 'marking_edge_L', 'marking_edge_R']))
-    sheets.append(dict(id='DK-1', title='Deck top surface', subtitle='Wearing surface of the concrete deck, spans A to C; '
-                       'bands meet at match lines on the bent centre lines', rows=[[v] for v in top]))
+                        sides=('WEST', 'EAST'), bents=True, overlays=['marking_center', 'marking_edge_L', 'marking_edge_R'],
+                        match=(cuts[1], cuts[2])))
+    sheets.append(dict(id='DK-1', title='Deck top surface', subtitle='Wearing surface of the concrete deck, spans A to C; bands meet at match lines', rows=[[v] for v in top]))
     under = []
     for k, (span, _, _) in enumerate(spans):
         girders = [f'girder_{span}{i}' for i in (1, 2, 3, 4)]
         refs = ['b1_cap', 'b1_integral', 'b2_cap', 'b2_diaphragm', 'b3_cap', 'b3_diaphragm', 'b4_cap', 'b4_integral',
                 'rail_L', 'rail_R'] + [n for n in model if n.startswith(('steel_diaphragm', 'clip_'))]
+        steel = sorted(n for n in model if n.startswith('steel_diaphragm') and cuts[k] < parts[n]['bounds_m'][0][0] < cuts[k + 1])
+
+        def steel_note(ctx, steel=steel):
+            if steel:
+                lo_, hi_ = parts[steel[len(steel) // 2]]['bounds_m']
+                ctx.leader(((lo_[0] + hi_[0]) / 2, (lo_[1] + hi_[1]) / 2, lo_[2]), 'STEEL CROSS DIAPHRAGMS · CONTEXT ONLY')
+
         under.append(View(f'DK2-{span}', f'SPAN {span} · DECK UNDERSIDE AND BEAM SOFFITS · LOOKING UP', X, Y, nZ,
                           girders + ['deck'], refs, clip=((cuts[k], -9, -50), (cuts[k + 1], 9, 50)), ends=('SOUTH', 'NORTH'),
-                          sides=('EAST', 'WEST'), bents=True))
+                          sides=('EAST', 'WEST'), bents=True, match=(cuts[1], cuts[2]), notes=[steel_note] if steel else []))
     sheets.append(dict(id='DK-2', title='Deck underside', subtitle='Deck soffit between beams and beam bottom flanges, '
                        'seen from below (east at the top)', rows=[[v] for v in under]))
 
@@ -705,16 +727,20 @@ def beechwood_views(model, manifest):
         cx = bent_x[b]
         inspect = [f'b{b}_cap', f'b{b}_column_L', f'b{b}_column_R', f'b{b}_wall']
         bear = lambda side: [f'b{b}_bearing_{i}_{side:+d}' for i in (1, 2, 3, 4)]
-        refs = [f'b{b}_diaphragm', f'b{b}_pad_filler', 'deck'] + [n for n in model if n.startswith('girder_')]
+        refs = [f'b{b}_diaphragm', f'b{b}_pad_filler', 'deck'] + [n for n in model if n.startswith(('girder_', 'haunch_'))]
         clip = ((cx - 1.6, -9, -0.5), (cx + 1.6, 9, 50))
         cap = model[f'b{b}_cap']
         col = model[f'b{b}_column_L']
-        cap_bottom, cap_top = bottom_z(cap, cx, 0.0), top_z(cap, cx, 0.0)
+        cap_bottom = bottom_z(cap, cx, 0.0)
+        beam_y = {beam_line(i): sum(parts[f'girder_A{i}']['bounds_m'][k][1] for k in (0, 1)) / 2 for i in (1, 2, 3, 4)}
+        seat_outer, seat_inner = top_z(cap, cx, beam_y[1]), top_z(cap, cx, beam_y[2])   # stepped cap, plan sheet 37
         col_base = bottom_z(col, cx, (parts[f'b{b}_column_L']['bounds_m'][0][1] + parts[f'b{b}_column_L']['bounds_m'][1][1]) / 2)
 
-        def bent_notes(ctx, cap_bottom=cap_bottom, cap_top=cap_top, col_base=col_base, cx=cx, levels=True):
+        def bent_notes(ctx, cap_bottom=cap_bottom, seat_outer=seat_outer, seat_inner=seat_inner, col_base=col_base, cx=cx,
+                       levels=True):
             if levels:
-                ctx.elev(cap_top, 'left', f'TOP OF CAP {elevation(cap_top)}')
+                ctx.elev(seat_inner, 'left', f'CAP AT BL 2, 3 {elevation(seat_inner)}', dy=-0.7)
+                ctx.elev(seat_outer, 'left', f'CAP AT BL 1, 4 {elevation(seat_outer)}', dy=2.6)
                 ctx.elev(cap_bottom, 'left', f'BOTTOM OF CAP {elevation(cap_bottom)}')
                 ctx.elev(col_base, 'left', f'TOP OF CASING {elevation(col_base)}')
             ctx.centre_line((cx, 0.0, col_base), '℄ STRUCTURE')
@@ -723,11 +749,10 @@ def beechwood_views(model, manifest):
         def end_notes(ctx, cap_bottom=cap_bottom, cx=cx):
             ctx.centre_line((cx, 0.0, cap_bottom - 0.5), '℄ BENT')
 
-        sheets.append(dict(id=f'BT-{b}', title=f'Bent No. {b}', subtitle=f'{station(cx)} · pier cap, columns, debris wall and '
-                           'elastomeric bearings: both faces and both cap ends',
+        sheets.append(dict(id=f'BT-{b}', title=f'Bent No. {b}', subtitle=f'{station(cx)} · cap, columns, debris wall and bearings: both faces and both cap ends',
                            rows=[[View(f'B{b}-SOUTH', f'BENT NO. {b} · SOUTH FACE · LOOKING NORTH', nY, nZ, nX,
                                        bear(-1) + inspect, refs, clip=clip, ends=('WEST', 'EAST'), notes=[bent_notes],
-                                       room=(44.0, 0.0), band=True),
+                                       room=(46.0, 0.0), band=True),
                                   View(f'B{b}-NORTH', f'BENT NO. {b} · NORTH FACE · LOOKING SOUTH', Y, nZ, X,
                                        bear(1) + inspect, refs, clip=clip, ends=('EAST', 'WEST'),
                                        notes=[lambda ctx, f=bent_notes: f(ctx, levels=False)], band=True),
@@ -751,8 +776,8 @@ def beechwood_views(model, manifest):
         lo, hi = sorted((approach_x, face_x + sgn * 0.6))
         beams = [f'girder_{span}{i}' for i in (1, 2, 3, 4)]
         back_x = ib[0][0] if b == 1 else ib[1][0]    # face towards the approach
-        xs = np.linspace(back_x, face_x, 12)[1:-1]
-        top_end = max(z for z in (top_z(integral, x_, half_w - 0.05) for x_ in xs) if z is not None)
+        # Plan control point: the end of the bent on the line of the 6 in pavement ledge (sheets 32 and 33).
+        top_end = top_z(integral, back_x + sgn * 0.5 * FT, half_w - 0.05)
         cap_bottom = bottom_z(cap, cx, 0.0)
         pour_a_end, pour_a_mid = top_z(cap, cx, half_w - 0.05), top_z(cap, cx, 0.0)
         wing_names = {side: WINGS[f'b{b}_wing_{side}'] for side in ('L', 'R')}
@@ -764,7 +789,7 @@ def beechwood_views(model, manifest):
         def front_notes(ctx, sgn=sgn, face_x=face_x, top_end=top_end, cap_bottom=cap_bottom, pour_a_end=pour_a_end,
                         pour_a_mid=pour_a_mid, beams=beams):
             ctx.centre_line((face_x, 0.0, cap_bottom - 0.3), '℄ STRUCTURE')
-            ctx.elev(top_end, 'left', f'TOP OF POUR B {elevation(top_end)}')
+            ctx.elev(top_end, 'left', f'TOP OF POUR B AT END {elevation(top_end)}')
             ctx.elev(pour_a_end, 'left', f'TOP OF POUR A {elevation(pour_a_end)}')
             ctx.elev(cap_bottom, 'left', f'BOTTOM OF POUR A {elevation(cap_bottom)}')
             ctx.elev(pour_a_mid, 'right', f'POUR A AT ℄ {elevation(pour_a_mid)}')
@@ -780,12 +805,12 @@ def beechwood_views(model, manifest):
             ztip = top_z(w, tip_x + sgn * 0.02, y)
             zspan = top_z(integral, face_x - sgn * 0.02, y)
             ctx.centre_line((cx, y, cap_bottom - 0.3), '℄ BENT')
-            ctx.point_label((tip_x, y, ztip), elevation(ztip), above=True)
-            ctx.point_label((face_x, y, zspan), elevation(zspan), above=True)
-            ctx.point_label((tip_x, y, cap_bottom), elevation(cap_bottom), above=False)
+            ctx.end_label((tip_x, y, ztip), elevation(ztip))
+            ctx.end_label((face_x, y, zspan), elevation(zspan))
+            ctx.end_label((tip_x, y, cap_bottom), elevation(cap_bottom))
 
-        front = View(f'E{b}-FRONT', f'VIEW 1 · END BENT NO. {b} · FACE TOWARDS SPAN {span}', *front_axes,
-                     [f'b{b}_integral', f'b{b}_cap'], beams + ['deck'],
+        front = View(f'E{b}-FRONT', f'VIEW 1 · END BENT NO. {b} · FACE TOWARDS SPAN {span} · LOOKING {"SOUTH" if b == 1 else "NORTH"}',
+                     *front_axes, [f'b{b}_integral', f'b{b}_cap'], beams + [f'haunch_{span}{i}' for i in (1, 2, 3, 4)] + ['deck'],
                      # A short stub of each beam and of the deck in front of the face, cut 0.6 m out.
                      clip=((min(face_x - sgn * 1.0, face_x + sgn * 0.6), -9, 0), (max(face_x - sgn * 1.0, face_x + sgn * 0.6), 9, 50)),
                      ends=('WEST', 'EAST') if b == 4 else ('EAST', 'WEST'), notes=[front_notes], room=(46.0, 46.0), band=True,
@@ -798,10 +823,10 @@ def beechwood_views(model, manifest):
             wb = parts[f'b{b}_wing_{side}']['bounds_m']
             yclip = ((wb[0][1] - 0.01, 9) if side == 'L' else (-9, wb[1][1] + 0.01))
             ends = ('SPAN END', 'APPROACH END') if (u == X) == (b == 4) else ('APPROACH END', 'SPAN END')
-            wing_views.append(View(f'E{b}-WING-{wing_names[side]}', f'VIEW {n_view} · WING {wing_names[side]} · OUTSIDE FACE',
+            wing_views.append(View(f'E{b}-WING-{wing_names[side]}', f'VIEW {n_view} · WING {wing_names[side]} · OUTSIDE FACE · LOOKING {looking}',
                                    u, nZ, outside, [f'b{b}_wing_{side}', f'b{b}_integral', f'b{b}_cap'], [],
                                    clip=((lo - 0.2, yclip[0], 0), (hi + 0.2, yclip[1], 50)), ends=ends,
-                                   notes=[lambda ctx, side=side, f=wing_notes: f(ctx, side)], room=(10.0, 10.0), band=True,
+                                   notes=[lambda ctx, side=side, f=wing_notes: f(ctx, side)], room=(15.0, 15.0), band=True,
                                    labels={f'b{b}_wing_{side}': f'WING {wing_names[side]}', f'b{b}_integral': 'POUR B',
                                            f'b{b}_cap': 'POUR A'}))
         if b == 1:   # plan as on sheet 32: approach (south) at the top, east on the left
@@ -809,7 +834,7 @@ def beechwood_views(model, manifest):
         else:        # plan as on sheet 33: approach (north) at the top, west on the left
             key_axes = (nY, nX, Z)
 
-        def key_notes(ctx, sgn=sgn, cx=cx, face_x=face_x, half_w=half_w, beams=beams, wing_names=wing_names,
+        def key_notes(ctx, b=b, sgn=sgn, cx=cx, face_x=face_x, half_w=half_w, beams=beams, wing_names=wing_names,
                       left_wing=left_wing, right_wing=right_wing):
             zt = 60.0
             ctx.centre_line((cx, half_w + 0.6, zt), '℄ BENT', start=(cx, -half_w - 0.6, zt))
@@ -822,13 +847,14 @@ def beechwood_views(model, manifest):
                 ctx.arrow((cx - sgn * 1.8, sy * (half_w + 1.7), zt), (cx - sgn * 1.8, sy * (half_w + 0.25), zt), str(n_view))
                 ctx.point_label((cx - sgn * 2.1, sy * (half_w - 1.4), zt), f'WING {wing_names[side]}', above=False)
             ctx.north_arrow((cx - sgn * 1.9, 0.0, zt))
+            wing_ft = 12 if b == 1 else 11
+            ctx.note_below(f'BENT 35\'-2" x 3\'-0" · BEAMS AT 8\'-9" · WINGS {wing_ft}\'-0" x 1\'-0"')
 
         key = View(f'E{b}-KEY', 'KEY PLAN', *key_axes, [], [f'b{b}_integral', f'b{b}_cap', f'b{b}_wing_L', f'b{b}_wing_R'] + beams,
                    clip=((min(approach_x, face_x + sgn * 3.4), -9, -50), (max(approach_x, face_x + sgn * 3.4), 9, 50)),
                    edges=False, key=True, scale=0.42, notes=[key_notes], room=(24.0, 24.0),
                    sides=('APPROACH', f'SPAN {span}'))
-        sheets.append(dict(id=f'EB-{b}', title=f'End Bent No. {b}', subtitle=f'{station(cx)} · Pour A pile cap, Pour B integral '
-                           'end-bent concrete and wings; views 1 to 3 are marked on the key plan', rows=[[front], wing_views + [key]]))
+        sheets.append(dict(id=f'EB-{b}', title=f'End Bent No. {b}', subtitle=f'{station(cx)} · views 1 to 3 on the key plan · beam and deck stubs are reference only', rows=[[front], wing_views + [key]]))
 
     # Barriers: both faces of both barriers, each in two bands that meet at mid-length (a match line).
     mid = (x0 + x1) / 2
@@ -889,7 +915,7 @@ def lines_of(geom):
 
 
 ROW_GAP, COL_GAP = 6.0, 16.0
-TITLE_W, SMALL_W = 1.85, 1.25          # mm per character of the view titles and of the small direction words
+TITLE_W, SMALL_W = 1.85, 1.35          # mm per character of the view titles and of the small direction words
 
 
 def ends_text(v):
@@ -907,7 +933,7 @@ def head(v, w):
 
 def foot(v):
     """Room (mm) under a view for beam-line callouts, notes and the names of bent lines inside the view."""
-    return 5.0 if (v.notes and not v.key) or v.bents else 0.0
+    return 5.0 if v.notes or v.bents else 0.0
 
 
 def layout(sheet, scale_mm):
@@ -937,9 +963,11 @@ def pick_scale(sheet, denom=None):
 
 
 STYLE = ('<style>text{font-family:"IBM Plex Sans",Arial,Helvetica,sans-serif;fill:#1d2124}'
-         '.t{font-size:2.6px}.s{font-size:2.2px;fill:#4f565b}.h{font-size:3px;font-weight:600;letter-spacing:.04px}'
+         '.t{font-size:2.6px}.s{font-size:2.4px;fill:#4f565b}.h{font-size:3px;font-weight:600;letter-spacing:.04px}'
          '.big{font-size:5.4px;font-weight:600}.mid{font-size:3.4px;font-weight:600}.lbl{font-size:2.5px;fill:#2f363b;font-weight:600}'
-         '.ann{font-size:2.3px;fill:#1d2124}.o{fill:none;stroke:#1d2124;stroke-width:.32;stroke-linejoin:round;stroke-linecap:round}'
+         '.ann{font-size:2.5px;fill:#1d2124}'
+         '.j{fill:none;stroke:#1d2124;stroke-width:.16;stroke-dasharray:1.1 .7}'
+         '.o{fill:none;stroke:#1d2124;stroke-width:.32;stroke-linejoin:round;stroke-linecap:round}'
          '.e{fill:none;stroke:#1d2124;stroke-width:.16;stroke-linecap:round}'
          '.r{fill:none;stroke:#9aa2a7;stroke-width:.16;stroke-linejoin:round}'
          '.m{fill:#e3e7ea;stroke:#9aa2a7;stroke-width:.1}.f{fill:#eef2f4;stroke:none}.rf{fill:#fafbfb;stroke:none}'
@@ -958,17 +986,17 @@ class NoteCtx:
         p = np.asarray(p, float)
         return self.x + (p @ self.U - self.v.range[0]) * self.s, self.y + (p @ self.V - self.v.range[1]) * self.s
 
-    def elev(self, z, side, text):
-        """Elevation callout at the left or right edge of an elevation view (z native)."""
+    def elev(self, z, side, text, dy=0.8):
+        """Elevation callout at the left or right edge of an elevation view (z native); dy moves the text off the line."""
         anchor_pt = np.zeros(3)
         anchor_pt[2] = z
         sy = self.y + (anchor_pt @ self.V - self.v.range[1]) * self.s
         if side == 'left':
             self.svg.add(f'<path class="ld" d="M{self.x - 1:.2f},{sy:.2f}H{self.x - 4:.2f}"/>')
-            self.svg.text(self.x - 4.6, sy + 0.8, text, 'ann', 'end')
+            self.svg.text(self.x - 4.6, sy + dy, text, 'ann', 'end')
         else:
             self.svg.add(f'<path class="ld" d="M{self.x + self.w + 1:.2f},{sy:.2f}H{self.x + self.w + 4:.2f}"/>')
-            self.svg.text(self.x + self.w + 4.6, sy + 0.8, text, 'ann', 'start')
+            self.svg.text(self.x + self.w + 4.6, sy + dy, text, 'ann', 'start')
 
     def centre_line(self, bottom, text, start=None):
         """A centre line. Vertical: from the top of the view (named in the label band) down to `bottom`.
@@ -982,6 +1010,20 @@ class NoteCtx:
             ax, ay = self.pt(start)
             self.svg.add(f'<path class="c" d="M{ax:.2f},{ay:.2f}L{bx:.2f},{by:.2f}"/>')
             self.svg.text(bx + (1.0 if bx >= ax else -1.0), by + 0.8, text, 'ann', 'start' if bx >= ax else 'end')
+
+    def end_label(self, p, text):
+        """A label beside whichever end of the view the point is on, at the point's height."""
+        px, py = self.pt(p)
+        if px < self.x + self.w / 2:
+            self.svg.text(self.x - 1.5, py + 0.9, text, 'ann', 'end')
+        else:
+            self.svg.text(self.x + self.w + 1.5, py + 0.9, text, 'ann', 'start')
+
+    def leader(self, p, text):
+        """A context label under the view with a leader to the point."""
+        px, py = self.pt(p)
+        self.svg.add(f'<path class="ld" d="M{px:.2f},{py:.2f}V{self.y + self.h + 1.2:.2f}"/>')
+        self.svg.text(px, self.y + self.h + 3.6, text, 's', 'middle')
 
     def below_label(self, p, text):
         px, _ = self.pt(p)
@@ -1017,6 +1059,33 @@ class NoteCtx:
 
     def note_below(self, text):
         self.svg.text(self.x, self.y + self.h + 3.6, text, 'ann', 'start')
+
+
+def member_limits(p, others, later, edge, gap=3e-4, flush=0.01):
+    """Split a part's outline into its own edges and the limits where it meets a later part flush (on the same face,
+    within 10 mm of depth): those are drawn thin and dashed, so a limit between two recorded members on one surface
+    (a wing and the end of the bent body) does not read as a joint or an edge in the concrete."""
+    near = [q for q in others if q.bounds is not None and p.bounds is not None and q.visible.distance(p.visible) < gap]
+    if not near:
+        return edge, []
+    first = {id(q) for q in later}
+    joints, keep = [], []
+    shared = edge.intersection(union([q.visible.buffer(gap) for q in near]))
+    rest = edge.difference(union([q.visible.buffer(gap) for q in near]))
+    segs = [(a, b) for line in lines_of(shared) for a, b in zip(np.asarray(line.coords)[:-1], np.asarray(line.coords)[1:])]
+    if segs:
+        mids = np.array([(a + b) / 2 for a, b in segs])
+        dp = p.depth_at(mids)
+        depth = np.array([q.depth_at(mids) for q in near])
+        flushq = np.abs(depth - dp[None]) < flush
+        mine_ = np.array([id(q) in first for q in near])
+        for k, (a, b) in enumerate(segs):
+            if not flushq[:, k].any():
+                keep.append(LineString([a, b]))          # a real edge: one part stands in front of the other
+            elif (flushq[:, k] & mine_).any():
+                joints.append(LineString([a, b]))        # drawn once, from the earlier of the two parts
+    edge = MultiLineString(lines_of(rest) + keep) if (lines_of(rest) or keep) else MultiLineString()
+    return edge, joints
 
 
 def draw_sheet(sheet, info, index, count, bent_x, manifest, denom=None):
@@ -1056,12 +1125,19 @@ def draw_sheet(sheet, info, index, count, bent_x, manifest, denom=None):
             for poly in pieces(T(o.sil.simplify(0.002))):
                 svg.add(f'<path class="m" d="{poly_d(poly)}"/>')
         for group, cls, tol in ((refs, 'r', 0.006), (mine, 'o', 0.002)):
-            for p in group:
+            for k, p in enumerate(group):
                 outline = []
                 for poly in pieces(p.visible):
                     outline += lines_of(poly.exterior) + [LineString(r.coords) for r in poly.interiors]
-                if outline:
-                    svg.add(f'<path class="{cls}" d="{path_d(lines_of(T(MultiLineString(outline).simplify(tol))))}"/>')
+                if not outline:
+                    continue
+                edge = MultiLineString(outline)
+                if cls == 'o':
+                    edge, joints = member_limits(p, [q for q in group if q is not p], group[k + 1:], edge)
+                    if joints:
+                        svg.add(f'<path class="j" d="{path_d(lines_of(T(MultiLineString(joints).simplify(tol))))}"/>')
+                if not edge.is_empty:
+                    svg.add(f'<path class="{cls}" d="{path_d(lines_of(T(edge.simplify(tol))))}"/>')
                 if cls == 'o' and p.creases:
                     d = path_d(lines_of(T(linemerge(MultiLineString(p.creases)).simplify(0.002))))
                     if d:
@@ -1070,9 +1146,11 @@ def draw_sheet(sheet, info, index, count, bent_x, manifest, denom=None):
         # Bent centre lines (and stations) on views whose horizontal axis runs along the bridge.
         if v.bents:
             ux = v.U[0]
-            marks = [(bx, f'END BENT {b}' if b in (1, 4) else f'BENT {b}') for b, bx in bent_x.items()]
-            marks += [(mx, 'MATCH LINE') for mx in v.match]
-            for bx, name in marks:
+            at_bent = lambda x_: any(abs(x_ - bx) < 1e-3 for bx in bent_x.values())
+            marks = [(bx, f'END BENT {b}' if b in (1, 4) else f'BENT {b}', any(abs(bx - mx) < 1e-3 for mx in v.match))
+                     for b, bx in bent_x.items()]
+            marks += [(mx, 'MATCH LINE', False) for mx in v.match if not at_bent(mx)]
+            for bx, name, matched in marks:
                 u = bx * ux
                 if umin - 1e-6 <= u <= umin + v.extent[0] + 1e-6:
                     sx = x + (u - umin) * sv
@@ -1083,6 +1161,8 @@ def draw_sheet(sheet, info, index, count, bent_x, manifest, denom=None):
                         tx, anchor = (min(sx, x) - 1.6, 'end') if left else (max(sx, x + w) + 1.6, 'start')
                         svg.text(tx, y + h / 2 - 0.6, name, 'lbl', anchor)
                         svg.text(tx, y + h / 2 + 2.4, station(bx), 's', anchor)
+                        if matched:
+                            svg.text(tx, y + h / 2 + 5.2, 'MATCH LINE', 's', anchor)
                     else:                        # inside the view: name under the line
                         svg.text(sx, y + h + 3.6, f'{name} · {station(bx)}', 's', 'middle')
         # Element labels on inspectable regions where they fit (a second line in smaller type); small regions get a
@@ -1141,9 +1221,18 @@ def draw_sheet(sheet, info, index, count, bent_x, manifest, denom=None):
     svg.text(9, y0 + 25.5, 'INSPECTION SHEET · RECORD DEFECTS ON THE SHADED SURFACES', 's')
     svg.text(124, y0 + 7, sheet['title'].upper(), 'mid')
     svg.text(124, y0 + 12.5, sheet['subtitle'], 's')
-    svg.text(124, y0 + 18, 'Shaded: surface to inspect. Grey: context only. Dash-dot: centre lines.', 's')
-    svg.text(124, y0 + 22.5, 'Beam Line No. 1 is the west beam. Names follow the plans (sheets 32-37).', 's')
-    svg.text(124, y0 + 27, 'True orthographic views of the 3D model; key plans are not to the sheet scale.', 's')
+    # Legend: what each fill and line means.
+    ly = y0 + 16.2
+    svg.add(f'<rect x="124" y="{ly}" width="5" height="2.6" class="f"/><rect x="124" y="{ly}" width="5" height="2.6" class="o"/>')
+    svg.text(130.5, ly + 2.3, 'Surface to inspect', 's')
+    svg.add(f'<rect x="153" y="{ly}" width="5" height="2.6" class="rf"/><rect x="153" y="{ly}" width="5" height="2.6" class="r"/>')
+    svg.text(159.5, ly + 2.3, 'Context only', 's')
+    svg.add(f'<path class="j" d="M178,{ly + 1.3}h6"/>')
+    svg.text(185.5, ly + 2.3, 'Limit between members', 's')
+    svg.add(f'<path class="c" d="M215,{ly + 1.3}h7"/>')
+    svg.text(223.5, ly + 2.3, 'Centre line', 's')
+    svg.text(124, y0 + 23, 'Beam Line No. 1 is the west beam; names follow the plans (sheets 32-37).', 's')
+    svg.text(124, y0 + 27, 'Elevations in feet, sampled from the 3D model. Key plans are not to scale.', 's')
     svg.text(254, y0 + 6, 'SCALE', 's')
     svg.text(254, y0 + 12.5, f'1:{denom}', 'mid')
     feet = next(f for f in (100, 50, 20, 10, 5) if f * FT * s <= 46)
@@ -1250,13 +1339,17 @@ def self_check(model, sheet, views):
         ex, ey = vj['extent_m']
         tris = {p.name: p.tris for p in v.items}
         for region in vj['regions']:
-            for poly in region['polygons'][:6]:
+            for poly in region['polygons']:
                 shape = Polygon([(x * ex, y * ey) for x, y in poly[0]], [[(x * ex, y * ey) for x, y in r] for r in poly[1:]])
                 samples = []
-                for g in pieces(shape.buffer(-0.01)):
+                inner = pieces(shape.buffer(-0.01))
+                for g in inner:
                     samples += [tuple(p) for p in sample_points(g, 6)]
                     ring = g.exterior
                     samples += [ring.interpolate(t, normalized=True).coords[0] for t in np.linspace(0, 1, 9)[:-1]]
+                if not inner:                      # a small piece: it must still be the part's own surface
+                    q = shape.buffer(-0.002)
+                    samples.append((q if not q.is_empty else shape).representative_point().coords[0])
                 for px, py in samples:
                     P = O + px * U + py * V
                     dist = {name: ray_hit(t, P, -N) for name, t in tris.items()}

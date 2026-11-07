@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 297" width="420mm" height="297mm">
-<style>text{font-family:"IBM Plex Sans",Arial,Helvetica,sans-serif;fill:#1d2124}.t{font-size:2.6px}.s{font-size:2.2px;fill:#4f565b}.h{font-size:3px;font-weight:600;letter-spacing:.04px}.big{font-size:5.4px;font-weight:600}.mid{font-size:3.4px;font-weight:600}.lbl{font-size:2.5px;fill:#2f363b;font-weight:600}.ann{font-size:2.3px;fill:#1d2124}.o{fill:none;stroke:#1d2124;stroke-width:.32;stroke-linejoin:round;stroke-linecap:round}.e{fill:none;stroke:#1d2124;stroke-width:.16;stroke-linecap:round}.r{fill:none;stroke:#9aa2a7;stroke-width:.16;stroke-linejoin:round}.m{fill:#e3e7ea;stroke:#9aa2a7;stroke-width:.1}.f{fill:#eef2f4;stroke:none}.rf{fill:#fafbfb;stroke:none}.c{fill:none;stroke:#4f565b;stroke-width:.18;stroke-dasharray:4 1 .6 1}.ld{fill:none;stroke:#4f565b;stroke-width:.15}.ar{fill:#1d2124}.k{fill:none;stroke:#1d2124;stroke-width:.25}.thin{fill:none;stroke:#1d2124;stroke-width:.15}</style>
+<style>text{font-family:"IBM Plex Sans",Arial,Helvetica,sans-serif;fill:#1d2124}.t{font-size:2.6px}.s{font-size:2.4px;fill:#4f565b}.h{font-size:3px;font-weight:600;letter-spacing:.04px}.big{font-size:5.4px;font-weight:600}.mid{font-size:3.4px;font-weight:600}.lbl{font-size:2.5px;fill:#2f363b;font-weight:600}.ann{font-size:2.5px;fill:#1d2124}.j{fill:none;stroke:#1d2124;stroke-width:.16;stroke-dasharray:1.1 .7}.o{fill:none;stroke:#1d2124;stroke-width:.32;stroke-linejoin:round;stroke-linecap:round}.e{fill:none;stroke:#1d2124;stroke-width:.16;stroke-linecap:round}.r{fill:none;stroke:#9aa2a7;stroke-width:.16;stroke-linejoin:round}.m{fill:#e3e7ea;stroke:#9aa2a7;stroke-width:.1}.f{fill:#eef2f4;stroke:none}.rf{fill:#fafbfb;stroke:none}.c{fill:none;stroke:#4f565b;stroke-width:.18;stroke-dasharray:4 1 .6 1}.ld{fill:none;stroke:#4f565b;stroke-width:.15}.ar{fill:#1d2124}.k{fill:none;stroke:#1d2124;stroke-width:.25}.thin{fill:none;stroke:#1d2124;stroke-width:.15}</style>
 <rect width="420" height="297" fill="#fff"/>
 <rect x="5" y="5" width="410" height="287" class="k"/>
 <text x="139.46" y="29.39" class="h" text-anchor="start">SPAN A · DECK TOP · LOOKING DOWN</text>
@@ -9,15 +9,15 @@
 <g id="view-DK1-A">
 <path class="rf" d="M139.46,34.40 280.54,34.40 280.54,32.08 139.46,32.08Z"/>
 <path class="rf" d="M139.46,88.97 280.54,88.97 280.54,86.65 139.46,86.65Z"/>
-<path class="f" d="M139.46,31.79 139.46,32.08 280.54,32.08 280.54,31.79Z"/>
-<path class="f" d="M139.46,86.65 280.54,86.65 280.54,34.40 139.46,34.40Z"/>
-<path class="f" d="M139.46,88.97 139.46,89.26 280.54,89.26 280.54,88.97Z"/>
+<path class="f" d="M139.46,32.08 280.54,32.08 280.54,31.79 139.46,31.79Z"/>
+<path class="f" d="M280.54,34.40 139.46,34.40 139.46,86.65 280.54,86.65Z"/>
+<path class="f" d="M280.54,89.26 280.54,88.97 139.46,88.97 139.46,89.26Z"/>
 <path class="m" d="M139.46,60.81 280.54,60.81 280.54,60.23 139.46,60.23Z"/>
 <path class="m" d="M139.46,43.40 280.54,43.40 280.54,42.82 139.46,42.82Z"/>
 <path class="m" d="M139.46,78.23 280.54,78.23 280.54,77.65 139.46,77.65Z"/>
 <path class="r" d="M139.46,34.40 280.54,34.40 280.54,32.08 139.46,32.08 139.46,34.40"/>
 <path class="r" d="M139.46,88.97 280.54,88.97 280.54,86.65 139.46,86.65 139.46,88.97"/>
-<path class="o" d="M139.46,31.79 139.46,32.08 280.54,32.08 280.54,31.79 139.46,31.79M139.46,86.65 280.54,86.65 280.54,34.40 139.46,34.40 139.46,86.65M139.46,88.97 139.46,89.26 280.54,89.26 280.54,88.97 139.46,88.97"/>
+<path class="o" d="M139.46,32.08 280.54,32.08 280.54,31.79 139.46,31.79 139.46,32.08M280.54,34.40 139.46,34.40 139.46,86.65 280.54,86.65 280.54,34.40M280.54,89.26 280.54,88.97 139.46,88.97 139.46,89.26 280.54,89.26"/>
 </g>
 <path class="c" d="M141.20,31.19V90.06"/>
 <text x="137.86" y="59.92" class="lbl" text-anchor="end">END BENT 1</text>
@@ -25,6 +25,7 @@
 <path class="c" d="M280.54,31.19V90.06"/>
 <text x="282.14" y="59.92" class="lbl" text-anchor="start">BENT 2</text>
 <text x="282.14" y="62.92" class="s" text-anchor="start">STA 105+76.00</text>
+<text x="282.14" y="65.72" class="s" text-anchor="start">MATCH LINE</text>
 <text x="131.62" y="104.86" class="h" text-anchor="start">SPAN B · DECK TOP · LOOKING DOWN</text>
 <text x="288.38" y="104.86" class="s" text-anchor="end">SOUTH ← · → NORTH</text>
 <text x="130.12" y="109.86" class="s" text-anchor="end">WEST</text>
@@ -32,22 +33,24 @@
 <g id="view-DK1-B">
 <path class="rf" d="M131.62,109.87 288.38,109.87 288.38,107.55 131.62,107.55Z"/>
 <path class="rf" d="M131.62,164.45 288.38,164.45 288.38,162.13 131.62,162.13Z"/>
-<path class="f" d="M131.62,107.55 288.38,107.55 288.38,107.26 131.62,107.26Z"/>
-<path class="f" d="M288.38,109.87 131.62,109.87 131.62,162.13 288.38,162.13Z"/>
-<path class="f" d="M288.38,164.45 131.62,164.45 131.62,164.74 288.38,164.74Z"/>
+<path class="f" d="M288.38,107.55 288.38,107.26 131.62,107.26 131.62,107.55Z"/>
+<path class="f" d="M131.62,162.13 288.38,162.13 288.38,109.87 131.62,109.87Z"/>
+<path class="f" d="M131.62,164.74 288.38,164.74 288.38,164.45 131.62,164.45Z"/>
 <path class="m" d="M131.62,136.29 288.38,136.29 288.38,135.71 131.62,135.71Z"/>
 <path class="m" d="M131.62,118.87 288.38,118.87 288.38,118.29 131.62,118.29Z"/>
 <path class="m" d="M131.62,153.71 288.38,153.71 288.38,153.13 131.62,153.13Z"/>
 <path class="r" d="M131.62,109.87 288.38,109.87 288.38,107.55 131.62,107.55 131.62,109.87"/>
 <path class="r" d="M131.62,164.45 288.38,164.45 288.38,162.13 131.62,162.13 131.62,164.45"/>
-<path class="o" d="M131.62,107.55 288.38,107.55 288.38,107.26 131.62,107.26 131.62,107.55M288.38,109.87 131.62,109.87 131.62,162.13 288.38,162.13 288.38,109.87M288.38,164.45 131.62,164.45 131.62,164.74 288.38,164.74 288.38,164.45"/>
+<path class="o" d="M288.38,107.55 288.38,107.26 131.62,107.26 131.62,107.55 288.38,107.55M131.62,162.13 288.38,162.13 288.38,109.87 131.62,109.87 131.62,162.13M131.62,164.74 288.38,164.74 288.38,164.45 131.62,164.45 131.62,164.74"/>
 </g>
 <path class="c" d="M131.62,106.66V165.54"/>
 <text x="130.02" y="135.40" class="lbl" text-anchor="end">BENT 2</text>
 <text x="130.02" y="138.40" class="s" text-anchor="end">STA 105+76.00</text>
+<text x="130.02" y="141.20" class="s" text-anchor="end">MATCH LINE</text>
 <path class="c" d="M288.38,106.66V165.54"/>
 <text x="289.98" y="135.40" class="lbl" text-anchor="start">BENT 3</text>
 <text x="289.98" y="138.40" class="s" text-anchor="start">STA 106+66.00</text>
+<text x="289.98" y="141.20" class="s" text-anchor="start">MATCH LINE</text>
 <text x="139.46" y="180.34" class="h" text-anchor="start">SPAN C · DECK TOP · LOOKING DOWN</text>
 <text x="280.54" y="180.34" class="s" text-anchor="end">SOUTH ← · → NORTH</text>
 <text x="137.96" y="185.34" class="s" text-anchor="end">WEST</text>
@@ -55,19 +58,20 @@
 <g id="view-DK1-C">
 <path class="rf" d="M139.46,185.35 280.54,185.35 280.54,183.03 139.46,183.03Z"/>
 <path class="rf" d="M139.46,239.92 280.54,239.92 280.54,237.60 139.46,237.60Z"/>
-<path class="f" d="M139.46,182.74 139.46,183.03 280.54,183.03 280.54,182.74Z"/>
-<path class="f" d="M139.46,237.60 280.54,237.60 280.54,185.35 139.46,185.35Z"/>
-<path class="f" d="M139.46,239.92 139.46,240.21 280.54,240.21 280.54,239.92Z"/>
+<path class="f" d="M139.46,183.03 280.54,183.03 280.54,182.74 139.46,182.74Z"/>
+<path class="f" d="M280.54,185.35 139.46,185.35 139.46,237.60 280.54,237.60Z"/>
+<path class="f" d="M280.54,240.21 280.54,239.92 139.46,239.92 139.46,240.21Z"/>
 <path class="m" d="M139.46,211.77 280.54,211.77 280.54,211.19 139.46,211.19Z"/>
 <path class="m" d="M139.46,194.35 280.54,194.35 280.54,193.77 139.46,193.77Z"/>
 <path class="m" d="M139.46,229.18 280.54,229.18 280.54,228.60 139.46,228.60Z"/>
 <path class="r" d="M139.46,185.35 280.54,185.35 280.54,183.03 139.46,183.03 139.46,185.35"/>
 <path class="r" d="M139.46,239.92 280.54,239.92 280.54,237.60 139.46,237.60 139.46,239.92"/>
-<path class="o" d="M139.46,182.74 139.46,183.03 280.54,183.03 280.54,182.74 139.46,182.74M139.46,237.60 280.54,237.60 280.54,185.35 139.46,185.35 139.46,237.60M139.46,239.92 139.46,240.21 280.54,240.21 280.54,239.92 139.46,239.92"/>
+<path class="o" d="M139.46,183.03 280.54,183.03 280.54,182.74 139.46,182.74 139.46,183.03M280.54,185.35 139.46,185.35 139.46,237.60 280.54,237.60 280.54,185.35M280.54,240.21 280.54,239.92 139.46,239.92 139.46,240.21 280.54,240.21"/>
 </g>
 <path class="c" d="M139.46,182.14V241.01"/>
 <text x="137.86" y="210.88" class="lbl" text-anchor="end">BENT 3</text>
 <text x="137.86" y="213.88" class="s" text-anchor="end">STA 106+66.00</text>
+<text x="137.86" y="216.68" class="s" text-anchor="end">MATCH LINE</text>
 <path class="c" d="M278.80,182.14V241.01"/>
 <text x="282.14" y="210.88" class="lbl" text-anchor="start">END BENT 4</text>
 <text x="282.14" y="213.88" class="s" text-anchor="start">STA 107+46.00</text>
@@ -77,10 +81,17 @@
 <text x="9.00" y="279.00" class="s" text-anchor="start">3 spans 80-90-80 ft · prestressed concrete bulb-tee beams · 33 ft deck</text>
 <text x="9.00" y="287.50" class="s" text-anchor="start">INSPECTION SHEET · RECORD DEFECTS ON THE SHADED SURFACES</text>
 <text x="124.00" y="269.00" class="mid" text-anchor="start">DECK TOP SURFACE</text>
-<text x="124.00" y="274.50" class="s" text-anchor="start">Wearing surface of the concrete deck, spans A to C; bands meet at match lines on the bent centre lines</text>
-<text x="124.00" y="280.00" class="s" text-anchor="start">Shaded: surface to inspect. Grey: context only. Dash-dot: centre lines.</text>
-<text x="124.00" y="284.50" class="s" text-anchor="start">Beam Line No. 1 is the west beam. Names follow the plans (sheets 32-37).</text>
-<text x="124.00" y="289.00" class="s" text-anchor="start">True orthographic views of the 3D model; key plans are not to the sheet scale.</text>
+<text x="124.00" y="274.50" class="s" text-anchor="start">Wearing surface of the concrete deck, spans A to C; bands meet at match lines</text>
+<rect x="124" y="278.2" width="5" height="2.6" class="f"/><rect x="124" y="278.2" width="5" height="2.6" class="o"/>
+<text x="130.50" y="280.50" class="s" text-anchor="start">Surface to inspect</text>
+<rect x="153" y="278.2" width="5" height="2.6" class="rf"/><rect x="153" y="278.2" width="5" height="2.6" class="r"/>
+<text x="159.50" y="280.50" class="s" text-anchor="start">Context only</text>
+<path class="j" d="M178,279.5h6"/>
+<text x="185.50" y="280.50" class="s" text-anchor="start">Limit between members</text>
+<path class="c" d="M215,279.5h7"/>
+<text x="223.50" y="280.50" class="s" text-anchor="start">Centre line</text>
+<text x="124.00" y="285.00" class="s" text-anchor="start">Beam Line No. 1 is the west beam; names follow the plans (sheets 32-37).</text>
+<text x="124.00" y="289.00" class="s" text-anchor="start">Elevations in feet, sampled from the 3D model. Key plans are not to scale.</text>
 <text x="254.00" y="268.00" class="s" text-anchor="start">SCALE</text>
 <text x="254.00" y="274.50" class="mid" text-anchor="start">1:175</text>
 <rect x="254.00" y="278.0" width="6.97" height="1.3" fill="#1d2124" stroke="#1d2124" stroke-width=".1"/>
@@ -92,7 +103,7 @@
 <text x="288.83" y="283.50" class="s" text-anchor="middle">20 ft</text>
 <text x="254.00" y="288.50" class="s" text-anchor="start">20 ft = 6.10 m</text>
 <text x="312.00" y="268.00" class="s" text-anchor="start">SOURCE</text>
-<text x="312.00" y="273.50" class="s" text-anchor="start">3D model rev 2.1-column-spacing</text>
+<text x="312.00" y="273.50" class="s" text-anchor="start">3D model rev 2.2-wing-profile</text>
 <text x="312.00" y="278.00" class="s" text-anchor="start">Plans Des. 1400825</text>
 <text x="312.00" y="282.50" class="s" text-anchor="start">Generated 2026-11-07</text>
 <text x="359.00" y="268.00" class="s" text-anchor="start">SHEET</text>
