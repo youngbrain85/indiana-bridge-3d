@@ -385,7 +385,7 @@
         "render_glb": "bridges/sr8-yellow/model_render.glb",
         "deck_length_m": 80.996,
         "spans": 5,
-        "components": 317,
+        "components": 309,
         "revision": "1997 rehabilitation exterior reconstruction v1",
         "scope": "Whole crossing exterior reconstruction with documented approximation boundaries; see coverage and component basis.",
         "detail_status": "needs_detail",

@@ -159,8 +159,14 @@ def existing(bid):
         r.notes.append('Continuous W27x94 section uses manifest/catalog d=26.92, b=9.990, tw=.490, tf=.745 inches with fillets omitted. Splice gaps are analytically closed; nominal unspliced stiffness is retained.')
     elif bid=='sr8-yellow':
         ys=[-5.029,-3.556,-1.778,0,1.778,3.556,5.029]
+        # Sheet 15 fillet table: deck top to beam top Dim "A" = 203/204/217/240/217/204/203 mm across the beam lines
+        # (symmetric), so the beam centroid is deck top - A - d/2 instead of the generic nominal haunch.
+        dim_a=[.203,.204,.217,.240,.217,.204,.203]
+        top=r.v['deck']['midplane_z_m']+r.v['deck']['thickness_m']/2
         for j,y in enumerate(ys):
-            for i in range(5):r.beam(f'beam_{i}_{j}',i,y,ishape(.840,.292,.0147,.022))
+            for i in range(5):
+                r.beam(f'beam_{i}_{j}',i,y,ishape(.840,.292,.0147,.022))
+                r.v['beams'][-1]['centroid_z_m']=top-dim_a[j]-.420
         labels=['Bent_1','Bent_2','Pier_3','Pier_4','Bent_5','Bent_6']
         for i in range(6):
             if i in [0,5]:
@@ -236,7 +242,7 @@ def existing(bid):
         ys=[-7.113,-5.08,-3.556,-1.778,0,1.778,3.556,5.08,7.113]
         for j,y in enumerate(ys):
             for i in range(4):
-                sec=ishape(.840,.292,.014,.0254) if j in [0,8] else ishape(.920,.305,.015 if i in [0,3] else .016,.023 if i in [0,3] else .027)
+                sec=ishape(.840,.292,.014,.0254) if j in [0,8] else ishape(.903 if i in [0,3] else .911,.305,.015 if i in [0,3] else .016,.023 if i in [0,3] else .027)
                 r.beam(f'beam_{i}_{j}',i,y,sec)
         for i in range(5):
             if i in [0,4]:

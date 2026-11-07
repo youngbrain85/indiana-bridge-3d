@@ -427,6 +427,32 @@ support are not modelled. The Bent 2 / 5 seat steps remain a known deviation (`b
 part was added or removed, and part ids are unchanged. The display model, catalogue, FEM ledger and inspection sheets
 are rebuilt from the corrected GLB.
 
+#### Third round: known deviations
+
+Both remaining known deviations were resolved from the drawings (revision 1.3-deviations). Sheet 15 gives the fillet
+dimension of each beam, and it sets the girder top 203-240 mm below the deck surface. The sheet 10 seats, the sheet 13
+bearings and the sheet 11 shim table agree with it within 0.8 mm. So the steel was raised 50-87 mm, together with the
+haunches, splices, diaphragms and bearings.
+
+The Bent 2 and 5 caps are now as drawn: stepped seats at El. 216.900, 216.940 and 216.870, with square ends, 16.96 m³
+(bill 17.0 m³). The Type B bearings stand on the seats, and the 12 separate pedestals are removed. The Bent 1 and 6
+bearings are now the Type A assembly of sheet 13: 126 mm plus the sheet 11 shim. Their shims are 150 × 321 mm, as the
+approved shop sheet S1 revises them. The new end-span beams now run 150 mm past the end-bent bearings, with the
+top-flange corner notch of the shop sheets. Their haunches and the end-bent pockets follow, so the whole shim bears on
+the flange.
+
+The deck, joints, approach slabs and end rail panels are now square to the roadway outside the 10.620 m core (sheets
+14, 16 and 18). The L-shaped pavement support at the far end of each approach slab is added (sheet 19). The joint
+strips now fill the gap between the deck and the approach slab.
+
+Three items stay open as known deviations, each with the source that would settle it:
+- shims that differ by up to 0.8 mm from the table (1 mm rounding);
+- the retained pier seats, which are not dimensioned;
+- the Type 1A joint size, which is in Bridge Std. 724-BJTS-01.
+
+The model has 309 parts. `scripts/correct_sr8_yellow_review_3.py` reproduces the change and is idempotent. The
+`review_correction_record_3` in `model_manifest.json` lists every changed, added and removed part.
+
 ### SR 1 over Wabash River (`sr1-wabash`)
 
 #### SR 1 over the Wabash River: drawing review (revision 1.1)
