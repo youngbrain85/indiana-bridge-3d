@@ -1975,7 +1975,7 @@
         28
       ],
       "basis": "Drawing dimensions; joint surface profiles omitted",
-      "note": "",
+      "note": "Top follows the 2% crossfall of the pier top (sheet 28 elevation, El. 929.95 at the crown); it was flat (third review).",
       "dimensions": {
         "width_in": 8
       },
@@ -1988,10 +1988,10 @@
         [
           -5.0292,
           -4.4704,
-          5.745632
+          5.747664
         ]
       ],
-      "volume_m3": 1.06757343
+      "volume_m3": 1.067575
     },
     {
       "id": "pier_2_closure_2",
@@ -2002,7 +2002,7 @@
         28
       ],
       "basis": "Drawing dimensions; joint surface profiles omitted",
-      "note": "",
+      "note": "Top follows the 2% crossfall of the pier top (sheet 28 elevation, El. 929.95 at the crown); it was flat (third review).",
       "dimensions": {
         "width_in": 8
       },
@@ -2015,10 +2015,10 @@
         [
           -5.0292,
           -2.9464,
-          5.776112
+          5.778144
         ]
       ],
-      "volume_m3": 1.0732368
+      "volume_m3": 1.073237
     },
     {
       "id": "pier_2_closure_3",
@@ -2029,7 +2029,7 @@
         28
       ],
       "basis": "Drawing dimensions; joint surface profiles omitted",
-      "note": "",
+      "note": "Top follows the 2% crossfall of the pier top (sheet 28 elevation, El. 929.95 at the crown); it was flat (third review).",
       "dimensions": {
         "width_in": 8
       },
@@ -2042,10 +2042,10 @@
         [
           -5.0292,
           -1.4224,
-          5.806592
+          5.808624
         ]
       ],
-      "volume_m3": 1.07890017
+      "volume_m3": 1.0789
     },
     {
       "id": "pier_2_closure_4",
@@ -2056,7 +2056,7 @@
         28
       ],
       "basis": "Drawing dimensions; joint surface profiles omitted",
-      "note": "",
+      "note": "Top follows the 2% crossfall of the pier top, crowned at the centre line (sheet 28 elevation, El. 929.95 at the crown); it was flat (third review).",
       "dimensions": {
         "width_in": 8
       },
@@ -2072,7 +2072,7 @@
           5.837072
         ]
       ],
-      "volume_m3": 1.08456354
+      "volume_m3": 1.084375
     },
     {
       "id": "pier_2_closure_5",
@@ -2083,7 +2083,7 @@
         28
       ],
       "basis": "Drawing dimensions; joint surface profiles omitted",
-      "note": "",
+      "note": "Top follows the 2% crossfall of the pier top (sheet 28 elevation, El. 929.95 at the crown); it was flat (third review).",
       "dimensions": {
         "width_in": 8
       },
@@ -2096,10 +2096,10 @@
         [
           -5.0292,
           1.6256,
-          5.806592
+          5.808624
         ]
       ],
-      "volume_m3": 1.07890017
+      "volume_m3": 1.0789
     },
     {
       "id": "pier_2_closure_6",
@@ -2110,7 +2110,7 @@
         28
       ],
       "basis": "Drawing dimensions; joint surface profiles omitted",
-      "note": "",
+      "note": "Top follows the 2% crossfall of the pier top (sheet 28 elevation, El. 929.95 at the crown); it was flat (third review).",
       "dimensions": {
         "width_in": 8
       },
@@ -2123,10 +2123,10 @@
         [
           -5.0292,
           3.1496,
-          5.776112
+          5.778144
         ]
       ],
-      "volume_m3": 1.0732368
+      "volume_m3": 1.073237
     },
     {
       "id": "pier_2_closure_7",
@@ -2137,7 +2137,7 @@
         28
       ],
       "basis": "Drawing dimensions; joint surface profiles omitted",
-      "note": "",
+      "note": "Top follows the 2% crossfall of the pier top (sheet 28 elevation, El. 929.95 at the crown); it was flat (third review).",
       "dimensions": {
         "width_in": 8
       },
@@ -2150,10 +2150,10 @@
         [
           -5.0292,
           4.6736,
-          5.745632
+          5.747664
         ]
       ],
-      "volume_m3": 1.06757343
+      "volume_m3": 1.067575
     },
     {
       "id": "pier_2_bed",
@@ -2162,18 +2162,22 @@
       "color": "#465e66",
       "pdf_pages": [
         28,
+        29,
         38
       ],
       "basis": "Drawing dimensions",
-      "note": "",
+      "note": "Bottom fitted to the pier top, level along X with the 2% crossfall (sheet 28); top unchanged on the deck soffit, so the bed is 0.97 to 1.02 in thick. Outline trimmed to the 3 ft wall top with its R = 1 ft 6 in ends (sheet 28 typical section, sheet 29 plan and section); the rectangular corners (0.1805 m2) had no support (third review).",
       "dimensions": {
-        "thickness_in": 1
+        "thickness_in": 1,
+        "thickness_min_in": 0.97,
+        "thickness_max_in": 1.02,
+        "end_radius_ft": 1.5
       },
       "bounds_m": [
         [
           -5.9436,
           -6.1468,
-          5.713501
+          5.714137
         ],
         [
           -5.0292,
@@ -2181,7 +2185,7 @@
           5.863057
         ]
       ],
-      "volume_m3": 0.2855282
+      "volume_m3": 0.280662
     },
     {
       "id": "pier_3_module_1",
@@ -2648,7 +2652,7 @@
         28
       ],
       "basis": "Drawing dimensions; joint surface profiles omitted",
-      "note": "",
+      "note": "Top follows the 2% crossfall of the pier top (sheet 28 elevation, El. 929.95 at the crown); it was flat (third review).",
       "dimensions": {
         "width_in": 8
       },
@@ -2661,10 +2665,10 @@
         [
           5.9436,
           -4.4704,
-          5.745632
+          5.747664
         ]
       ],
-      "volume_m3": 1.06757343
+      "volume_m3": 1.067575
     },
     {
       "id": "pier_3_closure_2",
@@ -2675,7 +2679,7 @@
         28
       ],
       "basis": "Drawing dimensions; joint surface profiles omitted",
-      "note": "",
+      "note": "Top follows the 2% crossfall of the pier top (sheet 28 elevation, El. 929.95 at the crown); it was flat (third review).",
       "dimensions": {
         "width_in": 8
       },
@@ -2688,10 +2692,10 @@
         [
           5.9436,
           -2.9464,
-          5.776112
+          5.778144
         ]
       ],
-      "volume_m3": 1.0732368
+      "volume_m3": 1.073237
     },
     {
       "id": "pier_3_closure_3",
@@ -2702,7 +2706,7 @@
         28
       ],
       "basis": "Drawing dimensions; joint surface profiles omitted",
-      "note": "",
+      "note": "Top follows the 2% crossfall of the pier top (sheet 28 elevation, El. 929.95 at the crown); it was flat (third review).",
       "dimensions": {
         "width_in": 8
       },
@@ -2715,10 +2719,10 @@
         [
           5.9436,
           -1.4224,
-          5.806592
+          5.808624
         ]
       ],
-      "volume_m3": 1.07890017
+      "volume_m3": 1.0789
     },
     {
       "id": "pier_3_closure_4",
@@ -2729,7 +2733,7 @@
         28
       ],
       "basis": "Drawing dimensions; joint surface profiles omitted",
-      "note": "",
+      "note": "Top follows the 2% crossfall of the pier top, crowned at the centre line (sheet 28 elevation, El. 929.95 at the crown); it was flat (third review).",
       "dimensions": {
         "width_in": 8
       },
@@ -2745,7 +2749,7 @@
           5.837072
         ]
       ],
-      "volume_m3": 1.08456354
+      "volume_m3": 1.084375
     },
     {
       "id": "pier_3_closure_5",
@@ -2756,7 +2760,7 @@
         28
       ],
       "basis": "Drawing dimensions; joint surface profiles omitted",
-      "note": "",
+      "note": "Top follows the 2% crossfall of the pier top (sheet 28 elevation, El. 929.95 at the crown); it was flat (third review).",
       "dimensions": {
         "width_in": 8
       },
@@ -2769,10 +2773,10 @@
         [
           5.9436,
           1.6256,
-          5.806592
+          5.808624
         ]
       ],
-      "volume_m3": 1.07890017
+      "volume_m3": 1.0789
     },
     {
       "id": "pier_3_closure_6",
@@ -2783,7 +2787,7 @@
         28
       ],
       "basis": "Drawing dimensions; joint surface profiles omitted",
-      "note": "",
+      "note": "Top follows the 2% crossfall of the pier top (sheet 28 elevation, El. 929.95 at the crown); it was flat (third review).",
       "dimensions": {
         "width_in": 8
       },
@@ -2796,10 +2800,10 @@
         [
           5.9436,
           3.1496,
-          5.776112
+          5.778144
         ]
       ],
-      "volume_m3": 1.0732368
+      "volume_m3": 1.073237
     },
     {
       "id": "pier_3_closure_7",
@@ -2810,7 +2814,7 @@
         28
       ],
       "basis": "Drawing dimensions; joint surface profiles omitted",
-      "note": "",
+      "note": "Top follows the 2% crossfall of the pier top (sheet 28 elevation, El. 929.95 at the crown); it was flat (third review).",
       "dimensions": {
         "width_in": 8
       },
@@ -2823,10 +2827,10 @@
         [
           5.9436,
           4.6736,
-          5.745632
+          5.747664
         ]
       ],
-      "volume_m3": 1.06757343
+      "volume_m3": 1.067575
     },
     {
       "id": "pier_3_bed",
@@ -2835,18 +2839,22 @@
       "color": "#465e66",
       "pdf_pages": [
         28,
+        29,
         38
       ],
       "basis": "Drawing dimensions",
-      "note": "",
+      "note": "Bottom fitted to the pier top, level along X with the 2% crossfall (sheet 28); top unchanged on the deck soffit, so the bed is 0.97 to 1.02 in thick. Outline trimmed to the 3 ft wall top with its R = 1 ft 6 in ends (sheet 28 typical section, sheet 29 plan and section); the rectangular corners (0.1805 m2) had no support (third review).",
       "dimensions": {
-        "thickness_in": 1
+        "thickness_in": 1,
+        "thickness_min_in": 0.97,
+        "thickness_max_in": 1.02,
+        "end_radius_ft": 1.5
       },
       "bounds_m": [
         [
           5.0292,
           -6.1468,
-          5.713501
+          5.714137
         ],
         [
           5.9436,
@@ -2854,7 +2862,7 @@
           5.863057
         ]
       ],
-      "volume_m3": 0.2855282
+      "volume_m3": 0.280662
     },
     {
       "id": "bent_1_0",
@@ -2862,24 +2870,29 @@
       "layer": "abutments",
       "color": "#c3c9bc",
       "pdf_pages": [
+        9,
         21,
         23,
         24,
-        25
+        25,
+        28
       ],
       "basis": "Drawing dimensions",
-      "note": "Approach-side 9 in pavement ledge, 8 in above the seat, added (sheets 21, 23, 24).",
+      "note": "Approach-side 9 in pavement ledge, 8 in above the seat, added (sheets 21, 23, 24). Bottom raised 3.29 in to El. 926.48 (decision, third review): the precast depth is the written 3 ft 0 in at the outer end and 3 ft 4 3/4 in at the inner end of each module (sheet 24) with the seat on the roadway profile less the 1 1/2 in overlay, 1 ft 8 in slab and 1 in bed (sheets 9, 21, 28); the sheet 23 elevations lie a uniform 0.27 ft lower and are not followed.",
       "dimensions": {
         "width_ft": 3,
         "module_length_ft": 19.666666666666668,
         "ledge_width_in": 9,
-        "ledge_height_above_seat_in": 8
+        "ledge_height_above_seat_in": 8,
+        "depth_outer_end_ft": 3,
+        "depth_inner_end_in": 40.75,
+        "bottom_el_ft": 926.48
       },
       "bounds_m": [
         [
           -14.1732,
           -6.1468,
-          4.696968
+          4.780534
         ],
         [
           -13.2588,
@@ -2887,7 +2900,7 @@
           6.018022
         ]
       ],
-      "volume_m3": 6.077149
+      "volume_m3": 5.619101
     },
     {
       "id": "bent_1_1",
@@ -2895,24 +2908,29 @@
       "layer": "abutments",
       "color": "#c3c9bc",
       "pdf_pages": [
+        9,
         21,
         23,
         24,
-        25
+        25,
+        28
       ],
       "basis": "Drawing dimensions",
-      "note": "Approach-side 9 in pavement ledge, 8 in above the seat, added (sheets 21, 23, 24).",
+      "note": "Approach-side 9 in pavement ledge, 8 in above the seat, added (sheets 21, 23, 24). Bottom raised 3.29 in to El. 926.48 (decision, third review): the precast depth is the written 3 ft 0 in at the outer end and 3 ft 4 3/4 in at the inner end of each module (sheet 24) with the seat on the roadway profile less the 1 1/2 in overlay, 1 ft 8 in slab and 1 in bed (sheets 9, 21, 28); the sheet 23 elevations lie a uniform 0.27 ft lower and are not followed.",
       "dimensions": {
         "width_ft": 3,
         "module_length_ft": 19.666666666666668,
         "ledge_width_in": 9,
-        "ledge_height_above_seat_in": 8
+        "ledge_height_above_seat_in": 8,
+        "depth_outer_end_ft": 3,
+        "depth_inner_end_in": 40.75,
+        "bottom_el_ft": 926.48
       },
       "bounds_m": [
         [
           -14.1732,
           0.1524,
-          4.696968
+          4.780534
         ],
         [
           -13.2588,
@@ -2920,7 +2938,7 @@
           6.018022
         ]
       ],
-      "volume_m3": 6.077149
+      "volume_m3": 5.619101
     },
     {
       "id": "bent_1_closure",
@@ -2928,22 +2946,25 @@
       "layer": "joints",
       "color": "#b59a66",
       "pdf_pages": [
+        9,
         21,
         23,
-        24
+        24,
+        28
       ],
       "basis": "Drawing dimensions",
-      "note": "Approach-side 9 in pavement ledge, 8 in above the seat, added (sheets 21, 23, 24).",
+      "note": "Approach-side 9 in pavement ledge, 8 in above the seat, added (sheets 21, 23, 24). Bottom raised 3.29 in to El. 926.48 (decision, third review): the precast depth is the written 3 ft 0 in at the outer end and 3 ft 4 3/4 in at the inner end of each module (sheet 24) with the seat on the roadway profile less the 1 1/2 in overlay, 1 ft 8 in slab and 1 in bed (sheets 9, 21, 28); the sheet 23 elevations lie a uniform 0.27 ft lower and are not followed. Top crowned at the centre line, continuing the 2% crossfall of both modules (sheet 23 elevation).",
       "dimensions": {
         "width_ft": 1,
         "ledge_width_in": 9,
-        "ledge_height_above_seat_in": 8
+        "ledge_height_above_seat_in": 8,
+        "bottom_el_ft": 926.48
       },
       "bounds_m": [
         [
           -14.1732,
           -0.1524,
-          4.696968
+          4.780534
         ],
         [
           -13.2588,
@@ -2951,7 +2972,7 @@
           6.02107
         ]
       ],
-      "volume_m3": 0.326564
+      "volume_m3": 0.302849
     },
     {
       "id": "bent_1_bed",
@@ -2964,24 +2985,26 @@
         38
       ],
       "basis": "Drawing dimensions",
-      "note": "The 9 in strip over the pavement ledge is raised 8 in with the ledge (sheets 23, 24).",
+      "note": "The 9 in strip over the pavement ledge is raised 8 in with the ledge (sheets 23, 24). Bottom fitted to the cap top, level along X with the 2% crossfall through the crown (sheets 23, 24); top unchanged on the deck and approach slab soffits, so the bed is 0.94 to 1.06 in thick (third review).",
       "dimensions": {
         "thickness_in": 1,
-        "ledge_step_in": 8
+        "ledge_step_in": 8,
+        "thickness_min_in": 0.94,
+        "thickness_max_in": 1.06
       },
       "bounds_m": [
         [
           -14.1732,
           -6.1468,
-          5.694147
+          5.694934
         ],
         [
           -13.2588,
           6.1468,
-          6.045683
+          6.045682
         ]
       ],
-      "volume_m3": 0.28553
+      "volume_m3": 0.285243
     },
     {
       "id": "wing_1_-1",
@@ -2990,28 +3013,32 @@
       "color": "#c3c9bc",
       "pdf_pages": [
         23,
-        27
+        24,
+        27,
+        53
       ],
       "basis": "Drawing dimensions",
-      "note": "",
+      "note": "Raised 3.29 in with the end-bent bottom (decision, third review): 3 ft 8 in high (sheets 24, 27), flush with the cap bottom and with the ledge top at the deck edge (sheet 24 section A-A), El. 926.48 to 930.15; the approach slab bears on it through the 1 in UHPC bed (sheet 53 section A-A).",
       "dimensions": {
         "length_ft": 9,
         "width_ft": 3,
-        "height_ft": 3.6666666666666665
+        "height_ft": 3.6666666666666665,
+        "bottom_el_ft": 926.48,
+        "top_el_ft": 930.15
       },
       "bounds_m": [
         [
-          -17.2212,
+          -17.221201,
           -6.1468,
-          4.696968
+          4.780534
         ],
         [
           -14.478,
           -5.2324,
-          5.814568
+          5.898134
         ]
       ],
-      "volume_m3": 2.80336781
+      "volume_m3": 2.803369
     },
     {
       "id": "wing_joint_1_-1",
@@ -3020,26 +3047,30 @@
       "color": "#b59a66",
       "pdf_pages": [
         23,
-        27
+        24,
+        27,
+        53
       ],
       "basis": "Drawing dimensions",
-      "note": "",
+      "note": "1 ft UHPC wingwall closure pour (sheets 23, 24), full wingwall height. Raised 3.29 in with the end-bent bottom (decision, third review): 3 ft 8 in high (sheets 24, 27), flush with the cap bottom and with the ledge top at the deck edge (sheet 24 section A-A), El. 926.48 to 930.15; the approach slab bears on it through the 1 in UHPC bed (sheet 53 section A-A).",
       "dimensions": {
-        "length_ft": 1
+        "length_ft": 1,
+        "bottom_el_ft": 926.48,
+        "top_el_ft": 930.15
       },
       "bounds_m": [
         [
           -14.478,
           -6.1468,
-          4.696968
+          4.780534
         ],
         [
           -14.1732,
           -5.2324,
-          5.814568
+          5.898134
         ]
       ],
-      "volume_m3": 0.31148531
+      "volume_m3": 0.311485
     },
     {
       "id": "wing_1_1",
@@ -3048,28 +3079,32 @@
       "color": "#c3c9bc",
       "pdf_pages": [
         23,
-        27
+        24,
+        27,
+        53
       ],
       "basis": "Drawing dimensions",
-      "note": "",
+      "note": "Raised 3.29 in with the end-bent bottom (decision, third review): 3 ft 8 in high (sheets 24, 27), flush with the cap bottom and with the ledge top at the deck edge (sheet 24 section A-A), El. 926.48 to 930.15; the approach slab bears on it through the 1 in UHPC bed (sheet 53 section A-A).",
       "dimensions": {
         "length_ft": 9,
         "width_ft": 3,
-        "height_ft": 3.6666666666666665
+        "height_ft": 3.6666666666666665,
+        "bottom_el_ft": 926.48,
+        "top_el_ft": 930.15
       },
       "bounds_m": [
         [
-          -17.2212,
+          -17.221201,
           5.2324,
-          4.696968
+          4.780534
         ],
         [
           -14.478,
           6.1468,
-          5.814568
+          5.898134
         ]
       ],
-      "volume_m3": 2.80336781
+      "volume_m3": 2.803369
     },
     {
       "id": "wing_joint_1_1",
@@ -3078,26 +3113,30 @@
       "color": "#b59a66",
       "pdf_pages": [
         23,
-        27
+        24,
+        27,
+        53
       ],
       "basis": "Drawing dimensions",
-      "note": "",
+      "note": "1 ft UHPC wingwall closure pour (sheets 23, 24), full wingwall height. Raised 3.29 in with the end-bent bottom (decision, third review): 3 ft 8 in high (sheets 24, 27), flush with the cap bottom and with the ledge top at the deck edge (sheet 24 section A-A), El. 926.48 to 930.15; the approach slab bears on it through the 1 in UHPC bed (sheet 53 section A-A).",
       "dimensions": {
-        "length_ft": 1
+        "length_ft": 1,
+        "bottom_el_ft": 926.48,
+        "top_el_ft": 930.15
       },
       "bounds_m": [
         [
           -14.478,
           5.2324,
-          4.696968
+          4.780534
         ],
         [
           -14.1732,
           6.1468,
-          5.814568
+          5.898134
         ]
       ],
-      "volume_m3": 0.31148531
+      "volume_m3": 0.311485
     },
     {
       "id": "approach_1_1",
@@ -3452,26 +3491,29 @@
       "layer": "wearing",
       "color": "#aebcb8",
       "pdf_pages": [
-        53
+        53,
+        54,
+        55
       ],
       "basis": "Drawing dimensions",
-      "note": "",
+      "note": "LMC-VE overlay, 1 1/2 in (sheets 23, 24, 53), on the approach slab top up to the railing toe (sheet 53 section A-A). Along the TFC transitions its edge follows the tapering toe of standard E 706-TTFC-01/-02 (sheets 54, 55): 1 ft 6 in from the deck edge at the joint, 11 in from 11 ft 5 in to the transition end (third review).",
       "dimensions": {
-        "thickness_in": 1.5
+        "thickness_in": 1.5,
+        "edge_follows_tfc_toe": true
       },
       "bounds_m": [
         [
-          -20.193,
-          -5.6896,
+          -20.193001,
+          -5.8674,
           6.21079
         ],
         [
           -13.9446,
-          5.6896,
+          5.8674,
           6.388602
         ]
       ],
-      "volume_m3": 2.70897832
+      "volume_m3": 2.750106
     },
     {
       "id": "sleeper_1",
@@ -3513,12 +3555,13 @@
       "color": "#d7d9cb",
       "pdf_pages": [
         51,
+        52,
         53,
         54,
         55
       ],
-      "basis": "Drawing layout; transition section approximate",
-      "note": "TFC approach railing transitions are approximated using the FC railing height. Standard transition curvature and section variation are unavailable. Stands on the precast edge panel (no overlay under it), starts 1/2 in short of the bridge railing at the neoprene expansion joint and is 15 ft 8 in long, ending 9 in short of the 4 ft 1 in corner cutback (sheets 53, 55); FC section of sheets 51 and 53 (section A-A).",
+      "basis": "Drawing dimensions (standard E 706-TTFC-01/-02 sections; taper drawn on sheets 54, 55)",
+      "note": "TFC railing transition, precast with the edge panel and standing on it (sheet 53 section A-A), starting at the 1/2 in neoprene joint and 15 ft 8 in long, ending 9 in short of the 4 ft 1 in corner cutback. Sections of standard E 706-TTFC-01/-02, which sheet 51 note 4 makes governing and sheets 54 and 55 draw in plan: 2 ft 9 in high, rear face 2 in inside the deck edge, 9 in top; the FC section at the joint (A-A); the lower batter fades out by 7 ft 2 in (B-B: 11 5/8 in base, 2 5/8 in batter on a 3 in toe); 11 in base at 8 ft 1 in (C-C); a 9 in vertical wall from 11 ft 5 in (D-D) to the end. 3/4 in chamfers omitted. Length decision (third review): 15 ft 8 in as drawn on sheets 53 and 55 and written as the pay limits on E 706-TTFC-01; the 13.17 ft of the sheet 9 station callouts is not followed. Shape decision: the standard and sheets 54/55 govern over the typical FC outline of sheet 53 section A-A.",
       "dimensions": {
         "height_ft": 2.75,
         "base_width_ft": 1.3333,
@@ -3526,7 +3569,15 @@
         "deck_edge_to_toe_ft": 1.5,
         "rear_setback_in": 2,
         "top_width_in": 9,
-        "toe_height_in": 3
+        "toe_height_in": 3,
+        "base_width_end_in": 9,
+        "taper_length_ft": 11.4167,
+        "sections_from_joint_in": {
+          "A": 0,
+          "B": 86,
+          "C": 97,
+          "D": 137
+        }
       },
       "bounds_m": [
         [
@@ -3540,7 +3591,7 @@
           7.071311
         ]
       ],
-      "volume_m3": 1.147586
+      "volume_m3": 1.015247
     },
     {
       "id": "approach_rail_1_1",
@@ -3549,12 +3600,13 @@
       "color": "#d7d9cb",
       "pdf_pages": [
         51,
+        52,
         53,
         54,
         55
       ],
-      "basis": "Drawing layout; transition section approximate",
-      "note": "TFC approach railing transitions are approximated using the FC railing height. Standard transition curvature and section variation are unavailable. Stands on the precast edge panel (no overlay under it), starts 1/2 in short of the bridge railing at the neoprene expansion joint and is 15 ft 8 in long, ending 9 in short of the 4 ft 1 in corner cutback (sheets 53, 55); FC section of sheets 51 and 53 (section A-A).",
+      "basis": "Drawing dimensions (standard E 706-TTFC-01/-02 sections; taper drawn on sheets 54, 55)",
+      "note": "TFC railing transition, precast with the edge panel and standing on it (sheet 53 section A-A), starting at the 1/2 in neoprene joint and 15 ft 8 in long, ending 9 in short of the 4 ft 1 in corner cutback. Sections of standard E 706-TTFC-01/-02, which sheet 51 note 4 makes governing and sheets 54 and 55 draw in plan: 2 ft 9 in high, rear face 2 in inside the deck edge, 9 in top; the FC section at the joint (A-A); the lower batter fades out by 7 ft 2 in (B-B: 11 5/8 in base, 2 5/8 in batter on a 3 in toe); 11 in base at 8 ft 1 in (C-C); a 9 in vertical wall from 11 ft 5 in (D-D) to the end. 3/4 in chamfers omitted. Length decision (third review): 15 ft 8 in as drawn on sheets 53 and 55 and written as the pay limits on E 706-TTFC-01; the 13.17 ft of the sheet 9 station callouts is not followed. Shape decision: the standard and sheets 54/55 govern over the typical FC outline of sheet 53 section A-A.",
       "dimensions": {
         "height_ft": 2.75,
         "base_width_ft": 1.3333,
@@ -3562,7 +3614,15 @@
         "deck_edge_to_toe_ft": 1.5,
         "rear_setback_in": 2,
         "top_width_in": 9,
-        "toe_height_in": 3
+        "toe_height_in": 3,
+        "base_width_end_in": 9,
+        "taper_length_ft": 11.4167,
+        "sections_from_joint_in": {
+          "A": 0,
+          "B": 86,
+          "C": 97,
+          "D": 137
+        }
       },
       "bounds_m": [
         [
@@ -3576,7 +3636,7 @@
           7.071311
         ]
       ],
-      "volume_m3": 1.147586
+      "volume_m3": 1.015247
     },
     {
       "id": "bent_2_0",
@@ -3584,24 +3644,29 @@
       "layer": "abutments",
       "color": "#c3c9bc",
       "pdf_pages": [
+        9,
         21,
         23,
         24,
-        25
+        25,
+        28
       ],
       "basis": "Drawing dimensions",
-      "note": "Approach-side 9 in pavement ledge, 8 in above the seat, added (sheets 21, 23, 24).",
+      "note": "Approach-side 9 in pavement ledge, 8 in above the seat, added (sheets 21, 23, 24). Bottom raised 3.29 in to El. 926.48 (decision, third review): the precast depth is the written 3 ft 0 in at the outer end and 3 ft 4 3/4 in at the inner end of each module (sheet 24) with the seat on the roadway profile less the 1 1/2 in overlay, 1 ft 8 in slab and 1 in bed (sheets 9, 21, 28); the sheet 23 elevations lie a uniform 0.27 ft lower and are not followed.",
       "dimensions": {
         "width_ft": 3,
         "module_length_ft": 19.666666666666668,
         "ledge_width_in": 9,
-        "ledge_height_above_seat_in": 8
+        "ledge_height_above_seat_in": 8,
+        "depth_outer_end_ft": 3,
+        "depth_inner_end_in": 40.75,
+        "bottom_el_ft": 926.48
       },
       "bounds_m": [
         [
           13.2588,
           -6.1468,
-          4.696968
+          4.780534
         ],
         [
           14.1732,
@@ -3609,7 +3674,7 @@
           6.018022
         ]
       ],
-      "volume_m3": 6.077149
+      "volume_m3": 5.619101
     },
     {
       "id": "bent_2_1",
@@ -3617,24 +3682,29 @@
       "layer": "abutments",
       "color": "#c3c9bc",
       "pdf_pages": [
+        9,
         21,
         23,
         24,
-        25
+        25,
+        28
       ],
       "basis": "Drawing dimensions",
-      "note": "Approach-side 9 in pavement ledge, 8 in above the seat, added (sheets 21, 23, 24).",
+      "note": "Approach-side 9 in pavement ledge, 8 in above the seat, added (sheets 21, 23, 24). Bottom raised 3.29 in to El. 926.48 (decision, third review): the precast depth is the written 3 ft 0 in at the outer end and 3 ft 4 3/4 in at the inner end of each module (sheet 24) with the seat on the roadway profile less the 1 1/2 in overlay, 1 ft 8 in slab and 1 in bed (sheets 9, 21, 28); the sheet 23 elevations lie a uniform 0.27 ft lower and are not followed.",
       "dimensions": {
         "width_ft": 3,
         "module_length_ft": 19.666666666666668,
         "ledge_width_in": 9,
-        "ledge_height_above_seat_in": 8
+        "ledge_height_above_seat_in": 8,
+        "depth_outer_end_ft": 3,
+        "depth_inner_end_in": 40.75,
+        "bottom_el_ft": 926.48
       },
       "bounds_m": [
         [
           13.2588,
           0.1524,
-          4.696968
+          4.780534
         ],
         [
           14.1732,
@@ -3642,7 +3712,7 @@
           6.018022
         ]
       ],
-      "volume_m3": 6.077149
+      "volume_m3": 5.619101
     },
     {
       "id": "bent_2_closure",
@@ -3650,22 +3720,25 @@
       "layer": "joints",
       "color": "#b59a66",
       "pdf_pages": [
+        9,
         21,
         23,
-        24
+        24,
+        28
       ],
       "basis": "Drawing dimensions",
-      "note": "Approach-side 9 in pavement ledge, 8 in above the seat, added (sheets 21, 23, 24).",
+      "note": "Approach-side 9 in pavement ledge, 8 in above the seat, added (sheets 21, 23, 24). Bottom raised 3.29 in to El. 926.48 (decision, third review): the precast depth is the written 3 ft 0 in at the outer end and 3 ft 4 3/4 in at the inner end of each module (sheet 24) with the seat on the roadway profile less the 1 1/2 in overlay, 1 ft 8 in slab and 1 in bed (sheets 9, 21, 28); the sheet 23 elevations lie a uniform 0.27 ft lower and are not followed. Top crowned at the centre line, continuing the 2% crossfall of both modules (sheet 23 elevation).",
       "dimensions": {
         "width_ft": 1,
         "ledge_width_in": 9,
-        "ledge_height_above_seat_in": 8
+        "ledge_height_above_seat_in": 8,
+        "bottom_el_ft": 926.48
       },
       "bounds_m": [
         [
           13.2588,
           -0.1524,
-          4.696968
+          4.780534
         ],
         [
           14.1732,
@@ -3673,7 +3746,7 @@
           6.02107
         ]
       ],
-      "volume_m3": 0.326564
+      "volume_m3": 0.302849
     },
     {
       "id": "bent_2_bed",
@@ -3686,24 +3759,26 @@
         38
       ],
       "basis": "Drawing dimensions",
-      "note": "The 9 in strip over the pavement ledge is raised 8 in with the ledge (sheets 23, 24).",
+      "note": "The 9 in strip over the pavement ledge is raised 8 in with the ledge (sheets 23, 24). Bottom fitted to the cap top, level along X with the 2% crossfall through the crown (sheets 23, 24); top unchanged on the deck and approach slab soffits, so the bed is 0.94 to 1.06 in thick (third review).",
       "dimensions": {
         "thickness_in": 1,
-        "ledge_step_in": 8
+        "ledge_step_in": 8,
+        "thickness_min_in": 0.94,
+        "thickness_max_in": 1.06
       },
       "bounds_m": [
         [
           13.2588,
           -6.1468,
-          5.694147
+          5.694934
         ],
         [
           14.1732,
           6.1468,
-          6.045683
+          6.045682
         ]
       ],
-      "volume_m3": 0.28553
+      "volume_m3": 0.285243
     },
     {
       "id": "wing_2_-1",
@@ -3712,28 +3787,32 @@
       "color": "#c3c9bc",
       "pdf_pages": [
         23,
-        27
+        24,
+        27,
+        53
       ],
       "basis": "Drawing dimensions",
-      "note": "",
+      "note": "Raised 3.29 in with the end-bent bottom (decision, third review): 3 ft 8 in high (sheets 24, 27), flush with the cap bottom and with the ledge top at the deck edge (sheet 24 section A-A), El. 926.48 to 930.15; the approach slab bears on it through the 1 in UHPC bed (sheet 53 section A-A).",
       "dimensions": {
         "length_ft": 9,
         "width_ft": 3,
-        "height_ft": 3.6666666666666665
+        "height_ft": 3.6666666666666665,
+        "bottom_el_ft": 926.48,
+        "top_el_ft": 930.15
       },
       "bounds_m": [
         [
           14.478,
           -6.1468,
-          4.696968
+          4.780534
         ],
         [
-          17.2212,
+          17.221201,
           -5.2324,
-          5.814568
+          5.898134
         ]
       ],
-      "volume_m3": 2.80336781
+      "volume_m3": 2.803369
     },
     {
       "id": "wing_joint_2_-1",
@@ -3742,26 +3821,30 @@
       "color": "#b59a66",
       "pdf_pages": [
         23,
-        27
+        24,
+        27,
+        53
       ],
       "basis": "Drawing dimensions",
-      "note": "",
+      "note": "1 ft UHPC wingwall closure pour (sheets 23, 24), full wingwall height. Raised 3.29 in with the end-bent bottom (decision, third review): 3 ft 8 in high (sheets 24, 27), flush with the cap bottom and with the ledge top at the deck edge (sheet 24 section A-A), El. 926.48 to 930.15; the approach slab bears on it through the 1 in UHPC bed (sheet 53 section A-A).",
       "dimensions": {
-        "length_ft": 1
+        "length_ft": 1,
+        "bottom_el_ft": 926.48,
+        "top_el_ft": 930.15
       },
       "bounds_m": [
         [
           14.1732,
           -6.1468,
-          4.696968
+          4.780534
         ],
         [
           14.478,
           -5.2324,
-          5.814568
+          5.898134
         ]
       ],
-      "volume_m3": 0.31148531
+      "volume_m3": 0.311485
     },
     {
       "id": "wing_2_1",
@@ -3770,28 +3853,32 @@
       "color": "#c3c9bc",
       "pdf_pages": [
         23,
-        27
+        24,
+        27,
+        53
       ],
       "basis": "Drawing dimensions",
-      "note": "",
+      "note": "Raised 3.29 in with the end-bent bottom (decision, third review): 3 ft 8 in high (sheets 24, 27), flush with the cap bottom and with the ledge top at the deck edge (sheet 24 section A-A), El. 926.48 to 930.15; the approach slab bears on it through the 1 in UHPC bed (sheet 53 section A-A).",
       "dimensions": {
         "length_ft": 9,
         "width_ft": 3,
-        "height_ft": 3.6666666666666665
+        "height_ft": 3.6666666666666665,
+        "bottom_el_ft": 926.48,
+        "top_el_ft": 930.15
       },
       "bounds_m": [
         [
           14.478,
           5.2324,
-          4.696968
+          4.780534
         ],
         [
-          17.2212,
+          17.221201,
           6.1468,
-          5.814568
+          5.898134
         ]
       ],
-      "volume_m3": 2.80336781
+      "volume_m3": 2.803369
     },
     {
       "id": "wing_joint_2_1",
@@ -3800,26 +3887,30 @@
       "color": "#b59a66",
       "pdf_pages": [
         23,
-        27
+        24,
+        27,
+        53
       ],
       "basis": "Drawing dimensions",
-      "note": "",
+      "note": "1 ft UHPC wingwall closure pour (sheets 23, 24), full wingwall height. Raised 3.29 in with the end-bent bottom (decision, third review): 3 ft 8 in high (sheets 24, 27), flush with the cap bottom and with the ledge top at the deck edge (sheet 24 section A-A), El. 926.48 to 930.15; the approach slab bears on it through the 1 in UHPC bed (sheet 53 section A-A).",
       "dimensions": {
-        "length_ft": 1
+        "length_ft": 1,
+        "bottom_el_ft": 926.48,
+        "top_el_ft": 930.15
       },
       "bounds_m": [
         [
           14.1732,
           5.2324,
-          4.696968
+          4.780534
         ],
         [
           14.478,
           6.1468,
-          5.814568
+          5.898134
         ]
       ],
-      "volume_m3": 0.31148531
+      "volume_m3": 0.311485
     },
     {
       "id": "approach_2_1",
@@ -4174,26 +4265,29 @@
       "layer": "wearing",
       "color": "#aebcb8",
       "pdf_pages": [
-        53
+        53,
+        54,
+        55
       ],
       "basis": "Drawing dimensions",
-      "note": "",
+      "note": "LMC-VE overlay, 1 1/2 in (sheets 23, 24, 53), on the approach slab top up to the railing toe (sheet 53 section A-A). Along the TFC transitions its edge follows the tapering toe of standard E 706-TTFC-01/-02 (sheets 54, 55): 1 ft 6 in from the deck edge at the joint, 11 in from 11 ft 5 in to the transition end (third review).",
       "dimensions": {
-        "thickness_in": 1.5
+        "thickness_in": 1.5,
+        "edge_follows_tfc_toe": true
       },
       "bounds_m": [
         [
           13.9446,
-          -5.6896,
+          -5.8674,
           6.21079
         ],
         [
-          20.193,
-          5.6896,
+          20.193001,
+          5.8674,
           6.388602
         ]
       ],
-      "volume_m3": 2.70897832
+      "volume_m3": 2.750106
     },
     {
       "id": "sleeper_2",
@@ -4235,12 +4329,13 @@
       "color": "#d7d9cb",
       "pdf_pages": [
         51,
+        52,
         53,
         54,
         55
       ],
-      "basis": "Drawing layout; transition section approximate",
-      "note": "TFC approach railing transitions are approximated using the FC railing height. Standard transition curvature and section variation are unavailable. Stands on the precast edge panel (no overlay under it), starts 1/2 in short of the bridge railing at the neoprene expansion joint and is 15 ft 8 in long, ending 9 in short of the 4 ft 1 in corner cutback (sheets 53, 55); FC section of sheets 51 and 53 (section A-A).",
+      "basis": "Drawing dimensions (standard E 706-TTFC-01/-02 sections; taper drawn on sheets 54, 55)",
+      "note": "TFC railing transition, precast with the edge panel and standing on it (sheet 53 section A-A), starting at the 1/2 in neoprene joint and 15 ft 8 in long, ending 9 in short of the 4 ft 1 in corner cutback. Sections of standard E 706-TTFC-01/-02, which sheet 51 note 4 makes governing and sheets 54 and 55 draw in plan: 2 ft 9 in high, rear face 2 in inside the deck edge, 9 in top; the FC section at the joint (A-A); the lower batter fades out by 7 ft 2 in (B-B: 11 5/8 in base, 2 5/8 in batter on a 3 in toe); 11 in base at 8 ft 1 in (C-C); a 9 in vertical wall from 11 ft 5 in (D-D) to the end. 3/4 in chamfers omitted. Length decision (third review): 15 ft 8 in as drawn on sheets 53 and 55 and written as the pay limits on E 706-TTFC-01; the 13.17 ft of the sheet 9 station callouts is not followed. Shape decision: the standard and sheets 54/55 govern over the typical FC outline of sheet 53 section A-A.",
       "dimensions": {
         "height_ft": 2.75,
         "base_width_ft": 1.3333,
@@ -4248,7 +4343,15 @@
         "deck_edge_to_toe_ft": 1.5,
         "rear_setback_in": 2,
         "top_width_in": 9,
-        "toe_height_in": 3
+        "toe_height_in": 3,
+        "base_width_end_in": 9,
+        "taper_length_ft": 11.4167,
+        "sections_from_joint_in": {
+          "A": 0,
+          "B": 86,
+          "C": 97,
+          "D": 137
+        }
       },
       "bounds_m": [
         [
@@ -4262,7 +4365,7 @@
           7.071311
         ]
       ],
-      "volume_m3": 1.147586
+      "volume_m3": 1.015247
     },
     {
       "id": "approach_rail_2_1",
@@ -4271,12 +4374,13 @@
       "color": "#d7d9cb",
       "pdf_pages": [
         51,
+        52,
         53,
         54,
         55
       ],
-      "basis": "Drawing layout; transition section approximate",
-      "note": "TFC approach railing transitions are approximated using the FC railing height. Standard transition curvature and section variation are unavailable. Stands on the precast edge panel (no overlay under it), starts 1/2 in short of the bridge railing at the neoprene expansion joint and is 15 ft 8 in long, ending 9 in short of the 4 ft 1 in corner cutback (sheets 53, 55); FC section of sheets 51 and 53 (section A-A).",
+      "basis": "Drawing dimensions (standard E 706-TTFC-01/-02 sections; taper drawn on sheets 54, 55)",
+      "note": "TFC railing transition, precast with the edge panel and standing on it (sheet 53 section A-A), starting at the 1/2 in neoprene joint and 15 ft 8 in long, ending 9 in short of the 4 ft 1 in corner cutback. Sections of standard E 706-TTFC-01/-02, which sheet 51 note 4 makes governing and sheets 54 and 55 draw in plan: 2 ft 9 in high, rear face 2 in inside the deck edge, 9 in top; the FC section at the joint (A-A); the lower batter fades out by 7 ft 2 in (B-B: 11 5/8 in base, 2 5/8 in batter on a 3 in toe); 11 in base at 8 ft 1 in (C-C); a 9 in vertical wall from 11 ft 5 in (D-D) to the end. 3/4 in chamfers omitted. Length decision (third review): 15 ft 8 in as drawn on sheets 53 and 55 and written as the pay limits on E 706-TTFC-01; the 13.17 ft of the sheet 9 station callouts is not followed. Shape decision: the standard and sheets 54/55 govern over the typical FC outline of sheet 53 section A-A.",
       "dimensions": {
         "height_ft": 2.75,
         "base_width_ft": 1.3333,
@@ -4284,7 +4388,15 @@
         "deck_edge_to_toe_ft": 1.5,
         "rear_setback_in": 2,
         "top_width_in": 9,
-        "toe_height_in": 3
+        "toe_height_in": 3,
+        "base_width_end_in": 9,
+        "taper_length_ft": 11.4167,
+        "sections_from_joint_in": {
+          "A": 0,
+          "B": 86,
+          "C": 97,
+          "D": 137
+        }
       },
       "bounds_m": [
         [
@@ -4298,7 +4410,7 @@
           7.071311
         ]
       ],
-      "volume_m3": 1.147586
+      "volume_m3": 1.015247
     },
     {
       "id": "rail_1_-1",
@@ -4783,22 +4895,27 @@
         22,
         51
       ],
-      "basis": "Layout reference; marker dimensions estimated",
-      "note": "Spacing does not exceed 40 ft. Small marker dimensions are for visualization only.",
-      "dimensions": {},
+      "basis": "Drawing position and size scaled from sheet 51 sections; length along the railing estimated",
+      "note": "Spacing does not exceed 40 ft (sheets 22, 51). Mounted on the upper front (traffic) face as drawn in sheet 51 sections A-A and B-B: 3 in on the batter, 2 in proud of it, top 5.4 in below the railing top (scaled at 1 in = 1 ft; not dimensioned). The 0.2 ft length along the railing is a visualisation value.",
+      "dimensions": {
+        "face_height_in": 3,
+        "projection_in": 2,
+        "top_below_rail_top_in": 5.4,
+        "length_along_rail_ft": 0.2
+      },
       "bounds_m": [
         [
           -12.22248,
-          -6.049264,
-          7.029269
+          -5.855452,
+          6.863728
         ],
         [
           -12.16152,
-          -6.030976,
-          7.090229
+          -5.798231,
+          6.944228
         ]
       ],
-      "volume_m3": 6.796e-05
+      "volume_m3": 0.000236
     },
     {
       "id": "delineator_-1_1",
@@ -4809,22 +4926,27 @@
         22,
         51
       ],
-      "basis": "Layout reference; marker dimensions estimated",
-      "note": "Spacing does not exceed 40 ft. Small marker dimensions are for visualization only.",
-      "dimensions": {},
+      "basis": "Drawing position and size scaled from sheet 51 sections; length along the railing estimated",
+      "note": "Spacing does not exceed 40 ft (sheets 22, 51). Mounted on the upper front (traffic) face as drawn in sheet 51 sections A-A and B-B: 3 in on the batter, 2 in proud of it, top 5.4 in below the railing top (scaled at 1 in = 1 ft; not dimensioned). The 0.2 ft length along the railing is a visualisation value.",
+      "dimensions": {
+        "face_height_in": 3,
+        "projection_in": 2,
+        "top_below_rail_top_in": 5.4,
+        "length_along_rail_ft": 0.2
+      },
       "bounds_m": [
         [
           -0.03048,
-          -6.049264,
-          7.047332
+          -5.855452,
+          6.881881
         ],
         [
           0.03048,
-          -6.030976,
-          7.108292
+          -5.798231,
+          6.962202
         ]
       ],
-      "volume_m3": 6.796e-05
+      "volume_m3": 0.000236
     },
     {
       "id": "delineator_-1_2",
@@ -4835,22 +4957,27 @@
         22,
         51
       ],
-      "basis": "Layout reference; marker dimensions estimated",
-      "note": "Spacing does not exceed 40 ft. Small marker dimensions are for visualization only.",
-      "dimensions": {},
+      "basis": "Drawing position and size scaled from sheet 51 sections; length along the railing estimated",
+      "note": "Spacing does not exceed 40 ft (sheets 22, 51). Mounted on the upper front (traffic) face as drawn in sheet 51 sections A-A and B-B: 3 in on the batter, 2 in proud of it, top 5.4 in below the railing top (scaled at 1 in = 1 ft; not dimensioned). The 0.2 ft length along the railing is a visualisation value.",
+      "dimensions": {
+        "face_height_in": 3,
+        "projection_in": 2,
+        "top_below_rail_top_in": 5.4,
+        "length_along_rail_ft": 0.2
+      },
       "bounds_m": [
         [
           12.16152,
-          -6.049264,
-          7.029269
+          -5.855452,
+          6.863728
         ],
         [
           12.22248,
-          -6.030976,
-          7.090229
+          -5.798231,
+          6.944228
         ]
       ],
-      "volume_m3": 6.796e-05
+      "volume_m3": 0.000236
     },
     {
       "id": "delineator_1_0",
@@ -4861,22 +4988,27 @@
         22,
         51
       ],
-      "basis": "Layout reference; marker dimensions estimated",
-      "note": "Spacing does not exceed 40 ft. Small marker dimensions are for visualization only.",
-      "dimensions": {},
+      "basis": "Drawing position and size scaled from sheet 51 sections; length along the railing estimated",
+      "note": "Spacing does not exceed 40 ft (sheets 22, 51). Mounted on the upper front (traffic) face as drawn in sheet 51 sections A-A and B-B: 3 in on the batter, 2 in proud of it, top 5.4 in below the railing top (scaled at 1 in = 1 ft; not dimensioned). The 0.2 ft length along the railing is a visualisation value.",
+      "dimensions": {
+        "face_height_in": 3,
+        "projection_in": 2,
+        "top_below_rail_top_in": 5.4,
+        "length_along_rail_ft": 0.2
+      },
       "bounds_m": [
         [
           -12.22248,
-          6.030976,
-          7.029269
+          5.798231,
+          6.863728
         ],
         [
           -12.16152,
-          6.049264,
-          7.090229
+          5.855452,
+          6.944228
         ]
       ],
-      "volume_m3": 6.796e-05
+      "volume_m3": 0.000236
     },
     {
       "id": "delineator_1_1",
@@ -4887,22 +5019,27 @@
         22,
         51
       ],
-      "basis": "Layout reference; marker dimensions estimated",
-      "note": "Spacing does not exceed 40 ft. Small marker dimensions are for visualization only.",
-      "dimensions": {},
+      "basis": "Drawing position and size scaled from sheet 51 sections; length along the railing estimated",
+      "note": "Spacing does not exceed 40 ft (sheets 22, 51). Mounted on the upper front (traffic) face as drawn in sheet 51 sections A-A and B-B: 3 in on the batter, 2 in proud of it, top 5.4 in below the railing top (scaled at 1 in = 1 ft; not dimensioned). The 0.2 ft length along the railing is a visualisation value.",
+      "dimensions": {
+        "face_height_in": 3,
+        "projection_in": 2,
+        "top_below_rail_top_in": 5.4,
+        "length_along_rail_ft": 0.2
+      },
       "bounds_m": [
         [
           -0.03048,
-          6.030976,
-          7.047332
+          5.798231,
+          6.881881
         ],
         [
           0.03048,
-          6.049264,
-          7.108292
+          5.855452,
+          6.962202
         ]
       ],
-      "volume_m3": 6.796e-05
+      "volume_m3": 0.000236
     },
     {
       "id": "delineator_1_2",
@@ -4913,22 +5050,291 @@
         22,
         51
       ],
-      "basis": "Layout reference; marker dimensions estimated",
-      "note": "Spacing does not exceed 40 ft. Small marker dimensions are for visualization only.",
-      "dimensions": {},
+      "basis": "Drawing position and size scaled from sheet 51 sections; length along the railing estimated",
+      "note": "Spacing does not exceed 40 ft (sheets 22, 51). Mounted on the upper front (traffic) face as drawn in sheet 51 sections A-A and B-B: 3 in on the batter, 2 in proud of it, top 5.4 in below the railing top (scaled at 1 in = 1 ft; not dimensioned). The 0.2 ft length along the railing is a visualisation value.",
+      "dimensions": {
+        "face_height_in": 3,
+        "projection_in": 2,
+        "top_below_rail_top_in": 5.4,
+        "length_along_rail_ft": 0.2
+      },
       "bounds_m": [
         [
           12.16152,
-          6.030976,
-          7.029269
+          5.798231,
+          6.863728
         ],
         [
           12.22248,
-          6.049264,
-          7.090229
+          5.855452,
+          6.944228
         ]
       ],
-      "volume_m3": 6.796e-05
+      "volume_m3": 0.000236
+    },
+    {
+      "id": "wing_bed_1_-1",
+      "name": "End Bent 1 Wingwall -1 1 in UHPC bedding layer",
+      "layer": "bearings",
+      "color": "#465e66",
+      "pdf_pages": [
+        24,
+        27,
+        53
+      ],
+      "basis": "Drawing dimensions; thickness follows the flat wing top",
+      "note": "UHPC bed between the wingwall (and its 1 ft closure pour) and the approach slab: \"1 in UHPC bed (typ.)\", sheet 53 section A-A, also drawn on sheet 24 section A-A. The precast wing top is flat (sheet 27) while the slab follows the 2% crossfall and the vertical curve, so the fill is 0.48 to 1.66 in thick.",
+      "dimensions": {
+        "thickness_in": 1,
+        "thickness_min_in": 0.48,
+        "thickness_max_in": 1.66,
+        "length_ft": 10,
+        "width_ft": 3
+      },
+      "bounds_m": [
+        [
+          -17.2212,
+          -6.1468,
+          5.898134
+        ],
+        [
+          -14.1732,
+          -5.2324,
+          5.940262
+        ]
+      ],
+      "volume_m3": 0.076259
+    },
+    {
+      "id": "wing_bed_1_1",
+      "name": "End Bent 1 Wingwall 1 1 in UHPC bedding layer",
+      "layer": "bearings",
+      "color": "#465e66",
+      "pdf_pages": [
+        24,
+        27,
+        53
+      ],
+      "basis": "Drawing dimensions; thickness follows the flat wing top",
+      "note": "UHPC bed between the wingwall (and its 1 ft closure pour) and the approach slab: \"1 in UHPC bed (typ.)\", sheet 53 section A-A, also drawn on sheet 24 section A-A. The precast wing top is flat (sheet 27) while the slab follows the 2% crossfall and the vertical curve, so the fill is 0.48 to 1.66 in thick.",
+      "dimensions": {
+        "thickness_in": 1,
+        "thickness_min_in": 0.48,
+        "thickness_max_in": 1.66,
+        "length_ft": 10,
+        "width_ft": 3
+      },
+      "bounds_m": [
+        [
+          -17.2212,
+          5.2324,
+          5.898134
+        ],
+        [
+          -14.1732,
+          6.1468,
+          5.940262
+        ]
+      ],
+      "volume_m3": 0.076259
+    },
+    {
+      "id": "wing_bed_2_-1",
+      "name": "End Bent 4 Wingwall -1 1 in UHPC bedding layer",
+      "layer": "bearings",
+      "color": "#465e66",
+      "pdf_pages": [
+        24,
+        27,
+        53
+      ],
+      "basis": "Drawing dimensions; thickness follows the flat wing top",
+      "note": "UHPC bed between the wingwall (and its 1 ft closure pour) and the approach slab: \"1 in UHPC bed (typ.)\", sheet 53 section A-A, also drawn on sheet 24 section A-A. The precast wing top is flat (sheet 27) while the slab follows the 2% crossfall and the vertical curve, so the fill is 0.48 to 1.66 in thick.",
+      "dimensions": {
+        "thickness_in": 1,
+        "thickness_min_in": 0.48,
+        "thickness_max_in": 1.66,
+        "length_ft": 10,
+        "width_ft": 3
+      },
+      "bounds_m": [
+        [
+          14.1732,
+          -6.1468,
+          5.898134
+        ],
+        [
+          17.2212,
+          -5.2324,
+          5.940262
+        ]
+      ],
+      "volume_m3": 0.076259
+    },
+    {
+      "id": "wing_bed_2_1",
+      "name": "End Bent 4 Wingwall 1 1 in UHPC bedding layer",
+      "layer": "bearings",
+      "color": "#465e66",
+      "pdf_pages": [
+        24,
+        27,
+        53
+      ],
+      "basis": "Drawing dimensions; thickness follows the flat wing top",
+      "note": "UHPC bed between the wingwall (and its 1 ft closure pour) and the approach slab: \"1 in UHPC bed (typ.)\", sheet 53 section A-A, also drawn on sheet 24 section A-A. The precast wing top is flat (sheet 27) while the slab follows the 2% crossfall and the vertical curve, so the fill is 0.48 to 1.66 in thick.",
+      "dimensions": {
+        "thickness_in": 1,
+        "thickness_min_in": 0.48,
+        "thickness_max_in": 1.66,
+        "length_ft": 10,
+        "width_ft": 3
+      },
+      "bounds_m": [
+        [
+          14.1732,
+          5.2324,
+          5.898134
+        ],
+        [
+          17.2212,
+          6.1468,
+          5.940262
+        ]
+      ],
+      "volume_m3": 0.076259
+    },
+    {
+      "id": "rail_joint_1_-1",
+      "name": "End Bent 1 railing ½ in neoprene expansion joint 2",
+      "layer": "joints",
+      "color": "#3b4044",
+      "pdf_pages": [
+        51
+      ],
+      "basis": "Drawing dimensions",
+      "note": "1/2 in neoprene expansion joint between the 91 ft 6 in bridge railing and the TFC transition, full railing height (sheet 51 plan and elevation); filler through the FC section of sheet 51, standing on the approach slab top.",
+      "dimensions": {
+        "length_in": 0.5,
+        "height_ft": 2.75,
+        "base_width_ft": 1.3333,
+        "deck_edge_to_toe_ft": 1.5,
+        "rear_setback_in": 2,
+        "top_width_in": 9,
+        "toe_height_in": 3
+      },
+      "bounds_m": [
+        [
+          -13.9573,
+          -6.096,
+          6.228539
+        ],
+        [
+          -13.9446,
+          -5.6896,
+          7.071354
+        ]
+      ],
+      "volume_m3": 0.003052
+    },
+    {
+      "id": "rail_joint_1_1",
+      "name": "End Bent 1 railing ½ in neoprene expansion joint 1",
+      "layer": "joints",
+      "color": "#3b4044",
+      "pdf_pages": [
+        51
+      ],
+      "basis": "Drawing dimensions",
+      "note": "1/2 in neoprene expansion joint between the 91 ft 6 in bridge railing and the TFC transition, full railing height (sheet 51 plan and elevation); filler through the FC section of sheet 51, standing on the approach slab top.",
+      "dimensions": {
+        "length_in": 0.5,
+        "height_ft": 2.75,
+        "base_width_ft": 1.3333,
+        "deck_edge_to_toe_ft": 1.5,
+        "rear_setback_in": 2,
+        "top_width_in": 9,
+        "toe_height_in": 3
+      },
+      "bounds_m": [
+        [
+          -13.9573,
+          5.6896,
+          6.228539
+        ],
+        [
+          -13.9446,
+          6.096,
+          7.071354
+        ]
+      ],
+      "volume_m3": 0.003052
+    },
+    {
+      "id": "rail_joint_2_-1",
+      "name": "End Bent 4 railing ½ in neoprene expansion joint 2",
+      "layer": "joints",
+      "color": "#3b4044",
+      "pdf_pages": [
+        51
+      ],
+      "basis": "Drawing dimensions",
+      "note": "1/2 in neoprene expansion joint between the 91 ft 6 in bridge railing and the TFC transition, full railing height (sheet 51 plan and elevation); filler through the FC section of sheet 51, standing on the approach slab top.",
+      "dimensions": {
+        "length_in": 0.5,
+        "height_ft": 2.75,
+        "base_width_ft": 1.3333,
+        "deck_edge_to_toe_ft": 1.5,
+        "rear_setback_in": 2,
+        "top_width_in": 9,
+        "toe_height_in": 3
+      },
+      "bounds_m": [
+        [
+          13.9446,
+          -6.096,
+          6.228539
+        ],
+        [
+          13.9573,
+          -5.6896,
+          7.071354
+        ]
+      ],
+      "volume_m3": 0.003052
+    },
+    {
+      "id": "rail_joint_2_1",
+      "name": "End Bent 4 railing ½ in neoprene expansion joint 1",
+      "layer": "joints",
+      "color": "#3b4044",
+      "pdf_pages": [
+        51
+      ],
+      "basis": "Drawing dimensions",
+      "note": "1/2 in neoprene expansion joint between the 91 ft 6 in bridge railing and the TFC transition, full railing height (sheet 51 plan and elevation); filler through the FC section of sheet 51, standing on the approach slab top.",
+      "dimensions": {
+        "length_in": 0.5,
+        "height_ft": 2.75,
+        "base_width_ft": 1.3333,
+        "deck_edge_to_toe_ft": 1.5,
+        "rear_setback_in": 2,
+        "top_width_in": 9,
+        "toe_height_in": 3
+      },
+      "bounds_m": [
+        [
+          13.9446,
+          5.6896,
+          6.228539
+        ],
+        [
+          13.9573,
+          6.096,
+          7.071354
+        ]
+      ],
+      "volume_m3": 0.003052
     }
   ],
   "detail_coverage": [
@@ -4957,21 +5363,24 @@
     {
       "feature": "Piers, abutments and wingwalls",
       "status": "mixed",
-      "detail": "Includes 8 modules per pier with vertical UHPC, rounded wall ends, segmented end bents with the 9 in pavement ledge and 4 wingwalls. Internal pile pockets are shown as filled envelopes.",
+      "detail": "Includes 8 modules per pier with vertical UHPC, rounded wall ends, segmented end bents with the 9 in pavement ledge and 4 wingwalls on 1 in UHPC beds. End-bent seats follow the roadway profile and the precast depths of sheet 24 (bottom El. 926.48; the sheet 23 elevations are 0.27 ft lower and not followed). Pier and end-bent tops, closures included, follow the 2% crossfall, and the beds sit on them. Internal pile pockets are shown as filled envelopes.",
       "sources": [
+        9,
         21,
         23,
         24,
         27,
-        28
+        28,
+        53
       ]
     },
     {
       "feature": "Approach slabs and railings",
       "status": "mixed",
-      "detail": "Each approach includes 6 panels and connections, with the 4 ft 1 in x 1 ft 6 in outer corner cutbacks. FC railing sections follow sheet 51 (top corner radii omitted); the TFC transitions are 15 ft 8 in long (sheets 53, 55) and use the FC section of sheet 53 section A-A, their curvature is omitted. The 6 ft sleeper slabs sit as in sheet 59 section B-B; their 2 ft lug step is simplified.",
+      "detail": "Each approach includes 6 panels and connections, with the 4 ft 1 in x 1 ft 6 in outer corner cutbacks. FC railing sections follow sheet 51 (top corner radii omitted); the TFC transitions are 15 ft 8 in long and follow the sections of standard E 706-TTFC-01/-02 (taper drawn on sheets 54, 55; 3/4 in chamfers omitted), with the approach overlay edge on their toe. The 1/2 in neoprene railing joints and the barrier delineators on the upper front face are modelled (sheet 51). The 6 ft sleeper slabs sit as in sheet 59 section B-B; their 2 ft lug step is simplified.",
       "sources": [
         51,
+        52,
         53,
         54,
         55,
@@ -4999,7 +5408,7 @@
     [
       20.8661,
       6.2992,
-      7.108291600000008
+      7.094953
     ]
   ],
   "glb_bounds_m": [
@@ -5010,7 +5419,7 @@
     ],
     [
       20.8661,
-      7.108291600000008,
+      7.094953,
       6.2992
     ]
   ],
@@ -5024,7 +5433,7 @@
   },
   "model_scope": "Exterior drawing reconstruction; source-derived and inferred geometry tagged separately.",
   "review_correction": "ledge-cutback-fc-rail-joints-endbent4",
-  "revision": "1.2-drawing-review-2",
+  "revision": "1.3-deviations",
   "review_correction_record": {
     "source_pdf_pages": [
       21,
@@ -5149,43 +5558,7 @@
     "before_glb_sha256": "a162d1b5edc0e74f7b3812aa03ac6255761d1f6313469bbed71c0ea9b5977720",
     "after_glb_sha256": "dd72532306db54b9e462514fe14db3b278d176b874ead702ad3f9e73a3f42635"
   },
-  "known_deviations": [
-    {
-      "id": "end-bent-absolute-elevation",
-      "parts": "bent_1_*, bent_2_*",
-      "source": "sheets 21, 23 (PDF 21, 23)",
-      "deviation": "Seat El. 929.48 at the edges and 929.89 at the centre (ledge 8 in higher) against plan El. 929.21 / 929.61 (ledge 929.88 / 930.28); the bottom is at plan El. 926.21, so the cap is about 3.3 in deeper than drawn.",
-      "reason": "The draft plans conflict: the sheet 23 seat plus 1 in bed, 20 in slab and 1 1/2 in overlay gives El. 931.485 at the bent, the sheet 21 profile El. 931.76. The model keeps the deck on the profile and the cap bottom on sheet 23."
-    },
-    {
-      "id": "wingwall-top-elevation",
-      "parts": "wing_*, wing_joint_*",
-      "source": "sheets 23, 24, 53 (PDF 23, 24, 53)",
-      "deviation": "Wingwall tops at El. 929.88 (3 ft 8 in high, sheets 23-24) are about 2.8-3.9 in below the approach slab soffit less the 1 in UHPC bed of sheet 53 section A-A, and about 3.3 in below the corrected end-bent ledge.",
-      "reason": "Same datum conflict as end-bent-absolute-elevation; not resolved from the draft plans."
-    },
-    {
-      "id": "railing-neoprene-joint",
-      "parts": "approach_rail_*, rail_closure_0_*, rail_closure_3_*",
-      "source": "sheet 51 (PDF 51)",
-      "deviation": "The 1/2 in neoprene expansion joint between the bridge railing and each approach transition is an open 1/2 in gap; the filler is not a separate part.",
-      "reason": "Joint filler, not a structural member."
-    },
-    {
-      "id": "tfc-transition-length-sheet-9",
-      "parts": "approach_rail_*",
-      "source": "sheets 9, 53, 55 (PDF 9, 53, 55)",
-      "deviation": "The TFC transitions are 15 ft 8 in long as drawn on sheets 53 and 55; the sheet 9 roadway plan (item 1) gives sta. 457+58.08 to 457+71.25 and 458+62.75 to 458+75.92, 13.17 ft.",
-      "reason": "The draft plans conflict; the structural detail sheets of the precast edge panel are followed."
-    },
-    {
-      "id": "railing-delineator-position",
-      "parts": "delineator_*",
-      "source": "sheet 51 (PDF 51), sections A-A and B-B",
-      "deviation": "The six barrier delineators sit across the railing top, mostly embedded in it; sheet 51 draws them on the upper front (traffic) face.",
-      "reason": "Visualisation markers; their size and mounting height are not dimensioned on the drawings."
-    }
-  ],
+  "known_deviations": [],
   "review_correction_2": "tfc-transition-length-sleeper-position-bent4-labels",
   "review_correction_2_record": {
     "source_pdf_pages": [
@@ -5239,5 +5612,158 @@
     },
     "before_glb_sha256": "dd72532306db54b9e462514fe14db3b278d176b874ead702ad3f9e73a3f42635",
     "after_glb_sha256": "8017ea02b0c13d6c5a1f527003204a2432bfbc34dd8fd7246e854c70797d2ecc"
+  },
+  "review_correction_3": "endbent-datum-wing-beds-neoprene-joints-delineators-tfc-decision",
+  "review_correction_record_3": {
+    "source_pdf_pages": [
+      9,
+      21,
+      22,
+      23,
+      24,
+      27,
+      28,
+      29,
+      51,
+      52,
+      53,
+      54,
+      55,
+      62,
+      63,
+      64
+    ],
+    "printed_sheets": [
+      9,
+      21,
+      22,
+      23,
+      24,
+      27,
+      28,
+      29,
+      51,
+      52,
+      53,
+      54,
+      55,
+      62,
+      63,
+      64
+    ],
+    "external_references": [
+      {
+        "document": "INDOT Standard Drawings E 706-TTFC-01 and -02 (Sept. 2013), referenced by sheet 51 note 4 and sheet 52",
+        "url": "https://www.in.gov/dot/div/contracts/standards/drawings/sep20/e/700e/e700%20combined%20pdfs/E706-TTFC.pdf",
+        "sha256": "3a46124fe3803d3b019c2865897c49303252fbcc25567b087229b5af335c6e0a",
+        "used_for": "15 ft 8 in pay limits (-01) and the transition sections A-A to D-D (-01, -02)"
+      }
+    ],
+    "corrections": {
+      "end_bent_bottom": "cap bottoms raised 0.0836 m (3.29 in) from El. 926.21 to 926.48: precast depth 3 ft 0 in at the outer end and 3 ft 4 3/4 in at the inner end as written on sheet 24; seat unchanged",
+      "wingwalls": "wingwalls and wingwall closure pours raised 3.29 in with the cap bottom: El. 926.48..930.15, top flush with the ledge top at the deck edge (sheet 24 section A-A)",
+      "wingwall_beds": "four 1 in UHPC beds added between the wings and the approach slab (sheet 53 section A-A)",
+      "railing_neoprene_joints": "four 1/2 in neoprene joint fillers added between the bridge railing and the TFC transitions, FC section (sheet 51)",
+      "barrier_delineators": "six delineators moved from the railing top to the upper front face as drawn in sheet 51 sections A-A and B-B (scaled)",
+      "tfc_transition_sections": "the four TFC transitions rebuilt from the constant FC section to the sections of standard E 706-TTFC-01/-02 (16 in base at the joint, 11 5/8 in at 7 ft 2 in, 11 in at 8 ft 1 in, 9 in vertical wall from 11 ft 5 in), as drawn in plan on sheets 54 and 55",
+      "approach_overlay_edges": "approach overlay edges follow the TFC toe (sheet 53 section A-A: overlay to the railing toe)",
+      "end_bent_closures_and_beds": "central closures crowned with the 2% crossfall (sheet 23); bed bottoms fitted to the level, crowned cap tops (were up to 1.5 mm off and 4.6 mm into the closures)",
+      "pier_closures_and_beds": "pier closure tops on the 2% crossfall, closure 4 crowned (sheet 28); bed bottoms fitted to the pier tops and bed outlines trimmed to the wall top with its R = 1 ft 6 in ends (sheets 28, 29)"
+    },
+    "decisions": [
+      {
+        "id": "end-bent-absolute-elevation",
+        "reading": "roadway profile (sheets 9, 21, 62-64) less the 22 1/2 in build-up for the seat, and the written precast depths of sheet 24 for the bottom",
+        "rejected": "the absolute elevations of sheet 23 (seat 929.21 / 929.61, bottom 926.21)",
+        "reasoning": "The profile appears on four sheets, and the pier sheet 28 (crown 929.95 + written 1 in bed + 1 ft 8 in slab + 1 1/2 in overlay = 931.825 against 931.82) agrees with it. Sheet 24 writes the module depths (3 ft 0 in / 3 ft 4 3/4 in), and the sheet 23 elevation differences repeat them. All five sheet 23 elevations sit a uniform 0.27 ft below that datum, which would need a 4 1/4 in bed against the 1 in drawn on sheets 23, 24, 28 and 53. Keeping El. 926.21 made the modules 3.3 in deeper than written."
+      },
+      {
+        "id": "wingwall-top-elevation",
+        "reading": "same datum: 3 ft 8 in wing flush with the cap bottom and the ledge top (sheets 24, 27)",
+        "rejected": "sheet 23 El. 929.88 at the bent ends",
+        "reasoning": "Follows from the end-bent decision; sheet 24 section A-A draws the wing bottom on the cap bottom and its top on the ledge top, under the 1 in bed of sheet 53 section A-A."
+      },
+      {
+        "id": "tfc-transition-length-sheet-9",
+        "reading": "15 ft 8 in (sheets 53 and 55, standard E 706-TTFC-01 pay limits)",
+        "rejected": "13.17 ft from the sheet 9 station callouts",
+        "reasoning": "The structural detail sheets draw 15 ft 8 in, and the standard that sheets 51 (note 4) and 52 make governing for the TFC details writes 15 ft 8 in as its pay limits. The sheet 9 callouts are a 1 in = 50 ft roadway plan and agree with neither."
+      },
+      {
+        "id": "tfc-transition-section",
+        "reading": "sections A-A to D-D of standard E 706-TTFC-01/-02, drawn in plan on sheets 54 and 55",
+        "rejected": "the constant FC outline of sheet 53 section A-A",
+        "reasoning": "Sheet 51 note 4 and sheet 52 make the standard governing for the TFC details, and it writes every section dimension. The Type IA/IB module plans (sheets 54, 55, 3/4 in = 1 ft) draw the same toe line: 16 in at the joint, 11.64 in at 7 ft 2 in, 9 in at 11 ft 5 in. Sheet 53 section A-A is a typical 3/8 in = 1 ft section cut about 13 ft from the joint, where both of these give a 9 in vertical wall."
+      }
+    ],
+    "resolved_deviations": [
+      "railing-neoprene-joint",
+      "railing-delineator-position"
+    ],
+    "decided_deviations": [
+      "end-bent-absolute-elevation",
+      "wingwall-top-elevation",
+      "tfc-transition-length-sheet-9"
+    ],
+    "changed_parts": [
+      "bent_1_0",
+      "bent_1_1",
+      "bent_1_closure",
+      "bent_2_0",
+      "bent_2_1",
+      "bent_2_closure",
+      "bent_1_bed",
+      "bent_2_bed",
+      "pier_2_closure_1",
+      "pier_2_closure_2",
+      "pier_2_closure_3",
+      "pier_2_closure_4",
+      "pier_2_closure_5",
+      "pier_2_closure_6",
+      "pier_2_closure_7",
+      "pier_2_bed",
+      "pier_3_closure_1",
+      "pier_3_closure_2",
+      "pier_3_closure_3",
+      "pier_3_closure_4",
+      "pier_3_closure_5",
+      "pier_3_closure_6",
+      "pier_3_closure_7",
+      "pier_3_bed",
+      "wing_1_-1",
+      "wing_joint_1_-1",
+      "wing_1_1",
+      "wing_joint_1_1",
+      "wing_2_-1",
+      "wing_joint_2_-1",
+      "wing_2_1",
+      "wing_joint_2_1",
+      "delineator_-1_0",
+      "delineator_-1_1",
+      "delineator_-1_2",
+      "delineator_1_0",
+      "delineator_1_1",
+      "delineator_1_2",
+      "approach_rail_1_-1",
+      "approach_rail_1_1",
+      "approach_overlay_1",
+      "approach_rail_2_-1",
+      "approach_rail_2_1",
+      "approach_overlay_2"
+    ],
+    "added_parts": [
+      "wing_bed_1_-1",
+      "wing_bed_1_1",
+      "wing_bed_2_-1",
+      "wing_bed_2_1",
+      "rail_joint_1_-1",
+      "rail_joint_1_1",
+      "rail_joint_2_-1",
+      "rail_joint_2_1"
+    ],
+    "removed_parts": [],
+    "note_only_parts": [],
+    "before_glb_sha256": "8017ea02b0c13d6c5a1f527003204a2432bfbc34dd8fd7246e854c70797d2ecc",
+    "after_glb_sha256": "d8272945ed375724ee491cc6371e9aa0afa01da5d1ddd5e9a51a967d3cdce917"
   }
 }

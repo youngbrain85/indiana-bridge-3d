@@ -271,6 +271,41 @@ gives no mounting dimensions.
 
 `scripts/correct_us52_mud_review_2.py` reproduces the change after `correct_us52_mud_review.py` and is idempotent.
 
+#### Third round: known deviations
+
+The five known deviations of revision 1.2 were closed; revision 1.3-deviations has none.
+
+The end-bent elevations on **sheet 23** sit a uniform 0.27 ft below the roadway profile less the slab build-up. The
+profile appears on sheets 9, 21 and 62-64, and the pier sheet 28 agrees with it. The model kept the seats on the
+profile but left the bottoms at El. 926.21, so each precast module was 3.3 in deeper than drawn. **Sheet 24** writes
+the module depth as 3 ft 0 in at the outer end and 3 ft 4 3/4 in at the inner end. The cap bottoms were raised
+3.29 in to **El. 926.48** to match.
+
+The four wingwalls and their closure pours moved up with the caps. They are 3 ft 8 in high, flush with the cap
+bottom and with the ledge top (**sheets 24, 27**). The **1 in UHPC bed** between each wingwall and the approach slab
+(**sheet 53** section A-A) is now modelled. It is 0.5-1.7 in thick, because the precast wing top is flat while the
+slab follows the crossfall.
+
+The **½ in neoprene railing joints** of **sheet 51** were open gaps; they are now filler parts with the FC section.
+The six barrier delineators sat across the railing top. They now sit on the upper traffic face, as drawn in
+**sheet 51** sections A-A and B-B (scaled; not dimensioned).
+
+The TFC transitions stay **15 ft 8 in** long. Sheets 53 and 55 draw that length, and standard E 706-TTFC-01, which
+sheet 51 references, writes it as the pay limits. The 13.17 ft from the sheet 9 stations is not followed.
+
+The transitions had kept the constant FC section. They now follow the sections of standard **E 706-TTFC-01/-02**,
+which **sheets 54 and 55** also draw in plan. The FC section at the joint loses its lower batter by 7 ft 2 in. The
+base then narrows to 9 in at 11 ft 5 in, and a 9 in vertical wall runs on to the end. The approach overlay now runs
+up to the tapering toe.
+
+The central closures of the end bents had flat tops, and so did the UHPC closures of the piers. They now follow the
+2% crossfall drawn on **sheets 23 and 28**. The 1 in bedding layers now sit on the precast tops instead of
+overlapping them or leaving small gaps. The pier beds were also trimmed to the wall top. Its outer ends are
+R = 1 ft 6 in (**sheet 29**), and the bed's rectangular corners had nothing under them.
+
+Eight parts were added (four wingwall beds, four railing joints), and none were removed. The model has 172 parts.
+`scripts/correct_us52_mud_review_3.py` reproduces the change after the first two scripts and is idempotent.
+
 ### SR 44 over Mud Creek (`sr44-mud`)
 
 #### 1. External review: diaphragms, pier caps, coping and wings (revision 1.1)

@@ -102,7 +102,7 @@ const out=path.join(__dirname,'data');
   await context.route('https://carto.nationalmap.gov/**',route=>route.abort());
   await page.locator('#roadsToggle').uncheck();await page.locator('#roadsToggle').check();
   await page.waitForFunction(()=>/unavailable|delayed/.test(document.getElementById('mapStatus').textContent));
-  assert.equal(await page.locator('.bridge-card').count(),21);await open('us52-mud');assert.equal(await page.evaluate(()=>bridgeManager.viewer.meshes.size),164);result.checks.push('Road-service failure leaves local map and models usable');
+  assert.equal(await page.locator('.bridge-card').count(),21);await open('us52-mud');assert.equal(await page.evaluate(()=>bridgeManager.viewer.meshes.size),172);result.checks.push('Road-service failure leaves local map and models usable');
   assert.equal(requested.filter(p=>mapOnly.some(b=>p==='/api/bridges/'+b.id||p==='/assets/'+b.id+'/model')).length,0);
   assert.deepEqual(errors,[]);result.page_errors=errors;result.passed=true;
   fs.writeFileSync(path.join(out,'verification.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));

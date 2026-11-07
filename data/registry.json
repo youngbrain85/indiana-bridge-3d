@@ -134,7 +134,7 @@
         "render_glb": "bridges/us52-mud/model_render.glb",
         "deck_length_m": 27.8892,
         "spans": 3,
-        "components": 164,
+        "components": 172,
         "revision": "Based on detail drawings; partly approximate v1",
         "scope": "Exterior geometry from preliminary plans; see coverage notes for estimates",
         "detail_status": "needs_detail",

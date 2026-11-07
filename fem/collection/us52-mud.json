@@ -11,8 +11,8 @@
   "drawing_sha256": "d02d098ad77cba77ca3301917568557325b2a4262bbc7260f2c50205e2518ad4",
   "source_hashes": {
     "drawing": "d02d098ad77cba77ca3301917568557325b2a4262bbc7260f2c50205e2518ad4",
-    "manifest": "1fe62a38f72e8e1cc827dd8f80b4d6e4e6afcc554f7e1b9345ba9846d5600449",
-    "model": "8017ea02b0c13d6c5a1f527003204a2432bfbc34dd8fd7246e854c70797d2ecc"
+    "manifest": "c7b0d91c5a07d4c00dfd9b6531c76f11196f51dc622be9ccfb8ca1048dbff22a",
+    "model": "d8272945ed375724ee491cc6371e9aa0afa01da5d1ddd5e9a51a967d3cdce917"
   },
   "sources": {
     "drawing": {
@@ -35,6 +35,7 @@
       "status": "source-based geometry with explicit idealizations",
       "source": "drawing",
       "pdf_pages": [
+        9,
         21,
         23,
         24,
@@ -269,14 +270,14 @@
             "thickness_m": 0.9144000000000001,
             "y0_m": -6.146800000000001,
             "y1_m": 0,
-            "bottom_z_m": 4.696968
+            "bottom_z_m": 4.780534
           },
           {
             "cid": "bent_1_1",
             "thickness_m": 0.9144000000000001,
             "y0_m": 0,
             "y1_m": 6.146800000000001,
-            "bottom_z_m": 4.696968
+            "bottom_z_m": 4.780534
           }
         ],
         "columns": [],
@@ -431,14 +432,14 @@
             "thickness_m": 0.9144000000000001,
             "y0_m": -6.146800000000001,
             "y1_m": 0,
-            "bottom_z_m": 4.696968
+            "bottom_z_m": 4.780534
           },
           {
             "cid": "bent_2_1",
             "thickness_m": 0.9144000000000001,
             "y0_m": 0,
             "y1_m": 6.146800000000001,
-            "bottom_z_m": 4.696968
+            "bottom_z_m": 4.780534
           }
         ],
         "columns": [],
@@ -651,6 +652,10 @@
     "rail_closure_2_1",
     "rail_closure_3_-1",
     "rail_closure_3_1",
+    "rail_joint_1_-1",
+    "rail_joint_1_1",
+    "rail_joint_2_-1",
+    "rail_joint_2_1",
     "sleeper_1",
     "sleeper_2",
     "transverse_closure_0",
@@ -661,6 +666,10 @@
     "wing_1_1",
     "wing_2_-1",
     "wing_2_1",
+    "wing_bed_1_-1",
+    "wing_bed_1_1",
+    "wing_bed_2_-1",
+    "wing_bed_2_1",
     "wing_joint_1_-1",
     "wing_joint_1_1",
     "wing_joint_2_-1",
