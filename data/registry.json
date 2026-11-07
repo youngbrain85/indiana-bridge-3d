@@ -561,7 +561,7 @@
         "render_glb": "bridges/sr10-i65/model_render.glb",
         "deck_length_m": 64.38265,
         "spans": 4,
-        "components": 314,
+        "components": 328,
         "revision": "Proposed 2026 work over retained historical structure v1",
         "scope": "Whole-crossing exterior reconstruction; proposed work and retained historical geometry are explicitly distinguished.",
         "detail_status": "needs_detail",

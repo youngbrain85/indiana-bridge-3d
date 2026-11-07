@@ -242,7 +242,7 @@ def existing(bid):
         ys=[-7.113,-5.08,-3.556,-1.778,0,1.778,3.556,5.08,7.113]
         for j,y in enumerate(ys):
             for i in range(4):
-                sec=ishape(.840,.292,.014,.0254) if j in [0,8] else ishape(.903 if i in [0,3] else .911,.305,.015 if i in [0,3] else .016,.023 if i in [0,3] else .027)
+                sec=ishape(.840,.292,.014,.0217) if j in [0,8] else ishape(.903,.305,.015,.0201) if i in [0,3] else ishape(.911,.305,.016,.0239)  # W840x193 / W920x201 / W920x223 catalog depth and flange thickness, as modelled since the 2026-11 review
                 r.beam(f'beam_{i}_{j}',i,y,sec)
         for i in range(5):
             if i in [0,4]:

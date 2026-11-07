@@ -1,11 +1,11 @@
 {
-  "component_count": 314,
+  "component_count": 328,
   "all_meshes_watertight": true,
   "all_volumes_positive": true,
   "exported_glb_reopened": true,
   "mesh_names_match_manifest": true,
   "maximum_bearing_contact_error_m": 0.0,
-  "glb_sha256": "f45a9ed171f9f426d95c3ae2d2a6df18be16f51efa02d9a30d92e2ff0f80e041",
+  "glb_sha256": "53428c3f0d341108ad185e30b839fb0ebbf0a6d6b76e2f1fd16a99613223b78c",
   "source_pdf_sha256": "19f804e4efc37cb14f0515fdffe4e359e3229046ae88eda3b8227144ac7993e9",
   "contacts": [
     {
@@ -198,6 +198,6 @@
     ],
     "minimum_deck_girder_clearance_m": 0.07195000000000018
   },
-  "model_revision": "1.2-drawing-review-2",
+  "model_revision": "1.3-deviations",
   "refreshed_after_correction": "Generic checks re-run on the corrected GLB by scripts/refresh_geometry_verification.py; checks_at_build describe the model as first built."
 }

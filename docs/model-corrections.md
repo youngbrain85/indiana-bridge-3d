@@ -776,6 +776,35 @@ Other corrections:
 - the unchanged Pier 2/4-side splices;
 - the approach-ledge standard detail.
 
+#### Third round: known deviations
+
+`scripts/correct_sr10_i65_review_3.py` (revision 1.3-deviations) works through the known deviations and two
+independent checks of this round. The beams now rest on the drawn supports at all five lines of support. At the end
+bents they sit on the pile cutoff plus a 19 mm plate, and their ends run 150 mm past the bent centre line. At Piers
+2/4 they sit on the cap (El. 215.972, 216.016 in the middle) plus a 125 mm bearing and the sheet 16 shim. Between
+supports they follow the grade. The beams use the depth and flange thickness of their drawn sections: 840 x 21.7 mm,
+903 x 20.1 mm and 911 x 23.9 mm. With these, the sheet 17 haunch table agrees with the pier elevations to about 2 mm;
+the table is measured to the underside of the top flange.
+
+The haunches follow the sheet 17 detail: they are 100 mm wider than the flange on each side and wrap its edges. The
+splices follow their details. The new splices have the sheet 14 plates, bars, fillers and bolts. The 1964 Pier 3
+splices have their web plates, inner bars and rivets. The diaphragms reach the drawn distance from the beam webs,
+and the five C380 replacements lap onto ten added stubs of the old diaphragms. The end-bent ledges are level at El.
+216.850, and the approach slab ends rest on them. Steel parts that reach into the concrete are cut out of the haunch
+and the deck. Every contact was measured and closes to within 0.01 mm, and every mesh is a closed solid.
+
+Display names use the drawing beam-line numbers; ids are unchanged. 253 parts changed and 14 were added (four shims
+and ten stubs), for 328 parts in all. None were removed.
+
+Five known deviations remain:
+- the id numbering;
+- the approach end beyond the ledge (on standard drawings not in the set);
+- the haunch table at the end bents (it has no stations);
+- four rivets under each Pier 3 shoe (their treatment is not drawn);
+- the side of the stub on which each C380 sits.
+
+The FEM recipe still uses the nominal 920 mm sections and must be updated and regenerated.
+
 ### US 35 over Deer Creek (`us35-deer`)
 
 #### 1. End bents, wingwalls, FC railing and approach slabs (revision 1.1)
