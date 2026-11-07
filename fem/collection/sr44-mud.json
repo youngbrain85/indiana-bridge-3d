@@ -11,8 +11,8 @@
   "drawing_sha256": "6e9fba4786bc8c1d05073a8bdcaf0b2c66216bdfffb22ac2e469541773142bf8",
   "source_hashes": {
     "drawing": "6e9fba4786bc8c1d05073a8bdcaf0b2c66216bdfffb22ac2e469541773142bf8",
-    "manifest": "3143f536fabcace955ed5eb34c0a427690b7a3c2ec03e82c25297ce8842fa0b0",
-    "model": "89a01751638da26aa01435b06b2830fa45c082082ae63d307824fa3f9a8aafb4"
+    "manifest": "a2805eb41fff60bbc22c21ffcc996784a27f9b86859c4b99b8a418f04f253d35",
+    "model": "30631b2c2323e7ea04480bb8adb10b7c677d90755397de1d30a4abf85f90d680"
   },
   "sources": {
     "drawing": {
@@ -45,9 +45,11 @@
         18,
         19,
         22,
+        23,
         24,
         27,
-        29
+        29,
+        31
       ],
       "note": "Source-specific recipe transcribes manifest/source-ledger dimensions and original modeling script callouts. Native bounding-box centers locate axes only; bounding rectangles are not used as girder cross sections."
     },
@@ -549,8 +551,8 @@
         "top_z_m": 5.550408,
         "cap": {
           "cid": "cap_1",
-          "y0_m": -7.164551,
-          "y1_m": 7.164551,
+          "y0_m": -7.0866,
+          "y1_m": 7.0866,
           "section": {
             "kind": "rectangle",
             "dimensions_m": [
@@ -647,8 +649,8 @@
         "top_z_m": 5.576316,
         "cap": {
           "cid": "cap_2",
-          "y0_m": -7.184273,
-          "y1_m": 7.184273,
+          "y0_m": -7.081519,
+          "y1_m": 7.081519,
           "section": {
             "kind": "rectangle",
             "dimensions_m": [
@@ -745,8 +747,8 @@
         "top_z_m": 5.628132,
         "cap": {
           "cid": "cap_3",
-          "y0_m": -7.184273,
-          "y1_m": 7.184273,
+          "y0_m": -7.081519,
+          "y1_m": 7.081519,
           "section": {
             "kind": "rectangle",
             "dimensions_m": [
@@ -835,8 +837,8 @@
         "top_z_m": 5.687568000000001,
         "cap": {
           "cid": "cap_4",
-          "y0_m": -7.164551,
-          "y1_m": 7.164551,
+          "y0_m": -7.0866,
+          "y1_m": 7.0866,
           "section": {
             "kind": "rectangle",
             "dimensions_m": [

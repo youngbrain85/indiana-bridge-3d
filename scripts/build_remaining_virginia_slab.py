@@ -116,7 +116,14 @@ def virginia():
     out,candidate,index=prepare('virginia-avenue','virginia_avenue','9683637',reviewed)
     span=114*FT;length=(120+7.625/12)*FT;width=64.5*FT;slab=8*IN;skew=44+19/60+6/3600;u0=-length/2;u1=length/2
     crown=5*FT;curbs=(-15*FT,25*FT);grade=lambda x:8.4-(.54/114)*np.asarray(x)
-    m=Model('virginia-avenue',length,width,skew,grade,crossfall=.02,crown=crown)
+    # This builder was written with +Y toward the northeast: Girder 1 and the 16 ft 1 in south path (plan top, the
+    # left side looking up-station) are at -Y. So the Lt. skew is given with the sign of that frame (-skew), and
+    # Model.save() reflects the model once into the collection frame. The first release had +skew here and came out
+    # mirrored. `skew` itself stays the drawn value for the ledger.
+    m=Model('virginia-avenue',length,width,-skew,grade,crossfall=.02,crown=crown)
+    m.orient('northwest','General plan sheet 31, sheets 36-37 and existing sheet 10 (PDF 28): north arrow to the lower right, '
+        'stations increasing to the right; Girder No. 1 and the south path at plan top; "Skew 44 deg 19\'06\" Lt."',
+        reference=('beam_1','southwest'),skew_direction='left',built_plus_y='northeast')
     def surface(x,y):
         y=np.asarray(y)
         return grade(x)-.02*np.abs(np.clip(y,*curbs)-crown)+np.where(y<curbs[0],.019*(curbs[0]-y),np.where(y>curbs[1],.015*(y-curbs[1]),0))
@@ -236,13 +243,14 @@ def virginia():
     m.cover('Retained steel and bearings','modeled_with_simplifications','Piecewise 2013 girder 1 and original girders 2-9; splice covers, V/X frames and 18 bearing envelopes. Historical original PDF references are stored per component.',[31,34,35],['girders','steel','bracing','bearings'])
     m.cover('Rails, path, lights and drain','modeled_with_simplifications','TX windowed rail, south ornamental top rail, paver envelope, six light bollards and source drain collector.',[37,39,43],['rails','ornament','sidewalks','accessories','drainage'])
     m.cover('Unresolved geometry','not_modeled','Exact field seats and camber, bolts/gussets, splayed wings and local abutment batter, transition rail terminals, paver pattern, exact rail molds, buried utilities and surrounding interstate.',[31,35,39,41],[])
+    for s in sections:s['y_m']=float(m.native_y(s['y_m']))   # ledger in the collection frame
     state='Proposed 2026 deck/rail/approach replacement on retained 1971 original steel and 2013 girder 1 replacement'
     return finish(m,out,candidate,index,dict(title='Virginia Avenue over I-65 NB / I-70 EB | proposed 2026 rehabilitation',structure_id=candidate['structure_file'],designation='2200722',spans_m=[span],deck_thickness_m=slab,
         source_note='INDOT B-44576 primary 2026 design. Retained original framing and 2013 northbound girder replacement are sourced only from identified pages of document 9548460. Separate southbound/I-70, cathodic-protection and lighting pages are not dimensional authority. Original files remain unchanged.',
         status_note='Whole crossing present; amber because field elevations, wingwall shape, connections, rail/approach transitions and small fittings remain approximate. Proposed 2026 work is not proof of completion.',
         assumptions=['Linear grade through the primary bearing profile elevations replaces the 90/96 ft vertical curves; deck height is a local visualization datum.','Historical 54/60 in labels are WEB depths; total I-section depths include both flanges. Plate schedules are source-backed, but fillets and taper details are simplified.','Source revisions 9715471 and 9715512 concern special provisions and inspection coordination; no replacement geometry sheets were identified.']),
         dict(modeled_state=state,spans_m=[span],deck_length_m=length,deck_width_m=width,deck_thickness_m=slab,structural_deck_thickness_m=7.5*IN,skew_deg=skew,
-            support_u_m=[-span/2,span/2],girder_y_m=ys.tolist(),girder_sections=sections,beam_part_ids=beam_ids,deck_part_ids=['deck'],
+            support_u_m=[-span/2,span/2],girder_y_m=m.native_y(ys).tolist(),girder_sections=sections,beam_part_ids=beam_ids,deck_part_ids=['deck'],
             source_pages=dict(general=31,deck=[36,37],bearings=35,rails=39,approaches=[41,43]),
             fem_topology=dict(type='single_span_composite_steel_girder_deck',coordinate_rule='x = u - tan(skew)*y; z up in native geometry',support_lines=[dict(id='B1',u_m=-span/2,kind='expansion',part_ids=[f'B1_bearing_{i+1}' for i in range(9)]),dict(id='B2',u_m=span/2,kind='fixed',part_ids=[f'B2_bearing_{i+1}' for i in range(9)])],
                 continuity='Single simply supported span; fixed/expansion bearing behavior must be explicitly idealized by analysis.',sections=sections,
@@ -260,6 +268,8 @@ def sr44():
         f0=.00730*150+(-.00622-.00730)*150*150/(2*170)
         return 3+(f-f0)*FT
     m=Model('sr44-little-blue',length,width,skew,grade,crossfall=.02)
+    m.orient('northeast','Sheet 12 plan: stations increasing to the right, Line "PR-PR" bears N 61 deg 25\'34" E; '
+        'sheet 8 "Skew 45 deg Lt."',skew_direction='left')
     m.colors.update(deck='#c9cec6',rails='#d4ccbb')
     m.add('deck','Proposed 2026 reinforced concrete slab | 30 ft span','deck',m.slab(u0,u1,-width/2,width/2,slab),[12,13,14],
         'Dimensioned 43 ft wide, 20 in slab envelope','19.5 in structural depth plus 0.5 in integral wearing surface. Local north coping end notch and 5.25 in edge-length difference simplified; old 1941 bridge is excluded.',thickness_m=slab,structural_thickness_m=19.5*IN)

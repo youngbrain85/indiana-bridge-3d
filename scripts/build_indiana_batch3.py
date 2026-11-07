@@ -77,16 +77,22 @@ def fletcher():
         t=s-1620;e=np.where(s>=1620,725.95-.02*t+(.0154)*t*t/(2*50),e)
         return (e-698.59)*FT
     m=Model('fletcher-avenue',length,width,skew,grade,crossfall=.015)
+    m.orient('northwest','Sheet 55: north arrow to the lower right, stations increasing to the right; S8 framing plan and '
+        'sheet 59: Girder 1 at the upper (+Y) edge; sheets 1 and 54-56 "Skew 28 deg 47\'15\" Lt."',
+        reference=('girder_0_7','southwest'),skew_direction='left')
+    # Sides follow the declared orientation (+Y southwest). The first release had the south walk, the 4 ft 6 in
+    # modified TX rail and the level deck under the south walk at -Y.
+    south,north=m.side('south'),m.side('north')
     roadhalf=27*FT
     # South sidewalk has a level supporting deck cross-slope, per sheet 60.
-    m.surface=lambda x,y:grade(x)-.015*np.minimum(np.abs(y),roadhalf)-.015*np.maximum(np.asarray(y)-roadhalf,0)
+    m.surface=lambda x,y:grade(x)-.015*np.minimum(np.abs(y),roadhalf)-.015*np.maximum(north*np.asarray(y)-roadhalf,0)
     m.colors.update(girders='#657d85',steel='#72888f',bracing='#70858a',rails='#ddd5bf')
     m.add('deck','Proposed 2026 deck | two continuous spans','deck',m.slab(u0,u1,-width/2,width/2,slab),[55,59,60],
         'Dimensioned proposed deck envelope','298 ft 6.75 in overall floor; asymmetric 2 ft 6.75 in / 2 ft bearing overhangs. No existing removed deck is retained.',thickness_m=slab,width_m=width,length_m=length)
     def walktop(x,y):return grade(x)-.015*roadhalf+8*IN+.02*(np.abs(y)-roadhalf)
     for side in [-1,1]:
         y0,y1=sorted([side*roadhalf,side*width/2])
-        m.add(f'walk_{side}',f'{"South" if side<0 else "North"} sidewalk | 6 ft 1 in clear','sidewalks',
+        m.add(f'walk_{side}',f'{"South" if side==south else "North"} sidewalk | 6 ft 1 in clear','sidewalks',
             sweep([(y0,0),(y1,0),(y1,1),(y0,1)],np.linspace(u0,u1,151),lambda u,y,t:(m.sx(u,y),y,(1-t)*m.surface(m.sx(u,y),y)+t*walktop(m.sx(u,y),y))),[55,60],
             'Dimensioned clear width and nominal curb; crossfall reconstructed','Both walks rise away from the road at 2%; the south supporting deck is level under the walk.',clear_width_m=(6+1/12)*FT,nominal_curb_height_m=8*IN)
     ys=(np.arange(8)-3.5)*9*FT
@@ -158,7 +164,7 @@ def fletcher():
     # Architectural TX railing: genuine open windows (not solid panels).
     window_total=0
     for side in [-1,1]:
-        h=(4.5 if side<0 else 3.5)*FT;plinth=FT if side<0 else 0;y=side*(width/2-8*IN)
+        h=(4.5 if side==south else 3.5)*FT;plinth=FT if side==south else 0;y=side*(width/2-8*IN)
         for span_i,(aa,bb) in enumerate([(u0,0),(0,u1)]):
             cuts=np.linspace(aa,bb,6)
             for panel,(a,b) in enumerate(zip(cuts[:-1],cuts[1:])):
@@ -169,7 +175,7 @@ def fletcher():
                 poly=Polygon([(lo,0),(hi,0),(hi,h),(lo,h)],holes)
                 rail=tm.creation.extrude_polygon(poly,FT,engine='earcut');v=rail.vertices.copy();yy=y+v[:,2]-FT/2
                 rail.vertices=np.c_[v[:,0]+m.k*yy,yy,walktop(v[:,0]+m.k*yy,yy)+v[:,1]]
-                m.add(f'tx_{side}_{span_i}_{panel}',f'{"South modified" if side<0 else "North"} TX rail | span {chr(65+span_i)}, panel {panel+1}','rails',rail,[63,64,65,119,120],
+                m.add(f'tx_{side}_{span_i}_{panel}',f'{"South modified" if side==south else "North"} TX rail | span {chr(65+span_i)}, panel {panel+1}','rails',rail,[63,64,65,119,120],
                     'Source height and 18 open windows per panel; simplified opening profile','10 panels per side; 17 spaces at 18 in per panel. Window throat width 6 in; molded splays, curved heads and pilaster recesses simplified.',height_m=h,window_count=18,window_spacing_m=1.5*FT)
                 window_total+=18
             for i,u in enumerate(cuts):
@@ -208,6 +214,8 @@ def sr10():
     out=BASE/'sr10-i65';spans=np.array([39+.5/12,65.75,65.75,39+.5/12])*FT;bs=np.r_[0,np.cumsum(spans)]-sum(spans)/2
     length=(211+2.75/12)*FT;width=(50+3.625/12)*FT;slab=.2;clear=.075
     m=Model('sr10-i65',length,width,0,lambda x:7.371-.00394*np.asarray(x)**2/65,crossfall=.02)
+    m.orient('east','Sheets 4 and 13 (PDF 24, 33) and 2026 sheet 11 (PDF 59): north up, Bent 1 (Sta. 1+492) west, '
+        'Bent 5 (1+555) east; Beam Line No. 1 on the north edge.',skew_direction='none')
     m.colors.update(girders='#6c858c',steel='#7c9194')
     ys=np.array([-7.113,-5.080,-3.556,-1.778,0,1.778,3.556,5.080,7.113])
     m.add('deck','Retained widened deck | 1998 reconstruction geometry','deck',m.slab(-length/2,length/2,-width/2,width/2,slab),[24,37,59],

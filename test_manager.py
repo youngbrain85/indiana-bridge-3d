@@ -13,6 +13,7 @@ from urllib.request import Request, urlopen
 
 from import_data import import_all, connect, explicit_location, mesh_names, render_model, sync_presentation
 from server import make_server, bridges
+from test_orientation import RuleTests, ModelTests  # noqa: F401  handedness rule, run with these tests (and in CI)
 
 ROOT = Path(__file__).resolve().parent
 
@@ -84,7 +85,7 @@ class CatalogTests(unittest.TestCase):
 
     def test_real_catalog_is_complete_and_idempotent(self):
         self.assertEqual(self.counts['bridges'], 21)
-        self.assertEqual(self.counts['components'], 6622)
+        self.assertEqual(self.counts['components'], 6737)
         self.assertEqual(import_all(self.db_path), self.counts)
         with connect(self.db_path) as db:
             self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
@@ -107,7 +108,7 @@ class CatalogTests(unittest.TestCase):
                 self.assertIn(part['group_id'], {g['id'] for g in data['groups']})
                 self.assertEqual(part['mesh_name'], part['source_id'])
                 self.assertGreater(len(part['basis']), 0)
-        self.assertEqual(len(seen), 6622)
+        self.assertEqual(len(seen), 6737)
 
     def test_map_only_records_and_complete_first_order(self):
         with self.get('/api/catalog') as r:
@@ -171,7 +172,7 @@ class CatalogTests(unittest.TestCase):
             snapshot = Path(self.temp.name) / 'export.sqlite3'
             snapshot.write_bytes(r.read())
         with sqlite3.connect(snapshot) as db:
-            self.assertEqual(db.execute('SELECT COUNT(*) FROM components').fetchone()[0], 6622)
+            self.assertEqual(db.execute('SELECT COUNT(*) FROM components').fetchone()[0], 6737)
 
     def test_javascript_mime_ignores_windows_registry(self):
         for path in ['/app.js', '/viewer.bundle.js', '/vendor/leaflet/leaflet.js']:
@@ -259,6 +260,15 @@ class CatalogTests(unittest.TestCase):
                             self.assertTrue(-1e-6 <= u <= 1 + 1e-6 and -1e-6 <= v <= 1 + 1e-6, view['id'])
             with self.get(f'/inspection/beechwood/{sheet["svg"]}') as r:
                 self.assertEqual(r.headers['Content-Type'], 'image/svg+xml')
+        # Recorded defects keep the coordinates of the view they were drawn on: a view that changed was given a
+        # new id, and the old frame is kept with the current view that replaces it.
+        current = {v['id']: v for s in sheets['sheets'] for v in s['views']}
+        for vid, old in sheets.get('retired_views', {}).items():
+            self.assertNotIn(vid, current)
+            for key in ('origin', 'u', 'v', 'normal', 'extent_m', 'parts', 'sheet_id'):
+                self.assertIn(key, old, vid)
+            self.assertIn(old['replaced_by'], current, vid)
+            self.assertEqual(old['normal'], current[old['replaced_by']]['normal'], vid)
         with self.get('/api/bridges/beechwood') as r:
             self.assertEqual(json.load(r)['inspection'], {'sheets_url': '/inspection/beechwood/sheets.json', 'app_url': '/inspect#beechwood'})
         with self.get('/inspection/beechwood/sheets.json') as r:
@@ -277,6 +287,29 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(explicit_location({'id':'pier_2', 'name':'Pier footing envelope'}), (None, None))
         self.assertEqual(explicit_location({'id':'x', 'name':'Bent 2 · column L'})[0], 'Bent 2')
         self.assertEqual(explicit_location({'id':'x', 'name':'Span 1 deck module'})[0], 'Span 1')
+
+
+class OrientationTests(unittest.TestCase):
+    """Every 3D-workspace model follows the handedness rule of scripts/bridge_orientation.py."""
+
+    def test_every_workspace_model_is_right_handed_with_the_drawn_skew(self):
+        import sys
+        sys.path.insert(0, str(ROOT / 'scripts'))
+        import bridge_orientation as bo
+        registry = json.loads((ROOT / 'data/registry.json').read_text(encoding='utf-8'))
+        for bridge in registry['bridges']:
+            if not bridge['workspace_enabled']:
+                continue
+            base = ROOT / 'data/bridges' / bridge['id']
+            manifest = json.loads((base / 'model_manifest.json').read_text(encoding='utf-8'))
+            fem = ROOT / 'fem/collection' / (bridge['id'] + '.json')
+            dx_dy = json.loads(fem.read_text(encoding='utf-8'))['values'].get('skew_dx_dy') if fem.is_file() else None
+            with self.subTest(bridge=bridge['id']):
+                self.assertEqual(bo.check(manifest, dx_dy), [])
+                ledger = base / 'source_ledger.json'
+                if ledger.is_file():
+                    axes = json.loads(ledger.read_text(encoding='utf-8')).get('axes')
+                    self.assertTrue(axes is None or '+Y left looking up-station' in axes, axes)
 
 
 if __name__ == '__main__':

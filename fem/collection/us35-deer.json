@@ -11,8 +11,8 @@
   "drawing_sha256": "fb940a09d31d217f2e13fdcb64bdddfd83cddb816408b1f11ddc4738927d7b23",
   "source_hashes": {
     "drawing": "fb940a09d31d217f2e13fdcb64bdddfd83cddb816408b1f11ddc4738927d7b23",
-    "manifest": "a8de1c6f075a5c20077cb8402a4675dbcef9b95f8d8a483ac50f1c0be58f3d77",
-    "model": "54604cef02d41bba991f9f94774656693698cc31f6127ec37362b0fd97758afd"
+    "manifest": "79d5e2bc67993159cc0c5508e2574c50c421e03dc31ad97fe1f1e10525426f58",
+    "model": "06f820f3b5d218041452ccec46e335a3b3385ca6a10f53efd74b71cf45741db3"
   },
   "sources": {
     "drawing": {
@@ -83,14 +83,14 @@
     "spans_m": [
       35.052
     ],
-    "skew_dx_dy": -0.2679491924311227,
+    "skew_dx_dy": 0.2679491924311227,
     "beams": [
       {
         "cid": "beam_0_0",
         "unit": 0,
         "u0_m": -17.7546,
         "u1_m": 17.7546,
-        "y_m": -4.6482,
+        "y_m": 4.6482,
         "material": "concrete",
         "section": {
           "kind": "polygon",
@@ -170,7 +170,7 @@
         "unit": 0,
         "u0_m": -17.7546,
         "u1_m": 17.7546,
-        "y_m": -1.5493999999999999,
+        "y_m": 1.5493999999999999,
         "material": "concrete",
         "section": {
           "kind": "polygon",
@@ -250,7 +250,7 @@
         "unit": 0,
         "u0_m": -17.7546,
         "u1_m": 17.7546,
-        "y_m": 1.5494000000000003,
+        "y_m": -1.5494000000000003,
         "material": "concrete",
         "section": {
           "kind": "polygon",
@@ -330,7 +330,7 @@
         "unit": 0,
         "u0_m": -17.7546,
         "u1_m": 17.7546,
-        "y_m": 4.6482,
+        "y_m": -4.6482,
         "material": "concrete",
         "section": {
           "kind": "polygon",
@@ -414,8 +414,8 @@
             "cid": "B1_bearing_1",
             "unit": 0,
             "u_m": -17.526,
-            "y_m": -4.6482,
-            "beam_y_m": -4.6482,
+            "y_m": 4.6482,
+            "beam_y_m": 4.6482,
             "z_m": 4.689874,
             "area_m2": 1,
             "integral": true
@@ -424,8 +424,8 @@
             "cid": "B1_bearing_2",
             "unit": 0,
             "u_m": -17.526,
-            "y_m": -1.5493999999999999,
-            "beam_y_m": -1.5493999999999999,
+            "y_m": 1.5493999999999999,
+            "beam_y_m": 1.5493999999999999,
             "z_m": 4.689874,
             "area_m2": 1,
             "integral": true
@@ -434,8 +434,8 @@
             "cid": "B1_bearing_3",
             "unit": 0,
             "u_m": -17.526,
-            "y_m": 1.5494000000000003,
-            "beam_y_m": 1.5494000000000003,
+            "y_m": -1.5494000000000003,
+            "beam_y_m": -1.5494000000000003,
             "z_m": 4.689874,
             "area_m2": 1,
             "integral": true
@@ -444,8 +444,8 @@
             "cid": "B1_bearing_4",
             "unit": 0,
             "u_m": -17.526,
-            "y_m": 4.6482,
-            "beam_y_m": 4.6482,
+            "y_m": -4.6482,
+            "beam_y_m": -4.6482,
             "z_m": 4.689874,
             "area_m2": 1,
             "integral": true
@@ -455,7 +455,7 @@
         "columns": [
           {
             "cid": "pile_stub_0_0",
-            "y_m": -5.704275,
+            "y_m": 5.876017,
             "bottom_z_m": -0.046104,
             "section": {
               "kind": "I",
@@ -471,7 +471,7 @@
           },
           {
             "cid": "pile_stub_0_1",
-            "y_m": -3.422565,
+            "y_m": 3.5943069999999997,
             "bottom_z_m": -0.046104,
             "section": {
               "kind": "I",
@@ -487,7 +487,7 @@
           },
           {
             "cid": "pile_stub_0_2",
-            "y_m": -1.140855,
+            "y_m": 1.312597,
             "bottom_z_m": -0.046104,
             "section": {
               "kind": "I",
@@ -503,7 +503,7 @@
           },
           {
             "cid": "pile_stub_0_3",
-            "y_m": 1.140855,
+            "y_m": -0.969113,
             "bottom_z_m": -0.046104,
             "section": {
               "kind": "I",
@@ -519,7 +519,7 @@
           },
           {
             "cid": "pile_stub_0_4",
-            "y_m": 3.422565,
+            "y_m": -3.250823,
             "bottom_z_m": -0.046104,
             "section": {
               "kind": "I",
@@ -535,7 +535,7 @@
           },
           {
             "cid": "pile_stub_0_5",
-            "y_m": 5.704275,
+            "y_m": -5.532534,
             "bottom_z_m": -0.046104,
             "section": {
               "kind": "I",
@@ -553,8 +553,8 @@
         "top_z_m": 2.0498425,
         "cap": {
           "cid": "cap_1",
-          "y0_m": -6.329905,
-          "y1_m": 6.329905,
+          "y0_m": -6.158163,
+          "y1_m": 6.501647,
           "section": {
             "kind": "rectangle",
             "dimensions_m": [
@@ -571,8 +571,8 @@
             "cid": "B2_bearing_1",
             "unit": 0,
             "u_m": 17.526,
-            "y_m": -4.6482,
-            "beam_y_m": -4.6482,
+            "y_m": 4.6482,
+            "beam_y_m": 4.6482,
             "z_m": 4.689874,
             "area_m2": 1,
             "integral": true
@@ -581,8 +581,8 @@
             "cid": "B2_bearing_2",
             "unit": 0,
             "u_m": 17.526,
-            "y_m": -1.5493999999999999,
-            "beam_y_m": -1.5493999999999999,
+            "y_m": 1.5493999999999999,
+            "beam_y_m": 1.5493999999999999,
             "z_m": 4.689874,
             "area_m2": 1,
             "integral": true
@@ -591,8 +591,8 @@
             "cid": "B2_bearing_3",
             "unit": 0,
             "u_m": 17.526,
-            "y_m": 1.5494000000000003,
-            "beam_y_m": 1.5494000000000003,
+            "y_m": -1.5494000000000003,
+            "beam_y_m": -1.5494000000000003,
             "z_m": 4.689874,
             "area_m2": 1,
             "integral": true
@@ -601,8 +601,8 @@
             "cid": "B2_bearing_4",
             "unit": 0,
             "u_m": 17.526,
-            "y_m": 4.6482,
-            "beam_y_m": 4.6482,
+            "y_m": -4.6482,
+            "beam_y_m": -4.6482,
             "z_m": 4.689874,
             "area_m2": 1,
             "integral": true
@@ -612,7 +612,7 @@
         "columns": [
           {
             "cid": "pile_stub_1_0",
-            "y_m": -5.704275,
+            "y_m": 5.532534,
             "bottom_z_m": 0.779904,
             "section": {
               "kind": "I",
@@ -628,7 +628,7 @@
           },
           {
             "cid": "pile_stub_1_1",
-            "y_m": -3.422565,
+            "y_m": 3.250823,
             "bottom_z_m": 0.779904,
             "section": {
               "kind": "I",
@@ -644,7 +644,7 @@
           },
           {
             "cid": "pile_stub_1_2",
-            "y_m": -1.140855,
+            "y_m": 0.969113,
             "bottom_z_m": 0.779904,
             "section": {
               "kind": "I",
@@ -660,7 +660,7 @@
           },
           {
             "cid": "pile_stub_1_3",
-            "y_m": 1.140855,
+            "y_m": -1.312597,
             "bottom_z_m": 0.779904,
             "section": {
               "kind": "I",
@@ -676,7 +676,7 @@
           },
           {
             "cid": "pile_stub_1_4",
-            "y_m": 3.422565,
+            "y_m": -3.5943069999999997,
             "bottom_z_m": 0.779904,
             "section": {
               "kind": "I",
@@ -692,7 +692,7 @@
           },
           {
             "cid": "pile_stub_1_5",
-            "y_m": 5.704275,
+            "y_m": -5.876017,
             "bottom_z_m": 0.779904,
             "section": {
               "kind": "I",
@@ -710,8 +710,8 @@
         "top_z_m": 2.8778825,
         "cap": {
           "cid": "cap_2",
-          "y0_m": -6.329905,
-          "y1_m": 6.329905,
+          "y0_m": -6.501647,
+          "y1_m": 6.158163,
           "section": {
             "kind": "rectangle",
             "dimensions_m": [
@@ -811,15 +811,15 @@
     "approach_1",
     "backwall_0",
     "backwall_1",
+    "curb_-1_-1",
+    "curb_1_1",
     "diaphragm_0_0",
     "diaphragm_0_1",
     "diaphragm_0_2",
     "end_bent_drain_0",
     "end_bent_drain_1",
-    "extension_-1_-1",
     "extension_-1_1",
     "extension_1_-1",
-    "extension_1_1",
     "haunch_0_0",
     "haunch_0_1",
     "haunch_0_2",

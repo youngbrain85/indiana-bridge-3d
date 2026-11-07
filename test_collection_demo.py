@@ -95,7 +95,8 @@ class CollectionDemonstrationTests(unittest.TestCase):
                         self.assertFalse(min(stations)<boundary-1e-6 and max(stations)>boundary+1e-6)
             self.assertFalse({a for a,b in d.links}&{b for a,b in d.links})
             for p in d.pads:self.assertLess(math.dist(*(d.nodes[n] for n in p['nodes'])),1e-12)
-        for bid,sign in [('sr44-mud',1),('us224-eight-mile',1),('virginia-avenue',-1)]:
+        # US 224 was modelled mirrored until the 2026-11 drawing review put it on its drawn side, reversing its skew.
+        for bid,sign in [('sr44-mud',1),('us224-eight-mile',-1),('virginia-avenue',-1)]:
             self.assertEqual(math.copysign(1,LEDGERS[bid]['values']['skew_dx_dy']),sign)
 
     def test_editable_assumptions_change_response(self):

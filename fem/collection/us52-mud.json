@@ -11,8 +11,8 @@
   "drawing_sha256": "d02d098ad77cba77ca3301917568557325b2a4262bbc7260f2c50205e2518ad4",
   "source_hashes": {
     "drawing": "d02d098ad77cba77ca3301917568557325b2a4262bbc7260f2c50205e2518ad4",
-    "manifest": "bae8ec023d43b290b299ca0b50e33c8616edbf32c1a58811ee9ece67045c0a5c",
-    "model": "a162d1b5edc0e74f7b3812aa03ac6255761d1f6313469bbed71c0ea9b5977720"
+    "manifest": "fd84ade1704ee50c88b1d90704b6da73fba07851646f449cc48ee1654eaceb27",
+    "model": "d8272945ed375724ee491cc6371e9aa0afa01da5d1ddd5e9a51a967d3cdce917"
   },
   "sources": {
     "drawing": {
@@ -35,6 +35,8 @@
       "status": "source-based geometry with explicit idealizations",
       "source": "drawing",
       "pdf_pages": [
+        9,
+        21,
         23,
         24,
         25,
@@ -268,18 +270,18 @@
             "thickness_m": 0.9144000000000001,
             "y0_m": -6.146800000000001,
             "y1_m": 0,
-            "bottom_z_m": 4.696968
+            "bottom_z_m": 4.780534
           },
           {
             "cid": "bent_1_1",
             "thickness_m": 0.9144000000000001,
             "y0_m": 0,
             "y1_m": 6.146800000000001,
-            "bottom_z_m": 4.696968
+            "bottom_z_m": 4.780534
           }
         ],
         "columns": [],
-        "top_z_m": 5.814822,
+        "top_z_m": 6.018022,
         "line_connection": {
           "cid": "bent_1_bed",
           "width_m": 0.9144000000000001
@@ -430,18 +432,18 @@
             "thickness_m": 0.9144000000000001,
             "y0_m": -6.146800000000001,
             "y1_m": 0,
-            "bottom_z_m": 4.696968
+            "bottom_z_m": 4.780534
           },
           {
             "cid": "bent_2_1",
             "thickness_m": 0.9144000000000001,
             "y0_m": 0,
             "y1_m": 6.146800000000001,
-            "bottom_z_m": 4.696968
+            "bottom_z_m": 4.780534
           }
         ],
         "columns": [],
-        "top_z_m": 5.814822,
+        "top_z_m": 6.018022,
         "line_connection": {
           "cid": "bent_2_bed",
           "width_m": 0.9144000000000001
@@ -650,6 +652,10 @@
     "rail_closure_2_1",
     "rail_closure_3_-1",
     "rail_closure_3_1",
+    "rail_joint_1_-1",
+    "rail_joint_1_1",
+    "rail_joint_2_-1",
+    "rail_joint_2_1",
     "sleeper_1",
     "sleeper_2",
     "transverse_closure_0",
@@ -660,6 +666,10 @@
     "wing_1_1",
     "wing_2_-1",
     "wing_2_1",
+    "wing_bed_1_-1",
+    "wing_bed_1_1",
+    "wing_bed_2_-1",
+    "wing_bed_2_1",
     "wing_joint_1_-1",
     "wing_joint_1_1",
     "wing_joint_2_-1",

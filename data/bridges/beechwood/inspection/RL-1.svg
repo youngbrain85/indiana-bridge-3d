@@ -1,129 +1,159 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 297" width="420mm" height="297mm">
-<style>text{font-family:"IBM Plex Sans",Arial,Helvetica,sans-serif;fill:#1d2124}.t{font-size:2.2px}.s{font-size:1.8px;fill:#5a5f63}.h{font-size:2.6px;font-weight:600;letter-spacing:.06px}.big{font-size:4.6px;font-weight:600}.mid{font-size:3px;font-weight:600}.lbl{font-size:1.9px;fill:#3d454b;font-weight:600}.o{fill:none;stroke:#1d2124;stroke-width:.3;stroke-linejoin:round;stroke-linecap:round}.e{fill:none;stroke:#1d2124;stroke-width:.15;stroke-linecap:round}.r{fill:none;stroke:#a3abb0;stroke-width:.15;stroke-linejoin:round}.m{fill:#e3e7ea;stroke:#a3abb0;stroke-width:.1}.f{fill:#f2f5f6;stroke:none}.rf{fill:#fafbfb;stroke:none}.c{fill:none;stroke:#6b7378;stroke-width:.15;stroke-dasharray:4 1 .6 1}.k{fill:none;stroke:#1d2124;stroke-width:.25}.thin{fill:none;stroke:#1d2124;stroke-width:.15}</style>
+<style>text{font-family:"IBM Plex Sans",Arial,Helvetica,sans-serif;fill:#1d2124}.t{font-size:2.6px}.s{font-size:2.4px;fill:#4f565b}.h{font-size:3px;font-weight:600;letter-spacing:.04px}.big{font-size:5.4px;font-weight:600}.mid{font-size:3.4px;font-weight:600}.lbl{font-size:2.5px;fill:#2f363b;font-weight:600}.ann{font-size:2.5px;fill:#1d2124}.j{fill:none;stroke:#1d2124;stroke-width:.16;stroke-dasharray:1.1 .7}.o{fill:none;stroke:#1d2124;stroke-width:.32;stroke-linejoin:round;stroke-linecap:round}.e{fill:none;stroke:#1d2124;stroke-width:.16;stroke-linecap:round}.r{fill:none;stroke:#9aa2a7;stroke-width:.16;stroke-linejoin:round}.m{fill:#e3e7ea;stroke:#9aa2a7;stroke-width:.1}.f{fill:#eef2f4;stroke:none}.rf{fill:#fafbfb;stroke:none}.c{fill:none;stroke:#4f565b;stroke-width:.18;stroke-dasharray:4 1 .6 1}.ld{fill:none;stroke:#4f565b;stroke-width:.15}.ar{fill:#1d2124}.k{fill:none;stroke:#1d2124;stroke-width:.25}.thin{fill:none;stroke:#1d2124;stroke-width:.15}</style>
 <rect width="420" height="297" fill="#fff"/>
 <rect x="5" y="5" width="410" height="287" class="k"/>
-<text x="56.38" y="19.35" class="h" text-anchor="start">LEFT (WEST) BARRIER · OUTSIDE FACE · SOUTH HALF · LOOKING EAST</text>
-<text x="363.62" y="19.35" class="s" text-anchor="end">NORTH ← · → SOUTH</text>
+<text x="113.99" y="21.13" class="h" text-anchor="start">WEST BARRIER · OUTSIDE FACE · SOUTH HALF · LOOKING EAST</text>
+<text x="306.01" y="21.13" class="s" text-anchor="end">NORTH ← · → SOUTH</text>
 <g id="view-RLO-1">
-<path class="f" d="M56.38,34.46 56.38,41.20 363.62,28.09 363.62,21.35Z"/>
-<path class="o" d="M56.38,34.46 56.38,41.20 363.62,28.09 363.62,21.35 56.38,34.46"/>
-<path class="e" d="M363.62,21.58 363.62,28.09 56.38,41.20 56.38,34.70"/>
+<path class="f" d="M113.99,35.94 306.01,27.74 306.01,23.53 113.99,31.73Z"/>
+<path class="o" d="M113.99,35.94 306.01,27.74 306.01,23.53 113.99,31.73 113.99,35.94"/>
+<path class="e" d="M306.01,23.68 306.01,27.74 113.99,35.94 113.99,31.87"/>
 </g>
-<path class="c" d="M361.18,20.75V42.00"/>
-<text x="365.02" y="30.87" class="lbl" text-anchor="start">BENT 1</text>
-<text x="365.02" y="33.27" class="s" text-anchor="start">STA 104+96.00</text>
-<path class="c" d="M166.11,20.75V42.00"/>
-<text x="166.11" y="19.35" class="s" text-anchor="middle">BENT 2 · STA 105+76.00</text>
-<text x="56.38" y="50.20" class="h" text-anchor="start">LEFT (WEST) BARRIER · OUTSIDE FACE · NORTH HALF · LOOKING EAST</text>
-<text x="363.62" y="50.20" class="s" text-anchor="end">NORTH ← · → SOUTH</text>
+<path class="c" d="M304.49,22.93V36.74"/>
+<text x="307.61" y="29.13" class="lbl" text-anchor="start">END BENT 1</text>
+<text x="307.61" y="32.13" class="s" text-anchor="start">STA 104+96.00</text>
+<path class="c" d="M182.57,22.93V36.74"/>
+<text x="182.57" y="39.54" class="s" text-anchor="middle">BENT 2 · STA 105+76.00</text>
+<path class="c" d="M113.99,22.93V36.74"/>
+<text x="112.39" y="29.13" class="lbl" text-anchor="end">MATCH LINE</text>
+<text x="112.39" y="32.13" class="s" text-anchor="end">STA 106+21.00</text>
+<text x="113.99" y="51.54" class="h" text-anchor="start">WEST BARRIER · OUTSIDE FACE · NORTH HALF · LOOKING EAST</text>
+<text x="306.01" y="51.54" class="s" text-anchor="end">NORTH ← · → SOUTH</text>
 <g id="view-RLO-2">
-<path class="f" d="M56.38,65.19 56.38,71.92 68.79,71.47 87.42,70.73 363.62,58.94 363.62,52.20 87.42,63.99 68.79,64.73Z"/>
-<path class="o" d="M56.38,65.19 56.38,71.92 68.79,71.47 87.42,70.73 363.62,58.94 363.62,52.20 87.42,63.99 68.79,64.73 56.38,65.19"/>
-<path class="e" d="M363.62,52.44 363.62,58.94 87.41,70.73 75.00,71.23 56.38,71.92 56.38,65.42"/>
+<path class="f" d="M113.99,66.26 125.63,65.83 133.38,65.52 306.01,58.15 306.01,53.94 133.38,61.31 121.75,61.77 113.99,62.05Z"/>
+<path class="o" d="M113.99,66.26 125.63,65.83 133.38,65.52 306.01,58.15 306.01,53.94 133.38,61.31 121.75,61.77 113.99,62.05 113.99,66.26"/>
+<path class="e" d="M306.01,54.09 306.01,58.15 133.38,65.52 125.63,65.83 113.99,66.26 113.99,62.20"/>
 </g>
-<path class="c" d="M253.89,51.60V72.72"/>
-<text x="253.89" y="50.20" class="s" text-anchor="middle">BENT 3 · STA 106+66.00</text>
-<path class="c" d="M58.82,51.60V72.72"/>
-<text x="54.98" y="61.66" class="lbl" text-anchor="end">BENT 4</text>
-<text x="54.98" y="64.06" class="s" text-anchor="end">STA 107+46.00</text>
-<text x="56.38" y="80.92" class="h" text-anchor="start">LEFT (WEST) BARRIER · TRAFFIC FACE · SOUTH HALF · LOOKING WEST</text>
-<text x="363.62" y="80.92" class="s" text-anchor="end">SOUTH ← · → NORTH</text>
+<path class="c" d="M237.43,53.34V67.06"/>
+<text x="237.43" y="69.86" class="s" text-anchor="middle">BENT 3 · STA 106+66.00</text>
+<path class="c" d="M115.51,53.34V67.06"/>
+<text x="112.39" y="59.50" class="lbl" text-anchor="end">END BENT 4</text>
+<text x="112.39" y="62.50" class="s" text-anchor="end">STA 107+46.00</text>
+<path class="c" d="M306.01,53.34V67.06"/>
+<text x="307.61" y="59.50" class="lbl" text-anchor="start">MATCH LINE</text>
+<text x="307.61" y="62.50" class="s" text-anchor="start">STA 106+21.00</text>
+<text x="113.99" y="81.86" class="h" text-anchor="start">WEST BARRIER · TRAFFIC FACE · SOUTH HALF · LOOKING WEST</text>
+<text x="306.01" y="81.86" class="s" text-anchor="end">SOUTH ← · → NORTH</text>
 <g id="view-RLT-1">
-<path class="f" d="M56.38,82.92 56.38,89.66 363.62,102.78 363.62,96.04Z"/>
-<path class="o" d="M56.38,83.00 56.38,89.66 363.62,102.78 363.62,96.04 56.38,82.92 56.38,83.00"/>
-<path class="e" d="M56.38,87.59 56.38,83.11M56.38,87.59 363.62,100.70M56.38,88.99 56.38,87.59M56.38,88.99 363.62,102.10M56.38,88.99 56.38,89.60 363.62,102.71 363.62,102.10M56.38,89.66 363.62,102.78M363.62,100.70 363.62,96.22M363.62,102.10 363.62,100.70"/>
+<path class="f" d="M113.99,88.48 125.63,88.97 306.01,96.67 306.01,92.46 113.99,84.26Z"/>
+<path class="o" d="M113.99,88.48 125.63,88.97 306.01,96.67 306.01,92.46 113.99,84.26 113.99,88.48"/>
+<path class="e" d="M113.99,87.18 113.99,84.38M113.99,87.18 306.01,95.38M113.99,88.05 113.99,87.18M113.99,88.05 306.01,96.25M113.99,88.05 113.99,88.44 306.01,96.63 306.01,96.25M113.99,88.48 306.01,96.67M306.01,95.38 306.01,92.58M306.01,96.25 306.01,95.38"/>
 </g>
-<path class="c" d="M58.82,82.32V103.58"/>
-<text x="54.98" y="92.45" class="lbl" text-anchor="end">BENT 1</text>
-<text x="54.98" y="94.85" class="s" text-anchor="end">STA 104+96.00</text>
-<path class="c" d="M253.89,82.32V103.58"/>
-<text x="253.89" y="80.92" class="s" text-anchor="middle">BENT 2 · STA 105+76.00</text>
-<text x="56.38" y="111.78" class="h" text-anchor="start">LEFT (WEST) BARRIER · TRAFFIC FACE · NORTH HALF · LOOKING WEST</text>
-<text x="363.62" y="111.78" class="s" text-anchor="end">SOUTH ← · → NORTH</text>
+<path class="c" d="M115.51,83.66V97.47"/>
+<text x="112.39" y="89.87" class="lbl" text-anchor="end">END BENT 1</text>
+<text x="112.39" y="92.87" class="s" text-anchor="end">STA 104+96.00</text>
+<path class="c" d="M237.43,83.66V97.47"/>
+<text x="237.43" y="100.27" class="s" text-anchor="middle">BENT 2 · STA 105+76.00</text>
+<path class="c" d="M306.01,83.66V97.47"/>
+<text x="307.61" y="89.87" class="lbl" text-anchor="start">MATCH LINE</text>
+<text x="307.61" y="92.87" class="s" text-anchor="start">STA 106+21.00</text>
+<text x="113.99" y="112.27" class="h" text-anchor="start">WEST BARRIER · TRAFFIC FACE · NORTH HALF · LOOKING WEST</text>
+<text x="306.01" y="112.27" class="s" text-anchor="end">SOUTH ← · → NORTH</text>
 <g id="view-RLT-2">
-<path class="f" d="M56.38,113.78 56.38,120.52 332.58,132.31 351.21,133.05 363.62,133.50 363.62,126.76 351.21,126.31 332.58,125.57Z"/>
-<path class="o" d="M56.38,113.81 56.38,120.52 332.58,132.31 351.21,133.05 363.62,133.50 363.62,126.76 351.21,126.31 332.58,125.57 56.38,113.78 56.38,113.81"/>
-<path class="e" d="M56.38,118.44 56.38,113.96M56.38,118.44 332.59,130.23 345.00,130.73 363.62,131.42M56.38,119.84 56.38,118.44M56.38,119.84 332.59,131.63 351.21,132.37 363.62,132.83M56.38,119.84 56.38,120.45 332.59,132.24 345.00,132.75 363.62,133.43 363.62,132.83M56.38,120.52 332.59,132.31 345.00,132.81 363.62,133.50M363.62,131.42 363.62,126.94M363.62,132.83 363.62,131.42"/>
+<path class="f" d="M113.99,118.89 286.62,126.25 294.37,126.57 306.01,127.00 306.01,122.79 298.25,122.51 286.62,122.04 113.99,114.67Z"/>
+<path class="o" d="M113.99,118.89 286.62,126.25 294.37,126.57 306.01,127.00 306.01,122.79 298.25,122.51 286.62,122.04 113.99,114.67 113.99,118.89"/>
+<path class="e" d="M113.99,117.59 113.99,114.79M113.99,117.59 286.62,124.96 294.37,125.27 306.01,125.70M113.99,118.46 113.99,117.59M113.99,118.46 286.62,125.83 298.25,126.30 306.01,126.58M113.99,118.46 113.99,118.85 286.62,126.21 294.37,126.53 306.01,126.96 306.01,126.58M113.99,118.89 286.62,126.25 294.37,126.57 306.01,127.00M306.01,125.70 306.01,122.90M306.01,126.58 306.01,125.70"/>
 </g>
-<path class="c" d="M166.11,113.18V134.30"/>
-<text x="166.11" y="111.78" class="s" text-anchor="middle">BENT 3 · STA 106+66.00</text>
-<path class="c" d="M361.18,113.18V134.30"/>
-<text x="365.02" y="123.24" class="lbl" text-anchor="start">BENT 4</text>
-<text x="365.02" y="125.64" class="s" text-anchor="start">STA 107+46.00</text>
-<text x="56.38" y="142.50" class="h" text-anchor="start">RIGHT (EAST) BARRIER · OUTSIDE FACE · SOUTH HALF · LOOKING WEST</text>
-<text x="363.62" y="142.50" class="s" text-anchor="end">SOUTH ← · → NORTH</text>
+<path class="c" d="M182.57,114.07V127.80"/>
+<text x="182.57" y="130.60" class="s" text-anchor="middle">BENT 3 · STA 106+66.00</text>
+<path class="c" d="M304.49,114.07V127.80"/>
+<text x="307.61" y="120.24" class="lbl" text-anchor="start">END BENT 4</text>
+<text x="307.61" y="123.24" class="s" text-anchor="start">STA 107+46.00</text>
+<path class="c" d="M113.99,114.07V127.80"/>
+<text x="112.39" y="120.24" class="lbl" text-anchor="end">MATCH LINE</text>
+<text x="112.39" y="123.24" class="s" text-anchor="end">STA 106+21.00</text>
+<text x="113.99" y="142.60" class="h" text-anchor="start">EAST BARRIER · OUTSIDE FACE · SOUTH HALF · LOOKING WEST</text>
+<text x="306.01" y="142.60" class="s" text-anchor="end">SOUTH ← · → NORTH</text>
 <g id="view-RRO-1">
-<path class="f" d="M56.38,144.50 56.38,151.24 363.62,164.36 363.62,157.62Z"/>
-<path class="o" d="M56.38,144.58 56.38,151.24 363.62,164.36 363.62,157.62 56.38,144.50 56.38,144.58"/>
-<path class="e" d="M56.38,144.74 56.38,151.24 363.62,164.35 363.62,157.85"/>
+<path class="f" d="M113.99,149.21 125.63,149.71 306.01,157.41 306.01,153.20 113.99,145.00Z"/>
+<path class="o" d="M113.99,149.21 125.63,149.71 306.01,157.41 306.01,153.20 113.99,145.00 113.99,149.21"/>
+<path class="e" d="M113.99,145.15 113.99,149.21 306.01,157.41 306.01,153.35"/>
 </g>
-<path class="c" d="M58.82,143.90V165.16"/>
-<text x="54.98" y="154.03" class="lbl" text-anchor="end">BENT 1</text>
-<text x="54.98" y="156.43" class="s" text-anchor="end">STA 104+96.00</text>
-<path class="c" d="M253.89,143.90V165.16"/>
-<text x="253.89" y="142.50" class="s" text-anchor="middle">BENT 2 · STA 105+76.00</text>
-<text x="56.38" y="173.36" class="h" text-anchor="start">RIGHT (EAST) BARRIER · OUTSIDE FACE · NORTH HALF · LOOKING WEST</text>
-<text x="363.62" y="173.36" class="s" text-anchor="end">SOUTH ← · → NORTH</text>
+<path class="c" d="M115.51,144.40V158.21"/>
+<text x="112.39" y="150.60" class="lbl" text-anchor="end">END BENT 1</text>
+<text x="112.39" y="153.60" class="s" text-anchor="end">STA 104+96.00</text>
+<path class="c" d="M237.43,144.40V158.21"/>
+<text x="237.43" y="161.01" class="s" text-anchor="middle">BENT 2 · STA 105+76.00</text>
+<path class="c" d="M306.01,144.40V158.21"/>
+<text x="307.61" y="150.60" class="lbl" text-anchor="start">MATCH LINE</text>
+<text x="307.61" y="153.60" class="s" text-anchor="start">STA 106+21.00</text>
+<text x="113.99" y="173.01" class="h" text-anchor="start">EAST BARRIER · OUTSIDE FACE · NORTH HALF · LOOKING WEST</text>
+<text x="306.01" y="173.01" class="s" text-anchor="end">SOUTH ← · → NORTH</text>
 <g id="view-RRO-2">
-<path class="f" d="M56.38,175.36 56.38,182.09 332.58,193.88 351.21,194.63 363.62,195.08 363.62,188.34 351.21,187.89 332.58,187.15Z"/>
-<path class="o" d="M56.38,175.39 56.38,182.09 332.58,193.88 351.21,194.63 363.62,195.08 363.62,188.34 351.21,187.89 332.58,187.15 56.38,175.36 56.38,175.39"/>
-<path class="e" d="M56.38,175.59 56.38,182.09 332.59,193.88 345.00,194.39 363.62,195.08 363.62,188.57"/>
+<path class="f" d="M113.99,179.62 286.62,186.99 294.37,187.30 306.01,187.74 306.01,183.52 298.25,183.24 286.62,182.78 113.99,175.41Z"/>
+<path class="o" d="M113.99,179.62 286.62,186.99 294.37,187.30 306.01,187.74 306.01,183.52 298.25,183.24 286.62,182.78 113.99,175.41 113.99,179.62"/>
+<path class="e" d="M113.99,175.56 113.99,179.62 286.62,186.99 294.37,187.30 306.01,187.74 306.01,183.67"/>
 </g>
-<path class="c" d="M166.11,174.76V195.88"/>
-<text x="166.11" y="173.36" class="s" text-anchor="middle">BENT 3 · STA 106+66.00</text>
-<path class="c" d="M361.18,174.76V195.88"/>
-<text x="365.02" y="184.82" class="lbl" text-anchor="start">BENT 4</text>
-<text x="365.02" y="187.22" class="s" text-anchor="start">STA 107+46.00</text>
-<text x="56.38" y="204.08" class="h" text-anchor="start">RIGHT (EAST) BARRIER · TRAFFIC FACE · SOUTH HALF · LOOKING EAST</text>
-<text x="363.62" y="204.08" class="s" text-anchor="end">NORTH ← · → SOUTH</text>
+<path class="c" d="M182.57,174.81V188.54"/>
+<text x="182.57" y="191.34" class="s" text-anchor="middle">BENT 3 · STA 106+66.00</text>
+<path class="c" d="M304.49,174.81V188.54"/>
+<text x="307.61" y="180.97" class="lbl" text-anchor="start">END BENT 4</text>
+<text x="307.61" y="183.97" class="s" text-anchor="start">STA 107+46.00</text>
+<path class="c" d="M113.99,174.81V188.54"/>
+<text x="112.39" y="180.97" class="lbl" text-anchor="end">MATCH LINE</text>
+<text x="112.39" y="183.97" class="s" text-anchor="end">STA 106+21.00</text>
+<text x="113.99" y="203.34" class="h" text-anchor="start">EAST BARRIER · TRAFFIC FACE · SOUTH HALF · LOOKING EAST</text>
+<text x="306.01" y="203.34" class="s" text-anchor="end">NORTH ← · → SOUTH</text>
 <g id="view-RRT-1">
-<path class="f" d="M56.38,219.19 56.38,225.93 363.62,212.82 363.62,206.08Z"/>
-<path class="o" d="M56.38,219.19 56.38,225.93 363.62,212.82 363.62,206.08 56.38,219.19"/>
-<path class="e" d="M56.38,219.37 56.38,223.85M56.38,223.85 56.38,225.26M363.62,210.74 56.38,223.85M363.62,212.14 363.62,212.75 56.38,225.87 56.38,225.26M363.62,212.14 56.38,225.26M363.62,212.82 56.38,225.93M363.62,206.26 363.62,210.74M363.62,210.74 363.62,212.14"/>
+<path class="f" d="M113.99,218.14 306.01,209.95 306.01,205.74 113.99,213.93Z"/>
+<path class="o" d="M113.99,218.14 306.01,209.95 306.01,205.74 113.99,213.93 113.99,218.14"/>
+<path class="e" d="M113.99,214.05 113.99,216.85M113.99,216.85 113.99,217.72M306.01,208.65 113.99,216.85M306.01,209.53 306.01,209.91 113.99,218.10 113.99,217.72M306.01,209.53 113.99,217.72M306.01,209.95 113.99,218.14M306.01,205.85 306.01,208.65M306.01,208.65 306.01,209.53"/>
 </g>
-<path class="c" d="M361.18,205.48V226.73"/>
-<text x="365.02" y="215.60" class="lbl" text-anchor="start">BENT 1</text>
-<text x="365.02" y="218.00" class="s" text-anchor="start">STA 104+96.00</text>
-<path class="c" d="M166.11,205.48V226.73"/>
-<text x="166.11" y="204.08" class="s" text-anchor="middle">BENT 2 · STA 105+76.00</text>
-<text x="56.38" y="234.93" class="h" text-anchor="start">RIGHT (EAST) BARRIER · TRAFFIC FACE · NORTH HALF · LOOKING EAST</text>
-<text x="363.62" y="234.93" class="s" text-anchor="end">NORTH ← · → SOUTH</text>
+<path class="c" d="M304.49,205.14V218.95"/>
+<text x="307.61" y="211.34" class="lbl" text-anchor="start">END BENT 1</text>
+<text x="307.61" y="214.34" class="s" text-anchor="start">STA 104+96.00</text>
+<path class="c" d="M182.57,205.14V218.95"/>
+<text x="182.57" y="221.75" class="s" text-anchor="middle">BENT 2 · STA 105+76.00</text>
+<path class="c" d="M113.99,205.14V218.95"/>
+<text x="112.39" y="211.34" class="lbl" text-anchor="end">MATCH LINE</text>
+<text x="112.39" y="214.34" class="s" text-anchor="end">STA 106+21.00</text>
+<text x="113.99" y="233.75" class="h" text-anchor="start">EAST BARRIER · TRAFFIC FACE · NORTH HALF · LOOKING EAST</text>
+<text x="306.01" y="233.75" class="s" text-anchor="end">NORTH ← · → SOUTH</text>
 <g id="view-RRT-2">
-<path class="f" d="M56.38,249.92 56.38,256.65 68.79,256.20 87.42,255.46 363.62,243.67 363.62,236.93 87.42,248.72 68.79,249.46Z"/>
-<path class="o" d="M56.38,249.92 56.38,256.65 68.79,256.20 87.42,255.46 363.62,243.67 363.62,236.93 87.42,248.72 68.79,249.46 56.38,249.92"/>
-<path class="e" d="M56.38,250.10 56.38,254.58M56.38,254.58 56.38,255.98M363.62,241.59 87.41,253.38 75.00,253.89 56.38,254.58M363.62,243.00 363.62,243.61 87.41,255.40 75.00,255.90 56.38,256.59 56.38,255.98M363.62,243.00 87.41,254.79 68.79,255.53 56.38,255.98M363.62,243.67 87.41,255.46 75.00,255.96 56.38,256.65M363.62,237.11 363.62,241.59M363.62,241.59 363.62,243.00"/>
+<path class="f" d="M113.99,248.47 125.63,248.04 133.38,247.73 306.01,240.36 306.01,236.15 133.38,243.51 121.75,243.98 113.99,244.26Z"/>
+<path class="o" d="M113.99,248.47 125.63,248.04 133.38,247.73 306.01,240.36 306.01,236.15 133.38,243.51 121.75,243.98 113.99,244.26 113.99,248.47"/>
+<path class="e" d="M113.99,244.37 113.99,247.17M113.99,247.17 113.99,248.05M306.01,239.06 133.38,246.43 125.63,246.74 113.99,247.17M306.01,239.94 306.01,240.32 133.38,247.68 125.63,248.00 113.99,248.43 113.99,248.05M306.01,239.94 133.38,247.30 121.75,247.77 113.99,248.05M306.01,240.36 133.38,247.73 125.63,248.04 113.99,248.47M306.01,236.26 306.01,239.06M306.01,239.06 306.01,239.94"/>
 </g>
-<path class="c" d="M253.89,236.33V257.45"/>
-<text x="253.89" y="234.93" class="s" text-anchor="middle">BENT 3 · STA 106+66.00</text>
-<path class="c" d="M58.82,236.33V257.45"/>
-<text x="54.98" y="246.39" class="lbl" text-anchor="end">BENT 4</text>
-<text x="54.98" y="248.79" class="s" text-anchor="end">STA 107+46.00</text>
-<path class="k" d="M5,262.0H415M120,262.0V292M250,262.0V292M300,262.0V292M355,262.0V292"/>
-<text x="9.00" y="269.00" class="mid" text-anchor="start">BEECHWOOD ROAD BRIDGE OVER LITTLE BLUE RIVER</text>
+<path class="c" d="M237.43,235.55V249.27"/>
+<text x="237.43" y="252.07" class="s" text-anchor="middle">BENT 3 · STA 106+66.00</text>
+<path class="c" d="M115.51,235.55V249.27"/>
+<text x="112.39" y="241.71" class="lbl" text-anchor="end">END BENT 4</text>
+<text x="112.39" y="244.71" class="s" text-anchor="end">STA 107+46.00</text>
+<path class="c" d="M306.01,235.55V249.27"/>
+<text x="307.61" y="241.71" class="lbl" text-anchor="start">MATCH LINE</text>
+<text x="307.61" y="244.71" class="s" text-anchor="start">STA 106+21.00</text>
+<path class="k" d="M5,262.0H415M120,262.0V292M250,262.0V292M308,262.0V292M355,262.0V292"/>
+<text x="9.00" y="269.00" class="mid" text-anchor="start">BEECHWOOD ROAD OVER LITTLE BLUE RIVER</text>
 <text x="9.00" y="274.50" class="s" text-anchor="start">Structure 13-00043 B · Des. 1400825 · Crawford County, Indiana</text>
-<text x="9.00" y="279.00" class="s" text-anchor="start">3 spans 80-90-80 ft · prestressed concrete bulb-tee girders · 33 ft deck</text>
-<text x="9.00" y="287.50" class="s" text-anchor="start">INSPECTION SHEET · DRAW DEFECTS ON THE SHADED SURFACES</text>
+<text x="9.00" y="279.00" class="s" text-anchor="start">3 spans 80-90-80 ft · prestressed concrete bulb-tee beams · 33 ft deck</text>
+<text x="9.00" y="287.50" class="s" text-anchor="start">INSPECTION SHEET · RECORD DEFECTS ON THE SHADED SURFACES</text>
 <text x="124.00" y="269.00" class="mid" text-anchor="start">BARRIERS</text>
-<text x="124.00" y="274.50" class="s" text-anchor="start">Outside and traffic faces of both FC barriers</text>
-<text x="124.00" y="279.00" class="s" text-anchor="start">True orthographic views of the 3D model. Shaded: inspectable element surface.</text>
-<text x="124.00" y="283.00" class="s" text-anchor="start">Grey outline: context, not inspected on this sheet. Dash-dot: bent centre line.</text>
-<text x="124.00" y="287.50" class="s" text-anchor="start">Units: feet and inches (AASHTO MBEI element quantities).</text>
+<text x="124.00" y="274.50" class="s" text-anchor="start">Outside and traffic faces of both FC barriers; each face in two halves that meet at a match line</text>
+<rect x="124" y="278.2" width="5" height="2.6" class="f"/><rect x="124" y="278.2" width="5" height="2.6" class="o"/>
+<text x="130.50" y="280.50" class="s" text-anchor="start">Surface to inspect</text>
+<rect x="153" y="278.2" width="5" height="2.6" class="rf"/><rect x="153" y="278.2" width="5" height="2.6" class="r"/>
+<text x="159.50" y="280.50" class="s" text-anchor="start">Context only</text>
+<path class="j" d="M178,279.5h6"/>
+<text x="185.50" y="280.50" class="s" text-anchor="start">Limit between members</text>
+<path class="c" d="M215,279.5h7"/>
+<text x="223.50" y="280.50" class="s" text-anchor="start">Centre line</text>
+<text x="124.00" y="285.00" class="s" text-anchor="start">Beam Line No. 1 is the west beam; names follow the plans (sheets 32-37).</text>
+<text x="124.00" y="289.00" class="s" text-anchor="start">Elevations in feet, sampled from the 3D model. Key plans are not to scale.</text>
 <text x="254.00" y="268.00" class="s" text-anchor="start">SCALE</text>
-<text x="254.00" y="275.00" class="mid" text-anchor="start">1:125</text>
-<rect x="254.00" y="279.0" width="8.00" height="1.2" fill="#1d2124" stroke="#1d2124" stroke-width=".1"/>
-<rect x="262.00" y="279.0" width="8.00" height="1.2" fill="#fff" stroke="#1d2124" stroke-width=".1"/>
-<rect x="270.00" y="279.0" width="8.00" height="1.2" fill="#1d2124" stroke="#1d2124" stroke-width=".1"/>
-<rect x="278.00" y="279.0" width="8.00" height="1.2" fill="#fff" stroke="#1d2124" stroke-width=".1"/>
-<rect x="286.00" y="279.0" width="8.00" height="1.2" fill="#1d2124" stroke="#1d2124" stroke-width=".1"/>
-<text x="254.00" y="284.50" class="s" text-anchor="start">0</text>
-<text x="294.00" y="284.50" class="s" text-anchor="middle">5 m</text>
-<text x="274.00" y="288.50" class="s" text-anchor="middle">5 m ≈ 16.4 ft</text>
-<text x="304.00" y="268.00" class="s" text-anchor="start">MODEL</text>
-<text x="304.00" y="273.00" class="t" text-anchor="start">model.glb · rev 2.1-column-spacing</text>
-<text x="304.00" y="277.50" class="s" text-anchor="start">SHA-256 b591ee4f2f03…</text>
-<text x="304.00" y="282.00" class="s" text-anchor="start">X station, Y up (glTF), metres</text>
-<text x="304.00" y="286.50" class="s" text-anchor="start">Generated 2026-11-06</text>
+<text x="254.00" y="274.50" class="mid" text-anchor="start">1:200</text>
+<rect x="254.00" y="278.0" width="6.10" height="1.3" fill="#1d2124" stroke="#1d2124" stroke-width=".1"/>
+<rect x="260.10" y="278.0" width="6.10" height="1.3" fill="#fff" stroke="#1d2124" stroke-width=".1"/>
+<rect x="266.19" y="278.0" width="6.10" height="1.3" fill="#1d2124" stroke="#1d2124" stroke-width=".1"/>
+<rect x="272.29" y="278.0" width="6.10" height="1.3" fill="#fff" stroke="#1d2124" stroke-width=".1"/>
+<rect x="278.38" y="278.0" width="6.10" height="1.3" fill="#1d2124" stroke="#1d2124" stroke-width=".1"/>
+<text x="254.00" y="283.50" class="s" text-anchor="start">0</text>
+<text x="284.48" y="283.50" class="s" text-anchor="middle">20 ft</text>
+<text x="254.00" y="288.50" class="s" text-anchor="start">20 ft = 6.10 m</text>
+<text x="312.00" y="268.00" class="s" text-anchor="start">SOURCE</text>
+<text x="312.00" y="273.50" class="s" text-anchor="start">3D model rev 2.2-wing-profile</text>
+<text x="312.00" y="278.00" class="s" text-anchor="start">Plans Des. 1400825</text>
+<text x="312.00" y="282.50" class="s" text-anchor="start">Generated 2026-11-07</text>
 <text x="359.00" y="268.00" class="s" text-anchor="start">SHEET</text>
 <text x="385.00" y="279.00" class="big" text-anchor="middle">RL-1</text>
-<text x="385.00" y="287.00" class="s" text-anchor="middle">10 of 10</text>
+<text x="385.00" y="287.00" class="s" text-anchor="middle">13 of 13</text>
 </svg>

@@ -3,18 +3,18 @@
   "spans_m": [
     12.4968
   ],
-  "deck_length_m": 13.7287,
+  "deck_length_m": 12.918475,
   "deck_width_m": 14.224,
   "deck_thickness_m": 0.24130000000000001,
   "structural_deck_thickness_m": 0.1905,
   "overlay_thickness_m": 0.0508,
   "girder_y_m": [
-    -5.9055,
-    -3.5433,
-    -1.1810999999999998,
-    1.1811000000000007,
-    3.5433000000000003,
-    5.9055
+    5.9055,
+    3.5433,
+    1.1810999999999998,
+    -1.1811000000000007,
+    -3.5433000000000003,
+    -5.9055
   ],
   "girder_lines": 6,
   "spacing_m": 2.3622,
@@ -22,7 +22,7 @@
     -6.2484,
     6.2484
   ],
-  "skew_deg": -30,
+  "skew_deg": 30,
   "skew_direction": "left",
   "grade": -0.002,
   "crossfall": 0.015625,
@@ -39,12 +39,12 @@
         -2.8388579853006655
       ],
       "girder_y_m": [
-        -5.9055,
-        -3.5433,
-        -1.1810999999999998,
-        1.1811000000000007,
-        3.5433000000000003,
-        5.9055
+        5.9055,
+        3.5433,
+        1.1810999999999998,
+        -1.1811000000000007,
+        -3.5433000000000003,
+        -5.9055
       ],
       "type": "expansion_elastomeric_bearing_on_abutment",
       "source_topology": true,
@@ -62,12 +62,12 @@
         9.657942014699335
       ],
       "girder_y_m": [
-        -5.9055,
-        -3.5433,
-        -1.1810999999999998,
-        1.1811000000000007,
-        3.5433000000000003,
-        5.9055
+        5.9055,
+        3.5433,
+        1.1810999999999998,
+        -1.1811000000000007,
+        -3.5433000000000003,
+        -5.9055
       ],
       "type": "fixed_bearing_on_abutment",
       "source_topology": true,
@@ -207,7 +207,7 @@
       "member_id": "beam_0_0",
       "line_index": 0,
       "span_index": 0,
-      "y_m": -5.9055,
+      "y_m": 5.9055,
       "support_indices": [
         0,
         1
@@ -218,7 +218,7 @@
       "member_id": "beam_0_1",
       "line_index": 1,
       "span_index": 0,
-      "y_m": -3.5433,
+      "y_m": 3.5433,
       "support_indices": [
         0,
         1
@@ -229,7 +229,7 @@
       "member_id": "beam_0_2",
       "line_index": 2,
       "span_index": 0,
-      "y_m": -1.1810999999999998,
+      "y_m": 1.1810999999999998,
       "support_indices": [
         0,
         1
@@ -240,7 +240,7 @@
       "member_id": "beam_0_3",
       "line_index": 3,
       "span_index": 0,
-      "y_m": 1.1811000000000007,
+      "y_m": -1.1811000000000007,
       "support_indices": [
         0,
         1
@@ -251,7 +251,7 @@
       "member_id": "beam_0_4",
       "line_index": 4,
       "span_index": 0,
-      "y_m": 3.5433000000000003,
+      "y_m": -3.5433000000000003,
       "support_indices": [
         0,
         1
@@ -262,7 +262,7 @@
       "member_id": "beam_0_5",
       "line_index": 5,
       "span_index": 0,
-      "y_m": 5.9055,
+      "y_m": -5.9055,
       "support_indices": [
         0,
         1
@@ -271,7 +271,7 @@
     }
   ],
   "units": "metres",
-  "axes": "X increasing station, Y drawing south, Z up; not geographically rotated",
+  "axes": "X increasing station, +Y left looking up-station (north), Z up; not geographically rotated",
   "source_documents": [
     {
       "id": "9683628",
@@ -406,5 +406,11 @@
       ],
       "part_ids": []
     }
+  ],
+  "notes_after_review": "Transverse coordinates (and, for a wholly reflected model, the skew sign) were mirrored to follow the 2026-11 drawing-review correction of model.glb, which put the bridge on its drawn side.",
+  "floor_length_out_to_out_m": 13.7287,
+  "deck_slab_end_u_m": [
+    -6.453738,
+    6.464737
   ]
 }

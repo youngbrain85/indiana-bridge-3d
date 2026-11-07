@@ -1,27 +1,12 @@
 {
-  "component_count": 474,
+  "component_count": 466,
   "all_meshes_watertight": true,
   "all_volumes_positive": true,
   "exported_glb_reopened": true,
   "mesh_names_match_manifest": true,
   "maximum_bearing_contact_error_m": 1.7763568394002505e-15,
-  "glb_sha256": "be81055027057616b42e4cb9375b5b61973cb7227d7a6288b449bcfb0df6898d",
+  "glb_sha256": "31ee7adbabcc6b381f12861611d775a1fe59ecbdab952682fcb296ca9ef46b68",
   "source_pdf_sha256": "f0faa12db48e58f780dc6b8c518501c531b403733e2ea46c3402506304d3e142",
-  "checks": {
-    "spans_m": [
-      19.939000000000004,
-      44.196000000000005,
-      44.196000000000005,
-      16.891000000000002
-    ],
-    "support_lines": 5,
-    "girder_lines": 8,
-    "girder_segments": 32,
-    "bearings": 40,
-    "continuous_deck_across_former_joint": true,
-    "directional_nbi_records": 2,
-    "minimum_deck_girder_clearance_m": 0.07643383999999998
-  },
   "contacts": [
     {
       "id": "Bent_1_bearing_1",
@@ -264,5 +249,22 @@
       "seat_m": 8.741615609758686
     }
   ],
-  "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation."
+  "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation.",
+  "checks_at_build": {
+    "spans_m": [
+      19.939000000000004,
+      44.196000000000005,
+      44.196000000000005,
+      16.891000000000002
+    ],
+    "support_lines": 5,
+    "girder_lines": 8,
+    "girder_segments": 32,
+    "bearings": 40,
+    "continuous_deck_across_former_joint": true,
+    "directional_nbi_records": 2,
+    "minimum_deck_girder_clearance_m": 0.07643383999999998
+  },
+  "model_revision": "1.3-deviations",
+  "refreshed_after_correction": "Generic checks re-run on the corrected GLB by scripts/refresh_geometry_verification.py; checks_at_build describe the model as first built."
 }

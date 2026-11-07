@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "bridge_id": "minnich-road",
-  "revision": "2026-10-15-assumed-demo-1",
+  "revision": "2026-11-07-assumed-demo-2",
   "title": "Minnich Road \u2014 assumed-input FEM demonstration",
   "demonstration": true,
   "source_pdf": "data/bridges/minnich-road/drawings.pdf",
@@ -46,62 +46,62 @@
     "support_geometry": {
       "cap_0_0": [
         [
-          -63.352948,
+          -63.774762,
           -9.6012,
-          7.367672
+          7.34443
         ],
         [
-          -47.458422,
+          -47.471489,
           -0.01,
-          8.317672
+          8.635089
         ]
       ],
       "cap_0_1": [
         [
-          -77.763578,
+          -78.185392,
           0.01,
-          7.367672
+          7.34443
         ],
         [
-          -61.869052,
+          -61.882118,
           9.6012,
-          8.317672
+          8.608003
         ]
       ],
       "cap_1_0": [
         [
           -43.413948,
           -9.6012,
-          6.809505
+          6.790679
         ],
         [
-          -27.519422,
+          -27.519423,
           -0.01,
-          7.759505
+          7.740679
         ]
       ],
       "column_1_0_0": [
         [
-          -30.075786,
+          -30.075787,
           -9.1512,
           1.2
         ],
         [
-          -29.175786,
+          -29.175787,
           -8.2512,
-          6.809505
+          6.790679
         ]
       ],
       "column_1_0_1": [
         [
-          -35.916685,
+          -35.916687,
           -5.2556,
           1.2
         ],
         [
           -35.016685,
           -4.3556,
-          6.809505
+          6.790679
         ]
       ],
       "column_1_0_2": [
@@ -111,21 +111,21 @@
           1.2
         ],
         [
-          -40.857584,
+          -40.857586,
           -0.46,
-          6.809505
+          6.790679
         ]
       ],
       "cap_1_1": [
         [
-          -57.824578,
+          -57.824577,
           0.01,
-          6.809505
+          6.790679
         ],
         [
-          -41.930052,
+          -41.930054,
           9.6012,
-          7.759505
+          7.740679
         ]
       ],
       "column_1_1_0": [
@@ -135,45 +135,45 @@
           1.2
         ],
         [
-          -43.586416,
+          -43.586414,
           1.36,
-          6.809505
+          6.790679
         ]
       ],
       "column_1_1_1": [
         [
-          -50.327315,
+          -50.327316,
           4.3556,
           1.2
         ],
         [
           -49.427315,
           5.2556,
-          6.809505
+          6.790679
         ]
       ],
       "column_1_1_2": [
         [
-          -56.168214,
+          -56.168213,
           8.2512,
           1.2
         ],
         [
-          -55.268214,
+          -55.268215,
           9.1512,
-          6.809505
+          6.790679
         ]
       ],
       "cap_2_0": [
         [
           0.782052,
           -9.6012,
-          7.124805
+          7.129598
         ],
         [
-          16.676578,
+          16.676577,
           -0.01,
-          8.074805
+          8.079598
         ]
       ],
       "column_2_0_0": [
@@ -185,7 +185,7 @@
         [
           15.020214,
           -8.2512,
-          7.124805
+          7.129598
         ]
       ],
       "column_2_0_1": [
@@ -197,7 +197,7 @@
         [
           9.179315,
           -4.3556,
-          7.124805
+          7.129598
         ]
       ],
       "column_2_0_2": [
@@ -209,19 +209,19 @@
         [
           3.338416,
           -0.46,
-          7.124805
+          7.129598
         ]
       ],
       "cap_2_1": [
         [
-          -13.628578,
+          -13.628577,
           0.01,
-          7.124805
+          7.129598
         ],
         [
           2.265948,
           9.6012,
-          8.074805
+          8.079598
         ]
       ],
       "column_2_1_0": [
@@ -233,7 +233,7 @@
         [
           0.609584,
           1.36,
-          7.124805
+          7.129598
         ]
       ],
       "column_2_1_1": [
@@ -245,7 +245,7 @@
         [
           -5.231315,
           5.2556,
-          7.124805
+          7.129598
         ]
       ],
       "column_2_1_2": [
@@ -257,31 +257,31 @@
         [
           -11.072214,
           9.1512,
-          7.124805
+          7.129598
         ]
       ],
       "cap_3_0": [
         [
-          44.978052,
+          44.978054,
           -9.6012,
-          6.765432
+          6.784917
         ],
         [
           60.872578,
           -0.01,
-          7.715432
+          7.734917
         ]
       ],
       "column_3_0_0": [
         [
-          58.316214,
+          58.316216,
           -9.1512,
           1.2
         ],
         [
-          59.216214,
+          59.216213,
           -8.2512,
-          6.765432
+          6.784917
         ]
       ],
       "column_3_0_1": [
@@ -291,93 +291,93 @@
           1.2
         ],
         [
-          53.375315,
+          53.375317,
           -4.3556,
-          6.765432
+          6.784917
         ]
       ],
       "column_3_0_2": [
         [
-          46.634416,
+          46.634415,
           -1.36,
           1.2
         ],
         [
           47.534416,
           -0.46,
-          6.765432
+          6.784917
         ]
       ],
       "cap_3_1": [
         [
-          30.567422,
+          30.567423,
           0.01,
-          6.765432
+          6.784917
         ],
         [
           46.461948,
           9.6012,
-          7.715432
+          7.734917
         ]
       ],
       "column_3_1_0": [
         [
-          43.905584,
+          43.905582,
           0.46,
           1.2
         ],
         [
           44.805584,
           1.36,
-          6.765432
+          6.784917
         ]
       ],
       "column_3_1_1": [
         [
-          38.064685,
+          38.064686,
           4.3556,
           1.2
         ],
         [
-          38.964685,
+          38.964684,
           5.2556,
-          6.765432
+          6.784917
         ]
       ],
       "column_3_1_2": [
         [
-          32.223786,
+          32.223785,
           8.2512,
           1.2
         ],
         [
-          33.123786,
+          33.123787,
           9.1512,
-          6.765432
+          6.784917
         ]
       ],
       "cap_4_0": [
         [
-          61.869052,
+          61.882118,
           -9.6012,
-          7.423569
+          7.473107
         ],
         [
-          77.763578,
+          78.185392,
           -0.01,
-          8.373569
+          8.718597
         ]
       ],
       "cap_4_1": [
         [
-          47.458422,
+          47.471489,
           0.01,
-          7.423569
+          7.473107
         ],
         [
-          63.352948,
+          63.774762,
           9.6012,
-          8.373569
+          8.767507
         ]
       ]
     }
@@ -644,7 +644,7 @@
       ],
       "status": "assumed_geometry",
       "source": "assumptions",
-      "note": "Cap and column bounding envelopes from the unverified visual reconstruction. The full values are frozen in each run JSON."
+      "note": "Cap and column bounding envelopes of model revision 1.3 (end-bent caps from sheets 23-24, intermediate supports still unverified envelopes). The full values are frozen in each run JSON."
     }
   ],
   "assumptions": [
@@ -654,9 +654,9 @@
     "Linear gross uncracked materials; default steel E=200 GPa and concrete E=30 GPa are illustrative assumptions, not site tests. No reinforcement stiffness, yielding or cracking.",
     "Full composite action is assumed using rigid offsets from shell midsurface to steel centroids. Haunch stiffness, stud slip and upper-flange kink are not resolved.",
     "All four girder spans are treated as continuous. Uniform assumed flange/web dimensions and varying total depth approximate the retained and new steel; exact flange schedules are not verified.",
-    "Cross frames use two 100 x 12 mm rectangular elastic diagonals per displayed frame, aligned with skew support lines. Neither their sections nor their connections are verified. Reported frame stress is nominal for this assumed section.",
+    "Cross frames use two 100 x 12 mm rectangular elastic diagonals per displayed frame, aligned with skew support lines. Neither their sections nor their connections are verified. Reported frame stress is nominal for this assumed section. The twelve end-row ids frame_0_0_* and frame_3_1_* are displayed (model revision 1.3) as the drawn MC 18x42.7 channel diaphragms nearest the end bents, 4 to 8 m from the end bearings (sheets 25-28, 30-31, 33); the analysis keeps its assumed diagonal pair 0.8 m from the end bearing lines under those ids, standing in for the concrete end diaphragms, which are not modelled.",
     "Grade and crossfall are flattened for the deck; span lengths, transverse positions and skew are retained. Result colors on the GLB use nearest FE samples, not a solid stress field. Use actual FE mesh to inspect the idealization.",
-    "Caps are assumed 0.84 x 0.95 m rectangles. Eighteen columns use the visual scaffold positions and nominal 0.9 m diameter; none is verified from original substructure drawings. Changed diameter changes FE stiffness only.",
+    "Caps are assumed 0.84 x 0.95 m rectangles. Eighteen columns use the visual scaffold positions and nominal 0.9 m diameter; none is verified from original substructure drawings. Changed diameter changes FE stiffness only. Cap and column heights come from model revision 1.3, where the end-bent caps are 3 ft 6 in wide with the drawn stepped seat levels (sheets 23-24); the analysis keeps 0.84 x 0.95 m rectangles at the mid-height of each cap envelope.",
     "End caps have three hypothetical support bases per directional bank. Interior column bases are fixed or supported by six assumed linear springs. No physical foundation members or foundation stresses are modeled.",
     "All 40 bearings use bilateral translational springs (default horizontal 2 MN/m, vertical 800 MN/m) and weak rotational springs 1 kNm/rad. All bearing pressure uses a nominal 12 x 16 in area, including unverified intermediate bearings. No contact, uplift release, sliding or friction is solved.",
     "Rails, approaches, mudwalls, pedestals, haunch bodies, bolts and stiffener plates are not separate FE members and have no applied self-weight. They remain gray in results.",

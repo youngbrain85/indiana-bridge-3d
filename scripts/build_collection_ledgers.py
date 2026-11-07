@@ -140,7 +140,7 @@ def existing(bid):
     length=m.get('deck_length_m') or m['deck_length_ft']*FT
     width=m.get('deck_width_m') or m['deck_width_ft']*FT
     t=.508 if bid=='us52-mud' else .2 if bid in ['sr8-yellow','sr10-i65'] else 8*IN
-    r=Recipe(bid,spans,length,width,t,skew_sign=1 if bid=='sr44-mud' else -1,
+    r=Recipe(bid,spans,length,width,t,
              simple=bid in ['21st-street-i465','us50-tanners-eb'])
     if bid!='us52-mud': r.patch('deck')
     if bid=='sr44-mud':
@@ -159,19 +159,37 @@ def existing(bid):
         r.notes.append('Continuous W27x94 section uses manifest/catalog d=26.92, b=9.990, tw=.490, tf=.745 inches with fillets omitted. Splice gaps are analytically closed; nominal unspliced stiffness is retained.')
     elif bid=='sr8-yellow':
         ys=[-5.029,-3.556,-1.778,0,1.778,3.556,5.029]
+        # Sheet 15 fillet table: deck top to beam top Dim "A" = 203/204/217/240/217/204/203 mm across the beam lines
+        # (symmetric), so the beam centroid is deck top - A - d/2 instead of the generic nominal haunch.
+        dim_a=[.203,.204,.217,.240,.217,.204,.203]
+        top=r.v['deck']['midplane_z_m']+r.v['deck']['thickness_m']/2
         for j,y in enumerate(ys):
-            for i in range(5):r.beam(f'beam_{i}_{j}',i,y,ishape(.840,.292,.0147,.022))
+            for i in range(5):
+                r.beam(f'beam_{i}_{j}',i,y,ishape(.840,.292,.0147,.022))
+                r.v['beams'][-1]['centroid_z_m']=top-dim_a[j]-.420
         labels=['Bent_1','Bent_2','Pier_3','Pier_4','Bent_5','Bent_6']
         for i in range(6):
-            s=r.support(i,f'cap_{i}',1.3 if i in [2,3] else .76)
+            if i in [0,5]:
+                # Integral end bents run up to the deck soffit since the 2026-11 drawing review (sheets 8-9); the
+                # analytical cap is the concrete below the bearing seats, as before that correction.
+                p=r.parts[f'cap_{i}'];seat=min(r.parts[f'{labels[i]}_bearing_{j+1}']['bounds_m'][0][2] for j in range(len(ys)))
+                s=r.support(i,f'cap_{i}',.76,cap_depth=seat-p['bounds_m'][0][2],top=(seat+p['bounds_m'][0][2])/2)
+            else:s=r.support(i,f'cap_{i}',1.3 if i in [2,3] else .76)
             if i in [2,3]:r.wall(s,f'wall_{i}',1.15)
             else:
-                for j in range(9):r.column(s,f'pile_stub_{i}_{j}',dict(kind='circle',diameter_m=.355),family='pile')
+                # End bents carry eight piles since the 2026-11 drawing review (sheet 8); interior bents nine.
+                for j in range(9):
+                    if f'pile_stub_{i}_{j}' in r.parts:r.column(s,f'pile_stub_{i}_{j}',dict(kind='circle',diameter_m=.355),family='pile')
+                # A pile line within 2 cm of a beam line is put on it: near-coincident cap nodes ruin the conditioning.
+                for c in s['columns']:
+                    near=min(ys,key=lambda y:abs(y-c['y_m']))
+                    if abs(near-c['y_m'])<.02:c['y_m']=near
             for j,y in enumerate(ys):r.bearing(s,f'{labels[i]}_bearing_{j+1}',0,y)
         r.notes += ['W840x193 is the explicit nominal I idealization d=.840, b=.292, tw=.0147, tf=.022 m, not an exact rolled catalog section.',
             'Retained center walls use the geometric reconstruction assumptions t=1.15 m. Round .355 m pile stubs are equivalent elastic columns, fixed/elastic at their displayed cut bottoms; driven lengths and soil embedment are unknown.']
     elif bid=='us50-tanners-eb':
-        ys=[-width/2+(4+1/12)*FT+j*(10+10/12)*FT for j in range(7)]
+        # Beam lines from the corrected model (2026-11 drawing review put Beam 1 on its drawn side); 10'-10" spacing.
+        ys=[mid(r.parts[f'bulbt_0_{j}'],1) for j in range(7)]
         pr=[[-12.5,0],[12.5,0],[12.5,8],[3.5,17],[3.5,54],[27,58],[30,58],[30,66],[-30,66],[-30,58],[-27,58],[-3.5,54],[-3.5,17],[-12.5,8]]
         sec=dict(kind='polygon',profile_yz_m=[[y*IN,z*IN] for y,z in pr],torsion_J_m4=.025)
         from fem.collection_demo import section
@@ -224,7 +242,7 @@ def existing(bid):
         ys=[-7.113,-5.08,-3.556,-1.778,0,1.778,3.556,5.08,7.113]
         for j,y in enumerate(ys):
             for i in range(4):
-                sec=ishape(.840,.292,.014,.0254) if j in [0,8] else ishape(.920,.305,.015 if i in [0,3] else .016,.023 if i in [0,3] else .027)
+                sec=ishape(.840,.292,.014,.0217) if j in [0,8] else ishape(.903,.305,.015,.0201) if i in [0,3] else ishape(.911,.305,.016,.0239)  # W840x193 / W920x201 / W920x223 catalog depth and flange thickness, as modelled since the 2026-11 review
                 r.beam(f'beam_{i}_{j}',i,y,sec)
         for i in range(5):
             if i in [0,4]:
@@ -317,7 +335,11 @@ def additional(bid):
         else:
             r.v['mesh_step_u_m']=1.0;r.v['mesh_step_y_m']=.7
             for i in range(2):
-                cid=f'integral_bent_{i+1}';s=r.support(i,cid,r.parts[cid]['dimensions']['normal_thickness_m'])
+                # The bent bounds include the 9 in pavement ledge since the 2026-11 review (sheet 17), so the analytical
+                # cap keeps its depth from the bent bottom to the slab soffit.
+                cid=f'integral_bent_{i+1}';dims=r.parts[cid]['dimensions']
+                s=r.support(i,cid,dims['normal_thickness_m'],cap_depth=dims['depth_bottom_to_slab_soffit_m'],
+                            top=dims['bottom_m']+dims['depth_bottom_to_slab_soffit_m']/2)
                 for j in range(1,9):
                     pcid=f'pile_{i+1}_{j}';dim=r.parts[pcid]['dimensions']
                     r.column(s,pcid,dict(kind='pipe',diameter_m=dim['diameter_m'],thickness_m=dim['wall_thickness_m']),'steel','pile')

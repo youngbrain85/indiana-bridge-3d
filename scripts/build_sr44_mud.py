@@ -2,21 +2,27 @@
 
 Run from any directory with numpy, trimesh, shapely and mapbox-earcut installed.
 Primary evidence is data/bridges/sr44-mud/drawings.pdf (INDOT B-38321).
-Coordinates: metres; X increasing station, Y transverse toward beam 1, Z up.
+Coordinates: metres; the collection frame (scripts/bridge_orientation.py): X increasing station (east), +Y left
+looking up-station (north, toward beam 1), Z up. The 15 deg Rt. skew puts the +Y end of each support line
+up-station (x = x_mid + tan(15 deg) * y), which is skew_deg = -15 in the collection's sign rule.
 The model is a geometric reconstruction, not an FE mesh or an as-built survey.
 """
 from pathlib import Path
 import hashlib
 import json
 import math
+import os
 import numpy as np
 import trimesh as tm
+import bridge_orientation as bo
 from shapely.geometry import Polygon, LineString
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'data/bridges/sr44-mud'
 FT, IN = .3048, .0254
 K = math.tan(math.radians(15))
+ORIENTATION = bo.record('east', 'Sheet 17 framing plan: Bent 1 to Bent 4 left to right, north arrow up, Beam 1 the '
+    'top line; sheets 1, 9, 12 and 32 "Skew 15 deg 00\'00\" Rt."', ('beam_1_segment_1', 'north'), 'right')
 C, S = math.cos(math.radians(15)), math.sin(math.radians(15))
 HALF = (151 + 1/12)/2*FT
 BEARINGS = np.array([-74.75, -25, 25, 74.75])*FT
@@ -358,6 +364,13 @@ def main():
     scene=tm.Scene();transform=np.array([[1,0,0,0],[0,0,1,0],[0,-1,0,0],[0,0,0,1.]])
     for key,m in meshes.items():
         copy=m.copy();copy.apply_transform(transform);scene.add_geometry(copy,node_name=key,geom_name=key)
+    previous=OUT/'model_manifest.json'
+    if previous.is_file() and os.environ.get('BRIDGE_REBUILD_CORRECTED')!='1' and \
+            any('correction' in k for k in json.loads(previous.read_text(encoding='utf-8'))):
+        raise RuntimeError(f'{previous} has corrections applied after this generator ran; regenerating would discard them. '
+                           'Set BRIDGE_REBUILD_CORRECTED=1 to rebuild anyway.')
+    problems=bo.check(dict(skew_deg=-15,orientation=ORIENTATION,parts=parts),K)  # supports run at dx/dy = +tan 15 deg
+    if problems:raise RuntimeError('SR 44 Mud orientation check failed: '+'; '.join(problems))
     (OUT/'model.glb').write_bytes(scene.export(file_type='glb'))
     coverage=[]
     for feature,status,detail,pages,layers in COVERAGE:
@@ -365,11 +378,13 @@ def main():
             part_ids=[p['id'] for p in parts if p['layer'] in layers or p['id'] in layers]))
     sha=lambda path:hashlib.sha256(path.read_bytes()).hexdigest()
     manifest=dict(title='SR 44 over Mud Creek | 2018 rehabilitation design',structure_id='044-70-06634 A',designation='1500342',
-        units='metres',spans_ft=[49.75,50,49.75],deck_length_ft=151+1/12,deck_width_ft=46.5,skew_deg=15,
+        units='metres',spans_ft=[49.75,50,49.75],deck_length_ft=151+1/12,deck_width_ft=46.5,
+        skew_deg=-15,  # drawn 15 deg Rt.; the first release wrote +15, the sign of a left skew
+        orientation=ORIENTATION,
         source_pdf='drawings.pdf',source_sha256=sha(OUT/'drawings.pdf'),
         source_note='INDOT B-38321, 34 sheets approved August 22, 2017. Models the 2018 rehabilitation design. Current inventory suffix B refers to later work; geometry here uses drawing suffix A.',
         assumptions=ASSUMPTIONS,layers=LAYERS,parts=parts,default_hidden_layers=['foundations'],
-        native_axes='X increasing station from sta.617+95, Y transverse toward beam 1, Z elevation minus 885 ft; metres',
+        native_axes='X increasing station from sta.617+95, +Y left looking up-station (north, toward beam 1), Z elevation minus 885 ft; metres',
         glb_axes='Y up: (native X, native Z, -native Y); local coordinates, no world georeferencing transform',
         detail_coverage=coverage,external_sources=[
             dict(id='Primary rehabilitation drawings (34 pages)',url='https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9552113'),

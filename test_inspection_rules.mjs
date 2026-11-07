@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import { DEFECTS, ELEMENT_DEFECTS, FIELDS, suggestCS } from './inspect/catalog.js';
-import { FT, assignView, elementFor, extentAlongM, inRings, partAt, planePoint, quantityFor, simplify, toCanvas, toView } from './inspect/geometry.js';
+import { FT, assignView, currentView, elementFor, extentAlongM, inRings, partAt, planePoint, quantityFor, remapToView, simplify, toCanvas, toView } from './inspect/geometry.js';
 import { elementSummary } from './inspect/summary.js';
 
 const cs = (code, m) => suggestCS(code, m)?.cs ?? null;
@@ -92,6 +92,22 @@ test('AASHTO quantities: length along the member, outlined area, 1 ft band, each
   assert.equal(quantityFor({ kind: 'line', path: [[0, 0], [0.001, 0]], view, unit: 'ft', axis: [1, 0, 0] }).quantity, 1, 'at least 1 ft');
 });
 
+test('retired views: defects map onto the replacement view through the world plane', () => {
+  // The old view covered 20 m from x = 10; the new one covers 30 m from x = 5 at another depth, same direction.
+  const next = { ...view, id: 'V2', extent_m: [30, 4], origin: [5, 5, -3] };
+  const catalog = { sheets: [{ id: 'S2', views: [next] }], retired_views: { V: { ...view, sheet_id: 'S1', replaced_by: 'V0' }, V0: { replaced_by: 'V2' } } };
+  assert.deepEqual(remapToView([[0.25, 0.5]], view, next), [[0.33333, 0.5]]);
+  const d = { id: 'd', sheet_id: 'S1', view_id: 'V', path: [[0, 0], [1, 1]] };
+  const found = currentView(d, catalog);
+  assert.equal(found.view, next);
+  assert.equal(found.remapped, 'V');
+  assert.deepEqual([found.defect.sheet_id, found.defect.view_id], ['S2', 'V2']);
+  assert.deepEqual(found.defect.path, [[0.16667, 0], [0.83333, 1]]);
+  assert.deepEqual(d.path, [[0, 0], [1, 1]], 'the stored record is not changed');
+  assert.equal(currentView({ ...d, sheet_id: 'S2', view_id: 'V2' }, catalog).defect.path, d.path, 'current views are left alone');
+  assert.equal(currentView({ ...d, view_id: 'gone' }, catalog).view, null);
+});
+
 test('stroke simplification keeps the ends and the corners', () => {
   const pts = [[0, 0], [1, 0.001], [2, 0], [2, 1], [2.001, 2]];
   assert.deepEqual(simplify(pts, 0.01), [[0, 0], [2, 0], [2.001, 2]]);
@@ -111,7 +127,7 @@ test('element table: CS 1 is the remainder; over-allocation is flagged', () => {
 
 test('Beechwood sheets: every region resolves to its own inspectable part', () => {
   const sheets = JSON.parse(readFileSync(new URL('./data/bridges/beechwood/inspection/sheets.json', import.meta.url)));
-  assert.equal(sheets.sheets.length, 10);
+  assert.equal(sheets.sheets.length, 13);
   for (const sheet of sheets.sheets) for (const v of sheet.views) for (const region of v.regions) {
     assert.ok(sheets.parts[region.part], region.part);
     assert.ok(ELEMENT_DEFECTS[sheets.parts[region.part].element], `${region.part}: element has a defect list`);
@@ -123,5 +139,20 @@ test('Beechwood sheets: every region resolves to its own inspectable part', () =
       const found = partAt(c, v);
       assert.ok(v.regions.findIndex(r => r.part === found) <= v.regions.findIndex(r => r.part === region.part), `${v.id}: ${region.part}`);
     }
+  }
+});
+
+test('Beechwood retired views: each is replaced by a current view looking the same way', () => {
+  const sheets = JSON.parse(readFileSync(new URL('./data/bridges/beechwood/inspection/sheets.json', import.meta.url)));
+  const current = new Map(sheets.sheets.flatMap(s => s.views.map(v => [v.id, v])));
+  const retired = Object.entries(sheets.retired_views || {});
+  assert.ok(retired.length, 'the first rebuild retired the old girder, bent and end-bent views');
+  for (const [id, old] of retired) {
+    assert.ok(!current.has(id), `${id} is both current and retired`);
+    const found = currentView({ sheet_id: old.sheet_id, view_id: id, path: [[0.5, 0.5]] }, sheets);
+    assert.ok(found.view, `${id}: no replacement`);
+    assert.deepEqual(found.view.normal, old.normal, `${id}: replacement looks another way`);
+    const [u, v] = found.defect.path[0];
+    assert.ok(u >= 0 && u <= 1 && v >= 0 && v <= 1, `${id}: its centre falls outside ${found.view.id}`);
   }
 });

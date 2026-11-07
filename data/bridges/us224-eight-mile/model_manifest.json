@@ -1,4 +1,13 @@
 {
+  "orientation": {
+    "frame": "right-handed: X increasing station, +Y left looking up-station, Z up; GLB (X, Z, -Y)",
+    "up_station": "east",
+    "plus_y": "north",
+    "minus_y": "south",
+    "skew_direction": "left",
+    "skew_rule": "skew_deg > 0 is a left skew: looking up-station, the +Y end of each support line is down-station (x = u - tan(skew_deg) * y)",
+    "evidence": "Sheets 7 and 8: north up, stations increasing to the east; sheets 1 and 8 \"30 deg Lt. Skew\"."
+  },
   "title": "US 224 over Eight Mile Creek | retained bridge with proposed 2026 repairs",
   "structure_id": "224-90-01545 B",
   "designation": "2200957",
@@ -93,7 +102,7 @@
   "units": "metres",
   "deck_length_m": 13.7287,
   "deck_width_m": 14.224,
-  "skew_deg": -30,
+  "skew_deg": 30,
   "source_pdf": "drawings.pdf",
   "source_sha256": "1df89fdef9ac73f333ace80589aa645908cecf4fa6c11fc262c5a767ec9f5086",
   "parts": [
@@ -104,26 +113,33 @@
       "color": "#d1d5d0",
       "pdf_pages": [
         8,
-        9
+        9,
+        10,
+        11
       ],
       "basis": "Source 7.5 in remaining concrete envelope",
-      "note": "Localized hydrodemolition depth and full-depth patches depend on field conditions and are not invented.",
+      "note": "Localized hydrodemolition depth and full-depth patches depend on field conditions and are not invented. The two 2 in mid-span drain cores are cut through it (sheet 9). Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: ends at the deck-side face of the PCF joint (sheet 11 Section C-C, sheet 10 Section E-E), 1 ft 0 in mudwall + 2 in (Abut. 1) / 1 5/8 in (Abut. 2) joint opening inside the 45 ft 0 1/2 in floor end, measured normal to the abutment; was run to the floor end over the mudwall. Drain cores re-cut as in rev. 1.2. Overlay dam (sheet 11 Section C-C): over 1 ft 0 in (normal) from each deck end the overlay reaches 5 5/8 in below the finished surface (1 1/2 in grade raise, sheet 9; 2 1/2 in top cover, 1985 sheet 4 notes and sheet 9 A-A; #5 top bar; 1 in clear, sheet 11), returning at 45 deg to the milled surface; the deck is notched to match, curb to curb.",
       "dimensions": {
-        "thickness_m": 0.1905
+        "thickness_m": 0.1905,
+        "end_u_m": [
+          -6.453738,
+          6.464737
+        ],
+        "length_on_line_a_m": 12.918475
       },
       "bounds_m": [
         [
-          -10.970465,
+          -10.559854,
           -7.112,
-          4.208302
+          4.209101
         ],
         [
-          10.970465,
+          10.570852,
           7.112,
-          4.545597
+          4.543859
         ]
       ],
-      "volume_m3": 37.200273986
+      "volume_m3": 34.003583033
     },
     {
       "id": "overlay",
@@ -132,26 +148,33 @@
       "color": "#d1d5d0",
       "pdf_pages": [
         8,
-        9
+        9,
+        10,
+        11
       ],
       "basis": "Source minimum overlay envelope",
-      "note": "Structural participation requires an explicit analytical assumption; the visual surface alone does not establish composite stiffness.",
+      "note": "Structural participation requires an explicit analytical assumption; the visual surface alone does not establish composite stiffness. The two 2 in mid-span drain cores are cut through it (sheet 9). Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: ends at the deck-side face of the PCF joint (sheet 11 Section C-C, sheet 10 Section E-E), 1 ft 0 in mudwall + 2 in (Abut. 1) / 1 5/8 in (Abut. 2) joint opening inside the 45 ft 0 1/2 in floor end, measured normal to the abutment; was run to the floor end over the mudwall. Drain cores re-cut as in rev. 1.2. Overlay dam (sheet 11 Section C-C): over 1 ft 0 in (normal) from each deck end the overlay reaches 5 5/8 in below the finished surface (1 1/2 in grade raise, sheet 9; 2 1/2 in top cover, 1985 sheet 4 notes and sheet 9 A-A; #5 top bar; 1 in clear, sheet 11), returning at 45 deg to the milled surface; the deck is notched to match, curb to curb.",
       "dimensions": {
-        "thickness_m": 0.0508
+        "thickness_m": 0.0508,
+        "end_u_m": [
+          -6.453738,
+          6.464737
+        ],
+        "length_on_line_a_m": 12.918475
       },
       "bounds_m": [
         [
-          -10.73583,
+          -10.325218,
           -6.7056,
-          4.405621
+          4.314345
         ],
         [
-          10.73583,
+          10.336217,
           6.7056,
-          4.596397
+          4.595575
         ]
       ],
-      "volume_m3": 9.353211745
+      "volume_m3": 9.801508627
     },
     {
       "id": "retained_coping_-1",
@@ -159,26 +182,32 @@
       "layer": "deck",
       "color": "#d1d5d0",
       "pdf_pages": [
-        9
+        9,
+        10,
+        11
       ],
       "basis": "Retained 8 in coping section reconstructed from 8 in existing slab",
-      "note": "Half-inch residual coping strip above the milled interior slab. Existing barrier bears here; its visible height above overlay is reduced by 1.5 in.",
+      "note": "Half-inch residual coping strip above the milled interior slab. Existing barrier bears here; its visible height above overlay is reduced by 1.5 in. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: ends at the PCF joint with the deck (sheets 10-11).",
       "dimensions": {
-        "thickness_m": 0.0127
+        "thickness_m": 0.0127,
+        "end_u_m": [
+          -6.453738,
+          6.464737
+        ]
       },
       "bounds_m": [
         [
-          -10.970465,
-          -7.112,
-          4.415227
+          -10.559854,
+          6.7056,
+          4.416026
         ],
         [
-          2.99287,
-          -6.7056,
-          4.461265
+          2.593257,
+          7.112,
+          4.460443
         ]
       ],
-      "volume_m3": 0.070857665
+      "volume_m3": 0.066675869
     },
     {
       "id": "retained_coping_1",
@@ -186,26 +215,32 @@
       "layer": "deck",
       "color": "#d1d5d0",
       "pdf_pages": [
-        9
+        9,
+        10,
+        11
       ],
       "basis": "Retained 8 in coping section reconstructed from 8 in existing slab",
-      "note": "Half-inch residual coping strip above the milled interior slab. Existing barrier bears here; its visible height above overlay is reduced by 1.5 in.",
+      "note": "Half-inch residual coping strip above the milled interior slab. Existing barrier bears here; its visible height above overlay is reduced by 1.5 in. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: ends at the PCF joint with the deck (sheets 10-11).",
       "dimensions": {
-        "thickness_m": 0.0127
+        "thickness_m": 0.0127,
+        "end_u_m": [
+          -6.453738,
+          6.464737
+        ]
       },
       "bounds_m": [
         [
-          -2.99287,
-          6.7056,
-          4.398802
+          -2.582259,
+          -7.112,
+          4.399601
         ],
         [
-          10.970465,
-          7.112,
-          4.445779
+          10.570852,
+          -6.7056,
+          4.444958
         ]
       ],
-      "volume_m3": 0.070857665
+      "volume_m3": 0.066675869
     },
     {
       "id": "beam_0_0",
@@ -217,7 +252,7 @@
         11
       ],
       "basis": "Historical dimensioned CB21 profile and primary retained-beam identification",
-      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified.",
+      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "depth_m": 0.5334,
         "width_m": 1.2191999999999998,
@@ -261,12 +296,12 @@
       "bounds_m": [
         [
           -10.160707,
-          -6.5151,
+          5.2959,
           3.684011
         ],
         [
           3.341623,
-          -5.2959,
+          6.5151,
           4.244416
         ]
       ],
@@ -292,7 +327,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "nominal_center_clearance_m": 0.025,
         "width_m": 1.2191999999999998
@@ -300,12 +335,12 @@
       "bounds_m": [
         [
           -10.160707,
-          -6.5151,
+          5.2959,
           4.217411
         ],
         [
           3.341623,
-          -5.2959,
+          6.5151,
           4.277533
         ]
       ],
@@ -333,26 +368,27 @@
         11
       ],
       "basis": "Bearing envelope; internal laminations and anchors omitted",
-      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: pad envelope turned 30 deg about its centre to lie along the bearing line (1985 sheet 9 Detail A); was axis-aligned, reaching 0.42 m behind CL bearing into the mudwall. Size and the two pads per beam end of Detail A are not modelled (Standard PB11, known_deviations).",
       "dimensions": {
         "pad_length_m": 0.23,
         "pad_width_m": 1.05,
         "pad_thickness_m": 0.045,
-        "load_plate_thickness_m": 0.005
+        "load_plate_thickness_m": 0.005,
+        "plan_orientation": "long side parallel to the 30 deg bearing line"
       },
       "bounds_m": [
         [
-          -9.772942,
-          -6.4305,
+          -10.020035,
+          5.393337,
           3.66001
         ],
         [
-          -9.542942,
-          -5.3805,
-          3.71001
+          -9.295849,
+          6.417663,
+          3.710011
         ]
       ],
-      "volume_m3": 0.012075,
+      "volume_m3": 0.012075024,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -377,7 +413,7 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "display_thickness_m": 0.003,
         "min_length_m": 0.9144000000000001
@@ -385,12 +421,12 @@
       "bounds_m": [
         [
           -10.162439,
-          -6.5181,
+          5.2929,
           3.704776
         ],
         [
           -8.54067,
-          -5.2929,
+          6.5181,
           4.244419
         ]
       ],
@@ -407,26 +443,27 @@
         11
       ],
       "basis": "Bearing envelope; internal laminations and anchors omitted",
-      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: pad envelope turned 30 deg about its centre to lie along the bearing line (1985 sheet 9 Detail A); was axis-aligned, reaching 0.42 m behind CL bearing into the mudwall. Size and the two pads per beam end of Detail A are not modelled (Standard PB11, known_deviations).",
       "dimensions": {
         "pad_length_m": 0.23,
         "pad_width_m": 1.05,
         "pad_thickness_m": 0.045,
-        "load_plate_thickness_m": 0.005
+        "load_plate_thickness_m": 0.005,
+        "plan_orientation": "long side parallel to the 30 deg bearing line"
       },
       "bounds_m": [
         [
-          2.723858,
-          -6.4305,
+          2.476765,
+          5.393337,
           3.635017
         ],
         [
-          2.953858,
-          -5.3805,
+          3.200951,
+          6.417663,
           3.685017
         ]
       ],
-      "volume_m3": 0.012075,
+      "volume_m3": 0.012074992,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -451,7 +488,7 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "display_thickness_m": 0.003,
         "min_length_m": 0.9144000000000001
@@ -459,12 +496,12 @@
       "bounds_m": [
         [
           1.721586,
-          -6.5181,
+          5.2929,
           3.681008
         ],
         [
           3.343355,
-          -5.2929,
+          6.5181,
           4.220651
         ]
       ],
@@ -481,7 +518,7 @@
         11
       ],
       "basis": "Historical dimensioned CB21 profile and primary retained-beam identification",
-      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified.",
+      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "depth_m": 0.5334,
         "width_m": 1.2191999999999998,
@@ -525,12 +562,12 @@
       "bounds_m": [
         [
           -8.79689,
-          -4.1529,
+          2.9337,
           3.718193
         ],
         [
           4.70544,
-          -2.9337,
+          4.1529,
           4.278598
         ]
       ],
@@ -556,7 +593,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "nominal_center_clearance_m": 0.025,
         "width_m": 1.2191999999999998
@@ -564,12 +601,12 @@
       "bounds_m": [
         [
           -8.79689,
-          -4.1529,
+          2.9337,
           4.251593
         ],
         [
           4.70544,
-          -2.9337,
+          4.1529,
           4.311715
         ]
       ],
@@ -597,26 +634,27 @@
         11
       ],
       "basis": "Bearing envelope; internal laminations and anchors omitted",
-      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: pad envelope turned 30 deg about its centre to lie along the bearing line (1985 sheet 9 Detail A); was axis-aligned, reaching 0.42 m behind CL bearing into the mudwall. Size and the two pads per beam end of Detail A are not modelled (Standard PB11, known_deviations).",
       "dimensions": {
         "pad_length_m": 0.23,
         "pad_width_m": 1.05,
         "pad_thickness_m": 0.045,
-        "load_plate_thickness_m": 0.005
+        "load_plate_thickness_m": 0.005,
+        "plan_orientation": "long side parallel to the 30 deg bearing line"
       },
       "bounds_m": [
         [
-          -8.409125,
-          -4.0683,
+          -8.656218,
+          3.031137,
           3.694192
         ],
         [
-          -8.179125,
-          -3.0183,
+          -7.932032,
+          4.055463,
           3.744192
         ]
       ],
-      "volume_m3": 0.012075,
+      "volume_m3": 0.012075011,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -641,7 +679,7 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "display_thickness_m": 0.003,
         "min_length_m": 0.9144000000000001
@@ -649,12 +687,12 @@
       "bounds_m": [
         [
           -8.798622,
-          -4.1559,
+          2.9307,
           3.738958
         ],
         [
           -7.176853,
-          -2.9307,
+          4.1559,
           4.278601
         ]
       ],
@@ -671,26 +709,27 @@
         11
       ],
       "basis": "Bearing envelope; internal laminations and anchors omitted",
-      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: pad envelope turned 30 deg about its centre to lie along the bearing line (1985 sheet 9 Detail A); was axis-aligned, reaching 0.42 m behind CL bearing into the mudwall. Size and the two pads per beam end of Detail A are not modelled (Standard PB11, known_deviations).",
       "dimensions": {
         "pad_length_m": 0.23,
         "pad_width_m": 1.05,
         "pad_thickness_m": 0.045,
-        "load_plate_thickness_m": 0.005
+        "load_plate_thickness_m": 0.005,
+        "plan_orientation": "long side parallel to the 30 deg bearing line"
       },
       "bounds_m": [
         [
-          4.087675,
-          -4.0683,
+          3.840582,
+          3.031137,
           3.669199
         ],
         [
-          4.317675,
-          -3.0183,
+          4.564767,
+          4.055463,
           3.719199
         ]
       ],
-      "volume_m3": 0.012075,
+      "volume_m3": 0.012075044,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -715,7 +754,7 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "display_thickness_m": 0.003,
         "min_length_m": 0.9144000000000001
@@ -723,12 +762,12 @@
       "bounds_m": [
         [
           3.085403,
-          -4.1559,
+          2.9307,
           3.71519
         ],
         [
           4.707172,
-          -2.9307,
+          4.1559,
           4.254833
         ]
       ],
@@ -745,7 +784,7 @@
         11
       ],
       "basis": "Historical dimensioned CB21 profile and primary retained-beam identification",
-      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified.",
+      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "depth_m": 0.5334,
         "width_m": 1.2191999999999998,
@@ -789,12 +828,12 @@
       "bounds_m": [
         [
           -7.433074,
-          -1.7907,
+          0.5715,
           3.752375
         ],
         [
           6.069257,
-          -0.5715,
+          1.7907,
           4.312779
         ]
       ],
@@ -820,7 +859,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "nominal_center_clearance_m": 0.025,
         "width_m": 1.2191999999999998
@@ -828,12 +867,12 @@
       "bounds_m": [
         [
           -7.433074,
-          -1.7907,
+          0.5715,
           4.285775
         ],
         [
           6.069257,
-          -0.5715,
+          1.7907,
           4.345897
         ]
       ],
@@ -861,26 +900,27 @@
         11
       ],
       "basis": "Bearing envelope; internal laminations and anchors omitted",
-      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: pad envelope turned 30 deg about its centre to lie along the bearing line (1985 sheet 9 Detail A); was axis-aligned, reaching 0.42 m behind CL bearing into the mudwall. Size and the two pads per beam end of Detail A are not modelled (Standard PB11, known_deviations).",
       "dimensions": {
         "pad_length_m": 0.23,
         "pad_width_m": 1.05,
         "pad_thickness_m": 0.045,
-        "load_plate_thickness_m": 0.005
+        "load_plate_thickness_m": 0.005,
+        "plan_orientation": "long side parallel to the 30 deg bearing line"
       },
       "bounds_m": [
         [
-          -7.045308,
-          -1.7061,
+          -7.292402,
+          0.668937,
           3.728374
         ],
         [
-          -6.815308,
-          -0.6561,
+          -6.568216,
+          1.693263,
           3.778374
         ]
       ],
-      "volume_m3": 0.012075,
+      "volume_m3": 0.01207499,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -905,7 +945,7 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "display_thickness_m": 0.003,
         "min_length_m": 0.9144000000000001
@@ -913,12 +953,12 @@
       "bounds_m": [
         [
           -7.434806,
-          -1.7937,
+          0.5685,
           3.773139
         ],
         [
           -5.813036,
-          -0.5685,
+          1.7937,
           4.312783
         ]
       ],
@@ -935,26 +975,27 @@
         11
       ],
       "basis": "Bearing envelope; internal laminations and anchors omitted",
-      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: pad envelope turned 30 deg about its centre to lie along the bearing line (1985 sheet 9 Detail A); was axis-aligned, reaching 0.42 m behind CL bearing into the mudwall. Size and the two pads per beam end of Detail A are not modelled (Standard PB11, known_deviations).",
       "dimensions": {
         "pad_length_m": 0.23,
         "pad_width_m": 1.05,
         "pad_thickness_m": 0.045,
-        "load_plate_thickness_m": 0.005
+        "load_plate_thickness_m": 0.005,
+        "plan_orientation": "long side parallel to the 30 deg bearing line"
       },
       "bounds_m": [
         [
-          5.451492,
-          -1.7061,
+          5.204399,
+          0.668937,
           3.70338
         ],
         [
-          5.681492,
-          -0.6561,
+          5.928584,
+          1.693263,
           3.75338
         ]
       ],
-      "volume_m3": 0.012075,
+      "volume_m3": 0.012074965,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -979,7 +1020,7 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "display_thickness_m": 0.003,
         "min_length_m": 0.9144000000000001
@@ -987,12 +1028,12 @@
       "bounds_m": [
         [
           4.449219,
-          -1.7937,
+          0.5685,
           3.749371
         ],
         [
           6.070989,
-          -0.5685,
+          1.7937,
           4.289015
         ]
       ],
@@ -1009,7 +1050,7 @@
         11
       ],
       "basis": "Historical dimensioned CB21 profile and primary retained-beam identification",
-      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified.",
+      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "depth_m": 0.5334,
         "width_m": 1.2191999999999998,
@@ -1053,12 +1094,12 @@
       "bounds_m": [
         [
           -6.069257,
-          0.5715,
+          -1.7907,
           3.749647
         ],
         [
           7.433074,
-          1.7907,
+          -0.5715,
           4.310052
         ]
       ],
@@ -1084,7 +1125,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "nominal_center_clearance_m": 0.025,
         "width_m": 1.2191999999999998
@@ -1092,12 +1133,12 @@
       "bounds_m": [
         [
           -6.069257,
-          0.5715,
+          -1.7907,
           4.283047
         ],
         [
           7.433074,
-          1.7907,
+          -0.5715,
           4.344577
         ]
       ],
@@ -1125,26 +1166,27 @@
         11
       ],
       "basis": "Bearing envelope; internal laminations and anchors omitted",
-      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: pad envelope turned 30 deg about its centre to lie along the bearing line (1985 sheet 9 Detail A); was axis-aligned, reaching 0.42 m behind CL bearing into the mudwall. Size and the two pads per beam end of Detail A are not modelled (Standard PB11, known_deviations).",
       "dimensions": {
         "pad_length_m": 0.23,
         "pad_width_m": 1.05,
         "pad_thickness_m": 0.045,
-        "load_plate_thickness_m": 0.005
+        "load_plate_thickness_m": 0.005,
+        "plan_orientation": "long side parallel to the 30 deg bearing line"
       },
       "bounds_m": [
         [
-          -5.681492,
-          0.6561,
+          -5.928584,
+          -1.693263,
           3.725646
         ],
         [
-          -5.451492,
-          1.7061,
+          -5.204399,
+          -0.668937,
           3.775646
         ]
       ],
-      "volume_m3": 0.012075,
+      "volume_m3": 0.012074965,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -1169,7 +1211,7 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "display_thickness_m": 0.003,
         "min_length_m": 0.9144000000000001
@@ -1177,12 +1219,12 @@
       "bounds_m": [
         [
           -6.070989,
-          0.5685,
+          -1.7937,
           3.770412
         ],
         [
           -4.449219,
-          1.7937,
+          -0.5685,
           4.310055
         ]
       ],
@@ -1199,26 +1241,27 @@
         11
       ],
       "basis": "Bearing envelope; internal laminations and anchors omitted",
-      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: pad envelope turned 30 deg about its centre to lie along the bearing line (1985 sheet 9 Detail A); was axis-aligned, reaching 0.42 m behind CL bearing into the mudwall. Size and the two pads per beam end of Detail A are not modelled (Standard PB11, known_deviations).",
       "dimensions": {
         "pad_length_m": 0.23,
         "pad_width_m": 1.05,
         "pad_thickness_m": 0.045,
-        "load_plate_thickness_m": 0.005
+        "load_plate_thickness_m": 0.005,
+        "plan_orientation": "long side parallel to the 30 deg bearing line"
       },
       "bounds_m": [
         [
-          6.815308,
-          0.6561,
+          6.568216,
+          -1.693263,
           3.700653
         ],
         [
-          7.045308,
-          1.7061,
+          7.292402,
+          -0.668937,
           3.750653
         ]
       ],
-      "volume_m3": 0.012075,
+      "volume_m3": 0.012075047,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -1243,7 +1286,7 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "display_thickness_m": 0.003,
         "min_length_m": 0.9144000000000001
@@ -1251,12 +1294,12 @@
       "bounds_m": [
         [
           5.813036,
-          0.5685,
+          -1.7937,
           3.746644
         ],
         [
           7.434806,
-          1.7937,
+          -0.5685,
           4.286287
         ]
       ],
@@ -1273,7 +1316,7 @@
         11
       ],
       "basis": "Historical dimensioned CB21 profile and primary retained-beam identification",
-      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified.",
+      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "depth_m": 0.5334,
         "width_m": 1.2191999999999998,
@@ -1317,12 +1360,12 @@
       "bounds_m": [
         [
           -4.70544,
-          2.9337,
+          -4.1529,
           3.71001
         ],
         [
           8.79689,
-          4.1529,
+          -2.9337,
           4.270415
         ]
       ],
@@ -1348,7 +1391,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "nominal_center_clearance_m": 0.025,
         "width_m": 1.2191999999999998
@@ -1356,12 +1399,12 @@
       "bounds_m": [
         [
           -4.70544,
-          2.9337,
+          -4.1529,
           4.24341
         ],
         [
           8.79689,
-          4.1529,
+          -2.9337,
           4.30494
         ]
       ],
@@ -1389,26 +1432,27 @@
         11
       ],
       "basis": "Bearing envelope; internal laminations and anchors omitted",
-      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: pad envelope turned 30 deg about its centre to lie along the bearing line (1985 sheet 9 Detail A); was axis-aligned, reaching 0.42 m behind CL bearing into the mudwall. Size and the two pads per beam end of Detail A are not modelled (Standard PB11, known_deviations).",
       "dimensions": {
         "pad_length_m": 0.23,
         "pad_width_m": 1.05,
         "pad_thickness_m": 0.045,
-        "load_plate_thickness_m": 0.005
+        "load_plate_thickness_m": 0.005,
+        "plan_orientation": "long side parallel to the 30 deg bearing line"
       },
       "bounds_m": [
         [
-          -4.317675,
-          3.0183,
+          -4.564767,
+          -4.055463,
           3.686009
         ],
         [
-          -4.087675,
-          4.0683,
+          -3.840582,
+          -3.031137,
           3.736009
         ]
       ],
-      "volume_m3": 0.012075,
+      "volume_m3": 0.012075044,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -1433,7 +1477,7 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "display_thickness_m": 0.003,
         "min_length_m": 0.9144000000000001
@@ -1441,12 +1485,12 @@
       "bounds_m": [
         [
           -4.707172,
-          2.9307,
+          -4.1559,
           3.730775
         ],
         [
           -3.085403,
-          4.1559,
+          -2.9307,
           4.270418
         ]
       ],
@@ -1463,26 +1507,27 @@
         11
       ],
       "basis": "Bearing envelope; internal laminations and anchors omitted",
-      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: pad envelope turned 30 deg about its centre to lie along the bearing line (1985 sheet 9 Detail A); was axis-aligned, reaching 0.42 m behind CL bearing into the mudwall. Size and the two pads per beam end of Detail A are not modelled (Standard PB11, known_deviations).",
       "dimensions": {
         "pad_length_m": 0.23,
         "pad_width_m": 1.05,
         "pad_thickness_m": 0.045,
-        "load_plate_thickness_m": 0.005
+        "load_plate_thickness_m": 0.005,
+        "plan_orientation": "long side parallel to the 30 deg bearing line"
       },
       "bounds_m": [
         [
-          8.179125,
-          3.0183,
+          7.932032,
+          -4.055463,
           3.661016
         ],
         [
-          8.409125,
-          4.0683,
+          8.656218,
+          -3.031137,
           3.711016
         ]
       ],
-      "volume_m3": 0.012075,
+      "volume_m3": 0.012075011,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -1507,7 +1552,7 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "display_thickness_m": 0.003,
         "min_length_m": 0.9144000000000001
@@ -1515,12 +1560,12 @@
       "bounds_m": [
         [
           7.176853,
-          2.9307,
+          -4.1559,
           3.707007
         ],
         [
           8.798622,
-          4.1559,
+          -2.9307,
           4.24665
         ]
       ],
@@ -1537,7 +1582,7 @@
         11
       ],
       "basis": "Historical dimensioned CB21 profile and primary retained-beam identification",
-      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified.",
+      "note": "Supplement 9548292 p.8 controls 48 x 21 in section and skew ends. Hollow central profile preserved; nominal 2 ft 9 in solid end blocks, top ridges/chamfers and void-end taper simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "depth_m": 0.5334,
         "width_m": 1.2191999999999998,
@@ -1581,12 +1626,12 @@
       "bounds_m": [
         [
           -3.341623,
-          5.2959,
+          -6.5151,
           3.670373
         ],
         [
           10.160707,
-          6.5151,
+          -5.2959,
           4.230778
         ]
       ],
@@ -1612,7 +1657,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "nominal_center_clearance_m": 0.025,
         "width_m": 1.2191999999999998
@@ -1620,12 +1665,12 @@
       "bounds_m": [
         [
           -3.341623,
-          5.2959,
+          -6.5151,
           4.203773
         ],
         [
           10.160707,
-          6.5151,
+          -5.2959,
           4.265303
         ]
       ],
@@ -1653,26 +1698,27 @@
         11
       ],
       "basis": "Bearing envelope; internal laminations and anchors omitted",
-      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: pad envelope turned 30 deg about its centre to lie along the bearing line (1985 sheet 9 Detail A); was axis-aligned, reaching 0.42 m behind CL bearing into the mudwall. Size and the two pads per beam end of Detail A are not modelled (Standard PB11, known_deviations).",
       "dimensions": {
         "pad_length_m": 0.23,
         "pad_width_m": 1.05,
         "pad_thickness_m": 0.045,
-        "load_plate_thickness_m": 0.005
+        "load_plate_thickness_m": 0.005,
+        "plan_orientation": "long side parallel to the 30 deg bearing line"
       },
       "bounds_m": [
         [
-          -2.953858,
-          5.3805,
+          -3.200951,
+          -6.417663,
           3.646372
         ],
         [
-          -2.723858,
-          6.4305,
+          -2.476765,
+          -5.393337,
           3.696372
         ]
       ],
-      "volume_m3": 0.012075,
+      "volume_m3": 0.012074992,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -1697,7 +1743,7 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "display_thickness_m": 0.003,
         "min_length_m": 0.9144000000000001
@@ -1705,12 +1751,12 @@
       "bounds_m": [
         [
           -3.343355,
-          5.2929,
+          -6.5181,
           3.691138
         ],
         [
           -1.721586,
-          6.5181,
+          -5.2929,
           4.230781
         ]
       ],
@@ -1727,26 +1773,27 @@
         11
       ],
       "basis": "Bearing envelope; internal laminations and anchors omitted",
-      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate.",
+      "note": "Retained Type 7B elastomeric bearing from historical pp.8-9. 50 mm total display thickness and pad plan dimensions are assumed; the thin top envelope is not a claimed added steel plate. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: pad envelope turned 30 deg about its centre to lie along the bearing line (1985 sheet 9 Detail A); was axis-aligned, reaching 0.42 m behind CL bearing into the mudwall. Size and the two pads per beam end of Detail A are not modelled (Standard PB11, known_deviations).",
       "dimensions": {
         "pad_length_m": 0.23,
         "pad_width_m": 1.05,
         "pad_thickness_m": 0.045,
-        "load_plate_thickness_m": 0.005
+        "load_plate_thickness_m": 0.005,
+        "plan_orientation": "long side parallel to the 30 deg bearing line"
       },
       "bounds_m": [
         [
-          9.542942,
-          5.3805,
+          9.295849,
+          -6.417663,
           3.621379
         ],
         [
-          9.772942,
-          6.4305,
+          10.020035,
+          -5.393337,
           3.671379
         ]
       ],
-      "volume_m3": 0.012075,
+      "volume_m3": 0.012074967,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -1771,7 +1818,7 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown.",
+      "note": "Source minimum 3 ft external wrap envelope. 3 mm thickness is a display convention; repair limits and final composite properties are unknown. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "display_thickness_m": 0.003,
         "min_length_m": 0.9144000000000001
@@ -1779,12 +1826,12 @@
       "bounds_m": [
         [
           8.54067,
-          5.2929,
+          -6.5181,
           3.66737
         ],
         [
           10.162439,
-          6.5181,
+          -5.2929,
           4.207013
         ]
       ],
@@ -1800,7 +1847,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "width_m": 0.2032,
         "depth_m": 0.381
@@ -1808,12 +1855,12 @@
       "bounds_m": [
         [
           -9.158402,
-          -5.2959,
+          4.1529,
           3.87053
         ],
         [
           -8.29529,
-          -4.1529,
+          5.2959,
           4.268476
         ]
       ],
@@ -1841,7 +1888,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "width_m": 0.2032,
         "depth_m": 0.381
@@ -1849,12 +1896,12 @@
       "bounds_m": [
         [
           -7.794585,
-          -2.9337,
+          1.7907,
           3.904712
         ],
         [
           -6.931474,
-          -1.7907,
+          2.9337,
           4.302658
         ]
       ],
@@ -1882,7 +1929,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "width_m": 0.2032,
         "depth_m": 0.381
@@ -1923,7 +1970,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "width_m": 0.2032,
         "depth_m": 0.381
@@ -1931,12 +1978,12 @@
       "bounds_m": [
         [
           -5.066951,
-          1.7907,
+          -2.9337,
           3.897937
         ],
         [
           -4.20384,
-          2.9337,
+          -1.7907,
           4.298522
         ]
       ],
@@ -1964,7 +2011,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "width_m": 0.2032,
         "depth_m": 0.381
@@ -1972,12 +2019,12 @@
       "bounds_m": [
         [
           -3.703135,
-          4.1529,
+          -5.2959,
           3.8583
         ],
         [
           -2.840023,
-          5.2959,
+          -4.1529,
           4.258885
         ]
       ],
@@ -2005,7 +2052,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "width_m": 0.2032,
         "depth_m": 0.381
@@ -2013,12 +2060,12 @@
       "bounds_m": [
         [
           -3.159189,
-          -5.2959,
+          4.1529,
           3.858532
         ],
         [
           -2.296078,
-          -4.1529,
+          5.2959,
           4.256477
         ]
       ],
@@ -2046,7 +2093,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "width_m": 0.2032,
         "depth_m": 0.381
@@ -2054,12 +2101,12 @@
       "bounds_m": [
         [
           -1.795372,
-          -2.9337,
+          1.7907,
           3.892713
         ],
         [
           -0.932261,
-          -1.7907,
+          2.9337,
           4.290659
         ]
       ],
@@ -2087,7 +2134,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "width_m": 0.2032,
         "depth_m": 0.381
@@ -2128,7 +2175,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "width_m": 0.2032,
         "depth_m": 0.381
@@ -2136,12 +2183,12 @@
       "bounds_m": [
         [
           0.932261,
-          1.7907,
+          -2.9337,
           3.885938
         ],
         [
           1.795372,
-          2.9337,
+          -1.7907,
           4.286524
         ]
       ],
@@ -2169,7 +2216,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "width_m": 0.2032,
         "depth_m": 0.381
@@ -2177,12 +2224,12 @@
       "bounds_m": [
         [
           2.296078,
-          4.1529,
+          -5.2959,
           3.846301
         ],
         [
           3.159189,
-          5.2959,
+          -4.1529,
           4.246887
         ]
       ],
@@ -2210,7 +2257,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "width_m": 0.2032,
         "depth_m": 0.381
@@ -2218,12 +2265,12 @@
       "bounds_m": [
         [
           2.840023,
-          -5.2959,
+          4.1529,
           3.846533
         ],
         [
           3.703135,
-          -4.1529,
+          5.2959,
           4.244479
         ]
       ],
@@ -2251,7 +2298,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "width_m": 0.2032,
         "depth_m": 0.381
@@ -2259,12 +2306,12 @@
       "bounds_m": [
         [
           4.20384,
-          -2.9337,
+          1.7907,
           3.880715
         ],
         [
           5.066951,
-          -1.7907,
+          2.9337,
           4.278661
         ]
       ],
@@ -2292,7 +2339,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "width_m": 0.2032,
         "depth_m": 0.381
@@ -2333,7 +2380,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "width_m": 0.2032,
         "depth_m": 0.381
@@ -2341,12 +2388,12 @@
       "bounds_m": [
         [
           6.931474,
-          1.7907,
+          -2.9337,
           3.87394
         ],
         [
           7.794585,
-          2.9337,
+          -1.7907,
           4.274525
         ]
       ],
@@ -2374,7 +2421,7 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified.",
+      "note": "Historical concrete diaphragm topology, nominal 8 in by 15 in section. Source plan staggering and exact ends are simplified. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "width_m": 0.2032,
         "depth_m": 0.381
@@ -2382,12 +2429,12 @@
       "bounds_m": [
         [
           8.29529,
-          4.1529,
+          -5.2959,
           3.834303
         ],
         [
           9.158402,
-          5.2959,
+          -4.1529,
           4.234888
         ]
       ],
@@ -2416,23 +2463,25 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical 2 ft 6 in cap width; top steps replaced by derived bearing risers. Lateral limits and old/new construction seams approximated.",
+      "note": "Historical 2 ft 6 in cap width; top steps replaced by derived bearing risers. Lateral limits and old/new construction seams approximated. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: moved 6 in (normal) westward to 1985 sheet 5 Section A-A and sheet 9 Detail A: front face 9 in span-side of CL bearing, rear face 1 ft 9 in behind it, flush with the mudwall back face at the floor end; was centred on CL bearing.",
       "dimensions": {
-        "normal_width_m": 0.762
+        "normal_width_m": 0.762,
+        "front_face_from_cl_bearing_m": 0.2286,
+        "rear_face_from_cl_bearing_m": 0.5334
       },
       "bounds_m": [
         [
-          -10.881059,
+          -11.057035,
           -7.262,
           3.096372
         ],
         [
-          -1.615741,
+          -1.791718,
           7.262,
           3.646372
         ]
       ],
-      "volume_m3": 7.028671877,
+      "volume_m3": 7.028671737,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -2458,17 +2507,17 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {},
       "bounds_m": [
         [
           -10.177557,
-          -6.4555,
+          5.3555,
           3.646372
         ],
         [
           -9.138327,
-          -5.3555,
+          6.4555,
           3.66001
         ]
       ],
@@ -2485,17 +2534,17 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {},
       "bounds_m": [
         [
           -8.81374,
-          -4.0933,
+          2.9933,
           3.646372
         ],
         [
           -7.77451,
-          -2.9933,
+          4.0933,
           3.694192
         ]
       ],
@@ -2512,17 +2561,17 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {},
       "bounds_m": [
         [
           -7.449924,
-          -1.7311,
+          0.6311,
           3.646372
         ],
         [
           -6.410693,
-          -0.6311,
+          1.7311,
           3.728374
         ]
       ],
@@ -2539,17 +2588,17 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {},
       "bounds_m": [
         [
           -6.086107,
-          0.6311,
+          -1.7311,
           3.646372
         ],
         [
           -5.046876,
-          1.7311,
+          -0.6311,
           3.725646
         ]
       ],
@@ -2566,17 +2615,17 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {},
       "bounds_m": [
         [
           -4.72229,
-          2.9933,
+          -4.0933,
           3.646372
         ],
         [
           -3.68306,
-          4.0933,
+          -2.9933,
           3.686009
         ]
       ],
@@ -2592,21 +2641,27 @@
         8
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical solid-stem topology; nominal 700 mm thickness and simplified widened outline. Field dimensions and existing concrete repairs unresolved.",
-      "dimensions": {},
+      "note": "Historical solid-stem topology; nominal 700 mm thickness and simplified widened outline. Field dimensions and existing concrete repairs unresolved. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: rebuilt to 1985 sheet 5 Section A-A: front face vertical 5 1/4 in span-side of CL bearing (3 3/4 in behind the cap front), 1 ft 6 1/4 in wide under the cap, rear face battered to 2 ft 2 3/4 in at the footing, bottom on the footing top (El. 817.03 / 816.95); was a 0.70 m wall centred on CL bearing, bottom Z = 0.05 m.",
+      "dimensions": {
+        "front_face_from_cl_bearing_m": 0.13335,
+        "rear_face_top_m": 0.3302,
+        "rear_face_bottom_m": 0.5461,
+        "top_width_m": 0.46355,
+        "bottom_width_m": 0.67945
+      },
       "bounds_m": [
         [
-          -10.845263,
+          -11.0717,
           -7.262,
-          0.05
+          0.009144
         ],
         [
-          -1.651537,
+          -1.901703,
           7.262,
           3.096372
         ]
       ],
-      "volume_m3": 35.763220739,
+      "volume_m3": 29.589702877,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -2631,23 +2686,27 @@
         8
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical 7 ft footing width and roughly 2 ft thickness; approximate plan extent/elevation. Hidden by default; not a foundation design.",
+      "note": "Historical 7 ft footing width and roughly 2 ft thickness; approximate plan extent/elevation. Hidden by default; not a foundation design. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: moved 5 3/4 in (normal) westward with the stem: 2 ft 7 in toe and 2 ft 2 1/4 in heel about the 2 ft 2 3/4 in stem base (1985 sheet 5 Section A-A, 7 ft 0 in), 2 ft 0 in thick with its top at El. 817.03 (1985 sheet 5 A-A, sheet 7 B-B, G-G); was centred on CL bearing, Z -0.60 to +0.05 (0.65 m).",
       "dimensions": {
-        "normal_width_m": 2.1336
+        "normal_width_m": 2.1336,
+        "toe_from_cl_bearing_m": 0.92075,
+        "heel_from_cl_bearing_m": 1.21285,
+        "thickness_m": 0.6096,
+        "top_el_ft": 817.03
       },
       "bounds_m": [
         [
-          -11.846157,
+          -12.014801,
           -7.562,
-          -0.6
+          -0.600456
         ],
         [
-          -0.650643,
+          -0.819287,
           7.562,
-          0.05
+          0.009144
         ]
       ],
-      "volume_m3": 24.219345147,
+      "volume_m3": 22.714017374,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -2668,12 +2727,16 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
-        11
+        10,
+        11,
+        15
       ],
       "basis": "Approximate external envelope",
-      "note": "Source 1 ft reconstructed mudwall. Lower retained portion, ledge and local top return simplify the source detail.",
+      "note": "Source 1 ft reconstructed mudwall. Lower retained portion, ledge and local top return simplify the source detail. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: rebuilt to sheet 11 (Section C-C, mudwall construction details) and sheet 15: 1 ft 0 in normal to the abutment from the Type I-A joint at the floor end to the span face at the PCF joint, top on the finished (overlay) surface with the crown; was 1 ft along Line \"A\" (0.87 ft normal) with a flat top 111 mm below the crown, under the deck end.",
       "dimensions": {
-        "normal_width_m": 0.3048
+        "normal_width_m": 0.3048,
+        "top": "finished surface, crowned 1.5625 % (flush with the overlay and the RCBA)",
+        "span_face_u_m": -6.512397
       },
       "bounds_m": [
         [
@@ -2682,40 +2745,66 @@
           3.646372
         ],
         [
-          -2.453435,
+          -2.406282,
           7.112,
-          4.493484
+          4.596397
         ]
       ],
-      "volume_m3": 3.635706184,
+      "volume_m3": 4.476071263,
       "approximation": true
     },
     {
       "id": "wing_0_-1",
-      "name": "Abutment 1 flared wing -1",
+      "name": "Abutment 1 Wing A (northwest, acute corner)",
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        5,
         8,
         10,
-        12
+        12,
+        13,
+        14
       ],
       "basis": "Approximate external envelope",
-      "note": "Source flared wing topology. Nominal 4.7 m length and 400 mm wall thickness; actual irregular old/new outlines, footings and rail returns remain unresolved.",
-      "dimensions": {},
+      "note": "Source flared wing topology. Nominal 4.7 m length and 400 mm wall thickness; actual irregular old/new outlines, footings and rail returns remain unresolved. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: Wing A (northwest) rebuilt to 1985 sheet 7 Elevation F-F / End Elevation G-G and sheets 5-6 (plan), with the 2026 removal of sheet 10: a 1 ft 3 in root leg under the railing (sheet 10 Sections A-A, B-B) from the floor end, top level at El. 831.65 for 4 ft 10 3/4 in to the kink; the main wing at 30 deg to the abutment, 18 ft 11 3/4 in, top falling to El. 827.38, 1 ft 0 in at the top with the rear face battered to 1 ft 8 in at the base (G-G \"Batter Varies\", read as a constant base width); top lowered to the finished surface less 1 ft 2 in under the RCBA extension (sheet 10 Section B-B, sheet 12 elevation: 1 ft RCBA on 2 in polystyrene). Was a straight 4.70 m, 0.40 m wall with the top about 1.1 m too high at the tip. Base on the footing top, El. 817.03 (1985 sheet 7 G-G, sheet 5 A-A); the lower retained wall is not dimensioned.",
+      "dimensions": {
+        "root_leg_width_m": 0.381,
+        "root_leg_offsets_m": [
+          6.731,
+          7.112
+        ],
+        "level_top_length_m": 1.49225,
+        "main_wing_length_m": 5.78485,
+        "angle_to_abutment_deg": 30,
+        "top_el_level_ft": 831.65,
+        "top_el_at_tip_ft": 827.38,
+        "top_thickness_m": 0.3048,
+        "base_thickness_m": 0.508,
+        "bottom_z_m": 0.009144,
+        "removal_top": "finished surface - 1 ft 2 in within the RCBA extension",
+        "kink_xy_m": [
+          -12.4627,
+          7.112
+        ],
+        "tip_xy_m": [
+          -17.4725,
+          10.0044
+        ]
+      },
       "bounds_m": [
         [
-          -14.638968,
-          -9.736429,
-          0.05
+          -17.726542,
+          6.555024,
+          0.009144
         ],
         [
-          -10.343267,
-          -7.087571,
-          4.343003
+          -10.750495,
+          10.004425,
+          4.46532
         ]
       ],
-      "volume_m3": 8.041099401,
+      "volume_m3": 11.682420574,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -2732,30 +2821,50 @@
     },
     {
       "id": "wing_0_1",
-      "name": "Abutment 1 flared wing 1",
+      "name": "Abutment 1 Wing B (southwest, obtuse corner)",
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        5,
         8,
         10,
         12
       ],
       "basis": "Approximate external envelope",
-      "note": "Source flared wing topology. Nominal 4.7 m length and 400 mm wall thickness; actual irregular old/new outlines, footings and rail returns remain unresolved.",
-      "dimensions": {},
+      "note": "Source flared wing topology. Nominal 4.7 m length and 400 mm wall thickness; actual irregular old/new outlines, footings and rail returns remain unresolved. Wing B (southwest): rebuilt to 1985 sheets 5-7 (B-16317): 60 deg to the abutment, 11 ft 7 3/8 in long, top El. 831.54 for 1 ft 1 3/8 in, falling to El. 826.58 at the tip (was 90.7 deg, 4.70 m, about El. 831.1). Root point, 0.40 m nominal thickness and bottom unchanged. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: Wing B (southwest) root moved to the coping corner on the abutment front face (1985 sheet 5 plan; front face 9 in span-side of CL bearing, 1985 sheet 5 Section A-A); was the model cap end, 0.15 m outside the coping, 50 mm clear of the deck. 1 ft 0 in at the top, rear face battered 1:12 (1985 sheet 7 Section D-D; 1 ft 9 1/2 in at the tip, End Elevation B-B), base on the 2 ft footing top at El. 817.03; direction, length and top profile as rev. 1.1. The wing begins at the coping line and is clipped to the model cap and stem where it meets the abutment end. The 2026 removal plan (sheet 10) traces the face from about the railing toe; the 1985 plan governs (decision).",
+      "dimensions": {
+        "length_m": 3.540125,
+        "angle_to_abutment_deg": 60,
+        "top_el_at_abutment_ft": 831.54,
+        "top_el_at_tip_ft": 826.58,
+        "level_top_length_m": 0.339725,
+        "root_xy_m": [
+          -1.8783,
+          -7.112
+        ],
+        "tip_xy_m": [
+          -3.6484,
+          -10.1778
+        ],
+        "top_thickness_m": 0.3048,
+        "base_thickness_at_tip_m": 0.54737,
+        "rear_batter": "1:12",
+        "bottom_z_m": 0.009144,
+        "root": "coping corner on the abutment front face, 9 in span-side of CL bearing"
+      },
       "bounds_m": [
         [
-          -6.253533,
-          7.087571,
-          0.05
+          -4.122419,
+          -10.177838,
+          0.009144
         ],
         [
-          -1.957832,
-          9.736429,
-          4.326232
+          -1.87832,
+          -7.112,
+          4.431792
         ]
       ],
-      "volume_m3": 8.009563029,
+      "volume_m3": 5.500143607,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -2780,23 +2889,25 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical 2 ft 6 in cap width; top steps replaced by derived bearing risers. Lateral limits and old/new construction seams approximated.",
+      "note": "Historical 2 ft 6 in cap width; top steps replaced by derived bearing risers. Lateral limits and old/new construction seams approximated. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: moved 6 in (normal) eastward to 1985 sheet 5 Section A-A and sheet 9 Detail A: front face 9 in span-side of CL bearing, rear face 1 ft 9 in behind it, flush with the mudwall back face at the floor end; was centred on CL bearing.",
       "dimensions": {
-        "normal_width_m": 0.762
+        "normal_width_m": 0.762,
+        "front_face_from_cl_bearing_m": 0.2286,
+        "rear_face_from_cl_bearing_m": 0.5334
       },
       "bounds_m": [
         [
-          1.615741,
+          1.791718,
           -7.262,
           3.071379
         ],
         [
-          10.881059,
+          11.057035,
           7.262,
           3.621379
         ]
       ],
-      "volume_m3": 7.028671877,
+      "volume_m3": 7.028671737,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -2822,17 +2933,17 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {},
       "bounds_m": [
         [
           2.319243,
-          -6.4555,
+          5.3555,
           3.621379
         ],
         [
           3.358473,
-          -5.3555,
+          6.4555,
           3.635017
         ]
       ],
@@ -2849,17 +2960,17 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {},
       "bounds_m": [
         [
           3.68306,
-          -4.0933,
+          2.9933,
           3.621379
         ],
         [
           4.72229,
-          -2.9933,
+          4.0933,
           3.669199
         ]
       ],
@@ -2876,17 +2987,17 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {},
       "bounds_m": [
         [
           5.046876,
-          -1.7311,
+          0.6311,
           3.621379
         ],
         [
           6.086107,
-          -0.6311,
+          1.7311,
           3.70338
         ]
       ],
@@ -2903,17 +3014,17 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {},
       "bounds_m": [
         [
           6.410693,
-          0.6311,
+          -1.7311,
           3.621379
         ],
         [
           7.449924,
-          1.7311,
+          -0.6311,
           3.700653
         ]
       ],
@@ -2930,17 +3041,17 @@
         11
       ],
       "basis": "Approximate external envelope",
-      "note": "Constructed seat riser; actual camber and shim elevations unresolved.",
+      "note": "Constructed seat riser; actual camber and shim elevations unresolved. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {},
       "bounds_m": [
         [
           7.77451,
-          2.9933,
+          -4.0933,
           3.621379
         ],
         [
           8.81374,
-          4.0933,
+          -2.9933,
           3.661016
         ]
       ],
@@ -2956,21 +3067,27 @@
         8
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical solid-stem topology; nominal 700 mm thickness and simplified widened outline. Field dimensions and existing concrete repairs unresolved.",
-      "dimensions": {},
+      "note": "Historical solid-stem topology; nominal 700 mm thickness and simplified widened outline. Field dimensions and existing concrete repairs unresolved. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: rebuilt to 1985 sheet 5 Section A-A: front face vertical 5 1/4 in span-side of CL bearing (3 3/4 in behind the cap front), 1 ft 6 1/4 in wide under the cap, rear face battered to 2 ft 2 3/4 in at the footing, bottom on the footing top (El. 817.03 / 816.95); was a 0.70 m wall centred on CL bearing, bottom Z = 0.05 m.",
+      "dimensions": {
+        "front_face_from_cl_bearing_m": 0.13335,
+        "rear_face_top_m": 0.3302,
+        "rear_face_bottom_m": 0.5461,
+        "top_width_m": 0.46355,
+        "bottom_width_m": 0.67945
+      },
       "bounds_m": [
         [
-          1.651537,
+          1.901703,
           -7.262,
-          0.05
+          -0.01524
         ],
         [
-          10.845263,
+          11.0717,
           7.262,
           3.071379
         ]
       ],
-      "volume_m3": 35.469805636,
+      "volume_m3": 29.583859577,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -2995,23 +3112,27 @@
         8
       ],
       "basis": "Approximate external envelope",
-      "note": "Historical 7 ft footing width and roughly 2 ft thickness; approximate plan extent/elevation. Hidden by default; not a foundation design.",
+      "note": "Historical 7 ft footing width and roughly 2 ft thickness; approximate plan extent/elevation. Hidden by default; not a foundation design. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: moved 5 3/4 in (normal) eastward with the stem: 2 ft 7 in toe and 2 ft 2 1/4 in heel about the 2 ft 2 3/4 in stem base (1985 sheet 5 Section A-A, 7 ft 0 in), 2 ft 0 in thick with its top at El. 816.95 (1985 sheet 5 A-A, sheet 7 B-B, G-G); was centred on CL bearing, Z -0.60 to +0.05 (0.65 m).",
       "dimensions": {
-        "normal_width_m": 2.1336
+        "normal_width_m": 2.1336,
+        "toe_from_cl_bearing_m": 0.92075,
+        "heel_from_cl_bearing_m": 1.21285,
+        "thickness_m": 0.6096,
+        "top_el_ft": 816.95
       },
       "bounds_m": [
         [
-          0.650643,
+          0.819287,
           -7.562,
-          -0.6
+          -0.62484
         ],
         [
-          11.846157,
+          12.014801,
           7.562,
-          0.05
+          -0.01524
         ]
       ],
-      "volume_m3": 24.219345147,
+      "volume_m3": 22.714017374,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -3032,54 +3153,78 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
-        11
+        10,
+        11,
+        15
       ],
       "basis": "Approximate external envelope",
-      "note": "Source 1 ft reconstructed mudwall. Lower retained portion, ledge and local top return simplify the source detail.",
+      "note": "Source 1 ft reconstructed mudwall. Lower retained portion, ledge and local top return simplify the source detail. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: rebuilt to sheet 11 (Section C-C, mudwall construction details) and sheet 15: 1 ft 0 in normal to the abutment from the Type I-A joint at the floor end to the span face at the PCF joint, top on the finished (overlay) surface with the crown; was 1 ft along Line \"A\" (0.87 ft normal) with a flat top 111 mm below the crown, under the deck end.",
       "dimensions": {
-        "normal_width_m": 0.3048
+        "normal_width_m": 0.3048,
+        "top": "finished surface, crowned 1.5625 % (flush with the overlay and the RCBA)",
+        "span_face_u_m": 6.512397
       },
       "bounds_m": [
         [
-          2.453435,
+          2.406282,
           -7.112,
           3.621379
         ],
         [
           10.970465,
           7.112,
-          4.466636
+          4.569643
         ]
       ],
-      "volume_m3": 3.627667346,
+      "volume_m3": 4.467261213,
       "approximation": true
     },
     {
       "id": "wing_1_-1",
-      "name": "Abutment 2 flared wing -1",
+      "name": "Abutment 2 Wing C (northeast, obtuse corner)",
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        5,
         8,
         10,
         12
       ],
       "basis": "Approximate external envelope",
-      "note": "Source flared wing topology. Nominal 4.7 m length and 400 mm wall thickness; actual irregular old/new outlines, footings and rail returns remain unresolved.",
-      "dimensions": {},
+      "note": "Source flared wing topology. Nominal 4.7 m length and 400 mm wall thickness; actual irregular old/new outlines, footings and rail returns remain unresolved. Wing C (northeast): rebuilt to 1985 sheets 5-7 (B-16317): 60 deg to the abutment, 11 ft 7 3/8 in long, top El. 831.5 for 1 ft 1 3/8 in, falling to El. 826.5 at the tip (was 90.7 deg, 4.70 m, about El. 831.1). Root point, 0.40 m nominal thickness and bottom unchanged. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: Wing C (northeast) root moved to the coping corner on the abutment front face (1985 sheet 5 plan; front face 9 in span-side of CL bearing, 1985 sheet 5 Section A-A); was the model cap end, 0.15 m outside the coping, 50 mm clear of the deck. 1 ft 0 in at the top, rear face battered 1:12 (1985 sheet 7 Section D-D; 1 ft 9 1/2 in at the tip, End Elevation B-B), base on the 2 ft footing top at El. 816.95; direction, length and top profile as rev. 1.1. The wing begins at the coping line and is clipped to the model cap and stem where it meets the abutment end. The 2026 removal plan (sheet 10) traces the face from about the railing toe; the 1985 plan governs (decision).",
+      "dimensions": {
+        "length_m": 3.540125,
+        "angle_to_abutment_deg": 60,
+        "top_el_at_abutment_ft": 831.5,
+        "top_el_at_tip_ft": 826.5,
+        "level_top_length_m": 0.339725,
+        "root_xy_m": [
+          1.8783,
+          7.112
+        ],
+        "tip_xy_m": [
+          3.6484,
+          10.1778
+        ],
+        "top_thickness_m": 0.3048,
+        "base_thickness_at_tip_m": 0.54737,
+        "rear_batter": "1:12",
+        "bottom_z_m": -0.01524,
+        "root": "coping corner on the abutment front face, 9 in span-side of CL bearing"
+      },
       "bounds_m": [
         [
-          1.957832,
-          -9.736429,
-          0.05
+          1.87832,
+          7.112,
+          -0.01524
         ],
         [
-          6.253533,
-          -7.087571,
-          4.317618
+          4.122419,
+          10.177838,
+          4.4196
         ]
       ],
-      "volume_m3": 7.97868131,
+      "volume_m3": 5.513160337,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -3096,30 +3241,56 @@
     },
     {
       "id": "wing_1_1",
-      "name": "Abutment 2 flared wing 1",
+      "name": "Abutment 2 Wing D (southeast, acute corner)",
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        5,
         8,
         10,
-        12
+        12,
+        13,
+        14
       ],
       "basis": "Approximate external envelope",
-      "note": "Source flared wing topology. Nominal 4.7 m length and 400 mm wall thickness; actual irregular old/new outlines, footings and rail returns remain unresolved.",
-      "dimensions": {},
+      "note": "Source flared wing topology. Nominal 4.7 m length and 400 mm wall thickness; actual irregular old/new outlines, footings and rail returns remain unresolved. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: Wing D (southeast) rebuilt to 1985 sheet 7 Elevation F-F / End Elevation G-G and sheets 5-6 (plan), with the 2026 removal of sheet 10: a 1 ft 3 in root leg under the railing (sheet 10 Sections A-A, B-B) from the floor end, top level at El. 831.47 for 4 ft 10 3/4 in to the kink; the main wing at 30 deg to the abutment, 18 ft 11 3/4 in, top falling to El. 827.3, 1 ft 0 in at the top with the rear face battered to 1 ft 8 in at the base (G-G \"Batter Varies\", read as a constant base width); top lowered to the finished surface less 1 ft 2 in under the RCBA extension (sheet 10 Section B-B, sheet 12 elevation: 1 ft RCBA on 2 in polystyrene). Was a straight 4.70 m, 0.40 m wall with the top about 1.1 m too high at the tip. Base on the footing top, El. 816.95 (1985 sheet 7 G-G, sheet 5 A-A); the lower retained wall is not dimensioned.",
+      "dimensions": {
+        "root_leg_width_m": 0.381,
+        "root_leg_offsets_m": [
+          6.731,
+          7.112
+        ],
+        "level_top_length_m": 1.49225,
+        "main_wing_length_m": 5.78485,
+        "angle_to_abutment_deg": 30,
+        "top_el_level_ft": 831.47,
+        "top_el_at_tip_ft": 827.3,
+        "top_thickness_m": 0.3048,
+        "base_thickness_m": 0.508,
+        "bottom_z_m": -0.01524,
+        "removal_top": "finished surface - 1 ft 2 in within the RCBA extension",
+        "kink_xy_m": [
+          12.4627,
+          -7.112
+        ],
+        "tip_xy_m": [
+          17.4725,
+          -10.0044
+        ]
+      },
       "bounds_m": [
         [
-          10.343267,
-          7.087571,
-          0.05
+          10.750495,
+          -10.004425,
+          -0.01524
         ],
         [
-          14.638968,
-          9.736429,
-          4.300847
+          17.726542,
+          -6.555024,
+          4.410456
         ]
       ],
-      "volume_m3": 7.947144938,
+      "volume_m3": 11.630570369,
       "approximation": true,
       "supplementary_sources": [
         {
@@ -3141,27 +3312,33 @@
       "color": "#d6cebd",
       "pdf_pages": [
         9,
+        10,
+        11,
         12
       ],
       "basis": "Source nominal concrete barrier envelope; profile corners simplified",
-      "note": "",
+      "note": "Barrier line moved 50 mm outward: back face flush with the 46 ft 8 in coping, toe 22 ft 0 in from Line A (44 ft 0 in clear roadway), sheet 9. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: west end at the deck end (PCF joint, sheets 11-12); east end at the square saw cut where the new 7 ft 10 5/8 in NE railing begins (sheets 10, 12). Rev. 1.3: section re-swept to the existing barrier drawn on sheet 9 (1 ft 4 in x 2 ft 9 in, the FC section that sheet 12 G-G dimensions for the new NE railing); was the generator envelope with a 7 in toe and one slope, 0.10 m off the new railing face at the NE joint.",
       "dimensions": {
         "height_m": 0.8382,
-        "base_width_m": 0.4064
+        "base_width_m": 0.4064,
+        "back_face_offset_m": 7.112,
+        "traffic_toe_offset_m": 6.7056,
+        "toe_height_m": 0.1016,
+        "section": "sheet 9 existing barrier as drawn, the FC section of sheet 12 G-G: 16 in base on the coping, 4 in vertical toe, knee 11 in from the back at 11 in, 9 in top at 2 ft 9 in"
       },
       "bounds_m": [
         [
-          -10.941598,
-          -7.062,
-          4.42865
+          -10.559854,
+          6.7056,
+          4.432277
         ],
         [
-          3.021738,
-          -6.6556,
-          5.297615
+          0.583045,
+          7.112,
+          5.296071
         ]
       ],
-      "volume_m3": 3.870599936
+      "volume_m3": 2.6996286
     },
     {
       "id": "TFC_transition_-1_-1",
@@ -3170,29 +3347,40 @@
       "color": "#c59a54",
       "pdf_pages": [
         8,
+        10,
         12,
         13,
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved.",
+      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved. Height corrected to sheet 12 (Sections C-C to F-F: 2 ft 7 1/2 in rising to 2 ft 9 in, was tapered down to 0.70 m) and barrier line moved 50 mm outward with the bridge rail (sheet 9). Stations are unchanged; see known_deviations. Sections to sheet 12 (C-C, D-D, E-E, F-F; was one 1 ft 4 in section with a 7 in toe over the whole length): C-C to 7 ft 2 in, tapering through D-D at 8 ft 1 in to the 9 in F-F wall at 11 ft 5 in; the shape between the drawn sections is interpolated linearly. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: moved outward behind the new 5 ft 9 5/8 in FC railing and the 1/4 in open joint (sheet 12 railing elevation; sheet 10 5 ft 10 in; sheets 13-14 4 ft 8 in from the slab corner), square ends; was from the floor end with skewed ends.",
       "dimensions": {
         "height_m": 0.8000999999999999,
-        "base_width_m": 0.4064
+        "base_width_m": 0.4064,
+        "far_end_height_m": 0.8382,
+        "height_profile": "2 ft 7 1/2 in for 8 ft 1 in from the bridge end, rising to 2 ft 9 in at 11 ft 5 in, 2 ft 9 in to the 15 ft 8 in end",
+        "back_face_offset_m": 7.112,
+        "traffic_toe_offset_m": 6.7056,
+        "far_end_width_m": 0.2286,
+        "near_end_toe_height_m": 0.0635,
+        "section_profile": "C-C (1 ft 4 in base, 2 1/2 in toe, knee 11 in from the back at 9 1/2 in) to 7 ft 2 in; bulge tapered out to D-D (11 5/8 in base) at 8 ft 1 in; D-D to F-F (9 in, vertical faces) at 11 ft 5 in; F-F to 15 ft 8 in",
+        "start_x_m": -12.158702,
+        "end_x_m": -16.933902,
+        "ends": "square"
       },
       "bounds_m": [
         [
-          -15.716899,
-          -7.062,
-          4.494207
+          -16.933902,
+          6.7056,
+          4.49586
         ],
         [
-          -10.706962,
-          -6.6556,
-          5.297615
+          -12.158702,
+          7.112,
+          5.347183
         ]
       ],
-      "volume_m3": 1.208641845,
+      "volume_m3": 1.016238125,
       "approximation": true
     },
     {
@@ -3206,21 +3394,28 @@
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Source three transition extensions; nominal corner width and skew end boundaries.",
-      "dimensions": {},
+      "note": "Source three transition extensions; nominal corner width and skew end boundaries. Inner edge on the 22 ft 0 in approach-slab edge, sheets 13-14 (was 22 ft 2 in). Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: square ends from the TFC start to the approach slab far end (sheets 13-14); outer edge 2 in beyond the TFC back face as written on sheet 12 Sections C-C to F-F (the plans draw it 2 in inside); was from the floor end, 15 ft 8 in, skewed ends, flush with the TFC back. Its length is 4.850 m against 15 ft 10 in scaled because the model keeps a 25 mm Type I-A joint gap before the approach slab.",
+      "dimensions": {
+        "inner_edge_offset_m": 6.7056,
+        "start_x_m": -17.00923,
+        "end_x_m": -12.158702,
+        "ends": "square",
+        "length_m": 4.850527,
+        "outer_edge_offset_m": 7.1628
+      },
       "bounds_m": [
         [
-          -15.745767,
-          -7.112,
-          4.188684
+          -17.00923,
+          6.7056,
+          4.190267
         ],
         [
-          -10.765159,
-          -6.7564,
-          4.50818
+          -12.158702,
+          7.1628,
+          4.511911
         ]
       ],
-      "volume_m3": 0.517580041,
+      "volume_m3": 0.675943114,
       "approximation": true
     },
     {
@@ -3235,24 +3430,34 @@
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved.",
+      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved. Height corrected to sheet 12 (Sections C-C to F-F: 2 ft 7 1/2 in rising to 2 ft 9 in, was tapered down to 0.70 m) and barrier line moved 50 mm outward with the bridge rail (sheet 9). Stations are unchanged; see known_deviations. Sections to sheet 12 (C-C, D-D, E-E, F-F; was one 1 ft 4 in section with a 7 in toe over the whole length): C-C to 7 ft 2 in, tapering through D-D at 8 ft 1 in to the 9 in F-F wall at 11 ft 5 in; the shape between the drawn sections is interpolated linearly. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: square ends from the floor end at the 22 ft 0 in line, where sheet 13 puts the square end of the NE extension at the slab corner; the start at the toe is unchanged (rev. 1.1 F4), the back face starts 0.235 m later than the skewed end.",
       "dimensions": {
         "height_m": 0.8000999999999999,
-        "base_width_m": 0.4064
+        "base_width_m": 0.4064,
+        "far_end_height_m": 0.8382,
+        "height_profile": "2 ft 7 1/2 in for 8 ft 1 in from the bridge end, rising to 2 ft 9 in at 11 ft 5 in, 2 ft 9 in to the 15 ft 8 in end",
+        "back_face_offset_m": 7.112,
+        "traffic_toe_offset_m": 6.7056,
+        "far_end_width_m": 0.2286,
+        "near_end_toe_height_m": 0.0635,
+        "section_profile": "C-C (1 ft 4 in base, 2 1/2 in toe, knee 11 in from the back at 9 1/2 in) to 7 ft 2 in; bulge tapered out to D-D (11 5/8 in base) at 8 ft 1 in; D-D to F-F (9 in, vertical faces) at 11 ft 5 in; F-F to 15 ft 8 in",
+        "start_x_m": 2.99287,
+        "end_x_m": 7.76807,
+        "ends": "square"
       },
       "bounds_m": [
         [
-          2.787102,
-          -7.062,
-          4.457199
+          2.99287,
+          6.7056,
+          4.456007
         ],
         [
-          7.797039,
-          -6.6556,
-          5.270158
+          7.76807,
+          7.112,
+          5.30037
         ]
       ],
-      "volume_m3": 1.207264696,
+      "volume_m3": 1.016238125,
       "approximation": true
     },
     {
@@ -3266,21 +3471,27 @@
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Source three transition extensions; nominal corner width and skew end boundaries.",
-      "dimensions": {},
+      "note": "Source three transition extensions; nominal corner width and skew end boundaries. Inner edge on the 22 ft 0 in approach-slab edge, sheets 13-14 (was 22 ft 2 in). Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: square ends (sheet 13), starting at the slab corner on the 22 ft 0 in edge; outer edge 2 in beyond the TFC back face (sheet 12 Sections C-C to F-F). Length 15 ft 8 in kept (sheet 13 scales 16 ft 0 in; not dimensioned).",
+      "dimensions": {
+        "inner_edge_offset_m": 6.7056,
+        "start_x_m": 2.99287,
+        "end_x_m": 7.768172,
+        "ends": "square",
+        "outer_edge_offset_m": 7.1628
+      },
       "bounds_m": [
         [
-          2.758235,
-          -7.112,
-          4.151676
+          2.99287,
+          6.7056,
+          4.150413
         ],
         [
-          7.738842,
-          -6.7564,
-          4.471172
+          7.768172,
+          7.1628,
+          4.471907
         ]
       ],
-      "volume_m3": 0.517580041,
+      "volume_m3": 0.665460053,
       "approximation": true
     },
     {
@@ -3290,27 +3501,32 @@
       "color": "#d6cebd",
       "pdf_pages": [
         9,
+        11,
         12
       ],
       "basis": "Source nominal concrete barrier envelope; profile corners simplified",
-      "note": "",
+      "note": "Barrier line moved 50 mm outward: back face flush with the 46 ft 8 in coping, toe 22 ft 0 in from Line A (44 ft 0 in clear roadway), sheet 9. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: both ends at the deck ends (PCF joints, sheets 11-12); the new SE railing begins beyond the joint. Rev. 1.3: section re-swept to the existing barrier drawn on sheet 9 (1 ft 4 in x 2 ft 9 in, the FC section that sheet 12 G-G dimensions for the new NE railing); was the generator envelope with a 7 in toe and one slope, 0.10 m off the new railing face at the NE joint.",
       "dimensions": {
         "height_m": 0.8382,
-        "base_width_m": 0.4064
+        "base_width_m": 0.4064,
+        "back_face_offset_m": 7.112,
+        "traffic_toe_offset_m": 6.7056,
+        "toe_height_m": 0.1016,
+        "section": "sheet 9 existing barrier as drawn, the FC section of sheet 12 G-G: 16 in base on the coping, 4 in vertical toe, knee 11 in from the back at 11 in, 9 in top at 2 ft 9 in"
       },
       "bounds_m": [
         [
-          -3.021738,
-          6.6556,
-          4.412341
+          -2.582259,
+          -7.112,
+          4.412301
         ],
         [
-          10.941598,
-          7.062,
-          5.281834
+          10.570852,
+          -6.7056,
+          5.280174
         ]
       ],
-      "volume_m3": 3.870599936
+      "volume_m3": 3.154602063
     },
     {
       "id": "TFC_transition_1_1",
@@ -3319,29 +3535,40 @@
       "color": "#c59a54",
       "pdf_pages": [
         8,
+        10,
         12,
         13,
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved.",
+      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved. Height corrected to sheet 12 (Sections C-C to F-F: 2 ft 7 1/2 in rising to 2 ft 9 in, was tapered down to 0.70 m) and barrier line moved 50 mm outward with the bridge rail (sheet 9). Stations are unchanged; see known_deviations. Sections to sheet 12 (C-C, D-D, E-E, F-F; was one 1 ft 4 in section with a 7 in toe over the whole length): C-C to 7 ft 2 in, tapering through D-D at 8 ft 1 in to the 9 in F-F wall at 11 ft 5 in; the shape between the drawn sections is interpolated linearly. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: moved outward behind the new 5 ft 9 5/8 in FC railing and the 1/4 in open joint (sheet 12 railing elevation; sheet 10 5 ft 10 in; sheets 13-14 4 ft 8 in from the slab corner), square ends; was from the floor end with skewed ends.",
       "dimensions": {
         "height_m": 0.8000999999999999,
-        "base_width_m": 0.4064
+        "base_width_m": 0.4064,
+        "far_end_height_m": 0.8382,
+        "height_profile": "2 ft 7 1/2 in for 8 ft 1 in from the bridge end, rising to 2 ft 9 in at 11 ft 5 in, 2 ft 9 in to the 15 ft 8 in end",
+        "back_face_offset_m": 7.112,
+        "traffic_toe_offset_m": 6.7056,
+        "far_end_width_m": 0.2286,
+        "near_end_toe_height_m": 0.0635,
+        "section_profile": "C-C (1 ft 4 in base, 2 1/2 in toe, knee 11 in from the back at 9 1/2 in) to 7 ft 2 in; bulge tapered out to D-D (11 5/8 in base) at 8 ft 1 in; D-D to F-F (9 in, vertical faces) at 11 ft 5 in; F-F to 15 ft 8 in",
+        "start_x_m": 12.158702,
+        "end_x_m": 16.933902,
+        "ends": "square"
       },
       "bounds_m": [
         [
-          10.706962,
-          6.6556,
-          4.44089
+          12.158702,
+          -7.112,
+          4.437675
         ],
         [
-          15.716899,
-          7.062,
-          5.254377
+          16.933902,
+          -6.7056,
+          5.282038
         ]
       ],
-      "volume_m3": 1.207264696,
+      "volume_m3": 1.016238125,
       "approximation": true
     },
     {
@@ -3355,21 +3582,28 @@
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Source three transition extensions; nominal corner width and skew end boundaries.",
-      "dimensions": {},
+      "note": "Source three transition extensions; nominal corner width and skew end boundaries. Inner edge on the 22 ft 0 in approach-slab edge, sheets 13-14 (was 22 ft 2 in). Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: square ends from the TFC start to the approach slab far end (sheets 13-14); outer edge 2 in beyond the TFC back face as written on sheet 12 Sections C-C to F-F (the plans draw it 2 in inside); was from the floor end, 15 ft 8 in, skewed ends, flush with the TFC back. Its length is 4.850 m against 15 ft 10 in scaled because the model keeps a 25 mm Type I-A joint gap before the approach slab.",
+      "dimensions": {
+        "inner_edge_offset_m": 6.7056,
+        "start_x_m": 12.158702,
+        "end_x_m": 17.00923,
+        "ends": "square",
+        "length_m": 4.850527,
+        "outer_edge_offset_m": 7.1628
+      },
       "bounds_m": [
         [
-          10.765159,
-          6.7564,
-          4.135251
+          12.158702,
+          -7.1628,
+          4.131931
         ],
         [
-          15.745767,
-          7.112,
-          4.455569
+          17.00923,
+          -6.7056,
+          4.453576
         ]
       ],
-      "volume_m3": 0.517580041,
+      "volume_m3": 0.675943114,
       "approximation": true
     },
     {
@@ -3383,22 +3617,26 @@
         15
       ],
       "basis": "Dimensioned minimum length, width and thickness; skew-to-square plan",
-      "note": "Narrow corner curb and transition extensions are separate approximate envelopes.",
+      "note": "Narrow corner curb and transition extensions are separate approximate envelopes. West slab 22 ft 0 in north / 22 ft 4 in south of Line A (sheet 14); top crowned 1.5625 % each side of Line A and flush with the bridge floor at the joint (sheets 3, 11, 15), was flat and 105 mm low at Line A. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
         "min_length_m": 6.2484,
         "width_m": 13.512800000000002,
-        "thickness_m": 0.3048
+        "thickness_m": 0.3048,
+        "north_edge_offset_m": 6.7056,
+        "south_edge_offset_m": 6.8072,
+        "crossfall": 0.015625,
+        "grade": -0.002
       },
       "bounds_m": [
         [
-          -17.038559,
-          -6.7564,
-          4.178276
+          -17.00923,
+          -6.8072,
+          4.177424
         ],
         [
-          -2.988541,
-          6.7564,
-          4.511176
+          -2.959211,
+          6.7056,
+          4.616686
         ]
       ],
       "volume_m3": 41.801563201
@@ -3412,21 +3650,26 @@
         11
       ],
       "basis": "Schematic 50 mm strip",
-      "note": "Source existing nominal opening is 2 in west and 1 5/8 in east; temperature movement, gland and actual gaps not resolved.",
-      "dimensions": {},
+      "note": "Source existing nominal opening is 2 in west and 1 5/8 in east; temperature movement, gland and actual gaps not resolved. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: fills the 2 in opening (sheet 11 note 3) between the deck end and the mudwall span face, curb to curb, and turns up at 45 deg 6 in over 6 in into the railing toe at both ends (sheet 11 Type PCF Bridge Expansion Joint End at Railing Detail); was a 50 mm strip centred on the floor end over the full width. The leg keeps the schematic depth; the gland is not modelled.",
+      "dimensions": {
+        "opening_normal_m": 0.0508,
+        "schematic_depth_m": 0.08,
+        "upturn_rise_and_run_m": 0.1524,
+        "extent": "curb to curb, turned up 6 in x 6 in into each railing toe"
+      },
       "bounds_m": [
         [
-          -10.995465,
-          -7.112,
-          4.397009
+          -10.494959,
+          -6.898,
+          4.403058
         ],
         [
-          -2.733235,
-          7.112,
-          4.596447
+          -2.471176,
+          6.898,
+          4.648855
         ]
       ],
-      "volume_m3": 0.056896
+      "volume_m3": 0.064552822
     },
     {
       "id": "approach_1",
@@ -3439,25 +3682,31 @@
         15
       ],
       "basis": "Dimensioned minimum length, width and thickness; skew-to-square plan",
-      "note": "Narrow corner curb and transition extensions are separate approximate envelopes.",
+      "note": "Narrow corner curb and transition extensions are separate approximate envelopes. East slab 22 ft 4 in north / 22 ft 0 in south of Line A, 22 ft 0 in under the NE extension (sheet 13); top crowned 1.5625 % each side of Line A and flush with the bridge floor at the joint (sheets 3, 11, 15), was flat and 105 mm low at Line A. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: the 4 in step of the north edge (22 ft 0 in under the NE extension, 22 ft 4 in beyond) is square with the extension far end, as drawn on sheet 13; was on the old skewed end.",
       "dimensions": {
         "min_length_m": 6.2484,
         "width_m": 13.512800000000002,
-        "thickness_m": 0.3048
+        "thickness_m": 0.3048,
+        "north_edge_offset_m": 6.8072,
+        "south_edge_offset_m": 6.7056,
+        "crossfall": 0.015625,
+        "grade": -0.002,
+        "edge_under_ne_extension_offset_m": 6.7056,
+        "step_under_ne_extension": "square with the extension far end"
       },
       "bounds_m": [
         [
-          2.988541,
-          -6.7564,
-          4.138222
+          3.01787,
+          -6.7056,
+          4.137487
         ],
         [
-          17.038559,
-          6.7564,
-          4.471122
+          17.00923,
+          6.8072,
+          4.568889
         ]
       ],
-      "volume_m3": 41.801563201
+      "volume_m3": 41.653533808
     },
     {
       "id": "PCF_joint_1",
@@ -3468,25 +3717,30 @@
         11
       ],
       "basis": "Schematic 50 mm strip",
-      "note": "Source existing nominal opening is 2 in west and 1 5/8 in east; temperature movement, gland and actual gaps not resolved.",
-      "dimensions": {},
+      "note": "Source existing nominal opening is 2 in west and 1 5/8 in east; temperature movement, gland and actual gaps not resolved. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: fills the 1 5/8 in opening (sheet 11 note 3) between the deck end and the mudwall span face, curb to curb, and turns up at 45 deg 6 in over 6 in into the railing toe at both ends (sheet 11 Type PCF Bridge Expansion Joint End at Railing Detail); was a 50 mm strip centred on the floor end over the full width. The leg keeps the schematic depth; the gland is not modelled.",
+      "dimensions": {
+        "opening_normal_m": 0.041275,
+        "schematic_depth_m": 0.08,
+        "upturn_rise_and_run_m": 0.1524,
+        "extent": "curb to curb, turned up 6 in x 6 in into each railing toe"
+      },
       "bounds_m": [
         [
-          2.733235,
-          -7.112,
-          4.369552
+          2.482175,
+          -6.898,
+          4.377125
         ],
         [
-          10.995465,
-          7.112,
-          4.568989
+          10.494959,
+          6.898,
+          4.622901
         ]
       ],
-      "volume_m3": 0.056896
+      "volume_m3": 0.052449168
     },
     {
       "id": "midspan_drain_-1",
-      "name": "Retained midspan drain outlet -1",
+      "name": "Retained midspan cored drain -1",
       "layer": "drainage",
       "color": "#c59a54",
       "pdf_pages": [
@@ -3494,28 +3748,31 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Source 2 in retained drain diameter; outlet route and slab penetration schematic. All other existing deck drains are filled and omitted.",
+      "note": "Source 2 in retained drain diameter; outlet route and slab penetration schematic. All other existing deck drains are filled and omitted. Rebuilt to sheet 9 (proposed typical section, Overlay at Deck Drain Details, Section D-D) as the open 2 in core straight down through the 7 1/2 in remaining slab and the 2 in overlay at mid-span next to the face of rail, shown as a 3 mm display skin lining the core (cut from deck and overlay); was a closed rod 16 mm below the slab, sloping 0.35 m outward. The overlay taper to the drain edge is not modelled (known_deviations). Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
-        "diameter_m": 0.0508
+        "diameter_m": 0.0508,
+        "core_length_m": 0.2413,
+        "display_skin_thickness_m": 0.003,
+        "axis": "vertical through the remaining slab and the overlay"
       },
       "bounds_m": [
         [
-          -3.879495,
-          -7.036669,
-          4.013281
+          -3.879559,
+          6.6502,
+          4.244373
         ],
         [
-          -3.828824,
-          -6.664531,
-          4.228859
+          -3.828759,
+          6.701,
+          4.486467
         ]
       ],
-      "volume_m3": 0.000753098,
+      "volume_m3": 0.000105934,
       "approximation": true
     },
     {
       "id": "midspan_drain_1",
-      "name": "Retained midspan drain outlet 1",
+      "name": "Retained midspan cored drain 1",
       "layer": "drainage",
       "color": "#c59a54",
       "pdf_pages": [
@@ -3523,23 +3780,141 @@
         9
       ],
       "basis": "Approximate external envelope",
-      "note": "Source 2 in retained drain diameter; outlet route and slab penetration schematic. All other existing deck drains are filled and omitted.",
+      "note": "Source 2 in retained drain diameter; outlet route and slab penetration schematic. All other existing deck drains are filled and omitted. Rebuilt to sheet 9 (proposed typical section, Overlay at Deck Drain Details, Section D-D) as the open 2 in core straight down through the 7 1/2 in remaining slab and the 2 in overlay at mid-span next to the face of rail, shown as a 3 mm display skin lining the core (cut from deck and overlay); was a closed rod 16 mm below the slab, sloping 0.35 m outward. The overlay taper to the drain edge is not modelled (known_deviations). Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
       "dimensions": {
-        "diameter_m": 0.0508
+        "diameter_m": 0.0508,
+        "core_length_m": 0.2413,
+        "display_skin_thickness_m": 0.003,
+        "axis": "vertical through the remaining slab and the overlay"
       },
       "bounds_m": [
         [
-          3.828824,
-          6.664531,
-          3.997864
+          3.828759,
+          -6.701,
+          4.228957
         ],
         [
-          3.879495,
-          7.036669,
-          4.213443
+          3.879559,
+          -6.6502,
+          4.47105
         ]
       ],
-      "volume_m3": 0.000753098,
+      "volume_m3": 0.000105934,
+      "approximation": true
+    },
+    {
+      "id": "FC_railing_-1_-1",
+      "name": "Northwest 5 ft 9 5/8 in FC railing on Wing A",
+      "layer": "rails",
+      "color": "#c59a54",
+      "pdf_pages": [
+        10,
+        12,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "New 2026 5 ft 9 5/8 in Type FC railing at the northwest corner (sheet 12 railing elevation and Section A-A; sheet 10: 5 ft 10 in from the existing open joint to the limit of wingwall removal). From the mudwall side of the PCF joint opening (skewed with the joint) over the mudwall and the existing wingwall root to a square end at the 1/4 in open joint before the TFC. Anchorage and reinforcement are not modelled.",
+      "dimensions": {
+        "length_m": 1.768475,
+        "height_above_surface_m": 0.8001,
+        "base_width_m": 0.4064,
+        "top_width_m": 0.2286,
+        "back_face_offset_m": 7.112,
+        "traffic_toe_offset_m": 6.7056,
+        "seat_el_ft": 831.65,
+        "section": "sheet 12 Section A-A: back vertical, 9 in top, knee 11 in from the back at 9 1/2 in, toe vertical below 2 1/2 in above the finished surface",
+        "seat": "reconstructed mudwall top (finished surface), then the existing wingwall root at El. 831.65 (1985 sheet 7 Elevation F-F)"
+      },
+      "bounds_m": [
+        [
+          -12.152352,
+          6.7056,
+          4.46532
+        ],
+        [
+          -10.383877,
+          7.112,
+          5.29952
+        ]
+      ],
+      "volume_m3": 0.387534236,
+      "approximation": true
+    },
+    {
+      "id": "FC_railing_1_-1",
+      "name": "Northeast 7 ft 10 5/8 in FC railing",
+      "layer": "rails",
+      "color": "#c59a54",
+      "pdf_pages": [
+        10,
+        11,
+        12
+      ],
+      "basis": "Approximate external envelope",
+      "note": "New 2026 7 ft 10 5/8 in Type FC railing at the northeast corner (sheet 12 Northeast Transition railing elevation, Sections B-B and G-G; removal sheet 10). It replaces the end of the existing railing on the deck (saw cut square, 6 ft 7 1/8 in from the deck end at the toe: sheet 10 gives 6 ft 9 in, which with the 1 ft mudwall and the 1 5/8 in joint measured normal to the joint makes the written 7 ft 10 5/8 in), crosses the PCF joint and the mudwall and stops square at the 1/4 in open joint at the start of the TFC (sheets 12-13). It is recessed where the PCF joint turns up into its toe (sheet 11 detail; 3 mm clearance past the joint). Bond breaker, anchorage and reinforcement are not modelled.",
+      "dimensions": {
+        "length_m": 2.403475,
+        "height_above_surface_m": 0.8001,
+        "base_width_m": 0.4064,
+        "top_width_m": 0.2286,
+        "back_face_offset_m": 7.112,
+        "traffic_toe_offset_m": 6.7056,
+        "section": "sheet 12 Section G-G / B-B: back vertical, 9 in top, knee 11 in from the back at 9 1/2 in, toe vertical below 2 1/2 in above the finished surface",
+        "seat": "retained coping (1 1/2 in below the finished surface) on the deck, open over the PCF joint, reconstructed mudwall top on the finished surface"
+      },
+      "bounds_m": [
+        [
+          0.583045,
+          6.7056,
+          4.42747
+        ],
+        [
+          2.98652,
+          7.112,
+          5.274049
+        ]
+      ],
+      "volume_m3": 0.580816438,
+      "approximation": true
+    },
+    {
+      "id": "FC_railing_1_1",
+      "name": "Southeast 5 ft 9 5/8 in FC railing on Wing D",
+      "layer": "rails",
+      "color": "#c59a54",
+      "pdf_pages": [
+        10,
+        12,
+        13,
+        14
+      ],
+      "basis": "Approximate external envelope",
+      "note": "New 2026 5 ft 9 5/8 in Type FC railing at the southeast corner (sheet 12 railing elevation and Section A-A; sheet 10: 5 ft 10 in from the existing open joint to the limit of wingwall removal). From the mudwall side of the PCF joint opening (skewed with the joint) over the mudwall and the existing wingwall root to a square end at the 1/4 in open joint before the TFC. Anchorage and reinforcement are not modelled.",
+      "dimensions": {
+        "length_m": 1.768475,
+        "height_above_surface_m": 0.8001,
+        "base_width_m": 0.4064,
+        "top_width_m": 0.2286,
+        "back_face_offset_m": 7.112,
+        "traffic_toe_offset_m": 6.7056,
+        "seat_el_ft": 831.47,
+        "section": "sheet 12 Section A-A: back vertical, 9 in top, knee 11 in from the back at 9 1/2 in, toe vertical below 2 1/2 in above the finished surface",
+        "seat": "reconstructed mudwall top (finished surface), then the existing wingwall root at El. 831.47 (1985 sheet 7 Elevation F-F)"
+      },
+      "bounds_m": [
+        [
+          10.383877,
+          -7.112,
+          4.410456
+        ],
+        [
+          12.152352,
+          -6.7056,
+          5.254242
+        ]
+      ],
+      "volume_m3": 0.392212319,
       "approximation": true
     }
   ],
@@ -3567,7 +3942,7 @@
     {
       "feature": "Whole retained box-beam crossing",
       "status": "modeled_with_simplifications",
-      "detail": "One 41 ft bearing span, six hollow CB21 beams at 7 ft 9 in, 30 degree left skew; 7.5 in remaining slab and separate proposed 2 in overlay.",
+      "detail": "One 41 ft bearing span, six hollow CB21 beams at 7 ft 9 in, 30 degree left skew; 7.5 in remaining slab and separate proposed 2 in overlay. North is +Y, left of increasing station, and the north end of each abutment is down-station (sheets 7, 8; reflected in revision 1.2).",
       "sources": [
         "Primary PDF p.8",
         "Primary PDF p.9",
@@ -3595,7 +3970,7 @@
     {
       "feature": "Historical support and framing topology",
       "status": "approximate",
-      "detail": "Twelve retained Type 7B bearing envelopes, end/interior concrete diaphragms, both solid abutments, shallow footings and four flared wings. Historical source is explicitly supplemental.",
+      "detail": "Twelve retained Type 7B bearing envelopes, end/interior concrete diaphragms, both solid abutments, shallow footings and four flared wings. Historical source is explicitly supplemental. Rev. 1.3: acute wings A/D with the root leg, kink and F-F top and the 2026 removal; obtuse wings B/C rooted at the coping corner on the abutment front face, battered (1985 sheets 5-7, sheet 10).",
       "sources": [
         "Primary PDF p.8",
         "Primary PDF p.9",
@@ -3656,7 +4031,7 @@
     {
       "feature": "2026 exterior repair design",
       "status": "modeled_with_simplifications",
-      "detail": "All twelve beam ends receive nominal wrap skins; reconstructed mudwalls, PCF strips, two approaches, three TFC transition envelopes, and retained midspan drain outlets.",
+      "detail": "All twelve beam ends receive nominal wrap skins; reconstructed mudwalls, PCF strips, two approaches, three TFC transition envelopes, and retained midspan drain outlets. TFC sections follow sheet 12 C-C to F-F; mid-span drains are open 2 in cores through the slab (sheet 9; revision 1.2). Rev. 1.3: deck and overlay end at the PCF joints with the 1 ft mudwall top flush between the joints; new FC railings (5 ft 9 5/8 in NW/SE, 7 ft 10 5/8 in NE) and the NW/SE TFCs and extensions at the sheet 12 stations (sheets 10-14).",
       "sources": [
         "Primary PDF p.8",
         "Primary PDF p.9",
@@ -3692,13 +4067,16 @@
         "approach_1",
         "PCF_joint_1",
         "midspan_drain_-1",
-        "midspan_drain_1"
+        "midspan_drain_1",
+        "FC_railing_-1_-1",
+        "FC_railing_1_1",
+        "FC_railing_1_-1"
       ]
     },
     {
       "feature": "Unresolved details",
       "status": "not_modeled",
-      "detail": "Actual deterioration and patch boundaries, wrap properties, bearing standard PB11 dimensions, slab/beam camber, wing outlines, guardrail terminals, full drainage and site geometry.",
+      "detail": "Actual deterioration and patch boundaries, wrap properties, bearing standard PB11 dimensions, slab/beam camber, wing footings and the retained lower wing walls, guardrail terminals, full drainage and site geometry.",
       "sources": [
         "Primary PDF p.8",
         "Primary PDF p.9",
@@ -3707,5 +4085,814 @@
       ],
       "part_ids": []
     }
-  ]
+  ],
+  "known_deviations": [
+    {
+      "id": "midspan-drain-overlay-taper",
+      "parts": "overlay, midspan_drain_-1, midspan_drain_1",
+      "source": "sheet 9 (Overlay at Deck Drain Details, Section D-D, typical sections); sheet 8 note 7",
+      "deviation": "The overlay keeps its full surface up to the 2 in drain cores; sheet 9 tapers the surface toward each mid-span drain over 1 ft 0 in (a 1 ft x 2 ft area along the face of rail).",
+      "reason": "The taper area is dimensioned but its depth is not. \"Taper Surface to Ex. Drain Edge\" points to the existing drain edge, whose elevation is not given: it can be the milled slab (2 in below the finished surface, overlay feathered out), the unmilled deck (\"Ex. Profile Grade + 1 1/2 in\", 1 1/2 in below) or the drafted taper (about 1 in at 1 in = 1 ft in Section D-D). The Special Provision for Deck Drain Clean and Fill (sheet 8 note 7, not in the set) or a survey of the existing drain edges would settle it."
+    },
+    {
+      "id": "bearing-pad-plan",
+      "parts": "B1_bearing_1..6, B2_bearing_1..6",
+      "source": "1985 sheet 9 Detail A and Section B-B (Type 7B); Standard PB11 (not in the set)",
+      "deviation": "Each beam end has one 0.23 m x 1.05 m x 50 mm pad envelope (generator assumption), parallel to the bearing line. 1985 sheet 5 calls for 12 Type 7B pads per abutment and Detail A (1985 sheet 9) draws them in pairs, one under each edge of the beam end.",
+      "reason": "The pad length, width and thickness are on Standard PB11 (referenced on 1985 sheet 5), which is not in the set, and Detail A gives no pad dimensions or offsets (its 1/2 in = 1 ft scan is not reliable to scale for a pad), so the pairs cannot be placed without inventing their size; PB11 would settle it."
+    },
+    {
+      "id": "ne-corner-wingwall-root",
+      "parts": "FC_railing_1_-1, wing_1_-1, extension_1_-1",
+      "source": "sheet 12 Section B-B and NE railing elevation; sheet 13; sheet 10 removal plan; 1985 sheet 6",
+      "deviation": "At the NE corner the square TFC and RCBA extension start at the floor end on the 22 ft 0 in line (sheet 13), so between the skewed mudwall back face and that square end (up to 0.23 m along the railing back face) the new 7 ft 10 5/8 in railing has nothing under its back half. Sheet 12 Section B-B shows the existing wingwall there, and sheet 10 traces Wing C back to the floor end, but the 1985 plan (which the model follows for Wing C) starts the wing at the coping line.",
+      "reason": "The outline of the existing wingwall root behind the mudwall at the NE corner is not dimensioned on either set; a field survey of the NE corner (or the pre-1985 plans) would settle it."
+    }
+  ],
+  "drawing_review_correction": "review-barrier-line-tfc-height-approach-crown-offsets-obtuse-wings",
+  "revision": "1.3-deviations",
+  "drawing_review_correction_record": {
+    "source_pdf_pages": [
+      3,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "printed_sheets": [
+      3,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "supplementary_source": {
+      "document_id": "9548292",
+      "local_file": "sources/existing_plans_9548292.pdf",
+      "pdf_pages": [
+        5,
+        6,
+        7
+      ]
+    },
+    "changed_parts": [
+      "retained_rail_-1",
+      "retained_rail_1",
+      "TFC_transition_-1_-1",
+      "TFC_transition_1_-1",
+      "TFC_transition_1_1",
+      "extension_-1_-1",
+      "extension_1_-1",
+      "extension_1_1",
+      "approach_-1",
+      "approach_1",
+      "wing_0_1",
+      "wing_1_-1"
+    ],
+    "values": {
+      "barrier back face / toe from Line A (sheet 9)": "7.112 / 6.7056 m; was 7.062 / 6.6556 m",
+      "clear roadway (sheet 9)": "13.4112 m (44 ft 0 in); was 13.3112 m",
+      "TFC height (sheet 12)": "0.8001 m to 2.4638 m from the bridge end, 0.8382 m from 3.4798 m to the end; was 0.8001 m tapering to 0.700 m",
+      "approach slab edges from Line A (sheets 13-14)": "west 6.7056 N / 6.8072 S, east 6.8072 N / 6.7056 S (6.7056 under the NE extension); was 6.7564 both",
+      "approach slab top (sheets 3, 11, 15)": "crowned 1.5625 % at Line A, flush with the bridge floor; was flat, 105 mm low at Line A",
+      "RCBA extension inner edge (sheets 13-14)": "6.7056 m; was 6.7564 m",
+      "Wings B / C (1985 sheets 5-7)": "60 deg to the abutment, 3.540 m, top El. 831.54 / 831.50 to 826.58 / 826.50; was 90.7 deg, 4.701 m, top about El. 831.1"
+    },
+    "not_changed": [
+      "acute-corner-wings",
+      "transition-railing-stations",
+      "floor-end-over-mudwall"
+    ],
+    "before_glb_sha256": "4a5b842204411a8b5b55cf2f3806460c0183f674ab04358a95f3d09d1c0a135b",
+    "after_glb_sha256": "f7ea6b3f3388cd70ee2a01c70af7ccee3c5ebf2b5c0edffda6ee9d88e7ff0694"
+  },
+  "drawing_review_correction_2": "review-2-handedness-tfc-sections-midspan-drain-cores",
+  "drawing_review_correction_2_record": {
+    "source_pdf_pages": [
+      7,
+      8,
+      9,
+      12
+    ],
+    "printed_sheets": [
+      7,
+      8,
+      9,
+      12
+    ],
+    "supplementary_source": {
+      "document_id": "9548292",
+      "local_file": "sources/existing_plans_9548292.pdf",
+      "pdf_pages": [
+        5,
+        7
+      ]
+    },
+    "previous_revision": "1.1-drawing-review",
+    "native_axes": "X along increasing station (east), Y positive to the left of increasing station (north), Z up, Z = 0 at El. 817.00; bearing lines X = u - tan(30 deg) Y",
+    "frame_note": "Coordinates quoted in drawing_review_correction_record (revision 1.1) and in the notes of that revision are in the previous, mirrored frame (north at Y < 0, X = u + tan(30 deg) Y); negate Y to compare them with this revision. manifest skew_deg keeps the generator value.",
+    "findings": {
+      "H1": "confirmed - the whole model was the mirror image of the drawings (north at Y < 0, north abutment ends up-station); every vertex reflected (X, Y, Z) -> (X, -Y, Z), winding reversed (sheets 7, 8, 12)",
+      "N1 TFC sections": "confirmed - sheet 12 C-C/D-D/E-E/F-F: base 1 ft 4 in with 2 1/2 in toe narrowing to the 9 in F-F wall (was 1 ft 4 in base and 7 in toe throughout)",
+      "N2 drains": "confirmed in part - vertical 2 in open cores through slab and overlay (was a closed sloping rod below the slab); overlay taper deferred (depth not dimensioned)",
+      "F1": "unchanged (A/D deferred); acute-corner-wings entry corrected to the measured tip El. 831.15 / 830.96",
+      "F2": "wing-root gap deferred (obtuse-wing-roots)",
+      "F3": "mudwall item unchanged (floor-end-over-mudwall)",
+      "F4": "NW/SE stations unchanged (transition-railing-stations)"
+    },
+    "part_side_suffixes": "Part ids keep their geographic meaning: suffix -1 = north member (now Y > 0), suffix 1 = south member (now Y < 0); beam_0_0 and B*_bearing_1 are the north beam line.",
+    "values": {
+      "tfc_sections_in": {
+        "C_C": [
+          [
+            0,
+            0
+          ],
+          [
+            16,
+            0
+          ],
+          [
+            16,
+            2.5
+          ],
+          [
+            11,
+            9.5
+          ],
+          [
+            9,
+            31.5
+          ],
+          [
+            0,
+            31.5
+          ]
+        ],
+        "D_D": [
+          [
+            0,
+            0
+          ],
+          [
+            11.625,
+            0
+          ],
+          [
+            11.625,
+            2.5
+          ],
+          [
+            10.9914,
+            9.5
+          ],
+          [
+            9,
+            31.5
+          ],
+          [
+            0,
+            31.5
+          ]
+        ],
+        "F_F": [
+          [
+            0,
+            0
+          ],
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            4
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            9,
+            33
+          ],
+          [
+            0,
+            33
+          ]
+        ],
+        "anchors_from_bridge_end_in": [
+          0,
+          86,
+          97,
+          137,
+          188
+        ]
+      },
+      "measured_tfc_sections": {
+        "TFC_transition_-1_-1": [
+          {
+            "t_in": 0,
+            "base_width_m": 0.4064,
+            "toe_height_m": 0.0635,
+            "height_m": 0.8001
+          },
+          {
+            "t_in": 86,
+            "base_width_m": 0.4064,
+            "toe_height_m": 0.0635,
+            "height_m": 0.8001
+          },
+          {
+            "t_in": 97,
+            "base_width_m": 0.2953,
+            "toe_height_m": 0.0635,
+            "height_m": 0.8001
+          },
+          {
+            "t_in": 117.5,
+            "base_width_m": 0.2611,
+            "toe_height_m": 0.083,
+            "height_m": 0.8196
+          },
+          {
+            "t_in": 137,
+            "base_width_m": 0.2286,
+            "toe_height_m": 0.1016,
+            "height_m": 0.8382
+          },
+          {
+            "t_in": 188,
+            "base_width_m": 0.2286,
+            "toe_height_m": 0.1016,
+            "height_m": 0.8382
+          }
+        ],
+        "TFC_transition_1_-1": [
+          {
+            "t_in": 0,
+            "base_width_m": 0.4064,
+            "toe_height_m": 0.0635,
+            "height_m": 0.8001
+          },
+          {
+            "t_in": 86,
+            "base_width_m": 0.4064,
+            "toe_height_m": 0.0635,
+            "height_m": 0.8001
+          },
+          {
+            "t_in": 97,
+            "base_width_m": 0.2953,
+            "toe_height_m": 0.0635,
+            "height_m": 0.8001
+          },
+          {
+            "t_in": 117.5,
+            "base_width_m": 0.2611,
+            "toe_height_m": 0.083,
+            "height_m": 0.8196
+          },
+          {
+            "t_in": 137,
+            "base_width_m": 0.2286,
+            "toe_height_m": 0.1016,
+            "height_m": 0.8382
+          },
+          {
+            "t_in": 188,
+            "base_width_m": 0.2286,
+            "toe_height_m": 0.1016,
+            "height_m": 0.8382
+          }
+        ],
+        "TFC_transition_1_1": [
+          {
+            "t_in": 0,
+            "base_width_m": 0.4064,
+            "toe_height_m": 0.0635,
+            "height_m": 0.8001
+          },
+          {
+            "t_in": 86,
+            "base_width_m": 0.4064,
+            "toe_height_m": 0.0635,
+            "height_m": 0.8001
+          },
+          {
+            "t_in": 97,
+            "base_width_m": 0.2953,
+            "toe_height_m": 0.0635,
+            "height_m": 0.8001
+          },
+          {
+            "t_in": 117.5,
+            "base_width_m": 0.2611,
+            "toe_height_m": 0.083,
+            "height_m": 0.8196
+          },
+          {
+            "t_in": 137,
+            "base_width_m": 0.2286,
+            "toe_height_m": 0.1016,
+            "height_m": 0.8382
+          },
+          {
+            "t_in": 188,
+            "base_width_m": 0.2286,
+            "toe_height_m": 0.1016,
+            "height_m": 0.8382
+          }
+        ]
+      },
+      "parts": {
+        "TFC_transition_-1_-1": {
+          "volume_before_m3": 1.310089,
+          "volume_after_m3": 1.013063
+        },
+        "TFC_transition_1_-1": {
+          "volume_before_m3": 1.310663,
+          "volume_after_m3": 1.016258
+        },
+        "TFC_transition_1_1": {
+          "volume_before_m3": 1.310663,
+          "volume_after_m3": 1.016258
+        },
+        "deck": {
+          "removed_m3": 0.0007525
+        },
+        "overlay": {
+          "removed_m3": 0.0002001
+        },
+        "midspan_drain_-1": {
+          "axis_xy_m": [
+            -3.854159,
+            6.6756
+          ],
+          "core_diameter_m": 0.0508,
+          "top_el_ft": 831.718,
+          "soffit_el_ft": 830.926
+        },
+        "midspan_drain_1": {
+          "axis_xy_m": [
+            3.854159,
+            -6.6756
+          ],
+          "core_diameter_m": 0.0508,
+          "top_el_ft": 831.667,
+          "soffit_el_ft": 830.876
+        }
+      }
+    },
+    "reflected_parts": [
+      "B1_bearing_1",
+      "B1_bearing_2",
+      "B1_bearing_3",
+      "B1_bearing_4",
+      "B1_bearing_5",
+      "B1_bearing_6",
+      "B2_bearing_1",
+      "B2_bearing_2",
+      "B2_bearing_3",
+      "B2_bearing_4",
+      "B2_bearing_5",
+      "B2_bearing_6",
+      "PCF_joint_-1",
+      "PCF_joint_1",
+      "TFC_transition_-1_-1",
+      "TFC_transition_1_-1",
+      "TFC_transition_1_1",
+      "approach_-1",
+      "approach_1",
+      "beam_0_0",
+      "beam_0_1",
+      "beam_0_2",
+      "beam_0_3",
+      "beam_0_4",
+      "beam_0_5",
+      "beam_wrap_0_0",
+      "beam_wrap_0_1",
+      "beam_wrap_0_2",
+      "beam_wrap_0_3",
+      "beam_wrap_0_4",
+      "beam_wrap_0_5",
+      "beam_wrap_1_0",
+      "beam_wrap_1_1",
+      "beam_wrap_1_2",
+      "beam_wrap_1_3",
+      "beam_wrap_1_4",
+      "beam_wrap_1_5",
+      "cap_1",
+      "cap_2",
+      "deck",
+      "diaphragm_0_0",
+      "diaphragm_0_1",
+      "diaphragm_0_2",
+      "diaphragm_0_3",
+      "diaphragm_0_4",
+      "diaphragm_1_0",
+      "diaphragm_1_1",
+      "diaphragm_1_2",
+      "diaphragm_1_3",
+      "diaphragm_1_4",
+      "diaphragm_2_0",
+      "diaphragm_2_1",
+      "diaphragm_2_2",
+      "diaphragm_2_3",
+      "diaphragm_2_4",
+      "extension_-1_-1",
+      "extension_1_-1",
+      "extension_1_1",
+      "footing_1",
+      "footing_2",
+      "haunch_0_0",
+      "haunch_0_1",
+      "haunch_0_2",
+      "haunch_0_3",
+      "haunch_0_4",
+      "haunch_0_5",
+      "midspan_drain_-1",
+      "midspan_drain_1",
+      "mudwall_1",
+      "mudwall_2",
+      "overlay",
+      "pedestal_0_0",
+      "pedestal_0_1",
+      "pedestal_0_2",
+      "pedestal_0_3",
+      "pedestal_0_4",
+      "pedestal_1_0",
+      "pedestal_1_1",
+      "pedestal_1_2",
+      "pedestal_1_3",
+      "pedestal_1_4",
+      "retained_coping_-1",
+      "retained_coping_1",
+      "retained_rail_-1",
+      "retained_rail_1",
+      "stem_1",
+      "stem_2",
+      "wing_0_-1",
+      "wing_0_1",
+      "wing_1_-1",
+      "wing_1_1"
+    ],
+    "rebuilt_parts": [
+      "TFC_transition_-1_-1",
+      "TFC_transition_1_-1",
+      "TFC_transition_1_1",
+      "deck",
+      "midspan_drain_-1",
+      "midspan_drain_1",
+      "overlay"
+    ],
+    "before_glb_sha256": "f7ea6b3f3388cd70ee2a01c70af7ccee3c5ebf2b5c0edffda6ee9d88e7ff0694",
+    "after_glb_sha256": "f17de4574e3b36acd99294fe7814195c81d44c163aae8e492cb9d7fb02336d50"
+  },
+  "review_correction_3": "review-3-floor-end-mudwall-fc-railings-tfc-stations-wing-outlines",
+  "review_correction_record_3": {
+    "source_pdf_pages": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "printed_sheets": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "supplementary_source": {
+      "document_id": "9548292",
+      "local_file": "sources/existing_plans_9548292.pdf",
+      "pdf_pages": [
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    "previous_revision": "1.2-drawing-review-2",
+    "resolved_deviations": [
+      "floor-end-over-mudwall",
+      "transition-railing-stations",
+      "acute-corner-wings"
+    ],
+    "decided_deviations": [
+      "obtuse-wing-roots"
+    ],
+    "kept_deviations": [
+      "midspan-drain-overlay-taper"
+    ],
+    "resolved_in_final_pass": {
+      "pcf_upturns": "6 in x 6 in 45 deg legs at all four railing ends (sheet 11 detail)",
+      "ne_square_ends": "TFC_transition_1_-1, extension_1_-1 and FC_railing_1_-1 square (sheet 13); approach_1 step squared with it",
+      "rcba_extension_outer_edge": "2 in beyond the TFC back face, |Y| = 7.1628 m (sheet 12 C-C to F-F)",
+      "abutment_outline": "caps 9 in / 1 ft 9 in about CL bearing, stems battered, footings 2 ft 7 in toe / 2 ft 2 1/4 in heel (1985 sheet 5 Section A-A); acute wing roots now meet the cap rear face",
+      "pad_orientation": "pads parallel to the bearing line (1985 sheet 9 Detail A)",
+      "retained_rail_section": "existing barrier as drawn on sheet 9 = sheet 12 G-G FC section",
+      "overlay_dam": "5 5/8 in below the surface over 1 ft 0 in at each deck end, 45 deg return (sheet 11 C-C; 1985 sheet 4 notes 2 1/2 in top cover)",
+      "footings": "2 ft 0 in thick, tops El. 817.03 / 816.95; stems and wings based on them (1985 sheet 5 A-A, sheet 7 B-B, G-G)",
+      "obtuse_wing_batter": "rear face 1:12 (1985 sheet 7 Section D-D)"
+    },
+    "new_deviations": [
+      "bearing-pad-plan",
+      "ne-corner-wingwall-root"
+    ],
+    "pad_beam_contact_overlaps_m3": {
+      "B1_bearing_1|beam_0_0": 3.32e-05,
+      "B1_bearing_1|beam_wrap_0_0": 0.0006913,
+      "B1_bearing_2|beam_0_1": 3.32e-05,
+      "B1_bearing_2|beam_wrap_0_1": 0.0006913,
+      "B1_bearing_3|beam_0_2": 3.32e-05,
+      "B1_bearing_3|beam_wrap_0_2": 0.0006913,
+      "B1_bearing_4|beam_0_3": 3.32e-05,
+      "B1_bearing_4|beam_wrap_0_3": 0.0006913,
+      "B1_bearing_5|beam_0_4": 3.32e-05,
+      "B1_bearing_5|beam_wrap_0_4": 0.0006913,
+      "B1_bearing_6|beam_0_5": 3.32e-05,
+      "B1_bearing_6|beam_wrap_0_5": 0.0006913,
+      "B2_bearing_1|beam_0_0": 3.32e-05,
+      "B2_bearing_1|beam_wrap_1_0": 0.0006913,
+      "B2_bearing_2|beam_0_1": 3.32e-05,
+      "B2_bearing_2|beam_wrap_1_1": 0.0006913,
+      "B2_bearing_3|beam_0_2": 3.32e-05,
+      "B2_bearing_3|beam_wrap_1_2": 0.0006913,
+      "B2_bearing_4|beam_0_3": 3.32e-05,
+      "B2_bearing_4|beam_wrap_1_3": 0.0006913,
+      "B2_bearing_5|beam_0_4": 3.32e-05,
+      "B2_bearing_5|beam_wrap_1_4": 0.0006913,
+      "B2_bearing_6|beam_0_5": 3.32e-05,
+      "B2_bearing_6|beam_wrap_1_5": 0.0006913
+    },
+    "decisions": [
+      {
+        "id": "obtuse-wing-roots",
+        "reading": "1985 sheet 5 plan: wing front face from the coping corner on the abutment front face (9 in span-side of CL bearing, 1985 sheet 5 Section A-A)",
+        "rejected": "sheet 10 tracing, which starts the face about at the railing toe (1.2 ft inside the coping)",
+        "reasoning": "The 1985 plan is the construction drawing of these wings; sheet 10 is a 1 in = 5 ft reference tracing (general note 2: existing details for reference only) whose transverse scale is about 1 % off (44 ft 0 in roadway drawn 43 ft 6.8 in)."
+      },
+      {
+        "id": "ne-railing-cut",
+        "reading": "new railing 7 ft 10 5/8 in (sheet 12) ending at the TFC start; cut 6 ft 7 1/8 in from the deck end along the toe",
+        "rejected": "6 ft 9 in removal (sheet 10) along the toe",
+        "reasoning": "7 ft 10 5/8 in = 6 ft 9 in + 1 ft 0 in mudwall + 1 5/8 in joint measured normal to the joint; along the railing those two measure 1 ft 3 3/4 in and the 1/4 in open joint follows, so the cut is 1 7/8 in nearer the bridge end than 6 ft 9 in. The fabricated railing length and the TFC start (rev. 1.1 F4) govern."
+      },
+      {
+        "id": "wing-batter",
+        "reading": "rear face battered from 1 ft 0 in at the top to the End Elevation base width (1 ft 8 in A/D, 1 ft 9 1/2 in B/C) along the whole wall",
+        "rejected": "the 0.40 m nominal vertical wall",
+        "reasoning": "G-G marks the batter \"Varies\" under the sloping top, i.e. a constant base width; it is the only dimensioned wall section."
+      }
+    ],
+    "values": {
+      "mudwall_normal_width_m": 0.3048,
+      "pcf_opening_normal_m": {
+        "abutment_1": 0.0508,
+        "abutment_2": 0.041275
+      },
+      "u_floor_end_m": 6.86435,
+      "u_mudwall_span_face_m": [
+        -6.512397,
+        6.512397
+      ],
+      "u_deck_end_m": [
+        -6.453738,
+        6.464737
+      ],
+      "nw_se_fc_railing_m": 1.768475,
+      "ne_fc_railing_m": 2.403475,
+      "open_joint_m": 0.00635,
+      "ne_saw_cut_x_m": 0.583045,
+      "stations": {
+        "FC_railing_-1_-1": {
+          "x_mudwall_face_toe": -10.383877,
+          "x_outer": -12.152352,
+          "base_z": 4.46532,
+          "el": 831.65
+        },
+        "TFC_transition_-1_-1": {
+          "x_start": -12.158702,
+          "x_end": -16.933902
+        },
+        "extension_-1_-1": {
+          "x": [
+            -17.00923,
+            -12.158702
+          ]
+        },
+        "FC_railing_1_1": {
+          "x_mudwall_face_toe": 10.383877,
+          "x_outer": 12.152352,
+          "base_z": 4.410456,
+          "el": 831.47
+        },
+        "TFC_transition_1_1": {
+          "x_start": 12.158702,
+          "x_end": 16.933902
+        },
+        "extension_1_1": {
+          "x": [
+            12.158702,
+            17.00923
+          ]
+        },
+        "TFC_transition_1_-1": {
+          "x_start": 2.99287,
+          "x_end": 7.76807
+        },
+        "extension_1_-1": {
+          "x": [
+            2.99287,
+            7.768172
+          ]
+        },
+        "FC_railing_1_-1": {
+          "x_west": 0.583045,
+          "x_east": 2.98652
+        }
+      },
+      "wings": {
+        "wing_0_-1": {
+          "kink_xy_m": [
+            -12.4627,
+            7.112
+          ],
+          "tip_xy_m": [
+            -17.4725,
+            10.0044
+          ],
+          "removed_under_extension_m3": 0.0785,
+          "clipped_by": [
+            "stem_1"
+          ]
+        },
+        "wing_1_1": {
+          "kink_xy_m": [
+            12.4627,
+            -7.112
+          ],
+          "tip_xy_m": [
+            17.4725,
+            -10.0044
+          ],
+          "removed_under_extension_m3": 0.0774,
+          "clipped_by": [
+            "stem_2"
+          ]
+        },
+        "wing_0_1": {
+          "root_xy_m": [
+            -1.8783,
+            -7.112
+          ],
+          "tip_xy_m": [
+            -3.6484,
+            -10.1778
+          ],
+          "clipped_by": [
+            "cap_1",
+            "stem_1"
+          ]
+        },
+        "wing_1_-1": {
+          "root_xy_m": [
+            1.8783,
+            7.112
+          ],
+          "tip_xy_m": [
+            3.6484,
+            10.1778
+          ],
+          "clipped_by": [
+            "cap_2",
+            "stem_2"
+          ]
+        }
+      },
+      "parts": {
+        "deck": {
+          "end_u_m": [
+            -6.453738,
+            6.464737
+          ],
+          "drain_core_volume_m3": 0.0007525
+        },
+        "overlay": {
+          "end_u_m": [
+            -6.453738,
+            6.464737
+          ],
+          "drain_core_volume_m3": 0.0002007,
+          "dam": {
+            "depth_below_surface_m": 0.142875,
+            "run_normal_m": 0.3048,
+            "volume_both_ends_m3": 1.000496
+          }
+        },
+        "PCF_joint_-1": {
+          "u_m": [
+            -6.512397,
+            -6.453738
+          ],
+          "opening_normal_in": 2.0
+        },
+        "PCF_joint_1": {
+          "u_m": [
+            6.464737,
+            6.512397
+          ],
+          "opening_normal_in": 1.625
+        },
+        "cap_1": {
+          "u_m": [
+            -6.864317,
+            -5.984435
+          ]
+        },
+        "cap_2": {
+          "u_m": [
+            5.984435,
+            6.864317
+          ]
+        },
+        "approach_1": {
+          "step_trimmed_m3": 0.0009105
+        }
+      }
+    },
+    "changed_parts": [
+      "B1_bearing_1",
+      "B1_bearing_2",
+      "B1_bearing_3",
+      "B1_bearing_4",
+      "B1_bearing_5",
+      "B1_bearing_6",
+      "B2_bearing_1",
+      "B2_bearing_2",
+      "B2_bearing_3",
+      "B2_bearing_4",
+      "B2_bearing_5",
+      "B2_bearing_6",
+      "PCF_joint_-1",
+      "PCF_joint_1",
+      "TFC_transition_-1_-1",
+      "TFC_transition_1_-1",
+      "TFC_transition_1_1",
+      "approach_1",
+      "cap_1",
+      "cap_2",
+      "deck",
+      "extension_-1_-1",
+      "extension_1_-1",
+      "extension_1_1",
+      "footing_1",
+      "footing_2",
+      "mudwall_1",
+      "mudwall_2",
+      "overlay",
+      "retained_coping_-1",
+      "retained_coping_1",
+      "retained_rail_-1",
+      "retained_rail_1",
+      "stem_1",
+      "stem_2",
+      "wing_0_-1",
+      "wing_0_1",
+      "wing_1_-1",
+      "wing_1_1"
+    ],
+    "added_parts": [
+      "FC_railing_-1_-1",
+      "FC_railing_1_-1",
+      "FC_railing_1_1"
+    ],
+    "removed_parts": [],
+    "source_ledger_change": {
+      "deck_length_m": [
+        13.7287,
+        12.918475
+      ],
+      "added": [
+        "floor_length_out_to_out_m",
+        "deck_slab_end_u_m"
+      ]
+    },
+    "frame": "revision 1.2 frame: X east, Y north (left of increasing station), Z up, Z = 0 at El. 817.00",
+    "before_glb_sha256": "f17de4574e3b36acd99294fe7814195c81d44c163aae8e492cb9d7fb02336d50",
+    "after_glb_sha256": "fca5059995d5bca8d5e66dda9ece8f761e4b1679960443246361daf038ddc9e6"
+  }
 }

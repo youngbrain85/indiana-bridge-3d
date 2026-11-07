@@ -2,8 +2,11 @@
 
 Sources are copied byte-for-byte from the October 15 local candidate collection.
 No database, registry, shared helper or analytical solver is changed by this script.
-Native geometry: X along increasing station/east, Y toward the drawing south,
-Z up. Skew signs use bridge_geometry.Model; geographic rotation is not applied.
+Both builders trace the plans with +Y toward the drawing south (stations increase to the east), which is
+the mirror image of the collection frame (+Y left looking up-station = north). They declare that with
+Model.orient(built_plus_y='south'): Model.save() then reflects the model once and finish() mirrors the
+ledger's transverse values, so the published model has north at +Y. The first release skipped the
+reflection and came out mirrored. Skew signs are those of the build frame; geographic rotation is not applied.
 """
 from pathlib import Path
 import json
@@ -153,7 +156,14 @@ def finish(m, out, candidate, index, meta, ledger):
         assumptions=COMMON+meta.get('assumptions',[]))
     for p in m.parts:
         assert p['pdf_pages'] and all(1<=q<=index['pages'] for q in p['pdf_pages'])
-    ledger.update(units='metres',axes='X increasing station, Y drawing south, Z up; not geographically rotated',
+    if m.reflect:
+        # The ledger is written in the collection frame too (+Y north): transverse values change sign; x values do
+        # not, because the skew sign changes with them.
+        ledger['girder_y_m']=[float(-y) for y in ledger['girder_y_m']]
+        for s in ledger['supports']:s['girder_y_m']=[float(-y) for y in s['girder_y_m']]
+        for a in ledger.get('analytical_member_mapping',[]):a['y_m']=float(-a['y_m'])
+        ledger['skew_deg']=-ledger['skew_deg']
+    ledger.update(units='metres',axes='X increasing station, +Y left looking up-station (north), Z up; not geographically rotated',
         source_documents=index['source_documents'],primary_pdf_pages=index['pages'],
         detail_status='needs_detail',geometry_only=True,
         analytical_use='This ledger describes display geometry and source evidence. A solver must freeze its own materials, section assumptions, connectivity, boundary conditions and pressure cases.',
@@ -204,6 +214,9 @@ def deer():
     slab=8*IN;clear=.075;depth=48*IN
     us=np.array([-span/2,span/2]);ys=np.linspace(-15.25*FT,15.25*FT,4)
     m=Model('us35-deer',length,width,15,lambda x:(853.07-837.11)*FT+.0235*np.asarray(x),crossfall=.02)
+    m.orient('east','Sheets 11, 13, 14 and 17: north arrow up, stations increasing to the right; Beam 1 and Wings B and D '
+        'north; sheets 1, 5, 10 and 11 "Skew 15 deg Rt."',reference=('beam_0_0','north'),skew_direction='right',
+        built_plus_y='south')
     m.colors.update(girders='#b8b6a6',steel='#7b8993',bearings='#65727c')
     # BT48x49 dimensions transcribed from source p.20, without 3/4 in bottom chamfers.
     profile_in=[(-20,0),(20,0),(20,5.5),(6,12.5),(4,14.5),(4,37),(7,40),
@@ -337,6 +350,8 @@ def eight():
     us=np.array([-span/2,span/2]);ys=np.linspace(-19.375*FT,19.375*FT,6)
     # Source proposed grade = old grade +1.5 in after 0.5 in milling and 2 in overlay.
     m=Model('us224-eight-mile',length,width,-30,lambda x:(831.91-817)*FT+1.5*IN-.002*np.asarray(x),crossfall=.015625)
+    m.orient('east','Sheets 7 and 8: north up, stations increasing to the east; sheets 1 and 8 "30 deg Lt. Skew".',
+        skew_direction='left',built_plus_y='south')
     m.colors.update(girders='#b3b4a6',accessories='#777f79')
     m.add('deck','Retained deck after nominal 0.5 in milling','deck',m.slab(-length/2,length/2,-width/2,width/2,remaining,-overlay),[8,9],
         'Source 7.5 in remaining concrete envelope','Localized hydrodemolition depth and full-depth patches depend on field conditions and are not invented.',thickness_m=remaining)

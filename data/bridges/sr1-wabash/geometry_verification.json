@@ -1,13 +1,15 @@
 {
-  "component_count": 78,
+  "component_count": 168,
   "all_meshes_watertight": true,
   "all_volumes_positive": true,
   "exported_glb_reopened": true,
   "mesh_names_match_manifest": true,
   "maximum_bearing_contact_error_m": 0,
-  "glb_sha256": "f415b1e60c9591a49cd7414eeac0e76032a8807df24b2e693d04ccba65061d44",
+  "glb_sha256": "b30f8dd060397d78f081817e0b9c97fc2ae42c19e453079f21554a56712467cb",
   "source_pdf_sha256": "6cc8f0283bde2a2285898cad3193f5a44c52b724a1547fa39d048d90668904d6",
-  "checks": {
+  "contacts": [],
+  "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation.",
+  "checks_at_build": {
     "arch_openings": 4,
     "clear_span_m": 21.946,
     "pier_width_chain_m": 1.295,
@@ -17,6 +19,6 @@
     "overall_width_m": 17.322,
     "pedestrian_bridge_excluded": true
   },
-  "contacts": [],
-  "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation."
+  "model_revision": "1.3-deviations",
+  "refreshed_after_correction": "Generic checks re-run on the corrected GLB by scripts/refresh_geometry_verification.py; checks_at_build describe the model as first built."
 }
