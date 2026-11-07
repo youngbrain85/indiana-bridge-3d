@@ -1,4 +1,17 @@
 {
+  "orientation": {
+    "frame": "right-handed: X increasing station, +Y left looking up-station, Z up; GLB (X, Z, -Y)",
+    "up_station": "south",
+    "plus_y": "east",
+    "minus_y": "west",
+    "reference": {
+      "part_id": "plate_0_7",
+      "side": "east"
+    },
+    "skew_direction": "left",
+    "skew_rule": "skew_deg > 0 is a left skew: looking up-station, the +Y end of each support line is down-station (x = u - tan(skew_deg) * y)",
+    "evidence": "Sheets 19 and 25: north arrow to page-left, stations increasing to the right, Girder 1 on the east; sheets 1, 16 and 19 \"Skew 56 deg 17'55\" Lt.\""
+  },
   "title": "Minnich Road NB / SB over I-469 | proposed 2026 rehabilitation",
   "structure_id": "I469-18-07027 ANB / ASB",
   "designation": "2200710 / 2200711",

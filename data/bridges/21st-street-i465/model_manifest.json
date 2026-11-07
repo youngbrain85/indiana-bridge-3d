@@ -1,4 +1,13 @@
 {
+  "orientation": {
+    "frame": "right-handed: X increasing station, +Y left looking up-station, Z up; GLB (X, Z, -Y)",
+    "up_station": "east",
+    "plus_y": "north",
+    "minus_y": "south",
+    "skew_direction": "left",
+    "skew_rule": "skew_deg > 0 is a left skew: looking up-station, the +Y end of each support line is down-station (x = u - tan(skew_deg) * y)",
+    "evidence": "Sheet 40 and sheet 74 plans: north arrow up, stations increasing to the right; sheets 1-2 \"18 deg 00'00\" Skew Lt.\""
+  },
   "title": "21st Street over I-465 | detailed drawing-derived exterior",
   "structure_id": "I-465-149-8974",
   "designation": "9829512",

@@ -1,4 +1,13 @@
 {
+  "orientation": {
+    "frame": "right-handed: X increasing station, +Y left looking up-station, Z up; GLB (X, Z, -Y)",
+    "up_station": "northeast",
+    "plus_y": "northwest",
+    "minus_y": "southeast",
+    "skew_direction": "left",
+    "skew_rule": "skew_deg > 0 is a left skew: looking up-station, the +Y end of each support line is down-station (x = u - tan(skew_deg) * y)",
+    "evidence": "Sheet 12 plan: stations increasing to the right, Line \"PR-PR\" bears N 61 deg 25'34\" E; sheet 8 \"Skew 45 deg Lt.\""
+  },
   "title": "SR 44 over Branch of Little Blue River | proposed 2026 slab replacement",
   "structure_id": "044-73-10858",
   "designation": "2200652",

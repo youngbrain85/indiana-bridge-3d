@@ -1,4 +1,13 @@
 {
+  "orientation": {
+    "frame": "right-handed: X increasing station, +Y left looking up-station, Z up; GLB (X, Z, -Y)",
+    "up_station": "east",
+    "plus_y": "north",
+    "minus_y": "south",
+    "skew_direction": "none",
+    "skew_rule": "skew_deg > 0 is a left skew: looking up-station, the +Y end of each support line is down-station (x = u - tan(skew_deg) * y)",
+    "evidence": "Sheet 21 general plan: stations increasing to the right (Bent 1 at 457+72), north arrow and the westbound lane at the top; sheets 23 and 53 agree."
+  },
   "title": "US 52 over Mud Creek",
   "structure_id": "052-70-10277",
   "designation": "1006266",

@@ -1,4 +1,17 @@
 {
+  "orientation": {
+    "frame": "right-handed: X increasing station, +Y left looking up-station, Z up; GLB (X, Z, -Y)",
+    "up_station": "north",
+    "plus_y": "west",
+    "minus_y": "east",
+    "reference": {
+      "part_id": "girder_A4",
+      "side": "west"
+    },
+    "skew_direction": "none",
+    "skew_rule": "skew_deg > 0 is a left skew: looking up-station, the +Y end of each support line is down-station (x = u - tan(skew_deg) * y)",
+    "evidence": "Plans sheets 32-37: stations increase northward (South approach at the low-station end); Beam Line No. 1 is the west beam (model girder 4)."
+  },
   "title": "Beechwood Road over Little Blue River",
   "structure_id": "13-00043 B",
   "designation": "1400825",

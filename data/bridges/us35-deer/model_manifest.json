@@ -1,4 +1,17 @@
 {
+  "orientation": {
+    "frame": "right-handed: X increasing station, +Y left looking up-station, Z up; GLB (X, Z, -Y)",
+    "up_station": "east",
+    "plus_y": "north",
+    "minus_y": "south",
+    "reference": {
+      "part_id": "beam_0_0",
+      "side": "north"
+    },
+    "skew_direction": "right",
+    "skew_rule": "skew_deg > 0 is a left skew: looking up-station, the +Y end of each support line is down-station (x = u - tan(skew_deg) * y)",
+    "evidence": "Sheets 11, 13, 14 and 17: north arrow up, stations increasing to the right; Beam 1 and Wings B and D north; sheets 1, 5, 10 and 11 \"Skew 15 deg Rt.\""
+  },
   "title": "US 35 over Deer Creek | proposed 2026 replacement",
   "structure_id": "035-27-10469",
   "designation": "1900048",

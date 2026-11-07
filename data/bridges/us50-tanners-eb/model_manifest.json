@@ -1,4 +1,17 @@
 {
+  "orientation": {
+    "frame": "right-handed: X increasing station, +Y left looking up-station, Z up; GLB (X, Z, -Y)",
+    "up_station": "east",
+    "plus_y": "north",
+    "minus_y": "south",
+    "reference": {
+      "part_id": "bulbt_0_0",
+      "side": "north"
+    },
+    "skew_direction": "left",
+    "skew_rule": "skew_deg > 0 is a left skew: looking up-station, the +Y end of each support line is down-station (x = u - tan(skew_deg) * y)",
+    "evidence": "2014 reconstruction sheets 20-23: FT barrier, Beam 1 and Line \"A\" on the north (left looking up-station); north end of every support at the lower station, \"Skew 20 deg Lt.\""
+  },
   "title": "US 50 EB over Tanners Creek | 2014 reconstruction design",
   "structure_id": "50-15-0210B",
   "designation": "0400285",

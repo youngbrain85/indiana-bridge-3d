@@ -1,4 +1,14 @@
 {
+  "orientation": {
+    "frame": "right-handed: X increasing station, +Y left looking up-station, Z up; GLB (X, Z, -Y)",
+    "up_station": null,
+    "plus_y": null,
+    "minus_y": null,
+    "plus_y_note": "Sheet 7 has no north arrow (the sheet 1 vicinity map shows S.R. 1 running north-south): +Y is the plan top of sheet 7, with stations increasing to the right.",
+    "skew_direction": null,
+    "skew_rule": "skew_deg > 0 is a left skew: looking up-station, the +Y end of each support line is down-station (x = u - tan(skew_deg) * y)",
+    "evidence": "Sheet 7 plan; the skew direction is assumed (NBI gives its magnitude only)."
+  },
   "title": "SR 1 over Six Mile Creek | schematic with assumed supports",
   "structure_id": "001-90-07052-B",
   "designation": "2200542",

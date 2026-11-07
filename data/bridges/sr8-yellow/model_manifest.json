@@ -1,4 +1,17 @@
 {
+  "orientation": {
+    "frame": "right-handed: X increasing station, +Y left looking up-station, Z up; GLB (X, Z, -Y)",
+    "up_station": "east",
+    "plus_y": "north",
+    "minus_y": "south",
+    "reference": {
+      "part_id": "beam_0_6",
+      "side": "north"
+    },
+    "skew_direction": null,
+    "skew_rule": "skew_deg > 0 is a left skew: looking up-station, the +Y end of each support line is down-station (x = u - tan(skew_deg) * y)",
+    "evidence": "Sheet 5: north arrow up, Bent 1 on the west; sheet 11 framing plan: Beam 1 north; sheet 8: Wing \"A\" south at Bent 1."
+  },
   "title": "SR 8 over Yellow River | 1997 rehabilitation design",
   "structure_id": "8-75-4883B",
   "designation": "8916700",

@@ -1,4 +1,13 @@
 {
+  "orientation": {
+    "frame": "right-handed: X increasing station, +Y left looking up-station, Z up; GLB (X, Z, -Y)",
+    "up_station": "east",
+    "plus_y": "north",
+    "minus_y": "south",
+    "skew_direction": "left",
+    "skew_rule": "skew_deg > 0 is a left skew: looking up-station, the +Y end of each support line is down-station (x = u - tan(skew_deg) * y)",
+    "evidence": "Sheets 7 and 8: north up, stations increasing to the east; sheets 1 and 8 \"30 deg Lt. Skew\"."
+  },
   "title": "US 224 over Eight Mile Creek | retained bridge with proposed 2026 repairs",
   "structure_id": "224-90-01545 B",
   "designation": "2200957",

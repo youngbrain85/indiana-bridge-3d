@@ -236,7 +236,7 @@
     }
   ],
   "units": "metres",
-  "axes": "X increasing station, Y drawing south, Z up; not geographically rotated",
+  "axes": "X increasing station, +Y left looking up-station (north), Z up; not geographically rotated",
   "source_documents": [
     {
       "id": "9721578",

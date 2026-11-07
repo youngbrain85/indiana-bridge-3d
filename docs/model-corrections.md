@@ -1264,3 +1264,61 @@ now touch the barriers and the deck overlay without overlapping them. No parts w
 polymer overlay stays a known deviation: sheets 3, 7 and 8 give its plan extent but not its thickness. The contract
 special provision for "Polymer Overlay, Bridge Deck Approaches" would settle it.
 `scripts/correct_sr1_six_mile_review_3.py` runs after `correct_sr1_six_mile_review_2.py` and is idempotent.
+
+## 4. Handedness rule (November 2026)
+
+The drawing review found four models that were mirror images of their bridges: US 50 EB over Tanners Creek,
+Virginia Avenue, US 35 over Deer Creek and US 224 over Eight Mile Creek. They were corrected in section 3. The cause was
+in the generators, not in the drawings:
+
+- `scripts/build_remaining_concrete.py` (US 35, US 224) traced the plans with +Y toward the drawing south. With
+  stations increasing to the east, that frame is left-handed. The GLB export (X, Z, −Y) assumes a right-handed frame, so
+  both models came out mirrored, skew included.
+- `scripts/build_indiana_batch2.py` (US 50) and `scripts/build_remaining_virginia_slab.py` (Virginia Avenue) put the north
+  side or Girder 1 at −Y. The US 50 code even calls its −Y overhang "left". Their skews were right, so the layout was
+  mirrored and the skew was not.
+- The shared library (`scripts/bridge_geometry.py`) said only "Y transverse". Nothing stated which side +Y is, so nothing
+  could check it.
+
+The same check found three more defects of this kind in generators whose published models had already been corrected:
+`build_indiana_batch2.py` named the SR 1 Wabash sidewalks the wrong way round and put its gas line on the west side;
+`build_indiana_batch3.py` put Fletcher Avenue's south walk, its 4 ft 6 in modified TX rail and the level deck under it on
+the north side; and `build_sr44_mud.py` wrote `skew_deg = 15` for a 15° Rt. skew (its geometry was right). The SR 44 Mud
+FEM recipe had compensated with its own skew sign.
+
+**The rule** (`scripts/bridge_orientation.py`):
+
+- Every model uses one frame: X increasing station, **+Y to the left looking up-station**, Z up. The GLB stores
+  (X, Z, −Y), which is a proper rotation.
+- **Skew sign:** `skew_deg > 0` is a left ("Lt.") skew. Looking up-station, the +Y end of each support line is
+  down-station: x = u − tan(skew_deg)·y. A FEM ledger's `skew_dx_dy` is −tan(skew_deg). The drawn "Lt."/"Rt." callouts
+  of nine bridges confirm this sign.
+- A generator declares the plan orientation with `Model.orient(up_station, evidence, ...)`. `up_station` is the compass
+  direction of increasing station, read from the plan and its north arrow. +Y is that direction turned 90° to the left.
+  Sides then follow from compass names (`Model.side('north')`), not from habit.
+- A generator that traces a plan in another frame says so (`built_plus_y='south'`). `Model.save()` then reflects the
+  model once into the collection frame and reverses the skew sign. US 35, US 224, US 50 and Virginia Avenue now do
+  this, so their generators produce the correct side.
+- `Model.save()` refuses to write without an orientation. It checks the orientation against the parts and refuses on
+  any mismatch: a named reference part (e.g. Beam 1 is north), every part name with a compass word, the skew sign
+  against the drawn direction, and the support lines. It also refuses to overwrite a model whose manifest records
+  corrections made after the generator ran, unless `BRIDGE_REBUILD_CORRECTED=1` is set.
+- Every 3D-workspace manifest carries an `orientation` record (`scripts/record_orientation.py`): the up-station
+  direction, the +Y and −Y compass sides, the drawn skew direction and the sheets that show them. SR 1 over Six Mile
+  Creek has no north arrow, so its record says how +Y was fixed instead. `test_manager.py` checks every manifest, and
+  each bridge's FEM ledger, against it.
+
+**How the generator fixes were verified.** The generators were run into a scratch folder from the repository's
+drawings. Their sources outside the repository were replaced by the copies in each bridge folder. The new output was
+then compared in plan with the corrected models:
+
+- US 50 EB: deck, rails, joints, bearings, pedestals, X frames, footings and sidewalk are identical to revision 1.1
+  (the first correction). The remaining differences are parts that revision 1.1 rebuilt for other findings (beam
+  lengths, columns, end-bent caps, tie beams and approaches).
+- Virginia Avenue: girders, haunches, splices, bearings, seats, cross frames, rails, walks, wings and drains are
+  identical to revision 1.1.
+- US 35 and US 224: the ledgers equal the committed (mirrored) ledgers field for field. In plan, 32 of 72 and 75 of 91
+  parts are identical to revision 1.2; the old generator matched 1 and 0.
+
+`test_orientation.py` covers the rule and `Model`: reflection, refusal without an orientation, the check on save and the
+overwrite guard.

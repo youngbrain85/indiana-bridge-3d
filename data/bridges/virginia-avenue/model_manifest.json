@@ -1,4 +1,17 @@
 {
+  "orientation": {
+    "frame": "right-handed: X increasing station, +Y left looking up-station, Z up; GLB (X, Z, -Y)",
+    "up_station": "northwest",
+    "plus_y": "southwest",
+    "minus_y": "northeast",
+    "reference": {
+      "part_id": "beam_1",
+      "side": "southwest"
+    },
+    "skew_direction": "left",
+    "skew_rule": "skew_deg > 0 is a left skew: looking up-station, the +Y end of each support line is down-station (x = u - tan(skew_deg) * y)",
+    "evidence": "General plan sheet 31, sheets 36-37 and existing sheet 10 (PDF 28): north arrow to the lower right, stations increasing to the right; Girder No. 1 and the 16'-1\" south path at plan top; sheets 1 and 30-32 \"Skew 44 deg 19'06\" Lt.\""
+  },
   "title": "Virginia Avenue over I-65 NB / I-70 EB | proposed 2026 rehabilitation",
   "structure_id": "I65-110-05719 FNBL",
   "designation": "2200722",

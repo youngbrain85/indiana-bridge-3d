@@ -1,4 +1,17 @@
 {
+  "orientation": {
+    "frame": "right-handed: X increasing station, +Y left looking up-station, Z up; GLB (X, Z, -Y)",
+    "up_station": "northwest",
+    "plus_y": "southwest",
+    "minus_y": "northeast",
+    "reference": {
+      "part_id": "haunch_A4",
+      "side": "southwest"
+    },
+    "skew_direction": "none",
+    "skew_rule": "skew_deg > 0 is a left skew: looking up-station, the +Y end of each support line is down-station (x = u - tan(skew_deg) * y)",
+    "evidence": "Sheets 5, 16 and 20: north arrow to the lower right, Line \"A\" bears N 47 deg 15' W, stations increasing to the right; Beam No. 1 and the X-truss on the southwest (plan top)."
+  },
   "title": "US 421 over South Fork Wildcat Creek",
   "structure_id": "(421)39-12-01792 C",
   "designation": "1593276",

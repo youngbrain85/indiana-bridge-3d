@@ -1,4 +1,13 @@
 {
+  "orientation": {
+    "frame": "right-handed: X increasing station, +Y left looking up-station, Z up; GLB (X, Z, -Y)",
+    "up_station": "east",
+    "plus_y": "north",
+    "minus_y": "south",
+    "skew_direction": "none",
+    "skew_rule": "skew_deg > 0 is a left skew: looking up-station, the +Y end of each support line is down-station (x = u - tan(skew_deg) * y)",
+    "evidence": "Sheets 4 and 13 (PDF 24, 33) and 2026 sheet 11 (PDF 59): north up, Bent 1 (Sta. 1+492) west, Bent 5 (1+555) east; Beam Line No. 1 on the north edge."
+  },
   "title": "SR 10 over I-65 | retained bridge with proposed 2026 approaches",
   "structure_id": "010-37-04888C / D",
   "designation": "2600080",

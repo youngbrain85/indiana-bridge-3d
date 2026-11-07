@@ -1,4 +1,17 @@
 {
+  "orientation": {
+    "frame": "right-handed: X increasing station, +Y left looking up-station, Z up; GLB (X, Z, -Y)",
+    "up_station": "east",
+    "plus_y": "north",
+    "minus_y": "south",
+    "reference": {
+      "part_id": "beam_1_segment_1",
+      "side": "north"
+    },
+    "skew_direction": "right",
+    "skew_rule": "skew_deg > 0 is a left skew: looking up-station, the +Y end of each support line is down-station (x = u - tan(skew_deg) * y)",
+    "evidence": "Sheet 17 framing plan: Bent 1 to Bent 4 left to right, north arrow up, Beam 1 the top line; sheets 1, 9, 12 and 32 \"Skew 15 deg 00'00\" Rt.\""
+  },
   "title": "SR 44 over Mud Creek | 2018 rehabilitation design",
   "structure_id": "044-70-06634 A",
   "designation": "1500342",
@@ -10,7 +23,7 @@
   ],
   "deck_length_ft": 151.08333333333334,
   "deck_width_ft": 46.5,
-  "skew_deg": 15,
+  "skew_deg": -15,
   "source_pdf": "drawings.pdf",
   "source_sha256": "6e9fba4786bc8c1d05073a8bdcaf0b2c66216bdfffb22ac2e469541773142bf8",
   "source_note": "INDOT B-38321, 34 sheets approved August 22, 2017. Models the 2018 rehabilitation design. Current inventory suffix B refers to later work; geometry here uses drawing suffix A.",
@@ -62,7 +75,7 @@
         "width_ft": 46.5,
         "thickness_in": 8,
         "crossfall_pct": 2,
-        "skew_deg": 15,
+        "skew_deg": -15,
         "square_end_zone_ft": 1.5
       },
       "bounds_m": [

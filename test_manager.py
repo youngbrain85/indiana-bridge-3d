@@ -289,5 +289,28 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(explicit_location({'id':'x', 'name':'Span 1 deck module'})[0], 'Span 1')
 
 
+class OrientationTests(unittest.TestCase):
+    """Every 3D-workspace model follows the handedness rule of scripts/bridge_orientation.py."""
+
+    def test_every_workspace_model_is_right_handed_with_the_drawn_skew(self):
+        import sys
+        sys.path.insert(0, str(ROOT / 'scripts'))
+        import bridge_orientation as bo
+        registry = json.loads((ROOT / 'data/registry.json').read_text(encoding='utf-8'))
+        for bridge in registry['bridges']:
+            if not bridge['workspace_enabled']:
+                continue
+            base = ROOT / 'data/bridges' / bridge['id']
+            manifest = json.loads((base / 'model_manifest.json').read_text(encoding='utf-8'))
+            fem = ROOT / 'fem/collection' / (bridge['id'] + '.json')
+            dx_dy = json.loads(fem.read_text(encoding='utf-8'))['values'].get('skew_dx_dy') if fem.is_file() else None
+            with self.subTest(bridge=bridge['id']):
+                self.assertEqual(bo.check(manifest, dx_dy), [])
+                ledger = base / 'source_ledger.json'
+                if ledger.is_file():
+                    axes = json.loads(ledger.read_text(encoding='utf-8')).get('axes')
+                    self.assertTrue(axes is None or '+Y left looking up-station' in axes, axes)
+
+
 if __name__ == '__main__':
     unittest.main(verbosity=2)

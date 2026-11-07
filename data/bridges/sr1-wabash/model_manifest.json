@@ -1,4 +1,13 @@
 {
+  "orientation": {
+    "frame": "right-handed: X increasing station, +Y left looking up-station, Z up; GLB (X, Z, -Y)",
+    "up_station": "north",
+    "plus_y": "west",
+    "minus_y": "east",
+    "skew_direction": null,
+    "skew_rule": "skew_deg > 0 is a left skew: looking up-station, the +Y end of each support line is down-station (x = u - tan(skew_deg) * y)",
+    "evidence": "Sheets 6 and 9: the north arrow points up-station, so the plan top (+Y) is west; 2026 sheet 11 survey control agrees."
+  },
   "title": "SR 1 over Wabash River | 2004 roadway reconstruction",
   "structure_id": "1-90-230B",
   "designation": "9406690",

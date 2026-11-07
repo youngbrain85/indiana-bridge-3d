@@ -140,7 +140,7 @@ def existing(bid):
     length=m.get('deck_length_m') or m['deck_length_ft']*FT
     width=m.get('deck_width_m') or m['deck_width_ft']*FT
     t=.508 if bid=='us52-mud' else .2 if bid in ['sr8-yellow','sr10-i65'] else 8*IN
-    r=Recipe(bid,spans,length,width,t,skew_sign=1 if bid=='sr44-mud' else -1,
+    r=Recipe(bid,spans,length,width,t,
              simple=bid in ['21st-street-i465','us50-tanners-eb'])
     if bid!='us52-mud': r.patch('deck')
     if bid=='sr44-mud':
