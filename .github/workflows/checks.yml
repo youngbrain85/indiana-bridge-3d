@@ -20,6 +20,10 @@ jobs:
       - run: npm run build
       - run: node --check web/app.js
       - run: node --check web/analysis.js
+      - run: node --check web/defects.js
+      - run: node --test test_inspection_rules.mjs
+      - name: Built bundles are committed and current
+        run: git diff --exit-code -- web/viewer.bundle.js web/inspect.bundle.js
   fem-verification:
     runs-on: ubuntu-latest
     steps:

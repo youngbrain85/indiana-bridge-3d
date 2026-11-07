@@ -1,3 +1,4 @@
+import hashlib
 import json
 import math
 import sqlite3
@@ -5,6 +6,7 @@ import struct
 import tempfile
 import threading
 import unittest
+import xml.etree.ElementTree as ET
 from pathlib import Path
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
@@ -221,6 +223,55 @@ class CatalogTests(unittest.TestCase):
         source = ROOT / 'data/bridges/beechwood/model.glb'
         unstamped = {'model': {'render_glb': 'bridges/beechwood/model.glb'}}  # right meshes, no build stamp
         self.assertIsNone(render_model('beechwood', unstamped, ROOT / 'data/registry.json', source, mesh_names(source)))
+
+    def test_inspection_sheets_match_the_model_and_are_served(self):
+        base = ROOT / 'data/bridges/beechwood'
+        sheets = json.loads((base / 'inspection/sheets.json').read_text(encoding='utf-8'))
+        # The sheet set names the model it was generated from: rebuild it whenever model.glb changes.
+        self.assertEqual(sheets['source']['sha256'], hashlib.sha256((base / 'model.glb').read_bytes()).hexdigest(),
+                         'stale inspection sheets: run scripts/build_inspection_sheets.py beechwood')
+        meshes = set(mesh_names(base / 'model.glb'))
+        codes = {e['code'] for e in sheets['elements']}
+        for pid, part in sheets['parts'].items():
+            self.assertIn(pid, meshes)
+            self.assertIn(part['element'], codes)
+        for e in sheets['elements']:
+            self.assertGreater(e['total'], 0, e)
+            self.assertAlmostEqual(e['total'], sum(sheets['parts'][p]['quantity'] for p in e['parts']), places=1)
+        self.assertEqual(next(e for e in sheets['elements'] if e['code'] == 12)['total'], 252 * 33)
+        for sheet in sheets['sheets']:
+            svg = ET.parse(base / 'inspection' / sheet['svg']).getroot()
+            self.assertEqual(svg.get('viewBox'), '0 0 420 297')
+            self.assertEqual(len({v['id'] for v in sheet['views']}), len(sheet['views']))
+            for view in sheet['views']:
+                x, y, w, h = view['placement']
+                self.assertTrue(0 <= x and 0 <= y and x + w <= 1 and y + h <= 1, view['id'])
+                for axis in ('u', 'v', 'normal'):
+                    self.assertAlmostEqual(sum(c * c for c in view[axis]), 1, places=6)
+                cross = [view['u'][1] * view['v'][2] - view['u'][2] * view['v'][1], view['u'][2] * view['v'][0] - view['u'][0] * view['v'][2],
+                         view['u'][0] * view['v'][1] - view['u'][1] * view['v'][0]]
+                self.assertEqual([round(-c, 6) + 0 for c in view['normal']], [round(c, 6) + 0 for c in cross], f'{view["id"]}: not a true view')
+                self.assertTrue(view['regions'], view['id'])
+                for region in view['regions']:
+                    self.assertIn(region['part'], view['parts'])
+                    for rings in region['polygons']:
+                        for u, v in (p for ring in rings for p in ring):
+                            self.assertTrue(-1e-6 <= u <= 1 + 1e-6 and -1e-6 <= v <= 1 + 1e-6, view['id'])
+            with self.get(f'/inspection/beechwood/{sheet["svg"]}') as r:
+                self.assertEqual(r.headers['Content-Type'], 'image/svg+xml')
+        with self.get('/api/bridges/beechwood') as r:
+            self.assertEqual(json.load(r)['inspection'], {'sheets_url': '/inspection/beechwood/sheets.json', 'app_url': '/inspect#beechwood'})
+        with self.get('/inspection/beechwood/sheets.json') as r:
+            self.assertEqual(json.load(r)['source']['sha256'], sheets['source']['sha256'])
+        with self.get('/api/bridges/us52-mud') as r:
+            self.assertNotIn('inspection', json.load(r))
+        for path in ('/inspect', '/inspect.bundle.js', '/inspect.css', '/inspect-sw.js', '/defects.js'):
+            with self.get(path) as r:
+                self.assertEqual(r.status, 200, path)
+        for bad in ('/inspection/beechwood/model.glb', '/inspection/beechwood/..%2Fmodel.glb', '/inspection/beechwood/sheets.json.bak'):
+            with self.assertRaises(HTTPError, msg=bad) as caught:
+                self.get(bad)
+            self.assertEqual(caught.exception.code, 404)
 
     def test_locations_not_guessed_from_mesh_ids(self):
         self.assertEqual(explicit_location({'id':'pier_2', 'name':'Pier footing envelope'}), (None, None))

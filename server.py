@@ -79,6 +79,9 @@ def bridge_detail(db, bid):
     b['coverage'] = [decode(r) for r in db.execute('SELECT * FROM coverage_items WHERE bridge_id=? ORDER BY rowid', (bid,))]
     b['coverage_links'] = [dict(r) for r in db.execute('''SELECT cc.* FROM component_coverage cc
         JOIN components c ON c.id=cc.component_id WHERE c.bridge_id=?''', (bid,))]
+    # Inspection sheets (2D defect drawings generated from the model), when the bridge has them.
+    if (ROOT / 'data/bridges' / bid / 'inspection/sheets.json').is_file():
+        b['inspection'] = {'sheets_url': f'/inspection/{bid}/sheets.json', 'app_url': f'/inspect#{bid}'}
     b['references'] = [decode(r) for r in db.execute('SELECT * FROM reference_sources WHERE bridge_id=?', (bid,))]
     for ref in b['references']:
         metadata = ref['metadata']
@@ -243,6 +246,9 @@ class Handler(BaseHTTPRequestHandler):
                 if not source.get('sha256') or sha(target)!=source['sha256']:
                     return self.error('Source document changed; reconcile the catalog',409)
                 return self.file(target,'application/pdf')
+            match = re.fullmatch(r'/inspection/([a-z0-9-]+)/(sheets\.json|[A-Z0-9-]+\.svg)', path)
+            if match:
+                return self.file(ROOT / 'data/bridges' / match[1] / 'inspection' / match[2])
             match = re.fullmatch(r'/assets/([a-z0-9-]+)/(model|render|drawing|manifest|thumbnail)', path)
             if match:
                 row = db.execute('SELECT * FROM assets WHERE bridge_id=? AND kind=?', match.groups()).fetchone()
@@ -296,18 +302,22 @@ class Handler(BaseHTTPRequestHandler):
 
         static = {'/': ROOT / 'web/index.html', '/index.html': ROOT / 'web/index.html',
                   '/ui.css': ROOT / 'web/ui.css', '/app.js': ROOT / 'web/app.js',
-                  '/analysis.js': ROOT / 'web/analysis.js',
+                  '/analysis.js': ROOT / 'web/analysis.js', '/defects.js': ROOT / 'web/defects.js',
                   '/analysis.css': ROOT / 'web/analysis.css',
                   '/analysis-guide': ROOT / 'web/analysis-guide.html',
                   '/collection-status': ROOT / 'web/collection-status.html',
                   '/model-corrections': ROOT / 'web/model-corrections.html',
                   '/review': ROOT / 'web/ui_review.html',
                   '/viewer.bundle.js': ROOT / 'web/viewer.bundle.js',
+                  '/inspect': ROOT / 'web/inspect.html', '/inspect.html': ROOT / 'web/inspect.html',
+                  '/inspect.css': ROOT / 'web/inspect.css', '/inspect.bundle.js': ROOT / 'web/inspect.bundle.js',
+                  '/inspect-config.js': ROOT / 'web/inspect-config.js', '/inspect-sw.js': ROOT / 'web/inspect-sw.js',
+                  '/inspect.webmanifest': ROOT / 'web/inspect.webmanifest',
                   '/map/counties.json': ROOT / 'web/vendor/indiana_counties.geojson',
                   '/map/states.json': ROOT / 'web/vendor/states.geojson',
                   '/favicon.svg': ROOT / 'web/favicon.svg'}
         if path in static:
-            mime = 'application/json' if path.startswith('/map/') else None
+            mime = 'application/json' if path.startswith('/map/') else 'application/manifest+json' if path.endswith('.webmanifest') else None
             return self.file(static[path], mime)
         if path.startswith('/vendor/fonts/'):
             base = (ROOT / 'web/vendor/fonts').resolve()

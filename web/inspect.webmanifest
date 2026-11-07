@@ -1,0 +1,11 @@
+{
+  "name": "Bridge Inspection · Indiana Bridge 3D",
+  "short_name": "Inspection",
+  "start_url": "./inspect.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#eef2f5",
+  "theme_color": "#eef2f5",
+  "icons": [{ "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
