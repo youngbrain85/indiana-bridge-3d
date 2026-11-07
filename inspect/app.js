@@ -46,11 +46,12 @@ const fitDefect = (code, elementCode) => {
 
 // ---------------------------------------------------------------- start-up
 async function init() {
-  canvas = new SheetCanvas($('sheetHost'), { onSketch, onPick: id => selectDefect(id, true), onZoom: k => { $('zoomLevel').textContent = Math.round(k / 2.2 * 100) + '%'; } });
+  canvas = new SheetCanvas($('sheetHost'), { onSketch, onPick: id => selectDefect(id, true) });
   const response = await fetch(`./inspection/${state.bridge}/sheets.json`);
   if (!response.ok) { $('stageEmpty').textContent = 'This bridge has no inspection sheets yet.'; $('stageEmpty').hidden = false; return; }
   state.catalog = await response.json();
-  $('bridgeName').textContent = state.catalog.title;
+  $('bridgeName').textContent = state.catalog.title.split(' over ')[0];
+  $('bridgeName').title = `${state.catalog.title} · ${state.catalog.structure_id}`;
   document.title = `Inspection · ${state.catalog.title}`;
   $('open3d').href = `./#bridge/${state.bridge}`;
   const config = (await store.setting('cloud')) || window.INSPECT_CLOUD || null;
@@ -82,7 +83,7 @@ async function loadInspections(selectId) {
   const remembered = selectId || (await store.setting(`inspection:${state.bridge}`));
   state.inspection = state.inspections.find(i => i.id === remembered) || state.inspections[0] || null;
   const sel = $('inspectionSelect');
-  sel.replaceChildren(...state.inspections.map(i => { const o = el('option', '', `${i.inspection_date} · ${i.inspection_type}${i.inspectors ? ' · ' + i.inspectors : ''}`); o.value = i.id; return o; }));
+  sel.replaceChildren(...state.inspections.map(i => { const o = el('option', '', `${i.inspection_date} · ${i.inspection_type}`); o.title = i.inspectors || ''; o.value = i.id; return o; }));
   const add = el('option', '', 'New inspection…'); add.value = '__new'; sel.append(add);
   if (state.inspection) sel.value = state.inspection.id;
   await loadDefects();
@@ -111,12 +112,11 @@ function bindChrome() {
   $('zoomOut').onclick = () => canvas.zoomBy(1 / 1.4);
   $('zoomFit').onclick = () => canvas.fit();
   $('sheetPick').onchange = e => openSheet(e.target.value);
-  $('summaryButton').onclick = () => { state.panel = state.panel === 'summary' ? 'list' : 'summary'; renderPanel(); };
+  for (const tab of document.querySelectorAll('[data-tab]')) tab.onclick = () => { state.panel = tab.dataset.tab; renderPanel(); };
   $('settingsButton').onclick = settingsDialog;
-  $('syncButton').onclick = sync;
+  // The sync state is also the sync button: it syncs when signed in, and opens Settings otherwise.
+  $('syncStatus').onclick = async () => { if (state.cloud.ready && await state.cloud.user()) sync(); else settingsDialog(); };
   $('cancelDraw').onclick = () => cancelDraft();
-  $('panTool').onclick = () => setTool('pan');
-  $('drawTool').onclick = () => setTool('draw');
   addEventListener('keydown', e => {
     if (e.target.closest('input,textarea,select,dialog')) return;
     if (e.key === 'Escape' && state.panel === 'draw') cancelDraft();
@@ -156,7 +156,6 @@ async function openSheet(id) {
   renderSheetList();
   drawDefects();
   if (state.panel === 'list') renderPanel();
-  $('stageTitle').textContent = `${sheet.id} · ${sheet.title}`;
 }
 
 function defectPoints(d) {
@@ -189,19 +188,17 @@ function choosePick(pick) {
   state.pick = pick;
   state.panel = 'draw';
   setTool('draw');
-  const verb = { line: 'Trace the crack or bar along its length', area: 'Outline the affected area', point: 'Tap the location' }[pick.kind];
-  $('drawHint').textContent = `${verb}. Pinch or two fingers to move the sheet.`;
+  const verb = { line: 'Trace it along its length', area: 'Outline the area', point: 'Tap where it is' }[pick.kind];
+  $('drawHint').textContent = `${pick.name}: ${verb.toLowerCase()} on a shaded surface`;
   $('drawBanner').hidden = false;
   document.body.dataset.drawing = '1';
   renderPanel();
 }
 
+// The sheet draws only while a defect is being placed; otherwise a drag moves it. Two fingers always move it.
 function setTool(tool) {
   const kind = state.panel === 'draw' ? state.pick.kind : null;
   canvas.setMode(tool === 'draw' && kind ? 'draw' : 'pan', kind);
-  $('panTool').setAttribute('aria-pressed', String(canvas.mode === 'pan'));
-  $('drawTool').setAttribute('aria-pressed', String(canvas.mode === 'draw'));
-  $('drawTool').disabled = !kind;
 }
 
 function cancelDraft() {
@@ -323,14 +320,19 @@ async function deleteDraft() {
 // ---------------------------------------------------------------- panel
 function renderPanel() {
   const panel = $('panel');
+  const keep = panel.dataset.view === state.panel + (state.draft?.id || '') ? panel.scrollTop : 0;
   document.body.dataset.panel = state.panel;
+  panel.dataset.view = state.panel + (state.draft?.id || '');
   panel.replaceChildren();
   if (!state.catalog) return;
-  if (state.panel === 'pick') return renderPicker(panel);
-  if (state.panel === 'draw') return renderDrawing(panel);
-  if (state.panel === 'form' && state.draft) return renderForm(panel);
-  if (state.panel === 'summary') return renderSummary(panel);
-  renderList(panel);
+  for (const tab of document.querySelectorAll('[data-tab]')) tab.setAttribute('aria-selected', String(tab.dataset.tab === state.panel));
+  $('defectCount').textContent = state.defects.length || '';
+  if (state.panel === 'pick') renderPicker(panel);
+  else if (state.panel === 'draw') renderDrawing(panel);
+  else if (state.panel === 'form' && state.draft) renderForm(panel);
+  else if (state.panel === 'summary') renderSummary(panel);
+  else renderList(panel);
+  panel.scrollTop = keep;
 }
 
 function head(panel, title, sub, actions = []) {
@@ -340,49 +342,47 @@ function head(panel, title, sub, actions = []) {
   panel.append(h);
 }
 
+const shortName = code => DEFECTS[code]?.short || String(code);
+const photoText = n => (n ? ` · ${n} photo${n > 1 ? 's' : ''}` : '');
+
 function renderList(panel) {
-  const scope = state.scope;
-  const items = state.defects.filter(d => scope === 'all' || d.sheet_id === state.sheet?.id);
-  head(panel, scope === 'all' ? 'All defects' : 'Defects on this sheet', state.inspection ? `${state.inspection.inspection_date} · ${state.inspection.inspection_type}` : 'No inspection yet');
-  const actions = el('div', 'panel-actions');
-  actions.append(btn('Add defect', startDefect, 'primary wide'));
-  const tabs = el('div', 'segmented small');
-  for (const [key, label] of [['sheet', 'This sheet'], ['all', `All (${state.defects.length})`]]) {
-    const b = btn(label, () => { state.scope = key; renderPanel(); }, scope === key ? 'active' : '');
-    b.setAttribute('aria-pressed', String(scope === key));
-    tabs.append(b);
-  }
-  actions.append(tabs);
-  panel.append(actions);
+  const all = state.scope === 'all';
+  const items = state.defects.filter(d => all || d.sheet_id === state.sheet?.id);
+  const add = btn('Add defect', startDefect, 'primary wide');
+  const top = el('div', 'panel-actions'); top.append(add);
+  panel.append(top);
+  const other = state.defects.length - state.defects.filter(d => d.sheet_id === state.sheet?.id).length;
+  const listHead = el('div', 'list-head');
+  listHead.append(el('span', '', all ? `All sheets · ${state.defects.length}` : `On ${state.sheet?.id || 'this sheet'} · ${items.length}`));
+  if (all || other) listHead.append(btn(all ? 'This sheet only' : `Show all (${state.defects.length})`, () => { state.scope = all ? 'sheet' : 'all'; renderPanel(); }, 'text-button'));
+  panel.append(listHead);
   const list = el('div', 'defect-list');
-  if (!items.length) {
-    list.append(el('p', 'empty', state.inspection ? 'No defects recorded here yet. Choose Add defect, pick what you found, then draw it on the sheet.' : 'Start an inspection to record defects.'));
-  }
+  if (!items.length) list.append(el('p', 'empty', state.inspection ? 'Nothing recorded on this sheet yet.' : 'Start an inspection to record defects.'));
   for (const d of items) {
     const card = btn('', () => selectDefect(d.id, true), 'defect-card' + (d.id === state.selected ? ' selected' : ''));
     const tag = el('span', 'cs-tag', `D${d.number}`); tag.style.setProperty('--cs', CS_COLORS[d.cs]);
     const body = el('span', 'card-body');
-    body.append(el('span', 'card-title', `${d.defect_code} ${DEFECTS[d.defect_code]?.short || ''}`),
-      el('span', 'card-meta', `${part(d.part).label} · CS ${d.cs} · ${fmt(d.quantity, 0)} ${d.unit}${state.photoCounts[d.id] ? ` · ${state.photoCounts[d.id]} photo${state.photoCounts[d.id] > 1 ? 's' : ''}` : ''}`));
-    if (scope === 'all') body.append(el('span', 'card-meta', `Sheet ${d.sheet_id} · ${d.location || ''}`));
+    body.append(el('span', 'card-title', shortName(d.defect_code)),
+      el('span', 'card-meta', `${part(d.part).label} · CS ${d.cs} · ${fmt(d.quantity, 0)} ${d.unit}${photoText(state.photoCounts[d.id])}${all ? ` · ${d.sheet_id}` : ''}`));
     card.append(tag, body);
     list.append(card);
   }
   panel.append(list);
 }
 
+// Defect menu: what was found, grouped as an inspector thinks of the member; the drawing tool follows the choice.
 function renderPicker(panel) {
-  head(panel, 'What did you find?', 'Pick the defect, then draw it on the sheet. The element is found from where you draw.',
-    [btn('Cancel', cancelDraft, 'text-button')]);
+  head(panel, 'What did you find?', null, [btn('Cancel', cancelDraft, 'text-button')]);
+  const group = p => (p.material === 'Steel' || p.material === 'General' ? 'Other' : p.material);
   const wrap = el('div', 'picker');
-  for (const material of MATERIAL_ORDER) {
-    const group = PICKS.filter(p => p.material === material);
-    if (!group.length) continue;
-    wrap.append(el('h3', 'picker-group', material));
+  for (const name of ['Concrete', 'Bearing', 'Other']) {
+    const picks = PICKS.filter(p => group(p) === name);
+    wrap.append(el('h3', 'picker-group', name));
     const grid = el('div', 'picker-grid');
-    for (const p of group) {
+    for (const p of picks) {
       const b = btn('', () => choosePick(p), 'pick');
-      b.append(el('span', 'pick-icon ' + p.kind), el('span', 'pick-name', p.name), el('span', 'pick-code', p.note));
+      b.append(el('span', 'pick-icon ' + p.kind), el('span', 'pick-name', p.short || p.name));
+      b.title = `${p.name} · ${p.note}`;
       grid.append(b);
     }
     wrap.append(grid);
@@ -391,11 +391,8 @@ function renderPicker(panel) {
 }
 
 function renderDrawing(panel) {
-  head(panel, state.pick.name, `${state.pick.kind === 'line' ? 'Trace it' : state.pick.kind === 'area' ? 'Outline it' : 'Tap it'} on the sheet.`, [btn('Cancel', cancelDraft, 'text-button')]);
-  const tips = el('ul', 'tips');
-  for (const t of ['Pen, mouse or one finger draws. Two fingers move and zoom.', 'After you use a pen, fingers only move the sheet (palm rejection).',
-    'Draw on a shaded surface. Grey outlines are context only.', 'Zoom in for small defects: the drawing keeps its full precision.']) tips.append(el('li', '', t));
-  panel.append(tips);
+  const how = { line: 'Trace it on the sheet.', area: 'Outline it on the sheet.', point: 'Tap it on the sheet.' }[state.pick.kind];
+  head(panel, state.pick.name, `${how} Two fingers move and zoom.`, [btn('Cancel', cancelDraft, 'text-button')]);
 }
 
 function field(label, control, extra) {
@@ -405,47 +402,23 @@ function field(label, control, extra) {
   return f;
 }
 
+// Defect form: what the inspector measures and decides comes first (measurements, condition state, photos, notes);
+// what the sketch already settled (element, defect code, quantity, location) is folded under Details.
 function renderForm(panel) {
   const d = state.draft;
   const p = part(d.part), e = element(p.element);
   const sheet = sheetById(d.sheet_id), view = viewById(sheet, d.view_id);
-  head(panel, `${d.isNew ? 'New defect' : 'Defect'} D${d.number}`, `${sheet.id} · ${view.label}`,
-    [btn('Close', d.isNew ? cancelDraft : () => { state.draft = null; state.panel = 'list'; drawDefects(); renderPanel(); }, 'text-button')]);
+  const close = d.isNew ? cancelDraft : () => { state.draft = null; state.panel = 'list'; drawDefects(); renderPanel(); };
+  head(panel, `D${d.number} · ${shortName(d.defect_code)}`, `${p.label} · ${d.location}`, [btn(d.isNew ? 'Cancel' : 'Close', close, 'text-button')]);
   const form = el('form', 'defect-form');
   form.onsubmit = ev => { ev.preventDefault(); saveDraft(); };
 
-  // Element (found from the sketch) and defect.
-  const partSel = el('select');
-  for (const id of view.parts) { const o = el('option', '', `${part(id).label} · ${part(id).element}`); o.value = id; partSel.append(o); }
-  partSel.value = d.part;
-  partSel.onchange = () => { d.part = partSel.value; d.part_auto = false; d.defect_code = fitDefect(d.defect_code, part(d.part).element); recompute(d); renderPanel(); };
-  const elemNote = el('span', 'field-note', `${e?.code} ${e?.name}${d.part_auto ? ' · found from the sketch' : ''}`);
-  form.append(field('Element', partSel, elemNote));
-
-  const allowed = ELEMENT_DEFECTS[p.element] || Object.keys(DEFECTS).map(Number);
-  const defSel = el('select');
-  for (const code of allowed) { const o = el('option', '', `${code} ${DEFECTS[code].name}`); o.value = code; defSel.append(o); }
-  if (!allowed.includes(Number(d.defect_code))) { const o = el('option', '', `${d.defect_code} ${DEFECTS[d.defect_code]?.name} (not listed for this element)`); o.value = d.defect_code; defSel.append(o); }
-  defSel.value = d.defect_code;
-  defSel.onchange = () => { d.defect_code = Number(defSel.value); d.measurements = {}; d.cs_chosen = false; recompute(d); renderPanel(); };
-  form.append(field('Defect', defSel));
-
-  // Measurements.
+  // Measurements: the fields that decide the condition state; optional ones behind one link.
   const fields = (FIELDS[d.defect_code] || []).filter(f => !f.when || f.when(d.measurements));
-  if (fields.length) {
-    const box = el('fieldset', 'measure');
-    box.append(el('legend', '', 'Measurements'));
-    for (const f of fields) box.append(measureControl(d, f));
-    form.append(box);
-  }
-
-  // Quantity.
-  const qty = el('input'); qty.type = 'number'; qty.min = '0'; qty.step = '1'; qty.value = d.quantity ?? ''; qty.inputMode = 'decimal';
-  qty.oninput = () => { d.quantity = Number(qty.value); d.quantity_manual = true; qtyNote.textContent = 'Entered by the inspector'; };
-  const qtyRow = el('div', 'input-unit'); qtyRow.append(qty, el('span', 'unit', d.unit || ''));
-  const qtyNote = el('span', 'field-note', d.quantity_manual ? 'Entered by the inspector' : d.quantity_basis);
-  if (d.quantity_manual) qtyNote.append(' · ', btn('Use sketch', () => { d.quantity_manual = false; recompute(d); renderPanel(); }, 'text-button'));
-  form.append(field(`Quantity (element total ${fmt(e?.total || 0, 0)} ${e?.unit || ''})`, qtyRow, qtyNote));
+  const main = fields.filter(f => !f.optional || d.showMore || d.measurements[f.key] != null);
+  const more = fields.filter(f => !main.includes(f));
+  for (const f of main) form.append(measureControl(d, f));
+  if (more.length) form.append(btn(`+ ${more.map(f => f.label.replace(/ \(.*\)/, '').toLowerCase()).join(', ')}`, () => { d.showMore = true; renderPanel(); }, 'text-button add-field'));
 
   // Condition state.
   const cs = el('fieldset', 'cs-field');
@@ -461,19 +434,14 @@ function renderForm(panel) {
   }
   cs.append(chips);
   const desc = DEFECTS[d.defect_code]?.cs[(d.cs || d.cs_suggested || 1) - 1];
-  cs.append(el('p', 'cs-desc', d.cs ? desc : (d.cs_suggested ? '' : 'Enter the measurements for a suggestion, or choose the condition state.')));
+  cs.append(el('p', 'cs-desc', d.cs ? desc : (d.cs_suggested ? '' : 'Enter the measurement, or choose the condition state.')));
   if (d.cs_suggested && d.cs && d.cs !== d.cs_suggested) {
-    const reason = el('textarea'); reason.id = 'csReason'; reason.rows = 2; reason.value = d.cs_reason; reason.placeholder = 'Why the condition state differs from the measured suggestion';
+    const reason = el('textarea'); reason.id = 'csReason'; reason.rows = 2; reason.value = d.cs_reason; reason.placeholder = 'Why it differs from the measured suggestion';
     reason.oninput = () => { d.cs_reason = reason.value; };
     cs.append(field('Reason for the change', reason));
   }
   if (d.cs === 4) cs.append(el('p', 'critical', 'CS 4 warrants a structural review. Report it as a critical finding following agency procedure.'));
   form.append(cs);
-
-  form.append(field('Location', el('output', 'location', d.location)));
-  const notes = el('textarea'); notes.rows = 3; notes.value = d.notes; notes.placeholder = 'What you saw, and anything the next inspector should check';
-  notes.oninput = () => { d.notes = notes.value; };
-  form.append(field('Notes', notes));
 
   // Photos.
   const photos = el('fieldset', 'photos');
@@ -500,7 +468,39 @@ function renderForm(panel) {
   photos.append(row);
   form.append(photos);
 
-  const actions = el('div', 'form-actions');
+  const notes = el('textarea'); notes.rows = 2; notes.value = d.notes; notes.placeholder = 'What you saw, and what the next inspector should check';
+  notes.oninput = () => { d.notes = notes.value; };
+  form.append(field('Notes', notes));
+
+  // Details: settled by the sketch, open to correct.
+  const details = el('details', 'details');
+  details.open = !!d.showDetails;
+  details.ontoggle = () => { d.showDetails = details.open; };
+  const summary = el('summary');
+  summary.append(el('span', 'details-title', 'Details'), el('span', 'details-meta', `${e?.code} ${p.label} · ${d.defect_code} · ${fmt(d.quantity || 0, 0)} ${d.unit || ''}`));
+  details.append(summary);
+  const partSel = el('select');
+  for (const id of view.parts) { const o = el('option', '', `${part(id).label} · ${part(id).element}`); o.value = id; partSel.append(o); }
+  partSel.value = d.part;
+  partSel.onchange = () => { d.part = partSel.value; d.part_auto = false; d.defect_code = fitDefect(d.defect_code, part(d.part).element); recompute(d); renderPanel(); };
+  details.append(field('Element', partSel, el('span', 'field-note', `${e?.code} ${e?.name}${d.part_auto ? ' · found from the sketch' : ''}`)));
+  const allowed = ELEMENT_DEFECTS[p.element] || Object.keys(DEFECTS).map(Number);
+  const defSel = el('select');
+  for (const code of allowed) { const o = el('option', '', `${code} ${DEFECTS[code].name}`); o.value = code; defSel.append(o); }
+  if (!allowed.includes(Number(d.defect_code))) { const o = el('option', '', `${d.defect_code} ${DEFECTS[d.defect_code]?.name} (not listed for this element)`); o.value = d.defect_code; defSel.append(o); }
+  defSel.value = d.defect_code;
+  defSel.onchange = () => { d.defect_code = Number(defSel.value); d.measurements = {}; d.cs_chosen = false; recompute(d); renderPanel(); };
+  details.append(field('Defect', defSel));
+  const qty = el('input'); qty.type = 'number'; qty.min = '0'; qty.step = '1'; qty.value = d.quantity ?? ''; qty.inputMode = 'decimal';
+  qty.oninput = () => { d.quantity = Number(qty.value); d.quantity_manual = true; qtyNote.textContent = 'Entered by the inspector'; };
+  const qtyRow = el('div', 'input-unit'); qtyRow.append(qty, el('span', 'unit', d.unit || ''));
+  const qtyNote = el('span', 'field-note', d.quantity_manual ? 'Entered by the inspector' : d.quantity_basis);
+  if (d.quantity_manual) qtyNote.append(' · ', btn('Use sketch', () => { d.quantity_manual = false; recompute(d); renderPanel(); }, 'text-button'));
+  details.append(field(`Quantity (of ${fmt(e?.total || 0, 0)} ${e?.unit || ''})`, qtyRow, qtyNote));
+  details.append(field('Sheet', el('output', '', `${sheet.id} · ${view.label}`)));
+  form.append(details);
+
+  const actions = el('div', 'form-actions sticky');
   const save = el('button', 'primary', d.isNew ? 'Save defect' : 'Save changes'); save.type = 'submit';
   actions.append(save);
   if (!d.isNew) actions.append(btn('Delete', deleteDraft, 'danger'));
@@ -544,14 +544,14 @@ function photoTile(d, ph) {
   const url = photoURL(ph);
   if (url) img.src = url;
   else state.cloud.photoBlob(ph).then(b => { if (b) img.src = photoURL({ ...ph, blob: b }); });
-  const cap = el('figcaption', '', ph.file_name.split('_').slice(0, 2).join(' '));
   const remove = btn('×', () => {
     if (d.newPhotos.includes(ph)) d.newPhotos = d.newPhotos.filter(x => x !== ph);
     else d.removedPhotos.push(ph);
     renderPanel();
   }, 'photo-remove');
   remove.setAttribute('aria-label', 'Remove photo');
-  tile.append(img, cap, remove);
+  tile.title = ph.file_name;
+  tile.append(img, remove);
   img.onclick = () => { if (img.src) window.open(img.src, '_blank'); };
   return tile;
 }
@@ -563,7 +563,7 @@ function openIn3D(d) {
 
 // ---------------------------------------------------------------- element summary (AASHTO element CS table)
 function renderSummary(panel) {
-  head(panel, 'Element condition states', 'AASHTO element quantities by condition state for this inspection', [btn('Back', () => { state.panel = 'list'; renderPanel(); }, 'text-button')]);
+  head(panel, 'Element condition states', 'AASHTO element quantities for this inspection');
   const rows = elementSummary(state.catalog.elements, state.defects);
   const table = el('table', 'summary');
   table.innerHTML = '<thead><tr><th>Element</th><th>Total</th><th>CS1</th><th>CS2</th><th>CS3</th><th>CS4</th></tr></thead>';
@@ -586,7 +586,7 @@ function renderSummary(panel) {
   const actions = el('div', 'form-actions');
   actions.append(btn('Download CSV', () => downloadCSV(rows)), btn('Download backup', exportBackup));
   panel.append(actions);
-  panel.append(el('p', 'muted small pad', 'CS 1 is the element total less the defect quantities in CS 2 to 4. Where defects overlap, record the worst condition only once.'));
+  panel.append(el('p', 'muted small pad', 'CS 1 is the element total less the defect quantities in CS 2 to 4. Record overlapping defects once, at the worst condition.'));
 }
 
 function download(name, blob) {
@@ -736,23 +736,22 @@ async function saveCloud(url, key) {
 async function updateStatus() {
   const pending = (await store.outbox()).length;
   const user = state.cloud.ready ? await state.cloud.user() : null;
-  const pill = $('syncStatus');
-  let text, cls;
-  if (!state.cloud.ready) { text = pending ? `Saved on this device · ${pending} not backed up` : 'Saved on this device'; cls = 'local'; }
-  else if (!user) { text = 'Sign in to sync'; cls = 'warn'; }
-  else if (!navigator.onLine) { text = `Offline · ${pending} to sync`; cls = 'warn'; }
-  else if (pending) { text = `${pending} to sync`; cls = 'warn'; }
-  else { const last = await store.setting('last_sync'); text = last ? `Synced ${new Date(last).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}` : 'Ready to sync'; cls = 'ok'; }
-  pill.textContent = state.syncing ? 'Syncing…' : text;
-  pill.className = 'status-pill ' + cls;
-  $('syncButton').hidden = !(state.cloud.ready && user);
+  let text, kind, hint;
+  if (!state.cloud.ready) { text = pending ? `${pending} not backed up` : 'On this device'; kind = 'local'; hint = 'Saved on this device only. Set up cloud sync in Settings.'; }
+  else if (!user) { text = 'Sign in to sync'; kind = 'warn'; hint = 'Open Settings to sign in'; }
+  else if (!navigator.onLine) { text = `Offline · ${pending} waiting`; kind = 'warn'; hint = 'Changes are saved here and sync when you are back online'; }
+  else if (pending) { text = `${pending} to sync`; kind = 'warn'; hint = 'Sync now'; }
+  else { const last = await store.setting('last_sync'); text = last ? `Synced ${new Date(last).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}` : 'Ready to sync'; kind = 'ok'; hint = 'Sync now'; }
+  $('syncText').textContent = state.syncing ? 'Syncing…' : text;
+  $('syncStatus').dataset.state = kind;
+  $('syncStatus').title = hint;
 }
 
 async function sync() {
   if (state.syncing) return;
   state.syncing = true; updateStatus();
   try {
-    const { pushed, pulled } = await state.cloud.sync(state.bridge, msg => { $('syncStatus').textContent = msg; });
+    const { pushed, pulled } = await state.cloud.sync(state.bridge, msg => { $('syncText').textContent = msg; });
     toast(`Synced: sent ${pushed}, received ${pulled}.`, 'ok');
     await loadInspections(state.inspection?.id);
   } catch (e) { toast(e.message || 'Sync failed.', 'warn'); }

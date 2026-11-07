@@ -44,7 +44,7 @@ const shots=process.env.INSPECTION_SHOTS||null;
  assert.equal(draft.part,'deck');assert.equal(draft.element_code,12);assert.equal(draft.defect_code,1130);assert.equal(draft.unit,'sq ft');
  assert.ok(draft.quantity>=19&&draft.quantity<=22,`deck crack band ${draft.quantity} sq ft`);
  assert.match(draft.location,/^STA 105\+\d\d\.\d · \d+(\.\d)? ft RT$/);
- await page.fill('.measure input[type=number]','0.02');await page.press('.measure input[type=number]','Tab');
+ await page.fill('.defect-form .field input[type=number] >> nth=0','0.02');await page.press('.defect-form .field input[type=number] >> nth=0','Tab');
  await page.waitForFunction(()=>window.__inspect.state.draft.cs===2&&window.__inspect.state.draft.cs_suggested===2);
  await shot('inspection-form');
  await page.click('button:has-text("Save defect")');
@@ -60,7 +60,7 @@ const shots=process.env.INSPECTION_SHOTS||null;
  draft=await page.evaluate(()=>window.__inspect.state.draft);
  assert.equal(draft.part,'b2_cap');assert.equal(draft.element_code,234);assert.equal(draft.kind,'area');
  await page.click('.segmented.choice button:has-text("Spall")');
- await page.fill('.measure input[type=number] >> nth=0','1.5');await page.press('.measure input[type=number] >> nth=0','Tab');
+ await page.fill('.defect-form .field input[type=number] >> nth=0','1.5');await page.press('.defect-form .field input[type=number] >> nth=0','Tab');
  await page.waitForFunction(()=>window.__inspect.state.draft.cs_suggested===3);
  const jpeg=await page.evaluate(()=>{const c=document.createElement('canvas');c.width=1200;c.height=900;const x=c.getContext('2d');x.fillStyle='#8a8f92';x.fillRect(0,0,1200,900);x.fillStyle='#5b4636';x.beginPath();x.ellipse(600,450,260,170,0,0,7);x.fill();return c.toDataURL('image/jpeg',.8).split(',')[1];});
  await page.setInputFiles('.photo-add:has-text("Add from files") input',{name:'IMG_0412.jpg',mimeType:'image/jpeg',buffer:Buffer.from(jpeg,'base64')});
@@ -97,7 +97,7 @@ const shots=process.env.INSPECTION_SHOTS||null;
  assert.equal(saved.outbox,1+3+1,'inspection, defects and photo wait for cloud sync');
 
  // AASHTO element table: CS 1 is the element total less the defect quantities.
- await page.click('#summaryButton');
+ await page.click('#tabElements');
  await page.waitForSelector('table.summary');
  const table=await page.evaluate(()=>Object.fromEntries([...document.querySelectorAll('.summary .element-row')].map(r=>[r.cells[0].querySelector('b').textContent,[...r.cells].slice(1).map(c=>Number(c.textContent.replace(/,/g,'')))])));
  assert.equal(table['12'][0],8316);assert.equal(table['12'][2],saved.defects[0].q);assert.equal(table['12'][1],8316-saved.defects[0].q);
@@ -141,7 +141,7 @@ const shots=process.env.INSPECTION_SHOTS||null;
 
  // Phone width: no sideways scrolling, sheet and panel both on screen.
  await page.setViewportSize({width:390,height:844});
- await page.click('button:has-text("Back")');
+ await page.click('#tabDefects');
  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'no horizontal scroll at 390 px');
  await shot('inspection-phone');
  await page.setViewportSize({width:1440,height:900});
