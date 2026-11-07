@@ -65,8 +65,8 @@ Derived seat risers follow the corrected bearings: Girder 8 (next to the north g
 sits on the abutment seat datum, so seat_1_8 / seat_2_8 are removed (zero height) and seat_1_3 / seat_2_3 are added.
 
 Unchanged: the 1971 end struts E.S.1 / E.S.2 of bays 2-8 (existing S-7, PDF 65) are not in the review and are not
-added; footings are symmetric and keep their buffers. source_ledger.json (FEM input) still carries the old girder Y
-offsets and is left for the central rebuild.
+added; footings are symmetric and keep their buffers. source_ledger.json (FEM input) is not edited here; its
+transverse values were mirrored to match afterwards (Girder 1 at Y +9.2964).
 
 Requires numpy, trimesh and shapely.
 """
@@ -688,11 +688,6 @@ def correct():
         deviation='The 1971 end struts E.S.1 / E.S.2 along both bearing lines of bays 2-8 are not modelled; only the '
                   '2013 Girder 1-2 end cross-frames are.',
         reason='Outside the reviewed findings; their member sizes are on historical detail sheets not yet read.'))
-    deviations.append(dict(
-        id='fem-ledger-girder-offsets', parts='source_ledger.json', source='sheets 31, 36',
-        deviation='source_ledger.json (FEM input) still lists the girder offsets with the old sign (Girder 1 at Y -9.2964).',
-        reason='FEM inputs are outside this display-model correction and were not edited; the GLB and manifest carry '
-               'the corrected offsets.'))
     manifest['known_deviations'] = deviations
     mp.write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(dict(changed=len(changed), added=added, removed=removed, kept=kept,

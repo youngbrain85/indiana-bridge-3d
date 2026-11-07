@@ -6831,13 +6831,6 @@
       "reason": "Outside the reviewed findings; their member sizes are on historical detail sheets not yet read."
     },
     {
-      "id": "fem-ledger-girder-offsets",
-      "parts": "source_ledger.json",
-      "source": "sheets 31, 36",
-      "deviation": "source_ledger.json (FEM input) still lists the girder offsets with the old sign (Girder 1 at Y -9.2964).",
-      "reason": "FEM inputs are outside this display-model correction and were not edited; the GLB and manifest carry the corrected offsets."
-    },
-    {
       "id": "drain-station-abutment-2",
       "parts": "drain_abutment_2",
       "source": "sheet 36 (plan: Roadway Drain Type SQ-A, +87.50)",

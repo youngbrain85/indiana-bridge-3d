@@ -743,7 +743,8 @@ plans put it.
 
 The rail windows remain nominal. The 1971 end struts of bays 2–8 (existing S-7, PDF 65) are recorded as a known
 deviation. Part ids are unchanged except for the four added and two removed seat/frame parts. The rail and wing labels
-now say south/north.
+now say south/north. The transverse values in `source_ledger.json` (FEM input) were mirrored to match, so Girder 1 is
+at Y = +9.2964 m there too.
 
 `scripts/correct_virginia_avenue_review.py` reproduces the correction and is idempotent. It first rebuilds the
 uncorrected geometry and requires it to match the published GLB. The record, the before/after SHA-256 and every
