@@ -74,26 +74,31 @@
       "color": "#d1d5d0",
       "pdf_pages": [
         3,
-        7
+        7,
+        8
       ],
       "basis": "Overlay thickness stated in general notes",
-      "note": "Existing overlay is removed before the proposed layer; no duplicated old layer.",
+      "note": "Existing overlay is removed before the proposed layer; no duplicated old layer. Limited to the 44 ft roadway between the barrier toes (sheet 7 section and plan; sheet 8: 352 SYS = 44 ft x 72 ft) and stopped at the edge of each Type 1-A joint-seal envelope so the resealed joints stay exposed (sheets 3 and 7).",
       "dimensions": {
-        "thickness_m": 0.009524999999999999
+        "thickness_m": 0.009524999999999999,
+        "width_m": 13.4112,
+        "width_ft": 44,
+        "length_along_station_m": 22.09975,
+        "plan_area_m2": 296.384
       },
       "bounds_m": [
         [
-          -13.678855,
-          -7.18185,
-          5.887963
+          -13.490514,
+          -6.7056,
+          5.895393
         ],
         [
-          13.678855,
-          7.18185,
+          13.490514,
+          6.7056,
           6.009525
         ]
       ],
-      "volume_m3": 3.027664983
+      "volume_m3": 2.823059193
     },
     {
       "id": "support_0",
@@ -433,24 +438,29 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        4,
         7
       ],
       "basis": "Source 18 in nominal base width; assumed height/profile",
-      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail.",
+      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail. Moved 30.95 mm outward: traffic-face toe 22 ft from the centreline (44 ft clear roadway) and back face 3/4 in inside the coping edge, sheets 4 and 7.",
       "dimensions": {
         "height_m": 0.9,
-        "base_width_m": 0.45720000000000005
+        "base_width_m": 0.45720000000000005,
+        "traffic_face_toe_offset_m": 6.7056,
+        "back_face_offset_m": 7.1628,
+        "clear_roadway_m": 13.4112,
+        "clear_roadway_ft": 44
       },
       "bounds_m": [
         [
-          -8.635501,
-          -7.13185,
-          5.888743
+          -8.624236,
+          -7.1628,
+          5.88826
         ],
         [
-          -1.092511,
-          -6.67465,
-          6.792175
+          -1.081246,
+          -6.7056,
+          6.791692
         ]
       ],
       "volume_m3": 2.470155152
@@ -461,24 +471,29 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        4,
         7
       ],
       "basis": "Source 18 in nominal base width; assumed height/profile",
-      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail.",
+      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail. Moved 30.95 mm outward: traffic-face toe 22 ft from the centreline (44 ft clear roadway) and back face 3/4 in inside the coping edge, sheets 4 and 7.",
       "dimensions": {
         "height_m": 0.9,
-        "base_width_m": 0.45720000000000005
+        "base_width_m": 0.45720000000000005,
+        "traffic_face_toe_offset_m": 6.7056,
+        "back_face_offset_m": 7.1628,
+        "clear_roadway_m": 13.4112,
+        "clear_roadway_ft": 44
       },
       "bounds_m": [
         [
-          -1.258918,
-          -7.13185,
-          5.888743
+          -1.247653,
+          -7.1628,
+          5.88826
         ],
         [
-          6.284073,
-          -6.67465,
-          6.792175
+          6.295338,
+          -6.7056,
+          6.791692
         ]
       ],
       "volume_m3": 2.470155152
@@ -489,24 +504,29 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        4,
         7
       ],
       "basis": "Source 18 in nominal base width; assumed height/profile",
-      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail.",
+      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail. Moved 30.95 mm outward: traffic-face toe 22 ft from the centreline (44 ft clear roadway) and back face 3/4 in inside the coping edge, sheets 4 and 7.",
       "dimensions": {
         "height_m": 0.9,
-        "base_width_m": 0.45720000000000005
+        "base_width_m": 0.45720000000000005,
+        "traffic_face_toe_offset_m": 6.7056,
+        "back_face_offset_m": 7.1628,
+        "clear_roadway_m": 13.4112,
+        "clear_roadway_ft": 44
       },
       "bounds_m": [
         [
-          6.117666,
-          -7.13185,
-          5.888743
+          6.128931,
+          -7.1628,
+          5.88826
         ],
         [
-          13.660656,
-          -6.67465,
-          6.792175
+          13.671921,
+          -6.7056,
+          6.791692
         ]
       ],
       "volume_m3": 2.470155152
@@ -517,24 +537,29 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        4,
         7
       ],
       "basis": "Source 18 in nominal base width; assumed height/profile",
-      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail.",
+      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail. Moved 30.95 mm outward: traffic-face toe 22 ft from the centreline (44 ft clear roadway) and back face 3/4 in inside the coping edge, sheets 4 and 7.",
       "dimensions": {
         "height_m": 0.9,
-        "base_width_m": 0.45720000000000005
+        "base_width_m": 0.45720000000000005,
+        "traffic_face_toe_offset_m": 6.7056,
+        "back_face_offset_m": 7.1628,
+        "clear_roadway_m": 13.4112,
+        "clear_roadway_ft": 44
       },
       "bounds_m": [
         [
-          -13.660656,
-          6.67465,
-          5.888743
+          -13.671921,
+          6.7056,
+          5.88826
         ],
         [
-          -6.117666,
-          7.13185,
-          6.792175
+          -6.128931,
+          7.1628,
+          6.791692
         ]
       ],
       "volume_m3": 2.470155152
@@ -545,24 +570,29 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        4,
         7
       ],
       "basis": "Source 18 in nominal base width; assumed height/profile",
-      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail.",
+      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail. Moved 30.95 mm outward: traffic-face toe 22 ft from the centreline (44 ft clear roadway) and back face 3/4 in inside the coping edge, sheets 4 and 7.",
       "dimensions": {
         "height_m": 0.9,
-        "base_width_m": 0.45720000000000005
+        "base_width_m": 0.45720000000000005,
+        "traffic_face_toe_offset_m": 6.7056,
+        "back_face_offset_m": 7.1628,
+        "clear_roadway_m": 13.4112,
+        "clear_roadway_ft": 44
       },
       "bounds_m": [
         [
-          -6.284073,
-          6.67465,
-          5.888743
+          -6.295338,
+          6.7056,
+          5.88826
         ],
         [
-          1.258918,
-          7.13185,
-          6.792175
+          1.247653,
+          7.1628,
+          6.791692
         ]
       ],
       "volume_m3": 2.470155152
@@ -573,24 +603,29 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        4,
         7
       ],
       "basis": "Source 18 in nominal base width; assumed height/profile",
-      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail.",
+      "note": "Barrier wall and drip bead appear on overlay section. The 0.9 m height and tapered profile are assumptions; not verified from a barrier detail. Moved 30.95 mm outward: traffic-face toe 22 ft from the centreline (44 ft clear roadway) and back face 3/4 in inside the coping edge, sheets 4 and 7.",
       "dimensions": {
         "height_m": 0.9,
-        "base_width_m": 0.45720000000000005
+        "base_width_m": 0.45720000000000005,
+        "traffic_face_toe_offset_m": 6.7056,
+        "back_face_offset_m": 7.1628,
+        "clear_roadway_m": 13.4112,
+        "clear_roadway_ft": 44
       },
       "bounds_m": [
         [
-          1.092511,
-          6.67465,
-          5.888743
+          1.081246,
+          6.7056,
+          5.88826
         ],
         [
-          8.635501,
-          7.13185,
-          6.792175
+          8.624236,
+          7.1628,
+          6.791692
         ]
       ],
       "volume_m3": 2.470155152
@@ -601,20 +636,37 @@
       "layer": "approaches",
       "color": "#bbc4c0",
       "pdf_pages": [
-        7
+        3,
+        7,
+        8
       ],
       "basis": "Overlay-plan outline; assumed slab thickness",
-      "note": "Unequal approach edge lengths are shown in the schematic. Source is not to scale; exact corner setting-out and 0.30 m slab thickness are assumed.",
+      "note": "Unequal approach edge lengths are shown in the schematic. Source is not to scale; exact corner setting-out and 0.30 m slab thickness are assumed. The top within the 44 ft roadway receives a non-warranted polymer overlay (sheets 3 and 7; sheet 8: 279 SYS for both approaches); not modelled as a layer because its thickness is not given. Far end squared to S.R. 1, 28.5 ft from the bridge end on the S.R. 1 line, so that the 20.5 ft and 36.5 ft lengths fall on the 44 ft roadway edges as dimensioned on sheet 7 (was 1.40 deg off square with those lengths at the deck edges).",
       "dimensions": {
         "assumed_thickness_m": 0.3,
         "edge_lengths_ft": [
           20.5,
           36.5
-        ]
+        ],
+        "polymer_overlay": "non-warranted polymer, thickness not given",
+        "polymer_overlay_width_ft": 44,
+        "polymer_overlay_both_approaches_sys": 279,
+        "edge_lengths_measured_on": "44 ft roadway edges, 22 ft from S.R. 1 (sheet 7)",
+        "roadway_edge_lengths_m": [
+          6.246161,
+          11.127439
+        ],
+        "deck_edge_lengths_m": [
+          6.07282,
+          11.30078
+        ],
+        "centreline_length_ft": 28.5,
+        "far_end": "square to S.R. 1",
+        "far_end_x_m": -19.751675
       },
       "bounds_m": [
         [
-          -19.927255,
+          -19.751675,
           -7.18185,
           5.587963
         ],
@@ -658,16 +710,33 @@
       "layer": "approaches",
       "color": "#bbc4c0",
       "pdf_pages": [
-        7
+        3,
+        7,
+        8
       ],
       "basis": "Overlay-plan outline; assumed slab thickness",
-      "note": "Unequal approach edge lengths are shown in the schematic. Source is not to scale; exact corner setting-out and 0.30 m slab thickness are assumed.",
+      "note": "Unequal approach edge lengths are shown in the schematic. Source is not to scale; exact corner setting-out and 0.30 m slab thickness are assumed. The top within the 44 ft roadway receives a non-warranted polymer overlay (sheets 3 and 7; sheet 8: 279 SYS for both approaches); not modelled as a layer because its thickness is not given. Far end squared to S.R. 1, 28.5 ft from the bridge end on the S.R. 1 line, so that the 20.5 ft and 36.5 ft lengths fall on the 44 ft roadway edges as dimensioned on sheet 7 (was 1.40 deg off square with those lengths at the deck edges).",
       "dimensions": {
         "assumed_thickness_m": 0.3,
         "edge_lengths_ft": [
           20.5,
           36.5
-        ]
+        ],
+        "polymer_overlay": "non-warranted polymer, thickness not given",
+        "polymer_overlay_width_ft": 44,
+        "polymer_overlay_both_approaches_sys": 279,
+        "edge_lengths_measured_on": "44 ft roadway edges, 22 ft from S.R. 1 (sheet 7)",
+        "roadway_edge_lengths_m": [
+          6.246161,
+          11.127439
+        ],
+        "deck_edge_lengths_m": [
+          6.07282,
+          11.30078
+        ],
+        "centreline_length_ft": 28.5,
+        "far_end": "square to S.R. 1",
+        "far_end_x_m": 19.751675
       },
       "bounds_m": [
         [
@@ -676,7 +745,7 @@
           5.587963
         ],
         [
-          19.927255,
+          19.751675,
           7.18185,
           6.0
         ]
@@ -729,11 +798,12 @@
     {
       "feature": "Drawing envelope and proposed overlay",
       "status": "modeled_with_simplifications",
-      "detail": "Deck length/width, clear roadway, crossfall and nominal replacement overlay are sourced. Approach edge lengths come from a not-to-scale schematic.",
+      "detail": "Deck length/width, clear roadway, crossfall and nominal replacement overlay are sourced. Approach edge lengths come from a not-to-scale schematic. The deck overlay covers the 44 ft roadway between the barrier toes and stops at the joint-seal envelopes; the approach polymer overlay is recorded in the approach notes, not modelled (thickness not given). Approach far ends are square to S.R. 1, with the 20.5/36.5 ft lengths on the 44 ft roadway edges (sheet 7 plan).",
       "sources": [
         "Primary PDF p.3",
         "Primary PDF p.4",
-        "Primary PDF p.7"
+        "Primary PDF p.7",
+        "Primary PDF p.8"
       ],
       "part_ids": [
         "deck",
@@ -795,5 +865,149 @@
       ],
       "part_ids": []
     }
-  ]
+  ],
+  "clear_roadway_correction": "clear-roadway-44ft-overlay-limits",
+  "revision": "1.2-approach-far-ends-square",
+  "clear_roadway_correction_record": {
+    "source_pdf_pages": [
+      3,
+      4,
+      7,
+      8
+    ],
+    "printed_sheets": [
+      3,
+      4,
+      7,
+      8
+    ],
+    "previous_revision": null,
+    "changed_parts": [
+      "rail_-1_0",
+      "rail_-1_1",
+      "rail_-1_2",
+      "rail_1_0",
+      "rail_1_1",
+      "rail_1_2",
+      "overlay"
+    ],
+    "annotated_parts": [
+      "approach_0",
+      "approach_1"
+    ],
+    "values": {
+      "clear roadway (sheets 4, 7)": "44 ft 0 in = 13.4112 m; was 13.3493 m",
+      "barrier traffic-face toe / back face from centreline": "6.7056 / 7.1628 m; was 6.67465 / 7.13185 m",
+      "barrier move": "rigid, 30.95 mm outward along the skewed end lines and down the 1.56 % crossfall",
+      "deck overlay width (sheets 7, 8)": "44 ft = 13.4112 m; was 14.3637 m (full deck)",
+      "deck overlay ends": "stopped 15 mm short of each joint centre line, at the edge of the 30 mm seal envelope (seal top was 8.5 mm inside the overlay)",
+      "overlay plan area removed m2": 21.481,
+      "approach polymer overlay (sheets 3, 7, 8)": "44 ft wide, 279 SYS for both; recorded, not modelled"
+    },
+    "before_glb_sha256": "2c4913fcc52f04e580ae84fc283025f74defe256262f7bb7936308ffe0df3cb8",
+    "after_glb_sha256": "5cf3e6bf1205eb95cb54b7d3c6641201af0fd21791218ae6f40e6e3a4e379c79"
+  },
+  "known_deviations": [
+    {
+      "id": "approach-polymer-overlay",
+      "parts": "approach_0, approach_1",
+      "source": "sheets 3, 7 and 8 (PDF 3, 7, 8)",
+      "deviation": "The non-warranted polymer overlay on both RCBAs (44 ft roadway, 279 SYS for both) is recorded in the approach notes and dimensions only; it is not shown as a layer or as a separate finish on the approach top faces.",
+      "reason": "No sheet gives its thickness, and each part is one closed solid shown in one manifest colour (the viewer ignores vertex colours and needs one mesh per part), so a face-level finish would need a new part of invented thickness."
+    },
+    {
+      "id": "joint-seal-length",
+      "parts": "joint_0, joint_1",
+      "source": "sheet 7 plan, sheet 8 (PDF 7, 8)",
+      "deviation": "Each 30 mm seal envelope spans the full 47 ft 1 1/2 in deck (Y = +/-7.18185 m, 50.15 ft along the skew) and passes under the barrier ends; sheet 7 dimensions each joint 47 ft along the skew across the 44 ft roadway hatch (44 ft / cos 20 deg = 46.8 ft) and sheet 8 gives 94 lft for both.",
+      "reason": "Minor item of the second review, outside the scope of revision 1.2; trimming each seal to |Y| <= 6.7056 m is left for a later correction."
+    }
+  ],
+  "approach_end_correction": "approach-far-ends-square-to-sr1",
+  "approach_end_correction_record": {
+    "source_pdf_pages": [
+      7,
+      8
+    ],
+    "printed_sheets": [
+      7,
+      8
+    ],
+    "previous_revision": "1.1-clear-roadway-overlay-limits",
+    "changed_parts": [
+      "approach_0",
+      "approach_1"
+    ],
+    "values": {
+      "approach_0": {
+        "far_end": "X = -19.751675 m, square to S.R. 1; was X = -19.751675 -0.024447688 Y (1.40 deg off square)",
+        "roadway_edge_lengths_ft": "20.493 / 36.507; was 21.031 / 35.969",
+        "deck_edge_lengths_ft": "19.924 / 37.076; was 20.500 / 36.500",
+        "max_vertex_move_m": 0.175579,
+        "bounds_before": [
+          [
+            -19.927255,
+            -7.18185,
+            5.587963
+          ],
+          [
+            -8.450895,
+            7.18185,
+            6.0
+          ]
+        ],
+        "bounds_after": [
+          [
+            -19.751675,
+            -7.18185,
+            5.587963
+          ],
+          [
+            -8.450895,
+            7.18185,
+            6.0
+          ]
+        ],
+        "volume_m3": "44.422053337 -> 44.422053337"
+      },
+      "approach_1": {
+        "far_end": "X = +19.751675 m, square to S.R. 1; was X = +19.751675 -0.024447688 Y (1.40 deg off square)",
+        "roadway_edge_lengths_ft": "20.493 / 36.507; was 21.031 / 35.969",
+        "deck_edge_lengths_ft": "19.924 / 37.076; was 20.500 / 36.500",
+        "max_vertex_move_m": 0.175579,
+        "bounds_before": [
+          [
+            8.450895,
+            -7.18185,
+            5.587963
+          ],
+          [
+            19.927255,
+            7.18185,
+            6.0
+          ]
+        ],
+        "bounds_after": [
+          [
+            8.450895,
+            -7.18185,
+            5.587963
+          ],
+          [
+            19.751675,
+            7.18185,
+            6.0
+          ]
+        ],
+        "volume_m3": "44.422053337 -> 44.422053337"
+      },
+      "basis": "sheet 7 plan: RCBA far ends square to S.R. 1, 20.5/36.5 ft along the 44 ft roadway edges (36.5 - 20.5 = 16 ft = 44 ft x tan 20 deg); sheet 8: 279 SYS = 2 x 44 x 28.5 / 9"
+    },
+    "deferred": [
+      "approach polymer overlay (known_deviations: approach-polymer-overlay)",
+      "joint seal length (known_deviations: joint-seal-length)"
+    ],
+    "before_glb_sha256": "5cf3e6bf1205eb95cb54b7d3c6641201af0fd21791218ae6f40e6e3a4e379c79",
+    "after_glb_sha256": "e73cf93a482cc3f0f8a67ecbefd0941100d56078c5c2b253548bf63058b2effe"
+  }
 }

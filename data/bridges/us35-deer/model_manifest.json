@@ -52,7 +52,7 @@
   "units": "metres",
   "deck_length_m": 35.7886,
   "deck_width_m": 11.684000000000001,
-  "skew_deg": 15,
+  "skew_deg": -15,
   "source_pdf": "drawings.pdf",
   "source_sha256": "fb940a09d31d217f2e13fdcb64bdddfd83cddb816408b1f11ddc4738927d7b23",
   "parts": [
@@ -68,7 +68,7 @@
         22
       ],
       "basis": "Dimensioned exterior slab; 7.5 in structural depth plus 0.5 in sacrificial surface",
-      "note": "",
+      "note": "Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "length_m": 35.7886,
         "width_m": 11.684000000000001,
@@ -99,7 +99,7 @@
         20
       ],
       "basis": "Dimensioned source section; nominal straight profile",
-      "note": "48 in depth, 49 in top flange, 40 in bottom flange, 8 in web; 116 ft 6 in beam length. Bottom chamfers, end copes and actual camber omitted.",
+      "note": "48 in depth, 49 in top flange, 40 in bottom flange, 8 in web; 116 ft 6 in beam length. Bottom chamfers, end copes and actual camber omitted. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "depth_m": 1.2191999999999998,
         "length_m": 35.5092,
@@ -173,12 +173,12 @@
       "bounds_m": [
         [
           -16.509119,
-          -5.2705,
+          4.0259,
           2.88628
         ],
         [
           19.000081,
-          -4.0259,
+          5.2705,
           4.939946
         ]
       ],
@@ -195,7 +195,7 @@
         24
       ],
       "basis": "Approximate external envelope",
-      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "nominal_center_clearance_m": 0.075,
         "width_m": 1.2446
@@ -203,12 +203,12 @@
       "bounds_m": [
         [
           -16.509119,
-          -5.2705,
+          4.0259,
           4.10548
         ],
         [
           19.000081,
-          -4.0259,
+          5.2705,
           5.027392
         ]
       ],
@@ -224,7 +224,7 @@
         17
       ],
       "basis": "Approximate external envelope",
-      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing.",
+      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "stack_height_m": 0.187325,
         "base_plate_length_m": 0.2286,
@@ -233,12 +233,12 @@
       "bounds_m": [
         [
           -16.394819,
-          -5.3086,
+          3.9878,
           2.704327
         ],
         [
           -16.166219,
-          -3.9878,
+          5.3086,
           2.891652
         ]
       ],
@@ -254,7 +254,7 @@
         17
       ],
       "basis": "Approximate external envelope",
-      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing.",
+      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "stack_height_m": 0.180975,
         "base_plate_length_m": 0.2286,
@@ -263,12 +263,12 @@
       "bounds_m": [
         [
           18.657181,
-          -5.3086,
+          3.9878,
           3.534399
         ],
         [
           18.885781,
-          -3.9878,
+          5.3086,
           3.715374
         ]
       ],
@@ -286,7 +286,7 @@
         20
       ],
       "basis": "Dimensioned source section; nominal straight profile",
-      "note": "48 in depth, 49 in top flange, 40 in bottom flange, 8 in web; 116 ft 6 in beam length. Bottom chamfers, end copes and actual camber omitted.",
+      "note": "48 in depth, 49 in top flange, 40 in bottom flange, 8 in web; 116 ft 6 in beam length. Bottom chamfers, end copes and actual camber omitted. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "depth_m": 1.2191999999999998,
         "length_m": 35.5092,
@@ -360,12 +360,12 @@
       "bounds_m": [
         [
           -17.33944,
-          -2.1717,
+          0.9271,
           2.928743
         ],
         [
           18.16976,
-          -0.9271,
+          2.1717,
           4.982409
         ]
       ],
@@ -382,7 +382,7 @@
         24
       ],
       "basis": "Approximate external envelope",
-      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "nominal_center_clearance_m": 0.075,
         "width_m": 1.2446
@@ -390,12 +390,12 @@
       "bounds_m": [
         [
           -17.33944,
-          -2.1717,
+          0.9271,
           4.147943
         ],
         [
           18.16976,
-          -0.9271,
+          2.1717,
           5.069855
         ]
       ],
@@ -411,7 +411,7 @@
         17
       ],
       "basis": "Approximate external envelope",
-      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing.",
+      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "stack_height_m": 0.187325,
         "base_plate_length_m": 0.2286,
@@ -420,12 +420,12 @@
       "bounds_m": [
         [
           -17.22514,
-          -2.2098,
+          0.889,
           2.74679
         ],
         [
           -16.99654,
-          -0.889,
+          2.2098,
           2.934115
         ]
       ],
@@ -441,7 +441,7 @@
         17
       ],
       "basis": "Approximate external envelope",
-      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing.",
+      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "stack_height_m": 0.180975,
         "base_plate_length_m": 0.2286,
@@ -450,12 +450,12 @@
       "bounds_m": [
         [
           17.82686,
-          -2.2098,
+          0.889,
           3.576862
         ],
         [
           18.05546,
-          -0.889,
+          2.2098,
           3.757837
         ]
       ],
@@ -473,7 +473,7 @@
         20
       ],
       "basis": "Dimensioned source section; nominal straight profile",
-      "note": "48 in depth, 49 in top flange, 40 in bottom flange, 8 in web; 116 ft 6 in beam length. Bottom chamfers, end copes and actual camber omitted.",
+      "note": "48 in depth, 49 in top flange, 40 in bottom flange, 8 in web; 116 ft 6 in beam length. Bottom chamfers, end copes and actual camber omitted. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "depth_m": 1.2191999999999998,
         "length_m": 35.5092,
@@ -547,12 +547,12 @@
       "bounds_m": [
         [
           -18.16976,
-          0.9271,
+          -2.1717,
           2.909231
         ],
         [
           17.33944,
-          2.1717,
+          -0.9271,
           4.962897
         ]
       ],
@@ -569,7 +569,7 @@
         24
       ],
       "basis": "Approximate external envelope",
-      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "nominal_center_clearance_m": 0.075,
         "width_m": 1.2446
@@ -577,12 +577,12 @@
       "bounds_m": [
         [
           -18.16976,
-          0.9271,
+          -2.1717,
           4.128431
         ],
         [
           17.33944,
-          2.1717,
+          -0.9271,
           5.050343
         ]
       ],
@@ -598,7 +598,7 @@
         17
       ],
       "basis": "Approximate external envelope",
-      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing.",
+      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "stack_height_m": 0.187325,
         "base_plate_length_m": 0.2286,
@@ -607,12 +607,12 @@
       "bounds_m": [
         [
           -18.05546,
-          0.889,
+          -2.2098,
           2.727278
         ],
         [
           -17.82686,
-          2.2098,
+          -0.889,
           2.914603
         ]
       ],
@@ -628,7 +628,7 @@
         17
       ],
       "basis": "Approximate external envelope",
-      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing.",
+      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "stack_height_m": 0.180975,
         "base_plate_length_m": 0.2286,
@@ -637,12 +637,12 @@
       "bounds_m": [
         [
           16.99654,
-          0.889,
+          -2.2098,
           3.55735
         ],
         [
           17.22514,
-          2.2098,
+          -0.889,
           3.738325
         ]
       ],
@@ -660,7 +660,7 @@
         20
       ],
       "basis": "Dimensioned source section; nominal straight profile",
-      "note": "48 in depth, 49 in top flange, 40 in bottom flange, 8 in web; 116 ft 6 in beam length. Bottom chamfers, end copes and actual camber omitted.",
+      "note": "48 in depth, 49 in top flange, 40 in bottom flange, 8 in web; 116 ft 6 in beam length. Bottom chamfers, end copes and actual camber omitted. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "depth_m": 1.2191999999999998,
         "length_m": 35.5092,
@@ -734,12 +734,12 @@
       "bounds_m": [
         [
           -19.000081,
-          4.0259,
+          -5.2705,
           2.827742
         ],
         [
           16.509119,
-          5.2705,
+          -4.0259,
           4.881408
         ]
       ],
@@ -756,7 +756,7 @@
         24
       ],
       "basis": "Approximate external envelope",
-      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated.",
+      "note": "Derived contact envelope. Nominal clearance, camber and fabrication screed geometry are approximated. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "nominal_center_clearance_m": 0.075,
         "width_m": 1.2446
@@ -764,12 +764,12 @@
       "bounds_m": [
         [
           -19.000081,
-          4.0259,
+          -5.2705,
           4.046942
         ],
         [
           16.509119,
-          5.2705,
+          -4.0259,
           4.968854
         ]
       ],
@@ -785,7 +785,7 @@
         17
       ],
       "basis": "Approximate external envelope",
-      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing.",
+      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "stack_height_m": 0.187325,
         "base_plate_length_m": 0.2286,
@@ -794,12 +794,12 @@
       "bounds_m": [
         [
           -18.885781,
-          3.9878,
+          -5.3086,
           2.645789
         ],
         [
           -18.657181,
-          5.3086,
+          -3.9878,
           2.833114
         ]
       ],
@@ -815,7 +815,7 @@
         17
       ],
       "basis": "Approximate external envelope",
-      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing.",
+      "note": "Dimensioned source plates and S3x7.5 concept, with nominal leveling envelope. Assembly is embedded in an integral end bent; it does not establish a free rotational analytical bearing. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "stack_height_m": 0.180975,
         "base_plate_length_m": 0.2286,
@@ -824,12 +824,12 @@
       "bounds_m": [
         [
           16.166219,
-          3.9878,
+          -5.3086,
           3.475861
         ],
         [
           16.394819,
-          5.3086,
+          -3.9878,
           3.656836
         ]
       ],
@@ -847,19 +847,19 @@
         22
       ],
       "basis": "Approximate external envelope",
-      "note": "Source has one staggered midpoint row. 18 in channel depth follows typical section; framing label MC12x42.7 conflicts. Exact channel, attachments and stagger are unresolved.",
+      "note": "Source has one staggered midpoint row. 18 in channel depth follows typical section; framing label MC12x42.7 conflicts. Exact channel, attachments and stagger are unresolved. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "depth_m": 0.4572
       },
       "bounds_m": [
         [
           0.830321,
-          -4.5466,
+          1.651,
           3.792957
         ],
         [
           0.935321,
-          -1.651,
+          4.5466,
           4.250157
         ]
       ],
@@ -877,7 +877,7 @@
         22
       ],
       "basis": "Approximate external envelope",
-      "note": "Source has one staggered midpoint row. 18 in channel depth follows typical section; framing label MC12x42.7 conflicts. Exact channel, attachments and stagger are unresolved.",
+      "note": "Source has one staggered midpoint row. 18 in channel depth follows typical section; framing label MC12x42.7 conflicts. Exact channel, attachments and stagger are unresolved. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "depth_m": 0.4572
       },
@@ -907,19 +907,19 @@
         22
       ],
       "basis": "Approximate external envelope",
-      "note": "Source has one staggered midpoint row. 18 in channel depth follows typical section; framing label MC12x42.7 conflicts. Exact channel, attachments and stagger are unresolved.",
+      "note": "Source has one staggered midpoint row. 18 in channel depth follows typical section; framing label MC12x42.7 conflicts. Exact channel, attachments and stagger are unresolved. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "depth_m": 0.4572
       },
       "bounds_m": [
         [
           -0.830321,
-          1.651,
+          -4.5466,
           3.753931
         ],
         [
           -0.725321,
-          4.5466,
+          -1.651,
           4.211131
         ]
       ],
@@ -932,29 +932,32 @@
       "layer": "abutments",
       "color": "#beb8a8",
       "pdf_pages": [
+        11,
         13,
         14,
         15
       ],
       "basis": "Dimensioned 43 ft skew cap length, 3 ft 10 in normal thickness and base elevation; nominal common seat",
-      "note": "Individual modeled bearing risers fit the nominal girder line; exact source seat stepping and upper infill shapes are simplified.",
+      "note": "Individual modeled bearing risers fit the nominal girder line; exact source seat stepping and upper infill shapes are simplified. Centred 7 in along the bent from the bridge centre line, toward Beam 1 (north), sheet 13 (5'-1 5/8\" and 6'-3 5/8\" from the exterior beams to the bent ends). Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "normal_width_m": 1.1683999999999999,
-        "skew_length_m": 13.1064
+        "skew_length_m": 13.1064,
+        "along_bent_center_offset_m": 0.1778,
+        "along_bent_center_offset_toward": "Beam 1 (north)"
       },
       "bounds_m": [
         [
-          -19.826901,
-          -6.329905,
+          -19.780882,
+          -6.158163,
           1.453896
         ],
         [
-          -15.225099,
-          6.329905,
+          -15.179081,
+          6.501647,
           2.645789
         ]
       ],
-      "volume_m3": 18.252077476
+      "volume_m3": 18.252068282
     },
     {
       "id": "pedestal_0_0",
@@ -966,17 +969,17 @@
         17
       ],
       "basis": "Approximate external envelope",
-      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed.",
+      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
           -16.58261,
-          -5.334,
+          3.9624,
           2.645789
         ],
         [
           -15.978427,
-          -3.9624,
+          5.334,
           2.704327
         ]
       ],
@@ -993,17 +996,17 @@
         17
       ],
       "basis": "Approximate external envelope",
-      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed.",
+      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
           -17.412931,
-          -2.2352,
+          0.8636,
           2.645789
         ],
         [
           -16.808748,
-          -0.8636,
+          2.2352,
           2.74679
         ]
       ],
@@ -1020,17 +1023,17 @@
         17
       ],
       "basis": "Approximate external envelope",
-      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed.",
+      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
           -18.243252,
-          0.8636,
+          -2.2352,
           2.645789
         ],
         [
           -17.639069,
-          2.2352,
+          -0.8636,
           2.727278
         ]
       ],
@@ -1043,25 +1046,26 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        13,
         14,
         15
       ],
       "basis": "Approximate external envelope",
-      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Outer end follows the bent, moved 7 in along its line, sheet 13. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
           -16.493774,
-          -6.329905,
+          5.2705,
           2.645789
         ],
         [
-          -15.449907,
-          -5.2705,
-          4.186254
+          -15.179081,
+          6.501647,
+          4.191537
         ]
       ],
-      "volume_m3": 1.227268026,
+      "volume_m3": 1.8498753,
       "approximation": true
     },
     {
@@ -1070,25 +1074,26 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        13,
         14,
         15
       ],
       "basis": "Approximate external envelope",
-      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
           -17.324095,
-          -4.0259,
+          2.1717,
           2.645789
         ],
         [
-          -16.067263,
-          -2.1717,
-          4.228718
+          -15.842455,
+          4.0259,
+          4.234001
         ]
       ],
-      "volume_m3": 2.200163516,
+      "volume_m3": 2.855796414,
       "approximation": true
     },
     {
@@ -1097,25 +1102,29 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        12,
+        13,
         14,
         15
       ],
       "basis": "Approximate external envelope",
-      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
-      "dimensions": {},
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Top crowned with a centre-line vertex to follow the deck soffit (the flat top left a 18.5 mm wedge below it at the centre line), sheets 12, 14, 15. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
+      "dimensions": {
+        "crowned_top": true
+      },
       "bounds_m": [
         [
-          -18.154416,
+          -18.154417,
           -0.9271,
           2.645789
         ],
         [
-          -16.897584,
+          -16.672775,
           0.9271,
-          4.245773
+          4.26376
         ]
       ],
-      "volume_m3": 2.233873443,
+      "volume_m3": 2.91641143,
       "approximation": true
     },
     {
@@ -1124,25 +1133,26 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        13,
         14,
         15
       ],
       "basis": "Approximate external envelope",
-      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
           -18.984737,
-          2.1717,
+          -4.0259,
           2.645789
         ],
         [
-          -17.727905,
-          4.0259,
-          4.201368
+          -17.503097,
+          -2.1717,
+          4.206651
         ]
       ],
-      "volume_m3": 2.145169679,
+      "volume_m3": 2.784535374,
       "approximation": true
     },
     {
@@ -1151,25 +1161,26 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        13,
         14,
         15
       ],
       "basis": "Approximate external envelope",
-      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Outer end follows the bent, moved 7 in along its line, sheet 13. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
-          -19.602093,
-          5.2705,
+          -19.556075,
+          -6.158164,
           2.645789
         ],
         [
-          -18.558226,
-          6.329905,
-          4.11988
+          -18.333418,
+          -5.2705,
+          4.125163
         ]
       ],
-      "volume_m3": 1.168455594,
+      "volume_m3": 1.272918037,
       "approximation": true
     },
     {
@@ -1178,25 +1189,29 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        12,
         13,
-        15
+        15,
+        25
       ],
       "basis": "Approximate external envelope",
-      "note": "Nominal rear closure strip. Skew beam-end copes and ledge details are unresolved.",
-      "dimensions": {},
+      "note": "Nominal rear closure strip. Skew beam-end copes and ledge details are unresolved. Ends moved with the bent, 7 in along its line, sheet 13. Top crowned with a centre-line vertex, at soffit level as before revision 1.1 (the flat top left a gap of up to 24.9 mm below the crowned approach slab), sheets 12, 25. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
+      "dimensions": {
+        "crowned_top": true
+      },
       "bounds_m": [
         [
-          -19.822093,
-          -6.329905,
+          -19.776075,
+          -6.158164,
           2.645789
         ],
         [
-          -16.219907,
-          6.329905,
-          4.153642
+          -16.173888,
+          6.501647,
+          4.240382
         ]
       ],
-      "volume_m3": 3.896192246,
+      "volume_m3": 4.067246993,
       "approximation": true
     },
     {
@@ -1210,23 +1225,23 @@
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled. Moved with the bent 7 in along its line; 2'-1 1/2\" from the bent ends, sheets 13-14. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "display_length_m": 1.5
       },
       "bounds_m": [
         [
-          -16.149944,
-          -5.856675,
+          -16.103926,
+          5.723617,
           -0.046104
         ],
         [
-          -15.845144,
-          -5.551875,
+          -15.799126,
+          6.028417,
           1.453896
         ]
       ],
-      "volume_m3": 0.014788567,
+      "volume_m3": 0.014788712,
       "approximation": true
     },
     {
@@ -1240,23 +1255,23 @@
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled. Moved with the bent 7 in along its line; 2'-1 1/2\" from the bent ends, sheets 13-14. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "display_length_m": 1.5
       },
       "bounds_m": [
         [
-          -16.761326,
-          -3.574965,
+          -16.715308,
+          3.441907,
           -0.046104
         ],
         [
-          -16.456526,
-          -3.270165,
+          -16.410508,
+          3.746707,
           1.453896
         ]
       ],
-      "volume_m3": 0.014788567,
+      "volume_m3": 0.014788712,
       "approximation": true
     },
     {
@@ -1270,23 +1285,23 @@
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled. Moved with the bent 7 in along its line; 2'-1 1/2\" from the bent ends, sheets 13-14. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "display_length_m": 1.5
       },
       "bounds_m": [
         [
-          -17.372709,
-          -1.293255,
+          -17.326691,
+          1.160197,
           -0.046104
         ],
         [
-          -17.067909,
-          -0.988455,
+          -17.021891,
+          1.464997,
           1.453896
         ]
       ],
-      "volume_m3": 0.014788567,
+      "volume_m3": 0.014788685,
       "approximation": true
     },
     {
@@ -1300,23 +1315,23 @@
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled. Moved with the bent 7 in along its line; 2'-1 1/2\" from the bent ends, sheets 13-14. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "display_length_m": 1.5
       },
       "bounds_m": [
         [
-          -17.984091,
-          0.988455,
+          -17.938073,
+          -1.121513,
           -0.046104
         ],
         [
-          -17.679291,
-          1.293255,
+          -17.633273,
+          -0.816713,
           1.453896
         ]
       ],
-      "volume_m3": 0.014788567,
+      "volume_m3": 0.014788685,
       "approximation": true
     },
     {
@@ -1330,23 +1345,23 @@
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled. Moved with the bent 7 in along its line; 2'-1 1/2\" from the bent ends, sheets 13-14. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "display_length_m": 1.5
       },
       "bounds_m": [
         [
-          -18.595474,
-          3.270165,
+          -18.549456,
+          -3.403223,
           -0.046104
         ],
         [
-          -18.290674,
-          3.574965,
+          -18.244656,
+          -3.098423,
           1.453896
         ]
       ],
-      "volume_m3": 0.014788567,
+      "volume_m3": 0.014788712,
       "approximation": true
     },
     {
@@ -1360,23 +1375,23 @@
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled. Moved with the bent 7 in along its line; 2'-1 1/2\" from the bent ends, sheets 13-14. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "display_length_m": 1.5
       },
       "bounds_m": [
         [
-          -19.206856,
-          5.551875,
+          -19.160838,
+          -5.684934,
           -0.046104
         ],
         [
-          -18.902056,
-          5.856675,
+          -18.856038,
+          -5.380134,
           1.453896
         ]
       ],
-      "volume_m3": 0.014788567,
+      "volume_m3": 0.014788712,
       "approximation": true
     },
     {
@@ -1385,28 +1400,37 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        11,
         13,
-        17
+        14,
+        17,
+        25
       ],
       "basis": "Approximate external envelope",
-      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified.",
+      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified. Wing B: 12 ft measured from the span-face corner of the bent to the tip (the model had started the 12 ft at the bearing line, 0.6048 m too long); outer face on the bent end, moved with the bent 7 in along its line. Sheets 13 and 17. Top El. 851.45 at the bent centre line (sheets 14, 17 T/El.; was 0.095 m lower), straight at +2.35 % to El. 851.215 at the tip, where it meets the approach slab and extension at the coping line (\"Match Top of RCBA Elevation\", sheets 11, 17, 25). Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
-        "length_m": 3.6576000000000004,
-        "thickness_m": 0.3048
+        "length_m": 3.6576,
+        "thickness_m": 0.3048,
+        "length_basis": "tip to span-face corner of the bent, parallel to the roadway",
+        "projection_beyond_back_face_m": 2.447983,
+        "plan_name": "Wing B",
+        "top_el_at_bent_cl_ft": 851.45,
+        "top_el_at_tip_ft": 851.215,
+        "top_grade": "+2.35 % along the roadway, level across the wall"
       },
       "bounds_m": [
         [
-          -19.569178,
-          -6.329905,
+          -18.918352,
+          6.196847,
           1.453896
         ],
         [
-          -15.829907,
-          -6.025105,
-          4.280184
+          -15.179081,
+          6.501647,
+          4.386005
         ]
       ],
-      "volume_m3": 3.100608468,
+      "volume_m3": 3.219835335,
       "approximation": true
     },
     {
@@ -1415,28 +1439,37 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        11,
         13,
-        17
+        14,
+        17,
+        25
       ],
       "basis": "Approximate external envelope",
-      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified.",
+      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified. Wing A: 12 ft measured from the span-face corner of the bent to the tip (the model had started the 12 ft at the bearing line, 0.6048 m too long); outer face on the bent end, moved with the bent 7 in along its line. Sheets 13 and 17. Top El. 851.21 at the bent centre line (sheets 14, 17 T/El.; was 0.093 m lower), straight at +2.35 % to El. 850.975 at the tip, where it meets the approach slab and extension at the coping line (\"Match Top of RCBA Elevation\", sheets 11, 17, 25). Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
-        "length_m": 3.6576000000000004,
-        "thickness_m": 0.3048
+        "length_m": 3.6576,
+        "thickness_m": 0.3048,
+        "length_basis": "tip to span-face corner of the bent, parallel to the roadway",
+        "projection_beyond_back_face_m": 2.447983,
+        "plan_name": "Wing A",
+        "top_el_at_bent_cl_ft": 851.21,
+        "top_el_at_tip_ft": 850.975,
+        "top_grade": "+2.35 % along the roadway, level across the wall"
       },
       "bounds_m": [
         [
-          -22.879693,
-          6.025105,
+          -22.228867,
+          -6.158164,
           1.453896
         ],
         [
-          -19.140422,
-          6.329905,
-          4.204306
+          -18.489595,
+          -5.853364,
+          4.312853
         ]
       ],
-      "volume_m3": 3.01387742,
+      "volume_m3": 3.138287851,
       "approximation": true
     },
     {
@@ -1446,26 +1479,27 @@
       "color": "#c59a54",
       "pdf_pages": [
         11,
+        13,
         15
       ],
       "basis": "Approximate external envelope",
-      "note": "Source diameter; schematic transverse run. Outlets, bends and backfill collection are unresolved.",
+      "note": "Source diameter; schematic transverse run. Outlets, bends and backfill collection are unresolved. Schematic run moved with the bent (7 in along its line), sheet 13. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "diameter_m": 0.15239999999999998
       },
       "bounds_m": [
         [
-          -18.3022,
-          -6.329905,
+          -18.256182,
+          -6.158163,
           2.169589
         ],
         [
-          -18.1498,
-          6.329905,
+          -18.103781,
+          6.501647,
           2.321989
         ]
       ],
-      "volume_m3": 0.220525286,
+      "volume_m3": 0.220523775,
       "approximation": true
     },
     {
@@ -1474,29 +1508,32 @@
       "layer": "abutments",
       "color": "#beb8a8",
       "pdf_pages": [
+        11,
         13,
         14,
         15
       ],
       "basis": "Dimensioned 43 ft skew cap length, 3 ft 10 in normal thickness and base elevation; nominal common seat",
-      "note": "Individual modeled bearing risers fit the nominal girder line; exact source seat stepping and upper infill shapes are simplified.",
+      "note": "Individual modeled bearing risers fit the nominal girder line; exact source seat stepping and upper infill shapes are simplified. Centred 7 in along the bent from the bridge centre line, toward Beam 4 (south), sheet 13 (5'-1 5/8\" and 6'-3 5/8\" from the exterior beams to the bent ends). Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "normal_width_m": 1.1683999999999999,
-        "skew_length_m": 13.1064
+        "skew_length_m": 13.1064,
+        "along_bent_center_offset_m": 0.1778,
+        "along_bent_center_offset_toward": "Beam 4 (south)"
       },
       "bounds_m": [
         [
-          15.225099,
-          -6.329905,
+          15.179081,
+          -6.501647,
           2.279904
         ],
         [
-          19.826901,
-          6.329905,
+          19.780882,
+          6.158163,
           3.475861
         ]
       ],
-      "volume_m3": 18.314311612
+      "volume_m3": 18.314303664
     },
     {
       "id": "pedestal_1_0",
@@ -1508,17 +1545,17 @@
         17
       ],
       "basis": "Approximate external envelope",
-      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed.",
+      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
           18.46939,
-          -5.334,
+          3.9624,
           3.475861
         ],
         [
           19.073573,
-          -3.9624,
+          5.334,
           3.534399
         ]
       ],
@@ -1535,17 +1572,17 @@
         17
       ],
       "basis": "Approximate external envelope",
-      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed.",
+      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
           17.639069,
-          -2.2352,
+          0.8636,
           3.475861
         ],
         [
           18.243252,
-          -0.8636,
+          2.2352,
           3.576862
         ]
       ],
@@ -1562,17 +1599,17 @@
         17
       ],
       "basis": "Approximate external envelope",
-      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed.",
+      "note": "Pedestal elevation derived to close the bearing-to-cap interface; not surveyed. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
           16.808748,
-          0.8636,
+          -2.2352,
           3.475861
         ],
         [
           17.412931,
-          2.2352,
+          -0.8636,
           3.55735
         ]
       ],
@@ -1585,25 +1622,26 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        13,
         14,
         15
       ],
       "basis": "Approximate external envelope",
-      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Outer end follows the bent, moved 7 in along its line, sheet 13. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
-          18.558226,
-          -6.329905,
+          18.333418,
+          5.2705,
           3.475861
         ],
         [
-          19.602093,
-          -5.2705,
+          19.556075,
+          6.158164,
           5.009976
         ]
       ],
-      "volume_m3": 1.222155336,
+      "volume_m3": 1.325658231,
       "approximation": true
     },
     {
@@ -1612,25 +1650,26 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        13,
         14,
         15
       ],
       "basis": "Approximate external envelope",
-      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
-          17.727905,
-          -4.0259,
+          17.503097,
+          2.1717,
           3.475861
         ],
         [
           18.984737,
-          -2.1717,
+          4.0259,
           5.05244
         ]
       ],
-      "volume_m3": 2.191215147,
+      "volume_m3": 2.83455433,
       "approximation": true
     },
     {
@@ -1639,25 +1678,29 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        12,
+        13,
         14,
         15
       ],
       "basis": "Approximate external envelope",
-      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
-      "dimensions": {},
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Top crowned with a centre-line vertex to follow the deck soffit (the flat top left a 18.5 mm wedge below it at the centre line), sheets 12, 14, 15. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
+      "dimensions": {
+        "crowned_top": true
+      },
       "bounds_m": [
         [
-          16.897584,
+          16.672775,
           -0.9271,
           3.475861
         ],
         [
-          18.154416,
+          18.154417,
           0.9271,
-          5.069495
+          5.082199
         ]
       ],
-      "volume_m3": 2.224925074,
+      "volume_m3": 2.89516932,
       "approximation": true
     },
     {
@@ -1666,25 +1709,26 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        13,
         14,
         15
       ],
       "basis": "Approximate external envelope",
-      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
-          16.067263,
-          2.1717,
+          15.842455,
+          -4.0259,
           3.475861
         ],
         [
           17.324095,
-          4.0259,
+          -2.1717,
           5.02509
         ]
       ],
-      "volume_m3": 2.13622131,
+      "volume_m3": 2.76329329,
       "approximation": true
     },
     {
@@ -1693,25 +1737,26 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        13,
         14,
         15
       ],
       "basis": "Approximate external envelope",
-      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted.",
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Outer end follows the bent, moved 7 in along its line, sheet 13. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
-          15.449907,
-          5.2705,
+          15.179081,
+          -6.501647,
           3.475861
         ],
         [
           16.493774,
-          6.329905,
+          -5.2705,
           4.943602
         ]
       ],
-      "volume_m3": 1.163342905,
+      "volume_m3": 1.745896324,
       "approximation": true
     },
     {
@@ -1720,25 +1765,29 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        12,
         13,
-        15
+        15,
+        25
       ],
       "basis": "Approximate external envelope",
-      "note": "Nominal rear closure strip. Skew beam-end copes and ledge details are unresolved.",
-      "dimensions": {},
+      "note": "Nominal rear closure strip. Skew beam-end copes and ledge details are unresolved. Ends moved with the bent, 7 in along its line, sheet 13. Top crowned with a centre-line vertex, at soffit level as before revision 1.1 (the flat top left a gap of up to 24.9 mm below the crowned approach slab), sheets 12, 25. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
+      "dimensions": {
+        "crowned_top": true
+      },
       "bounds_m": [
         [
-          16.219907,
-          -6.329905,
+          16.173888,
+          -6.501647,
           3.475861
         ],
         [
-          19.822093,
-          6.329905,
-          5.000629
+          19.776075,
+          6.158164,
+          5.087369
         ]
       ],
-      "volume_m3": 3.941161791,
+      "volume_m3": 4.106466854,
       "approximation": true
     },
     {
@@ -1752,23 +1801,23 @@
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled. Moved with the bent 7 in along its line; 2'-1 1/2\" from the bent ends, sheets 13-14. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "display_length_m": 1.5
       },
       "bounds_m": [
         [
-          18.902056,
-          -5.856675,
+          18.856038,
+          5.380134,
           0.779904
         ],
         [
-          19.206856,
-          -5.551875,
+          19.160838,
+          5.684934,
           2.279904
         ]
       ],
-      "volume_m3": 0.014788567,
+      "volume_m3": 0.014788711,
       "approximation": true
     },
     {
@@ -1782,23 +1831,23 @@
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled. Moved with the bent 7 in along its line; 2'-1 1/2\" from the bent ends, sheets 13-14. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "display_length_m": 1.5
       },
       "bounds_m": [
         [
-          18.290674,
-          -3.574965,
+          18.244656,
+          3.098423,
           0.779904
         ],
         [
-          18.595474,
-          -3.270165,
+          18.549456,
+          3.403223,
           2.279904
         ]
       ],
-      "volume_m3": 0.014788567,
+      "volume_m3": 0.014788711,
       "approximation": true
     },
     {
@@ -1812,23 +1861,23 @@
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled. Moved with the bent 7 in along its line; 2'-1 1/2\" from the bent ends, sheets 13-14. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "display_length_m": 1.5
       },
       "bounds_m": [
         [
-          17.679291,
-          -1.293255,
+          17.633273,
+          0.816713,
           0.779904
         ],
         [
-          17.984091,
-          -0.988455,
+          17.938073,
+          1.121513,
           2.279904
         ]
       ],
-      "volume_m3": 0.014788567,
+      "volume_m3": 0.014788684,
       "approximation": true
     },
     {
@@ -1842,23 +1891,23 @@
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled. Moved with the bent 7 in along its line; 2'-1 1/2\" from the bent ends, sheets 13-14. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "display_length_m": 1.5
       },
       "bounds_m": [
         [
-          17.067909,
-          0.988455,
+          17.021891,
+          -1.464997,
           0.779904
         ],
         [
-          17.372709,
-          1.293255,
+          17.326691,
+          -1.160197,
           2.279904
         ]
       ],
-      "volume_m3": 0.014788567,
+      "volume_m3": 0.014788684,
       "approximation": true
     },
     {
@@ -1872,23 +1921,23 @@
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled. Moved with the bent 7 in along its line; 2'-1 1/2\" from the bent ends, sheets 13-14. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "display_length_m": 1.5
       },
       "bounds_m": [
         [
-          16.456526,
-          3.270165,
+          16.410508,
+          -3.746707,
           0.779904
         ],
         [
-          16.761326,
-          3.574965,
+          16.715308,
+          -3.441907,
           2.279904
         ]
       ],
-      "volume_m3": 0.014788567,
+      "volume_m3": 0.014788711,
       "approximation": true
     },
     {
@@ -1902,23 +1951,23 @@
         14
       ],
       "basis": "Approximate external envelope",
-      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled.",
+      "note": "Six source HP12x53 piles per bent. Nominal profile and 1.5 m display stub only; driven tip depth is not modeled. Moved with the bent 7 in along its line; 2'-1 1/2\" from the bent ends, sheets 13-14. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "display_length_m": 1.5
       },
       "bounds_m": [
         [
-          15.845144,
-          5.551875,
+          15.799126,
+          -6.028417,
           0.779904
         ],
         [
-          16.149944,
-          5.856675,
+          16.103926,
+          -5.723617,
           2.279904
         ]
       ],
-      "volume_m3": 0.014788567,
+      "volume_m3": 0.014788711,
       "approximation": true
     },
     {
@@ -1927,28 +1976,37 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        11,
         13,
-        17
+        14,
+        17,
+        25
       ],
       "basis": "Approximate external envelope",
-      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified.",
+      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified. Wing D: 12 ft measured from the span-face corner of the bent to the tip (the model had started the 12 ft at the bearing line, 0.6048 m too long); outer face on the bent end, moved with the bent 7 in along its line. Sheets 13 and 17. Top El. 854.16 at the bent centre line (sheets 14, 17 T/El.; was 0.093 m lower), straight at +2.35 % to El. 854.395 at the tip, where it meets the approach slab and extension at the coping line (\"Match Top of RCBA Elevation\", sheets 11, 17, 25). Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
-        "length_m": 3.6576000000000004,
-        "thickness_m": 0.3048
+        "length_m": 3.6576,
+        "thickness_m": 0.3048,
+        "length_basis": "tip to span-face corner of the bent, parallel to the roadway",
+        "projection_beyond_back_face_m": 2.447983,
+        "plan_name": "Wing D",
+        "top_el_at_bent_cl_ft": 854.16,
+        "top_el_at_tip_ft": 854.395,
+        "top_grade": "+2.35 % along the roadway, level across the wall"
       },
       "bounds_m": [
         [
-          19.140422,
-          -6.329905,
+          18.489595,
+          5.853364,
           2.279904
         ],
         [
-          22.879693,
-          -6.025105,
-          5.189859
+          22.228867,
+          6.158164,
+          5.26954
         ]
       ],
-      "volume_m3": 3.193884161,
+      "volume_m3": 3.283974444,
       "approximation": true
     },
     {
@@ -1957,28 +2015,37 @@
       "layer": "abutments",
       "color": "#c59a54",
       "pdf_pages": [
+        11,
         13,
-        17
+        14,
+        17,
+        25
       ],
       "basis": "Approximate external envelope",
-      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified.",
+      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified. Wing C: 12 ft measured from the span-face corner of the bent to the tip (the model had started the 12 ft at the bearing line, 0.6048 m too long); outer face on the bent end, moved with the bent 7 in along its line. Sheets 13 and 17. Top El. 853.91 at the bent centre line (sheets 14, 17 T/El.; was 0.101 m lower), straight at +2.35 % to El. 854.145 at the tip, where it meets the approach slab and extension at the coping line (\"Match Top of RCBA Elevation\", sheets 11, 17, 25). Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
-        "length_m": 3.6576000000000004,
-        "thickness_m": 0.3048
+        "length_m": 3.6576,
+        "thickness_m": 0.3048,
+        "length_basis": "tip to span-face corner of the bent, parallel to the roadway",
+        "projection_beyond_back_face_m": 2.447983,
+        "plan_name": "Wing C",
+        "top_el_at_bent_cl_ft": 853.91,
+        "top_el_at_tip_ft": 854.145,
+        "top_grade": "+2.35 % along the roadway, level across the wall"
       },
       "bounds_m": [
         [
-          15.829907,
-          6.025105,
+          15.179081,
+          -6.501647,
           2.279904
         ],
         [
-          19.569178,
-          6.329905,
-          5.113982
+          18.918352,
+          -6.196847,
+          5.19334
         ]
       ],
-      "volume_m3": 3.107153112,
+      "volume_m3": 3.199018896,
       "approximation": true
     },
     {
@@ -1988,26 +2055,27 @@
       "color": "#c59a54",
       "pdf_pages": [
         11,
+        13,
         15
       ],
       "basis": "Approximate external envelope",
-      "note": "Source diameter; schematic transverse run. Outlets, bends and backfill collection are unresolved.",
+      "note": "Source diameter; schematic transverse run. Outlets, bends and backfill collection are unresolved. Schematic run moved with the bent (7 in along its line), sheet 13. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "diameter_m": 0.15239999999999998
       },
       "bounds_m": [
         [
-          18.1498,
-          -6.329905,
+          18.103781,
+          -6.501647,
           2.999661
         ],
         [
-          18.3022,
-          6.329905,
+          18.256182,
+          6.158163,
           3.152061
         ]
       ],
-      "volume_m3": 0.220525286,
+      "volume_m3": 0.220523974,
       "approximation": true
     },
     {
@@ -2016,27 +2084,57 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        22,
         23
       ],
       "basis": "Source nominal concrete barrier envelope; profile corners simplified",
-      "note": "",
+      "note": "Section corrected to sheet 23 section A-A: 2'-9\" high, rear face 2\" inside the coping, 9\" top, traffic face 2\" over the upper 1'-11\", 5\" over the next 7\" and a 3\" vertical toe 17'-8\" from the centre line (the model had a 7 in toe and one slope). Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "height_m": 0.8382,
-        "base_width_m": 0.4064
+        "base_width_m": 0.4064,
+        "top_width_m": 0.2286,
+        "toe_height_m": 0.0762,
+        "rear_setback_m": 0.0508,
+        "section_profile_from_rear_m": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.4064,
+            0.0
+          ],
+          [
+            0.4064,
+            0.0762
+          ],
+          [
+            0.2794,
+            0.254
+          ],
+          [
+            0.2286,
+            0.8382
+          ],
+          [
+            0.0,
+            0.8382
+          ]
+        ]
       },
       "bounds_m": [
         [
-          -14.157295,
-          -5.792,
-          4.418631
+          -14.15751,
+          5.3848,
+          4.418642
         ],
         [
-          17.152324,
-          -5.3856,
-          5.99318
+          17.15211,
+          5.7912,
+          5.993191
         ]
       ],
-      "volume_m3": 8.796573907
+      "volume_m3": 7.498223754
     },
     {
       "id": "TFC_transition_-1_-1",
@@ -2049,7 +2147,7 @@
         25
       ],
       "basis": "Approximate external envelope",
-      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved.",
+      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "height_m": 0.8382,
         "base_width_m": 0.4064
@@ -2057,12 +2155,12 @@
       "bounds_m": [
         [
           -18.932597,
-          -5.792,
+          5.3856,
           4.306411
         ],
         [
           -14.048401,
-          -5.3856,
+          5.792,
           5.259963
         ]
       ],
@@ -2080,7 +2178,7 @@
         25
       ],
       "basis": "Approximate external envelope",
-      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved.",
+      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "height_m": 0.8382,
         "base_width_m": 0.4064
@@ -2088,12 +2186,12 @@
       "bounds_m": [
         [
           17.04343,
-          -5.792,
+          5.3856,
           5.151848
         ],
         [
           21.927626,
-          -5.3856,
+          5.792,
           5.99318
         ]
       ],
@@ -2106,27 +2204,57 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        22,
         23
       ],
       "basis": "Source nominal concrete barrier envelope; profile corners simplified",
-      "note": "",
+      "note": "Section corrected to sheet 23 section A-A: 2'-9\" high, rear face 2\" inside the coping, 9\" top, traffic face 2\" over the upper 1'-11\", 5\" over the next 7\" and a 3\" vertical toe 17'-8\" from the centre line (the model had a 7 in toe and one slope). Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "height_m": 0.8382,
-        "base_width_m": 0.4064
+        "base_width_m": 0.4064,
+        "top_width_m": 0.2286,
+        "toe_height_m": 0.0762,
+        "rear_setback_m": 0.0508,
+        "section_profile_from_rear_m": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.4064,
+            0.0
+          ],
+          [
+            0.4064,
+            0.0762
+          ],
+          [
+            0.2794,
+            0.254
+          ],
+          [
+            0.2286,
+            0.8382
+          ],
+          [
+            0.0,
+            0.8382
+          ]
+        ]
       },
       "bounds_m": [
         [
-          -17.152324,
-          5.3856,
-          4.345688
+          -17.15211,
+          -5.7912,
+          4.345709
         ],
         [
-          14.157295,
-          5.792,
-          5.923117
+          14.15751,
+          -5.3848,
+          5.923138
         ]
       ],
-      "volume_m3": 8.796573907
+      "volume_m3": 7.498223754
     },
     {
       "id": "TFC_transition_-1_1",
@@ -2139,7 +2267,7 @@
         25
       ],
       "basis": "Approximate external envelope",
-      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved.",
+      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "height_m": 0.8382,
         "base_width_m": 0.4064
@@ -2147,12 +2275,12 @@
       "bounds_m": [
         [
           -21.927626,
-          5.3856,
+          -5.792,
           4.233469
         ],
         [
           -17.04343,
-          5.792,
+          -5.3856,
           5.1899
         ]
       ],
@@ -2170,7 +2298,7 @@
         25
       ],
       "basis": "Approximate external envelope",
-      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved.",
+      "note": "Source transition topology; nominal sloped barrier envelope. Moldings, recesses, anchorage and end hardware are unresolved. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "height_m": 0.8382,
         "base_width_m": 0.4064
@@ -2178,12 +2306,12 @@
       "bounds_m": [
         [
           14.048401,
-          5.3856,
+          -5.792,
           5.078905
         ],
         [
           18.932597,
-          5.792,
+          -5.3856,
           5.923117
         ]
       ],
@@ -2196,29 +2324,35 @@
       "layer": "approaches",
       "color": "#bbc4c0",
       "pdf_pages": [
+        3,
         11,
         25
       ],
       "basis": "Dimensioned minimum length, width and thickness; skew-to-square plan",
-      "note": "Narrow corner curb and transition extensions are separate approximate envelopes.",
+      "note": "Narrow corner curb and transition extensions are separate approximate envelopes. Plan limits corrected: 18'-3\" north and 17'-8\" south of the structure centre line (35'-11\", sheet 25 and sheet 11), square end at Sta. 1270+76.06 (sheets 3 and 11); top follows the 2% crown, flush with the deck at the joint (sheets 3, 12, 25). The skewed edge keeps the 25 mm display joint. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "min_length_m": 6.2484,
         "width_m": 10.9474,
-        "thickness_m": 0.3048
+        "thickness_m": 0.3048,
+        "north_width_m": 5.5626,
+        "south_width_m": 5.3848,
+        "square_end_station": "1270+76.06",
+        "square_end_x_m": -25.584912,
+        "crowned_top": true
       },
       "bounds_m": [
         [
-          -25.634373,
-          -5.4737,
-          3.847926
+          -25.584912,
+          -5.3848,
+          3.847311
         ],
         [
-          -16.452627,
-          5.4737,
-          4.368497
+          -16.428806,
+          5.5626,
+          4.443504
         ]
       ],
-      "volume_m3": 25.743406651
+      "volume_m3": 25.657849225
     },
     {
       "id": "joint_-1",
@@ -2230,7 +2364,7 @@
         25
       ],
       "basis": "Schematic 24 mm visual joint strip; not an installation opening",
-      "note": "",
+      "note": "Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
@@ -2256,21 +2390,21 @@
         25
       ],
       "basis": "Approximate external envelope",
-      "note": "Nominal local transition support extension. Exact corner extension limits and integral curb returns remain unresolved.",
+      "note": "Nominal local transition support extension. Exact corner extension limits and integral curb returns remain unresolved. Inner edge refitted to the corrected approach-slab edge (sheet 25); outer edge and length unchanged. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
-          -18.908991,
-          -5.842,
+          -18.88517,
+          5.5626,
           4.000926
         ],
         [
           -16.328941,
-          -5.4737,
-          4.369085
+          5.842,
+          4.367867
         ]
       ],
-      "volume_m3": 0.278552574,
+      "volume_m3": 0.211315746,
       "approximation": true
     },
     {
@@ -2283,21 +2417,21 @@
         25
       ],
       "basis": "Approximate external envelope",
-      "note": "Nominal local transition support extension. Exact corner extension limits and integral curb returns remain unresolved.",
+      "note": "Nominal local transition support extension. Exact corner extension limits and integral curb returns remain unresolved. Inner edge refitted to the corrected approach-slab edge (sheet 25); outer edge and length unchanged. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
           -21.941023,
-          5.4737,
+          -5.842,
           3.927354
         ],
         [
-          -19.360973,
-          5.842,
-          4.300151
+          -19.337153,
+          -5.3848,
+          4.302489
         ]
       ],
-      "volume_m3": 0.278552574,
+      "volume_m3": 0.345789402,
       "approximation": true
     },
     {
@@ -2306,29 +2440,35 @@
       "layer": "approaches",
       "color": "#bbc4c0",
       "pdf_pages": [
+        3,
         11,
         25
       ],
       "basis": "Dimensioned minimum length, width and thickness; skew-to-square plan",
-      "note": "Narrow corner curb and transition extensions are separate approximate envelopes.",
+      "note": "Narrow corner curb and transition extensions are separate approximate envelopes. Plan limits corrected: 17'-8\" north and 18'-3\" south of the structure centre line (35'-11\", sheet 25 and sheet 11), square end at Sta. 1272+43.94 (sheets 3 and 11); top follows the 2% crown, flush with the deck at the joint (sheets 3, 12, 25). The skewed edge keeps the 25 mm display joint. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {
         "min_length_m": 6.2484,
         "width_m": 10.9474,
-        "thickness_m": 0.3048
+        "thickness_m": 0.3048,
+        "north_width_m": 5.3848,
+        "south_width_m": 5.5626,
+        "square_end_station": "1272+43.94",
+        "square_end_x_m": 25.584912,
+        "crowned_top": true
       },
       "bounds_m": [
         [
-          16.452627,
-          -5.4737,
-          4.836971
+          16.428806,
+          -5.5626,
+          4.834633
         ],
         [
-          25.634373,
-          5.4737,
-          5.357542
+          25.584912,
+          5.3848,
+          5.465853
         ]
       ],
-      "volume_m3": 25.743406651
+      "volume_m3": 25.657849225
     },
     {
       "id": "joint_1",
@@ -2340,7 +2480,7 @@
         25
       ],
       "basis": "Schematic 24 mm visual joint strip; not an installation opening",
-      "note": "",
+      "note": "Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
@@ -2366,21 +2506,21 @@
         25
       ],
       "basis": "Approximate external envelope",
-      "note": "Nominal local transition support extension. Exact corner extension limits and integral curb returns remain unresolved.",
+      "note": "Nominal local transition support extension. Exact corner extension limits and integral curb returns remain unresolved. Inner edge refitted to the corrected approach-slab edge (sheet 25); outer edge and length unchanged. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
-          19.360973,
-          -5.842,
+          19.337153,
+          5.3848,
           4.90027
         ],
         [
           21.941023,
-          -5.4737,
-          5.268429
+          5.842,
+          5.269647
         ]
       ],
-      "volume_m3": 0.278552574,
+      "volume_m3": 0.345789402,
       "approximation": true
     },
     {
@@ -2393,21 +2533,21 @@
         25
       ],
       "basis": "Approximate external envelope",
-      "note": "Nominal local transition support extension. Exact corner extension limits and integral curb returns remain unresolved.",
+      "note": "Nominal local transition support extension. Exact corner extension limits and integral curb returns remain unresolved. Inner edge refitted to the corrected approach-slab edge (sheet 25); outer edge and length unchanged. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
       "dimensions": {},
       "bounds_m": [
         [
           16.328941,
-          5.4737,
+          -5.842,
           4.826698
         ],
         [
-          18.908991,
-          5.842,
-          5.199495
+          18.88517,
+          -5.5626,
+          5.197157
         ]
       ],
-      "volume_m3": 0.278552574,
+      "volume_m3": 0.211315746,
       "approximation": true
     }
   ],
@@ -2434,13 +2574,15 @@
     {
       "feature": "Whole proposed Bulb-T crossing",
       "status": "modeled_with_simplifications",
-      "detail": "One 115 ft bearing span; all four dimensioned BT48x49 beams, 8 in deck, 15 degree right skew and full grade.",
+      "detail": "One 115 ft bearing span; all four dimensioned BT48x49 beams, 8 in deck, 15 degree right skew and full grade. North (Beam 1) is +Y, left of increasing station, and the north end of each bent is up-station (sheets 11, 13, 14; reflected in revision 1.2).",
       "sources": [
         "Primary PDF p.11",
         "Primary PDF p.12",
         "Primary PDF p.18",
         "Primary PDF p.20",
-        "Primary PDF p.22"
+        "Primary PDF p.22",
+        "Primary PDF p.13",
+        "Primary PDF p.14"
       ],
       "part_ids": [
         "deck",
@@ -2457,7 +2599,7 @@
     {
       "feature": "Integral support topology",
       "status": "approximate",
-      "detail": "Both integral bents, 8 embedded source steel bearing assemblies, infill, wings and 12 hidden pile display stubs. Seat attachment and end copes remain approximate.",
+      "detail": "Both integral bents, 8 embedded source steel bearing assemblies, infill, wings and 12 hidden pile display stubs. Seat attachment and end copes remain approximate. Bents centred 7 in along their lines from the bridge centre line (sheet 13); integral concrete flush with the cap span face (sheet 15); wings 12 ft from the span-face corner to the tip (sheets 13, 17). Wing tops at the sheet 17 T/El. on the bent centre line, parallel to the grade; centre closure bays and back faces crowned (revision 1.2).",
       "sources": [
         "Primary PDF p.13",
         "Primary PDF p.14",
@@ -2514,11 +2656,13 @@
     {
       "feature": "External rails and approaches",
       "status": "modeled_with_simplifications",
-      "detail": "FC barrier, four approximate TFC transitions, skew-to-square approach slabs and nominal extension/drain envelopes.",
+      "detail": "FC barrier, four approximate TFC transitions, skew-to-square approach slabs and nominal extension/drain envelopes. FC section per sheet 23 section A-A; approach slabs 18'-3\"/17'-8\" either side of the centre line, square ends at Sta. 1270+76.06 / 1272+43.94, crowned top.",
       "sources": [
         "Primary PDF p.11",
         "Primary PDF p.23",
-        "Primary PDF p.25"
+        "Primary PDF p.25",
+        "Primary PDF p.3",
+        "Primary PDF p.22"
       ],
       "part_ids": [
         "end_bent_drain_0",
@@ -2553,5 +2697,337 @@
       ],
       "part_ids": []
     }
-  ]
+  ],
+  "review_correction": "endbent-offset-integral-face-wings-fc-rail-approach-limits",
+  "revision": "1.2-drawing-review-2",
+  "review_correction_record": {
+    "source_pdf_pages": [
+      3,
+      11,
+      13,
+      14,
+      15,
+      17,
+      22,
+      23,
+      25
+    ],
+    "printed_sheets": [
+      3,
+      11,
+      13,
+      14,
+      15,
+      17,
+      22,
+      23,
+      25
+    ],
+    "previous_revision": null,
+    "corrections": {
+      "end_bent_offset": "43 ft bents centred 7 in along their lines from the bridge centre line, toward Beam 1 (north) at Bent 1 and Beam 4 (south) at Bent 2; caps, piles, wings, back faces, outer closure bays and drain runs moved with them (sheets 11, 13, 14)",
+      "integral_concrete_span_face": "closure bays extended 0.224808 m along X to the span face of the 3'-10\" bent, q = -/+16.921192 m (sheet 15)",
+      "wingwalls": "12 ft from the span-face corner of the bent to the tip, q = [-20.578792, -16.921192] and [16.921192, 20.578792] m (was from the bearing line, 0.604808 m longer; sheets 13, 17)",
+      "fc_railing_section": "3 in toe, 5 in over 7 in, 2 in over 23 in, 9 in top, 2 ft 9 in, rear face 2 in inside the coping; was 7 in toe and one slope (sheets 22, 23)",
+      "approach_slabs": "west Y = [-5.5626, 5.3848], east Y = [-5.3848, 5.5626] m (was +/-5.4737); square ends at Sta. 1270+76.06 / 1272+43.94, X = -/+25.584912 m (was -/+25.634373); crowned top (was flat between the edges, 0.11 m low at the centre line); extensions refitted (sheets 3, 11, 25)"
+    },
+    "values": {
+      "bent_1": {
+        "shift_m": [
+          0.046018,
+          -0.171742
+        ],
+        "cap_y_m": [
+          -6.501647,
+          6.158164
+        ],
+        "integral_span_face_q_m": -16.921192,
+        "wing_q_m": [
+          -20.578792,
+          -16.921192
+        ]
+      },
+      "bent_2": {
+        "shift_m": [
+          -0.046018,
+          0.171742
+        ],
+        "cap_y_m": [
+          -6.158164,
+          6.501647
+        ],
+        "integral_span_face_q_m": 16.921192,
+        "wing_q_m": [
+          16.921192,
+          20.578792
+        ]
+      }
+    },
+    "changed_parts": [
+      "cap_1",
+      "pile_stub_0_0",
+      "pile_stub_0_1",
+      "pile_stub_0_2",
+      "pile_stub_0_3",
+      "pile_stub_0_4",
+      "pile_stub_0_5",
+      "end_bent_drain_0",
+      "integral_infill_0_0",
+      "integral_infill_0_2",
+      "integral_infill_0_4",
+      "integral_infill_0_6",
+      "integral_infill_0_8",
+      "backwall_0",
+      "wing_0_-1",
+      "wing_0_1",
+      "cap_2",
+      "pile_stub_1_0",
+      "pile_stub_1_1",
+      "pile_stub_1_2",
+      "pile_stub_1_3",
+      "pile_stub_1_4",
+      "pile_stub_1_5",
+      "end_bent_drain_1",
+      "integral_infill_1_0",
+      "integral_infill_1_2",
+      "integral_infill_1_4",
+      "integral_infill_1_6",
+      "integral_infill_1_8",
+      "backwall_1",
+      "wing_1_-1",
+      "wing_1_1",
+      "FC_rail_-1",
+      "FC_rail_1",
+      "approach_-1",
+      "extension_-1_-1",
+      "extension_-1_1",
+      "approach_1",
+      "extension_1_-1",
+      "extension_1_1"
+    ],
+    "before_glb_sha256": "54604cef02d41bba991f9f94774656693698cc31f6127ec37362b0fd97758afd",
+    "after_glb_sha256": "435236dc3656c9df0ea4a6bbb8bdcc9b2dc628582162a7fe49a5621148dc196a"
+  },
+  "known_deviations": [
+    {
+      "id": "tfc-transition-section",
+      "parts": "TFC_transition_*",
+      "source": "sheets 11, 23 (PDF 11, 23)",
+      "deviation": "The four TFC transitions keep the generic envelope (7 in toe, one sloped face, height easing to 0.70 m); at the butt joints with the corrected FC railing the traffic faces differ by up to about 0.1 m.",
+      "reason": "The TFC shape is given by INDOT standard drawings E706-TTFC-01 to -03 and E706-CBRT, which are not part of this plan set."
+    },
+    {
+      "id": "approach-display-joint",
+      "parts": "approach_-1, approach_1, joint_-1, joint_1",
+      "source": "sheets 11, 25 (PDF 11, 25)",
+      "deviation": "The skewed near edge of each approach slab is 25 mm beyond the deck end (q = -/+17.9193 m against -/+17.8943 m), a display joint; the Type IA joint itself has no width in the plan set.",
+      "reason": "The Type IA joint is detailed in INDOT Standard Drawing E 609-BRJT-01 (sheet 25 note 4), which is not part of this plan set."
+    }
+  ],
+  "review_correction_2": "drawing-review-2-handedness-wing-tops-crowned-closures",
+  "review_correction_2_record": {
+    "source_pdf_pages": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      25
+    ],
+    "printed_sheets": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      25
+    ],
+    "previous_revision": "1.1-drawing-review",
+    "native_axes": "X along increasing station (east, X = 0 at Sta. 1271+60), Y positive to the left of increasing station (north), Z up from El. 837.11; bent lines q = X - tan(15 deg) Y",
+    "frame_note": "Coordinates quoted in review_correction_record (revision 1.1) are in the previous, mirrored frame (north at Y < 0, q = X + tan(15 deg) Y); negate Y to compare them with this revision.",
+    "findings": {
+      "N1": "confirmed - the whole model was the mirror image of the drawings (north at Y < 0 and north bent ends down-station); every vertex reflected (X, Y, Z) -> (X, -Y, Z), winding reversed (sheets 11, 13, 14, 17)",
+      "F3": "completed by N1 - the 7 in bent offset now lies toward Beam 1 on the north (+Y) side at Bent 1 and toward Beam 4 on the south side at Bent 2",
+      "F5": "sides completed by N1 (west slab 18'-3\" north = +Y); the 25 mm display joint at the Type IA joint is deferred (known deviation approach-display-joint)",
+      "N2": "confirmed - wing tops raised 0.089-0.105 m to the sheet 17 T/El. at the bent centre line, straight at +2.35 % to the tip",
+      "N3 / F1": "confirmed - centre closure bays crowned to the deck soffit (were 18.5 mm low at the centre line); the back faces get the same crown vertex (were up to 25 mm below the approach slab crowned in revision 1.1)"
+    },
+    "part_side_suffixes": "Part ids keep their geographic meaning: suffix -1 = north member (now Y > 0), suffix 1 = south member (now Y < 0); beam_0_0 and B*_bearing_1 are Beam 1 (north).",
+    "values": {
+      "wing_0_-1": {
+        "plan_name": "Wing B",
+        "top_el_at_bent_cl_ft": 851.45,
+        "bent_cl_x_m": -15.824724,
+        "top_el_at_tip_ft": 851.215,
+        "tip_x_m": -18.877517,
+        "raised_at_bent_cl_m": 0.09509,
+        "rcba_edge_top_el_at_tip_ft": 851.25,
+        "approach_top_at_coping_el_at_tip_ft": 851.231
+      },
+      "wing_0_1": {
+        "plan_name": "Wing A",
+        "top_el_at_bent_cl_ft": 851.21,
+        "bent_cl_x_m": -19.135239,
+        "top_el_at_tip_ft": 850.975,
+        "tip_x_m": -22.188031,
+        "raised_at_bent_cl_m": 0.092865,
+        "rcba_edge_top_el_at_tip_ft": 851.006,
+        "approach_top_at_coping_el_at_tip_ft": 850.976
+      },
+      "wing_1_-1": {
+        "plan_name": "Wing D",
+        "top_el_at_bent_cl_ft": 854.16,
+        "bent_cl_x_m": 19.135239,
+        "top_el_at_tip_ft": 854.395,
+        "tip_x_m": 22.188031,
+        "raised_at_bent_cl_m": 0.092669,
+        "rcba_edge_top_el_at_tip_ft": 854.427,
+        "approach_top_at_coping_el_at_tip_ft": 854.397
+      },
+      "wing_1_1": {
+        "plan_name": "Wing C",
+        "top_el_at_bent_cl_ft": 853.91,
+        "bent_cl_x_m": 15.824724,
+        "top_el_at_tip_ft": 854.145,
+        "tip_x_m": 18.877517,
+        "raised_at_bent_cl_m": 0.101136,
+        "rcba_edge_top_el_at_tip_ft": 854.16,
+        "approach_top_at_coping_el_at_tip_ft": 854.142
+      },
+      "integral_infill_0_4": {
+        "y_m": [
+          -0.9271,
+          0.9271
+        ],
+        "q_m": [
+          -17.906001,
+          -16.921191
+        ],
+        "centre_line_rise_m": 0.018542
+      },
+      "integral_infill_1_4": {
+        "y_m": [
+          -0.9271,
+          0.9271
+        ],
+        "q_m": [
+          16.921191,
+          17.906001
+        ],
+        "centre_line_rise_m": 0.018542
+      },
+      "backwall_0": {
+        "y_m": [
+          -6.158164,
+          6.501647
+        ],
+        "q_m": [
+          -18.126,
+          -17.915999
+        ],
+        "centre_line_rise_m": 0.126505,
+        "gap_below_approach_slab_before_m": 0.024905
+      },
+      "backwall_1": {
+        "y_m": [
+          -6.501647,
+          6.158164
+        ],
+        "q_m": [
+          17.915999,
+          18.126
+        ],
+        "centre_line_rise_m": 0.126505,
+        "gap_below_approach_slab_before_m": 0.024905
+      }
+    },
+    "reflected_parts": [
+      "B1_bearing_1",
+      "B1_bearing_2",
+      "B1_bearing_3",
+      "B1_bearing_4",
+      "B2_bearing_1",
+      "B2_bearing_2",
+      "B2_bearing_3",
+      "B2_bearing_4",
+      "FC_rail_-1",
+      "FC_rail_1",
+      "TFC_transition_-1_-1",
+      "TFC_transition_-1_1",
+      "TFC_transition_1_-1",
+      "TFC_transition_1_1",
+      "approach_-1",
+      "approach_1",
+      "backwall_0",
+      "backwall_1",
+      "beam_0_0",
+      "beam_0_1",
+      "beam_0_2",
+      "beam_0_3",
+      "cap_1",
+      "cap_2",
+      "deck",
+      "diaphragm_0_0",
+      "diaphragm_0_1",
+      "diaphragm_0_2",
+      "end_bent_drain_0",
+      "end_bent_drain_1",
+      "extension_-1_-1",
+      "extension_-1_1",
+      "extension_1_-1",
+      "extension_1_1",
+      "haunch_0_0",
+      "haunch_0_1",
+      "haunch_0_2",
+      "haunch_0_3",
+      "integral_infill_0_0",
+      "integral_infill_0_2",
+      "integral_infill_0_4",
+      "integral_infill_0_6",
+      "integral_infill_0_8",
+      "integral_infill_1_0",
+      "integral_infill_1_2",
+      "integral_infill_1_4",
+      "integral_infill_1_6",
+      "integral_infill_1_8",
+      "joint_-1",
+      "joint_1",
+      "pedestal_0_0",
+      "pedestal_0_1",
+      "pedestal_0_2",
+      "pedestal_1_0",
+      "pedestal_1_1",
+      "pedestal_1_2",
+      "pile_stub_0_0",
+      "pile_stub_0_1",
+      "pile_stub_0_2",
+      "pile_stub_0_3",
+      "pile_stub_0_4",
+      "pile_stub_0_5",
+      "pile_stub_1_0",
+      "pile_stub_1_1",
+      "pile_stub_1_2",
+      "pile_stub_1_3",
+      "pile_stub_1_4",
+      "pile_stub_1_5",
+      "wing_0_-1",
+      "wing_0_1",
+      "wing_1_-1",
+      "wing_1_1"
+    ],
+    "rebuilt_parts": [
+      "backwall_0",
+      "backwall_1",
+      "integral_infill_0_4",
+      "integral_infill_1_4",
+      "wing_0_-1",
+      "wing_0_1",
+      "wing_1_-1",
+      "wing_1_1"
+    ],
+    "before_glb_sha256": "435236dc3656c9df0ea4a6bbb8bdcc9b2dc628582162a7fe49a5621148dc196a",
+    "after_glb_sha256": "31cde8954bd0ea6daf7373fac2d009b84a861f7bd5a375af09a067286d5c8fb1"
+  }
 }

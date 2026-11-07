@@ -5,9 +5,16 @@
   "exported_glb_reopened": true,
   "mesh_names_match_manifest": true,
   "maximum_bearing_contact_error_m": 0,
-  "glb_sha256": "8542b9701fbfbdfa7dff9494c8395403a3002e0727dfbbb96d967d5124fe6d15",
+  "glb_sha256": "9836e74ac37d050cd42176495e72daf564ae2f4ed98210c59621052a50e3e615",
   "source_pdf_sha256": "3a672d548a02175fd8d6a1a1d96d169987db015871901d797a6ad55bf64740fc",
-  "checks": {
+  "contacts": [],
+  "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation.",
+  "primary_pdf_is_byte_identical": true,
+  "all_original_hashes_verified": true,
+  "primary_pdf_pages": 29,
+  "source_documents": 3,
+  "preview": "preview.png",
+  "checks_at_build": {
     "spans_m": [
       9.144
     ],
@@ -34,11 +41,6 @@
     ],
     "primary_pages_valid": true
   },
-  "contacts": [],
-  "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation.",
-  "primary_pdf_is_byte_identical": true,
-  "all_original_hashes_verified": true,
-  "primary_pdf_pages": 29,
-  "source_documents": 3,
-  "preview": "preview.png"
+  "model_revision": "1.2-drawing-review-2",
+  "refreshed_after_correction": "Generic checks re-run on the corrected GLB by scripts/refresh_geometry_verification.py; checks_at_build describe the model as first built."
 }
