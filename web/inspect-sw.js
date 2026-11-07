@@ -1,7 +1,7 @@
 // Offline support for the inspection page: pages are fetched from the network first (cached copy when offline);
 // sheets, styles, scripts and fonts are served from the cache and refreshed in the background.
-const CACHE = 'bridge-inspection-v1';
-const SHELL = ['./inspect.html', './ui.css?v=insp1', './inspect.css?v=insp1', './inspect-config.js?v=insp1', './inspect.bundle.js?v=insp1',
+const CACHE = 'bridge-inspection-v2';
+const SHELL = ['./inspect.html', './ui.css?v=insp1', './inspect.css?v=insp1', './inspect-config.js?v=insp2', './inspect.bundle.js?v=insp1',
   './favicon.svg', './vendor/fonts/ibm-plex-sans-latin.woff2', './vendor/fonts/ibm-plex-mono-400-latin.woff2'];
 
 self.addEventListener('install', e => {
