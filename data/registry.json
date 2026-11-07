@@ -526,7 +526,7 @@
         "render_glb": "bridges/fletcher-avenue/model_render.glb",
         "deck_length_m": 91.00185000000002,
         "spans": 2,
-        "components": 379,
+        "components": 430,
         "revision": "Proposed 2026 work over retained historical structure v1",
         "scope": "Whole-crossing exterior reconstruction; proposed work and retained historical geometry are explicitly distinguished.",
         "detail_status": "needs_detail",

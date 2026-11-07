@@ -6,7 +6,7 @@ const path=require('node:path');
 const crypto=require('node:crypto');
 const base=process.env.BRIDGE_TEST_URL||'http://127.0.0.1:8766';
 const specs=[
- {id:'fletcher-avenue',count:379,girders:16,part:'pier_2_wall',page:98,county:'Marion'},
+ {id:'fletcher-avenue',count:430,girders:16,part:'pier_2_wall',page:98,county:'Marion'},
  {id:'sr10-i65',count:314,girders:36,part:'deck',page:59,county:'Jasper'}
 ];
 (async()=>{

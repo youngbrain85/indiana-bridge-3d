@@ -694,6 +694,29 @@ TTX transitions remain deferred, and the representative web splice plates are re
 `scripts/correct_fletcher_avenue_review_2.py` runs after the first-round script, is idempotent, and records the
 before/after SHA-256 in `model_manifest.json`.
 
+#### Third round: known deviations
+
+**Revision 1.3.**
+
+The four Type TTX modified railing transitions are modelled from **sheets 68 and 69**. Wings A and C are 3'-6" high
+and Wings B and D 4'-6"; their pay limits are 30'-2", 29'-4", 17'-2" and 20'-5½". Each has the taller end-bent pilaster
+and six windows with R 1'-0" heads. They stand on the 1'-2" RCBA slab extensions of **sheets 66 and 67**, with the
+sidewalk concrete of **sheet 70**. The approach slabs are narrowed to the 66'-2" of sheet 66. The bridge rail end
+pilasters stop ¼" short of the deck end, which leaves the drawn ½" open joint. The wing envelopes move out to 1" beyond
+the extensions.
+
+The field splices follow **S9 and S10**: 19" × ⅝" × 4'-6" web plates, 10" × 1" inner bars and 4,992 ⅞" bolts. The
+lateral bracing is placed as **S11** draws it. Its 36 WT envelopes sit on 39 new ⅜" gusset plates 5" above the bottom
+flange, which run from the web to the bolted ends of the tees.
+
+The Pier 2 shoe stacks are drawn (S12 shoes, S13 shims) but are 19–70 mm taller than the model leaves room for. The
+haunches meet the 2 3/16" minimum of **sheet 65**, which is measured to the underside of the top flange, but their
+profile is derived. Both stay known deviations: the 2026 top-of-steel (screed) data is not in the plans, and the 1971
+elevations fit the 2026 deck only with a datum relation that no sheet gives. The TTX face recesses and the splayed 1971
+wings are also listed, with their drawn dimensions and what is still missing.
+
+`scripts/correct_fletcher_avenue_review_3.py` runs after the second-round script and is idempotent.
+
 ### SR 10 over I-65 (`sr10-i65`)
 
 An external review of the model was checked against the 1998 B-23753 rehabilitation plans (binder PDF 21-40, printed
