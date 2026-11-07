@@ -11,8 +11,8 @@
   "drawing_sha256": "fb940a09d31d217f2e13fdcb64bdddfd83cddb816408b1f11ddc4738927d7b23",
   "source_hashes": {
     "drawing": "fb940a09d31d217f2e13fdcb64bdddfd83cddb816408b1f11ddc4738927d7b23",
-    "manifest": "7b9c116dc7020085fb4e6d6e16873420c5d4f9e80108bdfc95adfa61335369a6",
-    "model": "31cde8954bd0ea6daf7373fac2d009b84a861f7bd5a375af09a067286d5c8fb1"
+    "manifest": "598eb72c2fa7faf66a7dad81b179c490f4f3ed0c4d100c83207c6aa38180dc8a",
+    "model": "06f820f3b5d218041452ccec46e335a3b3385ca6a10f53efd74b71cf45741db3"
   },
   "sources": {
     "drawing": {
@@ -811,15 +811,15 @@
     "approach_1",
     "backwall_0",
     "backwall_1",
+    "curb_-1_-1",
+    "curb_1_1",
     "diaphragm_0_0",
     "diaphragm_0_1",
     "diaphragm_0_2",
     "end_bent_drain_0",
     "end_bent_drain_1",
-    "extension_-1_-1",
     "extension_-1_1",
     "extension_1_-1",
-    "extension_1_1",
     "haunch_0_0",
     "haunch_0_1",
     "haunch_0_2",

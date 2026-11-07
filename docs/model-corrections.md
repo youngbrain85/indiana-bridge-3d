@@ -776,6 +776,25 @@ Type IA joint is detailed in INDOT Standard Drawing E 609-BRJT-01, which is not 
 `scripts/correct_us35_deer_review_2.py` reproduces the correction from revision 1.1 and is idempotent. The record and
 before/after SHA-256 are in `model_manifest.json`. The display model and preview must be rebuilt from the corrected GLB.
 
+#### Third round: known deviations
+
+Revision 1.3 closes most of the two known deviations, and what closing them exposed. The bridge railing was laid out
+wrongly. Sheets 11 and 23 put each 102'-4 3/8" FC railing with one end at the deck end, at the acute corner (north-east
+and south-west). The TFC transition there stands on the approach slab extension. At the other end the TFC stands on
+the deck. The model had centred both rails, so every TFC straddled the deck end. The rails now have square ends and
+move 2.29 m along the bridge. The four TFCs follow the sheet 11 plan. Each is 15'-8" long and 2'-9" high throughout.
+Each starts with the FC section and ends in a vertical 9 in wall. The acute-corner extensions are now the drawn
+15'-10" x 1'-6" (sheet 25). Sheets 15 and 25 show the approach slab cast against the deck end, so the 25 mm display
+gap is closed. The slab is 2 in deeper, 14 in, over the 9 in ledge of the bent and 1'-6" beyond, then returns at
+45 degrees. It now bears on the ledge instead of cutting 101.6 mm into the bent, and the closure bays stop at the
+deck end. The beams now have the drawn end copes: no top flange outside the 8 in web over the last 6 in (sheets 19
+and 20). Their corners no longer reach past the deck end. The two obtuse-corner slab envelopes had no drawing
+counterpart. They are replaced by the drawn 11 ft integral concrete curbs Type B (Modified). The joint strips now
+run only along the slab. One deviation remains. The TFC face between the joint and the vertical end is interpolated.
+Its end details, and what supports the obtuse-corner TFC ends beyond the deck end, are in INDOT Standard Drawings
+E706-TTFC-01 to -03 and E706-CBRT-01. `scripts/correct_us35_deer_review_3.py` applies this after the first two
+scripts and is idempotent. Two parts were removed and two added; the model has 72 parts.
+
 ### US 224 over Eight Mile Creek (`us224-eight-mile`)
 
 #### US 224 over Eight Mile Creek: review corrections (revision 1.1)
