@@ -887,3 +887,15 @@ Two items stay as known deviations:
   roadway.
 
 `scripts/correct_sr1_six_mile_review_2.py` runs after `correct_sr1_six_mile_review.py` and is idempotent.
+
+#### Third round: known deviations
+
+**Revision 1.3: joint seals limited to the roadway.** On the **sheet 7** plan, each resealed Type 1-A joint runs
+across the 44 ft roadway hatch only, and it is dimensioned **47 ft** along the skew (44 ft / cos 20° = 46.8 ft).
+**Sheet 8** schedules **94 lft** for both joints. The model's seal envelopes ran the full 47'-1½" deck width,
+50.15 ft along the skew. They also sat 1 mm into the barrier bases. `joint_0` and `joint_1` now stop at the barrier
+toes, 22 ft (6.7056 m) from S.R. 1, and are 46.82 ft long. Their stations, depth and crossfall are unchanged. They
+now touch the barriers and the deck overlay without overlapping them. No parts were added or removed. The approach
+polymer overlay stays a known deviation: sheets 3, 7 and 8 give its plan extent but not its thickness. The contract
+special provision for "Polymer Overlay, Bridge Deck Approaches" would settle it.
+`scripts/correct_sr1_six_mile_review_3.py` runs after `correct_sr1_six_mile_review_2.py` and is idempotent.
