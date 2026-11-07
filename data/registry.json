@@ -455,7 +455,7 @@
         "render_glb": "bridges/us50-tanners-eb/model_render.glb",
         "deck_length_m": 149.964775,
         "spans": 5,
-        "components": 283,
+        "components": 239,
         "revision": "2014 eastbound reconstruction design v1",
         "scope": "Whole crossing exterior reconstruction with documented approximation boundaries; see coverage and component basis.",
         "detail_status": "needs_detail",

@@ -582,6 +582,23 @@ they differ. Part ids and mesh names are unchanged. The record and the before/af
 
 The east terminal-joint station callouts (391+92.68 on sheet 60, 391+92.86 on sheet 22) disagree with the dimensioned slab edges, which the model follows. The deck is 9.5 mm short at each end of the 492 ft 0 7/8 in. Both are recorded as known deviations, alongside the earlier wingwall, support-diaphragm and seat-schedule entries.
 
+#### Third round: known deviations
+
+**Revision 1.3.** `scripts/correct_us50_tanners_eb_review_3.py` runs after the two earlier scripts. It closes the known deviations of revision 1.2 and the items raised by the independent check.
+
+- **Seats (sheets 26, 29, 35, 39).** The bearings now sit on the scheduled seats.
+  - At Bents 2-5 each beam rests on a 3 11/16 in pad (sheet 54).
+  - The caps are terraced to the seats, with 3 in keyways at the steps. The 52 separate pedestals are removed.
+  - At Bents 1 and 6 each beam rests on a 1 in anchor bar, and its soffit is at the seat.
+  - The beams follow their seats plus the sheet 45 camber. They rise 15 to 58 mm, and the haunch now varies.
+- **Support diaphragms (sheets 43, 53, 54).** The 3 ft diaphragms over Bents 2-5 are new parts. Their keys drop into the cap keyways, with the drawn polystyrene space left all round.
+- **Wingwalls (sheets 26, 28, 29, 31).** The four 1 ft 3 in wingwalls are new parts. Their tops are 1 ft 3 1/2 in below the approach slab, as in section C-C. The approach slabs are thickened over them, with a tongue in a wall keyway.
+- **Deck ends (sheets 20-22).** The deck ends move out 9.5 mm each, to 492 ft 0 7/8 in.
+- **Approach slabs (sheets 58, 60).** The approach slabs are measured from the end of the bridge floor.
+- **Beam ends (sheets 46-48).** At the end bents the beam top flanges are set back and cut on the skew. They no longer reach into the approach slabs.
+
+The model now has 239 parts. One small item remains as a known deviation: the depth of that flange notch is not dimensioned.
+
 ### Minnich Road NB / SB over I-469 (`minnich-road`)
 
 #### 1. External review corrections (revision 1.1)
