@@ -374,6 +374,32 @@ set. This is recorded in `known_deviations`. `scripts/correct_sr44_mud_review_2.
 is idempotent. It changes 112 meshes; part ids are unchanged and unrelated buffers are kept. The before/after SHA-256 are
 in `geometry_review_correction_2_record`.
 
+#### Third round: known deviations
+
+The known deviations of revision 1.2 were re-read on the sheets, and the round was then checked independently.
+
+- **Overhang thickening (sheet 27).** The deck typical section draws the overhang soffit level from the deck edge to the
+  outer tip of the exterior beam's top flange, 9⅛ in below the edge. The thickening now spans 22 in with a level
+  soffit: 9⅛ in deep at the edge and 9.57 in at the flange tip. It stops at the end diaphragms, which are poured first.
+  Sheet 31 shows 9¼ in, but it is a railing detail drawn without the crossfall or the beam, so sheet 27 governs.
+- **Pier diaphragms (sheets 20 and 22).** The bent plate offsets give a 19° fold, which matches the plan geometry, so the
+  fold is kept. The stiffener stays 7¼ in. Read in the framing-plan orientation, the plan puts the channel web on the
+  down-station face of the bent legs. The 12 channels and their channel-leg bolts were moved to that side.
+- **Square coping zones (sheets 23, 31 and 32).** Over the outer 1'-6" at each coping, the end-diaphragm faces, the
+  pavement ledge and the bridge joint are square to the roadway. The deck corners, the barrier and transition ends and
+  the overhang thickening now follow that square joint, so the extensions meet the bridge without overlaps or gaps.
+- **RCBA extensions (sheets 31 and 33).** The extensions are 1'-2" deep for 2'-0" from the joint, with a 45° return, and
+  bear on the pavement ledge.
+- **Retained end-bent caps (1980 plans pages 9–10, sheet 12).** The caps now end at the wing faces. The front face
+  splays 1'-0" × 1'-0" into each wing, and the rear face turns square to the roadway over the last 1'-3". The new
+  diaphragm corners now sit on the cap, apart from strips under 1 in wide.
+- **Bearing stiffeners (sheet 22).** The web corners are clipped 1¼ in along the flange and 2½ in along the web, at the
+  top and the bottom.
+
+One item stays open: the sloped outer corners of the pier stiffeners are drawn but not dimensioned.
+`scripts/correct_sr44_mud_review_3.py` runs after the first two corrections and is idempotent. It changes 81 meshes,
+adds or removes no parts (383 in all) and keeps unrelated buffers.
+
 ### SR 8 over Yellow River (`sr8-yellow`)
 
 #### 1. End bents, piles, approaches, diaphragms, rails and beam numbering (revision 1.1)

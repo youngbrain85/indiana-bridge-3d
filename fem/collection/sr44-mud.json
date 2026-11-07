@@ -11,8 +11,8 @@
   "drawing_sha256": "6e9fba4786bc8c1d05073a8bdcaf0b2c66216bdfffb22ac2e469541773142bf8",
   "source_hashes": {
     "drawing": "6e9fba4786bc8c1d05073a8bdcaf0b2c66216bdfffb22ac2e469541773142bf8",
-    "manifest": "ec189f04f53072ddc00d75c005697047e81c13d20c91a07aa033ebda27396bc2",
-    "model": "ee8b7d75fdad9ed43ea97c56a26d1e00a86b8e07face7b70d6e32fdf8e049b29"
+    "manifest": "5bb6df3cab2e50c26aea93ebaf57b8411aeecfcce183059f8fdc2dc037bf7cf0",
+    "model": "30631b2c2323e7ea04480bb8adb10b7c677d90755397de1d30a4abf85f90d680"
   },
   "sources": {
     "drawing": {
@@ -45,9 +45,11 @@
         18,
         19,
         22,
+        23,
         24,
         27,
-        29
+        29,
+        31
       ],
       "note": "Source-specific recipe transcribes manifest/source-ledger dimensions and original modeling script callouts. Native bounding-box centers locate axes only; bounding rectangles are not used as girder cross sections."
     },
@@ -549,8 +551,8 @@
         "top_z_m": 5.550408,
         "cap": {
           "cid": "cap_1",
-          "y0_m": -7.164551,
-          "y1_m": 7.164551,
+          "y0_m": -7.0866,
+          "y1_m": 7.0866,
           "section": {
             "kind": "rectangle",
             "dimensions_m": [
@@ -835,8 +837,8 @@
         "top_z_m": 5.687568000000001,
         "cap": {
           "cid": "cap_4",
-          "y0_m": -7.164551,
-          "y1_m": 7.164551,
+          "y0_m": -7.0866,
+          "y1_m": 7.0866,
           "section": {
             "kind": "rectangle",
             "dimensions_m": [

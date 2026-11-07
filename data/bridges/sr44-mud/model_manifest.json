@@ -50,31 +50,34 @@
         9,
         10,
         11,
+        23,
         27,
-        29
+        29,
+        31
       ],
       "basis": "Dimensioned final-grade envelope",
-      "note": "Screed-table construction deflection allowances are not the final road profile.",
+      "note": "Screed-table construction deflection allowances are not the final road profile. Deck ends follow the skew joint except over the outer 1 ft 6 in at each coping, where the joint is square to the roadway (sheet 23 plan; sheet 31 railing plan).",
       "dimensions": {
         "length_ft": 151.08333333333334,
         "width_ft": 46.5,
         "thickness_in": 8,
         "crossfall_pct": 2,
-        "skew_deg": 15
+        "skew_deg": 15,
+        "square_end_zone_ft": 1.5
       },
       "bounds_m": [
         [
-          -24.923949,
+          -24.801443,
           -7.0866,
-          6.708217
+          6.709094
         ],
         [
-          24.923949,
+          24.801443,
           7.0866,
           7.195037
         ]
       ],
-      "volume_m3": 132.637633834
+      "volume_m3": 132.637639181
     },
     {
       "id": "beam_1_segment_1",
@@ -2032,10 +2035,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted.",
       "dimensions": {
-        "thickness_in": 0.5
+        "thickness_in": 0.5,
+        "width_in": 4.75,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -2049,7 +2058,7 @@
           6.706267
         ]
       ],
-      "volume_m3": 0.00195383
+      "volume_m3": 0.001928225
     },
     {
       "id": "bearing_1_2",
@@ -2124,10 +2133,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted.",
       "dimensions": {
-        "thickness_in": 0.5
+        "thickness_in": 0.5,
+        "width_in": 4.75,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -2141,7 +2156,7 @@
           6.747542
         ]
       ],
-      "volume_m3": 0.00195383
+      "volume_m3": 0.001928225
     },
     {
       "id": "bearing_1_3",
@@ -2216,10 +2231,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted.",
       "dimensions": {
-        "thickness_in": 0.5
+        "thickness_in": 0.5,
+        "width_in": 4.75,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -2233,7 +2254,7 @@
           6.786912
         ]
       ],
-      "volume_m3": 0.00195383
+      "volume_m3": 0.001928225
     },
     {
       "id": "bearing_1_4",
@@ -2308,10 +2329,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted.",
       "dimensions": {
-        "thickness_in": 0.5
+        "thickness_in": 0.5,
+        "width_in": 4.75,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -2325,7 +2352,7 @@
           6.826409
         ]
       ],
-      "volume_m3": 0.00195383
+      "volume_m3": 0.001928225
     },
     {
       "id": "bearing_1_5",
@@ -2400,10 +2427,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted.",
       "dimensions": {
-        "thickness_in": 0.5
+        "thickness_in": 0.5,
+        "width_in": 4.75,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -2417,7 +2450,7 @@
           6.778022
         ]
       ],
-      "volume_m3": 0.00195383
+      "volume_m3": 0.001928225
     },
     {
       "id": "bearing_1_6",
@@ -2492,10 +2525,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted.",
       "dimensions": {
-        "thickness_in": 0.5
+        "thickness_in": 0.5,
+        "width_in": 4.75,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -2509,7 +2548,7 @@
           6.729635
         ]
       ],
-      "volume_m3": 0.00195383
+      "volume_m3": 0.001928225
     },
     {
       "id": "bearing_1_7",
@@ -2584,10 +2623,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted.",
       "dimensions": {
-        "thickness_in": 0.5
+        "thickness_in": 0.5,
+        "width_in": 4.75,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -2601,7 +2646,7 @@
           6.685185
         ]
       ],
-      "volume_m3": 0.00195383
+      "volume_m3": 0.001928225
     },
     {
       "id": "bearing_2_1",
@@ -2676,10 +2721,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted. The sloped outer corners drawn beyond the flange tip are not dimensioned and are kept square.",
       "dimensions": {
-        "thickness_in": 0.6875
+        "thickness_in": 0.6875,
+        "width_in": 7.249999999999999,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -2693,7 +2744,7 @@
           6.766592
         ]
       ],
-      "volume_m3": 0.004119001
+      "volume_m3": 0.004083795
     },
     {
       "id": "bearing_2_2",
@@ -2768,10 +2819,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted. The sloped outer corners drawn beyond the flange tip are not dimensioned and are kept square.",
       "dimensions": {
-        "thickness_in": 0.6875
+        "thickness_in": 0.6875,
+        "width_in": 7.249999999999999,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -2785,7 +2842,7 @@
           6.807867
         ]
       ],
-      "volume_m3": 0.004119001
+      "volume_m3": 0.004083795
     },
     {
       "id": "bearing_2_3",
@@ -2860,10 +2917,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted. The sloped outer corners drawn beyond the flange tip are not dimensioned and are kept square.",
       "dimensions": {
-        "thickness_in": 0.6875
+        "thickness_in": 0.6875,
+        "width_in": 7.249999999999999,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -2877,7 +2940,7 @@
           6.856381
         ]
       ],
-      "volume_m3": 0.004119001
+      "volume_m3": 0.004083795
     },
     {
       "id": "bearing_2_4",
@@ -2952,10 +3015,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted. The sloped outer corners drawn beyond the flange tip are not dimensioned and are kept square.",
       "dimensions": {
-        "thickness_in": 0.6875
+        "thickness_in": 0.6875,
+        "width_in": 7.249999999999999,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -2969,7 +3038,7 @@
           6.90807
         ]
       ],
-      "volume_m3": 0.004119001
+      "volume_m3": 0.004083795
     },
     {
       "id": "bearing_2_5",
@@ -3044,10 +3113,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted. The sloped outer corners drawn beyond the flange tip are not dimensioned and are kept square.",
       "dimensions": {
-        "thickness_in": 0.6875
+        "thickness_in": 0.6875,
+        "width_in": 7.249999999999999,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -3061,7 +3136,7 @@
           6.8687
         ]
       ],
-      "volume_m3": 0.004119001
+      "volume_m3": 0.004083795
     },
     {
       "id": "bearing_2_6",
@@ -3136,10 +3211,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted. The sloped outer corners drawn beyond the flange tip are not dimensioned and are kept square.",
       "dimensions": {
-        "thickness_in": 0.6875
+        "thickness_in": 0.6875,
+        "width_in": 7.249999999999999,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -3153,7 +3234,7 @@
           6.832505
         ]
       ],
-      "volume_m3": 0.004119001
+      "volume_m3": 0.004083795
     },
     {
       "id": "bearing_2_7",
@@ -3228,10 +3309,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted. The sloped outer corners drawn beyond the flange tip are not dimensioned and are kept square.",
       "dimensions": {
-        "thickness_in": 0.6875
+        "thickness_in": 0.6875,
+        "width_in": 7.249999999999999,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -3245,7 +3332,7 @@
           6.788055
         ]
       ],
-      "volume_m3": 0.004119001
+      "volume_m3": 0.004083795
     },
     {
       "id": "bearing_3_1",
@@ -3320,10 +3407,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted. The sloped outer corners drawn beyond the flange tip are not dimensioned and are kept square.",
       "dimensions": {
-        "thickness_in": 0.6875
+        "thickness_in": 0.6875,
+        "width_in": 7.249999999999999,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -3337,7 +3430,7 @@
           6.818281
         ]
       ],
-      "volume_m3": 0.004119001
+      "volume_m3": 0.004083795
     },
     {
       "id": "bearing_3_2",
@@ -3412,10 +3505,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted. The sloped outer corners drawn beyond the flange tip are not dimensioned and are kept square.",
       "dimensions": {
-        "thickness_in": 0.6875
+        "thickness_in": 0.6875,
+        "width_in": 7.249999999999999,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -3429,7 +3528,7 @@
           6.856381
         ]
       ],
-      "volume_m3": 0.004119001
+      "volume_m3": 0.004083795
     },
     {
       "id": "bearing_3_3",
@@ -3504,10 +3603,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted. The sloped outer corners drawn beyond the flange tip are not dimensioned and are kept square.",
       "dimensions": {
-        "thickness_in": 0.6875
+        "thickness_in": 0.6875,
+        "width_in": 7.249999999999999,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -3521,7 +3626,7 @@
           6.901847
         ]
       ],
-      "volume_m3": 0.004119001
+      "volume_m3": 0.004083795
     },
     {
       "id": "bearing_3_4",
@@ -3596,10 +3701,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted. The sloped outer corners drawn beyond the flange tip are not dimensioned and are kept square.",
       "dimensions": {
-        "thickness_in": 0.6875
+        "thickness_in": 0.6875,
+        "width_in": 7.249999999999999,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -3613,7 +3724,7 @@
           6.947313
         ]
       ],
-      "volume_m3": 0.004119001
+      "volume_m3": 0.004083795
     },
     {
       "id": "bearing_3_5",
@@ -3688,10 +3799,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted. The sloped outer corners drawn beyond the flange tip are not dimensioned and are kept square.",
       "dimensions": {
-        "thickness_in": 0.6875
+        "thickness_in": 0.6875,
+        "width_in": 7.249999999999999,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -3705,7 +3822,7 @@
           6.904895
         ]
       ],
-      "volume_m3": 0.004119001
+      "volume_m3": 0.004083795
     },
     {
       "id": "bearing_3_6",
@@ -3780,10 +3897,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted. The sloped outer corners drawn beyond the flange tip are not dimensioned and are kept square.",
       "dimensions": {
-        "thickness_in": 0.6875
+        "thickness_in": 0.6875,
+        "width_in": 7.249999999999999,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -3797,7 +3920,7 @@
           6.865652
         ]
       ],
-      "volume_m3": 0.004119001
+      "volume_m3": 0.004083795
     },
     {
       "id": "bearing_3_7",
@@ -3872,10 +3995,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted. The sloped outer corners drawn beyond the flange tip are not dimensioned and are kept square.",
       "dimensions": {
-        "thickness_in": 0.6875
+        "thickness_in": 0.6875,
+        "width_in": 7.249999999999999,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -3889,7 +4018,7 @@
           6.824377
         ]
       ],
-      "volume_m3": 0.004119001
+      "volume_m3": 0.004083795
     },
     {
       "id": "bearing_4_1",
@@ -3964,10 +4093,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted.",
       "dimensions": {
-        "thickness_in": 0.5
+        "thickness_in": 0.5,
+        "width_in": 4.75,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -3981,7 +4116,7 @@
           6.818281
         ]
       ],
-      "volume_m3": 0.00195383
+      "volume_m3": 0.001928225
     },
     {
       "id": "bearing_4_2",
@@ -4056,10 +4191,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted.",
       "dimensions": {
-        "thickness_in": 0.5
+        "thickness_in": 0.5,
+        "width_in": 4.75,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -4073,7 +4214,7 @@
           6.856381
         ]
       ],
-      "volume_m3": 0.00195383
+      "volume_m3": 0.001928225
     },
     {
       "id": "bearing_4_3",
@@ -4148,10 +4289,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted.",
       "dimensions": {
-        "thickness_in": 0.5
+        "thickness_in": 0.5,
+        "width_in": 4.75,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -4165,7 +4312,7 @@
           6.901847
         ]
       ],
-      "volume_m3": 0.00195383
+      "volume_m3": 0.001928225
     },
     {
       "id": "bearing_4_4",
@@ -4240,10 +4387,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted.",
       "dimensions": {
-        "thickness_in": 0.5
+        "thickness_in": 0.5,
+        "width_in": 4.75,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -4257,7 +4410,7 @@
           6.947313
         ]
       ],
-      "volume_m3": 0.00195383
+      "volume_m3": 0.001928225
     },
     {
       "id": "bearing_4_5",
@@ -4332,10 +4485,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted.",
       "dimensions": {
-        "thickness_in": 0.5
+        "thickness_in": 0.5,
+        "width_in": 4.75,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -4349,7 +4508,7 @@
           6.904895
         ]
       ],
-      "volume_m3": 0.00195383
+      "volume_m3": 0.001928225
     },
     {
       "id": "bearing_4_6",
@@ -4424,10 +4583,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted.",
       "dimensions": {
-        "thickness_in": 0.5
+        "thickness_in": 0.5,
+        "width_in": 4.75,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -4441,7 +4606,7 @@
           6.862477
         ]
       ],
-      "volume_m3": 0.00195383
+      "volume_m3": 0.001928225
     },
     {
       "id": "bearing_4_7",
@@ -4516,10 +4681,16 @@
         18,
         22
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned plate; clipped corners",
+      "note": "Bearing stiffeners either side of the web (sheet 22): corners at the web clipped 1 1/4 in along the flange by 2 1/2 in along the web, top and bottom (\"CLIP CORNERS 2 1/2\" x 1 1/4\" TOP AND BOTTOM (TYP.)\"). Welds omitted.",
       "dimensions": {
-        "thickness_in": 0.5
+        "thickness_in": 0.5,
+        "width_in": 4.75,
+        "clip_in": [
+          1.25,
+          2.5
+        ],
+        "clips": "top and bottom web corners"
       },
       "bounds_m": [
         [
@@ -4533,7 +4704,7 @@
           6.824377
         ]
       ],
-      "volume_m3": 0.00195383
+      "volume_m3": 0.001928225
     },
     {
       "id": "cap_1",
@@ -4547,24 +4718,33 @@
         24
       ],
       "basis": "Approximate retained geometry from existing drawings",
-      "note": "Step boundaries and cap end corners are simplified. Primary plans explicitly call existing concrete dimensions approximate.",
+      "note": "Step boundaries are simplified. Ends at the existing wing inner faces (|Y| = 23 ft 3 in): the front face splays into each wing 1 ft 0 in from the wing face to 1 ft 0 in along it, the rear face turns square to the roadway over the last 1 ft 3 in (original 1980 plans pages 9-10, \"1'-0 (Typical)\", \"1'-3 (Typical)\"; sheet 12 plan). Primary plans explicitly call existing concrete dimensions approximate.",
       "dimensions": {
-        "length_along_skew_ft": 48,
-        "width_ft": 2.5
+        "width_ft": 2.5,
+        "end_at_wing_face_y_ft": 23.25,
+        "front_splay_ft": [
+          1.0,
+          1.0
+        ],
+        "rear_square_end_ft": 1.25,
+        "historical_pdf_pages": [
+          9,
+          10
+        ]
       },
       "bounds_m": [
         [
-          -25.045131,
-          -7.164551,
+          -24.975,
+          -7.0866,
           5.111496
         ],
         [
-          -20.522469,
-          7.164551,
+          -20.185711,
+          7.0866,
           5.98932
         ]
       ],
-      "volume_m3": 8.989713892
+      "volume_m3": 9.0875973
     },
     {
       "id": "endpile_1_1",
@@ -4825,28 +5005,30 @@
       "color": "#c0b9aa",
       "pdf_pages": [
         23,
-        24
+        24,
+        31
       ],
       "basis": "Dimensioned envelope; embedded interfaces simplified",
-      "note": "Concrete envelope includes embedded beam ends and bearing pads; the 1/2 in clearance pockets around the pads, reinforcement, sleeves and internal voids are excluded. Underside follows the stepped cap top with the 1/2 in expanded polystyrene horizontal joint (sheet 24 Sections A-A/B-B, sheet 23 elevation). 6 in pavement ledge on the rear face, its top 1 ft 2 in below the road surface (sheets 23, 24, 33).",
+      "note": "Concrete envelope includes embedded beam ends and bearing pads; the 1/2 in clearance pockets around the pads, reinforcement, sleeves and internal voids are excluded. Underside follows the stepped cap top with the 1/2 in expanded polystyrene horizontal joint (sheet 24 Sections A-A/B-B, sheet 23 elevation). 6 in pavement ledge on the rear face, its top 1 ft 2 in below the road surface (sheets 23, 24, 33). Front and rear faces and the ledge turn square to the roadway over the outer 1 ft 6 in at each coping (sheet 23 plan; sheet 31 railing plan); the underside there stays on the retained cap steps + 1/2 in.",
       "dimensions": {
         "isolation_joint_in": 0.5,
         "pavement_ledge_in": 6,
-        "ledge_depth_below_surface_in": 14
+        "ledge_depth_below_surface_in": 14,
+        "square_coping_zone_ft": 1.5
       },
       "bounds_m": [
         [
-          -25.076349,
+          -24.953842,
           -7.0866,
           5.886196
         ],
         [
-          -20.503952,
+          -20.626457,
           7.0866,
           6.867493
         ]
       ],
-      "volume_m3": 9.150650443
+      "volume_m3": 9.150754969
     },
     {
       "id": "wing_1_-1",
@@ -6262,24 +6444,33 @@
         24
       ],
       "basis": "Approximate retained geometry from existing drawings",
-      "note": "Step boundaries and cap end corners are simplified. Primary plans explicitly call existing concrete dimensions approximate.",
+      "note": "Step boundaries are simplified. Ends at the existing wing inner faces (|Y| = 23 ft 3 in): the front face splays into each wing 1 ft 0 in from the wing face to 1 ft 0 in along it, the rear face turns square to the roadway over the last 1 ft 3 in (original 1980 plans pages 9-10, \"1'-0 (Typical)\", \"1'-3 (Typical)\"; sheet 12 plan). Primary plans explicitly call existing concrete dimensions approximate.",
       "dimensions": {
-        "length_along_skew_ft": 48,
-        "width_ft": 2.5
+        "width_ft": 2.5,
+        "end_at_wing_face_y_ft": 23.25,
+        "front_splay_ft": [
+          1.0,
+          1.0
+        ],
+        "rear_square_end_ft": 1.25,
+        "historical_pdf_pages": [
+          9,
+          10
+        ]
       },
       "bounds_m": [
         [
-          20.522469,
-          -7.164551,
+          20.185711,
+          -7.0866,
           5.239512
         ],
         [
-          25.045131,
-          7.164551,
+          24.975,
+          7.0866,
           6.135624
         ]
       ],
-      "volume_m3": 9.20173628
+      "volume_m3": 9.301689964
     },
     {
       "id": "endpile_4_1",
@@ -6540,28 +6731,30 @@
       "color": "#c0b9aa",
       "pdf_pages": [
         23,
-        24
+        24,
+        31
       ],
       "basis": "Dimensioned envelope; embedded interfaces simplified",
-      "note": "Concrete envelope includes embedded beam ends and bearing pads; the 1/2 in clearance pockets around the pads, reinforcement, sleeves and internal voids are excluded. Underside follows the stepped cap top with the 1/2 in expanded polystyrene horizontal joint (sheet 24 Sections A-A/B-B, sheet 23 elevation). 6 in pavement ledge on the rear face, its top 1 ft 2 in below the road surface (sheets 23, 24, 33).",
+      "note": "Concrete envelope includes embedded beam ends and bearing pads; the 1/2 in clearance pockets around the pads, reinforcement, sleeves and internal voids are excluded. Underside follows the stepped cap top with the 1/2 in expanded polystyrene horizontal joint (sheet 24 Sections A-A/B-B, sheet 23 elevation). 6 in pavement ledge on the rear face, its top 1 ft 2 in below the road surface (sheets 23, 24, 33). Front and rear faces and the ledge turn square to the roadway over the outer 1 ft 6 in at each coping (sheet 23 plan; sheet 31 railing plan); the underside there stays on the retained cap steps + 1/2 in.",
       "dimensions": {
         "isolation_joint_in": 0.5,
         "pavement_ledge_in": 6,
-        "ledge_depth_below_surface_in": 14
+        "ledge_depth_below_surface_in": 14,
+        "square_coping_zone_ft": 1.5
       },
       "bounds_m": [
         [
-          20.503952,
+          20.626457,
           -7.0866,
           6.044692
         ],
         [
-          25.076349,
+          24.953842,
           7.0866,
           6.986228
         ]
       ],
-      "volume_m3": 8.862080233
+      "volume_m3": 8.862227015
     },
     {
       "id": "wing_4_-1",
@@ -10053,7 +10246,7 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged. Web on the down-station face of the bent legs, flanges toward down-station, as in the sheet 20 plan read in the framing-plan orientation (sheet 17).",
       "dimensions": {
         "section": "C15x33.9",
         "bay_ft": 7,
@@ -10061,17 +10254,17 @@
       },
       "bounds_m": [
         [
-          -6.481281,
-          4.451726,
+          -6.579239,
+          4.486125,
           6.277515
         ],
         [
-          -5.802279,
-          6.181875,
+          -5.900237,
+          6.216274,
           6.658515
         ]
       ],
-      "volume_m3": 0.011518467
+      "volume_m3": 0.011518492
     },
     {
       "id": "diaphragm_plates_7_1",
@@ -10116,7 +10309,7 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end, heads on the up-station face of the bent leg, nuts inside the channel), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
         "count": 32,
         "diameter_in": 0.875
@@ -10133,7 +10326,7 @@
           6.599539
         ]
       ],
-      "volume_m3": 0.001086042
+      "volume_m3": 0.001086038
     },
     {
       "id": "diaphragm_7_2",
@@ -10145,7 +10338,7 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged. Web on the down-station face of the bent legs, flanges toward down-station, as in the sheet 20 plan read in the framing-plan orientation (sheet 17).",
       "dimensions": {
         "section": "C15x33.9",
         "bay_ft": 7,
@@ -10153,17 +10346,17 @@
       },
       "bounds_m": [
         [
-          -7.052977,
-          2.318126,
+          -7.150935,
+          2.352525,
           6.31879
         ],
         [
-          -6.373976,
-          4.048275,
+          -6.471934,
+          4.082674,
           6.69979
         ]
       ],
-      "volume_m3": 0.011518467
+      "volume_m3": 0.011518417
     },
     {
       "id": "diaphragm_plates_7_2",
@@ -10208,7 +10401,7 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end, heads on the up-station face of the bent leg, nuts inside the channel), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
         "count": 32,
         "diameter_in": 0.875
@@ -10220,12 +10413,12 @@
           6.377765
         ],
         [
-          -6.438413,
+          -6.438414,
           4.212394,
           6.640814
         ]
       ],
-      "volume_m3": 0.001086042
+      "volume_m3": 0.001086033
     },
     {
       "id": "diaphragm_7_3",
@@ -10237,7 +10430,7 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged. Web on the down-station face of the bent legs, flanges toward down-station, as in the sheet 20 plan read in the framing-plan orientation (sheet 17).",
       "dimensions": {
         "section": "C15x33.9",
         "bay_ft": 7,
@@ -10245,17 +10438,17 @@
       },
       "bounds_m": [
         [
-          -7.624674,
-          0.184526,
+          -7.722632,
+          0.218925,
           6.367304
         ],
         [
-          -6.945672,
-          1.914675,
+          -7.04363,
+          1.949074,
           6.748304
         ]
       ],
-      "volume_m3": 0.011518467
+      "volume_m3": 0.01151845
     },
     {
       "id": "diaphragm_plates_7_3",
@@ -10300,7 +10493,7 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end, heads on the up-station face of the bent leg, nuts inside the channel), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
         "count": 32,
         "diameter_in": 0.875
@@ -10317,7 +10510,7 @@
           6.689328
         ]
       ],
-      "volume_m3": 0.001086042
+      "volume_m3": 0.001086033
     },
     {
       "id": "diaphragm_7_4",
@@ -10329,7 +10522,7 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged. Web on the down-station face of the bent legs, flanges toward down-station, as in the sheet 20 plan read in the framing-plan orientation (sheet 17).",
       "dimensions": {
         "section": "C15x33.9",
         "bay_ft": 7,
@@ -10337,17 +10530,17 @@
       },
       "bounds_m": [
         [
-          -8.19637,
-          -1.949074,
+          -8.294328,
+          -1.914675,
           6.379623
         ],
         [
-          -7.517368,
-          -0.218925,
+          -7.615327,
+          -0.184526,
           6.760623
         ]
       ],
-      "volume_m3": 0.011518467
+      "volume_m3": 0.011518464
     },
     {
       "id": "diaphragm_plates_7_4",
@@ -10392,7 +10585,7 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end, heads on the up-station face of the bent leg, nuts inside the channel), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
         "count": 32,
         "diameter_in": 0.875
@@ -10409,7 +10602,7 @@
           6.701647
         ]
       ],
-      "volume_m3": 0.001086042
+      "volume_m3": 0.001086039
     },
     {
       "id": "diaphragm_7_5",
@@ -10421,7 +10614,7 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged. Web on the down-station face of the bent legs, flanges toward down-station, as in the sheet 20 plan read in the framing-plan orientation (sheet 17).",
       "dimensions": {
         "section": "C15x33.9",
         "bay_ft": 7,
@@ -10429,17 +10622,17 @@
       },
       "bounds_m": [
         [
-          -8.768066,
-          -4.082674,
+          -8.866024,
+          -4.048275,
           6.343428
         ],
         [
-          -8.089065,
-          -2.352525,
+          -8.187023,
+          -2.318126,
           6.724428
         ]
       ],
-      "volume_m3": 0.011518467
+      "volume_m3": 0.011518636
     },
     {
       "id": "diaphragm_plates_7_5",
@@ -10484,24 +10677,24 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end, heads on the up-station face of the bent leg, nuts inside the channel), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
         "count": 32,
         "diameter_in": 0.875
       },
       "bounds_m": [
         [
-          -8.801587,
+          -8.801586,
           -4.212394,
           6.402403
         ],
         [
-          -8.153503,
+          -8.153502,
           -2.188406,
           6.665452
         ]
       ],
-      "volume_m3": 0.001086042
+      "volume_m3": 0.001086034
     },
     {
       "id": "diaphragm_7_6",
@@ -10513,7 +10706,7 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged. Web on the down-station face of the bent legs, flanges toward down-station, as in the sheet 20 plan read in the framing-plan orientation (sheet 17).",
       "dimensions": {
         "section": "C15x33.9",
         "bay_ft": 7,
@@ -10521,17 +10714,17 @@
       },
       "bounds_m": [
         [
-          -9.339763,
-          -6.216274,
+          -9.437721,
+          -6.181875,
           6.298978
         ],
         [
-          -8.660761,
-          -4.486125,
+          -8.75872,
+          -4.451726,
           6.679978
         ]
       ],
-      "volume_m3": 0.011518467
+      "volume_m3": 0.011518251
     },
     {
       "id": "diaphragm_plates_7_6",
@@ -10576,7 +10769,7 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end, heads on the up-station face of the bent leg, nuts inside the channel), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
         "count": 32,
         "diameter_in": 0.875
@@ -10593,7 +10786,7 @@
           6.621002
         ]
       ],
-      "volume_m3": 0.001086042
+      "volume_m3": 0.001086041
     },
     {
       "id": "diaphragm_8_1",
@@ -10605,7 +10798,7 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged. Web on the down-station face of the bent legs, flanges toward down-station, as in the sheet 20 plan read in the framing-plan orientation (sheet 17).",
       "dimensions": {
         "section": "C15x33.9",
         "bay_ft": 7,
@@ -10613,17 +10806,17 @@
       },
       "bounds_m": [
         [
-          8.758719,
-          4.451726,
+          8.660761,
+          4.486125,
           6.329204
         ],
         [
-          9.437721,
-          6.181875,
+          9.339762,
+          6.216274,
           6.710204
         ]
       ],
-      "volume_m3": 0.011518467
+      "volume_m3": 0.01151835
     },
     {
       "id": "diaphragm_plates_8_1",
@@ -10668,7 +10861,7 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end, heads on the up-station face of the bent leg, nuts inside the channel), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
         "count": 32,
         "diameter_in": 0.875
@@ -10685,7 +10878,7 @@
           6.651228
         ]
       ],
-      "volume_m3": 0.001086042
+      "volume_m3": 0.001086041
     },
     {
       "id": "diaphragm_8_2",
@@ -10697,7 +10890,7 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged. Web on the down-station face of the bent legs, flanges toward down-station, as in the sheet 20 plan read in the framing-plan orientation (sheet 17).",
       "dimensions": {
         "section": "C15x33.9",
         "bay_ft": 7,
@@ -10705,17 +10898,17 @@
       },
       "bounds_m": [
         [
-          8.187023,
-          2.318126,
+          8.089065,
+          2.352526,
           6.367304
         ],
         [
-          8.866024,
-          4.048275,
+          8.768067,
+          4.082674,
           6.748304
         ]
       ],
-      "volume_m3": 0.011518467
+      "volume_m3": 0.011518275
     },
     {
       "id": "diaphragm_plates_8_2",
@@ -10760,24 +10953,24 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end, heads on the up-station face of the bent leg, nuts inside the channel), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
         "count": 32,
         "diameter_in": 0.875
       },
       "bounds_m": [
         [
-          8.153503,
+          8.153502,
           2.188406,
           6.42628
         ],
         [
-          8.801587,
+          8.801586,
           4.212394,
           6.689328
         ]
       ],
-      "volume_m3": 0.001086042
+      "volume_m3": 0.001086034
     },
     {
       "id": "diaphragm_8_3",
@@ -10789,7 +10982,7 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged. Web on the down-station face of the bent legs, flanges toward down-station, as in the sheet 20 plan read in the framing-plan orientation (sheet 17).",
       "dimensions": {
         "section": "C15x33.9",
         "bay_ft": 7,
@@ -10797,17 +10990,17 @@
       },
       "bounds_m": [
         [
-          7.615326,
-          0.184526,
+          7.517368,
+          0.218925,
           6.41277
         ],
         [
-          8.294328,
-          1.914675,
+          8.19637,
+          1.949074,
           6.79377
         ]
       ],
-      "volume_m3": 0.011518467
+      "volume_m3": 0.011518591
     },
     {
       "id": "diaphragm_plates_8_3",
@@ -10852,7 +11045,7 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end, heads on the up-station face of the bent leg, nuts inside the channel), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
         "count": 32,
         "diameter_in": 0.875
@@ -10869,7 +11062,7 @@
           6.734794
         ]
       ],
-      "volume_m3": 0.001086042
+      "volume_m3": 0.001086039
     },
     {
       "id": "diaphragm_8_4",
@@ -10881,7 +11074,7 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged. Web on the down-station face of the bent legs, flanges toward down-station, as in the sheet 20 plan read in the framing-plan orientation (sheet 17).",
       "dimensions": {
         "section": "C15x33.9",
         "bay_ft": 7,
@@ -10889,17 +11082,17 @@
       },
       "bounds_m": [
         [
-          7.04363,
-          -1.949074,
+          6.945672,
+          -1.914675,
           6.415818
         ],
         [
-          7.722632,
-          -0.218925,
+          7.624674,
+          -0.184526,
           6.796818
         ]
       ],
-      "volume_m3": 0.011518467
+      "volume_m3": 0.011518464
     },
     {
       "id": "diaphragm_plates_8_4",
@@ -10944,7 +11137,7 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end, heads on the up-station face of the bent leg, nuts inside the channel), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
         "count": 32,
         "diameter_in": 0.875
@@ -10961,7 +11154,7 @@
           6.737842
         ]
       ],
-      "volume_m3": 0.001086042
+      "volume_m3": 0.001086033
     },
     {
       "id": "diaphragm_8_5",
@@ -10973,7 +11166,7 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged. Web on the down-station face of the bent legs, flanges toward down-station, as in the sheet 20 plan read in the framing-plan orientation (sheet 17).",
       "dimensions": {
         "section": "C15x33.9",
         "bay_ft": 7,
@@ -10981,17 +11174,17 @@
       },
       "bounds_m": [
         [
-          6.471934,
-          -4.082674,
+          6.373976,
+          -4.048275,
           6.376575
         ],
         [
-          7.150935,
-          -2.352525,
+          7.052977,
+          -2.318126,
           6.757575
         ]
       ],
-      "volume_m3": 0.011518467
+      "volume_m3": 0.011518494
     },
     {
       "id": "diaphragm_plates_8_5",
@@ -11036,14 +11229,14 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end, heads on the up-station face of the bent leg, nuts inside the channel), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
         "count": 32,
         "diameter_in": 0.875
       },
       "bounds_m": [
         [
-          6.438413,
+          6.438414,
           -4.212394,
           6.43555
         ],
@@ -11053,7 +11246,7 @@
           6.698599
         ]
       ],
-      "volume_m3": 0.001086042
+      "volume_m3": 0.001086032
     },
     {
       "id": "diaphragm_8_6",
@@ -11065,7 +11258,7 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged. Web on the down-station face of the bent legs, flanges toward down-station, as in the sheet 20 plan read in the framing-plan orientation (sheet 17).",
       "dimensions": {
         "section": "C15x33.9",
         "bay_ft": 7,
@@ -11073,17 +11266,17 @@
       },
       "bounds_m": [
         [
-          5.900237,
-          -6.216274,
+          5.802279,
+          -6.181875,
           6.3353
         ],
         [
-          6.579239,
-          -4.486125,
+          6.481281,
+          -4.451726,
           6.7163
         ]
       ],
-      "volume_m3": 0.011518467
+      "volume_m3": 0.011518393
     },
     {
       "id": "diaphragm_plates_8_6",
@@ -11128,7 +11321,7 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end, heads on the up-station face of the bent leg, nuts inside the channel), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
         "count": 32,
         "diameter_in": 0.875
@@ -11145,7 +11338,7 @@
           6.657324
         ]
       ],
-      "volume_m3": 0.001086042
+      "volume_m3": 0.001086038
     },
     {
       "id": "rail_-1",
@@ -11153,28 +11346,29 @@
       "layer": "rails",
       "color": "#d3cbb8",
       "pdf_pages": [
+        23,
         27,
         31
       ],
       "basis": "Dimensioned profile",
-      "note": "Small edge chamfers, surface coating thickness and rebar omitted.",
+      "note": "Small edge chamfers, surface coating thickness and rebar omitted. Ends on the square bridge joint across the barrier zone (sheet 31 railing plan; sheet 23): moved +0.1089 m in X from the skew point at the back face.",
       "dimensions": {
         "height_in": 33,
         "base_width_in": 16
       },
       "bounds_m": [
         [
-          -24.910337,
+          -24.801443,
           -7.0358,
-          6.912531
+          6.913312
         ],
         [
-          21.139863,
+          21.248759,
           -6.6294,
-          7.897092
+          7.897093
         ]
       ],
-      "volume_m3": 11.066880769
+      "volume_m3": 11.066880656
     },
     {
       "id": "fascia_-1",
@@ -11185,24 +11379,27 @@
         27,
         31
       ],
-      "basis": "Dimensioned outer depth; simplified width",
-      "note": "Drip bead recess and interior taper are not cut. Edge depth corrected from 9 5/8 in to the 9 1/8 in coping of the sheet 27 typical section (sheet 31 shows 9 1/4 in).",
+      "basis": "Dimensioned edge depth; level soffit to the exterior beam flange as drawn",
+      "note": "Overhang thickening below the 8 in deck: from the deck edge to the outer tip of the exterior beam top flange, 9 1/8 in deep at the edge with a level soffit (9.57 in at the flange tip), as in the sheet 27 typical section, which governs the deck; the sheet 31 railing Section A-A (9 1/4 in, deck drawn without crossfall or beam) is not used. Ends at the end-diaphragm front faces (the diaphragms are cast first, sheet 23 note 5), square over the outer 1 ft 6 in (sheet 23); cut around the projecting pier bearing stiffeners. Drip bead recess not cut.",
       "dimensions": {
-        "edge_depth_in": 9.125
+        "edge_depth_in": 9.125,
+        "flange_tip_depth_in": 9.565,
+        "width_in": 22.005,
+        "soffit": "level"
       },
       "bounds_m": [
         [
-          -24.923948,
+          -24.179142,
           -7.0866,
-          6.679642
+          6.684944
         ],
         [
-          21.180698,
-          -6.8834,
-          6.854169
+          20.653715,
+          -6.527673,
+          6.86126
         ]
       ],
-      "volume_m3": 0.26739154
+      "volume_m3": 0.855207015
     },
     {
       "id": "delineator_-1_1",
@@ -11213,23 +11410,23 @@
         31
       ],
       "basis": "Count and maximum spacing; schematic product",
-      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given.",
+      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given. Moved +0.1089 m in X with the barrier.",
       "dimensions": {
         "count_on_side": 6
       },
       "bounds_m": [
         [
-          -24.960337,
+          -24.851442,
           -6.9808,
-          7.750731
+          7.751512
         ],
         [
-          -24.860337,
+          -24.751442,
           -6.9308,
-          7.790731
+          7.791512
         ]
       ],
-      "volume_m3": 0.0002
+      "volume_m3": 0.000200001
     },
     {
       "id": "delineator_-1_2",
@@ -11240,23 +11437,23 @@
         31
       ],
       "basis": "Count and maximum spacing; schematic product",
-      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given.",
+      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given. Moved +0.1089 m in X with the barrier.",
       "dimensions": {
         "count_on_side": 6
       },
       "bounds_m": [
         [
-          -15.750297,
+          -15.641402,
           -6.9808,
-          7.80919
+          7.809789
         ],
         [
-          -15.650297,
+          -15.541403,
           -6.9308,
-          7.84919
+          7.849789
         ]
       ],
-      "volume_m3": 0.0002
+      "volume_m3": 0.000199999
     },
     {
       "id": "delineator_-1_3",
@@ -11267,20 +11464,20 @@
         31
       ],
       "basis": "Count and maximum spacing; schematic product",
-      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given.",
+      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given. Moved +0.1089 m in X with the barrier.",
       "dimensions": {
         "count_on_side": 6
       },
       "bounds_m": [
         [
-          -6.540257,
+          -6.431362,
           -6.9808,
-          7.852204
+          7.85262
         ],
         [
-          -6.440257,
+          -6.331363,
           -6.9308,
-          7.892204
+          7.89262
         ]
       ],
       "volume_m3": 0.0002
@@ -11294,20 +11491,20 @@
         31
       ],
       "basis": "Count and maximum spacing; schematic product",
-      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given.",
+      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given. Moved +0.1089 m in X with the barrier.",
       "dimensions": {
         "count_on_side": 6
       },
       "bounds_m": [
         [
-          2.669783,
+          2.778678,
           -6.9808,
-          7.879772
+          7.880006
         ],
         [
-          2.769783,
+          2.878678,
           -6.9308,
-          7.919772
+          7.920006
         ]
       ],
       "volume_m3": 0.0002
@@ -11321,23 +11518,23 @@
         31
       ],
       "basis": "Count and maximum spacing; schematic product",
-      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given.",
+      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given. Moved +0.1089 m in X with the barrier.",
       "dimensions": {
         "count_on_side": 6
       },
       "bounds_m": [
         [
-          11.879823,
+          11.988717,
           -6.9808,
-          7.891895
+          7.891946
         ],
         [
-          11.979823,
+          12.088718,
           -6.9308,
-          7.931895
+          7.931946
         ]
       ],
-      "volume_m3": 0.0002
+      "volume_m3": 0.000200001
     },
     {
       "id": "delineator_-1_6",
@@ -11348,23 +11545,23 @@
         31
       ],
       "basis": "Count and maximum spacing; schematic product",
-      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given.",
+      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given. Moved +0.1089 m in X with the barrier.",
       "dimensions": {
         "count_on_side": 6
       },
       "bounds_m": [
         [
-          21.089863,
+          21.198757,
           -6.9808,
-          7.888572
+          7.88844
         ],
         [
-          21.189863,
+          21.298758,
           -6.9308,
-          7.928572
+          7.928441
         ]
       ],
-      "volume_m3": 0.0002
+      "volume_m3": 0.000200004
     },
     {
       "id": "rail_1",
@@ -11372,28 +11569,29 @@
       "layer": "rails",
       "color": "#d3cbb8",
       "pdf_pages": [
+        23,
         27,
         31
       ],
       "basis": "Dimensioned profile",
-      "note": "Small edge chamfers, surface coating thickness and rebar omitted.",
+      "note": "Small edge chamfers, surface coating thickness and rebar omitted. Ends on the square bridge joint across the barrier zone (sheet 31 railing plan; sheet 23): moved -0.1089 m in X from the skew point at the back face.",
       "dimensions": {
         "height_in": 33,
         "base_width_in": 16
       },
       "bounds_m": [
         [
-          -21.139863,
+          -21.248759,
           6.6294,
-          6.938331
+          6.937622
         ],
         [
-          24.910337,
+          24.801443,
           7.0358,
           7.897093
         ]
       ],
-      "volume_m3": 11.066880769
+      "volume_m3": 11.066880755
     },
     {
       "id": "fascia_1",
@@ -11404,24 +11602,27 @@
         27,
         31
       ],
-      "basis": "Dimensioned outer depth; simplified width",
-      "note": "Drip bead recess and interior taper are not cut. Edge depth corrected from 9 5/8 in to the 9 1/8 in coping of the sheet 27 typical section (sheet 31 shows 9 1/4 in).",
+      "basis": "Dimensioned edge depth; level soffit to the exterior beam flange as drawn",
+      "note": "Overhang thickening below the 8 in deck: from the deck edge to the outer tip of the exterior beam top flange, 9 1/8 in deep at the edge with a level soffit (9.57 in at the flange tip), as in the sheet 27 typical section, which governs the deck; the sheet 31 railing Section A-A (9 1/4 in, deck drawn without crossfall or beam) is not used. Ends at the end-diaphragm front faces (the diaphragms are cast first, sheet 23 note 5), square over the outer 1 ft 6 in (sheet 23); cut around the projecting pier bearing stiffeners. Drip bead recess not cut.",
       "dimensions": {
-        "edge_depth_in": 9.125
+        "edge_depth_in": 9.125,
+        "flange_tip_depth_in": 9.565,
+        "width_in": 22.005,
+        "soffit": "level"
       },
       "bounds_m": [
         [
-          -21.180698,
-          6.8834,
-          6.705628
+          -20.653715,
+          6.527673,
+          6.708676
         ],
         [
-          24.923948,
+          24.179142,
           7.0866,
-          6.854169
+          6.861259
         ]
       ],
-      "volume_m3": 0.267391475
+      "volume_m3": 0.855318628
     },
     {
       "id": "delineator_1_1",
@@ -11432,23 +11633,23 @@
         31
       ],
       "basis": "Count and maximum spacing; schematic product",
-      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given.",
+      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given. Moved -0.1089 m in X with the barrier.",
       "dimensions": {
         "count_on_side": 6
       },
       "bounds_m": [
         [
-          -21.189863,
+          -21.298758,
           6.9308,
-          7.776531
+          7.775822
         ],
         [
-          -21.089863,
+          -21.198757,
           6.9808,
-          7.816531
+          7.815822
         ]
       ],
-      "volume_m3": 0.0002
+      "volume_m3": 0.000200001
     },
     {
       "id": "delineator_1_2",
@@ -11459,23 +11660,23 @@
         31
       ],
       "basis": "Count and maximum spacing; schematic product",
-      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given.",
+      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given. Moved -0.1089 m in X with the barrier.",
       "dimensions": {
         "count_on_side": 6
       },
       "bounds_m": [
         [
-          -11.979823,
+          -12.088718,
           6.9308,
-          7.828667
+          7.82814
         ],
         [
-          -11.879823,
+          -11.988717,
           6.9808,
-          7.868667
+          7.86814
         ]
       ],
-      "volume_m3": 0.0002
+      "volume_m3": 0.000200001
     },
     {
       "id": "delineator_1_3",
@@ -11486,20 +11687,20 @@
         31
       ],
       "basis": "Count and maximum spacing; schematic product",
-      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given.",
+      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given. Moved -0.1089 m in X with the barrier.",
       "dimensions": {
         "count_on_side": 6
       },
       "bounds_m": [
         [
-          -2.769783,
+          -2.878678,
           6.9308,
-          7.865357
+          7.865013
         ],
         [
-          -2.669783,
+          -2.778678,
           6.9808,
-          7.905357
+          7.905013
         ]
       ],
       "volume_m3": 0.0002
@@ -11513,20 +11714,20 @@
         31
       ],
       "basis": "Count and maximum spacing; schematic product",
-      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given.",
+      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given. Moved -0.1089 m in X with the barrier.",
       "dimensions": {
         "count_on_side": 6
       },
       "bounds_m": [
         [
-          6.440257,
+          6.331363,
           6.9308,
-          7.886602
+          7.886441
         ],
         [
-          6.540257,
+          6.431362,
           6.9808,
-          7.926602
+          7.926441
         ]
       ],
       "volume_m3": 0.0002
@@ -11540,23 +11741,23 @@
         31
       ],
       "basis": "Count and maximum spacing; schematic product",
-      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given.",
+      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given. Moved -0.1089 m in X with the barrier.",
       "dimensions": {
         "count_on_side": 6
       },
       "bounds_m": [
         [
-          15.650297,
+          15.541403,
           6.9308,
-          7.892402
+          7.892423
         ],
         [
-          15.750297,
+          15.641402,
           6.9808,
-          7.932402
+          7.932423
         ]
       ],
-      "volume_m3": 0.0002
+      "volume_m3": 0.000199999
     },
     {
       "id": "delineator_1_6",
@@ -11567,23 +11768,23 @@
         31
       ],
       "basis": "Count and maximum spacing; schematic product",
-      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given.",
+      "note": "12 total per quantity table, distributed evenly including ends. Manufacturer geometry and exact stations not given. Moved -0.1089 m in X with the barrier.",
       "dimensions": {
         "count_on_side": 6
       },
       "bounds_m": [
         [
-          24.860337,
+          24.751442,
           6.9308,
-          7.882756
+          7.88296
         ],
         [
-          24.960337,
+          24.851442,
           6.9808,
-          7.922756
+          7.92296
         ]
       ],
-      "volume_m3": 0.0002
+      "volume_m3": 0.000200001
     },
     {
       "id": "approach_west",
@@ -11623,28 +11824,33 @@
       "layer": "approaches",
       "color": "#bec5c1",
       "pdf_pages": [
+        23,
+        31,
         32,
         33
       ],
       "basis": "Dimensioned",
-      "note": "",
+      "note": "RCBA extension for the TFC transition, 12 in like the approach slab (sheet 33 note 2); 2 in deeper (1 ft 2 in) for 2 ft 0 in from its square end at the bridge joint, where it bears on the end-diaphragm pavement ledge, returning at 45 deg (sheet 33 pavement ledge detail; sheet 31 railing elevation). Square end on the joint, which is square over the coping zone (sheets 23, 32). Reinforcement (E609-TBAE-01) not modelled.",
       "dimensions": {
         "length_ft": 16.416666666666668,
-        "width_ft": 1.5
+        "width_ft": 1.5,
+        "thickness_in": 12,
+        "end_thickness_in": 14,
+        "thickened_length_ft": 2
       },
       "bounds_m": [
         [
-          -29.805242,
+          -29.805243,
           -7.0866,
-          6.56936
+          6.552294
         ],
         [
-          -24.801442,
+          -24.801443,
           -6.6294,
-          6.92144
+          6.921441
         ]
       ],
-      "volume_m3": 0.697302347
+      "volume_m3": 0.712052086
     },
     {
       "id": "tfc_-1_-1",
@@ -11652,28 +11858,29 @@
       "layer": "rails",
       "color": "#d3cbb8",
       "pdf_pages": [
+        23,
         31,
         32
       ],
       "basis": "Standard sections; interpolated transition",
-      "note": "INDOT E706-TTFC-01/02 (September 2013). Taper between sections approximated; guardrail attachment holes and steel TGB approach guardrail are not modeled.",
+      "note": "INDOT E706-TTFC-01/02 (September 2013). Taper between sections approximated; guardrail attachment holes and steel TGB approach guardrail are not modeled. Starts at the square bridge joint (sheet 31 railing plan): moved +0.1089 m in X.",
       "dimensions": {
         "length_ft": 15.666666666666666,
         "standard": "E706-TTFC-01/02"
       },
       "bounds_m": [
         [
-          -29.685537,
+          -29.576643,
           -7.0358,
-          6.876141
+          6.877017
         ],
         [
-          -24.910337,
+          -24.801443,
           -6.6294,
-          7.755303
+          7.756084
         ]
       ],
-      "volume_m3": 1.012665787
+      "volume_m3": 1.012665772
     },
     {
       "id": "extension_-1_1",
@@ -11681,20 +11888,25 @@
       "layer": "approaches",
       "color": "#bec5c1",
       "pdf_pages": [
+        23,
+        31,
         32,
         33
       ],
       "basis": "Dimensioned",
-      "note": "",
+      "note": "RCBA extension for the TFC transition, 12 in like the approach slab (sheet 33 note 2); 2 in deeper (1 ft 2 in) for 2 ft 0 in from its square end at the bridge joint, where it bears on the end-diaphragm pavement ledge, returning at 45 deg (sheet 33 pavement ledge detail; sheet 31 railing elevation). Square end on the joint, which is square over the coping zone (sheets 23, 32). Reinforcement (E609-TBAE-01) not modelled.",
       "dimensions": {
         "length_ft": 16.416666666666668,
-        "width_ft": 1.5
+        "width_ft": 1.5,
+        "thickness_in": 12,
+        "end_thickness_in": 14,
+        "thickened_length_ft": 2
       },
       "bounds_m": [
         [
           -26.252558,
           6.6294,
-          6.596906
+          6.576998
         ],
         [
           -21.248758,
@@ -11702,7 +11914,7 @@
           6.94575
         ]
       ],
-      "volume_m3": 0.697302347
+      "volume_m3": 0.712052098
     },
     {
       "id": "tfc_-1_1",
@@ -11710,28 +11922,29 @@
       "layer": "rails",
       "color": "#d3cbb8",
       "pdf_pages": [
+        23,
         31,
         32
       ],
       "basis": "Standard sections; interpolated transition",
-      "note": "INDOT E706-TTFC-01/02 (September 2013). Taper between sections approximated; guardrail attachment holes and steel TGB approach guardrail are not modeled.",
+      "note": "INDOT E706-TTFC-01/02 (September 2013). Taper between sections approximated; guardrail attachment holes and steel TGB approach guardrail are not modeled. Starts at the square bridge joint (sheet 31 railing plan): moved -0.1089 m in X.",
       "dimensions": {
         "length_ft": 15.666666666666666,
         "standard": "E706-TTFC-01/02"
       },
       "bounds_m": [
         [
-          -25.915063,
+          -26.023958,
           6.6294,
-          6.905219
+          6.904416
         ],
         [
-          -21.139863,
+          -21.248759,
           7.0358,
-          7.781103
+          7.780394
         ]
       ],
-      "volume_m3": 1.012665787
+      "volume_m3": 1.012665731
     },
     {
       "id": "approach_east",
@@ -11771,20 +11984,25 @@
       "layer": "approaches",
       "color": "#bec5c1",
       "pdf_pages": [
+        23,
+        31,
         32,
         33
       ],
       "basis": "Dimensioned",
-      "note": "",
+      "note": "RCBA extension for the TFC transition, 12 in like the approach slab (sheet 33 note 2); 2 in deeper (1 ft 2 in) for 2 ft 0 in from its square end at the bridge joint, where it bears on the end-diaphragm pavement ledge, returning at 45 deg (sheet 33 pavement ledge detail; sheet 31 railing elevation). Square end on the joint, which is square over the coping zone (sheets 23, 32). Reinforcement (E609-TBAE-01) not modelled.",
       "dimensions": {
         "length_ft": 16.416666666666668,
-        "width_ft": 1.5
+        "width_ft": 1.5,
+        "thickness_in": 12,
+        "end_thickness_in": 14,
+        "thickened_length_ft": 2
       },
       "bounds_m": [
         [
           21.248758,
           -7.0866,
-          6.736045
+          6.692847
         ],
         [
           26.252558,
@@ -11792,7 +12010,7 @@
           7.058368
         ]
       ],
-      "volume_m3": 0.697302347
+      "volume_m3": 0.71205211
     },
     {
       "id": "tfc_1_-1",
@@ -11800,28 +12018,29 @@
       "layer": "rails",
       "color": "#d3cbb8",
       "pdf_pages": [
+        23,
         31,
         32
       ],
       "basis": "Standard sections; interpolated transition",
-      "note": "INDOT E706-TTFC-01/02 (September 2013). Taper between sections approximated; guardrail attachment holes and steel TGB approach guardrail are not modeled.",
+      "note": "INDOT E706-TTFC-01/02 (September 2013). Taper between sections approximated; guardrail attachment holes and steel TGB approach guardrail are not modeled. Starts at the square bridge joint (sheet 31 railing plan): moved +0.1089 m in X.",
       "dimensions": {
         "length_ft": 15.666666666666666,
         "standard": "E706-TTFC-01/02"
       },
       "bounds_m": [
         [
-          21.139863,
+          21.248759,
           -7.0358,
-          7.042569
+          7.042343
         ],
         [
-          25.915063,
+          26.023958,
           -6.6294,
-          7.893144
+          7.893012
         ]
       ],
-      "volume_m3": 1.012665787
+      "volume_m3": 1.012665743
     },
     {
       "id": "extension_1_1",
@@ -11829,28 +12048,33 @@
       "layer": "approaches",
       "color": "#bec5c1",
       "pdf_pages": [
+        23,
+        31,
         32,
         33
       ],
       "basis": "Dimensioned",
-      "note": "",
+      "note": "RCBA extension for the TFC transition, 12 in like the approach slab (sheet 33 note 2); 2 in deeper (1 ft 2 in) for 2 ft 0 in from its square end at the bridge joint, where it bears on the end-diaphragm pavement ledge, returning at 45 deg (sheet 33 pavement ledge detail; sheet 31 railing elevation). Square end on the joint, which is square over the coping zone (sheets 23, 32). Reinforcement (E609-TBAE-01) not modelled.",
       "dimensions": {
         "length_ft": 16.416666666666668,
-        "width_ft": 1.5
+        "width_ft": 1.5,
+        "thickness_in": 12,
+        "end_thickness_in": 14,
+        "thickened_length_ft": 2
       },
       "bounds_m": [
         [
-          24.801442,
+          24.801443,
           6.6294,
-          6.727327
+          6.686973
         ],
         [
-          29.805242,
+          29.805243,
           7.0866,
           7.052888
         ]
       ],
-      "volume_m3": 0.697302347
+      "volume_m3": 0.712052154
     },
     {
       "id": "tfc_1_1",
@@ -11858,28 +12082,29 @@
       "layer": "rails",
       "color": "#d3cbb8",
       "pdf_pages": [
+        23,
         31,
         32
       ],
       "basis": "Standard sections; interpolated transition",
-      "note": "INDOT E706-TTFC-01/02 (September 2013). Taper between sections approximated; guardrail attachment holes and steel TGB approach guardrail are not modeled.",
+      "note": "INDOT E706-TTFC-01/02 (September 2013). Taper between sections approximated; guardrail attachment holes and steel TGB approach guardrail are not modeled. Starts at the square bridge joint (sheet 31 railing plan): moved -0.1089 m in X.",
       "dimensions": {
         "length_ft": 15.666666666666666,
         "standard": "E706-TTFC-01/02"
       },
       "bounds_m": [
         [
-          24.910337,
+          24.801443,
           6.6294,
-          7.033474
+          7.033773
         ],
         [
-          29.685537,
+          29.576643,
           7.0358,
-          7.887328
+          7.887532
         ]
       ],
-      "volume_m3": 1.012665787
+      "volume_m3": 1.012665744
     }
   ],
   "default_hidden_layers": [
@@ -12216,7 +12441,7 @@
     {
       "feature": "Retained substructure",
       "status": "modeled_with_simplifications",
-      "detail": "Both wall piers and end bents. Stepped caps and wings are approximate existing envelopes, as stated on the plans.",
+      "detail": "Both wall piers and end bents. Stepped caps and wings are approximate existing envelopes, as stated on the plans; end-bent caps end at the wing faces with the 1980 front splays and square rear ends. Semi-integral end diaphragms with the 6 in pavement ledge, square to the roadway over the outer 1 ft 6 in at each coping.",
       "sources": [
         "2017 rehabilitation PDF p.12",
         "2017 rehabilitation PDF p.14",
@@ -12411,7 +12636,7 @@
     }
   ],
   "geometry_review_correction": "review-2026-11-diaphragms-caps-coping-wings",
-  "revision": "1.2-drawing-review-2",
+  "revision": "1.3-deviations",
   "geometry_review_correction_record": {
     "source": "External model review (2026-11), findings verified against the drawings",
     "source_pdf_pages": [
@@ -12599,25 +12824,11 @@
   },
   "known_deviations": [
     {
-      "id": "coping-depth-sheet-31",
-      "parts": "fascia_1, fascia_-1",
-      "source": "sheets 27 and 31",
-      "deviation": "Coping modelled 9 1/8 in deep over an 8 in wide strip; sheet 31 Section A-A shows 9 1/4 in and a wider thickened strip, sheet 27 a level overhang soffit out to the exterior beam haunch.",
-      "reason": "The deck typical section (sheet 27) is used for the depth; the thickened width is not dimensioned."
-    },
-    {
-      "id": "pier-diaphragm-arrangement",
-      "parts": "diaphragm_7_*, diaphragm_8_* and their plates and bolts",
-      "source": "sheet 20",
-      "deviation": "Channels run between the bent-plate folds at about 19.3 deg to the beam normal, as drawn in the pier diaphragm plan; the bent plate detail (6 9/16 in and 2 1/4 in) implies a smaller fold. Channel flanges face up-station; the plan does not fix the side. The stiffener is 7 1/4 in as in the elevation (the plan label reads 7 1/2 in).",
-      "reason": "Fabrication fit-up detail; the dimensioned channel length, plates and bolt pattern are modelled."
-    },
-    {
-      "id": "approach-extension-ledge",
-      "parts": "extension_-1_-1, extension_-1_1, extension_1_-1, extension_1_1",
-      "source": "sheet 33 note 2; standard drawing E609-TBAE-01 (not in the set)",
-      "deviation": "The RCBA extensions under the TFC transitions keep a 12 in depth to the bridge joint, so a 2 in gap remains between them and the pavement ledge over the outer 1 ft 6 in of each end.",
-      "reason": "The extension end detail is on a standard drawing that is not in the drawing set."
+      "id": "pier-stiffener-outer-corners",
+      "parts": "stiffeners_2_*, stiffeners_3_*",
+      "source": "sheet 22 PIER BEARING DETAILS, SECTION VIEW; standard drawing E 726-BEBP-04/05 (sheet 22 note 9, not in the set)",
+      "deviation": "The 7 1/4 in pier bearing stiffeners project 2 1/2 in beyond the top and bottom flange tips. The section view draws these outer corners sloped, about 2 1/2 in by 1 3/8 in when scaled; the model keeps them square.",
+      "reason": "The slope is drawn but not dimensioned; only the web-corner clips are (2 1/2 in x 1 1/4 in). The standard bearing drawing or the shop drawings would give it."
     }
   ],
   "geometry_review_correction_2": "review-2026-11-second-check-connections-end-bents",
@@ -12756,5 +12967,152 @@
     ],
     "before_glb_sha256": "b838ea410b52cda2c1076efc223001a38981aa7e3512b7d353eadf6b23ac2e41",
     "after_glb_sha256": "ee8b7d75fdad9ed43ea97c56a26d1e00a86b8e07face7b70d6e32fdf8e049b29"
+  },
+  "geometry_review_correction_3": "review-2026-11-third-round-known-deviations",
+  "geometry_review_correction_3_record": {
+    "source": "Third round (2026-11): the known deviations of revision 1.2 and the findings of the independent check of that round, each re-read on the drawings",
+    "source_pdf_pages": [
+      12,
+      13,
+      16,
+      17,
+      20,
+      22,
+      23,
+      27,
+      31,
+      32,
+      33
+    ],
+    "printed_sheets": [
+      12,
+      13,
+      16,
+      17,
+      20,
+      22,
+      23,
+      27,
+      31,
+      32,
+      33
+    ],
+    "historical_source": "original_1980_plans.pdf pages 9-10 (end bents: retained cap ends)",
+    "corrections": {
+      "Overhang thickening fascia_1, fascia_-1": "8 in wide strip, 9 1/8 in parallel to the 2% top -> deck edge to the exterior flange tip (22.005 in), level soffit 9 1/8 in below the edge (9.57 in at the flange tip); ends at the end-diaphragm front faces (square over the outer 1'-6\") instead of running through them; cut around the projecting pier bearing stiffeners (sheet 27 typical section; sheet 23)",
+      "Pier diaphragm channels diaphragm_7_*, diaphragm_8_* (12)": "web on the up-station face of the bent legs, flanges up-station -> web on the down-station face, flanges down-station (sheet 20 plan in the framing-plan orientation)",
+      "Pier diaphragm bolts diaphragm_bolts_7_*, diaphragm_bolts_8_* (12)": "8 channel-leg bolts per diaphragm reflected with the channel (heads on the bent leg, nuts inside the channel); stiffener-leg bolts unchanged",
+      "End diaphragms end_diaphragm_1, end_diaphragm_4": "front face, rear face and pavement ledge on the skew to the coping -> square to the roadway over the outer 1'-6\" at each coping (sheet 23 plan; sheet 31 railing plan)",
+      "Deck deck": "skew ends to the coping -> square over the outer 1'-6\": corner cut back where the square joint turns toward the bridge, wedge added where it turns toward the approach (sheets 23, 31)",
+      "Barriers rail_1, rail_-1; transitions tfc_*; delineators delineator_*": "FC/TFC end at the skew point on the barrier back face -> on the square joint, -/+ 0.1089 m in X (sheet 31 railing plan)",
+      "RCBA extensions extension_-1_-1, extension_-1_1, extension_1_-1, extension_1_1": "12 in to the joint (2 in above the pavement ledge) -> 14 in for 2'-0\" from the square joint with a 45 deg return (sheet 33 note 2 and pavement ledge detail; sheet 31 elevation)",
+      "Retained end-bent caps cap_1, cap_4": "end steps square-ended at 24 ft along the skew -> end at the wing inner faces with the 1'-0\" x 1'-0\" front splay and the 1'-3\" square rear end (original 1980 plans pages 9-10; sheet 12)",
+      "Bearing stiffeners stiffeners_* (28 pairs)": "top web-corner clip 2 1/2 in along the flange x 1 1/4 in down the web, no bottom clip -> 1 1/4 in along the flange x 2 1/2 in along the web at the top and bottom web corners (sheet 22)"
+    },
+    "decisions": {
+      "coping-depth-sheet-31": "Sheet 27 (superstructure typical section, drawn with the beams and the 2% crossfall) governs the deck: 9 1/8 in at the edge, soffit level to the outer tip of the exterior beam top flange. Sheet 31 Section A-A is a railing reinforcement detail that draws the deck level and without the beam (9 1/4 in over a 27 in strip); it is not used for the deck geometry.",
+      "pier-diaphragm-arrangement": "Fold angle kept at 19.35 deg: the bent plate detail offsets 6 9/16 in and 2 1/4 in locate the outer-face corner of the bent leg (18.9 deg; drawn at 19.1 deg), and the written beam spacing, skew, stiffener width and opposite-face legs close only at 19.35 deg. Channel side from the sheet 20 plan read in the sheet 17 framing-plan orientation (beams horizontal, same skew sense, no north arrow, whereas the rotated detail plans on sheets 16 and 23 carry north arrows): web on the down-station face of both bent legs. Stiffener 7 1/4 in from sheet 22 and the sheet 20 elevation over the 7 1/2 in plan label.",
+      "end-bent-square-coping-zone": "The end-bent faces, deck ends and barrier ends are made square over the outer 1'-6\" (sheets 23, 31, 32); the new diaphragm underside stays at the cap step top + 1/2 in.",
+      "end-bent-cap-ends": "Retained cap ends from original 1980 page 9 (\"1'-0 (Typical)\" front splay, \"1'-3 (Typical)\" rear square end, wing inner face 24.07 ft along the bent = 23'-3\" transverse) with page 10 and sheet 12; the 1'-0\" x 1'-0\" splay is applied at all four front corners as \"Typical\", although the sheet 12 CAD draws it about 1'-3\" x 1'-4\" at Wings A/D. Existing dimensions are approximate (sheet 12 note 2)."
+    },
+    "resolved_deviations": [
+      "approach-extension-ledge",
+      "end-bent-square-coping-zone",
+      "end-bent-cap-ends"
+    ],
+    "decided_deviations": [
+      "coping-depth-sheet-31",
+      "pier-diaphragm-arrangement"
+    ],
+    "added_deviations": [
+      "pier-stiffener-outer-corners"
+    ],
+    "changed_parts": [
+      "stiffeners_1_1",
+      "stiffeners_1_2",
+      "stiffeners_1_3",
+      "stiffeners_1_4",
+      "stiffeners_1_5",
+      "stiffeners_1_6",
+      "stiffeners_1_7",
+      "stiffeners_2_1",
+      "stiffeners_2_2",
+      "stiffeners_2_3",
+      "stiffeners_2_4",
+      "stiffeners_2_5",
+      "stiffeners_2_6",
+      "stiffeners_2_7",
+      "stiffeners_3_1",
+      "stiffeners_3_2",
+      "stiffeners_3_3",
+      "stiffeners_3_4",
+      "stiffeners_3_5",
+      "stiffeners_3_6",
+      "stiffeners_3_7",
+      "stiffeners_4_1",
+      "stiffeners_4_2",
+      "stiffeners_4_3",
+      "stiffeners_4_4",
+      "stiffeners_4_5",
+      "stiffeners_4_6",
+      "stiffeners_4_7",
+      "end_diaphragm_1",
+      "end_diaphragm_4",
+      "cap_1",
+      "cap_4",
+      "deck",
+      "rail_1",
+      "tfc_-1_1",
+      "tfc_1_1",
+      "delineator_1_1",
+      "delineator_1_2",
+      "delineator_1_3",
+      "delineator_1_4",
+      "delineator_1_5",
+      "delineator_1_6",
+      "rail_-1",
+      "tfc_-1_-1",
+      "tfc_1_-1",
+      "delineator_-1_1",
+      "delineator_-1_2",
+      "delineator_-1_3",
+      "delineator_-1_4",
+      "delineator_-1_5",
+      "delineator_-1_6",
+      "fascia_1",
+      "fascia_-1",
+      "diaphragm_7_1",
+      "diaphragm_bolts_7_1",
+      "diaphragm_7_2",
+      "diaphragm_bolts_7_2",
+      "diaphragm_7_3",
+      "diaphragm_bolts_7_3",
+      "diaphragm_7_4",
+      "diaphragm_bolts_7_4",
+      "diaphragm_7_5",
+      "diaphragm_bolts_7_5",
+      "diaphragm_7_6",
+      "diaphragm_bolts_7_6",
+      "diaphragm_8_1",
+      "diaphragm_bolts_8_1",
+      "diaphragm_8_2",
+      "diaphragm_bolts_8_2",
+      "diaphragm_8_3",
+      "diaphragm_bolts_8_3",
+      "diaphragm_8_4",
+      "diaphragm_bolts_8_4",
+      "diaphragm_8_5",
+      "diaphragm_bolts_8_5",
+      "diaphragm_8_6",
+      "diaphragm_bolts_8_6",
+      "extension_-1_-1",
+      "extension_-1_1",
+      "extension_1_-1",
+      "extension_1_1"
+    ],
+    "added_parts": [],
+    "removed_parts": [],
+    "before_glb_sha256": "ee8b7d75fdad9ed43ea97c56a26d1e00a86b8e07face7b70d6e32fdf8e049b29",
+    "after_glb_sha256": "30631b2c2323e7ea04480bb8adb10b7c677d90755397de1d30a4abf85f90d680"
   }
 }
