@@ -22,20 +22,22 @@ def build():
     analyzed=[f'arch_{i}' for i in range(4)]
     assert set(analyzed)<=ids
     opening=21.946; pier_width=1.295; total=opening*4+3*pier_width
+    # Barrel width = out to out of arch ring (sheet 15: 14 262 mm; the spandrel walls are 14 174 mm), as modelled.
+    barrel=next(p for p in manifest['parts'] if p['id']=='arch_0')['dimensions']['barrel_width_m']
     arches=[]
     for i in range(4):
         a=-total/2+i*(opening+pier_width)
         arches.append(dict(cid=f'arch_{i}',label=f'Arch {chr(65+i)}',u0_m=a,u1_m=a+opening,
-            y0_m=-7.087,y1_m=7.087,spring_intrados_z0_m=3.191 if i==0 else 4.715,
+            y0_m=-barrel/2,y1_m=barrel/2,spring_intrados_z0_m=3.191 if i==0 else 4.715,
             spring_intrados_z1_m=3.191 if i==3 else 4.715,
             quadratic_crown_reference_z_m=8.05,crown_vertical_thickness_m=.356,
             haunch_extra_vertical_thickness_m=.650))
-    footprint=4*opening*14.174
+    footprint=4*opening*barrel
     assumptions=[
         'Assumed-input linear elastic arch-barrel pressure increment, not whole-bridge behavior, an as-built analysis, load rating, condition assessment or field validation.',
         'All four actual arch-barrel display members are represented by curved ShellMITC4 elements. Deck, sidewalks, spandrel walls, fill, counterforts, piers, abutments, foundations, parapets and utilities are excluded and receive no stress or displacement claim.',
         'Four barrels are independently restrained at their eight springing faces. Adjacent barrels are not coupled through a modeled pier. Shared-pier bending, thrust cancellation, foundation settlement and construction joints are outside this model.',
-        'Uniform pressure acts vertically on the projected 4 x 21.946 m x 14.174 m arch footprints only. Left-half pressure means native Y < 0. Deck overhangs, pier gaps and the extended floor envelope carry no applied load; no redistribution through fill or deck is invented.',
+        f'Uniform pressure acts vertically on the projected 4 x 21.946 m x {barrel:.3f} m arch footprints only. Left-half pressure means native Y < 0. Deck overhangs, pier gaps and the extended floor envelope carry no applied load; no redistribution through fill or deck is invented.',
         'The quadratic intrados and vertical thickness t=.356+.650*(2r-1)^2 exactly reproduce the current visualization recipe, but that recipe is itself approximate. Original multi-radius arch setting-out, true radial haunch thickness and construction tolerances are unresolved.',
         'The shell reference surface is the middle of the displayed vertical ring depth. Each element uses normal thickness equal to vertical depth divided by its surface metric, preserving the local vertical-slice volume to first order. This is an explicit shell idealization, not a surveyed ring profile.',
         'Fixed springings clamp all six degrees of freedom along each springing edge. Elastic springings use bilateral six-direction line springs, independently connected to ground. These brackets are illustrative support assumptions, not measured soil/pier behavior.',
@@ -57,7 +59,7 @@ def build():
             shell=dict(title='OpenSees ShellMITC4 element documentation',url='https://opensees.berkeley.edu/OpenSees/manuals/usermanual/640.htm'),
             section=dict(title='OpenSees elastic membrane-plate section',url='https://opensees.berkeley.edu/OpenSees/manuals/usermanual/231.htm')),
         evidence=[dict(fields=['arches.u0_m','arches.u1_m','arches.y0_m','arches.y1_m'],status='source-based with explicit idealization',source='drawing',pdf_pages=[9,23,24],
-                note='Four 21.946 m clear openings, three 1.295 m pier widths, 14.174 m barrel width and 356 mm minimum ring depth. Native skew follows the existing display coordinate transform.'),
+                note=f'Four 21.946 m clear openings, three 1.295 m pier widths, {barrel:.3f} m barrel width (arch ring, sheet 15) and 356 mm minimum ring depth. Native skew follows the existing display coordinate transform.'),
             dict(fields=['arches.spring_intrados_z0_m','arches.spring_intrados_z1_m','arches.quadratic_crown_reference_z_m','arches.haunch_extra_vertical_thickness_m'],status='assumed reconstruction',source='demonstration',
                 note='Exact numeric equations are frozen from scripts/build_indiana_batch2.py:wabash. The display builder expressly labels intrados/haunch geometry approximate; they are not original setting-out dimensions.'),
             dict(fields=['springing','pressure_projection','normal_thickness_conversion','concrete_poisson'],status='assumed',source='demonstration',

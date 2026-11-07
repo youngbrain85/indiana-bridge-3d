@@ -420,7 +420,7 @@
         "render_glb": "bridges/sr1-wabash/model_render.glb",
         "deck_length_m": 108.48340000000002,
         "spans": 4,
-        "components": 78,
+        "components": 168,
         "revision": "2004 roadway and retained arch reconstruction v1",
         "scope": "Whole crossing exterior reconstruction with documented approximation boundaries; see coverage and component basis.",
         "detail_status": "needs_detail",

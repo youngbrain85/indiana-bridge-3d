@@ -521,6 +521,25 @@ An independent check of revision 1.1 found three more drawing discrepancies, plu
 
 `scripts/correct_sr1_wabash_review_2.py` reproduces revision 1.2 from 1.1 and is idempotent. It changes 41 parts without adding or removing any, and the 37 other meshes are byte-identical.
 
+#### Third round: known deviations
+
+The third pass closed most of the three known deviations of revision 1.2. An independent check then found four more problems, which were fixed or recorded.
+- **Brackets:** revision 1.3 adds 90 concrete sidewalk brackets.
+  - 80 are typical brackets, ten per span and side, at the sheet 11-12 spacing.
+  - 10 sit under the rail pilasters.
+- **Roadway slab:** it now stops at the longitudinal expansion joints, 779 mm inside the curbs. The joints are left 12.7 mm open, the existing width recorded on the 2026 plans.
+- **Curb unit:** the sidewalk castings carry the curb unit drawn on sheets 14 and 15.
+- **Walls and pilasters:** the spandrel walls, end-floor walls and spandrel pilasters are cut 610 mm below the sidewalk soffit. Each pilaster has a deeper 838 mm seat under its bracket.
+- **Pilaster extent:** the pilasters now reach from the spandrel inner face to their drawn face 1421 mm inside the local coping, as sheet 14 gives. The spandrel walls stay 13 mm clear of them through the full wall thickness.
+- **Fill:** the hidden fill meets the slab soffit.
+- **Arch crowns:** near each crown the approximate arch ring rises above the cut. There the walls end and the new concrete stops on the ring.
+- **Sidewalk joints:** each sidewalk has the 13 mm open joints of sheet 18, 13 mm wide on their 45-degree leg too.
+- **Kept as known deviations:**
+  - The brackets of the four floor-end zones. They need the flared end zones, end walls and wing-end pilasters, which are not modelled yet.
+  - The top of the pilasters beside the brackets, which no sheet shows.
+
+`scripts/correct_sr1_wabash_review_3.py` reproduces revision 1.3 from 1.2 and is idempotent. It changes 29 parts, adds 90 and removes none, for 168 parts in all. Every mesh passes the generic watertight check of `refresh_geometry_verification.py`.
+
 ### US 50 EB over Tanners Creek (`us50-tanners-eb`)
 
 ##### US 50 EB over Tanners Creek (revision 1.1)
