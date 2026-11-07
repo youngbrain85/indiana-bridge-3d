@@ -158,6 +158,25 @@ re-checked (sheets 5, 16, 20: +Y is the southwest, X-truss, Beam No. 1 side); no
 change after the first script and is idempotent; part ids are unchanged and the record with before/after SHA-256 is
 `review_correction_2_record` in `model_manifest.json`.
 
+#### Third round: known deviations
+
+The three deviations left after revision 1.2 were checked against the plans again. Two are resolved and one is
+narrowed. **Abutment inner step** (sheets 10, 14): the plans put the step edge 2 ft 6 in beyond the inner beam
+centre lines, which are 4 ft 2 in from Line "A". The step is therefore 13 ft 4 in long, not 17 ft. Both steps are
+shortened, and the end diaphragms now drop 2 in onto the outer cap beyond the step. They keep 1 in of EPS against
+the vertical step faces, as the EPS note "1/2 in on horizontal faces, 1 in on vertical faces" requires (the drafted
+offset scales about 1/2 in; the written note governs). No bearing moves. **Ledge under
+the rail transitions** (sheets 24, 28): the typical bent diaphragm draws the 6 in pavement ledge along the whole
+diaphragm, and the approach plan draws it across the full 31 ft. The bill of materials pays the 1 ft 6 in
+extensions as 12 in approach slab. The ledge and the 1 ft 2 in approach seat now run the full 31 ft. **TFC
+transitions** (sheets 27, 28): the railing elevation draws the TFC top level with the FC top, so the envelopes keep
+the full FC section over their 16 ft 5 in instead of an invented taper. The transition face is still unknown,
+because standard E 706-TTFC is not supplied, so it stays a known deviation. **Rail bases** (sheet 27): the FC rails
+and TFC envelopes are cast on the slab, so their level bottoms now follow the 2 % crossfall. This closes an 8 mm gap
+at the rear face. Sixteen parts changed and none were added or removed. `scripts/correct_us421_wildcat_review_3.py` reproduces the change after the second script and is
+idempotent. The record and the before/after SHA-256 are `review_correction_3_record` in `model_manifest.json`
+(revision 1.3-deviations).
+
 ### US 52 over Mud Creek (`us52-mud`)
 
 ##### US 52 over Mud Creek: end-bent ledge, approach corners and railings (revision 1.1)

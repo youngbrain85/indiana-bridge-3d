@@ -922,29 +922,32 @@
       "layer": "abutments",
       "color": "#9eadaa",
       "pdf_pages": [
-        10
+        10,
+        24
       ],
       "sheets": [
-        10
+        10,
+        24
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned (sheet 10)",
+      "note": "Shortened to 6 ft 8 in each side of Line \"A\" (13 ft 4 in) per sheet 10: the step edge is 2 ft 6 in (Typ.) outside C Beam No. 3 / No. 2, 4 ft 2 in from Line \"A\" (plan and elevation agree, sheet 24 typical bent diaphragm too). It was +/-8 ft 6 in.",
       "dimensions": {
-        "rise_ft": 0.16599999999993997
+        "rise_ft": 0.16599999999993997,
+        "length_ft": 13.3333
       },
       "bounds_m": [
         [
           -0.381,
-          -2.5908,
+          -2.032,
           5.583936
         ],
         [
           0.381,
-          2.5908,
+          2.032,
           5.634533
         ]
       ],
-      "volume_m3": 0.1997754
+      "volume_m3": 0.156686
     },
     {
       "id": "abut1_wing-1",
@@ -1079,29 +1082,32 @@
       "layer": "abutments",
       "color": "#9eadaa",
       "pdf_pages": [
-        14
+        14,
+        24
       ],
       "sheets": [
-        14
+        14,
+        24
       ],
-      "basis": "Dimensioned",
-      "note": "",
+      "basis": "Dimensioned (sheet 14)",
+      "note": "Shortened to 6 ft 8 in each side of Line \"A\" (13 ft 4 in) per sheet 14: the step edge is 2 ft 6 in (Typ.) outside C Beam No. 3 / No. 2, 4 ft 2 in from Line \"A\" (plan and elevation agree, sheet 24 typical bent diaphragm too). It was +/-8 ft 6 in.",
       "dimensions": {
-        "rise_ft": 0.16700000000003
+        "rise_ft": 0.16700000000003,
+        "length_ft": 13.3333
       },
       "bounds_m": [
         [
-          58.1406,
-          -2.5908,
+          58.140598,
+          -2.032,
           5.567477
         ],
         [
-          58.9026,
-          2.5908,
+          58.902599,
+          2.032,
           5.618378
         ]
       ],
-      "volume_m3": 0.2009788
+      "volume_m3": 0.15763
     },
     {
       "id": "abut4_wing-1",
@@ -3821,7 +3827,7 @@
         24
       ],
       "basis": "Dimensioned (sheets 10, 14, 24); beam pockets fitted to the beam envelopes",
-      "note": "Concrete infill explicitly excludes the permanent box-beam envelopes. Rebuilt per sheets 10, 14 and 24: 2 ft 6 in wide over the cap (1 ft 3 in each side of the bent), top on the deck soffit, bottom 1/2 in (expanded polystyrene) above the cap and inner step; beam pockets excluded. The 6 in pavement ledge projects outside the back face (sheets 10, 14, 24), so the diaphragm is solid over its full 2 ft 6 in (ledge notch filled).",
+      "note": "Concrete infill explicitly excludes the permanent box-beam envelopes. Rebuilt per sheets 10, 14 and 24: 2 ft 6 in wide over the cap (1 ft 3 in each side of the bent), top on the deck soffit, bottom 1/2 in (expanded polystyrene) above the cap and inner step; beam pockets excluded. The 6 in pavement ledge projects outside the back face (sheets 10, 14, 24), so the diaphragm is solid over its full 2 ft 6 in (ledge notch filled). Bottom follows the 13 ft 4 in inner step (sheet 10): 1/2 in EPS above the step and 1 in EPS against its vertical faces (note \"1/2 in on horizontal faces, 1 in on vertical faces\", sheet 10 Section B-B, sheet 24 Section C-C), so the step pocket reaches 6 ft 9 in from Line \"A\"; 1/2 in above the outer cap beyond.",
       "dimensions": {
         "width_ft": 31,
         "length_ft": 2.5,
@@ -3839,7 +3845,7 @@
           6.198055
         ]
       ],
-      "volume_m3": 2.423204
+      "volume_m3": 2.464335
     },
     {
       "id": "ledge1",
@@ -3848,32 +3854,35 @@
       "color": "#adbaa9",
       "pdf_pages": [
         10,
-        24
+        24,
+        28
       ],
       "sheets": [
         10,
-        24
+        24,
+        28
       ],
-      "basis": "Dimensioned (sheets 10, 24)",
-      "note": "Rebuilt per sheet 10 Sections A-A and B-B and sheet 24 Sections B-B and C-C: projects 6 in from the back face of the diaphragm toward the approach, top 1 ft 2 in below the approach top, 1 ft 0 in deep, parallel to the approach crown and grade; 28 ft 0 in long as before. It was a 4 in block inside the diaphragm.",
+      "basis": "Dimensioned (sheets 10, 24, 28)",
+      "note": "Rebuilt per sheet 10 Sections A-A and B-B and sheet 24 Sections B-B and C-C: projects 6 in from the back face of the diaphragm toward the approach, top 1 ft 2 in below the approach top, 1 ft 0 in deep, parallel to the approach crown and grade. It was a 4 in block inside the diaphragm. Extended to the full 31 ft 0 in diaphragm length (1 in EPS at the wing faces): the sheet 24 typical bent diaphragm draws the ledge to the diaphragm ends with continuous rear-face bars, and the sheet 28 plan draws its edge 6 in inside the slab end across the RCBA extensions.",
       "dimensions": {
         "projection_in": 6,
         "depth_in": 12,
-        "top_below_approach_top_in": 14
+        "top_below_approach_top_in": 14,
+        "length_ft": 31
       },
       "bounds_m": [
         [
           -0.5334,
-          -4.2672,
-          5.655257
+          -4.7244,
+          5.646113
         ],
         [
           -0.381,
-          4.2672,
+          4.7244,
           6.045444
         ]
       ],
-      "volume_m3": 0.396436
+      "volume_m3": 0.438911
     },
     {
       "id": "diaphragm4",
@@ -3891,7 +3900,7 @@
         24
       ],
       "basis": "Dimensioned (sheets 10, 14, 24); beam pockets fitted to the beam envelopes",
-      "note": "Concrete infill explicitly excludes the permanent box-beam envelopes. Rebuilt per sheets 10, 14 and 24: 2 ft 6 in wide over the cap (1 ft 3 in each side of the bent), top on the deck soffit, bottom 1/2 in (expanded polystyrene) above the cap and inner step; beam pockets excluded. The 6 in pavement ledge projects outside the back face (sheets 10, 14, 24), so the diaphragm is solid over its full 2 ft 6 in (ledge notch filled).",
+      "note": "Concrete infill explicitly excludes the permanent box-beam envelopes. Rebuilt per sheets 10, 14 and 24: 2 ft 6 in wide over the cap (1 ft 3 in each side of the bent), top on the deck soffit, bottom 1/2 in (expanded polystyrene) above the cap and inner step; beam pockets excluded. The 6 in pavement ledge projects outside the back face (sheets 10, 14, 24), so the diaphragm is solid over its full 2 ft 6 in (ledge notch filled). Bottom follows the 13 ft 4 in inner step (sheet 14): 1/2 in EPS above the step and 1 in EPS against its vertical faces (note \"1/2 in on horizontal faces, 1 in on vertical faces\", sheet 10 Section B-B, sheet 24 Section C-C), so the step pocket reaches 6 ft 9 in from Line \"A\"; 1/2 in above the outer cap beyond.",
       "dimensions": {
         "width_ft": 31,
         "length_ft": 2.5,
@@ -3909,7 +3918,7 @@
           6.180727
         ]
       ],
-      "volume_m3": 2.417175
+      "volume_m3": 2.458552
     },
     {
       "id": "ledge4",
@@ -3918,32 +3927,35 @@
       "color": "#adbaa9",
       "pdf_pages": [
         14,
-        24
+        24,
+        28
       ],
       "sheets": [
         14,
-        24
+        24,
+        28
       ],
-      "basis": "Dimensioned (sheets 14, 24)",
-      "note": "Rebuilt per sheet 14 Sections A-A and B-B and sheet 24 Sections B-B and C-C: projects 6 in from the back face of the diaphragm toward the approach, top 1 ft 2 in below the approach top, 1 ft 0 in deep, parallel to the approach crown and grade; 28 ft 0 in long as before. It was a 4 in block inside the diaphragm.",
+      "basis": "Dimensioned (sheets 14, 24, 28)",
+      "note": "Rebuilt per sheet 14 Sections A-A and B-B and sheet 24 Sections B-B and C-C: projects 6 in from the back face of the diaphragm toward the approach, top 1 ft 2 in below the approach top, 1 ft 0 in deep, parallel to the approach crown and grade. It was a 4 in block inside the diaphragm. Extended to the full 31 ft 0 in diaphragm length (1 in EPS at the wing faces): the sheet 24 typical bent diaphragm draws the ledge to the diaphragm ends with continuous rear-face bars, and the sheet 28 plan draws its edge 6 in inside the slab end across the RCBA extensions.",
       "dimensions": {
         "projection_in": 6,
         "depth_in": 12,
-        "top_below_approach_top_in": 14
+        "top_below_approach_top_in": 14,
+        "length_ft": 31
       },
       "bounds_m": [
         [
           58.902599,
-          -4.2672,
-          5.637381
+          -4.7244,
+          5.628236
         ],
         [
-          59.054999,
-          4.2672,
+          59.055,
+          4.7244,
           6.027659
         ]
       ],
-      "volume_m3": 0.396436
+      "volume_m3": 0.438914
     },
     {
       "id": "X_LC0",
@@ -29330,28 +29342,29 @@
         27
       ],
       "basis": "Dimensioned",
-      "note": "Section corrected to sheet 27 Section A-A: 9 in top, 2 in upper batter over 1 ft 11 in, 5 in lower batter over 7 in, 3 in toe (the extra 2 in toe shelf removed).",
+      "note": "Section corrected to sheet 27 Section A-A: 9 in top, 2 in upper batter over 1 ft 11 in, 5 in lower batter over 7 in, 3 in toe (the extra 2 in toe shelf removed). Base set on the slab per sheet 27 Section A-A (cast on it at a Type \"A\" construction joint): the rear bottom edge is lowered 0.32 in onto the 2 % crossfall, closing the gap under the level base; the toe and the section heights at the traffic face are unchanged.",
       "dimensions": {
         "height_in": 33,
         "base_width_in": 16,
         "top_width_in": 9,
         "toe_height_in": 3,
         "knee_height_in": 10,
-        "rear_setback_from_deck_edge_in": 2
+        "rear_setback_from_deck_edge_in": 2,
+        "rear_face_height_in": 33.32
       },
       "bounds_m": [
         [
           -0.381,
           -4.6736,
-          6.315701
+          6.307573
         ],
         [
           9.8806,
           -4.2672,
-          7.155773
+          7.155774
         ]
       ],
-      "volume_m3": 2.466092
+      "volume_m3": 2.483041
     },
     {
       "id": "FC_A_-1_delineator0",
@@ -29423,28 +29436,29 @@
         27
       ],
       "basis": "Dimensioned",
-      "note": "Section corrected to sheet 27 Section A-A: 9 in top, 2 in upper batter over 1 ft 11 in, 5 in lower batter over 7 in, 3 in toe (the extra 2 in toe shelf removed).",
+      "note": "Section corrected to sheet 27 Section A-A: 9 in top, 2 in upper batter over 1 ft 11 in, 5 in lower batter over 7 in, 3 in toe (the extra 2 in toe shelf removed). Base set on the slab per sheet 27 Section A-A (cast on it at a Type \"A\" construction joint): the rear bottom edge is lowered 0.32 in onto the 2 % crossfall, closing the gap under the level base; the toe and the section heights at the traffic face are unchanged.",
       "dimensions": {
         "height_in": 33,
         "base_width_in": 16,
         "top_width_in": 9,
         "toe_height_in": 3,
         "knee_height_in": 10,
-        "rear_setback_from_deck_edge_in": 2
+        "rear_setback_from_deck_edge_in": 2,
+        "rear_face_height_in": 33.32
       },
       "bounds_m": [
         [
           -0.381,
           4.2672,
-          6.315701
+          6.307573
         ],
         [
           9.8806,
           4.6736,
-          7.155773
+          7.155774
         ]
       ],
-      "volume_m3": 2.466092
+      "volume_m3": 2.483041
     },
     {
       "id": "FC_A_1_delineator0",
@@ -29516,20 +29530,21 @@
         27
       ],
       "basis": "Dimensioned",
-      "note": "Section corrected to sheet 27 Section A-A: 9 in top, 2 in upper batter over 1 ft 11 in, 5 in lower batter over 7 in, 3 in toe (the extra 2 in toe shelf removed).",
+      "note": "Section corrected to sheet 27 Section A-A: 9 in top, 2 in upper batter over 1 ft 11 in, 5 in lower batter over 7 in, 3 in toe (the extra 2 in toe shelf removed). Base set on the slab per sheet 27 Section A-A (cast on it at a Type \"A\" construction joint): the rear bottom edge is lowered 0.32 in onto the 2 % crossfall, closing the gap under the level base; the toe and the section heights at the traffic face are unchanged.",
       "dimensions": {
         "height_in": 33,
         "base_width_in": 16,
         "top_width_in": 9,
         "toe_height_in": 3,
         "knee_height_in": 10,
-        "rear_setback_from_deck_edge_in": 2
+        "rear_setback_from_deck_edge_in": 2,
+        "rear_face_height_in": 33.32
       },
       "bounds_m": [
         [
           48.634651,
           -4.6736,
-          6.297915
+          6.289788
         ],
         [
           58.902599,
@@ -29537,7 +29552,7 @@
           7.14415
         ]
       ],
-      "volume_m3": 2.467617
+      "volume_m3": 2.484577
     },
     {
       "id": "FC_C_-1_delineator0",
@@ -29609,20 +29624,21 @@
         27
       ],
       "basis": "Dimensioned",
-      "note": "Section corrected to sheet 27 Section A-A: 9 in top, 2 in upper batter over 1 ft 11 in, 5 in lower batter over 7 in, 3 in toe (the extra 2 in toe shelf removed).",
+      "note": "Section corrected to sheet 27 Section A-A: 9 in top, 2 in upper batter over 1 ft 11 in, 5 in lower batter over 7 in, 3 in toe (the extra 2 in toe shelf removed). Base set on the slab per sheet 27 Section A-A (cast on it at a Type \"A\" construction joint): the rear bottom edge is lowered 0.32 in onto the 2 % crossfall, closing the gap under the level base; the toe and the section heights at the traffic face are unchanged.",
       "dimensions": {
         "height_in": 33,
         "base_width_in": 16,
         "top_width_in": 9,
         "toe_height_in": 3,
         "knee_height_in": 10,
-        "rear_setback_from_deck_edge_in": 2
+        "rear_setback_from_deck_edge_in": 2,
+        "rear_face_height_in": 33.32
       },
       "bounds_m": [
         [
           48.634651,
           4.2672,
-          6.297915
+          6.289788
         ],
         [
           58.902599,
@@ -29630,7 +29646,7 @@
           7.14415
         ]
       ],
-      "volume_m3": 2.467617
+      "volume_m3": 2.484577
     },
     {
       "id": "FC_C_1_delineator0",
@@ -30794,7 +30810,7 @@
         28
       ],
       "basis": "Dimensioned footprint (sheet 28); 12 in depth from the sheet 28 bill of materials; bridge-end seat per sheets 10, 14, 24 (seat length and taper scaled)",
-      "note": "Referenced RCBA standard section is not included. Outer 4 ft 1 in x 1 ft 6 in corners removed: 28 ft 0 in wide for the 4 ft 1 in farthest from the bridge, 31 ft 0 in along the 16 ft 5 in RCBA extensions (sheet 28). Bridge-end seat per sheets 10, 14 and 24: thickened to 1 ft 2 in over the 6 in pavement ledge and 1 ft 6 in behind it, with a 2 in x 2 in taper to the 12 in slab (lengths scaled), over the 28 ft 0 in ledge length; 12 in depth from the sheet 28 bill of materials.",
+      "note": "Referenced RCBA standard section is not included. Outer 4 ft 1 in x 1 ft 6 in corners removed: 28 ft 0 in wide for the 4 ft 1 in farthest from the bridge, 31 ft 0 in along the 16 ft 5 in RCBA extensions (sheet 28). Bridge-end seat per sheets 10, 14 and 24: thickened to 1 ft 2 in over the 6 in pavement ledge and 1 ft 6 in behind it, with a 2 in x 2 in taper to the 12 in slab (lengths scaled), over the ledge length; 12 in depth from the sheet 28 bill of materials. The seat continues under both 1 ft 6 in RCBA extensions over the full 31 ft 0 in ledge (sheets 24, 28); the extensions are 12 in R.C. Bridge Approach (sheet 28 bill of materials, 69.3 SYS).",
       "dimensions": {
         "length_ft": 20.5,
         "width_ft": 31,
@@ -30803,13 +30819,14 @@
         "depth_in": 12,
         "seat_depth_in": 14,
         "seat_length_in": 24,
-        "seat_taper_in": 2
+        "seat_taper_in": 2,
+        "seat_width_ft": 31
       },
       "bounds_m": [
         [
           -6.6294,
           -4.7244,
-          5.959924
+          5.95078
         ],
         [
           -0.381,
@@ -30817,7 +30834,7 @@
           6.401044
         ]
       ],
-      "volume_m3": 17.923779
+      "volume_m3": 17.953273
     },
     {
       "id": "TFC1_-1",
@@ -30832,16 +30849,20 @@
         27,
         28
       ],
-      "basis": "Footprint dimensioned; transition section inferred",
-      "note": "TFC standard E706-TTFC is referenced but not included; taper is illustrative. Takes the corrected sheet 27 FC section (taper unchanged) and ends with the 16 ft 5 in RCBA extension that carries it (sheet 28).",
+      "basis": "Footprint dimensioned (sheet 28); FC section and level top per sheet 27; transition face inferred",
+      "note": "TFC standard E706-TTFC is referenced but not included; its section is an envelope. Takes the corrected sheet 27 FC section and ends with the 16 ft 5 in RCBA extension that carries it (sheet 28). Height corrected per the sheet 27 railing elevation: the TFC top runs level with the FC top over the whole transition and its far end is full height, so the envelope keeps the sheet 27 FC section (2 ft 9 in) over its 16 ft 5 in RCBA extension, on the same bottom line; the illustrative taper to 0.72 of the section is removed. Transition face and end details (E 706-TTFC) are not supplied. Base set on the slab per sheet 27 Section A-A (cast on it at a Type \"A\" construction joint): the rear bottom edge is lowered 0.32 in onto the 2 % crossfall, closing the gap under the level base; the toe and the section heights at the traffic face are unchanged.",
       "dimensions": {
-        "length_ft": 16.4167
+        "length_ft": 16.4167,
+        "height_in": 33,
+        "base_width_in": 16,
+        "top_width_in": 9,
+        "rear_face_height_in": 33.32
       },
       "bounds_m": [
         [
           -5.3848,
           -4.6736,
-          6.314035
+          6.305908
         ],
         [
           -0.381,
@@ -30849,7 +30870,7 @@
           7.153901
         ]
       ],
-      "volume_m3": 0.896965
+      "volume_m3": 1.21079
     },
     {
       "id": "TFC1_1",
@@ -30864,16 +30885,20 @@
         27,
         28
       ],
-      "basis": "Footprint dimensioned; transition section inferred",
-      "note": "TFC standard E706-TTFC is referenced but not included; taper is illustrative. Takes the corrected sheet 27 FC section (taper unchanged) and ends with the 16 ft 5 in RCBA extension that carries it (sheet 28).",
+      "basis": "Footprint dimensioned (sheet 28); FC section and level top per sheet 27; transition face inferred",
+      "note": "TFC standard E706-TTFC is referenced but not included; its section is an envelope. Takes the corrected sheet 27 FC section and ends with the 16 ft 5 in RCBA extension that carries it (sheet 28). Height corrected per the sheet 27 railing elevation: the TFC top runs level with the FC top over the whole transition and its far end is full height, so the envelope keeps the sheet 27 FC section (2 ft 9 in) over its 16 ft 5 in RCBA extension, on the same bottom line; the illustrative taper to 0.72 of the section is removed. Transition face and end details (E 706-TTFC) are not supplied. Base set on the slab per sheet 27 Section A-A (cast on it at a Type \"A\" construction joint): the rear bottom edge is lowered 0.32 in onto the 2 % crossfall, closing the gap under the level base; the toe and the section heights at the traffic face are unchanged.",
       "dimensions": {
-        "length_ft": 16.4167
+        "length_ft": 16.4167,
+        "height_in": 33,
+        "base_width_in": 16,
+        "top_width_in": 9,
+        "rear_face_height_in": 33.32
       },
       "bounds_m": [
         [
           -5.3848,
           4.2672,
-          6.314035
+          6.305908
         ],
         [
           -0.381,
@@ -30881,7 +30906,7 @@
           7.153901
         ]
       ],
-      "volume_m3": 0.896965
+      "volume_m3": 1.21079
     },
     {
       "id": "approach4",
@@ -30901,7 +30926,7 @@
         28
       ],
       "basis": "Dimensioned footprint (sheet 28); 12 in depth from the sheet 28 bill of materials; bridge-end seat per sheets 10, 14, 24 (seat length and taper scaled)",
-      "note": "Referenced RCBA standard section is not included. Outer 4 ft 1 in x 1 ft 6 in corners removed: 28 ft 0 in wide for the 4 ft 1 in farthest from the bridge, 31 ft 0 in along the 16 ft 5 in RCBA extensions (sheet 28). Bridge-end seat per sheets 10, 14 and 24: thickened to 1 ft 2 in over the 6 in pavement ledge and 1 ft 6 in behind it, with a 2 in x 2 in taper to the 12 in slab (lengths scaled), over the 28 ft 0 in ledge length; 12 in depth from the sheet 28 bill of materials.",
+      "note": "Referenced RCBA standard section is not included. Outer 4 ft 1 in x 1 ft 6 in corners removed: 28 ft 0 in wide for the 4 ft 1 in farthest from the bridge, 31 ft 0 in along the 16 ft 5 in RCBA extensions (sheet 28). Bridge-end seat per sheets 10, 14 and 24: thickened to 1 ft 2 in over the 6 in pavement ledge and 1 ft 6 in behind it, with a 2 in x 2 in taper to the 12 in slab (lengths scaled), over the ledge length; 12 in depth from the sheet 28 bill of materials. The seat continues under both 1 ft 6 in RCBA extensions over the full 31 ft 0 in ledge (sheets 24, 28); the extensions are 12 in R.C. Bridge Approach (sheet 28 bill of materials, 69.3 SYS).",
       "dimensions": {
         "length_ft": 20.5,
         "width_ft": 31,
@@ -30910,13 +30935,14 @@
         "depth_in": 12,
         "seat_depth_in": 14,
         "seat_length_in": 24,
-        "seat_taper_in": 2
+        "seat_taper_in": 2,
+        "seat_width_ft": 31
       },
       "bounds_m": [
         [
           58.902599,
           -4.7244,
-          5.941773
+          5.93263
         ],
         [
           65.151001,
@@ -30924,7 +30950,7 @@
           6.383259
         ]
       ],
-      "volume_m3": 17.923784
+      "volume_m3": 17.953278
     },
     {
       "id": "TFC4_-1",
@@ -30939,24 +30965,28 @@
         27,
         28
       ],
-      "basis": "Footprint dimensioned; transition section inferred",
-      "note": "TFC standard E706-TTFC is referenced but not included; taper is illustrative. Takes the corrected sheet 27 FC section (taper unchanged) and ends with the 16 ft 5 in RCBA extension that carries it (sheet 28).",
+      "basis": "Footprint dimensioned (sheet 28); FC section and level top per sheet 27; transition face inferred",
+      "note": "TFC standard E706-TTFC is referenced but not included; its section is an envelope. Takes the corrected sheet 27 FC section and ends with the 16 ft 5 in RCBA extension that carries it (sheet 28). Height corrected per the sheet 27 railing elevation: the TFC top runs level with the FC top over the whole transition and its far end is full height, so the envelope keeps the sheet 27 FC section (2 ft 9 in) over its 16 ft 5 in RCBA extension, on the same bottom line; the illustrative taper to 0.72 of the section is removed. Transition face and end details (E 706-TTFC) are not supplied. Base set on the slab per sheet 27 Section A-A (cast on it at a Type \"A\" construction joint): the rear bottom edge is lowered 0.32 in onto the 2 % crossfall, closing the gap under the level base; the toe and the section heights at the traffic face are unchanged.",
       "dimensions": {
-        "length_ft": 16.4167
+        "length_ft": 16.4167,
+        "height_in": 33,
+        "base_width_in": 16,
+        "top_width_in": 9,
+        "rear_face_height_in": 33.32
       },
       "bounds_m": [
         [
           58.902599,
           -4.6736,
-          6.293248
+          6.28512
         ],
         [
-          63.9064,
+          63.906399,
           -4.2672,
           7.136116
         ]
       ],
-      "volume_m3": 0.896965
+      "volume_m3": 1.21079
     },
     {
       "id": "TFC4_1",
@@ -30971,24 +31001,28 @@
         27,
         28
       ],
-      "basis": "Footprint dimensioned; transition section inferred",
-      "note": "TFC standard E706-TTFC is referenced but not included; taper is illustrative. Takes the corrected sheet 27 FC section (taper unchanged) and ends with the 16 ft 5 in RCBA extension that carries it (sheet 28).",
+      "basis": "Footprint dimensioned (sheet 28); FC section and level top per sheet 27; transition face inferred",
+      "note": "TFC standard E706-TTFC is referenced but not included; its section is an envelope. Takes the corrected sheet 27 FC section and ends with the 16 ft 5 in RCBA extension that carries it (sheet 28). Height corrected per the sheet 27 railing elevation: the TFC top runs level with the FC top over the whole transition and its far end is full height, so the envelope keeps the sheet 27 FC section (2 ft 9 in) over its 16 ft 5 in RCBA extension, on the same bottom line; the illustrative taper to 0.72 of the section is removed. Transition face and end details (E 706-TTFC) are not supplied. Base set on the slab per sheet 27 Section A-A (cast on it at a Type \"A\" construction joint): the rear bottom edge is lowered 0.32 in onto the 2 % crossfall, closing the gap under the level base; the toe and the section heights at the traffic face are unchanged.",
       "dimensions": {
-        "length_ft": 16.4167
+        "length_ft": 16.4167,
+        "height_in": 33,
+        "base_width_in": 16,
+        "top_width_in": 9,
+        "rear_face_height_in": 33.32
       },
       "bounds_m": [
         [
           58.902599,
           4.2672,
-          6.293248
+          6.28512
         ],
         [
-          63.9064,
+          63.906399,
           4.6736,
           7.136116
         ]
       ],
-      "volume_m3": 0.896965
+      "volume_m3": 1.21079
     },
     {
       "id": "joint2",
@@ -32654,7 +32688,7 @@
     {
       "feature": "Bearings and substructure",
       "status": "mixed",
-      "detail": "32 elastomeric pads,16 embedded plates, stepped replacement caps/seats and wings dimensioned; four retained steel shoes and original stem/foundation envelopes scaled.",
+      "detail": "32 elastomeric pads,16 embedded plates, stepped replacement caps/seats (13 ft 4 in abutment steps) and wings dimensioned; four retained steel shoes and original stem/foundation envelopes scaled.",
       "sources": [
         10,
         11,
@@ -32680,7 +32714,7 @@
     {
       "feature": "Rails and approaches",
       "status": "mixed",
-      "detail": "New FC barriers use the p27 section; 20 ft 6 in approach footprint with 4 ft 1 in x 1 ft 6 in corner cutbacks (p28), 12 in slab (p28 bill of materials) thickened to 1 ft 2 in on the 6 in pavement ledge (pp10, 14, 24); TFC envelopes reuse the FC section and end with their 16 ft 5 in RCBA extension; retained metal rail profile and the extension seat are inferred without referenced standards.",
+      "detail": "New FC barriers use the p27 section; 20 ft 6 in approach footprint with 4 ft 1 in x 1 ft 6 in corner cutbacks (p28), 12 in slab including the RCBA extensions (p28 bill of materials) thickened to 1 ft 2 in on the 6 in pavement ledge over the full 31 ft (pp10, 14, 24, 28); FC and TFC bases follow the 2 % crossfall; TFC envelopes keep the FC section and level top (p27) along their 16 ft 5 in RCBA extension; retained metal rail profile and the TFC transition face are inferred without referenced standards.",
       "sources": [
         6,
         7,
@@ -32821,7 +32855,7 @@
     }
   ],
   "review_correction": "edgebeam-diaphragm-riser-fc-drain-approach-names",
-  "revision": "1.2-drawing-review-2",
+  "revision": "1.3-deviations",
   "review_correction_record": {
     "source_pdf_pages": [
       2,
@@ -33123,25 +33157,11 @@
   },
   "known_deviations": [
     {
-      "id": "abutment-inner-step-width",
-      "parts": "abut1_step, abut4_step, diaphragm1, diaphragm4",
-      "source": "sheets 10, 14 (PDF 10, 14) elevations",
-      "deviation": "The raised inner bearing step is modelled +/-8 ft 6 in from the centre line; the abutment elevations draw it about 13 ft 4 in long (+/-6 ft 8 in).",
-      "reason": "Not part of the 2026 review; the end diaphragms follow the modelled step."
-    },
-    {
       "id": "tfc-transition-envelope",
       "parts": "TFC1_-1, TFC1_1, TFC4_-1, TFC4_1",
       "source": "sheets 27, 28",
-      "deviation": "Type TFC transitions are scaled FC sections tapering to 0.72 of full size over the 16 ft 5 in RCBA extension.",
-      "reason": "Standard E 706-TTFC is referenced but not supplied; the envelope is illustrative."
-    },
-    {
-      "id": "approach-extension-seat",
-      "parts": "approach1, approach4, ledge1, ledge4",
-      "source": "sheets 10, 14, 24, 28",
-      "deviation": "The ledge and the thickened approach seat are modelled over the 28 ft 0 in pavement only; the 1 ft 6 in RCBA extensions under the TFC transitions keep the plain 12 in slab with no seat.",
-      "reason": "Standard E 609-TBAE-01 (RCBA extension) is referenced on sheet 28 but not supplied."
+      "deviation": "The Type TFC transitions are envelopes: the sheet 27 FC section (2 ft 9 in) carried unchanged over the 16 ft 5 in RCBA extension, with the level top drawn on the sheet 27 elevation. The elevation (no scale) also shows the lower face changing along the transition (the FC knee line runs down to the toe, then the toe ends before the far end); that change is not modelled.",
+      "reason": "The transition face geometry, its stations and the end shape are given only in INDOT Standard Drawings E 706-TTFC-01 to -03, referenced on sheets 27 and 28 but not supplied; the sheet 27 elevation is not to scale and carries no dimension for them."
     }
   ],
   "review_correction_2": "ledge-seat-square-beam-tops",
@@ -33186,5 +33206,69 @@
     ],
     "before_glb_sha256": "cf9ab7e3bda2df594b98bf8fa4b7e08a6f31b7a6536c13c59de0b00a9476d8dc",
     "after_glb_sha256": "ac91caefd8036a9e7ac7bc42747ebac1b9ed691874c514d5745bf73217a8f88e"
+  },
+  "review_correction_3": "abutment-step-ledge-extension-tfc-height",
+  "review_correction_3_record": {
+    "follows": "ledge-seat-square-beam-tops",
+    "source_pdf_pages": [
+      6,
+      7,
+      10,
+      14,
+      22,
+      24,
+      27,
+      28
+    ],
+    "printed_sheets": [
+      6,
+      7,
+      10,
+      14,
+      22,
+      24,
+      27,
+      28
+    ],
+    "corrections": {
+      "abutment_inner_steps": "inner bearing step 13 ft 4 in (6 ft 8 in each side of Line \"A\" = 4 ft 2 in + 2 ft 6 in, sheets 10, 14 plans; elevations and sheet 24 agree); was +/-8 ft 6 in. End-diaphragm bottoms follow the step (1/2 in EPS)",
+      "ledge_and_seat_length": "pavement ledge and approach seat over the full 31 ft 0 in diaphragm length, under the RCBA extensions (sheet 24 typical bent diaphragm; sheet 28 plan and bill of materials); was 28 ft 0 in",
+      "step_face_eps": "end-diaphragm step pockets 1 in wider than the step each side (1 in EPS on the vertical step faces, 1/2 in on the horizontal; sheet 10 Section B-B, sheet 24 Section C-C)",
+      "tfc_height": "TFC envelopes keep the sheet 27 FC section and level top over the 16 ft 5 in transition (sheet 27 elevation, no scale); the illustrative 0.72 taper is removed",
+      "rail_bases": "FC and TFC railing bottoms set on the 2 % deck / approach crossfall (rear bottom edge lowered 0.32 in, sheet 27 Section A-A); toe and upper profile unchanged"
+    },
+    "decisions": {
+      "step_face_eps": "The EPS note on sheet 10 Section B-B and sheet 24 Section C-C reads \"1/2 in on horizontal faces, 1 in on vertical faces\"; the sheet 10 and 24 elevations draft the step-face offset at about 1/2 in (scaled 0.51-0.53 in). The written note governs: 1 in, as at the wing faces (\"1 in Expanded Polystyrene\", sheets 10, 14).",
+      "tfc_transition_face": "Kept as a known deviation: only the level top and the length are settled by the sheets; the face and end details need E 706-TTFC-01 to -03."
+    },
+    "resolved_deviations": [
+      "abutment-inner-step-width",
+      "approach-extension-seat"
+    ],
+    "kept_deviations": [
+      "tfc-transition-envelope"
+    ],
+    "changed_parts": [
+      "abut1_step",
+      "diaphragm1",
+      "ledge1",
+      "approach1",
+      "abut4_step",
+      "diaphragm4",
+      "ledge4",
+      "approach4",
+      "FC_A_-1",
+      "FC_A_1",
+      "FC_C_-1",
+      "FC_C_1",
+      "TFC1_-1",
+      "TFC1_1",
+      "TFC4_-1",
+      "TFC4_1"
+    ],
+    "added_parts": [],
+    "removed_parts": [],
+    "before_glb_sha256": "ac91caefd8036a9e7ac7bc42747ebac1b9ed691874c514d5745bf73217a8f88e",
+    "after_glb_sha256": "97e5b4f348ab213da4be8e2279dc2dddbfb9d34c9418ef1266d12689746e5cbd"
   }
 }
