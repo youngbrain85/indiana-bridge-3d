@@ -7,7 +7,7 @@ const base=process.env.BRIDGE_TEST_URL||'http://127.0.0.1:8766';
 const additions=[
  {id:'us35-deer',count:72,part:'beam_0_0',page:20},
  {id:'us224-eight-mile',count:91,part:'beam_0_0',page:9,source:'9548292',sourcePage:8},
- {id:'virginia-avenue',count:148,part:'beam_1',page:31,source:'9548460',sourcePage:28},
+ {id:'virginia-avenue',count:162,part:'beam_1',page:31,source:'9548460',sourcePage:28},
  {id:'sr44-little-blue',count:37,part:'deck',page:12},
  {id:'sr1-six-mile',count:24,part:'deck',page:4}
 ];

@@ -6152,21 +6152,33 @@
         39
       ],
       "basis": "Source drain/collector routing; nominal fittings",
-      "note": "Collector is a straight visual run below the girders; elbows, hangers, cleanouts and deck penetrations are simplified. Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37).",
-      "dimensions": {},
+      "note": "Downpipe, collector and north drop follow the sheet 39 routing along the Abutment 2 wall face; reducer, elbows, cleanout, straps, brackets and the deck penetration are simplified. Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37). Review correction 1.3: SQ-A inlet centre moved to Sta. 13+87.50 (X = +11.945 m), the station on the sheet 36 plan (was Sta. 13+88.30, 3 ft from the bearing line). Re-routed as sheet 39 draws it: the 6 in downpipe drops from the inlet to an elbow under the top of the abutment wall, the 6 in RTRP collector runs along the wall face on the downpipe centre line (Section K-K) to the north end at 0.5 % (the sheet minimum), then drops down the wall face. Sheet 39 is not to scale, so by decision: centre line 0.220 m off the wall face (set by the inlet position), pipe top at the top of the wall at the south elbow, drop to the foot of the wall envelope (existing grade is not modelled). The straight collector it replaces passed through B2_bearing_6-9.",
+      "dimensions": {
+        "inlet_station": "13+87.50",
+        "inlet_centre_x_m": 11.945112,
+        "inlet_centre_y_m": 4.372,
+        "pipe_diameter_m": 0.1524,
+        "collector_slope": 0.005,
+        "collector_run_length_m": 19.849631,
+        "collector_fall_m": 0.099248,
+        "collector_centre_line_to_wall_face_m": 0.219843,
+        "south_elbow_centre_z_m": 5.90254,
+        "north_elbow_centre_z_m": 5.803292,
+        "north_drop_foot_z_m": 0.65
+      },
       "bounds_m": [
         [
-          11.970012,
-          -9.88475,
-          6.078619
+          11.725112,
+          -9.906,
+          0.65
         ],
         [
-          27.025034,
+          25.889143,
           4.552,
-          8.269818
+          8.270978
         ]
       ],
-      "volume_m3": 0.416314096,
+      "volume_m3": 0.500927591,
       "source_refs": [
         {
           "source_id": "9683637",
@@ -6342,6 +6354,832 @@
         ]
       ],
       "volume_m3": 0.07455097
+    },
+    {
+      "id": "jacking_frame_B1_2",
+      "name": "Bay 2 | Abutment 1 jacking frame J.F.1 (1971, Girders 2-3)",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        38
+      ],
+      "basis": "Existing plans 9548460 S-7 and S-8 (PDF 65, 66): Jacking Frame J.F.1 & 2 on the centre line of the top shoes (bearing line), PL 1/2 x 42 in web and PL 5/8 x 9 in flanges; retained under the 2026 deck (sheet 38 typical sections)",
+      "note": "Top 5 1/4 in below the girder top, scaled from the S-8 elevation (the height on the web is not dimensioned; the sheet 38 background sketch scales about 7.8 in); follows the two girder tops along the bearing line. The ends are an envelope of the frame and its bent 1/2 x 7 in connection plates: the section stops on vertical planes parallel to the girder webs 3 in from the web centre lines, the S-8 offset of the plate leg along the web; S-8 does not dimension where the frame itself ends (see known_deviations). Includes the two S-8 centre stiffeners, PL 7/8 x 4 1/4 in each side of the web on the frame centre line between the flanges. Bent connection plates, bolts and the girder bearing stiffeners are omitted. Review correction 1.3: added; the S-7 E.S.1 / E.S.2 and F.S.1 / F.S.2 labels on the bearing lines are the expansion and fixed shoes of S-9, already represented by the bearings.",
+      "dimensions": {
+        "frame": "J.F.1",
+        "web": "PL 1/2 x 42 in",
+        "flanges": "PL 5/8 x 9 in top and bottom",
+        "total_depth_m": 1.09855,
+        "top_below_girder_top_m": 0.13335,
+        "top_below_girder_top_basis": "scaled from existing S-8 (not dimensioned)",
+        "end_cut": "parallel to girder webs",
+        "end_offset_from_girder_web_centre_m": 0.0762,
+        "centre_stiffeners": "2 x PL 7/8 x 4 1/4 in, one each side of the web on the frame centre line, between the flanges (S-8)",
+        "centre_stiffener_m": {
+          "thickness": 0.022225,
+          "projection": 0.10795,
+          "height": 1.0668
+        },
+        "girder_spacing_m": 2.413,
+        "along_bearing_line_m": 3.159605
+      },
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ],
+      "bounds_m": [
+        [
+          -24.527715,
+          4.9022,
+          6.932818
+        ],
+        [
+          -22.000765,
+          7.1628,
+          8.088549
+        ]
+      ],
+      "volume_m3": 0.070858943
+    },
+    {
+      "id": "jacking_frame_B1_3",
+      "name": "Bay 3 | Abutment 1 jacking frame J.F.1 (1971, Girders 3-4)",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        38
+      ],
+      "basis": "Existing plans 9548460 S-7 and S-8 (PDF 65, 66): Jacking Frame J.F.1 & 2 on the centre line of the top shoes (bearing line), PL 1/2 x 42 in web and PL 5/8 x 9 in flanges; retained under the 2026 deck (sheet 38 typical sections)",
+      "note": "Top 5 1/4 in below the girder top, scaled from the S-8 elevation (the height on the web is not dimensioned; the sheet 38 background sketch scales about 7.8 in); follows the two girder tops along the bearing line. The ends are an envelope of the frame and its bent 1/2 x 7 in connection plates: the section stops on vertical planes parallel to the girder webs 3 in from the web centre lines, the S-8 offset of the plate leg along the web; S-8 does not dimension where the frame itself ends (see known_deviations). Includes the two S-8 centre stiffeners, PL 7/8 x 4 1/4 in each side of the web on the frame centre line between the flanges. Bent connection plates, bolts and the girder bearing stiffeners are omitted. Review correction 1.3: added; the S-7 E.S.1 / E.S.2 and F.S.1 / F.S.2 labels on the bearing lines are the expansion and fixed shoes of S-9, already represented by the bearings.",
+      "dimensions": {
+        "frame": "J.F.1",
+        "web": "PL 1/2 x 42 in",
+        "flanges": "PL 5/8 x 9 in top and bottom",
+        "total_depth_m": 1.09855,
+        "top_below_girder_top_m": 0.13335,
+        "top_below_girder_top_basis": "scaled from existing S-8 (not dimensioned)",
+        "end_cut": "parallel to girder webs",
+        "end_offset_from_girder_web_centre_m": 0.0762,
+        "centre_stiffeners": "2 x PL 7/8 x 4 1/4 in, one each side of the web on the frame centre line, between the flanges (S-8)",
+        "centre_stiffener_m": {
+          "thickness": 0.022225,
+          "projection": 0.10795,
+          "height": 1.0668
+        },
+        "girder_spacing_m": 2.413,
+        "along_bearing_line_m": 3.159605
+      },
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ],
+      "bounds_m": [
+        [
+          -22.171459,
+          2.4892,
+          6.932863
+        ],
+        [
+          -19.644509,
+          4.7498,
+          8.058688
+        ]
+      ],
+      "volume_m3": 0.070858943
+    },
+    {
+      "id": "jacking_frame_B1_4",
+      "name": "Bay 4 | Abutment 1 jacking frame J.F.1 (1971, Girders 4-5)",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        38
+      ],
+      "basis": "Existing plans 9548460 S-7 and S-8 (PDF 65, 66): Jacking Frame J.F.1 & 2 on the centre line of the top shoes (bearing line), PL 1/2 x 42 in web and PL 5/8 x 9 in flanges; retained under the 2026 deck (sheet 38 typical sections)",
+      "note": "Top 5 1/4 in below the girder top, scaled from the S-8 elevation (the height on the web is not dimensioned; the sheet 38 background sketch scales about 7.8 in); follows the two girder tops along the bearing line. The ends are an envelope of the frame and its bent 1/2 x 7 in connection plates: the section stops on vertical planes parallel to the girder webs 3 in from the web centre lines, the S-8 offset of the plate leg along the web; S-8 does not dimension where the frame itself ends (see known_deviations). Includes the two S-8 centre stiffeners, PL 7/8 x 4 1/4 in each side of the web on the frame centre line between the flanges. Bent connection plates, bolts and the girder bearing stiffeners are omitted. Review correction 1.3: added; the S-7 E.S.1 / E.S.2 and F.S.1 / F.S.2 labels on the bearing lines are the expansion and fixed shoes of S-9, already represented by the bearings.",
+      "dimensions": {
+        "frame": "J.F.1",
+        "web": "PL 1/2 x 42 in",
+        "flanges": "PL 5/8 x 9 in top and bottom",
+        "total_depth_m": 1.09855,
+        "top_below_girder_top_m": 0.13335,
+        "top_below_girder_top_basis": "scaled from existing S-8 (not dimensioned)",
+        "end_cut": "parallel to girder webs",
+        "end_offset_from_girder_web_centre_m": 0.0762,
+        "centre_stiffeners": "2 x PL 7/8 x 4 1/4 in, one each side of the web on the frame centre line, between the flanges (S-8)",
+        "centre_stiffener_m": {
+          "thickness": 0.022225,
+          "projection": 0.10795,
+          "height": 1.0668
+        },
+        "girder_spacing_m": 2.413,
+        "along_bearing_line_m": 3.159605
+      },
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ],
+      "bounds_m": [
+        [
+          -19.815203,
+          0.0762,
+          6.960041
+        ],
+        [
+          -17.288253,
+          2.3368,
+          8.095802
+        ]
+      ],
+      "volume_m3": 0.070858943
+    },
+    {
+      "id": "jacking_frame_B1_5",
+      "name": "Bay 5 | Abutment 1 jacking frame J.F.1 (1971, Girders 5-6)",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        38
+      ],
+      "basis": "Existing plans 9548460 S-7 and S-8 (PDF 65, 66): Jacking Frame J.F.1 & 2 on the centre line of the top shoes (bearing line), PL 1/2 x 42 in web and PL 5/8 x 9 in flanges; retained under the 2026 deck (sheet 38 typical sections)",
+      "note": "Top 5 1/4 in below the girder top, scaled from the S-8 elevation (the height on the web is not dimensioned; the sheet 38 background sketch scales about 7.8 in); follows the two girder tops along the bearing line. The ends are an envelope of the frame and its bent 1/2 x 7 in connection plates: the section stops on vertical planes parallel to the girder webs 3 in from the web centre lines, the S-8 offset of the plate leg along the web; S-8 does not dimension where the frame itself ends (see known_deviations). Includes the two S-8 centre stiffeners, PL 7/8 x 4 1/4 in each side of the web on the frame centre line between the flanges. Bent connection plates, bolts and the girder bearing stiffeners are omitted. Review correction 1.3: added; the S-7 E.S.1 / E.S.2 and F.S.1 / F.S.2 labels on the bearing lines are the expansion and fixed shoes of S-9, already represented by the bearings.",
+      "dimensions": {
+        "frame": "J.F.1",
+        "web": "PL 1/2 x 42 in",
+        "flanges": "PL 5/8 x 9 in top and bottom",
+        "total_depth_m": 1.09855,
+        "top_below_girder_top_m": 0.13335,
+        "top_below_girder_top_basis": "scaled from existing S-8 (not dimensioned)",
+        "end_cut": "parallel to girder webs",
+        "end_offset_from_girder_web_centre_m": 0.0762,
+        "centre_stiffeners": "2 x PL 7/8 x 4 1/4 in, one each side of the web on the frame centre line, between the flanges (S-8)",
+        "centre_stiffener_m": {
+          "thickness": 0.022225,
+          "projection": 0.10795,
+          "height": 1.0668
+        },
+        "girder_spacing_m": 2.413,
+        "along_bearing_line_m": 3.159605
+      },
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ],
+      "bounds_m": [
+        [
+          -17.458947,
+          -2.3368,
+          6.937685
+        ],
+        [
+          -14.931997,
+          -0.0762,
+          8.095836
+        ]
+      ],
+      "volume_m3": 0.070858943
+    },
+    {
+      "id": "jacking_frame_B1_6",
+      "name": "Bay 6 | Abutment 1 jacking frame J.F.1 (1971, Girders 6-7)",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        38
+      ],
+      "basis": "Existing plans 9548460 S-7 and S-8 (PDF 65, 66): Jacking Frame J.F.1 & 2 on the centre line of the top shoes (bearing line), PL 1/2 x 42 in web and PL 5/8 x 9 in flanges; retained under the 2026 deck (sheet 38 typical sections)",
+      "note": "Top 5 1/4 in below the girder top, scaled from the S-8 elevation (the height on the web is not dimensioned; the sheet 38 background sketch scales about 7.8 in); follows the two girder tops along the bearing line. The ends are an envelope of the frame and its bent 1/2 x 7 in connection plates: the section stops on vertical planes parallel to the girder webs 3 in from the web centre lines, the S-8 offset of the plate leg along the web; S-8 does not dimension where the frame itself ends (see known_deviations). Includes the two S-8 centre stiffeners, PL 7/8 x 4 1/4 in each side of the web on the frame centre line between the flanges. Bent connection plates, bolts and the girder bearing stiffeners are omitted. Review correction 1.3: added; the S-7 E.S.1 / E.S.2 and F.S.1 / F.S.2 labels on the bearing lines are the expansion and fixed shoes of S-9, already represented by the bearings.",
+      "dimensions": {
+        "frame": "J.F.1",
+        "web": "PL 1/2 x 42 in",
+        "flanges": "PL 5/8 x 9 in top and bottom",
+        "total_depth_m": 1.09855,
+        "top_below_girder_top_m": 0.13335,
+        "top_below_girder_top_basis": "scaled from existing S-8 (not dimensioned)",
+        "end_cut": "parallel to girder webs",
+        "end_offset_from_girder_web_centre_m": 0.0762,
+        "centre_stiffeners": "2 x PL 7/8 x 4 1/4 in, one each side of the web on the frame centre line, between the flanges (S-8)",
+        "centre_stiffener_m": {
+          "thickness": 0.022225,
+          "projection": 0.10795,
+          "height": 1.0668
+        },
+        "girder_spacing_m": 2.413,
+        "along_bearing_line_m": 3.159605
+      },
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ],
+      "bounds_m": [
+        [
+          -15.102691,
+          -4.7498,
+          6.878264
+        ],
+        [
+          -12.575741,
+          -2.4892,
+          8.036415
+        ]
+      ],
+      "volume_m3": 0.070858943
+    },
+    {
+      "id": "jacking_frame_B1_7",
+      "name": "Bay 7 | Abutment 1 jacking frame J.F.1 (1971, Girders 7-8)",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        38
+      ],
+      "basis": "Existing plans 9548460 S-7 and S-8 (PDF 65, 66): Jacking Frame J.F.1 & 2 on the centre line of the top shoes (bearing line), PL 1/2 x 42 in web and PL 5/8 x 9 in flanges; retained under the 2026 deck (sheet 38 typical sections)",
+      "note": "Top 5 1/4 in below the girder top, scaled from the S-8 elevation (the height on the web is not dimensioned; the sheet 38 background sketch scales about 7.8 in); follows the two girder tops along the bearing line. The ends are an envelope of the frame and its bent 1/2 x 7 in connection plates: the section stops on vertical planes parallel to the girder webs 3 in from the web centre lines, the S-8 offset of the plate leg along the web; S-8 does not dimension where the frame itself ends (see known_deviations). Includes the two S-8 centre stiffeners, PL 7/8 x 4 1/4 in each side of the web on the frame centre line between the flanges. Bent connection plates, bolts and the girder bearing stiffeners are omitted. Review correction 1.3: added; the S-7 E.S.1 / E.S.2 and F.S.1 / F.S.2 labels on the bearing lines are the expansion and fixed shoes of S-9, already represented by the bearings.",
+      "dimensions": {
+        "frame": "J.F.1",
+        "web": "PL 1/2 x 42 in",
+        "flanges": "PL 5/8 x 9 in top and bottom",
+        "total_depth_m": 1.09855,
+        "top_below_girder_top_m": 0.13335,
+        "top_below_girder_top_basis": "scaled from existing S-8 (not dimensioned)",
+        "end_cut": "parallel to girder webs",
+        "end_offset_from_girder_web_centre_m": 0.0762,
+        "centre_stiffeners": "2 x PL 7/8 x 4 1/4 in, one each side of the web on the frame centre line, between the flanges (S-8)",
+        "centre_stiffener_m": {
+          "thickness": 0.022225,
+          "projection": 0.10795,
+          "height": 1.0668
+        },
+        "girder_spacing_m": 2.413,
+        "along_bearing_line_m": 3.159605
+      },
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ],
+      "bounds_m": [
+        [
+          -12.746435,
+          -7.1628,
+          6.818842
+        ],
+        [
+          -10.219485,
+          -4.9022,
+          7.976994
+        ]
+      ],
+      "volume_m3": 0.070858943
+    },
+    {
+      "id": "jacking_frame_B1_8",
+      "name": "Bay 8 | Abutment 1 jacking frame J.F.2 (1971, Girders 8-9)",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        38
+      ],
+      "basis": "Existing plans 9548460 S-7 and S-8 (PDF 65, 66): Jacking Frame J.F.1 & 2 on the centre line of the top shoes (bearing line), PL 1/2 x 42 in web and PL 5/8 x 9 in flanges; retained under the 2026 deck (sheet 38 typical sections)",
+      "note": "Top 5 1/4 in below the girder top, scaled from the S-8 elevation (the height on the web is not dimensioned; the sheet 38 background sketch scales about 7.8 in); follows the two girder tops along the bearing line. The ends are an envelope of the frame and its bent 1/2 x 7 in connection plates: the section stops on vertical planes parallel to the girder webs 3 in from the web centre lines, the S-8 offset of the plate leg along the web; S-8 does not dimension where the frame itself ends (see known_deviations). Includes the two S-8 centre stiffeners, PL 7/8 x 4 1/4 in each side of the web on the frame centre line between the flanges. Bent connection plates, bolts and the girder bearing stiffeners are omitted. Review correction 1.3: added; the S-7 E.S.1 / E.S.2 and F.S.1 / F.S.2 labels on the bearing lines are the expansion and fixed shoes of S-9, already represented by the bearings.",
+      "dimensions": {
+        "frame": "J.F.2",
+        "web": "PL 1/2 x 42 in",
+        "flanges": "PL 5/8 x 9 in top and bottom",
+        "total_depth_m": 1.09855,
+        "top_below_girder_top_m": 0.13335,
+        "top_below_girder_top_basis": "scaled from existing S-8 (not dimensioned)",
+        "end_cut": "parallel to girder webs",
+        "end_offset_from_girder_web_centre_m": 0.0762,
+        "centre_stiffeners": "2 x PL 7/8 x 4 1/4 in, one each side of the web on the frame centre line, between the flanges (S-8)",
+        "centre_stiffener_m": {
+          "thickness": 0.022225,
+          "projection": 0.10795,
+          "height": 1.0668
+        },
+        "girder_spacing_m": 2.0574,
+        "along_bearing_line_m": 2.662588
+      },
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ],
+      "bounds_m": [
+        [
+          -10.390179,
+          -9.2202,
+          6.818918
+        ],
+        [
+          -8.210467,
+          -7.3152,
+          7.925506
+        ]
+      ],
+      "volume_m3": 0.060517814
+    },
+    {
+      "id": "jacking_frame_B2_2",
+      "name": "Bay 2 | Abutment 2 jacking frame J.F.1 (1971, Girders 2-3)",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        38
+      ],
+      "basis": "Existing plans 9548460 S-7 and S-8 (PDF 65, 66): Jacking Frame J.F.1 & 2 on the centre line of the top shoes (bearing line), PL 1/2 x 42 in web and PL 5/8 x 9 in flanges; retained under the 2026 deck (sheet 38 typical sections)",
+      "note": "Top 5 1/4 in below the girder top, scaled from the S-8 elevation (the height on the web is not dimensioned; the sheet 38 background sketch scales about 7.8 in); follows the two girder tops along the bearing line. The ends are an envelope of the frame and its bent 1/2 x 7 in connection plates: the section stops on vertical planes parallel to the girder webs 3 in from the web centre lines, the S-8 offset of the plate leg along the web; S-8 does not dimension where the frame itself ends (see known_deviations). Includes the two S-8 centre stiffeners, PL 7/8 x 4 1/4 in each side of the web on the frame centre line between the flanges. Bent connection plates, bolts and the girder bearing stiffeners are omitted. Review correction 1.3: added; the S-7 E.S.1 / E.S.2 and F.S.1 / F.S.2 labels on the bearing lines are the expansion and fixed shoes of S-9, already represented by the bearings.",
+      "dimensions": {
+        "frame": "J.F.1",
+        "web": "PL 1/2 x 42 in",
+        "flanges": "PL 5/8 x 9 in top and bottom",
+        "total_depth_m": 1.09855,
+        "top_below_girder_top_m": 0.13335,
+        "top_below_girder_top_basis": "scaled from existing S-8 (not dimensioned)",
+        "end_cut": "parallel to girder webs",
+        "end_offset_from_girder_web_centre_m": 0.0762,
+        "centre_stiffeners": "2 x PL 7/8 x 4 1/4 in, one each side of the web on the frame centre line, between the flanges (S-8)",
+        "centre_stiffener_m": {
+          "thickness": 0.022225,
+          "projection": 0.10795,
+          "height": 1.0668
+        },
+        "girder_spacing_m": 2.413,
+        "along_bearing_line_m": 3.159605
+      },
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ],
+      "bounds_m": [
+        [
+          10.219485,
+          4.9022,
+          6.768226
+        ],
+        [
+          12.746435,
+          7.1628,
+          7.923957
+        ]
+      ],
+      "volume_m3": 0.070858943
+    },
+    {
+      "id": "jacking_frame_B2_3",
+      "name": "Bay 3 | Abutment 2 jacking frame J.F.1 (1971, Girders 3-4)",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        38
+      ],
+      "basis": "Existing plans 9548460 S-7 and S-8 (PDF 65, 66): Jacking Frame J.F.1 & 2 on the centre line of the top shoes (bearing line), PL 1/2 x 42 in web and PL 5/8 x 9 in flanges; retained under the 2026 deck (sheet 38 typical sections)",
+      "note": "Top 5 1/4 in below the girder top, scaled from the S-8 elevation (the height on the web is not dimensioned; the sheet 38 background sketch scales about 7.8 in); follows the two girder tops along the bearing line. The ends are an envelope of the frame and its bent 1/2 x 7 in connection plates: the section stops on vertical planes parallel to the girder webs 3 in from the web centre lines, the S-8 offset of the plate leg along the web; S-8 does not dimension where the frame itself ends (see known_deviations). Includes the two S-8 centre stiffeners, PL 7/8 x 4 1/4 in each side of the web on the frame centre line between the flanges. Bent connection plates, bolts and the girder bearing stiffeners are omitted. Review correction 1.3: added; the S-7 E.S.1 / E.S.2 and F.S.1 / F.S.2 labels on the bearing lines are the expansion and fixed shoes of S-9, already represented by the bearings.",
+      "dimensions": {
+        "frame": "J.F.1",
+        "web": "PL 1/2 x 42 in",
+        "flanges": "PL 5/8 x 9 in top and bottom",
+        "total_depth_m": 1.09855,
+        "top_below_girder_top_m": 0.13335,
+        "top_below_girder_top_basis": "scaled from existing S-8 (not dimensioned)",
+        "end_cut": "parallel to girder webs",
+        "end_offset_from_girder_web_centre_m": 0.0762,
+        "centre_stiffeners": "2 x PL 7/8 x 4 1/4 in, one each side of the web on the frame centre line, between the flanges (S-8)",
+        "centre_stiffener_m": {
+          "thickness": 0.022225,
+          "projection": 0.10795,
+          "height": 1.0668
+        },
+        "girder_spacing_m": 2.413,
+        "along_bearing_line_m": 3.159605
+      },
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ],
+      "bounds_m": [
+        [
+          12.575741,
+          2.4892,
+          6.768271
+        ],
+        [
+          15.102691,
+          4.7498,
+          7.894096
+        ]
+      ],
+      "volume_m3": 0.070858943
+    },
+    {
+      "id": "jacking_frame_B2_4",
+      "name": "Bay 4 | Abutment 2 jacking frame J.F.1 (1971, Girders 4-5)",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        38
+      ],
+      "basis": "Existing plans 9548460 S-7 and S-8 (PDF 65, 66): Jacking Frame J.F.1 & 2 on the centre line of the top shoes (bearing line), PL 1/2 x 42 in web and PL 5/8 x 9 in flanges; retained under the 2026 deck (sheet 38 typical sections)",
+      "note": "Top 5 1/4 in below the girder top, scaled from the S-8 elevation (the height on the web is not dimensioned; the sheet 38 background sketch scales about 7.8 in); follows the two girder tops along the bearing line. The ends are an envelope of the frame and its bent 1/2 x 7 in connection plates: the section stops on vertical planes parallel to the girder webs 3 in from the web centre lines, the S-8 offset of the plate leg along the web; S-8 does not dimension where the frame itself ends (see known_deviations). Includes the two S-8 centre stiffeners, PL 7/8 x 4 1/4 in each side of the web on the frame centre line between the flanges. Bent connection plates, bolts and the girder bearing stiffeners are omitted. Review correction 1.3: added; the S-7 E.S.1 / E.S.2 and F.S.1 / F.S.2 labels on the bearing lines are the expansion and fixed shoes of S-9, already represented by the bearings.",
+      "dimensions": {
+        "frame": "J.F.1",
+        "web": "PL 1/2 x 42 in",
+        "flanges": "PL 5/8 x 9 in top and bottom",
+        "total_depth_m": 1.09855,
+        "top_below_girder_top_m": 0.13335,
+        "top_below_girder_top_basis": "scaled from existing S-8 (not dimensioned)",
+        "end_cut": "parallel to girder webs",
+        "end_offset_from_girder_web_centre_m": 0.0762,
+        "centre_stiffeners": "2 x PL 7/8 x 4 1/4 in, one each side of the web on the frame centre line, between the flanges (S-8)",
+        "centre_stiffener_m": {
+          "thickness": 0.022225,
+          "projection": 0.10795,
+          "height": 1.0668
+        },
+        "girder_spacing_m": 2.413,
+        "along_bearing_line_m": 3.159605
+      },
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ],
+      "bounds_m": [
+        [
+          14.931997,
+          0.0762,
+          6.795449
+        ],
+        [
+          17.458947,
+          2.3368,
+          7.93121
+        ]
+      ],
+      "volume_m3": 0.070858943
+    },
+    {
+      "id": "jacking_frame_B2_5",
+      "name": "Bay 5 | Abutment 2 jacking frame J.F.1 (1971, Girders 5-6)",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        38
+      ],
+      "basis": "Existing plans 9548460 S-7 and S-8 (PDF 65, 66): Jacking Frame J.F.1 & 2 on the centre line of the top shoes (bearing line), PL 1/2 x 42 in web and PL 5/8 x 9 in flanges; retained under the 2026 deck (sheet 38 typical sections)",
+      "note": "Top 5 1/4 in below the girder top, scaled from the S-8 elevation (the height on the web is not dimensioned; the sheet 38 background sketch scales about 7.8 in); follows the two girder tops along the bearing line. The ends are an envelope of the frame and its bent 1/2 x 7 in connection plates: the section stops on vertical planes parallel to the girder webs 3 in from the web centre lines, the S-8 offset of the plate leg along the web; S-8 does not dimension where the frame itself ends (see known_deviations). Includes the two S-8 centre stiffeners, PL 7/8 x 4 1/4 in each side of the web on the frame centre line between the flanges. Bent connection plates, bolts and the girder bearing stiffeners are omitted. Review correction 1.3: added; the S-7 E.S.1 / E.S.2 and F.S.1 / F.S.2 labels on the bearing lines are the expansion and fixed shoes of S-9, already represented by the bearings.",
+      "dimensions": {
+        "frame": "J.F.1",
+        "web": "PL 1/2 x 42 in",
+        "flanges": "PL 5/8 x 9 in top and bottom",
+        "total_depth_m": 1.09855,
+        "top_below_girder_top_m": 0.13335,
+        "top_below_girder_top_basis": "scaled from existing S-8 (not dimensioned)",
+        "end_cut": "parallel to girder webs",
+        "end_offset_from_girder_web_centre_m": 0.0762,
+        "centre_stiffeners": "2 x PL 7/8 x 4 1/4 in, one each side of the web on the frame centre line, between the flanges (S-8)",
+        "centre_stiffener_m": {
+          "thickness": 0.022225,
+          "projection": 0.10795,
+          "height": 1.0668
+        },
+        "girder_spacing_m": 2.413,
+        "along_bearing_line_m": 3.159605
+      },
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ],
+      "bounds_m": [
+        [
+          17.288253,
+          -2.3368,
+          6.773093
+        ],
+        [
+          19.815203,
+          -0.0762,
+          7.931244
+        ]
+      ],
+      "volume_m3": 0.070858943
+    },
+    {
+      "id": "jacking_frame_B2_6",
+      "name": "Bay 6 | Abutment 2 jacking frame J.F.1 (1971, Girders 6-7)",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        38
+      ],
+      "basis": "Existing plans 9548460 S-7 and S-8 (PDF 65, 66): Jacking Frame J.F.1 & 2 on the centre line of the top shoes (bearing line), PL 1/2 x 42 in web and PL 5/8 x 9 in flanges; retained under the 2026 deck (sheet 38 typical sections)",
+      "note": "Top 5 1/4 in below the girder top, scaled from the S-8 elevation (the height on the web is not dimensioned; the sheet 38 background sketch scales about 7.8 in); follows the two girder tops along the bearing line. The ends are an envelope of the frame and its bent 1/2 x 7 in connection plates: the section stops on vertical planes parallel to the girder webs 3 in from the web centre lines, the S-8 offset of the plate leg along the web; S-8 does not dimension where the frame itself ends (see known_deviations). Includes the two S-8 centre stiffeners, PL 7/8 x 4 1/4 in each side of the web on the frame centre line between the flanges. Bent connection plates, bolts and the girder bearing stiffeners are omitted. Review correction 1.3: added; the S-7 E.S.1 / E.S.2 and F.S.1 / F.S.2 labels on the bearing lines are the expansion and fixed shoes of S-9, already represented by the bearings.",
+      "dimensions": {
+        "frame": "J.F.1",
+        "web": "PL 1/2 x 42 in",
+        "flanges": "PL 5/8 x 9 in top and bottom",
+        "total_depth_m": 1.09855,
+        "top_below_girder_top_m": 0.13335,
+        "top_below_girder_top_basis": "scaled from existing S-8 (not dimensioned)",
+        "end_cut": "parallel to girder webs",
+        "end_offset_from_girder_web_centre_m": 0.0762,
+        "centre_stiffeners": "2 x PL 7/8 x 4 1/4 in, one each side of the web on the frame centre line, between the flanges (S-8)",
+        "centre_stiffener_m": {
+          "thickness": 0.022225,
+          "projection": 0.10795,
+          "height": 1.0668
+        },
+        "girder_spacing_m": 2.413,
+        "along_bearing_line_m": 3.159605
+      },
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ],
+      "bounds_m": [
+        [
+          19.644509,
+          -4.7498,
+          6.713672
+        ],
+        [
+          22.171459,
+          -2.4892,
+          7.871823
+        ]
+      ],
+      "volume_m3": 0.070858943
+    },
+    {
+      "id": "jacking_frame_B2_7",
+      "name": "Bay 7 | Abutment 2 jacking frame J.F.1 (1971, Girders 7-8)",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        38
+      ],
+      "basis": "Existing plans 9548460 S-7 and S-8 (PDF 65, 66): Jacking Frame J.F.1 & 2 on the centre line of the top shoes (bearing line), PL 1/2 x 42 in web and PL 5/8 x 9 in flanges; retained under the 2026 deck (sheet 38 typical sections)",
+      "note": "Top 5 1/4 in below the girder top, scaled from the S-8 elevation (the height on the web is not dimensioned; the sheet 38 background sketch scales about 7.8 in); follows the two girder tops along the bearing line. The ends are an envelope of the frame and its bent 1/2 x 7 in connection plates: the section stops on vertical planes parallel to the girder webs 3 in from the web centre lines, the S-8 offset of the plate leg along the web; S-8 does not dimension where the frame itself ends (see known_deviations). Includes the two S-8 centre stiffeners, PL 7/8 x 4 1/4 in each side of the web on the frame centre line between the flanges. Bent connection plates, bolts and the girder bearing stiffeners are omitted. Review correction 1.3: added; the S-7 E.S.1 / E.S.2 and F.S.1 / F.S.2 labels on the bearing lines are the expansion and fixed shoes of S-9, already represented by the bearings.",
+      "dimensions": {
+        "frame": "J.F.1",
+        "web": "PL 1/2 x 42 in",
+        "flanges": "PL 5/8 x 9 in top and bottom",
+        "total_depth_m": 1.09855,
+        "top_below_girder_top_m": 0.13335,
+        "top_below_girder_top_basis": "scaled from existing S-8 (not dimensioned)",
+        "end_cut": "parallel to girder webs",
+        "end_offset_from_girder_web_centre_m": 0.0762,
+        "centre_stiffeners": "2 x PL 7/8 x 4 1/4 in, one each side of the web on the frame centre line, between the flanges (S-8)",
+        "centre_stiffener_m": {
+          "thickness": 0.022225,
+          "projection": 0.10795,
+          "height": 1.0668
+        },
+        "girder_spacing_m": 2.413,
+        "along_bearing_line_m": 3.159605
+      },
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ],
+      "bounds_m": [
+        [
+          22.000765,
+          -7.1628,
+          6.65425
+        ],
+        [
+          24.527715,
+          -4.9022,
+          7.812402
+        ]
+      ],
+      "volume_m3": 0.070858943
+    },
+    {
+      "id": "jacking_frame_B2_8",
+      "name": "Bay 8 | Abutment 2 jacking frame J.F.2 (1971, Girders 8-9)",
+      "layer": "bracing",
+      "color": "#83949b",
+      "pdf_pages": [
+        31,
+        38
+      ],
+      "basis": "Existing plans 9548460 S-7 and S-8 (PDF 65, 66): Jacking Frame J.F.1 & 2 on the centre line of the top shoes (bearing line), PL 1/2 x 42 in web and PL 5/8 x 9 in flanges; retained under the 2026 deck (sheet 38 typical sections)",
+      "note": "Top 5 1/4 in below the girder top, scaled from the S-8 elevation (the height on the web is not dimensioned; the sheet 38 background sketch scales about 7.8 in); follows the two girder tops along the bearing line. The ends are an envelope of the frame and its bent 1/2 x 7 in connection plates: the section stops on vertical planes parallel to the girder webs 3 in from the web centre lines, the S-8 offset of the plate leg along the web; S-8 does not dimension where the frame itself ends (see known_deviations). Includes the two S-8 centre stiffeners, PL 7/8 x 4 1/4 in each side of the web on the frame centre line between the flanges. Bent connection plates, bolts and the girder bearing stiffeners are omitted. Review correction 1.3: added; the S-7 E.S.1 / E.S.2 and F.S.1 / F.S.2 labels on the bearing lines are the expansion and fixed shoes of S-9, already represented by the bearings.",
+      "dimensions": {
+        "frame": "J.F.2",
+        "web": "PL 1/2 x 42 in",
+        "flanges": "PL 5/8 x 9 in top and bottom",
+        "total_depth_m": 1.09855,
+        "top_below_girder_top_m": 0.13335,
+        "top_below_girder_top_basis": "scaled from existing S-8 (not dimensioned)",
+        "end_cut": "parallel to girder webs",
+        "end_offset_from_girder_web_centre_m": 0.0762,
+        "centre_stiffeners": "2 x PL 7/8 x 4 1/4 in, one each side of the web on the frame centre line, between the flanges (S-8)",
+        "centre_stiffener_m": {
+          "thickness": 0.022225,
+          "projection": 0.10795,
+          "height": 1.0668
+        },
+        "girder_spacing_m": 2.0574,
+        "along_bearing_line_m": 2.662588
+      },
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            65,
+            66
+          ]
+        }
+      ],
+      "bounds_m": [
+        [
+          24.357021,
+          -9.2202,
+          6.654326
+        ],
+        [
+          26.536733,
+          -7.3152,
+          7.760914
+        ]
+      ],
+      "volume_m3": 0.060517814
     }
   ],
   "layers": {
@@ -6466,13 +7304,27 @@
         "end_cross_frame_B1_1",
         "end_cross_frame_B2_1",
         "seat_1_3",
-        "seat_2_3"
+        "seat_2_3",
+        "jacking_frame_B1_2",
+        "jacking_frame_B1_3",
+        "jacking_frame_B1_4",
+        "jacking_frame_B1_5",
+        "jacking_frame_B1_6",
+        "jacking_frame_B1_7",
+        "jacking_frame_B1_8",
+        "jacking_frame_B2_2",
+        "jacking_frame_B2_3",
+        "jacking_frame_B2_4",
+        "jacking_frame_B2_5",
+        "jacking_frame_B2_6",
+        "jacking_frame_B2_7",
+        "jacking_frame_B2_8"
       ]
     },
     {
       "feature": "Retained steel and bearings",
       "status": "modeled_with_simplifications",
-      "detail": "Piecewise 2013 girder 1 and original girders 2-9; splice covers, V/X frames and 18 bearing envelopes. Historical original PDF references are stored per component. 2013 Girder 1-2 end cross-frames on both bearing lines (existing sheets 10, 14).",
+      "detail": "Piecewise 2013 girder 1 and original girders 2-9; splice covers, V/X frames and 18 bearing envelopes. Historical original PDF references are stored per component. 2013 Girder 1-2 end cross-frames on both bearing lines (existing sheets 10, 14). 1971 jacking frames J.F.1 / J.F.2 on both bearing lines of bays 2-8 (existing S-7, S-8; height on the web scaled; centre stiffeners included).",
       "sources": [
         "Primary PDF p.31",
         "Primary PDF p.34",
@@ -6565,7 +7417,21 @@
         "cross_frame_8_4",
         "cross_frame_8_5",
         "end_cross_frame_B1_1",
-        "end_cross_frame_B2_1"
+        "end_cross_frame_B2_1",
+        "jacking_frame_B1_2",
+        "jacking_frame_B1_3",
+        "jacking_frame_B1_4",
+        "jacking_frame_B1_5",
+        "jacking_frame_B1_6",
+        "jacking_frame_B1_7",
+        "jacking_frame_B1_8",
+        "jacking_frame_B2_2",
+        "jacking_frame_B2_3",
+        "jacking_frame_B2_4",
+        "jacking_frame_B2_5",
+        "jacking_frame_B2_6",
+        "jacking_frame_B2_7",
+        "jacking_frame_B2_8"
       ]
     },
     {
@@ -6615,7 +7481,7 @@
     }
   ],
   "review_correction": "transverse-mirror-crown-rails-approaches-end-frames",
-  "revision": "1.2-review-corrections-2",
+  "revision": "1.3-deviations",
   "review_correction_record": {
     "source": "External model review (findings F1-F7), each finding re-read against the drawings",
     "source_pdf_pages": [
@@ -6824,18 +7690,11 @@
   },
   "known_deviations": [
     {
-      "id": "end-struts-bays-2-8",
-      "parts": "(not modelled)",
-      "source": "existing plans 9548460 S-7 (PDF 65)",
-      "deviation": "The 1971 end struts E.S.1 / E.S.2 along both bearing lines of bays 2-8 are not modelled; only the 2013 Girder 1-2 end cross-frames are.",
-      "reason": "Outside the reviewed findings; their member sizes are on historical detail sheets not yet read."
-    },
-    {
-      "id": "drain-station-abutment-2",
-      "parts": "drain_abutment_2",
-      "source": "sheet 36 (plan: Roadway Drain Type SQ-A, +87.50)",
-      "deviation": "The SQ-A inlet centre is at X = +12.190 m (Sta. 13+88.30) instead of Sta. 13+87.50 (X = +11.945 m), 0.245 m up-station; the downpipe and collector follow the inlet.",
-      "reason": "Minor item from the second check, outside the second correction round; to be moved with the drainage routing in a later revision."
+      "id": "jacking-frame-end-connections",
+      "parts": "jacking_frame_B1_2, jacking_frame_B1_3, jacking_frame_B1_4, jacking_frame_B1_5, jacking_frame_B1_6, jacking_frame_B1_7, jacking_frame_B1_8, jacking_frame_B2_2, jacking_frame_B2_3, jacking_frame_B2_4, jacking_frame_B2_5, jacking_frame_B2_6, jacking_frame_B2_7, jacking_frame_B2_8",
+      "source": "existing plans 9548460 S-8 (PDF 66): Jacking Frame J.F.1 & 2; Conn. PL Detail - J.F.1, 2 & E.D.1",
+      "deviation": "The jacking-frame ends are an envelope. The I-section runs to vertical planes parallel to the girder webs, 3 in (0.0762 m) from the web centre lines. The bent 1/2 x 7 in connection plates, their bolts (two rows 3 in apart, 12 spa. @ 3 in) and the 7/8 x 9 5/8 in bearing stiffeners they are welded to are not modelled. On S-8 the 3 in (Typ.) locates the plate leg along the girder web; the frame web is bolted to the skewed leg of the plate, and where the frame itself ends is not shown.",
+      "reason": "S-8 gives no dimension for the frame end along the bearing line, the plate leg lengths, bend or plate height, and the detail does not scale consistently (its 3 in, 4 1/2 in and bolt spacings scale differently). The bearing stiffeners are located on the bearing centre line, but they cannot be added alone: they would pass through the modelled frame ends (61.7 cm3 per frame end) and the 2013 end-frame W16 at Girder 2 (56.3 cm3 per bearing line), whose real copes are not dimensioned. Shop drawings or a field measurement of the end connection would settle it. The S-8 centre stiffeners are modelled."
     }
   ],
   "review_correction_2": "haunch-crown-mudwall-pejf-end-frame-copes",
@@ -7091,5 +7950,478 @@
     },
     "before_glb_sha256": "9f82ba01cea7cc2cecdd1c6e6a430e8dae4c8b7718b84b9519cb26fbacf41a2f",
     "after_glb_sha256": "a7efc0e5de68331cc9390ae8ebd024acdd82e9611a153881eeddf774630b142b"
+  },
+  "review_correction_3": "jacking-frames-drain-station",
+  "review_correction_record_3": {
+    "source": "Third round: the two known_deviations left after revision 1.2, each re-read against the drawings",
+    "source_pdf_pages": [
+      31,
+      36,
+      38
+    ],
+    "printed_sheets": [
+      31,
+      36,
+      38
+    ],
+    "historical_source": {
+      "source_id": "9548460",
+      "pdf_pages": [
+        65,
+        66,
+        67
+      ],
+      "printed_sheets": [
+        "S-7",
+        "S-8",
+        "S-9"
+      ]
+    },
+    "findings": {
+      "end-struts-bays-2-8": "Resolved as jacking frames. E.S.1 / E.S.2 and F.S.1 / F.S.2 on S-7 are the expansion and fixed shoes of S-9 (already the bearing envelopes). Added J.F.1 (bays 2-7) and J.F.2 (bay 8) on both bearing lines: PL 1/2 x 42 in web, PL 5/8 x 9 in flanges, on the centre line of the top shoes (S-7, S-8), retained in 2026 (sheet 38). 14 parts, each with its two S-8 centre stiffeners PL 7/8 x 4 1/4 in (28 plates, part of the frame meshes).",
+      "drain-station-abutment-2": "SQ-A inlet centre X +12.190012 -> +11.945112 m (Sta. 13+88.30 -> 13+87.50, sheet 36); the downpipe follows (-0.244900 m in X).",
+      "drain collector routing (independent check of round 3)": "Straight visual collector through B2_bearing_6-9 (30-11091 cm3 each) at a 0.484 % fall -> sheet 39 routing: downpipe to an elbow under the top of the wall, 6 in collector along the Abutment 2 wall face on the downpipe centre line, 0.5 % fall to the north end, drop down the wall face. Overlaps with bearings 0; only the inlet embedment in the deck remains."
+    },
+    "decisions": {
+      "jacking frame height on the girder web": "Not dimensioned on any sheet. Modelled with the top 5 1/4 in below the girder top (bottom 14 in above the girder bottom), scaled from the S-8 Jacking Frame J.F.1 & 2 elevation, which is the member's own detail and is drawn with the frame-to-girder depth ratio to within 1 % (scaled 4.9-5.5 in / 13.3-14.0 in). Not used: the sheet 38 background sketch (about 7.8 in), which draws the girder 60 in deep instead of 62.5 in. Expected uncertainty about +/-2.5 in.",
+      "jacking frame ends": "Kept as an envelope (see known_deviations jacking-frame-end-connections): the section stops on planes parallel to the girder webs 3 in from the web centre lines. On S-8 the 3 in (Typ.) locates the leg of the bent 1/2 in connection plate along the web, not the frame end; where the frame ends is not dimensioned.",
+      "jacking frame centre stiffeners": "S-8 \"7/8 x 4 1/4 in Stiff. PL (Ea. Side)\" at the jacking-frame centre line, read 4 1/4 in (not 4 1/2): (9 - 1/2) / 2 = 4 1/4 reaches the flange edges. Placed at mid-frame between the girder centre lines, the drawn centre line, full height between the flanges; built into each frame mesh.",
+      "connection parts not added": "The bent 1/2 x 7 in plates and bolts have no leg lengths, bend or height on S-8. The 7/8 x 9 5/8 in bearing stiffeners are located (bearing centre line, both sides of the web) but would intersect the frame-end envelope (61.7 cm3 per frame end) and the 2013 end-frame W16 at Girder 2 (56.3 cm3 per bearing line); fitting them needs the frame and end-frame copes, which no sheet dimensions. Kept in known_deviations jacking-frame-end-connections.",
+      "drain collector offset from the wall face": "Not dimensioned (sheet 39 not to scale). Section K-K draws the downpipe, reducer and collector on one centre line against the wall face, so the collector runs parallel to the skewed wall face on the downpipe centre line: 0.2198 m normal to the face of the abutment_2 envelope, set by the inlet position.",
+      "drain collector elevation": "Not dimensioned. Sheet 39 draws the elbow and run just under the top of the wall and below the girders; the pipe top is put at the top of the wall (z 5.9787 m) at the south elbow, falling exactly 0.5 % (the minimum) to the north end.",
+      "drain north drop": "Sheet 39 drops the pipe down the wall face to existing grade, which the model does not have; the drop ends at the foot of the abutment_2 envelope (z 0.65 m, top of the footing envelope)."
+    },
+    "changed_parts": [
+      "drain_abutment_2"
+    ],
+    "added_parts": [
+      "jacking_frame_B1_2",
+      "jacking_frame_B1_3",
+      "jacking_frame_B1_4",
+      "jacking_frame_B1_5",
+      "jacking_frame_B1_6",
+      "jacking_frame_B1_7",
+      "jacking_frame_B1_8",
+      "jacking_frame_B2_2",
+      "jacking_frame_B2_3",
+      "jacking_frame_B2_4",
+      "jacking_frame_B2_5",
+      "jacking_frame_B2_6",
+      "jacking_frame_B2_7",
+      "jacking_frame_B2_8"
+    ],
+    "removed_parts": [],
+    "before": {
+      "drain_abutment_2": {
+        "bounds_m": [
+          [
+            11.970012,
+            -9.88475,
+            6.078619
+          ],
+          [
+            27.025034,
+            4.552,
+            8.269818
+          ]
+        ],
+        "volume_m3": 0.416314096,
+        "inlet_centre_xy_m": [
+          12.190012,
+          4.372
+        ],
+        "inlet_station": "13+88.30"
+      },
+      "drain_overlaps_cm3": {
+        "deck": 25557.756,
+        "walk_1": 0.0,
+        "B2_bearing_3": 0.0,
+        "beam_4": 0.0,
+        "haunch_4": 0.0,
+        "B2_bearing_4": 0.0,
+        "beam_5": 0.0,
+        "haunch_5": 0.0,
+        "B2_bearing_5": 0.0,
+        "beam_6": 0.0,
+        "haunch_6": 0.0,
+        "B2_bearing_6": 1104.497,
+        "splice_6_2": 0.0,
+        "beam_7": 0.0,
+        "haunch_7": 0.0,
+        "B2_bearing_7": 4951.984,
+        "splice_7_2": 0.0,
+        "beam_8": 0.0,
+        "haunch_8": 0.0,
+        "B2_bearing_8": 8808.086,
+        "splice_8_2": 0.0,
+        "beam_9": 0.0,
+        "haunch_9": 0.0,
+        "B2_bearing_9": 11214.133,
+        "splice_9_2": 0.0,
+        "cross_frame_4_5": 0.0,
+        "cross_frame_5_5": 0.0,
+        "cross_frame_6_5": 0.0,
+        "cross_frame_7_4": 0.0,
+        "cross_frame_7_5": 0.0,
+        "cross_frame_8_4": 0.0,
+        "cross_frame_8_5": 0.0,
+        "seat_2_4": 0.0,
+        "seat_2_5": 0.0,
+        "seat_2_6": 0.0,
+        "mudwall_2": 0.0,
+        "approach_2": 0.0,
+        "joint_2": 0.0,
+        "seat_2_3": 0.0
+      }
+    },
+    "after": {
+      "drain_abutment_2": {
+        "bounds_m": [
+          [
+            11.725112,
+            -9.906,
+            0.65
+          ],
+          [
+            25.889143,
+            4.552,
+            8.270978
+          ]
+        ],
+        "volume_m3": 0.500927591,
+        "inlet_centre_xy_m": [
+          11.945112,
+          4.372
+        ],
+        "inlet_station": "13+87.50"
+      },
+      "collector": {
+        "south_elbow_centre_m": [
+          11.945112,
+          4.372,
+          5.90254
+        ],
+        "north_elbow_centre_m": [
+          25.812943,
+          -9.8298,
+          5.803292
+        ],
+        "run_length_m": 19.849631,
+        "fall_m": 0.099248,
+        "slope": 0.005,
+        "centre_line_to_wall_face_normal_m": 0.219843,
+        "drop_foot_z_m": 0.65,
+        "wall_top_z_m": 5.97874
+      },
+      "overlaps_cm3": {
+        "drain_abutment_2": {
+          "deck": 25557.63,
+          "B2_bearing_3": 0.0,
+          "beam_4": 0.0,
+          "B2_bearing_4": 0.0,
+          "beam_5": 0.0,
+          "B2_bearing_5": 0.0,
+          "beam_6": 0.0,
+          "B2_bearing_6": 0.0,
+          "beam_7": 0.0,
+          "B2_bearing_7": 0.0,
+          "beam_8": 0.0,
+          "B2_bearing_8": 0.0,
+          "beam_9": 0.0,
+          "abutment_2": 0.0,
+          "seat_2_4": 0.0,
+          "seat_2_5": 0.0,
+          "seat_2_6": 0.0,
+          "seat_2_7": 0.0,
+          "seat_2_9": 0.0,
+          "footing_2": 0.0,
+          "seat_2_3": 0.0
+        },
+        "jacking_frame_B1_2": {
+          "beam_2": 0.0,
+          "beam_3": 0.0
+        },
+        "jacking_frame_B1_3": {
+          "beam_3": 0.0,
+          "beam_4": 0.0
+        },
+        "jacking_frame_B1_4": {
+          "beam_4": 0.0,
+          "beam_5": 0.0
+        },
+        "jacking_frame_B1_5": {
+          "beam_5": 0.0,
+          "beam_6": 0.0
+        },
+        "jacking_frame_B1_6": {
+          "beam_6": 0.0,
+          "beam_7": 0.0
+        },
+        "jacking_frame_B1_7": {
+          "beam_7": 0.0,
+          "beam_8": 0.0
+        },
+        "jacking_frame_B1_8": {
+          "beam_8": 0.0,
+          "beam_9": 0.0
+        },
+        "jacking_frame_B2_2": {
+          "beam_2": 0.0,
+          "beam_3": 0.0
+        },
+        "jacking_frame_B2_3": {
+          "beam_3": 0.0,
+          "beam_4": 0.0
+        },
+        "jacking_frame_B2_4": {
+          "beam_4": 0.0,
+          "beam_5": 0.0
+        },
+        "jacking_frame_B2_5": {
+          "beam_5": 0.0,
+          "beam_6": 0.0
+        },
+        "jacking_frame_B2_6": {
+          "beam_6": 0.0,
+          "beam_7": 0.0
+        },
+        "jacking_frame_B2_7": {
+          "beam_7": 0.0,
+          "beam_8": 0.0
+        },
+        "jacking_frame_B2_8": {
+          "beam_8": 0.0,
+          "beam_9": 0.0
+        }
+      },
+      "jacking_frames": {
+        "jacking_frame_B1_2": {
+          "girder_2": {
+            "girder_top_m": 8.221813,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "girder_3": {
+            "girder_top_m": 8.164805,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "end_clearance_to_web_face_m": [
+            0.068263,
+            0.068262
+          ]
+        },
+        "jacking_frame_B1_3": {
+          "girder_3": {
+            "girder_top_m": 8.164805,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "girder_4": {
+            "girder_top_m": 8.191997,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "end_clearance_to_web_face_m": [
+            0.068263,
+            0.068263
+          ]
+        },
+        "jacking_frame_B1_4": {
+          "girder_4": {
+            "girder_top_m": 8.191997,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "girder_5": {
+            "girder_top_m": 8.229096,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "end_clearance_to_web_face_m": [
+            0.068262,
+            0.068263
+          ]
+        },
+        "jacking_frame_B1_5": {
+          "girder_5": {
+            "girder_top_m": 8.229096,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "girder_6": {
+            "girder_top_m": 8.169675,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "end_clearance_to_web_face_m": [
+            0.068263,
+            0.068262
+          ]
+        },
+        "jacking_frame_B1_6": {
+          "girder_6": {
+            "girder_top_m": 8.169675,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "girder_7": {
+            "girder_top_m": 8.110254,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "end_clearance_to_web_face_m": [
+            0.068263,
+            0.068263
+          ]
+        },
+        "jacking_frame_B1_7": {
+          "girder_7": {
+            "girder_top_m": 8.110254,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "girder_8": {
+            "girder_top_m": 8.050832,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "end_clearance_to_web_face_m": [
+            0.068263,
+            0.068263
+          ]
+        },
+        "jacking_frame_B1_8": {
+          "girder_8": {
+            "girder_top_m": 8.050832,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "girder_9": {
+            "girder_top_m": 8.058842,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "end_clearance_to_web_face_m": [
+            0.068263,
+            0.068263
+          ]
+        },
+        "jacking_frame_B2_2": {
+          "girder_2": {
+            "girder_top_m": 8.05722,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "girder_3": {
+            "girder_top_m": 8.000212,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "end_clearance_to_web_face_m": [
+            0.068263,
+            0.068263
+          ]
+        },
+        "jacking_frame_B2_3": {
+          "girder_3": {
+            "girder_top_m": 8.000212,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "girder_4": {
+            "girder_top_m": 8.027405,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "end_clearance_to_web_face_m": [
+            0.068263,
+            0.068263
+          ]
+        },
+        "jacking_frame_B2_4": {
+          "girder_4": {
+            "girder_top_m": 8.027405,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "girder_5": {
+            "girder_top_m": 8.064504,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "end_clearance_to_web_face_m": [
+            0.068262,
+            0.068263
+          ]
+        },
+        "jacking_frame_B2_5": {
+          "girder_5": {
+            "girder_top_m": 8.064504,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "girder_6": {
+            "girder_top_m": 8.005083,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "end_clearance_to_web_face_m": [
+            0.068263,
+            0.068262
+          ]
+        },
+        "jacking_frame_B2_6": {
+          "girder_6": {
+            "girder_top_m": 8.005083,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "girder_7": {
+            "girder_top_m": 7.945662,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "end_clearance_to_web_face_m": [
+            0.068263,
+            0.068263
+          ]
+        },
+        "jacking_frame_B2_7": {
+          "girder_7": {
+            "girder_top_m": 7.945662,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "girder_8": {
+            "girder_top_m": 7.88624,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "end_clearance_to_web_face_m": [
+            0.068262,
+            0.068263
+          ]
+        },
+        "jacking_frame_B2_8": {
+          "girder_8": {
+            "girder_top_m": 7.88624,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "girder_9": {
+            "girder_top_m": 7.89425,
+            "frame_top_below_girder_tops_m": 0.13335,
+            "frame_depth_m": 1.09855
+          },
+          "end_clearance_to_web_face_m": [
+            0.068262,
+            0.068263
+          ]
+        }
+      }
+    },
+    "before_glb_sha256": "a7efc0e5de68331cc9390ae8ebd024acdd82e9611a153881eeddf774630b142b",
+    "after_glb_sha256": "d802db50c458c6f6084c3f852e5ad35e3c837954a9f0481e9618be1a7811e2b0"
   }
 }

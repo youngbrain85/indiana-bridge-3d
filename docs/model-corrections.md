@@ -802,6 +802,36 @@ actual GLB triangles:
 - The mudwall tops are 25.4 mm below the soffit across the full width.
 - The end frames have zero overlap with the girders.
 
+#### Third round: known deviations
+
+Two items were left after the second round. Both were re-read on the sheets and checked again independently.
+
+The old note said the 1971 end struts "E.S.1 / E.S.2" of bays 2-8 were missing. That was a misreading. On the 1971
+Framing Plan (existing plans 9548460, S-7 = PDF 65), E.S. and F.S. mark the expansion and fixed shoes. Sheet S-9
+details them, and the bearings already stand for them. The members that do sit on both bearing lines of bays 2-8 are
+the jacking frames J.F.1 and J.F.2. Sheet S-8 gives their size: a 1/2 x 42 in web and 5/8 x 9 in flanges, on the
+centre line of the shoes. Sheet 38 of the 2026 plans still shows them at both abutments. Fourteen frames were added,
+`jacking_frame_B1_2` to `_B1_8` and `jacking_frame_B2_2` to `_B2_8`. No sheet dimensions how high they sit on the
+girder web. We scaled it from the S-8 detail: the top is 5 1/4 in below the girder top. This is recorded as a decision.
+Each frame carries its two S-8 centre stiffeners: 7/8 x 4 1/4 in plates, one each side of the web, at the jacking
+point. The frame ends stop 3 in from the girder webs and are cut parallel to them. That cut is an envelope of the frame
+and its bent connection plate. S-8 does not show where the frame itself ends, or how long the plate legs are. The
+girder bearing stiffeners are dimensioned, but they would pass through these ends and through the 2013 end frame,
+whose copes are not dimensioned. So the end connections stay a known deviation.
+
+The Abutment 2 roadway drain moved to Sta. 13+87.50, the station on sheet 36. Its pipes now follow sheet 39. The
+downpipe drops to just under the top of the abutment wall. The 6 in collector runs along the wall face to the north
+end and falls 0.5 %. It then drops down the wall face. Before, a straight run passed through four bearings. Sheet 39
+is not to scale, so three values are decisions:
+- the offset from the wall, set by the drain inlet;
+- the pipe top, at the top of the wall;
+- the end of the drop, at the foot of the wall.
+
+`scripts/correct_virginia_avenue_review_3.py` makes these changes and is idempotent. It replaces one mesh and adds
+fourteen. All other meshes and buffers are unchanged. The checks read the actual GLB triangles. The new frames and the
+re-routed drain overlap no part, except the drain inlet seated in the deck as before. The collector falls exactly
+0.5 %.
+
 ### SR 44 over Branch of Little Blue River (`sr44-little-blue`)
 
 #### 1. Datum, approaches, railings, bents and Wing D (revision 1.1)

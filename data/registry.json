@@ -670,7 +670,7 @@
         "render_glb": "bridges/virginia-avenue/model_render.glb",
         "deck_length_m": 36.76967500000001,
         "spans": 1,
-        "components": 148,
+        "components": 162,
         "revision": "Proposed 2026 design with documented historical retention v1",
         "scope": "Whole-crossing exterior reconstruction with explicit source-state and approximation boundaries.",
         "detail_status": "needs_detail",
