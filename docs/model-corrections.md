@@ -1035,6 +1035,49 @@ and running to the end of the as-built run. The posts are unchanged, and no part
 new known deviation, `guardrail-representative-runs`, records what remains representative: posts without blockouts,
 no corrugations, and the remainder of each transition.
 
+#### Third round: known deviations
+
+##### 3. Wings A–C, the pavement ledge, the approach slab ends and the guardrail layout (revision 1.3)
+
+A third check settled the three known deviations. The wings and the ledge were resolved. The guardrail layout was
+resolved, and only the standard-drawing details remain open.
+
+- **Wings A, B and C.** They were level-topped boxes against the coping. **Sheets 15, 16 and 18** draw each wing as
+  a 12'-0" × 1'-0" wall 1" outside the coping. Wings A and C join the bent along its 45° faces. At Wing B the end of
+  Bent 1 is square. The tops now slope as drawn (El. 878.25 → 878.26, 878.10 → 878.15, 877.91 → 877.85).
+- **Pavement ledge.** The bent tops were all at the slab soffit, 8 in below the approach slabs. **Sheet 17** shows a
+  9" ledge 1'-2" below the top of deck. The approach slab ends are 1'-2" deep and rest on it, for 1'-6" beyond the
+  bent with a 2" step at 45° (dimensioned on **sheet 19**, Section E-E). The schematic sheet 18 elevations show 15",
+  and we did not use them.
+- **Guardrails.** Each corner had only a 2 m stand-in run. The model now has every pay item to its **sheet 11**
+  limits:
+  - three MGS Without Curb transitions and the Type TGB transition;
+  - the 87.5 ft MGS W-beam run;
+  - three Type OS end treatments;
+  - the curved Type 1 terminal.
+
+  Posts sit at the **sheet 11 and 12** positions, within 2.4 mm of the drawn symbols. Next to the bridge they are at
+  1'-6 3/4", then 3'-1 1/2", then 6'-3". They go 52 in into the ground, as the **sheets 23–28** cross sections and
+  sheet 18 draw them (7'-0" posts). Rail and post heights come from **sheets 12 and 18**. The curved terminal
+  follows the drive grade of **sheet 26**. For the north-east posts we used the plans, which put the last post on
+  the pay limit. The sheet 18 elevation draws them 6 in further out. The sheet 3 typical section shows 6'-0" posts,
+  but every cross section shows 7'-0" posts.
+
+  Rails and posts are simple envelopes. Corrugations, blockouts, bolts, end heads and anchors are drawn only as
+  undimensioned cells. They follow INDOT standard drawings that are not in the contract set.
+
+| Corrected objects | Count | Before | After | Evidence |
+|---|---:|---|---|---|
+| Wings A–C | 3 | Level boxes against the coping, tips 0.15–0.28 m off | Drawn outline 1" outside the coping; sloping drawn tops | Sheets 15, 16, 18 |
+| Integral bents | 2 | Whole top at the slab soffit; Bent 1 south end skewed | 9" ledge 1'-2" below the deck top under the approaches; Bent 1 south end square | Sheets 15–18 |
+| Approach slabs | 2 | 12" thick up to the slab end | 1'-2" end on the ledge and 1'-6" beyond the bent, 2" step at 45° | Sheets 15, 16, 17, 19 |
+| Guardrail transitions | 4 | 2 m runs, 4 posts at 0.667 m | Full transitions, 17 or 10 posts at the drawn spacing, 52 in embedment, thrie/W-beam heights | Sheets 11, 12, 18, 24, 25, 27 |
+| New guardrail parts | 5 | None | MGS W-beam run, three Type OS end treatments, curved terminal on the drive grade | Sheets 3, 11, 12, 23, 26, 28 |
+
+`scripts/correct_sr44_little_blue_review_3.py` applies this after the second script. It is idempotent. Five parts
+were added and none removed, so the model now has 42 parts. The manifest `review_correction_record_3` holds the
+decisions, the plan and post coordinates, and the before/after SHA-256.
+
 ### SR 1 over Six Mile Creek (`sr1-six-mile`)
 
 #### SR 1 over Six Mile Creek: clear roadway and overlay limits (revision 1.1)

@@ -705,7 +705,7 @@
         "render_glb": "bridges/sr44-little-blue/model_render.glb",
         "deck_length_m": 9.718675000000001,
         "spans": 1,
-        "components": 37,
+        "components": 42,
         "revision": "Proposed 2026 replacement exterior v1",
         "scope": "Whole-crossing exterior reconstruction with explicit source-state and approximation boundaries.",
         "detail_status": "needs_detail",

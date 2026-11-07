@@ -335,7 +335,11 @@ def additional(bid):
         else:
             r.v['mesh_step_u_m']=1.0;r.v['mesh_step_y_m']=.7
             for i in range(2):
-                cid=f'integral_bent_{i+1}';s=r.support(i,cid,r.parts[cid]['dimensions']['normal_thickness_m'])
+                # The bent bounds include the 9 in pavement ledge since the 2026-11 review (sheet 17), so the analytical
+                # cap keeps its depth from the bent bottom to the slab soffit.
+                cid=f'integral_bent_{i+1}';dims=r.parts[cid]['dimensions']
+                s=r.support(i,cid,dims['normal_thickness_m'],cap_depth=dims['depth_bottom_to_slab_soffit_m'],
+                            top=dims['bottom_m']+dims['depth_bottom_to_slab_soffit_m']/2)
                 for j in range(1,9):
                     pcid=f'pile_{i+1}_{j}';dim=r.parts[pcid]['dimensions']
                     r.column(s,pcid,dict(kind='pipe',diameter_m=dim['diameter_m'],thickness_m=dim['wall_thickness_m']),'steel','pile')

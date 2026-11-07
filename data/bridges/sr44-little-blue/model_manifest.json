@@ -195,14 +195,23 @@
       "pdf_pages": [
         14,
         15,
-        17
+        17,
+        18
       ],
-      "basis": "Source 2 ft 10 in normal bent width and bottom elevation; top derived to contact slab",
-      "note": "Integral slab-to-bent connection. No discrete bearings exist. Upper pavement ledge and local fillet are simplified. Review correction: top rebuilt on the crowned slab soffit (S - 20 in) along the whole bent; the 138 mm gap at the crown is closed (sheet 17 End Bent Detail).",
+      "basis": "Source 2 ft 10 in normal bent width and bottom elevation; top on the slab soffit and the 9 in pavement ledge (sheet 17)",
+      "note": "Integral slab-to-bent connection; no discrete bearings. Third review (sheet 17 End Bent Detail): top on the crowned slab soffit (S - 1'-8\") under the bridge floor, and the 9\" pavement ledge along the back face at 1'-2\" below the top of deck, carrying the approach slab end; the step is the slab end. At the rail-zone corners the ledge ends square at the square slab ends, X = -10.9553 at the north (sheet 15) and X = 1.2367 at the south (sheets 15, 18). South end square to the roadway as drawn (sheets 15 and 18): front face square from the roadway face, back face from 20'-6\" (Wing B). The 1 1/2\" front-face fillet is not modelled.",
       "dimensions": {
         "normal_thickness_m": 0.8636,
         "bottom_m": 0.6621839999999679,
-        "top": "slab soffit, profile grade - 0.02 |y| - 20 in"
+        "top": "slab soffit (S - 20 in) under the bridge floor; ledge S - 14 in under the approach slab",
+        "ledge_width_normal_m": 0.2286,
+        "ledge_top_below_deck_top_m": 0.3556,
+        "slab_soffit_max_z_m": 2.493065,
+        "depth_bottom_to_slab_soffit_m": 1.830881,
+        "south_end_square_x_m": [
+          1.065743,
+          2.134657
+        ]
       },
       "bounds_m": [
         [
@@ -211,19 +220,20 @@
           0.662184
         ],
         [
-          2.591857,
+          2.134657,
           6.5532,
-          2.494138
+          2.646538
         ]
       ],
-      "volume_m3": 28.212132003,
+      "volume_m3": 28.768140637,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
             14,
             15,
-            17
+            17,
+            18
           ]
         }
       ]
@@ -562,34 +572,43 @@
       "layer": "abutments",
       "color": "#beb8a8",
       "pdf_pages": [
-        12,
-        15
+        15,
+        18
       ],
-      "basis": "Source wing length and nominal 1 ft wall; simplified constant top",
-      "note": "Wing A-D top elevations, 1:4 rear batter and local joints are approximate. Level top moved -18.4 mm with the corrected vertical datum (El. 878.12).",
+      "basis": "Sheet 15 plan, Section A-A, Wing B elevation and Wing Typical Section; sheet 18 railing plan",
+      "note": "Third review: Wing B per the sheet 15 plan and the sheet 18 railing plan - a 12'-0\" x 1'-0\" wall with its inner face 1\" outside the coping (1\" PEJF), the 12'-0\" measured on the outer face from the bent front face; the bent end is square to the roadway: the front face turns square at the roadway face (2'-7\" to the wing face) and the back face 6\" further out (1'-1\" to the wing), so the outer face is 8'-5 7/8\" + 3'-6 1/8\". Top El. 878.10 at the bent end (Section A-A) to 878.15 at the tip (Wing B elevation), bottom El. 870.97. Constant 1'-0\" thickness (Wing Typical Section; the 4:1 slope behind the wall bounds the removable flowable backfill, which is not modelled). The 1\" PEJF is a gap.",
       "dimensions": {
-        "length_m": 3.6576000000000004,
-        "top_thickness_m": 0.3048
+        "length_m": 3.6576,
+        "top_thickness_m": 0.3048,
+        "inner_face_y_m": -6.5786,
+        "outer_face_y_m": -6.8834,
+        "outer_face_x_m": [
+          -1.522943,
+          2.134657
+        ],
+        "top_el_at_bent_end_ft": 878.1,
+        "top_el_at_tip_ft": 878.15,
+        "bottom_el_ft": 870.97
       },
       "bounds_m": [
         [
-          -1.6764,
-          -6.858,
+          -1.522943,
+          -6.8834,
           0.662184
         ],
         [
-          1.9812,
+          2.134657,
           -6.5532,
-          2.840901
+          2.850648
         ]
       ],
-      "volume_m3": 2.428913827,
+      "volume_m3": 2.490348889,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
-            12,
-            15
+            15,
+            18
           ]
         }
       ]
@@ -600,34 +619,43 @@
       "layer": "abutments",
       "color": "#beb8a8",
       "pdf_pages": [
-        12,
-        15
+        15,
+        18
       ],
-      "basis": "Source wing length and nominal 1 ft wall; simplified constant top",
-      "note": "Wing A-D top elevations, 1:4 rear batter and local joints are approximate. Level top moved -18.4 mm with the corrected vertical datum (El. 878.27).",
+      "basis": "Sheet 15 plan, Section A-A, Wing A elevation and Wing Typical Section; sheet 18 railing plan",
+      "note": "Third review: Wing A per the sheet 15 plan and the sheet 18 railing plan - a 12'-0\" x 1'-0\" wall with its inner face 1\" outside the coping (1\" PEJF), the 12'-0\" measured on the outer face from the bent front face; both bent faces run on at 45 degrees to the wing faces. Top El. 878.25 at the bent end (Section A-A) to 878.26 at the tip (Wing A elevation), bottom El. 870.97. Constant 1'-0\" thickness (Wing Typical Section; the 4:1 slope behind the wall bounds the removable flowable backfill, which is not modelled). The 1\" PEJF is a gap.",
       "dimensions": {
-        "length_m": 3.6576000000000004,
-        "top_thickness_m": 0.3048
+        "length_m": 3.6576,
+        "top_thickness_m": 0.3048,
+        "inner_face_y_m": 6.5786,
+        "outer_face_y_m": 6.8834,
+        "outer_face_x_m": [
+          -14.502343,
+          -10.844743
+        ],
+        "top_el_at_bent_end_ft": 878.25,
+        "top_el_at_tip_ft": 878.26,
+        "bottom_el_ft": 870.97
       },
       "bounds_m": [
         [
-          -14.7828,
+          -14.502343,
           6.5532,
           0.662184
         ],
         [
-          -11.1252,
-          6.858,
-          2.885941
+          -10.514543,
+          6.8834,
+          2.884176
         ]
       ],
-      "volume_m3": 2.479125474,
+      "volume_m3": 2.647370437,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
-            12,
-            15
+            15,
+            18
           ]
         }
       ]
@@ -642,12 +670,16 @@
         16,
         17
       ],
-      "basis": "Source 2 ft 10 in normal bent width and bottom elevation; top derived to contact slab",
-      "note": "Integral slab-to-bent connection. No discrete bearings exist. Upper pavement ledge and local fillet are simplified. Review correction: top rebuilt on the crowned slab soffit (S - 20 in) along the whole bent; the 138 mm gap at the crown is closed (sheet 17 End Bent Detail).",
+      "basis": "Source 2 ft 10 in normal bent width and bottom elevation; top on the slab soffit and the 9 in pavement ledge (sheet 17)",
+      "note": "Integral slab-to-bent connection; no discrete bearings. Third review (sheet 17 End Bent Detail): top on the crowned slab soffit (S - 1'-8\") under the bridge floor, and the 9\" pavement ledge along the back face at 1'-2\" below the top of deck, carrying the approach slab end; the step is the slab end. At the rail-zone corners the ledge ends square at the square slab ends, X = 10.9553 at the south and X = -1.3700 from Y = 6.2294 at the north (sheet 16). Ends on the 45 degree bent faces (sheet 16). The 1 1/2\" front-face fillet is not modelled.",
       "dimensions": {
         "normal_thickness_m": 0.8636,
         "bottom_m": 0.6195119999999861,
-        "top": "slab soffit, profile grade - 0.02 |y| - 20 in"
+        "top": "slab soffit (S - 20 in) under the bridge floor; ledge S - 14 in under the approach slab",
+        "ledge_width_normal_m": 0.2286,
+        "ledge_top_below_deck_top_m": 0.3556,
+        "slab_soffit_max_z_m": 2.453263,
+        "depth_bottom_to_slab_soffit_m": 1.833751
       },
       "bounds_m": [
         [
@@ -658,10 +690,10 @@
         [
           11.735857,
           6.5532,
-          2.453263
+          2.600473
         ]
       ],
-      "volume_m3": 28.224474021,
+      "volume_m3": 28.878215251,
       "source_refs": [
         {
           "source_id": "9683606",
@@ -1007,34 +1039,43 @@
       "layer": "abutments",
       "color": "#beb8a8",
       "pdf_pages": [
-        12,
-        16
+        16,
+        18
       ],
-      "basis": "Source wing length and nominal 1 ft wall; simplified constant top",
-      "note": "Wing A-D top elevations, 1:4 rear batter and local joints are approximate. Level top moved -15.1 mm with the corrected vertical datum (El. 877.94).",
+      "basis": "Sheet 16 plan, Section D-D, Wing C elevation and Wing Typical Section; sheet 18 railing plan",
+      "note": "Third review: Wing C per the sheet 16 plan and the sheet 18 railing plan - a 12'-0\" x 1'-0\" wall with its inner face 1\" outside the coping (1\" PEJF), the 12'-0\" measured on the outer face from the bent front face; both bent faces run on at 45 degrees to the wing faces. Top El. 877.91 at the bent end (Section D-D) to 877.85 at the tip (Wing C elevation), bottom El. 870.83. Constant 1'-0\" thickness (Wing Typical Section; the 4:1 slope behind the wall bounds the removable flowable backfill, which is not modelled). The 1\" PEJF is a gap.",
       "dimensions": {
-        "length_m": 3.6576000000000004,
-        "top_thickness_m": 0.3048
+        "length_m": 3.6576,
+        "top_thickness_m": 0.3048,
+        "inner_face_y_m": -6.5786,
+        "outer_face_y_m": -6.8834,
+        "outer_face_x_m": [
+          10.844743,
+          14.502343
+        ],
+        "top_el_at_bent_end_ft": 877.91,
+        "top_el_at_tip_ft": 877.85,
+        "bottom_el_ft": 870.83
       },
       "bounds_m": [
         [
-          11.1252,
-          -6.858,
+          10.514543,
+          -6.8834,
           0.619512
         ],
         [
-          14.7828,
+          14.502343,
           -6.5532,
-          2.786235
+          2.779147
         ]
       ],
-      "volume_m3": 2.415541293,
+      "volume_m3": 2.562768661,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
-            12,
-            16
+            16,
+            18
           ]
         }
       ]
@@ -1394,23 +1435,28 @@
       "pdf_pages": [
         11,
         12,
+        15,
+        16,
         17,
         18
       ],
       "basis": "Source 20 ft 6 in length along the roadway; skewed outer end and TFC extensions per sheets 12 and 18",
-      "note": "Review correction: outer end skewed 45 degrees, parallel to the bents, 20'-6\" beyond the west slab end (sheet 12 stations, sheet 11 paving exception); slab between the roadway faces, with the Type TFC extension under each TFC ending 2\" beyond it (sheet 18). Terminal asphalt joints are not modelled.",
+      "note": "Review correction: outer end skewed 45 degrees, parallel to the bents, 20'-6\" beyond the west slab end (sheet 12 stations, sheet 11 paving exception); slab between the roadway faces, with the Type TFC extension under each TFC ending 2\" beyond it (sheet 18). Third review: the end over the bent is 1'-2\" deep, on the 9\" pavement ledge and 18\" beyond the bent back face, with a 2\" chamfer to the 12\" slab (sheet 17 End Bent Detail; the wing elevations on sheets 15 and 16 show the same 1'-2\" zone). Terminal asphalt joints are not modelled.",
       "dimensions": {
         "minimum_length_m": 6.2484,
         "thickness_m": 0.30479999999999996,
         "length_along_roadway_m": 6.2484,
         "core_width_m": 12.192,
-        "tfc_extension_beyond_tfc_m": 0.0508
+        "tfc_extension_beyond_tfc_m": 0.0508,
+        "end_thickness_m": 0.3556,
+        "thickened_beyond_bent_back_face_m": 0.4572,
+        "end_chamfer_m": 0.0508
       },
       "bounds_m": [
         [
           -17.203738,
           -6.5532,
-          2.539861
+          2.489061
         ],
         [
           1.236662,
@@ -1418,13 +1464,15 @@
           3.016975
         ]
       ],
-      "volume_m3": 24.564864419,
+      "volume_m3": 25.23454401,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
             11,
             12,
+            15,
+            16,
             17,
             18
           ]
@@ -1476,23 +1524,28 @@
       "pdf_pages": [
         11,
         12,
+        15,
+        16,
         17,
         18
       ],
       "basis": "Source 20 ft 6 in length along the roadway; skewed outer end and TFC extensions per sheets 12 and 18",
-      "note": "Review correction: outer end skewed 45 degrees, parallel to the bents, 20'-6\" beyond the east slab end (sheet 12 stations, sheet 11 paving exception); slab between the roadway faces, with the Type TFC extension under each TFC ending 2\" beyond it (sheet 18). Terminal asphalt joints are not modelled.",
+      "note": "Review correction: outer end skewed 45 degrees, parallel to the bents, 20'-6\" beyond the east slab end (sheet 12 stations, sheet 11 paving exception); slab between the roadway faces, with the Type TFC extension under each TFC ending 2\" beyond it (sheet 18). Third review: the end over the bent is 1'-2\" deep, on the 9\" pavement ledge and 18\" beyond the bent back face, with a 2\" chamfer to the 12\" slab (sheet 17 End Bent Detail; the wing elevations on sheets 15 and 16 show the same 1'-2\" zone). Terminal asphalt joints are not modelled.",
       "dimensions": {
         "minimum_length_m": 6.2484,
         "thickness_m": 0.30479999999999996,
         "length_along_roadway_m": 6.2484,
         "core_width_m": 12.192,
-        "tfc_extension_beyond_tfc_m": 0.0508
+        "tfc_extension_beyond_tfc_m": 0.0508,
+        "end_thickness_m": 0.3556,
+        "thickened_beyond_bent_back_face_m": 0.4572,
+        "end_chamfer_m": 0.0508
       },
       "bounds_m": [
         [
           -1.236662,
           -6.5532,
-          2.452473
+          2.422815
         ],
         [
           17.203738,
@@ -1500,13 +1553,15 @@
           2.956073
         ]
       ],
-      "volume_m3": 23.892339312,
+      "volume_m3": 24.543967398,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
             11,
             12,
+            15,
+            16,
             17,
             18
           ]
@@ -1552,176 +1607,604 @@
     },
     {
       "id": "guardrail_-1_-1",
-      "name": "Guardrail connection envelope | side -1 end -1",
+      "name": "Guardrail transition, Type MGS Without Curb | south-west",
       "layer": "accessories",
       "color": "#59676f",
       "pdf_pages": [
+        3,
         11,
         12,
-        18
+        18,
+        24,
+        25
       ],
-      "basis": "Sheet 18 railing elevations (terminal connector lap, thrie-beam depth and height); representative run",
-      "note": "Representative 2 m south-west run: four posts as built, and an upright rail element standing in for the 20 in thrie beam and its terminal connector, back on the TFC end face (Y = -6.2738 m), lapping 2'-6\" onto the TFC, 11.00 to 31.00 in above the deck (sheet 18 north/south railing elevations, scaled). Corrugations, blockouts, bolts, the post layout and the rest of the Type MGS Without Curb guardrail transition are not modelled.",
+      "basis": "Sheet 11 pay limits; sheet 12 plan and elevation post layout; sheet 18",
+      "note": "Third review: Guardrail Transition, Type MGS Without Curb from the TFC end to the sheet 11 pay limit Sta. 507+23.37 \"PR-PR\" (40.02 ft). 17 posts as drawn on the sheet 12 plan and elevation (sheet 18 for the first three): the first 11.47 in beyond the TFC end, then 9 at 1'-6 3/4\", 6 at 3'-1 1/2\" and 1 at 6'-3\", the last on the pay limit; W6 posts 4 x 6 in, 12 in behind the rail (sheet 12 plan blockout), 7'-0\" long, 52 in below grade with the top 1 in above the rail (sheets 12, 18, 23-28). Rail: thrie beam 11-31 in above grade lapping 2'-6\" onto the TFC, to 18.67 ft from the TFC end; thrie-to-W transition piece to 23.87 ft; W-beam 19-31 in beyond (sheet 12 elevation, sheet 18). Envelopes: the rail element is a flat 0.085 m plate (the 2.5 pt rail depth of the sheet 12 plan) with its back on |Y| = 6.2738 m, heights measured from the shoulder grade on that plane (sheet 11 profile, 2 % cross slope of the sheet 3 typical section); posts are solid rectangles of the drawn W6 or timber size. Not modelled: the W-beam and thrie-beam corrugation shapes and the blockouts, which sheet 3 and the cross sections draw only as an undimensioned 8 x 14 in cell (against the 12 in MGS and 7 in TGB blocks of the sheet 12 plan), and the splices, bolts, post plates and connector hardware; they are defined by the INDOT Standard Drawings for pay item 601-12292 (Guardrail Transition, MGS Without Curb), which the contract set does not include.",
       "dimensions": {
-        "rail_element_depth_m": 0.508,
-        "rail_element_thickness_m": 0.06,
-        "rail_element_bottom_above_deck_m": 0.2794,
-        "rail_element_top_above_deck_m": 0.7874,
+        "pay_item": "601-12292",
+        "pay_limit_station": "507+23.37",
+        "length_from_tfc_end_m": 12.198096,
+        "post_count": 17,
+        "post_spacings_ft": "0.956, 9 x 1.5625, 6 x 3.125, 1 x 6.25",
+        "thrie_beam_above_grade_m": [
+          0.2794,
+          0.7874
+        ],
+        "w_beam_above_grade_m": [
+          0.4826,
+          0.7874
+        ],
+        "thrie_end_from_tfc_m": 5.6896,
+        "w_beam_from_tfc_m": 7.27456,
         "lap_on_tfc_m": 0.762,
-        "back_face_y_m": -6.2738
+        "rail_element_depth_m": 0.084667,
+        "back_face_y_m": -6.2738,
+        "post_length_m": 2.1336,
+        "post_embedment_m": 1.3208
       },
       "bounds_m": [
         [
-          -5.699338,
-          -6.4032,
-          2.619724
+          -15.786841,
+          -6.7158,
+          1.551189
         ],
         [
           -2.776538,
-          -6.2138,
-          3.665547
+          -6.189133,
+          3.709517
         ]
       ],
-      "volume_m3": 0.129210544,
+      "volume_m3": 1.020704879,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
+            3,
             11,
             12,
-            18
+            18,
+            24,
+            25
+          ]
+        },
+        {
+          "source_id": "9710491",
+          "pdf_pages": [
+            5
           ]
         }
       ]
     },
     {
       "id": "guardrail_-1_1",
-      "name": "Guardrail connection envelope | side -1 end 1",
+      "name": "Guardrail transition, Type MGS Without Curb | south-east",
       "layer": "accessories",
       "color": "#59676f",
       "pdf_pages": [
+        3,
         11,
         12,
-        18
+        18,
+        27
       ],
-      "basis": "Sheet 18 railing elevations (terminal connector lap, thrie-beam depth and height); representative run",
-      "note": "Representative 2 m south-east run: four posts as built, and an upright rail element standing in for the 20 in thrie beam and its terminal connector, back on the TFC end face (Y = -6.2738 m), lapping 2'-6\" onto the TFC, 11.00 to 31.00 in above the deck (sheet 18 north/south railing elevations, scaled). Corrugations, blockouts, bolts, the post layout and the rest of the Type MGS Without Curb guardrail transition are not modelled.",
+      "basis": "Sheet 11 pay limits; sheet 12 plan and elevation post layout; sheet 18",
+      "note": "Third review: Guardrail Transition, Type MGS Without Curb from the TFC end to the sheet 11 pay limit Sta. 508+66.63 \"PR-PR\" (40.02 ft). 17 posts as drawn on the sheet 12 plan and elevation (sheet 18 for the first three): the first 11.47 in beyond the TFC end, then 9 at 1'-6 3/4\", 6 at 3'-1 1/2\" and 1 at 6'-3\", the last on the pay limit; W6 posts 4 x 6 in, 12 in behind the rail (sheet 12 plan blockout), 7'-0\" long, 52 in below grade with the top 1 in above the rail (sheets 12, 18, 23-28). Rail: thrie beam 11-31 in above grade lapping 2'-6\" onto the TFC, to 18.67 ft from the TFC end; thrie-to-W transition piece to 23.87 ft; W-beam 19-31 in beyond (sheet 12 elevation, sheet 18). Envelopes: the rail element is a flat 0.085 m plate (the 2.5 pt rail depth of the sheet 12 plan) with its back on |Y| = 6.2738 m, heights measured from the shoulder grade on that plane (sheet 11 profile, 2 % cross slope of the sheet 3 typical section); posts are solid rectangles of the drawn W6 or timber size. Not modelled: the W-beam and thrie-beam corrugation shapes and the blockouts, which sheet 3 and the cross sections draw only as an undimensioned 8 x 14 in cell (against the 12 in MGS and 7 in TGB blocks of the sheet 12 plan), and the splices, bolts, post plates and connector hardware; they are defined by the INDOT Standard Drawings for pay item 601-12292 (Guardrail Transition, MGS Without Curb), which the contract set does not include.",
       "dimensions": {
-        "rail_element_depth_m": 0.508,
-        "rail_element_thickness_m": 0.06,
-        "rail_element_bottom_above_deck_m": 0.2794,
-        "rail_element_top_above_deck_m": 0.7874,
+        "pay_item": "601-12292",
+        "pay_limit_station": "508+66.63",
+        "length_from_tfc_end_m": 12.198096,
+        "post_count": 17,
+        "post_spacings_ft": "0.956, 9 x 1.5625, 6 x 3.125, 1 x 6.25",
+        "thrie_beam_above_grade_m": [
+          0.2794,
+          0.7874
+        ],
+        "w_beam_above_grade_m": [
+          0.4826,
+          0.7874
+        ],
+        "thrie_end_from_tfc_m": 5.6896,
+        "w_beam_from_tfc_m": 7.27456,
         "lap_on_tfc_m": 0.762,
-        "back_face_y_m": -6.2738
+        "rail_element_depth_m": 0.084667,
+        "back_face_y_m": -6.2738,
+        "post_length_m": 2.1336,
+        "post_embedment_m": 1.3208
       },
       "bounds_m": [
         [
           14.968538,
-          -6.4032,
-          2.498491
+          -6.7158,
+          1.39805
         ],
         [
-          17.891338,
-          -6.2138,
-          3.555317
+          27.978841,
+          -6.189133,
+          3.574166
         ]
       ],
-      "volume_m3": 0.129210544,
+      "volume_m3": 1.020704879,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
+            3,
             11,
             12,
-            18
+            18,
+            27
+          ]
+        },
+        {
+          "source_id": "9710491",
+          "pdf_pages": [
+            5
           ]
         }
       ]
     },
     {
       "id": "guardrail_1_-1",
-      "name": "Guardrail connection envelope | side 1 end -1",
+      "name": "Guardrail transition, Type MGS Without Curb | north-west",
       "layer": "accessories",
       "color": "#59676f",
       "pdf_pages": [
+        3,
         11,
         12,
-        18
+        18,
+        24
       ],
-      "basis": "Sheet 18 railing elevations (terminal connector lap, thrie-beam depth and height); representative run",
-      "note": "Representative 2 m north-west run: four posts as built, and an upright rail element standing in for the 20 in thrie beam and its terminal connector, back on the TFC end face (Y = +6.2738 m), lapping 2'-6\" onto the TFC, 11.00 to 31.00 in above the deck (sheet 18 north/south railing elevations, scaled). Corrugations, blockouts, bolts, the post layout and the rest of the Type MGS Without Curb guardrail transition are not modelled.",
+      "basis": "Sheet 11 pay limits; sheet 12 plan and elevation post layout; sheet 18",
+      "note": "Third review: Guardrail Transition, Type MGS Without Curb from the TFC end to the sheet 11 pay limit Sta. 506+83.37 \"PR-PR\" (40.02 ft). 17 posts as drawn on the sheet 12 plan and elevation (sheet 18 for the first three): the first 11.47 in beyond the TFC end, then 9 at 1'-6 3/4\", 6 at 3'-1 1/2\" and 1 at 6'-3\", the last on the pay limit; W6 posts 4 x 6 in, 12 in behind the rail (sheet 12 plan blockout), 7'-0\" long, 52 in below grade with the top 1 in above the rail (sheets 12, 18, 23-28). Rail: thrie beam 11-31 in above grade lapping 2'-6\" onto the TFC, to 18.67 ft from the TFC end; thrie-to-W transition piece to 23.87 ft; W-beam 19-31 in beyond (sheet 12 elevation, sheet 18). Envelopes: the rail element is a flat 0.085 m plate (the 2.5 pt rail depth of the sheet 12 plan) with its back on |Y| = 6.2738 m, heights measured from the shoulder grade on that plane (sheet 11 profile, 2 % cross slope of the sheet 3 typical section); posts are solid rectangles of the drawn W6 or timber size. Not modelled: the W-beam and thrie-beam corrugation shapes and the blockouts, which sheet 3 and the cross sections draw only as an undimensioned 8 x 14 in cell (against the 12 in MGS and 7 in TGB blocks of the sheet 12 plan), and the splices, bolts, post plates and connector hardware; they are defined by the INDOT Standard Drawings for pay item 601-12292 (Guardrail Transition, MGS Without Curb), which the contract set does not include.",
       "dimensions": {
-        "rail_element_depth_m": 0.508,
-        "rail_element_thickness_m": 0.06,
-        "rail_element_bottom_above_deck_m": 0.2794,
-        "rail_element_top_above_deck_m": 0.7874,
+        "pay_item": "601-12292",
+        "pay_limit_station": "506+83.37",
+        "length_from_tfc_end_m": 12.198096,
+        "post_count": 17,
+        "post_spacings_ft": "0.956, 9 x 1.5625, 6 x 3.125, 1 x 6.25",
+        "thrie_beam_above_grade_m": [
+          0.2794,
+          0.7874
+        ],
+        "w_beam_above_grade_m": [
+          0.4826,
+          0.7874
+        ],
+        "thrie_end_from_tfc_m": 5.6896,
+        "w_beam_from_tfc_m": 7.27456,
         "lap_on_tfc_m": 0.762,
-        "back_face_y_m": 6.2738
+        "rail_element_depth_m": 0.084667,
+        "back_face_y_m": 6.2738,
+        "post_length_m": 2.1336,
+        "post_embedment_m": 1.3208
       },
       "bounds_m": [
         [
-          -17.891338,
-          6.2138,
-          2.64518
+          -27.978841,
+          6.189133,
+          1.562907
         ],
         [
           -14.968538,
-          6.4032,
-          3.684641
+          6.7158,
+          3.710037
         ]
       ],
-      "volume_m3": 0.129210544,
+      "volume_m3": 1.020704879,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
+            3,
             11,
             12,
-            18
+            18,
+            24
+          ]
+        },
+        {
+          "source_id": "9710491",
+          "pdf_pages": [
+            5
           ]
         }
       ]
     },
     {
       "id": "guardrail_1_1",
-      "name": "Guardrail connection envelope | side 1 end 1",
+      "name": "Guardrail transition, Type TGB | north-east",
       "layer": "accessories",
       "color": "#59676f",
       "pdf_pages": [
         11,
         12,
-        18
+        18,
+        25
       ],
-      "basis": "Sheet 18 railing elevations (terminal connector lap, thrie-beam depth and height); representative run",
-      "note": "Representative 2 m north-east run: four posts as built, and an upright rail element standing in for the 20 in thrie beam and its terminal connector, back on the TFC end face (Y = +6.2738 m), lapping 2'-0\" onto the TFC, 10.27 to 30.27 in above the deck (sheet 18 north/south railing elevations, scaled). Corrugations, blockouts, bolts, the post layout and the rest of the Type TGB guardrail transition, with its W-beam transition and curved terminal, are not modelled.",
+      "basis": "Sheets 11 and 12 plan post layout and pay limit; sheet 18 rail heights",
+      "note": "Third review: Guardrail Transition, Type TGB from the TFC end to the sheet 11 pay limit Sta. 507+94.74 \"PR-PR\". 10 posts at the sheet 12 plan positions (sheet 11 agrees for the last two): the first 11.47 in beyond the TFC end, then 5 at 1'-6 3/4\", 3 at 3'-1 1/2\" and 1 at 6'-3\" on the pay limit; W6 posts 4 x 6 in behind 7 in blocks (6 x 8 in blocks at the last two); tops level at 31.4 in above grade for posts 1-8 and 27.4 in for 9-10 (sheet 18); 52 in below grade, as the sheets 25-26 cross sections draw the 7'-0\" posts here. Rail (sheet 18 north railing elevation): thrie beam 10.27-30.27 in above grade lapping 2'-0\" onto the TFC, to 12.92 ft; transition piece to 18.13 ft; W-beam 14.13-26.40 in beyond. Envelopes: the rail element is a flat 0.085 m plate (the 2.5 pt rail depth of the sheet 12 plan) with its back on |Y| = 6.2738 m, heights measured from the shoulder grade on that plane (sheet 11 profile, 2 % cross slope of the sheet 3 typical section); posts are solid rectangles of the drawn W6 or timber size. Not modelled: the W-beam and thrie-beam corrugation shapes and the blockouts, which sheet 3 and the cross sections draw only as an undimensioned 8 x 14 in cell (against the 12 in MGS and 7 in TGB blocks of the sheet 12 plan), and the splices, bolts, post plates and connector hardware; they are defined by the INDOT Standard Drawings for pay item 601-01522 (Guardrail Transition, Type TGB), which the contract set does not include.",
       "dimensions": {
-        "rail_element_depth_m": 0.508,
-        "rail_element_thickness_m": 0.06,
-        "rail_element_bottom_above_deck_m": 0.260773,
-        "rail_element_top_above_deck_m": 0.768773,
+        "pay_item": "601-01522",
+        "pay_limit_station": "507+94.74",
+        "post_count": 10,
+        "post_spacings_ft": "0.956, 5 x 1.5625, 3 x 3.125, 1 x 6.25",
+        "thrie_beam_above_grade_m": [
+          0.260773,
+          0.768773
+        ],
+        "w_beam_above_grade_m": [
+          0.358987,
+          0.67056
+        ],
+        "thrie_end_from_tfc_m": 3.937,
+        "w_beam_from_tfc_m": 5.525347,
         "lap_on_tfc_m": 0.6096,
-        "back_face_y_m": 6.2738
+        "rail_element_depth_m": 0.084667,
+        "back_face_y_m": 6.2738,
+        "post_top_above_grade_m": [
+          0.79756,
+          0.69596
+        ],
+        "post_embedment_m": 1.3208
       },
       "bounds_m": [
         [
           -2.030413,
-          6.2138,
-          2.601353
+          6.189133,
+          1.502812
         ],
         [
-          0.739987,
-          6.4032,
-          3.633808
+          6.064991,
+          6.6277,
+          3.658796
         ]
       ],
-      "volume_m3": 0.124565392,
+      "volume_m3": 0.62596164,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
             11,
             12,
-            18
+            18,
+            25
+          ]
+        },
+        {
+          "source_id": "9710491",
+          "pdf_pages": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guardrail_end_1_-1",
+      "name": "Guardrail end treatment, Type OS | north-west",
+      "layer": "accessories",
+      "color": "#59676f",
+      "pdf_pages": [
+        3,
+        11,
+        23
+      ],
+      "basis": "Sheet 11 plan and pay limits; sheet 3 typical section",
+      "note": "Third review: Guardrail End Treatment, Type OS, Sta. 506+33.37 to 506+83.37 \"PR-PR\" (50 ft, sheet 11), straight on the rail line. 8 W6 posts scaled from the sheet 11 plan: 7 at 6'-3\" from the inner pay limit, then 5'-0\", 1'-3\" short of the end; 12 in behind the rail, 7'-0\" long, 52 in below grade with the top 1 in above the rail (sheets 18, 23, 28). W-beam 19-31 in above grade to the end. The impact head, anchor and cable at the end are not modelled. Envelopes: the rail element is a flat 0.085 m plate (the 2.5 pt rail depth of the sheet 12 plan) with its back on |Y| = 6.2738 m, heights measured from the shoulder grade on that plane (sheet 11 profile, 2 % cross slope of the sheet 3 typical section); posts are solid rectangles of the drawn W6 or timber size. Not modelled: the W-beam and thrie-beam corrugation shapes and the blockouts, which sheet 3 and the cross sections draw only as an undimensioned 8 x 14 in cell (against the 12 in MGS and 7 in TGB blocks of the sheet 12 plan), and the splices, bolts, post plates and connector hardware; they are defined by the INDOT Standard Drawings for pay item 601-94689 (Guardrail End Treatment, Type OS), which the contract set does not include.",
+      "dimensions": {
+        "pay_item": "601-94689",
+        "station_limits": [
+          "506+33.37",
+          "506+83.37"
+        ],
+        "length_m": 15.24,
+        "post_count": 8,
+        "post_offsets_from_inner_limit_ft": [
+          6.25,
+          12.5,
+          18.75,
+          25.0,
+          31.25,
+          37.5,
+          43.75,
+          48.75
+        ],
+        "w_beam_above_grade_m": [
+          0.4826,
+          0.7874
+        ],
+        "rail_element_depth_m": 0.084667,
+        "back_face_y_m": 6.2738,
+        "post_length_m": 2.1336,
+        "post_embedment_m": 1.3208
+      },
+      "bounds_m": [
+        [
+          -43.168824,
+          6.189133,
+          1.494607
+        ],
+        [
+          -27.928824,
+          6.7158,
+          3.690968
+        ]
+      ],
+      "volume_m3": 0.657580104,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            3,
+            11,
+            23
+          ]
+        },
+        {
+          "source_id": "9710491",
+          "pdf_pages": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guardrail_terminal_1_1",
+      "name": "Curved W-beam guardrail terminal system, Type 1 | north-east",
+      "layer": "accessories",
+      "color": "#59676f",
+      "pdf_pages": [
+        11,
+        12,
+        18,
+        26
+      ],
+      "basis": "Sheet 11 and 12 plans (terminal layout and posts); sheet 18 rail height",
+      "note": "Third review: Curved W-Beam Guardrail Terminal System, Type 1 from Sta. 507+94.74 \"PR-PR\" (sheet 11): straight to X = 7.918 m (sheet 12 plan), a quarter circle of 8'-6\" face radius (sheets 11, 12) and a north leg along the drive to Y = 16.57 m (sheet 11, the anchor end). 6 timber posts 6 x 8 in directly behind the rail at the sheet 12 plan positions (the last two at 6'-3\" on the sheet 11 plan), the top 1 in above the rail and 52 in below grade, as the sheet 26 section Sta. 508+00 draws the 7'-0\" post here. The grade follows the sheet 11 profile plus the drive cross fall of the sheet 26 section Sta. 508+11.44 (Mod. Class II Drive and Grading, up to 0.55 ft below the shoulder edge on the north leg). The terminal rail height is not drawn: the W-beam continues at the TGB height of sheet 18. Envelopes: the rail element is a flat 0.085 m plate (the 2.5 pt rail depth of the sheet 12 plan) with its back on |Y| = 6.2738 m, heights measured from the shoulder grade on that plane (sheet 11 profile, 2 % cross slope of the sheet 3 typical section); posts are solid rectangles of the drawn W6 or timber size. Not modelled: the W-beam and thrie-beam corrugation shapes and the blockouts, which sheet 3 and the cross sections draw only as an undimensioned 8 x 14 in cell (against the 12 in MGS and 7 in TGB blocks of the sheet 12 plan), and the splices, bolts, post plates and connector hardware; they are defined by the INDOT Standard Drawings for pay item 601-01700 (Guardrail Terminal System, W-Beam, Curved, Type 1), which the contract set does not include.",
+      "dimensions": {
+        "pay_item": "601-01700",
+        "start_station": "507+94.74",
+        "arc_start_x_m": 7.918027,
+        "arc_face_radius_m": 2.5908,
+        "north_leg_end_y_m": 16.5735,
+        "post_count": 6,
+        "w_beam_above_grade_m": [
+          0.358987,
+          0.67056
+        ],
+        "rail_element_depth_m": 0.084667,
+        "post_top_above_grade_m": 0.69596,
+        "post_embedment_m": 1.3208
+      },
+      "bounds_m": [
+        [
+          6.016752,
+          6.189133,
+          1.316285
+        ],
+        [
+          10.508827,
+          16.5735,
+          3.507731
+        ]
+      ],
+      "volume_m3": 0.736022657,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            11,
+            12,
+            18,
+            26
+          ]
+        },
+        {
+          "source_id": "9710491",
+          "pdf_pages": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guardrail_run_-1_-1",
+      "name": "Guardrail, MGS W-beam, 6 ft 3 in spacing | south-west",
+      "layer": "accessories",
+      "color": "#59676f",
+      "pdf_pages": [
+        3,
+        11,
+        12,
+        23,
+        24
+      ],
+      "basis": "Sheet 11 stations and legend; sheet 12 plan; sheet 3 typical section",
+      "note": "Third review: Guardrail, MGS W-Beam, 6'-3\" Spa., Sta. 506+35.87 to 507+23.37 \"PR-PR\" (87.50 ft, sheet 11; the revision 1 pay quantity is 88 lft). 14 W6 posts at 6'-3\" (sheet 11 legend, sheet 12 plan), the last on the end-treatment pay limit, 12 in behind the rail, 7'-0\" long, 52 in below grade with the top 1 in above the rail (sheets 18, 23, 24). W-beam 19-31 in above grade. Envelopes: the rail element is a flat 0.085 m plate (the 2.5 pt rail depth of the sheet 12 plan) with its back on |Y| = 6.2738 m, heights measured from the shoulder grade on that plane (sheet 11 profile, 2 % cross slope of the sheet 3 typical section); posts are solid rectangles of the drawn W6 or timber size. Not modelled: the W-beam and thrie-beam corrugation shapes and the blockouts, which sheet 3 and the cross sections draw only as an undimensioned 8 x 14 in cell (against the 12 in MGS and 7 in TGB blocks of the sheet 12 plan), and the splices, bolts, post plates and connector hardware; they are defined by the INDOT Standard Drawings for pay item 601-12281 (Guardrail, MGS W-Beam, 6 ft 3 in. Spacing), which the contract set does not include.",
+      "dimensions": {
+        "pay_item": "601-12281",
+        "station_limits": [
+          "506+35.87",
+          "507+23.37"
+        ],
+        "length_m": 26.67,
+        "post_count": 14,
+        "post_spacing_m": 1.905,
+        "w_beam_above_grade_m": [
+          0.4826,
+          0.7874
+        ],
+        "rail_element_depth_m": 0.084667,
+        "back_face_y_m": -6.2738,
+        "post_length_m": 2.1336,
+        "post_embedment_m": 1.3208
+      },
+      "bounds_m": [
+        [
+          -42.457624,
+          -6.7158,
+          1.497078
+        ],
+        [
+          -15.736824,
+          -6.189133,
+          3.71004
+        ]
+      ],
+      "volume_m3": 1.150765182,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            3,
+            11,
+            12,
+            23,
+            24
+          ]
+        },
+        {
+          "source_id": "9710491",
+          "pdf_pages": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guardrail_end_-1_-1",
+      "name": "Guardrail end treatment, Type OS | south-west",
+      "layer": "accessories",
+      "color": "#59676f",
+      "pdf_pages": [
+        3,
+        11,
+        23
+      ],
+      "basis": "Sheet 11 plan and pay limits; sheet 3 typical section",
+      "note": "Third review: Guardrail End Treatment, Type OS, Sta. 505+85.87 to 506+35.87 \"PR-PR\" (50 ft, sheet 11), straight on the rail line. 8 W6 posts scaled from the sheet 11 plan: 7 at 6'-3\" from the inner pay limit, then 5'-0\", 1'-3\" short of the end; 12 in behind the rail, 7'-0\" long, 52 in below grade with the top 1 in above the rail (sheets 18, 23, 28). W-beam 19-31 in above grade to the end. The impact head, anchor and cable at the end are not modelled. Envelopes: the rail element is a flat 0.085 m plate (the 2.5 pt rail depth of the sheet 12 plan) with its back on |Y| = 6.2738 m, heights measured from the shoulder grade on that plane (sheet 11 profile, 2 % cross slope of the sheet 3 typical section); posts are solid rectangles of the drawn W6 or timber size. Not modelled: the W-beam and thrie-beam corrugation shapes and the blockouts, which sheet 3 and the cross sections draw only as an undimensioned 8 x 14 in cell (against the 12 in MGS and 7 in TGB blocks of the sheet 12 plan), and the splices, bolts, post plates and connector hardware; they are defined by the INDOT Standard Drawings for pay item 601-94689 (Guardrail End Treatment, Type OS), which the contract set does not include.",
+      "dimensions": {
+        "pay_item": "601-94689",
+        "station_limits": [
+          "505+85.87",
+          "506+35.87"
+        ],
+        "length_m": 15.24,
+        "post_count": 8,
+        "post_offsets_from_inner_limit_ft": [
+          6.25,
+          12.5,
+          18.75,
+          25.0,
+          31.25,
+          37.5,
+          43.75,
+          48.75
+        ],
+        "w_beam_above_grade_m": [
+          0.4826,
+          0.7874
+        ],
+        "rail_element_depth_m": 0.084667,
+        "back_face_y_m": -6.2738,
+        "post_length_m": 2.1336,
+        "post_embedment_m": 1.3208
+      },
+      "bounds_m": [
+        [
+          -57.646824,
+          -6.7158,
+          1.390039
+        ],
+        [
+          -42.406824,
+          -6.189133,
+          3.617945
+        ]
+      ],
+      "volume_m3": 0.657580104,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            3,
+            11,
+            23
+          ]
+        },
+        {
+          "source_id": "9710491",
+          "pdf_pages": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guardrail_end_-1_1",
+      "name": "Guardrail end treatment, Type OS | south-east",
+      "layer": "accessories",
+      "color": "#59676f",
+      "pdf_pages": [
+        3,
+        11,
+        28
+      ],
+      "basis": "Sheet 11 plan and pay limits; sheet 3 typical section",
+      "note": "Third review: Guardrail End Treatment, Type OS, Sta. 508+66.63 to 509+16.63 \"PR-PR\" (50 ft, sheet 11), straight on the rail line. 8 W6 posts scaled from the sheet 11 plan: 7 at 6'-3\" from the inner pay limit, then 5'-0\", 1'-3\" short of the end; 12 in behind the rail, 7'-0\" long, 52 in below grade with the top 1 in above the rail (sheets 18, 23, 28). W-beam 19-31 in above grade to the end. The impact head, anchor and cable at the end are not modelled. Envelopes: the rail element is a flat 0.085 m plate (the 2.5 pt rail depth of the sheet 12 plan) with its back on |Y| = 6.2738 m, heights measured from the shoulder grade on that plane (sheet 11 profile, 2 % cross slope of the sheet 3 typical section); posts are solid rectangles of the drawn W6 or timber size. Not modelled: the W-beam and thrie-beam corrugation shapes and the blockouts, which sheet 3 and the cross sections draw only as an undimensioned 8 x 14 in cell (against the 12 in MGS and 7 in TGB blocks of the sheet 12 plan), and the splices, bolts, post plates and connector hardware; they are defined by the INDOT Standard Drawings for pay item 601-94689 (Guardrail End Treatment, Type OS), which the contract set does not include.",
+      "dimensions": {
+        "pay_item": "601-94689",
+        "station_limits": [
+          "508+66.63",
+          "509+16.63"
+        ],
+        "length_m": 15.24,
+        "post_count": 8,
+        "post_offsets_from_inner_limit_ft": [
+          6.25,
+          12.5,
+          18.75,
+          25.0,
+          31.25,
+          37.5,
+          43.75,
+          48.75
+        ],
+        "w_beam_above_grade_m": [
+          0.4826,
+          0.7874
+        ],
+        "rail_element_depth_m": 0.084667,
+        "back_face_y_m": -6.2738,
+        "post_length_m": 2.1336,
+        "post_embedment_m": 1.3208
+      },
+      "bounds_m": [
+        [
+          27.928824,
+          -6.7158,
+          1.398451
+        ],
+        [
+          43.168824,
+          -6.189133,
+          3.532828
+        ]
+      ],
+      "volume_m3": 0.657580104,
+      "source_refs": [
+        {
+          "source_id": "9683606",
+          "pdf_pages": [
+            3,
+            11,
+            28
+          ]
+        },
+        {
+          "source_id": "9710491",
+          "pdf_pages": [
+            5
           ]
         }
       ]
@@ -1770,8 +2253,10 @@
     {
       "feature": "Rails and visible accessories",
       "status": "modeled_with_simplifications",
-      "detail": "Asymmetric FC rail lengths, four TFC transition envelopes, joint strips and representative guardrail attachment runs.",
+      "detail": "Asymmetric FC rail lengths, four TFC transition envelopes, joint strips and the guardrail runs to the sheet 11 limits (three MGS Without Curb transitions, the Type TGB transition, the 87.5 ft MGS W-beam run, three Type OS end treatments and the curved Type 1 terminal) with drawn post positions and envelope sections.",
       "sources": [
+        "Primary PDF p.3",
+        "Primary PDF p.11",
         "Primary PDF p.12",
         "Primary PDF p.18"
       ],
@@ -1787,7 +2272,12 @@
         "guardrail_-1_-1",
         "guardrail_-1_1",
         "guardrail_1_-1",
-        "guardrail_1_1"
+        "guardrail_1_1",
+        "guardrail_end_1_-1",
+        "guardrail_terminal_1_1",
+        "guardrail_run_-1_-1",
+        "guardrail_end_-1_-1",
+        "guardrail_end_-1_1"
       ]
     },
     {
@@ -1822,7 +2312,7 @@
     {
       "feature": "Unresolved geometry",
       "status": "not_modeled",
-      "detail": "Rebar and internal pile material, actual driven lengths, soil and rock, riprap, wing batter, pavement ledge details, exact FC/TFC fillets and roadway terminals.",
+      "detail": "Rebar and internal pile material, actual driven lengths, soil and rock, riprap, flowable backfill behind the wings and bents, the 1 1/2 in bent fillet, the 1 in PEJF, exact FC/TFC fillets and guardrail hardware (standard drawings).",
       "sources": [
         "Primary PDF p.12",
         "Primary PDF p.14",
@@ -1836,7 +2326,7 @@
   ],
   "vertical_datum": "Z (m) = 3 + 0.3048 (El. ft - 878.64); X = 0 at Sta. 507+75 \"PR-PR\"",
   "review_correction": "drawing-review-datum-rails-approaches-wing-d",
-  "revision": "1.2-drawing-review-2",
+  "revision": "1.3-deviations",
   "review_correction_record": {
     "source_pdf_pages": [
       11,
@@ -1936,25 +2426,11 @@
   },
   "known_deviations": [
     {
-      "id": "wings-a-b-c-plan",
-      "parts": "wing_1_1, wing_1_-1, wing_2_-1",
-      "source": "sheets 15, 16 and 18",
-      "deviation": "Wings A, B and C keep the as-built level-topped 12 ft walls measured from the bent centre line at the coping; on sheet 18 the walls are 1 in outside the coping and end 0.15-0.28 m from the modelled tips, with sloping tops.",
-      "reason": "Not part of the external review; left for a separate drawing check."
-    },
-    {
-      "id": "bent-pavement-ledge",
-      "parts": "integral_bent_1, integral_bent_2",
-      "source": "sheet 17 (End Bent Detail)",
-      "deviation": "The 9 in pavement ledge under each approach slab is modelled at slab-soffit level, about 0.2 m below the approach slab.",
-      "reason": "Ledge and fillet details are a stated simplification of the exterior model."
-    },
-    {
       "id": "guardrail-representative-runs",
-      "parts": "guardrail_1_-1, guardrail_1_1, guardrail_-1_-1, guardrail_-1_1",
-      "source": "sheets 12 and 18",
-      "deviation": "Each guardrail transition is a representative 2 m run: four as-built 0.11 x 0.10 m posts at 0.667 m spacing, 29 mm behind the rail element with no blockouts, and a flat 0.06 m upright plate for the thrie beam and terminal connector. The drawn post spacing, corrugations, bolts, the rest of each transition and the NE Type TGB W-beam transition and curved terminal are not modelled.",
-      "reason": "Guardrail transitions are standard roadway items (sheet 12, sheet 18 elevations); only their connection to the bridge railing is modelled to the drawings."
+      "parts": "guardrail_1_-1, guardrail_end_1_-1, guardrail_1_1, guardrail_terminal_1_1, guardrail_-1_-1, guardrail_run_-1_-1, guardrail_end_-1_-1, guardrail_-1_1, guardrail_end_-1_1",
+      "source": "sheets 3, 11, 12, 18 and 23-28",
+      "deviation": "The guardrail runs follow the drawn layout (pay limits, post positions, spacing and 7 ft posts, rail line, curved terminal path, thrie/W-beam heights, drive grade), but the rail is a flat 0.085 m plate instead of the W-beam and thrie-beam corrugations, the posts are solid rectangles, and blockouts, splices, bolts, post plates, connector hardware, the Type OS impact heads and the terminal anchor and cable are not modelled. The curved terminal keeps the TGB rail height.",
+      "reason": "The plans draw these items only as undimensioned schematic cells: the W-beam profile and an 8 x 14 in blockout in the sheet 3 typical section and the sheets 23-28 cross sections (the same cell at thrie-beam stations), which conflicts with the 12 in MGS and 7 in TGB blocks of the sheet 12 plan; sheet 11 shows the end heads and the anchor only as outlines; no sheet gives the terminal rail height. They are defined by the INDOT Standard Drawings and Standard Specifications Section 601 for the pay items 601-12292 Guardrail Transition, MGS Without Curb; 601-01522 Guardrail Transition, Type TGB; 601-12281 Guardrail, MGS W-Beam, 6 ft 3 in. Spacing; 601-94689 Guardrail End Treatment, Type OS; and 601-01700 Guardrail Terminal System, W-Beam, Curved, Type 1 (revision notice 9710491 p. 5), which the contract set neither includes nor cites by drawing number."
     }
   ],
   "review_correction_2": "drawing-review-2-guardrail-connections",
@@ -2056,5 +2532,949 @@
     ],
     "before_glb_sha256": "b69ac6f925c81b75e43616c13224d92148a8f925a4f2918b92369c6c8304a50b",
     "after_glb_sha256": "9836e74ac37d050cd42176495e72daf564ae2f4ed98210c59621052a50e3e615"
+  },
+  "review_correction_3": "drawing-review-3-wings-ledge-guardrails",
+  "review_correction_record_3": {
+    "source_pdf_pages": [
+      3,
+      11,
+      12,
+      15,
+      16,
+      17,
+      18,
+      19,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "printed_sheets": [
+      3,
+      11,
+      12,
+      15,
+      16,
+      17,
+      18,
+      19,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "secondary_sources": {
+      "9710491": [
+        5
+      ]
+    },
+    "previous_revision": "1.2-drawing-review-2",
+    "resolved_deviations": [
+      "wings-a-b-c-plan",
+      "bent-pavement-ledge"
+    ],
+    "decided_deviations": [
+      "bent-pavement-ledge",
+      "guardrail-representative-runs"
+    ],
+    "partly_resolved_deviations": [
+      "guardrail-representative-runs"
+    ],
+    "kept_deviations": [
+      "guardrail-representative-runs"
+    ],
+    "decisions": [
+      {
+        "id": "bent-pavement-ledge",
+        "verdict": "DECIDE",
+        "parts": [
+          "approach_1",
+          "approach_2"
+        ],
+        "decision": "Approach slab end 1'-2\" deep from 18 in beyond the bent back face onto the 9 in ledge, 2 in chamfer to the 12 in slab.",
+        "reasoning": "Sheet 19 Section E-E dimensions it: 1'-6\" beyond the bent plus the 9 in ledge, with a 2 in step at 45 degrees. Sheet 17 End Bent Detail (depths 1'-0\", 1'-2\", 1'-8\" dimensioned) scales the same 18 in + 2 in, and the wing elevations on sheets 15 and 16 draw the 1'-2\" zone 38.1 in long along the skew (27 in normal). Sheet 18 railing elevations scale 15 in but are schematic there: they draw the slab 18 in deep against the dimensioned 1'-8\".",
+        "rejected_reading": "Sheet 18 north/south railing elevations: 1'-2\" zone 15 in beyond the bent back face.",
+        "sources": "sheet 19 Section E-E; sheet 17 End Bent Detail; sheets 15, 16 wing elevations; sheet 18"
+      },
+      {
+        "id": "guardrail-representative-runs",
+        "verdict": "DECIDE",
+        "parts": [
+          "guardrail_1_-1",
+          "guardrail_end_1_-1",
+          "guardrail_1_1",
+          "guardrail_terminal_1_1",
+          "guardrail_-1_-1",
+          "guardrail_run_-1_-1",
+          "guardrail_end_-1_-1",
+          "guardrail_-1_1",
+          "guardrail_end_-1_1"
+        ],
+        "decision": "Guardrail posts 7'-0\" long with 52 in below grade.",
+        "reasoning": "Every cross section through the runs (sheets 23-28, Sta. 505+99 to 509+00) draws the post 7.01 ft long with about 52.7 in below the ground, and the sheet 18 railing elevations draw the posts next to the TFCs 7'-0\" long, 52 in below the deck line. Only the sheet 3 typical section draws a 6'-0\" post. Post tops follow sheets 12 and 18 (1 in above the rail; TGB posts 1-8 at 31.4 in and 9-10 at 27.4 in), so the TGB and terminal posts are up to 4.6 in shorter than 7 ft.",
+        "rejected_reading": "Sheet 3 typical sections: 6'-0\" post, about 41 in below grade.",
+        "sources": "sheets 23-28 cross sections; sheet 18 railing elevations; sheet 3"
+      },
+      {
+        "id": "guardrail-representative-runs",
+        "verdict": "DECIDE",
+        "parts": [
+          "guardrail_1_1"
+        ],
+        "decision": "Type TGB posts at the sheet 12 plan positions: first post 11.47 in beyond the TFC end, 5 x 1'-6 3/4\", 3 x 3'-1 1/2\", 1 x 6'-3\" to the post on the 507+94.74 pay limit.",
+        "reasoning": "The sheet 11 and sheet 12 plans agree (posts 9 and 10 at X 4.10/4.11 and 6.01/6.015 m), and the last 6'-3\" bay lands on the sheet 11 pay limit 507+94.74 (X 6.017 m). The sheet 18 north railing elevation and the sheet 12 elevation draw the same spacings but start 1'-5 1/2\" from the TFC end, 6 in further out, which leaves a 5'-9\" last bay that matches neither plan.",
+        "rejected_reading": "Sheet 18 north railing elevation (east): first TGB post 1'-5 1/2\" beyond the TFC end.",
+        "sources": "sheet 11 plan and profile; sheet 12 plan; sheet 12 elevation; sheet 18 north railing elevation"
+      },
+      {
+        "id": "guardrail-representative-runs",
+        "verdict": "DECIDE",
+        "parts": [
+          "guardrail_run_-1_-1"
+        ],
+        "decision": "MGS W-beam run 87.50 ft, 506+35.87 to 507+23.37.",
+        "reasoning": "The sheet 11 stations and legend give 87.50 lft; the revision 1 schedule of pay items lists 88 lft (601-12281), a quantity rounded for payment.",
+        "rejected_reading": "Revision notice 9710491 p. 5: 88.000 lft.",
+        "sources": "sheet 11 profile legend; revision notice 9710491 p. 5"
+      }
+    ],
+    "findings": {
+      "wings-a-b-c-plan": "resolved - Wings A, B, C to the sheet 15/16/18 outline (1 in outside the coping, 12 ft on the outer face from the bent front face; Bent 1 south end square) and the sloping drawn tops",
+      "bent-pavement-ledge": "resolved - 9 in ledge at 1 ft 2 in below the top of deck under the approach slabs; approach ends 1 ft 2 in deep bearing on it",
+      "guardrail-representative-runs": "layout resolved (sheet 11 pay limits, sheet 11/12 post layout, sheet 12/18 rail and post heights, 7 ft posts per sheets 18 and 23-28, curved terminal path, sheet 26 drive grade); corrugations, blockouts and hardware kept as envelopes"
+    },
+    "geometry": {
+      "wing_1_1": {
+        "plan_xy_m": [
+          [
+            -14.502343,
+            6.5786
+          ],
+          [
+            -11.761257,
+            6.5786
+          ],
+          [
+            -11.735857,
+            6.5532
+          ],
+          [
+            -10.514543,
+            6.5532
+          ],
+          [
+            -10.844743,
+            6.8834
+          ],
+          [
+            -14.502343,
+            6.8834
+          ]
+        ],
+        "outer_face_x_m": [
+          -14.502343,
+          -10.844743
+        ],
+        "top_el_ft_bent_end_tip": [
+          878.25,
+          878.26
+        ],
+        "bottom_el_ft": 870.97
+      },
+      "wing_1_-1": {
+        "plan_xy_m": [
+          [
+            -1.522943,
+            -6.8834
+          ],
+          [
+            2.134657,
+            -6.8834
+          ],
+          [
+            2.134657,
+            -6.5532
+          ],
+          [
+            1.065743,
+            -6.5532
+          ],
+          [
+            1.065743,
+            -6.5786
+          ],
+          [
+            -1.522943,
+            -6.5786
+          ]
+        ],
+        "outer_face_x_m": [
+          -1.522943,
+          2.134657
+        ],
+        "top_el_ft_bent_end_tip": [
+          878.1,
+          878.15
+        ],
+        "bottom_el_ft": 870.97
+      },
+      "wing_2_-1": {
+        "plan_xy_m": [
+          [
+            14.502343,
+            -6.5786
+          ],
+          [
+            14.502343,
+            -6.8834
+          ],
+          [
+            10.844743,
+            -6.8834
+          ],
+          [
+            10.514543,
+            -6.5532
+          ],
+          [
+            11.735857,
+            -6.5532
+          ],
+          [
+            11.761257,
+            -6.5786
+          ]
+        ],
+        "outer_face_x_m": [
+          10.844743,
+          14.502343
+        ],
+        "top_el_ft_bent_end_tip": [
+          877.91,
+          877.85
+        ],
+        "bottom_el_ft": 870.83
+      },
+      "integral_bent_1": {
+        "slab_soffit_max_z_m": 2.493065,
+        "depth_bottom_to_slab_soffit_m": 1.830881,
+        "plan_xy_m": [
+          [
+            -11.735857,
+            6.5532
+          ],
+          [
+            -10.514543,
+            6.5532
+          ],
+          [
+            2.134657,
+            -6.096
+          ],
+          [
+            2.134657,
+            -6.5532
+          ],
+          [
+            1.065743,
+            -6.5532
+          ],
+          [
+            1.065743,
+            -6.2484
+          ]
+        ],
+        "ledge_area_m2": 4.284012,
+        "ledge_top_below_deck_top_m": 0.3556,
+        "slab_soffit_below_deck_top_m": 0.508
+      },
+      "integral_bent_2": {
+        "slab_soffit_max_z_m": 2.453263,
+        "depth_bottom_to_slab_soffit_m": 1.833751,
+        "plan_xy_m": [
+          [
+            10.514543,
+            -6.5532
+          ],
+          [
+            11.735857,
+            -6.5532
+          ],
+          [
+            -1.370543,
+            6.5532
+          ],
+          [
+            -2.591857,
+            6.5532
+          ]
+        ],
+        "ledge_area_m2": 4.289637,
+        "ledge_top_below_deck_top_m": 0.3556,
+        "slab_soffit_below_deck_top_m": 0.508
+      },
+      "approach_1": {
+        "thickened_to_u_m": -5.829236,
+        "chamfer_to_u_m": -5.901078,
+        "end_depth_m": 0.3556,
+        "slab_depth_m": 0.3048
+      },
+      "approach_2": {
+        "thickened_to_u_m": 5.829236,
+        "chamfer_to_u_m": 5.901078,
+        "end_depth_m": 0.3556,
+        "slab_depth_m": 0.3048
+      },
+      "guardrails": {
+        "guardrail_1_-1": {
+          "rail_x_m": [
+            -27.928824,
+            -14.968538
+          ],
+          "post_count": 17,
+          "post_xy_m": [
+            [
+              -16.0218,
+              6.6396
+            ],
+            [
+              -16.498,
+              6.6396
+            ],
+            [
+              -16.9743,
+              6.6396
+            ],
+            [
+              -17.4505,
+              6.6396
+            ],
+            [
+              -17.9268,
+              6.6396
+            ],
+            [
+              -18.403,
+              6.6396
+            ],
+            [
+              -18.8793,
+              6.6396
+            ],
+            [
+              -19.3555,
+              6.6396
+            ],
+            [
+              -19.8318,
+              6.6396
+            ],
+            [
+              -20.308,
+              6.6396
+            ],
+            [
+              -21.2605,
+              6.6396
+            ],
+            [
+              -22.213,
+              6.6396
+            ],
+            [
+              -23.1655,
+              6.6396
+            ],
+            [
+              -24.118,
+              6.6396
+            ],
+            [
+              -25.0705,
+              6.6396
+            ],
+            [
+              -26.023,
+              6.6396
+            ],
+            [
+              -27.928,
+              6.6396
+            ]
+          ],
+          "post_d_from_tfc_m": [
+            0.2913,
+            0.7675,
+            1.2438,
+            1.72,
+            2.1963,
+            2.6725,
+            3.1488,
+            3.625,
+            4.1013,
+            4.5775,
+            5.53,
+            6.4825,
+            7.435,
+            8.3875,
+            9.34,
+            10.2925,
+            12.1975
+          ]
+        },
+        "guardrail_end_1_-1": {
+          "rail_x_m": [
+            -43.168824,
+            -27.928824
+          ],
+          "post_count": 8,
+          "post_xy_m": [
+            [
+              -29.8338,
+              6.6396
+            ],
+            [
+              -31.7388,
+              6.6396
+            ],
+            [
+              -33.6438,
+              6.6396
+            ],
+            [
+              -35.5488,
+              6.6396
+            ],
+            [
+              -37.4538,
+              6.6396
+            ],
+            [
+              -39.3588,
+              6.6396
+            ],
+            [
+              -41.2638,
+              6.6396
+            ],
+            [
+              -42.7878,
+              6.6396
+            ]
+          ],
+          "post_d_from_tfc_m": [
+            14.1033,
+            16.0083,
+            17.9133,
+            19.8183,
+            21.7233,
+            23.6283,
+            25.5333,
+            27.0573
+          ]
+        },
+        "guardrail_1_1": {
+          "rail_x_m": [
+            -2.030413,
+            6.016752
+          ],
+          "post_count": 10,
+          "post_xy_m": [
+            [
+              -1.1296,
+              6.5312
+            ],
+            [
+              -0.6533,
+              6.5312
+            ],
+            [
+              -0.1771,
+              6.5312
+            ],
+            [
+              0.2992,
+              6.5312
+            ],
+            [
+              0.7754,
+              6.5312
+            ],
+            [
+              1.2517,
+              6.5312
+            ],
+            [
+              2.2042,
+              6.5312
+            ],
+            [
+              3.1567,
+              6.5312
+            ],
+            [
+              4.1092,
+              6.5515
+            ],
+            [
+              6.0142,
+              6.5515
+            ]
+          ],
+          "post_d_from_tfc_m": [
+            0.2913,
+            0.7675,
+            1.2438,
+            1.72,
+            2.1963,
+            2.6725,
+            3.625,
+            4.5775,
+            5.53,
+            7.435
+          ]
+        },
+        "guardrail_terminal_1_1": {
+          "rail_x_m": [
+            6.016752,
+            10.508827
+          ],
+          "arc_start_x_m": 7.918027,
+          "arc_face_radius_m": 2.5908,
+          "north_leg_end_y_m": 16.5735,
+          "post_count": 6,
+          "post_xy_m": [
+            [
+              7.918,
+              6.3754
+            ],
+            [
+              9.5729,
+              7.0383
+            ],
+            [
+              10.3174,
+              8.6563
+            ],
+            [
+              10.3226,
+              10.687
+            ],
+            [
+              10.3226,
+              12.592
+            ],
+            [
+              10.3226,
+              14.497
+            ]
+          ]
+        },
+        "guardrail_-1_-1": {
+          "rail_x_m": [
+            -15.736824,
+            -2.776538
+          ],
+          "post_count": 17,
+          "post_xy_m": [
+            [
+              -3.8298,
+              -6.6396
+            ],
+            [
+              -4.306,
+              -6.6396
+            ],
+            [
+              -4.7823,
+              -6.6396
+            ],
+            [
+              -5.2585,
+              -6.6396
+            ],
+            [
+              -5.7348,
+              -6.6396
+            ],
+            [
+              -6.211,
+              -6.6396
+            ],
+            [
+              -6.6873,
+              -6.6396
+            ],
+            [
+              -7.1635,
+              -6.6396
+            ],
+            [
+              -7.6398,
+              -6.6396
+            ],
+            [
+              -8.116,
+              -6.6396
+            ],
+            [
+              -9.0685,
+              -6.6396
+            ],
+            [
+              -10.021,
+              -6.6396
+            ],
+            [
+              -10.9735,
+              -6.6396
+            ],
+            [
+              -11.926,
+              -6.6396
+            ],
+            [
+              -12.8785,
+              -6.6396
+            ],
+            [
+              -13.831,
+              -6.6396
+            ],
+            [
+              -15.736,
+              -6.6396
+            ]
+          ],
+          "post_d_from_tfc_m": [
+            0.2913,
+            0.7675,
+            1.2438,
+            1.72,
+            2.1963,
+            2.6725,
+            3.1488,
+            3.625,
+            4.1013,
+            4.5775,
+            5.53,
+            6.4825,
+            7.435,
+            8.3875,
+            9.34,
+            10.2925,
+            12.1975
+          ]
+        },
+        "guardrail_run_-1_-1": {
+          "rail_x_m": [
+            -42.406824,
+            -15.736824
+          ],
+          "post_count": 14,
+          "post_xy_m": [
+            [
+              -17.6418,
+              -6.6396
+            ],
+            [
+              -19.5468,
+              -6.6396
+            ],
+            [
+              -21.4518,
+              -6.6396
+            ],
+            [
+              -23.3568,
+              -6.6396
+            ],
+            [
+              -25.2618,
+              -6.6396
+            ],
+            [
+              -27.1668,
+              -6.6396
+            ],
+            [
+              -29.0718,
+              -6.6396
+            ],
+            [
+              -30.9768,
+              -6.6396
+            ],
+            [
+              -32.8818,
+              -6.6396
+            ],
+            [
+              -34.7868,
+              -6.6396
+            ],
+            [
+              -36.6918,
+              -6.6396
+            ],
+            [
+              -38.5968,
+              -6.6396
+            ],
+            [
+              -40.5018,
+              -6.6396
+            ],
+            [
+              -42.4068,
+              -6.6396
+            ]
+          ],
+          "post_d_from_tfc_m": [
+            14.1033,
+            16.0083,
+            17.9133,
+            19.8183,
+            21.7233,
+            23.6283,
+            25.5333,
+            27.4383,
+            29.3433,
+            31.2483,
+            33.1533,
+            35.0583,
+            36.9633,
+            38.8683
+          ]
+        },
+        "guardrail_end_-1_-1": {
+          "rail_x_m": [
+            -57.646824,
+            -42.406824
+          ],
+          "post_count": 8,
+          "post_xy_m": [
+            [
+              -44.3118,
+              -6.6396
+            ],
+            [
+              -46.2168,
+              -6.6396
+            ],
+            [
+              -48.1218,
+              -6.6396
+            ],
+            [
+              -50.0268,
+              -6.6396
+            ],
+            [
+              -51.9318,
+              -6.6396
+            ],
+            [
+              -53.8368,
+              -6.6396
+            ],
+            [
+              -55.7418,
+              -6.6396
+            ],
+            [
+              -57.2658,
+              -6.6396
+            ]
+          ],
+          "post_d_from_tfc_m": [
+            40.7733,
+            42.6783,
+            44.5833,
+            46.4883,
+            48.3933,
+            50.2983,
+            52.2033,
+            53.7273
+          ]
+        },
+        "guardrail_-1_1": {
+          "rail_x_m": [
+            14.968538,
+            27.928824
+          ],
+          "post_count": 17,
+          "post_xy_m": [
+            [
+              16.0218,
+              -6.6396
+            ],
+            [
+              16.498,
+              -6.6396
+            ],
+            [
+              16.9743,
+              -6.6396
+            ],
+            [
+              17.4505,
+              -6.6396
+            ],
+            [
+              17.9268,
+              -6.6396
+            ],
+            [
+              18.403,
+              -6.6396
+            ],
+            [
+              18.8793,
+              -6.6396
+            ],
+            [
+              19.3555,
+              -6.6396
+            ],
+            [
+              19.8318,
+              -6.6396
+            ],
+            [
+              20.308,
+              -6.6396
+            ],
+            [
+              21.2605,
+              -6.6396
+            ],
+            [
+              22.213,
+              -6.6396
+            ],
+            [
+              23.1655,
+              -6.6396
+            ],
+            [
+              24.118,
+              -6.6396
+            ],
+            [
+              25.0705,
+              -6.6396
+            ],
+            [
+              26.023,
+              -6.6396
+            ],
+            [
+              27.928,
+              -6.6396
+            ]
+          ],
+          "post_d_from_tfc_m": [
+            0.2913,
+            0.7675,
+            1.2438,
+            1.72,
+            2.1963,
+            2.6725,
+            3.1488,
+            3.625,
+            4.1013,
+            4.5775,
+            5.53,
+            6.4825,
+            7.435,
+            8.3875,
+            9.34,
+            10.2925,
+            12.1975
+          ]
+        },
+        "guardrail_end_-1_1": {
+          "rail_x_m": [
+            27.928824,
+            43.168824
+          ],
+          "post_count": 8,
+          "post_xy_m": [
+            [
+              29.8338,
+              -6.6396
+            ],
+            [
+              31.7388,
+              -6.6396
+            ],
+            [
+              33.6438,
+              -6.6396
+            ],
+            [
+              35.5488,
+              -6.6396
+            ],
+            [
+              37.4538,
+              -6.6396
+            ],
+            [
+              39.3588,
+              -6.6396
+            ],
+            [
+              41.2638,
+              -6.6396
+            ],
+            [
+              42.7878,
+              -6.6396
+            ]
+          ],
+          "post_d_from_tfc_m": [
+            14.1033,
+            16.0083,
+            17.9133,
+            19.8183,
+            21.7233,
+            23.6283,
+            25.5333,
+            27.0573
+          ]
+        }
+      }
+    },
+    "changed_parts": [
+      "wing_1_1",
+      "wing_1_-1",
+      "wing_2_-1",
+      "integral_bent_1",
+      "integral_bent_2",
+      "approach_1",
+      "approach_2",
+      "guardrail_1_-1",
+      "guardrail_1_1",
+      "guardrail_-1_-1",
+      "guardrail_-1_1"
+    ],
+    "added_parts": [
+      "guardrail_end_1_-1",
+      "guardrail_terminal_1_1",
+      "guardrail_run_-1_-1",
+      "guardrail_end_-1_-1",
+      "guardrail_end_-1_1"
+    ],
+    "removed_parts": [],
+    "part_count": 42,
+    "before_glb_sha256": "9836e74ac37d050cd42176495e72daf564ae2f4ed98210c59621052a50e3e615",
+    "after_glb_sha256": "e82e83b1b4715685a131c7fdb037655e911281d7d1f02239245ee0645909943e",
+    "before_manifest_sha256": "8efb637f705b15a05dfe3fb8347b225423787282f3ea12b4e2b4463736e71228"
   }
 }

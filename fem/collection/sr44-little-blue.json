@@ -11,8 +11,8 @@
   "drawing_sha256": "3a672d548a02175fd8d6a1a1d96d169987db015871901d797a6ad55bf64740fc",
   "source_hashes": {
     "drawing": "3a672d548a02175fd8d6a1a1d96d169987db015871901d797a6ad55bf64740fc",
-    "manifest": "8efb637f705b15a05dfe3fb8347b225423787282f3ea12b4e2b4463736e71228",
-    "model": "9836e74ac37d050cd42176495e72daf564ae2f4ed98210c59621052a50e3e615"
+    "manifest": "45d35d473a545fc095d6a5a7dc1552939251918e9decd09955cb3e6526759cd6",
+    "model": "e82e83b1b4715685a131c7fdb037655e911281d7d1f02239245ee0645909943e"
   },
   "sources": {
     "drawing": {
@@ -186,7 +186,7 @@
             "family": "pile"
           }
         ],
-        "top_z_m": 1.578161,
+        "top_z_m": 1.5776244999999678,
         "cap": {
           "cid": "integral_bent_1",
           "y0_m": -6.5532,
@@ -195,7 +195,7 @@
             "kind": "rectangle",
             "dimensions_m": [
               0.8636,
-              1.831954
+              1.830881
             ]
           }
         },
@@ -305,7 +305,7 @@
             "family": "pile"
           }
         ],
-        "top_z_m": 1.5363875,
+        "top_z_m": 1.536387499999986,
         "cap": {
           "cid": "integral_bent_2",
           "y0_m": -6.5532,
@@ -314,7 +314,7 @@
             "kind": "rectangle",
             "dimensions_m": [
               0.8636,
-              1.8337510000000004
+              1.833751
             ]
           }
         },
@@ -406,6 +406,11 @@
     "guardrail_-1_1",
     "guardrail_1_-1",
     "guardrail_1_1",
+    "guardrail_end_-1_-1",
+    "guardrail_end_-1_1",
+    "guardrail_end_1_-1",
+    "guardrail_run_-1_-1",
+    "guardrail_terminal_1_1",
     "joint_1",
     "joint_2",
     "wing_1_-1",

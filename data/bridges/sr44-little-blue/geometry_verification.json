@@ -1,11 +1,11 @@
 {
-  "component_count": 37,
+  "component_count": 42,
   "all_meshes_watertight": true,
   "all_volumes_positive": true,
   "exported_glb_reopened": true,
   "mesh_names_match_manifest": true,
   "maximum_bearing_contact_error_m": 0,
-  "glb_sha256": "9836e74ac37d050cd42176495e72daf564ae2f4ed98210c59621052a50e3e615",
+  "glb_sha256": "e82e83b1b4715685a131c7fdb037655e911281d7d1f02239245ee0645909943e",
   "source_pdf_sha256": "3a672d548a02175fd8d6a1a1d96d169987db015871901d797a6ad55bf64740fc",
   "contacts": [],
   "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation.",
@@ -41,6 +41,6 @@
     ],
     "primary_pages_valid": true
   },
-  "model_revision": "1.2-drawing-review-2",
+  "model_revision": "1.3-deviations",
   "refreshed_after_correction": "Generic checks re-run on the corrected GLB by scripts/refresh_geometry_verification.py; checks_at_build describe the model as first built."
 }
