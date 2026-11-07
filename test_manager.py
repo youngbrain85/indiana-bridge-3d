@@ -85,7 +85,7 @@ class CatalogTests(unittest.TestCase):
 
     def test_real_catalog_is_complete_and_idempotent(self):
         self.assertEqual(self.counts['bridges'], 21)
-        self.assertEqual(self.counts['components'], 6723)
+        self.assertEqual(self.counts['components'], 6726)
         self.assertEqual(import_all(self.db_path), self.counts)
         with connect(self.db_path) as db:
             self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
@@ -108,7 +108,7 @@ class CatalogTests(unittest.TestCase):
                 self.assertIn(part['group_id'], {g['id'] for g in data['groups']})
                 self.assertEqual(part['mesh_name'], part['source_id'])
                 self.assertGreater(len(part['basis']), 0)
-        self.assertEqual(len(seen), 6723)
+        self.assertEqual(len(seen), 6726)
 
     def test_map_only_records_and_complete_first_order(self):
         with self.get('/api/catalog') as r:
@@ -172,7 +172,7 @@ class CatalogTests(unittest.TestCase):
             snapshot = Path(self.temp.name) / 'export.sqlite3'
             snapshot.write_bytes(r.read())
         with sqlite3.connect(snapshot) as db:
-            self.assertEqual(db.execute('SELECT COUNT(*) FROM components').fetchone()[0], 6723)
+            self.assertEqual(db.execute('SELECT COUNT(*) FROM components').fetchone()[0], 6726)
 
     def test_javascript_mime_ignores_windows_registry(self):
         for path in ['/app.js', '/viewer.bundle.js', '/vendor/leaflet/leaflet.js']:

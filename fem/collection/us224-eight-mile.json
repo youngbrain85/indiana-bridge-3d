@@ -11,8 +11,8 @@
   "drawing_sha256": "1df89fdef9ac73f333ace80589aa645908cecf4fa6c11fc262c5a767ec9f5086",
   "source_hashes": {
     "drawing": "1df89fdef9ac73f333ace80589aa645908cecf4fa6c11fc262c5a767ec9f5086",
-    "manifest": "577b55d4c39db878982b862c8b202f2b29e274b7498bd9e883af19954e4a0747",
-    "model": "f17de4574e3b36acd99294fe7814195c81d44c163aae8e492cb9d7fb02336d50"
+    "manifest": "daa40216be56afc4317a5265287d6c2f47cbad2bd13add6a0f25e81f4db52f56",
+    "model": "fca5059995d5bca8d5e66dda9ece8f761e4b1679960443246361daf038ddc9e6"
   },
   "sources": {
     "drawing": {
@@ -37,6 +37,7 @@
       "pdf_pages": [
         8,
         9,
+        10,
         11
       ],
       "note": "Source-specific recipe transcribes manifest/source-ledger dimensions and original modeling script callouts. Native bounding-box centers locate axes only; bounding rectangles are not used as girder cross sections."
@@ -57,17 +58,17 @@
   ],
   "values": {
     "deck": {
-      "u0_m": -6.86435,
-      "u1_m": 6.86435,
+      "u0_m": -6.4592375,
+      "u1_m": 6.4592375,
       "y0_m": -7.112,
       "y1_m": 7.112,
-      "midplane_z_m": 4.450347,
+      "midplane_z_m": 4.448609,
       "thickness_m": 0.1905,
       "patches": [
         {
           "cid": "deck",
-          "u0_m": -6.86435,
-          "u1_m": 6.86435,
+          "u0_m": -6.4592375,
+          "u1_m": 6.4592375,
           "y0_m": -7.112,
           "y1_m": 7.112
         }
@@ -143,7 +144,7 @@
           ],
           "torsion_J_m4": 0.0185
         },
-        "centroid_z_m": 3.982063515426497
+        "centroid_z_m": 3.9803255154264976
       },
       {
         "cid": "beam_0_1",
@@ -210,7 +211,7 @@
           ],
           "torsion_J_m4": 0.0185
         },
-        "centroid_z_m": 3.982063515426497
+        "centroid_z_m": 3.9803255154264976
       },
       {
         "cid": "beam_0_2",
@@ -277,7 +278,7 @@
           ],
           "torsion_J_m4": 0.0185
         },
-        "centroid_z_m": 3.982063515426497
+        "centroid_z_m": 3.9803255154264976
       },
       {
         "cid": "beam_0_3",
@@ -344,7 +345,7 @@
           ],
           "torsion_J_m4": 0.0185
         },
-        "centroid_z_m": 3.982063515426497
+        "centroid_z_m": 3.9803255154264976
       },
       {
         "cid": "beam_0_4",
@@ -411,7 +412,7 @@
           ],
           "torsion_J_m4": 0.0185
         },
-        "centroid_z_m": 3.982063515426497
+        "centroid_z_m": 3.9803255154264976
       },
       {
         "cid": "beam_0_5",
@@ -478,7 +479,7 @@
           ],
           "torsion_J_m4": 0.0185
         },
-        "centroid_z_m": 3.982063515426497
+        "centroid_z_m": 3.9803255154264976
       }
     ],
     "supports": [
@@ -491,7 +492,7 @@
             "u_m": -6.2484,
             "y_m": 5.9055,
             "beam_y_m": 5.9055,
-            "z_m": 3.68501,
+            "z_m": 3.6850105,
             "area_m2": 0.24150000000000002,
             "integral": false
           },
@@ -552,7 +553,7 @@
             "thickness_m": 0.7112,
             "y0_m": -7.262,
             "y1_m": 7.262,
-            "bottom_z_m": 0.05
+            "bottom_z_m": 0.009144
           }
         ],
         "columns": [],
@@ -640,7 +641,7 @@
             "thickness_m": 0.7112,
             "y0_m": -7.262,
             "y1_m": 7.262,
-            "bottom_z_m": 0.05
+            "bottom_z_m": -0.01524
           }
         ],
         "columns": [],
@@ -689,8 +690,8 @@
     "mesh_step_y_m": 1.4,
     "continuity_units": [
       {
-        "u0_m": -6.86435,
-        "u1_m": 6.86435
+        "u0_m": -6.4592375,
+        "u1_m": 6.4592375
       }
     ]
   },
@@ -735,6 +736,9 @@
     "stem_2"
   ],
   "excluded_component_ids": [
+    "FC_railing_-1_-1",
+    "FC_railing_1_-1",
+    "FC_railing_1_1",
     "PCF_joint_-1",
     "PCF_joint_1",
     "TFC_transition_-1_-1",

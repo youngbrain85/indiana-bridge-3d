@@ -3,7 +3,7 @@
   "spans_m": [
     12.4968
   ],
-  "deck_length_m": 13.7287,
+  "deck_length_m": 12.918475,
   "deck_width_m": 14.224,
   "deck_thickness_m": 0.24130000000000001,
   "structural_deck_thickness_m": 0.1905,
@@ -407,5 +407,10 @@
       "part_ids": []
     }
   ],
-  "notes_after_review": "Transverse coordinates (and, for a wholly reflected model, the skew sign) were mirrored to follow the 2026-11 drawing-review correction of model.glb, which put the bridge on its drawn side."
+  "notes_after_review": "Transverse coordinates (and, for a wholly reflected model, the skew sign) were mirrored to follow the 2026-11 drawing-review correction of model.glb, which put the bridge on its drawn side.",
+  "floor_length_out_to_out_m": 13.7287,
+  "deck_slab_end_u_m": [
+    -6.453738,
+    6.464737
+  ]
 }

@@ -890,6 +890,29 @@ Two items are deferred and recorded in `known_deviations`. The first is the over
 
 `scripts/correct_us224_eight_mile_review_2.py` reproduces the correction from revision 1.1 and is idempotent. It refuses to run unless the model is the revision 1.1 GLB. The record, a note on the revision 1.1 coordinate frame and the before/after SHA-256 are in `model_manifest.json`. The display model and the inspection sheets must be rebuilt from the corrected GLB.
 
+#### Third round: known deviations
+
+Revision 1.3 resolves three of the five deviations left by revision 1.2 and decides one. Two independent checks
+then led to two further passes.
+
+- **Floor end.** The deck now ends at the PCF joint, as sheets 10 and 11 show. Between that joint and the Type I-A
+  joint at the floor end is the 1 ft 0 in reconstructed mudwall, flush with the overlay. The joint is 2 in wide at
+  Abutment 1 and 1 5/8 in at Abutment 2. It turns up 6 in into each railing toe. Over the last 1 ft of the deck the
+  overlay dam reaches 5 5/8 in below the surface.
+- **Railings.** Three new Type FC railings follow sheet 12. The northwest and southeast TFCs and their extensions
+  move about 1.4 m outward. All three transitions have square ends. The extensions reach 2 in beyond the railing back
+  face. The retained railings now have the drawn FC section.
+- **Wings.** Wings A and D follow the 1985 Elevation F-F, with a root leg, a kink and a battered wall, and are cut
+  down under the extensions. Wings B and C start at the coping corner on the abutment front face, as the 1985 plan
+  shows. Their rear face has a 1:12 batter.
+- **Abutments.** The caps, stems and footings now follow the 1985 Section A-A. The footings are 2 ft thick at
+  El. 817.03 and 816.95, and the stems and wings stand on them. The bearing pads lie along the bearing line.
+
+Three items are still recorded in `known_deviations`: the overlay taper at the mid-span drains, the size of the
+paired bearing pads, and the old wingwall root behind the northeast mudwall. None of them is dimensioned in the set.
+Three parts were added and 39 changed, for 94 parts. The source ledger deck length is now the 12.918 m slab between
+the joints. `scripts/correct_us224_eight_mile_review_3.py` reproduces the change from revision 1.2 and is idempotent.
+
 ### Virginia Avenue over I-65 NB / I-70 EB (`virginia-avenue`)
 
 #### 1. Plan side, crown, rails, approaches and end cross-frames (revision 1.1)
