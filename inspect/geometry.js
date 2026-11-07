@@ -157,3 +157,33 @@ export function round(points, digits = 5) {
   const f = 10 ** digits;
   return points.map(p => p.map(c => Math.round(c * f) / f));
 }
+
+const dot = (a, b) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+
+// A path in one view's coordinates, in another view's coordinates. Both views must look the same way (equal
+// normals): each point goes to the world plane of `from` and is projected onto the plane of `to`.
+export function remapToView(path, from, to) {
+  const [ex, ey] = to.extent_m;
+  return path.map(uv => {
+    const p = planePoint(uv, from), d = [0, 1, 2].map(k => p[k] - to.origin[k]);
+    return [Math.round(dot(d, to.u) / ex * 1e5) / 1e5, Math.round(dot(d, to.v) / ey * 1e5) / 1e5];
+  });
+}
+
+// The current sheet and view of a defect. View frames never move under a view id: when a rebuild of the sheets
+// changes a view, the old frame is kept in catalog.retired_views with the view that replaces it. A defect drawn on
+// a retired view is returned on its replacement, with its path mapped (the stored record is left as it is).
+export function currentView(d, catalog) {
+  const find = id => { for (const sheet of catalog.sheets) { const view = sheet.views.find(v => v.id === id); if (view) return { sheet, view }; } return null; };
+  const here = catalog.sheets.find(s => s.id === d.sheet_id)?.views.find(v => v.id === d.view_id);
+  if (here) return { defect: d, view: here };
+  const moved = find(d.view_id);
+  if (moved) return { defect: { ...d, sheet_id: moved.sheet.id }, view: moved.view };
+  const retired = catalog.retired_views || {};
+  let from = retired[d.view_id], id = from?.replaced_by;
+  for (let hops = 0; id && retired[id] && hops < 20; hops++) id = retired[id].replaced_by;
+  const next = id && find(id);
+  if (!from || !next) return { defect: d, view: null, frame: from || null };
+  return { defect: { ...d, sheet_id: next.sheet.id, view_id: next.view.id, path: remapToView(d.path, from, next.view) },
+    view: next.view, remapped: d.view_id };
+}

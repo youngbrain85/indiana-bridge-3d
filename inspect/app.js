@@ -1,7 +1,7 @@
 // Inspection app: record defects on the bridge's inspection sheets, with AASHTO element/defect codes,
 // condition states, quantities and photos. Saved on the device first; synced to Supabase when set up.
 import { CS_COLORS, CS_NAMES, DEFECTS, ELEMENT_DEFECTS, FIELDS, MATERIAL_ORDER, suggestCS } from './catalog.js';
-import { FT, assignView, elementFor, maxDimM, planePoint, quantityFor, round, toCanvas, toView, viewRect } from './geometry.js';
+import { FT, assignView, currentView, elementFor, maxDimM, planePoint, quantityFor, round, toCanvas, toView, viewRect } from './geometry.js';
 import { SheetCanvas } from './sheet.js';
 import * as store from './store.js';
 import { preparePhoto, photoURL } from './photos.js';
@@ -90,7 +90,8 @@ async function loadInspections(selectId) {
 }
 
 async function loadDefects() {
-  state.defects = state.inspection ? await store.defects(state.inspection.id) : [];
+  // Defects drawn on a view that a rebuild of the sheets retired are shown on its replacement (geometry.js).
+  state.defects = (state.inspection ? await store.defects(state.inspection.id) : []).map(d => currentView(d, state.catalog).defect);
   // Numbers of deleted defects are not reused.
   state.allNumbers = state.inspection ? (await store.all('defects', 'inspection_id', state.inspection.id)).map(d => d.number) : [];
   const photos = state.inspection ? await store.inspectionPhotos(state.inspection.id) : [];

@@ -321,11 +321,12 @@ class BridgeViewer {
     this.camera.position.copy(center).add(new THREE.Vector3(1,.6,1).normalize().multiplyScalar(radius*3));this.controls.target.copy(center);this.controls.update();this.render();
   }
   // Defects drawn on inspection sheets. Each sketch point maps to the view plane (sheets.json "mapping"); a ray
-  // along -normal then finds the recorded member's surface, so the defect sits on the real face in 3D.
+  // along -normal then finds the recorded member's surface, so the defect sits on the real face in 3D. A defect on a
+  // view that a later sheet build retired is placed with the retired frame it was drawn on.
   clearDefects(){for(const o of [...this.defectGroup.children]){o.traverse(n=>{n.geometry?.dispose();n.material?.map?.dispose();n.material?.dispose();});this.defectGroup.remove(o);}this.defectBoxes=new Map();}
   setDefects(defects,catalog){this.clearDefects();if(!catalog)return 0;
     const byName=new Map([...this.meshes.values()].map(m=>[m.name,m])),ray=new THREE.Raycaster();let placed=0;
-    for(const d of defects){const sheet=catalog.sheets.find(s=>s.id===d.sheet_id),view=sheet?.views.find(v=>v.id===d.view_id);const own=byName.get(d.part);if(!view||!own)continue;
+    for(const d of defects){const sheet=catalog.sheets.find(s=>s.id===d.sheet_id),view=sheet?.views.find(v=>v.id===d.view_id)||catalog.retired_views?.[d.view_id];const own=byName.get(d.part);if(!view||!own)continue;
       const N=new THREE.Vector3(...view.normal),back=N.clone().negate(),others=view.parts.map(n=>byName.get(n)).filter(m=>m&&m!==own);
       const onSurface=uv=>{ray.set(new THREE.Vector3(...planePoint(uv,view)),back);const hit=ray.intersectObject(own,false)[0]||ray.intersectObjects(others,false)[0];return hit?hit.point.addScaledVector(N,.012):null;};
       const colour=new THREE.Color(CS_COLORS[d.cs]||'#6b7378'),group=new THREE.Group();group.userData.defect=d.id;
