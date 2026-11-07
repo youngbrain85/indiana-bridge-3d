@@ -106,6 +106,39 @@ used.
 `scripts/correct_21st_street_i465_review_2.py` reproduces the correction from revision 1.1 and is idempotent. The
 record and the before/after SHA-256 are in `model_manifest.json`.
 
+#### Third round: known deviations
+
+One known deviation was left after the second round. The sheet 54 bearing detail draws the edge of the Bent 2
+diaphragm 3 in inside the cap face. Section V-V on sheet 57 draws it flush. We kept the flush faces. The sheet 54 line
+has no dimension, and sheet 58 gives a 3'-8" stirrup with 2 in of cover, which needs exactly the 4'-0" flush width.
+
+Two independent checks then found faults at the end bents, and the drawings settle all of them.
+
+- **Cap tops.** Sheet 42 gives each cap three level terraces with steps 9'-7 3/4" either side of CL Structure. The
+  model had sloping tops, so pads floated or dug in by up to 14.6 mm.
+- **Cap ends.** Sheet 42 draws the cap ends parallel to Line M. The model had them square.
+- **Pads.** Sheet 54 gives the end-bent pads as 13/16 in thick, not 1 3/16 in. Sheet 42 places them 1'-1 1/2"
+  either side of the beam centreline along the bent.
+- **End diaphragms.** Sheet 58 gives them as 3'-0" wide, flush with the caps. In the model they were narrower,
+  dipped into the caps, encased the pads and overlapped the approach slabs.
+
+We rebuilt the caps and pads as drawn. The six beams now bear 3/8 in lower at the end bents, and the drop tapers to
+nothing at the Bent 2 diaphragm. Their end blocks, cross frames and access doors moved with them. The haunches got
+thicker, and the deck did not move. The end diaphragms were refitted: they are 3 ft wide, sit on the cap terraces,
+leave the pad layer under each beam open, and carry the approach-slab ledge. Every end-bent pad now sits on level
+concrete with no gap or overlap, and nothing at Bent 2 changed.
+
+| Corrected object | Count | Before | After | Evidence |
+|---|---:|---|---|---|
+| End-bent caps `bent_1_cap`, `bent_3_cap` | 2 | Ridge tops, square ends | Level terraces 761.53/761.82/761.36 and 761.04/761.51/761.23, steps at 9'-7 3/4", ends parallel to Line M | Sheet 42 plan and elevation |
+| End-bent pads | 12 | 1 3/16 in thick, 2'-4 3/8" apart along the bent | 13/16 in thick, 2'-3" apart along the bent | Sheet 54 pad table, sheet 42 plan |
+| Span beams with end blocks, cross frames, access doors; haunch bottoms | 186 (6 beams) | Bearing at cap + 1 3/16 in | 3/8 in lower at the end bents, unchanged at Bent 2 | Sheet 54 |
+| End diaphragms `diaphragm_west`, `diaphragm_east` | 2 | 2'-10 1/4" wide, 80-220 mm into the caps, pads encased | 3'-0" flush with the caps, on the terraces, pad layer open, approach ledge | Sheet 58 C-C, D-D; sheet 42 |
+| Bent 2 diaphragm `diaphragm_pier` | 0 | Flush faces (open deviation) | Flush faces (decision recorded) | Sheets 45, 54, 57, 58 |
+
+The model has no known deviations left. `scripts/correct_21st_street_i465_review_3.py` runs after the second script
+and is idempotent.
+
 ### US 421 over South Fork Wildcat Creek (`us421-wildcat`)
 
 #### 1. External review corrections (revision 1.1)
