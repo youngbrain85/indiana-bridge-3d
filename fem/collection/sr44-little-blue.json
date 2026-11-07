@@ -11,8 +11,8 @@
   "drawing_sha256": "3a672d548a02175fd8d6a1a1d96d169987db015871901d797a6ad55bf64740fc",
   "source_hashes": {
     "drawing": "3a672d548a02175fd8d6a1a1d96d169987db015871901d797a6ad55bf64740fc",
-    "manifest": "6fddf8094728de9f0d57cb65b26ea24cea56fec6705b8b5be3d6c526d8517ad3",
-    "model": "8542b9701fbfbdfa7dff9494c8395403a3002e0727dfbbb96d967d5124fe6d15"
+    "manifest": "8efb637f705b15a05dfe3fb8347b225423787282f3ea12b4e2b4463736e71228",
+    "model": "9836e74ac37d050cd42176495e72daf564ae2f4ed98210c59621052a50e3e615"
   },
   "sources": {
     "drawing": {
@@ -35,12 +35,14 @@
       "status": "source-based geometry with explicit idealizations",
       "source": "drawing",
       "pdf_pages": [
+        11,
         12,
         13,
         14,
         15,
         16,
-        17
+        17,
+        18
       ],
       "note": "Source-specific recipe transcribes manifest/source-ledger dimensions and original modeling script callouts. Native bounding-box centers locate axes only; bounding rectangles are not used as girder cross sections."
     },
@@ -64,7 +66,7 @@
       "u1_m": 4.8593375000000005,
       "y0_m": -6.5532,
       "y1_m": 6.5532,
-      "midplane_z_m": 2.771765,
+      "midplane_z_m": 2.753415,
       "thickness_m": 0.49529999999999996,
       "patches": [
         {
@@ -184,7 +186,7 @@
             "family": "pile"
           }
         ],
-        "top_z_m": 1.529741,
+        "top_z_m": 1.578161,
         "cap": {
           "cid": "integral_bent_1",
           "y0_m": -6.5532,
@@ -193,7 +195,7 @@
             "kind": "rectangle",
             "dimensions_m": [
               0.8636,
-              1.7351140000000003
+              1.831954
             ]
           }
         },
@@ -303,7 +305,7 @@
             "family": "pile"
           }
         ],
-        "top_z_m": 1.495785,
+        "top_z_m": 1.5363875,
         "cap": {
           "cid": "integral_bent_2",
           "y0_m": -6.5532,
@@ -312,7 +314,7 @@
             "kind": "rectangle",
             "dimensions_m": [
               0.8636,
-              1.7525460000000002
+              1.8337510000000004
             ]
           }
         },

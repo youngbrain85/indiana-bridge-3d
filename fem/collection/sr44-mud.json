@@ -11,8 +11,8 @@
   "drawing_sha256": "6e9fba4786bc8c1d05073a8bdcaf0b2c66216bdfffb22ac2e469541773142bf8",
   "source_hashes": {
     "drawing": "6e9fba4786bc8c1d05073a8bdcaf0b2c66216bdfffb22ac2e469541773142bf8",
-    "manifest": "3143f536fabcace955ed5eb34c0a427690b7a3c2ec03e82c25297ce8842fa0b0",
-    "model": "89a01751638da26aa01435b06b2830fa45c082082ae63d307824fa3f9a8aafb4"
+    "manifest": "ec189f04f53072ddc00d75c005697047e81c13d20c91a07aa033ebda27396bc2",
+    "model": "ee8b7d75fdad9ed43ea97c56a26d1e00a86b8e07face7b70d6e32fdf8e049b29"
   },
   "sources": {
     "drawing": {
@@ -647,8 +647,8 @@
         "top_z_m": 5.576316,
         "cap": {
           "cid": "cap_2",
-          "y0_m": -7.184273,
-          "y1_m": 7.184273,
+          "y0_m": -7.081519,
+          "y1_m": 7.081519,
           "section": {
             "kind": "rectangle",
             "dimensions_m": [
@@ -745,8 +745,8 @@
         "top_z_m": 5.628132,
         "cap": {
           "cid": "cap_3",
-          "y0_m": -7.184273,
-          "y1_m": 7.184273,
+          "y0_m": -7.081519,
+          "y1_m": 7.081519,
           "section": {
             "kind": "rectangle",
             "dimensions_m": [

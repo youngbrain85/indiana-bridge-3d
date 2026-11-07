@@ -11,8 +11,8 @@
   "drawing_sha256": "19f804e4efc37cb14f0515fdffe4e359e3229046ae88eda3b8227144ac7993e9",
   "source_hashes": {
     "drawing": "19f804e4efc37cb14f0515fdffe4e359e3229046ae88eda3b8227144ac7993e9",
-    "manifest": "483869f1c35dfebfe6bdf4729990513e6490b2ac0fc3bb757faff657a847a9e5",
-    "model": "2e5127f67b41fd607d8ad5875a550eab9bf9d08d87154b18625b3849c965368b"
+    "manifest": "fee0caa94937dcfafaebc8c9794b0b60b762172b951f1e521b4583da1d2e4a1e",
+    "model": "f45a9ed171f9f426d95c3ae2d2a6df18be16f51efa02d9a30d92e2ff0f80e041"
   },
   "sources": {
     "drawing": {
@@ -35,6 +35,7 @@
       "status": "source-based geometry with explicit idealizations",
       "source": "drawing",
       "pdf_pages": [
+        11,
         24,
         28,
         29,
@@ -43,8 +44,11 @@
         32,
         33,
         34,
+        36,
         37,
-        59
+        59,
+        61,
+        62
       ],
       "note": "Source-specific recipe transcribes manifest/source-ledger dimensions and original modeling script callouts. Native bounding-box centers locate axes only; bounding rectangles are not used as girder cross sections."
     },
@@ -842,7 +846,7 @@
           }
         ],
         "columns": [],
-        "top_z_m": 6.19694
+        "top_z_m": 6.27685
       },
       {
         "u_m": -20.040599999999998,
@@ -973,7 +977,7 @@
             "u_m": 3.552713678800501e-15,
             "y_m": -7.113,
             "beam_y_m": -7.113,
-            "z_m": 5.8837399999999995,
+            "z_m": 5.965,
             "area_m2": 0.20400000000000001,
             "integral": false
           },
@@ -983,7 +987,7 @@
             "u_m": 3.552713678800501e-15,
             "y_m": -5.08,
             "beam_y_m": -5.08,
-            "z_m": 5.9444,
+            "z_m": 5.965,
             "area_m2": 0.20400000000000001,
             "integral": false
           },
@@ -993,7 +997,7 @@
             "u_m": 3.552713678800501e-15,
             "y_m": -3.556,
             "beam_y_m": -3.556,
-            "z_m": 5.97488,
+            "z_m": 5.965,
             "area_m2": 0.20400000000000001,
             "integral": false
           },
@@ -1003,7 +1007,7 @@
             "u_m": 3.552713678800501e-15,
             "y_m": -1.778,
             "beam_y_m": -1.778,
-            "z_m": 6.01044,
+            "z_m": 6.009,
             "area_m2": 0.20400000000000001,
             "integral": false
           },
@@ -1013,7 +1017,7 @@
             "u_m": 3.552713678800501e-15,
             "y_m": 0,
             "beam_y_m": 0,
-            "z_m": 6.046,
+            "z_m": 6.009,
             "area_m2": 0.20400000000000001,
             "integral": false
           },
@@ -1023,7 +1027,7 @@
             "u_m": 3.552713678800501e-15,
             "y_m": 1.778,
             "beam_y_m": 1.778,
-            "z_m": 6.01044,
+            "z_m": 6.009,
             "area_m2": 0.20400000000000001,
             "integral": false
           },
@@ -1033,7 +1037,7 @@
             "u_m": 3.552713678800501e-15,
             "y_m": 3.556,
             "beam_y_m": 3.556,
-            "z_m": 5.97488,
+            "z_m": 5.965,
             "area_m2": 0.20400000000000001,
             "integral": false
           },
@@ -1043,7 +1047,7 @@
             "u_m": 3.552713678800501e-15,
             "y_m": 5.08,
             "beam_y_m": 5.08,
-            "z_m": 5.9444,
+            "z_m": 5.965,
             "area_m2": 0.20400000000000001,
             "integral": false
           },
@@ -1053,7 +1057,7 @@
             "u_m": 3.552713678800501e-15,
             "y_m": 7.113,
             "beam_y_m": 7.113,
-            "z_m": 5.8837399999999995,
+            "z_m": 5.965,
             "area_m2": 0.20400000000000001,
             "integral": false
           }
@@ -1335,7 +1339,7 @@
           }
         ],
         "columns": [],
-        "top_z_m": 6.19694
+        "top_z_m": 6.27685
       }
     ],
     "bearing_horizontal_Npm": 10000000.0,
@@ -1471,6 +1475,7 @@
     "B2_seat_5",
     "B2_seat_6",
     "B2_seat_8",
+    "B3_seat_0",
     "B3_seat_1",
     "B3_seat_2",
     "B3_seat_3",
@@ -1478,6 +1483,7 @@
     "B3_seat_5",
     "B3_seat_6",
     "B3_seat_7",
+    "B3_seat_8",
     "B4_seat_0",
     "B4_seat_2",
     "B4_seat_3",

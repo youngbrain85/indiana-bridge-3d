@@ -11,8 +11,8 @@
   "drawing_sha256": "a3520ca96c85e5df175164477f26620dc04d6a5e1a25fe9fbb68061174c09775",
   "source_hashes": {
     "drawing": "a3520ca96c85e5df175164477f26620dc04d6a5e1a25fe9fbb68061174c09775",
-    "manifest": "fc2def5c94f6918fed697512f44117f1d583308719a2573dd2f2f94b7eea875c",
-    "model": "2c4913fcc52f04e580ae84fc283025f74defe256262f7bb7936308ffe0df3cb8"
+    "manifest": "0be41fac45c85affff68dca0792f9733c41806d95f8827ddf63dc80a5fc683e7",
+    "model": "e73cf93a482cc3f0f8a67ecbefd0941100d56078c5c2b253548bf63058b2effe"
   },
   "sources": {
     "drawing": {
