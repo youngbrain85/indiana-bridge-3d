@@ -491,7 +491,7 @@
         "render_glb": "bridges/minnich-road/model_render.glb",
         "deck_length_m": 126.4793,
         "spans": 4,
-        "components": 476,
+        "components": 466,
         "revision": "2026 proposed rehabilitation exterior reconstruction v1",
         "scope": "Whole crossing exterior reconstruction with documented approximation boundaries; see coverage and component basis.",
         "detail_status": "needs_detail",

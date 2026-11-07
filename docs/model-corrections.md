@@ -643,6 +643,29 @@ overlap of the diaphragm tops with the deck soffit is the chord error of the thr
 curve, and all 32 haunches show it too (0.9-5.4 mm). The end-bent X frames and the PVI offset remain recorded known
 deviations.
 
+#### Third round: known deviations
+
+Four known deviations of revision 1.1 were closed from the drawings in revision 1.3.
+
+- **Grade.** The PVI is now at Bent 3, as sheet 16 shows. That moves every part by a straight-line amount of up to
+  26 mm. The model matches the drawn elevations on sheets 23 and 44 within 0.01 ft.
+- **Fillet.** At the end bents the girders sit 2 in below the deck, as Section X-X shows. The raise fades out at the
+  field splices. That transition is our decision, because the drawings give the fillet only at the end bents.
+- **Bearings and caps.** The end bearings use the sheet 34 plates and shims, so they land on the drawn cap levels. The
+  end-bent caps are 3 ft 6 in wide, with the drawn flat and stepped tops. The 14 end-bent pedestals were removed.
+- **Mudwalls and approach slabs.** The new mudwalls follow Section A-A and sit 3 in behind the deck. Their ends return
+  toward the wingwalls as sheet 23 draws them. The approach slabs rest on the mudwall ledge, with their road ends at
+  the drawn 20 ft 6 in and their corners turned onto the returns. The four approach-slab extensions along the
+  wingwalls were added. The deck corners stop 3 in from the returns.
+- **End-bent frames.** The twelve steel frames that stood inside the end diaphragms are now the drawn MC 18x42.7
+  channel diaphragms nearest each end bent. Their heights follow sheet 33. They keep their ids for the FEM
+  demonstration. Its supports now come from the corrected caps; this changes the results by less than 0.1 %.
+- **Stiffeners.** The Bent 5 bearing stiffeners were 1/8 in too tall and now sit on their 1 1/8 in flange.
+- **Still open.** One deviation is kept: the existing wingwalls, which carry the slab extensions, are not modelled,
+  because their plans are not in this set.
+
+The model has 466 parts. `scripts/correct_minnich_road_review_3.py` reproduces the change.
+
 ### Fletcher Avenue over I-65 / I-70 (`fletcher-avenue`)
 
 #### Fletcher Avenue over I-65 / I-70 (revision 1.1)
