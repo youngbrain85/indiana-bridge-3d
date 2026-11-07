@@ -84,7 +84,7 @@ class CatalogTests(unittest.TestCase):
 
     def test_real_catalog_is_complete_and_idempotent(self):
         self.assertEqual(self.counts['bridges'], 21)
-        self.assertEqual(self.counts['components'], 6622)
+        self.assertEqual(self.counts['components'], 6614)
         self.assertEqual(import_all(self.db_path), self.counts)
         with connect(self.db_path) as db:
             self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0], 'ok')
@@ -107,7 +107,7 @@ class CatalogTests(unittest.TestCase):
                 self.assertIn(part['group_id'], {g['id'] for g in data['groups']})
                 self.assertEqual(part['mesh_name'], part['source_id'])
                 self.assertGreater(len(part['basis']), 0)
-        self.assertEqual(len(seen), 6622)
+        self.assertEqual(len(seen), 6614)
 
     def test_map_only_records_and_complete_first_order(self):
         with self.get('/api/catalog') as r:
@@ -171,7 +171,7 @@ class CatalogTests(unittest.TestCase):
             snapshot = Path(self.temp.name) / 'export.sqlite3'
             snapshot.write_bytes(r.read())
         with sqlite3.connect(snapshot) as db:
-            self.assertEqual(db.execute('SELECT COUNT(*) FROM components').fetchone()[0], 6622)
+            self.assertEqual(db.execute('SELECT COUNT(*) FROM components').fetchone()[0], 6614)
 
     def test_javascript_mime_ignores_windows_registry(self):
         for path in ['/app.js', '/viewer.bundle.js', '/vendor/leaflet/leaflet.js']:
@@ -259,6 +259,15 @@ class CatalogTests(unittest.TestCase):
                             self.assertTrue(-1e-6 <= u <= 1 + 1e-6 and -1e-6 <= v <= 1 + 1e-6, view['id'])
             with self.get(f'/inspection/beechwood/{sheet["svg"]}') as r:
                 self.assertEqual(r.headers['Content-Type'], 'image/svg+xml')
+        # Recorded defects keep the coordinates of the view they were drawn on: a view that changed was given a
+        # new id, and the old frame is kept with the current view that replaces it.
+        current = {v['id']: v for s in sheets['sheets'] for v in s['views']}
+        for vid, old in sheets.get('retired_views', {}).items():
+            self.assertNotIn(vid, current)
+            for key in ('origin', 'u', 'v', 'normal', 'extent_m', 'parts', 'sheet_id'):
+                self.assertIn(key, old, vid)
+            self.assertIn(old['replaced_by'], current, vid)
+            self.assertEqual(old['normal'], current[old['replaced_by']]['normal'], vid)
         with self.get('/api/bridges/beechwood') as r:
             self.assertEqual(json.load(r)['inspection'], {'sheets_url': '/inspection/beechwood/sheets.json', 'app_url': '/inspect#beechwood'})
         with self.get('/inspection/beechwood/sheets.json') as r:

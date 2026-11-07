@@ -4828,21 +4828,25 @@
         24
       ],
       "basis": "Dimensioned envelope; embedded interfaces simplified",
-      "note": "Concrete envelope includes embedded beam ends. Individual reinforcement, sleeves and internal voids are excluded.",
-      "dimensions": {},
+      "note": "Concrete envelope includes embedded beam ends and bearing pads; the 1/2 in clearance pockets around the pads, reinforcement, sleeves and internal voids are excluded. Underside follows the stepped cap top with the 1/2 in expanded polystyrene horizontal joint (sheet 24 Sections A-A/B-B, sheet 23 elevation). 6 in pavement ledge on the rear face, its top 1 ft 2 in below the road surface (sheets 23, 24, 33).",
+      "dimensions": {
+        "isolation_joint_in": 0.5,
+        "pavement_ledge_in": 6,
+        "ledge_depth_below_surface_in": 14
+      },
       "bounds_m": [
         [
-          -24.923949,
+          -25.076349,
           -7.0866,
           5.886196
         ],
         [
-          -20.503951,
+          -20.503952,
           7.0866,
           6.867493
         ]
       ],
-      "volume_m3": 7.889100523
+      "volume_m3": 9.150650443
     },
     {
       "id": "wing_1_-1",
@@ -4854,20 +4858,21 @@
         23
       ],
       "basis": "Dimensioned width and length; interpolated top",
-      "note": "Wing station offsets and retained lower joint are simplified; 1-in separation from the deck fascia is retained.",
+      "note": "Wing station offsets and retained lower joint are simplified. Moved 1/2 in outward: 1 in expansion joint material between the wing and the end diaphragm (sheet 14 plan and Section C-C; sheet 23).",
       "dimensions": {
         "length_ft": 8.25,
-        "concrete_thickness_in": 11
+        "concrete_thickness_in": 11,
+        "isolation_joint_in": 1
       },
       "bounds_m": [
         [
-          -25.980784,
-          -7.3787,
+          -25.980783,
+          -7.3914,
           5.111496
         ],
         [
-          -23.466184,
-          -7.0993,
+          -23.466185,
+          -7.112,
           6.921449
         ]
       ],
@@ -4883,20 +4888,21 @@
         23
       ],
       "basis": "Dimensioned width and length; interpolated top",
-      "note": "Wing station offsets and retained lower joint are simplified; 1-in separation from the deck fascia is retained.",
+      "note": "Wing station offsets and retained lower joint are simplified. Moved 1/2 in outward: 1 in expansion joint material between the wing and the end diaphragm (sheet 14 plan and Section C-C; sheet 23).",
       "dimensions": {
         "length_ft": 8.25,
-        "concrete_thickness_in": 11
+        "concrete_thickness_in": 11,
+        "isolation_joint_in": 1
       },
       "bounds_m": [
         [
           -22.101416,
-          7.0993,
+          7.112,
           5.111496
         ],
         [
-          -19.586816,
-          7.3787,
+          -19.586815,
+          7.3914,
           6.946935
         ]
       ],
@@ -4914,24 +4920,25 @@
         24
       ],
       "basis": "Approximate retained geometry from existing drawings",
-      "note": "Step boundaries and cap end corners are simplified. Primary plans explicitly call existing concrete dimensions approximate.",
+      "note": "Cap ends are 1 ft 6 in radius semicircles (sheet 16 cap plan; original 1980 sheet 11 \"1'-6 Radius\"); step boundaries are simplified. Primary plans explicitly call existing concrete dimensions approximate.",
       "dimensions": {
         "length_along_skew_ft": 48,
-        "width_ft": 3.0
+        "width_ft": 3.0,
+        "end_radius_ft": 1.5
       },
       "bounds_m": [
         [
-          -9.954934,
-          -7.184273,
+          -9.852181,
+          -7.081519,
           5.065776
         ],
         [
-          -5.285066,
-          7.184273,
+          -5.387819,
+          7.081519,
           6.086856
         ]
       ],
-      "volume_m3": 12.713910159
+      "volume_m3": 12.547017413
     },
     {
       "id": "pier_2_wall",
@@ -5584,24 +5591,25 @@
         24
       ],
       "basis": "Approximate retained geometry from existing drawings",
-      "note": "Step boundaries and cap end corners are simplified. Primary plans explicitly call existing concrete dimensions approximate.",
+      "note": "Cap ends are 1 ft 6 in radius semicircles (sheet 16 cap plan; original 1980 sheet 11 \"1'-6 Radius\"); step boundaries are simplified. Primary plans explicitly call existing concrete dimensions approximate.",
       "dimensions": {
         "length_along_skew_ft": 48,
-        "width_ft": 3.0
+        "width_ft": 3.0,
+        "end_radius_ft": 1.5
       },
       "bounds_m": [
         [
-          5.285066,
-          -7.184273,
+          5.387819,
+          -7.081519,
           5.12064
         ],
         [
-          9.954934,
-          7.184273,
+          9.852181,
+          7.081519,
           6.135624
         ]
       ],
-      "volume_m3": 12.632357641
+      "volume_m3": 12.466570166
     },
     {
       "id": "pier_3_wall",
@@ -6535,21 +6543,25 @@
         24
       ],
       "basis": "Dimensioned envelope; embedded interfaces simplified",
-      "note": "Concrete envelope includes embedded beam ends. Individual reinforcement, sleeves and internal voids are excluded.",
-      "dimensions": {},
+      "note": "Concrete envelope includes embedded beam ends and bearing pads; the 1/2 in clearance pockets around the pads, reinforcement, sleeves and internal voids are excluded. Underside follows the stepped cap top with the 1/2 in expanded polystyrene horizontal joint (sheet 24 Sections A-A/B-B, sheet 23 elevation). 6 in pavement ledge on the rear face, its top 1 ft 2 in below the road surface (sheets 23, 24, 33).",
+      "dimensions": {
+        "isolation_joint_in": 0.5,
+        "pavement_ledge_in": 6,
+        "ledge_depth_below_surface_in": 14
+      },
       "bounds_m": [
         [
-          20.503951,
+          20.503952,
           -7.0866,
           6.044692
         ],
         [
-          24.923949,
+          25.076349,
           7.0866,
           6.986228
         ]
       ],
-      "volume_m3": 7.647044354
+      "volume_m3": 8.862080233
     },
     {
       "id": "wing_4_-1",
@@ -6561,20 +6573,21 @@
         23
       ],
       "basis": "Dimensioned width and length; interpolated top",
-      "note": "Wing station offsets and retained lower joint are simplified; 1-in separation from the deck fascia is retained.",
+      "note": "Wing station offsets and retained lower joint are simplified. Moved 1/2 in outward: 1 in expansion joint material between the wing and the end diaphragm (sheet 14 plan and Section C-C; sheet 23).",
       "dimensions": {
         "length_ft": 8.25,
-        "concrete_thickness_in": 11
+        "concrete_thickness_in": 11,
+        "isolation_joint_in": 1
       },
       "bounds_m": [
         [
-          19.586816,
-          -7.3787,
+          19.586815,
+          -7.3914,
           5.239512
         ],
         [
           22.101416,
-          -7.0993,
+          -7.112,
           7.050745
         ]
       ],
@@ -6590,20 +6603,21 @@
         23
       ],
       "basis": "Dimensioned width and length; interpolated top",
-      "note": "Wing station offsets and retained lower joint are simplified; 1-in separation from the deck fascia is retained.",
+      "note": "Wing station offsets and retained lower joint are simplified. Moved 1/2 in outward: 1 in expansion joint material between the wing and the end diaphragm (sheet 14 plan and Section C-C; sheet 23).",
       "dimensions": {
         "length_ft": 8.25,
-        "concrete_thickness_in": 11
+        "concrete_thickness_in": 11,
+        "isolation_joint_in": 1
       },
       "bounds_m": [
         [
-          23.466184,
-          7.0993,
+          23.466185,
+          7.112,
           5.239512
         ],
         [
-          25.980784,
-          7.3787,
+          25.980783,
+          7.3914,
           7.045819
         ]
       ],
@@ -6619,24 +6633,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -18.382759,
-          4.273423,
+          -18.662258,
+          4.298823,
           6.232311
         ],
         [
-          -18.296399,
-          6.394577,
+          -18.575897,
+          6.369177,
           6.613311
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223913
     },
     {
       "id": "diaphragm_plates_1_1",
@@ -6648,21 +6664,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -18.389109,
-          4.2672,
-          6.074081
+          -18.674957,
+          4.273423,
+          6.072682
         ],
         [
-          -18.376409,
-          6.4008,
-          6.764033
+          -18.662258,
+          6.394577,
+          6.762663
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021039
     },
     {
       "id": "diaphragm_bolts_1_1",
@@ -6673,24 +6695,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -18.401109,
-          4.290383,
-          6.291287
+          -18.686957,
+          4.322006,
+          6.291286
         ],
         [
-          -18.355599,
-          6.377617,
+          -18.635097,
+          6.345994,
           6.554335
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_1_2",
@@ -6702,24 +6728,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -18.954455,
-          2.139823,
+          -19.233955,
+          2.165223,
           6.273586
         ],
         [
-          -18.868095,
-          4.260977,
+          -19.147594,
+          4.235577,
           6.654586
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223913
     },
     {
       "id": "diaphragm_plates_1_2",
@@ -6731,21 +6759,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -18.960805,
-          2.1336,
-          6.115356
+          -19.246655,
+          2.139823,
+          6.113957
         ],
         [
-          -18.948105,
-          4.2672,
-          6.805367
+          -19.233953,
+          4.260977,
+          6.803825
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.00302149
     },
     {
       "id": "diaphragm_bolts_1_2",
@@ -6756,24 +6790,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -18.972805,
-          2.156783,
-          6.332562
+          -19.258654,
+          2.188406,
+          6.332561
         ],
         [
-          -18.927295,
-          4.244017,
+          -19.206794,
+          4.212394,
           6.59561
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_1_3",
@@ -6785,24 +6823,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -19.526152,
-          0.006223,
+          -19.80565,
+          0.031623,
           6.314748
         ],
         [
-          -19.439792,
-          2.127377,
+          -19.719291,
+          2.101977,
           6.695748
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223784
     },
     {
       "id": "diaphragm_plates_1_3",
@@ -6814,21 +6854,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -19.532502,
-          0.0,
-          6.156346
+          -19.81835,
+          0.006223,
+          6.154774
         ],
         [
-          -19.519802,
-          2.1336,
-          6.847483
+          -19.805651,
+          2.127377,
+          6.845711
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021034
     },
     {
       "id": "diaphragm_bolts_1_3",
@@ -6839,24 +6885,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -19.544502,
-          0.023183,
-          6.373724
+          -19.83035,
+          0.054806,
+          6.373723
         ],
         [
-          -19.498992,
-          2.110417,
+          -19.77849,
+          2.078794,
           6.636772
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_1_4",
@@ -6868,24 +6918,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -20.097848,
-          -2.127377,
+          -20.377348,
+          -2.101977,
           6.310015
         ],
         [
-          -20.011488,
-          -0.006223,
-          6.691015
+          -20.290987,
+          -0.031623,
+          6.691014
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223904
     },
     {
       "id": "diaphragm_plates_1_4",
@@ -6897,21 +6949,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -20.104198,
-          -2.1336,
-          6.155111
+          -20.390047,
+          -2.127377,
+          6.15317
         ],
         [
-          -20.091498,
-          0.0,
-          6.843925
+          -20.377346,
+          -0.006223,
+          6.842123
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021488
     },
     {
       "id": "diaphragm_bolts_1_4",
@@ -6922,24 +6980,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -20.116198,
-          -2.110417,
+          -20.402046,
+          -2.078794,
           6.36899
         ],
         [
-          -20.070688,
-          -0.023183,
+          -20.350186,
+          -0.054806,
           6.632039
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_1_5",
@@ -6951,24 +7013,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -20.669545,
-          -4.260977,
+          -20.949043,
+          -4.235577,
           6.264017
         ],
         [
-          -20.583185,
-          -2.139823,
+          -20.862684,
+          -2.165223,
           6.645017
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223697
     },
     {
       "id": "diaphragm_plates_1_5",
@@ -6980,21 +7044,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -20.675895,
-          -4.2672,
-          6.109344
+          -20.961742,
+          -4.260977,
+          6.107172
         ],
         [
-          -20.663195,
-          -2.1336,
-          6.797135
+          -20.949043,
+          -2.139823,
+          6.795163
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021036
     },
     {
       "id": "diaphragm_bolts_1_5",
@@ -7005,24 +7075,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -20.687895,
-          -4.244017,
-          6.322993
+          -20.973743,
+          -4.212394,
+          6.322992
         ],
         [
-          -20.642385,
-          -2.156783,
+          -20.921883,
+          -2.188406,
           6.586041
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_1_6",
@@ -7034,24 +7108,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -21.241241,
-          -6.394577,
+          -21.52074,
+          -6.369177,
           6.219567
         ],
         [
-          -21.154881,
-          -4.273423,
+          -21.434379,
+          -4.298823,
           6.600567
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223913
     },
     {
       "id": "diaphragm_plates_1_6",
@@ -7063,21 +7139,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -21.247591,
-          -6.4008,
-          6.064894
+          -21.53344,
+          -6.394577,
+          6.062722
         ],
         [
-          -21.234891,
-          -4.2672,
-          6.750907
+          -21.520741,
+          -4.273423,
+          6.748706
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021039
     },
     {
       "id": "diaphragm_bolts_1_6",
@@ -7088,24 +7170,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -21.259591,
-          -6.377617,
-          6.278543
+          -21.545439,
+          -6.345994,
+          6.278542
         ],
         [
-          -21.214081,
-          -4.290383,
+          -21.493579,
+          -4.322006,
           6.541591
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_2_1",
@@ -7117,24 +7203,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -12.210559,
-          4.273423,
+          -12.490058,
+          4.298823,
           6.258578
         ],
         [
-          -12.124199,
-          6.394577,
+          -12.403698,
+          6.369177,
           6.639578
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223161
     },
     {
       "id": "diaphragm_plates_2_1",
@@ -7146,21 +7234,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -12.216909,
-          4.2672,
-          6.10067
+          -12.502758,
+          4.273423,
+          6.099592
         ],
         [
-          -12.204209,
-          6.4008,
-          6.789979
+          -12.490058,
+          6.394577,
+          6.78893
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021263
     },
     {
       "id": "diaphragm_bolts_2_1",
@@ -7171,24 +7265,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -12.228909,
-          4.290383,
+          -12.514757,
+          4.322006,
           6.317554
         ],
         [
-          -12.183399,
-          6.377617,
-          6.580602
+          -12.462897,
+          6.345994,
+          6.580603
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_2_2",
@@ -7200,24 +7298,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -12.782255,
-          2.139823,
+          -13.061754,
+          2.165223,
           6.299853
         ],
         [
-          -12.695895,
-          4.260977,
+          -12.975394,
+          4.235577,
           6.680853
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223151
     },
     {
       "id": "diaphragm_plates_2_2",
@@ -7229,21 +7329,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -12.788605,
-          2.1336,
-          6.141945
+          -13.074454,
+          2.139823,
+          6.140867
         ],
         [
-          -12.775905,
-          4.2672,
-          6.835035
+          -13.061754,
+          4.260977,
+          6.833814
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021263
     },
     {
       "id": "diaphragm_bolts_2_2",
@@ -7254,24 +7360,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -12.800605,
-          2.156783,
+          -13.086454,
+          2.188406,
           6.358829
         ],
         [
-          -12.755095,
-          4.244017,
+          -13.034594,
+          4.212394,
           6.621877
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_2_3",
@@ -7283,24 +7393,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -13.353952,
-          0.006223,
+          -13.63345,
+          0.031623,
           6.344737
         ],
         [
-          -13.267592,
-          2.127377,
+          -13.54709,
+          2.101977,
           6.725737
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223162
     },
     {
       "id": "diaphragm_plates_2_3",
@@ -7312,21 +7424,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -13.360302,
-          0.0,
-          6.186656
+          -13.646151,
+          0.006223,
+          6.185406
         ],
         [
-          -13.347602,
-          2.1336,
-          6.882114
+          -13.633451,
+          2.127377,
+          6.880663
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021261
     },
     {
       "id": "diaphragm_bolts_2_3",
@@ -7337,24 +7455,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -13.372302,
-          0.023183,
+          -13.65815,
+          0.054806,
           6.403713
         ],
         [
-          -13.326792,
-          2.110417,
+          -13.60629,
+          2.078794,
           6.666761
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_2_4",
@@ -7366,24 +7488,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -13.925648,
-          -2.127377,
-          6.348636
+          -14.205146,
+          -2.101977,
+          6.348637
         ],
         [
-          -13.839288,
-          -0.006223,
-          6.729636
+          -14.118786,
+          -0.031623,
+          6.729637
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223162
     },
     {
       "id": "diaphragm_plates_2_4",
@@ -7395,21 +7519,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -13.931998,
-          -2.1336,
-          6.193412
+          -14.217847,
+          -2.127377,
+          6.191792
         ],
         [
-          -13.919298,
-          0.0,
-          6.879198
+          -14.205147,
+          -0.006223,
+          6.877717
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.00302126
     },
     {
       "id": "diaphragm_bolts_2_4",
@@ -7420,24 +7550,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -13.943998,
-          -2.110417,
+          -14.229846,
+          -2.078794,
           6.407612
         ],
         [
-          -13.898488,
-          -0.023183,
+          -14.177986,
+          -0.054806,
           6.670661
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_2_5",
@@ -7449,24 +7583,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -14.497345,
-          -4.260977,
+          -14.776844,
+          -4.235577,
           6.307601
         ],
         [
-          -14.410985,
-          -2.139823,
+          -14.690484,
+          -2.165223,
           6.688601
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223848
     },
     {
       "id": "diaphragm_plates_2_5",
@@ -7478,21 +7614,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -14.503695,
-          -4.2672,
-          6.152607
+          -14.789543,
+          -4.260977,
+          6.150756
         ],
         [
-          -14.490995,
-          -2.1336,
-          6.836078
+          -14.776843,
+          -2.139823,
+          6.834428
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021264
     },
     {
       "id": "diaphragm_bolts_2_5",
@@ -7503,24 +7645,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -14.515695,
-          -4.244017,
+          -14.801543,
+          -4.212394,
           6.366577
         ],
         [
-          -14.470185,
-          -2.156783,
+          -14.749683,
+          -2.188406,
           6.629626
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_2_6",
@@ -7532,24 +7678,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -15.069041,
-          -6.394577,
+          -15.34854,
+          -6.369177,
           6.263151
         ],
         [
-          -14.982681,
-          -4.273423,
+          -15.26218,
+          -4.298823,
           6.644151
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223848
     },
     {
       "id": "diaphragm_plates_2_6",
@@ -7561,21 +7709,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -15.075391,
-          -6.4008,
-          6.108157
+          -15.361239,
+          -6.394577,
+          6.106307
         ],
         [
-          -15.062691,
-          -4.2672,
-          6.794813
+          -15.348539,
+          -4.273423,
+          6.792933
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021265
     },
     {
       "id": "diaphragm_bolts_2_6",
@@ -7586,24 +7740,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -15.087391,
-          -6.377617,
+          -15.373239,
+          -6.345994,
           6.322127
         ],
         [
-          -15.041881,
-          -4.290383,
+          -15.321379,
+          -4.322006,
           6.585176
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_3_1",
@@ -7615,24 +7773,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -0.856759,
-          4.273423,
-          6.300417
+          -1.136257,
+          4.298823,
+          6.300416
         ],
         [
-          -0.770399,
-          6.394577,
+          -1.049897,
+          6.369177,
           6.681417
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.01322359
     },
     {
       "id": "diaphragm_plates_3_1",
@@ -7644,21 +7804,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -0.863109,
-          4.2672,
-          6.142476
+          -1.148957,
+          4.273423,
+          6.141365
         ],
         [
-          -0.850409,
-          6.4008,
-          6.830679
+          -1.136257,
+          6.394577,
+          6.829657
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021236
     },
     {
       "id": "diaphragm_bolts_3_1",
@@ -7669,24 +7835,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -0.875109,
-          4.290383,
+          -1.160957,
+          4.322006,
           6.359392
         ],
         [
-          -0.829599,
-          6.377617,
+          -1.109097,
+          6.345994,
           6.622441
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_3_2",
@@ -7698,24 +7868,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -1.428455,
-          2.139823,
+          -1.707953,
+          2.165223,
           6.34058
         ],
         [
-          -1.342095,
-          4.260977,
+          -1.621594,
+          4.235577,
           6.72158
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223494
     },
     {
       "id": "diaphragm_plates_3_2",
@@ -7727,21 +7899,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -1.434805,
-          2.1336,
-          6.182699
+          -1.720654,
+          2.139823,
+          6.181648
         ],
         [
-          -1.422105,
-          4.2672,
-          6.878069
+          -1.707954,
+          4.260977,
+          6.877104
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021233
     },
     {
       "id": "diaphragm_bolts_3_2",
@@ -7752,24 +7930,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -1.446805,
-          2.156783,
+          -1.732654,
+          2.188406,
           6.399556
         ],
         [
-          -1.401295,
-          4.244017,
-          6.662605
+          -1.680794,
+          4.212394,
+          6.662604
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_3_3",
@@ -7781,24 +7963,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -2.000152,
-          0.006223,
-          6.388027
+          -2.27965,
+          0.031623,
+          6.388028
         ],
         [
-          -1.913792,
-          2.127377,
+          -2.19329,
+          2.101977,
           6.769027
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223495
     },
     {
       "id": "diaphragm_plates_3_3",
@@ -7810,21 +7994,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -2.006502,
-          0.0,
-          6.230203
+          -2.29235,
+          0.006223,
+          6.229209
         ],
         [
-          -1.993802,
-          2.1336,
-          6.927463
+          -2.27965,
+          2.127377,
+          6.926615
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021261
     },
     {
       "id": "diaphragm_bolts_3_3",
@@ -7835,24 +8025,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -2.018502,
-          0.023183,
+          -2.30435,
+          0.054806,
           6.447003
         ],
         [
-          -1.972992,
-          2.110417,
+          -2.25249,
+          2.078794,
           6.710052
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_3_4",
@@ -7864,24 +8058,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -2.571848,
-          -2.127377,
-          6.397102
+          -2.851346,
+          -2.101977,
+          6.397101
         ],
         [
-          -2.485488,
-          -0.006223,
-          6.778102
+          -2.764986,
+          -0.031623,
+          6.778101
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223505
     },
     {
       "id": "diaphragm_plates_3_4",
@@ -7893,21 +8089,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -2.578198,
-          -2.1336,
-          6.241047
+          -2.864046,
+          -2.127377,
+          6.240257
         ],
         [
-          -2.565498,
-          0.0,
-          6.925753
+          -2.851346,
+          -0.006223,
+          6.924876
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021261
     },
     {
       "id": "diaphragm_bolts_3_4",
@@ -7918,24 +8120,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -2.590198,
-          -2.110417,
+          -2.876046,
+          -2.078794,
           6.456077
         ],
         [
-          -2.544688,
-          -0.023183,
+          -2.824186,
+          -0.054806,
           6.719126
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_3_5",
@@ -7947,24 +8153,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -3.143545,
-          -4.260977,
+          -3.423043,
+          -4.235577,
           6.35984
         ],
         [
-          -3.057185,
-          -2.139823,
+          -3.336683,
+          -2.165223,
           6.74084
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223504
     },
     {
       "id": "diaphragm_plates_3_5",
@@ -7976,21 +8184,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -3.149895,
-          -4.2672,
-          6.203728
+          -3.435743,
+          -4.260977,
+          6.202995
         ],
         [
-          -3.137195,
-          -2.1336,
-          6.885373
+          -3.423043,
+          -2.139823,
+          6.884553
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021263
     },
     {
       "id": "diaphragm_bolts_3_5",
@@ -8001,24 +8215,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -3.161895,
-          -4.244017,
-          6.418815
+          -3.447743,
+          -4.212394,
+          6.418816
         ],
         [
-          -3.116385,
-          -2.156783,
+          -3.395883,
+          -2.188406,
           6.681864
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_3_6",
@@ -8030,24 +8248,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          -3.715241,
-          -6.394577,
+          -3.994739,
+          -6.369177,
           6.316501
         ],
         [
-          -3.628881,
-          -4.273423,
+          -3.908379,
+          -4.298823,
           6.697501
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223504
     },
     {
       "id": "diaphragm_plates_3_6",
@@ -8059,21 +8279,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          -3.721591,
-          -6.4008,
-          6.160449
+          -4.007439,
+          -6.394577,
+          6.159656
         ],
         [
-          -3.708891,
-          -4.2672,
-          6.848169
+          -3.994739,
+          -4.273423,
+          6.847405
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021265
     },
     {
       "id": "diaphragm_bolts_3_6",
@@ -8084,24 +8310,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          -3.733591,
-          -6.377617,
+          -4.019439,
+          -6.345994,
           6.375477
         ],
         [
-          -3.688081,
-          -4.290383,
-          6.638525
+          -3.967579,
+          -4.322006,
+          6.638526
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_4_1",
@@ -8113,24 +8343,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          3.715241,
-          4.273423,
+          3.435743,
+          4.298823,
           6.315923
         ],
         [
-          3.801601,
-          6.394577,
+          3.522103,
+          6.369177,
           6.696923
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223504
     },
     {
       "id": "diaphragm_plates_4_1",
@@ -8142,21 +8374,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          3.708891,
-          4.2672,
-          6.15822
+          3.423043,
+          4.273423,
+          6.157347
         ],
         [
-          3.721591,
-          6.4008,
-          6.844995
+          3.435743,
+          6.394577,
+          6.844212
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021266
     },
     {
       "id": "diaphragm_bolts_4_1",
@@ -8167,24 +8405,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          3.696891,
-          4.290383,
+          3.411043,
+          4.322006,
           6.374899
         ],
         [
-          3.742401,
-          6.377617,
+          3.462903,
+          6.345994,
           6.637948
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_4_2",
@@ -8196,24 +8438,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          3.143545,
-          2.139823,
+          2.864047,
+          2.165223,
           6.355134
         ],
         [
-          3.229905,
-          4.260977,
-          6.736134
+          2.950407,
+          4.235577,
+          6.736135
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223504
     },
     {
       "id": "diaphragm_plates_4_2",
@@ -8225,21 +8469,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          3.137195,
-          2.1336,
-          6.197491
+          2.851346,
+          2.139823,
+          6.196678
         ],
         [
-          3.149895,
-          4.2672,
-          6.891471
+          2.864047,
+          4.260977,
+          6.890744
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021264
     },
     {
       "id": "diaphragm_bolts_4_2",
@@ -8250,24 +8500,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          3.125195,
-          2.156783,
+          2.839346,
+          2.188406,
           6.41411
         ],
         [
-          3.170705,
-          4.244017,
+          2.891206,
+          4.212394,
           6.677159
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_4_3",
@@ -8279,24 +8533,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          2.571848,
-          0.006223,
+          2.29235,
+          0.031623,
           6.401667
         ],
         [
-          2.658208,
-          2.127377,
+          2.37871,
+          2.101977,
           6.782667
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223505
     },
     {
       "id": "diaphragm_plates_4_3",
@@ -8308,21 +8564,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          2.565498,
-          0.0,
-          6.244081
+          2.27965,
+          0.006223,
+          6.243325
         ],
         [
-          2.578198,
-          2.1336,
-          6.938998
+          2.29235,
+          2.127377,
+          6.938388
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021262
     },
     {
       "id": "diaphragm_bolts_4_3",
@@ -8333,24 +8595,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          2.553498,
-          0.023183,
+          2.26765,
+          0.054806,
           6.460643
         ],
         [
-          2.599008,
-          2.110417,
+          2.31951,
+          2.078794,
           6.723692
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_4_4",
@@ -8362,24 +8628,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          2.000152,
-          -2.127377,
+          1.720654,
+          -2.101977,
           6.40796
         ],
         [
-          2.086512,
-          -0.006223,
+          1.807014,
+          -0.031623,
           6.78896
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223505
     },
     {
       "id": "diaphragm_plates_4_4",
@@ -8391,21 +8659,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          1.993802,
-          -2.1336,
-          6.251668
+          1.707954,
+          -2.127377,
+          6.251115
         ],
         [
-          2.006502,
-          0.0,
-          6.937764
+          1.720654,
+          -0.006223,
+          6.937124
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.00302126
     },
     {
       "id": "diaphragm_bolts_4_4",
@@ -8416,24 +8690,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          1.981802,
-          -2.110417,
+          1.695954,
+          -2.078794,
           6.466936
         ],
         [
-          2.027312,
-          -0.023183,
+          1.747814,
+          -0.054806,
           6.729984
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_4_5",
@@ -8445,24 +8723,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          1.428455,
-          -4.260977,
+          1.148957,
+          -4.235577,
           6.369784
         ],
         [
-          1.514815,
-          -2.139823,
+          1.235317,
+          -2.165223,
           6.750784
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223598
     },
     {
       "id": "diaphragm_plates_4_5",
@@ -8474,21 +8754,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          1.422105,
-          -4.2672,
-          6.213434
+          1.136257,
+          -4.260977,
+          6.212939
         ],
         [
-          1.434805,
-          -2.1336,
-          6.89647
+          1.148957,
+          -2.139823,
+          6.895887
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021234
     },
     {
       "id": "diaphragm_bolts_4_5",
@@ -8499,24 +8785,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          1.410105,
-          -4.244017,
+          1.124257,
+          -4.212394,
           6.42876
         ],
         [
-          1.455615,
-          -2.156783,
+          1.176117,
+          -2.188406,
           6.691808
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_4_6",
@@ -8528,24 +8818,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          0.856759,
-          -6.394577,
+          0.577261,
+          -6.369177,
           6.327398
         ],
         [
-          0.943119,
-          -4.273423,
+          0.663621,
+          -4.298823,
           6.708398
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223504
     },
     {
       "id": "diaphragm_plates_4_6",
@@ -8557,21 +8849,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          0.850409,
-          -6.4008,
-          6.171107
+          0.564561,
+          -6.394577,
+          6.170553
         ],
         [
-          0.863109,
-          -4.2672,
-          6.858351
+          0.577261,
+          -4.273423,
+          6.857826
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021236
     },
     {
       "id": "diaphragm_bolts_4_6",
@@ -8582,24 +8880,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          0.838409,
-          -6.377617,
+          0.552561,
+          -6.345994,
           6.386373
         ],
         [
-          0.883919,
-          -4.290383,
+          0.604421,
+          -4.322006,
           6.649422
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_5_1",
@@ -8611,24 +8913,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          15.069041,
-          4.273423,
+          14.789543,
+          4.298823,
           6.334215
         ],
         [
-          15.155401,
-          6.394577,
+          14.875903,
+          6.369177,
           6.715215
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223161
     },
     {
       "id": "diaphragm_plates_5_1",
@@ -8640,21 +8944,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          15.062691,
-          4.2672,
-          6.177281
+          14.776842,
+          4.273423,
+          6.177178
         ],
         [
-          15.075391,
-          6.4008,
-          6.861466
+          14.789542,
+          6.394577,
+          6.861392
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021265
     },
     {
       "id": "diaphragm_bolts_5_1",
@@ -8665,24 +8975,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          15.050691,
-          4.290383,
+          14.764843,
+          4.322006,
           6.393191
         ],
         [
-          15.096201,
-          6.377617,
+          14.816703,
+          6.345994,
           6.65624
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_5_2",
@@ -8694,24 +9008,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          14.497345,
-          2.139823,
+          14.217846,
+          2.165223,
           6.372315
         ],
         [
-          14.583705,
-          4.260977,
+          14.304206,
+          4.235577,
           6.753315
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223161
     },
     {
       "id": "diaphragm_plates_5_2",
@@ -8723,21 +9039,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          14.490995,
-          2.1336,
-          6.215381
+          14.205146,
+          2.139823,
+          6.215278
         ],
         [
-          14.503695,
-          4.2672,
-          6.906932
+          14.217846,
+          4.260977,
+          6.906858
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021264
     },
     {
       "id": "diaphragm_bolts_5_2",
@@ -8748,24 +9070,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          14.478995,
-          2.156783,
+          14.193146,
+          2.188406,
           6.431291
         ],
         [
-          14.524505,
-          4.244017,
+          14.245006,
+          4.212394,
           6.69434
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_5_3",
@@ -8777,24 +9103,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          13.925648,
-          0.006223,
+          13.646149,
+          0.031623,
           6.417781
         ],
         [
-          14.012008,
-          2.127377,
+          13.73251,
+          2.101977,
           6.798781
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223914
     },
     {
       "id": "diaphragm_plates_5_3",
@@ -8806,21 +9134,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          13.919298,
-          0.0,
-          6.260847
+          13.63345,
+          0.006223,
+          6.260744
         ],
         [
-          13.931998,
-          2.1336,
-          6.952398
+          13.64615,
+          2.127377,
+          6.952324
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021261
     },
     {
       "id": "diaphragm_bolts_5_3",
@@ -8831,24 +9165,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          13.907298,
-          0.023183,
+          13.62145,
+          0.054806,
           6.476757
         ],
         [
-          13.952808,
-          2.110417,
+          13.67331,
+          2.078794,
           6.739806
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_5_4",
@@ -8860,24 +9198,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          13.353952,
-          -2.127377,
+          13.074453,
+          -2.101977,
           6.420829
         ],
         [
-          13.440312,
-          -0.006223,
+          13.160813,
+          -0.031623,
           6.801829
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223849
     },
     {
       "id": "diaphragm_plates_5_4",
@@ -8889,21 +9229,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          13.347602,
-          -2.1336,
-          6.264058
+          13.061753,
+          -2.127377,
+          6.263984
         ],
         [
-          13.360302,
-          0.0,
-          6.952235
+          13.074453,
+          -0.006223,
+          6.952132
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021261
     },
     {
       "id": "diaphragm_bolts_5_4",
@@ -8914,24 +9260,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          13.335602,
-          -2.110417,
+          13.049754,
+          -2.078794,
           6.479805
         ],
         [
-          13.381112,
-          -0.023183,
+          13.101614,
+          -0.054806,
           6.742854
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_5_5",
@@ -8943,24 +9293,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          12.782255,
-          -4.260977,
+          12.502757,
+          -4.235577,
           6.380326
         ],
         [
-          12.868615,
-          -2.139823,
+          12.589117,
+          -2.165223,
           6.761326
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223848
     },
     {
       "id": "diaphragm_plates_5_5",
@@ -8972,21 +9324,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          12.775905,
-          -4.2672,
-          6.223495
+          12.490057,
+          -4.260977,
+          6.223481
         ],
         [
-          12.788605,
-          -2.1336,
-          6.909817
+          12.502757,
+          -2.139823,
+          6.909714
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021263
     },
     {
       "id": "diaphragm_bolts_5_5",
@@ -8997,24 +9355,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          12.763905,
-          -4.244017,
+          12.478057,
+          -4.212394,
           6.439301
         ],
         [
-          12.809415,
-          -2.156783,
+          12.529917,
+          -2.188406,
           6.70235
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_5_6",
@@ -9026,24 +9388,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          12.210559,
-          -6.394577,
+          11.93106,
+          -6.369177,
           6.340311
         ],
         [
-          12.296919,
-          -4.273423,
+          12.01742,
+          -4.298823,
           6.721311
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223848
     },
     {
       "id": "diaphragm_plates_5_6",
@@ -9055,21 +9419,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          12.204209,
-          -6.4008,
-          6.18354
+          11.918361,
+          -6.394577,
+          6.183466
         ],
         [
-          12.216909,
-          -4.2672,
-          6.869374
+          11.931061,
+          -4.273423,
+          6.86933
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021263
     },
     {
       "id": "diaphragm_bolts_5_6",
@@ -9080,24 +9450,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          12.192209,
-          -6.377617,
+          11.906361,
+          -6.345994,
           6.399287
         ],
         [
-          12.237719,
-          -4.290383,
-          6.662336
+          11.958221,
+          -4.322006,
+          6.662335
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_6_1",
@@ -9109,24 +9483,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          21.241241,
-          4.273423,
+          20.961743,
+          4.298823,
           6.332502
         ],
         [
-          21.327601,
-          6.394577,
+          21.048102,
+          6.369177,
           6.713502
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223783
     },
     {
       "id": "diaphragm_plates_6_1",
@@ -9138,21 +9514,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          21.234891,
-          4.2672,
-          6.17589
+          20.949043,
+          4.273423,
+          6.176107
         ],
         [
-          21.247591,
-          6.4008,
-          6.859432
+          20.961742,
+          6.394577,
+          6.859679
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021038
     },
     {
       "id": "diaphragm_bolts_6_1",
@@ -9163,24 +9545,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          21.222891,
-          4.290383,
+          20.937043,
+          4.322006,
           6.391478
         ],
         [
-          21.268401,
-          6.377617,
+          20.988903,
+          6.345994,
           6.654527
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_6_2",
@@ -9192,24 +9578,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          20.669545,
-          2.139823,
-          6.370602
+          20.390046,
+          2.165223,
+          6.370603
         ],
         [
-          20.755905,
-          4.260977,
-          6.751602
+          20.476407,
+          4.235577,
+          6.751603
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223913
     },
     {
       "id": "diaphragm_plates_6_2",
@@ -9221,21 +9609,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          20.663195,
-          2.1336,
-          6.21399
+          20.377346,
+          2.139823,
+          6.214208
         ],
         [
-          20.675895,
-          4.2672,
-          6.904898
+          20.390045,
+          4.260977,
+          6.905146
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021037
     },
     {
       "id": "diaphragm_bolts_6_2",
@@ -9246,24 +9640,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          20.651195,
-          2.156783,
+          20.365346,
+          2.188406,
           6.429578
         ],
         [
-          20.696705,
-          4.244017,
+          20.417206,
+          4.212394,
           6.692627
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_6_3",
@@ -9275,24 +9673,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          20.097848,
-          0.006223,
-          6.416068
+          19.81835,
+          0.031623,
+          6.416069
         ],
         [
-          20.184208,
-          2.127377,
-          6.797068
+          19.904709,
+          2.101977,
+          6.797069
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.01322241
     },
     {
       "id": "diaphragm_plates_6_3",
@@ -9304,21 +9704,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          20.091498,
-          0.0,
-          6.259456
+          19.805649,
+          0.006223,
+          6.259674
         ],
         [
-          20.104198,
-          2.1336,
-          6.950364
+          19.81835,
+          2.127377,
+          6.950612
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021489
     },
     {
       "id": "diaphragm_bolts_6_3",
@@ -9329,24 +9735,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          20.079498,
-          0.023183,
+          19.79365,
+          0.054806,
           6.475044
         ],
         [
-          20.125008,
-          2.110417,
+          19.84551,
+          2.078794,
           6.738093
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_6_4",
@@ -9358,24 +9768,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          19.526152,
-          -2.127377,
+          19.246653,
+          -2.101977,
           6.419116
         ],
         [
-          19.612512,
-          -0.006223,
-          6.800116
+          19.333014,
+          -0.031623,
+          6.800117
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223914
     },
     {
       "id": "diaphragm_plates_6_4",
@@ -9387,21 +9799,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          19.519802,
-          -2.1336,
-          6.262024
+          19.233953,
+          -2.127377,
+          6.262271
         ],
         [
-          19.532502,
-          0.0,
-          6.950844
+          19.246653,
+          -0.006223,
+          6.951062
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021035
     },
     {
       "id": "diaphragm_bolts_6_4",
@@ -9412,24 +9830,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          19.507802,
-          -2.110417,
+          19.221954,
+          -2.078794,
           6.478092
         ],
         [
-          19.553312,
-          -0.023183,
+          19.273814,
+          -0.054806,
           6.741141
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_6_5",
@@ -9441,24 +9863,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          18.954455,
-          -4.260977,
+          18.674958,
+          -4.235577,
           6.377321
         ],
         [
-          19.040815,
-          -2.139823,
+          18.761317,
+          -2.165223,
           6.758321
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013222408
     },
     {
       "id": "diaphragm_plates_6_5",
@@ -9470,21 +9894,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          18.948105,
-          -4.2672,
-          6.220168
+          18.662256,
+          -4.260977,
+          6.220476
         ],
         [
-          18.960805,
-          -2.1336,
-          6.908426
+          18.674957,
+          -2.139823,
+          6.908644
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021491
     },
     {
       "id": "diaphragm_bolts_6_5",
@@ -9495,24 +9925,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          18.936105,
-          -4.244017,
+          18.650257,
+          -4.212394,
           6.436296
         ],
         [
-          18.981615,
-          -2.156783,
+          18.702117,
+          -2.188406,
           6.699345
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_6_6",
@@ -9524,24 +9958,26 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets simplified. Moved -0.286 m in X to the sheet 17 diaphragm spacing, which is measured along the higher-numbered beam of each bay. Channel ends stop 1 in off the beam webs and the web bears on the up-station face of the connection plates, 1/4 in up-station of the diaphragm line (sheet 20 typical diaphragm detail).",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 81.51,
+        "end_clearance_in": 1
       },
       "bounds_m": [
         [
-          18.382759,
-          -6.394577,
+          18.10326,
+          -6.369177,
           6.338598
         ],
         [
-          18.469119,
-          -4.273423,
+          18.18962,
+          -4.298823,
           6.719598
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.013223783
     },
     {
       "id": "diaphragm_plates_6_6",
@@ -9553,21 +9989,27 @@
         20
       ],
       "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "note": "Two 1/2-in by 7-1/4-in plates. Moved -0.286 m in X with its diaphragm (sheet 17) and refitted between the beam flanges there. Plates start at the web face (welded to the web), 7 1/4 in wide (sheet 20); corner clips omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.5,
+          7.25
+        ],
+        "count": 2
+      },
       "bounds_m": [
         [
-          18.376409,
-          -6.4008,
-          6.181506
+          18.090561,
+          -6.394577,
+          6.181754
         ],
         [
-          18.389109,
-          -4.2672,
-          6.86669
+          18.10326,
+          -4.273423,
+          6.866968
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.003021038
     },
     {
       "id": "diaphragm_bolts_6_6",
@@ -9578,24 +10020,28 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Two columns per plate, 2 1/2 and 5 1/2 in off the web face, four rows at 3 in (sheet 20 typical diaphragm detail); grip through the 1/2 in plate and the channel web. Station from sheet 17.",
       "dimensions": {
         "count": 16,
-        "diameter_in": 0.875
+        "diameter_in": 0.875,
+        "column_offsets_in": [
+          2.5,
+          5.5
+        ]
       },
       "bounds_m": [
         [
-          18.364409,
-          -6.377617,
+          18.078561,
+          -6.345994,
           6.397574
         ],
         [
-          18.409919,
-          -4.290383,
+          18.130421,
+          -4.322006,
           6.660623
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.000493149
     },
     {
       "id": "diaphragm_7_1",
@@ -9607,24 +10053,25 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 71
       },
       "bounds_m": [
         [
-          -6.47494,
-          4.273423,
+          -6.481281,
+          4.451726,
           6.277515
         ],
         [
-          -5.820218,
-          6.394577,
+          -5.802279,
+          6.181875,
           6.658515
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.011518467
     },
     {
       "id": "diaphragm_plates_7_1",
@@ -9635,22 +10082,30 @@
         18,
         20
       ],
-      "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "basis": "Dimensioned bent plates",
+      "note": "Two PL 11/16 x 13 1/2 x 15 in bent plates (sheet 20): one 6 3/4 in leg on the face of the bearing stiffener, from 1 in off the web, folded 3/4 in beyond it so the other leg lies on the back of the channel web. Welds and holes omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.6875,
+          13.5,
+          15
+        ],
+        "leg_in": 6.75,
+        "count": 2
+      },
       "bounds_m": [
         [
-          -6.482957,
-          4.2672,
-          6.12067
+          -6.502801,
+          4.298823,
+          6.277515
         ],
         [
-          -5.898561,
-          6.4008,
-          6.807867
+          -5.878717,
+          6.369177,
+          6.658515
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.004562773
     },
     {
       "id": "diaphragm_bolts_7_1",
@@ -9661,24 +10116,24 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
-        "count": 16,
+        "count": 32,
         "diameter_in": 0.875
       },
       "bounds_m": [
         [
-          -6.494957,
-          4.290383,
-          6.33649
+          -6.514801,
+          4.322006,
+          6.336491
         ],
         [
-          -5.877751,
-          6.377617,
+          -5.866717,
+          6.345994,
           6.599539
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.001086042
     },
     {
       "id": "diaphragm_7_2",
@@ -9690,24 +10145,25 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 71
       },
       "bounds_m": [
         [
-          -7.046636,
-          2.139823,
+          -7.052977,
+          2.318126,
           6.31879
         ],
         [
-          -6.391915,
-          4.260977,
+          -6.373976,
+          4.048275,
           6.69979
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.011518467
     },
     {
       "id": "diaphragm_plates_7_2",
@@ -9718,22 +10174,30 @@
         18,
         20
       ],
-      "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "basis": "Dimensioned bent plates",
+      "note": "Two PL 11/16 x 13 1/2 x 15 in bent plates (sheet 20): one 6 3/4 in leg on the face of the bearing stiffener, from 1 in off the web, folded 3/4 in beyond it so the other leg lies on the back of the channel web. Welds and holes omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.6875,
+          13.5,
+          15
+        ],
+        "leg_in": 6.75,
+        "count": 2
+      },
       "bounds_m": [
         [
-          -7.054654,
-          2.1336,
-          6.161945
+          -7.074497,
+          2.165223,
+          6.31879
         ],
         [
-          -6.470257,
-          4.2672,
-          6.856381
+          -6.450413,
+          4.235577,
+          6.69979
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.004562773
     },
     {
       "id": "diaphragm_bolts_7_2",
@@ -9744,24 +10208,24 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
-        "count": 16,
+        "count": 32,
         "diameter_in": 0.875
       },
       "bounds_m": [
         [
-          -7.066654,
-          2.156783,
+          -7.086497,
+          2.188406,
           6.377765
         ],
         [
-          -6.449447,
-          4.244017,
+          -6.438413,
+          4.212394,
           6.640814
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.001086042
     },
     {
       "id": "diaphragm_7_3",
@@ -9773,24 +10237,25 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 71
       },
       "bounds_m": [
         [
-          -7.618333,
-          0.006223,
+          -7.624674,
+          0.184526,
           6.367304
         ],
         [
-          -6.963611,
-          2.127377,
+          -6.945672,
+          1.914675,
           6.748304
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.011518467
     },
     {
       "id": "diaphragm_plates_7_3",
@@ -9801,22 +10266,30 @@
         18,
         20
       ],
-      "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "basis": "Dimensioned bent plates",
+      "note": "Two PL 11/16 x 13 1/2 x 15 in bent plates (sheet 20): one 6 3/4 in leg on the face of the bearing stiffener, from 1 in off the web, folded 3/4 in beyond it so the other leg lies on the back of the channel web. Welds and holes omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.6875,
+          13.5,
+          15
+        ],
+        "leg_in": 6.75,
+        "count": 2
+      },
       "bounds_m": [
         [
-          -7.62635,
-          0.0,
-          6.210459
+          -7.646194,
+          0.031623,
+          6.367304
         ],
         [
-          -7.041954,
-          2.1336,
-          6.90807
+          -7.02211,
+          2.101977,
+          6.748304
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.004562773
     },
     {
       "id": "diaphragm_bolts_7_3",
@@ -9827,24 +10300,24 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
-        "count": 16,
+        "count": 32,
         "diameter_in": 0.875
       },
       "bounds_m": [
         [
-          -7.63835,
-          0.023183,
-          6.426279
+          -7.658194,
+          0.054806,
+          6.42628
         ],
         [
-          -7.021144,
-          2.110417,
+          -7.01011,
+          2.078794,
           6.689328
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.001086042
     },
     {
       "id": "diaphragm_7_4",
@@ -9856,24 +10329,25 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 71
       },
       "bounds_m": [
         [
-          -8.190029,
-          -2.127377,
+          -8.19637,
+          -1.949074,
           6.379623
         ],
         [
-          -7.535307,
-          -0.006223,
+          -7.517368,
+          -0.218925,
           6.760623
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.011518467
     },
     {
       "id": "diaphragm_plates_7_4",
@@ -9884,22 +10358,30 @@
         18,
         20
       ],
-      "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "basis": "Dimensioned bent plates",
+      "note": "Two PL 11/16 x 13 1/2 x 15 in bent plates (sheet 20): one 6 3/4 in leg on the face of the bearing stiffener, from 1 in off the web, folded 3/4 in beyond it so the other leg lies on the back of the channel web. Welds and holes omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.6875,
+          13.5,
+          15
+        ],
+        "leg_in": 6.75,
+        "count": 2
+      },
       "bounds_m": [
         [
-          -8.198046,
-          -2.1336,
-          6.222778
+          -8.21789,
+          -2.101977,
+          6.379623
         ],
         [
-          -7.61365,
-          0.0,
-          6.90807
+          -7.593806,
+          -0.031623,
+          6.760623
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.004562773
     },
     {
       "id": "diaphragm_bolts_7_4",
@@ -9910,24 +10392,24 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
-        "count": 16,
+        "count": 32,
         "diameter_in": 0.875
       },
       "bounds_m": [
         [
-          -8.210046,
-          -2.110417,
-          6.438598
+          -8.22989,
+          -2.078794,
+          6.438599
         ],
         [
-          -7.59284,
-          -0.023183,
+          -7.581806,
+          -0.054806,
           6.701647
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.001086042
     },
     {
       "id": "diaphragm_7_5",
@@ -9939,24 +10421,25 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 71
       },
       "bounds_m": [
         [
-          -8.761725,
-          -4.260977,
+          -8.768066,
+          -4.082674,
           6.343428
         ],
         [
-          -8.107004,
-          -2.139823,
+          -8.089065,
+          -2.352525,
           6.724428
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.011518467
     },
     {
       "id": "diaphragm_plates_7_5",
@@ -9967,22 +10450,30 @@
         18,
         20
       ],
-      "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "basis": "Dimensioned bent plates",
+      "note": "Two PL 11/16 x 13 1/2 x 15 in bent plates (sheet 20): one 6 3/4 in leg on the face of the bearing stiffener, from 1 in off the web, folded 3/4 in beyond it so the other leg lies on the back of the channel web. Welds and holes omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.6875,
+          13.5,
+          15
+        ],
+        "leg_in": 6.75,
+        "count": 2
+      },
       "bounds_m": [
         [
-          -8.769743,
-          -4.2672,
-          6.186583
+          -8.789587,
+          -4.235577,
+          6.343428
         ],
         [
-          -8.185346,
-          -2.1336,
-          6.8687
+          -8.165503,
+          -2.165223,
+          6.724428
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.004562773
     },
     {
       "id": "diaphragm_bolts_7_5",
@@ -9993,24 +10484,24 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
-        "count": 16,
+        "count": 32,
         "diameter_in": 0.875
       },
       "bounds_m": [
         [
-          -8.781743,
-          -4.244017,
+          -8.801587,
+          -4.212394,
           6.402403
         ],
         [
-          -8.164536,
-          -2.156783,
+          -8.153503,
+          -2.188406,
           6.665452
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.001086042
     },
     {
       "id": "diaphragm_7_6",
@@ -10022,24 +10513,25 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 71
       },
       "bounds_m": [
         [
-          -9.333422,
-          -6.394577,
+          -9.339763,
+          -6.216274,
           6.298978
         ],
         [
-          -8.6787,
-          -4.273423,
+          -8.660761,
+          -4.486125,
           6.679978
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.011518467
     },
     {
       "id": "diaphragm_plates_7_6",
@@ -10050,22 +10542,30 @@
         18,
         20
       ],
-      "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "basis": "Dimensioned bent plates",
+      "note": "Two PL 11/16 x 13 1/2 x 15 in bent plates (sheet 20): one 6 3/4 in leg on the face of the bearing stiffener, from 1 in off the web, folded 3/4 in beyond it so the other leg lies on the back of the channel web. Welds and holes omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.6875,
+          13.5,
+          15
+        ],
+        "leg_in": 6.75,
+        "count": 2
+      },
       "bounds_m": [
         [
-          -9.341439,
-          -6.4008,
-          6.142133
+          -9.361283,
+          -6.369177,
+          6.298978
         ],
         [
-          -8.757043,
-          -4.2672,
-          6.832505
+          -8.737199,
+          -4.298823,
+          6.679978
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.004562773
     },
     {
       "id": "diaphragm_bolts_7_6",
@@ -10076,24 +10576,24 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
-        "count": 16,
+        "count": 32,
         "diameter_in": 0.875
       },
       "bounds_m": [
         [
-          -9.353439,
-          -6.377617,
-          6.357953
+          -9.373283,
+          -6.345994,
+          6.357954
         ],
         [
-          -8.736233,
-          -4.290383,
+          -8.725199,
+          -4.322006,
           6.621002
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.001086042
     },
     {
       "id": "diaphragm_8_1",
@@ -10105,24 +10605,25 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 71
       },
       "bounds_m": [
         [
-          8.76506,
-          4.273423,
+          8.758719,
+          4.451726,
           6.329204
         ],
         [
-          9.419782,
-          6.394577,
+          9.437721,
+          6.181875,
           6.710204
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.011518467
     },
     {
       "id": "diaphragm_plates_8_1",
@@ -10133,22 +10634,30 @@
         18,
         20
       ],
-      "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "basis": "Dimensioned bent plates",
+      "note": "Two PL 11/16 x 13 1/2 x 15 in bent plates (sheet 20): one 6 3/4 in leg on the face of the bearing stiffener, from 1 in off the web, folded 3/4 in beyond it so the other leg lies on the back of the channel web. Welds and holes omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.6875,
+          13.5,
+          15
+        ],
+        "leg_in": 6.75,
+        "count": 2
+      },
       "bounds_m": [
         [
-          8.757043,
-          4.2672,
-          6.172359
+          8.737199,
+          4.298823,
+          6.329204
         ],
         [
-          9.341439,
-          6.4008,
-          6.856381
+          9.361283,
+          6.369177,
+          6.710204
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.004562773
     },
     {
       "id": "diaphragm_bolts_8_1",
@@ -10159,24 +10668,24 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
-        "count": 16,
+        "count": 32,
         "diameter_in": 0.875
       },
       "bounds_m": [
         [
-          8.745043,
-          4.290383,
+          8.725199,
+          4.322006,
           6.388179
         ],
         [
-          9.362249,
-          6.377617,
+          9.373283,
+          6.345994,
           6.651228
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.001086042
     },
     {
       "id": "diaphragm_8_2",
@@ -10188,24 +10697,25 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 71
       },
       "bounds_m": [
         [
-          8.193364,
-          2.139823,
+          8.187023,
+          2.318126,
           6.367304
         ],
         [
-          8.848085,
-          4.260977,
+          8.866024,
+          4.048275,
           6.748304
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.011518467
     },
     {
       "id": "diaphragm_plates_8_2",
@@ -10216,22 +10726,30 @@
         18,
         20
       ],
-      "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "basis": "Dimensioned bent plates",
+      "note": "Two PL 11/16 x 13 1/2 x 15 in bent plates (sheet 20): one 6 3/4 in leg on the face of the bearing stiffener, from 1 in off the web, folded 3/4 in beyond it so the other leg lies on the back of the channel web. Welds and holes omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.6875,
+          13.5,
+          15
+        ],
+        "leg_in": 6.75,
+        "count": 2
+      },
       "bounds_m": [
         [
-          8.185346,
-          2.1336,
-          6.210459
+          8.165503,
+          2.165223,
+          6.367304
         ],
         [
-          8.769743,
-          4.2672,
-          6.901847
+          8.789587,
+          4.235577,
+          6.748304
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.004562773
     },
     {
       "id": "diaphragm_bolts_8_2",
@@ -10242,24 +10760,24 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
-        "count": 16,
+        "count": 32,
         "diameter_in": 0.875
       },
       "bounds_m": [
         [
-          8.173346,
-          2.156783,
-          6.426279
+          8.153503,
+          2.188406,
+          6.42628
         ],
         [
-          8.790553,
-          4.244017,
+          8.801587,
+          4.212394,
           6.689328
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.001086042
     },
     {
       "id": "diaphragm_8_3",
@@ -10271,24 +10789,25 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 71
       },
       "bounds_m": [
         [
-          7.621667,
-          0.006223,
+          7.615326,
+          0.184526,
           6.41277
         ],
         [
-          8.276389,
-          2.127377,
+          8.294328,
+          1.914675,
           6.79377
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.011518467
     },
     {
       "id": "diaphragm_plates_8_3",
@@ -10299,22 +10818,30 @@
         18,
         20
       ],
-      "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "basis": "Dimensioned bent plates",
+      "note": "Two PL 11/16 x 13 1/2 x 15 in bent plates (sheet 20): one 6 3/4 in leg on the face of the bearing stiffener, from 1 in off the web, folded 3/4 in beyond it so the other leg lies on the back of the channel web. Welds and holes omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.6875,
+          13.5,
+          15
+        ],
+        "leg_in": 6.75,
+        "count": 2
+      },
       "bounds_m": [
         [
-          7.61365,
-          0.0,
-          6.255925
+          7.593806,
+          0.031623,
+          6.41277
         ],
         [
-          8.198046,
-          2.1336,
-          6.947313
+          8.21789,
+          2.101977,
+          6.79377
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.004562773
     },
     {
       "id": "diaphragm_bolts_8_3",
@@ -10325,24 +10852,24 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
-        "count": 16,
+        "count": 32,
         "diameter_in": 0.875
       },
       "bounds_m": [
         [
-          7.60165,
-          0.023183,
+          7.581806,
+          0.054806,
           6.471745
         ],
         [
-          8.218856,
-          2.110417,
+          8.22989,
+          2.078794,
           6.734794
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.001086042
     },
     {
       "id": "diaphragm_8_4",
@@ -10354,24 +10881,25 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 71
       },
       "bounds_m": [
         [
-          7.049971,
-          -2.127377,
+          7.04363,
+          -1.949074,
           6.415818
         ],
         [
-          7.704693,
-          -0.006223,
+          7.722632,
+          -0.218925,
           6.796818
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.011518467
     },
     {
       "id": "diaphragm_plates_8_4",
@@ -10382,22 +10910,30 @@
         18,
         20
       ],
-      "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "basis": "Dimensioned bent plates",
+      "note": "Two PL 11/16 x 13 1/2 x 15 in bent plates (sheet 20): one 6 3/4 in leg on the face of the bearing stiffener, from 1 in off the web, folded 3/4 in beyond it so the other leg lies on the back of the channel web. Welds and holes omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.6875,
+          13.5,
+          15
+        ],
+        "leg_in": 6.75,
+        "count": 2
+      },
       "bounds_m": [
         [
-          7.041954,
-          -2.1336,
-          6.258973
+          7.02211,
+          -2.101977,
+          6.415818
         ],
         [
-          7.62635,
-          0.0,
-          6.947313
+          7.646194,
+          -0.031623,
+          6.796818
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.004562773
     },
     {
       "id": "diaphragm_bolts_8_4",
@@ -10408,24 +10944,24 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
-        "count": 16,
+        "count": 32,
         "diameter_in": 0.875
       },
       "bounds_m": [
         [
-          7.029954,
-          -2.110417,
+          7.01011,
+          -2.078794,
           6.474793
         ],
         [
-          7.64716,
-          -0.023183,
+          7.658194,
+          -0.054806,
           6.737842
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.001086042
     },
     {
       "id": "diaphragm_8_5",
@@ -10437,24 +10973,25 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 71
       },
       "bounds_m": [
         [
-          6.478275,
-          -4.260977,
+          6.471934,
+          -4.082674,
           6.376575
         ],
         [
-          7.132996,
-          -2.139823,
+          7.150935,
+          -2.352525,
           6.757575
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.011518467
     },
     {
       "id": "diaphragm_plates_8_5",
@@ -10465,22 +11002,30 @@
         18,
         20
       ],
-      "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "basis": "Dimensioned bent plates",
+      "note": "Two PL 11/16 x 13 1/2 x 15 in bent plates (sheet 20): one 6 3/4 in leg on the face of the bearing stiffener, from 1 in off the web, folded 3/4 in beyond it so the other leg lies on the back of the channel web. Welds and holes omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.6875,
+          13.5,
+          15
+        ],
+        "leg_in": 6.75,
+        "count": 2
+      },
       "bounds_m": [
         [
-          6.470257,
-          -4.2672,
-          6.21973
+          6.450413,
+          -4.235577,
+          6.376575
         ],
         [
-          7.054654,
-          -2.1336,
-          6.904895
+          7.074497,
+          -2.165223,
+          6.757575
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.004562773
     },
     {
       "id": "diaphragm_bolts_8_5",
@@ -10491,24 +11036,24 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
-        "count": 16,
+        "count": 32,
         "diameter_in": 0.875
       },
       "bounds_m": [
         [
-          6.458257,
-          -4.244017,
+          6.438413,
+          -4.212394,
           6.43555
         ],
         [
-          7.075464,
-          -2.156783,
+          7.086497,
+          -2.188406,
           6.698599
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.001086042
     },
     {
       "id": "diaphragm_8_6",
@@ -10520,24 +11065,25 @@
         20
       ],
       "basis": "Dimensioned arrangement; nominal channel profile",
-      "note": "Nominal section dimensions from Nucor p.47; flange taper, root fillets and skew bent-plate fold simplified.",
+      "note": "Nominal section dimensions from Nucor p.47; flange taper and root fillets omitted. 5 ft 11 in channel between the two bent-plate folds, square-cut and about 19.3 deg to the beam normal in plan, as drawn on sheet 20; elevation unchanged.",
       "dimensions": {
         "section": "C15x33.9",
-        "bay_ft": 7
+        "bay_ft": 7,
+        "length_in": 71
       },
       "bounds_m": [
         [
-          5.906578,
-          -6.394577,
+          5.900237,
+          -6.216274,
           6.3353
         ],
         [
-          6.5613,
-          -4.273423,
+          6.579239,
+          -4.486125,
           6.7163
         ]
       ],
-      "volume_m3": 0.013547989
+      "volume_m3": 0.011518467
     },
     {
       "id": "diaphragm_plates_8_6",
@@ -10548,22 +11094,30 @@
         18,
         20
       ],
-      "basis": "Dimensioned envelope; skew connection simplified",
-      "note": "Two 1/2-in by 7-1/4-in plates. Pier bent-plate fold is represented by its connection envelope.",
-      "dimensions": {},
+      "basis": "Dimensioned bent plates",
+      "note": "Two PL 11/16 x 13 1/2 x 15 in bent plates (sheet 20): one 6 3/4 in leg on the face of the bearing stiffener, from 1 in off the web, folded 3/4 in beyond it so the other leg lies on the back of the channel web. Welds and holes omitted.",
+      "dimensions": {
+        "plate_in": [
+          0.6875,
+          13.5,
+          15
+        ],
+        "leg_in": 6.75,
+        "count": 2
+      },
       "bounds_m": [
         [
-          5.898561,
-          -6.4008,
-          6.178455
+          5.878717,
+          -6.369177,
+          6.3353
         ],
         [
-          6.482957,
-          -4.2672,
-          6.865652
+          6.502801,
+          -4.298823,
+          6.7163
         ]
       ],
-      "volume_m3": 0.003021242
+      "volume_m3": 0.004562773
     },
     {
       "id": "diaphragm_bolts_8_6",
@@ -10574,24 +11128,24 @@
         20
       ],
       "basis": "Nominal hardware",
-      "note": "Threads and holes omitted.",
+      "note": "Threads and holes omitted. Per bent plate, 8 bolts through the bearing stiffener (2.5 and 5.5 in from the web) and 8 through the channel web (1 1/2 and 4 1/2 in from the leg end), four rows at 3 in; 32 per diaphragm, sheet 20.",
       "dimensions": {
-        "count": 16,
+        "count": 32,
         "diameter_in": 0.875
       },
       "bounds_m": [
         [
-          5.886561,
-          -6.377617,
+          5.866717,
+          -6.345994,
           6.394275
         ],
         [
-          6.503767,
-          -4.290383,
+          6.514801,
+          -4.322006,
           6.657324
         ]
       ],
-      "volume_m3": 0.00045551
+      "volume_m3": 0.001086042
     },
     {
       "id": "rail_-1",
@@ -10632,23 +11186,23 @@
         31
       ],
       "basis": "Dimensioned outer depth; simplified width",
-      "note": "Drip bead recess and interior taper are not cut.",
+      "note": "Drip bead recess and interior taper are not cut. Edge depth corrected from 9 5/8 in to the 9 1/8 in coping of the sheet 27 typical section (sheet 31 shows 9 1/4 in).",
       "dimensions": {
-        "edge_depth_in": 9.625
+        "edge_depth_in": 9.125
       },
       "bounds_m": [
         [
-          -24.923949,
+          -24.923948,
           -7.0866,
-          6.666942
+          6.679642
         ],
         [
-          21.180699,
+          21.180698,
           -6.8834,
           6.854169
         ]
       ],
-      "volume_m3": 0.386230689
+      "volume_m3": 0.26739154
     },
     {
       "id": "delineator_-1_1",
@@ -10851,23 +11405,23 @@
         31
       ],
       "basis": "Dimensioned outer depth; simplified width",
-      "note": "Drip bead recess and interior taper are not cut.",
+      "note": "Drip bead recess and interior taper are not cut. Edge depth corrected from 9 5/8 in to the 9 1/8 in coping of the sheet 27 typical section (sheet 31 shows 9 1/4 in).",
       "dimensions": {
-        "edge_depth_in": 9.625
+        "edge_depth_in": 9.125
       },
       "bounds_m": [
         [
-          -21.180699,
+          -21.180698,
           6.8834,
-          6.692928
+          6.705628
         ],
         [
-          24.923949,
+          24.923948,
           7.0866,
           6.854169
         ]
       ],
-      "volume_m3": 0.386230689
+      "volume_m3": 0.267391475
     },
     {
       "id": "delineator_1_1",
@@ -11041,25 +11595,27 @@
         33
       ],
       "basis": "Dimensioned",
-      "note": "",
+      "note": "12 in slab; 2 in deeper (1 ft 2 in) for 2 ft 0 in from the bridge joint where it rests on the end-diaphragm pavement ledge, returning at 45 deg (sheet 33 pavement ledge detail; sheet 24). Subbase, polyethylene and polystyrene strips are not modelled.",
       "dimensions": {
         "thickness_in": 12,
         "width_ft": 43.5,
-        "min_length_ft": 20.5
+        "min_length_ft": 20.5,
+        "end_thickness_in": 14,
+        "thickened_length_ft": 2
       },
       "bounds_m": [
         [
-          -31.049842,
+          -31.049843,
           -6.6294,
-          6.568339
+          6.561438
         ],
         [
           -21.248758,
           6.6294,
-          7.06647
+          7.066471
         ]
       ],
-      "volume_m3": 32.429891067
+      "volume_m3": 32.8575622
     },
     {
       "id": "extension_-1_-1",
@@ -11187,25 +11743,27 @@
         33
       ],
       "basis": "Dimensioned",
-      "note": "",
+      "note": "12 in slab; 2 in deeper (1 ft 2 in) for 2 ft 0 in from the bridge joint where it rests on the end-diaphragm pavement ledge, returning at 45 deg (sheet 33 pavement ledge detail; sheet 24). Subbase, polyethylene and polystyrene strips are not modelled.",
       "dimensions": {
         "thickness_in": 12,
         "width_ft": 43.5,
-        "min_length_ft": 20.5
+        "min_length_ft": 20.5,
+        "end_thickness_in": 14,
+        "thickened_length_ft": 2
       },
       "bounds_m": [
         [
           21.248758,
           -6.6294,
-          6.732903
+          6.696116
         ],
         [
-          31.049842,
+          31.049843,
           6.6294,
           7.188503
         ]
       ],
-      "volume_m3": 32.430606625
+      "volume_m3": 32.858490563
     },
     {
       "id": "extension_1_-1",
@@ -11561,7 +12119,7 @@
     {
       "feature": "Diaphragms",
       "status": "modeled_with_simplifications",
-      "detail": "48 channel diaphragms in six regular and two skew support rows; connection plates and bolts. Skew folds and channel taper simplified.",
+      "detail": "48 channel diaphragms in six regular and two skew support rows; connection plates and bolts. Regular rows: channels 1 in off the webs on 1/2 x 7 1/4 in plates, 16 bolts each. Pier rows: 5 ft 11 in channels on bent plates with 32 bolts each. Channel taper simplified.",
       "sources": [
         "2017 rehabilitation PDF p.17",
         "2017 rehabilitation PDF p.20"
@@ -11851,5 +12409,352 @@
       "id": "2026 overlay plans: reference only, not modeled",
       "url": "https://erms12c.indot.in.gov/viewdocs/View12.aspx?Id=9683607"
     }
-  ]
+  ],
+  "geometry_review_correction": "review-2026-11-diaphragms-caps-coping-wings",
+  "revision": "1.2-drawing-review-2",
+  "geometry_review_correction_record": {
+    "source": "External model review (2026-11), findings verified against the drawings",
+    "source_pdf_pages": [
+      14,
+      16,
+      17,
+      20,
+      23,
+      27,
+      31
+    ],
+    "printed_sheets": [
+      14,
+      16,
+      17,
+      20,
+      23,
+      27,
+      31
+    ],
+    "historical_source": "original_1980_plans.pdf page 11 (pier cap plan, 1 ft 6 in radius)",
+    "corrections": {
+      "Regular diaphragms rows 1-6 (36 channels, plates, bolts)": "X -0.285848 m: sheet 17 spacing 9'-9\", 20'-3\", 37'-3\", 15'-0\" ... measured along the higher-numbered beam of each bay; connection plates refitted to the beam at the new station",
+      "Pier diaphragms rows 7-8 (12 channels, plates, bolts)": "channel 2.196 m along the skew -> 5'-11\" (1.8034 m) between bent-plate folds; two 1/2 in straight plates -> two PL 11/16 x 13 1/2 x 15 in bent plates; 16 -> 32 bolts (sheet 20)",
+      "Pier caps cap_2, cap_3": "square ends -> 1'-6\" radius semicircles (sheet 16; 1980 sheet 11)",
+      "Fascia fascia_1, fascia_-1": "coping depth 9 5/8 in -> 9 1/8 in (sheet 27)",
+      "Wings wing_1_-1, wing_1_1, wing_4_-1, wing_4_1": "isolation gap 1/2 in -> 1 in; inner faces |Y| 7.0993 -> 7.1120 m (sheets 14, 23)"
+    },
+    "changed_parts": [
+      "diaphragm_1_1",
+      "diaphragm_plates_1_1",
+      "diaphragm_bolts_1_1",
+      "diaphragm_1_2",
+      "diaphragm_plates_1_2",
+      "diaphragm_bolts_1_2",
+      "diaphragm_1_3",
+      "diaphragm_plates_1_3",
+      "diaphragm_bolts_1_3",
+      "diaphragm_1_4",
+      "diaphragm_plates_1_4",
+      "diaphragm_bolts_1_4",
+      "diaphragm_1_5",
+      "diaphragm_plates_1_5",
+      "diaphragm_bolts_1_5",
+      "diaphragm_1_6",
+      "diaphragm_plates_1_6",
+      "diaphragm_bolts_1_6",
+      "diaphragm_2_1",
+      "diaphragm_plates_2_1",
+      "diaphragm_bolts_2_1",
+      "diaphragm_2_2",
+      "diaphragm_plates_2_2",
+      "diaphragm_bolts_2_2",
+      "diaphragm_2_3",
+      "diaphragm_plates_2_3",
+      "diaphragm_bolts_2_3",
+      "diaphragm_2_4",
+      "diaphragm_plates_2_4",
+      "diaphragm_bolts_2_4",
+      "diaphragm_2_5",
+      "diaphragm_plates_2_5",
+      "diaphragm_bolts_2_5",
+      "diaphragm_2_6",
+      "diaphragm_plates_2_6",
+      "diaphragm_bolts_2_6",
+      "diaphragm_3_1",
+      "diaphragm_plates_3_1",
+      "diaphragm_bolts_3_1",
+      "diaphragm_3_2",
+      "diaphragm_plates_3_2",
+      "diaphragm_bolts_3_2",
+      "diaphragm_3_3",
+      "diaphragm_plates_3_3",
+      "diaphragm_bolts_3_3",
+      "diaphragm_3_4",
+      "diaphragm_plates_3_4",
+      "diaphragm_bolts_3_4",
+      "diaphragm_3_5",
+      "diaphragm_plates_3_5",
+      "diaphragm_bolts_3_5",
+      "diaphragm_3_6",
+      "diaphragm_plates_3_6",
+      "diaphragm_bolts_3_6",
+      "diaphragm_4_1",
+      "diaphragm_plates_4_1",
+      "diaphragm_bolts_4_1",
+      "diaphragm_4_2",
+      "diaphragm_plates_4_2",
+      "diaphragm_bolts_4_2",
+      "diaphragm_4_3",
+      "diaphragm_plates_4_3",
+      "diaphragm_bolts_4_3",
+      "diaphragm_4_4",
+      "diaphragm_plates_4_4",
+      "diaphragm_bolts_4_4",
+      "diaphragm_4_5",
+      "diaphragm_plates_4_5",
+      "diaphragm_bolts_4_5",
+      "diaphragm_4_6",
+      "diaphragm_plates_4_6",
+      "diaphragm_bolts_4_6",
+      "diaphragm_5_1",
+      "diaphragm_plates_5_1",
+      "diaphragm_bolts_5_1",
+      "diaphragm_5_2",
+      "diaphragm_plates_5_2",
+      "diaphragm_bolts_5_2",
+      "diaphragm_5_3",
+      "diaphragm_plates_5_3",
+      "diaphragm_bolts_5_3",
+      "diaphragm_5_4",
+      "diaphragm_plates_5_4",
+      "diaphragm_bolts_5_4",
+      "diaphragm_5_5",
+      "diaphragm_plates_5_5",
+      "diaphragm_bolts_5_5",
+      "diaphragm_5_6",
+      "diaphragm_plates_5_6",
+      "diaphragm_bolts_5_6",
+      "diaphragm_6_1",
+      "diaphragm_plates_6_1",
+      "diaphragm_bolts_6_1",
+      "diaphragm_6_2",
+      "diaphragm_plates_6_2",
+      "diaphragm_bolts_6_2",
+      "diaphragm_6_3",
+      "diaphragm_plates_6_3",
+      "diaphragm_bolts_6_3",
+      "diaphragm_6_4",
+      "diaphragm_plates_6_4",
+      "diaphragm_bolts_6_4",
+      "diaphragm_6_5",
+      "diaphragm_plates_6_5",
+      "diaphragm_bolts_6_5",
+      "diaphragm_6_6",
+      "diaphragm_plates_6_6",
+      "diaphragm_bolts_6_6",
+      "diaphragm_7_1",
+      "diaphragm_plates_7_1",
+      "diaphragm_bolts_7_1",
+      "diaphragm_7_2",
+      "diaphragm_plates_7_2",
+      "diaphragm_bolts_7_2",
+      "diaphragm_7_3",
+      "diaphragm_plates_7_3",
+      "diaphragm_bolts_7_3",
+      "diaphragm_7_4",
+      "diaphragm_plates_7_4",
+      "diaphragm_bolts_7_4",
+      "diaphragm_7_5",
+      "diaphragm_plates_7_5",
+      "diaphragm_bolts_7_5",
+      "diaphragm_7_6",
+      "diaphragm_plates_7_6",
+      "diaphragm_bolts_7_6",
+      "diaphragm_8_1",
+      "diaphragm_plates_8_1",
+      "diaphragm_bolts_8_1",
+      "diaphragm_8_2",
+      "diaphragm_plates_8_2",
+      "diaphragm_bolts_8_2",
+      "diaphragm_8_3",
+      "diaphragm_plates_8_3",
+      "diaphragm_bolts_8_3",
+      "diaphragm_8_4",
+      "diaphragm_plates_8_4",
+      "diaphragm_bolts_8_4",
+      "diaphragm_8_5",
+      "diaphragm_plates_8_5",
+      "diaphragm_bolts_8_5",
+      "diaphragm_8_6",
+      "diaphragm_plates_8_6",
+      "diaphragm_bolts_8_6",
+      "cap_2",
+      "cap_3",
+      "fascia_1",
+      "fascia_-1",
+      "wing_1_-1",
+      "wing_1_1",
+      "wing_4_-1",
+      "wing_4_1"
+    ],
+    "before_glb_sha256": "89a01751638da26aa01435b06b2830fa45c082082ae63d307824fa3f9a8aafb4",
+    "after_glb_sha256": "b838ea410b52cda2c1076efc223001a38981aa7e3512b7d353eadf6b23ac2e41"
+  },
+  "known_deviations": [
+    {
+      "id": "coping-depth-sheet-31",
+      "parts": "fascia_1, fascia_-1",
+      "source": "sheets 27 and 31",
+      "deviation": "Coping modelled 9 1/8 in deep over an 8 in wide strip; sheet 31 Section A-A shows 9 1/4 in and a wider thickened strip, sheet 27 a level overhang soffit out to the exterior beam haunch.",
+      "reason": "The deck typical section (sheet 27) is used for the depth; the thickened width is not dimensioned."
+    },
+    {
+      "id": "pier-diaphragm-arrangement",
+      "parts": "diaphragm_7_*, diaphragm_8_* and their plates and bolts",
+      "source": "sheet 20",
+      "deviation": "Channels run between the bent-plate folds at about 19.3 deg to the beam normal, as drawn in the pier diaphragm plan; the bent plate detail (6 9/16 in and 2 1/4 in) implies a smaller fold. Channel flanges face up-station; the plan does not fix the side. The stiffener is 7 1/4 in as in the elevation (the plan label reads 7 1/2 in).",
+      "reason": "Fabrication fit-up detail; the dimensioned channel length, plates and bolt pattern are modelled."
+    },
+    {
+      "id": "approach-extension-ledge",
+      "parts": "extension_-1_-1, extension_-1_1, extension_1_-1, extension_1_1",
+      "source": "sheet 33 note 2; standard drawing E609-TBAE-01 (not in the set)",
+      "deviation": "The RCBA extensions under the TFC transitions keep a 12 in depth to the bridge joint, so a 2 in gap remains between them and the pavement ledge over the outer 1 ft 6 in of each end.",
+      "reason": "The extension end detail is on a standard drawing that is not in the drawing set."
+    }
+  ],
+  "geometry_review_correction_2": "review-2026-11-second-check-connections-end-bents",
+  "geometry_review_correction_2_record": {
+    "source": "Independent second check of the corrected model (2026-11), items verified against the drawings",
+    "source_pdf_pages": [
+      20,
+      23,
+      24,
+      33
+    ],
+    "printed_sheets": [
+      20,
+      23,
+      24,
+      33
+    ],
+    "corrections": {
+      "Regular diaphragm connections rows 1-6 (36 channels, plates, bolts)": "channels web face to web face -> 1 in clear of each web, web on the plate face (+1/4 in X); plates from the beam centre line -> from the web face; bolt columns 1.255/4.255 in -> 2 1/2 and 5 1/2 in off the web face (sheet 20 typical diaphragm detail)",
+      "End diaphragms end_diaphragm_1, end_diaphragm_4": "straight underside up to 0.089 m inside the cap -> stepped cap top + 1/2 in polystyrene joint (sheets 23, 24); 6 in pavement ledge, top 1'-2\" below the surface, added (sheets 23, 24, 33)",
+      "Approach slabs approach_west, approach_east": "12 in to the joint -> 14 in for 2'-0\" with a 45 deg return (sheet 33 pavement ledge detail)"
+    },
+    "changed_parts": [
+      "diaphragm_1_1",
+      "diaphragm_plates_1_1",
+      "diaphragm_bolts_1_1",
+      "diaphragm_1_2",
+      "diaphragm_plates_1_2",
+      "diaphragm_bolts_1_2",
+      "diaphragm_1_3",
+      "diaphragm_plates_1_3",
+      "diaphragm_bolts_1_3",
+      "diaphragm_1_4",
+      "diaphragm_plates_1_4",
+      "diaphragm_bolts_1_4",
+      "diaphragm_1_5",
+      "diaphragm_plates_1_5",
+      "diaphragm_bolts_1_5",
+      "diaphragm_1_6",
+      "diaphragm_plates_1_6",
+      "diaphragm_bolts_1_6",
+      "diaphragm_2_1",
+      "diaphragm_plates_2_1",
+      "diaphragm_bolts_2_1",
+      "diaphragm_2_2",
+      "diaphragm_plates_2_2",
+      "diaphragm_bolts_2_2",
+      "diaphragm_2_3",
+      "diaphragm_plates_2_3",
+      "diaphragm_bolts_2_3",
+      "diaphragm_2_4",
+      "diaphragm_plates_2_4",
+      "diaphragm_bolts_2_4",
+      "diaphragm_2_5",
+      "diaphragm_plates_2_5",
+      "diaphragm_bolts_2_5",
+      "diaphragm_2_6",
+      "diaphragm_plates_2_6",
+      "diaphragm_bolts_2_6",
+      "diaphragm_3_1",
+      "diaphragm_plates_3_1",
+      "diaphragm_bolts_3_1",
+      "diaphragm_3_2",
+      "diaphragm_plates_3_2",
+      "diaphragm_bolts_3_2",
+      "diaphragm_3_3",
+      "diaphragm_plates_3_3",
+      "diaphragm_bolts_3_3",
+      "diaphragm_3_4",
+      "diaphragm_plates_3_4",
+      "diaphragm_bolts_3_4",
+      "diaphragm_3_5",
+      "diaphragm_plates_3_5",
+      "diaphragm_bolts_3_5",
+      "diaphragm_3_6",
+      "diaphragm_plates_3_6",
+      "diaphragm_bolts_3_6",
+      "diaphragm_4_1",
+      "diaphragm_plates_4_1",
+      "diaphragm_bolts_4_1",
+      "diaphragm_4_2",
+      "diaphragm_plates_4_2",
+      "diaphragm_bolts_4_2",
+      "diaphragm_4_3",
+      "diaphragm_plates_4_3",
+      "diaphragm_bolts_4_3",
+      "diaphragm_4_4",
+      "diaphragm_plates_4_4",
+      "diaphragm_bolts_4_4",
+      "diaphragm_4_5",
+      "diaphragm_plates_4_5",
+      "diaphragm_bolts_4_5",
+      "diaphragm_4_6",
+      "diaphragm_plates_4_6",
+      "diaphragm_bolts_4_6",
+      "diaphragm_5_1",
+      "diaphragm_plates_5_1",
+      "diaphragm_bolts_5_1",
+      "diaphragm_5_2",
+      "diaphragm_plates_5_2",
+      "diaphragm_bolts_5_2",
+      "diaphragm_5_3",
+      "diaphragm_plates_5_3",
+      "diaphragm_bolts_5_3",
+      "diaphragm_5_4",
+      "diaphragm_plates_5_4",
+      "diaphragm_bolts_5_4",
+      "diaphragm_5_5",
+      "diaphragm_plates_5_5",
+      "diaphragm_bolts_5_5",
+      "diaphragm_5_6",
+      "diaphragm_plates_5_6",
+      "diaphragm_bolts_5_6",
+      "diaphragm_6_1",
+      "diaphragm_plates_6_1",
+      "diaphragm_bolts_6_1",
+      "diaphragm_6_2",
+      "diaphragm_plates_6_2",
+      "diaphragm_bolts_6_2",
+      "diaphragm_6_3",
+      "diaphragm_plates_6_3",
+      "diaphragm_bolts_6_3",
+      "diaphragm_6_4",
+      "diaphragm_plates_6_4",
+      "diaphragm_bolts_6_4",
+      "diaphragm_6_5",
+      "diaphragm_plates_6_5",
+      "diaphragm_bolts_6_5",
+      "diaphragm_6_6",
+      "diaphragm_plates_6_6",
+      "diaphragm_bolts_6_6",
+      "end_diaphragm_1",
+      "approach_west",
+      "end_diaphragm_4",
+      "approach_east"
+    ],
+    "before_glb_sha256": "b838ea410b52cda2c1076efc223001a38981aa7e3512b7d353eadf6b23ac2e41",
+    "after_glb_sha256": "ee8b7d75fdad9ed43ea97c56a26d1e00a86b8e07face7b70d6e32fdf8e049b29"
+  }
 }

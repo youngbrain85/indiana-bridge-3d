@@ -5,9 +5,11 @@
   "exported_glb_reopened": true,
   "mesh_names_match_manifest": true,
   "maximum_bearing_contact_error_m": 0,
-  "glb_sha256": "2c4913fcc52f04e580ae84fc283025f74defe256262f7bb7936308ffe0df3cb8",
+  "glb_sha256": "e73cf93a482cc3f0f8a67ecbefd0941100d56078c5c2b253548bf63058b2effe",
   "source_pdf_sha256": "a3520ca96c85e5df175164477f26620dc04d6a5e1a25fe9fbb68061174c09775",
-  "checks": {
+  "contacts": [],
+  "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation.",
+  "checks_at_build": {
     "support_lines": 4,
     "spans_m": [
       6.664875,
@@ -19,6 +21,6 @@
     "continuous_slab": true,
     "structural_thickness_assumed": true
   },
-  "contacts": [],
-  "limitations": "Geometry checks only. Approximate interfaces are geometric constructions, not surveyed fit or FEM validation."
+  "model_revision": "1.2-approach-far-ends-square",
+  "refreshed_after_correction": "Generic checks re-run on the corrected GLB by scripts/refresh_geometry_verification.py; checks_at_build describe the model as first built."
 }

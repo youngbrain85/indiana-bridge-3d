@@ -11,8 +11,8 @@
   "drawing_sha256": "d02d098ad77cba77ca3301917568557325b2a4262bbc7260f2c50205e2518ad4",
   "source_hashes": {
     "drawing": "d02d098ad77cba77ca3301917568557325b2a4262bbc7260f2c50205e2518ad4",
-    "manifest": "bae8ec023d43b290b299ca0b50e33c8616edbf32c1a58811ee9ece67045c0a5c",
-    "model": "a162d1b5edc0e74f7b3812aa03ac6255761d1f6313469bbed71c0ea9b5977720"
+    "manifest": "1fe62a38f72e8e1cc827dd8f80b4d6e4e6afcc554f7e1b9345ba9846d5600449",
+    "model": "8017ea02b0c13d6c5a1f527003204a2432bfbc34dd8fd7246e854c70797d2ecc"
   },
   "sources": {
     "drawing": {
@@ -35,6 +35,7 @@
       "status": "source-based geometry with explicit idealizations",
       "source": "drawing",
       "pdf_pages": [
+        21,
         23,
         24,
         25,
@@ -279,7 +280,7 @@
           }
         ],
         "columns": [],
-        "top_z_m": 5.814822,
+        "top_z_m": 6.018022,
         "line_connection": {
           "cid": "bent_1_bed",
           "width_m": 0.9144000000000001
@@ -441,7 +442,7 @@
           }
         ],
         "columns": [],
-        "top_z_m": 5.814822,
+        "top_z_m": 6.018022,
         "line_connection": {
           "cid": "bent_2_bed",
           "width_m": 0.9144000000000001

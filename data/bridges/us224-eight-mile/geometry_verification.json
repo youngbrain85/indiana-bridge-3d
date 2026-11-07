@@ -5,36 +5,8 @@
   "exported_glb_reopened": true,
   "mesh_names_match_manifest": true,
   "maximum_bearing_contact_error_m": 0.0,
-  "glb_sha256": "4a5b842204411a8b5b55cf2f3806460c0183f674ab04358a95f3d09d1c0a135b",
+  "glb_sha256": "f17de4574e3b36acd99294fe7814195c81d44c163aae8e492cb9d7fb02336d50",
   "source_pdf_sha256": "1df89fdef9ac73f333ace80589aa645908cecf4fa6c11fc262c5a767ec9f5086",
-  "checks": {
-    "spans_m": [
-      12.4968
-    ],
-    "support_lines": 2,
-    "girder_lines": 6,
-    "girder_segments": 6,
-    "bearings": 12,
-    "girder_y_m": [
-      -5.9055,
-      -3.5433,
-      -1.1810999999999998,
-      1.1811000000000007,
-      3.5433000000000003,
-      5.9055
-    ],
-    "support_u_m": [
-      -6.2484,
-      6.2484
-    ],
-    "skew_deg": -30,
-    "hollow_box_beams": 6,
-    "discrete_shallow_footings": 2,
-    "concrete_diaphragms": 15,
-    "proposed_TFC_transitions": 3,
-    "source_design_state": "Retained 1985 superstructure and widened supports with proposed 2026 repairs",
-    "minimum_deck_girder_clearance_m": 0.01547500000000035
-  },
   "contacts": [
     {
       "id": "B1_bearing_1",
@@ -117,5 +89,35 @@
   "actual_exported_bearing_bounds_max_error_m": 1.184574736079469e-07,
   "nominal_girder_section_net_area_m2": 0.3554831599999999,
   "nominal_section_area_is_not_solid_bounding_rectangle": true,
-  "source_review": "Key general, framing, section, bearing, support and approach sheets were rendered and visually read before construction. See source_ledger.json evidence entries."
+  "source_review": "Key general, framing, section, bearing, support and approach sheets were rendered and visually read before construction. See source_ledger.json evidence entries.",
+  "checks_at_build": {
+    "spans_m": [
+      12.4968
+    ],
+    "support_lines": 2,
+    "girder_lines": 6,
+    "girder_segments": 6,
+    "bearings": 12,
+    "girder_y_m": [
+      -5.9055,
+      -3.5433,
+      -1.1810999999999998,
+      1.1811000000000007,
+      3.5433000000000003,
+      5.9055
+    ],
+    "support_u_m": [
+      -6.2484,
+      6.2484
+    ],
+    "skew_deg": -30,
+    "hollow_box_beams": 6,
+    "discrete_shallow_footings": 2,
+    "concrete_diaphragms": 15,
+    "proposed_TFC_transitions": 3,
+    "source_design_state": "Retained 1985 superstructure and widened supports with proposed 2026 repairs",
+    "minimum_deck_girder_clearance_m": 0.01547500000000035
+  },
+  "model_revision": "1.2-drawing-review-2",
+  "refreshed_after_correction": "Generic checks re-run on the corrected GLB by scripts/refresh_geometry_verification.py; checks_at_build describe the model as first built."
 }

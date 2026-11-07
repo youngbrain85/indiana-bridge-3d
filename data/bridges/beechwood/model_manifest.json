@@ -1325,10 +1325,12 @@
         36
       ],
       "basis": "Dimensioned envelope",
-      "note": "Full wing length includes the 3 ft end-bent body; reinforcement and small ledges omitted.",
+      "note": "Full wing length includes the 3 ft end-bent body; reinforcement and small ledges omitted. Top corrected to the straight 12 ft wing profile, El. 431.94 to 431.43, sheet 35.",
       "dimensions": {
         "full_wing_length_ft": 12,
-        "wall_thickness_ft": 1
+        "wall_thickness_ft": 1,
+        "top_el_at_tip_ft": 431.94,
+        "top_el_at_bent_end_ft": 431.557
       },
       "color": "#9eafb2",
       "bounds_m": [
@@ -1343,7 +1345,7 @@
           12.783312
         ]
       ],
-      "volume_m3": 1.871885
+      "volume_m3": 1.888132
     },
     {
       "id": "b1_wing_R",
@@ -1360,10 +1362,12 @@
         36
       ],
       "basis": "Dimensioned envelope",
-      "note": "Full wing length includes the 3 ft end-bent body; reinforcement and small ledges omitted.",
+      "note": "Full wing length includes the 3 ft end-bent body; reinforcement and small ledges omitted. Top corrected to the straight 12 ft wing profile, El. 431.94 to 431.43, sheet 35.",
       "dimensions": {
         "full_wing_length_ft": 12,
-        "wall_thickness_ft": 1
+        "wall_thickness_ft": 1,
+        "top_el_at_tip_ft": 431.94,
+        "top_el_at_bent_end_ft": 431.557
       },
       "color": "#9eafb2",
       "bounds_m": [
@@ -1378,7 +1382,7 @@
           12.783312
         ]
       ],
-      "volume_m3": 1.871885
+      "volume_m3": 1.888132
     },
     {
       "id": "b4_cap",
@@ -1427,25 +1431,27 @@
         36
       ],
       "basis": "Dimensioned envelope",
-      "note": "Full wing length includes the 3 ft end-bent body; reinforcement and small ledges omitted.",
+      "note": "Full wing length includes the 3 ft end-bent body; reinforcement and small ledges omitted. Top corrected to the straight 11 ft wing profile, El. 420.56 to 420.92, sheet 35.",
       "dimensions": {
         "full_wing_length_ft": 11,
-        "wall_thickness_ft": 1
+        "wall_thickness_ft": 1,
+        "top_el_at_tip_ft": 420.56,
+        "top_el_at_bent_end_ft": 420.822
       },
       "color": "#9eafb2",
       "bounds_m": [
         [
-          76.6572,
+          76.657204,
           5.0546,
           7.205472
         ],
         [
-          79.0956,
+          79.095596,
           5.3594,
-          9.424416
+          9.39449
         ]
       ],
-      "volume_m3": 1.608397
+      "volume_m3": 1.597271
     },
     {
       "id": "b4_wing_R",
@@ -1462,25 +1468,27 @@
         36
       ],
       "basis": "Dimensioned envelope",
-      "note": "Full wing length includes the 3 ft end-bent body; reinforcement and small ledges omitted.",
+      "note": "Full wing length includes the 3 ft end-bent body; reinforcement and small ledges omitted. Top corrected to the straight 11 ft wing profile, El. 420.56 to 420.92, sheet 35.",
       "dimensions": {
         "full_wing_length_ft": 11,
-        "wall_thickness_ft": 1
+        "wall_thickness_ft": 1,
+        "top_el_at_tip_ft": 420.56,
+        "top_el_at_bent_end_ft": 420.822
       },
       "color": "#9eafb2",
       "bounds_m": [
         [
-          76.6572,
+          76.657204,
           -5.3594,
           7.205472
         ],
         [
-          79.0956,
+          79.095596,
           -5.0546,
-          9.424416
+          9.39449
         ]
       ],
-      "volume_m3": 1.608397
+      "volume_m3": 1.597271
     },
     {
       "id": "b1_pile_1",
@@ -17979,7 +17987,7 @@
         36
       ],
       "basis": "Detailed exterior geometry",
-      "note": "Beam-end integral concrete fitted to detailed bearings; approach ledge and filler modeled separately.",
+      "note": "Beam-end integral concrete fitted to detailed bearings; approach ledge and filler modeled separately. Outer 1 ft strips raised to the wing top profile (+0.083 m3), sheets 32-35.",
       "dimensions": {},
       "color": "#9eafb2",
       "bounds_m": [
@@ -17994,7 +18002,7 @@
           12.767765
         ]
       ],
-      "volume_m3": 8.975358,
+      "volume_m3": 9.058845,
       "external_references": []
     },
     {
@@ -18386,7 +18394,7 @@
         36
       ],
       "basis": "Detailed exterior geometry",
-      "note": "Beam-end integral concrete fitted to detailed bearings; approach ledge and filler modeled separately.",
+      "note": "Beam-end integral concrete fitted to detailed bearings; approach ledge and filler modeled separately. Outer 1 ft strips raised to the wing top profile (+0.084 m3), sheets 32-35.",
       "dimensions": {},
       "color": "#9eafb2",
       "bounds_m": [
@@ -18401,7 +18409,7 @@
           9.498918
         ]
       ],
-      "volume_m3": 9.133795,
+      "volume_m3": 9.217645,
       "external_references": []
     },
     {
@@ -20501,7 +20509,7 @@
       "external_references": []
     }
   ],
-  "revision": "2.1-column-spacing",
+  "revision": "2.2-wing-profile",
   "detail_coverage": [
     {
       "feature": "HP12×84 section",
@@ -21191,5 +21199,41 @@
     ],
     "before_glb_sha256": "ade65ca82157ac5ed7ff1b6b3a09f04c6ea2b47b1c963e5822146e9c52805ce0",
     "after_glb_sha256": "b591ee4f2f032bcec4ebc2a0a151caa631de6e71cc23ce85aa46e3377c263782"
-  }
+  },
+  "wing_profile_correction": "wing-profile-straight-12ft-11ft",
+  "wing_profile_correction_record": {
+    "source_pdf_pages": [
+      33,
+      34,
+      36
+    ],
+    "printed_sheets": [
+      32,
+      33,
+      35
+    ],
+    "changed_parts": [
+      "b1_wing_L",
+      "b1_wing_R",
+      "b1_integral",
+      "b4_wing_L",
+      "b4_wing_R",
+      "b4_integral"
+    ],
+    "profiles": {
+      "End Bent 1, Wings A and B": "El. 431.94 at the approach tip to 431.43 at the span face, 12 ft",
+      "End Bent 4, Wings C and D": "El. 420.56 at the approach tip to 420.92 at the span face, 11 ft"
+    },
+    "before_glb_sha256": "b591ee4f2f032bcec4ebc2a0a151caa631de6e71cc23ce85aa46e3377c263782",
+    "after_glb_sha256": "4ae98985d7c34cb74533dfb73170679169cf1dd75d1ecd214baa518d21945803"
+  },
+  "known_deviations": [
+    {
+      "id": "end-bent-bearing-top-plate",
+      "parts": "b1_bearing_*_top, b4_bearing_*_top",
+      "source": "sheet 33 (PDF 34)",
+      "deviation": "Tapered top plate is 1 in thick at its centre (about 0.88-1.13 in at its ends); the plan gives 1 in to 1 1/4 in, about 1 1/8 in at the centre.",
+      "reason": "The bearing stack is closed between the seat (El. 427.34 / 416.64) and the beam sole plate, both set from plan elevations; the plates are encased in Pour B and are not inspectable."
+    }
+  ]
 }

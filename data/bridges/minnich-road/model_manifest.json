@@ -66,7 +66,7 @@
     },
     {
       "id": "plate_0_0",
-      "name": "Span A | plate girder 1",
+      "name": "Span A | plate girder 8",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -78,15 +78,16 @@
         32
       ],
       "basis": "Source main dimensions; retained flange schedule simplified",
-      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved.",
+      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved. North end extended 7 1/2 in beyond the Bent 1 bearing centre line, sheets 27-28.",
       "dimensions": {
         "web_thickness_m": 0.0127,
         "new_flange_width_m": 0.4572,
-        "new_flange_thickness_m": 0.0254
+        "new_flange_thickness_m": 0.0254,
+        "end_projection_beyond_bearing_m": 0.1905
       },
       "bounds_m": [
         [
-          -49.186498,
+          -49.376998,
           -9.1821,
           8.183475
         ],
@@ -96,11 +97,11 @@
           9.935287
         ]
       ],
-      "volume_m3": 0.727405279
+      "volume_m3": 0.733919137
     },
     {
       "id": "haunch_0_0",
-      "name": "haunch 0 0",
+      "name": "Span A | haunch, girder 8",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -108,15 +109,15 @@
         38
       ],
       "basis": "Derived contact envelope",
-      "note": "Haunch follows modeled grade, not a construction screed or camber table.",
+      "note": "Haunch follows modeled grade, not a construction screed or camber table. Extended with the girder end (7 1/2 in beyond the end bearing).",
       "dimensions": {
         "nominal_thickness_m": 0.08
       },
       "bounds_m": [
         [
-          -49.186498,
+          -49.376998,
           -9.1821,
-          9.765709
+          9.763671
         ],
         [
           -29.247498,
@@ -124,11 +125,11 @@
           10.018853
         ]
       ],
-      "volume_m3": 0.729288864
+      "volume_m3": 0.736256592
     },
     {
       "id": "plate_1_0",
-      "name": "Span B | plate girder 1",
+      "name": "Span B | plate girder 8",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -162,7 +163,7 @@
     },
     {
       "id": "haunch_1_0",
-      "name": "haunch 1 0",
+      "name": "Span B | haunch, girder 8",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -190,7 +191,7 @@
     },
     {
       "id": "plate_2_0",
-      "name": "Span C | plate girder 1",
+      "name": "Span C | plate girder 8",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -224,7 +225,7 @@
     },
     {
       "id": "haunch_2_0",
-      "name": "haunch 2 0",
+      "name": "Span C | haunch, girder 8",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -252,7 +253,7 @@
     },
     {
       "id": "plate_3_0",
-      "name": "Span D | plate girder 1",
+      "name": "Span D | plate girder 8",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -264,29 +265,34 @@
         32
       ],
       "basis": "Source main dimensions; retained flange schedule simplified",
-      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved.",
+      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved. South end extended 7 1/2 in beyond the Bent 5 bearing centre line; shallow-segment bottom flange PL 22 x 1 1/8 in over 39 ft 0 1/2 in on a 32 1/8 in web, underside kept, sheets 30-31.",
       "dimensions": {
         "web_thickness_m": 0.0127,
         "new_flange_width_m": 0.4572,
-        "new_flange_thickness_m": 0.0254
+        "new_flange_thickness_m": 0.0254,
+        "end_projection_beyond_bearing_m": 0.1905,
+        "shallow_bottom_flange_width_m": 0.5588,
+        "shallow_bottom_flange_thickness_m": 0.028575,
+        "shallow_web_depth_m": 0.815975,
+        "shallow_bottom_flange_length_m": 11.8999
       },
       "bounds_m": [
         [
-          59.144502,
-          -9.1821,
+          59.144501,
+          -9.2329,
           7.8666
         ],
         [
-          76.035502,
-          -8.7249,
+          76.226006,
+          -8.6741,
           9.642632
         ]
       ],
-      "volume_m3": 0.616143364
+      "volume_m3": 0.67389204
     },
     {
       "id": "haunch_3_0",
-      "name": "haunch 3 0",
+      "name": "Span D | haunch, girder 8",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -294,7 +300,7 @@
         38
       ],
       "basis": "Derived contact envelope",
-      "note": "Haunch follows modeled grade, not a construction screed or camber table.",
+      "note": "Haunch follows modeled grade, not a construction screed or camber table. Extended with the girder end (7 1/2 in beyond the end bearing).",
       "dimensions": {
         "nominal_thickness_m": 0.08
       },
@@ -302,19 +308,19 @@
         [
           59.144502,
           -9.1821,
-          9.392744
+          9.389571
         ],
         [
-          76.035502,
+          76.226002,
           -8.7249,
           9.726198
         ]
       ],
-      "volume_m3": 0.617805216
+      "volume_m3": 0.624772944
     },
     {
       "id": "Bent_1_bearing_1",
-      "name": "Bent 1 bearing 1",
+      "name": "Bent 1 | bearing, girder 8",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -344,7 +350,7 @@
     },
     {
       "id": "Bent_2_bearing_1",
-      "name": "Bent 2 bearing 1",
+      "name": "Bent 2 | bearing, girder 8",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -374,7 +380,7 @@
     },
     {
       "id": "Bent_3_bearing_1",
-      "name": "Bent 3 bearing 1",
+      "name": "Bent 3 | bearing, girder 8",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -404,7 +410,7 @@
     },
     {
       "id": "Bent_4_bearing_1",
-      "name": "Bent 4 bearing 1",
+      "name": "Bent 4 | bearing, girder 8",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -434,7 +440,7 @@
     },
     {
       "id": "Bent_5_bearing_1",
-      "name": "Bent 5 bearing 1",
+      "name": "Bent 5 | bearing, girder 8",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -464,7 +470,7 @@
     },
     {
       "id": "splice_0_0",
-      "name": "splice 0 0",
+      "name": "Girder 8 | field splice, Span A",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -492,7 +498,7 @@
     },
     {
       "id": "splice_0_0_bolts",
-      "name": "splice 0 0 web bolts",
+      "name": "Girder 8 | field splice web bolts, Span A",
       "layer": "fasteners",
       "color": "#a2acb0",
       "pdf_pages": [
@@ -520,7 +526,7 @@
     },
     {
       "id": "splice_0_1",
-      "name": "splice 0 1",
+      "name": "Girder 8 | field splice, Span D",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -548,7 +554,7 @@
     },
     {
       "id": "splice_0_1_bolts",
-      "name": "splice 0 1 web bolts",
+      "name": "Girder 8 | field splice web bolts, Span D",
       "layer": "fasteners",
       "color": "#a2acb0",
       "pdf_pages": [
@@ -576,7 +582,7 @@
     },
     {
       "id": "stiffener_0_0",
-      "name": "Girder 1 | transverse stiffener pair 1",
+      "name": "Girder 8 | transverse stiffener pair 1",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -605,7 +611,7 @@
     },
     {
       "id": "stiffener_0_1",
-      "name": "Girder 1 | transverse stiffener pair 2",
+      "name": "Girder 8 | transverse stiffener pair 2",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -634,7 +640,7 @@
     },
     {
       "id": "stiffener_0_2",
-      "name": "Girder 1 | transverse stiffener pair 3",
+      "name": "Girder 8 | transverse stiffener pair 3",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -663,7 +669,7 @@
     },
     {
       "id": "stiffener_0_3",
-      "name": "Girder 1 | transverse stiffener pair 4",
+      "name": "Girder 8 | transverse stiffener pair 4",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -692,7 +698,7 @@
     },
     {
       "id": "stiffener_0_4",
-      "name": "Girder 1 | transverse stiffener pair 5",
+      "name": "Girder 8 | transverse stiffener pair 5",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -721,7 +727,7 @@
     },
     {
       "id": "stiffener_0_5",
-      "name": "Girder 1 | transverse stiffener pair 6",
+      "name": "Girder 8 | transverse stiffener pair 6",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -750,7 +756,7 @@
     },
     {
       "id": "stiffener_0_6",
-      "name": "Girder 1 | transverse stiffener pair 7",
+      "name": "Girder 8 | transverse stiffener pair 7",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -779,7 +785,7 @@
     },
     {
       "id": "stiffener_0_7",
-      "name": "Girder 1 | transverse stiffener pair 8",
+      "name": "Girder 8 | transverse stiffener pair 8",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -808,7 +814,7 @@
     },
     {
       "id": "stiffener_0_8",
-      "name": "Girder 1 | transverse stiffener pair 9",
+      "name": "Girder 8 | transverse stiffener pair 9",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -837,7 +843,7 @@
     },
     {
       "id": "stiffener_0_9",
-      "name": "Girder 1 | transverse stiffener pair 10",
+      "name": "Girder 8 | transverse stiffener pair 10",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -866,7 +872,7 @@
     },
     {
       "id": "stiffener_0_10",
-      "name": "Girder 1 | transverse stiffener pair 11",
+      "name": "Girder 8 | transverse stiffener pair 11",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -895,7 +901,7 @@
     },
     {
       "id": "stiffener_0_11",
-      "name": "Girder 1 | transverse stiffener pair 12",
+      "name": "Girder 8 | transverse stiffener pair 12",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -924,7 +930,7 @@
     },
     {
       "id": "stiffener_0_12",
-      "name": "Girder 1 | transverse stiffener pair 13",
+      "name": "Girder 8 | transverse stiffener pair 13",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -953,7 +959,7 @@
     },
     {
       "id": "stiffener_0_13",
-      "name": "Girder 1 | transverse stiffener pair 14",
+      "name": "Girder 8 | transverse stiffener pair 14",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -982,7 +988,7 @@
     },
     {
       "id": "stiffener_0_14",
-      "name": "Girder 1 | transverse stiffener pair 15",
+      "name": "Girder 8 | transverse stiffener pair 15",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1011,7 +1017,7 @@
     },
     {
       "id": "stiffener_0_15",
-      "name": "Girder 1 | transverse stiffener pair 16",
+      "name": "Girder 8 | transverse stiffener pair 16",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1040,7 +1046,7 @@
     },
     {
       "id": "stiffener_0_16",
-      "name": "Girder 1 | transverse stiffener pair 17",
+      "name": "Girder 8 | transverse stiffener pair 17",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1069,7 +1075,7 @@
     },
     {
       "id": "stiffener_0_17",
-      "name": "Girder 1 | transverse stiffener pair 18",
+      "name": "Girder 8 | transverse stiffener pair 18",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1098,7 +1104,7 @@
     },
     {
       "id": "stiffener_0_18",
-      "name": "Girder 1 | transverse stiffener pair 19",
+      "name": "Girder 8 | transverse stiffener pair 19",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1127,7 +1133,7 @@
     },
     {
       "id": "stiffener_0_19",
-      "name": "Girder 1 | transverse stiffener pair 20",
+      "name": "Girder 8 | transverse stiffener pair 20",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1156,7 +1162,7 @@
     },
     {
       "id": "plate_0_1",
-      "name": "Span A | plate girder 2",
+      "name": "Span A | plate girder 7",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -1168,15 +1174,16 @@
         32
       ],
       "basis": "Source main dimensions; retained flange schedule simplified",
-      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved.",
+      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved. North end extended 7 1/2 in beyond the Bent 1 bearing centre line, sheets 27-28.",
       "dimensions": {
         "web_thickness_m": 0.0127,
         "new_flange_width_m": 0.4572,
-        "new_flange_thickness_m": 0.0254
+        "new_flange_thickness_m": 0.0254,
+        "end_projection_beyond_bearing_m": 0.1905
       },
       "bounds_m": [
         [
-          -53.299537,
+          -53.490037,
           -6.4389,
           8.195106
         ],
@@ -1186,11 +1193,11 @@
           9.9502
         ]
       ],
-      "volume_m3": 0.727405279
+      "volume_m3": 0.733919137
     },
     {
       "id": "haunch_0_1",
-      "name": "haunch 0 1",
+      "name": "Span A | haunch, girder 7",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -1198,15 +1205,15 @@
         38
       ],
       "basis": "Derived contact envelope",
-      "note": "Haunch follows modeled grade, not a construction screed or camber table.",
+      "note": "Haunch follows modeled grade, not a construction screed or camber table. Extended with the girder end (7 1/2 in beyond the end bearing).",
       "dimensions": {
         "nominal_thickness_m": 0.08
       },
       "bounds_m": [
         [
-          -53.299537,
+          -53.490037,
           -6.4389,
-          9.762732
+          9.760523
         ],
         [
           -33.360537,
@@ -1214,11 +1221,11 @@
           10.033766
         ]
       ],
-      "volume_m3": 0.729288864
+      "volume_m3": 0.736256592
     },
     {
       "id": "plate_1_1",
-      "name": "Span B | plate girder 2",
+      "name": "Span B | plate girder 7",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -1252,7 +1259,7 @@
     },
     {
       "id": "haunch_1_1",
-      "name": "haunch 1 1",
+      "name": "Span B | haunch, girder 7",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -1280,7 +1287,7 @@
     },
     {
       "id": "plate_2_1",
-      "name": "Span C | plate girder 2",
+      "name": "Span C | plate girder 7",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -1314,7 +1321,7 @@
     },
     {
       "id": "haunch_2_1",
-      "name": "haunch 2 1",
+      "name": "Span C | haunch, girder 7",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -1342,7 +1349,7 @@
     },
     {
       "id": "plate_3_1",
-      "name": "Span D | plate girder 2",
+      "name": "Span D | plate girder 7",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -1354,29 +1361,34 @@
         32
       ],
       "basis": "Source main dimensions; retained flange schedule simplified",
-      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved.",
+      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved. South end extended 7 1/2 in beyond the Bent 5 bearing centre line; shallow-segment bottom flange PL 22 x 1 1/8 in over 39 ft 0 1/2 in on a 32 1/8 in web, underside kept, sheets 30-31.",
       "dimensions": {
         "web_thickness_m": 0.0127,
         "new_flange_width_m": 0.4572,
-        "new_flange_thickness_m": 0.0254
+        "new_flange_thickness_m": 0.0254,
+        "end_projection_beyond_bearing_m": 0.1905,
+        "shallow_bottom_flange_width_m": 0.5588,
+        "shallow_bottom_flange_thickness_m": 0.028575,
+        "shallow_web_depth_m": 0.815975,
+        "shallow_bottom_flange_length_m": 11.8999
       },
       "bounds_m": [
         [
-          55.031463,
-          -6.4389,
+          55.031464,
+          -6.4897,
           7.964102
         ],
         [
-          71.922463,
-          -5.9817,
+          72.112961,
+          -5.9309,
           9.736852
         ]
       ],
-      "volume_m3": 0.616143364
+      "volume_m3": 0.673892866
     },
     {
       "id": "haunch_3_1",
-      "name": "haunch 3 1",
+      "name": "Span D | haunch, girder 7",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -1384,7 +1396,7 @@
         38
       ],
       "basis": "Derived contact envelope",
-      "note": "Haunch follows modeled grade, not a construction screed or camber table.",
+      "note": "Haunch follows modeled grade, not a construction screed or camber table. Extended with the girder end (7 1/2 in beyond the end bearing).",
       "dimensions": {
         "nominal_thickness_m": 0.08
       },
@@ -1392,19 +1404,19 @@
         [
           55.031463,
           -6.4389,
-          9.502119
+          9.499117
         ],
         [
-          71.922463,
+          72.112963,
           -5.9817,
           9.820418
         ]
       ],
-      "volume_m3": 0.617805216
+      "volume_m3": 0.624772944
     },
     {
       "id": "Bent_1_bearing_2",
-      "name": "Bent 1 bearing 2",
+      "name": "Bent 1 | bearing, girder 7",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -1434,7 +1446,7 @@
     },
     {
       "id": "Bent_2_bearing_2",
-      "name": "Bent 2 bearing 2",
+      "name": "Bent 2 | bearing, girder 7",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -1464,7 +1476,7 @@
     },
     {
       "id": "Bent_3_bearing_2",
-      "name": "Bent 3 bearing 2",
+      "name": "Bent 3 | bearing, girder 7",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -1494,7 +1506,7 @@
     },
     {
       "id": "Bent_4_bearing_2",
-      "name": "Bent 4 bearing 2",
+      "name": "Bent 4 | bearing, girder 7",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -1524,7 +1536,7 @@
     },
     {
       "id": "Bent_5_bearing_2",
-      "name": "Bent 5 bearing 2",
+      "name": "Bent 5 | bearing, girder 7",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -1554,7 +1566,7 @@
     },
     {
       "id": "splice_1_0",
-      "name": "splice 1 0",
+      "name": "Girder 7 | field splice, Span A",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1582,7 +1594,7 @@
     },
     {
       "id": "splice_1_0_bolts",
-      "name": "splice 1 0 web bolts",
+      "name": "Girder 7 | field splice web bolts, Span A",
       "layer": "fasteners",
       "color": "#a2acb0",
       "pdf_pages": [
@@ -1610,7 +1622,7 @@
     },
     {
       "id": "splice_1_1",
-      "name": "splice 1 1",
+      "name": "Girder 7 | field splice, Span D",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1638,7 +1650,7 @@
     },
     {
       "id": "splice_1_1_bolts",
-      "name": "splice 1 1 web bolts",
+      "name": "Girder 7 | field splice web bolts, Span D",
       "layer": "fasteners",
       "color": "#a2acb0",
       "pdf_pages": [
@@ -1666,7 +1678,7 @@
     },
     {
       "id": "stiffener_1_0",
-      "name": "Girder 2 | transverse stiffener pair 1",
+      "name": "Girder 7 | transverse stiffener pair 1",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1695,7 +1707,7 @@
     },
     {
       "id": "stiffener_1_1",
-      "name": "Girder 2 | transverse stiffener pair 2",
+      "name": "Girder 7 | transverse stiffener pair 2",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1724,7 +1736,7 @@
     },
     {
       "id": "stiffener_1_2",
-      "name": "Girder 2 | transverse stiffener pair 3",
+      "name": "Girder 7 | transverse stiffener pair 3",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1753,7 +1765,7 @@
     },
     {
       "id": "stiffener_1_3",
-      "name": "Girder 2 | transverse stiffener pair 4",
+      "name": "Girder 7 | transverse stiffener pair 4",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1782,7 +1794,7 @@
     },
     {
       "id": "stiffener_1_4",
-      "name": "Girder 2 | transverse stiffener pair 5",
+      "name": "Girder 7 | transverse stiffener pair 5",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1811,7 +1823,7 @@
     },
     {
       "id": "stiffener_1_5",
-      "name": "Girder 2 | transverse stiffener pair 6",
+      "name": "Girder 7 | transverse stiffener pair 6",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1840,7 +1852,7 @@
     },
     {
       "id": "stiffener_1_6",
-      "name": "Girder 2 | transverse stiffener pair 7",
+      "name": "Girder 7 | transverse stiffener pair 7",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1869,7 +1881,7 @@
     },
     {
       "id": "stiffener_1_7",
-      "name": "Girder 2 | transverse stiffener pair 8",
+      "name": "Girder 7 | transverse stiffener pair 8",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1898,7 +1910,7 @@
     },
     {
       "id": "stiffener_1_8",
-      "name": "Girder 2 | transverse stiffener pair 9",
+      "name": "Girder 7 | transverse stiffener pair 9",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1927,7 +1939,7 @@
     },
     {
       "id": "stiffener_1_9",
-      "name": "Girder 2 | transverse stiffener pair 10",
+      "name": "Girder 7 | transverse stiffener pair 10",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1956,7 +1968,7 @@
     },
     {
       "id": "stiffener_1_10",
-      "name": "Girder 2 | transverse stiffener pair 11",
+      "name": "Girder 7 | transverse stiffener pair 11",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -1985,7 +1997,7 @@
     },
     {
       "id": "stiffener_1_11",
-      "name": "Girder 2 | transverse stiffener pair 12",
+      "name": "Girder 7 | transverse stiffener pair 12",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2014,7 +2026,7 @@
     },
     {
       "id": "stiffener_1_12",
-      "name": "Girder 2 | transverse stiffener pair 13",
+      "name": "Girder 7 | transverse stiffener pair 13",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2043,7 +2055,7 @@
     },
     {
       "id": "stiffener_1_13",
-      "name": "Girder 2 | transverse stiffener pair 14",
+      "name": "Girder 7 | transverse stiffener pair 14",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2072,7 +2084,7 @@
     },
     {
       "id": "stiffener_1_14",
-      "name": "Girder 2 | transverse stiffener pair 15",
+      "name": "Girder 7 | transverse stiffener pair 15",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2101,7 +2113,7 @@
     },
     {
       "id": "stiffener_1_15",
-      "name": "Girder 2 | transverse stiffener pair 16",
+      "name": "Girder 7 | transverse stiffener pair 16",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2130,7 +2142,7 @@
     },
     {
       "id": "stiffener_1_16",
-      "name": "Girder 2 | transverse stiffener pair 17",
+      "name": "Girder 7 | transverse stiffener pair 17",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2159,7 +2171,7 @@
     },
     {
       "id": "stiffener_1_17",
-      "name": "Girder 2 | transverse stiffener pair 18",
+      "name": "Girder 7 | transverse stiffener pair 18",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2188,7 +2200,7 @@
     },
     {
       "id": "stiffener_1_18",
-      "name": "Girder 2 | transverse stiffener pair 19",
+      "name": "Girder 7 | transverse stiffener pair 19",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2217,7 +2229,7 @@
     },
     {
       "id": "stiffener_1_19",
-      "name": "Girder 2 | transverse stiffener pair 20",
+      "name": "Girder 7 | transverse stiffener pair 20",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2246,7 +2258,7 @@
     },
     {
       "id": "plate_0_2",
-      "name": "Span A | plate girder 3",
+      "name": "Span A | plate girder 6",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -2258,15 +2270,16 @@
         32
       ],
       "basis": "Source main dimensions; retained flange schedule simplified",
-      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved.",
+      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved. North end extended 7 1/2 in beyond the Bent 1 bearing centre line, sheets 27-28.",
       "dimensions": {
         "web_thickness_m": 0.0127,
         "new_flange_width_m": 0.4572,
-        "new_flange_thickness_m": 0.0254
+        "new_flange_thickness_m": 0.0254,
+        "end_projection_beyond_bearing_m": 0.1905
       },
       "bounds_m": [
         [
-          -57.412576,
+          -57.603076,
           -3.6957,
           8.203047
         ],
@@ -2276,11 +2289,11 @@
           9.961423
         ]
       ],
-      "volume_m3": 0.727405279
+      "volume_m3": 0.733919137
     },
     {
       "id": "haunch_0_2",
-      "name": "haunch 0 2",
+      "name": "Span A | haunch, girder 6",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -2288,15 +2301,15 @@
         38
       ],
       "basis": "Derived contact envelope",
-      "note": "Haunch follows modeled grade, not a construction screed or camber table.",
+      "note": "Haunch follows modeled grade, not a construction screed or camber table. Extended with the girder end (7 1/2 in beyond the end bearing).",
       "dimensions": {
         "nominal_thickness_m": 0.08
       },
       "bounds_m": [
         [
-          -57.412576,
+          -57.603076,
           -3.6957,
-          9.756065
+          9.753685
         ],
         [
           -37.473576,
@@ -2304,11 +2317,11 @@
           10.044989
         ]
       ],
-      "volume_m3": 0.729288864
+      "volume_m3": 0.736256592
     },
     {
       "id": "plate_1_2",
-      "name": "Span B | plate girder 3",
+      "name": "Span B | plate girder 6",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -2342,7 +2355,7 @@
     },
     {
       "id": "haunch_1_2",
-      "name": "haunch 1 2",
+      "name": "Span B | haunch, girder 6",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -2370,7 +2383,7 @@
     },
     {
       "id": "plate_2_2",
-      "name": "Span C | plate girder 3",
+      "name": "Span C | plate girder 6",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -2404,7 +2417,7 @@
     },
     {
       "id": "haunch_2_2",
-      "name": "haunch 2 2",
+      "name": "Span C | haunch, girder 6",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -2432,7 +2445,7 @@
     },
     {
       "id": "plate_3_2",
-      "name": "Span D | plate girder 3",
+      "name": "Span D | plate girder 6",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -2444,29 +2457,34 @@
         32
       ],
       "basis": "Source main dimensions; retained flange schedule simplified",
-      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved.",
+      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved. South end extended 7 1/2 in beyond the Bent 5 bearing centre line; shallow-segment bottom flange PL 22 x 1 1/8 in over 39 ft 0 1/2 in on a 32 1/8 in web, underside kept, sheets 30-31.",
       "dimensions": {
         "web_thickness_m": 0.0127,
         "new_flange_width_m": 0.4572,
-        "new_flange_thickness_m": 0.0254
+        "new_flange_thickness_m": 0.0254,
+        "end_projection_beyond_bearing_m": 0.1905,
+        "shallow_bottom_flange_width_m": 0.5588,
+        "shallow_bottom_flange_thickness_m": 0.028575,
+        "shallow_web_depth_m": 0.815975,
+        "shallow_bottom_flange_length_m": 11.8999
       },
       "bounds_m": [
         [
-          50.918424,
-          -3.6957,
-          8.057913
+          50.918423,
+          -3.7465,
+          8.057914
         ],
         [
-          67.809424,
-          -3.2385,
+          67.999924,
+          -3.1877,
           9.827382
         ]
       ],
-      "volume_m3": 0.616143364
+      "volume_m3": 0.673889772
     },
     {
       "id": "haunch_3_2",
-      "name": "haunch 3 2",
+      "name": "Span D | haunch, girder 6",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -2474,7 +2492,7 @@
         38
       ],
       "basis": "Derived contact envelope",
-      "note": "Haunch follows modeled grade, not a construction screed or camber table.",
+      "note": "Haunch follows modeled grade, not a construction screed or camber table. Extended with the girder end (7 1/2 in beyond the end bearing).",
       "dimensions": {
         "nominal_thickness_m": 0.08
       },
@@ -2482,19 +2500,19 @@
         [
           50.918424,
           -3.6957,
-          9.607804
+          9.604972
         ],
         [
-          67.809424,
+          67.999924,
           -3.2385,
           9.910948
         ]
       ],
-      "volume_m3": 0.617805216
+      "volume_m3": 0.624772944
     },
     {
       "id": "Bent_1_bearing_3",
-      "name": "Bent 1 bearing 3",
+      "name": "Bent 1 | bearing, girder 6",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -2524,7 +2542,7 @@
     },
     {
       "id": "Bent_2_bearing_3",
-      "name": "Bent 2 bearing 3",
+      "name": "Bent 2 | bearing, girder 6",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -2554,7 +2572,7 @@
     },
     {
       "id": "Bent_3_bearing_3",
-      "name": "Bent 3 bearing 3",
+      "name": "Bent 3 | bearing, girder 6",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -2584,7 +2602,7 @@
     },
     {
       "id": "Bent_4_bearing_3",
-      "name": "Bent 4 bearing 3",
+      "name": "Bent 4 | bearing, girder 6",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -2614,7 +2632,7 @@
     },
     {
       "id": "Bent_5_bearing_3",
-      "name": "Bent 5 bearing 3",
+      "name": "Bent 5 | bearing, girder 6",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -2644,7 +2662,7 @@
     },
     {
       "id": "splice_2_0",
-      "name": "splice 2 0",
+      "name": "Girder 6 | field splice, Span A",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2672,7 +2690,7 @@
     },
     {
       "id": "splice_2_0_bolts",
-      "name": "splice 2 0 web bolts",
+      "name": "Girder 6 | field splice web bolts, Span A",
       "layer": "fasteners",
       "color": "#a2acb0",
       "pdf_pages": [
@@ -2700,7 +2718,7 @@
     },
     {
       "id": "splice_2_1",
-      "name": "splice 2 1",
+      "name": "Girder 6 | field splice, Span D",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2728,7 +2746,7 @@
     },
     {
       "id": "splice_2_1_bolts",
-      "name": "splice 2 1 web bolts",
+      "name": "Girder 6 | field splice web bolts, Span D",
       "layer": "fasteners",
       "color": "#a2acb0",
       "pdf_pages": [
@@ -2756,7 +2774,7 @@
     },
     {
       "id": "stiffener_2_0",
-      "name": "Girder 3 | transverse stiffener pair 1",
+      "name": "Girder 6 | transverse stiffener pair 1",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2785,7 +2803,7 @@
     },
     {
       "id": "stiffener_2_1",
-      "name": "Girder 3 | transverse stiffener pair 2",
+      "name": "Girder 6 | transverse stiffener pair 2",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2814,7 +2832,7 @@
     },
     {
       "id": "stiffener_2_2",
-      "name": "Girder 3 | transverse stiffener pair 3",
+      "name": "Girder 6 | transverse stiffener pair 3",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2843,7 +2861,7 @@
     },
     {
       "id": "stiffener_2_3",
-      "name": "Girder 3 | transverse stiffener pair 4",
+      "name": "Girder 6 | transverse stiffener pair 4",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2872,7 +2890,7 @@
     },
     {
       "id": "stiffener_2_4",
-      "name": "Girder 3 | transverse stiffener pair 5",
+      "name": "Girder 6 | transverse stiffener pair 5",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2901,7 +2919,7 @@
     },
     {
       "id": "stiffener_2_5",
-      "name": "Girder 3 | transverse stiffener pair 6",
+      "name": "Girder 6 | transverse stiffener pair 6",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2930,7 +2948,7 @@
     },
     {
       "id": "stiffener_2_6",
-      "name": "Girder 3 | transverse stiffener pair 7",
+      "name": "Girder 6 | transverse stiffener pair 7",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2959,7 +2977,7 @@
     },
     {
       "id": "stiffener_2_7",
-      "name": "Girder 3 | transverse stiffener pair 8",
+      "name": "Girder 6 | transverse stiffener pair 8",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -2988,7 +3006,7 @@
     },
     {
       "id": "stiffener_2_8",
-      "name": "Girder 3 | transverse stiffener pair 9",
+      "name": "Girder 6 | transverse stiffener pair 9",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3017,7 +3035,7 @@
     },
     {
       "id": "stiffener_2_9",
-      "name": "Girder 3 | transverse stiffener pair 10",
+      "name": "Girder 6 | transverse stiffener pair 10",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3046,7 +3064,7 @@
     },
     {
       "id": "stiffener_2_10",
-      "name": "Girder 3 | transverse stiffener pair 11",
+      "name": "Girder 6 | transverse stiffener pair 11",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3075,7 +3093,7 @@
     },
     {
       "id": "stiffener_2_11",
-      "name": "Girder 3 | transverse stiffener pair 12",
+      "name": "Girder 6 | transverse stiffener pair 12",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3104,7 +3122,7 @@
     },
     {
       "id": "stiffener_2_12",
-      "name": "Girder 3 | transverse stiffener pair 13",
+      "name": "Girder 6 | transverse stiffener pair 13",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3133,7 +3151,7 @@
     },
     {
       "id": "stiffener_2_13",
-      "name": "Girder 3 | transverse stiffener pair 14",
+      "name": "Girder 6 | transverse stiffener pair 14",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3162,7 +3180,7 @@
     },
     {
       "id": "stiffener_2_14",
-      "name": "Girder 3 | transverse stiffener pair 15",
+      "name": "Girder 6 | transverse stiffener pair 15",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3191,7 +3209,7 @@
     },
     {
       "id": "stiffener_2_15",
-      "name": "Girder 3 | transverse stiffener pair 16",
+      "name": "Girder 6 | transverse stiffener pair 16",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3220,7 +3238,7 @@
     },
     {
       "id": "stiffener_2_16",
-      "name": "Girder 3 | transverse stiffener pair 17",
+      "name": "Girder 6 | transverse stiffener pair 17",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3249,7 +3267,7 @@
     },
     {
       "id": "stiffener_2_17",
-      "name": "Girder 3 | transverse stiffener pair 18",
+      "name": "Girder 6 | transverse stiffener pair 18",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3278,7 +3296,7 @@
     },
     {
       "id": "stiffener_2_18",
-      "name": "Girder 3 | transverse stiffener pair 19",
+      "name": "Girder 6 | transverse stiffener pair 19",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3307,7 +3325,7 @@
     },
     {
       "id": "stiffener_2_19",
-      "name": "Girder 3 | transverse stiffener pair 20",
+      "name": "Girder 6 | transverse stiffener pair 20",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3336,7 +3354,7 @@
     },
     {
       "id": "plate_0_3",
-      "name": "Span A | plate girder 4",
+      "name": "Span A | plate girder 5",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -3348,15 +3366,16 @@
         32
       ],
       "basis": "Source main dimensions; retained flange schedule simplified",
-      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved.",
+      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved. North end extended 7 1/2 in beyond the Bent 1 bearing centre line, sheets 27-28.",
       "dimensions": {
         "web_thickness_m": 0.0127,
         "new_flange_width_m": 0.4572,
-        "new_flange_thickness_m": 0.0254
+        "new_flange_thickness_m": 0.0254,
+        "end_projection_beyond_bearing_m": 0.1905
       },
       "bounds_m": [
         [
-          -61.525615,
+          -61.716115,
           -0.9525,
           8.207298
         ],
@@ -3366,11 +3385,11 @@
           9.968955
         ]
       ],
-      "volume_m3": 0.727405279
+      "volume_m3": 0.733919137
     },
     {
       "id": "haunch_0_3",
-      "name": "haunch 0 3",
+      "name": "Span A | haunch, girder 5",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -3378,15 +3397,15 @@
         38
       ],
       "basis": "Derived contact envelope",
-      "note": "Haunch follows modeled grade, not a construction screed or camber table.",
+      "note": "Haunch follows modeled grade, not a construction screed or camber table. Extended with the girder end (7 1/2 in beyond the end bearing).",
       "dimensions": {
         "nominal_thickness_m": 0.08
       },
       "bounds_m": [
         [
-          -61.525615,
+          -61.716115,
           -0.9525,
-          9.745708
+          9.743157
         ],
         [
           -41.586615,
@@ -3394,11 +3413,11 @@
           10.052521
         ]
       ],
-      "volume_m3": 0.729288864
+      "volume_m3": 0.736256592
     },
     {
       "id": "plate_1_3",
-      "name": "Span B | plate girder 4",
+      "name": "Span B | plate girder 5",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -3432,7 +3451,7 @@
     },
     {
       "id": "haunch_1_3",
-      "name": "haunch 1 3",
+      "name": "Span B | haunch, girder 5",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -3460,7 +3479,7 @@
     },
     {
       "id": "plate_2_3",
-      "name": "Span C | plate girder 4",
+      "name": "Span C | plate girder 5",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -3494,7 +3513,7 @@
     },
     {
       "id": "haunch_2_3",
-      "name": "haunch 2 3",
+      "name": "Span C | haunch, girder 5",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -3522,7 +3541,7 @@
     },
     {
       "id": "plate_3_3",
-      "name": "Span D | plate girder 4",
+      "name": "Span D | plate girder 5",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -3534,29 +3553,34 @@
         32
       ],
       "basis": "Source main dimensions; retained flange schedule simplified",
-      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved.",
+      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved. South end extended 7 1/2 in beyond the Bent 5 bearing centre line; shallow-segment bottom flange PL 22 x 1 1/8 in over 39 ft 0 1/2 in on a 32 1/8 in web, underside kept, sheets 30-31.",
       "dimensions": {
         "web_thickness_m": 0.0127,
         "new_flange_width_m": 0.4572,
-        "new_flange_thickness_m": 0.0254
+        "new_flange_thickness_m": 0.0254,
+        "end_projection_beyond_bearing_m": 0.1905,
+        "shallow_bottom_flange_width_m": 0.5588,
+        "shallow_bottom_flange_thickness_m": 0.028575,
+        "shallow_web_depth_m": 0.815975,
+        "shallow_bottom_flange_length_m": 11.8999
       },
       "bounds_m": [
         [
-          46.805385,
-          -0.9525,
+          46.805386,
+          -1.0033,
           8.148035
         ],
         [
-          63.696385,
-          -0.4953,
-          9.914221
+          63.886887,
+          -0.4445,
+          9.914222
         ]
       ],
-      "volume_m3": 0.616143364
+      "volume_m3": 0.673891873
     },
     {
       "id": "haunch_3_3",
-      "name": "haunch 3 3",
+      "name": "Span D | haunch, girder 5",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -3564,7 +3588,7 @@
         38
       ],
       "basis": "Derived contact envelope",
-      "note": "Haunch follows modeled grade, not a construction screed or camber table.",
+      "note": "Haunch follows modeled grade, not a construction screed or camber table. Extended with the girder end (7 1/2 in beyond the end bearing).",
       "dimensions": {
         "nominal_thickness_m": 0.08
       },
@@ -3572,19 +3596,19 @@
         [
           46.805385,
           -0.9525,
-          9.709798
+          9.707138
         ],
         [
-          63.696385,
+          63.886885,
           -0.4953,
           9.997788
         ]
       ],
-      "volume_m3": 0.617805216
+      "volume_m3": 0.624772944
     },
     {
       "id": "Bent_1_bearing_4",
-      "name": "Bent 1 bearing 4",
+      "name": "Bent 1 | bearing, girder 5",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -3614,7 +3638,7 @@
     },
     {
       "id": "Bent_2_bearing_4",
-      "name": "Bent 2 bearing 4",
+      "name": "Bent 2 | bearing, girder 5",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -3644,7 +3668,7 @@
     },
     {
       "id": "Bent_3_bearing_4",
-      "name": "Bent 3 bearing 4",
+      "name": "Bent 3 | bearing, girder 5",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -3674,7 +3698,7 @@
     },
     {
       "id": "Bent_4_bearing_4",
-      "name": "Bent 4 bearing 4",
+      "name": "Bent 4 | bearing, girder 5",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -3704,7 +3728,7 @@
     },
     {
       "id": "Bent_5_bearing_4",
-      "name": "Bent 5 bearing 4",
+      "name": "Bent 5 | bearing, girder 5",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -3734,7 +3758,7 @@
     },
     {
       "id": "splice_3_0",
-      "name": "splice 3 0",
+      "name": "Girder 5 | field splice, Span A",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3762,7 +3786,7 @@
     },
     {
       "id": "splice_3_0_bolts",
-      "name": "splice 3 0 web bolts",
+      "name": "Girder 5 | field splice web bolts, Span A",
       "layer": "fasteners",
       "color": "#a2acb0",
       "pdf_pages": [
@@ -3790,7 +3814,7 @@
     },
     {
       "id": "splice_3_1",
-      "name": "splice 3 1",
+      "name": "Girder 5 | field splice, Span D",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3818,7 +3842,7 @@
     },
     {
       "id": "splice_3_1_bolts",
-      "name": "splice 3 1 web bolts",
+      "name": "Girder 5 | field splice web bolts, Span D",
       "layer": "fasteners",
       "color": "#a2acb0",
       "pdf_pages": [
@@ -3846,7 +3870,7 @@
     },
     {
       "id": "stiffener_3_0",
-      "name": "Girder 4 | transverse stiffener pair 1",
+      "name": "Girder 5 | transverse stiffener pair 1",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3875,7 +3899,7 @@
     },
     {
       "id": "stiffener_3_1",
-      "name": "Girder 4 | transverse stiffener pair 2",
+      "name": "Girder 5 | transverse stiffener pair 2",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3904,7 +3928,7 @@
     },
     {
       "id": "stiffener_3_2",
-      "name": "Girder 4 | transverse stiffener pair 3",
+      "name": "Girder 5 | transverse stiffener pair 3",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3933,7 +3957,7 @@
     },
     {
       "id": "stiffener_3_3",
-      "name": "Girder 4 | transverse stiffener pair 4",
+      "name": "Girder 5 | transverse stiffener pair 4",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3962,7 +3986,7 @@
     },
     {
       "id": "stiffener_3_4",
-      "name": "Girder 4 | transverse stiffener pair 5",
+      "name": "Girder 5 | transverse stiffener pair 5",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -3991,7 +4015,7 @@
     },
     {
       "id": "stiffener_3_5",
-      "name": "Girder 4 | transverse stiffener pair 6",
+      "name": "Girder 5 | transverse stiffener pair 6",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4020,7 +4044,7 @@
     },
     {
       "id": "stiffener_3_6",
-      "name": "Girder 4 | transverse stiffener pair 7",
+      "name": "Girder 5 | transverse stiffener pair 7",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4049,7 +4073,7 @@
     },
     {
       "id": "stiffener_3_7",
-      "name": "Girder 4 | transverse stiffener pair 8",
+      "name": "Girder 5 | transverse stiffener pair 8",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4078,7 +4102,7 @@
     },
     {
       "id": "stiffener_3_8",
-      "name": "Girder 4 | transverse stiffener pair 9",
+      "name": "Girder 5 | transverse stiffener pair 9",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4107,7 +4131,7 @@
     },
     {
       "id": "stiffener_3_9",
-      "name": "Girder 4 | transverse stiffener pair 10",
+      "name": "Girder 5 | transverse stiffener pair 10",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4136,7 +4160,7 @@
     },
     {
       "id": "stiffener_3_10",
-      "name": "Girder 4 | transverse stiffener pair 11",
+      "name": "Girder 5 | transverse stiffener pair 11",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4165,7 +4189,7 @@
     },
     {
       "id": "stiffener_3_11",
-      "name": "Girder 4 | transverse stiffener pair 12",
+      "name": "Girder 5 | transverse stiffener pair 12",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4194,7 +4218,7 @@
     },
     {
       "id": "stiffener_3_12",
-      "name": "Girder 4 | transverse stiffener pair 13",
+      "name": "Girder 5 | transverse stiffener pair 13",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4223,7 +4247,7 @@
     },
     {
       "id": "stiffener_3_13",
-      "name": "Girder 4 | transverse stiffener pair 14",
+      "name": "Girder 5 | transverse stiffener pair 14",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4252,7 +4276,7 @@
     },
     {
       "id": "stiffener_3_14",
-      "name": "Girder 4 | transverse stiffener pair 15",
+      "name": "Girder 5 | transverse stiffener pair 15",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4281,7 +4305,7 @@
     },
     {
       "id": "stiffener_3_15",
-      "name": "Girder 4 | transverse stiffener pair 16",
+      "name": "Girder 5 | transverse stiffener pair 16",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4310,7 +4334,7 @@
     },
     {
       "id": "stiffener_3_16",
-      "name": "Girder 4 | transverse stiffener pair 17",
+      "name": "Girder 5 | transverse stiffener pair 17",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4339,7 +4363,7 @@
     },
     {
       "id": "stiffener_3_17",
-      "name": "Girder 4 | transverse stiffener pair 18",
+      "name": "Girder 5 | transverse stiffener pair 18",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4368,7 +4392,7 @@
     },
     {
       "id": "stiffener_3_18",
-      "name": "Girder 4 | transverse stiffener pair 19",
+      "name": "Girder 5 | transverse stiffener pair 19",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4397,7 +4421,7 @@
     },
     {
       "id": "stiffener_3_19",
-      "name": "Girder 4 | transverse stiffener pair 20",
+      "name": "Girder 5 | transverse stiffener pair 20",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4426,7 +4450,7 @@
     },
     {
       "id": "plate_0_4",
-      "name": "Span A | plate girder 5",
+      "name": "Span A | plate girder 4",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -4438,15 +4462,16 @@
         32
       ],
       "basis": "Source main dimensions; retained flange schedule simplified",
-      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved.",
+      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved. North end extended 7 1/2 in beyond the Bent 1 bearing centre line, sheets 27-28.",
       "dimensions": {
         "web_thickness_m": 0.0127,
         "new_flange_width_m": 0.4572,
-        "new_flange_thickness_m": 0.0254
+        "new_flange_thickness_m": 0.0254,
+        "end_projection_beyond_bearing_m": 0.1905
       },
       "bounds_m": [
         [
-          -63.696385,
+          -63.886885,
           0.4953,
           8.185468
         ],
@@ -4456,11 +4481,11 @@
           9.948857
         ]
       ],
-      "volume_m3": 0.727405279
+      "volume_m3": 0.733919137
     },
     {
       "id": "haunch_0_4",
-      "name": "haunch 0 4",
+      "name": "Span A | haunch, girder 4",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -4468,15 +4493,15 @@
         38
       ],
       "basis": "Derived contact envelope",
-      "note": "Haunch follows modeled grade, not a construction screed or camber table.",
+      "note": "Haunch follows modeled grade, not a construction screed or camber table. Extended with the girder end (7 1/2 in beyond the end bearing).",
       "dimensions": {
         "nominal_thickness_m": 0.08
       },
       "bounds_m": [
         [
-          -63.696385,
+          -63.886885,
           0.4953,
-          9.716168
+          9.713527
         ],
         [
           -43.757385,
@@ -4484,11 +4509,11 @@
           10.032423
         ]
       ],
-      "volume_m3": 0.729288864
+      "volume_m3": 0.736256592
     },
     {
       "id": "plate_1_4",
-      "name": "Span B | plate girder 5",
+      "name": "Span B | plate girder 4",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -4522,7 +4547,7 @@
     },
     {
       "id": "haunch_1_4",
-      "name": "haunch 1 4",
+      "name": "Span B | haunch, girder 4",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -4550,7 +4575,7 @@
     },
     {
       "id": "plate_2_4",
-      "name": "Span C | plate girder 5",
+      "name": "Span C | plate girder 4",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -4584,7 +4609,7 @@
     },
     {
       "id": "haunch_2_4",
-      "name": "haunch 2 4",
+      "name": "Span C | haunch, girder 4",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -4612,7 +4637,7 @@
     },
     {
       "id": "plate_3_4",
-      "name": "Span D | plate girder 5",
+      "name": "Span D | plate girder 4",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -4624,29 +4649,34 @@
         32
       ],
       "basis": "Source main dimensions; retained flange schedule simplified",
-      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved.",
+      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved. South end extended 7 1/2 in beyond the Bent 5 bearing centre line; shallow-segment bottom flange PL 22 x 1 1/8 in over 39 ft 0 1/2 in on a 32 1/8 in web, underside kept, sheets 30-31.",
       "dimensions": {
         "web_thickness_m": 0.0127,
         "new_flange_width_m": 0.4572,
-        "new_flange_thickness_m": 0.0254
+        "new_flange_thickness_m": 0.0254,
+        "end_projection_beyond_bearing_m": 0.1905,
+        "shallow_bottom_flange_width_m": 0.5588,
+        "shallow_bottom_flange_thickness_m": 0.028575,
+        "shallow_web_depth_m": 0.815975,
+        "shallow_bottom_flange_length_m": 11.8999
       },
       "bounds_m": [
         [
-          44.634615,
-          0.4953,
+          44.634613,
+          0.4445,
           8.171525
         ],
         [
-          61.525615,
-          0.9525,
+          61.716114,
+          1.0033,
           9.93598
         ]
       ],
-      "volume_m3": 0.616143364
+      "volume_m3": 0.673892082
     },
     {
       "id": "haunch_3_4",
-      "name": "haunch 3 4",
+      "name": "Span D | haunch, girder 4",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -4654,7 +4684,7 @@
         38
       ],
       "basis": "Derived contact envelope",
-      "note": "Haunch follows modeled grade, not a construction screed or camber table.",
+      "note": "Haunch follows modeled grade, not a construction screed or camber table. Extended with the girder end (7 1/2 in beyond the end bearing).",
       "dimensions": {
         "nominal_thickness_m": 0.08
       },
@@ -4662,19 +4692,19 @@
         [
           44.634615,
           0.4953,
-          9.739555
+          9.736985
         ],
         [
-          61.525615,
+          61.716115,
           0.9525,
           10.019546
         ]
       ],
-      "volume_m3": 0.617805216
+      "volume_m3": 0.624772944
     },
     {
       "id": "Bent_1_bearing_5",
-      "name": "Bent 1 bearing 5",
+      "name": "Bent 1 | bearing, girder 4",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -4704,7 +4734,7 @@
     },
     {
       "id": "Bent_2_bearing_5",
-      "name": "Bent 2 bearing 5",
+      "name": "Bent 2 | bearing, girder 4",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -4734,7 +4764,7 @@
     },
     {
       "id": "Bent_3_bearing_5",
-      "name": "Bent 3 bearing 5",
+      "name": "Bent 3 | bearing, girder 4",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -4764,7 +4794,7 @@
     },
     {
       "id": "Bent_4_bearing_5",
-      "name": "Bent 4 bearing 5",
+      "name": "Bent 4 | bearing, girder 4",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -4794,7 +4824,7 @@
     },
     {
       "id": "Bent_5_bearing_5",
-      "name": "Bent 5 bearing 5",
+      "name": "Bent 5 | bearing, girder 4",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -4824,7 +4854,7 @@
     },
     {
       "id": "splice_4_0",
-      "name": "splice 4 0",
+      "name": "Girder 4 | field splice, Span A",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4852,7 +4882,7 @@
     },
     {
       "id": "splice_4_0_bolts",
-      "name": "splice 4 0 web bolts",
+      "name": "Girder 4 | field splice web bolts, Span A",
       "layer": "fasteners",
       "color": "#a2acb0",
       "pdf_pages": [
@@ -4880,7 +4910,7 @@
     },
     {
       "id": "splice_4_1",
-      "name": "splice 4 1",
+      "name": "Girder 4 | field splice, Span D",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4908,7 +4938,7 @@
     },
     {
       "id": "splice_4_1_bolts",
-      "name": "splice 4 1 web bolts",
+      "name": "Girder 4 | field splice web bolts, Span D",
       "layer": "fasteners",
       "color": "#a2acb0",
       "pdf_pages": [
@@ -4936,7 +4966,7 @@
     },
     {
       "id": "stiffener_4_0",
-      "name": "Girder 5 | transverse stiffener pair 1",
+      "name": "Girder 4 | transverse stiffener pair 1",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4965,7 +4995,7 @@
     },
     {
       "id": "stiffener_4_1",
-      "name": "Girder 5 | transverse stiffener pair 2",
+      "name": "Girder 4 | transverse stiffener pair 2",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -4994,7 +5024,7 @@
     },
     {
       "id": "stiffener_4_2",
-      "name": "Girder 5 | transverse stiffener pair 3",
+      "name": "Girder 4 | transverse stiffener pair 3",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5023,7 +5053,7 @@
     },
     {
       "id": "stiffener_4_3",
-      "name": "Girder 5 | transverse stiffener pair 4",
+      "name": "Girder 4 | transverse stiffener pair 4",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5052,7 +5082,7 @@
     },
     {
       "id": "stiffener_4_4",
-      "name": "Girder 5 | transverse stiffener pair 5",
+      "name": "Girder 4 | transverse stiffener pair 5",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5081,7 +5111,7 @@
     },
     {
       "id": "stiffener_4_5",
-      "name": "Girder 5 | transverse stiffener pair 6",
+      "name": "Girder 4 | transverse stiffener pair 6",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5110,7 +5140,7 @@
     },
     {
       "id": "stiffener_4_6",
-      "name": "Girder 5 | transverse stiffener pair 7",
+      "name": "Girder 4 | transverse stiffener pair 7",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5139,7 +5169,7 @@
     },
     {
       "id": "stiffener_4_7",
-      "name": "Girder 5 | transverse stiffener pair 8",
+      "name": "Girder 4 | transverse stiffener pair 8",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5168,7 +5198,7 @@
     },
     {
       "id": "stiffener_4_8",
-      "name": "Girder 5 | transverse stiffener pair 9",
+      "name": "Girder 4 | transverse stiffener pair 9",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5197,7 +5227,7 @@
     },
     {
       "id": "stiffener_4_9",
-      "name": "Girder 5 | transverse stiffener pair 10",
+      "name": "Girder 4 | transverse stiffener pair 10",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5226,7 +5256,7 @@
     },
     {
       "id": "stiffener_4_10",
-      "name": "Girder 5 | transverse stiffener pair 11",
+      "name": "Girder 4 | transverse stiffener pair 11",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5255,7 +5285,7 @@
     },
     {
       "id": "stiffener_4_11",
-      "name": "Girder 5 | transverse stiffener pair 12",
+      "name": "Girder 4 | transverse stiffener pair 12",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5284,7 +5314,7 @@
     },
     {
       "id": "stiffener_4_12",
-      "name": "Girder 5 | transverse stiffener pair 13",
+      "name": "Girder 4 | transverse stiffener pair 13",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5313,7 +5343,7 @@
     },
     {
       "id": "stiffener_4_13",
-      "name": "Girder 5 | transverse stiffener pair 14",
+      "name": "Girder 4 | transverse stiffener pair 14",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5342,7 +5372,7 @@
     },
     {
       "id": "stiffener_4_14",
-      "name": "Girder 5 | transverse stiffener pair 15",
+      "name": "Girder 4 | transverse stiffener pair 15",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5371,7 +5401,7 @@
     },
     {
       "id": "stiffener_4_15",
-      "name": "Girder 5 | transverse stiffener pair 16",
+      "name": "Girder 4 | transverse stiffener pair 16",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5400,7 +5430,7 @@
     },
     {
       "id": "stiffener_4_16",
-      "name": "Girder 5 | transverse stiffener pair 17",
+      "name": "Girder 4 | transverse stiffener pair 17",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5429,7 +5459,7 @@
     },
     {
       "id": "stiffener_4_17",
-      "name": "Girder 5 | transverse stiffener pair 18",
+      "name": "Girder 4 | transverse stiffener pair 18",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5458,7 +5488,7 @@
     },
     {
       "id": "stiffener_4_18",
-      "name": "Girder 5 | transverse stiffener pair 19",
+      "name": "Girder 4 | transverse stiffener pair 19",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5487,7 +5517,7 @@
     },
     {
       "id": "stiffener_4_19",
-      "name": "Girder 5 | transverse stiffener pair 20",
+      "name": "Girder 4 | transverse stiffener pair 20",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5516,7 +5546,7 @@
     },
     {
       "id": "plate_0_5",
-      "name": "Span A | plate girder 6",
+      "name": "Span A | plate girder 3",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -5528,15 +5558,16 @@
         32
       ],
       "basis": "Source main dimensions; retained flange schedule simplified",
-      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved.",
+      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved. North end extended 7 1/2 in beyond the Bent 1 bearing centre line, sheets 27-28.",
       "dimensions": {
         "web_thickness_m": 0.0127,
         "new_flange_width_m": 0.4572,
-        "new_flange_thickness_m": 0.0254
+        "new_flange_thickness_m": 0.0254,
+        "end_projection_beyond_bearing_m": 0.1905
       },
       "bounds_m": [
         [
-          -67.809424,
+          -67.999924,
           3.2385,
           8.098493
         ],
@@ -5546,11 +5577,11 @@
           9.865163
         ]
       ],
-      "volume_m3": 0.727405279
+      "volume_m3": 0.733919137
     },
     {
       "id": "haunch_0_5",
-      "name": "haunch 0 5",
+      "name": "Span A | haunch, girder 3",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -5558,15 +5589,15 @@
         38
       ],
       "basis": "Derived contact envelope",
-      "note": "Haunch follows modeled grade, not a construction screed or camber table.",
+      "note": "Haunch follows modeled grade, not a construction screed or camber table. Extended with the girder end (7 1/2 in beyond the end bearing).",
       "dimensions": {
         "nominal_thickness_m": 0.08
       },
       "bounds_m": [
         [
-          -67.809424,
+          -67.999924,
           3.2385,
-          9.614585
+          9.611772
         ],
         [
           -47.870424,
@@ -5574,11 +5605,11 @@
           9.948729
         ]
       ],
-      "volume_m3": 0.729288864
+      "volume_m3": 0.736256592
     },
     {
       "id": "plate_1_5",
-      "name": "Span B | plate girder 6",
+      "name": "Span B | plate girder 3",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -5612,7 +5643,7 @@
     },
     {
       "id": "haunch_1_5",
-      "name": "haunch 1 5",
+      "name": "Span B | haunch, girder 3",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -5640,7 +5671,7 @@
     },
     {
       "id": "plate_2_5",
-      "name": "Span C | plate girder 6",
+      "name": "Span C | plate girder 3",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -5674,7 +5705,7 @@
     },
     {
       "id": "haunch_2_5",
-      "name": "haunch 2 5",
+      "name": "Span C | haunch, girder 3",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -5702,7 +5733,7 @@
     },
     {
       "id": "plate_3_5",
-      "name": "Span D | plate girder 6",
+      "name": "Span D | plate girder 3",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -5714,29 +5745,34 @@
         32
       ],
       "basis": "Source main dimensions; retained flange schedule simplified",
-      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved.",
+      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved. South end extended 7 1/2 in beyond the Bent 5 bearing centre line; shallow-segment bottom flange PL 22 x 1 1/8 in over 39 ft 0 1/2 in on a 32 1/8 in web, underside kept, sheets 30-31.",
       "dimensions": {
         "web_thickness_m": 0.0127,
         "new_flange_width_m": 0.4572,
-        "new_flange_thickness_m": 0.0254
+        "new_flange_thickness_m": 0.0254,
+        "end_projection_beyond_bearing_m": 0.1905,
+        "shallow_bottom_flange_width_m": 0.5588,
+        "shallow_bottom_flange_thickness_m": 0.028575,
+        "shallow_web_depth_m": 0.815975,
+        "shallow_bottom_flange_length_m": 11.8999
       },
       "bounds_m": [
         [
           40.521576,
-          3.2385,
+          3.1877,
           8.170421
         ],
         [
-          57.412576,
-          3.6957,
+          57.603077,
+          3.7465,
           9.931594
         ]
       ],
-      "volume_m3": 0.616143364
+      "volume_m3": 0.673888888
     },
     {
       "id": "haunch_3_5",
-      "name": "haunch 3 5",
+      "name": "Span D | haunch, girder 3",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -5744,7 +5780,7 @@
         38
       ],
       "basis": "Derived contact envelope",
-      "note": "Haunch follows modeled grade, not a construction screed or camber table.",
+      "note": "Haunch follows modeled grade, not a construction screed or camber table. Extended with the girder end (7 1/2 in beyond the end bearing).",
       "dimensions": {
         "nominal_thickness_m": 0.08
       },
@@ -5752,19 +5788,19 @@
         [
           40.521576,
           3.2385,
-          9.750324
+          9.747925
         ],
         [
-          57.412576,
+          57.603076,
           3.6957,
           10.01516
         ]
       ],
-      "volume_m3": 0.617805216
+      "volume_m3": 0.624772944
     },
     {
       "id": "Bent_1_bearing_6",
-      "name": "Bent 1 bearing 6",
+      "name": "Bent 1 | bearing, girder 3",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -5794,7 +5830,7 @@
     },
     {
       "id": "Bent_2_bearing_6",
-      "name": "Bent 2 bearing 6",
+      "name": "Bent 2 | bearing, girder 3",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -5824,7 +5860,7 @@
     },
     {
       "id": "Bent_3_bearing_6",
-      "name": "Bent 3 bearing 6",
+      "name": "Bent 3 | bearing, girder 3",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -5854,7 +5890,7 @@
     },
     {
       "id": "Bent_4_bearing_6",
-      "name": "Bent 4 bearing 6",
+      "name": "Bent 4 | bearing, girder 3",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -5884,7 +5920,7 @@
     },
     {
       "id": "Bent_5_bearing_6",
-      "name": "Bent 5 bearing 6",
+      "name": "Bent 5 | bearing, girder 3",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -5914,7 +5950,7 @@
     },
     {
       "id": "splice_5_0",
-      "name": "splice 5 0",
+      "name": "Girder 3 | field splice, Span A",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5942,7 +5978,7 @@
     },
     {
       "id": "splice_5_0_bolts",
-      "name": "splice 5 0 web bolts",
+      "name": "Girder 3 | field splice web bolts, Span A",
       "layer": "fasteners",
       "color": "#a2acb0",
       "pdf_pages": [
@@ -5970,7 +6006,7 @@
     },
     {
       "id": "splice_5_1",
-      "name": "splice 5 1",
+      "name": "Girder 3 | field splice, Span D",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -5998,7 +6034,7 @@
     },
     {
       "id": "splice_5_1_bolts",
-      "name": "splice 5 1 web bolts",
+      "name": "Girder 3 | field splice web bolts, Span D",
       "layer": "fasteners",
       "color": "#a2acb0",
       "pdf_pages": [
@@ -6026,7 +6062,7 @@
     },
     {
       "id": "stiffener_5_0",
-      "name": "Girder 6 | transverse stiffener pair 1",
+      "name": "Girder 3 | transverse stiffener pair 1",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6055,7 +6091,7 @@
     },
     {
       "id": "stiffener_5_1",
-      "name": "Girder 6 | transverse stiffener pair 2",
+      "name": "Girder 3 | transverse stiffener pair 2",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6084,7 +6120,7 @@
     },
     {
       "id": "stiffener_5_2",
-      "name": "Girder 6 | transverse stiffener pair 3",
+      "name": "Girder 3 | transverse stiffener pair 3",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6113,7 +6149,7 @@
     },
     {
       "id": "stiffener_5_3",
-      "name": "Girder 6 | transverse stiffener pair 4",
+      "name": "Girder 3 | transverse stiffener pair 4",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6142,7 +6178,7 @@
     },
     {
       "id": "stiffener_5_4",
-      "name": "Girder 6 | transverse stiffener pair 5",
+      "name": "Girder 3 | transverse stiffener pair 5",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6171,7 +6207,7 @@
     },
     {
       "id": "stiffener_5_5",
-      "name": "Girder 6 | transverse stiffener pair 6",
+      "name": "Girder 3 | transverse stiffener pair 6",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6200,7 +6236,7 @@
     },
     {
       "id": "stiffener_5_6",
-      "name": "Girder 6 | transverse stiffener pair 7",
+      "name": "Girder 3 | transverse stiffener pair 7",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6229,7 +6265,7 @@
     },
     {
       "id": "stiffener_5_7",
-      "name": "Girder 6 | transverse stiffener pair 8",
+      "name": "Girder 3 | transverse stiffener pair 8",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6258,7 +6294,7 @@
     },
     {
       "id": "stiffener_5_8",
-      "name": "Girder 6 | transverse stiffener pair 9",
+      "name": "Girder 3 | transverse stiffener pair 9",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6287,7 +6323,7 @@
     },
     {
       "id": "stiffener_5_9",
-      "name": "Girder 6 | transverse stiffener pair 10",
+      "name": "Girder 3 | transverse stiffener pair 10",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6316,7 +6352,7 @@
     },
     {
       "id": "stiffener_5_10",
-      "name": "Girder 6 | transverse stiffener pair 11",
+      "name": "Girder 3 | transverse stiffener pair 11",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6345,7 +6381,7 @@
     },
     {
       "id": "stiffener_5_11",
-      "name": "Girder 6 | transverse stiffener pair 12",
+      "name": "Girder 3 | transverse stiffener pair 12",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6374,7 +6410,7 @@
     },
     {
       "id": "stiffener_5_12",
-      "name": "Girder 6 | transverse stiffener pair 13",
+      "name": "Girder 3 | transverse stiffener pair 13",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6403,7 +6439,7 @@
     },
     {
       "id": "stiffener_5_13",
-      "name": "Girder 6 | transverse stiffener pair 14",
+      "name": "Girder 3 | transverse stiffener pair 14",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6432,7 +6468,7 @@
     },
     {
       "id": "stiffener_5_14",
-      "name": "Girder 6 | transverse stiffener pair 15",
+      "name": "Girder 3 | transverse stiffener pair 15",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6461,7 +6497,7 @@
     },
     {
       "id": "stiffener_5_15",
-      "name": "Girder 6 | transverse stiffener pair 16",
+      "name": "Girder 3 | transverse stiffener pair 16",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6490,7 +6526,7 @@
     },
     {
       "id": "stiffener_5_16",
-      "name": "Girder 6 | transverse stiffener pair 17",
+      "name": "Girder 3 | transverse stiffener pair 17",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6519,7 +6555,7 @@
     },
     {
       "id": "stiffener_5_17",
-      "name": "Girder 6 | transverse stiffener pair 18",
+      "name": "Girder 3 | transverse stiffener pair 18",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6548,7 +6584,7 @@
     },
     {
       "id": "stiffener_5_18",
-      "name": "Girder 6 | transverse stiffener pair 19",
+      "name": "Girder 3 | transverse stiffener pair 19",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6577,7 +6613,7 @@
     },
     {
       "id": "stiffener_5_19",
-      "name": "Girder 6 | transverse stiffener pair 20",
+      "name": "Girder 3 | transverse stiffener pair 20",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -6606,7 +6642,7 @@
     },
     {
       "id": "plate_0_6",
-      "name": "Span A | plate girder 7",
+      "name": "Span A | plate girder 2",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -6618,15 +6654,16 @@
         32
       ],
       "basis": "Source main dimensions; retained flange schedule simplified",
-      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved.",
+      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved. North end extended 7 1/2 in beyond the Bent 1 bearing centre line, sheets 27-28.",
       "dimensions": {
         "web_thickness_m": 0.0127,
         "new_flange_width_m": 0.4572,
-        "new_flange_thickness_m": 0.0254
+        "new_flange_thickness_m": 0.0254,
+        "end_projection_beyond_bearing_m": 0.1905
       },
       "bounds_m": [
         [
-          -71.922463,
+          -72.112963,
           5.9817,
           8.007827
         ],
@@ -6636,11 +6673,11 @@
           9.777779
         ]
       ],
-      "volume_m3": 0.727405279
+      "volume_m3": 0.733919137
     },
     {
       "id": "haunch_0_6",
-      "name": "haunch 0 6",
+      "name": "Span A | haunch, girder 2",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -6648,15 +6685,15 @@
         38
       ],
       "basis": "Derived contact envelope",
-      "note": "Haunch follows modeled grade, not a construction screed or camber table.",
+      "note": "Haunch follows modeled grade, not a construction screed or camber table. Extended with the girder end (7 1/2 in beyond the end bearing).",
       "dimensions": {
         "nominal_thickness_m": 0.08
       },
       "bounds_m": [
         [
-          -71.922463,
+          -72.112963,
           5.9817,
-          9.509311
+          9.506328
         ],
         [
           -51.983463,
@@ -6664,11 +6701,11 @@
           9.861346
         ]
       ],
-      "volume_m3": 0.729288864
+      "volume_m3": 0.736256592
     },
     {
       "id": "plate_1_6",
-      "name": "Span B | plate girder 7",
+      "name": "Span B | plate girder 2",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -6702,7 +6739,7 @@
     },
     {
       "id": "haunch_1_6",
-      "name": "haunch 1 6",
+      "name": "Span B | haunch, girder 2",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -6730,7 +6767,7 @@
     },
     {
       "id": "plate_2_6",
-      "name": "Span C | plate girder 7",
+      "name": "Span C | plate girder 2",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -6764,7 +6801,7 @@
     },
     {
       "id": "haunch_2_6",
-      "name": "haunch 2 6",
+      "name": "Span C | haunch, girder 2",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -6792,7 +6829,7 @@
     },
     {
       "id": "plate_3_6",
-      "name": "Span D | plate girder 7",
+      "name": "Span D | plate girder 2",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -6804,29 +6841,34 @@
         32
       ],
       "basis": "Source main dimensions; retained flange schedule simplified",
-      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved.",
+      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved. South end extended 7 1/2 in beyond the Bent 5 bearing centre line; shallow-segment bottom flange PL 22 x 1 1/8 in over 39 ft 0 1/2 in on a 32 1/8 in web, underside kept, sheets 30-31.",
       "dimensions": {
         "web_thickness_m": 0.0127,
         "new_flange_width_m": 0.4572,
-        "new_flange_thickness_m": 0.0254
+        "new_flange_thickness_m": 0.0254,
+        "end_projection_beyond_bearing_m": 0.1905,
+        "shallow_bottom_flange_width_m": 0.5588,
+        "shallow_bottom_flange_thickness_m": 0.028575,
+        "shallow_web_depth_m": 0.815975,
+        "shallow_bottom_flange_length_m": 11.8999
       },
       "bounds_m": [
         [
-          36.408537,
-          5.9817,
+          36.408539,
+          5.9309,
           8.165626
         ],
         [
-          53.299537,
-          6.4389,
+          53.490036,
+          6.4897,
           9.923517
         ]
       ],
-      "volume_m3": 0.616143364
+      "volume_m3": 0.673892681
     },
     {
       "id": "haunch_3_6",
-      "name": "haunch 3 6",
+      "name": "Span D | haunch, girder 2",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -6834,7 +6876,7 @@
         38
       ],
       "basis": "Derived contact envelope",
-      "note": "Haunch follows modeled grade, not a construction screed or camber table.",
+      "note": "Haunch follows modeled grade, not a construction screed or camber table. Extended with the girder end (7 1/2 in beyond the end bearing).",
       "dimensions": {
         "nominal_thickness_m": 0.08
       },
@@ -6842,19 +6884,19 @@
         [
           36.408537,
           5.9817,
-          9.757403
+          9.755174
         ],
         [
-          53.299537,
+          53.490037,
           6.4389,
           10.007083
         ]
       ],
-      "volume_m3": 0.617805216
+      "volume_m3": 0.624772944
     },
     {
       "id": "Bent_1_bearing_7",
-      "name": "Bent 1 bearing 7",
+      "name": "Bent 1 | bearing, girder 2",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -6884,7 +6926,7 @@
     },
     {
       "id": "Bent_2_bearing_7",
-      "name": "Bent 2 bearing 7",
+      "name": "Bent 2 | bearing, girder 2",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -6914,7 +6956,7 @@
     },
     {
       "id": "Bent_3_bearing_7",
-      "name": "Bent 3 bearing 7",
+      "name": "Bent 3 | bearing, girder 2",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -6944,7 +6986,7 @@
     },
     {
       "id": "Bent_4_bearing_7",
-      "name": "Bent 4 bearing 7",
+      "name": "Bent 4 | bearing, girder 2",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -6974,7 +7016,7 @@
     },
     {
       "id": "Bent_5_bearing_7",
-      "name": "Bent 5 bearing 7",
+      "name": "Bent 5 | bearing, girder 2",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -7004,7 +7046,7 @@
     },
     {
       "id": "splice_6_0",
-      "name": "splice 6 0",
+      "name": "Girder 2 | field splice, Span A",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7032,7 +7074,7 @@
     },
     {
       "id": "splice_6_0_bolts",
-      "name": "splice 6 0 web bolts",
+      "name": "Girder 2 | field splice web bolts, Span A",
       "layer": "fasteners",
       "color": "#a2acb0",
       "pdf_pages": [
@@ -7060,7 +7102,7 @@
     },
     {
       "id": "splice_6_1",
-      "name": "splice 6 1",
+      "name": "Girder 2 | field splice, Span D",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7088,7 +7130,7 @@
     },
     {
       "id": "splice_6_1_bolts",
-      "name": "splice 6 1 web bolts",
+      "name": "Girder 2 | field splice web bolts, Span D",
       "layer": "fasteners",
       "color": "#a2acb0",
       "pdf_pages": [
@@ -7116,7 +7158,7 @@
     },
     {
       "id": "stiffener_6_0",
-      "name": "Girder 7 | transverse stiffener pair 1",
+      "name": "Girder 2 | transverse stiffener pair 1",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7145,7 +7187,7 @@
     },
     {
       "id": "stiffener_6_1",
-      "name": "Girder 7 | transverse stiffener pair 2",
+      "name": "Girder 2 | transverse stiffener pair 2",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7174,7 +7216,7 @@
     },
     {
       "id": "stiffener_6_2",
-      "name": "Girder 7 | transverse stiffener pair 3",
+      "name": "Girder 2 | transverse stiffener pair 3",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7203,7 +7245,7 @@
     },
     {
       "id": "stiffener_6_3",
-      "name": "Girder 7 | transverse stiffener pair 4",
+      "name": "Girder 2 | transverse stiffener pair 4",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7232,7 +7274,7 @@
     },
     {
       "id": "stiffener_6_4",
-      "name": "Girder 7 | transverse stiffener pair 5",
+      "name": "Girder 2 | transverse stiffener pair 5",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7261,7 +7303,7 @@
     },
     {
       "id": "stiffener_6_5",
-      "name": "Girder 7 | transverse stiffener pair 6",
+      "name": "Girder 2 | transverse stiffener pair 6",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7290,7 +7332,7 @@
     },
     {
       "id": "stiffener_6_6",
-      "name": "Girder 7 | transverse stiffener pair 7",
+      "name": "Girder 2 | transverse stiffener pair 7",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7319,7 +7361,7 @@
     },
     {
       "id": "stiffener_6_7",
-      "name": "Girder 7 | transverse stiffener pair 8",
+      "name": "Girder 2 | transverse stiffener pair 8",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7348,7 +7390,7 @@
     },
     {
       "id": "stiffener_6_8",
-      "name": "Girder 7 | transverse stiffener pair 9",
+      "name": "Girder 2 | transverse stiffener pair 9",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7377,7 +7419,7 @@
     },
     {
       "id": "stiffener_6_9",
-      "name": "Girder 7 | transverse stiffener pair 10",
+      "name": "Girder 2 | transverse stiffener pair 10",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7406,7 +7448,7 @@
     },
     {
       "id": "stiffener_6_10",
-      "name": "Girder 7 | transverse stiffener pair 11",
+      "name": "Girder 2 | transverse stiffener pair 11",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7435,7 +7477,7 @@
     },
     {
       "id": "stiffener_6_11",
-      "name": "Girder 7 | transverse stiffener pair 12",
+      "name": "Girder 2 | transverse stiffener pair 12",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7464,7 +7506,7 @@
     },
     {
       "id": "stiffener_6_12",
-      "name": "Girder 7 | transverse stiffener pair 13",
+      "name": "Girder 2 | transverse stiffener pair 13",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7493,7 +7535,7 @@
     },
     {
       "id": "stiffener_6_13",
-      "name": "Girder 7 | transverse stiffener pair 14",
+      "name": "Girder 2 | transverse stiffener pair 14",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7522,7 +7564,7 @@
     },
     {
       "id": "stiffener_6_14",
-      "name": "Girder 7 | transverse stiffener pair 15",
+      "name": "Girder 2 | transverse stiffener pair 15",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7551,7 +7593,7 @@
     },
     {
       "id": "stiffener_6_15",
-      "name": "Girder 7 | transverse stiffener pair 16",
+      "name": "Girder 2 | transverse stiffener pair 16",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7580,7 +7622,7 @@
     },
     {
       "id": "stiffener_6_16",
-      "name": "Girder 7 | transverse stiffener pair 17",
+      "name": "Girder 2 | transverse stiffener pair 17",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7609,7 +7651,7 @@
     },
     {
       "id": "stiffener_6_17",
-      "name": "Girder 7 | transverse stiffener pair 18",
+      "name": "Girder 2 | transverse stiffener pair 18",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7638,7 +7680,7 @@
     },
     {
       "id": "stiffener_6_18",
-      "name": "Girder 7 | transverse stiffener pair 19",
+      "name": "Girder 2 | transverse stiffener pair 19",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7667,7 +7709,7 @@
     },
     {
       "id": "stiffener_6_19",
-      "name": "Girder 7 | transverse stiffener pair 20",
+      "name": "Girder 2 | transverse stiffener pair 20",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -7696,7 +7738,7 @@
     },
     {
       "id": "plate_0_7",
-      "name": "Span A | plate girder 8",
+      "name": "Span A | plate girder 1",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -7708,15 +7750,16 @@
         32
       ],
       "basis": "Source main dimensions; retained flange schedule simplified",
-      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved.",
+      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved. North end extended 7 1/2 in beyond the Bent 1 bearing centre line, sheets 27-28.",
       "dimensions": {
         "web_thickness_m": 0.0127,
         "new_flange_width_m": 0.4572,
-        "new_flange_thickness_m": 0.0254
+        "new_flange_thickness_m": 0.0254,
+        "end_projection_beyond_bearing_m": 0.1905
       },
       "bounds_m": [
         [
-          -76.035502,
+          -76.226002,
           8.7249,
           7.913471
         ],
@@ -7726,11 +7769,11 @@
           9.686705
         ]
       ],
-      "volume_m3": 0.727405279
+      "volume_m3": 0.733919137
     },
     {
       "id": "haunch_0_7",
-      "name": "haunch 0 7",
+      "name": "Span A | haunch, girder 1",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -7738,15 +7781,15 @@
         38
       ],
       "basis": "Derived contact envelope",
-      "note": "Haunch follows modeled grade, not a construction screed or camber table.",
+      "note": "Haunch follows modeled grade, not a construction screed or camber table. Extended with the girder end (7 1/2 in beyond the end bearing).",
       "dimensions": {
         "nominal_thickness_m": 0.08
       },
       "bounds_m": [
         [
-          -76.035502,
+          -76.226002,
           8.7249,
-          9.400347
+          9.397193
         ],
         [
           -56.096502,
@@ -7754,11 +7797,11 @@
           9.770272
         ]
       ],
-      "volume_m3": 0.729288864
+      "volume_m3": 0.736256592
     },
     {
       "id": "plate_1_7",
-      "name": "Span B | plate girder 8",
+      "name": "Span B | plate girder 1",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -7792,7 +7835,7 @@
     },
     {
       "id": "haunch_1_7",
-      "name": "haunch 1 7",
+      "name": "Span B | haunch, girder 1",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -7820,7 +7863,7 @@
     },
     {
       "id": "plate_2_7",
-      "name": "Span C | plate girder 8",
+      "name": "Span C | plate girder 1",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -7854,7 +7897,7 @@
     },
     {
       "id": "haunch_2_7",
-      "name": "haunch 2 7",
+      "name": "Span C | haunch, girder 1",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -7882,7 +7925,7 @@
     },
     {
       "id": "plate_3_7",
-      "name": "Span D | plate girder 8",
+      "name": "Span D | plate girder 1",
       "layer": "girders",
       "color": "#8e6c55",
       "pdf_pages": [
@@ -7894,29 +7937,34 @@
         32
       ],
       "basis": "Source main dimensions; retained flange schedule simplified",
-      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved.",
+      "note": "New end spans taper from about 34/36 in total depth to 68 in. Main spans retain 66 in webs. Detailed retained flange changes, exact Span D taper, upper-flange kink and camber are unresolved. South end extended 7 1/2 in beyond the Bent 5 bearing centre line; shallow-segment bottom flange PL 22 x 1 1/8 in over 39 ft 0 1/2 in on a 32 1/8 in web, underside kept, sheets 30-31.",
       "dimensions": {
         "web_thickness_m": 0.0127,
         "new_flange_width_m": 0.4572,
-        "new_flange_thickness_m": 0.0254
+        "new_flange_thickness_m": 0.0254,
+        "end_projection_beyond_bearing_m": 0.1905,
+        "shallow_bottom_flange_width_m": 0.5588,
+        "shallow_bottom_flange_thickness_m": 0.028575,
+        "shallow_web_depth_m": 0.815975,
+        "shallow_bottom_flange_length_m": 11.8999
       },
       "bounds_m": [
         [
           32.295498,
-          8.7249,
-          8.15714
+          8.6741,
+          8.157141
         ],
         [
-          49.186498,
-          9.1821,
+          49.376999,
+          9.2329,
           9.91175
         ]
       ],
-      "volume_m3": 0.616143364
+      "volume_m3": 0.673893847
     },
     {
       "id": "haunch_3_7",
-      "name": "haunch 3 7",
+      "name": "Span D | haunch, girder 1",
       "layer": "haunches",
       "color": "#b7b6aa",
       "pdf_pages": [
@@ -7924,7 +7972,7 @@
         38
       ],
       "basis": "Derived contact envelope",
-      "note": "Haunch follows modeled grade, not a construction screed or camber table.",
+      "note": "Haunch follows modeled grade, not a construction screed or camber table. Extended with the girder end (7 1/2 in beyond the end bearing).",
       "dimensions": {
         "nominal_thickness_m": 0.08
       },
@@ -7932,19 +7980,19 @@
         [
           32.295498,
           8.7249,
-          9.760791
+          9.758733
         ],
         [
-          49.186498,
+          49.376998,
           9.1821,
           9.995316
         ]
       ],
-      "volume_m3": 0.617805216
+      "volume_m3": 0.624772944
     },
     {
       "id": "Bent_1_bearing_8",
-      "name": "Bent 1 bearing 8",
+      "name": "Bent 1 | bearing, girder 1",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -7974,7 +8022,7 @@
     },
     {
       "id": "Bent_2_bearing_8",
-      "name": "Bent 2 bearing 8",
+      "name": "Bent 2 | bearing, girder 1",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -8004,7 +8052,7 @@
     },
     {
       "id": "Bent_3_bearing_8",
-      "name": "Bent 3 bearing 8",
+      "name": "Bent 3 | bearing, girder 1",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -8034,7 +8082,7 @@
     },
     {
       "id": "Bent_4_bearing_8",
-      "name": "Bent 4 bearing 8",
+      "name": "Bent 4 | bearing, girder 1",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -8064,7 +8112,7 @@
     },
     {
       "id": "Bent_5_bearing_8",
-      "name": "Bent 5 bearing 8",
+      "name": "Bent 5 | bearing, girder 1",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -8094,7 +8142,7 @@
     },
     {
       "id": "splice_7_0",
-      "name": "splice 7 0",
+      "name": "Girder 1 | field splice, Span A",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8122,7 +8170,7 @@
     },
     {
       "id": "splice_7_0_bolts",
-      "name": "splice 7 0 web bolts",
+      "name": "Girder 1 | field splice web bolts, Span A",
       "layer": "fasteners",
       "color": "#a2acb0",
       "pdf_pages": [
@@ -8150,7 +8198,7 @@
     },
     {
       "id": "splice_7_1",
-      "name": "splice 7 1",
+      "name": "Girder 1 | field splice, Span D",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8178,7 +8226,7 @@
     },
     {
       "id": "splice_7_1_bolts",
-      "name": "splice 7 1 web bolts",
+      "name": "Girder 1 | field splice web bolts, Span D",
       "layer": "fasteners",
       "color": "#a2acb0",
       "pdf_pages": [
@@ -8206,7 +8254,7 @@
     },
     {
       "id": "stiffener_7_0",
-      "name": "Girder 8 | transverse stiffener pair 1",
+      "name": "Girder 1 | transverse stiffener pair 1",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8235,7 +8283,7 @@
     },
     {
       "id": "stiffener_7_1",
-      "name": "Girder 8 | transverse stiffener pair 2",
+      "name": "Girder 1 | transverse stiffener pair 2",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8264,7 +8312,7 @@
     },
     {
       "id": "stiffener_7_2",
-      "name": "Girder 8 | transverse stiffener pair 3",
+      "name": "Girder 1 | transverse stiffener pair 3",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8293,7 +8341,7 @@
     },
     {
       "id": "stiffener_7_3",
-      "name": "Girder 8 | transverse stiffener pair 4",
+      "name": "Girder 1 | transverse stiffener pair 4",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8322,7 +8370,7 @@
     },
     {
       "id": "stiffener_7_4",
-      "name": "Girder 8 | transverse stiffener pair 5",
+      "name": "Girder 1 | transverse stiffener pair 5",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8351,7 +8399,7 @@
     },
     {
       "id": "stiffener_7_5",
-      "name": "Girder 8 | transverse stiffener pair 6",
+      "name": "Girder 1 | transverse stiffener pair 6",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8380,7 +8428,7 @@
     },
     {
       "id": "stiffener_7_6",
-      "name": "Girder 8 | transverse stiffener pair 7",
+      "name": "Girder 1 | transverse stiffener pair 7",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8409,7 +8457,7 @@
     },
     {
       "id": "stiffener_7_7",
-      "name": "Girder 8 | transverse stiffener pair 8",
+      "name": "Girder 1 | transverse stiffener pair 8",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8438,7 +8486,7 @@
     },
     {
       "id": "stiffener_7_8",
-      "name": "Girder 8 | transverse stiffener pair 9",
+      "name": "Girder 1 | transverse stiffener pair 9",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8467,7 +8515,7 @@
     },
     {
       "id": "stiffener_7_9",
-      "name": "Girder 8 | transverse stiffener pair 10",
+      "name": "Girder 1 | transverse stiffener pair 10",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8496,7 +8544,7 @@
     },
     {
       "id": "stiffener_7_10",
-      "name": "Girder 8 | transverse stiffener pair 11",
+      "name": "Girder 1 | transverse stiffener pair 11",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8525,7 +8573,7 @@
     },
     {
       "id": "stiffener_7_11",
-      "name": "Girder 8 | transverse stiffener pair 12",
+      "name": "Girder 1 | transverse stiffener pair 12",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8554,7 +8602,7 @@
     },
     {
       "id": "stiffener_7_12",
-      "name": "Girder 8 | transverse stiffener pair 13",
+      "name": "Girder 1 | transverse stiffener pair 13",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8583,7 +8631,7 @@
     },
     {
       "id": "stiffener_7_13",
-      "name": "Girder 8 | transverse stiffener pair 14",
+      "name": "Girder 1 | transverse stiffener pair 14",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8612,7 +8660,7 @@
     },
     {
       "id": "stiffener_7_14",
-      "name": "Girder 8 | transverse stiffener pair 15",
+      "name": "Girder 1 | transverse stiffener pair 15",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8641,7 +8689,7 @@
     },
     {
       "id": "stiffener_7_15",
-      "name": "Girder 8 | transverse stiffener pair 16",
+      "name": "Girder 1 | transverse stiffener pair 16",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8670,7 +8718,7 @@
     },
     {
       "id": "stiffener_7_16",
-      "name": "Girder 8 | transverse stiffener pair 17",
+      "name": "Girder 1 | transverse stiffener pair 17",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8699,7 +8747,7 @@
     },
     {
       "id": "stiffener_7_17",
-      "name": "Girder 8 | transverse stiffener pair 18",
+      "name": "Girder 1 | transverse stiffener pair 18",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8728,7 +8776,7 @@
     },
     {
       "id": "stiffener_7_18",
-      "name": "Girder 8 | transverse stiffener pair 19",
+      "name": "Girder 1 | transverse stiffener pair 19",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8757,7 +8805,7 @@
     },
     {
       "id": "stiffener_7_19",
-      "name": "Girder 8 | transverse stiffener pair 20",
+      "name": "Girder 1 | transverse stiffener pair 20",
       "layer": "steel",
       "color": "#94745b",
       "pdf_pages": [
@@ -8786,7 +8834,7 @@
     },
     {
       "id": "frame_0_0_0",
-      "name": "Span A | cross frame row 1, bay 1",
+      "name": "Span A | cross frame row 1, bay 7 (girders 7-8)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -8814,7 +8862,7 @@
     },
     {
       "id": "frame_0_0_1",
-      "name": "Span A | cross frame row 1, bay 2",
+      "name": "Span A | cross frame row 1, bay 6 (girders 6-7)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -8842,7 +8890,7 @@
     },
     {
       "id": "frame_0_0_2",
-      "name": "Span A | cross frame row 1, bay 3",
+      "name": "Span A | cross frame row 1, bay 5 (girders 5-6)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -8870,7 +8918,7 @@
     },
     {
       "id": "frame_0_0_4",
-      "name": "Span A | cross frame row 1, bay 5",
+      "name": "Span A | cross frame row 1, bay 3 (girders 3-4)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -8898,7 +8946,7 @@
     },
     {
       "id": "frame_0_0_5",
-      "name": "Span A | cross frame row 1, bay 6",
+      "name": "Span A | cross frame row 1, bay 2 (girders 2-3)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -8926,7 +8974,7 @@
     },
     {
       "id": "frame_0_0_6",
-      "name": "Span A | cross frame row 1, bay 7",
+      "name": "Span A | cross frame row 1, bay 1 (girders 1-2)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -8954,7 +9002,7 @@
     },
     {
       "id": "frame_0_1_0",
-      "name": "Span A | cross frame row 2, bay 1",
+      "name": "Span A | cross frame row 2, bay 7 (girders 7-8)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -8982,7 +9030,7 @@
     },
     {
       "id": "frame_0_1_1",
-      "name": "Span A | cross frame row 2, bay 2",
+      "name": "Span A | cross frame row 2, bay 6 (girders 6-7)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9010,7 +9058,7 @@
     },
     {
       "id": "frame_0_1_2",
-      "name": "Span A | cross frame row 2, bay 3",
+      "name": "Span A | cross frame row 2, bay 5 (girders 5-6)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9038,7 +9086,7 @@
     },
     {
       "id": "frame_0_1_4",
-      "name": "Span A | cross frame row 2, bay 5",
+      "name": "Span A | cross frame row 2, bay 3 (girders 3-4)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9066,7 +9114,7 @@
     },
     {
       "id": "frame_0_1_5",
-      "name": "Span A | cross frame row 2, bay 6",
+      "name": "Span A | cross frame row 2, bay 2 (girders 2-3)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9094,7 +9142,7 @@
     },
     {
       "id": "frame_0_1_6",
-      "name": "Span A | cross frame row 2, bay 7",
+      "name": "Span A | cross frame row 2, bay 1 (girders 1-2)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9122,7 +9170,7 @@
     },
     {
       "id": "frame_1_0_0",
-      "name": "Span B | cross frame row 1, bay 1",
+      "name": "Span B | cross frame row 1, bay 7 (girders 7-8)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9150,7 +9198,7 @@
     },
     {
       "id": "frame_1_0_1",
-      "name": "Span B | cross frame row 1, bay 2",
+      "name": "Span B | cross frame row 1, bay 6 (girders 6-7)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9178,7 +9226,7 @@
     },
     {
       "id": "frame_1_0_2",
-      "name": "Span B | cross frame row 1, bay 3",
+      "name": "Span B | cross frame row 1, bay 5 (girders 5-6)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9206,7 +9254,7 @@
     },
     {
       "id": "frame_1_0_4",
-      "name": "Span B | cross frame row 1, bay 5",
+      "name": "Span B | cross frame row 1, bay 3 (girders 3-4)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9234,7 +9282,7 @@
     },
     {
       "id": "frame_1_0_5",
-      "name": "Span B | cross frame row 1, bay 6",
+      "name": "Span B | cross frame row 1, bay 2 (girders 2-3)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9262,7 +9310,7 @@
     },
     {
       "id": "frame_1_0_6",
-      "name": "Span B | cross frame row 1, bay 7",
+      "name": "Span B | cross frame row 1, bay 1 (girders 1-2)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9290,7 +9338,7 @@
     },
     {
       "id": "frame_1_1_0",
-      "name": "Span B | cross frame row 2, bay 1",
+      "name": "Span B | cross frame row 2, bay 7 (girders 7-8)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9318,7 +9366,7 @@
     },
     {
       "id": "frame_1_1_1",
-      "name": "Span B | cross frame row 2, bay 2",
+      "name": "Span B | cross frame row 2, bay 6 (girders 6-7)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9346,7 +9394,7 @@
     },
     {
       "id": "frame_1_1_2",
-      "name": "Span B | cross frame row 2, bay 3",
+      "name": "Span B | cross frame row 2, bay 5 (girders 5-6)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9374,7 +9422,7 @@
     },
     {
       "id": "frame_1_1_4",
-      "name": "Span B | cross frame row 2, bay 5",
+      "name": "Span B | cross frame row 2, bay 3 (girders 3-4)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9402,7 +9450,7 @@
     },
     {
       "id": "frame_1_1_5",
-      "name": "Span B | cross frame row 2, bay 6",
+      "name": "Span B | cross frame row 2, bay 2 (girders 2-3)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9430,7 +9478,7 @@
     },
     {
       "id": "frame_1_1_6",
-      "name": "Span B | cross frame row 2, bay 7",
+      "name": "Span B | cross frame row 2, bay 1 (girders 1-2)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9458,7 +9506,7 @@
     },
     {
       "id": "frame_1_2_0",
-      "name": "Span B | cross frame row 3, bay 1",
+      "name": "Span B | cross frame row 3, bay 7 (girders 7-8)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9486,7 +9534,7 @@
     },
     {
       "id": "frame_1_2_1",
-      "name": "Span B | cross frame row 3, bay 2",
+      "name": "Span B | cross frame row 3, bay 6 (girders 6-7)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9514,7 +9562,7 @@
     },
     {
       "id": "frame_1_2_2",
-      "name": "Span B | cross frame row 3, bay 3",
+      "name": "Span B | cross frame row 3, bay 5 (girders 5-6)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9542,7 +9590,7 @@
     },
     {
       "id": "frame_1_2_4",
-      "name": "Span B | cross frame row 3, bay 5",
+      "name": "Span B | cross frame row 3, bay 3 (girders 3-4)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9570,7 +9618,7 @@
     },
     {
       "id": "frame_1_2_5",
-      "name": "Span B | cross frame row 3, bay 6",
+      "name": "Span B | cross frame row 3, bay 2 (girders 2-3)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9598,7 +9646,7 @@
     },
     {
       "id": "frame_1_2_6",
-      "name": "Span B | cross frame row 3, bay 7",
+      "name": "Span B | cross frame row 3, bay 1 (girders 1-2)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9626,7 +9674,7 @@
     },
     {
       "id": "frame_1_3_0",
-      "name": "Span B | cross frame row 4, bay 1",
+      "name": "Span B | cross frame row 4, bay 7 (girders 7-8)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9654,7 +9702,7 @@
     },
     {
       "id": "frame_1_3_1",
-      "name": "Span B | cross frame row 4, bay 2",
+      "name": "Span B | cross frame row 4, bay 6 (girders 6-7)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9682,7 +9730,7 @@
     },
     {
       "id": "frame_1_3_2",
-      "name": "Span B | cross frame row 4, bay 3",
+      "name": "Span B | cross frame row 4, bay 5 (girders 5-6)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9710,7 +9758,7 @@
     },
     {
       "id": "frame_1_3_4",
-      "name": "Span B | cross frame row 4, bay 5",
+      "name": "Span B | cross frame row 4, bay 3 (girders 3-4)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9738,7 +9786,7 @@
     },
     {
       "id": "frame_1_3_5",
-      "name": "Span B | cross frame row 4, bay 6",
+      "name": "Span B | cross frame row 4, bay 2 (girders 2-3)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9766,7 +9814,7 @@
     },
     {
       "id": "frame_1_3_6",
-      "name": "Span B | cross frame row 4, bay 7",
+      "name": "Span B | cross frame row 4, bay 1 (girders 1-2)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9794,7 +9842,7 @@
     },
     {
       "id": "frame_1_4_0",
-      "name": "Span B | cross frame row 5, bay 1",
+      "name": "Span B | cross frame row 5, bay 7 (girders 7-8)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9822,7 +9870,7 @@
     },
     {
       "id": "frame_1_4_1",
-      "name": "Span B | cross frame row 5, bay 2",
+      "name": "Span B | cross frame row 5, bay 6 (girders 6-7)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9850,7 +9898,7 @@
     },
     {
       "id": "frame_1_4_2",
-      "name": "Span B | cross frame row 5, bay 3",
+      "name": "Span B | cross frame row 5, bay 5 (girders 5-6)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9878,7 +9926,7 @@
     },
     {
       "id": "frame_1_4_4",
-      "name": "Span B | cross frame row 5, bay 5",
+      "name": "Span B | cross frame row 5, bay 3 (girders 3-4)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9906,7 +9954,7 @@
     },
     {
       "id": "frame_1_4_5",
-      "name": "Span B | cross frame row 5, bay 6",
+      "name": "Span B | cross frame row 5, bay 2 (girders 2-3)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9934,7 +9982,7 @@
     },
     {
       "id": "frame_1_4_6",
-      "name": "Span B | cross frame row 5, bay 7",
+      "name": "Span B | cross frame row 5, bay 1 (girders 1-2)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9962,7 +10010,7 @@
     },
     {
       "id": "frame_1_5_0",
-      "name": "Span B | cross frame row 6, bay 1",
+      "name": "Span B | cross frame row 6, bay 7 (girders 7-8)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -9990,7 +10038,7 @@
     },
     {
       "id": "frame_1_5_1",
-      "name": "Span B | cross frame row 6, bay 2",
+      "name": "Span B | cross frame row 6, bay 6 (girders 6-7)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10018,7 +10066,7 @@
     },
     {
       "id": "frame_1_5_2",
-      "name": "Span B | cross frame row 6, bay 3",
+      "name": "Span B | cross frame row 6, bay 5 (girders 5-6)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10046,7 +10094,7 @@
     },
     {
       "id": "frame_1_5_4",
-      "name": "Span B | cross frame row 6, bay 5",
+      "name": "Span B | cross frame row 6, bay 3 (girders 3-4)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10074,7 +10122,7 @@
     },
     {
       "id": "frame_1_5_5",
-      "name": "Span B | cross frame row 6, bay 6",
+      "name": "Span B | cross frame row 6, bay 2 (girders 2-3)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10102,7 +10150,7 @@
     },
     {
       "id": "frame_1_5_6",
-      "name": "Span B | cross frame row 6, bay 7",
+      "name": "Span B | cross frame row 6, bay 1 (girders 1-2)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10130,7 +10178,7 @@
     },
     {
       "id": "frame_2_0_0",
-      "name": "Span C | cross frame row 1, bay 1",
+      "name": "Span C | cross frame row 1, bay 7 (girders 7-8)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10158,7 +10206,7 @@
     },
     {
       "id": "frame_2_0_1",
-      "name": "Span C | cross frame row 1, bay 2",
+      "name": "Span C | cross frame row 1, bay 6 (girders 6-7)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10186,7 +10234,7 @@
     },
     {
       "id": "frame_2_0_2",
-      "name": "Span C | cross frame row 1, bay 3",
+      "name": "Span C | cross frame row 1, bay 5 (girders 5-6)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10214,7 +10262,7 @@
     },
     {
       "id": "frame_2_0_4",
-      "name": "Span C | cross frame row 1, bay 5",
+      "name": "Span C | cross frame row 1, bay 3 (girders 3-4)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10242,7 +10290,7 @@
     },
     {
       "id": "frame_2_0_5",
-      "name": "Span C | cross frame row 1, bay 6",
+      "name": "Span C | cross frame row 1, bay 2 (girders 2-3)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10270,7 +10318,7 @@
     },
     {
       "id": "frame_2_0_6",
-      "name": "Span C | cross frame row 1, bay 7",
+      "name": "Span C | cross frame row 1, bay 1 (girders 1-2)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10298,7 +10346,7 @@
     },
     {
       "id": "frame_2_1_0",
-      "name": "Span C | cross frame row 2, bay 1",
+      "name": "Span C | cross frame row 2, bay 7 (girders 7-8)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10326,7 +10374,7 @@
     },
     {
       "id": "frame_2_1_1",
-      "name": "Span C | cross frame row 2, bay 2",
+      "name": "Span C | cross frame row 2, bay 6 (girders 6-7)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10354,7 +10402,7 @@
     },
     {
       "id": "frame_2_1_2",
-      "name": "Span C | cross frame row 2, bay 3",
+      "name": "Span C | cross frame row 2, bay 5 (girders 5-6)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10382,7 +10430,7 @@
     },
     {
       "id": "frame_2_1_4",
-      "name": "Span C | cross frame row 2, bay 5",
+      "name": "Span C | cross frame row 2, bay 3 (girders 3-4)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10410,7 +10458,7 @@
     },
     {
       "id": "frame_2_1_5",
-      "name": "Span C | cross frame row 2, bay 6",
+      "name": "Span C | cross frame row 2, bay 2 (girders 2-3)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10438,7 +10486,7 @@
     },
     {
       "id": "frame_2_1_6",
-      "name": "Span C | cross frame row 2, bay 7",
+      "name": "Span C | cross frame row 2, bay 1 (girders 1-2)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10466,7 +10514,7 @@
     },
     {
       "id": "frame_2_2_0",
-      "name": "Span C | cross frame row 3, bay 1",
+      "name": "Span C | cross frame row 3, bay 7 (girders 7-8)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10494,7 +10542,7 @@
     },
     {
       "id": "frame_2_2_1",
-      "name": "Span C | cross frame row 3, bay 2",
+      "name": "Span C | cross frame row 3, bay 6 (girders 6-7)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10522,7 +10570,7 @@
     },
     {
       "id": "frame_2_2_2",
-      "name": "Span C | cross frame row 3, bay 3",
+      "name": "Span C | cross frame row 3, bay 5 (girders 5-6)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10550,7 +10598,7 @@
     },
     {
       "id": "frame_2_2_4",
-      "name": "Span C | cross frame row 3, bay 5",
+      "name": "Span C | cross frame row 3, bay 3 (girders 3-4)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10578,7 +10626,7 @@
     },
     {
       "id": "frame_2_2_5",
-      "name": "Span C | cross frame row 3, bay 6",
+      "name": "Span C | cross frame row 3, bay 2 (girders 2-3)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10606,7 +10654,7 @@
     },
     {
       "id": "frame_2_2_6",
-      "name": "Span C | cross frame row 3, bay 7",
+      "name": "Span C | cross frame row 3, bay 1 (girders 1-2)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10634,7 +10682,7 @@
     },
     {
       "id": "frame_2_3_0",
-      "name": "Span C | cross frame row 4, bay 1",
+      "name": "Span C | cross frame row 4, bay 7 (girders 7-8)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10662,7 +10710,7 @@
     },
     {
       "id": "frame_2_3_1",
-      "name": "Span C | cross frame row 4, bay 2",
+      "name": "Span C | cross frame row 4, bay 6 (girders 6-7)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10690,7 +10738,7 @@
     },
     {
       "id": "frame_2_3_2",
-      "name": "Span C | cross frame row 4, bay 3",
+      "name": "Span C | cross frame row 4, bay 5 (girders 5-6)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10718,7 +10766,7 @@
     },
     {
       "id": "frame_2_3_4",
-      "name": "Span C | cross frame row 4, bay 5",
+      "name": "Span C | cross frame row 4, bay 3 (girders 3-4)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10746,7 +10794,7 @@
     },
     {
       "id": "frame_2_3_5",
-      "name": "Span C | cross frame row 4, bay 6",
+      "name": "Span C | cross frame row 4, bay 2 (girders 2-3)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10774,7 +10822,7 @@
     },
     {
       "id": "frame_2_3_6",
-      "name": "Span C | cross frame row 4, bay 7",
+      "name": "Span C | cross frame row 4, bay 1 (girders 1-2)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10802,7 +10850,7 @@
     },
     {
       "id": "frame_2_4_0",
-      "name": "Span C | cross frame row 5, bay 1",
+      "name": "Span C | cross frame row 5, bay 7 (girders 7-8)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10830,7 +10878,7 @@
     },
     {
       "id": "frame_2_4_1",
-      "name": "Span C | cross frame row 5, bay 2",
+      "name": "Span C | cross frame row 5, bay 6 (girders 6-7)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10858,7 +10906,7 @@
     },
     {
       "id": "frame_2_4_2",
-      "name": "Span C | cross frame row 5, bay 3",
+      "name": "Span C | cross frame row 5, bay 5 (girders 5-6)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10886,7 +10934,7 @@
     },
     {
       "id": "frame_2_4_4",
-      "name": "Span C | cross frame row 5, bay 5",
+      "name": "Span C | cross frame row 5, bay 3 (girders 3-4)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10914,7 +10962,7 @@
     },
     {
       "id": "frame_2_4_5",
-      "name": "Span C | cross frame row 5, bay 6",
+      "name": "Span C | cross frame row 5, bay 2 (girders 2-3)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10942,7 +10990,7 @@
     },
     {
       "id": "frame_2_4_6",
-      "name": "Span C | cross frame row 5, bay 7",
+      "name": "Span C | cross frame row 5, bay 1 (girders 1-2)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10970,7 +11018,7 @@
     },
     {
       "id": "frame_2_5_0",
-      "name": "Span C | cross frame row 6, bay 1",
+      "name": "Span C | cross frame row 6, bay 7 (girders 7-8)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -10998,7 +11046,7 @@
     },
     {
       "id": "frame_2_5_1",
-      "name": "Span C | cross frame row 6, bay 2",
+      "name": "Span C | cross frame row 6, bay 6 (girders 6-7)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11026,7 +11074,7 @@
     },
     {
       "id": "frame_2_5_2",
-      "name": "Span C | cross frame row 6, bay 3",
+      "name": "Span C | cross frame row 6, bay 5 (girders 5-6)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11054,7 +11102,7 @@
     },
     {
       "id": "frame_2_5_4",
-      "name": "Span C | cross frame row 6, bay 5",
+      "name": "Span C | cross frame row 6, bay 3 (girders 3-4)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11082,7 +11130,7 @@
     },
     {
       "id": "frame_2_5_5",
-      "name": "Span C | cross frame row 6, bay 6",
+      "name": "Span C | cross frame row 6, bay 2 (girders 2-3)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11110,7 +11158,7 @@
     },
     {
       "id": "frame_2_5_6",
-      "name": "Span C | cross frame row 6, bay 7",
+      "name": "Span C | cross frame row 6, bay 1 (girders 1-2)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11138,7 +11186,7 @@
     },
     {
       "id": "frame_3_0_0",
-      "name": "Span D | cross frame row 1, bay 1",
+      "name": "Span D | cross frame row 1, bay 7 (girders 7-8)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11166,7 +11214,7 @@
     },
     {
       "id": "frame_3_0_1",
-      "name": "Span D | cross frame row 1, bay 2",
+      "name": "Span D | cross frame row 1, bay 6 (girders 6-7)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11194,7 +11242,7 @@
     },
     {
       "id": "frame_3_0_2",
-      "name": "Span D | cross frame row 1, bay 3",
+      "name": "Span D | cross frame row 1, bay 5 (girders 5-6)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11222,7 +11270,7 @@
     },
     {
       "id": "frame_3_0_4",
-      "name": "Span D | cross frame row 1, bay 5",
+      "name": "Span D | cross frame row 1, bay 3 (girders 3-4)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11250,7 +11298,7 @@
     },
     {
       "id": "frame_3_0_5",
-      "name": "Span D | cross frame row 1, bay 6",
+      "name": "Span D | cross frame row 1, bay 2 (girders 2-3)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11278,7 +11326,7 @@
     },
     {
       "id": "frame_3_0_6",
-      "name": "Span D | cross frame row 1, bay 7",
+      "name": "Span D | cross frame row 1, bay 1 (girders 1-2)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11306,7 +11354,7 @@
     },
     {
       "id": "frame_3_1_0",
-      "name": "Span D | cross frame row 2, bay 1",
+      "name": "Span D | cross frame row 2, bay 7 (girders 7-8)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11334,7 +11382,7 @@
     },
     {
       "id": "frame_3_1_1",
-      "name": "Span D | cross frame row 2, bay 2",
+      "name": "Span D | cross frame row 2, bay 6 (girders 6-7)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11362,7 +11410,7 @@
     },
     {
       "id": "frame_3_1_2",
-      "name": "Span D | cross frame row 2, bay 3",
+      "name": "Span D | cross frame row 2, bay 5 (girders 5-6)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11390,7 +11438,7 @@
     },
     {
       "id": "frame_3_1_4",
-      "name": "Span D | cross frame row 2, bay 5",
+      "name": "Span D | cross frame row 2, bay 3 (girders 3-4)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11418,7 +11466,7 @@
     },
     {
       "id": "frame_3_1_5",
-      "name": "Span D | cross frame row 2, bay 6",
+      "name": "Span D | cross frame row 2, bay 2 (girders 2-3)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11446,7 +11494,7 @@
     },
     {
       "id": "frame_3_1_6",
-      "name": "Span D | cross frame row 2, bay 7",
+      "name": "Span D | cross frame row 2, bay 1 (girders 1-2)",
       "layer": "bracing",
       "color": "#8d9b9c",
       "pdf_pages": [
@@ -11578,7 +11626,7 @@
     },
     {
       "id": "ped_0_0",
-      "name": "Bent 1 | pedestal 1",
+      "name": "Bent 1 | pedestal, girder 8",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -11604,7 +11652,7 @@
     },
     {
       "id": "ped_0_1",
-      "name": "Bent 1 | pedestal 2",
+      "name": "Bent 1 | pedestal, girder 7",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -11630,7 +11678,7 @@
     },
     {
       "id": "ped_0_2",
-      "name": "Bent 1 | pedestal 3",
+      "name": "Bent 1 | pedestal, girder 6",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -11656,7 +11704,7 @@
     },
     {
       "id": "ped_0_3",
-      "name": "Bent 1 | pedestal 4",
+      "name": "Bent 1 | pedestal, girder 5",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -11682,7 +11730,7 @@
     },
     {
       "id": "ped_0_4",
-      "name": "Bent 1 | pedestal 5",
+      "name": "Bent 1 | pedestal, girder 4",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -11708,7 +11756,7 @@
     },
     {
       "id": "ped_0_5",
-      "name": "Bent 1 | pedestal 6",
+      "name": "Bent 1 | pedestal, girder 3",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -11734,7 +11782,7 @@
     },
     {
       "id": "ped_0_6",
-      "name": "Bent 1 | pedestal 7",
+      "name": "Bent 1 | pedestal, girder 2",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -11972,7 +12020,7 @@
     },
     {
       "id": "ped_1_0",
-      "name": "Bent 2 | pedestal 1",
+      "name": "Bent 2 | pedestal, girder 8",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -11998,7 +12046,7 @@
     },
     {
       "id": "ped_1_1",
-      "name": "Bent 2 | pedestal 2",
+      "name": "Bent 2 | pedestal, girder 7",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12024,7 +12072,7 @@
     },
     {
       "id": "ped_1_2",
-      "name": "Bent 2 | pedestal 3",
+      "name": "Bent 2 | pedestal, girder 6",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12050,7 +12098,7 @@
     },
     {
       "id": "ped_1_3",
-      "name": "Bent 2 | pedestal 4",
+      "name": "Bent 2 | pedestal, girder 5",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12076,7 +12124,7 @@
     },
     {
       "id": "ped_1_4",
-      "name": "Bent 2 | pedestal 5",
+      "name": "Bent 2 | pedestal, girder 4",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12102,7 +12150,7 @@
     },
     {
       "id": "ped_1_5",
-      "name": "Bent 2 | pedestal 6",
+      "name": "Bent 2 | pedestal, girder 3",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12128,7 +12176,7 @@
     },
     {
       "id": "ped_1_6",
-      "name": "Bent 2 | pedestal 7",
+      "name": "Bent 2 | pedestal, girder 2",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12366,7 +12414,7 @@
     },
     {
       "id": "ped_2_1",
-      "name": "Bent 3 | pedestal 2",
+      "name": "Bent 3 | pedestal, girder 7",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12392,7 +12440,7 @@
     },
     {
       "id": "ped_2_2",
-      "name": "Bent 3 | pedestal 3",
+      "name": "Bent 3 | pedestal, girder 6",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12418,7 +12466,7 @@
     },
     {
       "id": "ped_2_3",
-      "name": "Bent 3 | pedestal 4",
+      "name": "Bent 3 | pedestal, girder 5",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12444,7 +12492,7 @@
     },
     {
       "id": "ped_2_4",
-      "name": "Bent 3 | pedestal 5",
+      "name": "Bent 3 | pedestal, girder 4",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12470,7 +12518,7 @@
     },
     {
       "id": "ped_2_5",
-      "name": "Bent 3 | pedestal 6",
+      "name": "Bent 3 | pedestal, girder 3",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12496,7 +12544,7 @@
     },
     {
       "id": "ped_2_6",
-      "name": "Bent 3 | pedestal 7",
+      "name": "Bent 3 | pedestal, girder 2",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12522,7 +12570,7 @@
     },
     {
       "id": "ped_2_7",
-      "name": "Bent 3 | pedestal 8",
+      "name": "Bent 3 | pedestal, girder 1",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12760,7 +12808,7 @@
     },
     {
       "id": "ped_3_1",
-      "name": "Bent 4 | pedestal 2",
+      "name": "Bent 4 | pedestal, girder 7",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12786,7 +12834,7 @@
     },
     {
       "id": "ped_3_2",
-      "name": "Bent 4 | pedestal 3",
+      "name": "Bent 4 | pedestal, girder 6",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12812,7 +12860,7 @@
     },
     {
       "id": "ped_3_3",
-      "name": "Bent 4 | pedestal 4",
+      "name": "Bent 4 | pedestal, girder 5",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12838,7 +12886,7 @@
     },
     {
       "id": "ped_3_4",
-      "name": "Bent 4 | pedestal 5",
+      "name": "Bent 4 | pedestal, girder 4",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12864,7 +12912,7 @@
     },
     {
       "id": "ped_3_5",
-      "name": "Bent 4 | pedestal 6",
+      "name": "Bent 4 | pedestal, girder 3",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12890,7 +12938,7 @@
     },
     {
       "id": "ped_3_6",
-      "name": "Bent 4 | pedestal 7",
+      "name": "Bent 4 | pedestal, girder 2",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -12916,7 +12964,7 @@
     },
     {
       "id": "ped_3_7",
-      "name": "Bent 4 | pedestal 8",
+      "name": "Bent 4 | pedestal, girder 1",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -13046,7 +13094,7 @@
     },
     {
       "id": "ped_4_1",
-      "name": "Bent 5 | pedestal 2",
+      "name": "Bent 5 | pedestal, girder 7",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -13072,7 +13120,7 @@
     },
     {
       "id": "ped_4_2",
-      "name": "Bent 5 | pedestal 3",
+      "name": "Bent 5 | pedestal, girder 6",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -13098,7 +13146,7 @@
     },
     {
       "id": "ped_4_3",
-      "name": "Bent 5 | pedestal 4",
+      "name": "Bent 5 | pedestal, girder 5",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -13124,7 +13172,7 @@
     },
     {
       "id": "ped_4_4",
-      "name": "Bent 5 | pedestal 5",
+      "name": "Bent 5 | pedestal, girder 4",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -13150,7 +13198,7 @@
     },
     {
       "id": "ped_4_5",
-      "name": "Bent 5 | pedestal 6",
+      "name": "Bent 5 | pedestal, girder 3",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -13176,7 +13224,7 @@
     },
     {
       "id": "ped_4_6",
-      "name": "Bent 5 | pedestal 7",
+      "name": "Bent 5 | pedestal, girder 2",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -13202,7 +13250,7 @@
     },
     {
       "id": "ped_4_7",
-      "name": "Bent 5 | pedestal 8",
+      "name": "Bent 5 | pedestal, girder 1",
       "layer": "bearings",
       "color": "#414c54",
       "pdf_pages": [
@@ -13237,10 +13285,14 @@
         49
       ],
       "basis": "Source section envelope; surface recesses and reinforcement omitted",
-      "note": "",
+      "note": "Traffic face per Section C-C, sheets 49 and 52: 3 in toe, break 11 in from the back face at 10 in, 9 in top.",
       "dimensions": {
         "height_m": 0.8382,
-        "base_width_m": 0.4064
+        "base_width_m": 0.4064,
+        "toe_height_m": 0.0762,
+        "face_break_height_m": 0.254,
+        "face_break_width_m": 0.2794,
+        "top_width_m": 0.2286
       },
       "bounds_m": [
         [
@@ -13254,7 +13306,7 @@
           11.109703
         ]
       ],
-      "volume_m3": 9.128864745
+      "volume_m3": 7.598887482
     },
     {
       "id": "rail_-1_1",
@@ -13267,10 +13319,14 @@
         49
       ],
       "basis": "Source section envelope; surface recesses and reinforcement omitted",
-      "note": "",
+      "note": "Traffic face per Section C-C, sheets 49 and 52: 3 in toe, break 11 in from the back face at 10 in, 9 in top.",
       "dimensions": {
         "height_m": 0.8382,
-        "base_width_m": 0.4064
+        "base_width_m": 0.4064,
+        "toe_height_m": 0.0762,
+        "face_break_height_m": 0.254,
+        "face_break_width_m": 0.2794,
+        "top_width_m": 0.2286
       },
       "bounds_m": [
         [
@@ -13284,7 +13340,7 @@
           11.142768
         ]
       ],
-      "volume_m3": 9.128864745
+      "volume_m3": 7.598887482
     },
     {
       "id": "rail_-1_2",
@@ -13297,10 +13353,14 @@
         49
       ],
       "basis": "Source section envelope; surface recesses and reinforcement omitted",
-      "note": "",
+      "note": "Traffic face per Section C-C, sheets 49 and 52: 3 in toe, break 11 in from the back face at 10 in, 9 in top.",
       "dimensions": {
         "height_m": 0.8382,
-        "base_width_m": 0.4064
+        "base_width_m": 0.4064,
+        "toe_height_m": 0.0762,
+        "face_break_height_m": 0.254,
+        "face_break_width_m": 0.2794,
+        "top_width_m": 0.2286
       },
       "bounds_m": [
         [
@@ -13314,7 +13374,7 @@
           11.120758
         ]
       ],
-      "volume_m3": 9.128864745
+      "volume_m3": 7.598887482
     },
     {
       "id": "rail_-1_3",
@@ -13327,10 +13387,14 @@
         49
       ],
       "basis": "Source section envelope; surface recesses and reinforcement omitted",
-      "note": "",
+      "note": "Traffic face per Section C-C, sheets 49 and 52: 3 in toe, break 11 in from the back face at 10 in, 9 in top.",
       "dimensions": {
         "height_m": 0.8382,
-        "base_width_m": 0.4064
+        "base_width_m": 0.4064,
+        "toe_height_m": 0.0762,
+        "face_break_height_m": 0.254,
+        "face_break_width_m": 0.2794,
+        "top_width_m": 0.2286
       },
       "bounds_m": [
         [
@@ -13344,7 +13408,7 @@
           10.913713
         ]
       ],
-      "volume_m3": 9.128864745
+      "volume_m3": 7.598887482
     },
     {
       "id": "rail_1_0",
@@ -13357,10 +13421,14 @@
         49
       ],
       "basis": "Source section envelope; surface recesses and reinforcement omitted",
-      "note": "",
+      "note": "Traffic face per Section C-C, sheets 49 and 52: 3 in toe, break 11 in from the back face at 10 in, 9 in top.",
       "dimensions": {
         "height_m": 0.8382,
-        "base_width_m": 0.4064
+        "base_width_m": 0.4064,
+        "toe_height_m": 0.0762,
+        "face_break_height_m": 0.254,
+        "face_break_width_m": 0.2794,
+        "top_width_m": 0.2286
       },
       "bounds_m": [
         [
@@ -13374,7 +13442,7 @@
           10.918273
         ]
       ],
-      "volume_m3": 9.129125758
+      "volume_m3": 7.599134971
     },
     {
       "id": "rail_1_1",
@@ -13387,10 +13455,14 @@
         49
       ],
       "basis": "Source section envelope; surface recesses and reinforcement omitted",
-      "note": "",
+      "note": "Traffic face per Section C-C, sheets 49 and 52: 3 in toe, break 11 in from the back face at 10 in, 9 in top.",
       "dimensions": {
         "height_m": 0.8382,
-        "base_width_m": 0.4064
+        "base_width_m": 0.4064,
+        "toe_height_m": 0.0762,
+        "face_break_height_m": 0.254,
+        "face_break_width_m": 0.2794,
+        "top_width_m": 0.2286
       },
       "bounds_m": [
         [
@@ -13404,7 +13476,7 @@
           11.122156
         ]
       ],
-      "volume_m3": 9.129125758
+      "volume_m3": 7.599134971
     },
     {
       "id": "rail_1_2",
@@ -13417,10 +13489,14 @@
         49
       ],
       "basis": "Source section envelope; surface recesses and reinforcement omitted",
-      "note": "",
+      "note": "Traffic face per Section C-C, sheets 49 and 52: 3 in toe, break 11 in from the back face at 10 in, 9 in top.",
       "dimensions": {
         "height_m": 0.8382,
-        "base_width_m": 0.4064
+        "base_width_m": 0.4064,
+        "toe_height_m": 0.0762,
+        "face_break_height_m": 0.254,
+        "face_break_width_m": 0.2794,
+        "top_width_m": 0.2286
       },
       "bounds_m": [
         [
@@ -13434,7 +13510,7 @@
           11.142767
         ]
       ],
-      "volume_m3": 9.129125758
+      "volume_m3": 7.599134971
     },
     {
       "id": "rail_1_3",
@@ -13447,10 +13523,14 @@
         49
       ],
       "basis": "Source section envelope; surface recesses and reinforcement omitted",
-      "note": "",
+      "note": "Traffic face per Section C-C, sheets 49 and 52: 3 in toe, break 11 in from the back face at 10 in, 9 in top.",
       "dimensions": {
         "height_m": 0.8382,
-        "base_width_m": 0.4064
+        "base_width_m": 0.4064,
+        "toe_height_m": 0.0762,
+        "face_break_height_m": 0.254,
+        "face_break_width_m": 0.2794,
+        "top_width_m": 0.2286
       },
       "bounds_m": [
         [
@@ -13464,7 +13544,7 @@
           11.107939
         ]
       ],
-      "volume_m3": 9.129125758
+      "volume_m3": 7.599134971
     },
     {
       "id": "rcba_-1_0",
@@ -13645,6 +13725,68 @@
         ]
       ],
       "volume_m3": 23.041208866
+    },
+    {
+      "id": "end_diaphragm_0",
+      "name": "Bent 1 | concrete end diaphragm",
+      "layer": "diaphragms",
+      "color": "#d1d5d0",
+      "pdf_pages": [
+        44,
+        45
+      ],
+      "basis": "Dimensioned: sheets 44-45, 2 ft normal to the bent, back face 1 ft 1 3/4 in behind the bearing line, Girder 1 to Girder 8 centre lines (105 ft 10 5/8 in along the bearing line)",
+      "note": "Poured with the deck and encasing the girder ends. Top on the modelled deck soffit, bottom at the top of the girder bottom flanges (Section X-X); the steel inside is embedded, not cut out. Construction joint, chamfers, shear studs and reinforcement are not modelled.",
+      "dimensions": {
+        "thickness_normal_to_bent_m": 0.6096,
+        "back_face_behind_bearing_line_m": 0.34925,
+        "length_along_bearing_line_m": 32.272739,
+        "depth_below_deck_soffit_m": 0.969
+      },
+      "bounds_m": [
+        [
+          -76.664935,
+          -8.9535,
+          8.500896
+        ],
+        [
+          -48.717285,
+          8.9535,
+          9.850696
+        ]
+      ],
+      "volume_m3": 19.060544371
+    },
+    {
+      "id": "end_diaphragm_4",
+      "name": "Bent 5 | concrete end diaphragm",
+      "layer": "diaphragms",
+      "color": "#d1d5d0",
+      "pdf_pages": [
+        44,
+        45
+      ],
+      "basis": "Dimensioned: sheets 44-45, 2 ft normal to the bent, back face 1 ft 1 3/4 in behind the bearing line, Girder 1 to Girder 8 centre lines (105 ft 10 5/8 in along the bearing line)",
+      "note": "Poured with the deck and encasing the girder ends. Top on the modelled deck soffit, bottom at the top of the girder bottom flanges (Section X-X); the steel inside is embedded, not cut out. Construction joint, chamfers, shear studs and reinforcement are not modelled.",
+      "dimensions": {
+        "thickness_normal_to_bent_m": 0.6096,
+        "back_face_behind_bearing_line_m": 0.34925,
+        "length_along_bearing_line_m": 32.272739,
+        "depth_below_deck_soffit_m": 0.921375
+      },
+      "bounds_m": [
+        [
+          48.717285,
+          -8.9535,
+          8.540854
+        ],
+        [
+          76.664935,
+          8.9535,
+          9.845825
+        ]
+      ],
+      "volume_m3": 18.129675289
     }
   ],
   "layers": {
@@ -13652,6 +13794,7 @@
     "girders": "Longitudinal girders",
     "haunches": "Deck haunches",
     "steel": "Steel plates and stiffeners",
+    "diaphragms": "Diaphragms",
     "bracing": "Cross frames",
     "fasteners": "Connection fastener assemblies",
     "bearings": "Bearings and pedestals",
@@ -14052,6 +14195,19 @@
       ]
     },
     {
+      "feature": "Concrete end diaphragms",
+      "status": "modeled_with_simplifications",
+      "detail": "Cast-in-place end diaphragms at Bents 1 and 5, 2 ft normal to the bent, Girder 1 to Girder 8, encasing the girder ends. Construction joint, chamfers, shear studs and reinforcement are not modelled.",
+      "sources": [
+        "Primary PDF p.44",
+        "Primary PDF p.45"
+      ],
+      "part_ids": [
+        "end_diaphragm_0",
+        "end_diaphragm_4"
+      ]
+    },
+    {
       "feature": "Bearings",
       "status": "modeled_with_simplifications",
       "detail": "Forty bearing envelopes; S5-B end pads represented. Retained intermediate shoes and exact source shim-seat reconciliation are incomplete.",
@@ -14217,6 +14373,124 @@
         "Primary PDF p.24"
       ],
       "part_ids": []
+    }
+  ],
+  "drawing_review_correction": "review-end-diaphragms-girder-ends-flange-rail-face-girder-numbers",
+  "revision": "1.1-drawing-review",
+  "drawing_review_correction_record": {
+    "source_pdf_pages": [
+      16,
+      19,
+      25,
+      27,
+      28,
+      30,
+      31,
+      44,
+      45,
+      49,
+      52
+    ],
+    "printed_sheets": [
+      16,
+      19,
+      25,
+      27,
+      28,
+      30,
+      31,
+      44,
+      45,
+      49,
+      52
+    ],
+    "findings": {
+      "F1": "added end_diaphragm_0 / end_diaphragm_4 (sheets 44-45)",
+      "F3": "sixteen end-span girders extended 0.1905 m beyond the end-bearing centre line, haunches follow (sheets 27-28, 30-31)",
+      "F4": "labels use plan girder numbers: part index j is Girder 8-j, frame bay j+1 is bay 7-j (sheet 25); ids unchanged",
+      "F5": "Type FC rail traffic face, six-point Section C-C (sheets 49, 52)",
+      "F6": "Span D shallow-segment bottom flange 22 x 1 1/8 in, underside kept (sheets 30-31)",
+      "F2": "not changed: see known_deviations end-bent-x-frames",
+      "F7": "not changed: see known_deviations vertical-curve-pvi"
+    },
+    "changed_parts": [
+      "plate_0_0",
+      "haunch_0_0",
+      "plate_0_1",
+      "haunch_0_1",
+      "plate_0_2",
+      "haunch_0_2",
+      "plate_0_3",
+      "haunch_0_3",
+      "plate_0_4",
+      "haunch_0_4",
+      "plate_0_5",
+      "haunch_0_5",
+      "plate_0_6",
+      "haunch_0_6",
+      "plate_0_7",
+      "haunch_0_7",
+      "plate_3_0",
+      "haunch_3_0",
+      "plate_3_1",
+      "haunch_3_1",
+      "plate_3_2",
+      "haunch_3_2",
+      "plate_3_3",
+      "haunch_3_3",
+      "plate_3_4",
+      "haunch_3_4",
+      "plate_3_5",
+      "haunch_3_5",
+      "plate_3_6",
+      "haunch_3_6",
+      "plate_3_7",
+      "haunch_3_7",
+      "rail_-1_0",
+      "rail_-1_1",
+      "rail_-1_2",
+      "rail_-1_3",
+      "rail_1_0",
+      "rail_1_1",
+      "rail_1_2",
+      "rail_1_3"
+    ],
+    "added_parts": [
+      "end_diaphragm_0",
+      "end_diaphragm_4"
+    ],
+    "relabelled_part_count": 427,
+    "before_glb_sha256": "be81055027057616b42e4cb9375b5b61973cb7227d7a6288b449bcfb0df6898d",
+    "after_glb_sha256": "68b64b3d55fd56255990d500fe7c0bda3ef54a740fcf02f5c64c4b921ac9d3e1"
+  },
+  "known_deviations": [
+    {
+      "id": "end-bent-x-frames",
+      "parts": "frame_0_0_0-2, frame_0_0_4-6, frame_3_1_0-2, frame_3_1_4-6",
+      "source": "sheets 25-26 and 44 (PDF 25-26, 44)",
+      "deviation": "Twelve representative X frames at the end bents are square to the girders and lie 1.05 m beyond the (extended) end of one of their two girders, so each meets one girder only, and they pass through the concrete end diaphragm; the framing plans show no steel frame there, the girder ends being encased in the end diaphragm.",
+      "reason": "The part ids are analysed components of the Minnich FEM demonstration (fem/minnich.json); remove them together with a reconciled ledger."
+    },
+    {
+      "id": "vertical-curve-pvi",
+      "parts": "all graded parts",
+      "source": "sheet 16 (PVI 15+26.77, El. 828.77, 940 ft VC); sheet 19 bent elevations",
+      "deviation": "The grade function puts the PVI at X = 0 (Sta. 15+21.77) instead of Bent 3 (X = +1.524 m): relative elevations tilt by up to 21 mm at the end bearings and 26 mm at the deck ends.",
+      "reason": "Every part is graded from this function, so the fix is a regeneration (grade evaluated at X - 1.524 m), not a correction; the model has no elevation datum."
+    },
+    {
+      "id": "end-bent-mudwall-face",
+      "parts": "mudwall_0_0, mudwall_0_1, mudwall_4_0, mudwall_4_1",
+      "source": "sheet 45 Section X-X (PDF 45)",
+      "deviation": "The span face of the mudwall is 0.319 m normal to the bent from the bearing line; Section X-X gives 1 ft 1 3/4 in + 3 in joint = 0.425 m, so the mudwall overlaps the deck end and the end diaphragm by 30 mm.",
+      "reason": "Outside the reviewed findings; left for a separate correction."
+    },
+    {
+      "id": "end-bent-fillet-depth",
+      "parts": "end_diaphragm_0, end_diaphragm_4, plate_0_*, plate_3_*, haunch_0_*, haunch_3_*",
+      "source": "sheet 45 Section X-X (2 in fillet); sheet 44 diaphragm levels (El. 820.06 / 816.31 at Bent 1)",
+      "deviation": "The generator's uniform 0.08 m haunch puts the girder tops 29.2 mm further below the deck soffit than the 2 in fillet at the end bents, so the end diaphragms (bottom correctly at the top of the bottom flange) are 0.969 / 0.921 m deep below the soffit instead of 0.940 / 0.892 m (45 in / 43 1/8 in from top of deck).",
+      "reason": "Raising the end-span girders, bearings and pedestals relative to the deck is a regeneration; existing top-of-girder elevations are unknown (sheet 53), so the 2 in fillet is plan evidence only at the end bents."
     }
   ]
 }

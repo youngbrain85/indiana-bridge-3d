@@ -39,92 +39,123 @@
   "parts": [
     {
       "id": "deck",
-      "name": "2004 roadway slab | 200 mm",
+      "name": "2004 roadway slab | 300 mm",
       "layer": "deck",
       "color": "#d1d5d0",
       "pdf_pages": [
         23,
         24,
+        26,
+        27,
         29,
         32
       ],
-      "basis": "Dimensioned roadway cross-section; end floor limits from 2026 general plan",
-      "note": "355 ft 11 in is the floor envelope, not the 91.669 m arch opening/pier chain.",
+      "basis": "Dimensioned roadway cross-section and square floor ends, sheets 7, 9, 10 and 15",
+      "note": "355 ft 11 in is the floor envelope, not the 91.669 m arch opening/pier chain. Corrected (drawing review 2026-11): 300 mm slab, top at the centre line original P.G. + 49 mm (El. 248.878, rising to 248.888 at the Abutment 1 end on the 30.48 m vertical curve), square floor ends 53.156 m before and 55.328 m after the Pier 3 centre line, sheets 6, 7, 9, 10, 15.",
       "dimensions": {
         "width_m": 13.8,
-        "thickness_m": 0.2
+        "thickness_m": 0.3,
+        "length_m": 108.484,
+        "end_x_m": [
+          -53.156,
+          55.328
+        ],
+        "top_at_centre_line_el_m": 248.878,
+        "crossfall_pct": 2
       },
       "bounds_m": [
         [
-          -56.090549,
+          -53.156,
           -6.9,
-          8.491
+          8.44
         ],
         [
-          56.090549,
+          55.328,
           6.9,
-          8.829
+          8.887792
         ]
       ],
-      "volume_m3": 299.414184
+      "volume_m3": 449.12376
     },
     {
       "id": "walk_-1",
-      "name": "West sidewalk and cantilever",
-      "layer": "sidewalks",
-      "color": "#c9c8b8",
-      "pdf_pages": [
-        24,
-        32
-      ],
-      "basis": "Source widths and nominal slab; curb, bracket and end-flare geometry simplified",
-      "note": "",
-      "dimensions": {
-        "clear_width_m": 1.306,
-        "slab_thickness_m": 0.19
-      },
-      "bounds_m": [
-        [
-          -52.392851,
-          -8.661,
-          8.69378
-        ],
-        [
-          56.562408,
-          -6.9,
-          8.919
-        ]
-      ],
-      "volume_m3": 36.297460806
-    },
-    {
-      "id": "walk_1",
       "name": "East sidewalk and cantilever",
       "layer": "sidewalks",
       "color": "#c9c8b8",
       "pdf_pages": [
+        23,
         24,
-        32
+        26,
+        27,
+        28,
+        31,
+        32,
+        36
       ],
-      "basis": "Source widths and nominal slab; curb, bracket and end-flare geometry simplified",
-      "note": "",
+      "basis": "Dimensioned curb, sidewalk slope and fascia, sheets 7, 14 and 15; brackets and end flare omitted",
+      "note": "Corrected (drawing review 2026-11): east side (+Y is west, sheet 6 north arrow); top 280 mm above the gutter at the curb face, falling 2 % toward the roadway; 190 mm slab at the fascia; curb unit carried down onto the spandrel-wall top; square ends at the floor ends, sheets 7, 9, 10, 14, 15. Brackets, plan flare and curb rounding are not modelled. Second drawing review 2026-11: coping widened locally to |Y| 8.736 under the five east rail pilasters, 1217 mm long (75 mm past each pilaster face), 190 mm fascia (sheets 14, 18); end chamfers and the 13 mm sidewalk joints are not modelled.",
       "dimensions": {
         "clear_width_m": 1.306,
-        "slab_thickness_m": 0.19
+        "slab_thickness_m": 0.19,
+        "curb_height_m": 0.28,
+        "cross_slope_pct_toward_roadway": 2,
+        "length_m": 108.484,
+        "local_coping_abs_y_m": 8.736,
+        "local_coping_length_m": 1.217
       },
       "bounds_m": [
         [
-          -56.562408,
-          6.9,
-          8.69378
+          -53.155998,
+          -8.736,
+          8.48726
         ],
         [
-          52.392851,
-          8.661,
-          8.919
+          55.327999,
+          -6.9,
+          9.065012
         ]
       ],
-      "volume_m3": 36.297460806
+      "volume_m3": 43.340049
+    },
+    {
+      "id": "walk_1",
+      "name": "West sidewalk and cantilever",
+      "layer": "sidewalks",
+      "color": "#c9c8b8",
+      "pdf_pages": [
+        23,
+        24,
+        26,
+        27,
+        28,
+        31,
+        32,
+        36
+      ],
+      "basis": "Dimensioned curb, sidewalk slope and fascia, sheets 7, 14 and 15; brackets and end flare omitted",
+      "note": "Corrected (drawing review 2026-11): west side (+Y is west, sheet 6 north arrow); top 280 mm above the gutter at the curb face, falling 2 % toward the roadway; 190 mm slab at the fascia; curb unit carried down onto the spandrel-wall top; square ends at the floor ends, sheets 7, 9, 10, 14, 15. Brackets, plan flare and curb rounding are not modelled. Second drawing review 2026-11: coping widened locally to |Y| 8.736 under the five west rail pilasters, 1217 mm long (75 mm past each pilaster face), 190 mm fascia (sheets 14, 18); end chamfers and the 13 mm sidewalk joints are not modelled.",
+      "dimensions": {
+        "clear_width_m": 1.306,
+        "slab_thickness_m": 0.19,
+        "curb_height_m": 0.28,
+        "cross_slope_pct_toward_roadway": 2,
+        "length_m": 108.484,
+        "local_coping_abs_y_m": 8.736,
+        "local_coping_length_m": 1.217
+      },
+      "bounds_m": [
+        [
+          -53.155998,
+          6.9,
+          8.48726
+        ],
+        [
+          55.327999,
+          8.736,
+          9.065012
+        ]
+      ],
+      "volume_m3": 43.340049
     },
     {
       "id": "arch_0",
@@ -134,28 +165,30 @@
       "pdf_pages": [
         9,
         23,
-        24
+        24,
+        26,
+        32
       ],
       "basis": "Dimensioned span/width; arch curve approximated",
-      "note": "Quadratic intrados fitted to the general elevation. 356 mm crown ring thickness from the cross-section. Haunch taper and exact original multi-radius setting-out are not reconstructed.",
+      "note": "Quadratic intrados fitted to the general elevation. 356 mm crown ring thickness from the cross-section. Haunch taper and exact original multi-radius setting-out are not reconstructed. Barrel widened to 14.262 m out to out of arch ring, 44 mm beyond each spandrel face (drawing review 2026-11, sheets 9 and 15).",
       "dimensions": {
         "clear_span_m": 21.946,
-        "barrel_width_m": 14.174,
+        "barrel_width_m": 14.262,
         "crown_thickness_m": 0.356
       },
       "bounds_m": [
         [
-          -47.733456,
-          -7.087,
+          -47.745245,
+          -7.131,
           3.191
         ],
         [
-          -21.989544,
-          7.087,
-          8.447973
+          -21.977754,
+          7.131,
+          8.447972
         ]
       ],
-      "volume_m3": 178.14981062
+      "volume_m3": 179.255857
     },
     {
       "id": "spandrel_0_-1",
@@ -164,26 +197,28 @@
       "color": "#c7baa0",
       "pdf_pages": [
         9,
-        24
+        24,
+        36
       ],
       "basis": "Source wall thickness; arch-dependent envelope approximated",
-      "note": "",
+      "note": "Second drawing review 2026-11: wall ends carried from the skew pier/abutment faces to 13 mm from the spandrel pilaster faces (sheet 18 \"13 Open Joint w/ Preformed Joint Filler in Spandrel Wall\"; 1933 pier plan PDF 9), closing the open slots; joint filler not modelled.",
       "dimensions": {
-        "thickness_m": 0.381
+        "thickness_m": 0.381,
+        "joint_to_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          -44.037633,
+          -44.037632,
           -7.087,
           4.197
         ],
         [
-          -21.989544,
+          -21.876202,
           -6.706,
           8.49488
         ]
       ],
-      "volume_m3": 10.320669897
+      "volume_m3": 10.567481
     },
     {
       "id": "spandrel_0_1",
@@ -192,26 +227,28 @@
       "color": "#c7baa0",
       "pdf_pages": [
         9,
-        24
+        24,
+        36
       ],
       "basis": "Source wall thickness; arch-dependent envelope approximated",
-      "note": "",
+      "note": "Second drawing review 2026-11: wall ends carried from the skew pier/abutment faces to 13 mm from the spandrel pilaster faces (sheet 18 \"13 Open Joint w/ Preformed Joint Filler in Spandrel Wall\"; 1933 pier plan PDF 9), closing the open slots; joint filler not modelled.",
       "dimensions": {
-        "thickness_m": 0.381
+        "thickness_m": 0.381,
+        "joint_to_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          -47.733456,
+          -47.846798,
           6.706,
           4.197
         ],
         [
-          -25.685367,
+          -25.685368,
           7.087,
           8.49488
         ]
       ],
-      "volume_m3": 10.320669897
+      "volume_m3": 10.63691
     },
     {
       "id": "fill_0",
@@ -246,28 +283,30 @@
       "pdf_pages": [
         9,
         23,
-        24
+        24,
+        26,
+        32
       ],
       "basis": "Dimensioned span/width; arch curve approximated",
-      "note": "Quadratic intrados fitted to the general elevation. 356 mm crown ring thickness from the cross-section. Haunch taper and exact original multi-radius setting-out are not reconstructed.",
+      "note": "Quadratic intrados fitted to the general elevation. 356 mm crown ring thickness from the cross-section. Haunch taper and exact original multi-radius setting-out are not reconstructed. Barrel widened to 14.262 m out to out of arch ring, 44 mm beyond each spandrel face (drawing review 2026-11, sheets 9 and 15).",
       "dimensions": {
         "clear_span_m": 21.946,
-        "barrel_width_m": 14.174,
+        "barrel_width_m": 14.262,
         "crown_thickness_m": 0.356
       },
       "bounds_m": [
         [
-          -24.492456,
-          -7.087,
+          -24.504246,
+          -7.131,
           4.715
         ],
         [
-          1.251456,
-          7.087,
+          1.263246,
+          7.131,
           8.406
         ]
       ],
-      "volume_m3": 178.14981062
+      "volume_m3": 179.255872
     },
     {
       "id": "spandrel_1_-1",
@@ -276,12 +315,14 @@
       "color": "#c7baa0",
       "pdf_pages": [
         9,
-        24
+        24,
+        36
       ],
       "basis": "Source wall thickness; arch-dependent envelope approximated",
-      "note": "",
+      "note": "Second drawing review 2026-11: wall ends carried from the skew pier/abutment faces to 13 mm from the spandrel pilaster faces (sheet 18 \"13 Open Joint w/ Preformed Joint Filler in Spandrel Wall\"; 1933 pier plan PDF 9), closing the open slots; joint filler not modelled.",
       "dimensions": {
-        "thickness_m": 0.381
+        "thickness_m": 0.381,
+        "joint_to_pilasters_m": 0.013
       },
       "bounds_m": [
         [
@@ -290,12 +331,12 @@
           5.721
         ],
         [
-          1.251456,
+          1.364798,
           -6.706,
           8.49488
         ]
       ],
-      "volume_m3": 8.196406798
+      "volume_m3": 8.417197
     },
     {
       "id": "spandrel_1_1",
@@ -304,16 +345,18 @@
       "color": "#c7baa0",
       "pdf_pages": [
         9,
-        24
+        24,
+        36
       ],
       "basis": "Source wall thickness; arch-dependent envelope approximated",
-      "note": "",
+      "note": "Second drawing review 2026-11: wall ends carried from the skew pier/abutment faces to 13 mm from the spandrel pilaster faces (sheet 18 \"13 Open Joint w/ Preformed Joint Filler in Spandrel Wall\"; 1933 pier plan PDF 9), closing the open slots; joint filler not modelled.",
       "dimensions": {
-        "thickness_m": 0.381
+        "thickness_m": 0.381,
+        "joint_to_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          -24.492456,
+          -24.605797,
           6.706,
           5.721
         ],
@@ -323,7 +366,7 @@
           8.49488
         ]
       ],
-      "volume_m3": 8.196406798
+      "volume_m3": 8.417196
     },
     {
       "id": "fill_1",
@@ -358,28 +401,30 @@
       "pdf_pages": [
         9,
         23,
-        24
+        24,
+        26,
+        32
       ],
       "basis": "Dimensioned span/width; arch curve approximated",
-      "note": "Quadratic intrados fitted to the general elevation. 356 mm crown ring thickness from the cross-section. Haunch taper and exact original multi-radius setting-out are not reconstructed.",
+      "note": "Quadratic intrados fitted to the general elevation. 356 mm crown ring thickness from the cross-section. Haunch taper and exact original multi-radius setting-out are not reconstructed. Barrel widened to 14.262 m out to out of arch ring, 44 mm beyond each spandrel face (drawing review 2026-11, sheets 9 and 15).",
       "dimensions": {
         "clear_span_m": 21.946,
-        "barrel_width_m": 14.174,
+        "barrel_width_m": 14.262,
         "crown_thickness_m": 0.356
       },
       "bounds_m": [
         [
-          -1.251456,
-          -7.087,
+          -1.263246,
+          -7.131,
           4.715
         ],
         [
-          24.492456,
-          7.087,
+          24.504246,
+          7.131,
           8.406
         ]
       ],
-      "volume_m3": 178.14981062
+      "volume_m3": 179.255872
     },
     {
       "id": "spandrel_2_-1",
@@ -388,12 +433,14 @@
       "color": "#c7baa0",
       "pdf_pages": [
         9,
-        24
+        24,
+        36
       ],
       "basis": "Source wall thickness; arch-dependent envelope approximated",
-      "note": "",
+      "note": "Second drawing review 2026-11: wall ends carried from the skew pier/abutment faces to 13 mm from the spandrel pilaster faces (sheet 18 \"13 Open Joint w/ Preformed Joint Filler in Spandrel Wall\"; 1933 pier plan PDF 9), closing the open slots; joint filler not modelled.",
       "dimensions": {
-        "thickness_m": 0.381
+        "thickness_m": 0.381,
+        "joint_to_pilasters_m": 0.013
       },
       "bounds_m": [
         [
@@ -402,12 +449,12 @@
           5.721
         ],
         [
-          24.492456,
+          24.605797,
           -6.706,
           8.49488
         ]
       ],
-      "volume_m3": 8.196406798
+      "volume_m3": 8.417196
     },
     {
       "id": "spandrel_2_1",
@@ -416,16 +463,18 @@
       "color": "#c7baa0",
       "pdf_pages": [
         9,
-        24
+        24,
+        36
       ],
       "basis": "Source wall thickness; arch-dependent envelope approximated",
-      "note": "",
+      "note": "Second drawing review 2026-11: wall ends carried from the skew pier/abutment faces to 13 mm from the spandrel pilaster faces (sheet 18 \"13 Open Joint w/ Preformed Joint Filler in Spandrel Wall\"; 1933 pier plan PDF 9), closing the open slots; joint filler not modelled.",
       "dimensions": {
-        "thickness_m": 0.381
+        "thickness_m": 0.381,
+        "joint_to_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          -1.251456,
+          -1.364798,
           6.706,
           5.721
         ],
@@ -435,7 +484,7 @@
           8.49488
         ]
       ],
-      "volume_m3": 8.196406798
+      "volume_m3": 8.417197
     },
     {
       "id": "fill_2",
@@ -470,28 +519,30 @@
       "pdf_pages": [
         9,
         23,
-        24
+        24,
+        26,
+        32
       ],
       "basis": "Dimensioned span/width; arch curve approximated",
-      "note": "Quadratic intrados fitted to the general elevation. 356 mm crown ring thickness from the cross-section. Haunch taper and exact original multi-radius setting-out are not reconstructed.",
+      "note": "Quadratic intrados fitted to the general elevation. 356 mm crown ring thickness from the cross-section. Haunch taper and exact original multi-radius setting-out are not reconstructed. Barrel widened to 14.262 m out to out of arch ring, 44 mm beyond each spandrel face (drawing review 2026-11, sheets 9 and 15).",
       "dimensions": {
         "clear_span_m": 21.946,
-        "barrel_width_m": 14.174,
+        "barrel_width_m": 14.262,
         "crown_thickness_m": 0.356
       },
       "bounds_m": [
         [
-          21.989544,
-          -7.087,
+          21.977754,
+          -7.131,
           3.191
         ],
         [
-          47.733456,
-          7.087,
-          8.447973
+          47.745245,
+          7.131,
+          8.447972
         ]
       ],
-      "volume_m3": 178.14981062
+      "volume_m3": 179.255857
     },
     {
       "id": "spandrel_3_-1",
@@ -500,26 +551,28 @@
       "color": "#c7baa0",
       "pdf_pages": [
         9,
-        24
+        24,
+        36
       ],
       "basis": "Source wall thickness; arch-dependent envelope approximated",
-      "note": "",
+      "note": "Second drawing review 2026-11: wall ends carried from the skew pier/abutment faces to 13 mm from the spandrel pilaster faces (sheet 18 \"13 Open Joint w/ Preformed Joint Filler in Spandrel Wall\"; 1933 pier plan PDF 9), closing the open slots; joint filler not modelled.",
       "dimensions": {
-        "thickness_m": 0.381
+        "thickness_m": 0.381,
+        "joint_to_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          25.685367,
+          25.685368,
           -7.087,
           4.197
         ],
         [
-          47.733456,
+          47.846798,
           -6.706,
           8.49488
         ]
       ],
-      "volume_m3": 10.320669897
+      "volume_m3": 10.63691
     },
     {
       "id": "spandrel_3_1",
@@ -528,26 +581,28 @@
       "color": "#c7baa0",
       "pdf_pages": [
         9,
-        24
+        24,
+        36
       ],
       "basis": "Source wall thickness; arch-dependent envelope approximated",
-      "note": "",
+      "note": "Second drawing review 2026-11: wall ends carried from the skew pier/abutment faces to 13 mm from the spandrel pilaster faces (sheet 18 \"13 Open Joint w/ Preformed Joint Filler in Spandrel Wall\"; 1933 pier plan PDF 9), closing the open slots; joint filler not modelled.",
       "dimensions": {
-        "thickness_m": 0.381
+        "thickness_m": 0.381,
+        "joint_to_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          21.989544,
+          21.876202,
           6.706,
           4.197
         ],
         [
-          44.037633,
+          44.037632,
           7.087,
           8.49488
         ]
       ],
-      "volume_m3": 10.320669897
+      "volume_m3": 10.567481
     },
     {
       "id": "fill_3",
@@ -581,24 +636,30 @@
       "color": "#beb8a8",
       "pdf_pages": [
         9,
-        23
+        23,
+        26,
+        27,
+        36
       ],
       "basis": "Approximate end-floor retaining envelope",
-      "note": "Length follows the later overall floor limit; original end flare, fill and ground level require reconciliation.",
-      "dimensions": {},
+      "note": "Length follows the later overall floor limit; original end flare, fill and ground level require reconciliation. Outer end moved to the square floor end (drawing review 2026-11, sheets 9-10). Second drawing review 2026-11: inner end carried from the skew abutment face to the spandrel pilaster face; no joint on the wing side of the abutment pilaster (sheet 18 \"One side only at Abutment\").",
+      "dimensions": {
+        "floor_end_x_m": -53.156,
+        "inner_end_x_m": -45.1042
+      },
       "bounds_m": [
         [
-          -52.393654,
+          -53.155998,
           -7.277,
           3.2
         ],
         [
-          -45.179634,
+          -45.104202,
           -6.897,
           8.49106
         ]
       ],
-      "volume_m3": 14.289539217
+      "volume_m3": 16.177342
     },
     {
       "id": "endwall_-1_1",
@@ -607,24 +668,30 @@
       "color": "#beb8a8",
       "pdf_pages": [
         9,
-        23
+        23,
+        26,
+        27,
+        36
       ],
       "basis": "Approximate end-floor retaining envelope",
-      "note": "Length follows the later overall floor limit; original end flare, fill and ground level require reconciliation.",
-      "dimensions": {},
+      "note": "Length follows the later overall floor limit; original end flare, fill and ground level require reconciliation. Outer end moved to the square floor end (drawing review 2026-11, sheets 9-10). Second drawing review 2026-11: inner end carried from the skew abutment face to the spandrel pilaster face; no joint on the wing side of the abutment pilaster (sheet 18 \"One side only at Abutment\").",
+      "dimensions": {
+        "floor_end_x_m": -53.156,
+        "inner_end_x_m": -48.9198
+      },
       "bounds_m": [
         [
-          -56.191566,
+          -53.155998,
           6.897,
           3.2
         ],
         [
-          -48.977546,
+          -48.9198,
           7.277,
           8.49106
         ]
       ],
-      "volume_m3": 14.289539217
+      "volume_m3": 8.511198
     },
     {
       "id": "endwall_1_-1",
@@ -633,24 +700,30 @@
       "color": "#beb8a8",
       "pdf_pages": [
         9,
-        23
+        23,
+        26,
+        27,
+        36
       ],
       "basis": "Approximate end-floor retaining envelope",
-      "note": "Length follows the later overall floor limit; original end flare, fill and ground level require reconciliation.",
-      "dimensions": {},
+      "note": "Length follows the later overall floor limit; original end flare, fill and ground level require reconciliation. Outer end moved to the square floor end (drawing review 2026-11, sheets 9-10). Second drawing review 2026-11: inner end carried from the skew abutment face to the spandrel pilaster face; no joint on the wing side of the abutment pilaster (sheet 18 \"One side only at Abutment\").",
+      "dimensions": {
+        "floor_end_x_m": 55.328,
+        "inner_end_x_m": 48.9198
+      },
       "bounds_m": [
         [
-          48.977546,
+          48.9198,
           -7.277,
           3.2
         ],
         [
-          56.191566,
+          55.327999,
           -6.897,
           8.49106
         ]
       ],
-      "volume_m3": 14.289539217
+      "volume_m3": 12.875095
     },
     {
       "id": "endwall_1_1",
@@ -659,24 +732,30 @@
       "color": "#beb8a8",
       "pdf_pages": [
         9,
-        23
+        23,
+        26,
+        27,
+        36
       ],
       "basis": "Approximate end-floor retaining envelope",
-      "note": "Length follows the later overall floor limit; original end flare, fill and ground level require reconciliation.",
-      "dimensions": {},
+      "note": "Length follows the later overall floor limit; original end flare, fill and ground level require reconciliation. Outer end moved to the square floor end (drawing review 2026-11, sheets 9-10). Second drawing review 2026-11: inner end carried from the skew abutment face to the spandrel pilaster face; no joint on the wing side of the abutment pilaster (sheet 18 \"One side only at Abutment\").",
+      "dimensions": {
+        "floor_end_x_m": 55.328,
+        "inner_end_x_m": 45.1042
+      },
       "bounds_m": [
         [
-          45.179634,
+          45.104202,
           6.897,
           3.2
         ],
         [
-          52.393654,
+          55.327999,
           7.277,
           8.49106
         ]
       ],
-      "volume_m3": 14.289539217
+      "volume_m3": 20.541239
     },
     {
       "id": "pier_0",
@@ -689,21 +768,23 @@
         23
       ],
       "basis": "Retained support envelope",
-      "note": "Support width follows clear-span chain; taper, cutwaters and foundation elevation remain approximate.",
-      "dimensions": {},
+      "note": "Support width follows clear-span chain; taper, cutwaters and foundation elevation remain approximate. Span face moved back 0.5715 m to the arch springing, Face Abut. Sta. 1+968.894 (drawing review 2026-11, sheet 6).",
+      "dimensions": {
+        "span_face_u_m": -45.8345
+      },
       "bounds_m": [
         [
-          -49.599956,
+          -49.599957,
           -7.087,
           0.9
         ],
         [
-          -43.364044,
+          -43.935544,
           7.087,
           4.211
         ]
       ],
-      "volume_m3": 114.415617932
+      "volume_m3": 87.595043
     },
     {
       "id": "footing_0",
@@ -1109,21 +1190,23 @@
         23
       ],
       "basis": "Retained support envelope",
-      "note": "Support width follows clear-span chain; taper, cutwaters and foundation elevation remain approximate.",
-      "dimensions": {},
+      "note": "Support width follows clear-span chain; taper, cutwaters and foundation elevation remain approximate. Span face moved back 0.5715 m to the arch springing, Face Abut. Sta. 2+060.563 (drawing review 2026-11, sheet 6).",
+      "dimensions": {
+        "span_face_u_m": 45.8345
+      },
       "bounds_m": [
         [
-          43.364044,
+          43.935544,
           -7.087,
           0.9
         ],
         [
-          49.599956,
+          49.599957,
           7.087,
           4.211
         ]
       ],
-      "volume_m3": 114.415617932
+      "volume_m3": 87.595043
     },
     {
       "id": "footing_4",
@@ -1209,29 +1292,35 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        24,
+        26,
+        27,
         35,
         36,
         37
       ],
-      "basis": "Dimensioned height/width; rail end flare omitted",
-      "note": "",
+      "basis": "Dimensioned sheet-18 section and sheet-17 layout; rail end flare and wing-end pilasters omitted",
+      "note": "Corrected (drawing review 2026-11): sheet-18 rail section (380 mm cap and base, 290 mm stem, 19 mm recessed panel band), faces at |Y| 8.206-8.586 (75 mm setback), standing on the corrected east sidewalk; ends at the pilaster faces and at the sheet 9-10 rail ends.",
       "dimensions": {
         "height_m": 0.915,
-        "body_width_m": 0.38
+        "body_width_m": 0.38,
+        "stem_width_m": 0.29,
+        "coping_setback_m": 0.075,
+        "length_m": 4.2282
       },
       "bounds_m": [
         [
-          -52.032861,
-          -8.6235,
-          8.88833
+          -49.333,
+          -8.586,
+          9.04612
         ],
         [
-          -44.17134,
-          -8.2435,
-          9.80333
+          -45.104754,
+          -8.206,
+          9.961282
         ]
       ],
-      "volume_m3": 2.69804769
+      "volume_m3": 1.199849
     },
     {
       "id": "panels_-1_0",
@@ -1244,23 +1333,25 @@
         37
       ],
       "basis": "Simplified architectural relief",
-      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted. Corrected (drawing review 2026-11): borders of the 19 mm deep, 310 mm high recessed panels in the 290 mm stem, both faces, representative layout (152 / 305 mm borders, panels up to 2.4 m).",
       "dimensions": {
-        "relief_m": 0.019
+        "relief_m": 0.019,
+        "panel_height_m": 0.31,
+        "panel_count": 2
       },
       "bounds_m": [
         [
-          -51.90195,
-          -8.6425,
-          9.01833
+          -49.333,
+          -8.541,
+          9.37612
         ],
         [
-          -44.30225,
-          -8.2245,
-          9.62833
+          -45.104754,
+          -8.251,
+          9.686242
         ]
       ],
-      "volume_m3": 0.06467372
+      "volume_m3": 0.007174
     },
     {
       "id": "parapet_-1_1",
@@ -1268,29 +1359,36 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        24,
+        26,
+        27,
         35,
         36,
         37
       ],
-      "basis": "Dimensioned height/width; rail end flare omitted",
-      "note": "",
+      "basis": "Dimensioned sheet-18 section and sheet-17 layout; rail end flare and wing-end pilasters omitted",
+      "note": "Corrected (drawing review 2026-11): sheet-18 rail section (380 mm cap and base, 290 mm stem, 19 mm recessed panel band), faces at |Y| 8.206-8.586 (75 mm setback), standing on the corrected east sidewalk; ends at the pilaster faces and at the sheet 9-10 rail ends. Second drawing review 2026-11: 13 mm open joints to the pilaster faces at both ends (sheet 18 plan and elevation, sheet 17; one side only at the abutments, the span side).",
       "dimensions": {
         "height_m": 0.915,
-        "body_width_m": 0.38
+        "body_width_m": 0.38,
+        "stem_width_m": 0.29,
+        "coping_setback_m": 0.075,
+        "length_m": 22.148,
+        "joint_at_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          -44.273161,
-          -8.6235,
-          8.88833
+          -44.024754,
+          -8.586,
+          9.04612
         ],
         [
-          -20.93034,
-          -8.2435,
-          9.80333
+          -21.876754,
+          -8.206,
+          9.96112
         ]
       ],
-      "volume_m3": 8.0808957
+      "volume_m3": 6.284938
     },
     {
       "id": "panels_-1_1",
@@ -1303,23 +1401,26 @@
         37
       ],
       "basis": "Simplified architectural relief",
-      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted. Corrected (drawing review 2026-11): borders of the 19 mm deep, 310 mm high recessed panels in the 290 mm stem, both faces, sheet-17 panel layout. Second drawing review 2026-11: end borders shortened by the 13 mm rail joints; the sheet-17 152 mm end borders are measured from the pilaster faces (east rail).",
       "dimensions": {
-        "relief_m": 0.019
+        "relief_m": 0.019,
+        "panel_height_m": 0.31,
+        "panel_count": 9,
+        "joint_at_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          -44.14225,
-          -8.6425,
-          9.01833
+          -44.024754,
+          -8.541,
+          9.37612
         ],
         [
-          -21.06125,
-          -8.2245,
-          9.62833
+          -21.876754,
+          -8.251,
+          9.68612
         ]
       ],
-      "volume_m3": 0.1956316
+      "volume_m3": 0.031994
     },
     {
       "id": "parapet_-1_2",
@@ -1327,29 +1428,36 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        24,
+        26,
+        27,
         35,
         36,
         37
       ],
-      "basis": "Dimensioned height/width; rail end flare omitted",
-      "note": "",
+      "basis": "Dimensioned sheet-18 section and sheet-17 layout; rail end flare and wing-end pilasters omitted",
+      "note": "Corrected (drawing review 2026-11): sheet-18 rail section (380 mm cap and base, 290 mm stem, 19 mm recessed panel band), faces at |Y| 8.206-8.586 (75 mm setback), standing on the corrected east sidewalk; ends at the pilaster faces and at the sheet 9-10 rail ends. Second drawing review 2026-11: 13 mm open joints to the pilaster faces at both ends (sheet 18 plan and elevation, sheet 17; one side only at the abutments, the span side).",
       "dimensions": {
         "height_m": 0.915,
-        "body_width_m": 0.38
+        "body_width_m": 0.38,
+        "stem_width_m": 0.29,
+        "coping_setback_m": 0.075,
+        "length_m": 22.148,
+        "joint_at_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          -21.032161,
-          -8.6235,
-          8.88833
+          -20.783754,
+          -8.586,
+          9.04612
         ],
         [
-          2.31066,
-          -8.2435,
-          9.80333
+          1.364246,
+          -8.206,
+          9.96112
         ]
       ],
-      "volume_m3": 8.0808957
+      "volume_m3": 6.284938
     },
     {
       "id": "panels_-1_2",
@@ -1362,23 +1470,26 @@
         37
       ],
       "basis": "Simplified architectural relief",
-      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted. Corrected (drawing review 2026-11): borders of the 19 mm deep, 310 mm high recessed panels in the 290 mm stem, both faces, sheet-17 panel layout. Second drawing review 2026-11: end borders shortened by the 13 mm rail joints; the sheet-17 152 mm end borders are measured from the pilaster faces (east rail).",
       "dimensions": {
-        "relief_m": 0.019
+        "relief_m": 0.019,
+        "panel_height_m": 0.31,
+        "panel_count": 9,
+        "joint_at_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          -20.90125,
-          -8.6425,
-          9.01833
+          -20.783754,
+          -8.541,
+          9.37612
         ],
         [
-          2.17975,
-          -8.2245,
-          9.62833
+          1.364246,
+          -8.251,
+          9.68612
         ]
       ],
-      "volume_m3": 0.1956316
+      "volume_m3": 0.031994
     },
     {
       "id": "parapet_-1_3",
@@ -1386,29 +1497,36 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        24,
+        26,
+        27,
         35,
         36,
         37
       ],
-      "basis": "Dimensioned height/width; rail end flare omitted",
-      "note": "",
+      "basis": "Dimensioned sheet-18 section and sheet-17 layout; rail end flare and wing-end pilasters omitted",
+      "note": "Corrected (drawing review 2026-11): sheet-18 rail section (380 mm cap and base, 290 mm stem, 19 mm recessed panel band), faces at |Y| 8.206-8.586 (75 mm setback), standing on the corrected east sidewalk; ends at the pilaster faces and at the sheet 9-10 rail ends. Second drawing review 2026-11: 13 mm open joints to the pilaster faces at both ends (sheet 18 plan and elevation, sheet 17; one side only at the abutments, the span side).",
       "dimensions": {
         "height_m": 0.915,
-        "body_width_m": 0.38
+        "body_width_m": 0.38,
+        "stem_width_m": 0.29,
+        "coping_setback_m": 0.075,
+        "length_m": 22.148,
+        "joint_at_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          2.208839,
-          -8.6235,
-          8.88833
+          2.457246,
+          -8.586,
+          9.04612
         ],
         [
-          25.55166,
-          -8.2435,
-          9.80333
+          24.605246,
+          -8.206,
+          9.96112
         ]
       ],
-      "volume_m3": 8.0808957
+      "volume_m3": 6.284938
     },
     {
       "id": "panels_-1_3",
@@ -1421,23 +1539,26 @@
         37
       ],
       "basis": "Simplified architectural relief",
-      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted. Corrected (drawing review 2026-11): borders of the 19 mm deep, 310 mm high recessed panels in the 290 mm stem, both faces, sheet-17 panel layout. Second drawing review 2026-11: end borders shortened by the 13 mm rail joints; the sheet-17 152 mm end borders are measured from the pilaster faces (east rail).",
       "dimensions": {
-        "relief_m": 0.019
+        "relief_m": 0.019,
+        "panel_height_m": 0.31,
+        "panel_count": 9,
+        "joint_at_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          2.33975,
-          -8.6425,
-          9.01833
+          2.457246,
+          -8.541,
+          9.37612
         ],
         [
-          25.42075,
-          -8.2245,
-          9.62833
+          24.605246,
+          -8.251,
+          9.68612
         ]
       ],
-      "volume_m3": 0.1956316
+      "volume_m3": 0.031994
     },
     {
       "id": "parapet_-1_4",
@@ -1445,29 +1566,36 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        24,
+        26,
+        27,
         35,
         36,
         37
       ],
-      "basis": "Dimensioned height/width; rail end flare omitted",
-      "note": "",
+      "basis": "Dimensioned sheet-18 section and sheet-17 layout; rail end flare and wing-end pilasters omitted",
+      "note": "Corrected (drawing review 2026-11): sheet-18 rail section (380 mm cap and base, 290 mm stem, 19 mm recessed panel band), faces at |Y| 8.206-8.586 (75 mm setback), standing on the corrected east sidewalk; ends at the pilaster faces and at the sheet 9-10 rail ends. Second drawing review 2026-11: 13 mm open joints to the pilaster faces at both ends (sheet 18 plan and elevation, sheet 17; one side only at the abutments, the span side).",
       "dimensions": {
         "height_m": 0.915,
-        "body_width_m": 0.38
+        "body_width_m": 0.38,
+        "stem_width_m": 0.29,
+        "coping_setback_m": 0.075,
+        "length_m": 22.148,
+        "joint_at_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          25.449839,
-          -8.6235,
-          8.88833
+          25.698246,
+          -8.586,
+          9.04612
         ],
         [
-          48.79266,
-          -8.2435,
-          9.80333
+          47.846246,
+          -8.206,
+          9.96112
         ]
       ],
-      "volume_m3": 8.0808957
+      "volume_m3": 6.284938
     },
     {
       "id": "panels_-1_4",
@@ -1480,23 +1608,26 @@
         37
       ],
       "basis": "Simplified architectural relief",
-      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted. Corrected (drawing review 2026-11): borders of the 19 mm deep, 310 mm high recessed panels in the 290 mm stem, both faces, sheet-17 panel layout. Second drawing review 2026-11: end borders shortened by the 13 mm rail joints; the sheet-17 152 mm end borders are measured from the pilaster faces (east rail).",
       "dimensions": {
-        "relief_m": 0.019
+        "relief_m": 0.019,
+        "panel_height_m": 0.31,
+        "panel_count": 9,
+        "joint_at_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          25.58075,
-          -8.6425,
-          9.01833
+          25.698246,
+          -8.541,
+          9.37612
         ],
         [
-          48.66175,
-          -8.2245,
-          9.62833
+          47.846246,
+          -8.251,
+          9.68612
         ]
       ],
-      "volume_m3": 0.1956316
+      "volume_m3": 0.031994
     },
     {
       "id": "parapet_-1_5",
@@ -1504,29 +1635,35 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        24,
+        26,
+        27,
         35,
         36,
         37
       ],
-      "basis": "Dimensioned height/width; rail end flare omitted",
-      "note": "",
+      "basis": "Dimensioned sheet-18 section and sheet-17 layout; rail end flare and wing-end pilasters omitted",
+      "note": "Corrected (drawing review 2026-11): sheet-18 rail section (380 mm cap and base, 290 mm stem, 19 mm recessed panel band), faces at |Y| 8.206-8.586 (75 mm setback), standing on the corrected east sidewalk; ends at the pilaster faces and at the sheet 9-10 rail ends.",
       "dimensions": {
         "height_m": 0.915,
-        "body_width_m": 0.38
+        "body_width_m": 0.38,
+        "stem_width_m": 0.29,
+        "coping_setback_m": 0.075,
+        "length_m": 6.4018
       },
       "bounds_m": [
         [
-          48.690839,
-          -8.6235,
-          8.88833
+          48.926246,
+          -8.586,
+          9.04612
         ],
         [
-          56.55236,
-          -8.2435,
-          9.80333
+          55.328,
+          -8.206,
+          9.96112
         ]
       ],
-      "volume_m3": 2.69804769
+      "volume_m3": 1.816626
     },
     {
       "id": "panels_-1_5",
@@ -1539,23 +1676,25 @@
         37
       ],
       "basis": "Simplified architectural relief",
-      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted. Corrected (drawing review 2026-11): borders of the 19 mm deep, 310 mm high recessed panels in the 290 mm stem, both faces, representative layout (152 / 305 mm borders, panels up to 2.4 m).",
       "dimensions": {
-        "relief_m": 0.019
+        "relief_m": 0.019,
+        "panel_height_m": 0.31,
+        "panel_count": 3
       },
       "bounds_m": [
         [
-          48.82175,
-          -8.6425,
-          9.01833
+          48.926246,
+          -8.541,
+          9.37612
         ],
         [
-          56.42145,
-          -8.2245,
-          9.62833
+          55.328,
+          -8.251,
+          9.68612
         ]
       ],
-      "volume_m3": 0.06467372
+      "volume_m3": 0.010767
     },
     {
       "id": "railpost_-1_0",
@@ -1563,27 +1702,39 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        26,
+        27,
+        31,
+        35,
+        36,
         37
       ],
       "basis": "Dimensioned envelope; minor finishes simplified",
-      "note": "",
+      "note": "Corrected (drawing review 2026-11): centred on the support centre line at the face of the arch ring (|Y| 7.131, sheet 17), outer face 75 mm inside the coping (sheet 18), on the corrected sidewalk. The 45 mm cap projection and recessed panel are not modelled. Corrected (second drawing review 2026-11): body at |Y| 8.176-8.661, 75 mm inside the locally widened coping |Y| 8.736 (sheet 14: 1836 mm from the curb face; sheet 18 plan-section), was 8.101-8.586; reseated on the sidewalk at its inner face.",
       "dimensions": {
         "width_m": 1.067,
-        "height_m": 0.96
+        "height_m": 0.96,
+        "center_x_m": -44.5713,
+        "coping_setback_m": 0.075,
+        "body_abs_y_m": [
+          8.176,
+          8.661
+        ],
+        "local_coping_abs_y_m": 8.736
       },
       "bounds_m": [
         [
-          -44.75575,
-          -8.676,
-          8.88833
+          -45.104754,
+          -8.661,
+          9.04552
         ],
         [
-          -43.68875,
-          -8.191,
-          9.84833
+          -44.037754,
+          -8.176,
+          10.00552
         ]
       ],
-      "volume_m3": 0.4967952
+      "volume_m3": 0.496795
     },
     {
       "id": "railpost_-1_1",
@@ -1591,27 +1742,39 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        26,
+        27,
+        31,
+        35,
+        36,
         37
       ],
       "basis": "Dimensioned envelope; minor finishes simplified",
-      "note": "",
+      "note": "Corrected (drawing review 2026-11): centred on the support centre line at the face of the arch ring (|Y| 7.131, sheet 17), outer face 75 mm inside the coping (sheet 18), on the corrected sidewalk. The 45 mm cap projection and recessed panel are not modelled. Corrected (second drawing review 2026-11): body at |Y| 8.176-8.661, 75 mm inside the locally widened coping |Y| 8.736 (sheet 14: 1836 mm from the curb face; sheet 18 plan-section), was 8.101-8.586; reseated on the sidewalk at its inner face.",
       "dimensions": {
         "width_m": 1.067,
-        "height_m": 0.96
+        "height_m": 0.96,
+        "center_x_m": -21.3303,
+        "coping_setback_m": 0.075,
+        "body_abs_y_m": [
+          8.176,
+          8.661
+        ],
+        "local_coping_abs_y_m": 8.736
       },
       "bounds_m": [
         [
-          -21.51475,
-          -8.676,
-          8.88833
+          -21.863754,
+          -8.661,
+          9.04552
         ],
         [
-          -20.44775,
-          -8.191,
-          9.84833
+          -20.796754,
+          -8.176,
+          10.00552
         ]
       ],
-      "volume_m3": 0.4967952
+      "volume_m3": 0.496795
     },
     {
       "id": "railpost_-1_2",
@@ -1619,27 +1782,39 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        26,
+        27,
+        31,
+        35,
+        36,
         37
       ],
       "basis": "Dimensioned envelope; minor finishes simplified",
-      "note": "",
+      "note": "Corrected (drawing review 2026-11): centred on the support centre line at the face of the arch ring (|Y| 7.131, sheet 17), outer face 75 mm inside the coping (sheet 18), on the corrected sidewalk. The 45 mm cap projection and recessed panel are not modelled. Corrected (second drawing review 2026-11): body at |Y| 8.176-8.661, 75 mm inside the locally widened coping |Y| 8.736 (sheet 14: 1836 mm from the curb face; sheet 18 plan-section), was 8.101-8.586; reseated on the sidewalk at its inner face.",
       "dimensions": {
         "width_m": 1.067,
-        "height_m": 0.96
+        "height_m": 0.96,
+        "center_x_m": 1.9107,
+        "coping_setback_m": 0.075,
+        "body_abs_y_m": [
+          8.176,
+          8.661
+        ],
+        "local_coping_abs_y_m": 8.736
       },
       "bounds_m": [
         [
-          1.72625,
-          -8.676,
-          8.88833
+          1.377246,
+          -8.661,
+          9.04552
         ],
         [
-          2.79325,
-          -8.191,
-          9.84833
+          2.444246,
+          -8.176,
+          10.00552
         ]
       ],
-      "volume_m3": 0.4967952
+      "volume_m3": 0.496795
     },
     {
       "id": "railpost_-1_3",
@@ -1647,27 +1822,39 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        26,
+        27,
+        31,
+        35,
+        36,
         37
       ],
       "basis": "Dimensioned envelope; minor finishes simplified",
-      "note": "",
+      "note": "Corrected (drawing review 2026-11): centred on the support centre line at the face of the arch ring (|Y| 7.131, sheet 17), outer face 75 mm inside the coping (sheet 18), on the corrected sidewalk. The 45 mm cap projection and recessed panel are not modelled. Corrected (second drawing review 2026-11): body at |Y| 8.176-8.661, 75 mm inside the locally widened coping |Y| 8.736 (sheet 14: 1836 mm from the curb face; sheet 18 plan-section), was 8.101-8.586; reseated on the sidewalk at its inner face.",
       "dimensions": {
         "width_m": 1.067,
-        "height_m": 0.96
+        "height_m": 0.96,
+        "center_x_m": 25.1517,
+        "coping_setback_m": 0.075,
+        "body_abs_y_m": [
+          8.176,
+          8.661
+        ],
+        "local_coping_abs_y_m": 8.736
       },
       "bounds_m": [
         [
-          24.96725,
-          -8.676,
-          8.88833
+          24.618246,
+          -8.661,
+          9.04552
         ],
         [
-          26.03425,
-          -8.191,
-          9.84833
+          25.685246,
+          -8.176,
+          10.00552
         ]
       ],
-      "volume_m3": 0.4967952
+      "volume_m3": 0.496795
     },
     {
       "id": "railpost_-1_4",
@@ -1675,27 +1862,39 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        26,
+        27,
+        31,
+        35,
+        36,
         37
       ],
       "basis": "Dimensioned envelope; minor finishes simplified",
-      "note": "",
+      "note": "Corrected (drawing review 2026-11): centred on the support centre line at the face of the arch ring (|Y| 7.131, sheet 17), outer face 75 mm inside the coping (sheet 18), on the corrected sidewalk. The 45 mm cap projection and recessed panel are not modelled. Corrected (second drawing review 2026-11): body at |Y| 8.176-8.661, 75 mm inside the locally widened coping |Y| 8.736 (sheet 14: 1836 mm from the curb face; sheet 18 plan-section), was 8.101-8.586; reseated on the sidewalk at its inner face.",
       "dimensions": {
         "width_m": 1.067,
-        "height_m": 0.96
+        "height_m": 0.96,
+        "center_x_m": 48.3927,
+        "coping_setback_m": 0.075,
+        "body_abs_y_m": [
+          8.176,
+          8.661
+        ],
+        "local_coping_abs_y_m": 8.736
       },
       "bounds_m": [
         [
-          48.20825,
-          -8.676,
-          8.88833
+          47.859246,
+          -8.661,
+          9.04552
         ],
         [
-          49.27525,
-          -8.191,
-          9.84833
+          48.926246,
+          -8.176,
+          10.00552
         ]
       ],
-      "volume_m3": 0.4967952
+      "volume_m3": 0.496795
     },
     {
       "id": "parapet_1_0",
@@ -1703,29 +1902,35 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        24,
+        26,
+        27,
         35,
         36,
         37
       ],
-      "basis": "Dimensioned height/width; rail end flare omitted",
-      "note": "",
+      "basis": "Dimensioned sheet-18 section and sheet-17 layout; rail end flare and wing-end pilasters omitted",
+      "note": "Corrected (drawing review 2026-11): sheet-18 rail section (380 mm cap and base, 290 mm stem, 19 mm recessed panel band), faces at |Y| 8.206-8.586 (75 mm setback), standing on the corrected west sidewalk; ends at the pilaster faces and at the sheet 9-10 rail ends.",
       "dimensions": {
         "height_m": 0.915,
-        "body_width_m": 0.38
+        "body_width_m": 0.38,
+        "stem_width_m": 0.29,
+        "coping_setback_m": 0.075,
+        "length_m": 4.2298
       },
       "bounds_m": [
         [
-          -56.55236,
-          8.2435,
-          8.88833
+          -53.156,
+          8.206,
+          9.046133
         ],
         [
-          -48.690839,
-          8.6235,
-          9.80333
+          -48.926246,
+          8.586,
+          9.970912
         ]
       ],
-      "volume_m3": 2.69804769
+      "volume_m3": 1.200277
     },
     {
       "id": "panels_1_0",
@@ -1738,23 +1943,25 @@
         37
       ],
       "basis": "Simplified architectural relief",
-      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted. Corrected (drawing review 2026-11): borders of the 19 mm deep, 310 mm high recessed panels in the 290 mm stem, both faces, representative layout (152 / 305 mm borders, panels up to 2.4 m).",
       "dimensions": {
-        "relief_m": 0.019
+        "relief_m": 0.019,
+        "panel_height_m": 0.31,
+        "panel_count": 2
       },
       "bounds_m": [
         [
-          -56.42145,
-          8.2245,
-          9.01833
+          -53.156,
+          8.251,
+          9.376148
         ],
         [
-          -48.82175,
-          8.6425,
-          9.62833
+          -48.926246,
+          8.541,
+          9.695575
         ]
       ],
-      "volume_m3": 0.06467372
+      "volume_m3": 0.007174
     },
     {
       "id": "parapet_1_1",
@@ -1762,29 +1969,36 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        24,
+        26,
+        27,
         35,
         36,
         37
       ],
-      "basis": "Dimensioned height/width; rail end flare omitted",
-      "note": "",
+      "basis": "Dimensioned sheet-18 section and sheet-17 layout; rail end flare and wing-end pilasters omitted",
+      "note": "Corrected (drawing review 2026-11): sheet-18 rail section (380 mm cap and base, 290 mm stem, 19 mm recessed panel band), faces at |Y| 8.206-8.586 (75 mm setback), standing on the corrected west sidewalk; ends at the pilaster faces and at the sheet 9-10 rail ends. Second drawing review 2026-11: 13 mm open joints to the pilaster faces at both ends (sheet 18 plan and elevation, sheet 17; one side only at the abutments, the span side).",
       "dimensions": {
         "height_m": 0.915,
-        "body_width_m": 0.38
+        "body_width_m": 0.38,
+        "stem_width_m": 0.29,
+        "coping_setback_m": 0.075,
+        "length_m": 22.148,
+        "joint_at_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          -48.79266,
-          8.2435,
-          8.88833
+          -47.846246,
+          8.206,
+          9.04612
         ],
         [
-          -25.449839,
-          8.6235,
-          9.80333
+          -25.698246,
+          8.586,
+          9.96112
         ]
       ],
-      "volume_m3": 8.0808957
+      "volume_m3": 6.284938
     },
     {
       "id": "panels_1_1",
@@ -1797,23 +2011,26 @@
         37
       ],
       "basis": "Simplified architectural relief",
-      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted. Corrected (drawing review 2026-11): borders of the 19 mm deep, 310 mm high recessed panels in the 290 mm stem, both faces, sheet-17 panel layout. Second drawing review 2026-11: end borders shortened by the 13 mm rail joints; the sheet-17 152 mm end borders are measured from the pilaster faces (west rail).",
       "dimensions": {
-        "relief_m": 0.019
+        "relief_m": 0.019,
+        "panel_height_m": 0.31,
+        "panel_count": 9,
+        "joint_at_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          -48.66175,
-          8.2245,
-          9.01833
+          -47.846246,
+          8.251,
+          9.37612
         ],
         [
-          -25.58075,
-          8.6425,
-          9.62833
+          -25.698246,
+          8.541,
+          9.68612
         ]
       ],
-      "volume_m3": 0.1956316
+      "volume_m3": 0.031994
     },
     {
       "id": "parapet_1_2",
@@ -1821,29 +2038,36 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        24,
+        26,
+        27,
         35,
         36,
         37
       ],
-      "basis": "Dimensioned height/width; rail end flare omitted",
-      "note": "",
+      "basis": "Dimensioned sheet-18 section and sheet-17 layout; rail end flare and wing-end pilasters omitted",
+      "note": "Corrected (drawing review 2026-11): sheet-18 rail section (380 mm cap and base, 290 mm stem, 19 mm recessed panel band), faces at |Y| 8.206-8.586 (75 mm setback), standing on the corrected west sidewalk; ends at the pilaster faces and at the sheet 9-10 rail ends. Second drawing review 2026-11: 13 mm open joints to the pilaster faces at both ends (sheet 18 plan and elevation, sheet 17; one side only at the abutments, the span side).",
       "dimensions": {
         "height_m": 0.915,
-        "body_width_m": 0.38
+        "body_width_m": 0.38,
+        "stem_width_m": 0.29,
+        "coping_setback_m": 0.075,
+        "length_m": 22.148,
+        "joint_at_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          -25.55166,
-          8.2435,
-          8.88833
+          -24.605246,
+          8.206,
+          9.04612
         ],
         [
-          -2.208839,
-          8.6235,
-          9.80333
+          -2.457246,
+          8.586,
+          9.96112
         ]
       ],
-      "volume_m3": 8.0808957
+      "volume_m3": 6.284938
     },
     {
       "id": "panels_1_2",
@@ -1856,23 +2080,26 @@
         37
       ],
       "basis": "Simplified architectural relief",
-      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted. Corrected (drawing review 2026-11): borders of the 19 mm deep, 310 mm high recessed panels in the 290 mm stem, both faces, sheet-17 panel layout. Second drawing review 2026-11: end borders shortened by the 13 mm rail joints; the sheet-17 152 mm end borders are measured from the pilaster faces (west rail).",
       "dimensions": {
-        "relief_m": 0.019
+        "relief_m": 0.019,
+        "panel_height_m": 0.31,
+        "panel_count": 9,
+        "joint_at_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          -25.42075,
-          8.2245,
-          9.01833
+          -24.605246,
+          8.251,
+          9.37612
         ],
         [
-          -2.33975,
-          8.6425,
-          9.62833
+          -2.457246,
+          8.541,
+          9.68612
         ]
       ],
-      "volume_m3": 0.1956316
+      "volume_m3": 0.031994
     },
     {
       "id": "parapet_1_3",
@@ -1880,29 +2107,36 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        24,
+        26,
+        27,
         35,
         36,
         37
       ],
-      "basis": "Dimensioned height/width; rail end flare omitted",
-      "note": "",
+      "basis": "Dimensioned sheet-18 section and sheet-17 layout; rail end flare and wing-end pilasters omitted",
+      "note": "Corrected (drawing review 2026-11): sheet-18 rail section (380 mm cap and base, 290 mm stem, 19 mm recessed panel band), faces at |Y| 8.206-8.586 (75 mm setback), standing on the corrected west sidewalk; ends at the pilaster faces and at the sheet 9-10 rail ends. Second drawing review 2026-11: 13 mm open joints to the pilaster faces at both ends (sheet 18 plan and elevation, sheet 17; one side only at the abutments, the span side).",
       "dimensions": {
         "height_m": 0.915,
-        "body_width_m": 0.38
+        "body_width_m": 0.38,
+        "stem_width_m": 0.29,
+        "coping_setback_m": 0.075,
+        "length_m": 22.148,
+        "joint_at_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          -2.31066,
-          8.2435,
-          8.88833
+          -1.364246,
+          8.206,
+          9.04612
         ],
         [
-          21.032161,
-          8.6235,
-          9.80333
+          20.783754,
+          8.586,
+          9.96112
         ]
       ],
-      "volume_m3": 8.0808957
+      "volume_m3": 6.284938
     },
     {
       "id": "panels_1_3",
@@ -1915,23 +2149,26 @@
         37
       ],
       "basis": "Simplified architectural relief",
-      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted. Corrected (drawing review 2026-11): borders of the 19 mm deep, 310 mm high recessed panels in the 290 mm stem, both faces, sheet-17 panel layout. Second drawing review 2026-11: end borders shortened by the 13 mm rail joints; the sheet-17 152 mm end borders are measured from the pilaster faces (west rail).",
       "dimensions": {
-        "relief_m": 0.019
+        "relief_m": 0.019,
+        "panel_height_m": 0.31,
+        "panel_count": 9,
+        "joint_at_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          -2.17975,
-          8.2245,
-          9.01833
+          -1.364246,
+          8.251,
+          9.37612
         ],
         [
-          20.90125,
-          8.6425,
-          9.62833
+          20.783754,
+          8.541,
+          9.68612
         ]
       ],
-      "volume_m3": 0.1956316
+      "volume_m3": 0.031994
     },
     {
       "id": "parapet_1_4",
@@ -1939,29 +2176,36 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        24,
+        26,
+        27,
         35,
         36,
         37
       ],
-      "basis": "Dimensioned height/width; rail end flare omitted",
-      "note": "",
+      "basis": "Dimensioned sheet-18 section and sheet-17 layout; rail end flare and wing-end pilasters omitted",
+      "note": "Corrected (drawing review 2026-11): sheet-18 rail section (380 mm cap and base, 290 mm stem, 19 mm recessed panel band), faces at |Y| 8.206-8.586 (75 mm setback), standing on the corrected west sidewalk; ends at the pilaster faces and at the sheet 9-10 rail ends. Second drawing review 2026-11: 13 mm open joints to the pilaster faces at both ends (sheet 18 plan and elevation, sheet 17; one side only at the abutments, the span side).",
       "dimensions": {
         "height_m": 0.915,
-        "body_width_m": 0.38
+        "body_width_m": 0.38,
+        "stem_width_m": 0.29,
+        "coping_setback_m": 0.075,
+        "length_m": 22.148,
+        "joint_at_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          20.93034,
-          8.2435,
-          8.88833
+          21.876754,
+          8.206,
+          9.04612
         ],
         [
-          44.273161,
-          8.6235,
-          9.80333
+          44.024754,
+          8.586,
+          9.96112
         ]
       ],
-      "volume_m3": 8.0808957
+      "volume_m3": 6.284938
     },
     {
       "id": "panels_1_4",
@@ -1974,23 +2218,26 @@
         37
       ],
       "basis": "Simplified architectural relief",
-      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted. Corrected (drawing review 2026-11): borders of the 19 mm deep, 310 mm high recessed panels in the 290 mm stem, both faces, sheet-17 panel layout. Second drawing review 2026-11: end borders shortened by the 13 mm rail joints; the sheet-17 152 mm end borders are measured from the pilaster faces (west rail).",
       "dimensions": {
-        "relief_m": 0.019
+        "relief_m": 0.019,
+        "panel_height_m": 0.31,
+        "panel_count": 9,
+        "joint_at_pilasters_m": 0.013
       },
       "bounds_m": [
         [
-          21.06125,
-          8.2245,
-          9.01833
+          21.876754,
+          8.251,
+          9.37612
         ],
         [
-          44.14225,
-          8.6425,
-          9.62833
+          44.024754,
+          8.541,
+          9.68612
         ]
       ],
-      "volume_m3": 0.1956316
+      "volume_m3": 0.031994
     },
     {
       "id": "parapet_1_5",
@@ -1998,29 +2245,35 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        24,
+        26,
+        27,
         35,
         36,
         37
       ],
-      "basis": "Dimensioned height/width; rail end flare omitted",
-      "note": "",
+      "basis": "Dimensioned sheet-18 section and sheet-17 layout; rail end flare and wing-end pilasters omitted",
+      "note": "Corrected (drawing review 2026-11): sheet-18 rail section (380 mm cap and base, 290 mm stem, 19 mm recessed panel band), faces at |Y| 8.206-8.586 (75 mm setback), standing on the corrected west sidewalk; ends at the pilaster faces and at the sheet 9-10 rail ends.",
       "dimensions": {
         "height_m": 0.915,
-        "body_width_m": 0.38
+        "body_width_m": 0.38,
+        "stem_width_m": 0.29,
+        "coping_setback_m": 0.075,
+        "length_m": 6.4002
       },
       "bounds_m": [
         [
-          44.17134,
-          8.2435,
-          8.88833
+          45.104754,
+          8.206,
+          9.04612
         ],
         [
-          52.032861,
-          8.6235,
-          9.80333
+          51.505,
+          8.586,
+          9.96112
         ]
       ],
-      "volume_m3": 2.69804769
+      "volume_m3": 1.816198
     },
     {
       "id": "panels_1_5",
@@ -2033,23 +2286,25 @@
         37
       ],
       "basis": "Simplified architectural relief",
-      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted.",
+      "note": "19 mm relief represented by solid panel borders; exact panel spacing, texture and chamfering omitted. Corrected (drawing review 2026-11): borders of the 19 mm deep, 310 mm high recessed panels in the 290 mm stem, both faces, representative layout (152 / 305 mm borders, panels up to 2.4 m).",
       "dimensions": {
-        "relief_m": 0.019
+        "relief_m": 0.019,
+        "panel_height_m": 0.31,
+        "panel_count": 3
       },
       "bounds_m": [
         [
-          44.30225,
-          8.2245,
-          9.01833
+          45.104754,
+          8.251,
+          9.37612
         ],
         [
-          51.90195,
-          8.6425,
-          9.62833
+          51.505,
+          8.541,
+          9.68612
         ]
       ],
-      "volume_m3": 0.06467372
+      "volume_m3": 0.010767
     },
     {
       "id": "railpost_1_0",
@@ -2057,27 +2312,39 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        26,
+        27,
+        31,
+        35,
+        36,
         37
       ],
       "basis": "Dimensioned envelope; minor finishes simplified",
-      "note": "",
+      "note": "Corrected (drawing review 2026-11): centred on the support centre line at the face of the arch ring (|Y| 7.131, sheet 17), outer face 75 mm inside the coping (sheet 18), on the corrected sidewalk. The 45 mm cap projection and recessed panel are not modelled. Corrected (second drawing review 2026-11): body at |Y| 8.176-8.661, 75 mm inside the locally widened coping |Y| 8.736 (sheet 14: 1836 mm from the curb face; sheet 18 plan-section), was 8.101-8.586; reseated on the sidewalk at its inner face.",
       "dimensions": {
         "width_m": 1.067,
-        "height_m": 0.96
+        "height_m": 0.96,
+        "center_x_m": -48.3927,
+        "coping_setback_m": 0.075,
+        "body_abs_y_m": [
+          8.176,
+          8.661
+        ],
+        "local_coping_abs_y_m": 8.736
       },
       "bounds_m": [
         [
-          -49.27525,
-          8.191,
-          8.88833
+          -48.926246,
+          8.176,
+          9.04552
         ],
         [
-          -48.20825,
-          8.676,
-          9.84833
+          -47.859246,
+          8.661,
+          10.00552
         ]
       ],
-      "volume_m3": 0.4967952
+      "volume_m3": 0.496795
     },
     {
       "id": "railpost_1_1",
@@ -2085,27 +2352,39 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        26,
+        27,
+        31,
+        35,
+        36,
         37
       ],
       "basis": "Dimensioned envelope; minor finishes simplified",
-      "note": "",
+      "note": "Corrected (drawing review 2026-11): centred on the support centre line at the face of the arch ring (|Y| 7.131, sheet 17), outer face 75 mm inside the coping (sheet 18), on the corrected sidewalk. The 45 mm cap projection and recessed panel are not modelled. Corrected (second drawing review 2026-11): body at |Y| 8.176-8.661, 75 mm inside the locally widened coping |Y| 8.736 (sheet 14: 1836 mm from the curb face; sheet 18 plan-section), was 8.101-8.586; reseated on the sidewalk at its inner face.",
       "dimensions": {
         "width_m": 1.067,
-        "height_m": 0.96
+        "height_m": 0.96,
+        "center_x_m": -25.1517,
+        "coping_setback_m": 0.075,
+        "body_abs_y_m": [
+          8.176,
+          8.661
+        ],
+        "local_coping_abs_y_m": 8.736
       },
       "bounds_m": [
         [
-          -26.03425,
-          8.191,
-          8.88833
+          -25.685246,
+          8.176,
+          9.04552
         ],
         [
-          -24.96725,
-          8.676,
-          9.84833
+          -24.618246,
+          8.661,
+          10.00552
         ]
       ],
-      "volume_m3": 0.4967952
+      "volume_m3": 0.496795
     },
     {
       "id": "railpost_1_2",
@@ -2113,27 +2392,39 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        26,
+        27,
+        31,
+        35,
+        36,
         37
       ],
       "basis": "Dimensioned envelope; minor finishes simplified",
-      "note": "",
+      "note": "Corrected (drawing review 2026-11): centred on the support centre line at the face of the arch ring (|Y| 7.131, sheet 17), outer face 75 mm inside the coping (sheet 18), on the corrected sidewalk. The 45 mm cap projection and recessed panel are not modelled. Corrected (second drawing review 2026-11): body at |Y| 8.176-8.661, 75 mm inside the locally widened coping |Y| 8.736 (sheet 14: 1836 mm from the curb face; sheet 18 plan-section), was 8.101-8.586; reseated on the sidewalk at its inner face.",
       "dimensions": {
         "width_m": 1.067,
-        "height_m": 0.96
+        "height_m": 0.96,
+        "center_x_m": -1.9107,
+        "coping_setback_m": 0.075,
+        "body_abs_y_m": [
+          8.176,
+          8.661
+        ],
+        "local_coping_abs_y_m": 8.736
       },
       "bounds_m": [
         [
-          -2.79325,
-          8.191,
-          8.88833
+          -2.444246,
+          8.176,
+          9.04552
         ],
         [
-          -1.72625,
-          8.676,
-          9.84833
+          -1.377246,
+          8.661,
+          10.00552
         ]
       ],
-      "volume_m3": 0.4967952
+      "volume_m3": 0.496795
     },
     {
       "id": "railpost_1_3",
@@ -2141,27 +2432,39 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        26,
+        27,
+        31,
+        35,
+        36,
         37
       ],
       "basis": "Dimensioned envelope; minor finishes simplified",
-      "note": "",
+      "note": "Corrected (drawing review 2026-11): centred on the support centre line at the face of the arch ring (|Y| 7.131, sheet 17), outer face 75 mm inside the coping (sheet 18), on the corrected sidewalk. The 45 mm cap projection and recessed panel are not modelled. Corrected (second drawing review 2026-11): body at |Y| 8.176-8.661, 75 mm inside the locally widened coping |Y| 8.736 (sheet 14: 1836 mm from the curb face; sheet 18 plan-section), was 8.101-8.586; reseated on the sidewalk at its inner face.",
       "dimensions": {
         "width_m": 1.067,
-        "height_m": 0.96
+        "height_m": 0.96,
+        "center_x_m": 21.3303,
+        "coping_setback_m": 0.075,
+        "body_abs_y_m": [
+          8.176,
+          8.661
+        ],
+        "local_coping_abs_y_m": 8.736
       },
       "bounds_m": [
         [
-          20.44775,
-          8.191,
-          8.88833
+          20.796754,
+          8.176,
+          9.04552
         ],
         [
-          21.51475,
-          8.676,
-          9.84833
+          21.863754,
+          8.661,
+          10.00552
         ]
       ],
-      "volume_m3": 0.4967952
+      "volume_m3": 0.496795
     },
     {
       "id": "railpost_1_4",
@@ -2169,27 +2472,39 @@
       "layer": "rails",
       "color": "#d6cebd",
       "pdf_pages": [
+        26,
+        27,
+        31,
+        35,
+        36,
         37
       ],
       "basis": "Dimensioned envelope; minor finishes simplified",
-      "note": "",
+      "note": "Corrected (drawing review 2026-11): centred on the support centre line at the face of the arch ring (|Y| 7.131, sheet 17), outer face 75 mm inside the coping (sheet 18), on the corrected sidewalk. The 45 mm cap projection and recessed panel are not modelled. Corrected (second drawing review 2026-11): body at |Y| 8.176-8.661, 75 mm inside the locally widened coping |Y| 8.736 (sheet 14: 1836 mm from the curb face; sheet 18 plan-section), was 8.101-8.586; reseated on the sidewalk at its inner face.",
       "dimensions": {
         "width_m": 1.067,
-        "height_m": 0.96
+        "height_m": 0.96,
+        "center_x_m": 44.5713,
+        "coping_setback_m": 0.075,
+        "body_abs_y_m": [
+          8.176,
+          8.661
+        ],
+        "local_coping_abs_y_m": 8.736
       },
       "bounds_m": [
         [
-          43.68875,
-          8.191,
-          8.88833
+          44.037754,
+          8.176,
+          9.04552
         ],
         [
-          44.75575,
-          8.676,
-          9.84833
+          45.104754,
+          8.661,
+          10.00552
         ]
       ],
-      "volume_m3": 0.4967952
+      "volume_m3": 0.496795
     },
     {
       "id": "gas_line",
@@ -2198,26 +2513,30 @@
       "color": "#59676f",
       "pdf_pages": [
         24,
+        32,
         33
       ],
       "basis": "Approximate external utility",
-      "note": "Presence and side are documented; diameter, joints and hangers are not verified.",
+      "note": "Presence and side are documented; diameter, joints and hangers are not verified. Corrected (drawing review 2026-11): moved to the east fascia (-Y; sheet 7 / 15 section A-A, 2026 sheet 13); runs between the square floor ends. Height and diameter remain an envelope. Second drawing review 2026-11: the 200 mm envelope at Y -7.400, Z 7.920 ran 60 mm into the five east spandrel pilasters. Re-hung clear of them at the position scaled from sheet 15 section A-A (1:30): centre 0.958 m outside the spandrel face (Y -8.045) and 0.942 m below the sidewalk top at the coping (Z 8.113), diameter 350 mm. Not dimensioned on the plans; hangers not modelled.",
       "dimensions": {
-        "assumed_diameter_m": 0.2
+        "center_y_m": -8.045,
+        "length_m": 108.484,
+        "scaled_diameter_m": 0.35,
+        "center_z_m": 8.113
       },
       "bounds_m": [
         [
-          -56.224524,
-          7.3,
-          7.82
+          -53.156,
+          -8.22,
+          7.938
         ],
         [
-          52.258876,
-          7.5,
-          8.02
+          55.328,
+          -7.87,
+          8.288
         ]
       ],
-      "volume_m3": 3.352321421
+      "volume_m3": 10.266541
     }
   ],
   "layers": {
@@ -2243,11 +2562,12 @@
     {
       "feature": "Four concrete arches",
       "status": "modeled_with_simplifications",
-      "detail": "Four whole arch barrels, spandrel walls and hidden fill envelopes. Exact original multi-radius curve and spring haunch thickness remain unresolved.",
+      "detail": "Four whole arch barrels, spandrel walls closed to 13 mm joints at the spandrel pilasters, and hidden fill envelopes. Exact original multi-radius curve and spring haunch thickness remain unresolved.",
       "sources": [
-        "Primary PDF p.9",
         "Primary PDF p.23",
-        "Primary PDF p.24"
+        "Primary PDF p.24",
+        "Primary PDF p.36",
+        "Primary PDF p.9"
       ],
       "part_ids": [
         "arch_0",
@@ -2281,10 +2601,13 @@
     {
       "feature": "2004 deck and sidewalks",
       "status": "modeled_with_simplifications",
-      "detail": "13.8 m roadway, 17.322 m overall width, 200 mm slab and both sidewalks. End floor limits follow the later general plan; plan flare and localized curb brackets are simplified.",
+      "detail": "13.8 m roadway on a 300 mm slab (top at original P.G. + 49 mm, 2 % crossfall, 30.48 m vertical curve at the Abutment 1 end), 17.322 m out to out, square floor ends 53.156 m / 55.328 m from Pier 3, 280 mm curbs and sidewalks falling 2 % to the roadway. Sidewalk brackets, plan flare and drains are not modelled.",
       "sources": [
         "Primary PDF p.23",
         "Primary PDF p.24",
+        "Primary PDF p.26",
+        "Primary PDF p.27",
+        "Primary PDF p.31",
         "Primary PDF p.32"
       ],
       "part_ids": [
@@ -2296,7 +2619,7 @@
     {
       "feature": "Architectural parapets",
       "status": "modeled_with_simplifications",
-      "detail": "Solid 915 mm parapets, 960 mm pilasters and shallow relief. Panel spacing and texture are representative. Separate pedestrian-bridge sheets 40-50 were excluded.",
+      "detail": "915 mm rails with the sheet-18 section (380 mm cap and base, 290 mm stem, 19 mm recessed panels in the sheet-17 layout), 13 mm open joints to the pier pilasters and to the span side of the abutment pilasters, and 960 mm pilasters centred on the support lines at the arch-ring face, 75 mm inside the locally widened coping. Rail end flare, wing-end pilasters, pilaster caps and the sidewalk joints are omitted. Separate pedestrian-bridge sheets 40-50 were excluded.",
       "sources": [
         "Primary PDF p.35",
         "Primary PDF p.36",
@@ -2368,7 +2691,7 @@
     {
       "feature": "Remaining exterior features",
       "status": "not_modeled",
-      "detail": "Exact arch setting-out, cutwaters, decorative lighting supplied by the city, gauge-well hardware, drainage outlets, rail end flare and approach details remain incomplete.",
+      "detail": "Exact arch setting-out, sidewalk concrete brackets (sheets 11-14), cutwaters, decorative lighting supplied by the city, gauge-well hardware, drainage outlets, rail end flare and approach details remain incomplete.",
       "sources": [
         "Primary PDF p.23",
         "Primary PDF p.24",
@@ -2376,5 +2699,203 @@
       ],
       "part_ids": []
     }
-  ]
+  ],
+  "review_correction": "review-2026-11-floor-ends-300mm-slab-orientation-rails",
+  "revision": "1.2-drawing-review-2",
+  "review_correction_record": {
+    "source_pdf_pages": [
+      23,
+      24,
+      26,
+      27,
+      28,
+      31,
+      32,
+      35,
+      36
+    ],
+    "printed_sheets": [
+      6,
+      7,
+      9,
+      10,
+      11,
+      14,
+      15,
+      17,
+      18
+    ],
+    "reference_2026_sheets": [
+      11,
+      13
+    ],
+    "corrections": {
+      "floor_ends": "Roadway slab, sidewalks, gas line and end-floor wall envelopes end square at X -53.156 / +55.328 (sheets 9-10), not on skew lines at u -/+54.242",
+      "roadway_slab": "300 mm slab, top original P.G. + 49 mm with the 30.48 m vertical curve (sheets 6, 7, 15)",
+      "orientation": "+Y is west: walk_1 named West, walk_-1 East; gas line moved to the east fascia, Y -7.400 (sheet 6 north arrow, sheet 7 section A-A, 2026 sheets 11 and 13)",
+      "abutment_faces": "pier_0 / pier_4 span faces at u -/+45.8345 (Face Abut. stations, sheet 6), 0.5715 m back",
+      "sidewalks": "280 mm curb, 2 % fall toward the roadway, 190 mm fascia; curb unit down to the spandrel top (sheets 7, 14, 15)",
+      "rails": "Sheet-18 rail section with 75 mm coping setback (faces |Y| 8.206-8.586) and the sheet-17 panel layout; rail ends per sheets 9-10",
+      "rail_pilasters": "Centred on the support lines at the arch-ring face |Y| 7.131 (sheet 17), 0.349 m along X from the old position, outer face 75 mm inside the coping (sheet 18)",
+      "arch_rings": "14.262 m barrels, 44 mm beyond each spandrel face (sheets 9, 15)"
+    },
+    "deferred": {
+      "sidewalk_brackets": "Concrete brackets of sheets 11-14 (10 typical per span and side, plus pier, abutment and end brackets) need new components with new part ids"
+    },
+    "changed_parts": [
+      "deck",
+      "walk_1",
+      "walk_-1",
+      "parapet_1_0",
+      "panels_1_0",
+      "parapet_1_1",
+      "panels_1_1",
+      "parapet_1_2",
+      "panels_1_2",
+      "parapet_1_3",
+      "panels_1_3",
+      "parapet_1_4",
+      "panels_1_4",
+      "parapet_1_5",
+      "panels_1_5",
+      "railpost_1_0",
+      "railpost_1_1",
+      "railpost_1_2",
+      "railpost_1_3",
+      "railpost_1_4",
+      "parapet_-1_0",
+      "panels_-1_0",
+      "parapet_-1_1",
+      "panels_-1_1",
+      "parapet_-1_2",
+      "panels_-1_2",
+      "parapet_-1_3",
+      "panels_-1_3",
+      "parapet_-1_4",
+      "panels_-1_4",
+      "parapet_-1_5",
+      "panels_-1_5",
+      "railpost_-1_0",
+      "railpost_-1_1",
+      "railpost_-1_2",
+      "railpost_-1_3",
+      "railpost_-1_4",
+      "gas_line",
+      "endwall_-1_-1",
+      "endwall_-1_1",
+      "endwall_1_-1",
+      "endwall_1_1",
+      "pier_0",
+      "pier_4",
+      "arch_0",
+      "arch_1",
+      "arch_2",
+      "arch_3"
+    ],
+    "renamed_parts": {
+      "walk_1": "East sidewalk and cantilever -> West sidewalk and cantilever",
+      "walk_-1": "West sidewalk and cantilever -> East sidewalk and cantilever",
+      "deck": "2004 roadway slab | 200 mm -> 2004 roadway slab | 300 mm"
+    },
+    "before_glb_sha256": "f415b1e60c9591a49cd7414eeac0e76032a8807df24b2e693d04ccba65061d44",
+    "after_glb_sha256": "25c764a98574a7fddbfd72d1927dbd3758ef47c31b8004f13c1ac5b366e03f13"
+  },
+  "known_deviations": [
+    {
+      "id": "sidewalk-brackets-not-modelled",
+      "parts": "walk_-1, walk_1",
+      "source": "sheets 11-14 (PDF 28-31)",
+      "deviation": "The concrete sidewalk brackets (typical 300 mm thick with R 1778 mm soffit, 10 per span and side; pier, abutment and end brackets) are not modelled; the 1.574 m cantilever is shown as a plain 190 mm slab.",
+      "reason": "They are new components that need their own part ids; deferred from the 2026-11 drawing review."
+    },
+    {
+      "id": "deck-soffit-in-fill-envelope",
+      "parts": "deck, fill_*, spandrel_*",
+      "source": "sheets 7, 15 (PDF 24, 32)",
+      "deviation": "The 300 mm slab soffit lies about 51 mm below the top of the hidden fill envelopes and the inner 0.19 m of the spandrel-wall envelopes, which still follow the old surface less 200 mm.",
+      "reason": "Fill and spandrel tops are approximate envelopes; the overlap is concealed."
+    },
+    {
+      "id": "sidewalk-joints-not-modelled",
+      "parts": "walk_-1, walk_1",
+      "source": "sheets 9, 18 (PDF 26, 36)",
+      "deviation": "The 13 mm open joints through the sidewalks in line with the rail joints (both sides of the pier pilasters, span side of the abutment pilasters) are not cut; each sidewalk is one continuous body. The coping projections at the pilasters omit their plan chamfers.",
+      "reason": "Cutting them splits each sidewalk into nine bodies and the joint path across the coping ledge is not dimensioned; deferred from the second 2026-11 drawing review."
+    }
+  ],
+  "review_correction_2": "review-2-2026-11-rail-pilasters-joints-wall-closures-gas-line",
+  "review_correction_2_record": {
+    "source_pdf_pages": [
+      9,
+      26,
+      27,
+      31,
+      32,
+      35,
+      36
+    ],
+    "printed_sheets": [
+      9,
+      10,
+      14,
+      15,
+      17,
+      18
+    ],
+    "corrections": {
+      "rail_pilasters": "Body |Y| 8.176-8.661 (was 8.101-8.586), 75 mm inside a coping widened locally to |Y| 8.736 over 1217 mm (sheet 14: 1836 mm from the curb face; sheet 18 plan-section)",
+      "rail_joints": "13 mm open joints between rails and pilasters, both sides at piers, span side at abutments (sheets 17, 18); end panel borders shortened accordingly",
+      "wall_closures": "Spandrel walls carried to 13 mm from the spandrel pilaster faces and end-floor walls to the abutment pilaster faces, closing 20 open slots of 59-176 mm (sheet 18; 1933 PDF 9)",
+      "gas_line": "Re-hung clear of the east spandrel pilasters (was 60 mm inside them): centre Y -8.045, Z 8.113, diameter 350 mm, scaled from sheet 15 section A-A (1:30); not dimensioned"
+    },
+    "deferred": {
+      "sidewalk_joints": "13 mm open joints through the sidewalks at the pilaster faces (sheets 9, 18)",
+      "sidewalk_brackets": "Unchanged from the first pass"
+    },
+    "changed_parts": [
+      "railpost_1_0",
+      "railpost_1_1",
+      "railpost_1_2",
+      "railpost_1_3",
+      "railpost_1_4",
+      "railpost_-1_0",
+      "railpost_-1_1",
+      "railpost_-1_2",
+      "railpost_-1_3",
+      "railpost_-1_4",
+      "walk_1",
+      "walk_-1",
+      "parapet_1_1",
+      "panels_1_1",
+      "parapet_1_2",
+      "panels_1_2",
+      "parapet_1_3",
+      "panels_1_3",
+      "parapet_1_4",
+      "panels_1_4",
+      "parapet_-1_1",
+      "panels_-1_1",
+      "parapet_-1_2",
+      "panels_-1_2",
+      "parapet_-1_3",
+      "panels_-1_3",
+      "parapet_-1_4",
+      "panels_-1_4",
+      "spandrel_0_-1",
+      "spandrel_1_-1",
+      "spandrel_2_-1",
+      "spandrel_3_-1",
+      "endwall_-1_-1",
+      "endwall_1_-1",
+      "spandrel_0_1",
+      "spandrel_1_1",
+      "spandrel_2_1",
+      "spandrel_3_1",
+      "endwall_-1_1",
+      "endwall_1_1",
+      "gas_line"
+    ],
+    "before_glb_sha256": "25c764a98574a7fddbfd72d1927dbd3758ef47c31b8004f13c1ac5b366e03f13",
+    "after_glb_sha256": "a8de7b12edb2dcc7fe63f4a4a5252fb8a7fbcd0773afae5aa97dddb7b4ebd730"
+  }
 }

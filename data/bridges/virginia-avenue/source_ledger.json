@@ -13,20 +13,20 @@
     17.3736
   ],
   "girder_y_m": [
-    -9.2964,
-    -7.239000000000001,
-    -4.825999999999898,
-    -2.413000000000102,
-    0.0,
-    2.413000000000102,
-    4.825999999999898,
+    9.2964,
     7.239000000000001,
-    9.2964
+    4.825999999999898,
+    2.413000000000102,
+    0.0,
+    -2.413000000000102,
+    -4.825999999999898,
+    -7.239000000000001,
+    -9.2964
   ],
   "girder_sections": [
     {
       "part_id": "beam_1",
-      "y_m": -9.2964,
+      "y_m": 9.2964,
       "section_type": "welded_I",
       "zones": [
         {
@@ -68,7 +68,7 @@
     },
     {
       "part_id": "beam_2",
-      "y_m": -7.239000000000001,
+      "y_m": 7.239000000000001,
       "section_type": "welded_I",
       "zones": [
         {
@@ -111,7 +111,7 @@
     },
     {
       "part_id": "beam_3",
-      "y_m": -4.825999999999898,
+      "y_m": 4.825999999999898,
       "section_type": "welded_I",
       "zones": [
         {
@@ -154,7 +154,7 @@
     },
     {
       "part_id": "beam_4",
-      "y_m": -2.413000000000102,
+      "y_m": 2.413000000000102,
       "section_type": "welded_I",
       "zones": [
         {
@@ -240,7 +240,7 @@
     },
     {
       "part_id": "beam_6",
-      "y_m": 2.413000000000102,
+      "y_m": -2.413000000000102,
       "section_type": "welded_I",
       "zones": [
         {
@@ -283,7 +283,7 @@
     },
     {
       "part_id": "beam_7",
-      "y_m": 4.825999999999898,
+      "y_m": -4.825999999999898,
       "section_type": "welded_I",
       "zones": [
         {
@@ -326,7 +326,7 @@
     },
     {
       "part_id": "beam_8",
-      "y_m": 7.239000000000001,
+      "y_m": -7.239000000000001,
       "section_type": "welded_I",
       "zones": [
         {
@@ -369,7 +369,7 @@
     },
     {
       "part_id": "beam_9",
-      "y_m": 9.2964,
+      "y_m": -9.2964,
       "section_type": "welded_I",
       "zones": [
         {
@@ -479,7 +479,7 @@
     "sections": [
       {
         "part_id": "beam_1",
-        "y_m": -9.2964,
+        "y_m": 9.2964,
         "section_type": "welded_I",
         "zones": [
           {
@@ -521,7 +521,7 @@
       },
       {
         "part_id": "beam_2",
-        "y_m": -7.239000000000001,
+        "y_m": 7.239000000000001,
         "section_type": "welded_I",
         "zones": [
           {
@@ -564,7 +564,7 @@
       },
       {
         "part_id": "beam_3",
-        "y_m": -4.825999999999898,
+        "y_m": 4.825999999999898,
         "section_type": "welded_I",
         "zones": [
           {
@@ -607,7 +607,7 @@
       },
       {
         "part_id": "beam_4",
-        "y_m": -2.413000000000102,
+        "y_m": 2.413000000000102,
         "section_type": "welded_I",
         "zones": [
           {
@@ -693,7 +693,7 @@
       },
       {
         "part_id": "beam_6",
-        "y_m": 2.413000000000102,
+        "y_m": -2.413000000000102,
         "section_type": "welded_I",
         "zones": [
           {
@@ -736,7 +736,7 @@
       },
       {
         "part_id": "beam_7",
-        "y_m": 4.825999999999898,
+        "y_m": -4.825999999999898,
         "section_type": "welded_I",
         "zones": [
           {
@@ -779,7 +779,7 @@
       },
       {
         "part_id": "beam_8",
-        "y_m": 7.239000000000001,
+        "y_m": -7.239000000000001,
         "section_type": "welded_I",
         "zones": [
           {
@@ -822,7 +822,7 @@
       },
       {
         "part_id": "beam_9",
-        "y_m": 9.2964,
+        "y_m": -9.2964,
         "section_type": "welded_I",
         "zones": [
           {
@@ -1007,5 +1007,6 @@
     "Source revisions 9715471 and 9715512 concern special provisions and inspection coordination; no replacement geometry sheets were identified."
   ],
   "source_page_policy": "Unchanged one-based original primary PDF pages. Secondary sources have independent original PDF page numbers.",
-  "fem_generated": false
+  "fem_generated": false,
+  "notes_after_review": "Transverse coordinates (and, for a wholly reflected model, the skew sign) were mirrored to follow the 2026-11 drawing-review correction of model.glb, which put the bridge on its drawn side."
 }

@@ -20,7 +20,7 @@
     49.75
   ],
   "source_pdf_sha256": "6e9fba4786bc8c1d05073a8bdcaf0b2c66216bdfffb22ac2e469541773142bf8",
-  "glb_sha256": "89a01751638da26aa01435b06b2830fa45c082082ae63d307824fa3f9a8aafb4",
+  "glb_sha256": "ee8b7d75fdad9ed43ea97c56a26d1e00a86b8e07face7b70d6e32fdf8e049b29",
   "contacts": [
     {
       "support": 1,
@@ -163,5 +163,9 @@
       "beam_bearing_gap_m": 0.0
     }
   ],
-  "limitations": "Geometry checks only. Does not certify completeness, engineering capacity, fabrication tolerances or as-built condition."
+  "limitations": "Geometry checks only. Does not certify completeness, engineering capacity, fabrication tolerances or as-built condition.",
+  "exported_glb_reopened": true,
+  "mesh_names_match_manifest": true,
+  "model_revision": "1.2-drawing-review-2",
+  "refreshed_after_correction": "Generic checks re-run on the corrected GLB by scripts/refresh_geometry_verification.py; checks_at_build describe the model as first built."
 }

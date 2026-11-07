@@ -163,15 +163,27 @@ def existing(bid):
             for i in range(5):r.beam(f'beam_{i}_{j}',i,y,ishape(.840,.292,.0147,.022))
         labels=['Bent_1','Bent_2','Pier_3','Pier_4','Bent_5','Bent_6']
         for i in range(6):
-            s=r.support(i,f'cap_{i}',1.3 if i in [2,3] else .76)
+            if i in [0,5]:
+                # Integral end bents run up to the deck soffit since the 2026-11 drawing review (sheets 8-9); the
+                # analytical cap is the concrete below the bearing seats, as before that correction.
+                p=r.parts[f'cap_{i}'];seat=min(r.parts[f'{labels[i]}_bearing_{j+1}']['bounds_m'][0][2] for j in range(len(ys)))
+                s=r.support(i,f'cap_{i}',.76,cap_depth=seat-p['bounds_m'][0][2],top=(seat+p['bounds_m'][0][2])/2)
+            else:s=r.support(i,f'cap_{i}',1.3 if i in [2,3] else .76)
             if i in [2,3]:r.wall(s,f'wall_{i}',1.15)
             else:
-                for j in range(9):r.column(s,f'pile_stub_{i}_{j}',dict(kind='circle',diameter_m=.355),family='pile')
+                # End bents carry eight piles since the 2026-11 drawing review (sheet 8); interior bents nine.
+                for j in range(9):
+                    if f'pile_stub_{i}_{j}' in r.parts:r.column(s,f'pile_stub_{i}_{j}',dict(kind='circle',diameter_m=.355),family='pile')
+                # A pile line within 2 cm of a beam line is put on it: near-coincident cap nodes ruin the conditioning.
+                for c in s['columns']:
+                    near=min(ys,key=lambda y:abs(y-c['y_m']))
+                    if abs(near-c['y_m'])<.02:c['y_m']=near
             for j,y in enumerate(ys):r.bearing(s,f'{labels[i]}_bearing_{j+1}',0,y)
         r.notes += ['W840x193 is the explicit nominal I idealization d=.840, b=.292, tw=.0147, tf=.022 m, not an exact rolled catalog section.',
             'Retained center walls use the geometric reconstruction assumptions t=1.15 m. Round .355 m pile stubs are equivalent elastic columns, fixed/elastic at their displayed cut bottoms; driven lengths and soil embedment are unknown.']
     elif bid=='us50-tanners-eb':
-        ys=[-width/2+(4+1/12)*FT+j*(10+10/12)*FT for j in range(7)]
+        # Beam lines from the corrected model (2026-11 drawing review put Beam 1 on its drawn side); 10'-10" spacing.
+        ys=[mid(r.parts[f'bulbt_0_{j}'],1) for j in range(7)]
         pr=[[-12.5,0],[12.5,0],[12.5,8],[3.5,17],[3.5,54],[27,58],[30,58],[30,66],[-30,66],[-30,58],[-27,58],[-3.5,54],[-3.5,17],[-12.5,8]]
         sec=dict(kind='polygon',profile_yz_m=[[y*IN,z*IN] for y,z in pr],torsion_J_m4=.025)
         from fem.collection_demo import section

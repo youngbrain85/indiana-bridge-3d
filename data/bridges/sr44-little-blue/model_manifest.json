@@ -15,7 +15,7 @@
     "Any later FEM must freeze its own material, stiffness, connectivity and support assumptions. Visual mesh volume is not a section-property source.",
     "Foundations are hidden by default; foundation envelopes are design references and do not establish actual field embedment.",
     "The source title calls the deck simple-span while the bents are explicitly integral; an FE boundary model must state its rotational idealization and may not silently invent discrete bearings.",
-    "Vertical curve uses the source 170 ft curve, +0.730%/-0.622% slopes and nominal PVI station 507+10; absolute height is shifted to a 3 m local datum.",
+    "Vertical curve uses the sheet 11 170 ft curve, P.V.I. 507+10 El. 879.00, +0.730 %/-0.622 %, with the -0.622 % tangent east of 507+95; local datum Z = 3 m + 0.3048 (El. ft - 878.64) for every part.",
     "Foundation cylinders show exterior envelopes only. Pipe wall thickness and estimated tip elevations are source values, not verified as-driven geometry."
   ],
   "external_sources": [
@@ -143,36 +143,46 @@
       "layer": "deck",
       "color": "#c9cec6",
       "pdf_pages": [
+        11,
         12,
         13,
-        14
+        14,
+        18
       ],
       "basis": "Dimensioned 43 ft wide, 20 in slab envelope",
-      "note": "19.5 in structural depth plus 0.5 in integral wearing surface. Local north coping end notch and 5.25 in edge-length difference simplified; old 1941 bridge is excluded.",
+      "note": "19.5 in structural depth plus 0.5 in integral wearing surface. Old 1941 bridge is excluded. Review correction: top on the sheet 11 profile with the local datum Z = 3 m at El. 878.64 (was 18 mm high) and the -0.622 % tangent east of 507+95; slab ends square to the roadway in the rail zones as drawn on sheet 18 (north coping 31'-5 3/8\", south 31'-10 5/8\").",
       "dimensions": {
         "thickness_m": 0.508,
-        "structural_thickness_m": 0.49529999999999996
+        "structural_thickness_m": 0.49529999999999996,
+        "north_coping_length_m": 9.585325,
+        "south_coping_length_m": 9.718675,
+        "pg_el_ft_at_bent_centrelines": [
+          878.64,
+          878.5
+        ]
       },
       "bounds_m": [
         [
-          -11.412538,
+          -10.955338,
           -6.5532,
-          2.291111
+          2.279291
         ],
         [
-          11.412538,
+          10.955338,
           6.5532,
-          3.019415
+          3.001065
         ]
       ],
-      "volume_m3": 64.685386562,
+      "volume_m3": 64.68098088,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
+            11,
             12,
             13,
-            14
+            14,
+            18
           ]
         }
       ]
@@ -188,10 +198,11 @@
         17
       ],
       "basis": "Source 2 ft 10 in normal bent width and bottom elevation; top derived to contact slab",
-      "note": "Integral slab-to-bent connection. No discrete bearings exist. Upper pavement ledge and local fillet are simplified.",
+      "note": "Integral slab-to-bent connection. No discrete bearings exist. Upper pavement ledge and local fillet are simplified. Review correction: top rebuilt on the crowned slab soffit (S - 20 in) along the whole bent; the 138 mm gap at the crown is closed (sheet 17 End Bent Detail).",
       "dimensions": {
         "normal_thickness_m": 0.8636,
-        "bottom_m": 0.6621839999999679
+        "bottom_m": 0.6621839999999679,
+        "top": "slab soffit, profile grade - 0.02 |y| - 20 in"
       },
       "bounds_m": [
         [
@@ -202,10 +213,10 @@
         [
           2.591857,
           6.5532,
-          2.397298
+          2.494138
         ]
       ],
-      "volume_m3": 27.39110892,
+      "volume_m3": 28.212132003,
       "source_refs": [
         {
           "source_id": "9683606",
@@ -555,7 +566,7 @@
         15
       ],
       "basis": "Source wing length and nominal 1 ft wall; simplified constant top",
-      "note": "Wing A-D top elevations, 1:4 rear batter and local joints are approximate.",
+      "note": "Wing A-D top elevations, 1:4 rear batter and local joints are approximate. Level top moved -18.4 mm with the corrected vertical datum (El. 878.12).",
       "dimensions": {
         "length_m": 3.6576000000000004,
         "top_thickness_m": 0.3048
@@ -569,10 +580,10 @@
         [
           1.9812,
           -6.5532,
-          2.859252
+          2.840901
         ]
       ],
-      "volume_m3": 2.449371698,
+      "volume_m3": 2.428913827,
       "source_refs": [
         {
           "source_id": "9683606",
@@ -593,7 +604,7 @@
         15
       ],
       "basis": "Source wing length and nominal 1 ft wall; simplified constant top",
-      "note": "Wing A-D top elevations, 1:4 rear batter and local joints are approximate.",
+      "note": "Wing A-D top elevations, 1:4 rear batter and local joints are approximate. Level top moved -18.4 mm with the corrected vertical datum (El. 878.27).",
       "dimensions": {
         "length_m": 3.6576000000000004,
         "top_thickness_m": 0.3048
@@ -607,10 +618,10 @@
         [
           -11.1252,
           6.858,
-          2.904292
+          2.885941
         ]
       ],
-      "volume_m3": 2.499583663,
+      "volume_m3": 2.479125474,
       "source_refs": [
         {
           "source_id": "9683606",
@@ -632,10 +643,11 @@
         17
       ],
       "basis": "Source 2 ft 10 in normal bent width and bottom elevation; top derived to contact slab",
-      "note": "Integral slab-to-bent connection. No discrete bearings exist. Upper pavement ledge and local fillet are simplified.",
+      "note": "Integral slab-to-bent connection. No discrete bearings exist. Upper pavement ledge and local fillet are simplified. Review correction: top rebuilt on the crowned slab soffit (S - 20 in) along the whole bent; the 138 mm gap at the crown is closed (sheet 17 End Bent Detail).",
       "dimensions": {
         "normal_thickness_m": 0.8636,
-        "bottom_m": 0.6195119999999861
+        "bottom_m": 0.6195119999999861,
+        "top": "slab soffit, profile grade - 0.02 |y| - 20 in"
       },
       "bounds_m": [
         [
@@ -646,10 +658,10 @@
         [
           11.735857,
           6.5532,
-          2.372058
+          2.453263
         ]
       ],
-      "volume_m3": 27.39656186,
+      "volume_m3": 28.224474021,
       "source_refs": [
         {
           "source_id": "9683606",
@@ -999,7 +1011,7 @@
         16
       ],
       "basis": "Source wing length and nominal 1 ft wall; simplified constant top",
-      "note": "Wing A-D top elevations, 1:4 rear batter and local joints are approximate.",
+      "note": "Wing A-D top elevations, 1:4 rear batter and local joints are approximate. Level top moved -15.1 mm with the corrected vertical datum (El. 877.94).",
       "dimensions": {
         "length_m": 3.6576000000000004,
         "top_thickness_m": 0.3048
@@ -1013,10 +1025,10 @@
         [
           14.7828,
           -6.5532,
-          2.801286
+          2.786235
         ]
       ],
-      "volume_m3": 2.432320825,
+      "volume_m3": 2.415541293,
       "source_refs": [
         {
           "source_id": "9683606",
@@ -1034,33 +1046,40 @@
       "color": "#beb8a8",
       "pdf_pages": [
         12,
-        16
+        16,
+        18
       ],
-      "basis": "Source wing length and nominal 1 ft wall; simplified constant top",
-      "note": "Wing A-D top elevations, 1:4 rear batter and local joints are approximate.",
+      "basis": "Sheet 16 Wing D plan, Section D-D and Wing D elevation",
+      "note": "Review correction: Wing D per sheet 16 - a 12 ft, 1 ft wall 2'-9\" outside the coping, joined to the bent end by a 4'-1 1/8\" by 3'-8\" block with a 90 degree corner; top El. 878.12 at the bent end (Section D-D) to 878.06 at the tip (Wing D elevation), bottom El. 870.83. Rear batter and joints simplified.",
       "dimensions": {
-        "length_m": 3.6576000000000004,
-        "top_thickness_m": 0.3048
+        "length_m": 3.6576,
+        "top_thickness_m": 0.3048,
+        "block_length_m": 1.247775,
+        "outer_face_y_m": 7.6962,
+        "top_el_at_bent_end_ft": 878.12,
+        "top_el_at_tip_ft": 878.06,
+        "bottom_el_ft": 870.83
       },
       "bounds_m": [
         [
-          -1.9812,
+          -2.618318,
           6.5532,
           0.619512
         ],
         [
-          1.6764,
-          6.858,
-          2.877596
+          1.039282,
+          7.6962,
+          2.841504
         ]
       ],
-      "volume_m3": 2.517394093,
+      "volume_m3": 4.786902543,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
             12,
-            16
+            16,
+            18
           ]
         }
       ]
@@ -1071,32 +1090,62 @@
       "layer": "rails",
       "color": "#d4ccbb",
       "pdf_pages": [
+        11,
         18
       ],
       "basis": "Source 2 ft 9 in FC rail section and asymmetric lengths",
-      "note": "Corners and fillets simplified.",
+      "note": "South rail, square ends at X = 1.2367 and 10.9553 m (sheet 18 railing plan; sheet 11 railing limits). Section per the sheet 18 typical section: 3 in vertical toe, knee 11 in from the back at 10 in, 9 in top. Top-corner fillets simplified.",
       "dimensions": {
         "height_m": 0.8382,
-        "length_m": 9.718675000000001,
-        "base_width_m": 0.4064
+        "length_m": 9.718675,
+        "base_width_m": 0.4064,
+        "section_q_h_in": [
+          [
+            0,
+            0
+          ],
+          [
+            16,
+            0
+          ],
+          [
+            16,
+            3
+          ],
+          [
+            11,
+            10
+          ],
+          [
+            9,
+            33
+          ],
+          [
+            0,
+            33
+          ]
+        ],
+        "x_start_m": 1.236662,
+        "x_end_m": 10.955338
       },
       "bounds_m": [
         [
           1.236662,
           -6.5024,
-          2.800513
+          2.788307
         ],
         [
-          11.361738,
+          10.955338,
           -6.096,
-          3.70655
+          3.688449
         ]
       ],
-      "volume_m3": 2.87796813,
+      "volume_m3": 2.335612385,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
+            11,
             18
           ]
         }
@@ -1108,30 +1157,37 @@
       "layer": "rails",
       "color": "#d4ccbb",
       "pdf_pages": [
+        11,
         18
       ],
-      "basis": "Source 15 ft 8 in transition extent; nominal sloped solid envelope",
-      "note": "Precise TFC mold, tapered curb, guardrail end plate and bolts unresolved.",
+      "basis": "Source 15 ft 8 in transition, 2 ft 9 in level top, sheet 18 plan taper",
+      "note": "Square ends at X = -3.5385 and 1.2367 m; top level at 2'-9\" over the whole transition (sheet 18 north and south railing elevations). Face from the FC section to a 9 in vertical end: base 1'-4\" to 9\" over 11'-5\", knee 10\" to 3\" over 7'-2\" (scaled from sheet 18). Guardrail end plate and bolts are not modelled.",
       "dimensions": {
-        "length_m": 4.7752
+        "length_m": 4.7752,
+        "height_m": 0.8382,
+        "base_width_at_fc_m": 0.4064,
+        "end_width_m": 0.2286,
+        "x_start_m": -3.538538,
+        "x_end_m": 1.236662
       },
       "bounds_m": [
         [
           -3.538538,
           -6.5024,
-          2.861993
+          2.845677
         ],
         [
-          1.643062,
+          1.236662,
           -6.096,
-          3.710355
+          3.709121
         ]
       ],
-      "volume_m3": 1.092962345,
+      "volume_m3": 1.018406637,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
+            11,
             18
           ]
         }
@@ -1143,30 +1199,37 @@
       "layer": "rails",
       "color": "#d4ccbb",
       "pdf_pages": [
+        11,
         18
       ],
-      "basis": "Source 15 ft 8 in transition extent; nominal sloped solid envelope",
-      "note": "Precise TFC mold, tapered curb, guardrail end plate and bolts unresolved.",
+      "basis": "Source 15 ft 8 in transition, 2 ft 9 in level top, sheet 18 plan taper",
+      "note": "Square ends at X = 10.9553 and 15.7305 m; top level at 2'-9\" over the whole transition (sheet 18 north and south railing elevations). Face from the FC section to a 9 in vertical end: base 1'-4\" to 9\" over 11'-5\", knee 10\" to 3\" over 7'-2\" (scaled from sheet 18). Guardrail end plate and bolts are not modelled.",
       "dimensions": {
-        "length_m": 4.7752
+        "length_m": 4.7752,
+        "height_m": 0.8382,
+        "base_width_at_fc_m": 0.4064,
+        "end_width_m": 0.2286,
+        "x_start_m": 10.955338,
+        "x_end_m": 15.730538
       },
       "bounds_m": [
         [
           10.955338,
           -6.5024,
-          2.761275
+          2.758605
         ],
         [
-          16.136938,
+          15.730538,
           -6.096,
-          3.649905
+          3.631079
         ]
       ],
-      "volume_m3": 1.092962345,
+      "volume_m3": 1.018406637,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
+            11,
             18
           ]
         }
@@ -1178,32 +1241,62 @@
       "layer": "rails",
       "color": "#d4ccbb",
       "pdf_pages": [
+        11,
         18
       ],
       "basis": "Source 2 ft 9 in FC rail section and asymmetric lengths",
-      "note": "Corners and fillets simplified.",
+      "note": "North rail, square ends at X = -10.9553 and -6.1960 m (sheet 18 railing plan; sheet 11 railing limits). Section per the sheet 18 typical section: 3 in vertical toe, knee 11 in from the back at 10 in, 9 in top. Top-corner fillets simplified.",
       "dimensions": {
         "height_m": 0.8382,
-        "length_m": 4.7593250000000005,
-        "base_width_m": 0.4064
+        "length_m": 4.759325,
+        "base_width_m": 0.4064,
+        "section_q_h_in": [
+          [
+            0,
+            0
+          ],
+          [
+            16,
+            0
+          ],
+          [
+            16,
+            3
+          ],
+          [
+            11,
+            10
+          ],
+          [
+            9,
+            33
+          ],
+          [
+            0,
+            33
+          ]
+        ],
+        "x_start_m": -10.955338,
+        "x_end_m": -6.196013
       },
       "bounds_m": [
         [
-          -8.882062,
+          -10.955338,
           6.096,
-          2.88682
+          2.875277
         ],
         [
-          -3.716338,
+          -6.196012,
           6.5024,
-          3.743463
+          3.729432
         ]
       ],
-      "volume_m3": 1.409380667,
+      "volume_m3": 1.143770979,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
+            11,
             18
           ]
         }
@@ -1215,30 +1308,37 @@
       "layer": "rails",
       "color": "#d4ccbb",
       "pdf_pages": [
+        11,
         18
       ],
-      "basis": "Source 15 ft 8 in transition extent; nominal sloped solid envelope",
-      "note": "Precise TFC mold, tapered curb, guardrail end plate and bolts unresolved.",
+      "basis": "Source 15 ft 8 in transition, 2 ft 9 in level top, sheet 18 plan taper",
+      "note": "Square ends at X = -15.7305 and -10.9553 m; top level at 2'-9\" over the whole transition (sheet 18 north and south railing elevations). Face from the FC section to a 9 in vertical end: base 1'-4\" to 9\" over 11'-5\", knee 10\" to 3\" over 7'-2\" (scaled from sheet 18). Guardrail end plate and bolts are not modelled.",
       "dimensions": {
-        "length_m": 4.7752
+        "length_m": 4.7752,
+        "height_m": 0.8382,
+        "base_width_at_fc_m": 0.4064,
+        "end_width_m": 0.2286,
+        "x_start_m": -15.730538,
+        "x_end_m": -10.955338
       },
       "bounds_m": [
         [
-          -13.657262,
+          -15.730538,
           6.096,
-          2.900778
+          2.88666
         ],
         [
-          -8.475662,
+          -10.955338,
           6.5024,
-          3.746145
+          3.734914
         ]
       ],
-      "volume_m3": 1.092975993,
+      "volume_m3": 1.018406637,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
+            11,
             18
           ]
         }
@@ -1250,30 +1350,37 @@
       "layer": "rails",
       "color": "#d4ccbb",
       "pdf_pages": [
+        11,
         18
       ],
-      "basis": "Source 15 ft 8 in transition extent; nominal sloped solid envelope",
-      "note": "Precise TFC mold, tapered curb, guardrail end plate and bolts unresolved.",
+      "basis": "Source 15 ft 8 in transition, 2 ft 9 in level top, sheet 18 plan taper",
+      "note": "Square ends at X = -6.1960 and -1.4208 m; top level at 2'-9\" over the whole transition (sheet 18 north and south railing elevations). Face from the FC section to a 9 in vertical end: base 1'-4\" to 9\" over 11'-5\", knee 10\" to 3\" over 7'-2\" (scaled from sheet 18). Guardrail end plate and bolts are not modelled.",
       "dimensions": {
-        "length_m": 4.7752
+        "length_m": 4.7752,
+        "height_m": 0.8382,
+        "base_width_at_fc_m": 0.4064,
+        "end_width_m": 0.2286,
+        "x_start_m": -6.196013,
+        "x_end_m": -1.420813
       },
       "bounds_m": [
         [
-          -4.122737,
+          -6.196012,
           6.096,
-          2.866876
+          2.857915
         ],
         [
-          1.058862,
+          -1.420812,
           6.5024,
-          3.731683
+          3.718049
         ]
       ],
-      "volume_m3": 1.092975993,
+      "volume_m3": 1.018406637,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
+            11,
             18
           ]
         }
@@ -1285,33 +1392,38 @@
       "layer": "approaches",
       "color": "#bbc4c0",
       "pdf_pages": [
+        11,
         12,
         17,
         18
       ],
-      "basis": "Source 20 ft 6 in minimum length; square terminal reconstruction",
-      "note": "Exact TFC slab extensions and terminal asphalt joints unresolved.",
+      "basis": "Source 20 ft 6 in length along the roadway; skewed outer end and TFC extensions per sheets 12 and 18",
+      "note": "Review correction: outer end skewed 45 degrees, parallel to the bents, 20'-6\" beyond the west slab end (sheet 12 stations, sheet 11 paving exception); slab between the roadway faces, with the Type TFC extension under each TFC ending 2\" beyond it (sheet 18). Terminal asphalt joints are not modelled.",
       "dimensions": {
         "minimum_length_m": 6.2484,
-        "thickness_m": 0.30479999999999996
+        "thickness_m": 0.30479999999999996,
+        "length_along_roadway_m": 6.2484,
+        "core_width_m": 12.192,
+        "tfc_extension_beyond_tfc_m": 0.0508
       },
       "bounds_m": [
         [
-          -17.660938,
+          -17.203738,
           -6.5532,
-          2.55592
+          2.539861
         ],
         [
-          1.693862,
+          1.236662,
           6.5532,
-          3.041068
+          3.016975
         ]
       ],
-      "volume_m3": 51.14922651,
+      "volume_m3": 24.564864419,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
+            11,
             12,
             17,
             18
@@ -1326,30 +1438,32 @@
       "color": "#39434a",
       "pdf_pages": [
         12,
-        17
+        17,
+        18
       ],
       "basis": "Schematic Type IA joint strip; no structural bearing implied",
-      "note": "",
+      "note": "Schematic Type IA joint strip across the roadway between the roadway faces; under the rails the slab joint is square to the roadway (sheet 18).",
       "dimensions": {},
       "bounds_m": [
         [
-          -11.424538,
-          -6.5532,
-          2.800659
+          -10.967338,
+          -6.096,
+          2.793745
         ],
         [
-          1.705862,
-          6.5532,
-          3.019456
+          1.248662,
+          6.096,
+          3.001105
         ]
       ],
-      "volume_m3": 0.018871065,
+      "volume_m3": 0.01755648,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
             12,
-            17
+            17,
+            18
           ]
         }
       ]
@@ -1360,33 +1474,38 @@
       "layer": "approaches",
       "color": "#bbc4c0",
       "pdf_pages": [
+        11,
         12,
         17,
         18
       ],
-      "basis": "Source 20 ft 6 in minimum length; square terminal reconstruction",
-      "note": "Exact TFC slab extensions and terminal asphalt joints unresolved.",
+      "basis": "Source 20 ft 6 in length along the roadway; skewed outer end and TFC extensions per sheets 12 and 18",
+      "note": "Review correction: outer end skewed 45 degrees, parallel to the bents, 20'-6\" beyond the east slab end (sheet 12 stations, sheet 11 paving exception); slab between the roadway faces, with the Type TFC extension under each TFC ending 2\" beyond it (sheet 18). Terminal asphalt joints are not modelled.",
       "dimensions": {
         "minimum_length_m": 6.2484,
-        "thickness_m": 0.30479999999999996
+        "thickness_m": 0.30479999999999996,
+        "length_along_roadway_m": 6.2484,
+        "core_width_m": 12.192,
+        "tfc_extension_beyond_tfc_m": 0.0508
       },
       "bounds_m": [
         [
-          -1.693862,
+          -1.236662,
           -6.5532,
-          2.441684
+          2.452473
         ],
         [
-          17.660938,
-          6.5532,
-          2.974424
+          17.203738,
+          6.096,
+          2.956073
         ]
       ],
-      "volume_m3": 51.131223381,
+      "volume_m3": 23.892339312,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
+            11,
             12,
             17,
             18
@@ -1401,30 +1520,32 @@
       "color": "#39434a",
       "pdf_pages": [
         12,
-        17
+        17,
+        18
       ],
       "basis": "Schematic Type IA joint strip; no structural bearing implied",
-      "note": "",
+      "note": "Schematic Type IA joint strip across the roadway between the roadway faces; under the rails the slab joint is square to the roadway (sheet 18).",
       "dimensions": {},
       "bounds_m": [
         [
-          -1.705862,
-          -6.5532,
-          2.739019
+          -1.248662,
+          -6.096,
+          2.736361
         ],
         [
-          11.424538,
-          6.5532,
-          2.974494
+          10.967338,
+          6.096,
+          2.956144
         ]
       ],
-      "volume_m3": 0.018871065,
+      "volume_m3": 0.01755648,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
             12,
-            17
+            17,
+            18
           ]
         }
       ]
@@ -1435,29 +1556,38 @@
       "layer": "accessories",
       "color": "#59676f",
       "pdf_pages": [
+        11,
         12,
         18
       ],
-      "basis": "Source guardrail connection presence; representative exterior run",
-      "note": "North-east TGB alignment and curved terminal are not fully reconstructed. Flat strip stands in for W profile.",
-      "dimensions": {},
+      "basis": "Sheet 18 railing elevations (terminal connector lap, thrie-beam depth and height); representative run",
+      "note": "Representative 2 m south-west run: four posts as built, and an upright rail element standing in for the 20 in thrie beam and its terminal connector, back on the TFC end face (Y = -6.2738 m), lapping 2'-6\" onto the TFC, 11.00 to 31.00 in above the deck (sheet 18 north/south railing elevations, scaled). Corrugations, blockouts, bolts, the post layout and the rest of the Type MGS Without Curb guardrail transition are not modelled.",
+      "dimensions": {
+        "rail_element_depth_m": 0.508,
+        "rail_element_thickness_m": 0.06,
+        "rail_element_bottom_above_deck_m": 0.2794,
+        "rail_element_top_above_deck_m": 0.7874,
+        "lap_on_tfc_m": 0.762,
+        "back_face_y_m": -6.2738
+      },
       "bounds_m": [
         [
-          -4.061138,
-          -6.5032,
-          2.631698
+          -5.699338,
+          -6.4032,
+          2.619724
         ],
         [
-          -1.951138,
-          -6.2032,
-          3.589388
+          -2.776538,
+          -6.2138,
+          3.665547
         ]
       ],
-      "volume_m3": 0.077800266,
+      "volume_m3": 0.129210544,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
+            11,
             12,
             18
           ]
@@ -1470,29 +1600,38 @@
       "layer": "accessories",
       "color": "#59676f",
       "pdf_pages": [
+        11,
         12,
         18
       ],
-      "basis": "Source guardrail connection presence; representative exterior run",
-      "note": "North-east TGB alignment and curved terminal are not fully reconstructed. Flat strip stands in for W profile.",
-      "dimensions": {},
+      "basis": "Sheet 18 railing elevations (terminal connector lap, thrie-beam depth and height); representative run",
+      "note": "Representative 2 m south-east run: four posts as built, and an upright rail element standing in for the 20 in thrie beam and its terminal connector, back on the TFC end face (Y = -6.2738 m), lapping 2'-6\" onto the TFC, 11.00 to 31.00 in above the deck (sheet 18 north/south railing elevations, scaled). Corrugations, blockouts, bolts, the post layout and the rest of the Type MGS Without Curb guardrail transition are not modelled.",
+      "dimensions": {
+        "rail_element_depth_m": 0.508,
+        "rail_element_thickness_m": 0.06,
+        "rail_element_bottom_above_deck_m": 0.2794,
+        "rail_element_top_above_deck_m": 0.7874,
+        "lap_on_tfc_m": 0.762,
+        "back_face_y_m": -6.2738
+      },
       "bounds_m": [
         [
-          14.657538,
-          -6.5032,
-          2.509128
+          14.968538,
+          -6.4032,
+          2.498491
         ],
         [
-          16.767538,
-          -6.2032,
-          3.476586
+          17.891338,
+          -6.2138,
+          3.555317
         ]
       ],
-      "volume_m3": 0.077801372,
+      "volume_m3": 0.129210544,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
+            11,
             12,
             18
           ]
@@ -1505,29 +1644,38 @@
       "layer": "accessories",
       "color": "#59676f",
       "pdf_pages": [
+        11,
         12,
         18
       ],
-      "basis": "Source guardrail connection presence; representative exterior run",
-      "note": "North-east TGB alignment and curved terminal are not fully reconstructed. Flat strip stands in for W profile.",
-      "dimensions": {},
+      "basis": "Sheet 18 railing elevations (terminal connector lap, thrie-beam depth and height); representative run",
+      "note": "Representative 2 m north-west run: four posts as built, and an upright rail element standing in for the 20 in thrie beam and its terminal connector, back on the TFC end face (Y = +6.2738 m), lapping 2'-6\" onto the TFC, 11.00 to 31.00 in above the deck (sheet 18 north/south railing elevations, scaled). Corrugations, blockouts, bolts, the post layout and the rest of the Type MGS Without Curb guardrail transition are not modelled.",
+      "dimensions": {
+        "rail_element_depth_m": 0.508,
+        "rail_element_thickness_m": 0.06,
+        "rail_element_bottom_above_deck_m": 0.2794,
+        "rail_element_top_above_deck_m": 0.7874,
+        "lap_on_tfc_m": 0.762,
+        "back_face_y_m": 6.2738
+      },
       "bounds_m": [
         [
-          -16.767538,
-          6.2032,
-          2.662807
+          -17.891338,
+          6.2138,
+          2.64518
         ],
         [
-          -14.657538,
-          6.5032,
-          3.613866
+          -14.968538,
+          6.4032,
+          3.684641
         ]
       ],
-      "volume_m3": 0.077800005,
+      "volume_m3": 0.129210544,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
+            11,
             12,
             18
           ]
@@ -1540,29 +1688,38 @@
       "layer": "accessories",
       "color": "#59676f",
       "pdf_pages": [
+        11,
         12,
         18
       ],
-      "basis": "Source guardrail connection presence; representative exterior run",
-      "note": "North-east TGB alignment and curved terminal are not fully reconstructed. Flat strip stands in for W profile.",
-      "dimensions": {},
+      "basis": "Sheet 18 railing elevations (terminal connector lap, thrie-beam depth and height); representative run",
+      "note": "Representative 2 m north-east run: four posts as built, and an upright rail element standing in for the 20 in thrie beam and its terminal connector, back on the TFC end face (Y = +6.2738 m), lapping 2'-0\" onto the TFC, 10.27 to 30.27 in above the deck (sheet 18 north/south railing elevations, scaled). Corrugations, blockouts, bolts, the post layout and the rest of the Type TGB guardrail transition, with its W-beam transition and curved terminal, are not modelled.",
+      "dimensions": {
+        "rail_element_depth_m": 0.508,
+        "rail_element_thickness_m": 0.06,
+        "rail_element_bottom_above_deck_m": 0.260773,
+        "rail_element_top_above_deck_m": 0.768773,
+        "lap_on_tfc_m": 0.6096,
+        "back_face_y_m": 6.2738
+      },
       "bounds_m": [
         [
-          1.951138,
-          6.2032,
-          2.602296
+          -2.030413,
+          6.2138,
+          2.601353
         ],
         [
-          4.061138,
-          6.5032,
-          3.563124
+          0.739987,
+          6.4032,
+          3.633808
         ]
       ],
-      "volume_m3": 0.077800528,
+      "volume_m3": 0.124565392,
       "source_refs": [
         {
           "source_id": "9683606",
           "pdf_pages": [
+            11,
             12,
             18
           ]
@@ -1665,7 +1822,7 @@
     {
       "feature": "Unresolved geometry",
       "status": "not_modeled",
-      "detail": "Rebar and internal pile material, actual driven lengths, soil and rock, riprap, local slab notch, wing batter, pavement ledge details, exact FC/TFC fillets and roadway terminals.",
+      "detail": "Rebar and internal pile material, actual driven lengths, soil and rock, riprap, wing batter, pavement ledge details, exact FC/TFC fillets and roadway terminals.",
       "sources": [
         "Primary PDF p.12",
         "Primary PDF p.14",
@@ -1676,5 +1833,228 @@
       ],
       "part_ids": []
     }
-  ]
+  ],
+  "vertical_datum": "Z (m) = 3 + 0.3048 (El. ft - 878.64); X = 0 at Sta. 507+75 \"PR-PR\"",
+  "review_correction": "drawing-review-datum-rails-approaches-wing-d",
+  "revision": "1.2-drawing-review-2",
+  "review_correction_record": {
+    "source_pdf_pages": [
+      11,
+      12,
+      16,
+      17,
+      18
+    ],
+    "printed_sheets": [
+      11,
+      12,
+      16,
+      17,
+      18
+    ],
+    "findings": {
+      "F1": "confirmed - approach slabs",
+      "F2": "confirmed - TFC level 2 ft 9 in top",
+      "F3": "confirmed - bent tops on the crowned soffit",
+      "F4": "confirmed - Wing D outline and top",
+      "F5": "confirmed - railing chains and square ends",
+      "F6": "confirmed - FC section",
+      "F7": "confirmed - single vertical datum and east tangent"
+    },
+    "vertical_datum": "Z (m) = 3 + 0.3048 (El. ft - 878.64); X = 0 at Sta. 507+75 \"PR-PR\"",
+    "datum_shift_m": -0.018351,
+    "railing_chains_x_m": {
+      "north": [
+        -15.730538,
+        -10.955338,
+        -6.196013,
+        -1.420813
+      ],
+      "south": [
+        -3.538538,
+        1.236662,
+        10.955338,
+        15.730538
+      ]
+    },
+    "approach_outer_end_u_m": 11.107738,
+    "wing_d_plan_xy_m": [
+      [
+        -2.591857,
+        6.5532
+      ],
+      [
+        -1.370543,
+        6.5532
+      ],
+      [
+        -1.370543,
+        7.3914
+      ],
+      [
+        1.039282,
+        7.3914
+      ],
+      [
+        1.039282,
+        7.6962
+      ],
+      [
+        -2.618318,
+        7.6962
+      ],
+      [
+        -2.618318,
+        6.5786
+      ]
+    ],
+    "changed_parts": [
+      "deck",
+      "approach_1",
+      "approach_2",
+      "integral_bent_1",
+      "joint_1",
+      "integral_bent_2",
+      "joint_2",
+      "FC_rail_-1",
+      "TFC_-1_-1",
+      "guardrail_-1_-1",
+      "TFC_-1_1",
+      "guardrail_-1_1",
+      "FC_rail_1",
+      "TFC_1_-1",
+      "guardrail_1_-1",
+      "TFC_1_1",
+      "guardrail_1_1",
+      "wing_2_1",
+      "wing_1_1",
+      "wing_1_-1",
+      "wing_2_-1"
+    ],
+    "before_glb_sha256": "8542b9701fbfbdfa7dff9494c8395403a3002e0727dfbbb96d967d5124fe6d15",
+    "after_glb_sha256": "b69ac6f925c81b75e43616c13224d92148a8f925a4f2918b92369c6c8304a50b"
+  },
+  "known_deviations": [
+    {
+      "id": "wings-a-b-c-plan",
+      "parts": "wing_1_1, wing_1_-1, wing_2_-1",
+      "source": "sheets 15, 16 and 18",
+      "deviation": "Wings A, B and C keep the as-built level-topped 12 ft walls measured from the bent centre line at the coping; on sheet 18 the walls are 1 in outside the coping and end 0.15-0.28 m from the modelled tips, with sloping tops.",
+      "reason": "Not part of the external review; left for a separate drawing check."
+    },
+    {
+      "id": "bent-pavement-ledge",
+      "parts": "integral_bent_1, integral_bent_2",
+      "source": "sheet 17 (End Bent Detail)",
+      "deviation": "The 9 in pavement ledge under each approach slab is modelled at slab-soffit level, about 0.2 m below the approach slab.",
+      "reason": "Ledge and fillet details are a stated simplification of the exterior model."
+    },
+    {
+      "id": "guardrail-representative-runs",
+      "parts": "guardrail_1_-1, guardrail_1_1, guardrail_-1_-1, guardrail_-1_1",
+      "source": "sheets 12 and 18",
+      "deviation": "Each guardrail transition is a representative 2 m run: four as-built 0.11 x 0.10 m posts at 0.667 m spacing, 29 mm behind the rail element with no blockouts, and a flat 0.06 m upright plate for the thrie beam and terminal connector. The drawn post spacing, corrugations, bolts, the rest of each transition and the NE Type TGB W-beam transition and curved terminal are not modelled.",
+      "reason": "Guardrail transitions are standard roadway items (sheet 12, sheet 18 elevations); only their connection to the bridge railing is modelled to the drawings."
+    }
+  ],
+  "review_correction_2": "drawing-review-2-guardrail-connections",
+  "review_correction_2_record": {
+    "source_pdf_pages": [
+      12,
+      18
+    ],
+    "printed_sheets": [
+      12,
+      18
+    ],
+    "findings": {
+      "F5": "residual confirmed - steel guardrail connections stopped 105.8 mm short of the TFC ends",
+      "N1": "confirmed - rail element laps onto each TFC end face (2 ft 6 in; NE 2 ft 0 in)",
+      "N2": "confirmed - rail element upright, 20 in deep (11-31 in; NE 10.27-30.27 in above the deck)"
+    },
+    "sheet18_points": {
+      "scale": "1/4 in = 1 ft, 18 pt/ft",
+      "tfc_end_connector_far_beam_top_bottom_top_of_deck": {
+        "north-west": [
+          231.0,
+          276.0,
+          795.9,
+          825.9,
+          842.4
+        ],
+        "north-east": [
+          1076.0,
+          1040.0,
+          797.0,
+          827.0,
+          842.4
+        ],
+        "south-west": [
+          231.0,
+          276.0,
+          1155.9,
+          1185.9,
+          1202.4
+        ],
+        "south-east": [
+          1368.9,
+          1323.9,
+          1155.9,
+          1185.9,
+          1202.4
+        ]
+      }
+    },
+    "guardrail_rail_elements": {
+      "guardrail_1_-1": {
+        "rail_x_m": [
+          -17.836337,
+          -14.968538
+        ],
+        "lap_on_tfc_m": 0.762,
+        "top_above_deck_m": 0.7874,
+        "bottom_above_deck_m": 0.2794,
+        "back_face_y_m": 6.2738
+      },
+      "guardrail_1_1": {
+        "rail_x_m": [
+          -2.030413,
+          0.684987
+        ],
+        "lap_on_tfc_m": 0.6096,
+        "top_above_deck_m": 0.768773,
+        "bottom_above_deck_m": 0.260773,
+        "back_face_y_m": 6.2738
+      },
+      "guardrail_-1_-1": {
+        "rail_x_m": [
+          -5.644338,
+          -2.776538
+        ],
+        "lap_on_tfc_m": 0.762,
+        "top_above_deck_m": 0.7874,
+        "bottom_above_deck_m": 0.2794,
+        "back_face_y_m": -6.2738
+      },
+      "guardrail_-1_1": {
+        "rail_x_m": [
+          14.968538,
+          17.836337
+        ],
+        "lap_on_tfc_m": 0.762,
+        "top_above_deck_m": 0.7874,
+        "bottom_above_deck_m": 0.2794,
+        "back_face_y_m": -6.2738
+      }
+    },
+    "previous_revision": "1.1-drawing-review",
+    "changed_parts": [
+      "guardrail_1_-1",
+      "guardrail_1_1",
+      "guardrail_-1_-1",
+      "guardrail_-1_1"
+    ],
+    "before_glb_sha256": "b69ac6f925c81b75e43616c13224d92148a8f925a4f2918b92369c6c8304a50b",
+    "after_glb_sha256": "9836e74ac37d050cd42176495e72daf564ae2f4ed98210c59621052a50e3e615"
+  }
 }

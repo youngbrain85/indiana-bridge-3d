@@ -54,7 +54,7 @@ const shots=process.env.INSPECTION_SHOTS||null;
  //    the length of cap affected (ft).
  await openSheet('BT-2');
  await pick('Delamination / Spall / Patched Area');
- const c=await pointIn('B2-S','b2_cap');
+ const c=await pointIn('B2-SOUTH','b2_cap');
  await stroke([[c[0]-30,c[1]-12],[c[0]+30,c[1]-14],[c[0]+34,c[1]+14],[c[0]-28,c[1]+12]]);
  await form();
  draft=await page.evaluate(()=>window.__inspect.state.draft);
@@ -71,7 +71,7 @@ const shots=process.env.INSPECTION_SHOTS||null;
  // 3. A torn bearing, tapped as a point; the inspector raises CS 3 to CS 4, which needs a reason and flags
  //    a structural review.
  await pick('Bulging, Splitting or Tearing');
- const b=await pointIn('B2-S','b2_bearing_2_-1');
+ const b=await pointIn('B2-SOUTH','b2_bearing_2_-1');
  await page.mouse.click(...b);
  await form();
  draft=await page.evaluate(()=>window.__inspect.state.draft);
