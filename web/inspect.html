@@ -3,19 +3,17 @@
 <title>Inspection · Indiana Bridge 3D</title><link rel="icon" href="./favicon.svg">
 <meta name="theme-color" content="#eef2f5"><link rel="manifest" href="./inspect.webmanifest">
 <link rel="preload" href="./vendor/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="./ui.css?v=insp1"><link rel="stylesheet" href="./inspect.css?v=insp1">
-<script src="./inspect-config.js?v=insp2"></script><script src="./inspect.bundle.js?v=insp1" defer></script></head>
+<link rel="stylesheet" href="./ui.css?v=insp2"><link rel="stylesheet" href="./inspect.css?v=insp2">
+<script src="./inspect-config.js?v=insp2"></script><script src="./inspect.bundle.js?v=insp2" defer></script></head>
 <body class="inspect-page" data-panel="list">
 <a class="skip" href="#sheetHost">Skip to sheet</a>
 <header class="topbar">
  <a href="./" class="brand" title="All Indiana bridges"><svg class="mark" viewBox="0 0 28 28" aria-hidden="true"><path d="M3 18h22M7 18v6M21 18v6M4 15c4-6 16-6 20 0M10 12.4V18M14 11.6V18M18 12.4V18"/></svg><span class="wordmark">Indiana Bridge 3D</span></a>
- <div class="crumb"><span class="crumb-sep" aria-hidden="true">/</span><h1 id="bridgeName" class="bridge-title">Bridge</h1><span class="crumb-sep" aria-hidden="true">/</span><span class="crumb-mode">Inspection</span></div>
- <label class="inspection-pick"><span class="sr-only">Inspection</span><select id="inspectionSelect" aria-label="Inspection"></select></label>
- <span id="syncStatus" class="status-pill local" role="status">Saved on this device</span>
- <button id="syncButton" hidden>Sync now</button>
+ <span class="crumb-sep" aria-hidden="true">/</span>
+ <h1 id="bridgeName" class="bridge-title">Bridge</h1>
  <div class="top-actions">
-  <button id="summaryButton" title="Element condition states for this inspection">Elements</button>
-  <a id="open3d" class="button" target="bridge3d" title="Open the 3D model with the recorded defects">3D model</a>
+  <button id="syncStatus" class="sync-state" data-state="local" title="Cloud sync"><i aria-hidden="true"></i><span id="syncText">Saved on this device</span></button>
+  <a id="open3d" class="button" target="bridge3d" title="Open the 3D model with the recorded defects">3D<span class="long"> model</span></a>
   <button id="settingsButton" class="icon-button" aria-label="Settings" title="Settings: cloud sync, pen, backup"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
  </div>
 </header>
@@ -24,18 +22,23 @@
   <div class="panel-head"><h2 id="sheetsTitle">Sheets</h2><span id="sheetCount" class="count"></span></div>
   <nav id="sheetList" class="sheet-items" aria-label="Inspection sheets"></nav>
  </aside>
- <section class="stage" aria-labelledby="stageTitle">
-  <div class="stage-bar">
-   <h2 id="stageTitle" class="stage-title">Sheet</h2>
-   <label class="sheet-pick"><span class="sr-only">Sheet</span><select id="sheetPick" aria-label="Sheet"></select></label>
-   <div class="segmented tools" aria-label="Tool"><button id="panTool" aria-pressed="true" title="Move and zoom">Move</button><button id="drawTool" aria-pressed="false" disabled title="Draw the defect">Draw</button></div>
-   <div class="zoom"><button id="zoomOut" class="icon-button" aria-label="Zoom out" title="Zoom out (−)">−</button><output id="zoomLevel" aria-label="Zoom">100%</output><button id="zoomIn" class="icon-button" aria-label="Zoom in" title="Zoom in (+)">+</button><button id="zoomFit" title="Whole sheet (0)">Fit</button></div>
-  </div>
+ <section class="stage" aria-label="Inspection sheet">
   <div id="sheetHost" class="sheet-host" data-mode="pan" tabindex="-1"></div>
+  <label class="sheet-pick"><span class="sr-only">Sheet</span><select id="sheetPick" aria-label="Sheet"></select></label>
+  <div class="zoom" role="group" aria-label="Zoom"><button id="zoomIn" aria-label="Zoom in" title="Zoom in (+)">+</button><button id="zoomOut" aria-label="Zoom out" title="Zoom out (−)">−</button><button id="zoomFit" title="Whole sheet (0)">Fit</button></div>
   <p id="stageEmpty" class="stage-empty" hidden></p>
   <div id="drawBanner" class="draw-banner" hidden role="status"><span id="drawHint"></span><button id="cancelDraw">Cancel</button></div>
  </section>
- <aside id="panel" class="side-panel" aria-label="Defects"></aside>
+ <aside class="side-panel" aria-label="Inspection">
+  <div class="panel-top">
+   <label class="inspection-pick"><span class="field-label">Inspection</span><select id="inspectionSelect"></select></label>
+   <div class="panel-tabs" role="tablist" aria-label="Panel">
+    <button role="tab" id="tabDefects" data-tab="list" aria-selected="true">Defects <span id="defectCount" class="count"></span></button>
+    <button role="tab" id="tabElements" data-tab="summary" aria-selected="false">Elements</button>
+   </div>
+  </div>
+  <div id="panel" class="panel-body"></div>
+ </aside>
 </main>
 <dialog id="dialog" class="dialog"></dialog>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>

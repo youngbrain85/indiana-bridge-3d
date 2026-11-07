@@ -9,11 +9,20 @@ browser (desktop, tablet with pen, phone) and keeps working offline.
 - Back in the 3D workspace, **Defects** (or `D`) shows the defects saved on this device. Click a defect to see its
   card (element, condition state, quantity, location, measurements and photos) with a link back to the sheet.
 
+## The screen
+
+The sheet is the largest thing on the screen, with no toolbar over it: the sheet picker (tablets and phones) and
+zoom float on it. The top bar holds only the bridge, the sync state, a link to the 3D model and Settings. The panel
+belongs to the open inspection: its picker and two tabs, **Defects** and **Elements**. While a defect is being placed
+or edited, the panel shows only that defect. The form puts what the inspector measures and decides first
+(measurements, condition state, photos, notes) and folds what the sketch already settled (element, defect code,
+quantity, sheet) under **Details**; **Save** stays in view at the foot of the panel.
+
 ## Recording a defect
 
 1. **Start an inspection**: date, type (Routine, Initial, In-Depth, Damage, Special, Underwater, NSTM, Service),
    inspectors and notes. Defects always belong to an inspection.
-2. **Choose a sheet** from the list (a picker above the sheet on tablets and phones).
+2. **Choose a sheet** from the list (a picker floating on the sheet on tablets and phones).
 3. **Add defect**, then pick what you found: cracking, delamination/spall/patch, exposed rebar or strand,
    efflorescence, abrasion, corrosion, the bearing defects, settlement, scour or impact damage.
 4. **Draw it**: trace a crack or exposed bar, outline an area, or tap a point defect. A pen, a mouse or one
@@ -28,7 +37,7 @@ browser (desktop, tablet with pen, phone) and keeps working offline.
    `YYYYMMDD_HHMMSS_<sheet>_<defect code>_D<number>_<id>.jpg`.
 8. **Save**. Defects are numbered D1, D2, … per inspection; numbers of deleted defects are not reused.
 
-**Elements** shows the AASHTO element table of the inspection: each element's total quantity split into CS 1–4,
+The **Elements** tab of the panel shows the AASHTO element table of the inspection: each element's total quantity split into CS 1–4,
 with the defect rows under it, as in NBE inspection reports. CS 1 is the element total less the defect quantities.
 **Download CSV** exports the table and the defect list; **Download backup** exports everything, photos included,
 as one JSON file that **Settings → Import backup** restores.
@@ -140,7 +149,7 @@ Optional. Without it the app works on one device, with backups.
 4. In **Project Settings → API**, copy the **Project URL** and the **publishable (anon) key**. Enter them in the app
    under **Settings**, or put them in `web/inspect-config.js` so every device gets them. Never use the
    `service_role` / secret key in the browser; the app refuses one.
-5. Sign in under **Settings**. **Sync now** sends the outbox (inspections, then defects, then photos) and fetches
+5. Sign in under **Settings** (the gear, or the sync state in the top bar). Clicking the sync state then syncs: it sends the outbox (inspections, then defects, then photos) and fetches
    newer rows from other devices. Local edits that are not sent yet win over the server copy; otherwise the newer
    `updated_at` wins. Photos taken on other devices download when first shown.
 
