@@ -1191,6 +1191,21 @@ fourteen. All other meshes and buffers are unchanged. The checks read the actual
 re-routed drain overlap no part, except the drain inlet seated in the deck as before. The collector falls exactly
 0.5 %.
 
+#### Fourth round: 3D review
+
+**Revision 1.4.** A review of the assembled model found that the five intermediate cross frames of bay 1 ran their
+bottom strut through the bottom flange of Girder 1. The generator set one strut level for both girders, and Girder 1 is
+the shallower girder. The frames are now built as the 2013 sheets draw them (existing plans 9548460, sheets 10 and 14).
+Sheet 10 dimensions them along Girder 1 from the bearing: 15 ft 3 in, then four spaces at 22 ft. The generator had
+measured at mid-bay, so the frames move 1.0 m down-station; frame 1 had been sitting in the splice plates of Girder 1.
+Sheet 14 bolts the L5x5x3/8 strut and V diagonals to a 7 x 5/8 in connection plate on each girder web, and sheet 10
+draws that plate from flange to flange. The ten plates are now modelled, two in each frame. The strut sits 3 in above
+the higher bottom flange and the diagonals stop 6 in below the lower top flange, the minimums at which sheet 14 draws the
+frame. Every member laps both plates, and nothing overlaps the girders or splices. The gusset at the foot of the V is
+drawn but not dimensioned, so the diagonals stand on the strut in its place; this is the new known deviation
+`bay1-intermediate-frame-gussets`. No part was added or removed. `scripts/correct_virginia_avenue_3d_review.py` runs
+after the third-round script and is idempotent.
+
 ### SR 44 over Branch of Little Blue River (`sr44-little-blue`)
 
 #### 1. Datum, approaches, railings, bents and Wing D (revision 1.1)

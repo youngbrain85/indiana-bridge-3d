@@ -181,6 +181,13 @@ export function planTerrain(input,{waterway='',site=null}={}){
       if(!Number.isFinite(y0))continue;
       const yIn=pointAt(list,xe-side*2,z,true),T=Number.isFinite(yb)?Math.min(1,Math.max(.15,y0-yb)):.3;cols.push({z,xe,y0,T,yIn});}
     if(cols.length<2)continue;
+    // A curb or a sidewalk edge is a step in the slab top: add two columns either side of it, found by bisection, so
+    // the road keeps the step instead of sloping across it.
+    const top=z=>{const xe=xAt(z);for(const back of [.03,.1,.25,.5]){const y=pointAt(list,xe-side*back,z,true);if(Number.isFinite(y))return y;}return NaN;};
+    for(let k=cols.length-1;k>0;k--){const A=cols[k-1],B=cols[k];if(!(Math.abs(B.y0-A.y0)>.05&&B.z-A.z>.02))continue;let lo=A.z,hi=B.z;
+      for(let it=0;it<8;it++){const m=(lo+hi)/2,y=top(m);if(Math.abs(y-A.y0)<Math.abs(y-B.y0))lo=m;else hi=m;}
+      const add=[[lo,A],[hi,B]].filter(([z])=>z>A.z+.004&&z<B.z-.004).map(([z,q])=>({z,xe:xAt(z),y0:q.y0+(top(z)-q.y0||0),T:q.T,yIn:NaN}));
+      cols.splice(k,0,...add);}
     let g=0,c=0;for(const q of cols)if(Number.isFinite(q.yIn)){g+=(q.y0-q.yIn)/1.97;c++;}g=Math.max(-.06,Math.min(.06,c?g/c:0));
     const at=z=>{z=Math.min(cols[cols.length-1].z,Math.max(cols[0].z,z));let lo=0,hi=cols.length-1;while(hi-lo>1){const m=(lo+hi)>>1;if(cols[m].z<=z)lo=m;else hi=m;}
       const A=cols[lo],B=cols[hi],f=B.z>A.z?(z-A.z)/(B.z-A.z):0;return {xe:A.xe+(B.xe-A.xe)*f,y0:A.y0+(B.y0-A.y0)*f,T:A.T+(B.T-A.T)*f};};
@@ -241,7 +248,7 @@ export function planTerrain(input,{waterway='',site=null}={}){
   // Each is judged point by point from its own local bottom and top: tall pieces (posts) stand in the ground, low
   // pieces (rail beams) stay above it.
   for(const p of later){const loc=new Map();
-    raster(p,(v,y)=>{const r=loc.get(v);if(!r)loc.set(v,[y,y]);else{if(y<r[0])r[0]=y;if(y>r[1])r[1]=y;}});
+    raster(p,(v,y)=>{const r=loc.get(v);if(!r)loc.set(v,[y,y]);else{if(y<r[0])r[0]=y;if(y>r[1])r[1]=y;}},false,.25);
     if(!loc.size)box(p,.25,v=>loc.set(v,[p.min[1],p.max[1]]));
     const onStructure=(v,b)=>wall[v]||target[v]<b+.05||over[v]<b+.05;
     let on=0;for(const [v,[b]] of loc)if(onStructure(v,b))on++;

@@ -2825,22 +2825,48 @@
         31,
         36
       ],
-      "basis": "Historical frame type and nominal 22 ft rows",
-      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume. Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37).",
-      "dimensions": {},
+      "basis": "Existing plans 9548460 sheets 10 and 14 (PDF 28, 32): 2013 intermediate cross frame, northbound structure; L5x5x3/8 V diagonals and bottom strut on 7 x 5/8 in connection plates at the sheet 10 stations",
+      "note": "Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume. Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37). 3D review correction 1.4: rebuilt as existing sheets 10 and 14 (PDF 28, 32) draw the 2013 intermediate frame, northbound structure. Station 15 ft 3 in along Girder 1 from C/L bearing Abutment 1 (sheet 10: 15 ft 3 in + 4 spa. @ 22 ft 0 in; the generator had it 1.0045 m up-station). L5x5x3/8 bottom strut 3 in above the top of the higher bottom flange (Girder 1 in the model) and V diagonals with their top 6 in below the underside of the lower top flange (Girder 2), the sheet 14 minima at which the detail is drawn; the strut no longer passes through the Girder 1 bottom flange. Adds the two 7 x 5/8 in connection plates (sheet 14; sheet 10 girder elevation: flange to flange), on the bay 1 face of the Girder 1 and Girder 2 webs, centred on the station; the angles (connected 5 in legs as 3/8 in strips) bear on their up-station face and end 0.02 m from the web centre lines. The 3/8 in gusset at the foot of the V is not dimensioned and not modelled: the diagonals stand on the strut at the bay centre (see known_deviations). Bolts, welds and outstanding legs omitted.",
+      "dimensions": {
+        "frame": "2013 intermediate V cross frame (northbound structure)",
+        "angles": "L5x5x3/8",
+        "angle_representation": "connected 5 in legs as 3/8 in strips on the up-station face of the connection plates",
+        "connection_plates": "2 x PL 7 x 5/8 in (Girder 1 and Girder 2), flange to flange, centred on the station",
+        "station_from_girder_1_bearing_abutment_1_ft": 15.25,
+        "station_x_m": -21.803186,
+        "strut_bottom_above_top_of_bottom_flange_m": {
+          "girder_1": 0.0762,
+          "girder_2": 0.26769
+        },
+        "diagonal_top_below_underside_of_top_flange_m": {
+          "girder_1": 0.19149,
+          "girder_2": 0.1524
+        },
+        "clearance_basis": "sheet 14: 3 in Min. (bottom strut) and 6 in Min. (diagonals), built to the minima",
+        "member_end_offset_from_web_centre_m": 0.02,
+        "diagonal_slope_deg": 41.49,
+        "frame_height_m": 1.103865,
+        "connection_plate_m": {
+          "thickness": 0.015875,
+          "projection": 0.1778,
+          "height_girder_1": 1.3716,
+          "height_girder_2": 1.524
+        },
+        "gusset": "3/8 in gusset at the foot of the V not dimensioned; not modelled (known_deviations)"
+      },
       "bounds_m": [
         [
-          -20.852065,
-          7.223656,
-          6.795353
+          -21.811123,
+          7.246938,
+          6.653524
         ],
         [
-          -20.745289,
-          9.311744,
-          8.093794
+          -21.785723,
+          9.288462,
+          8.216689
         ]
       ],
-      "volume_m3": 0.025800941,
+      "volume_m3": 0.013793926,
       "source_refs": [
         {
           "source_id": "9683637",
@@ -2867,22 +2893,48 @@
         31,
         36
       ],
-      "basis": "Historical frame type and nominal 22 ft rows",
-      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume. Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37).",
-      "dimensions": {},
+      "basis": "Existing plans 9548460 sheets 10 and 14 (PDF 28, 32): 2013 intermediate cross frame, northbound structure; L5x5x3/8 V diagonals and bottom strut on 7 x 5/8 in connection plates at the sheet 10 stations",
+      "note": "Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume. Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37). 3D review correction 1.4: rebuilt as existing sheets 10 and 14 (PDF 28, 32) draw the 2013 intermediate frame, northbound structure. Station 37 ft 3 in along Girder 1 from C/L bearing Abutment 1 (sheet 10: 15 ft 3 in + 4 spa. @ 22 ft 0 in; the generator had it 1.0045 m up-station). L5x5x3/8 bottom strut 3 in above the top of the higher bottom flange (Girder 1 in the model) and V diagonals with their top 6 in below the underside of the lower top flange (Girder 2), the sheet 14 minima at which the detail is drawn; the strut no longer passes through the Girder 1 bottom flange. Adds the two 7 x 5/8 in connection plates (sheet 14; sheet 10 girder elevation: flange to flange), on the bay 1 face of the Girder 1 and Girder 2 webs, centred on the station; the angles (connected 5 in legs as 3/8 in strips) bear on their up-station face and end 0.02 m from the web centre lines. The 3/8 in gusset at the foot of the V is not dimensioned and not modelled: the diagonals stand on the strut at the bay centre (see known_deviations). Bolts, welds and outstanding legs omitted.",
+      "dimensions": {
+        "frame": "2013 intermediate V cross frame (northbound structure)",
+        "angles": "L5x5x3/8",
+        "angle_representation": "connected 5 in legs as 3/8 in strips on the up-station face of the connection plates",
+        "connection_plates": "2 x PL 7 x 5/8 in (Girder 1 and Girder 2), flange to flange, centred on the station",
+        "station_from_girder_1_bearing_abutment_1_ft": 37.25,
+        "station_x_m": -15.097586,
+        "strut_bottom_above_top_of_bottom_flange_m": {
+          "girder_1": 0.0762,
+          "girder_2": 0.261341
+        },
+        "diagonal_top_below_underside_of_top_flange_m": {
+          "girder_1": 0.185141,
+          "girder_2": 0.1524
+        },
+        "clearance_basis": "sheet 14: 3 in Min. (bottom strut) and 6 in Min. (diagonals), built to the minima",
+        "member_end_offset_from_web_centre_m": 0.02,
+        "diagonal_slope_deg": 41.683,
+        "frame_height_m": 1.110214,
+        "connection_plate_m": {
+          "thickness": 0.015875,
+          "projection": 0.1778,
+          "height_girder_1": 1.3716,
+          "height_girder_2": 1.524
+        },
+        "gusset": "3/8 in gusset at the foot of the V not dimensioned; not modelled (known_deviations)"
+      },
       "bounds_m": [
         [
-          -14.146465,
-          7.223656,
-          6.76359
+          -15.105523,
+          7.246938,
+          6.60906
         ],
         [
-          -14.039689,
-          9.311744,
-          8.062031
+          -15.080123,
+          9.288462,
+          8.165876
         ]
       ],
-      "volume_m3": 0.025800941,
+      "volume_m3": 0.013803776,
       "source_refs": [
         {
           "source_id": "9683637",
@@ -2909,22 +2961,48 @@
         31,
         36
       ],
-      "basis": "Historical frame type and nominal 22 ft rows",
-      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume. Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37).",
-      "dimensions": {},
+      "basis": "Existing plans 9548460 sheets 10 and 14 (PDF 28, 32): 2013 intermediate cross frame, northbound structure; L5x5x3/8 V diagonals and bottom strut on 7 x 5/8 in connection plates at the sheet 10 stations",
+      "note": "Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume. Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37). 3D review correction 1.4: rebuilt as existing sheets 10 and 14 (PDF 28, 32) draw the 2013 intermediate frame, northbound structure. Station 59 ft 3 in along Girder 1 from C/L bearing Abutment 1 (sheet 10: 15 ft 3 in + 4 spa. @ 22 ft 0 in; the generator had it 1.0045 m up-station). L5x5x3/8 bottom strut 3 in above the top of the higher bottom flange (Girder 1 in the model) and V diagonals with their top 6 in below the underside of the lower top flange (Girder 2), the sheet 14 minima at which the detail is drawn; the strut no longer passes through the Girder 1 bottom flange. Adds the two 7 x 5/8 in connection plates (sheet 14; sheet 10 girder elevation: flange to flange), on the bay 1 face of the Girder 1 and Girder 2 webs, centred on the station; the angles (connected 5 in legs as 3/8 in strips) bear on their up-station face and end 0.02 m from the web centre lines. The 3/8 in gusset at the foot of the V is not dimensioned and not modelled: the diagonals stand on the strut at the bay centre (see known_deviations). Bolts, welds and outstanding legs omitted.",
+      "dimensions": {
+        "frame": "2013 intermediate V cross frame (northbound structure)",
+        "angles": "L5x5x3/8",
+        "angle_representation": "connected 5 in legs as 3/8 in strips on the up-station face of the connection plates",
+        "connection_plates": "2 x PL 7 x 5/8 in (Girder 1 and Girder 2), flange to flange, centred on the station",
+        "station_from_girder_1_bearing_abutment_1_ft": 59.25,
+        "station_x_m": -8.391986,
+        "strut_bottom_above_top_of_bottom_flange_m": {
+          "girder_1": 0.0762,
+          "girder_2": 0.261341
+        },
+        "diagonal_top_below_underside_of_top_flange_m": {
+          "girder_1": 0.185141,
+          "girder_2": 0.1524
+        },
+        "clearance_basis": "sheet 14: 3 in Min. (bottom strut) and 6 in Min. (diagonals), built to the minima",
+        "member_end_offset_from_web_centre_m": 0.02,
+        "diagonal_slope_deg": 41.683,
+        "frame_height_m": 1.110214,
+        "connection_plate_m": {
+          "thickness": 0.015875,
+          "projection": 0.1778,
+          "height_girder_1": 1.3716,
+          "height_girder_2": 1.524
+        },
+        "gusset": "3/8 in gusset at the foot of the V not dimensioned; not modelled (known_deviations)"
+      },
       "bounds_m": [
         [
-          -7.440865,
-          7.223656,
-          6.731826
+          -8.399923,
+          7.246938,
+          6.577297
         ],
         [
-          -7.334089,
-          9.311744,
-          8.030268
+          -8.374523,
+          9.288462,
+          8.134113
         ]
       ],
-      "volume_m3": 0.025800941,
+      "volume_m3": 0.013803776,
       "source_refs": [
         {
           "source_id": "9683637",
@@ -2951,22 +3029,48 @@
         31,
         36
       ],
-      "basis": "Historical frame type and nominal 22 ft rows",
-      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume. Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37).",
-      "dimensions": {},
+      "basis": "Existing plans 9548460 sheets 10 and 14 (PDF 28, 32): 2013 intermediate cross frame, northbound structure; L5x5x3/8 V diagonals and bottom strut on 7 x 5/8 in connection plates at the sheet 10 stations",
+      "note": "Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume. Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37). 3D review correction 1.4: rebuilt as existing sheets 10 and 14 (PDF 28, 32) draw the 2013 intermediate frame, northbound structure. Station 81 ft 3 in along Girder 1 from C/L bearing Abutment 1 (sheet 10: 15 ft 3 in + 4 spa. @ 22 ft 0 in; the generator had it 1.0045 m up-station). L5x5x3/8 bottom strut 3 in above the top of the higher bottom flange (Girder 1 in the model) and V diagonals with their top 6 in below the underside of the lower top flange (Girder 2), the sheet 14 minima at which the detail is drawn; the strut no longer passes through the Girder 1 bottom flange. Adds the two 7 x 5/8 in connection plates (sheet 14; sheet 10 girder elevation: flange to flange), on the bay 1 face of the Girder 1 and Girder 2 webs, centred on the station; the angles (connected 5 in legs as 3/8 in strips) bear on their up-station face and end 0.02 m from the web centre lines. The 3/8 in gusset at the foot of the V is not dimensioned and not modelled: the diagonals stand on the strut at the bay centre (see known_deviations). Bolts, welds and outstanding legs omitted.",
+      "dimensions": {
+        "frame": "2013 intermediate V cross frame (northbound structure)",
+        "angles": "L5x5x3/8",
+        "angle_representation": "connected 5 in legs as 3/8 in strips on the up-station face of the connection plates",
+        "connection_plates": "2 x PL 7 x 5/8 in (Girder 1 and Girder 2), flange to flange, centred on the station",
+        "station_from_girder_1_bearing_abutment_1_ft": 81.25,
+        "station_x_m": -1.686386,
+        "strut_bottom_above_top_of_bottom_flange_m": {
+          "girder_1": 0.0762,
+          "girder_2": 0.261341
+        },
+        "diagonal_top_below_underside_of_top_flange_m": {
+          "girder_1": 0.18514,
+          "girder_2": 0.1524
+        },
+        "clearance_basis": "sheet 14: 3 in Min. (bottom strut) and 6 in Min. (diagonals), built to the minima",
+        "member_end_offset_from_web_centre_m": 0.02,
+        "diagonal_slope_deg": 41.683,
+        "frame_height_m": 1.110214,
+        "connection_plate_m": {
+          "thickness": 0.015875,
+          "projection": 0.1778,
+          "height_girder_1": 1.3716,
+          "height_girder_2": 1.524
+        },
+        "gusset": "3/8 in gusset at the foot of the V not dimensioned; not modelled (known_deviations)"
+      },
       "bounds_m": [
         [
-          -0.735265,
-          7.223656,
-          6.700063
+          -1.694323,
+          7.246938,
+          6.545534
         ],
         [
-          -0.628489,
-          9.311744,
-          7.998504
+          -1.668923,
+          9.288462,
+          8.102349
         ]
       ],
-      "volume_m3": 0.025800941,
+      "volume_m3": 0.013803776,
       "source_refs": [
         {
           "source_id": "9683637",
@@ -2993,22 +3097,48 @@
         31,
         36
       ],
-      "basis": "Historical frame type and nominal 22 ft rows",
-      "note": "Exact stagger varies by bay and is approximated. Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume. Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37).",
-      "dimensions": {},
+      "basis": "Existing plans 9548460 sheets 10 and 14 (PDF 28, 32): 2013 intermediate cross frame, northbound structure; L5x5x3/8 V diagonals and bottom strut on 7 x 5/8 in connection plates at the sheet 10 stations",
+      "note": "Angle legs are represented by rectangular strips; no structural area is inferred from mesh volume. Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37). 3D review correction 1.4: rebuilt as existing sheets 10 and 14 (PDF 28, 32) draw the 2013 intermediate frame, northbound structure. Station 103 ft 3 in along Girder 1 from C/L bearing Abutment 1 (sheet 10: 15 ft 3 in + 4 spa. @ 22 ft 0 in; the generator had it 1.0045 m up-station). L5x5x3/8 bottom strut 3 in above the top of the higher bottom flange (Girder 1 in the model) and V diagonals with their top 6 in below the underside of the lower top flange (Girder 2), the sheet 14 minima at which the detail is drawn; the strut no longer passes through the Girder 1 bottom flange. Adds the two 7 x 5/8 in connection plates (sheet 14; sheet 10 girder elevation: flange to flange), on the bay 1 face of the Girder 1 and Girder 2 webs, centred on the station; the angles (connected 5 in legs as 3/8 in strips) bear on their up-station face and end 0.02 m from the web centre lines. The 3/8 in gusset at the foot of the V is not dimensioned and not modelled: the diagonals stand on the strut at the bay centre (see known_deviations). Bolts, welds and outstanding legs omitted.",
+      "dimensions": {
+        "frame": "2013 intermediate V cross frame (northbound structure)",
+        "angles": "L5x5x3/8",
+        "angle_representation": "connected 5 in legs as 3/8 in strips on the up-station face of the connection plates",
+        "connection_plates": "2 x PL 7 x 5/8 in (Girder 1 and Girder 2), flange to flange, centred on the station",
+        "station_from_girder_1_bearing_abutment_1_ft": 103.25,
+        "station_x_m": 5.019214,
+        "strut_bottom_above_top_of_bottom_flange_m": {
+          "girder_1": 0.0762,
+          "girder_2": 0.267691
+        },
+        "diagonal_top_below_underside_of_top_flange_m": {
+          "girder_1": 0.191491,
+          "girder_2": 0.1524
+        },
+        "clearance_basis": "sheet 14: 3 in Min. (bottom strut) and 6 in Min. (diagonals), built to the minima",
+        "member_end_offset_from_web_centre_m": 0.02,
+        "diagonal_slope_deg": 41.49,
+        "frame_height_m": 1.103864,
+        "connection_plate_m": {
+          "thickness": 0.015875,
+          "projection": 0.1778,
+          "height_girder_1": 1.3716,
+          "height_girder_2": 1.524
+        },
+        "gusset": "3/8 in gusset at the foot of the V not dimensioned; not modelled (known_deviations)"
+      },
       "bounds_m": [
         [
-          5.970335,
-          7.223656,
-          6.6683
+          5.011277,
+          7.246938,
+          6.52647
         ],
         [
-          6.077111,
-          9.311744,
-          7.966741
+          5.036677,
+          9.288462,
+          8.089636
         ]
       ],
-      "volume_m3": 0.025800941,
+      "volume_m3": 0.013793926,
       "source_refs": [
         {
           "source_id": "9683637",
@@ -7337,7 +7467,7 @@
     {
       "feature": "Retained steel and bearings",
       "status": "modeled_with_simplifications",
-      "detail": "Piecewise 2013 girder 1 and original girders 2-9; splice covers, V/X frames and 18 bearing envelopes. Historical original PDF references are stored per component. 2013 Girder 1-2 end cross-frames on both bearing lines (existing sheets 10, 14). 1971 jacking frames J.F.1 / J.F.2 on both bearing lines of bays 2-8 (existing S-7, S-8; height on the web scaled; centre stiffeners included).",
+      "detail": "Piecewise 2013 girder 1 and original girders 2-9; splice covers, V/X frames and 18 bearing envelopes. Historical original PDF references are stored per component. 2013 Girder 1-2 end cross-frames on both bearing lines (existing sheets 10, 14). 1971 jacking frames J.F.1 / J.F.2 on both bearing lines of bays 2-8 (existing S-7, S-8; height on the web scaled; centre stiffeners included). 2013 bay 1 intermediate V frames at the sheet 10 stations with their 7 x 5/8 in connection plates (existing sheets 10, 14; gusset at the foot of the V omitted).",
       "sources": [
         "Primary PDF p.31",
         "Primary PDF p.34",
@@ -7494,7 +7624,7 @@
     }
   ],
   "review_correction": "transverse-mirror-crown-rails-approaches-end-frames",
-  "revision": "1.3-deviations",
+  "revision": "1.4-3d-review",
   "review_correction_record": {
     "source": "External model review (findings F1-F7), each finding re-read against the drawings",
     "source_pdf_pages": [
@@ -7708,6 +7838,13 @@
       "source": "existing plans 9548460 S-8 (PDF 66): Jacking Frame J.F.1 & 2; Conn. PL Detail - J.F.1, 2 & E.D.1",
       "deviation": "The jacking-frame ends are an envelope. The I-section runs to vertical planes parallel to the girder webs, 3 in (0.0762 m) from the web centre lines. The bent 1/2 x 7 in connection plates, their bolts (two rows 3 in apart, 12 spa. @ 3 in) and the 7/8 x 9 5/8 in bearing stiffeners they are welded to are not modelled. On S-8 the 3 in (Typ.) locates the plate leg along the girder web; the frame web is bolted to the skewed leg of the plate, and where the frame itself ends is not shown.",
       "reason": "S-8 gives no dimension for the frame end along the bearing line, the plate leg lengths, bend or plate height, and the detail does not scale consistently (its 3 in, 4 1/2 in and bolt spacings scale differently). The bearing stiffeners are located on the bearing centre line, but they cannot be added alone: they would pass through the modelled frame ends (61.7 cm3 per frame end) and the 2013 end-frame W16 at Girder 2 (56.3 cm3 per bearing line), whose real copes are not dimensioned. Shop drawings or a field measurement of the end connection would settle it. The S-8 centre stiffeners are modelled."
+    },
+    {
+      "id": "bay1-intermediate-frame-gussets",
+      "parts": "cross_frame_1_1, cross_frame_1_2, cross_frame_1_3, cross_frame_1_4, cross_frame_1_5",
+      "source": "existing plans 9548460 sheet 14 (PDF 32): Intermediate Cross-Frame Details, northbound structure; sheet 10 (PDF 28): Framing Plan - N.B.",
+      "deviation": "The 3/8 in gusset plate at the foot of the V is not modelled. The two L5x5x3/8 diagonals are carried down to the top of the bottom strut, where their centre lines meet at the bay centre, and meet each other on the bay centre plane (one V-shaped body standing on the strut); on sheet 14 they stop short of the strut and of each other and are bolted to the gusset, with the work point drawn within about 1 in of the strut top. The angles are their connected 5 in legs as 3/8 in strips; outstanding legs, the 7/8 in bolts (slotted holes at Girder 1) and the welds are omitted. The members end 0.02 m from the web centre lines (the generator's offset); sheet 14 draws the angle ends about 1 in off the webs.",
+      "reason": "Sheet 14 draws the gusset and the angle ends but dimensions neither (the gusset scales about 14 1/2 x 12 in, which is not used). Which face of the connection plate the angles bear on is not dimensioned either; the sheet 10 framing plan draws the frame lines on the up-station side of the plate ticks, which is used. Shop drawings of the 2013 Girder 1 replacement or a field measurement would settle them."
     }
   ],
   "review_correction_2": "haunch-crown-mudwall-pejf-end-frame-copes",
@@ -8446,5 +8583,462 @@
         "source": "drawings.pdf PDF page 29"
       }
     ]
+  },
+  "review_correction_3d": "bay1-intermediate-frames-conn-plates",
+  "review_correction_record_3d": {
+    "source": "Second 3D review of revision 1.3 (finding VA-07), re-measured on the GLB and re-read against the drawings",
+    "previous_revision": "1.3-deviations",
+    "source_pdf_pages": [
+      31,
+      36
+    ],
+    "printed_sheets": [
+      31,
+      36
+    ],
+    "historical_source": {
+      "source_id": "9548460",
+      "pdf_pages": [
+        28,
+        32
+      ],
+      "printed_sheets": [
+        10,
+        14
+      ]
+    },
+    "findings": {
+      "VA-07": "Resolved. The five bay 1 intermediate frames are rebuilt as existing sheets 10 and 14 draw them. Before: the 0.10 m lower strut crossed the Girder 1 bottom flange in every frame (overlap 548.0-589.6 cm3; at the review probe 13.2 mm below the flange soffit), the twisted diagonals cut 7.9 cm3 into the Girder 2 web and frame 1 lay in the Girder 1 Splice \"A\" cover plates (38.3 cm3). After: frames at the sheet 10 stations (15 ft 3 in + 4 spa. @ 22 ft along Girder 1; 1.0045 m down-station), bottom strut 3 in above the Girder 1 bottom flange, diagonal tops 6 in below the Girder 2 top flange (sheet 14 minima), ten 7 x 5/8 in connection plates on the webs, flange to flange (sheets 10, 14); every member laps both plates; largest overlap with any part 0.0013 cm3 (float32 rounding of the touching faces)."
+    },
+    "decisions": {
+      "Frame stations": "Sheet 10 dimensions the bay 1 frames along New Girder No. 1 from C/L bearing (15 ft 3 in, 4 spa. @ 22 ft 0 in, 10 ft 9 in); the generator measured the 15 ft 3 in at mid-bay. The frames move 1.0045 m down-station; at the old station frame 1 and its Girder 1 connection plate would lie in the Splice \"A\" cover plates.",
+      "Strut and diagonal levels": "Sheet 14 gives minima: bottom strut 3 in above the top of the bottom flange, diagonals 6 in below the underside of the top flange, and draws the detail at both. Applied to the governing girder of the model (Girder 1 bottom flange is the higher, Girder 2 top flange the lower; the 2013 sheet draws the girders the other way round, \"Varies\").",
+      "Connection plate side": "Not dimensioned. Centred on the frame station with the angles on its up-station face, as the sheet 10 framing plan draws the frame line beside the plate ticks.",
+      "Member ends": "Kept at the generator's 0.02 m from the web centre lines (12.06 mm clear of the webs); sheet 14 does not dimension them.",
+      "Gusset": "Drawn, not dimensioned: not modelled; the diagonals stand on the strut at the bay centre (known_deviations bay1-intermediate-frame-gussets)."
+    },
+    "kept": {
+      "bay1-intermediate-frame-gussets": "Sheet 14 draws the gusset and the angle ends but dimensions neither (the gusset scales about 14 1/2 x 12 in, which is not used). Which face of the connection plate the angles bear on is not dimensioned either; the sheet 10 framing plan draws the frame lines on the up-station side of the plate ticks, which is used. Shop drawings of the 2013 Girder 1 replacement or a field measurement would settle them."
+    },
+    "changed_parts": [
+      "cross_frame_1_1",
+      "cross_frame_1_2",
+      "cross_frame_1_3",
+      "cross_frame_1_4",
+      "cross_frame_1_5"
+    ],
+    "added_parts": [],
+    "removed_parts": [],
+    "before": {
+      "cross_frame_1_1": {
+        "bounds_m": [
+          [
+            -20.852065,
+            7.223656,
+            6.795353
+          ],
+          [
+            -20.745289,
+            9.311744,
+            8.093794
+          ]
+        ],
+        "volume_m3": 0.025800941
+      },
+      "cross_frame_1_2": {
+        "bounds_m": [
+          [
+            -14.146465,
+            7.223656,
+            6.76359
+          ],
+          [
+            -14.039689,
+            9.311744,
+            8.062031
+          ]
+        ],
+        "volume_m3": 0.025800941
+      },
+      "cross_frame_1_3": {
+        "bounds_m": [
+          [
+            -7.440865,
+            7.223656,
+            6.731826
+          ],
+          [
+            -7.334089,
+            9.311744,
+            8.030268
+          ]
+        ],
+        "volume_m3": 0.025800941
+      },
+      "cross_frame_1_4": {
+        "bounds_m": [
+          [
+            -0.735265,
+            7.223656,
+            6.700063
+          ],
+          [
+            -0.628489,
+            9.311744,
+            7.998504
+          ]
+        ],
+        "volume_m3": 0.025800941
+      },
+      "cross_frame_1_5": {
+        "bounds_m": [
+          [
+            5.970335,
+            7.223656,
+            6.6683
+          ],
+          [
+            6.077111,
+            9.311744,
+            7.966741
+          ]
+        ],
+        "volume_m3": 0.025800941
+      },
+      "interfaces": {
+        "cross_frame_1_1": {
+          "overlaps_cm3": {
+            "beam_1": 589.6013,
+            "splice_1_1": 38.2775,
+            "beam_2": 7.9426
+          },
+          "centre_x_m": -20.798676
+        },
+        "cross_frame_1_2": {
+          "overlaps_cm3": {
+            "beam_1": 548.0202,
+            "beam_2": 7.9426
+          },
+          "centre_x_m": -14.093077
+        },
+        "cross_frame_1_3": {
+          "overlaps_cm3": {
+            "beam_1": 548.0211,
+            "beam_2": 7.9426
+          },
+          "centre_x_m": -7.387477
+        },
+        "cross_frame_1_4": {
+          "overlaps_cm3": {
+            "beam_1": 548.0228,
+            "beam_2": 7.9426
+          },
+          "centre_x_m": -0.681877
+        },
+        "cross_frame_1_5": {
+          "overlaps_cm3": {
+            "beam_1": 589.6083,
+            "beam_2": 7.9427
+          },
+          "centre_x_m": 6.023723
+        }
+      },
+      "va07_probe": {
+        "point_x_y_m": [
+          -20.798676,
+          9.2
+        ],
+        "strut_z_m": [
+          6.795353,
+          6.895353
+        ],
+        "girder_1_bottom_flange_z_m": [
+          6.808544,
+          6.840294
+        ],
+        "strut_below_flange_soffit_m": 0.013191
+      }
+    },
+    "after": {
+      "cross_frame_1_1": {
+        "bounds_m": [
+          [
+            -21.811123,
+            7.246938,
+            6.653524
+          ],
+          [
+            -21.785723,
+            9.288462,
+            8.216689
+          ]
+        ],
+        "volume_m3": 0.013793926
+      },
+      "cross_frame_1_2": {
+        "bounds_m": [
+          [
+            -15.105523,
+            7.246938,
+            6.60906
+          ],
+          [
+            -15.080123,
+            9.288462,
+            8.165876
+          ]
+        ],
+        "volume_m3": 0.013803776
+      },
+      "cross_frame_1_3": {
+        "bounds_m": [
+          [
+            -8.399923,
+            7.246938,
+            6.577297
+          ],
+          [
+            -8.374523,
+            9.288462,
+            8.134113
+          ]
+        ],
+        "volume_m3": 0.013803776
+      },
+      "cross_frame_1_4": {
+        "bounds_m": [
+          [
+            -1.694323,
+            7.246938,
+            6.545534
+          ],
+          [
+            -1.668923,
+            9.288462,
+            8.102349
+          ]
+        ],
+        "volume_m3": 0.013803776
+      },
+      "cross_frame_1_5": {
+        "bounds_m": [
+          [
+            5.011277,
+            7.246938,
+            6.52647
+          ],
+          [
+            5.036677,
+            9.288462,
+            8.089636
+          ]
+        ],
+        "volume_m3": 0.013793926
+      },
+      "interfaces": {
+        "cross_frame_1_1": {
+          "overlaps_cm3": {
+            "beam_1": 0.0013,
+            "beam_2": 0.0002
+          },
+          "centre_x_m": -21.798423,
+          "internal_overlap_cm3": 0.0,
+          "members_to_plate_face_gap_m": 0.0,
+          "girder_1_plate": {
+            "web_face_gap_m": 0.0,
+            "bottom_flange_gap_m": -1e-07,
+            "top_flange_gap_m": -4e-07,
+            "height_m": 1.3716,
+            "projection_m": 0.1778
+          },
+          "girder_2_plate": {
+            "web_face_gap_m": 0.0,
+            "bottom_flange_gap_m": -1e-07,
+            "top_flange_gap_m": 1e-07,
+            "height_m": 1.524,
+            "projection_m": 0.1778
+          },
+          "girder_1_clearances_m": {
+            "strut_bottom_above_bottom_flange": 0.0762,
+            "diagonal_top_below_top_flange": 0.19149
+          },
+          "girder_2_clearances_m": {
+            "strut_bottom_above_bottom_flange": 0.26769,
+            "diagonal_top_below_top_flange": 0.1524
+          },
+          "v_on_strut_gap_m": 0.0,
+          "lap_on_connection_plates_m2": {
+            "strut_girder_1": 0.021049,
+            "strut_girder_2": 0.021049,
+            "diagonal_girder_1": 0.028099,
+            "diagonal_girder_2": 0.0281
+          },
+          "diagonal_slope_deg": 41.49,
+          "frame_height_m": 1.103865
+        },
+        "cross_frame_1_2": {
+          "overlaps_cm3": {
+            "beam_1": 0.0006,
+            "beam_2": 0.0003
+          },
+          "centre_x_m": -15.092824,
+          "internal_overlap_cm3": 0.0,
+          "members_to_plate_face_gap_m": 0.0,
+          "girder_1_plate": {
+            "web_face_gap_m": 0.0,
+            "bottom_flange_gap_m": 2e-07,
+            "top_flange_gap_m": -2e-07,
+            "height_m": 1.3716,
+            "projection_m": 0.1778
+          },
+          "girder_2_plate": {
+            "web_face_gap_m": 0.0,
+            "bottom_flange_gap_m": 1e-07,
+            "top_flange_gap_m": -1e-07,
+            "height_m": 1.524,
+            "projection_m": 0.1778
+          },
+          "girder_1_clearances_m": {
+            "strut_bottom_above_bottom_flange": 0.0762,
+            "diagonal_top_below_top_flange": 0.185141
+          },
+          "girder_2_clearances_m": {
+            "strut_bottom_above_bottom_flange": 0.261341,
+            "diagonal_top_below_top_flange": 0.1524
+          },
+          "v_on_strut_gap_m": 0.0,
+          "lap_on_connection_plates_m2": {
+            "strut_girder_1": 0.021049,
+            "strut_girder_2": 0.021049,
+            "diagonal_girder_1": 0.028184,
+            "diagonal_girder_2": 0.028184
+          },
+          "diagonal_slope_deg": 41.683,
+          "frame_height_m": 1.110214
+        },
+        "cross_frame_1_3": {
+          "overlaps_cm3": {
+            "beam_1": 0.001,
+            "beam_2": 0.0003
+          },
+          "centre_x_m": -8.387223,
+          "internal_overlap_cm3": 0.0,
+          "members_to_plate_face_gap_m": 0.0,
+          "girder_1_plate": {
+            "web_face_gap_m": 0.0,
+            "bottom_flange_gap_m": -2e-07,
+            "top_flange_gap_m": -1e-07,
+            "height_m": 1.3716,
+            "projection_m": 0.1778
+          },
+          "girder_2_plate": {
+            "web_face_gap_m": 0.0,
+            "bottom_flange_gap_m": 0.0,
+            "top_flange_gap_m": 0.0,
+            "height_m": 1.524,
+            "projection_m": 0.1778
+          },
+          "girder_1_clearances_m": {
+            "strut_bottom_above_bottom_flange": 0.0762,
+            "diagonal_top_below_top_flange": 0.185141
+          },
+          "girder_2_clearances_m": {
+            "strut_bottom_above_bottom_flange": 0.261341,
+            "diagonal_top_below_top_flange": 0.1524
+          },
+          "v_on_strut_gap_m": 0.0,
+          "lap_on_connection_plates_m2": {
+            "strut_girder_1": 0.021049,
+            "strut_girder_2": 0.021049,
+            "diagonal_girder_1": 0.028184,
+            "diagonal_girder_2": 0.028184
+          },
+          "diagonal_slope_deg": 41.683,
+          "frame_height_m": 1.110214
+        },
+        "cross_frame_1_4": {
+          "overlaps_cm3": {
+            "beam_1": 0.0007,
+            "beam_2": 0.0002
+          },
+          "centre_x_m": -1.681623,
+          "internal_overlap_cm3": 0.0,
+          "members_to_plate_face_gap_m": 0.0,
+          "girder_1_plate": {
+            "web_face_gap_m": 0.0,
+            "bottom_flange_gap_m": -2e-07,
+            "top_flange_gap_m": -1e-07,
+            "height_m": 1.3716,
+            "projection_m": 0.1778
+          },
+          "girder_2_plate": {
+            "web_face_gap_m": 0.0,
+            "bottom_flange_gap_m": 0.0,
+            "top_flange_gap_m": 0.0,
+            "height_m": 1.524,
+            "projection_m": 0.1778
+          },
+          "girder_1_clearances_m": {
+            "strut_bottom_above_bottom_flange": 0.0762,
+            "diagonal_top_below_top_flange": 0.18514
+          },
+          "girder_2_clearances_m": {
+            "strut_bottom_above_bottom_flange": 0.261341,
+            "diagonal_top_below_top_flange": 0.1524
+          },
+          "v_on_strut_gap_m": 0.0,
+          "lap_on_connection_plates_m2": {
+            "strut_girder_1": 0.021049,
+            "strut_girder_2": 0.021049,
+            "diagonal_girder_1": 0.028184,
+            "diagonal_girder_2": 0.028184
+          },
+          "diagonal_slope_deg": 41.683,
+          "frame_height_m": 1.110214
+        },
+        "cross_frame_1_5": {
+          "overlaps_cm3": {
+            "beam_1": 0.0,
+            "beam_2": 0.0009
+          },
+          "centre_x_m": 5.023977,
+          "internal_overlap_cm3": 0.0,
+          "members_to_plate_face_gap_m": 0.0,
+          "girder_1_plate": {
+            "web_face_gap_m": 0.0,
+            "bottom_flange_gap_m": 3e-07,
+            "top_flange_gap_m": 7e-07,
+            "height_m": 1.3716,
+            "projection_m": 0.1778
+          },
+          "girder_2_plate": {
+            "web_face_gap_m": 0.0,
+            "bottom_flange_gap_m": 0.0,
+            "top_flange_gap_m": -3e-07,
+            "height_m": 1.524,
+            "projection_m": 0.1778
+          },
+          "girder_1_clearances_m": {
+            "strut_bottom_above_bottom_flange": 0.0762,
+            "diagonal_top_below_top_flange": 0.191491
+          },
+          "girder_2_clearances_m": {
+            "strut_bottom_above_bottom_flange": 0.267691,
+            "diagonal_top_below_top_flange": 0.1524
+          },
+          "v_on_strut_gap_m": 0.0,
+          "lap_on_connection_plates_m2": {
+            "strut_girder_1": 0.021049,
+            "strut_girder_2": 0.021049,
+            "diagonal_girder_1": 0.028099,
+            "diagonal_girder_2": 0.028099
+          },
+          "diagonal_slope_deg": 41.49,
+          "frame_height_m": 1.103864
+        }
+      }
+    },
+    "before_glb_sha256": "d802db50c458c6f6084c3f852e5ad35e3c837954a9f0481e9618be1a7811e2b0",
+    "after_glb_sha256": "61d74bf6721c2ce4946d12c1a0a0ddb7570a4b0e937d091dca3d292ccbce0552"
   }
 }
