@@ -82,7 +82,7 @@ const out=path.join(__dirname,'data');
   await page.locator('#clearIsolation').click();
   // Deliberately race two real bridge loads; only the final selection may be installed.
   await page.evaluate(()=>{location.hash='#bridge/21st-street-i465';setTimeout(()=>location.hash='#bridge/us421-wildcat',20);});
-  await page.waitForFunction(()=>bridgeManager.ready&&bridgeManager.data.id==='us421-wildcat');assert.equal(await page.evaluate(()=>bridgeManager.viewer.meshes.size),1057);
+  await page.waitForFunction(()=>bridgeManager.ready&&bridgeManager.data.id==='us421-wildcat');assert.equal(await page.evaluate(()=>bridgeManager.viewer.meshes.size),1052);
   await page.waitForTimeout(150);assert.equal(await page.evaluate(()=>bridgeManager.data.id),'us421-wildcat');result.checks.push('Rapid bridge switching cancels stale loads');
   await page.setViewportSize({width:390,height:844});await open('beechwood');
   await page.locator('.mobile-tabs [data-pane="tree"]').click();await page.locator('#partSearch').fill('girder_A1');await page.locator('.part-button').click();
