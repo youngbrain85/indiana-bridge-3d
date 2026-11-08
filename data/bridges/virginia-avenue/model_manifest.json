@@ -8436,5 +8436,15 @@
     },
     "before_glb_sha256": "a7efc0e5de68331cc9390ae8ebd024acdd82e9611a153881eeddf774630b142b",
     "after_glb_sha256": "d802db50c458c6f6084c3f852e5ad35e3c837954a9f0481e9618be1a7811e2b0"
+  },
+  "site": {
+    "note": "Illustrative site hints for the viewer terrain only; not survey data.",
+    "crossed_roads": [
+      {
+        "min_vertical_clearance_m": 4.7847,
+        "label": "15'-8 3/8\" Min. Vert. Clr.",
+        "source": "drawings.pdf PDF page 29"
+      }
+    ]
   }
 }
