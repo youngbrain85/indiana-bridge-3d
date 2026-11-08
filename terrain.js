@@ -23,6 +23,7 @@ const SUB=new Set(['piers','abutments','walls','foundations','casing','monuments
 const FURNITURE=new Set(['rails','accessories','transitions']);
 const SKIP=new Set(['detail_markers']);
 const SUPER_CLEAR=.4,CLEAR=.15,EMBED=.1,DELTA=.03;
+const K_CLEAR=1,K_STEEP=2/3,K_CUT=.8;           // clearance 1:1, steepest ground beside a road 1:1.5, road cut 1:1.25
 
 const smooth=(x,a,b)=>{const t=Math.min(1,Math.max(0,(x-a)/(b-a)));return t*t*(3-2*t);};
 const lower=(a,v)=>{let lo=0,hi=a.length;while(lo<hi){const m=(lo+hi)>>1;if(a[m]<v)lo=m+1;else hi=m;}return lo;};
@@ -97,7 +98,8 @@ export function planTerrain(input,{waterway='',site=null}={}){
     const standing=near.filter(p=>(p.layer==='piers'||p.layer==='abutments'||p.layer==='walls')&&(!p.slender||p.layer!=='walls'));
     sp.G=buried.length?Math.max(...buried.map(p=>p.max[1])):standing.length?Math.min(...standing.map(p=>p.min[1])):null;
     sp.F=sp.G===null?null:sp.G+(buried.length?.05:.12);
-    const solid=sp.parts.filter(p=>!p.slender);
+    // The opening between supports is measured between their piers and abutments (not footings, piles or spandrels).
+    const solid=near.filter(p=>(p.layer==='piers'||p.layer==='abutments'||(sp.kind==='end'&&retaining.has(p)))&&!p.slender);
     sp.lo=solid.length?Math.min(...solid.map(p=>p.u[0])):sp.u;sp.hi=solid.length?Math.max(...solid.map(p=>p.u[1])):sp.u;}
   const known=supports.filter(sp=>sp.F!==null);
   if(!known.length)supports.forEach(sp=>sp.F=dMin[1]-3);
@@ -120,7 +122,8 @@ export function planTerrain(input,{waterway='',site=null}={}){
     if(half+bank>o.clear/2){depth=Math.max(.4,(o.clear/2-1.3)/2);bank=2*depth;half=1;}
     const bed=valley(uc)-depth;channel={uc,half,bank,depth,bed,level:bed+.65*depth};}
   if(road&&openings.length){const longest=Math.max(...openings.map(o=>o.len));
-    const fit=(o,R)=>{const uA=o.lo+2*Math.max(0,o.a.F-R)+1,uB=o.hi-2*Math.max(0,o.b.F-R)-1;if(uB-uA<7)return null;const w=Math.min(uB-uA-2,26),rc=(uA+uB)/2;return {uA,uB,y:R,u0:rc-w/2,u1:rc+w/2};};
+    const fit=(o,R)=>{const uA=o.lo+2*Math.max(0,o.a.F-R)+1,uB=o.hi-2*Math.max(0,o.b.F-R)-1;if(uB-uA<7)return null;const w=Math.min(uB-uA-2,24),rc=(uA+uB)/2;
+      return {uA:rc-w/2-1,uB:rc+w/2+1,y:R,u0:rc-w/2,u1:rc+w/2};};
     for(const o of openings){if(o.len<.7*longest||o.clear<8)continue;const r=fit(o,Math.min(o.a.F,o.b.F));if(r){r.o=o;roads.push(r);}}
     // A drawn minimum vertical clearance (site hints, west to east) sets the road under the lowest steel above it.
     const hints=site?.crossed_roads||[];
@@ -141,26 +144,49 @@ export function planTerrain(input,{waterway='',site=null}={}){
   const nearU=[cu0-20,cu1+20],nearZ=[zc-halfW-20,zc+halfW+20];
   const stepIn=(t,[a,b])=>Math.min(2.5,.5+.06*Math.max(0,a-t,t-b));
 
-  // Approach roads: from the outer end of the approach slabs (or the deck), cut on the same line, to the block edge.
-  const pointTop=(list,x,z)=>{let y=-Infinity;for(const p of list){const a=p.pos,ix=p.index,n=ix?ix.length:a.length/3;
+  // Approach roads start at the outer edge of the approach slabs (or of the deck and sidewalks where there are none).
+  // The edge is traced every 5 cm across the road, so square, skewed and stepped slab ends are all followed; the road
+  // takes the slab's top (crown and cross-fall) and grade there and runs to the block edge.
+  const pointAt=(list,x,z,top)=>{let y=top?-Infinity:Infinity;for(const p of list){if(x<p.min[0]-.01||x>p.max[0]+.01||z<p.min[2]-.01||z>p.max[2]+.01)continue;
+    const a=p.pos,ix=p.index,n=ix?ix.length:a.length/3;
     for(let t=0;t<n;t+=3){const i0=ix?ix[t]:t,i1=ix?ix[t+1]:t+1,i2=ix?ix[t+2]:t+2;
       const ax=a[3*i0],az=a[3*i0+2],bx=a[3*i1],bz=a[3*i1+2],cx=a[3*i2],cz=a[3*i2+2],d=(bz-cz)*(ax-cx)+(cx-bx)*(az-cz);if(Math.abs(d)<1e-12)continue;
       const l1=((bz-cz)*(x-cx)+(cx-bx)*(z-cz))/d,l2=((cz-az)*(x-cx)+(ax-cx)*(z-cz))/d,l3=1-l1-l2;if(l1<-1e-9||l2<-1e-9||l3<-1e-9)continue;
-      y=Math.max(y,l1*a[3*i0+1]+l2*a[3*i1+1]+l3*a[3*i2+1]);}}return y;};
-  const approachRoads=[];
+      const h=l1*a[3*i0+1]+l2*a[3*i1+1]+l3*a[3*i2+1];y=top?Math.max(y,h):Math.min(y,h);}}return y;};
+  const STEP=.05,approachRoads=[];
   for(const side of [-1,1]){
-    const face=side<0?uW:uE,own=carriers.filter(p=>p.layer==='approaches'&&side*(p.uc-face)>0),list=own.length?own:deckP;
-    const end=envelope(list,side<0?-1:1,zc,halfW);
-    let zA=Infinity,zB=-Infinity;for(const p of list){const a=p.pos;for(let i=0;i<a.length;i+=3){const x=a[i],z=a[i+2];if(side*(x-end.at(z))>-1){zA=Math.min(zA,z);zB=Math.max(zB,z);}}}
-    if(!(zB>zA))continue;
-    const edgeU=side<0?ub0:ub1;if(side*(edgeU-U(end.a,zc))<.5)continue;
-    const n=9,zsR=[...Array(n)].map((_,k)=>zA+.04+(zB-zA-.08)*k/(n-1)),yEnd=[],yIn=[];
-    for(const z of zsR){const xe=end.at(z);yEnd.push(pointTop(list,xe-side*.25,z));yIn.push(pointTop(list,xe-side*3,z));}
-    const fillGaps=v=>{const ok=v.map(Number.isFinite);if(!ok.some(Boolean))return null;for(let k=0;k<n;k++)if(!ok[k]){let a=k,b=k;while(a>=0&&!ok[a])a--;while(b<n&&!ok[b])b++;v[k]=a<0?v[b]:b>=n?v[a]:v[a]+(v[b]-v[a])*(k-a)/(b-a);}return v;};
-    if(!fillGaps(yEnd))continue;fillGaps(yIn);
-    let g=0,c=0;for(let k=0;k<n;k++)if(Number.isFinite(yIn[k])){g+=(yEnd[k]-yIn[k])/2.75;c++;}g=Math.max(-.06,Math.min(.06,c?g/c:0));
-    const yAt=z=>{const t=(Math.min(zB,Math.max(zA,z))-zsR[0])/(zsR[n-1]-zsR[0])*(n-1),k=Math.max(0,Math.min(n-2,Math.floor(t)));return yEnd[k]+(yEnd[k+1]-yEnd[k])*(t-k);};
-    approachRoads.push({side,end,zA,zB,zs:zsR,g,edgeU,y:(x,z)=>yAt(z)+g*Math.max(0,side*(x-end.at(z)))});}
+    const face=side<0?uW:uE,ext=p=>side<0?p.u[0]:p.u[1];
+    let list=carriers.filter(p=>p.layer==='approaches'&&side*(p.uc-face)>0);
+    if(!list.length){const end=Math.max(...deckP.map(p=>side*ext(p)));list=parts.filter(p=>(DECK.has(p.layer)||p.layer==='sidewalks')&&side*ext(p)>end-1);}
+    const edge=new Map();
+    for(const p of list){const a=p.pos,ix=p.index,n=ix?ix.length:a.length/3;
+      for(let t=0;t<n;t+=3){const q=[0,1,2].map(k=>{const i=ix?ix[t+k]:t+k;return [a[3*i],a[3*i+2]];});
+        const lo=Math.min(q[0][1],q[1][1],q[2][1]),hi=Math.max(q[0][1],q[1][1],q[2][1]);
+        for(let k=Math.ceil(lo/STEP-1e-9);k*STEP<=hi+1e-9;k++){const z=k*STEP;let x=null;
+          for(let e=0;e<3;e++){const [x1,z1]=q[e],[x2,z2]=q[(e+1)%3];if(z1===z2)continue;const f=(z-z1)/(z2-z1);if(f<-1e-9||f>1+1e-9)continue;
+            const xc=x1+(x2-x1)*f;if(x===null||side*(xc-x)>0)x=xc;}
+          if(x===null)continue;const cur=edge.get(k);if(cur===undefined||side*(x-cur)>0)edge.set(k,x);}}}
+    // The end is the outermost edge: a point more than 3 m short of it both along x (square ends) and along u
+    // (skewed or stepped ends) belongs to a part that stops earlier (a notch, a bracket), not to the end.
+    let ox=-Infinity,ou=-Infinity;for(const [k,x] of edge){ox=Math.max(ox,side*x);ou=Math.max(ou,side*(x-s*(k*STEP-zc)));}
+    for(const [k,x] of [...edge])if(side*x<ox-3&&side*(x-s*(k*STEP-zc))<ou-3)edge.delete(k);
+    if(edge.size<2)continue;
+    const ks=[...edge.keys()].sort((a,b)=>a-b),zA=ks[0]*STEP,zB=ks[ks.length-1]*STEP;
+    const xAt=z=>{const k=Math.round(z/STEP);for(let d=0;d<200;d++){if(edge.has(k-d))return edge.get(k-d);if(edge.has(k+d))return edge.get(k+d);}return edge.get(ks[0]);};
+    const zcol=new Set([zA,zB]);for(let z=zA;z<zB;z+=.25)zcol.add(Math.round(z/STEP)*STEP);
+    for(let i=1;i<ks.length;i++){if(Math.abs(edge.get(ks[i])-edge.get(ks[i-1]))>.15){zcol.add(ks[i-1]*STEP);zcol.add(ks[i]*STEP);}}
+    const cols=[];
+    for(const z of [...zcol].sort((a,b)=>a-b)){const xe=xAt(z);let y0=-Infinity,yb=Infinity;
+      for(const back of [.03,.1,.25,.5]){y0=pointAt(list,xe-side*back,z,true);if(Number.isFinite(y0)){yb=pointAt(list,xe-side*back,z,false);break;}}
+      if(!Number.isFinite(y0))continue;
+      const yIn=pointAt(list,xe-side*2,z,true),T=Number.isFinite(yb)?Math.min(1,Math.max(.15,y0-yb)):.3;cols.push({z,xe,y0,T,yIn});}
+    if(cols.length<2)continue;
+    let g=0,c=0;for(const q of cols)if(Number.isFinite(q.yIn)){g+=(q.y0-q.yIn)/1.97;c++;}g=Math.max(-.06,Math.min(.06,c?g/c:0));
+    const at=z=>{z=Math.min(cols[cols.length-1].z,Math.max(cols[0].z,z));let lo=0,hi=cols.length-1;while(hi-lo>1){const m=(lo+hi)>>1;if(cols[m].z<=z)lo=m;else hi=m;}
+      const A=cols[lo],B=cols[hi],f=B.z>A.z?(z-A.z)/(B.z-A.z):0;return {xe:A.xe+(B.xe-A.xe)*f,y0:A.y0+(B.y0-A.y0)*f,T:A.T+(B.T-A.T)*f};};
+    const edgeU=side<0?ub0:ub1;if(side*(edgeU-U(at(zc).xe,zc))<.5)continue;
+    approachRoads.push({side,zA:cols[0].z,zB:cols[cols.length-1].z,zs:cols.map(q=>q.z),g,edgeU,at,
+      end:{at:z=>at(z).xe,a:at(zc).xe},y:(x,z)=>{const q=at(z);return q.y0+g*Math.max(0,side*(x-q.xe));}});}
 
   // Grid lines, with breaks at the faces of retaining parts, approach slabs, deck edges and roads.
   const bu=[],bz=[dMin[2],dMax[2]];
@@ -172,35 +198,45 @@ export function planTerrain(input,{waterway='',site=null}={}){
 
   // Each grid vertex under a triangle's plan projection, with the triangle's height there.
   // strict: points on a triangle's edge do not count, so a grid line on a wall face stays outside the wall.
-  const raster=(p,fn,strict=false)=>{const a=p.pos,ix=p.index,n=ix?ix.length:a.length/3,e=strict?-1e-6:1e-7;
+  // grow: points up to this plan distance outside a triangle count too, with the height at the triangle's edge, so a
+  // thin member (a diaphragm, a flange) that falls between grid lines still holds the ground down.
+  const raster=(p,fn,strict=false,grow=0)=>{const a=p.pos,ix=p.index,n=ix?ix.length:a.length/3,e=strict?-1e-6:1e-7,gu=grow*(1+Math.abs(s));
     for(let t=0;t<n;t+=3){const i0=ix?ix[t]:t,i1=ix?ix[t+1]:t+1,i2=ix?ix[t+2]:t+2;
       const z1=a[3*i0+2],z2=a[3*i1+2],z3=a[3*i2+2],u1=a[3*i0]-s*(z1-zc),u2=a[3*i1]-s*(z2-zc),u3=a[3*i2]-s*(z3-zc),y1=a[3*i0+1],y2=a[3*i1+1],y3=a[3*i2+1];
       const d=(z2-z3)*(u1-u3)+(u3-u2)*(z1-z3);if(Math.abs(d)<1e-10)continue;
-      const i_0=lower(us,Math.min(u1,u2,u3)-1e-7),i_1=lower(us,Math.max(u1,u2,u3)+1e-7),j_0=lower(zs,Math.min(z1,z2,z3)-1e-7),j_1=lower(zs,Math.max(z1,z2,z3)+1e-7);
-      for(let j=j_0;j<j_1;j++){const z=zs[j];for(let i=i_0;i<i_1;i++){const u=us[i],l1=((z2-z3)*(u-u3)+(u3-u2)*(z-z3))/d,l2=((z3-z1)*(u-u3)+(u1-u3)*(z-z3))/d,l3=1-l1-l2;
-        if(l1<-e||l2<-e||l3<-e)continue;fn(j*nu+i,l1*y1+l2*y2+l3*y3);}}}};
+      const i_0=lower(us,Math.min(u1,u2,u3)-1e-7-gu),i_1=lower(us,Math.max(u1,u2,u3)+1e-7+gu),j_0=lower(zs,Math.min(z1,z2,z3)-1e-7-grow),j_1=lower(zs,Math.max(z1,z2,z3)+1e-7+grow);
+      for(let j=j_0;j<j_1;j++){const z=zs[j];for(let i=i_0;i<i_1;i++){const u=us[i];let l1=((z2-z3)*(u-u3)+(u3-u2)*(z-z3))/d,l2=((z3-z1)*(u-u3)+(u1-u3)*(z-z3))/d,l3=1-l1-l2;
+        if(l1<-e||l2<-e||l3<-e){if(!grow)continue;l1=Math.max(0,l1);l2=Math.max(0,l2);l3=Math.max(0,l3);const t=l1+l2+l3;l1/=t;l2/=t;l3/=t;
+          const pz=l1*z1+l2*z2+l3*z3,pu=l1*u1+l2*u2+l3*u3,dz=z-pz,dx=(u-pu)+s*dz;if(dx*dx+dz*dz>grow*grow)continue;}
+        fn(j*nu+i,l1*y1+l2*y2+l3*y3);}}}};
   // Two kinds of fill: the approach embankments (lbRoad) and fill that supports or buries a part (lbSrc).
   const ceil=new Float64Array(N).fill(Infinity),lbSrc=new Float64Array(N).fill(-Infinity),hard=new Float64Array(N).fill(-Infinity);
   const lbRoad=new Float64Array(N).fill(-Infinity),hardRoad=new Float64Array(N).fill(-Infinity),slab=new Uint8Array(N);
   const target=new Float64Array(N).fill(Infinity),keyTop=new Float64Array(N).fill(-Infinity),wallLb=new Float64Array(N).fill(-Infinity),wall=new Uint8Array(N);
-  const wallTop=new Float64Array(N).fill(-Infinity),over=new Float64Array(N).fill(Infinity);
+  const wallTop=new Float64Array(N).fill(-Infinity),over=new Float64Array(N).fill(Infinity),deckUnder=new Float64Array(N).fill(Infinity);
   const span=p=>p.uc>uW&&p.uc<uE,later=[];
   // Rails, posts and drains go last: they stand on the structure where there is any under them, else on the ground.
   const box=(p,pad,fn)=>{const i0=lower(us,p.u[0]-pad),i1=lower(us,p.u[1]+pad),j0=lower(zs,p.min[2]-pad),j1=lower(zs,p.max[2]+pad);for(let j=j0;j<j1;j++)for(let i=i0;i<i1;i++)fn(j*nu+i);};
-  const ceiling=(p,c)=>{raster(p,(v,y)=>{if(y-c<ceil[v])ceil[v]=y-c;if(y<over[v])over[v]=y;});
+  const ceiling=(p,c)=>{raster(p,(v,y)=>{if(y-c<ceil[v])ceil[v]=y-c;if(y<over[v])over[v]=y;},false,.3);
     // A small part (a bearing, a bolt) can fall between grid lines: its plan box, a little wider, holds the ground
     // below its lowest point.
-    if(p.u[1]-p.u[0]<2.5&&p.max[2]-p.min[2]<2.5){const y=p.min[1]-c;box(p,.3,v=>{if(y<ceil[v])ceil[v]=y;});}};
+    if(p.u[1]-p.u[0]<2.5&&p.max[2]-p.min[2]<2.5){const y=p.min[1]-c;box(p,.3,v=>{if(y<ceil[v])ceil[v]=y;if(wall[v]&&p.min[1]<over[v])over[v]=p.min[1];});}};
+  for(const p of retaining){const lb=grounded(p)?p.min[1]+EMBED:-Infinity;raster(p,(v,y)=>{wall[v]=1;if(lb>wallLb[v])wallLb[v]=lb;if(y>wallTop[v])wallTop[v]=y;},true);}
+  const behindFace=i=>us[i]<uW-.05||us[i]>uE+.05;
   for(const p of parts){
     if(FURNITURE.has(p.layer)||p.layer==='drainage'){later.push(p);continue;}
-    if(retaining.has(p)){const lb=grounded(p)?p.min[1]+EMBED:-Infinity;raster(p,(v,y)=>{wall[v]=1;if(lb>wallLb[v])wallLb[v]=lb;if(y>wallTop[v])wallTop[v]=y;},true);continue;}
+    if(retaining.has(p))continue;
     if(p.layer==='approaches'){raster(p,(v,y)=>{slab[v]=1;if(y<target[v])target[v]=y;});continue;}
     if(p.layer==='site'){if(/toe|key/i.test(p.name+' '+p.id))raster(p,(v,y)=>{if(y>keyTop[v])keyTop[v]=y;});else raster(p,(v,y)=>{if(y<target[v])target[v]=y;});continue;}
     if(SUB.has(p.layer)){
-      if((p.layer==='foundations'||p.layer==='casing')&&!p.slender)raster(p,(v,y)=>{if(y>hard[v])hard[v]=y;});
+      if((p.layer==='foundations'||p.layer==='casing')&&!p.slender){raster(p,(v,y)=>{if(y>hard[v])hard[v]=y;});const y=p.max[1];box(p,.4,v=>{if(!wall[v]&&y>hard[v])hard[v]=y;});}
       else if(grounded(p)){const lb=p.min[1]+EMBED;raster(p,v=>{if(lb>hard[v])hard[v]=lb;});}
       else if(p.layer!=='foundations'&&p.layer!=='casing')raster(p,(v,y)=>{if(y-CLEAR<ceil[v])ceil[v]=y-CLEAR;});
       continue;}
+    // A part that reaches down to the ground (a joint between precast pier modules) stands on it.
+    if(!DECK.has(p.layer)&&p.min[1]<valley(p.uc)+.6){const lb=p.min[1]+EMBED;raster(p,v=>{if(lb>hard[v])hard[v]=lb;});continue;}
+    // Behind the abutment faces the deck rests on backfill.
+    if(DECK.has(p.layer))raster(p,(v,y)=>{const i=v%nu;if(!wall[v]&&behindFace(i)&&Math.abs(Z[v]-zc)<=halfW-1&&y<deckUnder[v])deckUnder[v]=y;});
     ceiling(p,SUPER.has(p.layer)?SUPER_CLEAR:CLEAR);}
   // Each is judged point by point from its own local bottom and top: tall pieces (posts) stand in the ground, low
   // pieces (rail beams) stay above it.
@@ -209,20 +245,26 @@ export function planTerrain(input,{waterway='',site=null}={}){
     if(!loc.size)box(p,.25,v=>loc.set(v,[p.min[1],p.max[1]]));
     const onStructure=(v,b)=>wall[v]||target[v]<b+.05||over[v]<b+.05;
     let on=0;for(const [v,[b]] of loc)if(onStructure(v,b))on++;
-    if(on>=.5*loc.size){ceiling(p,CLEAR);continue;}
+    if(on>=.5*loc.size||(span(p)&&Math.abs(p.c[2]-zc)<=halfW+3)){ceiling(p,CLEAR);continue;}
     if(p.layer==='drainage')continue;
     for(const [v,[b,t]] of loc){if(onStructure(v,b))continue;
       if(t-b>.6||loc.size<=4){if(b+EMBED>hard[v])hard[v]=b+EMBED;}else if(b-.02<ceil[v])ceil[v]=b-.02;}}
-  for(let v=0;v<N;v++){if(keyTop[v]>-Infinity&&target[v]===Infinity)target[v]=keyTop[v];}
+  for(let v=0;v<N;v++){if(keyTop[v]>-Infinity&&target[v]===Infinity)target[v]=keyTop[v];
+    // Behind an abutment face the deck rests on backfill (away from its edges), where nothing hangs under it.
+    if(deckUnder[v]<Infinity){const i=v%nu,j=(v-i)/nu;let free=true;
+      for(let dj=-2;dj<=2&&free;dj++)for(let di=-2;di<=2;di++){const ii=i+di,jj=j+dj;if(ii<0||jj<0||ii>=nu||jj>=nz)continue;if(over[jj*nu+ii]<deckUnder[v]-.05){free=false;break;}}
+      if(free){slab[v]=1;if(deckUnder[v]<target[v])target[v]=deckUnder[v];}}}
   // Ground beside a part that stands on it reaches the part's bottom.
   for(let j=0;j<nz;j++)for(let i=0;i<nu;i++){const v=j*nu+i;if(wall[v])continue;
     for(let dj=-1;dj<=1;dj++)for(let di=-1;di<=1;di++){const ii=i+di,jj=j+dj;if(ii<0||jj<0||ii>=nu||jj>=nz)continue;const n=jj*nu+ii;if(wall[n]&&wallLb[n]>hard[v])hard[v]=wallLb[n];}}
-  for(const r of approachRoads){const pad=1;for(let v=0;v<N;v++){const x=X[v],z=Z[v];if(z<r.zA-pad||z>r.zB+pad||r.side*(x-r.end.at(z))<=0)continue;
-    const y=r.y(x,z);if(y-.12>hardRoad[v])hardRoad[v]=y-.12;if(y-.06<ceil[v])ceil[v]=y-.06;}}
+  // Under an approach road the ground is one slab thickness down, level with the slab underside at the joint.
+  for(const r of approachRoads)for(let j=0;j<nz;j++){const z=zs[j];if(z<r.zA-1||z>r.zB+1)continue;const q=r.at(z);
+    for(let i=0;i<nu;i++){const v=j*nu+i,t=r.side*(X[v]-q.xe);if(t<=0)continue;const y=q.y0+r.g*t;
+      if(y-q.T>hardRoad[v])hardRoad[v]=y-q.T;if(y-.06<ceil[v])ceil[v]=y-.06;}}
   // A crossed road and its shoulders are level; next to them fill is cut back at 1:1.25 (a cut slope), steeper than
   // the 1:2 fill, so it only bites where an embankment would spill onto the road.
   const cutC=new Float64Array(N).fill(Infinity),inRoad=new Uint8Array(N);
-  for(const r of roads)for(let j=0;j<nz;j++)for(let i=0;i<nu;i++){if(us[i]<r.uA||us[i]>r.uB)continue;const v=j*nu+i;inRoad[v]=1;if(r.y<cutC[v])cutC[v]=r.y;if(r.y>lbSrc[v])lbSrc[v]=r.y;}
+  for(const r of roads)for(let j=0;j<nz;j++)for(let i=0;i<nu;i++){if(us[i]<r.uA||us[i]>r.uB)continue;const v=j*nu+i;inRoad[v]=1;const g=r.y-.03;if(g<cutC[v])cutC[v]=g;if(g>lbSrc[v])lbSrc[v]=g;}
   // A ledge or bearing just under a slab carries it: the ground follows the lower of the two.
   for(let v=0;v<N;v++){if(target[v]<Infinity&&over[v]<target[v]&&over[v]>target[v]-.6)target[v]=over[v]-.02;
     const t=target[v]<Infinity?target[v]:-Infinity;if(slab[v])lbRoad[v]=Math.max(hardRoad[v],t);else{lbSrc[v]=Math.max(lbSrc[v],hard[v],t);lbRoad[v]=hardRoad[v];}
@@ -239,17 +281,24 @@ export function planTerrain(input,{waterway='',site=null}={}){
   // abutment's corners but does not run into the opening. Spill slopes under the bridge come from the parts
   // standing on them (caps, footings, riprap), which lbSrc carries.
   const natural=(i,j)=>valley(us[i])-cut(us[i])+roll(us[i],zs[j]),open=new Float64Array(N).fill(Infinity);
-  for(let j=0;j<nz;j++){if(Math.abs(zs[j]-zc)>halfW)continue;for(let i=0;i<nu;i++)if(us[i]>uW+.3&&us[i]<uE-.3)open[j*nu+i]=natural(i,j);}
+  for(let j=0;j<nz;j++){if(Math.abs(zs[j]-zc)>halfW)continue;for(let i=0;i<nu;i++)if(us[i]>uW+.3&&us[i]<uE-.3){open[j*nu+i]=natural(i,j);}}
   // The channel keeps its bed against embankment fill too (fill that supports a part may still reach into it).
   if(channel)for(let j=0;j<nz;j++)for(let i=0;i<nu;i++){if(Math.abs(us[i]-channel.uc)>channel.half)continue;const v=j*nu+i;if(channel.bed<cutC[v])cutC[v]=channel.bed;}
-  // Next to a road or slab the ground never falls faster than 1:1.5, so a cut beside an embankment is a steep
-  // slope, not a cliff.
   const steep=new Float64Array(N);for(let v=0;v<N;v++)steep[v]=slab[v]?Math.max(hardRoad[v],target[v]):hardRoad[v];
-  cone(lbSrc,false);cone(lbRoad,false);cone(open,true);cone(ceil,true);cone(steep,false,1.5);if(roads.length||channel)cone(cutC,true,.8);
+  // Where an embankment and a crossed road's cut compete for the same ground, one even slope joins the road
+  // shoulder and the crossed road: the local levels of both (nearly flat cones) and the distances to each give it.
+  const roadLevel=Float64Array.from(steep),cutLevel=Float64Array.from(cutC),openLevel=Float64Array.from(open);
+  cone(lbSrc,false);cone(lbRoad,false);cone(open,true);cone(ceil,true,K_CLEAR);cone(steep,false,K_STEEP);if(roads.length||channel)cone(cutC,true,K_CUT);
+  cone(roadLevel,false,.02);cone(cutLevel,true,.02);cone(openLevel,true,.02);
+  // Ground beside a road falls at 1:1.5 at most; where that meets a crossed road's cut or the natural ground under the
+  // bridge too soon, one even slope joins the two levels instead (no cliff at either end).
+  const blend=(v,st,low,level,k)=>{if(!(st>low)||!Number.isFinite(level)||!Number.isFinite(roadLevel[v]))return st;
+    const dR=Math.max(0,(roadLevel[v]-steep[v])/K_STEEP),dL=Math.max(0,(low-level)/k);return Math.max(level,level+(roadLevel[v]-level)*dL/Math.max(1e-6,dL+dR));};
   const H=new Float64Array(N);
   for(let j=0;j<nz;j++)for(let i=0;i<nu;i++){const v=j*nu+i;if(wall[v])continue;
     let h=Math.max(Math.min(natural(i,j),cutC[v]),Math.min(lbRoad[v],open[v],cutC[v]),lbSrc[v]);
-    if(inRoad[v])h=Math.min(h,cutC[v],ceil[v]);else h=Math.max(Math.min(Math.max(h,steep[v]),ceil[v]),hard[v],hardRoad[v]);
+    let st=steep[v];if(roads.length||channel)st=blend(v,st,cutC[v],cutLevel[v],K_CUT);st=blend(v,st,open[v],openLevel[v],K);
+    if(inRoad[v])h=Math.min(h,cutC[v],ceil[v]);else h=Math.max(Math.min(Math.max(h,st),ceil[v]),hard[v],hardRoad[v]);
     if(target[v]<Infinity)h=target[v];H[v]=h;}
   // Inside a retaining part the ground takes the height of the nearest outside point, so steps stay inside it.
   const dist=new Float64Array(N);for(let v=0;v<N;v++)dist[v]=wall[v]?Infinity:0;
@@ -261,7 +310,7 @@ export function planTerrain(input,{waterway='',site=null}={}){
 
   return {s,zc,halfW,nu,nz,us,zs,X,Z,H,wall,channel,roads,approachRoads,water:water?channel:null,
     block:{u0:ub0,u1:ub1,z0:zb0,z1:zb1},supports:supports.map(({kind,side,u,G,F,lo,hi})=>({kind,side,u,G,F,lo,hi})),
-    across:u=>channel?Math.abs(u-channel.uc):Infinity,U,debug:{ceil,hard,target,over,wallTop,lbSrc,retaining:[...retaining].map(p=>p.id),
+    across:u=>channel?Math.abs(u-channel.uc):Infinity,U,debug:{ceil,hard,target,over,wallTop,lbSrc,lbRoad,hardRoad,steep,open,retaining:[...retaining].map(p=>p.id),
       grounded:parts.filter(p=>grounded(p)&&!retaining.has(p)&&!((p.layer==='foundations'||p.layer==='casing')&&!p.slender)).map(p=>p.id),
       cover:parts.filter(p=>(p.layer==='foundations'||p.layer==='casing')&&!p.slender).map(p=>p.id)}};
 }

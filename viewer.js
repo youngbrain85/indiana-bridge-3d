@@ -166,16 +166,16 @@ class BridgeViewer {
     if(T.water)quad([[block.u0,block.z0],[block.u1,block.z0],[block.u1,block.z1],[block.u0,block.z1]],T.water.level,new THREE.MeshStandardMaterial({color:'#38545d',roughness:.12,metalness:0,transparent:true,opacity:.86}));
     const asphalt=new THREE.MeshStandardMaterial({color:'#36393b',roughness:.95,metalness:0,side:THREE.DoubleSide});
     // Crossed roads: level ribbons with a centre line, run parallel to the abutments under the bridge.
-    for(const r of T.roads){quad([[r.u0,block.z0],[r.u1,block.z0],[r.u1,block.z1],[r.u0,block.z1]],r.y+.02,asphalt);const m=(r.u0+r.u1)/2;
-      quad([[m-.075,block.z0],[m+.075,block.z0],[m+.075,block.z1],[m-.075,block.z1]],r.y+.035,new THREE.MeshStandardMaterial({color:'#c9b46a',roughness:.8,metalness:0}));}
-    // Approach roads: from the outer end of the approach slabs on the same line, with the slab's cross-fall and grade,
-    // to the block edge; short skirts close the edges against the ground.
-    for(const r of T.approachRoads){const zs=[r.zA,...r.zs,r.zB],rows=30,pos=[],ind=[],cols=zs.length;
-      for(let q=0;q<=rows;q++){const f=(q/rows)**1.7;for(const z of zs){const xe=r.end.at(z),tm=r.side*(xOf(r.edgeU,z)-xe),x=xe+r.side*tm*f;pos.push(x,r.y(x,z),z);}}
+    for(const r of T.roads){quad([[r.u0,block.z0],[r.u1,block.z0],[r.u1,block.z1],[r.u0,block.z1]],r.y,asphalt);const m=(r.u0+r.u1)/2;
+      quad([[m-.075,block.z0],[m+.075,block.z0],[m+.075,block.z1],[m-.075,block.z1]],r.y+.015,new THREE.MeshStandardMaterial({color:'#c9b46a',roughness:.8,metalness:0}));}
+    // Approach roads: from the traced outer edge of the approach slabs, with the slab's cross-fall and grade, to the
+    // block edge. Skirts one slab thickness deep close the sides and the far end against the ground.
+    for(const r of T.approachRoads){const zs=r.zs,rows=30,pos=[],ind=[],cols=zs.length,depth=[];
+      for(let q=0;q<=rows;q++){const f=(q/rows)**1.7;for(const z of zs){const c=r.at(z),tm=r.side*(xOf(r.edgeU,z)-c.xe),x=c.xe+r.side*tm*f;pos.push(x,r.y(x,z),z);depth.push(c.T);}}
       for(let q=0;q<rows;q++)for(let c2=0;c2<cols-1;c2++){const a=q*cols+c2,b=a+1,c3=a+cols,d=c3+1;ind.push(a,c3,b,b,c3,d);}
-      const edge=(list)=>{for(let e=0;e<list.length-1;e++){const p0=list[e],p1=list[e+1],o=pos.length/3;pos.push(...p0,...p1,p1[0],p1[1]-.3,p1[2],p0[0],p0[1]-.3,p0[2]);ind.push(o,o+1,o+2,o,o+2,o+3);}};
-      const V=i=>[pos[3*i],pos[3*i+1],pos[3*i+2]];
-      edge([...Array(rows+1)].map((_,q)=>V(q*cols)));edge([...Array(rows+1)].map((_,q)=>V(q*cols+cols-1)));edge([...Array(cols)].map((_,c2)=>V(rows*cols+c2)));
+      const edge=(list)=>{for(let e=0;e<list.length-1;e++){const [i0,i1]=[list[e],list[e+1]],p0=[pos[3*i0],pos[3*i0+1],pos[3*i0+2]],p1=[pos[3*i1],pos[3*i1+1],pos[3*i1+2]],o=pos.length/3;
+        pos.push(...p0,...p1,p1[0],p1[1]-depth[i1],p1[2],p0[0],p0[1]-depth[i0],p0[2]);ind.push(o,o+1,o+2,o,o+2,o+3);}};
+      edge([...Array(rows+1)].map((_,q)=>q*cols));edge([...Array(rows+1)].map((_,q)=>q*cols+cols-1));edge([...Array(cols)].map((_,c2)=>rows*cols+c2));
       const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));g.setIndex(ind);g.computeVertexNormals();flat(new THREE.Mesh(g,asphalt));}
     group.visible=this.terrainVisible;this.terrain=group;this.scene.add(group);if(this.grid)this.grid.visible=!this.terrainVisible;return true;}
   setDeckOpacity(value){this.opacity=value;for(const mesh of this.meshes.values()){const layer=mesh.userData.part.layer;if(['deck','wearing','road_surface'].includes(layer)&&!mesh.material.userData.shared){mesh.material.opacity=value;mesh.material.transparent=value<1;mesh.material.depthWrite=value>=1;mesh.castShadow=value>=1;mesh.material.needsUpdate=true;}}this.render();}
