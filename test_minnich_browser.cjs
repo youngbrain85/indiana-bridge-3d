@@ -15,7 +15,9 @@ const base=process.env.BRIDGE_TEST_URL||'http://127.0.0.1:8766';
       await page.waitForFunction(old=>bridgeAnalysis.run?.id!==old&&bridgeAnalysis.run?.status==='completed'&&bridgeAnalysis.applied&&bridgeAnalysis.result?.settings.pressure_kPa===bridgeAnalysis.options.pressure_kPa,old,{timeout:60000});
       return page.evaluate(()=>({id:bridgeAnalysis.run.id,settings:bridgeAnalysis.result.settings,stress:bridgeAnalysis.result.max_stress_MPa,displacement:bridgeAnalysis.result.max_deflection_mm,count:bridgeAnalysis.result.members.length,verified:bridgeAnalysis.result.verification.passed,current:bridgeAnalysis.run.current_inputs}));
     };
-    await page.locator('#femAssumedProperties summary').click();
+    // Materials and supports are folded under the load case; open the section (it stays open across redraws).
+    const settings=()=>page.evaluate(()=>{document.getElementById('femSettings').open=true;});
+    await settings();
     await page.locator('#femDefaults').click();
     const first=await run();assert.equal(first.count,197);assert(first.verified&&first.current);
     assert((await page.locator('#femLegend').textContent()).includes('ASSUMED-INPUT DEMONSTRATION'));
@@ -39,7 +41,7 @@ const base=process.env.BRIDGE_TEST_URL||'http://127.0.0.1:8766';
     const csv=await page.request.get(base+'/api/analysis/runs/'+eccentric.id+'/samples.csv');assert(csv.ok());const csvText=await csv.text();assert(csvText.includes('minnich-road:column_1_0_0'));assert(csvText.includes('assumed_input_demo'));assert(csvText.includes('hypothetical_connected_frame_shell_demo,true,false'));
     const js=await page.request.get(base+'/api/analysis/runs/'+eccentric.id+'/result.json');assert((await js.json()).demonstration);
     // Restore default inputs and save a ready-to-view example for the user.
-    await page.locator('#femAssumedProperties summary').click();await page.locator('#femDefaults').click();
+    await settings();await page.locator('#femDefaults').click();
     const saved=await run();
     await page.reload({waitUntil:'domcontentloaded'});
     await page.waitForFunction(id=>bridgeAnalysis.run?.id===id&&bridgeAnalysis.applied,saved.id);
