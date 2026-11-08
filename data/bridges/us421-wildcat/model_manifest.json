@@ -93,7 +93,7 @@
       "name": "Existing connection gussets",
       "label": "Existing connection gussets",
       "color": "#3c666b",
-      "count": 94
+      "count": 89
     },
     "repairs": {
       "name": "New gussets and cover-plate repair",
@@ -13412,23 +13412,23 @@
         18
       ],
       "basis": "Dimensioned diameter; traced pattern",
-      "note": "Holes 15/16 inch per p18. Bolt grip length and nut dimensions inferred. Pier 2 is the southeast end, Pier 3 the northwest end (Line \"A\" N 47 deg 15 min W, sheet 5; Pier Cap No. 3 at the northwest corner, sheet 2).",
+      "note": "Holes 15/16 inch per p18. Bolt grip length and nut dimensions inferred. Pier 2 is the southeast end, Pier 3 the northwest end (Line \"A\" N 47 deg 15 min W, sheet 5; Pier Cap No. 3 at the northwest corner, sheet 2). Rev. 1.4 (3D review S02): the roadway-side heads (Y truss: washers and nuts) of the 20 bolts in the two floor-beam connection columns now bear on the reinstalled connection angles laid on the gusset (moved 3.33 mm, shanks lengthened to them; sheet 17 Section A-A).",
       "dimensions": {
         "bolt_diameter_in": 0.875
       },
       "bounds_m": [
         [
           10.119836,
-          4.395597,
+          4.392263,
           5.01088
         ],
         [
-          11.025664,
+          11.025663,
           4.439285,
           5.967508
         ]
       ],
-      "volume_m3": 0.0018296
+      "volume_m3": 0.0018542
     },
     {
       "id": "repair_gusset_X_west_1",
@@ -13613,14 +13613,14 @@
         18
       ],
       "basis": "Dimensioned diameter; traced pattern",
-      "note": "Holes 15/16 inch per p18. Bolt grip length and nut dimensions inferred. Pier 2 is the southeast end, Pier 3 the northwest end (Line \"A\" N 47 deg 15 min W, sheet 5; Pier Cap No. 3 at the northwest corner, sheet 2).",
+      "note": "Holes 15/16 inch per p18. Bolt grip length and nut dimensions inferred. Pier 2 is the southeast end, Pier 3 the northwest end (Line \"A\" N 47 deg 15 min W, sheet 5; Pier Cap No. 3 at the northwest corner, sheet 2). Rev. 1.4 (3D review S02): the roadway-side heads (Y truss: washers and nuts) of the 20 bolts in the two floor-beam connection columns now bear on the reinstalled connection angles laid on the gusset (moved 3.33 mm, shanks lengthened to them; sheet 17 Section A-A).",
       "dimensions": {
         "bolt_diameter_in": 0.875
       },
       "bounds_m": [
         [
-          47.495936,
-          4.395597,
+          47.495937,
+          4.392263,
           4.99945
         ],
         [
@@ -13629,7 +13629,7 @@
           5.956078
         ]
       ],
-      "volume_m3": 0.0018296
+      "volume_m3": 0.0018542
     },
     {
       "id": "repair_gusset_X_east_1",
@@ -13882,7 +13882,7 @@
         18
       ],
       "basis": "Dimensioned diameter; traced pattern",
-      "note": "Holes 15/16 inch per p18. Bolt grip length and nut dimensions inferred. Pier 2 is the southeast end, Pier 3 the northwest end (Line \"A\" N 47 deg 15 min W, sheet 5; Pier Cap No. 3 at the northwest corner, sheet 2).",
+      "note": "Holes 15/16 inch per p18. Bolt grip length and nut dimensions inferred. Pier 2 is the southeast end, Pier 3 the northwest end (Line \"A\" N 47 deg 15 min W, sheet 5; Pier Cap No. 3 at the northwest corner, sheet 2). Rev. 1.4 (3D review S02): the roadway-side heads (Y truss: washers and nuts) of the 20 bolts in the two floor-beam connection columns, and one washer and nut at the angle toe now bear on the reinstalled connection angles laid on the gusset (moved 4.86 mm, shanks lengthened to them; sheet 17 Section A-A).",
       "dimensions": {
         "bolt_diameter_in": 0.875
       },
@@ -13893,12 +13893,12 @@
           5.01088
         ],
         [
-          11.025664,
-          -4.394835,
+          11.025663,
+          -4.389977,
           5.967508
         ]
       ],
-      "volume_m3": 0.0018296
+      "volume_m3": 0.0018674
     },
     {
       "id": "repair_cover_Y_west",
@@ -14083,23 +14083,23 @@
         18
       ],
       "basis": "Dimensioned diameter; traced pattern",
-      "note": "Holes 15/16 inch per p18. Bolt grip length and nut dimensions inferred. Pier 2 is the southeast end, Pier 3 the northwest end (Line \"A\" N 47 deg 15 min W, sheet 5; Pier Cap No. 3 at the northwest corner, sheet 2).",
+      "note": "Holes 15/16 inch per p18. Bolt grip length and nut dimensions inferred. Pier 2 is the southeast end, Pier 3 the northwest end (Line \"A\" N 47 deg 15 min W, sheet 5; Pier Cap No. 3 at the northwest corner, sheet 2). Rev. 1.4 (3D review S02): the roadway-side heads (Y truss: washers and nuts) of the 20 bolts in the two floor-beam connection columns, and one washer and nut at the angle toe now bear on the reinstalled connection angles laid on the gusset (moved 4.86 mm, shanks lengthened to them; sheet 17 Section A-A).",
       "dimensions": {
         "bolt_diameter_in": 0.875
       },
       "bounds_m": [
         [
-          47.495936,
+          47.495937,
           -4.438523,
           4.99945
         ],
         [
           48.401764,
-          -4.394835,
+          -4.389977,
           5.956078
         ]
       ],
-      "volume_m3": 0.0018296
+      "volume_m3": 0.0018674
     },
     {
       "id": "repair_cover_Y_east",
@@ -14278,21 +14278,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the inner new end gusset repair_gusset_Y_west_1 (sheet 17 Section A-A); its drilled 7/8 in bolt columns 2 3/4 in each side of the floor-beam centre line pass through the outstanding legs. Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          5.0,
+          5.0
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          10.033,
-          -4.6482,
+          10.075863,
+          -4.411504,
           5.250799
         ],
         [
-          10.5156,
-          -4.5212,
+          10.345738,
+          -4.284504,
           6.012799
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.0041135
     },
     {
       "id": "FB0_connection_Y_bolts",
@@ -14308,21 +14316,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          10.007092,
-          -4.608354,
+          10.183623,
+          -4.371657,
           5.305885
         ],
         [
-          10.41527,
-          -4.566126,
+          10.241281,
+          -4.32943,
           5.957713
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001537
     },
     {
       "id": "FB0_connection_X",
@@ -14338,21 +14350,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the inner new end gusset repair_gusset_X_west_-1 (sheet 17 Section A-A); its drilled 7/8 in bolt columns 2 3/4 in each side of the floor-beam centre line pass through the outstanding legs. Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member, web legs outside it. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          5.0,
+          5.0
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          10.033,
-          4.6482,
+          10.075863,
+          4.284504,
           5.250799
         ],
         [
-          10.5156,
-          4.7752,
+          10.345738,
+          4.411504,
           6.012799
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.0041135
     },
     {
       "id": "FB0_connection_X_bolts",
@@ -14368,21 +14388,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          10.007092,
-          4.688046,
+          10.183623,
+          4.32943,
           5.305885
         ],
         [
-          10.41527,
-          4.730274,
+          10.241281,
+          4.371657,
           5.957713
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001537
     },
     {
       "id": "FB0_stiff0",
@@ -14701,21 +14725,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the web of Y_V1, fitted between its flanges (outstanding legs 4.12 in; sheet 18 Section F-F draws about 4 in). Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member. Trimmed to the modelled Y_LC0, Y_LC1 where they reach into the connection. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          4.118,
+          4.117
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          14.097,
-          -4.6482,
+          14.162278,
+          -4.644517,
           5.250941
         ],
         [
-          14.5796,
-          -4.5212,
+          14.387322,
+          -4.517517,
           6.012941
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.0037284
     },
     {
       "id": "FB1_connection_Y_bolts",
@@ -14731,21 +14763,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          14.071092,
-          -4.608354,
-          5.306028
+          14.247622,
+          -4.604671,
+          5.306027
         ],
         [
-          14.47927,
-          -4.566126,
+          14.30528,
+          -4.562443,
           5.957855
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001537
     },
     {
       "id": "FB1_connection_X",
@@ -14761,21 +14797,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the web of X_V1, fitted between its flanges (outstanding legs 4.12 in; sheet 18 Section F-F draws about 4 in). Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member, web legs outside it. Trimmed to the modelled X_LC0, X_LC1 where they reach into the connection. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          4.118,
+          4.117
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          14.097,
-          4.6482,
+          14.162278,
+          4.517517,
           5.250941
         ],
         [
-          14.5796,
-          4.7752,
+          14.387322,
+          4.644517,
           6.012941
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.0037284
     },
     {
       "id": "FB1_connection_X_bolts",
@@ -14791,21 +14835,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          14.071092,
-          4.688046,
-          5.306028
+          14.247622,
+          4.562443,
+          5.306027
         ],
         [
-          14.47927,
-          4.730274,
+          14.30528,
+          4.604671,
           5.957855
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001537
     },
     {
       "id": "FB1_stiff0",
@@ -15124,21 +15172,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the web of Y_V2, fitted between its flanges (outstanding legs 4.12 in; sheet 18 Section F-F draws about 4 in). Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member. Trimmed to the modelled Y_D0, Y_LC1, Y_LC2 where they reach into the connection. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          4.117,
+          4.118
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          18.161,
-          -4.6482,
-          5.250758
+          18.226278,
+          -4.644517,
+          5.250759
         ],
         [
-          18.6436,
-          -4.5212,
+          18.451323,
+          -4.517517,
           6.012758
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.003643
     },
     {
       "id": "FB2_connection_Y_bolts",
@@ -15154,21 +15210,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners. The lowest heads / nuts reach into the modelled Y_D0 end envelope.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          18.135092,
-          -4.608354,
+          18.311621,
+          -4.604671,
           5.305845
         ],
         [
-          18.54327,
-          -4.566126,
+          18.36928,
+          -4.562443,
           5.957672
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001538
     },
     {
       "id": "FB2_connection_X",
@@ -15184,21 +15244,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the web of X_V2, fitted between its flanges (outstanding legs 4.12 in; sheet 18 Section F-F draws about 4 in). Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member, web legs outside it. Trimmed to the modelled X_D0, X_LC1, X_LC2 where they reach into the connection. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          4.117,
+          4.118
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          18.161,
-          4.6482,
-          5.250758
+          18.226278,
+          4.517517,
+          5.250759
         ],
         [
-          18.6436,
-          4.7752,
+          18.451323,
+          4.644517,
           6.012758
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.003643
     },
     {
       "id": "FB2_connection_X_bolts",
@@ -15214,21 +15282,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners. The lowest heads / nuts reach into the modelled X_D0 end envelope.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          18.135092,
-          4.688046,
+          18.311621,
+          4.562443,
           5.305845
         ],
         [
-          18.54327,
-          4.730274,
+          18.36928,
+          4.604671,
           5.957672
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001538
     },
     {
       "id": "FB2_stiff0",
@@ -15547,21 +15619,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the web of Y_V3, fitted between its flanges (outstanding legs 4.12 in; sheet 18 Section F-F draws about 4 in). Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member. Trimmed to the modelled Y_D1, Y_LC2, Y_LC3 where they reach into the connection. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          4.118,
+          4.117
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          22.5298,
-          -4.6482,
+          22.595078,
+          -4.644517,
           5.250199
         ],
         [
-          23.0124,
-          -4.5212,
+          22.820122,
+          -4.517517,
           6.012199
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.0036365
     },
     {
       "id": "FB3_connection_Y_bolts",
@@ -15577,21 +15657,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners. The lowest heads / nuts reach into the modelled Y_D1 end envelope.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          22.503892,
-          -4.608354,
-          5.305286
+          22.680424,
+          -4.604671,
+          5.305285
         ],
         [
-          22.91207,
-          -4.566126,
+          22.738079,
+          -4.562443,
           5.957113
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001537
     },
     {
       "id": "FB3_connection_X",
@@ -15607,21 +15691,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the web of X_V3, fitted between its flanges (outstanding legs 4.12 in; sheet 18 Section F-F draws about 4 in). Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member, web legs outside it. Trimmed to the modelled X_D1, X_LC2, X_LC3 where they reach into the connection. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          4.118,
+          4.117
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          22.5298,
-          4.6482,
+          22.595078,
+          4.517517,
           5.250199
         ],
         [
-          23.0124,
-          4.7752,
+          22.820122,
+          4.644517,
           6.012199
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.0036365
     },
     {
       "id": "FB3_connection_X_bolts",
@@ -15637,21 +15729,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners. The lowest heads / nuts reach into the modelled X_D1 end envelope.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          22.503892,
-          4.688046,
-          5.305286
+          22.680424,
+          4.562443,
+          5.305285
         ],
         [
-          22.91207,
-          4.730274,
+          22.738079,
+          4.604671,
           5.957113
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001537
     },
     {
       "id": "FB3_stiff0",
@@ -15970,21 +16066,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the web of Y_V4, fitted between its flanges (outstanding legs 4.12 in; sheet 18 Section F-F draws about 4 in). Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member. Trimmed to the modelled Y_D2, Y_D4, Y_LC3, Y_LC4 where they reach into the connection. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          4.117,
+          4.118
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          26.8986,
-          -4.6482,
+          26.963879,
+          -4.644517,
           5.249264
         ],
         [
-          27.3812,
-          -4.5212,
+          27.188923,
+          -4.517517,
           6.011264
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.0035443
     },
     {
       "id": "FB4_connection_Y_bolts",
@@ -16000,21 +16104,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners. The lowest heads / nuts reach into the modelled Y_D2, Y_D4 end envelope.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          26.872692,
-          -4.608354,
-          5.304351
+          27.049223,
+          -4.604671,
+          5.30435
         ],
         [
-          27.28087,
-          -4.566126,
+          27.10688,
+          -4.562443,
           5.956178
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001538
     },
     {
       "id": "FB4_connection_X",
@@ -16030,21 +16138,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the web of X_V4, fitted between its flanges (outstanding legs 4.12 in; sheet 18 Section F-F draws about 4 in). Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member, web legs outside it. Trimmed to the modelled X_D2, X_D4, X_LC3, X_LC4 where they reach into the connection. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          4.117,
+          4.118
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          26.8986,
-          4.6482,
+          26.963879,
+          4.517517,
           5.249264
         ],
         [
-          27.3812,
-          4.7752,
+          27.188923,
+          4.644517,
           6.011264
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.0035443
     },
     {
       "id": "FB4_connection_X_bolts",
@@ -16060,21 +16176,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners. The lowest heads / nuts reach into the modelled X_D2, X_D4 end envelope.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          26.872692,
-          4.688046,
-          5.304351
+          27.049223,
+          4.562443,
+          5.30435
         ],
         [
-          27.28087,
-          4.730274,
+          27.10688,
+          4.604671,
           5.956178
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001538
     },
     {
       "id": "FB4_stiff0",
@@ -16393,21 +16513,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the web of Y_V5, fitted between its flanges (outstanding legs 4.12 in; sheet 18 Section F-F draws about 4 in). Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member. Trimmed to the modelled Y_D3, Y_D5, Y_LC4, Y_LC5 where they reach into the connection. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          4.117,
+          4.117
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          31.2674,
-          -4.6482,
+          31.332678,
+          -4.644517,
           5.247954
         ],
         [
-          31.75,
-          -4.5212,
-          6.009954
+          31.557722,
+          -4.517517,
+          6.009953
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.0035443
     },
     {
       "id": "FB5_connection_Y_bolts",
@@ -16423,21 +16551,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners. The lowest heads / nuts reach into the modelled Y_D3, Y_D5 end envelope.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          31.241492,
-          -4.608354,
+          31.41802,
+          -4.604671,
           5.30304
         ],
         [
-          31.64967,
-          -4.566126,
+          31.475681,
+          -4.562443,
           5.954867
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001538
     },
     {
       "id": "FB5_connection_X",
@@ -16453,21 +16585,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the web of X_V5, fitted between its flanges (outstanding legs 4.12 in; sheet 18 Section F-F draws about 4 in). Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member, web legs outside it. Trimmed to the modelled X_D3, X_D5, X_LC4, X_LC5 where they reach into the connection. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          4.117,
+          4.117
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          31.2674,
-          4.6482,
+          31.332678,
+          4.517517,
           5.247954
         ],
         [
-          31.75,
-          4.7752,
-          6.009954
+          31.557722,
+          4.644517,
+          6.009953
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.0035443
     },
     {
       "id": "FB5_connection_X_bolts",
@@ -16483,21 +16623,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners. The lowest heads / nuts reach into the modelled X_D3, X_D5 end envelope.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          31.241492,
-          4.688046,
+          31.41802,
+          4.562443,
           5.30304
         ],
         [
-          31.64967,
-          4.730274,
+          31.475681,
+          4.604671,
           5.954867
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001538
     },
     {
       "id": "FB5_stiff0",
@@ -16816,21 +16960,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the web of Y_V6, fitted between its flanges (outstanding legs 4.12 in; sheet 18 Section F-F draws about 4 in). Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member. Trimmed to the modelled Y_D6, Y_LC5, Y_LC6 where they reach into the connection. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          4.117,
+          4.117
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          35.6362,
-          -4.6482,
+          35.701477,
+          -4.644517,
           5.246267
         ],
         [
-          36.1188,
-          -4.5212,
+          35.926521,
+          -4.517517,
           6.008267
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.0036365
     },
     {
       "id": "FB6_connection_Y_bolts",
@@ -16846,21 +16998,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners. The lowest heads / nuts reach into the modelled Y_D6 end envelope.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          35.610292,
-          -4.608354,
-          5.301354
+          35.786819,
+          -4.604671,
+          5.301353
         ],
         [
-          36.01847,
-          -4.566126,
+          35.844479,
+          -4.562443,
           5.953181
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001538
     },
     {
       "id": "FB6_connection_X",
@@ -16876,21 +17032,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the web of X_V6, fitted between its flanges (outstanding legs 4.12 in; sheet 18 Section F-F draws about 4 in). Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member, web legs outside it. Trimmed to the modelled X_D6, X_LC5, X_LC6 where they reach into the connection. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          4.117,
+          4.117
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          35.6362,
-          4.6482,
+          35.701477,
+          4.517517,
           5.246267
         ],
         [
-          36.1188,
-          4.7752,
+          35.926521,
+          4.644517,
           6.008267
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.0036365
     },
     {
       "id": "FB6_connection_X_bolts",
@@ -16906,21 +17070,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners. The lowest heads / nuts reach into the modelled X_D6 end envelope.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          35.610292,
-          4.688046,
-          5.301354
+          35.786819,
+          4.562443,
+          5.301353
         ],
         [
-          36.01847,
-          4.730274,
+          35.844479,
+          4.604671,
           5.953181
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001538
     },
     {
       "id": "FB6_stiff0",
@@ -17239,21 +17407,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the web of Y_V7, fitted between its flanges (outstanding legs 4.12 in; sheet 18 Section F-F draws about 4 in). Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member. Trimmed to the modelled Y_D7, Y_LC6, Y_LC7 where they reach into the connection. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          4.117,
+          4.117
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          40.005,
-          -4.6482,
+          40.070278,
+          -4.644517,
           5.244205
         ],
         [
-          40.4876,
-          -4.5212,
+          40.295322,
+          -4.517517,
           6.006205
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.003643
     },
     {
       "id": "FB7_connection_Y_bolts",
@@ -17269,21 +17445,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners. The lowest heads / nuts reach into the modelled Y_D7 end envelope.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          39.979092,
-          -4.608354,
+          40.155621,
+          -4.604671,
           5.299292
         ],
         [
-          40.38727,
-          -4.566126,
+          40.21328,
+          -4.562443,
           5.951119
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001538
     },
     {
       "id": "FB7_connection_X",
@@ -17299,21 +17479,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the web of X_V7, fitted between its flanges (outstanding legs 4.12 in; sheet 18 Section F-F draws about 4 in). Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member, web legs outside it. Trimmed to the modelled X_D7, X_LC6, X_LC7 where they reach into the connection. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          4.117,
+          4.117
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          40.005,
-          4.6482,
+          40.070278,
+          4.517517,
           5.244205
         ],
         [
-          40.4876,
-          4.7752,
+          40.295322,
+          4.644517,
           6.006205
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.003643
     },
     {
       "id": "FB7_connection_X_bolts",
@@ -17329,21 +17517,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners. The lowest heads / nuts reach into the modelled X_D7 end envelope.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          39.979092,
-          4.688046,
+          40.155621,
+          4.562443,
           5.299292
         ],
         [
-          40.38727,
-          4.730274,
+          40.21328,
+          4.604671,
           5.951119
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001538
     },
     {
       "id": "FB7_stiff0",
@@ -17662,21 +17854,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the web of Y_V8, fitted between its flanges (outstanding legs 4.12 in; sheet 18 Section F-F draws about 4 in). Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member. Trimmed to the modelled Y_LC7, Y_LC8 where they reach into the connection. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          4.117,
+          4.117
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          44.069,
-          -4.6482,
+          44.134277,
+          -4.644517,
           5.24195
         ],
         [
-          44.5516,
-          -4.5212,
+          44.359322,
+          -4.517517,
           6.00395
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.0037283
     },
     {
       "id": "FB8_connection_Y_bolts",
@@ -17692,21 +17892,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          44.043092,
-          -4.608354,
+          44.21962,
+          -4.604671,
           5.297036
         ],
         [
-          44.45127,
-          -4.566126,
+          44.277279,
+          -4.562443,
           5.948864
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001538
     },
     {
       "id": "FB8_connection_X",
@@ -17722,21 +17926,29 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the web of X_V8, fitted between its flanges (outstanding legs 4.12 in; sheet 18 Section F-F draws about 4 in). Before, the first toe was 42.86 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member, web legs outside it. Trimmed to the modelled X_LC7, X_LC8 where they reach into the connection. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          4.117,
+          4.117
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          44.069,
-          4.6482,
+          44.134277,
+          4.517517,
           5.24195
         ],
         [
-          44.5516,
-          4.7752,
+          44.359322,
+          4.644517,
           6.00395
         ]
       ],
-      "volume_m3": 0.0041134
+      "volume_m3": 0.0037283
     },
     {
       "id": "FB8_connection_X_bolts",
@@ -17752,21 +17964,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          44.043092,
-          4.688046,
+          44.21962,
+          4.562443,
           5.297036
         ],
         [
-          44.45127,
-          4.730274,
+          44.277279,
+          4.604671,
           5.948864
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001538
     },
     {
       "id": "FB8_stiff0",
@@ -18085,17 +18301,25 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the inner new end gusset repair_gusset_Y_east_1 (sheet 17 Section A-A); its drilled 7/8 in bolt columns 2 3/4 in each side of the floor-beam centre line pass through the outstanding legs. Before, the first toe was 42.87 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          5.0,
+          5.0
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          48.133,
-          -4.6482,
+          48.175865,
+          -4.411504,
           5.239369
         ],
         [
-          48.6156,
-          -4.5212,
+          48.445736,
+          -4.284504,
           6.001369
         ]
       ],
@@ -18115,21 +18339,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          48.107092,
-          -4.608354,
-          5.294455
+          48.283627,
+          -4.371657,
+          5.294456
         ],
         [
-          48.51527,
-          -4.566126,
+          48.341278,
+          -4.32943,
           5.946283
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001537
     },
     {
       "id": "FB9_connection_X",
@@ -18145,17 +18373,25 @@
         18
       ],
       "basis": "Drawn detail; fitted dimensions",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): refitted as a back-to-back pair on the floor-beam web (sheet 18 temporary truss support retrofit detail and Section F-F; sheet 17 Section A-A): each web leg lies on one face of the 5/8 in web and the outstanding legs bear on the roadway face of the inner new end gusset repair_gusset_X_east_-1 (sheet 17 Section A-A); its drilled 7/8 in bolt columns 2 3/4 in each side of the floor-beam centre line pass through the outstanding legs. Before, the first toe was 42.87 mm off the web, the second angle outside the flange and the outstanding legs on the truss centre line inside the truss member, web legs outside it. 7/16 in thickness, 5 in web leg, 30 in length and elevation unchanged.",
+      "dimensions": {
+        "thickness_in": 0.4375,
+        "web_leg_in": 5.0,
+        "outstanding_leg_in": [
+          5.0,
+          5.0
+        ],
+        "length_in": 30.0
+      },
       "bounds_m": [
         [
-          48.133,
-          4.6482,
+          48.175865,
+          4.284504,
           5.239369
         ],
         [
-          48.6156,
-          4.7752,
+          48.445736,
+          4.411504,
           6.001369
         ]
       ],
@@ -18175,21 +18411,25 @@
         18
       ],
       "basis": "Representative pattern",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S02): five 7/8 in through-bolts (6 in pitch, 2.4 in from the angle heel as before) through both web legs and the floor-beam web, head and nut on the outer leg faces; they were 10 bolts through one leg only, off the web. Holes are not modelled, as for the other fasteners.",
+      "dimensions": {
+        "bolts": 5,
+        "diameter_in": 0.875,
+        "grip_in": 1.5
+      },
       "bounds_m": [
         [
-          48.107092,
-          4.688046,
-          5.294455
+          48.283627,
+          4.32943,
+          5.294456
         ],
         [
-          48.51527,
-          4.730274,
+          48.341278,
+          4.371657,
           5.946283
         ]
       ],
-      "volume_m3": 0.0002981
+      "volume_m3": 0.0001537
     },
     {
       "id": "FB9_stiff0",
@@ -28266,34 +28506,6 @@
       "volume_m3": 0.0227801
     },
     {
-      "id": "lateral_gusset_0_1",
-      "name": "Lower lateral bay 1 central plate",
-      "layer": "gussets",
-      "color": "#3c666b",
-      "pdf_pages": [
-        16
-      ],
-      "sheets": [
-        16
-      ],
-      "basis": "Inferred connection",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
-      "bounds_m": [
-        [
-          14.1224,
-          -0.1524,
-          5.089759
-        ],
-        [
-          14.4272,
-          0.1524,
-          5.099284
-        ]
-      ],
-      "volume_m3": 0.0008849
-    },
-    {
       "id": "lateral_1_-1",
       "name": "Lower lateral crossed brace bay 2",
       "layer": "bracing",
@@ -28376,34 +28588,6 @@
         ]
       ],
       "volume_m3": 0.0235355
-    },
-    {
-      "id": "lateral_gusset_1_1",
-      "name": "Lower lateral bay 2 central plate",
-      "layer": "gussets",
-      "color": "#3c666b",
-      "pdf_pages": [
-        16
-      ],
-      "sheets": [
-        16
-      ],
-      "basis": "Inferred connection",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
-      "bounds_m": [
-        [
-          22.5552,
-          -0.1524,
-          5.088991
-        ],
-        [
-          22.86,
-          0.1524,
-          5.098516
-        ]
-      ],
-      "volume_m3": 0.0008849
     },
     {
       "id": "lateral_2_-1",
@@ -28490,34 +28674,6 @@
       "volume_m3": 0.0189489
     },
     {
-      "id": "lateral_gusset_2_1",
-      "name": "Lower lateral bay 3 central plate",
-      "layer": "gussets",
-      "color": "#3c666b",
-      "pdf_pages": [
-        16
-      ],
-      "sheets": [
-        16
-      ],
-      "basis": "Inferred connection",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
-      "bounds_m": [
-        [
-          29.1084,
-          -0.1524,
-          5.087589
-        ],
-        [
-          29.4132,
-          0.1524,
-          5.097114
-        ]
-      ],
-      "volume_m3": 0.0008849
-    },
-    {
       "id": "lateral_3_-1",
       "name": "Lower lateral crossed brace bay 4",
       "layer": "bracing",
@@ -28602,34 +28758,6 @@
       "volume_m3": 0.0235355
     },
     {
-      "id": "lateral_gusset_3_1",
-      "name": "Lower lateral bay 4 central plate",
-      "layer": "gussets",
-      "color": "#3c666b",
-      "pdf_pages": [
-        16
-      ],
-      "sheets": [
-        16
-      ],
-      "basis": "Inferred connection",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
-      "bounds_m": [
-        [
-          35.6616,
-          -0.1524,
-          5.085059
-        ],
-        [
-          35.9664,
-          0.1524,
-          5.094584
-        ]
-      ],
-      "volume_m3": 0.0008849
-    },
-    {
       "id": "lateral_4_-1",
       "name": "Lower lateral crossed brace bay 5",
       "layer": "bracing",
@@ -28712,34 +28840,6 @@
         ]
       ],
       "volume_m3": 0.0227801
-    },
-    {
-      "id": "lateral_gusset_4_1",
-      "name": "Lower lateral bay 5 central plate",
-      "layer": "gussets",
-      "color": "#3c666b",
-      "pdf_pages": [
-        16
-      ],
-      "sheets": [
-        16
-      ],
-      "basis": "Inferred connection",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
-      "bounds_m": [
-        [
-          44.0944,
-          -0.1524,
-          5.080767
-        ],
-        [
-          44.3992,
-          0.1524,
-          5.090292
-        ]
-      ],
-      "volume_m3": 0.0008849
     },
     {
       "id": "truss_bearing_expansion_X_base",
@@ -29795,8 +29895,11 @@
         16
       ],
       "basis": "Inferred attachment detail",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S01): the rear flange is moved 57.28 mm onto the roadway face of the web of X_V1, between its flanges, so the post bears on the truss vertical over its full height; it stopped short with no bracket. Sheet 7 draws the retained rail fastened at the inner face of each truss vertical and clear of the 6 in curb (the 15 mm curb gap is as drawn). Rail, front flange and bolts unchanged; depth fitted.",
+      "dimensions": {
+        "flange_width_in": 4.0,
+        "depth_in": 8.255
+      },
       "bounds_m": [
         [
           14.224,
@@ -29805,11 +29908,11 @@
         ],
         [
           14.3256,
-          4.58724,
-          7.227265
+          4.644517,
+          7.227264
         ]
       ],
-      "volume_m3": 0.0023745
+      "volume_m3": 0.002685
     },
     {
       "id": "metal_rail_attach_X_1",
@@ -29855,21 +29958,24 @@
         16
       ],
       "basis": "Inferred attachment detail",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S01): the rear flange is moved 57.28 mm onto the roadway face of the web of X_V2, between its flanges, so the post bears on the truss vertical over its full height; it stopped short with no bracket. Sheet 7 draws the retained rail fastened at the inner face of each truss vertical and clear of the 6 in curb (the 15 mm curb gap is as drawn). Rail, front flange and bolts unchanged; depth fitted.",
+      "dimensions": {
+        "flange_width_in": 4.0,
+        "depth_in": 8.255
+      },
       "bounds_m": [
         [
           18.288,
           4.43484,
-          6.373642
+          6.373641
         ],
         [
-          18.3896,
-          4.58724,
+          18.389601,
+          4.644517,
           7.227082
         ]
       ],
-      "volume_m3": 0.0023745
+      "volume_m3": 0.0026848
     },
     {
       "id": "metal_rail_attach_X_2",
@@ -29915,21 +30021,24 @@
         16
       ],
       "basis": "Inferred attachment detail",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S01): the rear flange is moved 57.28 mm onto the roadway face of the web of X_V3, between its flanges, so the post bears on the truss vertical over its full height; it stopped short with no bracket. Sheet 7 draws the retained rail fastened at the inner face of each truss vertical and clear of the 6 in curb (the 15 mm curb gap is as drawn). Rail, front flange and bolts unchanged; depth fitted.",
+      "dimensions": {
+        "flange_width_in": 4.0,
+        "depth_in": 8.255
+      },
       "bounds_m": [
         [
-          22.6568,
+          22.656799,
           4.43484,
-          6.373082
+          6.373083
         ],
         [
           22.7584,
-          4.58724,
+          4.644517,
           7.226522
         ]
       ],
-      "volume_m3": 0.0023745
+      "volume_m3": 0.0026848
     },
     {
       "id": "metal_rail_attach_X_3",
@@ -29975,8 +30084,11 @@
         16
       ],
       "basis": "Inferred attachment detail",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S01): the rear flange is moved 57.28 mm onto the roadway face of the web of X_V4, between its flanges, so the post bears on the truss vertical over its full height; it stopped short with no bracket. Sheet 7 draws the retained rail fastened at the inner face of each truss vertical and clear of the 6 in curb (the 15 mm curb gap is as drawn). Rail, front flange and bolts unchanged; depth fitted.",
+      "dimensions": {
+        "flange_width_in": 4.0,
+        "depth_in": 8.255
+      },
       "bounds_m": [
         [
           27.0256,
@@ -29984,12 +30096,12 @@
           6.372148
         ],
         [
-          27.1272,
-          4.58724,
-          7.225588
+          27.127199,
+          4.644517,
+          7.225587
         ]
       ],
-      "volume_m3": 0.0023745
+      "volume_m3": 0.0026848
     },
     {
       "id": "metal_rail_attach_X_4",
@@ -30035,8 +30147,11 @@
         16
       ],
       "basis": "Inferred attachment detail",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S01): the rear flange is moved 57.28 mm onto the roadway face of the web of X_V5, between its flanges, so the post bears on the truss vertical over its full height; it stopped short with no bracket. Sheet 7 draws the retained rail fastened at the inner face of each truss vertical and clear of the 6 in curb (the 15 mm curb gap is as drawn). Rail, front flange and bolts unchanged; depth fitted.",
+      "dimensions": {
+        "flange_width_in": 4.0,
+        "depth_in": 8.255
+      },
       "bounds_m": [
         [
           31.3944,
@@ -30045,11 +30160,11 @@
         ],
         [
           31.496,
-          4.58724,
+          4.644517,
           7.224277
         ]
       ],
-      "volume_m3": 0.0023745
+      "volume_m3": 0.0026851
     },
     {
       "id": "metal_rail_attach_X_5",
@@ -30095,21 +30210,24 @@
         16
       ],
       "basis": "Inferred attachment detail",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S01): the rear flange is moved 57.28 mm onto the roadway face of the web of X_V6, between its flanges, so the post bears on the truss vertical over its full height; it stopped short with no bracket. Sheet 7 draws the retained rail fastened at the inner face of each truss vertical and clear of the 6 in curb (the 15 mm curb gap is as drawn). Rail, front flange and bolts unchanged; depth fitted.",
+      "dimensions": {
+        "flange_width_in": 4.0,
+        "depth_in": 8.255
+      },
       "bounds_m": [
         [
-          35.7632,
+          35.763199,
           4.43484,
           6.369151
         ],
         [
-          35.8648,
-          4.58724,
-          7.222591
+          35.864799,
+          4.644517,
+          7.22259
         ]
       ],
-      "volume_m3": 0.0023745
+      "volume_m3": 0.0026851
     },
     {
       "id": "metal_rail_attach_X_6",
@@ -30155,8 +30273,11 @@
         16
       ],
       "basis": "Inferred attachment detail",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S01): the rear flange is moved 57.28 mm onto the roadway face of the web of X_V7, between its flanges, so the post bears on the truss vertical over its full height; it stopped short with no bracket. Sheet 7 draws the retained rail fastened at the inner face of each truss vertical and clear of the 6 in curb (the 15 mm curb gap is as drawn). Rail, front flange and bolts unchanged; depth fitted.",
+      "dimensions": {
+        "flange_width_in": 4.0,
+        "depth_in": 8.255
+      },
       "bounds_m": [
         [
           40.132,
@@ -30164,12 +30285,12 @@
           6.367088
         ],
         [
-          40.2336,
-          4.58724,
-          7.220528
+          40.233601,
+          4.644517,
+          7.220529
         ]
       ],
-      "volume_m3": 0.0023745
+      "volume_m3": 0.0026845
     },
     {
       "id": "metal_rail_attach_X_7",
@@ -30215,21 +30336,24 @@
         16
       ],
       "basis": "Inferred attachment detail",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S01): the rear flange is moved 57.28 mm onto the roadway face of the web of X_V8, between its flanges, so the post bears on the truss vertical over its full height; it stopped short with no bracket. Sheet 7 draws the retained rail fastened at the inner face of each truss vertical and clear of the 6 in curb (the 15 mm curb gap is as drawn). Rail, front flange and bolts unchanged; depth fitted.",
+      "dimensions": {
+        "flange_width_in": 4.0,
+        "depth_in": 8.255
+      },
       "bounds_m": [
         [
-          44.196,
+          44.195999,
           4.43484,
           6.364833
         ],
         [
           44.2976,
-          4.58724,
+          4.644517,
           7.218273
         ]
       ],
-      "volume_m3": 0.0023745
+      "volume_m3": 0.0026845
     },
     {
       "id": "metal_rail_attach_X_8",
@@ -30339,21 +30463,24 @@
         16
       ],
       "basis": "Inferred attachment detail",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S01): the rear flange is moved 57.28 mm onto the roadway face of the web of Y_V1, between its flanges, so the post bears on the truss vertical over its full height; it stopped short with no bracket. Sheet 7 draws the retained rail fastened at the inner face of each truss vertical and clear of the 6 in curb (the 15 mm curb gap is as drawn). Rail, front flange and bolts unchanged; depth fitted.",
+      "dimensions": {
+        "flange_width_in": 4.0,
+        "depth_in": 8.255
+      },
       "bounds_m": [
         [
           14.224,
-          -4.58724,
+          -4.644517,
           6.373825
         ],
         [
           14.3256,
           -4.43484,
-          7.227265
+          7.227264
         ]
       ],
-      "volume_m3": 0.0023745
+      "volume_m3": 0.002685
     },
     {
       "id": "metal_rail_attach_Y_1",
@@ -30399,21 +30526,24 @@
         16
       ],
       "basis": "Inferred attachment detail",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S01): the rear flange is moved 57.28 mm onto the roadway face of the web of Y_V2, between its flanges, so the post bears on the truss vertical over its full height; it stopped short with no bracket. Sheet 7 draws the retained rail fastened at the inner face of each truss vertical and clear of the 6 in curb (the 15 mm curb gap is as drawn). Rail, front flange and bolts unchanged; depth fitted.",
+      "dimensions": {
+        "flange_width_in": 4.0,
+        "depth_in": 8.255
+      },
       "bounds_m": [
         [
           18.288,
-          -4.58724,
-          6.373642
+          -4.644517,
+          6.373641
         ],
         [
-          18.3896,
+          18.389601,
           -4.43484,
           7.227082
         ]
       ],
-      "volume_m3": 0.0023745
+      "volume_m3": 0.0026848
     },
     {
       "id": "metal_rail_attach_Y_2",
@@ -30459,13 +30589,16 @@
         16
       ],
       "basis": "Inferred attachment detail",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S01): the rear flange is moved 57.28 mm onto the roadway face of the web of Y_V3, between its flanges, so the post bears on the truss vertical over its full height; it stopped short with no bracket. Sheet 7 draws the retained rail fastened at the inner face of each truss vertical and clear of the 6 in curb (the 15 mm curb gap is as drawn). Rail, front flange and bolts unchanged; depth fitted.",
+      "dimensions": {
+        "flange_width_in": 4.0,
+        "depth_in": 8.255
+      },
       "bounds_m": [
         [
-          22.6568,
-          -4.58724,
-          6.373082
+          22.656799,
+          -4.644517,
+          6.373083
         ],
         [
           22.7584,
@@ -30473,7 +30606,7 @@
           7.226522
         ]
       ],
-      "volume_m3": 0.0023745
+      "volume_m3": 0.0026848
     },
     {
       "id": "metal_rail_attach_Y_3",
@@ -30519,21 +30652,24 @@
         16
       ],
       "basis": "Inferred attachment detail",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S01): the rear flange is moved 57.28 mm onto the roadway face of the web of Y_V4, between its flanges, so the post bears on the truss vertical over its full height; it stopped short with no bracket. Sheet 7 draws the retained rail fastened at the inner face of each truss vertical and clear of the 6 in curb (the 15 mm curb gap is as drawn). Rail, front flange and bolts unchanged; depth fitted.",
+      "dimensions": {
+        "flange_width_in": 4.0,
+        "depth_in": 8.255
+      },
       "bounds_m": [
         [
           27.0256,
-          -4.58724,
+          -4.644517,
           6.372148
         ],
         [
-          27.1272,
+          27.127199,
           -4.43484,
-          7.225588
+          7.225587
         ]
       ],
-      "volume_m3": 0.0023745
+      "volume_m3": 0.0026848
     },
     {
       "id": "metal_rail_attach_Y_4",
@@ -30579,12 +30715,15 @@
         16
       ],
       "basis": "Inferred attachment detail",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S01): the rear flange is moved 57.28 mm onto the roadway face of the web of Y_V5, between its flanges, so the post bears on the truss vertical over its full height; it stopped short with no bracket. Sheet 7 draws the retained rail fastened at the inner face of each truss vertical and clear of the 6 in curb (the 15 mm curb gap is as drawn). Rail, front flange and bolts unchanged; depth fitted.",
+      "dimensions": {
+        "flange_width_in": 4.0,
+        "depth_in": 8.255
+      },
       "bounds_m": [
         [
           31.3944,
-          -4.58724,
+          -4.644517,
           6.370837
         ],
         [
@@ -30593,7 +30732,7 @@
           7.224277
         ]
       ],
-      "volume_m3": 0.0023745
+      "volume_m3": 0.0026851
     },
     {
       "id": "metal_rail_attach_Y_5",
@@ -30639,21 +30778,24 @@
         16
       ],
       "basis": "Inferred attachment detail",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S01): the rear flange is moved 57.28 mm onto the roadway face of the web of Y_V6, between its flanges, so the post bears on the truss vertical over its full height; it stopped short with no bracket. Sheet 7 draws the retained rail fastened at the inner face of each truss vertical and clear of the 6 in curb (the 15 mm curb gap is as drawn). Rail, front flange and bolts unchanged; depth fitted.",
+      "dimensions": {
+        "flange_width_in": 4.0,
+        "depth_in": 8.255
+      },
       "bounds_m": [
         [
-          35.7632,
-          -4.58724,
+          35.763199,
+          -4.644517,
           6.369151
         ],
         [
-          35.8648,
+          35.864799,
           -4.43484,
-          7.222591
+          7.22259
         ]
       ],
-      "volume_m3": 0.0023745
+      "volume_m3": 0.0026851
     },
     {
       "id": "metal_rail_attach_Y_6",
@@ -30699,21 +30841,24 @@
         16
       ],
       "basis": "Inferred attachment detail",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S01): the rear flange is moved 57.28 mm onto the roadway face of the web of Y_V7, between its flanges, so the post bears on the truss vertical over its full height; it stopped short with no bracket. Sheet 7 draws the retained rail fastened at the inner face of each truss vertical and clear of the 6 in curb (the 15 mm curb gap is as drawn). Rail, front flange and bolts unchanged; depth fitted.",
+      "dimensions": {
+        "flange_width_in": 4.0,
+        "depth_in": 8.255
+      },
       "bounds_m": [
         [
           40.132,
-          -4.58724,
+          -4.644517,
           6.367088
         ],
         [
-          40.2336,
+          40.233601,
           -4.43484,
-          7.220528
+          7.220529
         ]
       ],
-      "volume_m3": 0.0023745
+      "volume_m3": 0.0026845
     },
     {
       "id": "metal_rail_attach_Y_7",
@@ -30759,12 +30904,15 @@
         16
       ],
       "basis": "Inferred attachment detail",
-      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified.",
-      "dimensions": {},
+      "note": "Reconstructed: archived 1939/1940 standard 1532 is referenced on p16 but absent; fabrication dimensions unverified. Rev. 1.4 (3D review S01): the rear flange is moved 57.28 mm onto the roadway face of the web of Y_V8, between its flanges, so the post bears on the truss vertical over its full height; it stopped short with no bracket. Sheet 7 draws the retained rail fastened at the inner face of each truss vertical and clear of the 6 in curb (the 15 mm curb gap is as drawn). Rail, front flange and bolts unchanged; depth fitted.",
+      "dimensions": {
+        "flange_width_in": 4.0,
+        "depth_in": 8.255
+      },
       "bounds_m": [
         [
-          44.196,
-          -4.58724,
+          44.195999,
+          -4.644517,
           6.364833
         ],
         [
@@ -30773,7 +30921,7 @@
           7.218273
         ]
       ],
-      "volume_m3": 0.0023745
+      "volume_m3": 0.0026845
     },
     {
       "id": "metal_rail_attach_Y_8",
@@ -31237,25 +31385,28 @@
       "sheets": [
         26
       ],
-      "basis": "Dimensioned bar size; fitted length",
-      "note": "",
+      "basis": "Dimensioned bar and anchor sizes (sheet 26); fitted lengths",
+      "note": "Rev. 1.4 (3D review S03): the bracket is refitted to the sheet 26 pipe connection detail: a 1/4 x 2 in U-bracket with its cross bar against the strap ring on the pier side, legs in line with the ring and feet on the pier cap face, anchored by two 1/2 x 1 1/2 in bolts in standard 1/2 in concrete inserts 4 3/4 in each side of the pipe centre line (1 1/4 in embedment; heads not modelled). The old 6 in bar ran away from the pier and the assembly stopped 17.78 mm short of the concrete. Foot ends 5 1/2 in from the pipe centre line (scaled on the 4 3/4 in dimension of the no-scale detail); strap ring, elevation and pipe route unchanged.",
       "dimensions": {
         "bar_width_in": 2,
-        "bar_thickness_in": 0.25
+        "bar_thickness_in": 0.25,
+        "anchor_bolt": "1/2 x 1 1/2 in",
+        "anchor_offset_in": 4.75,
+        "standoff_in": 4.4
       },
       "bounds_m": [
         [
-          10.63498,
-          3.64617,
-          4.250995
+          10.58545,
+          3.60045,
+          4.250996
         ],
         [
-          10.88136,
-          3.83413,
+          10.82294,
+          3.87985,
           4.301795
         ]
       ],
-      "volume_m3": 0.0002311
+      "volume_m3": 0.0002871
     },
     {
       "id": "drain0_X_clamp1",
@@ -31268,25 +31419,28 @@
       "sheets": [
         26
       ],
-      "basis": "Dimensioned bar size; fitted length",
-      "note": "",
+      "basis": "Dimensioned bar and anchor sizes (sheet 26); fitted lengths",
+      "note": "Rev. 1.4 (3D review S03): the bracket is refitted to the sheet 26 pipe connection detail: a 1/4 x 2 in U-bracket with its cross bar against the strap ring on the pier side, legs in line with the ring and feet on the pier stem face (7 in behind the cap face), anchored by two 1/2 x 1 1/2 in bolts in standard 1/2 in concrete inserts 4 3/4 in each side of the pipe centre line (1 1/4 in embedment; heads not modelled). The old 6 in bar ran away from the pier and the assembly stopped 195.58 mm short of the concrete. Foot ends 5 1/2 in from the pipe centre line (scaled on the 4 3/4 in dimension of the no-scale detail); strap ring, elevation and pipe route unchanged.",
       "dimensions": {
         "bar_width_in": 2,
-        "bar_thickness_in": 0.25
+        "bar_thickness_in": 0.25,
+        "anchor_bolt": "1/2 x 1 1/2 in",
+        "anchor_offset_in": 4.75,
+        "standoff_in": 11.4
       },
       "bounds_m": [
         [
-          10.63498,
-          3.64617,
-          3.336595
+          10.40765,
+          3.60045,
+          3.336596
         ],
         [
-          10.88136,
-          3.83413,
+          10.82294,
+          3.87985,
           3.387395
         ]
       ],
-      "volume_m3": 0.0002311
+      "volume_m3": 0.0004019
     },
     {
       "id": "drain0_X_clamp2",
@@ -31299,25 +31453,28 @@
       "sheets": [
         26
       ],
-      "basis": "Dimensioned bar size; fitted length",
-      "note": "",
+      "basis": "Dimensioned bar and anchor sizes (sheet 26); fitted lengths",
+      "note": "Rev. 1.4 (3D review S03): the bracket is refitted to the sheet 26 pipe connection detail: a 1/4 x 2 in U-bracket with its cross bar against the strap ring on the pier side, legs in line with the ring and feet on the pier stem face (7 in behind the cap face), anchored by two 1/2 x 1 1/2 in bolts in standard 1/2 in concrete inserts 4 3/4 in each side of the pipe centre line (1 1/4 in embedment; heads not modelled). The old 6 in bar ran away from the pier and the assembly stopped 195.58 mm short of the concrete. Foot ends 5 1/2 in from the pipe centre line (scaled on the 4 3/4 in dimension of the no-scale detail); strap ring, elevation and pipe route unchanged.",
       "dimensions": {
         "bar_width_in": 2,
-        "bar_thickness_in": 0.25
+        "bar_thickness_in": 0.25,
+        "anchor_bolt": "1/2 x 1 1/2 in",
+        "anchor_offset_in": 4.75,
+        "standoff_in": 11.4
       },
       "bounds_m": [
         [
-          10.63498,
-          3.64617,
+          10.40765,
+          3.60045,
           2.574595
         ],
         [
-          10.88136,
-          3.83413,
-          2.625395
+          10.82294,
+          3.87985,
+          2.625396
         ]
       ],
-      "volume_m3": 0.0002311
+      "volume_m3": 0.0004019
     },
     {
       "id": "drain0_Y_bowl",
@@ -31455,25 +31612,28 @@
       "sheets": [
         26
       ],
-      "basis": "Dimensioned bar size; fitted length",
-      "note": "",
+      "basis": "Dimensioned bar and anchor sizes (sheet 26); fitted lengths",
+      "note": "Rev. 1.4 (3D review S03): the bracket is refitted to the sheet 26 pipe connection detail: a 1/4 x 2 in U-bracket with its cross bar against the strap ring on the pier side, legs in line with the ring and feet on the pier cap face, anchored by two 1/2 x 1 1/2 in bolts in standard 1/2 in concrete inserts 4 3/4 in each side of the pipe centre line (1 1/4 in embedment; heads not modelled). The old 6 in bar ran away from the pier and the assembly stopped 17.78 mm short of the concrete. Foot ends 5 1/2 in from the pipe centre line (scaled on the 4 3/4 in dimension of the no-scale detail); strap ring, elevation and pipe route unchanged.",
       "dimensions": {
         "bar_width_in": 2,
-        "bar_thickness_in": 0.25
+        "bar_thickness_in": 0.25,
+        "anchor_bolt": "1/2 x 1 1/2 in",
+        "anchor_offset_in": 4.75,
+        "standoff_in": 4.4
       },
       "bounds_m": [
         [
-          10.63498,
-          -3.83413,
-          4.250995
+          10.58545,
+          -3.87985,
+          4.250996
         ],
         [
-          10.88136,
-          -3.64617,
+          10.82294,
+          -3.60045,
           4.301795
         ]
       ],
-      "volume_m3": 0.0002311
+      "volume_m3": 0.0002871
     },
     {
       "id": "drain0_Y_clamp1",
@@ -31486,25 +31646,28 @@
       "sheets": [
         26
       ],
-      "basis": "Dimensioned bar size; fitted length",
-      "note": "",
+      "basis": "Dimensioned bar and anchor sizes (sheet 26); fitted lengths",
+      "note": "Rev. 1.4 (3D review S03): the bracket is refitted to the sheet 26 pipe connection detail: a 1/4 x 2 in U-bracket with its cross bar against the strap ring on the pier side, legs in line with the ring and feet on the pier stem face (7 in behind the cap face), anchored by two 1/2 x 1 1/2 in bolts in standard 1/2 in concrete inserts 4 3/4 in each side of the pipe centre line (1 1/4 in embedment; heads not modelled). The old 6 in bar ran away from the pier and the assembly stopped 195.58 mm short of the concrete. Foot ends 5 1/2 in from the pipe centre line (scaled on the 4 3/4 in dimension of the no-scale detail); strap ring, elevation and pipe route unchanged.",
       "dimensions": {
         "bar_width_in": 2,
-        "bar_thickness_in": 0.25
+        "bar_thickness_in": 0.25,
+        "anchor_bolt": "1/2 x 1 1/2 in",
+        "anchor_offset_in": 4.75,
+        "standoff_in": 11.4
       },
       "bounds_m": [
         [
-          10.63498,
-          -3.83413,
-          3.336595
+          10.40765,
+          -3.87985,
+          3.336596
         ],
         [
-          10.88136,
-          -3.64617,
+          10.82294,
+          -3.60045,
           3.387395
         ]
       ],
-      "volume_m3": 0.0002311
+      "volume_m3": 0.0004019
     },
     {
       "id": "drain0_Y_clamp2",
@@ -31517,25 +31680,28 @@
       "sheets": [
         26
       ],
-      "basis": "Dimensioned bar size; fitted length",
-      "note": "",
+      "basis": "Dimensioned bar and anchor sizes (sheet 26); fitted lengths",
+      "note": "Rev. 1.4 (3D review S03): the bracket is refitted to the sheet 26 pipe connection detail: a 1/4 x 2 in U-bracket with its cross bar against the strap ring on the pier side, legs in line with the ring and feet on the pier stem face (7 in behind the cap face), anchored by two 1/2 x 1 1/2 in bolts in standard 1/2 in concrete inserts 4 3/4 in each side of the pipe centre line (1 1/4 in embedment; heads not modelled). The old 6 in bar ran away from the pier and the assembly stopped 195.58 mm short of the concrete. Foot ends 5 1/2 in from the pipe centre line (scaled on the 4 3/4 in dimension of the no-scale detail); strap ring, elevation and pipe route unchanged.",
       "dimensions": {
         "bar_width_in": 2,
-        "bar_thickness_in": 0.25
+        "bar_thickness_in": 0.25,
+        "anchor_bolt": "1/2 x 1 1/2 in",
+        "anchor_offset_in": 4.75,
+        "standoff_in": 11.4
       },
       "bounds_m": [
         [
-          10.63498,
-          -3.83413,
+          10.40765,
+          -3.87985,
           2.574595
         ],
         [
-          10.88136,
-          -3.64617,
-          2.625395
+          10.82294,
+          -3.60045,
+          2.625396
         ]
       ],
-      "volume_m3": 0.0002311
+      "volume_m3": 0.0004019
     },
     {
       "id": "drain1_X_bowl",
@@ -32243,25 +32409,28 @@
       "sheets": [
         26
       ],
-      "basis": "Dimensioned bar size; fitted length",
-      "note": "",
+      "basis": "Dimensioned bar and anchor sizes (sheet 26); fitted lengths",
+      "note": "Rev. 1.4 (3D review S03): the bracket is refitted to the sheet 26 pipe connection detail: a 1/4 x 2 in U-bracket with its cross bar against the strap ring on the pier side, legs in line with the ring and feet on the pier cap face, anchored by two 1/2 x 1 1/2 in bolts in standard 1/2 in concrete inserts 4 3/4 in each side of the pipe centre line (1 1/4 in embedment; heads not modelled). The old 6 in bar ran away from the pier and the assembly stopped 17.78 mm short of the concrete. Foot ends 5 1/2 in from the pipe centre line (scaled on the 4 3/4 in dimension of the no-scale detail); strap ring, elevation and pipe route unchanged.",
       "dimensions": {
         "bar_width_in": 2,
-        "bar_thickness_in": 0.25
+        "bar_thickness_in": 0.25,
+        "anchor_bolt": "1/2 x 1 1/2 in",
+        "anchor_offset_in": 4.75,
+        "standoff_in": 4.4
       },
       "bounds_m": [
         [
-          47.64024,
-          3.64617,
+          47.698662,
+          3.60045,
           4.240023
         ],
         [
-          47.88662,
-          3.83413,
+          47.93615,
+          3.87985,
           4.290823
         ]
       ],
-      "volume_m3": 0.0002311
+      "volume_m3": 0.0002871
     },
     {
       "id": "drain4_X_clamp1",
@@ -32274,25 +32443,28 @@
       "sheets": [
         26
       ],
-      "basis": "Dimensioned bar size; fitted length",
-      "note": "",
+      "basis": "Dimensioned bar and anchor sizes (sheet 26); fitted lengths",
+      "note": "Rev. 1.4 (3D review S03): the bracket is refitted to the sheet 26 pipe connection detail: a 1/4 x 2 in U-bracket with its cross bar against the strap ring on the pier side, legs in line with the ring and feet on the pier stem face (7 in behind the cap face), anchored by two 1/2 x 1 1/2 in bolts in standard 1/2 in concrete inserts 4 3/4 in each side of the pipe centre line (1 1/4 in embedment; heads not modelled). The old 6 in bar ran away from the pier and the assembly stopped 195.58 mm short of the concrete. Foot ends 5 1/2 in from the pipe centre line (scaled on the 4 3/4 in dimension of the no-scale detail); strap ring, elevation and pipe route unchanged.",
       "dimensions": {
         "bar_width_in": 2,
-        "bar_thickness_in": 0.25
+        "bar_thickness_in": 0.25,
+        "anchor_bolt": "1/2 x 1 1/2 in",
+        "anchor_offset_in": 4.75,
+        "standoff_in": 11.4
       },
       "bounds_m": [
         [
-          47.64024,
-          3.64617,
+          47.698662,
+          3.60045,
           3.325623
         ],
         [
-          47.88662,
-          3.83413,
+          48.113949,
+          3.87985,
           3.376423
         ]
       ],
-      "volume_m3": 0.0002311
+      "volume_m3": 0.0004019
     },
     {
       "id": "drain4_X_clamp2",
@@ -32305,25 +32477,28 @@
       "sheets": [
         26
       ],
-      "basis": "Dimensioned bar size; fitted length",
-      "note": "",
+      "basis": "Dimensioned bar and anchor sizes (sheet 26); fitted lengths",
+      "note": "Rev. 1.4 (3D review S03): the bracket is refitted to the sheet 26 pipe connection detail: a 1/4 x 2 in U-bracket with its cross bar against the strap ring on the pier side, legs in line with the ring and feet on the pier stem face (7 in behind the cap face), anchored by two 1/2 x 1 1/2 in bolts in standard 1/2 in concrete inserts 4 3/4 in each side of the pipe centre line (1 1/4 in embedment; heads not modelled). The old 6 in bar ran away from the pier and the assembly stopped 195.58 mm short of the concrete. Foot ends 5 1/2 in from the pipe centre line (scaled on the 4 3/4 in dimension of the no-scale detail); strap ring, elevation and pipe route unchanged.",
       "dimensions": {
         "bar_width_in": 2,
-        "bar_thickness_in": 0.25
+        "bar_thickness_in": 0.25,
+        "anchor_bolt": "1/2 x 1 1/2 in",
+        "anchor_offset_in": 4.75,
+        "standoff_in": 11.4
       },
       "bounds_m": [
         [
-          47.64024,
-          3.64617,
+          47.698662,
+          3.60045,
           2.563623
         ],
         [
-          47.88662,
-          3.83413,
+          48.113949,
+          3.87985,
           2.614423
         ]
       ],
-      "volume_m3": 0.0002311
+      "volume_m3": 0.0004019
     },
     {
       "id": "drain4_Y_bowl",
@@ -32461,25 +32636,28 @@
       "sheets": [
         26
       ],
-      "basis": "Dimensioned bar size; fitted length",
-      "note": "",
+      "basis": "Dimensioned bar and anchor sizes (sheet 26); fitted lengths",
+      "note": "Rev. 1.4 (3D review S03): the bracket is refitted to the sheet 26 pipe connection detail: a 1/4 x 2 in U-bracket with its cross bar against the strap ring on the pier side, legs in line with the ring and feet on the pier cap face, anchored by two 1/2 x 1 1/2 in bolts in standard 1/2 in concrete inserts 4 3/4 in each side of the pipe centre line (1 1/4 in embedment; heads not modelled). The old 6 in bar ran away from the pier and the assembly stopped 17.78 mm short of the concrete. Foot ends 5 1/2 in from the pipe centre line (scaled on the 4 3/4 in dimension of the no-scale detail); strap ring, elevation and pipe route unchanged.",
       "dimensions": {
         "bar_width_in": 2,
-        "bar_thickness_in": 0.25
+        "bar_thickness_in": 0.25,
+        "anchor_bolt": "1/2 x 1 1/2 in",
+        "anchor_offset_in": 4.75,
+        "standoff_in": 4.4
       },
       "bounds_m": [
         [
-          47.64024,
-          -3.83413,
+          47.698662,
+          -3.87985,
           4.240023
         ],
         [
-          47.88662,
-          -3.64617,
+          47.93615,
+          -3.60045,
           4.290823
         ]
       ],
-      "volume_m3": 0.0002311
+      "volume_m3": 0.0002871
     },
     {
       "id": "drain4_Y_clamp1",
@@ -32492,25 +32670,28 @@
       "sheets": [
         26
       ],
-      "basis": "Dimensioned bar size; fitted length",
-      "note": "",
+      "basis": "Dimensioned bar and anchor sizes (sheet 26); fitted lengths",
+      "note": "Rev. 1.4 (3D review S03): the bracket is refitted to the sheet 26 pipe connection detail: a 1/4 x 2 in U-bracket with its cross bar against the strap ring on the pier side, legs in line with the ring and feet on the pier stem face (7 in behind the cap face), anchored by two 1/2 x 1 1/2 in bolts in standard 1/2 in concrete inserts 4 3/4 in each side of the pipe centre line (1 1/4 in embedment; heads not modelled). The old 6 in bar ran away from the pier and the assembly stopped 195.58 mm short of the concrete. Foot ends 5 1/2 in from the pipe centre line (scaled on the 4 3/4 in dimension of the no-scale detail); strap ring, elevation and pipe route unchanged.",
       "dimensions": {
         "bar_width_in": 2,
-        "bar_thickness_in": 0.25
+        "bar_thickness_in": 0.25,
+        "anchor_bolt": "1/2 x 1 1/2 in",
+        "anchor_offset_in": 4.75,
+        "standoff_in": 11.4
       },
       "bounds_m": [
         [
-          47.64024,
-          -3.83413,
+          47.698662,
+          -3.87985,
           3.325623
         ],
         [
-          47.88662,
-          -3.64617,
+          48.113949,
+          -3.60045,
           3.376423
         ]
       ],
-      "volume_m3": 0.0002311
+      "volume_m3": 0.0004019
     },
     {
       "id": "drain4_Y_clamp2",
@@ -32523,25 +32704,28 @@
       "sheets": [
         26
       ],
-      "basis": "Dimensioned bar size; fitted length",
-      "note": "",
+      "basis": "Dimensioned bar and anchor sizes (sheet 26); fitted lengths",
+      "note": "Rev. 1.4 (3D review S03): the bracket is refitted to the sheet 26 pipe connection detail: a 1/4 x 2 in U-bracket with its cross bar against the strap ring on the pier side, legs in line with the ring and feet on the pier stem face (7 in behind the cap face), anchored by two 1/2 x 1 1/2 in bolts in standard 1/2 in concrete inserts 4 3/4 in each side of the pipe centre line (1 1/4 in embedment; heads not modelled). The old 6 in bar ran away from the pier and the assembly stopped 195.58 mm short of the concrete. Foot ends 5 1/2 in from the pipe centre line (scaled on the 4 3/4 in dimension of the no-scale detail); strap ring, elevation and pipe route unchanged.",
       "dimensions": {
         "bar_width_in": 2,
-        "bar_thickness_in": 0.25
+        "bar_thickness_in": 0.25,
+        "anchor_bolt": "1/2 x 1 1/2 in",
+        "anchor_offset_in": 4.75,
+        "standoff_in": 11.4
       },
       "bounds_m": [
         [
-          47.64024,
-          -3.83413,
+          47.698662,
+          -3.87985,
           2.563623
         ],
         [
-          47.88662,
-          -3.64617,
+          48.113949,
+          -3.60045,
           2.614423
         ]
       ],
-      "volume_m3": 0.0002311
+      "volume_m3": 0.0004019
     },
     {
       "id": "edgebeam_A",
@@ -32671,10 +32855,11 @@
     {
       "feature": "Verticials, diagonals and floor system",
       "status": "mixed",
-      "detail": "10WF33/10WF37/36WF150 documented only at repaired locations. Ten floor beams, nine stringer lines and lower lateral topology drawn; uncalled sections, cleats and fastener patterns reconstructed.",
+      "detail": "10WF33/10WF37/36WF150 documented only at repaired locations. Ten floor beams, nine stringer lines and lower lateral topology drawn; uncalled sections, cleats and fastener patterns reconstructed. Floor-beam end angles are back-to-back pairs on the floor-beam web bearing on the roadway face of the truss (pp17, 18); retained rail posts bear on the verticals (p7).",
       "sources": [
         7,
         16,
+        17,
         18,
         19,
         23
@@ -32718,7 +32903,7 @@
     {
       "feature": "Drainage",
       "status": "mixed",
-      "detail": "Ten dimensioned SQ inlet stations, slotted grates, hollow6 in pipes, four pier collection downpipes/45-degree offsets and clamps; casting walls and fitted paths inferred.",
+      "detail": "Ten dimensioned SQ inlet stations, slotted grates, hollow6 in pipes, four pier collection downpipes/45-degree offsets and clamps; casting walls and fitted paths inferred. Pipe clamps on 1/4 x 2 in U-brackets anchored to the pier cap and stem faces with 1/2 in bolts in concrete inserts (p26 pipe connection detail).",
       "sources": [
         23,
         26
@@ -32868,7 +33053,7 @@
     }
   ],
   "review_correction": "edgebeam-diaphragm-riser-fc-drain-approach-names",
-  "revision": "1.3-deviations",
+  "revision": "1.4-3d-review",
   "review_correction_record": {
     "source_pdf_pages": [
       2,
@@ -33283,5 +33468,1875 @@
     "removed_parts": [],
     "before_glb_sha256": "ac91caefd8036a9e7ac7bc42747ebac1b9ed691874c514d5745bf73217a8f88e",
     "after_glb_sha256": "97e5b4f348ab213da4be8e2279dc2dddbfb9d34c9418ef1266d12689746e5cbd"
+  },
+  "review_correction_3d": "rail-posts-fb-angles-drain-brackets-lateral-gussets",
+  "review_correction_record_3d": {
+    "review": "3D placement review, round 4",
+    "follows": "abutment-step-ledge-extension-tfc-height",
+    "previous_revision": "1.3-deviations",
+    "source_pdf_pages": [
+      7,
+      16,
+      17,
+      18,
+      26
+    ],
+    "printed_sheets": [
+      7,
+      16,
+      17,
+      18,
+      26
+    ],
+    "native_axes": "X = station from Sta. 42+54.00, Y = transverse (+Y = X-truss side, left looking up-station), Z = elevation - 778 ft; GLB (X, Z, -Y)",
+    "findings": [
+      {
+        "id": "S01",
+        "verdict": "resolve",
+        "summary": "16 intermediate metal-rail posts stopped 57.28 mm short of the truss vertical web with no bracket; the rear flange now bears on the roadway face of the vertical web",
+        "basis": "sheet 7 typical sections draw the retained rail fastened at the inner face of each truss vertical, clear of the 6 in curb; the 15.24 mm rail/curb gap is as drawn"
+      },
+      {
+        "id": "S02",
+        "verdict": "resolve",
+        "summary": "20 floor-beam end angle pairs were 42.86 mm off the web (second angle outside the flange) with the outstanding legs on the truss centre line; now back-to-back on the floor-beam web, outstanding legs on the roadway face of the vertical web (FB1-FB8, 4.12 in legs between the flanges) or of the inner end gusset (FB0, FB9); bolts refitted as five through-bolts; end-gusset bolt heads/nuts in the angle footprint moved onto the angle; angles trimmed to the modelled chord/diagonal ends",
+        "basis": "sheet 18 temporary truss support retrofit detail and Section F-F (FB1: pair on the web, outstanding legs about 4 in on the vertical); sheet 17 Section A-A (FB0 on the inner gusset); sheet 18 gusset detail bolt columns"
+      },
+      {
+        "id": "S03",
+        "verdict": "resolve",
+        "summary": "12 drain clamp brackets (6 in bar pointing away from the pier) stopped 17.78 mm short of the cap and 195.58 mm short of the stem; now 1/4 x 2 in U-brackets with feet on the cap / stem face and two 1/2 x 1 1/2 in anchors in concrete inserts",
+        "basis": "sheet 26 pipe connection detail (bar size, anchors, 4 3/4 in offset; no scale) and Section X-X / elevation (clamps on the cap and on the stem)"
+      },
+      {
+        "id": "S04",
+        "verdict": "resolve",
+        "summary": "lateral_gusset_i_1 (i = 0..4) were exact copies of lateral_gusset_i_-1; the copies are removed (0.004424569 m3 counted twice)",
+        "basis": "sheet 16 plan: one central connection per lower-lateral crossing"
+      }
+    ],
+    "decisions": [
+      "S03 foot length: the sheet 26 detail is not to scale; the foot ends 5 1/2 in from the pipe centre line, the washer edge scaled on the dimensioned 4 3/4 in bolt offset.",
+      "S02 at FB1-FB8: the model turns the 10WF33 verticals 90 degrees from sheets 7 and 18 (web in the truss plane); the angles are fitted to the modelled vertical (roadway face of its web, between the flanges) rather than re-orienting the verticals, which no finding asked for."
+    ],
+    "kept_deviations": [],
+    "changed_parts": [
+      "FB0_connection_X",
+      "FB0_connection_X_bolts",
+      "FB0_connection_Y",
+      "FB0_connection_Y_bolts",
+      "FB1_connection_X",
+      "FB1_connection_X_bolts",
+      "FB1_connection_Y",
+      "FB1_connection_Y_bolts",
+      "FB2_connection_X",
+      "FB2_connection_X_bolts",
+      "FB2_connection_Y",
+      "FB2_connection_Y_bolts",
+      "FB3_connection_X",
+      "FB3_connection_X_bolts",
+      "FB3_connection_Y",
+      "FB3_connection_Y_bolts",
+      "FB4_connection_X",
+      "FB4_connection_X_bolts",
+      "FB4_connection_Y",
+      "FB4_connection_Y_bolts",
+      "FB5_connection_X",
+      "FB5_connection_X_bolts",
+      "FB5_connection_Y",
+      "FB5_connection_Y_bolts",
+      "FB6_connection_X",
+      "FB6_connection_X_bolts",
+      "FB6_connection_Y",
+      "FB6_connection_Y_bolts",
+      "FB7_connection_X",
+      "FB7_connection_X_bolts",
+      "FB7_connection_Y",
+      "FB7_connection_Y_bolts",
+      "FB8_connection_X",
+      "FB8_connection_X_bolts",
+      "FB8_connection_Y",
+      "FB8_connection_Y_bolts",
+      "FB9_connection_X",
+      "FB9_connection_X_bolts",
+      "FB9_connection_Y",
+      "FB9_connection_Y_bolts",
+      "drain0_X_clamp0",
+      "drain0_X_clamp1",
+      "drain0_X_clamp2",
+      "drain0_Y_clamp0",
+      "drain0_Y_clamp1",
+      "drain0_Y_clamp2",
+      "drain4_X_clamp0",
+      "drain4_X_clamp1",
+      "drain4_X_clamp2",
+      "drain4_Y_clamp0",
+      "drain4_Y_clamp1",
+      "drain4_Y_clamp2",
+      "metal_rail_post_X_1",
+      "metal_rail_post_X_2",
+      "metal_rail_post_X_3",
+      "metal_rail_post_X_4",
+      "metal_rail_post_X_5",
+      "metal_rail_post_X_6",
+      "metal_rail_post_X_7",
+      "metal_rail_post_X_8",
+      "metal_rail_post_Y_1",
+      "metal_rail_post_Y_2",
+      "metal_rail_post_Y_3",
+      "metal_rail_post_Y_4",
+      "metal_rail_post_Y_5",
+      "metal_rail_post_Y_6",
+      "metal_rail_post_Y_7",
+      "metal_rail_post_Y_8",
+      "repair_gusset_X_east_-1_bolts",
+      "repair_gusset_X_west_-1_bolts",
+      "repair_gusset_Y_east_1_bolts",
+      "repair_gusset_Y_west_1_bolts"
+    ],
+    "added_parts": [],
+    "removed_parts": [
+      "lateral_gusset_0_1",
+      "lateral_gusset_1_1",
+      "lateral_gusset_2_1",
+      "lateral_gusset_3_1",
+      "lateral_gusset_4_1"
+    ],
+    "values": {
+      "S01": {
+        "metal_rail_post_X_1": {
+          "vertical": "X_V1",
+          "gap_before_mm": 57.277,
+          "web_face_abs_y": 4.644517,
+          "depth_in": 8.255
+        },
+        "metal_rail_post_X_2": {
+          "vertical": "X_V2",
+          "gap_before_mm": 57.277,
+          "web_face_abs_y": 4.644517,
+          "depth_in": 8.255
+        },
+        "metal_rail_post_X_3": {
+          "vertical": "X_V3",
+          "gap_before_mm": 57.277,
+          "web_face_abs_y": 4.644517,
+          "depth_in": 8.255
+        },
+        "metal_rail_post_X_4": {
+          "vertical": "X_V4",
+          "gap_before_mm": 57.277,
+          "web_face_abs_y": 4.644517,
+          "depth_in": 8.255
+        },
+        "metal_rail_post_X_5": {
+          "vertical": "X_V5",
+          "gap_before_mm": 57.277,
+          "web_face_abs_y": 4.644517,
+          "depth_in": 8.255
+        },
+        "metal_rail_post_X_6": {
+          "vertical": "X_V6",
+          "gap_before_mm": 57.277,
+          "web_face_abs_y": 4.644517,
+          "depth_in": 8.255
+        },
+        "metal_rail_post_X_7": {
+          "vertical": "X_V7",
+          "gap_before_mm": 57.277,
+          "web_face_abs_y": 4.644517,
+          "depth_in": 8.255
+        },
+        "metal_rail_post_X_8": {
+          "vertical": "X_V8",
+          "gap_before_mm": 57.277,
+          "web_face_abs_y": 4.644517,
+          "depth_in": 8.255
+        },
+        "metal_rail_post_Y_1": {
+          "vertical": "Y_V1",
+          "gap_before_mm": 57.277,
+          "web_face_abs_y": 4.644517,
+          "depth_in": 8.255
+        },
+        "metal_rail_post_Y_2": {
+          "vertical": "Y_V2",
+          "gap_before_mm": 57.277,
+          "web_face_abs_y": 4.644517,
+          "depth_in": 8.255
+        },
+        "metal_rail_post_Y_3": {
+          "vertical": "Y_V3",
+          "gap_before_mm": 57.277,
+          "web_face_abs_y": 4.644517,
+          "depth_in": 8.255
+        },
+        "metal_rail_post_Y_4": {
+          "vertical": "Y_V4",
+          "gap_before_mm": 57.277,
+          "web_face_abs_y": 4.644517,
+          "depth_in": 8.255
+        },
+        "metal_rail_post_Y_5": {
+          "vertical": "Y_V5",
+          "gap_before_mm": 57.277,
+          "web_face_abs_y": 4.644517,
+          "depth_in": 8.255
+        },
+        "metal_rail_post_Y_6": {
+          "vertical": "Y_V6",
+          "gap_before_mm": 57.277,
+          "web_face_abs_y": 4.644517,
+          "depth_in": 8.255
+        },
+        "metal_rail_post_Y_7": {
+          "vertical": "Y_V7",
+          "gap_before_mm": 57.277,
+          "web_face_abs_y": 4.644517,
+          "depth_in": 8.255
+        },
+        "metal_rail_post_Y_8": {
+          "vertical": "Y_V8",
+          "gap_before_mm": 57.277,
+          "web_face_abs_y": 4.644517,
+          "depth_in": 8.255
+        }
+      },
+      "S02_end_gusset_bolts": {
+        "repair_gusset_X_west_-1_bolts": {
+          "bolts_moved": 20,
+          "head_or_nut_move_mm": [
+            -3.334
+          ]
+        },
+        "repair_gusset_Y_west_1_bolts": {
+          "bolts_moved": 21,
+          "head_or_nut_move_mm": [
+            4.858
+          ]
+        },
+        "repair_gusset_X_east_-1_bolts": {
+          "bolts_moved": 20,
+          "head_or_nut_move_mm": [
+            -3.334
+          ]
+        },
+        "repair_gusset_Y_east_1_bolts": {
+          "bolts_moved": 21,
+          "head_or_nut_move_mm": [
+            4.858
+          ]
+        }
+      },
+      "S02": {
+        "FB0_connection_X": {
+          "support": "repair_gusset_X_west_-1",
+          "toe_gap_before_mm": 42.863,
+          "second_angle_heel_before_m": 10.3886,
+          "fb_web_faces_m": [
+            10.202863,
+            10.218738
+          ],
+          "bearing_face_y_m": 4.411504,
+          "outstanding_leg_in": [
+            5.0,
+            5.0
+          ],
+          "trimmed": [
+            {
+              "parts": [],
+              "trimmed_m3": 0.0
+            },
+            {
+              "parts": [],
+              "trimmed_m3": 0.0
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.327,
+            5.4794,
+            5.6318,
+            5.7842,
+            5.9366
+          ],
+          "bolt_hardware_in_member_ends_m3": {}
+        },
+        "FB0_connection_Y": {
+          "support": "repair_gusset_Y_west_1",
+          "toe_gap_before_mm": 42.863,
+          "second_angle_heel_before_m": 10.3886,
+          "fb_web_faces_m": [
+            10.202863,
+            10.218738
+          ],
+          "bearing_face_y_m": -4.411504,
+          "outstanding_leg_in": [
+            5.0,
+            5.0
+          ],
+          "trimmed": [
+            {
+              "parts": [],
+              "trimmed_m3": 0.0
+            },
+            {
+              "parts": [],
+              "trimmed_m3": 0.0
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.327,
+            5.4794,
+            5.6318,
+            5.7842,
+            5.9366
+          ],
+          "bolt_hardware_in_member_ends_m3": {}
+        },
+        "FB1_connection_X": {
+          "support": "X_V1",
+          "toe_gap_before_mm": 42.863,
+          "second_angle_heel_before_m": 14.4526,
+          "fb_web_faces_m": [
+            14.266863,
+            14.282738
+          ],
+          "bearing_face_y_m": 4.644517,
+          "outstanding_leg_in": [
+            4.118,
+            4.117
+          ],
+          "trimmed": [
+            {
+              "parts": [
+                "X_LC0"
+              ],
+              "trimmed_m3": 2.71e-06
+            },
+            {
+              "parts": [
+                "X_LC1"
+              ],
+              "trimmed_m3": 2.71e-06
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.3271,
+            5.4795,
+            5.6319,
+            5.7843,
+            5.9367
+          ],
+          "bolt_hardware_in_member_ends_m3": {}
+        },
+        "FB1_connection_Y": {
+          "support": "Y_V1",
+          "toe_gap_before_mm": 42.863,
+          "second_angle_heel_before_m": 14.4526,
+          "fb_web_faces_m": [
+            14.266863,
+            14.282738
+          ],
+          "bearing_face_y_m": -4.644517,
+          "outstanding_leg_in": [
+            4.118,
+            4.117
+          ],
+          "trimmed": [
+            {
+              "parts": [
+                "Y_LC0"
+              ],
+              "trimmed_m3": 2.71e-06
+            },
+            {
+              "parts": [
+                "Y_LC1"
+              ],
+              "trimmed_m3": 2.71e-06
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.3271,
+            5.4795,
+            5.6319,
+            5.7843,
+            5.9367
+          ],
+          "bolt_hardware_in_member_ends_m3": {}
+        },
+        "FB2_connection_X": {
+          "support": "X_V2",
+          "toe_gap_before_mm": 42.863,
+          "second_angle_heel_before_m": 18.5166,
+          "fb_web_faces_m": [
+            18.330862,
+            18.346737
+          ],
+          "bearing_face_y_m": 4.644517,
+          "outstanding_leg_in": [
+            4.117,
+            4.118
+          ],
+          "trimmed": [
+            {
+              "parts": [
+                "X_LC1",
+                "X_D0"
+              ],
+              "trimmed_m3": 5.288e-05
+            },
+            {
+              "parts": [
+                "X_LC2",
+                "X_D0"
+              ],
+              "trimmed_m3": 3.779e-05
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.327,
+            5.4794,
+            5.6318,
+            5.7842,
+            5.9366
+          ],
+          "bolt_hardware_in_member_ends_m3": {
+            "X_D0": 5.427e-06
+          }
+        },
+        "FB2_connection_Y": {
+          "support": "Y_V2",
+          "toe_gap_before_mm": 42.863,
+          "second_angle_heel_before_m": 18.5166,
+          "fb_web_faces_m": [
+            18.330862,
+            18.346737
+          ],
+          "bearing_face_y_m": -4.644517,
+          "outstanding_leg_in": [
+            4.117,
+            4.118
+          ],
+          "trimmed": [
+            {
+              "parts": [
+                "Y_LC1",
+                "Y_D0"
+              ],
+              "trimmed_m3": 5.288e-05
+            },
+            {
+              "parts": [
+                "Y_LC2",
+                "Y_D0"
+              ],
+              "trimmed_m3": 3.779e-05
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.327,
+            5.4794,
+            5.6318,
+            5.7842,
+            5.9366
+          ],
+          "bolt_hardware_in_member_ends_m3": {
+            "Y_D0": 5.427e-06
+          }
+        },
+        "FB3_connection_X": {
+          "support": "X_V3",
+          "toe_gap_before_mm": 42.863,
+          "second_angle_heel_before_m": 22.8854,
+          "fb_web_faces_m": [
+            22.699663,
+            22.715538
+          ],
+          "bearing_face_y_m": 4.644517,
+          "outstanding_leg_in": [
+            4.118,
+            4.117
+          ],
+          "trimmed": [
+            {
+              "parts": [
+                "X_LC2",
+                "X_D1"
+              ],
+              "trimmed_m3": 5.623e-05
+            },
+            {
+              "parts": [
+                "X_LC3",
+                "X_D1"
+              ],
+              "trimmed_m3": 4.094e-05
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.3264,
+            5.4788,
+            5.6312,
+            5.7836,
+            5.936
+          ],
+          "bolt_hardware_in_member_ends_m3": {
+            "X_D1": 3.014e-06
+          }
+        },
+        "FB3_connection_Y": {
+          "support": "Y_V3",
+          "toe_gap_before_mm": 42.863,
+          "second_angle_heel_before_m": 22.8854,
+          "fb_web_faces_m": [
+            22.699663,
+            22.715538
+          ],
+          "bearing_face_y_m": -4.644517,
+          "outstanding_leg_in": [
+            4.118,
+            4.117
+          ],
+          "trimmed": [
+            {
+              "parts": [
+                "Y_LC2",
+                "Y_D1"
+              ],
+              "trimmed_m3": 5.623e-05
+            },
+            {
+              "parts": [
+                "Y_LC3",
+                "Y_D1"
+              ],
+              "trimmed_m3": 4.094e-05
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.3264,
+            5.4788,
+            5.6312,
+            5.7836,
+            5.936
+          ],
+          "bolt_hardware_in_member_ends_m3": {
+            "Y_D1": 3.014e-06
+          }
+        },
+        "FB4_connection_X": {
+          "support": "X_V4",
+          "toe_gap_before_mm": 42.862,
+          "second_angle_heel_before_m": 27.254201,
+          "fb_web_faces_m": [
+            27.068462,
+            27.084337
+          ],
+          "bearing_face_y_m": 4.644517,
+          "outstanding_leg_in": [
+            4.117,
+            4.118
+          ],
+          "trimmed": [
+            {
+              "parts": [
+                "X_LC3",
+                "X_D2",
+                "X_D4"
+              ],
+              "trimmed_m3": 9.434e-05
+            },
+            {
+              "parts": [
+                "X_LC4",
+                "X_D2",
+                "X_D4"
+              ],
+              "trimmed_m3": 9.508e-05
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.3255,
+            5.4779,
+            5.6303,
+            5.7827,
+            5.9351
+          ],
+          "bolt_hardware_in_member_ends_m3": {
+            "X_D2": 1.57e-06,
+            "X_D4": 1.74e-07
+          }
+        },
+        "FB4_connection_Y": {
+          "support": "Y_V4",
+          "toe_gap_before_mm": 42.862,
+          "second_angle_heel_before_m": 27.254201,
+          "fb_web_faces_m": [
+            27.068462,
+            27.084337
+          ],
+          "bearing_face_y_m": -4.644517,
+          "outstanding_leg_in": [
+            4.117,
+            4.118
+          ],
+          "trimmed": [
+            {
+              "parts": [
+                "Y_LC3",
+                "Y_D2",
+                "Y_D4"
+              ],
+              "trimmed_m3": 9.434e-05
+            },
+            {
+              "parts": [
+                "Y_LC4",
+                "Y_D2",
+                "Y_D4"
+              ],
+              "trimmed_m3": 9.508e-05
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.3255,
+            5.4779,
+            5.6303,
+            5.7827,
+            5.9351
+          ],
+          "bolt_hardware_in_member_ends_m3": {
+            "Y_D2": 1.57e-06,
+            "Y_D4": 1.74e-07
+          }
+        },
+        "FB5_connection_X": {
+          "support": "X_V5",
+          "toe_gap_before_mm": 42.861,
+          "second_angle_heel_before_m": 31.623,
+          "fb_web_faces_m": [
+            31.437262,
+            31.453138
+          ],
+          "bearing_face_y_m": 4.644517,
+          "outstanding_leg_in": [
+            4.117,
+            4.117
+          ],
+          "trimmed": [
+            {
+              "parts": [
+                "X_LC4",
+                "X_D3",
+                "X_D5"
+              ],
+              "trimmed_m3": 9.508e-05
+            },
+            {
+              "parts": [
+                "X_LC5",
+                "X_D3",
+                "X_D5"
+              ],
+              "trimmed_m3": 9.431e-05
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.3242,
+            5.4766,
+            5.629,
+            5.7814,
+            5.9338
+          ],
+          "bolt_hardware_in_member_ends_m3": {
+            "X_D3": 9.61e-07,
+            "X_D5": 3.94e-07
+          }
+        },
+        "FB5_connection_Y": {
+          "support": "Y_V5",
+          "toe_gap_before_mm": 42.861,
+          "second_angle_heel_before_m": 31.623,
+          "fb_web_faces_m": [
+            31.437262,
+            31.453138
+          ],
+          "bearing_face_y_m": -4.644517,
+          "outstanding_leg_in": [
+            4.117,
+            4.117
+          ],
+          "trimmed": [
+            {
+              "parts": [
+                "Y_LC4",
+                "Y_D3",
+                "Y_D5"
+              ],
+              "trimmed_m3": 9.508e-05
+            },
+            {
+              "parts": [
+                "Y_LC5",
+                "Y_D3",
+                "Y_D5"
+              ],
+              "trimmed_m3": 9.431e-05
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.3242,
+            5.4766,
+            5.629,
+            5.7814,
+            5.9338
+          ],
+          "bolt_hardware_in_member_ends_m3": {
+            "Y_D3": 9.61e-07,
+            "Y_D5": 3.94e-07
+          }
+        },
+        "FB6_connection_X": {
+          "support": "X_V6",
+          "toe_gap_before_mm": 42.861,
+          "second_angle_heel_before_m": 35.991801,
+          "fb_web_faces_m": [
+            35.806061,
+            35.821938
+          ],
+          "bearing_face_y_m": 4.644517,
+          "outstanding_leg_in": [
+            4.117,
+            4.117
+          ],
+          "trimmed": [
+            {
+              "parts": [
+                "X_LC5",
+                "X_D6"
+              ],
+              "trimmed_m3": 4.093e-05
+            },
+            {
+              "parts": [
+                "X_LC6",
+                "X_D6"
+              ],
+              "trimmed_m3": 5.622e-05
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.3225,
+            5.4749,
+            5.6273,
+            5.7797,
+            5.9321
+          ],
+          "bolt_hardware_in_member_ends_m3": {
+            "X_D6": 1.147e-06
+          }
+        },
+        "FB6_connection_Y": {
+          "support": "Y_V6",
+          "toe_gap_before_mm": 42.861,
+          "second_angle_heel_before_m": 35.991801,
+          "fb_web_faces_m": [
+            35.806061,
+            35.821938
+          ],
+          "bearing_face_y_m": -4.644517,
+          "outstanding_leg_in": [
+            4.117,
+            4.117
+          ],
+          "trimmed": [
+            {
+              "parts": [
+                "Y_LC5",
+                "Y_D6"
+              ],
+              "trimmed_m3": 4.093e-05
+            },
+            {
+              "parts": [
+                "Y_LC6",
+                "Y_D6"
+              ],
+              "trimmed_m3": 5.622e-05
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.3225,
+            5.4749,
+            5.6273,
+            5.7797,
+            5.9321
+          ],
+          "bolt_hardware_in_member_ends_m3": {
+            "Y_D6": 1.147e-06
+          }
+        },
+        "FB7_connection_X": {
+          "support": "X_V7",
+          "toe_gap_before_mm": 42.861,
+          "second_angle_heel_before_m": 40.360598,
+          "fb_web_faces_m": [
+            40.174862,
+            40.190739
+          ],
+          "bearing_face_y_m": 4.644517,
+          "outstanding_leg_in": [
+            4.117,
+            4.117
+          ],
+          "trimmed": [
+            {
+              "parts": [
+                "X_LC6",
+                "X_D7"
+              ],
+              "trimmed_m3": 3.777e-05
+            },
+            {
+              "parts": [
+                "X_LC7",
+                "X_D7"
+              ],
+              "trimmed_m3": 5.287e-05
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.3204,
+            5.4728,
+            5.6252,
+            5.7776,
+            5.93
+          ],
+          "bolt_hardware_in_member_ends_m3": {
+            "X_D7": 2.816e-06
+          }
+        },
+        "FB7_connection_Y": {
+          "support": "Y_V7",
+          "toe_gap_before_mm": 42.861,
+          "second_angle_heel_before_m": 40.360598,
+          "fb_web_faces_m": [
+            40.174862,
+            40.190739
+          ],
+          "bearing_face_y_m": -4.644517,
+          "outstanding_leg_in": [
+            4.117,
+            4.117
+          ],
+          "trimmed": [
+            {
+              "parts": [
+                "Y_LC6",
+                "Y_D7"
+              ],
+              "trimmed_m3": 3.777e-05
+            },
+            {
+              "parts": [
+                "Y_LC7",
+                "Y_D7"
+              ],
+              "trimmed_m3": 5.287e-05
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.3204,
+            5.4728,
+            5.6252,
+            5.7776,
+            5.93
+          ],
+          "bolt_hardware_in_member_ends_m3": {
+            "Y_D7": 2.816e-06
+          }
+        },
+        "FB8_connection_X": {
+          "support": "X_V8",
+          "toe_gap_before_mm": 42.861,
+          "second_angle_heel_before_m": 44.424601,
+          "fb_web_faces_m": [
+            44.238861,
+            44.254738
+          ],
+          "bearing_face_y_m": 4.644517,
+          "outstanding_leg_in": [
+            4.117,
+            4.117
+          ],
+          "trimmed": [
+            {
+              "parts": [
+                "X_LC7"
+              ],
+              "trimmed_m3": 2.71e-06
+            },
+            {
+              "parts": [
+                "X_LC8"
+              ],
+              "trimmed_m3": 2.71e-06
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.3181,
+            5.4705,
+            5.6229,
+            5.7753,
+            5.9277
+          ],
+          "bolt_hardware_in_member_ends_m3": {}
+        },
+        "FB8_connection_Y": {
+          "support": "Y_V8",
+          "toe_gap_before_mm": 42.861,
+          "second_angle_heel_before_m": 44.424601,
+          "fb_web_faces_m": [
+            44.238861,
+            44.254738
+          ],
+          "bearing_face_y_m": -4.644517,
+          "outstanding_leg_in": [
+            4.117,
+            4.117
+          ],
+          "trimmed": [
+            {
+              "parts": [
+                "Y_LC7"
+              ],
+              "trimmed_m3": 2.71e-06
+            },
+            {
+              "parts": [
+                "Y_LC8"
+              ],
+              "trimmed_m3": 2.71e-06
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.3181,
+            5.4705,
+            5.6229,
+            5.7753,
+            5.9277
+          ],
+          "bolt_hardware_in_member_ends_m3": {}
+        },
+        "FB9_connection_X": {
+          "support": "repair_gusset_X_east_-1",
+          "toe_gap_before_mm": 42.865,
+          "second_angle_heel_before_m": 48.488601,
+          "fb_web_faces_m": [
+            48.302864,
+            48.318737
+          ],
+          "bearing_face_y_m": 4.411504,
+          "outstanding_leg_in": [
+            5.0,
+            5.0
+          ],
+          "trimmed": [
+            {
+              "parts": [],
+              "trimmed_m3": 0.0
+            },
+            {
+              "parts": [],
+              "trimmed_m3": 0.0
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.3156,
+            5.468,
+            5.6204,
+            5.7728,
+            5.9252
+          ],
+          "bolt_hardware_in_member_ends_m3": {}
+        },
+        "FB9_connection_Y": {
+          "support": "repair_gusset_Y_east_1",
+          "toe_gap_before_mm": 42.865,
+          "second_angle_heel_before_m": 48.488601,
+          "fb_web_faces_m": [
+            48.302864,
+            48.318737
+          ],
+          "bearing_face_y_m": -4.411504,
+          "outstanding_leg_in": [
+            5.0,
+            5.0
+          ],
+          "trimmed": [
+            {
+              "parts": [],
+              "trimmed_m3": 0.0
+            },
+            {
+              "parts": [],
+              "trimmed_m3": 0.0
+            }
+          ],
+          "bolt_rows_z_m": [
+            5.3156,
+            5.468,
+            5.6204,
+            5.7728,
+            5.9252
+          ],
+          "bolt_hardware_in_member_ends_m3": {}
+        }
+      },
+      "S03": {
+        "drain0_X_clamp0": {
+          "concrete": "pier2_cap",
+          "face_x_m": 10.6172,
+          "pipe_cl_x_m": 10.72896,
+          "gap_before_mm": 17.78,
+          "standoff_in": 4.4,
+          "leg_in": 0.2,
+          "anchor_embedment_in": 1.25
+        },
+        "drain0_X_clamp1": {
+          "concrete": "pier2_stem",
+          "face_x_m": 10.4394,
+          "pipe_cl_x_m": 10.72896,
+          "gap_before_mm": 195.58,
+          "standoff_in": 11.4,
+          "leg_in": 7.2,
+          "anchor_embedment_in": 1.25
+        },
+        "drain0_X_clamp2": {
+          "concrete": "pier2_stem",
+          "face_x_m": 10.4394,
+          "pipe_cl_x_m": 10.72896,
+          "gap_before_mm": 195.58,
+          "standoff_in": 11.4,
+          "leg_in": 7.2,
+          "anchor_embedment_in": 1.25
+        },
+        "drain0_Y_clamp0": {
+          "concrete": "pier2_cap",
+          "face_x_m": 10.6172,
+          "pipe_cl_x_m": 10.72896,
+          "gap_before_mm": 17.78,
+          "standoff_in": 4.4,
+          "leg_in": 0.2,
+          "anchor_embedment_in": 1.25
+        },
+        "drain0_Y_clamp1": {
+          "concrete": "pier2_stem",
+          "face_x_m": 10.4394,
+          "pipe_cl_x_m": 10.72896,
+          "gap_before_mm": 195.58,
+          "standoff_in": 11.4,
+          "leg_in": 7.2,
+          "anchor_embedment_in": 1.25
+        },
+        "drain0_Y_clamp2": {
+          "concrete": "pier2_stem",
+          "face_x_m": 10.4394,
+          "pipe_cl_x_m": 10.72896,
+          "gap_before_mm": 195.58,
+          "standoff_in": 11.4,
+          "leg_in": 7.2,
+          "anchor_embedment_in": 1.25
+        },
+        "drain4_X_clamp0": {
+          "concrete": "pier3_cap",
+          "face_x_m": 47.9044,
+          "pipe_cl_x_m": 47.792641,
+          "gap_before_mm": 17.778,
+          "standoff_in": 4.4,
+          "leg_in": 0.2,
+          "anchor_embedment_in": 1.25
+        },
+        "drain4_X_clamp1": {
+          "concrete": "pier3_stem",
+          "face_x_m": 48.082199,
+          "pipe_cl_x_m": 47.792641,
+          "gap_before_mm": 195.577,
+          "standoff_in": 11.4,
+          "leg_in": 7.2,
+          "anchor_embedment_in": 1.25
+        },
+        "drain4_X_clamp2": {
+          "concrete": "pier3_stem",
+          "face_x_m": 48.082199,
+          "pipe_cl_x_m": 47.792641,
+          "gap_before_mm": 195.577,
+          "standoff_in": 11.4,
+          "leg_in": 7.2,
+          "anchor_embedment_in": 1.25
+        },
+        "drain4_Y_clamp0": {
+          "concrete": "pier3_cap",
+          "face_x_m": 47.9044,
+          "pipe_cl_x_m": 47.792641,
+          "gap_before_mm": 17.778,
+          "standoff_in": 4.4,
+          "leg_in": 0.2,
+          "anchor_embedment_in": 1.25
+        },
+        "drain4_Y_clamp1": {
+          "concrete": "pier3_stem",
+          "face_x_m": 48.082199,
+          "pipe_cl_x_m": 47.792641,
+          "gap_before_mm": 195.577,
+          "standoff_in": 11.4,
+          "leg_in": 7.2,
+          "anchor_embedment_in": 1.25
+        },
+        "drain4_Y_clamp2": {
+          "concrete": "pier3_stem",
+          "face_x_m": 48.082199,
+          "pipe_cl_x_m": 47.792641,
+          "gap_before_mm": 195.577,
+          "standoff_in": 11.4,
+          "leg_in": 7.2,
+          "anchor_embedment_in": 1.25
+        }
+      },
+      "S04": {
+        "lateral_gusset_0_1": {
+          "kept": "lateral_gusset_0_-1",
+          "volume_m3": 0.000884885,
+          "laterals_on_plate": [
+            "lateral_0_-1",
+            "lateral_0_1"
+          ]
+        },
+        "lateral_gusset_1_1": {
+          "kept": "lateral_gusset_1_-1",
+          "volume_m3": 0.000884929,
+          "laterals_on_plate": [
+            "lateral_1_-1",
+            "lateral_1_1"
+          ]
+        },
+        "lateral_gusset_2_1": {
+          "kept": "lateral_gusset_2_-1",
+          "volume_m3": 0.000884929,
+          "laterals_on_plate": [
+            "lateral_2_-1",
+            "lateral_2_1"
+          ]
+        },
+        "lateral_gusset_3_1": {
+          "kept": "lateral_gusset_3_-1",
+          "volume_m3": 0.000884935,
+          "laterals_on_plate": [
+            "lateral_3_-1",
+            "lateral_3_1"
+          ]
+        },
+        "lateral_gusset_4_1": {
+          "kept": "lateral_gusset_4_-1",
+          "volume_m3": 0.000884891,
+          "laterals_on_plate": [
+            "lateral_4_-1",
+            "lateral_4_1"
+          ]
+        }
+      },
+      "fastener_and_anchor_overlaps": {
+        "FB0_connection_X / repair_gusset_X_west_-1_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 8.2191e-05,
+          "before_m3": 0.0
+        },
+        "FB0_connection_X / FB0_connection_X_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1168e-05,
+          "before_m3": 4.1167e-05
+        },
+        "FB0_connection_X_bolts / floorbeam0": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9405e-05,
+          "before_m3": 0.0
+        },
+        "FB0_connection_Y / repair_gusset_Y_west_1_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 8.2191e-05,
+          "before_m3": 0.0
+        },
+        "FB0_connection_Y / FB0_connection_Y_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1168e-05,
+          "before_m3": 4.1167e-05
+        },
+        "FB0_connection_Y_bolts / floorbeam0": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9405e-05,
+          "before_m3": 0.0
+        },
+        "FB1_connection_X / FB1_connection_X_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1168e-05,
+          "before_m3": 4.1168e-05
+        },
+        "FB1_connection_X_bolts / floorbeam1": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9405e-05,
+          "before_m3": 0.0
+        },
+        "FB1_connection_Y / FB1_connection_Y_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1168e-05,
+          "before_m3": 4.1168e-05
+        },
+        "FB1_connection_Y_bolts / floorbeam1": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9405e-05,
+          "before_m3": 0.0
+        },
+        "FB2_connection_X / FB2_connection_X_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.0975e-05,
+          "before_m3": 4.1171e-05
+        },
+        "FB2_connection_X_bolts / X_D0": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 5.427e-06,
+          "before_m3": 1.05e-07
+        },
+        "FB2_connection_X_bolts / floorbeam2": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9406e-05,
+          "before_m3": 0.0
+        },
+        "FB2_connection_Y / FB2_connection_Y_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.0975e-05,
+          "before_m3": 4.1171e-05
+        },
+        "FB2_connection_Y_bolts / Y_D0": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 5.427e-06,
+          "before_m3": 1.05e-07
+        },
+        "FB2_connection_Y_bolts / floorbeam2": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9406e-05,
+          "before_m3": 0.0
+        },
+        "FB3_connection_X / FB3_connection_X_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1166e-05,
+          "before_m3": 4.1167e-05
+        },
+        "FB3_connection_X_bolts / X_D1": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.014e-06,
+          "before_m3": 0.0
+        },
+        "FB3_connection_X_bolts / floorbeam3": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9405e-05,
+          "before_m3": 0.0
+        },
+        "FB3_connection_Y / FB3_connection_Y_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1166e-05,
+          "before_m3": 4.1167e-05
+        },
+        "FB3_connection_Y_bolts / Y_D1": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.014e-06,
+          "before_m3": 0.0
+        },
+        "FB3_connection_Y_bolts / floorbeam3": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9405e-05,
+          "before_m3": 0.0
+        },
+        "FB4_connection_X / FB4_connection_X_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1167e-05,
+          "before_m3": 4.1167e-05
+        },
+        "FB4_connection_X_bolts / X_D2": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 1.57e-06,
+          "before_m3": 0.0
+        },
+        "FB4_connection_X_bolts / X_D4": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 1.74e-07,
+          "before_m3": 4.06e-07
+        },
+        "FB4_connection_X_bolts / floorbeam4": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9406e-05,
+          "before_m3": 0.0
+        },
+        "FB4_connection_Y / FB4_connection_Y_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1167e-05,
+          "before_m3": 4.1167e-05
+        },
+        "FB4_connection_Y_bolts / Y_D2": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 1.57e-06,
+          "before_m3": 0.0
+        },
+        "FB4_connection_Y_bolts / Y_D4": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 1.74e-07,
+          "before_m3": 4.06e-07
+        },
+        "FB4_connection_Y_bolts / floorbeam4": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9406e-05,
+          "before_m3": 0.0
+        },
+        "FB5_connection_X / FB5_connection_X_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1167e-05,
+          "before_m3": 4.1171e-05
+        },
+        "FB5_connection_X_bolts / X_D3": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 9.61e-07,
+          "before_m3": 1.84e-07
+        },
+        "FB5_connection_X_bolts / X_D5": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.94e-07,
+          "before_m3": 0.0
+        },
+        "FB5_connection_X_bolts / floorbeam5": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9409e-05,
+          "before_m3": 0.0
+        },
+        "FB5_connection_Y / FB5_connection_Y_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1167e-05,
+          "before_m3": 4.1171e-05
+        },
+        "FB5_connection_Y_bolts / Y_D3": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 9.61e-07,
+          "before_m3": 1.84e-07
+        },
+        "FB5_connection_Y_bolts / Y_D5": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.94e-07,
+          "before_m3": 0.0
+        },
+        "FB5_connection_Y_bolts / floorbeam5": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9409e-05,
+          "before_m3": 0.0
+        },
+        "FB6_connection_X / FB6_connection_X_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1166e-05,
+          "before_m3": 4.1166e-05
+        },
+        "FB6_connection_X_bolts / X_D6": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 1.147e-06,
+          "before_m3": 0.0
+        },
+        "FB6_connection_X_bolts / floorbeam6": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9409e-05,
+          "before_m3": 0.0
+        },
+        "FB6_connection_Y / FB6_connection_Y_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1166e-05,
+          "before_m3": 4.1166e-05
+        },
+        "FB6_connection_Y_bolts / Y_D6": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 1.147e-06,
+          "before_m3": 0.0
+        },
+        "FB6_connection_Y_bolts / floorbeam6": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9409e-05,
+          "before_m3": 0.0
+        },
+        "FB7_connection_X / FB7_connection_X_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.0972e-05,
+          "before_m3": 4.1167e-05
+        },
+        "FB7_connection_X_bolts / X_D7": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.816e-06,
+          "before_m3": 3.3e-08
+        },
+        "FB7_connection_X_bolts / floorbeam7": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9409e-05,
+          "before_m3": 0.0
+        },
+        "FB7_connection_Y / FB7_connection_Y_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.0972e-05,
+          "before_m3": 4.1167e-05
+        },
+        "FB7_connection_Y_bolts / Y_D7": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.816e-06,
+          "before_m3": 3.3e-08
+        },
+        "FB7_connection_Y_bolts / floorbeam7": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9409e-05,
+          "before_m3": 0.0
+        },
+        "FB8_connection_X / FB8_connection_X_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1167e-05,
+          "before_m3": 4.1167e-05
+        },
+        "FB8_connection_X_bolts / floorbeam8": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9409e-05,
+          "before_m3": 0.0
+        },
+        "FB8_connection_Y / FB8_connection_Y_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1167e-05,
+          "before_m3": 4.1167e-05
+        },
+        "FB8_connection_Y_bolts / floorbeam8": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9409e-05,
+          "before_m3": 0.0
+        },
+        "FB9_connection_X / repair_gusset_X_east_-1_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 8.2191e-05,
+          "before_m3": 0.0
+        },
+        "FB9_connection_X / FB9_connection_X_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1167e-05,
+          "before_m3": 4.1167e-05
+        },
+        "FB9_connection_X_bolts / floorbeam9": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9402e-05,
+          "before_m3": 0.0
+        },
+        "FB9_connection_Y / repair_gusset_Y_east_1_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 8.2191e-05,
+          "before_m3": 0.0
+        },
+        "FB9_connection_Y / FB9_connection_Y_bolts": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1167e-05,
+          "before_m3": 4.1167e-05
+        },
+        "FB9_connection_Y_bolts / floorbeam9": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 2.9402e-05,
+          "before_m3": 0.0
+        },
+        "drain0_X_clamp0 / pier2_cap": {
+          "kind": "anchor bolts in concrete inserts (1 1/4 in)",
+          "m3": 7.681e-06
+        },
+        "drain0_X_clamp1 / pier2_stem": {
+          "kind": "anchor bolts in concrete inserts (1 1/4 in)",
+          "m3": 7.681e-06
+        },
+        "drain0_X_clamp2 / pier2_stem": {
+          "kind": "anchor bolts in concrete inserts (1 1/4 in)",
+          "m3": 7.681e-06
+        },
+        "drain0_Y_clamp0 / pier2_cap": {
+          "kind": "anchor bolts in concrete inserts (1 1/4 in)",
+          "m3": 7.681e-06
+        },
+        "drain0_Y_clamp1 / pier2_stem": {
+          "kind": "anchor bolts in concrete inserts (1 1/4 in)",
+          "m3": 7.681e-06
+        },
+        "drain0_Y_clamp2 / pier2_stem": {
+          "kind": "anchor bolts in concrete inserts (1 1/4 in)",
+          "m3": 7.681e-06
+        },
+        "drain4_X_clamp0 / pier3_cap": {
+          "kind": "anchor bolts in concrete inserts (1 1/4 in)",
+          "m3": 7.681e-06
+        },
+        "drain4_X_clamp1 / pier3_stem": {
+          "kind": "anchor bolts in concrete inserts (1 1/4 in)",
+          "m3": 7.681e-06
+        },
+        "drain4_X_clamp2 / pier3_stem": {
+          "kind": "anchor bolts in concrete inserts (1 1/4 in)",
+          "m3": 7.681e-06
+        },
+        "drain4_Y_clamp0 / pier3_cap": {
+          "kind": "anchor bolts in concrete inserts (1 1/4 in)",
+          "m3": 7.681e-06
+        },
+        "drain4_Y_clamp1 / pier3_stem": {
+          "kind": "anchor bolts in concrete inserts (1 1/4 in)",
+          "m3": 7.681e-06
+        },
+        "drain4_Y_clamp2 / pier3_stem": {
+          "kind": "anchor bolts in concrete inserts (1 1/4 in)",
+          "m3": 7.681e-06
+        },
+        "metal_rail_post_X_1 / metal_rail_X_0": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6201e-05,
+          "before_m3": 2.6201e-05
+        },
+        "metal_rail_post_X_1 / metal_rail_X_1": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6201e-05,
+          "before_m3": 2.6201e-05
+        },
+        "metal_rail_post_X_1 / metal_rail_attach_X_1": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.0627e-05,
+          "before_m3": 3.0627e-05
+        },
+        "metal_rail_post_X_2 / metal_rail_X_0": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.62e-05,
+          "before_m3": 2.62e-05
+        },
+        "metal_rail_post_X_2 / metal_rail_X_1": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.62e-05,
+          "before_m3": 2.62e-05
+        },
+        "metal_rail_post_X_2 / metal_rail_attach_X_2": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.0623e-05,
+          "before_m3": 3.0623e-05
+        },
+        "metal_rail_post_X_3 / metal_rail_X_0": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.62e-05,
+          "before_m3": 2.62e-05
+        },
+        "metal_rail_post_X_3 / metal_rail_X_1": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.62e-05,
+          "before_m3": 2.62e-05
+        },
+        "metal_rail_post_X_3 / metal_rail_attach_X_3": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.0623e-05,
+          "before_m3": 3.0623e-05
+        },
+        "metal_rail_post_X_4 / metal_rail_X_0": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.62e-05,
+          "before_m3": 2.62e-05
+        },
+        "metal_rail_post_X_4 / metal_rail_X_1": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.62e-05,
+          "before_m3": 2.62e-05
+        },
+        "metal_rail_post_X_4 / metal_rail_attach_X_4": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.0623e-05,
+          "before_m3": 3.0623e-05
+        },
+        "metal_rail_post_X_5 / metal_rail_X_0": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6202e-05,
+          "before_m3": 2.6202e-05
+        },
+        "metal_rail_post_X_5 / metal_rail_X_1": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6202e-05,
+          "before_m3": 2.6202e-05
+        },
+        "metal_rail_post_X_5 / metal_rail_attach_X_5": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.0632e-05,
+          "before_m3": 3.0632e-05
+        },
+        "metal_rail_post_X_6 / metal_rail_X_0": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6202e-05,
+          "before_m3": 2.6202e-05
+        },
+        "metal_rail_post_X_6 / metal_rail_X_1": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6202e-05,
+          "before_m3": 2.6202e-05
+        },
+        "metal_rail_post_X_6 / metal_rail_attach_X_6": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.0631e-05,
+          "before_m3": 3.0631e-05
+        },
+        "metal_rail_post_X_7 / metal_rail_X_0": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6199e-05,
+          "before_m3": 2.6199e-05
+        },
+        "metal_rail_post_X_7 / metal_rail_X_1": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6199e-05,
+          "before_m3": 2.6199e-05
+        },
+        "metal_rail_post_X_7 / metal_rail_attach_X_7": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.0614e-05,
+          "before_m3": 3.0614e-05
+        },
+        "metal_rail_post_X_8 / metal_rail_X_0": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6199e-05,
+          "before_m3": 2.6199e-05
+        },
+        "metal_rail_post_X_8 / metal_rail_X_1": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6199e-05,
+          "before_m3": 2.6199e-05
+        },
+        "metal_rail_post_X_8 / metal_rail_attach_X_8": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.0614e-05,
+          "before_m3": 3.0614e-05
+        },
+        "metal_rail_post_Y_1 / metal_rail_Y_0": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6201e-05,
+          "before_m3": 2.6201e-05
+        },
+        "metal_rail_post_Y_1 / metal_rail_Y_1": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6201e-05,
+          "before_m3": 2.6201e-05
+        },
+        "metal_rail_post_Y_1 / metal_rail_attach_Y_1": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.0627e-05,
+          "before_m3": 3.0627e-05
+        },
+        "metal_rail_post_Y_2 / metal_rail_Y_0": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.62e-05,
+          "before_m3": 2.62e-05
+        },
+        "metal_rail_post_Y_2 / metal_rail_Y_1": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.62e-05,
+          "before_m3": 2.62e-05
+        },
+        "metal_rail_post_Y_2 / metal_rail_attach_Y_2": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.0623e-05,
+          "before_m3": 3.0623e-05
+        },
+        "metal_rail_post_Y_3 / metal_rail_Y_0": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.62e-05,
+          "before_m3": 2.62e-05
+        },
+        "metal_rail_post_Y_3 / metal_rail_Y_1": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.62e-05,
+          "before_m3": 2.62e-05
+        },
+        "metal_rail_post_Y_3 / metal_rail_attach_Y_3": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.0622e-05,
+          "before_m3": 3.0622e-05
+        },
+        "metal_rail_post_Y_4 / metal_rail_Y_0": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.62e-05,
+          "before_m3": 2.62e-05
+        },
+        "metal_rail_post_Y_4 / metal_rail_Y_1": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.62e-05,
+          "before_m3": 2.62e-05
+        },
+        "metal_rail_post_Y_4 / metal_rail_attach_Y_4": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.0623e-05,
+          "before_m3": 3.0623e-05
+        },
+        "metal_rail_post_Y_5 / metal_rail_Y_0": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6202e-05,
+          "before_m3": 2.6202e-05
+        },
+        "metal_rail_post_Y_5 / metal_rail_Y_1": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6202e-05,
+          "before_m3": 2.6202e-05
+        },
+        "metal_rail_post_Y_5 / metal_rail_attach_Y_5": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.0632e-05,
+          "before_m3": 3.0632e-05
+        },
+        "metal_rail_post_Y_6 / metal_rail_Y_0": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6202e-05,
+          "before_m3": 2.6202e-05
+        },
+        "metal_rail_post_Y_6 / metal_rail_Y_1": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6202e-05,
+          "before_m3": 2.6202e-05
+        },
+        "metal_rail_post_Y_6 / metal_rail_attach_Y_6": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.0631e-05,
+          "before_m3": 3.0631e-05
+        },
+        "metal_rail_post_Y_7 / metal_rail_Y_0": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6199e-05,
+          "before_m3": 2.6199e-05
+        },
+        "metal_rail_post_Y_7 / metal_rail_Y_1": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6199e-05,
+          "before_m3": 2.6199e-05
+        },
+        "metal_rail_post_Y_7 / metal_rail_attach_Y_7": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.0614e-05,
+          "before_m3": 3.0614e-05
+        },
+        "metal_rail_post_Y_8 / metal_rail_Y_0": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6199e-05,
+          "before_m3": 2.6199e-05
+        },
+        "metal_rail_post_Y_8 / metal_rail_Y_1": {
+          "kind": "rail through post front flange (unchanged)",
+          "m3": 2.6199e-05,
+          "before_m3": 2.6199e-05
+        },
+        "metal_rail_post_Y_8 / metal_rail_attach_Y_8": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 3.0614e-05,
+          "before_m3": 3.0614e-05
+        },
+        "repair_gusset_X_east_-1_bolts / X_LC8": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 0.000114736,
+          "before_m3": 0.000114736
+        },
+        "repair_gusset_X_east_-1_bolts / X_UC8": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 0.000219249,
+          "before_m3": 0.000219249
+        },
+        "repair_gusset_X_east_-1_bolts / floorbeam9": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.658e-05,
+          "before_m3": 4.658e-05
+        },
+        "repair_gusset_X_east_-1_bolts / lateral_4_-1": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 6.6e-06,
+          "before_m3": 6.6e-06
+        },
+        "repair_gusset_X_east_-1_bolts / truss_bearing_fixed_X_sole": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1221e-05,
+          "before_m3": 4.1221e-05
+        },
+        "repair_gusset_X_west_-1_bolts / X_LC0": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 0.000114735,
+          "before_m3": 0.000114735
+        },
+        "repair_gusset_X_west_-1_bolts / X_UC0": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 0.000219237,
+          "before_m3": 0.000219237
+        },
+        "repair_gusset_X_west_-1_bolts / floorbeam0": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.658e-05,
+          "before_m3": 4.658e-05
+        },
+        "repair_gusset_X_west_-1_bolts / lateral_0_1": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 6.586e-06,
+          "before_m3": 6.586e-06
+        },
+        "repair_gusset_X_west_-1_bolts / truss_bearing_expansion_X_sole": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.122e-05,
+          "before_m3": 4.122e-05
+        },
+        "repair_gusset_Y_east_1_bolts / Y_LC8": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 8.9844e-05,
+          "before_m3": 8.9844e-05
+        },
+        "repair_gusset_Y_east_1_bolts / Y_UC8": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 0.000171613,
+          "before_m3": 0.000171613
+        },
+        "repair_gusset_Y_east_1_bolts / floorbeam9": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.6581e-05,
+          "before_m3": 4.6581e-05
+        },
+        "repair_gusset_Y_east_1_bolts / lateral_4_1": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4e-08,
+          "before_m3": 4e-08
+        },
+        "repair_gusset_Y_east_1_bolts / truss_bearing_fixed_Y_sole": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1221e-05,
+          "before_m3": 4.1221e-05
+        },
+        "repair_gusset_Y_west_1_bolts / Y_LC0": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 8.984e-05,
+          "before_m3": 8.984e-05
+        },
+        "repair_gusset_Y_west_1_bolts / Y_UC0": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 0.000171602,
+          "before_m3": 0.000171602
+        },
+        "repair_gusset_Y_west_1_bolts / floorbeam0": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.6581e-05,
+          "before_m3": 4.6581e-05
+        },
+        "repair_gusset_Y_west_1_bolts / lateral_0_-1": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4e-08,
+          "before_m3": 4e-08
+        },
+        "repair_gusset_Y_west_1_bolts / truss_bearing_expansion_Y_sole": {
+          "kind": "fastener through plies (holes not modelled)",
+          "m3": 4.1221e-05,
+          "before_m3": 4.1221e-05
+        }
+      }
+    },
+    "before_glb_sha256": "97e5b4f348ab213da4be8e2279dc2dddbfb9d34c9418ef1266d12689746e5cbd",
+    "after_glb_sha256": "2e7874eec8dbc87bead1576d01b34923ce148103ffd6310d5decae5d6b4d6c72"
   }
 }

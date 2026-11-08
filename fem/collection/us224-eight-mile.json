@@ -11,8 +11,8 @@
   "drawing_sha256": "1df89fdef9ac73f333ace80589aa645908cecf4fa6c11fc262c5a767ec9f5086",
   "source_hashes": {
     "drawing": "1df89fdef9ac73f333ace80589aa645908cecf4fa6c11fc262c5a767ec9f5086",
-    "manifest": "a187159f147debfbae85b61bc7c6d615ea9e7ed72c5324a393acd7126a3ba016",
-    "model": "fca5059995d5bca8d5e66dda9ece8f761e4b1679960443246361daf038ddc9e6"
+    "manifest": "33c89ae20d60d7dfdbe00ebbe0d164ee18d011c7acab542ebebb474bb90a9472",
+    "model": "3319dbee4c7c38aa0045b41cde28fef2d0f69547706673b3435916343ee99803"
   },
   "sources": {
     "drawing": {
@@ -746,6 +746,8 @@
     "TFC_transition_1_1",
     "approach_-1",
     "approach_1",
+    "approach_base_-1",
+    "approach_base_1",
     "beam_wrap_0_0",
     "beam_wrap_0_1",
     "beam_wrap_0_2",
@@ -789,6 +791,8 @@
     "mudwall_1",
     "mudwall_2",
     "overlay",
+    "pavement_ledge_1",
+    "pavement_ledge_2",
     "pedestal_0_0",
     "pedestal_0_1",
     "pedestal_0_2",

@@ -5234,28 +5234,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 7 (south exterior) and Beam 6, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -20.012043,
-          -4.879,
-          7.390973
+          -5.02165,
+          7.390877
         ],
         [
           -19.882044,
-          -3.706,
-          7.85177
+          -3.56335,
+          7.851867
         ]
       ],
-      "volume_m3": 0.01136395
+      "volume_m3": 0.014127917
     },
     {
       "id": "diaphragm_1_0_1",
@@ -5263,28 +5265,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 6 and Beam 5, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -21.881968,
-          -3.406,
-          7.406338
+          -3.54865,
+          7.405295
         ],
         [
           -21.751968,
-          -1.928,
-          7.877144
+          -1.78535,
+          7.878187
         ]
       ],
-      "volume_m3": 0.01431876
+      "volume_m3": 0.017082727
     },
     {
       "id": "diaphragm_1_0_2",
@@ -5292,28 +5296,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 5 and Beam 4, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -23.927322,
-          -1.628,
-          7.413594
+          -1.77065,
+          7.411748
         ],
         [
           -23.797323,
-          -0.15,
-          7.892713
+          -0.00735,
+          7.894558
         ]
       ],
-      "volume_m3": 0.01431877
+      "volume_m3": 0.017082739
     },
     {
       "id": "diaphragm_1_0_3",
@@ -5321,28 +5327,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 4 and Beam 3, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -25.972677,
-          0.15,
-          7.406897
+          0.00735,
+          7.405051
         ],
         [
           -25.842678,
-          1.628,
-          7.886016
+          1.77065,
+          7.887861
         ]
       ],
-      "volume_m3": 0.01431877
+      "volume_m3": 0.017082739
     },
     {
       "id": "diaphragm_1_0_4",
@@ -5350,28 +5358,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 3 and Beam 2, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -28.018032,
-          1.928,
-          7.386247
+          1.78535,
+          7.385204
         ],
         [
           -27.888033,
-          3.406,
-          7.857053
+          3.54865,
+          7.858096
         ]
       ],
-      "volume_m3": 0.014318769
+      "volume_m3": 0.017082739
     },
     {
       "id": "diaphragm_1_0_5",
@@ -5379,28 +5389,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 2 and Beam 1 (north exterior), and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -29.887957,
-          3.706,
-          7.358637
+          3.56335,
+          7.35854
         ],
         [
           -29.757956,
-          4.879,
-          7.819434
+          5.02165,
+          7.819531
         ]
       ],
-      "volume_m3": 0.011364078
+      "volume_m3": 0.014128075
     },
     {
       "id": "diaphragm_1_1_0",
@@ -5408,28 +5420,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 7 (south exterior) and Beam 6, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -15.353044,
-          -4.879,
-          7.401785
+          -5.02165,
+          7.401688
         ],
         [
           -15.223043,
-          -3.706,
-          7.862581
+          -3.56335,
+          7.862678
         ]
       ],
-      "volume_m3": 0.011364047
+      "volume_m3": 0.014128036
     },
     {
       "id": "diaphragm_1_1_1",
@@ -5437,28 +5451,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 6 and Beam 5, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -17.222967,
-          -3.406,
-          7.418293
+          -3.54865,
+          7.41725
         ],
         [
           -17.092968,
-          -1.928,
-          7.889099
+          -1.78535,
+          7.890142
         ]
       ],
-      "volume_m3": 0.014318851
+      "volume_m3": 0.017082837
     },
     {
       "id": "diaphragm_1_1_2",
@@ -5466,28 +5482,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 5 and Beam 4, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -19.268322,
-          -1.628,
-          7.426799
+          -1.77065,
+          7.424954
         ],
         [
           -19.138323,
-          -0.15,
-          7.905918
+          -0.00735,
+          7.907763
         ]
       ],
-      "volume_m3": 0.014318852
+      "volume_m3": 0.017082836
     },
     {
       "id": "diaphragm_1_1_3",
@@ -5495,28 +5513,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 4 and Beam 3, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -21.313677,
-          0.15,
-          7.421352
+          0.00735,
+          7.419507
         ],
         [
           -21.183678,
-          1.628,
-          7.900472
+          1.77065,
+          7.902317
         ]
       ],
-      "volume_m3": 0.01431877
+      "volume_m3": 0.017082739
     },
     {
       "id": "diaphragm_1_1_4",
@@ -5524,28 +5544,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 3 and Beam 2, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -23.359032,
-          1.928,
-          7.401953
+          1.78535,
+          7.40091
         ],
         [
           -23.229033,
-          3.406,
-          7.87276
+          3.54865,
+          7.873803
         ]
       ],
-      "volume_m3": 0.014318769
+      "volume_m3": 0.017082739
     },
     {
       "id": "diaphragm_1_1_5",
@@ -5553,28 +5575,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 2 and Beam 1 (north exterior), and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -25.228956,
-          3.706,
-          7.375487
+          3.56335,
+          7.37539
         ],
         [
           -25.098957,
-          4.879,
-          7.836283
+          5.02165,
+          7.83638
         ]
       ],
-      "volume_m3": 0.01136395
+      "volume_m3": 0.014127917
     },
     {
       "id": "diaphragm_1_2_0",
@@ -5582,28 +5606,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 7 (south exterior) and Beam 6, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -10.694043,
-          -4.879,
-          7.409748
+          -5.02165,
+          7.409651
         ],
         [
           -10.564044,
-          -3.706,
-          7.870544
+          -3.56335,
+          7.870641
         ]
       ],
-      "volume_m3": 0.011364015
+      "volume_m3": 0.014127997
     },
     {
       "id": "diaphragm_1_2_1",
@@ -5611,28 +5637,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 6 and Beam 5, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -12.563968,
-          -3.406,
-          7.427399
+          -3.54865,
+          7.426356
         ],
         [
           -12.433968,
-          -1.928,
-          7.898205
+          -1.78535,
+          7.899248
         ]
       ],
-      "volume_m3": 0.014318809
+      "volume_m3": 0.017082786
     },
     {
       "id": "diaphragm_1_2_2",
@@ -5640,28 +5668,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 5 and Beam 4, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -14.609323,
-          -1.628,
-          7.437156
+          -1.77065,
+          7.43531
         ],
         [
           -14.479322,
-          -0.15,
-          7.916275
+          -0.00735,
+          7.91812
         ]
       ],
-      "volume_m3": 0.01431881
+      "volume_m3": 0.017082786
     },
     {
       "id": "diaphragm_1_2_3",
@@ -5669,28 +5699,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 4 and Beam 3, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -16.654678,
-          0.15,
-          7.432959
+          0.00735,
+          7.431114
         ],
         [
           -16.524677,
-          1.628,
-          7.912079
+          1.77065,
+          7.913924
         ]
       ],
-      "volume_m3": 0.014318931
+      "volume_m3": 0.01708293
     },
     {
       "id": "diaphragm_1_2_4",
@@ -5698,28 +5730,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 3 and Beam 2, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -18.700033,
-          1.928,
-          7.414811
+          1.78535,
+          7.413768
         ],
         [
           -18.570032,
-          3.406,
-          7.885618
+          3.54865,
+          7.886661
         ]
       ],
-      "volume_m3": 0.014318848
+      "volume_m3": 0.017082833
     },
     {
       "id": "diaphragm_1_2_5",
@@ -5727,28 +5761,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 2 and Beam 1 (north exterior), and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -20.569956,
-          3.706,
-          7.389488
+          3.56335,
+          7.389391
         ],
         [
           -20.439957,
-          4.879,
-          7.850284
+          5.02165,
+          7.850381
         ]
       ],
-      "volume_m3": 0.011364015
+      "volume_m3": 0.014127997
     },
     {
       "id": "diaphragm_2_0_0",
@@ -5756,28 +5792,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 7 (south exterior) and Beam 6, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -0.548544,
-          -4.879,
-          7.417232
+          -5.02165,
+          7.417135
         ],
         [
           -0.418544,
-          -3.706,
-          7.878028
+          -3.56335,
+          7.878125
         ]
       ],
-      "volume_m3": 0.011364074
+      "volume_m3": 0.01412807
     },
     {
       "id": "diaphragm_2_0_1",
@@ -5785,28 +5823,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 6 and Beam 5, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -2.418468,
-          -3.406,
-          7.437373
+          -3.54865,
+          7.43633
         ],
         [
           -2.288467,
-          -1.928,
-          7.908179
+          -1.78535,
+          7.909222
         ]
       ],
-      "volume_m3": 0.014319043
+      "volume_m3": 0.017083065
     },
     {
       "id": "diaphragm_2_0_2",
@@ -5814,28 +5854,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 5 and Beam 4, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -4.463822,
-          -1.628,
-          7.449853
+          -1.77065,
+          7.448008
         ],
         [
           -4.333822,
-          -0.15,
-          7.928972
+          -0.00735,
+          7.930818
         ]
       ],
-      "volume_m3": 0.01431881
+      "volume_m3": 0.017082786
     },
     {
       "id": "diaphragm_2_0_3",
@@ -5843,28 +5885,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 4 and Beam 3, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -6.509178,
-          0.15,
-          7.44838
+          0.00735,
+          7.446535
         ],
         [
           -6.379178,
-          1.628,
-          7.9275
+          1.77065,
+          7.929345
         ]
       ],
-      "volume_m3": 0.014318892
+      "volume_m3": 0.017082883
     },
     {
       "id": "diaphragm_2_0_4",
@@ -5872,28 +5916,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 3 and Beam 2, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -8.554533,
-          1.928,
-          7.432955
+          1.78535,
+          7.431912
         ],
         [
           -8.424533,
-          3.406,
-          7.903761
+          3.54865,
+          7.904804
         ]
       ],
-      "volume_m3": 0.014319418
+      "volume_m3": 0.017083513
     },
     {
       "id": "diaphragm_2_0_5",
@@ -5901,28 +5947,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 2 and Beam 1 (north exterior), and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -10.424457,
-          3.706,
-          7.410121
+          3.56335,
+          7.410025
         ],
         [
           -10.294456,
-          4.879,
-          7.870918
+          5.02165,
+          7.871015
         ]
       ],
-      "volume_m3": 0.011363982
+      "volume_m3": 0.014127956
     },
     {
       "id": "diaphragm_2_1_0",
@@ -5930,28 +5978,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 7 (south exterior) and Beam 6, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           4.937956,
-          -4.879,
-          7.415652
+          -5.02165,
+          7.415555
         ],
         [
           5.067956,
-          -3.706,
-          7.876448
+          -3.56335,
+          7.876545
         ]
       ],
-      "volume_m3": 0.011363974
+      "volume_m3": 0.014127946
     },
     {
       "id": "diaphragm_2_1_1",
@@ -5959,28 +6009,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 6 and Beam 5, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           3.068033,
-          -3.406,
-          7.437139
+          -3.54865,
+          7.436096
         ],
         [
           3.198033,
-          -1.928,
-          7.907946
+          -1.78535,
+          7.908989
         ]
       ],
-      "volume_m3": 0.014318809
+      "volume_m3": 0.017082786
     },
     {
       "id": "diaphragm_2_1_2",
@@ -5988,28 +6040,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 5 and Beam 4, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           1.022678,
-          -1.628,
-          7.451092
+          -1.77065,
+          7.449246
         ],
         [
           1.152678,
-          -0.15,
-          7.930211
+          -0.00735,
+          7.932056
         ]
       ],
-      "volume_m3": 0.014318805
+      "volume_m3": 0.01708278
     },
     {
       "id": "diaphragm_2_1_3",
@@ -6017,28 +6071,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 4 and Beam 3, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -1.022678,
-          0.15,
-          7.451092
+          0.00735,
+          7.449246
         ],
         [
           -0.892677,
-          1.628,
-          7.930211
+          1.77065,
+          7.932056
         ]
       ],
-      "volume_m3": 0.014318883
+      "volume_m3": 0.017082874
     },
     {
       "id": "diaphragm_2_1_4",
@@ -6046,28 +6102,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 3 and Beam 2, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -3.068033,
-          1.928,
-          7.437139
+          1.78535,
+          7.436096
         ],
         [
           -2.938033,
-          3.406,
-          7.907946
+          3.54865,
+          7.908989
         ]
       ],
-      "volume_m3": 0.014318799
+      "volume_m3": 0.017082774
     },
     {
       "id": "diaphragm_2_1_5",
@@ -6075,28 +6133,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 2 and Beam 1 (north exterior), and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           -4.937956,
-          3.706,
-          7.415652
+          3.56335,
+          7.415555
         ],
         [
           -4.807956,
-          4.879,
-          7.876448
+          5.02165,
+          7.876545
         ]
       ],
-      "volume_m3": 0.011363974
+      "volume_m3": 0.014127946
     },
     {
       "id": "diaphragm_2_2_0",
@@ -6104,28 +6164,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 7 (south exterior) and Beam 6, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           10.424457,
-          -4.879,
-          7.410121
+          -5.02165,
+          7.410025
         ],
         [
           10.554457,
-          -3.706,
-          7.870918
+          -3.56335,
+          7.871015
         ]
       ],
-      "volume_m3": 0.011363982
+      "volume_m3": 0.014127956
     },
     {
       "id": "diaphragm_2_2_1",
@@ -6133,28 +6195,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 6 and Beam 5, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           8.554533,
-          -3.406,
-          7.432955
+          -3.54865,
+          7.431912
         ],
         [
           8.684532,
-          -1.928,
-          7.903761
+          -1.78535,
+          7.904804
         ]
       ],
-      "volume_m3": 0.014318769
+      "volume_m3": 0.017082739
     },
     {
       "id": "diaphragm_2_2_2",
@@ -6162,28 +6226,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 5 and Beam 4, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           6.509178,
-          -1.628,
-          7.44838
+          -1.77065,
+          7.446535
         ],
         [
           6.639177,
-          -0.15,
-          7.9275
+          -0.00735,
+          7.929345
         ]
       ],
-      "volume_m3": 0.014318872
+      "volume_m3": 0.01708286
     },
     {
       "id": "diaphragm_2_2_3",
@@ -6191,28 +6257,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 4 and Beam 3, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           4.463822,
-          0.15,
-          7.449853
+          0.00735,
+          7.448008
         ],
         [
           4.593822,
-          1.628,
-          7.928972
+          1.77065,
+          7.930818
         ]
       ],
-      "volume_m3": 0.01431881
+      "volume_m3": 0.017082786
     },
     {
       "id": "diaphragm_2_2_4",
@@ -6220,28 +6288,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 3 and Beam 2, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           2.418468,
-          1.928,
-          7.437373
+          1.78535,
+          7.43633
         ],
         [
           2.548467,
-          3.406,
-          7.908179
+          3.54865,
+          7.909222
         ]
       ],
-      "volume_m3": 0.014318881
+      "volume_m3": 0.017082872
     },
     {
       "id": "diaphragm_2_2_5",
@@ -6249,28 +6319,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 2 and Beam 1 (north exterior), and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           0.548544,
-          3.706,
-          7.417232
+          3.56335,
+          7.417135
         ],
         [
           0.678544,
-          4.879,
-          7.878028
+          5.02165,
+          7.878125
         ]
       ],
-      "volume_m3": 0.011364073
+      "volume_m3": 0.014128069
     },
     {
       "id": "diaphragm_3_0_0",
@@ -6278,28 +6350,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 7 (south exterior) and Beam 6, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           20.569956,
-          -4.879,
-          7.389488
+          -5.02165,
+          7.389391
         ],
         [
           20.699957,
-          -3.706,
-          7.850284
+          -3.56335,
+          7.850381
         ]
       ],
-      "volume_m3": 0.011364078
+      "volume_m3": 0.014128075
     },
     {
       "id": "diaphragm_3_0_1",
@@ -6307,28 +6381,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 6 and Beam 5, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           18.700033,
-          -3.406,
-          7.414811
+          -3.54865,
+          7.413768
         ],
         [
           18.830032,
-          -1.928,
-          7.885618
+          -1.78535,
+          7.886661
         ]
       ],
-      "volume_m3": 0.014318769
+      "volume_m3": 0.017082739
     },
     {
       "id": "diaphragm_3_0_2",
@@ -6336,28 +6412,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 5 and Beam 4, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           16.654678,
-          -1.628,
-          7.432959
+          -1.77065,
+          7.431114
         ],
         [
           16.784678,
-          -0.15,
-          7.912079
+          -0.00735,
+          7.913924
         ]
       ],
-      "volume_m3": 0.014318852
+      "volume_m3": 0.017082836
     },
     {
       "id": "diaphragm_3_0_3",
@@ -6365,28 +6443,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 4 and Beam 3, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           14.609323,
-          0.15,
-          7.437156
+          0.00735,
+          7.43531
         ],
         [
           14.739323,
-          1.628,
-          7.916275
+          1.77065,
+          7.91812
         ]
       ],
-      "volume_m3": 0.01431881
+      "volume_m3": 0.017082786
     },
     {
       "id": "diaphragm_3_0_4",
@@ -6394,28 +6474,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 3 and Beam 2, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           12.563968,
-          1.928,
-          7.427399
+          1.78535,
+          7.426356
         ],
         [
           12.693968,
-          3.406,
-          7.898205
+          3.54865,
+          7.899248
         ]
       ],
-      "volume_m3": 0.014318809
+      "volume_m3": 0.017082786
     },
     {
       "id": "diaphragm_3_0_5",
@@ -6423,28 +6505,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 2 and Beam 1 (north exterior), and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           10.694043,
-          3.706,
-          7.409748
+          3.56335,
+          7.409651
         ],
         [
           10.824043,
-          4.879,
-          7.870544
+          5.02165,
+          7.870641
         ]
       ],
-      "volume_m3": 0.01136453
+      "volume_m3": 0.014128637
     },
     {
       "id": "diaphragm_3_1_0",
@@ -6452,28 +6536,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 7 (south exterior) and Beam 6, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           25.228956,
-          -4.879,
-          7.375487
+          -5.02165,
+          7.37539
         ],
         [
           25.358957,
-          -3.706,
-          7.836283
+          -3.56335,
+          7.83638
         ]
       ],
-      "volume_m3": 0.011364013
+      "volume_m3": 0.014127994
     },
     {
       "id": "diaphragm_3_1_1",
@@ -6481,28 +6567,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 6 and Beam 5, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           23.359032,
-          -3.406,
-          7.401953
+          -3.54865,
+          7.40091
         ],
         [
           23.489033,
-          -1.928,
-          7.87276
+          -1.78535,
+          7.873803
         ]
       ],
-      "volume_m3": 0.014318848
+      "volume_m3": 0.017082833
     },
     {
       "id": "diaphragm_3_1_2",
@@ -6510,28 +6598,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 5 and Beam 4, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           21.313677,
-          -1.628,
-          7.421352
+          -1.77065,
+          7.419507
         ],
         [
           21.443678,
-          -0.15,
-          7.900472
+          -0.00735,
+          7.902317
         ]
       ],
-      "volume_m3": 0.014318849
+      "volume_m3": 0.017082833
     },
     {
       "id": "diaphragm_3_1_3",
@@ -6539,28 +6629,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 4 and Beam 3, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           19.268322,
-          0.15,
-          7.426799
+          0.00735,
+          7.424954
         ],
         [
           19.398323,
-          1.628,
-          7.905918
+          1.77065,
+          7.907763
         ]
       ],
-      "volume_m3": 0.014318931
+      "volume_m3": 0.01708293
     },
     {
       "id": "diaphragm_3_1_4",
@@ -6568,28 +6660,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 3 and Beam 2, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           17.222967,
-          1.928,
-          7.418293
+          1.78535,
+          7.41725
         ],
         [
           17.352968,
-          3.406,
-          7.889099
+          3.54865,
+          7.890142
         ]
       ],
-      "volume_m3": 0.01431893
+      "volume_m3": 0.017082931
     },
     {
       "id": "diaphragm_3_1_5",
@@ -6597,28 +6691,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 2 and Beam 1 (north exterior), and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           15.353044,
-          3.706,
-          7.401785
+          3.56335,
+          7.401688
         ],
         [
           15.483044,
-          4.879,
-          7.862581
+          5.02165,
+          7.862678
         ]
       ],
-      "volume_m3": 0.011364047
+      "volume_m3": 0.014128036
     },
     {
       "id": "diaphragm_3_2_0",
@@ -6626,28 +6722,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 7 and 6 raised 87 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 7 (south exterior) and Beam 6, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           29.887957,
-          -4.879,
-          7.358637
+          -5.02165,
+          7.35854
         ],
         [
           30.017956,
-          -3.706,
-          7.819434
+          -3.56335,
+          7.819531
         ]
       ],
-      "volume_m3": 0.011364015
+      "volume_m3": 0.014127997
     },
     {
       "id": "diaphragm_3_2_1",
@@ -6655,28 +6753,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 6 and 5 raised 86 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 6 and Beam 5, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           28.018032,
-          -3.406,
-          7.386247
+          -3.54865,
+          7.385204
         ],
         [
           28.148033,
-          -1.928,
-          7.857053
+          -1.78535,
+          7.858096
         ]
       ],
-      "volume_m3": 0.014318848
+      "volume_m3": 0.017082833
     },
     {
       "id": "diaphragm_3_2_2",
@@ -6684,28 +6784,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 5 and 4 raised 73 / 50 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 5 and Beam 4, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           25.972677,
-          -1.628,
-          7.406897
+          -1.77065,
+          7.405051
         ],
         [
           26.102678,
-          -0.15,
-          7.886016
+          -0.00735,
+          7.887861
         ]
       ],
-      "volume_m3": 0.014318849
+      "volume_m3": 0.017082833
     },
     {
       "id": "diaphragm_3_2_3",
@@ -6713,28 +6815,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 4 and 3 raised 50 / 73 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 4 and Beam 3, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           23.927322,
-          0.15,
-          7.413594
+          0.00735,
+          7.411748
         ],
         [
           24.057322,
-          1.628,
-          7.892713
+          1.77065,
+          7.894558
         ]
       ],
-      "volume_m3": 0.01431877
+      "volume_m3": 0.017082739
     },
     {
       "id": "diaphragm_3_2_4",
@@ -6742,28 +6846,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 3 and 2 raised 73 / 86 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 3 and Beam 2, and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1763 mm face to face (was 1478 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.7633,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           21.881968,
-          1.928,
-          7.406338
+          1.78535,
+          7.405295
         ],
         [
           22.011967,
-          3.406,
-          7.877144
+          3.54865,
+          7.878187
         ]
       ],
-      "volume_m3": 0.01431876
+      "volume_m3": 0.017082727
     },
     {
       "id": "diaphragm_3_2_5",
@@ -6771,28 +6877,30 @@
       "layer": "diaphragms",
       "color": "#8d9b9c",
       "pdf_pages": [
+        6,
         11,
-        12,
-        25
+        14
       ],
-      "basis": "Channel envelope; row stations simplified",
-      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table).",
+      "basis": "Representative 460 x 130 mm channel envelope spanning web face to web face at a simplified row station; the W460x67 section and its web connection are not detailed in the bundle",
+      "note": "Actual framing has staggered rows and retained W460 diaphragms. This selectable layout preserves transverse connectivity, not a shop layout. Plan numbering per sheet 11: Beam 1 is the north exterior line. Third correction: follows Beams 2 and 1 raised 86 / 87 mm (sheet 15 fillet table). Fourth correction (3D review SR8-S01): the envelope stopped 150 mm from each beam centre line, 143 mm short of the webs of Beam 2 and Beam 1 (north exterior), and touched neither girder. It is extended along its own axis to both web faces (W840x193 web 14.7 mm; existing W840x193 in Spans B, C and D per sheets 11 and 14), 1458 mm face to face (was 1173 mm). Sheet 11 shows the existing W460x67 diaphragms (Typ.) framing beam to beam but no connection detail; sheet 12 Detail \"B\" and shop sheet M1 cover only the new end-span MC460 diaphragms. The extended ends stand for that undetailed connection: known_deviations retained-diaphragm-connections.",
       "dimensions": {
-        "depth_m": 0.46
+        "depth_m": 0.46,
+        "length_m": 1.4583,
+        "ends": "girder web faces (schematic connection)"
       },
       "bounds_m": [
         [
           20.012043,
-          3.706,
-          7.390973
+          3.56335,
+          7.390877
         ],
         [
           20.142044,
-          4.879,
-          7.85177
+          5.02165,
+          7.851867
         ]
       ],
-      "volume_m3": 0.011364013
+      "volume_m3": 0.014127994
     },
     {
       "id": "diaphragm_4_0_0",
@@ -10281,7 +10389,7 @@
     }
   ],
   "review_correction": "sr8-yellow-review-2026-11",
-  "revision": "1.3-deviations",
+  "revision": "1.4-3d-review",
   "review_correction_record": {
     "source_pdf_pages": [
       5,
@@ -10593,6 +10701,13 @@
       "source": "sheet 9 (note: \"For Type 1A Joint, See Bridge Std. 724-BJTS-01\"; Section A-A), sheet 18 Section A-A",
       "deviation": "The joint is a schematic strip 25 mm along X and 80 mm deep filling the modelled separation between the bridge-floor end and the approach slab; the sections show the slabs abutting with the Type 1A joint at the surface, without dimensions.",
       "reason": "Bridge Std. 724-BJTS-01 (Type 1A joint) is not in the bundle."
+    },
+    {
+      "id": "retained-diaphragm-connections",
+      "parts": "diaphragm_1_*, diaphragm_2_*, diaphragm_3_* (54 retained diaphragms)",
+      "source": "sheet 11 Framing Plan (\"Exist. W460x67 Diaphragm (Typ.)\", diaphragm spacing), sheet 14 Half Section (\"Existing W840 x 193 (Spans B, C & D)\"), sheet 6 General Notes",
+      "deviation": "The retained W460x67 diaphragms are a 460 x 130 mm channel envelope (14 mm web and flanges) that runs from girder web face to web face (F/F 1458 / 1763 mm), level across each bay 82-118 mm above the girder mid-depth, at the simplified row stations. The extended ends stand for the web connection; the W460x67 section, its connection plates or angles, bolts or welds, copes and its height on the web are not modelled.",
+      "reason": "The 1997 bundle details only the new end-span framing (sheet 12 Detail \"B\", shop sheet M1); no sheet details the retained diaphragms or their connections, and the 2026 reference (B-43353) is a deck overlay with no steel details. Sheet 6 General Notes point to the plans of the existing structure, Bridge File 8-75-4883 and 8-75-4883A, which are not in the bundle; they (or a field survey) would settle the section, connection and height."
     }
   ],
   "review_correction_2": "sr8-yellow-review-2-2026-11",
@@ -10974,5 +11089,83 @@
     ],
     "before_glb_sha256": "b36087a19c0ac603912d3f30026e12fd5265b92ed4bc9e5e4034528c28c51e69",
     "after_glb_sha256": "c2440e9ecd63c29278648ec83f8a9c972d72f4d72c505a94e75ed49ff90b834a"
+  },
+  "review_correction_3d": "sr8-yellow-3d-review-2026-11",
+  "review_correction_record_3d": {
+    "source_pdf_pages": [
+      6,
+      11,
+      12,
+      14,
+      25
+    ],
+    "printed_sheets": "PDF pages 1-20 are printed sheets 1-20; PDF 25 is shop sheet M1 (new end-span diaphragms only)",
+    "findings": {
+      "SR8-S01": "RESOLVE: the 54 retained diaphragms of Spans B, C and D stopped 150 mm from the beam centre lines (142.65 mm short of both webs, 51-85 mm clear of the flanges) and touched no girder. Each channel envelope is extended along its own axis to the two web faces it frames into (F/F 1458 / 1763 mm), so both ends bear on the webs over the full 460 mm depth. The 24 end-span MC460 assemblies already touched both webs through their M1H1 angles and are unchanged."
+    },
+    "decisions": {
+      "connection": "Sheet 11 shows the existing W460x67 diaphragms framing beam line to beam line but no sheet details their web connection; the shop-sheet MC460 angles (M1, sheet 12 Detail \"B\") belong to the new end spans and are not copied. The envelope runs to the web faces and its ends stand for the undetailed connection (known_deviations retained-diaphragm-connections).",
+      "third correction": "Not the cause: the third correction sheared every diaphragm with the beams it raised (about 2 mm less than the beams at the old ends, which lay 150 mm inside the beam lines). The retained envelopes keep their level section +82 to +118 mm above the girder mid-depth, as generated; height, section and row stations are not changed."
+    },
+    "changed_parts": [
+      "diaphragm_1_0_0",
+      "diaphragm_1_0_1",
+      "diaphragm_1_0_2",
+      "diaphragm_1_0_3",
+      "diaphragm_1_0_4",
+      "diaphragm_1_0_5",
+      "diaphragm_1_1_0",
+      "diaphragm_1_1_1",
+      "diaphragm_1_1_2",
+      "diaphragm_1_1_3",
+      "diaphragm_1_1_4",
+      "diaphragm_1_1_5",
+      "diaphragm_1_2_0",
+      "diaphragm_1_2_1",
+      "diaphragm_1_2_2",
+      "diaphragm_1_2_3",
+      "diaphragm_1_2_4",
+      "diaphragm_1_2_5",
+      "diaphragm_2_0_0",
+      "diaphragm_2_0_1",
+      "diaphragm_2_0_2",
+      "diaphragm_2_0_3",
+      "diaphragm_2_0_4",
+      "diaphragm_2_0_5",
+      "diaphragm_2_1_0",
+      "diaphragm_2_1_1",
+      "diaphragm_2_1_2",
+      "diaphragm_2_1_3",
+      "diaphragm_2_1_4",
+      "diaphragm_2_1_5",
+      "diaphragm_2_2_0",
+      "diaphragm_2_2_1",
+      "diaphragm_2_2_2",
+      "diaphragm_2_2_3",
+      "diaphragm_2_2_4",
+      "diaphragm_2_2_5",
+      "diaphragm_3_0_0",
+      "diaphragm_3_0_1",
+      "diaphragm_3_0_2",
+      "diaphragm_3_0_3",
+      "diaphragm_3_0_4",
+      "diaphragm_3_0_5",
+      "diaphragm_3_1_0",
+      "diaphragm_3_1_1",
+      "diaphragm_3_1_2",
+      "diaphragm_3_1_3",
+      "diaphragm_3_1_4",
+      "diaphragm_3_1_5",
+      "diaphragm_3_2_0",
+      "diaphragm_3_2_1",
+      "diaphragm_3_2_2",
+      "diaphragm_3_2_3",
+      "diaphragm_3_2_4",
+      "diaphragm_3_2_5"
+    ],
+    "removed_parts": [],
+    "added_parts": [],
+    "before_glb_sha256": "c2440e9ecd63c29278648ec83f8a9c972d72f4d72c505a94e75ed49ff90b834a",
+    "after_glb_sha256": "4cac89d3006b65d6ae79d3a899fbe32d9a074a74d7256ebf051ae1e6ccde85e3"
   }
 }

@@ -12,8 +12,8 @@
   "drawing_sha256": "7164535956200383479db051aff49d347424ab04c047ff4b6cc398b3e1a3975f",
   "source_hashes": {
     "drawing": "7164535956200383479db051aff49d347424ab04c047ff4b6cc398b3e1a3975f",
-    "manifest": "131213b0537cae75f295efd2266f813642e6045467c7cc0b248ef72f8fd5eb1f",
-    "model": "97e5b4f348ab213da4be8e2279dc2dddbfb9d34c9418ef1266d12689746e5cbd"
+    "manifest": "1873532c2f6caacb2cfce308ca43c0c9a8620c6d7be95b799b301e0d9c03dc24",
+    "model": "2e7874eec8dbc87bead1576d01b34923ce148103ffd6310d5decae5d6b4d6c72"
   },
   "sources": {
     "drawing": {
@@ -2542,15 +2542,10 @@
     "joint2",
     "joint3",
     "lateral_gusset_0_-1",
-    "lateral_gusset_0_1",
     "lateral_gusset_1_-1",
-    "lateral_gusset_1_1",
     "lateral_gusset_2_-1",
-    "lateral_gusset_2_1",
     "lateral_gusset_3_-1",
-    "lateral_gusset_3_1",
     "lateral_gusset_4_-1",
-    "lateral_gusset_4_1",
     "ledge1",
     "ledge4",
     "metal_rail_X_0",

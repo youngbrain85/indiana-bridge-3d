@@ -18223,7 +18223,7 @@
         50
       ],
       "basis": "Detailed exterior geometry",
-      "note": "Physical longitudinal saw grooves and 3/4 in diameter half-round underside drip grooves. Groove nominal width/depth/pitch from 2022 INDOT revision; contract special provisions not supplied.",
+      "note": "Physical longitudinal saw grooves and 3/4 in diameter half-round underside drip grooves. Groove nominal width/depth/pitch from 2022 INDOT revision; contract special provisions not supplied. Underside crowned 2 % parallel to the top, 8 in thick throughout (sheets 45, 46); it was a flat chord between the drip grooves, 11.83 in thick at the crown (3D review, revision 2.3-3d-review).",
       "dimensions": {
         "length_ft": 252,
         "width_ft": 33,
@@ -18233,7 +18233,8 @@
         "groove_depth_in": 0.1875,
         "groove_pitch_in": 0.75,
         "drip_diameter_in": 0.75,
-        "drip_offset_in": 6
+        "drip_offset_in": 6,
+        "underside_crossfall_pct": 2
       },
       "color": "#c9d1d4",
       "bounds_m": [
@@ -18248,7 +18249,7 @@
           12.761418
         ]
       ],
-      "volume_m3": 192.798006,
+      "volume_m3": 156.405109,
       "external_references": []
     },
     {
@@ -20522,7 +20523,7 @@
       "external_references": []
     }
   ],
-  "revision": "2.2-wing-profile",
+  "revision": "2.3-3d-review",
   "detail_coverage": [
     {
       "feature": "HP12×84 section",
@@ -21248,5 +21249,207 @@
       "deviation": "Tapered top plate is 1 in thick at its centre (about 0.88-1.13 in at its ends); the plan gives 1 in to 1 1/4 in, about 1 1/8 in at the centre.",
       "reason": "The bearing stack is closed between the seat (El. 427.34 / 416.64) and the beam sole plate, both set from plan elevations; the plates are encased in Pour B and are not inspectable."
     }
-  ]
+  ],
+  "review_correction_3d": "deck-underside-crowned-8in",
+  "review_correction_record_3d": {
+    "source_pdf_pages": [
+      46,
+      47
+    ],
+    "printed_sheets": [
+      45,
+      46
+    ],
+    "previous_revision": "2.2-wing-profile",
+    "changed_parts": [
+      "deck"
+    ],
+    "added_parts": [],
+    "removed_parts": [],
+    "resolved": {
+      "S1": "Deck underside crowned 2 % parallel to the top: 8 in (0.2032 m) thick across the whole width, was a flat chord between the drip-groove inner edges (Y = -/+4.867275 m), 0.3005 m thick at the crown; it no longer fills the haunches, beam tops, pier diaphragm tops or Pour B tops, which were already fitted to the crowned underside (sheets 45, 46)."
+    },
+    "decisions": [],
+    "kept": [],
+    "values": {
+      "crown_thickness_m": {
+        "before": 0.300546,
+        "after": 0.2032
+      },
+      "removed_volume_m3": 36.392897,
+      "deck_volume_m3": {
+        "before": 192.798006,
+        "after": 156.405109
+      },
+      "chord_stations": 20,
+      "overlaps_with_deck": {
+        "haunch_A1": {
+          "before_m3": 0.527745,
+          "after_m3": 2e-06,
+          "max_penetration_mm": 0.001,
+          "max_gap_to_soffit_mm": 0.0
+        },
+        "haunch_A2": {
+          "before_m3": 1.297737,
+          "after_m3": 2e-06,
+          "max_penetration_mm": 0.001,
+          "max_gap_to_soffit_mm": 0.0
+        },
+        "haunch_A3": {
+          "before_m3": 1.297737,
+          "after_m3": 3e-06,
+          "max_penetration_mm": 0.001,
+          "max_gap_to_soffit_mm": 0.0
+        },
+        "haunch_A4": {
+          "before_m3": 0.527745,
+          "after_m3": 2e-06,
+          "max_penetration_mm": 0.001,
+          "max_gap_to_soffit_mm": 0.0
+        },
+        "haunch_B1": {
+          "before_m3": 0.588571,
+          "after_m3": 2e-06,
+          "max_penetration_mm": 0.001,
+          "max_gap_to_soffit_mm": 0.0
+        },
+        "haunch_B2": {
+          "before_m3": 1.655376,
+          "after_m3": 3e-06,
+          "max_penetration_mm": 0.001,
+          "max_gap_to_soffit_mm": 0.0
+        },
+        "haunch_B3": {
+          "before_m3": 1.655376,
+          "after_m3": 3e-06,
+          "max_penetration_mm": 0.001,
+          "max_gap_to_soffit_mm": 0.0
+        },
+        "haunch_B4": {
+          "before_m3": 0.588571,
+          "after_m3": 2e-06,
+          "max_penetration_mm": 0.001,
+          "max_gap_to_soffit_mm": 0.0
+        },
+        "haunch_C1": {
+          "before_m3": 0.527743,
+          "after_m3": 1.6e-05,
+          "max_penetration_mm": 0.009,
+          "max_gap_to_soffit_mm": 0.012
+        },
+        "haunch_C2": {
+          "before_m3": 1.230429,
+          "after_m3": 1.6e-05,
+          "max_penetration_mm": 0.009,
+          "max_gap_to_soffit_mm": 0.012
+        },
+        "haunch_C3": {
+          "before_m3": 1.230429,
+          "after_m3": 1.6e-05,
+          "max_penetration_mm": 0.009,
+          "max_gap_to_soffit_mm": 0.012
+        },
+        "haunch_C4": {
+          "before_m3": 0.527743,
+          "after_m3": 1.5e-05,
+          "max_penetration_mm": 0.009,
+          "max_gap_to_soffit_mm": 0.012
+        },
+        "girder_A1": {
+          "before_m3": 0.0,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 24.334
+        },
+        "girder_A2": {
+          "before_m3": 0.853847,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 22.673
+        },
+        "girder_A3": {
+          "before_m3": 0.853847,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 22.673
+        },
+        "girder_A4": {
+          "before_m3": 0.0,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 24.334
+        },
+        "girder_B1": {
+          "before_m3": 0.0,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 24.197
+        },
+        "girder_B2": {
+          "before_m3": 0.744204,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 24.734
+        },
+        "girder_B3": {
+          "before_m3": 0.744204,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 24.734
+        },
+        "girder_B4": {
+          "before_m3": 0.0,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 24.197
+        },
+        "girder_C1": {
+          "before_m3": 0.0,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 23.378
+        },
+        "girder_C2": {
+          "before_m3": 0.921153,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 22.863
+        },
+        "girder_C3": {
+          "before_m3": 0.921153,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 22.863
+        },
+        "girder_C4": {
+          "before_m3": 0.0,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 23.378
+        },
+        "b2_diaphragm": {
+          "before_m3": 0.269162,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.001
+        },
+        "b3_diaphragm": {
+          "before_m3": 0.276823,
+          "after_m3": 1e-06,
+          "max_penetration_mm": 0.001
+        },
+        "b1_integral": {
+          "before_m3": 0.227491,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0
+        },
+        "b4_integral": {
+          "before_m3": 0.227665,
+          "after_m3": 0.000166,
+          "max_penetration_mm": 0.042
+        }
+      }
+    },
+    "before_glb_sha256": "4ae98985d7c34cb74533dfb73170679169cf1dd75d1ecd214baa518d21945803",
+    "after_glb_sha256": "3d87af59b10ddfe9021a3c4dff47f3c282aae37684440e96bafc5dc2c47ddf1b"
+  }
 }

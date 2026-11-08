@@ -48,6 +48,8 @@ corrected GLB.
 
 Each model below was reviewed against its drawings by an independent model review, every finding was checked against the drawings and the model before anything changed, and a second independent check reviewed the corrected model; the remaining confirmed items were corrected in a second script. Each correction is a one-time, idempotent script under `scripts/correct_<bridge>_review*.py`; the manifest of each bridge records the before/after SHA-256, the revision and the `known_deviations` left open.
 
+A fourth round ("Fourth round: 3D review" under each bridge) followed a review of the assembled 3D models for physically implausible placement: parts that float, overlap, duplicate each other or stop short of what they connect to. Each fix is in `scripts/correct_<bridge>_3d_review.py` (revision `1.4-3d-review`), with a `review_correction_record_3d` in the manifest. The same review also covered the illustrative terrain; that is a viewer change, described in the README.
+
 ### 21st Street over I-465 (`21st-street-i465`)
 
 #### 1. Bent 2 diaphragm, concrete railing height and approach slabs (revision 1.1)
@@ -139,6 +141,28 @@ concrete with no gap or overlap, and nothing at Bent 2 changed.
 The model has no known deviations left. `scripts/correct_21st_street_i465_review_3.py` runs after the second script
 and is idempotent.
 
+#### Fourth round: 3D review
+
+A review of the assembled 3D model found two faults in the railings, and the drawings settle both. First, both
+concrete railings floated 37-45 mm above the deck along their whole length. An earlier height fix had lengthened the
+stem but kept the old base. Sheet 59 shows the railing as one mass with the deck. We rebuilt the railing section as
+drawn: the base sits on the deck top, and below the level construction joint the sidewalk-side face meets the
+sidewalk. Above the joint that face stands 1 in behind the head. This also closes a 7 mm slit between the railing and
+the sidewalk. The head and the 34 in height above the sidewalk did not change. Second, the outer ornamental-railing
+posts stood on the railing ends, so half of each end base plate and two of its anchor nuts were over air. Sheet 60
+gives every post station, so we set all 66 posts on those stations. The outer posts now stand 0.75-0.82 m inside the
+railing ends, and every plate and nut is on concrete. The 4'-1 1/2" star bays are kept. The other 30 bays per side
+follow the dimensioned totals, 110'-2 3/4" and 110'-6" over 15 bays each. Pickets, rails and graphics moved with
+their posts. Two small conflicts were settled in favour of sheet 60. The south label 11+97.62 is read as 11+97.87.
+Sheet 61's note about centring on the monuments does not fit the dimensioned chain. No part was added or removed. The
+model has no known deviations. `scripts/correct_21st_street_i465_3d_review.py` runs after the third script and is
+idempotent.
+
+| Corrected object | Count | Before | After | Evidence |
+|---|---:|---|---|---|
+| Concrete railings `parapet_1`, `parapet_-1` | 2 | Base 36.7-45.2 mm above the deck; 7 mm slit at the sidewalk | On the deck top; flush with the sidewalk below the joint, 1 in behind the head above it | Sheet 59 typical section |
+| Ornamental railing posts, caps, plates, nuts, rings, stars, pickets, rails, graphics | 1,656 | Outer posts on the railing ends; 30 equal 7'-6 3/8" bays | Sheet 60 stations; outer posts 0.75-0.82 m inside; bays 110'-2 3/4" / 15 and 110'-6" / 15 | Sheets 60, 61, 62 |
+
 ### US 421 over South Fork Wildcat Creek (`us421-wildcat`)
 
 #### 1. External review corrections (revision 1.1)
@@ -209,6 +233,16 @@ and TFC envelopes are cast on the slab, so their level bottoms now follow the 2 
 at the rear face. Sixteen parts changed and none were added or removed. `scripts/correct_us421_wildcat_review_3.py` reproduces the change after the second script and is
 idempotent. The record and the before/after SHA-256 are `review_correction_3_record` in `model_manifest.json`
 (revision 1.3-deviations).
+
+#### Fourth round: 3D review
+
+A review of the assembled 3D model found four structural defects. All four are resolved in revision 1.4-3d-review.
+- **Rail posts** (sheet 7). The 16 retained metal-rail posts stopped 57 mm short of the truss verticals. Each post now reaches the roadway face of its vertical's web. The 15 mm gap to the curb is drawn on the sheet and stays.
+- **Floor-beam end angles** (sheets 17, 18). The 20 angle pairs stood 43 mm off the floor-beam web. They are now a back-to-back pair on the web, bearing on the inner end gusset at the end floor beams and on the vertical at the others. The bolts pass through both angles and the web. Where the modelled chord and diagonal ends reach into the joint, the angles are trimmed to them.
+- **Drain brackets** (sheet 26). The 12 drain-pipe brackets pointed away from the piers and stopped 18 mm or 196 mm short of the concrete. They are now the drawn U-brackets, with feet on the cap or stem face and two 1/2 in anchors in concrete inserts.
+- **Duplicate gussets** (sheet 16). Five lower-lateral centre plates existed twice. The five copies are removed.
+
+Seventy-two parts changed, five were removed and none were added. `scripts/correct_us421_wildcat_3d_review.py` reproduces the change after the third script and is idempotent. The record and the before/after SHA-256 are `review_correction_record_3d` in `model_manifest.json`.
 
 ### US 52 over Mud Creek (`us52-mud`)
 
@@ -479,6 +513,18 @@ Three items stay open as known deviations, each with the source that would settl
 The model has 309 parts. `scripts/correct_sr8_yellow_review_3.py` reproduces the change and is idempotent. The
 `review_correction_record_3` in `model_manifest.json` lists every changed, added and removed part.
 
+#### Fourth round: 3D review
+
+A review of the assembled 3D model found that the 54 retained diaphragms of Spans B, C and D did not touch the
+girders. Each stopped 143 mm short of both webs. The third correction was not the cause: it moved the diaphragms with
+the raised beams. The gap came from the first model and was fixed earlier only for the new end-span diaphragms.
+Each retained diaphragm now runs from web face to web face, 1458 mm or 1763 mm (sheet 11 Framing Plan, sheet 14). Its
+section, height and row station are unchanged. The bundle does not detail the existing W460x67 diaphragms or their
+connections; sheet 6 points to the plans of the existing structure (Bridge File 8-75-4883 / 4883A). So the ends stand
+for the connection, and this is recorded as the known deviation `retained-diaphragm-connections`. No part was added
+or removed. `scripts/correct_sr8_yellow_3d_review.py` reproduces the change (revision 1.4-3d-review) and is
+idempotent; the `review_correction_record_3d` in `model_manifest.json` lists the 54 changed parts.
+
 ### SR 1 over Wabash River (`sr1-wabash`)
 
 #### SR 1 over the Wabash River: drawing review (revision 1.1)
@@ -666,6 +712,18 @@ Four known deviations of revision 1.1 were closed from the drawings in revision 
 
 The model has 466 parts. `scripts/correct_minnich_road_review_3.py` reproduces the change.
 
+#### Fourth round: 3D review
+
+A review of the assembled model found two problems. First, the 84 ordinary cross frames stood about 51 mm clear of the
+girders, with nothing connecting them. Each frame now hangs on two 1 in x 8 in connection plates. The plates sit on the
+web face and run the full web height between the flanges, with the drawn corner clips (sheets 25 and 33). The two
+diagonals lie flat on opposite faces of the plates and end 1 3/4 in from the web (sheet 33). The twelve frames nearest
+Bents 2 and 4 had one end inside the field-splice plates. They now sit at the drawn station: 12 ft 0 in from the bent at
+the new girder's bottom taper, and 1 ft 6 in across it on the existing girder (sheets 27-28, 30-31). The main-span
+frames keep their representative stations. Their own connections are not drawn in this set, so the new detail stands in
+for them (known deviation). Second, eight stiffener assemblies at Bent 3 were exact duplicates, and they were removed.
+The model now has 458 parts. `scripts/correct_minnich_road_3d_review.py` reproduces the change.
+
 ### Fletcher Avenue over I-65 / I-70 (`fletcher-avenue`)
 
 #### Fletcher Avenue over I-65 / I-70 (revision 1.1)
@@ -739,6 +797,10 @@ elevations fit the 2026 deck only with a datum relation that no sheet gives. The
 wings are also listed, with their drawn dimensions and what is still missing.
 
 `scripts/correct_fletcher_avenue_review_3.py` runs after the second-round script and is idempotent.
+
+#### Fourth round: 3D review
+
+**Revision 1.4.** A review of the assembled model found that the cross frames floated. Each X stopped about 0.3 m from the girder webs, with nothing joining it to them. Sheet **S11** shows how cross frame XF-1 is connected. Its members end on 3/8 in gusset plates at the four corners. Each gusset is bolted with four bolts at 3 in to a connection plate on the girder web. The model now has these gussets: 364 plates in 91 new parts, one part per cross frame. Each plate is 12 in high at the web, which is the 9 in bolt line with 1 1/2 in end distances as on S9/S10. It holds the last 6 in of its diagonal, a length scaled from XF-1. Every diagonal end now sits on a plate, and every plate lies on its web face. Where a bottom lateral gusset crosses a plate, the plate is cut to it. The connection plate itself is not sized on any sheet, so the gusset runs to the web in its place. The X envelope is unchanged, so the XF-1 chords and the 4 ft 0 in depth are still not modelled. This is a new known deviation, `crossframe-xf1-envelope`. `scripts/correct_fletcher_avenue_3d_review.py` runs after the third-round script and is idempotent.
 
 ### SR 10 over I-65 (`sr10-i65`)
 
@@ -932,6 +994,18 @@ Its end details, and what supports the obtuse-corner TFC ends beyond the deck en
 E706-TTFC-01 to -03 and E706-CBRT-01. `scripts/correct_us35_deer_review_3.py` applies this after the first two
 scripts and is idempotent. Two parts were removed and two added; the model has 72 parts.
 
+#### Fourth round: 3D review
+
+A 3D review found that the four wingwalls overlapped the end bents. Each wing started at the span face of the bent,
+so its first 1.21 m lay inside the cap, the outer closure bay and the back strip. That counted 3.94 m3 of concrete
+twice, and the coincident faces showed as stripes. The sheets split this concrete at the back face of the bent. Sheet
+17 bills 5.7 CY for two wingwalls, which is the part beyond the back face (5.70 CY at Bent 2). Sheet 14 draws the bent
+up to the wing top at its ends. Each wing part now starts at the back face of the bent and keeps its tip, faces and
+top. The root inside the bent belongs to the bent. The outer closure bays and the back strips now rise to the wing top
+in the 1 ft wing column. No volume is shared, the overall shape is unchanged, and each wing bears on the back face of
+its bent. `scripts/correct_us35_deer_3d_review.py` applies this after the first three scripts and is idempotent. No
+parts were added or removed; ten parts changed (revision 1.4-3d-review).
+
 ### US 224 over Eight Mile Creek (`us224-eight-mile`)
 
 #### US 224 over Eight Mile Creek: review corrections (revision 1.1)
@@ -1004,6 +1078,18 @@ Three items are still recorded in `known_deviations`: the overlay taper at the m
 paired bearing pads, and the old wingwall root behind the northeast mudwall. None of them is dimensioned in the set.
 Three parts were added and 39 changed, for 94 parts. The source ledger deck length is now the 12.918 m slab between
 the joints. `scripts/correct_us224_eight_mile_review_3.py` reproduces the change from revision 1.2 and is idempotent.
+
+#### Fourth round: 3D review
+
+Revision 1.4 fixes the one structural finding of the 3D review. The approach slabs had nothing under their roots.
+The existing 6 in pavement ledge behind each mudwall was missing. It is now modelled as the 1985 Section A-A
+draws it: 6 in wide and 1 ft 0 in deep. Its top is level, at El. 830.51 at Abutment 1 and 830.49 at Abutment 2,
+as the 1985 elevations give. As sheets 11 and 15 show, each slab end is thickened down to the ledge top. The
+thickening runs 2 ft 0 in behind the mudwall and then returns at 45 deg to the 1 ft soffit. The end is 13.6 to
+18.8 in deep because the slab top is crowned. Each slab now sits on the 9 in lean concrete base of sheet 15. Four
+parts were added and two changed, for 98 parts. The 25 mm open joint at each slab root is kept. Its fillers are
+recorded in `known_deviations`, because Standard E 609-RCBA is not in the set.
+`scripts/correct_us224_eight_mile_3d_review.py` reproduces the change from revision 1.3 and is idempotent.
 
 ### Virginia Avenue over I-65 NB / I-70 EB (`virginia-avenue`)
 
@@ -1265,6 +1351,21 @@ polymer overlay stays a known deviation: sheets 3, 7 and 8 give its plan extent 
 special provision for "Polymer Overlay, Bridge Deck Approaches" would settle it.
 `scripts/correct_sr1_six_mile_review_3.py` runs after `correct_sr1_six_mile_review_2.py` and is idempotent.
 
+#### Fourth round: 3D review
+
+**Revision 1.4: approach seats and wing trims.** A 3D review found that neither approach slab bore on anything. The
+slab undersides are flat at 5.588 m. The end walls under them stop at the deck soffit, 38 mm lower at the crown and
+150 mm lower at the deck edges. No sheet of this overlay contract shows an end bent, a seat, the wings or an
+approach slab section, and the deck, approach slabs, end walls and wings are all assumed. Two new parts, `seat_0`
+and `seat_1`, now fill the part of each end wall that projects past the deck end, from the wall top up to the
+approach underside. They are 0.26 m wide and run the full 47'-1½" width. They use only levels and widths that were
+already in the model, and they are labelled hypothetical. Each approach slab now sits on its seat with no gap. The
+check also found that each of the four wings started at the support line, so 0.53 m³ of it lay inside its end wall
+(2.12 m³ counted twice). Each wing now stops at the wall faces, so every volume belongs to one part. Since no sheet
+shows how the wings meet the walls, this split is a modelling choice. Nothing overlaps now except the 30 mm joint
+display strips, as before. The end walls are unchanged. `scripts/correct_sr1_six_mile_3d_review.py` runs after
+`correct_sr1_six_mile_review_3.py` and is idempotent.
+
 ## 4. Handedness rule (November 2026)
 
 The drawing review found four models that were mirror images of their bridges: US 50 EB over Tanners Creek,
@@ -1322,3 +1423,16 @@ then compared in plan with the corrected models:
 
 `test_orientation.py` covers the rule and `Model`: reflection, refusal without an orientation, the check on save and the
 overwrite guard.
+
+## 5. Beechwood deck underside (revision 2.3, 3D review)
+
+A review of the assembled 3D model found that the deck underside was flat between the drip grooves. Sheets 45 and
+46 (PDF 46 and 47) draw an 8 in deck whose top and underside are parallel and both fall 2 % from the crown. The model
+joined the inner edges of the two drip grooves with one straight line, so the deck was 300.5 mm thick at the crown
+instead of 203.2 mm. It also filled the space of the haunches, the beam tops, the pier diaphragm tops and the tops
+of the end-bent concrete (Pour B), which were already fitted to the crowned underside: up to 32 mm into the inner
+beams, and the inner haunches lay entirely inside the deck. Revision 2.3 gives the deck a crowned underside 8 in
+below the top across the whole width. Only the deck changed; no part was added or removed, and no other part moved.
+The haunch tops now meet the deck, the beams stay under their haunches, and the deck no longer shares volume with
+them (left-over films are below 0.05 mm). `scripts/correct_beechwood_3d_review.py` reproduces the correction from
+revision 2.2 and is idempotent; the record and the before/after SHA-256 are in `model_manifest.json`.
