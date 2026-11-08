@@ -244,6 +244,16 @@ A review of the assembled 3D model found four structural defects. All four are r
 
 Seventy-two parts changed, five were removed and none were added. `scripts/correct_us421_wildcat_3d_review.py` reproduces the change after the third script and is idempotent. The record and the before/after SHA-256 are `review_correction_record_3d` in `model_manifest.json`.
 
+A second 3D review found one more defect. It is resolved in revision 1.5-3d-review-2.
+
+- **Stringer framing** (sheets 16, 17, 18). The stringer end cleats did not reach the floor beams. Each stringer stopped at the floor-beam flange tips. Its cleats stood in that plane, off the stringer web, up to 27 mm below the flange. Sheet 17 (Section A-A at FB0) and sheet 18 (at FB1) draw the existing framing. They show two angles on the stringer web, bolted to the floor-beam web.
+  - Each end now has two 4 x 4 x 3/8 in angles, 9 in long. 7/8 in fasteners pass through the angles, the floor-beam web and the stringer web.
+  - The stringer web now runs to the floor-beam web, under the floor-beam top flange.
+  - At FB0 and FB9 the two outer stringers keep only the inside angle. The floor-beam end angle leaves no room for the outside one. This is recorded as a known deviation.
+- **Floor-beam stiffeners.** The 90 inferred floor-beam stiffeners sat where the drawn framing puts the stringer webs, so they are removed.
+
+243 parts changed, 90 were removed and none were added. `scripts/correct_us421_wildcat_3d_review_2.py` reproduces the change after the fourth script and is idempotent. The record and the before/after SHA-256 are `review_correction_record_3d_2` in `model_manifest.json`.
+
 ### US 52 over Mud Creek (`us52-mud`)
 
 ##### US 52 over Mud Creek: end-bent ledge, approach corners and railings (revision 1.1)

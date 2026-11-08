@@ -97,7 +97,7 @@
         "render_glb": "bridges/us421-wildcat/model_render.glb",
         "deck_length_m": 59.2836,
         "spans": 3,
-        "components": 1052,
+        "components": 962,
         "revision": "Drawing-based exterior geometry v1",
         "scope": "Exterior details; see coverage notes for estimates and simplifications",
         "detail_status": "needs_detail",
