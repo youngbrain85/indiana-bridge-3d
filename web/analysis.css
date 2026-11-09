@@ -1,29 +1,62 @@
-/* Analysis mode panel and the FEM legend on the 3D canvas. Tokens come from ui.css. */
-.fem-inspector h2 { font-size:18px; margin:4px 0; }
-.fem-inspector h3 { margin:16px 0 6px; font-size:13px; }
-.fem-inspector .source-note { font-size:13px; line-height:1.55; }
-.fem-form { display:grid; gap:10px; margin:10px 0; }
-.fem-form label { display:grid; gap:4px; font-size:12px; color:var(--muted); }
-.fem-form select,.fem-form input { width:100%; min-width:0; font-size:13px; height:34px; }
-.fem-form button { font-size:13px; }
-.fem-status { padding:10px 12px; background:var(--raised); border-radius:var(--radius-card); font-size:13px; line-height:1.5; }
-.fem-error { color:var(--pill-negative-ink); background:var(--pill-negative-bg); border-radius:var(--radius-card); padding:10px 12px; font-size:13px; overflow-wrap:anywhere; }
-.fem-result-case { font-size:13px; font-weight:600; line-height:1.5; }
-.fem-hotspots { display:grid; gap:4px; }
-.fem-hotspots button { justify-content:flex-start; height:auto; min-height:32px; text-align:left; font-size:12px; padding:6px 10px; white-space:normal; display:block; }
-.fem-hotspots small { display:block; color:var(--muted); margin-top:2px; font-size:12px; }
-.fem-details { border-top:1px solid var(--rule); padding:12px 0; font-size:13px; line-height:1.55; overflow-wrap:anywhere; }
-.fem-details summary { font-weight:600; font-size:13px; cursor:pointer; }
-.fem-details ul { padding-left:18px; }
-.fem-details li { margin:6px 0; }
-.fem-evidence { border-bottom:1px solid var(--rule); padding:10px 0; font-size:13px; }
-.fem-evidence b { color:var(--text); font-size:12px; font-weight:600; }
-.fem-evidence a { margin-right:10px; }
-.fem-downloads { display:flex; flex-wrap:wrap; gap:8px; margin:10px 0; font-size:13px; }
-.fem-downloads button { font-size:12px; height:28px; }
-.fem-table { width:100%; border-collapse:collapse; font-size:12px; }
-.fem-table th { text-align:left; font-weight:400; color:var(--muted); border-bottom:1px solid var(--border); padding:6px 4px; }
-.fem-table td { text-align:left; border-bottom:1px solid var(--rule); padding:6px 4px; }
+/* Analysis mode panel and the FEM legend on the 3D canvas. Tokens come from ui.css.
+   Order of the panel: title and scope, load case + Run, the displayed result, then folded sections. */
+.fem-inspector{gap:12px}
+.fem-inspector h2{font-size:18px;margin:0}
+.fem-inspector h3{margin:4px 0 0;font-size:14px}
+.fem-inspector h4{margin:12px 0 4px;font-size:13px}
+.fem-scope,.fem-note{font-size:12px;line-height:1.5;color:var(--muted);margin:-4px 0 0}
+.fem-note{margin:0}
+.fem-demo-notice{padding:8px 10px;background:var(--pill-warning-bg);border:1px solid var(--pill-warning-edge);border-radius:var(--radius-card);color:var(--pill-warning-ink);font-size:13px;line-height:1.4}
+.fem-inspector label{display:grid;gap:4px;font-size:12px;color:var(--muted);min-width:0}
+.fem-inspector select,.fem-inspector input[type=number]{width:100%;min-width:0;height:34px;font-size:13px}
+/* Load case (and a demonstration's pressure) beside Run. */
+.fem-run{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+.fem-run>label:first-child{grid-column:1/-1}
+.fem-run:has(#fem_pressure_kPa){grid-template-columns:104px minmax(0,1fr)}
+.fem-run>button{height:36px;align-self:end}
+.fem-status{font-size:12px;color:var(--muted);margin:0}
+.fem-error{color:var(--pill-negative-ink);background:var(--pill-negative-bg);border-radius:var(--radius-card);padding:8px 10px;font-size:13px;overflow-wrap:anywhere}
+/* The displayed result: two peaks as figures, then what the model colours show. */
+.fem-result{display:flex;flex-direction:column;gap:10px;padding-top:14px;border-top:1px solid var(--border)}
+.fem-result-case{font-size:13px;font-weight:500;line-height:1.45;margin:0}
+.fem-peaks{display:grid;grid-template-columns:1fr 1fr;margin:0;border:1px solid var(--border);border-radius:var(--radius-card)}
+.fem-peaks>div{padding:10px 12px;min-width:0}
+.fem-peaks>div+div{border-left:1px solid var(--border)}
+.fem-peaks dt{font-size:12px;color:var(--muted);line-height:1.35}
+.fem-peaks dd{margin:4px 0 0;font-size:22px;font-weight:600;line-height:1.1;white-space:nowrap}
+.fem-peaks .unit{font-size:13px;font-weight:400;color:var(--muted)}
+.fem-view{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.fem-view .wide{grid-column:1/-1}
+.fem-actions{display:flex;flex-wrap:wrap;gap:8px}
+.fem-actions button{flex:1 1 auto;height:30px;font-size:12px}
+.fem-saved select{height:32px}
+/* Members with the largest stress: name and position on the left, the value on one right edge. */
+.fem-hotspots{display:grid;margin-top:-4px}
+.fem-hotspots button{display:flex;justify-content:space-between;align-items:center;gap:12px;height:auto;min-height:44px;padding:6px 8px;margin:0 -8px;border:0;border-bottom:1px solid var(--rule);border-radius:0;background:none;text-align:left;white-space:normal;font-weight:400}
+.fem-hotspots button:hover:not(:disabled){background:var(--raised)}
+.fem-hotspots span{display:grid;font-size:13px;color:var(--text);min-width:0;overflow-wrap:anywhere}
+.fem-hotspots small{font-size:12px;color:var(--muted)}
+.fem-hotspots b{font-weight:600;font-size:13px;white-space:nowrap}
+/* Folded sections. */
+.fem-details{border-top:1px solid var(--border);padding:10px 0 0;font-size:13px;line-height:1.55;overflow-wrap:anywhere}
+.fem-details+.fem-details{margin-top:-2px}
+.fem-details summary{font-weight:600;font-size:13px;cursor:pointer;padding:2px 0}
+.fem-details[open]{padding-bottom:6px}
+.fem-details[open]>summary{margin-bottom:8px}
+.fem-details p{margin:6px 0}
+.fem-details ul{padding-left:18px;margin:4px 0}
+.fem-details li{margin:6px 0}
+.fem-form{display:grid;gap:10px}
+.fem-form button{justify-self:start;font-size:12px;height:30px}
+.fem-evidence{border-bottom:1px solid var(--rule);padding:10px 0;font-size:13px}
+.fem-evidence b{color:var(--text);font-size:12px;font-weight:600}
+.fem-evidence a{margin-right:10px}
+.fem-downloads,.fem-links{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px}
+.fem-links{padding-top:10px;border-top:1px solid var(--border)}
+.fem-table{width:100%;border-collapse:collapse;font-size:12px}
+.fem-table th{text-align:left;font-weight:400;color:var(--muted);border-bottom:1px solid var(--border);padding:6px 4px}
+.fem-table td{text-align:left;border-bottom:1px solid var(--rule);padding:6px 4px}
+.fem-table th:nth-child(n+2),.fem-table td:nth-child(n+2){text-align:right}
 #femLegend { position:absolute; left:14px; bottom:14px; z-index:3; background:#2a2f33; color:#eef1f3; border-radius:var(--radius-card); padding:10px 14px; width:min(345px,calc(100% - 28px)); pointer-events:none; font-size:12px; }
 #femLegend b { display:block; font-size:13px; margin-bottom:4px; }
 #femLegend>span { display:block; font-size:12px; }
@@ -32,8 +65,4 @@
 .fem-color-ramp { height:8px; border-radius:2px; margin-top:8px; background:linear-gradient(to right,#335cde,#17b7ce,#7cdb99,#ffcb55,#ed5947); } /* taste-skill-ignore: data colour scale */
 .fem-legend-ends { display:flex; justify-content:space-between; font-size:12px; margin-top:4px; }
 .canvas-host:has(#femLegend:not([hidden])) .axis-note { display:none; }
-.fem-demo-notice { padding:10px 12px; background:var(--pill-warning-bg); border:1px solid var(--pill-warning-edge); border-radius:var(--radius-card); color:var(--pill-warning-ink); font-size:13px; line-height:1.5; }
-.fem-demo-notice p { margin:6px 0; }
-.fem-demo-notice small { display:block; font-size:12px; }
 .fem-demo-label { color:#ffd8a0; font-size:12px; letter-spacing:.02em; }
-#femAssumedProperties[open] { display:grid; gap:10px; }

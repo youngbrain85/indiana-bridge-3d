@@ -174,12 +174,12 @@ body[data-screen=map] .export-menu{margin-left:auto}
 .workbench.inspector-closed{grid-template-columns:288px minmax(0,1fr) 0}
 .workbench.tree-closed.inspector-closed{grid-template-columns:0 minmax(0,1fr) 0}
 .workbench.tree-closed .tree-panel,.workbench.inspector-closed .inspector-panel{visibility:hidden}
-/* Mode columns: Model/Analysis tree | 3D | inspector; Drawings pages | sheet | inspector; Data register | inspector. */
-.page-rail,.drawing-stage,.member-register{display:none}
-body[data-mode=drawings] .tree-panel,body[data-mode=drawings] .viewer-panel,body[data-mode=members] .tree-panel,body[data-mode=members] .viewer-panel{display:none}
-body[data-mode=drawings] .page-rail,body[data-mode=drawings] .drawing-stage,body[data-mode=members] .member-register{display:flex}
+/* Mode columns: Model/Analysis tree | 3D | inspector; Drawings pages | sheet | inspector; Inspection data table | inspector. */
+.page-rail,.drawing-stage,.inspection-data{display:none}
+body[data-mode=drawings] .tree-panel,body[data-mode=drawings] .viewer-panel,body[data-mode=inspection] .tree-panel,body[data-mode=inspection] .viewer-panel{display:none}
+body[data-mode=drawings] .page-rail,body[data-mode=drawings] .drawing-stage,body[data-mode=inspection] .inspection-data{display:flex}
 body[data-mode=drawings] .workbench{grid-template-columns:196px minmax(0,1fr) 340px}
-body[data-mode=members] .workbench{grid-template-columns:minmax(0,1fr) 340px}
+body[data-mode=inspection] .workbench{grid-template-columns:minmax(0,1fr) 340px}
 .tree-panel,.inspector-panel{display:flex;flex-direction:column;min-height:0;min-width:0;overflow:hidden;background:var(--surface)}
 .tree-panel{border-right:1px solid var(--border)}
 .inspector-panel{border-left:1px solid var(--border)}
@@ -232,7 +232,7 @@ body[data-mode=members] .workbench{grid-template-columns:minmax(0,1fr) 340px}
 .terrain-note{position:absolute;z-index:2;left:14px;bottom:34px;max-width:min(420px,calc(100% - 180px));color:var(--canvas-ink);font-size:12px;line-height:1.4}
 .canvas-host:has(#femLegend:not([hidden])) .terrain-note{display:none}
 .note-short{display:none}
-#terrainToggle[aria-pressed=true]{background:var(--active);font-weight:600}
+#terrainToggle[aria-pressed=true],#defectsToggle[aria-pressed=true]{background:var(--active);font-weight:600}
 .inspector-tabs{display:flex;gap:18px;padding:0 20px;border-bottom:1px solid var(--border);flex:none}
 .inspector-tabs button{height:44px;padding:2px 0 0;border:0;border-bottom:2px solid transparent;border-radius:0;background:none;color:var(--muted)}
 .inspector-tabs button:hover:not(:disabled){background:none;color:var(--text)}
@@ -289,30 +289,33 @@ body[data-mode=members] .workbench{grid-template-columns:minmax(0,1fr) 340px}
 .page-thumb img{justify-self:stretch;display:block;width:100%;aspect-ratio:3/2;object-fit:cover;object-position:top left;border:1px solid var(--border);border-radius:4px;background:#fff}
 .page-thumb:hover img{border-color:var(--accent)}
 
-/* Data mode: the component register */
-.member-register{flex-direction:column;gap:14px;padding:24px 24px 16px;min-width:0;min-height:0;overflow:hidden}
-.register-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
-.register-heading h2{font-size:var(--fs-title)}
-.register-heading p{margin-top:4px;font-size:13px}
-.register-filters{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
-.register-filters input{width:320px;max-width:100%}
-.count-text{margin-left:auto;color:var(--muted);font-size:13px}
-.register-tabs{display:flex;gap:20px;border-bottom:1px solid var(--border);overflow-x:auto;flex:none}
-.register-tabs button{flex:none;height:40px;padding:2px 0 0;border:0;border-bottom:2px solid transparent;border-radius:0;background:none;color:var(--muted);gap:6px}
-.register-tabs button:hover:not(:disabled){background:none;color:var(--text)}
-.register-tabs button[aria-selected=true]{color:var(--text);font-weight:600;border-bottom-color:var(--accent)}
-.tab-count{color:var(--muted);font-weight:400;font-size:12px}
-.register-table tbody tr{cursor:pointer}
-.register-table tr.selected td{background:var(--active)}
-.register-table-wrap{flex:1;min-height:0;overflow:auto}
-.register-table{width:100%;border-collapse:collapse;font-size:13px}
-.register-table th{position:sticky;top:0;background:var(--surface);text-align:left;font-size:12px;font-weight:400;color:var(--muted);padding:8px 12px;border-bottom:1px solid var(--border);z-index:1}
-.register-table td{padding:10px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
-.register-table tr:hover td{background:var(--raised)}
-.name-cell{display:grid;gap:2px;justify-items:start;min-width:220px}
-.row-link{height:auto;padding:0;border:0;background:none;font-weight:600;text-align:left;white-space:normal;color:var(--text)}
-.row-link:hover:not(:disabled){background:none;color:var(--accent);text-decoration:underline}
-.register-pagination{display:flex;justify-content:center;align-items:center;gap:12px;font-size:13px;color:var(--muted)}
+/* Inspection data mode: the defects of one inspection and the element condition states (web/defects.js). */
+.inspection-data{flex-direction:column;gap:16px;padding:24px 24px 0;min-width:0;min-height:0;overflow:hidden}
+.insp-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.insp-heading h2{font-size:var(--fs-title)}
+.insp-heading p{margin-top:4px;font-size:13px}
+.insp-tools{display:flex;gap:8px;align-items:center}
+.insp-tools select{height:32px;max-width:260px}
+.insp-figures{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0;border:1px solid var(--border);border-radius:var(--radius-card);flex:none}
+.insp-figures>div{padding:12px 16px;min-width:0}
+.insp-figures>div+div{border-left:1px solid var(--border)}
+.insp-figures dt{font-size:12px;color:var(--muted)}
+.insp-figures dd{margin:4px 0 0;font-size:24px;font-weight:600;line-height:1.1}
+.insp-scroll{flex:1;min-height:0;overflow:auto;padding-bottom:24px;display:flex;flex-direction:column;gap:10px}
+.insp-scroll h3{font-size:var(--fs-section);margin-top:8px}
+.insp-table{width:100%;border-collapse:collapse;font-size:13px}
+.insp-table th{position:sticky;top:0;background:var(--surface);text-align:left;font-size:12px;font-weight:400;color:var(--muted);padding:8px 10px;border-bottom:1px solid var(--border);z-index:1;white-space:nowrap}
+.insp-table td{padding:10px;border-bottom:1px solid var(--rule);vertical-align:middle}
+.insp-table .num{text-align:right;white-space:nowrap}
+.insp-table td.muted{color:var(--muted)}
+.insp-table tbody tr[data-defect]{cursor:pointer}
+.insp-table tbody tr[data-defect]:hover td{background:var(--raised)}
+.insp-table tr.selected td,.insp-table tr.selected:hover td{background:var(--active)}
+.insp-table tr.over td:first-child{color:var(--negative)}
+.insp-elements th.num .cs-mark{justify-content:flex-end}
+.cs-mark{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.cs-mark i{width:10px;height:10px;border-radius:3px;flex:none}
+.insp-empty{padding:14px 16px;border:1px dashed var(--control);border-radius:var(--radius-card);color:var(--muted);font-size:13px;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
 
 .error-banner{position:absolute;z-index:40;left:50%;bottom:16px;transform:translateX(-50%);background:var(--pill-negative-bg);color:var(--pill-negative-ink);border-radius:var(--radius-card);padding:10px 14px;font-size:13px;max-width:min(600px,90%)}
 
@@ -347,7 +350,7 @@ body[data-mode=members] .workbench{grid-template-columns:minmax(0,1fr) 340px}
   .workbench.tree-closed{grid-template-columns:0 minmax(0,1fr) 300px}
   .workbench.inspector-closed{grid-template-columns:240px minmax(0,1fr) 0}
   body[data-mode=drawings] .workbench{grid-template-columns:160px minmax(0,1fr) 300px}
-  body[data-mode=members] .workbench{grid-template-columns:minmax(0,1fr) 300px}
+  body[data-mode=inspection] .workbench{grid-template-columns:minmax(0,1fr) 300px}
   .wordmark{display:none}
   .catalog{width:320px}
   .leaflet-bottom.leaflet-left{left:344px}
@@ -393,7 +396,7 @@ body[data-mode=members] .workbench{grid-template-columns:minmax(0,1fr) 340px}
   .terrain-note{left:16px;bottom:10px;max-width:55%}
   .note-long{display:none}
   .note-short{display:inline}
-  .member-register{padding:16px}
+  .inspection-data{padding:16px 16px 0}
   body[data-mode=drawings] .detail-view{grid-template-rows:50vh auto minmax(0,1fr)}
   body[data-mode=drawings] .drawing-stage{grid-row:1}
   body[data-mode=drawings] .page-rail{grid-row:2;border-right:0;border-bottom:1px solid var(--border)}
@@ -402,15 +405,27 @@ body[data-mode=members] .workbench{grid-template-columns:minmax(0,1fr) 340px}
   body[data-mode=drawings] .page-rail{padding:0 16px}
   body[data-mode=drawings] .page-rail-list{display:flex;overflow-x:auto;overflow-y:hidden;padding:8px 0;gap:8px;scroll-snap-type:x mandatory}
   body[data-mode=drawings] .rail-page{flex:none;width:calc((100% - 24px) / 4);scroll-snap-align:start}
-  body[data-mode=members] .detail-view{grid-template-rows:minmax(0,1fr)}
-  body[data-mode=members] .member-register{grid-row:1}
-  body[data-mode=members] .inspector-panel{display:none!important}
+  body[data-mode=inspection] .detail-view{grid-template-rows:minmax(0,1fr)}
+  body[data-mode=inspection] .inspection-data{grid-row:1}
+  body[data-mode=inspection] .inspector-panel{display:none!important}
   .drawing-toolbar{padding:8px 12px;gap:6px}
-  .register-table thead{display:none}
-  .register-table tr{display:grid;gap:4px;padding:10px 0;border-bottom:1px solid var(--rule)}
-  .register-table td{padding:0;border:0}
-  .register-table td:nth-child(3),.register-table td:nth-child(4){color:var(--muted);font-size:12px}
-  .count-text{margin-left:0;flex-basis:100%}
+  .insp-figures{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .insp-figures>div:nth-child(3){border-left:0}
+  .insp-figures>div:nth-child(n+3){border-top:1px solid var(--border)}
+  .insp-tools{width:100%}
+  .insp-tools select{flex:1;max-width:none}
+  /* Defects become two-line rows: tag, element and defect, then condition, quantity and location. */
+  .insp-table:not(.insp-elements) thead{display:none}
+  .insp-table:not(.insp-elements) tr{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:4px 10px;padding:10px 0;border-bottom:1px solid var(--rule)}
+  .insp-table:not(.insp-elements) td{padding:0;border:0}
+  .insp-table:not(.insp-elements) td:nth-child(3){grid-column:2}
+  .insp-table:not(.insp-elements) td:nth-child(4),.insp-table:not(.insp-elements) td:nth-child(6){grid-column:2;font-size:12px}
+  .insp-table:not(.insp-elements) td:nth-child(5){grid-column:3;grid-row:1}
+  .insp-table:not(.insp-elements) td:nth-child(7),.insp-table:not(.insp-elements) td:nth-child(8){display:none}
+  .insp-elements{font-size:12px}
+  .insp-elements th,.insp-elements td{padding:8px 4px}
+  .insp-elements .cs-mark{font-size:0;gap:0}
+  .insp-elements .cs-mark i{width:12px;height:12px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 /* Inspection defects in the 3D workspace (web/defects.js). CS colours match the inspection app. */

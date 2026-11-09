@@ -10,6 +10,8 @@ const base=process.env.BRIDGE_TEST_URL||'http://127.0.0.1:8766';
     await page.route('https://carto.nationalmap.gov/**',r=>r.abort());
     await page.goto(base+'/#bridge/beechwood',{waitUntil:'domcontentloaded'}); // the collection map is the first screen
     await page.waitForFunction(()=>window.bridgeManager?.ready);
+    // A camera view the user chose in Model; it must come back after a visit to Analysis.
+    const pose=await page.evaluate(()=>{const v=window.bridgeManager.viewer,t=v.controls.target;v.camera.position.set(t.x+31,t.y+12,t.z-27);v.controls.update();v.render();return v.camera.position.toArray();});
     await page.locator('#openAnalysis').click();
     await page.locator('#femRun').waitFor();
     const runIds={};
@@ -25,6 +27,16 @@ const base=process.env.BRIDGE_TEST_URL||'http://127.0.0.1:8766';
     assert.equal(await page.locator('#femCase').inputValue(),'wearing');
     await page.selectOption('#femHistory',runIds.uniform);
     await page.waitForFunction(()=>window.bridgeAnalysis.result?.case==='uniform'&&window.bridgeAnalysis.applied);
+    // Back in Model: the plain model (no result colours, no legend) and the camera view the user left.
+    await page.locator('[data-workspace="model"]').click();
+    await page.waitForFunction(pose=>{const p=window.bridgeManager.viewer.camera.position;return Math.hypot(p.x-pose[0],p.y-pose[1],p.z-pose[2])<1e-6;},pose);
+    assert(await page.evaluate(()=>window.bridgeManager.viewer.analysis===null&&[...window.bridgeManager.viewer.meshes.values()].every(m=>!m.geometry.attributes.color&&!m.userData.analysisOriginal)));
+    assert(await page.locator('#femLegend').isHidden());
+    assert.equal(await page.evaluate(()=>window.bridgeAnalysis.applied),false);
+    // Analysis again: the same result is back on the model.
+    await page.locator('#openAnalysis').click();
+    await page.waitForFunction(()=>window.bridgeAnalysis.applied&&window.bridgeManager.viewer.analysis?.result.case==='uniform');
+    assert(await page.locator('#femLegend').isVisible());
     await page.selectOption('#femField','deflection_mm');
     await page.selectOption('#femScale','300');
     assert.equal(await page.evaluate(()=>window.bridgeManager.viewer.analysis.deformationScale),300);
@@ -64,6 +76,6 @@ const base=process.env.BRIDGE_TEST_URL||'http://127.0.0.1:8766';
     assert.equal(await page.locator('h1').innerText(),'Bridge FEM methods and demonstrations');
     assert(await page.locator('#minnich-demo').isVisible());
     assert.equal(errors.length,0,errors.join('\n'));
-    console.log(JSON.stringify({passed:true,checks:['three real load cases','saved run switch','12 mapped girders','scaled vertical deformation','color reset','member selection','mobile overflow','bridge switch clears results','switching bridges loads the new bridge analysis','method guide'],run_ids:runIds,page_errors:errors},null,2));
+    console.log(JSON.stringify({passed:true,checks:['three real load cases','saved run switch','model view restored without result colours','12 mapped girders','scaled vertical deformation','color reset','member selection','mobile overflow','bridge switch clears results','switching bridges loads the new bridge analysis','method guide'],run_ids:runIds,page_errors:errors},null,2));
   }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

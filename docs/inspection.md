@@ -6,8 +6,11 @@ browser (desktop, tablet with pen, phone) and keeps working offline.
 
 - Open it from a bridge workspace with **Inspect** (top bar), or at `/inspect#beechwood`
   (`inspect.html#beechwood` on the static site).
-- Back in the 3D workspace, **Defects** (or `D`) shows the defects saved on this device. Click a defect to see its
-  card (element, condition state, quantity, location, measurements and photos) with a link back to the sheet.
+- Back in the 3D workspace the defects saved on this device are shown on their members by default; **Defects** (or
+  `D`) hides or shows them. Click a defect to see its card (element, condition state, quantity, location,
+  measurements and photos) with a link back to the sheet.
+- The workspace's **Inspection data** mode lists the same defects and each element's condition-state quantities for
+  the chosen inspection; a row opens the defect's card, and **Show in 3D** takes you to it on the model.
 
 ## The screen
 

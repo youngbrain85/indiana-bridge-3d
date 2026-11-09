@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Indiana Bridge 3D</title><link rel="icon" href="/favicon.svg">
 <link rel="preload" href="/vendor/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/vendor/leaflet/leaflet.css"><link rel="stylesheet" href="/ui.css?v=shell1"><link rel="stylesheet" href="/analysis.css?v=shell1">
-<script src="/vendor/leaflet/leaflet.js" defer></script><script src="/viewer.bundle.js?v=shell2" defer></script><script src="/analysis.js?v=shell1" defer></script><script src="/defects.js?v=insp1" defer></script><script src="/app.js?v=shell1" defer></script></head>
+<link rel="stylesheet" href="/vendor/leaflet/leaflet.css"><link rel="stylesheet" href="/ui.css?v=insp2"><link rel="stylesheet" href="/analysis.css?v=simple1">
+<script src="/vendor/leaflet/leaflet.js" defer></script><script src="/viewer.bundle.js?v=insp2" defer></script><script src="/analysis.js?v=simple1" defer></script><script src="/defects.js?v=insp2" defer></script><script src="/app.js?v=insp2" defer></script></head>
 <body data-screen="map"><a class="skip" href="#main">Skip to content</a>
 <svg class="svg-defs" aria-hidden="true"><defs>
  <symbol id="i-panel-left" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16"/></symbol>
@@ -17,7 +17,7 @@
   <span id="detailBadge"></span>
  </div>
  <nav class="modes" id="modes" aria-label="Workspace" hidden>
-  <button data-workspace="model" class="active" title="Model (1)" aria-keyshortcuts="1">Model</button><button data-workspace="drawings" title="Drawings (2)" aria-keyshortcuts="2">Drawings</button><button data-workspace="analysis" id="openAnalysis" title="Analysis (3)" aria-keyshortcuts="3">Analysis</button><button data-workspace="members" title="Data (4)" aria-keyshortcuts="4">Data</button>
+  <button data-workspace="model" class="active" title="Model (1)" aria-keyshortcuts="1">Model</button><button data-workspace="drawings" title="Drawings (2)" aria-keyshortcuts="2">Drawings</button><button data-workspace="analysis" id="openAnalysis" title="Analysis (3)" aria-keyshortcuts="3">Analysis</button><button data-workspace="inspection" title="Inspection data (4)" aria-keyshortcuts="4">Inspection data</button>
  </nav>
  <a id="inspectLink" class="button inspect-link" target="inspection" hidden title="Record defects on the inspection sheets">Inspect</a>
  <details class="menu export-menu"><summary>Export<svg aria-hidden="true"><use href="#i-chevron"/></svg></summary>
@@ -66,7 +66,7 @@
      <label class="tool-label" title="Opacity of deck and pavement surfaces">Deck<input id="deckOpacity" type="range" min="10" max="100" value="100"><output id="opacityValue">100%</output></label>
      <label class="tool-label clip-label"><input id="clipEnabled" type="checkbox">Section</label><input id="clipPosition" aria-label="Longitudinal section position" type="range" min="0" max="100" value="100" disabled hidden>
      <button id="terrainToggle" aria-pressed="true" aria-keyshortcuts="T" title="Show or hide the illustrative terrain (T)">Terrain</button>
-     <button id="defectsToggle" aria-pressed="false" aria-keyshortcuts="D" hidden>Defects</button>
+     <button id="defectsToggle" aria-pressed="true" aria-keyshortcuts="D" hidden>Defects</button>
      <button id="clearIsolation" hidden>Show all</button>
      <button id="toggleInspector" class="icon-button" aria-pressed="true" aria-label="Details panel" title="Details panel"><svg><use href="#i-panel-right"/></svg></button>
     </div>
@@ -92,13 +92,7 @@
    </div>
    <div class="drawing-sheet" id="drawingSheet"><p id="drawingLoading" role="status">Loading drawing…</p><img id="drawingImage" alt="Selected bridge drawing page"></div>
   </section>
- <section id="memberRegister" class="member-register" aria-labelledby="registerTitle">
-   <div class="register-heading"><div><h2 id="registerTitle">Component register</h2><p class="muted">Every modeled component with its type, location, modeling basis and source drawing pages.</p></div><a id="registerExport" class="button" download>Download CSV</a></div>
-   <div class="register-tabs" id="registerTabs" role="tablist" aria-label="Component category"></div>
-   <div class="register-filters"><label for="registerSearch" class="sr-only">Search components</label><input id="registerSearch" type="search" placeholder="Component ID, name or modeling basis"><label for="registerGroup" class="sr-only">Component type</label><select id="registerGroup"><option value="">All types</option></select><span id="registerCount" class="count-text"></span></div>
-   <div class="register-table-wrap"><table class="register-table"><thead><tr><th>Component</th><th>Type</th><th>Specified location</th><th>Modeling basis</th><th>Drawing pages</th></tr></thead><tbody id="registerBody"></tbody></table></div>
-   <div class="register-pagination"><button id="registerPrev">Previous</button><span id="registerPage"></span><button id="registerNext">Next</button></div>
-  </section>
+ <section id="inspectionData" class="inspection-data" aria-label="Inspection data"></section>
   <aside class="inspector-panel" aria-label="Details">
    <div class="inspector-tabs" role="tablist" aria-label="Details"><button role="tab" data-tab="properties" aria-selected="true">Details</button><button role="tab" data-tab="coverage" aria-selected="false">Coverage</button></div>
    <div id="inspector" class="inspector-content" role="tabpanel"></div>

@@ -150,8 +150,15 @@ const shots=process.env.INSPECTION_SHOTS||null;
  await page.goto(base+'/#bridge/beechwood');
  await page.waitForFunction(()=>window.bridgeManager?.ready&&bridgeManager.data.id==='beechwood',null,{timeout:180000});
  assert.equal(await page.isVisible('#inspectLink'),true);
- await page.click('#defectsToggle');
+ // Defects show by default; the Defects button hides them and shows them again.
  await page.waitForFunction(()=>bridgeManager.viewer.defectGroup.children.length===3&&bridgeManager.viewer.defectGroup.visible);
+ assert.equal(await page.getAttribute('#defectsToggle','aria-pressed'),'true');
+ await page.click('#defectsToggle');
+ await page.waitForFunction(()=>!bridgeManager.viewer.defectGroup.visible);
+ assert.equal(await page.getAttribute('#defectsToggle','aria-pressed'),'false');
+ assert.equal(await page.isVisible('#defectLegend'),false);
+ await page.click('#defectsToggle');
+ await page.waitForFunction(()=>bridgeManager.viewer.defectGroup.visible&&document.getElementById('defectsToggle').getAttribute('aria-pressed')==='true');
  const near=await page.evaluate(async()=>{const v=bridgeManager.viewer,store=window.BridgeInspection.store;const res=[];
   for(const g of v.defectGroup.children){const d=await store.get('defects',g.userData.defect);const mesh=[...v.meshes.values()].find(m=>m.name===d.part);mesh.geometry.computeBoundingBox();
    const pb=mesh.geometry.boundingBox.clone().expandByScalar(.05);const db=v.defectBoxes.get(d.id).box;res.push({part:d.part,inside:pb.containsBox(db)});}return res;});
@@ -161,6 +168,36 @@ const shots=process.env.INSPECTION_SHOTS||null;
  assert.match(await page.textContent('.defect-details'),/D2.*1080 Delamination/s);
  await page.waitForSelector('.defect-details .defect-photos img');
  await shot('inspection-3d');
+
+ // Inspection data mode: the same defects and the element condition states, no drawings; a row opens the defect.
+ await page.click('[data-workspace="inspection"]');
+ await page.waitForSelector('#inspectionData tr[data-defect]');
+ assert.equal(new URL(page.url()).hash,'#bridge/beechwood/inspection');
+ assert.equal(await page.locator('#inspectionData tr[data-defect]').count(),3);
+ assert.match(await page.textContent('#inspectionData .insp-figures'),/Defects3.*Photos1/s);
+ const dataTable=await page.evaluate(()=>Object.fromEntries([...document.querySelectorAll('#inspectionData .insp-elements tbody tr')].map(r=>[r.cells[0].textContent.split(' ')[0],[...r.cells].slice(1).map(c=>Number(c.textContent.replace(/,/g,'').split(' ')[0]))])));
+ for(const [code,row] of Object.entries(table))for(let i=0;i<5;i++)assert.ok(Math.abs(dataTable[code][i]-row[i])<0.051,`element ${code} column ${i}: ${dataTable[code][i]} vs ${row[i]}`);
+ await page.locator('#inspectionData tr[data-defect]').nth(1).click();
+ await page.waitForSelector('#inspector .defect-details .defect-photos img');
+ assert.match(await page.textContent('#inspector .defect-details'),/D2.*1080 Delamination/s);
+ assert.equal(await page.locator('#inspector .page-thumbs, #inspector .page-links').count(),0,'no drawing pages in Inspection data');
+ assert.equal(await page.locator('#inspectionData tr.selected').count(),1);
+ await shot('inspection-data');
+ // Show in 3D: back to the model, defects shown, camera at the defect.
+ const d2=await page.evaluate(()=>document.querySelector('#inspectionData tr.selected').dataset.defect);
+ await page.click('#inspector button:has-text("Show in 3D")');
+ await page.waitForFunction(()=>document.body.dataset.mode==='model'&&bridgeManager.viewer.defectGroup.visible);
+ await page.waitForFunction(id=>{const v=bridgeManager.viewer,b=v.defectBoxes.get(id).box,c=b.getCenter(v.controls.target.clone());return v.controls.target.distanceTo(c)<0.01;},d2);
+ // Older Data links open Inspection data.
+ await page.goto(base+'/#bridge/beechwood/data');
+ await page.waitForFunction(()=>location.hash==='#bridge/beechwood/inspection'&&document.body.dataset.mode==='inspection');
+ // Esc lets go of the defect; Model then shows its own panel again, not the inspection summary.
+ await page.keyboard.press('Escape');
+ await page.waitForFunction(()=>document.getElementById('inspector').textContent.includes('Select a defect in the table'));
+ assert.equal(await page.locator('#inspectionData tr.selected').count(),0);
+ await page.click('[data-workspace="model"]');
+ await page.waitForFunction(()=>document.body.dataset.mode==='model'&&document.getElementById('inspector').textContent.includes('Bridge overview'));
+ assert.equal(await page.locator('#inspector button:has-text("Show in 3D")').count(),0);
  assert.deepEqual(errors,[]);
  console.log(JSON.stringify({defects:saved.defects,element_table:table,placed:near},null,1));
  await browser.close();

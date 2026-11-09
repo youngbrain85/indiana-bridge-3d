@@ -6,6 +6,7 @@ import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
 import {CS_COLORS,CS_NAMES,DEFECTS,FIELDS} from './inspect/catalog.js';
 import {densify,planePoint} from './inspect/geometry.js';
 import * as inspectionStore from './inspect/store.js';
+import {elementSummary} from './inspect/summary.js';
 
 // Display models store positions as 16-bit integers (KHR_mesh_quantization). Placement, analysis deformation
 // and section edits need plain float positions, so they are expanded once on load.
@@ -351,4 +352,4 @@ class BridgeViewer {
 }
 window.BridgeViewer=BridgeViewer;
 // The 3D page reads defects saved by the inspection page on this device (same origin, same IndexedDB).
-window.BridgeInspection={store:inspectionStore,catalog:{CS_COLORS,CS_NAMES,DEFECTS,FIELDS}};
+window.BridgeInspection={store:inspectionStore,catalog:{CS_COLORS,CS_NAMES,DEFECTS,FIELDS},elementSummary};
