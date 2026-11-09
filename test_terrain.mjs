@@ -78,3 +78,27 @@ test('beechwood: footings stay covered, columns do not hang and the channel lies
   assert.ok(T.channel.uc>piers[0].hi&&T.channel.uc<piers[1].lo);
   for(const p of parts){if(!/column|shaft|casing/.test(p.id))continue;let bottom=Infinity;for(let i=1;i<p.pos.length;i+=3)bottom=Math.min(bottom,p.pos[i]);
     for(const c of faces(p,false)){if(c[1]>bottom+.05)continue;assert.ok(ground(c[0],c[2])>=c[1]-.02,`${p.id} hangs ${(c[1]-ground(c[0],c[2])).toFixed(3)} m above ground`);}}});
+
+test('21st-street-i465: the MSE side walls hold the approach fill, and carry on past the model',()=>{
+  const {T,ground}=load('21st-street-i465');assert.equal(T.flankWalls.length,4);
+  for(const f of T.flankWalls){const out=f.z0<T.zc?f.z0-.3:f.z1+.3,inn=f.z0<T.zc?f.z1+.3:f.z0-.3;
+    for(const d of [-3,1,6,15]){const x=f.x0+f.side*d,top=f.topAt(x);
+      assert.ok(ground(x,out)<top-2,`${f.id}: ground ${(top-ground(x,out)).toFixed(2)} m under the top outside at ${d} m`);
+      assert.ok(ground(x,inn)>top-.5,`${f.id}: fill ${(top-ground(x,inn)).toFixed(2)} m under the top inside at ${d} m`);}}});
+
+test('21st-street-i465: the berm between each end wall and its cap stays at the coping top',()=>{
+  const {parts,ground}=load('21st-street-i465');
+  // Plan extent along x of a part's section at z (from its triangle edges crossing z).
+  const span=(id,z)=>{const p=parts.find(q=>q.id===id),a=p.pos,ix=p.index;let lo=Infinity,hi=-Infinity;
+    for(let t=0;t<ix.length;t+=3)for(let e=0;e<3;e++){const i=ix[t+e],j=ix[t+(e+1)%3],z1=a[3*i+2],z2=a[3*j+2];if((z1-z)*(z2-z)>0||z1===z2)continue;
+      const x=a[3*i]+(a[3*j]-a[3*i])*(z-z1)/(z2-z1);lo=Math.min(lo,x);hi=Math.max(hi,x);}return [lo,hi];};
+  for(const [cap,coping,side] of [['bent_1_cap','mse_coping_west',-1],['bent_3_cap','mse_coping_east',1]]){
+    const a=parts.find(q=>q.id===coping).pos;let top=-Infinity;for(let i=1;i<a.length;i+=3)top=Math.max(top,a[i]);
+    for(let z=-5;z<=5;z+=1){const c=span(cap,z),w=span(coping,z),x=side<0?(c[1]+w[0])/2:(c[0]+w[1])/2;
+      assert.ok(side<0?c[1]<w[0]:w[1]<c[0],`${cap}: no berm at z=${z}`);
+      assert.ok(ground(x,z)<=top+.05,`${cap}: berm at z=${z} is ${(ground(x,z)-top).toFixed(2)} m over the coping`);}}});
+
+test('beechwood: the end-bent drain outlets daylight',()=>{
+  const {parts,ground}=load('beechwood');
+  for(const id of ['b1_drain_1','b4_drain_1']){const a=parts.find(p=>p.id===id).pos;let k=1;for(let i=1;i<a.length;i+=3)if(a[i]<a[k])k=i;
+    assert.ok(ground(a[k-1],a[k+1])<=a[k]+.05,`${id} mouth is ${(ground(a[k-1],a[k+1])-a[k]).toFixed(2)} m under ground`);}});

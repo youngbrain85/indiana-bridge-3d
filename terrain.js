@@ -195,12 +195,33 @@ export function planTerrain(input,{waterway='',site=null}={}){
     approachRoads.push({side,zA:cols[0].z,zB:cols[cols.length-1].z,zs:cols.map(q=>q.z),g,edgeU,at,
       end:{at:z=>at(z).xe,a:at(zc).xe},y:(x,z)=>{const q=at(z);return q.y0+g*Math.max(0,side*(x-q.xe));}});}
 
+  // A wall along the side of an approach (an MSE side wall) that runs to the end of the model carries on beyond it:
+  // walled approaches are longer than the model. Its line continues to the block edge with its top on the road grade
+  // and the exposed height it has at the model's end, so the embankment stays behind it instead of spilling round
+  // its end.
+  const flankWalls=[];
+  for(const r of approachRoads)for(const p of retaining){
+    if(p.layer!=='walls'||p.max[0]-p.min[0]<3||p.max[2]-p.min[2]>1.5)continue;
+    const left=p.max[2]<=r.zA+.3&&p.max[2]>=r.zA-3,right=p.min[2]>=r.zB-.3&&p.min[2]<=r.zB+3;if(!left&&!right)continue;
+    const x0=r.side<0?p.min[0]:p.max[0];if(r.side*(x0-r.at(left?r.zA:r.zB).xe)<-.6)continue;
+    let top=-Infinity,bottom=Infinity;const a=p.pos;
+    for(let i=0;i<a.length;i+=3)if(r.side*(a[i]-x0)>-.5){top=Math.max(top,a[i+1]);bottom=Math.min(bottom,a[i+1]);}
+    if(top-bottom<1)continue;
+    flankWalls.push({id:p.id,side:r.side,x0,z0:p.min[2],z1:p.max[2],top,h:top-bottom,edgeU:r.edgeU,topAt:x=>top+r.g*Math.max(0,r.side*(x-x0))});}
+
   // Grid lines, with breaks at the faces of retaining parts, approach slabs, deck edges and roads.
   const bu=[],bz=[dMin[2],dMax[2]];
   for(const p of [...retaining,...parts.filter(p=>p.layer==='approaches')]){bu.push(p.u[0],p.u[1]);bz.push(p.min[2],p.max[2]);}
   for(const r of approachRoads){bu.push(U(r.end.a,zc));bz.push(r.zA,r.zB,r.zA-1,r.zB+1);}
   for(const r of roads)bu.push(r.uA,r.uB,r.u0,r.u1);
-  const us=lines(ub0,ub1,t=>stepIn(t,nearU),bu),zs=lines(zb0,zb1,t=>stepIn(t,nearZ),bz),nu=us.length,nz=zs.length,N=nu*nz;
+  // A retaining part that runs across the grid lines (a splayed wing) cannot have break lines along its faces: the grid
+  // is fine over it instead, so cells on its two sides never share a grid square and the step stays inside the wall.
+  const oblique=[...retaining].filter(p=>{const a=p.pos,ix=p.index,n=ix?ix.length:a.length/3;let top=0,bottom=0;
+    for(let t=0;t<n;t+=3){const i0=ix?ix[t]:t,i1=ix?ix[t+1]:t+1,i2=ix?ix[t+2]:t+2;
+      const ux=a[3*i1]-a[3*i0],uz=a[3*i1+2]-a[3*i0+2],vx=a[3*i2]-a[3*i0],vz=a[3*i2+2]-a[3*i0+2],c=(uz*vx-ux*vz)/2;if(c>0)top+=c;else bottom-=c;}
+    return Math.max(top,bottom)<.4*(p.u[1]-p.u[0])*(p.max[2]-p.min[2]);});
+  const FINE=.15,fine=(t,k)=>oblique.some(p=>k?t>=p.min[2]-.3&&t<=p.max[2]+.3:t>=p.u[0]-.3&&t<=p.u[1]+.3);
+  const us=lines(ub0,ub1,t=>fine(t,0)?FINE:stepIn(t,nearU),bu),zs=lines(zb0,zb1,t=>fine(t,1)?FINE:stepIn(t,nearZ),bz),nu=us.length,nz=zs.length,N=nu*nz;
   const X=new Float64Array(N),Z=new Float64Array(N);for(let j=0;j<nz;j++)for(let i=0;i<nu;i++){const v=j*nu+i;Z[v]=zs[j];X[v]=us[i]+s*(zs[j]-zc);}
 
   // Each grid vertex under a triangle's plan projection, with the triangle's height there.
@@ -228,7 +249,15 @@ export function planTerrain(input,{waterway='',site=null}={}){
     // A small part (a bearing, a bolt) can fall between grid lines: its plan box, a little wider, holds the ground
     // below its lowest point.
     if(p.u[1]-p.u[0]<2.5&&p.max[2]-p.min[2]<2.5){const y=p.min[1]-c;box(p,.3,v=>{if(y<ceil[v])ceil[v]=y;if(wall[v]&&p.min[1]<over[v])over[v]=p.min[1];});}};
-  for(const p of retaining){const lb=grounded(p)?p.min[1]+EMBED:-Infinity;raster(p,(v,y)=>{wall[v]=1;if(lb>wallLb[v])wallLb[v]=lb;if(y>wallTop[v])wallTop[v]=y;},true);}
+  // A tall retaining wall (an MSE panel on its leveling pad) stands on the ground along its whole length, so the
+  // ground beside it reaches its local bottom where the pad steps up, not only its lowest point.
+  for(const p of retaining){const lb=grounded(p)?p.min[1]+EMBED:-Infinity,loc=p.layer==='walls'&&grounded(p)?new Map():null;
+    raster(p,(v,y)=>{wall[v]=1;if(lb>wallLb[v])wallLb[v]=lb;if(y>wallTop[v])wallTop[v]=y;
+      if(loc){const q=loc.get(v);if(!q)loc.set(v,[y,y]);else{if(y<q[0])q[0]=y;if(y>q[1])q[1]=y;}}},true);
+    if(loc)for(const [v,[b,t]] of loc)if(t-b>1.5&&b+EMBED>wallLb[v])wallLb[v]=b+EMBED;}
+  for(const f of flankWalls)for(let j=0;j<nz;j++){if(zs[j]<=f.z0+1e-6||zs[j]>=f.z1-1e-6)continue;
+    for(let i=0;i<nu;i++){const v=j*nu+i;if(f.side*(X[v]-f.x0)<=-.05)continue;const t=f.topAt(X[v]);
+      wall[v]=1;if(t>wallTop[v])wallTop[v]=t;if(t-f.h+EMBED>wallLb[v])wallLb[v]=t-f.h+EMBED;}}
   const behindFace=i=>us[i]<uW-.05||us[i]>uE+.05;
   for(const p of parts){
     if(FURNITURE.has(p.layer)||p.layer==='drainage'){later.push(p);continue;}
@@ -265,9 +294,12 @@ export function planTerrain(input,{waterway='',site=null}={}){
   for(let j=0;j<nz;j++)for(let i=0;i<nu;i++){const v=j*nu+i;if(wall[v])continue;
     for(let dj=-1;dj<=1;dj++)for(let di=-1;di<=1;di++){const ii=i+di,jj=j+dj;if(ii<0||jj<0||ii>=nu||jj>=nz)continue;const n=jj*nu+ii;if(wall[n]&&wallLb[n]>hard[v])hard[v]=wallLb[n];}}
   // Under an approach road the ground is one slab thickness down, level with the slab underside at the joint.
-  for(const r of approachRoads)for(let j=0;j<nz;j++){const z=zs[j];if(z<r.zA-1||z>r.zB+1)continue;const q=r.at(z);
+  // Its shoulders reach 1 m past the road edge, or stop at the outer face of a wall along the road.
+  for(const r of approachRoads){let zLo=r.zA-1,zHi=r.zB+1;
+    for(const f of flankWalls)if(f.side===r.side){if(f.z1<=r.zA+.3)zLo=Math.max(zLo,f.z0+.01);else zHi=Math.min(zHi,f.z1-.01);}
+    for(let j=0;j<nz;j++){const z=zs[j];if(z<zLo||z>zHi)continue;const q=r.at(z);
     for(let i=0;i<nu;i++){const v=j*nu+i,t=r.side*(X[v]-q.xe);if(t<=0)continue;const y=q.y0+r.g*t;
-      if(y-q.T>hardRoad[v])hardRoad[v]=y-q.T;if(y-.06<ceil[v])ceil[v]=y-.06;}}
+      if(y-q.T>hardRoad[v])hardRoad[v]=y-q.T;if(y-.06<ceil[v])ceil[v]=y-.06;}}}
   // A crossed road and its shoulders are level; next to them fill is cut back at 1:1.25 (a cut slope), steeper than
   // the 1:2 fill, so it only bites where an embankment would spill onto the road.
   const cutC=new Float64Array(N).fill(Infinity),inRoad=new Uint8Array(N);
@@ -307,6 +339,12 @@ export function planTerrain(input,{waterway='',site=null}={}){
     let st=steep[v];if(roads.length||channel)st=blend(v,st,cutC[v],cutLevel[v],K_CUT);st=blend(v,st,open[v],openLevel[v],K);
     if(inRoad[v])h=Math.min(h,cutC[v],ceil[v]);else h=Math.max(Math.min(Math.max(h,st),ceil[v]),hard[v],hardRoad[v]);
     if(target[v]<Infinity)h=target[v];H[v]=h;}
+  // A berm under the superstructure between an end wall and the taller cap behind it stays at the wall's top: the
+  // fill the wall holds does not rise over it against the cap.
+  const near=(j,i,dir,fn)=>{for(let k=1;k<=6;k++){const ii=i+dir*k;if(ii<0||ii>=nu||Math.abs(us[ii]-us[i])>1.5)return null;if(wall[j*nu+ii])return fn(j*nu+ii);}return null;};
+  for(let j=0;j<nz;j++)for(let i=0;i<nu;i++){const v=j*nu+i;if(wall[v]||over[v]===Infinity||target[v]<Infinity||!behindFace(i))continue;
+    const dir=us[i]<mu?1:-1,front=near(j,i,dir,n=>wallTop[n]),back=near(j,i,-dir,n=>wallTop[n]);
+    if(front!==null&&back!==null&&back>front+.3&&H[v]>front+.03&&H[v]<front+1.5)H[v]=Math.max(front+.03,hard[v],hardRoad[v]);}
   // Inside a retaining part the ground takes the height of the nearest outside point, so steps stay inside it.
   const dist=new Float64Array(N);for(let v=0;v<N;v++)dist[v]=wall[v]?Infinity:0;
   for(let pass=0;pass<2;pass++)for(const dir of [1,-1])for(let jj=0;jj<nz;jj++){const j=dir>0?jj:nz-1-jj;for(let ii=0;ii<nu;ii++){const i=dir>0?ii:nu-1-ii,v=j*nu+i;if(!wall[v])continue;
@@ -315,9 +353,9 @@ export function planTerrain(input,{waterway='',site=null}={}){
   // backwall does not run over the seat in front of it. Elsewhere fill may pass over a low wall top.
   for(let v=0;v<N;v++)if(wall[v]&&over[v]<Infinity)H[v]=Math.min(H[v],wallTop[v]-.03,over[v]-.03);
 
-  return {s,zc,halfW,nu,nz,us,zs,X,Z,H,wall,channel,roads,approachRoads,water:water?channel:null,
+  return {s,zc,halfW,nu,nz,us,zs,X,Z,H,wall,channel,roads,approachRoads,flankWalls,water:water?channel:null,
     block:{u0:ub0,u1:ub1,z0:zb0,z1:zb1},supports:supports.map(({kind,side,u,G,F,lo,hi})=>({kind,side,u,G,F,lo,hi})),
-    across:u=>channel?Math.abs(u-channel.uc):Infinity,U,debug:{ceil,hard,target,over,wallTop,lbSrc,lbRoad,hardRoad,steep,open,retaining:[...retaining].map(p=>p.id),
+    across:u=>channel?Math.abs(u-channel.uc):Infinity,U,debug:{ceil,hard,target,over,wallTop,lbSrc,lbRoad,hardRoad,steep,open,retaining:[...retaining].map(p=>p.id),oblique:oblique.map(p=>p.id),
       grounded:parts.filter(p=>grounded(p)&&!retaining.has(p)&&!((p.layer==='foundations'||p.layer==='casing')&&!p.slender)).map(p=>p.id),
       cover:parts.filter(p=>(p.layer==='foundations'||p.layer==='casing')&&!p.slender).map(p=>p.id)}};
 }

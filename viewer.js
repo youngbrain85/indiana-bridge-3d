@@ -177,6 +177,13 @@ class BridgeViewer {
         pos.push(...p0,...p1,p1[0],p1[1]-depth[i1],p1[2],p0[0],p0[1]-depth[i0],p0[2]);ind.push(o,o+1,o+2,o,o+2,o+3);}};
       edge([...Array(rows+1)].map((_,q)=>q*cols));edge([...Array(rows+1)].map((_,q)=>q*cols+cols-1));edge([...Array(cols)].map((_,c2)=>rows*cols+c2));
       const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));g.setIndex(ind);g.computeVertexNormals();flat(new THREE.Mesh(g,asphalt));}
+    // Walls along a walled approach carry on past the model to the block edge, like the roads: the top follows the
+    // road grade and the foot stays below the ground on both sides.
+    for(const f of T.flankWalls||[]){const zm=(f.z0+f.z1)/2,xa=f.x0,xb=xOf(f.edgeU,zm);if(f.side*(xb-xa)<=.1)continue;
+      const ta=f.topAt(xa),tb=f.topAt(xb),c=[[xa,ta-f.h-.5,f.z0],[xb,tb-f.h-.5,f.z0],[xb,tb,f.z0],[xa,ta,f.z0]],d=c.map(([x,y])=>[x,y,f.z1]),pos=[];
+      for(const q of [c,d,[c[3],c[2],d[2],d[3]],[c[0],c[1],d[1],d[0]],[c[0],c[3],d[3],d[0]],[c[1],c[2],d[2],d[1]]])pos.push(...q[0],...q[1],...q[2],...q[0],...q[2],...q[3]);
+      const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));g.computeVertexNormals();
+      const mesh=flat(new THREE.Mesh(g,new THREE.MeshStandardMaterial({color:this.meshes.get(f.id)?.userData.part.color||'#bdb7aa',roughness:.9,metalness:0,side:THREE.DoubleSide})));mesh.castShadow=true;}
     group.visible=this.terrainVisible;this.terrain=group;this.scene.add(group);if(this.grid)this.grid.visible=!this.terrainVisible;return true;}
   setDeckOpacity(value){this.opacity=value;for(const mesh of this.meshes.values()){const layer=mesh.userData.part.layer;if(['deck','wearing','road_surface'].includes(layer)&&!mesh.material.userData.shared){mesh.material.opacity=value;mesh.material.transparent=value<1;mesh.material.depthWrite=value>=1;mesh.castShadow=value>=1;mesh.material.needsUpdate=true;}}this.render();}
   setClip(enabled,percent){this.clipping=enabled;if(!this.bounds)return;this.plane.constant=THREE.MathUtils.lerp(this.bounds.min.x-.02,this.bounds.max.x+.02,percent/100);for(const m of [...this.meshes.values(),...(this.terrain?.children||[])]){m.material.clippingPlanes=enabled?[this.plane]:[];m.material.needsUpdate=true;}this.render();}
