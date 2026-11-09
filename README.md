@@ -44,7 +44,7 @@ python3 bridge_gen.py --export 07620 [--lite]       # GLB for the viewer
 
 ## Verification (for people and for coding agents)
 
-`AGENTS.md` describes how an agent such as OpenAI Codex should verify this repository; `VERIFY.md` is the human checklist.
+`AGENTS.md` describes how an agent such as OpenAI Codex should verify this repository, `CODEX_PROMPT.md` is a ready-to-paste prompt for it, `VERIFY.md` is the human checklist and `bridges/REVIEW_TEMPLATE.md` the report form.
 
 ```bash
 bash tools/run_checks.sh                 # dimensional checks of the GLBs against bridge.json + render-vs-photo sheets
