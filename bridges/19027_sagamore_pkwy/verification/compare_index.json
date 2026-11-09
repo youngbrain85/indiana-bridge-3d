@@ -1,0 +1,69 @@
+{
+ "notes": "Summer photos (Jun 2021). WB structure modelled in full; the EB twin 67 ft south is a simplified copy.",
+ "pairs": [
+  {
+   "view": "elevation",
+   "photo": "photo_21.jpg",
+   "caption": "Overall Span B with beam 4 damaged",
+   "check": "Span B over 9th St: 8 green W36 girders, X cross-frames, rocker bearings on pier wall caps, NJ parapets, 14.2 ft clearance over the street",
+   "sheet": "bridges/19027_sagamore_pkwy/verification/compare_elevation.jpg",
+   "render": "bridges/19027_sagamore_pkwy/renders/elevation.png"
+  },
+  {
+   "view": "street",
+   "photo": "photo_20.jpg",
+   "caption": "Overall view under span A",
+   "check": "Under span A: concrete slope wall at bent 1, 6 concrete beams, pier 2 wall beyond",
+   "sheet": "bridges/19027_sagamore_pkwy/verification/compare_street.jpg",
+   "render": "bridges/19027_sagamore_pkwy/renders/street.png"
+  },
+  {
+   "view": "pier",
+   "photo": "photo_34.jpg",
+   "caption": "Pier 4 with cap",
+   "check": "Pier 4: two 3.5 ft round columns with a tapered hammerhead cap 43.5 ft long, girders + bearings on top",
+   "sheet": "bridges/19027_sagamore_pkwy/verification/compare_pier.jpg",
+   "render": "bridges/19027_sagamore_pkwy/renders/pier.png"
+  },
+  {
+   "view": "under",
+   "photo": "photo_24.jpg",
+   "caption": "Overall cap conditions over pier 2 Span B",
+   "check": "Pier 2 cap: solid pier wall with battered ends, bearings, girder ends, stiffeners",
+   "sheet": "bridges/19027_sagamore_pkwy/verification/compare_under.jpg",
+   "render": "bridges/19027_sagamore_pkwy/renders/under.png"
+  },
+  {
+   "view": "rail",
+   "photo": "photo_30.jpg",
+   "caption": "Span C looking west",
+   "check": "Span C over the CSX track: ballast, ties, rails, chain-link fence on the parapets above",
+   "sheet": "bridges/19027_sagamore_pkwy/verification/compare_rail.jpg",
+   "render": "bridges/19027_sagamore_pkwy/renders/rail.png"
+  },
+  {
+   "view": "deck",
+   "photo": "photo_06.jpg",
+   "caption": "Wearing surface conditions looking east",
+   "check": "2 WB lanes, white skip line, white edge lines, NJ parapets, latex overlay colour",
+   "sheet": "bridges/19027_sagamore_pkwy/verification/compare_deck.jpg",
+   "render": "bridges/19027_sagamore_pkwy/renders/deck.png"
+  },
+  {
+   "view": "ramp",
+   "photo": "photo_38.jpg",
+   "caption": "Pier before ramp",
+   "check": "Pier 6 before the ramp: hammerhead pier, ramp pavement curving under span F",
+   "sheet": "bridges/19027_sagamore_pkwy/verification/compare_ramp.jpg",
+   "render": "bridges/19027_sagamore_pkwy/renders/ramp.png"
+  },
+  {
+   "view": "aerial",
+   "photo": "photo_01.jpg",
+   "caption": "West road alignment",
+   "check": "Overall alignment: long straight viaduct, twin EB structure to the south",
+   "sheet": "bridges/19027_sagamore_pkwy/verification/compare_aerial.jpg",
+   "render": "bridges/19027_sagamore_pkwy/renders/aerial.png"
+  }
+ ]
+}

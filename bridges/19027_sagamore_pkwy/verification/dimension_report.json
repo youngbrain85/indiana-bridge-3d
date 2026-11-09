@@ -1,0 +1,398 @@
+[
+ {
+  "check": "nodes in model",
+  "expected": null,
+  "actual": 1330,
+  "tolerance": null,
+  "unit": "",
+  "status": "INFO",
+  "note": ""
+ },
+ {
+  "check": "deck width out-to-out (slab Y extent)",
+  "expected": 43.0,
+  "actual": 43.0,
+  "tolerance": 0.25,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "NBI item 52"
+ },
+ {
+  "check": "length between abutment lines (slab X extent minus skew offset)",
+  "expected": 519.0,
+  "actual": 519.0,
+  "tolerance": 0.5,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "sum of spans; NBI item 49 structure length = 525.2 (includes backwalls)"
+ },
+ {
+  "check": "deck top at Z = 0",
+  "expected": 0.0,
+  "actual": 0.0,
+  "tolerance": 0.1,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "roadway width curb-to-curb (DeckSurface Y extent)",
+  "expected": 39.8,
+  "actual": 39.79999923706055,
+  "tolerance": 0.25,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "NBI item 51"
+ },
+ {
+  "check": "parapet L height",
+  "expected": 2.67,
+  "actual": 2.6700000762939453,
+  "tolerance": 0.15,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "reinforced concrete safety-shape parapet"
+ },
+ {
+  "check": "parapet L runs full length",
+  "expected": 519.0,
+  "actual": 519.0,
+  "tolerance": 1.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "between abutment lines"
+ },
+ {
+  "check": "parapet R height",
+  "expected": 2.67,
+  "actual": 2.6700000762939453,
+  "tolerance": 0.15,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "reinforced concrete safety-shape parapet"
+ },
+ {
+  "check": "parapet R runs full length",
+  "expected": 519.0,
+  "actual": 519.0,
+  "tolerance": 1.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "between abutment lines"
+ },
+ {
+  "check": "number of substructure units",
+  "expected": 7,
+  "actual": 7,
+  "tolerance": 0,
+  "unit": "",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Bent 1 stem centre (4.5 ft stem behind the support line)",
+  "expected": -2.25,
+  "actual": -2.249999999999999,
+  "tolerance": 0.5,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Bent 1 length",
+  "expected": 45.17,
+  "actual": 44.0,
+  "tolerance": 2.5,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "stem is W+1 ft long in the model (4.5 ft thick box rotated by the skew)"
+ },
+ {
+  "check": "Bent 1 wingwalls",
+  "expected": 2,
+  "actual": 2,
+  "tolerance": 0,
+  "unit": "",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Pier 2 cap/wall centred on station",
+  "expected": 32.0,
+  "actual": 32.0,
+  "tolerance": 0.75,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Pier 2 length",
+  "expected": 44.0,
+  "actual": 44.5,
+  "tolerance": 2.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "concrete pier wall, battered ends"
+ },
+ {
+  "check": "Pier 2 solid wall present",
+  "expected": true,
+  "actual": true,
+  "tolerance": 0,
+  "unit": "",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Pier 3 cap/wall centred on station",
+  "expected": 124.0,
+  "actual": 124.0,
+  "tolerance": 0.75,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Pier 3 length",
+  "expected": 43.5,
+  "actual": 44.0,
+  "tolerance": 2.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "concrete pier wall, battered ends"
+ },
+ {
+  "check": "Pier 3 solid wall present",
+  "expected": true,
+  "actual": true,
+  "tolerance": 0,
+  "unit": "",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Pier 4 cap/wall centred on station",
+  "expected": 225.0,
+  "actual": 225.0,
+  "tolerance": 0.75,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Pier 4 length",
+  "expected": 43.5,
+  "actual": 43.5,
+  "tolerance": 2.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "two round columns + hammerhead cap"
+ },
+ {
+  "check": "Pier 4 round columns",
+  "expected": 2,
+  "actual": 2,
+  "tolerance": 0,
+  "unit": "",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Pier 5 cap/wall centred on station",
+  "expected": 326.0,
+  "actual": 326.0,
+  "tolerance": 0.75,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Pier 5 length",
+  "expected": 43.5,
+  "actual": 43.5,
+  "tolerance": 2.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "two round columns + hammerhead cap"
+ },
+ {
+  "check": "Pier 5 round columns",
+  "expected": 2,
+  "actual": 2,
+  "tolerance": 0,
+  "unit": "",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Pier 6 cap/wall centred on station",
+  "expected": 427.0,
+  "actual": 427.0,
+  "tolerance": 0.75,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Pier 6 length",
+  "expected": 43.5,
+  "actual": 43.5,
+  "tolerance": 2.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "two round columns + hammerhead cap"
+ },
+ {
+  "check": "Pier 6 round columns",
+  "expected": 2,
+  "actual": 2,
+  "tolerance": 0,
+  "unit": "",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Bent 7 stem centre (4.5 ft stem behind the support line)",
+  "expected": 521.25,
+  "actual": 521.25,
+  "tolerance": 0.5,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Bent 7 length",
+  "expected": 45.17,
+  "actual": 44.0,
+  "tolerance": 2.5,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "stem is W+1 ft long in the model (4.5 ft thick box rotated by the skew)"
+ },
+ {
+  "check": "Bent 7 wingwalls",
+  "expected": 2,
+  "actual": 2,
+  "tolerance": 0,
+  "unit": "",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "steel girder lines",
+  "expected": 8,
+  "actual": 8,
+  "tolerance": 0,
+  "unit": "",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "steel girders start at first steel span",
+  "expected": 32.0,
+  "actual": 32.400001525878906,
+  "tolerance": 1.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "steel girders end at last abutment",
+  "expected": 519.0,
+  "actual": 518.5999755859375,
+  "tolerance": 1.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "girder depth (W36 ~ 3.0 ft)",
+  "expected": 3.0,
+  "actual": 3.0,
+  "tolerance": 0.2,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "concrete approach-span beams present",
+  "expected": true,
+  "actual": true,
+  "tolerance": 0,
+  "unit": "",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "concrete beams span length",
+  "expected": 32.0,
+  "actual": 31.5,
+  "tolerance": 1.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "chain-link fence over the railroad span (start)",
+  "expected": 124.0,
+  "actual": 124.0,
+  "tolerance": 1.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "chain-link fence over the railroad span (end)",
+  "expected": 225.0,
+  "actual": 225.0,
+  "tolerance": 1.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "vertical under-clearance to the street",
+  "expected": 14.17,
+  "actual": 14.200000286102295,
+  "tolerance": 0.5,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "NBI item 54"
+ },
+ {
+  "check": "approach slab 0 length",
+  "expected": 20.5,
+  "actual": 20.5,
+  "tolerance": 1.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "approach slab 1 length",
+  "expected": 20.5,
+  "actual": 20.5,
+  "tolerance": 1.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "structure bounding box X (ft)",
+  "expected": null,
+  "actual": "-13.0 .. 532.0",
+  "tolerance": null,
+  "unit": "",
+  "status": "INFO",
+  "note": ""
+ },
+ {
+  "check": "structure bounding box Z (ft)",
+  "expected": null,
+  "actual": "-23.4 .. 8.7",
+  "tolerance": null,
+  "unit": "",
+  "status": "INFO",
+  "note": ""
+ }
+]

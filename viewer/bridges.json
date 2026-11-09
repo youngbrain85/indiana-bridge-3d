@@ -19,16 +19,16 @@
   "cameras": {
    "elevation": {
     "pos": [
-     150,
-     -13,
-     -200
+     120,
+     -10,
+     -92
     ],
     "tgt": [
-     190,
-     -8,
+     215,
+     -7,
      0
     ],
-    "lens": 28
+    "lens": 24
    },
    "under": {
     "pos": [
@@ -373,16 +373,16 @@
    },
    "under": {
     "pos": [
-     -30,
-     -12,
-     -40
+     44,
+     -8,
+     54
     ],
     "tgt": [
-     60,
-     -8,
-     10
+     12,
+     -6,
+     0
     ],
-    "lens": 24
+    "lens": 28
    },
    "deck": {
     "pos": [
@@ -399,16 +399,16 @@
    },
    "pier": {
     "pos": [
-     45,
-     -12,
-     40
+     44,
+     -13,
+     46
     ],
     "tgt": [
-     57,
-     -7,
+     30,
+     -8,
      0
     ],
-    "lens": 35
+    "lens": 28
    },
    "approach": {
     "pos": [
@@ -459,8 +459,8 @@
   ],
   "notes": [
    "Interstate twin: the WB structure (BWBL) sits ~30 ft to the north and is modelled as a mirrored twin.",
-   "Slab edge is a deep stepped coping with the parapet on top (photos 17-18); piers are two round columns (~3 ft) with a rectangular cap that reads as a wall from the side (photos 26-28, 31).",
-   "Abutments are tall concrete walls with wingwalls parallel to the roadway (photos 19-20); grass channel with a small ditch, cornfields either side (photos 29-31).",
+   "Slab edge is a deep stepped coping with the parapet on top (photos 17-18); piers are solid concrete walls 46.5 ft long with rounded ends, the slab bearing directly on them (photos 26-28, 31; element list 'pier wall 46.5').",
+   "Abutments are low concrete caps on a spill-through embankment with short wingwalls (photos 19-20, 28); grass channel with a small ditch, cornfields either side (photos 29-31).",
    "Heavy longitudinal tining on the 1995 overlay, wide cracks and patches (photos 12-15)."
   ],
   "photos": [
