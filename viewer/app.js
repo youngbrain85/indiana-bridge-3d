@@ -77,7 +77,7 @@ function tuneMaterials(root) {
     if (/^Leaves|^GrassClump|^ChainLink/.test(n)) { m.transparent = false; m.alphaTest = 0.45; m.side = THREE.DoubleSide; m.depthWrite = true; if (/^Leaves/.test(n)) { m.roughness = 0.7; } if (n === 'ChainLink') { m.metalness = 0.8; m.roughness = 0.45; } }
     else if (n === 'Water') { m.color.setRGB(0.07, 0.1, 0.08); m.roughness = 0.25; m.metalness = 0; m.normalMap = WATER_N; m.normalScale = new THREE.Vector2(0.3, 0.3); m.envMapIntensity = 1.0; m.userData.water = true; }
     else if (/^(Grass|DryGrass)$/.test(n)) { m.roughness = 1; m.envMapIntensity = 0.25; }
-    else if (/^Concrete/.test(n)) { m.roughness = 0.85; m.envMapIntensity = 0.35; }
+    else if (/^Concrete/.test(n)) { m.roughness = 0.85; m.envMapIntensity = 0.3; m.color.setRGB(0.8, 0.79, 0.77); }
     else if (/^Steel|^Galvanized|^RailSteel/.test(n)) { m.envMapIntensity = 0.9; }
     m.needsUpdate = true;
   });
