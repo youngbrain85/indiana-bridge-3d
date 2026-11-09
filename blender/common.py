@@ -220,7 +220,7 @@ def standard_materials():
     M['galv'] = pbr('Galvanized', T('galvanized.jpg'), rough=0.42, metal=0.9, coords='OBJ', uv_scale=0.3)
     M['galv_dark'] = pbr('GalvanizedDark', color=(0.3, 0.31, 0.32, 1), rough=0.55, metal=0.85)
     M['ballast'] = pbr('Ballast', T('ballast.jpg'), T('ballast_n.jpg'), rough=0.95, nstrength=0.9, coords='OBJ', uv_scale=0.12)
-    M['riprap'] = pbr('Riprap', T('limestone.jpg'), T('limestone_n.jpg'), rough=0.92, nstrength=1.0, dirt=0.6, coords='OBJ', uv_scale=0.22, tint=(0.78, 0.77, 0.72, 1))
+    M['riprap'] = pbr('Riprap', T('limestone.jpg'), T('limestone_n.jpg'), rough=0.92, nstrength=1.0, dirt=0.6, coords='OBJ', uv_scale=0.3, tint=(0.66, 0.67, 0.66, 1))
     M['rail'] = pbr('RailSteel', color=(0.45, 0.42, 0.4, 1), rough=0.35, metal=0.9)
     M['tie'] = pbr('Tie', T('wood.jpg'), rough=0.9, tint=(0.35, 0.3, 0.26, 1), coords='OBJ', uv_scale=0.3)
     M['wood_post'] = pbr('WoodPost', T('wood.jpg'), T('wood_n.jpg'), rough=0.85, nstrength=0.6, tint=(0.6, 0.52, 0.42, 1), coords='OBJ', uv_scale=0.4)

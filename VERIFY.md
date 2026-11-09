@@ -23,7 +23,7 @@ the sheets in `bridges/<folder>/verification/`. Photo numbers refer to `photos/i
 | 1 | Spans 25 + 32 + 25 = 82 ft, deck 43.0 o/o, 39.5 roadway | span table, items 49/51/52 | PASS |
 | 2 | Skew 15° | item 34 | |
 | 3 | Piers: solid concrete walls 46.5 ft long with rounded ends, slab bearing directly on them | photos 26-28, element list "pier wall 46.5" | `Pier2_wall`, `Pier3_wall` present, length ≈ 46.5 ft |
-| 4 | Abutments: tall concrete walls with wingwalls parallel to the road | photos 19-20 | ~9 ft of exposed wall |
+| 4 | Abutments: low concrete caps on spill-through slopes, short wingwalls parallel to the road | photos 19-20, 28 | ~2 ft of exposed cap, grass slope under spans A and C |
 | 5 | Deep stepped coping with NJ safety-shape parapet on top | photos 16-18 | |
 | 6 | Interstate markings: white skip, white right edge, yellow left edge; WB twin 30 ft north | photos 1-2, 12 | approach / aerial renders |
 | 7 | Grass channel in a shallow swale, cornfields either side, water 15 ft below deck | photos 29-31 | |

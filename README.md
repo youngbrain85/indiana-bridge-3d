@@ -29,7 +29,7 @@ checked back against the report with the scripts in `tools/`.
 terrain with the channel or the streets/railroad under the bridge, approach embankments that spill around the
 wingwalls, the superstructure (slab + deep coping + parapet, or deck + W36 girders with cross-frames, stiffeners and
 rocker bearings), the substructure types found in the reports (pile bents, solid pier walls, hammerhead piers,
-pier walls with battered ends, spill-through and wall abutments with wingwalls), approach pavement with lane markings,
+pier walls with battered ends, spill-through abutments and abutments on slope walls, all with wingwalls), approach pavement with lane markings,
 W-beam guardrail, riprap, water, trees and scattered grass, and a Nishita sky. Materials are PBR with procedurally
 generated textures (`blender/gen_textures.py`). Everything is rebuilt from scratch in a few seconds:
 

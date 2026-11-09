@@ -45,8 +45,8 @@ BRIDGES = {
     '07620': dict(
         folder='07620_sr28_little_wea', kind='slab', spans=[22.25, 27.0, 22.25], W=39.0, Wr=36.0, skew=20.0,
         parapet='vertical', slab_t=1.67, coping=dict(w=1.33, d=0.9),
-        piers=[dict(type='abutment_spill', exposed=4.0), dict(type='pile_bent', n=9, d=1.17), dict(type='pile_bent', n=9, d=1.17), dict(type='abutment_spill', exposed=4.0)],
-        ground=dict(kind='creek', z_nat=-7.0, water=-12.95, bed=-14.0, bed_w=12.0, bank_slope=3.2, fill_top=-0.3, berm=-6.0, side_slope=2.5, spill_slope=2.0, half_w=24.0, riprap=True, season='winter'),
+        piers=[dict(type='abutment_spill', exposed=3.0), dict(type='pile_bent', n=9, d=1.17), dict(type='pile_bent', n=9, d=1.17), dict(type='abutment_spill', exposed=3.0)],
+        ground=dict(kind='creek', z_nat=-7.0, water=-12.95, bed=-14.0, bed_w=12.0, bank_slope=3.2, fill_top=-0.3, berm=-5.0, side_slope=2.5, spill_slope=2.0, half_w=24.0, riprap=True, season='winter'),
         twin=None, markings='twoway2', pavement='deck_concrete.jpg', approach_pavement='asphalt.jpg', guardrail='wbeam', drains=True,
         trees=dict(density=0.0010, zones=[(-400, 400, -400, -60), (-400, 400, 60, 400)], avoid_roads=True, h=(30, 55), lines=[(-380, 380, 140), (-380, 380, -170)]),
         cameras=dict(
@@ -58,13 +58,13 @@ BRIDGES = {
     '41750': dict(
         folder='41750_i70_bayliss', kind='slab', spans=[25.0, 32.0, 25.0], W=43.0, Wr=39.5, skew=15.0,
         parapet='nj', slab_t=1.83, coping=dict(w=1.5, d=1.2),
-        piers=[dict(type='abutment_wall', exposed=9.0), dict(type='wall', L=46.5, thick=3.0, batter=False, round_ends=True),
-               dict(type='wall', L=46.5, thick=3.0, batter=False, round_ends=True), dict(type='abutment_wall', exposed=9.0)],
-        ground=dict(kind='creek', z_nat=-11.0, water=-15.0, bed=-16.0, bed_w=8.0, bank_slope=3.0, fill_top=-0.3, berm=-12.0, side_slope=2.5, spill_slope=2.0, half_w=28.0, riprap=False, season='summer', fields=True),
+        piers=[dict(type='abutment_spill', exposed=2.2), dict(type='wall', L=46.5, thick=2.75, batter=False, round_ends=True),
+               dict(type='wall', L=46.5, thick=2.75, batter=False, round_ends=True), dict(type='abutment_spill', exposed=2.2)],
+        ground=dict(kind='creek', z_nat=-11.0, water=-15.0, bed=-16.0, bed_w=8.0, bank_slope=3.0, fill_top=-0.3, berm=-4.2, side_slope=2.5, spill_slope=2.0, half_w=28.0, riprap=False, season='summer', fields=True),
         twin=dict(offset=72.0), markings='interstate2', pavement='deck_concrete.jpg', approach_pavement='deck_concrete.jpg', guardrail='wbeam', approach_slabs=(20.5, 31.08),
         trees=dict(density=0.00025, zones=[(-500, 500, -500, -120), (-500, 500, 120, 500)], avoid_roads=True, h=(30, 50), clumps=[(300, -260, 6), (-260, 300, 5)]),
         cameras=dict(
-            elevation=((-45, -135, 1), (45, 0, -6), 32), under=((26, -34, -13), (-4, 2, -6), 24), deck=((-90, -8, 5.0), (80, 0, 0), 32),
+            elevation=((-45, -135, 1), (45, 0, -6), 32), under=((44, -54, -8), (12, 0, -6), 28), deck=((-90, -8, 5.0), (80, 0, 0), 32),
             pier=((44, -46, -13), (30, 0, -8), 28), approach=((-150, 14, 4.5), (40, 0, 0), 35), aerial=((-140, -170, 110), (41, 20, -6), 32),
             channel=((41, -150, -9), (41, 0, -6), 28)),
         panos={'bank': (-20, -50, -6), 'deck': (41, 0, 5.5), 'under': (41, 0, -12)},
@@ -520,23 +520,27 @@ def build_site(F, M, G, rng):
             for y in ys:
                 for x in xs:
                     xx = x + y * F.tan; V.append((xx + rng.uniform(-0.3, 0.3), y + rng.uniform(-0.3, 0.3), G.z(xx, y) + 0.45 + rng.uniform(-0.25, 0.35)))
+            flags = [on_slope(v[0], v[1]) for v in V]
             for j in range(len(ys) - 1):
                 for i in range(len(xs) - 1):
                     q = j * len(xs) + i; quad = [q, q + 1, q + len(xs) + 1, q + len(xs)]
-                    if sum(on_slope(V[v][0], V[v][1]) for v in quad) >= 2: Fq.append(quad)
+                    if sum(flags[v] for v in quad) >= 3: Fq.append(quad)
+            # boundary vertices (off the slope) are tucked under the grass so the sheet never pokes above the embankment
+            used = {v for f in Fq for v in f}
+            V = [(v[0], v[1], v[2] if flags[k] else G.z(v[0], v[1]) - 0.5) if k in used else v for k, v in enumerate(V)]
             objs.append(mesh_from_arrays('Riprap', V, Fq, box_uv(V, Fq, 0.1), 'Site', M['riprap'], smooth=True))
             # loose stones on the revetment
             rock = bmesh.new(); bmesh.ops.create_icosphere(rock, subdivisions=2, radius=1.0)
             me = bpy.data.meshes.new('RockBase'); rock.to_mesh(me); rock.free(); me.materials.append(M['riprap']); me.shade_smooth()
             uv = me.uv_layers.new(name='UVMap'); Vv = np.array([v.co for v in me.vertices]); Fv = [p.vertices[:] for p in me.polygons]; uv.data.foreach_set('uv', box_uv(Vv, Fv, 0.5).ravel())
             n = 0
-            for k in range(3000):
+            for k in range(9000):
                 x = rng.uniform(-6, L + 6); y = rng.uniform(-W / 2 - 8, W / 2 + 8); xx = x + y * F.tan; z = G.z(xx, y)
                 if not on_slope(xx, y): continue
-                ob = bpy.data.objects.new(f'Rock_{k}', me); coll('Rocks').objects.link(ob); s = rng.uniform(0.45, 1.1)
-                ob.location = (xx, y, z + 0.3 * s); ob.scale = (s, s * rng.uniform(0.7, 1.1), s * 0.65); ob.rotation_euler = (rng.uniform(0, 3), rng.uniform(0, 3), rng.uniform(0, 3))
+                ob = bpy.data.objects.new(f'Rock_{k}', me); coll('Rocks').objects.link(ob); s = rng.uniform(0.3, 0.75)
+                ob.location = (xx, y, z + 0.3 * s); ob.scale = (s, s * rng.uniform(0.7, 1.1), s * 0.6); ob.rotation_euler = (rng.uniform(0, 3), rng.uniform(0, 3), rng.uniform(0, 3))
                 n += 1
-                if n >= 600: break
+                if n >= 1800: break
     return objs
 
 # ----------------------------------------------------------------------------- vegetation

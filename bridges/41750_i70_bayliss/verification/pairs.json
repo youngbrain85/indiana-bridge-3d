@@ -4,7 +4,7 @@
   {
    "view": "elevation",
    "photo": "photo_28.jpg",
-   "check": "Profile: 3 slab spans (25+32+25), deep stepped coping with NJ-shape parapet, 15 deg skew, solid pier wall at each pier, tall abutment walls with wingwalls, grass channel"
+   "check": "Profile: 3 slab spans (25+32+25), deep stepped coping with NJ-shape parapet, 15 deg skew, solid pier wall at each pier, low abutment caps on spill-through slopes, grass channel"
   },
   {
    "view": "approach",
@@ -19,7 +19,7 @@
   {
    "view": "under",
    "photo": "photo_22.jpg",
-   "check": "Span A soffit looking south: flat slab underside, abutment wall, pier wall"
+   "check": "Span A soffit looking south: flat slab underside, abutment cap with the fill slope coming up to it, pier wall"
   },
   {
    "view": "pier",
@@ -34,7 +34,7 @@
   {
    "view": "aerial",
    "photo": "photo_19.jpg",
-   "check": "East bent: tall abutment wall + wingwalls parallel to the road, slab edge, embankment"
+   "check": "East bent: low abutment cap on the embankment slope, short wingwalls parallel to the road, slab edge"
   }
  ]
 }
