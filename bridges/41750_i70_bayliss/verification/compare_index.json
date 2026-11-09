@@ -1,0 +1,61 @@
+{
+ "notes": "Summer photos (Sep 2021): green grass, corn fields, blue sky. EB structure only; the WB twin is 30 ft north and modelled simplified.",
+ "pairs": [
+  {
+   "view": "elevation",
+   "photo": "photo_28.jpg",
+   "caption": "Profile looking South",
+   "check": "Profile: 3 slab spans (25+32+25), deep stepped coping with NJ-shape parapet, 15 deg skew, solid pier wall at each pier, low abutment caps on spill-through slopes, grass channel",
+   "sheet": "bridges/41750_i70_bayliss/verification/compare_elevation.jpg",
+   "render": "bridges/41750_i70_bayliss/renders/elevation.png"
+  },
+  {
+   "view": "approach",
+   "photo": "photo_01.jpg",
+   "caption": "Road alignment looking West",
+   "check": "Interstate: 2 lanes one-way, white skip line, white right edge, yellow left edge, concrete approach slab, W-beam guardrail, twin WB bridge to the north",
+   "sheet": "bridges/41750_i70_bayliss/verification/compare_approach.jpg",
+   "render": "bridges/41750_i70_bayliss/renders/approach.png"
+  },
+  {
+   "view": "deck",
+   "photo": "photo_12.jpg",
+   "caption": "Wearing surface condition overall view looking West",
+   "check": "Concrete wearing surface with longitudinal tining, NJ parapets, 39.5 ft roadway",
+   "sheet": "bridges/41750_i70_bayliss/verification/compare_deck.jpg",
+   "render": "bridges/41750_i70_bayliss/renders/deck.png"
+  },
+  {
+   "view": "under",
+   "photo": "photo_22.jpg",
+   "caption": "Span A overall view looking South",
+   "check": "Span A soffit looking south: flat slab underside, abutment cap with the fill slope coming up to it, pier wall",
+   "sheet": "bridges/41750_i70_bayliss/verification/compare_under.jpg",
+   "render": "bridges/41750_i70_bayliss/renders/under.png"
+  },
+  {
+   "view": "pier",
+   "photo": "photo_27.jpg",
+   "caption": "Pier 2 East face",
+   "check": "Pier 2: solid concrete pier wall 46.5 ft long with rounded ends, slab bearing directly on it, 15 ft from deck to water",
+   "sheet": "bridges/41750_i70_bayliss/verification/compare_pier.jpg",
+   "render": "bridges/41750_i70_bayliss/renders/pier.png"
+  },
+  {
+   "view": "channel",
+   "photo": "photo_30.jpg",
+   "caption": "Upstream alignment or looking north",
+   "check": "Upstream: narrow grass ditch with a small water channel, cornfields either side",
+   "sheet": "bridges/41750_i70_bayliss/verification/compare_channel.jpg",
+   "render": "bridges/41750_i70_bayliss/renders/channel.png"
+  },
+  {
+   "view": "aerial",
+   "photo": "photo_19.jpg",
+   "caption": "East bent condition",
+   "check": "East bent: low abutment cap on the embankment slope, short wingwalls parallel to the road, slab edge",
+   "sheet": "bridges/41750_i70_bayliss/verification/compare_aerial.jpg",
+   "render": "bridges/41750_i70_bayliss/renders/aerial.png"
+  }
+ ]
+}

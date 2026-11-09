@@ -2,7 +2,7 @@
  {
   "check": "nodes in model",
   "expected": null,
-  "actual": 54,
+  "actual": 392,
   "tolerance": null,
   "unit": "",
   "status": "INFO",
@@ -20,7 +20,7 @@
  {
   "check": "length between abutment lines (slab X extent minus skew offset)",
   "expected": 82.0,
-  "actual": 82.00000479382109,
+  "actual": 82.0000024096353,
   "tolerance": 0.5,
   "unit": "ft",
   "status": "PASS",
@@ -29,7 +29,7 @@
  {
   "check": "skew angle derived from slab footprint",
   "expected": 14.999999999999998,
-  "actual": 15.000005959688263,
+  "actual": 15.00000299566362,
   "tolerance": 1.0,
   "unit": "deg",
   "status": "PASS",
@@ -65,7 +65,7 @@
  {
   "check": "parapet L runs full length",
   "expected": 82.0,
-  "actual": 82.0,
+  "actual": 82.00000238418579,
   "tolerance": 1.0,
   "unit": "ft",
   "status": "PASS",
@@ -83,7 +83,7 @@
  {
   "check": "parapet R runs full length",
   "expected": 82.0,
-  "actual": 82.0,
+  "actual": 81.99999761581421,
   "tolerance": 1.0,
   "unit": "ft",
   "status": "PASS",
@@ -110,7 +110,7 @@
  {
   "check": "Bent 1 length",
   "expected": 45.5,
-  "actual": 43.99999841866348,
+  "actual": 44.000000393296084,
   "tolerance": 2.5,
   "unit": "ft",
   "status": "PASS",
@@ -126,7 +126,7 @@
   "note": ""
  },
  {
-  "check": "Pier 2 cap centred on station",
+  "check": "Pier 2 cap/wall centred on station",
   "expected": 25.0,
   "actual": 25.0,
   "tolerance": 0.75,
@@ -137,23 +137,23 @@
  {
   "check": "Pier 2 length",
   "expected": 46.5,
-  "actual": 44.80384911445081,
+  "actual": 46.5970090358643,
   "tolerance": 2.0,
   "unit": "ft",
   "status": "PASS",
-  "note": "frame bent: 2 round columns + rectangular cap (reported as p"
+  "note": "solid concrete pier wall with rounded ends, cap integral wit"
  },
  {
-  "check": "Pier 2 round columns",
-  "expected": 2,
-  "actual": 2,
+  "check": "Pier 2 solid wall present",
+  "expected": true,
+  "actual": true,
   "tolerance": 0,
   "unit": "",
   "status": "PASS",
   "note": ""
  },
  {
-  "check": "Pier 3 cap centred on station",
+  "check": "Pier 3 cap/wall centred on station",
   "expected": 57.0,
   "actual": 57.0,
   "tolerance": 0.75,
@@ -164,16 +164,16 @@
  {
   "check": "Pier 3 length",
   "expected": 46.5,
-  "actual": 44.80384911445081,
+  "actual": 46.5970090358643,
   "tolerance": 2.0,
   "unit": "ft",
   "status": "PASS",
-  "note": "frame bent: 2 round columns + rectangular cap (reported as p"
+  "note": "solid concrete pier wall with rounded ends, cap integral wit"
  },
  {
-  "check": "Pier 3 round columns",
-  "expected": 2,
-  "actual": 2,
+  "check": "Pier 3 solid wall present",
+  "expected": true,
+  "actual": true,
   "tolerance": 0,
   "unit": "",
   "status": "PASS",
@@ -182,7 +182,7 @@
  {
   "check": "Bent 4 stem centre (4.5 ft stem behind the support line)",
   "expected": 84.1733331091504,
-  "actual": 84.17333984375,
+  "actual": 84.17333602905273,
   "tolerance": 0.5,
   "unit": "ft",
   "status": "PASS",
@@ -191,7 +191,7 @@
  {
   "check": "Bent 4 length",
   "expected": 45.5,
-  "actual": 43.99999841866348,
+  "actual": 44.000000393296084,
   "tolerance": 2.5,
   "unit": "ft",
   "status": "PASS",
@@ -218,25 +218,25 @@
  {
   "check": "approach slab 0 length",
   "expected": 20.5,
-  "actual": 20.499998903365185,
+  "actual": 20.499999380202343,
   "tolerance": 1.0,
   "unit": "ft",
   "status": "PASS",
-  "note": "both modelled 20.5 ft"
+  "note": "per-end lengths from the report"
  },
  {
   "check": "approach slab 1 length",
   "expected": 31.08,
-  "actual": 20.500006532759716,
+  "actual": 31.080000734419873,
   "tolerance": 1.0,
   "unit": "ft",
-  "status": "FAIL",
-  "note": "both modelled 20.5 ft"
+  "status": "PASS",
+  "note": "per-end lengths from the report"
  },
  {
   "check": "structure bounding box X (ft)",
   "expected": null,
-  "actual": "-19.0 .. 101.0",
+  "actual": "-14.0 .. 99.5",
   "tolerance": null,
   "unit": "",
   "status": "INFO",
@@ -245,7 +245,7 @@
  {
   "check": "structure bounding box Z (ft)",
   "expected": null,
-  "actual": "-17.9 .. 2.7",
+  "actual": "-16.9 .. 2.7",
   "tolerance": null,
   "unit": "",
   "status": "INFO",

@@ -2,7 +2,7 @@
  {
   "check": "nodes in model",
   "expected": null,
-  "actual": 1472,
+  "actual": 2675,
   "tolerance": null,
   "unit": "",
   "status": "INFO",
@@ -99,9 +99,9 @@
   "note": ""
  },
  {
-  "check": "Bent 1 stem centre (3 ft stem behind the support line)",
-  "expected": -1.4095389311788626,
-  "actual": -1.409538984298706,
+  "check": "Bent 1 stem centre (4.5 ft stem behind the support line)",
+  "expected": -2.114308396768294,
+  "actual": -2.1143081188201904,
   "tolerance": 0.5,
   "unit": "ft",
   "status": "PASS",
@@ -110,11 +110,11 @@
  {
   "check": "Bent 1 length",
   "expected": 39.0,
-  "actual": 39.9999984545912,
+  "actual": 39.999999296218405,
   "tolerance": 2.5,
   "unit": "ft",
   "status": "PASS",
-  "note": "stem is W+1 ft long in the model (3 ft thick box rotated by the skew)"
+  "note": "stem is W+1 ft long in the model (4.5 ft thick box rotated by the skew)"
  },
  {
   "check": "Bent 1 wingwalls",
@@ -126,7 +126,7 @@
   "note": ""
  },
  {
-  "check": "Pier 2 cap centred on station",
+  "check": "Pier 2 cap/wall centred on station",
   "expected": 22.25,
   "actual": 22.250000476837158,
   "tolerance": 0.75,
@@ -144,7 +144,7 @@
   "note": ""
  },
  {
-  "check": "Pier 3 cap centred on station",
+  "check": "Pier 3 cap/wall centred on station",
   "expected": 49.25,
   "actual": 49.25,
   "tolerance": 0.75,
@@ -162,9 +162,9 @@
   "note": ""
  },
  {
-  "check": "Bent 4 stem centre (3 ft stem behind the support line)",
-  "expected": 72.90953893117886,
-  "actual": 72.90953826904297,
+  "check": "Bent 4 stem centre (4.5 ft stem behind the support line)",
+  "expected": 73.6143083967683,
+  "actual": 73.61431121826172,
   "tolerance": 0.5,
   "unit": "ft",
   "status": "PASS",
@@ -173,11 +173,11 @@
  {
   "check": "Bent 4 length",
   "expected": 39.0,
-  "actual": 39.9999984545912,
+  "actual": 39.999999296218405,
   "tolerance": 2.5,
   "unit": "ft",
   "status": "PASS",
-  "note": "stem is W+1 ft long in the model (3 ft thick box rotated by the skew)"
+  "note": "stem is W+1 ft long in the model (4.5 ft thick box rotated by the skew)"
  },
  {
   "check": "Bent 4 wingwalls",
@@ -218,7 +218,7 @@
  {
   "check": "structure bounding box X (ft)",
   "expected": null,
-  "actual": "-14.8 .. 86.3",
+  "actual": "-15.2 .. 86.7",
   "tolerance": null,
   "unit": "",
   "status": "INFO",
