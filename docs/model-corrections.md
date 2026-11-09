@@ -163,6 +163,25 @@ idempotent.
 | Concrete railings `parapet_1`, `parapet_-1` | 2 | Base 36.7-45.2 mm above the deck; 7 mm slit at the sidewalk | On the deck top; flush with the sidewalk below the joint, 1 in behind the head above it | Sheet 59 typical section |
 | Ornamental railing posts, caps, plates, nuts, rings, stars, pickets, rails, graphics | 1,656 | Outer posts on the railing ends; 30 equal 7'-6 3/8" bays | Sheet 60 stations; outer posts 0.75-0.82 m inside; bays 110'-2 3/4" / 15 and 110'-6" / 15 | Sheets 60, 61, 62 |
 
+#### Fifth round: 3D review
+
+**Revision 1.5: the MSE walls wrap around.** A second review of the assembled model found that the MSE walls were two
+straight panels across the bridge width. Nothing retained the sides of the approach embankment, so the illustrative
+ground wrapped high fill round the wall ends and buried the monuments. The drawings show the walls wrapping around:
+sheets 12, 13 and 40 run Walls 54 to 57 along both sides of both approaches, and sheets 20 to 24 give their rear face
+24 ft 4 1/4 in from Line M, the end walls 54A and 56A 4 ft 5 1/4 in in front of CL Bent and 51 ft 2 5/8 in along the
+skew, 8 1/2 in panels, a 1 ft 7 in x 2 ft 0 in precast coping, top-of-wall and coping-top elevations and stepped
+leveling pads (the side-wall pad labels are the pad bottoms, so the panels stand 0.50 ft higher). The two end walls
+and copings are rebuilt as drawn: the old end walls stood 0.30 m too close to the bent and the copings were 1.3 to 1.5
+ft too high. Four side walls, `mse_return_west_-1` to `mse_return_east_1`, run from the end walls to the approach-slab
+pavement end with the drawn top profile and pad steps; the walls continue 300 to 800 ft beyond the model, and the
+barrier on the approach moment slabs that caps them is not modelled. Sheets 64 and 73 cast each monument against the
+outer face of the side wall, with the coping stopping 1/2 in short of it. The monuments stood where the side-wall
+panels go, so they move out: the rusticated face is now 26 ft 6 3/4 in from Line M, and the footings follow the sheet
+73 offset table (inner edge 23 ft 10 in from Line M), which also clears the outer end-bent piles. Four parts were
+added and twelve changed; nothing overlaps. `scripts/correct_21st_street_i465_3d_review_2.py` runs after the
+fourth-round script and is idempotent.
+
 ### US 421 over South Fork Wildcat Creek (`us421-wildcat`)
 
 #### 1. External review corrections (revision 1.1)
@@ -1216,6 +1235,27 @@ drawn but not dimensioned, so the diagonals stand on the strut in its place; thi
 `bay1-intermediate-frame-gussets`. No part was added or removed. `scripts/correct_virginia_avenue_3d_review.py` runs
 after the third-round script and is idempotent.
 
+#### Fifth round: 3D review
+
+**Revision 1.5: the wings as drawn.** A second review of the assembled model found that the four wings were the
+generator's approximate 20 ft parallel envelopes: 0.36 m slabs along the coping lines with a flat top at 5.75 m, below
+the bridge seat and 2.4 to 3.0 m below the deck, paths and approach slabs beside them, so the illustrative fill stood
+up to 2.5 m above them. The wings are now built as the 1971 plans draw them (existing plans 9548460, drawings S-2 to
+S-6, PDF 60 to 64). Drawing S-2 puts Wings A and C on the south side and B and D on the north, with A and B at
+Abutment 1, so `wing_1_-1`, `wing_1_1`, `wing_2_-1` and `wing_2_1` are Wings A, B, C and D. Wings A and D turn 24° 30'
+from the abutment line toward the fill and run 48 ft 6 1/2 in from the 1 in open joint; Wings B and C turn 65° 30' and
+run 19 ft 6 3/4 in. Each wing has a plumb front face and a 1 ft 2 in top, and its back face is battered over the
+bottom 10 ft to 2 ft 6 in at the footing. The top is level for 1 ft at the joint and then falls straight to the tip:
+El. 732.78 to 725.85 at Wing A, 732.72 to 722.65 at B, 732.48 to 723.05 at C and 732.10 to 722.30 at D. The model
+grade passes through the sheet 31 profile-grade elevations at both bearing lines, which gives Z = 0.3048 El - 214.6496
+m. The wing tops at the joint are now 0.09 to 0.16 m above the path or sidewalk beside them. Each wing part also
+carries the abutment's 1 ft return from Section E-E, so the wing meets the abutment wall. Four new hidden parts,
+`wing_footing_1_-1` to `wing_footing_2_1`, model the 16 ft wide, 2 ft thick wing footings. The drawings set them at
+the top of the abutment footing, but the abutment footing envelopes are nominal, so the Abutment 1 wing footings sit
+0.26 m above `footing_1`; this is the new known deviation `wing-footing-levels`. The 2026 contract does not change the
+wings (sheet 32 draws them outside the removal limits). Nothing overlaps; the model has 166 parts (was 162).
+`scripts/correct_virginia_avenue_3d_review_2.py` runs after the fourth-round script and is idempotent.
+
 ### SR 44 over Branch of Little Blue River (`sr44-little-blue`)
 
 #### 1. Datum, approaches, railings, bents and Wing D (revision 1.1)
@@ -1461,3 +1501,20 @@ below the top across the whole width. Only the deck changed; no part was added o
 The haunch tops now meet the deck, the beams stay under their haunches, and the deck no longer shares volume with
 them (left-over films are below 0.05 mm). `scripts/correct_beechwood_3d_review.py` reproduces the correction from
 revision 2.2 and is idempotent; the record and the before/after SHA-256 are in `model_manifest.json`.
+
+## 6. Beechwood end-bent drains (revision 2.4, 3D review)
+
+A second review of the assembled 3D model found that the two 6 in end-bent drains did not outlet anywhere. Each ran
+along the back of its end bent and then straight back from the bent, so its mouth lay in the approach embankment under
+about 2.2 m and 1.6 m of fill; the end cap, both collector ends, the elbow and the first 2.3 m and 2.0 m of each
+outlet were also inside the wings. Sheets 32 and 33 (PDF 33 and 34) draw the pipe behind the bent and sheets 30 and 51
+(PDF 31 and 52) give 58 and 56 LFT, but the plans show no outlet. The typical detail the model cites, INDOT standard
+drawing E 211-BFIL-04, draws the pipe falling along the back of the bent from an end cap and exiting under the
+wingwall at least 6 in below its bottom, with a 45° bend if required. Revision 2.4 re-routes both drains that way.
+Each collector falls 3.81 % from an end cap 1/2 in inside the west wing and passes 6 in under the east wing; it turns
+45° toward the span 5 ft beyond the wing, and the outlet runs at 1 % to daylight on the spill slope in front of the
+bent, beside the riprap. The routed lengths are 51.4 ft and 54.1 ft, within the drawn quantities. The drains no longer
+enter the wings or any other part. No outlet protector was added: neither the plans nor E 211-BFIL-04 give one for an
+end-bent drain. The bend position and outlet length are not dimensioned and were selected. Eight drain parts changed;
+none was added or removed. `scripts/correct_beechwood_3d_review_2.py` reproduces the correction from revision 2.3 and
+is idempotent.

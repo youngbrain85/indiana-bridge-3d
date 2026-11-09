@@ -11,8 +11,8 @@
   "drawing_sha256": "f799d79030f2faa821e4426f417e0f9036ec8409d3ae35cc97b44ca3f239ffa7",
   "source_hashes": {
     "drawing": "f799d79030f2faa821e4426f417e0f9036ec8409d3ae35cc97b44ca3f239ffa7",
-    "manifest": "0a78fb59e0ddf3af5734315bf8664c71df94e3e3e341322fc30f9426616d2c3b",
-    "model": "46eca999e7737c6677c275c8dc99ab22ebfab25d43e0d74f328e2bba45b34562"
+    "manifest": "840f3b383d0ce4ee44d88e1dfb013d0d430c7c2d8fcdcbc4b11db46db5e8e6f5",
+    "model": "45c1c0c7b4d003bd3f73fcf3d03266f13ecb482c96cec83aa66adfa223c46ade"
   },
   "sources": {
     "drawing": {
@@ -1404,6 +1404,10 @@
     "mse_coping_east",
     "mse_coping_west",
     "mse_east",
+    "mse_return_east_-1",
+    "mse_return_east_1",
+    "mse_return_west_-1",
+    "mse_return_west_1",
     "mse_west",
     "parapet_-1",
     "parapet_1",

@@ -30,7 +30,7 @@
     "There is no reinforced-concrete bar or prestressing strand geometry. Internal U cavities, end blocks and interior steel cross diaphragms are included for intelligible beam form.",
     "Negative residual camber values on sheet 49 are interpreted as final sag, distributed parabolically between supports; final field screed values were not included in PDF. Small top-flange end-corner conflicts are resolved with explicitly measured local surface relief to 1 mm below deck underside. This is a visualization fit adjustment, not an as-drawn detail; source deck, soffits, bearing levels and nominal depth elsewhere are preserved.",
     "Mesh components may touch or overlap at intended assembly interfaces and simplified member connections; volumes are per-object visualization quantities, not a consolidated concrete takeoff.",
-    "MSE walls, pile positioning, ornamental fabrication arcs and some small edge treatments are approximate. Full roadway sheets 79-108 are not in this source PDF.",
+    "MSE wall panels (envelopes without joints or texture, side walls truncated at the approach-slab pavement-end line), pile positioning, ornamental fabrication arcs and some small edge treatments are approximate. Full roadway sheets 79-108 are not in this source PDF.",
     "Printed sheet 63 was deleted, so PDF pages 63-77 correspond to printed sheets 64-78. All component pdf_pages are actual 1-based PDF pages.",
     "Colours distinguish component families; exact historical coating colours and concrete weathering have not been colorimetrically reproduced."
   ],
@@ -45,7 +45,7 @@
     "abutments": "Integral end bents",
     "foundations": "Footings and design-length H piles",
     "monuments": "Four architectural monuments",
-    "walls": "MSE wall context and coping",
+    "walls": "MSE walls and coping",
     "rails": "Modified concrete C railing",
     "ornament": "Ornamental steel railing",
     "steel": "Internal steel cross bracing",
@@ -55583,6 +55583,9 @@
       "layer": "monuments",
       "color": "#d0c4af",
       "pdf_pages": [
+        20,
+        22,
+        24,
         63,
         64,
         66,
@@ -55590,29 +55593,31 @@
         70,
         72
       ],
-      "basis": "Dimensioned elevation and longitudinal taper; simplified transverse section",
-      "note": "1:10 batter and actual table elevations. Transverse thickness held at 1 ft 9 in; actual section varies 1 ft 6 in to 1 ft 9 in. Recessed courses omit stone texture and corner drafts.",
+      "basis": "Dimensioned elevation, longitudinal taper and transverse position against the MSE wall (sheets 64, 73); simplified transverse section",
+      "note": "1:10 batter and actual table elevations. Transverse thickness 1 ft 6 in against the 8 1/2 in panel envelope of the MSE wall (drawn 1 ft 6 in to 1 ft 9 in against the textured 8 1/2 in to 5 1/2 in panels, 2 ft 2 1/2 in together, sheet 73 Section E-E). Recessed courses omit stone texture and corner drafts. Rev. 1.5 (3D review 2): moved out to the drawn position, cast against the outer face of the side wall (inner face 25.0625 ft, rusticated face 26.5625 ft from Line M; sheet 64 front elevation, sheet 73 Section E-E); it stood at 24.23-25.98 ft inside the wall line. Stations, elevations and taper unchanged.",
       "dimensions": {
         "top_el_ft": 765.83,
         "bottom_el_ft": 740.25,
         "top_width_ft": 4,
         "bottom_width_ft": 9.116000000000009,
-        "nominal_thickness_ft": 1.75,
-        "batter_ratio": "1:10"
+        "nominal_thickness_ft": 1.5,
+        "batter_ratio": "1:10",
+        "inner_face_offset_ft": 25.0625,
+        "outer_face_offset_ft": 26.5625
       },
       "bounds_m": [
         [
           -38.30056,
-          7.38378,
+          7.63905,
           3.1242
         ],
         [
           -35.522003,
-          7.91718,
+          8.09625,
           10.920984
         ]
       ],
-      "volume_m3": 8.29081306
+      "volume_m3": 7.10640384
     },
     {
       "id": "monument_A_footing",
@@ -55623,26 +55628,31 @@
         63,
         72
       ],
-      "basis": "Dimensioned size and elevation; approximate longitudinal centering",
-      "note": "Footing centered beneath shaft in this reconstruction; source table P/Q has a small asymmetric offset.",
+      "basis": "Dimensioned size, elevation and position (sheet 73 footing offset table)",
+      "note": "Placed by the sheet 73 footing offset table: edge 23'-10\" from Line M toward the bridge, stations P 11+73.70 to Q 11+86.03; it reaches 1'-6\" outside the monument face and under the MSE wall panel (sheet 64 front elevation). Rev. 1.5 (3D review 2): was centred under the shaft at 21.71-25.96 ft from Line M, where it overlapped the outer end-bent pile.",
       "dimensions": {
         "length_ft": 12.333333333333334,
         "width_ft": 4.25,
-        "depth_ft": 1.5
+        "depth_ft": 1.5,
+        "inner_edge_offset_ft": 23.833333,
+        "station_p_q_ft": [
+          1173.7,
+          1186.03
+        ]
       },
       "bounds_m": [
         [
-          -38.79088,
-          6.6167,
+          -38.52113,
+          7.2644,
           2.667
         ],
         [
-          -35.03168,
-          7.9121,
+          -34.761932,
+          8.559799,
           3.1242
         ]
       ],
-      "volume_m3": 2.22641206
+      "volume_m3": 2.22640928
     },
     {
       "id": "monument_B",
@@ -55650,6 +55660,9 @@
       "layer": "monuments",
       "color": "#d0c4af",
       "pdf_pages": [
+        20,
+        22,
+        24,
         63,
         64,
         66,
@@ -55657,29 +55670,31 @@
         70,
         72
       ],
-      "basis": "Dimensioned elevation and longitudinal taper; simplified transverse section",
-      "note": "1:10 batter and actual table elevations. Transverse thickness held at 1 ft 9 in; actual section varies 1 ft 6 in to 1 ft 9 in. Recessed courses omit stone texture and corner drafts.",
+      "basis": "Dimensioned elevation, longitudinal taper and transverse position against the MSE wall (sheets 64, 73); simplified transverse section",
+      "note": "1:10 batter and actual table elevations. Transverse thickness 1 ft 6 in against the 8 1/2 in panel envelope of the MSE wall (drawn 1 ft 6 in to 1 ft 9 in against the textured 8 1/2 in to 5 1/2 in panels, 2 ft 2 1/2 in together, sheet 73 Section E-E). Recessed courses omit stone texture and corner drafts. Rev. 1.5 (3D review 2): moved out to the drawn position, cast against the outer face of the side wall (inner face 25.0625 ft, rusticated face 26.5625 ft from Line M; sheet 64 front elevation, sheet 73 Section E-E); it stood at 24.23-25.98 ft inside the wall line. Stations, elevations and taper unchanged.",
       "dimensions": {
         "top_el_ft": 766.05,
         "bottom_el_ft": 740.47,
         "top_width_ft": 4,
         "bottom_width_ft": 9.115999999999985,
-        "nominal_thickness_ft": 1.75,
-        "batter_ratio": "1:10"
+        "nominal_thickness_ft": 1.5,
+        "batter_ratio": "1:10",
+        "inner_face_offset_ft": 25.0625,
+        "outer_face_offset_ft": 26.5625
       },
       "bounds_m": [
         [
           -33.039711,
-          -7.91718,
+          -8.09625,
           3.191256
         ],
         [
           -30.261154,
-          -7.38378,
+          -7.63905,
           10.98804
         ]
       ],
-      "volume_m3": 8.29081255
+      "volume_m3": 7.10640341
     },
     {
       "id": "monument_B_footing",
@@ -55690,26 +55705,31 @@
         63,
         72
       ],
-      "basis": "Dimensioned size and elevation; approximate longitudinal centering",
-      "note": "Footing centered beneath shaft in this reconstruction; source table P/Q has a small asymmetric offset.",
+      "basis": "Dimensioned size, elevation and position (sheet 73 footing offset table)",
+      "note": "Placed by the sheet 73 footing offset table: edge 23'-10\" from Line M toward the bridge, stations P 11+89.20 to Q 12+01.53; it reaches 1'-6\" outside the monument face and under the MSE wall panel (sheet 64 front elevation). Rev. 1.5 (3D review 2): was centred under the shaft at 21.71-25.96 ft from Line M, where it overlapped the outer end-bent pile.",
       "dimensions": {
         "length_ft": 12.333333333333334,
         "width_ft": 4.25,
-        "depth_ft": 1.5
+        "depth_ft": 1.5,
+        "inner_edge_offset_ft": 23.833333,
+        "station_p_q_ft": [
+          1189.2,
+          1201.53
+        ]
       },
       "bounds_m": [
         [
-          -33.530032,
-          -7.9121,
+          -33.796734,
+          -8.559799,
           2.734056
         ],
         [
-          -29.770832,
-          -6.6167,
+          -30.037531,
+          -7.2644,
           3.191256
         ]
       ],
-      "volume_m3": 2.22641206
+      "volume_m3": 2.22641267
     },
     {
       "id": "monument_C",
@@ -55717,6 +55737,9 @@
       "layer": "monuments",
       "color": "#d0c4af",
       "pdf_pages": [
+        20,
+        22,
+        24,
         63,
         64,
         66,
@@ -55724,29 +55747,31 @@
         70,
         72
       ],
-      "basis": "Dimensioned elevation and longitudinal taper; simplified transverse section",
-      "note": "1:10 batter and actual table elevations. Transverse thickness held at 1 ft 9 in; actual section varies 1 ft 6 in to 1 ft 9 in. Recessed courses omit stone texture and corner drafts.",
+      "basis": "Dimensioned elevation, longitudinal taper and transverse position against the MSE wall (sheets 64, 73); simplified transverse section",
+      "note": "1:10 batter and actual table elevations. Transverse thickness 1 ft 6 in against the 8 1/2 in panel envelope of the MSE wall (drawn 1 ft 6 in to 1 ft 9 in against the textured 8 1/2 in to 5 1/2 in panels, 2 ft 2 1/2 in together, sheet 73 Section E-E). Recessed courses omit stone texture and corner drafts. Rev. 1.5 (3D review 2): moved out to the drawn position, cast against the outer face of the side wall (inner face 25.0625 ft, rusticated face 26.5625 ft from Line M; sheet 64 front elevation, sheet 73 Section E-E); it stood at 24.23-25.98 ft inside the wall line. Stations, elevations and taper unchanged.",
       "dimensions": {
         "top_el_ft": 765.76,
         "bottom_el_ft": 737.93,
         "top_width_ft": 4,
         "bottom_width_ft": 9.566000000000008,
-        "nominal_thickness_ft": 1.75,
-        "batter_ratio": "1:10"
+        "nominal_thickness_ft": 1.5,
+        "batter_ratio": "1:10",
+        "inner_face_offset_ft": 25.0625,
+        "outer_face_offset_ft": 26.5625
       },
       "bounds_m": [
         [
           30.192574,
-          7.38378,
+          7.63905,
           2.417064
         ],
         [
           33.108292,
-          7.91718,
+          8.09625,
           10.899648
         ]
       ],
-      "volume_m3": 9.32889023
+      "volume_m3": 7.99618335
     },
     {
       "id": "monument_C_footing",
@@ -55757,26 +55782,31 @@
         63,
         72
       ],
-      "basis": "Dimensioned size and elevation; approximate longitudinal centering",
-      "note": "Footing centered beneath shaft in this reconstruction; source table P/Q has a small asymmetric offset.",
+      "basis": "Dimensioned size, elevation and position (sheet 73 footing offset table)",
+      "note": "Placed by the sheet 73 footing offset table: edge 23'-10\" from Line M toward the bridge, stations P 14+11.18 to Q 13+98.43; it reaches 1'-6\" outside the monument face and under the MSE wall panel (sheet 64 front elevation). Rev. 1.5 (3D review 2): was centred under the shaft at 21.71-25.96 ft from Line M, where it overlapped the outer end-bent pile.",
       "dimensions": {
         "length_ft": 12.75,
         "width_ft": 4.25,
-        "depth_ft": 1.5
+        "depth_ft": 1.5,
+        "inner_edge_offset_ft": 23.833333,
+        "station_p_q_ft": [
+          1411.18,
+          1398.43
+        ]
       },
       "bounds_m": [
         [
-          29.707332,
-          6.6167,
+          29.977079,
+          7.2644,
           1.959864
         ],
         [
-          33.593532,
-          7.9121,
+          33.863281,
+          8.559799,
           2.417064
         ]
       ],
-      "volume_m3": 2.30162869
+      "volume_m3": 2.301628
     },
     {
       "id": "monument_D",
@@ -55784,6 +55814,9 @@
       "layer": "monuments",
       "color": "#d0c4af",
       "pdf_pages": [
+        20,
+        22,
+        24,
         63,
         64,
         66,
@@ -55791,29 +55824,31 @@
         70,
         72
       ],
-      "basis": "Dimensioned elevation and longitudinal taper; simplified transverse section",
-      "note": "1:10 batter and actual table elevations. Transverse thickness held at 1 ft 9 in; actual section varies 1 ft 6 in to 1 ft 9 in. Recessed courses omit stone texture and corner drafts.",
+      "basis": "Dimensioned elevation, longitudinal taper and transverse position against the MSE wall (sheets 64, 73); simplified transverse section",
+      "note": "1:10 batter and actual table elevations. Transverse thickness 1 ft 6 in against the 8 1/2 in panel envelope of the MSE wall (drawn 1 ft 6 in to 1 ft 9 in against the textured 8 1/2 in to 5 1/2 in panels, 2 ft 2 1/2 in together, sheet 73 Section E-E). Recessed courses omit stone texture and corner drafts. Rev. 1.5 (3D review 2): moved out to the drawn position, cast against the outer face of the side wall (inner face 25.0625 ft, rusticated face 26.5625 ft from Line M; sheet 64 front elevation, sheet 73 Section E-E); it stood at 24.23-25.98 ft inside the wall line. Stations, elevations and taper unchanged.",
       "dimensions": {
         "top_el_ft": 765.5,
         "bottom_el_ft": 737.67,
         "top_width_ft": 4,
         "bottom_width_ft": 9.566000000000008,
-        "nominal_thickness_ft": 1.75,
-        "batter_ratio": "1:10"
+        "nominal_thickness_ft": 1.5,
+        "batter_ratio": "1:10",
+        "inner_face_offset_ft": 25.0625,
+        "outer_face_offset_ft": 26.5625
       },
       "bounds_m": [
         [
           35.453423,
-          -7.91718,
+          -8.09625,
           2.337816
         ],
         [
           38.369137,
-          -7.38378,
+          -7.63905,
           10.8204
         ]
       ],
-      "volume_m3": 9.32888196
+      "volume_m3": 7.99617627
     },
     {
       "id": "monument_D_footing",
@@ -55824,142 +55859,412 @@
         63,
         72
       ],
-      "basis": "Dimensioned size and elevation; approximate longitudinal centering",
-      "note": "Footing centered beneath shaft in this reconstruction; source table P/Q has a small asymmetric offset.",
+      "basis": "Dimensioned size, elevation and position (sheet 73 footing offset table)",
+      "note": "Placed by the sheet 73 footing offset table: edge 23'-10\" from Line M toward the bridge, stations P 14+26.66 to Q 14+13.91; it reaches 1'-6\" outside the monument face and under the MSE wall panel (sheet 64 front elevation). Rev. 1.5 (3D review 2): was centred under the shaft at 21.71-25.96 ft from Line M, where it overlapped the outer end-bent pile.",
       "dimensions": {
         "length_ft": 12.75,
         "width_ft": 4.25,
-        "depth_ft": 1.5
+        "depth_ft": 1.5,
+        "inner_edge_offset_ft": 23.833333,
+        "station_p_q_ft": [
+          1426.66,
+          1413.91
+        ]
       },
       "bounds_m": [
         [
-          34.96818,
-          -7.9121,
+          34.695385,
+          -8.559799,
           1.880616
         ],
         [
-          38.85438,
-          -6.6167,
+          38.581585,
+          -7.2644,
           2.337816
         ]
       ],
-      "volume_m3": 2.30162869
+      "volume_m3": 2.30162747
     },
     {
       "id": "mse_west",
-      "name": "West MSE wall panel envelope | limited context",
+      "name": "West MSE end wall 54A | panel envelope",
       "layer": "walls",
       "color": "#b5afa3",
       "pdf_pages": [
+        20,
+        24,
         40,
         41,
-        63
+        63,
+        72
       ],
-      "basis": "Approximate context",
-      "note": "Panel extent, thickness and ground line approximated from general plan/monument adjacency; not a reconstructed MSE shop-panel layout.",
+      "basis": "Dimensioned plan, panel and elevations (sheet 24); panel joints and texture not modelled",
+      "note": "MSE Wall 54A in front of End Bent 1 as drawn on sheet 24 (elevation and Section B-B) and the sheet 20 plan: rear face 4'-5 1/4\" from CL Bent 1 (normal), 8 1/2\" panel, 51'-2 5/8\" along the skew between the side walls' rear faces (STA 11+80.83 Lt. to 11+96.66 Rt.), bottom on the top of the leveling pad (El. 740.47 for the south 30'-0\", 740.25 for the rest; sheet 24 gives 740.24 there, and the sheet 73 base El. G of the monument, 740.25, is used because the panels stand on the monument footing). Top at the coping underside; the 15\" of panel inside the coping legs is counted in the coping. Leveling pad, panel joints and architectural texture not modelled. Rev. 1.5 (3D review 2): replaces the square-ended 0.6 ft envelope across +/-7.80 m, whose rear face stood 0.299 m nearer the bent, which ran into the monuments and had no side walls (+0.656 m3).",
       "dimensions": {
-        "nominal_thickness_ft": 0.6
+        "panel_thickness_in": 8.5,
+        "rear_face_from_cl_bent_normal_in": 53.25,
+        "length_along_skew_ft": 51.215,
+        "ends_at_side_wall_rear_face_y_ft": 24.354167,
+        "top_of_wall_el_ft": {
+          "north": 758.36,
+          "south": 758.53
+        },
+        "top_of_leveling_pad_el_ft": {
+          "south_30ft": 740.47,
+          "rest": 740.25
+        },
+        "modelled_top": "coping underside (coping top - 2 ft)"
       },
       "bounds_m": [
         [
-          -36.74997,
-          -7.800657,
-          3.157728
+          -36.346573,
+          -7.42315,
+          3.1242
         ],
         [
-          -31.52523,
-          7.800657,
-          8.71728
+          -31.295706,
+          7.42315,
+          8.314944
         ]
       ],
-      "volume_m3": 16.6182322
+      "volume_m3": 17.27405168
     },
     {
       "id": "mse_coping_west",
-      "name": "West MSE wall coping",
+      "name": "West MSE wall 54A precast coping",
       "layer": "walls",
       "color": "#b5afa3",
       "pdf_pages": [
+        24,
         41,
         63
       ],
-      "basis": "Dimensioned coping section; approximate placement",
-      "note": "",
+      "basis": "Dimensioned coping section and elevations (sheets 24, 64)",
+      "note": "Precast coping on Wall 54A (sheet 24 Section B-B): 1'-7\" wide, 2'-0\" high, straddling the 8 1/2\" panel with 5 1/4\" legs; modelled as a solid block on the panel envelope (the panel stops at its underside). Top El. 759.11 north to 759.28 south at the rear-face corners, linear along the skew; ends terminate flush against the monuments with a 1/2\" joint (sheet 64). Rev. 1.5 (3D review 2): was a box at El. 758.6-760.6 across +/-7.85 m, 1.3-1.5 ft too high and into the monuments (-0.090 m3).",
       "dimensions": {
         "height_ft": 2,
-        "width_in": 19
+        "width_in": 19,
+        "legs_in": 5.25,
+        "panel_top_below_coping_top_in": 9,
+        "top_el_ft": {
+          "north": 759.11,
+          "south": 759.28
+        },
+        "end_joint_to_monument_in": 0.5
       },
       "bounds_m": [
         [
-          -36.892496,
-          -7.846966,
-          8.71728
+          -36.552807,
+          -7.62635,
+          8.262419
         ],
         [
-          -31.382704,
-          7.846966,
-          9.32688
+          -31.08947,
+          7.62635,
+          8.925253
         ]
       ],
-      "volume_m3": 4.80851626
+      "volume_m3": 4.71816183
     },
     {
       "id": "mse_east",
-      "name": "East MSE wall panel envelope | limited context",
+      "name": "East MSE end wall 56A | panel envelope",
       "layer": "walls",
       "color": "#b5afa3",
       "pdf_pages": [
+        22,
+        24,
         40,
         41,
-        63
+        63,
+        72
       ],
-      "basis": "Approximate context",
-      "note": "Panel extent, thickness and ground line approximated from general plan/monument adjacency; not a reconstructed MSE shop-panel layout.",
+      "basis": "Dimensioned plan, panel and elevations (sheet 24); panel joints and texture not modelled",
+      "note": "MSE Wall 56A in front of End Bent 3 as drawn on sheet 24 (elevation and Section B-B) and the sheet 22 plan: rear face 4'-5 1/4\" from CL Bent 3 (normal), 8 1/2\" panel, 51'-2 5/8\" along the skew between the side walls' rear faces (STA 14+03.50 Lt. to 14+19.33 Rt.), bottom on the top of the leveling pad (El. 737.93 for the north 30'-0\", 737.67 for the rest). Top at the coping underside; the 15\" of panel inside the coping legs is counted in the coping. Leveling pad, panel joints and architectural texture not modelled. Rev. 1.5 (3D review 2): replaces the square-ended 0.6 ft envelope across +/-7.80 m, whose rear face stood 0.299 m nearer the bent, which ran into the monuments and had no side walls (+0.905 m3).",
       "dimensions": {
-        "nominal_thickness_ft": 0.6
+        "panel_thickness_in": 8.5,
+        "rear_face_from_cl_bent_normal_in": 53.25,
+        "length_along_skew_ft": 51.215,
+        "ends_at_side_wall_rear_face_y_ft": 24.354167,
+        "top_of_wall_el_ft": {
+          "north": 758.23,
+          "south": 758.04
+        },
+        "top_of_leveling_pad_el_ft": {
+          "north_30ft": 737.93,
+          "rest": 737.67
+        },
+        "modelled_top": "coping underside (coping top - 2 ft)"
       },
       "bounds_m": [
         [
-          31.52523,
-          -7.800657,
-          2.37744
+          31.295706,
+          -7.42315,
+          2.337816
         ],
         [
-          36.74997,
-          7.800657,
-          8.62584
+          36.346573,
+          7.42315,
+          8.223504
         ]
       ],
-      "volume_m3": 18.67728948
+      "volume_m3": 19.58177283
     },
     {
       "id": "mse_coping_east",
-      "name": "East MSE wall coping",
+      "name": "East MSE wall 56A precast coping",
       "layer": "walls",
       "color": "#b5afa3",
       "pdf_pages": [
+        24,
         41,
         63
       ],
-      "basis": "Dimensioned coping section; approximate placement",
-      "note": "",
+      "basis": "Dimensioned coping section and elevations (sheets 24, 64)",
+      "note": "Precast coping on Wall 56A (sheet 24 Section B-B): 1'-7\" wide, 2'-0\" high, straddling the 8 1/2\" panel with 5 1/4\" legs; modelled as a solid block on the panel envelope (the panel stops at its underside). Top El. 758.98 north to 758.79 south at the rear-face corners, linear along the skew; ends terminate flush against the monuments with a 1/2\" joint (sheet 64). Rev. 1.5 (3D review 2): was a box at El. 758.3-760.3 across +/-7.85 m, 1.3-1.5 ft too high and into the monuments (-0.090 m3).",
       "dimensions": {
         "height_ft": 2,
-        "width_in": 19
+        "width_in": 19,
+        "legs_in": 5.25,
+        "panel_top_below_coping_top_in": 9,
+        "top_el_ft": {
+          "north": 758.98,
+          "south": 758.79
+        },
+        "end_joint_to_monument_in": 0.5
       },
       "bounds_m": [
         [
-          31.382704,
-          -7.846966,
-          8.62584
+          31.08947,
+          -7.62635,
+          8.1648
         ],
         [
-          36.892496,
-          7.846966,
-          9.23544
+          36.552807,
+          7.62635,
+          8.833897
         ]
       ],
-      "volume_m3": 4.80851626
+      "volume_m3": 4.71816183
+    },
+    {
+      "id": "mse_return_west_1",
+      "name": "MSE wall 54, north (left) side of the west approach | panel envelope",
+      "layer": "walls",
+      "color": "#b5afa3",
+      "pdf_pages": [
+        12,
+        20,
+        24,
+        40,
+        63,
+        72
+      ],
+      "basis": "Dimensioned offset and elevations (sheets 20-24); truncated at the model's approach extent",
+      "note": "MSE Wall 54 on the north (left) side of the west approach embankment, as drawn on sheets 20, 24: rear face 24'-4 1/4\" left of Line M, 8 1/2\" panel. Top of wall 765.38 at 11+50.00, 765.56 at 11+60.00, 765.84 at 11+78.00 (linear between); the last 2.83 ft to the corner stand only to the end-wall coping top El. 759.11 and are cut under the coping. Panel bottom on the top of the leveling pad, El. 740.25, 748.50 from the corner outwards (the sheet labels at the steps are the pad bottoms, 0.50 ft lower). Modelled from the end wall's front face to the approach-slab pavement-end line (STA 11+56.59); the wall continues beyond the model (480.83 ft in all, sheets 12-13). The concrete barrier on the moment slab, which covers the wall top on the drawn Section A-A, the leveling pad, panel joints and texture are not modelled. Added in Rev. 1.5 (3D review 2).",
+      "dimensions": {
+        "panel_thickness_in": 8.5,
+        "rear_face_offset_ft": 24.354167,
+        "front_face_offset_ft": 25.0625,
+        "wall_length_drawn_ft": 480.83,
+        "modelled_from_sta": 1156.585,
+        "top_of_wall_el_ft": {
+          "1150.00": 765.38,
+          "1160.00": 765.56,
+          "1178.00": 765.84
+        },
+        "corner_piece_top_el_ft": 759.11,
+        "corner_piece_from_sta": 1178.0,
+        "top_of_leveling_pad_el_ft": [
+          [
+            1160.0,
+            740.25
+          ],
+          [
+            1150.0,
+            748.5
+          ]
+        ]
+      },
+      "bounds_m": [
+        [
+          -43.737335,
+          7.42315,
+          3.1242
+        ],
+        [
+          -36.11956,
+          7.63905,
+          10.924032
+        ]
+      ],
+      "volume_m3": 11.61636782
+    },
+    {
+      "id": "mse_return_west_-1",
+      "name": "MSE wall 55, south (right) side of the west approach | panel envelope",
+      "layer": "walls",
+      "color": "#b5afa3",
+      "pdf_pages": [
+        12,
+        20,
+        21,
+        24,
+        40,
+        63,
+        72
+      ],
+      "basis": "Dimensioned offset and elevations (sheets 20-24); truncated at the model's approach extent",
+      "note": "MSE Wall 55 on the south (right) side of the west approach embankment, as drawn on sheets 20, 21, 24: rear face 24'-4 1/4\" right of Line M, 8 1/2\" panel. Top of wall 765.37 at 11+50.00, 765.86 at 11+80.00, 766.06 at 11+95.00 (linear between); the last 1.66 ft to the corner stand only to the end-wall coping top El. 759.28 and are cut under the coping. Panel bottom on the top of the leveling pad, El. 740.47, 749.00 from the corner outwards (the sheet labels at the steps are the pad bottoms, 0.50 ft lower). Modelled from the end wall's front face to the approach-slab pavement-end line (STA 11+56.59); the wall continues beyond the model (746.66 ft in all, sheets 12-13). The concrete barrier on the moment slab, which covers the wall top on the drawn Section A-A, the leveling pad, panel joints and texture are not modelled. Added in Rev. 1.5 (3D review 2).",
+      "dimensions": {
+        "panel_thickness_in": 8.5,
+        "rear_face_offset_ft": 24.354167,
+        "front_face_offset_ft": 25.0625,
+        "wall_length_drawn_ft": 746.66,
+        "modelled_from_sta": 1156.585,
+        "top_of_wall_el_ft": {
+          "1150.00": 765.37,
+          "1180.00": 765.86,
+          "1195.00": 766.06
+        },
+        "corner_piece_top_el_ft": 759.28,
+        "corner_piece_from_sta": 1195.0,
+        "top_of_leveling_pad_el_ft": [
+          [
+            1180.0,
+            740.47
+          ],
+          [
+            1150.0,
+            749.0
+          ]
+        ]
+      },
+      "bounds_m": [
+        [
+          -43.737335,
+          -7.63905,
+          3.191256
+        ],
+        [
+          -31.225555,
+          -7.42315,
+          10.991088
+        ]
+      ],
+      "volume_m3": 16.39975073
+    },
+    {
+      "id": "mse_return_east_1",
+      "name": "MSE wall 56, north (left) side of the east approach | panel envelope",
+      "layer": "walls",
+      "color": "#b5afa3",
+      "pdf_pages": [
+        13,
+        22,
+        24,
+        40,
+        63,
+        72
+      ],
+      "basis": "Dimensioned offset and elevations (sheets 20-24); truncated at the model's approach extent",
+      "note": "MSE Wall 56 on the north (left) side of the east approach embankment, as drawn on sheets 22, 24: rear face 24'-4 1/4\" left of Line M, 8 1/2\" panel. Top of wall 765.76 at 14+06.00, 765.53 at 14+20.00, 765.18 at 14+40.00, 764.30 at 14+80.00 (linear between); the last 2.50 ft to the corner stand only to the end-wall coping top El. 758.98 and are cut under the coping. Panel bottom on the top of the leveling pad, El. 737.93, 746.14, 753.50 from the corner outwards (the sheet labels at the steps are the pad bottoms, 0.50 ft lower). Modelled from the end wall's front face to the approach-slab pavement-end line (STA 14+43.58); the wall continues beyond the model (846.5 ft in all, sheets 12-13). The concrete barrier on the moment slab, which covers the wall top on the drawn Section A-A, the leveling pad, panel joints and texture are not modelled. Added in Rev. 1.5 (3D review 2).",
+      "dimensions": {
+        "panel_thickness_in": 8.5,
+        "rear_face_offset_ft": 24.354167,
+        "front_face_offset_ft": 25.0625,
+        "wall_length_drawn_ft": 846.5,
+        "modelled_from_sta": 1443.575,
+        "top_of_wall_el_ft": {
+          "1406.00": 765.76,
+          "1420.00": 765.53,
+          "1440.00": 765.18,
+          "1480.00": 764.3
+        },
+        "corner_piece_top_el_ft": 758.98,
+        "corner_piece_from_sta": 1406.0,
+        "top_of_leveling_pad_el_ft": [
+          [
+            1420.0,
+            737.93
+          ],
+          [
+            1440.0,
+            746.14
+          ],
+          [
+            1480.0,
+            753.5
+          ]
+        ]
+      },
+      "bounds_m": [
+        [
+          31.225555,
+          7.42315,
+          2.417064
+        ],
+        [
+          43.737335,
+          7.63905,
+          10.899648
+        ]
+      ],
+      "volume_m3": 17.69550101
+    },
+    {
+      "id": "mse_return_east_-1",
+      "name": "MSE wall 57, south (right) side of the east approach | panel envelope",
+      "layer": "walls",
+      "color": "#b5afa3",
+      "pdf_pages": [
+        13,
+        22,
+        23,
+        24,
+        40,
+        63,
+        72
+      ],
+      "basis": "Dimensioned offset and elevations (sheets 20-24); truncated at the model's approach extent",
+      "note": "MSE Wall 57 on the south (right) side of the east approach embankment, as drawn on sheets 22, 23, 24: rear face 24'-4 1/4\" right of Line M, 8 1/2\" panel. Top of wall 765.51 at 14+22.00, 765.36 at 14+30.00, 764.98 at 14+50.00 (linear between); the last 2.67 ft to the corner stand only to the end-wall coping top El. 758.79 and are cut under the coping. Panel bottom on the top of the leveling pad, El. 737.67, 743.50 from the corner outwards (the sheet labels at the steps are the pad bottoms, 0.50 ft lower). Modelled from the end wall's front face to the approach-slab pavement-end line (STA 14+43.58); the wall continues beyond the model (954.67 ft in all, sheets 12-13). The concrete barrier on the moment slab, which covers the wall top on the drawn Section A-A, the leveling pad, panel joints and texture are not modelled. Added in Rev. 1.5 (3D review 2).",
+      "dimensions": {
+        "panel_thickness_in": 8.5,
+        "rear_face_offset_ft": 24.354167,
+        "front_face_offset_ft": 25.0625,
+        "wall_length_drawn_ft": 954.67,
+        "modelled_from_sta": 1443.575,
+        "top_of_wall_el_ft": {
+          "1422.00": 765.51,
+          "1430.00": 765.36,
+          "1450.00": 764.98
+        },
+        "corner_piece_top_el_ft": 758.79,
+        "corner_piece_from_sta": 1422.0,
+        "top_of_leveling_pad_el_ft": [
+          [
+            1430.0,
+            737.67
+          ],
+          [
+            1450.0,
+            743.5
+          ]
+        ]
+      },
+      "bounds_m": [
+        [
+          36.11956,
+          -7.63905,
+          2.337816
+        ],
+        [
+          43.737335,
+          -7.42315,
+          10.823448
+        ]
+      ],
+      "volume_m3": 11.72288228
     },
     {
       "id": "approach_west",
@@ -56309,8 +56614,9 @@
     {
       "feature": "Four monuments",
       "status": "approximate",
-      "detail": "Actual A/B/C/D elevations and 1:10 longitudinal taper, individual footings, recessed masonry courses; variable transverse section and small asymmetric footing offsets simplified.",
+      "detail": "Actual A/B/C/D elevations and 1:10 longitudinal taper, individual footings, recessed masonry courses; shafts against the outer face of the MSE side walls, 1 ft 6 in thick against the 8-1/2 in panel envelope (variable 1 ft 6 in to 1 ft 9 in section against the textured panels simplified); footings by the sheet 73 offset table.",
       "sources": [
+        24,
         63,
         64,
         66,
@@ -56320,13 +56626,21 @@
       ]
     },
     {
-      "feature": "MSE wall context",
+      "feature": "MSE walls",
       "status": "approximate",
-      "detail": "Limited end-wall envelope and 2-ft copings only; full panel layout, retained earth, extended roadside walls and roadworks are not reconstructed.",
+      "detail": "End walls 54A and 56A (51 ft 2-5/8 in along the skew, rear face 4 ft 5-1/4 in from CL Bent, 8-1/2 in panels, 19 x 24 in precast coping, stepped leveling-pad tops) and the bridge ends of side walls 54, 55, 56 and 57 (rear face 24 ft 4-1/4 in from Line M, drawn top-of-wall profile and leveling-pad steps), modelled to the approach-slab pavement-end line; the side walls continue 300-800 ft beyond the model. Panel joints and texture, leveling pads, ground reinforcement, retained earth, berm slopewall and the barrier on the approach moment slabs are not modelled.",
       "sources": [
+        12,
+        13,
+        20,
+        21,
+        22,
+        23,
+        24,
         40,
         41,
-        63
+        63,
+        72
       ]
     },
     {
@@ -56356,12 +56670,12 @@
   "bounds_m": [
     [
       -43.737335,
-      -8.027763,
+      -8.559799,
       -7.68096
     ],
     [
       43.737335,
-      8.027763,
+      8.559799,
       13.921504
     ]
   ],
@@ -56369,12 +56683,12 @@
     [
       -43.737335,
       -7.68096,
-      -8.027763
+      -8.559799
     ],
     [
       43.737335,
       13.921504,
-      8.027763
+      8.559799
     ]
   ],
   "default_hidden_layers": [
@@ -56386,7 +56700,7 @@
     "glb": "Y up: native (X,Y,Z) mapped to (X,Z,-Y)"
   },
   "review_geometry_correction": "pier-seat-joints-railing-2ft10-approach-square-end",
-  "revision": "1.4-3d-review",
+  "revision": "1.5-3d-review-2",
   "review_geometry_correction_record": {
     "source_pdf_pages": [
       41,
@@ -62954,5 +63268,955 @@
     "before_glb_sha256": "33bc55b340f9d1a313b6d3b78615bacd5066748fc8963ef8086b230ffbb1c9e3",
     "after_glb_sha256": "46eca999e7737c6677c275c8dc99ab22ebfab25d43e0d74f328e2bba45b34562",
     "before_manifest_sha256": "e2e8f5b97a0d6356352e655bf6d23c33669de67cfff9a8282340bc2cc66706a0"
+  },
+  "review_geometry_correction_3d_2": "mse-walls-wrap-monuments-on-wall-face",
+  "review_correction_record_3d_2": {
+    "source_pdf_pages": [
+      12,
+      13,
+      20,
+      21,
+      22,
+      23,
+      24,
+      40,
+      41,
+      63,
+      72
+    ],
+    "printed_sheets": [
+      12,
+      13,
+      20,
+      21,
+      22,
+      23,
+      24,
+      40,
+      41,
+      64,
+      73
+    ],
+    "previous_revision": "1.4-3d-review",
+    "native_axes": "X = Line M station from 13+00.08 (CL Bent 2), Y = left of Line M looking up-station (north), Z = elevation - 730 ft; GLB (X, Z, -Y)",
+    "resolved": [
+      {
+        "id": "S03",
+        "finding": "The MSE walls were two straight 0.6 ft envelopes across the bridge width only, with square ends and 2 ft box copings 1.3-1.5 ft too high; nothing retained the sides of the approach embankment; the monuments stood inside the wall line, overlapping the envelopes (0.41-0.47 m3) and copings (0.12 m3), and the monument A, B, C and D footings overlapped the outer end-bent piles or the end wall.",
+        "verdict": "RESOLVE",
+        "parts": [
+          "monument_A",
+          "monument_A_footing",
+          "monument_B",
+          "monument_B_footing",
+          "monument_C",
+          "monument_C_footing",
+          "monument_D",
+          "monument_D_footing",
+          "mse_coping_east",
+          "mse_coping_west",
+          "mse_east",
+          "mse_west",
+          "mse_return_east_-1",
+          "mse_return_east_1",
+          "mse_return_west_-1",
+          "mse_return_west_1"
+        ],
+        "correction": "End walls 54A / 56A rebuilt as drawn (rear face 4'-5 1/4\" from CL Bent, 8 1/2\" panel, stepped pad tops, top at the coping underside); copings rebuilt 1'-7\" x 2'-0\" on the drawn top slope, ending 1/2\" from the monuments; side walls 54, 55, 56 and 57 added (rear face 24'-4 1/4\" from Line M, drawn top of wall and pad steps, low corner pieces under the coping) from the end walls to the approach-slab pavement-end line; monuments moved out against the side walls' outer face (1'-6\" thick, rusticated face 26'-6 3/4\" from Line M); footings placed by the sheet 73 offset table.",
+        "sources": "sheets 12-13 (MSE wall lengths), 20-23 (wall plans and elevations), 24 (walls 54A / 56A elevations, Sections A-A and B-B, notes), 40 (general plan), 41 (longitudinal section), 64 (PDF 63, monument front and side elevations), 73 (PDF 72, monument table, footing offset table, Section E-E)",
+        "verification": {
+          "overlap_pairs_checked": 83,
+          "contacts": {
+            "west_1": {
+              "end_wall_end_face_on_side_wall_rear_face_max_mm": 0.0,
+              "end_wall_end_face_area_m2": 1.1666,
+              "monument": "monument_A",
+              "monument_inner_face_on_side_wall_fraction": 0.7363,
+              "monument_inner_face_gap_max_mm": 38.2669,
+              "coping_end_to_monument_mm": 12.7,
+              "side_wall_bottom_minus_footing_top_mm": [
+                0.0,
+                0.0
+              ]
+            },
+            "west_-1": {
+              "end_wall_end_face_on_side_wall_rear_face_max_mm": 0.0,
+              "end_wall_end_face_area_m2": 1.1631,
+              "monument": "monument_B",
+              "monument_inner_face_on_side_wall_fraction": 0.619,
+              "monument_inner_face_gap_max_mm": 42.3501,
+              "coping_end_to_monument_mm": 12.7,
+              "side_wall_bottom_minus_footing_top_mm": [
+                -0.0,
+                0.0
+              ]
+            },
+            "east_1": {
+              "end_wall_end_face_on_side_wall_rear_face_max_mm": 0.0,
+              "end_wall_end_face_area_m2": 1.3181,
+              "monument": "monument_C",
+              "monument_inner_face_on_side_wall_fraction": 0.5403,
+              "monument_inner_face_gap_max_mm": 45.9639,
+              "coping_end_to_monument_mm": 12.7,
+              "side_wall_bottom_minus_footing_top_mm": [
+                -0.0,
+                0.0
+              ]
+            },
+            "east_-1": {
+              "end_wall_end_face_on_side_wall_rear_face_max_mm": 0.0,
+              "end_wall_end_face_area_m2": 1.323,
+              "monument": "monument_D",
+              "monument_inner_face_on_side_wall_fraction": 0.7448,
+              "monument_inner_face_gap_max_mm": 47.3974,
+              "coping_end_to_monument_mm": 12.7,
+              "side_wall_bottom_minus_footing_top_mm": [
+                -0.0,
+                0.0
+              ]
+            }
+          },
+          "side_wall_top_clearance_mm": {
+            "mse_return_east_-1": {
+              "deck": 27.31,
+              "approach_walk_east_-1": 224.79
+            },
+            "mse_return_east_1": {
+              "deck": 29.18,
+              "approach_walk_east_1": 224.19
+            },
+            "mse_return_west_-1": {
+              "deck": 27.33,
+              "approach_walk_west_-1": 224.26
+            },
+            "mse_return_west_1": {
+              "deck": 25.62,
+              "approach_walk_west_1": 221.87
+            },
+            "monument_A": {
+              "deck": 21.76
+            },
+            "monument_B": {
+              "deck": 25.13
+            },
+            "monument_C": {
+              "deck": 27.74
+            },
+            "monument_D": {
+              "deck": 22.55
+            }
+          }
+        }
+      }
+    ],
+    "decisions": [
+      {
+        "id": "S03-extent",
+        "decision": "The side walls are modelled from the end walls to the approach-slab pavement-end line (X = +/-43.737 m), the model's approach extent; the drawn walls continue to STA 7+00 / 4+50 (west) and 22+50 / 23+74 (east).",
+        "reasoning": "The approach slabs and moment slabs, which the walls carry, end there; the roadway beyond is outside the model."
+      },
+      {
+        "id": "S03-pads",
+        "decision": "Panel bottoms on the top of the leveling pad: the sheet 24 values for the end walls, and the side-wall labels at the pad steps plus 0.50 ft.",
+        "reasoning": "The 6 in pads are drawn as double lines; measured on the vector drawing (1/8\" = 1'-0\", 9 pt per ft) the step labels on sheets 20-23 point to the lower line (e.g. 11+60-11+50 on Wall 54: lines at El. 748.50 and 748.00, label 748.00; 11+20-10+90: 752.50 / 752.00 labelled at either end). At the corners the side-wall labels 739.74 / 739.97 / 737.43 / 737.17 are exactly 0.50 ft under the sheet 24 values 740.24 / 740.47 / 737.93 / 737.67, which equal the monument base elevations G of the sheet 73 table (top of the strip footing on sheet 64)."
+      },
+      {
+        "id": "S03-NW-pad",
+        "decision": "North-west corner pad top El. 740.25 (monument A, G) instead of 740.24 (sheet 24).",
+        "reasoning": "The panels stand on the monument A footing there; 0.01 ft (3 mm)."
+      },
+      {
+        "id": "S03-coping",
+        "decision": "Coping modelled as a solid 19 x 24 in block with the panel stopping at its underside.",
+        "reasoning": "Same outside shape and total volume as the drawn U-section straddling the panel top (5 1/4\" legs + 8 1/2\" panel = 1'-7\"); the panel inside the legs is counted in the coping, as in the previous model."
+      },
+      {
+        "id": "S03-corner-tops",
+        "decision": "The low corner pieces of the side walls (2'-10\", 1'-8\", 2'-6\", 2'-8\") are set to the end-wall coping top labelled at the corner (759.11, 759.28, 758.98, 758.79) and cut under the coping band.",
+        "reasoning": "The wall elevations label these tops with the end-wall coping-top values but draw them 0.4-1.1 ft higher; the labels control. The monuments cover the corner pieces on the outside."
+      },
+      {
+        "id": "S03-monuments",
+        "decision": "Monuments moved out against the side walls (inner face 25'-0 3/4\", rusticated face 26'-6 3/4\" from Line M, 1'-6\" thick); footings by the sheet 73 offset table (edge 23'-10\" from Line M toward the bridge, P to Q).",
+        "reasoning": "Sheet 64 and Section E-E place the monument on the outer face of the side-wall panel (2'-2 1/2\" for panel and monument); the coping terminates against it. The previous position (24'-2 3/4\"-25'-11 3/4\") is the side-wall panel itself. Reading the footing offset 23'-10\" as the inner edge (W = 4'-3\" = 1'-6\" outside the monument + monument + panel + 6 1/4\") matches the sheet 64 front elevation and clears the end-bent piles; read as the centre (the previous model) the footing ran under the piles and the monument overhung it."
+      },
+      {
+        "id": "S03-sources",
+        "decision": "No source_refs added.",
+        "reasoning": "This bridge has a single source (drawings.pdf, no source_index.json); its parts carry pdf_pages only."
+      }
+    ],
+    "kept_deviations": [],
+    "changed_parts": [
+      "monument_A",
+      "monument_A_footing",
+      "monument_B",
+      "monument_B_footing",
+      "monument_C",
+      "monument_C_footing",
+      "monument_D",
+      "monument_D_footing",
+      "mse_coping_east",
+      "mse_coping_west",
+      "mse_east",
+      "mse_west"
+    ],
+    "added_parts": [
+      "mse_return_east_-1",
+      "mse_return_east_1",
+      "mse_return_west_-1",
+      "mse_return_west_1"
+    ],
+    "removed_parts": [],
+    "values": {
+      "datum_check": {
+        "bent_1_cap_bottom": {
+          "drawn_el_ft": 758.87,
+          "model_z_m": 8.799576,
+          "model_el_ft": 758.87
+        },
+        "bent_3_cap_bottom": {
+          "drawn_el_ft": 758.55,
+          "model_z_m": 8.70204,
+          "model_el_ft": 758.55
+        },
+        "monument_A_top": {
+          "drawn_el_ft": 765.83,
+          "model_z_m": 10.920984,
+          "model_el_ft": 765.83
+        },
+        "monument_A_bottom": {
+          "drawn_el_ft": 740.25,
+          "model_z_m": 3.1242,
+          "model_el_ft": 740.25
+        },
+        "monument_C_bottom": {
+          "drawn_el_ft": 737.93,
+          "model_z_m": 2.417064,
+          "model_el_ft": 737.93
+        },
+        "monument_D_footing_bottom": {
+          "drawn_el_ft": 736.17,
+          "model_z_m": 1.880616,
+          "model_el_ft": 736.17
+        },
+        "cl_bent_1": {
+          "drawn_sta_ft": 1184.08,
+          "model_x_m": -35.3568,
+          "model_sta_ft": 1184.08
+        },
+        "cl_bent_3": {
+          "drawn_sta_ft": 1416.08,
+          "model_x_m": 35.3568,
+          "model_sta_ft": 1416.08
+        }
+      },
+      "overlap_pairs_checked": 83,
+      "overlap_neighbours_checked": {
+        "monument_A": [
+          "deck",
+          "monument_A_footing",
+          "mse_coping_west",
+          "mse_return_west_1",
+          "mse_west"
+        ],
+        "monument_A_footing": [
+          "b1_pile_11",
+          "monument_A",
+          "mse_return_west_1",
+          "mse_west"
+        ],
+        "monument_B": [
+          "deck",
+          "monument_B_footing",
+          "mse_coping_west",
+          "mse_return_west_-1",
+          "mse_west"
+        ],
+        "monument_B_footing": [
+          "b1_pile_01",
+          "monument_B",
+          "mse_return_west_-1",
+          "mse_west"
+        ],
+        "monument_C": [
+          "deck",
+          "monument_C_footing",
+          "mse_coping_east",
+          "mse_east",
+          "mse_return_east_1"
+        ],
+        "monument_C_footing": [
+          "b3_pile_11",
+          "monument_C",
+          "mse_east",
+          "mse_return_east_1"
+        ],
+        "monument_D": [
+          "monument_D_footing",
+          "mse_coping_east",
+          "mse_east",
+          "mse_return_east_-1"
+        ],
+        "monument_D_footing": [
+          "b3_pile_01",
+          "monument_D",
+          "mse_east",
+          "mse_return_east_-1"
+        ],
+        "mse_coping_east": [
+          "b3_pile_03",
+          "b3_pile_04",
+          "b3_pile_05",
+          "b3_pile_06",
+          "b3_pile_07",
+          "b3_pile_08",
+          "b3_pile_09",
+          "b3_pile_10",
+          "b3_pile_11",
+          "bent_3_cap",
+          "monument_C",
+          "monument_D",
+          "mse_east",
+          "mse_return_east_-1",
+          "mse_return_east_1"
+        ],
+        "mse_coping_west": [
+          "b1_pile_01",
+          "b1_pile_02",
+          "b1_pile_03",
+          "b1_pile_04",
+          "b1_pile_05",
+          "b1_pile_06",
+          "b1_pile_07",
+          "b1_pile_08",
+          "b1_pile_09",
+          "bent_1_cap",
+          "monument_A",
+          "monument_B",
+          "mse_return_west_-1",
+          "mse_return_west_1",
+          "mse_west"
+        ],
+        "mse_east": [
+          "b3_pile_03",
+          "b3_pile_04",
+          "b3_pile_05",
+          "b3_pile_06",
+          "b3_pile_07",
+          "b3_pile_08",
+          "b3_pile_09",
+          "b3_pile_10",
+          "b3_pile_11",
+          "monument_C",
+          "monument_C_footing",
+          "monument_D",
+          "monument_D_footing",
+          "mse_coping_east",
+          "mse_return_east_-1",
+          "mse_return_east_1"
+        ],
+        "mse_return_east_-1": [
+          "monument_D",
+          "monument_D_footing",
+          "mse_coping_east",
+          "mse_east"
+        ],
+        "mse_return_east_1": [
+          "approach_walk_east_1",
+          "deck",
+          "monument_C",
+          "monument_C_footing",
+          "mse_coping_east",
+          "mse_east"
+        ],
+        "mse_return_west_-1": [
+          "deck",
+          "monument_B",
+          "monument_B_footing",
+          "mse_coping_west",
+          "mse_west"
+        ],
+        "mse_return_west_1": [
+          "deck",
+          "monument_A",
+          "monument_A_footing",
+          "mse_coping_west",
+          "mse_west"
+        ],
+        "mse_west": [
+          "b1_pile_01",
+          "b1_pile_02",
+          "b1_pile_03",
+          "b1_pile_04",
+          "b1_pile_05",
+          "b1_pile_06",
+          "b1_pile_07",
+          "b1_pile_08",
+          "b1_pile_09",
+          "monument_A",
+          "monument_A_footing",
+          "monument_B",
+          "monument_B_footing",
+          "mse_coping_west",
+          "mse_return_west_-1",
+          "mse_return_west_1"
+        ]
+      },
+      "overlaps_m3_removed_before_after": {
+        "b1_pile_01_x_monument_B_footing": [
+          0.008383,
+          0.0
+        ],
+        "b1_pile_11_x_monument_A_footing": [
+          0.008383,
+          0.0
+        ],
+        "b3_pile_01_x_monument_D_footing": [
+          0.008383,
+          0.0
+        ],
+        "b3_pile_11_x_monument_C_footing": [
+          0.008383,
+          0.0
+        ],
+        "monument_A_x_mse_coping_west": [
+          0.120027,
+          0.0
+        ],
+        "monument_A_x_mse_west": [
+          0.41467,
+          0.0
+        ],
+        "monument_B_x_mse_coping_west": [
+          0.119986,
+          0.0
+        ],
+        "monument_B_x_mse_west": [
+          0.412148,
+          0.0
+        ],
+        "monument_B_footing_x_mse_west": [
+          0.007451,
+          0.0
+        ],
+        "monument_C_x_mse_coping_east": [
+          0.120042,
+          0.0
+        ],
+        "monument_C_x_mse_east": [
+          0.463031,
+          0.0
+        ],
+        "monument_C_footing_x_mse_east": [
+          0.008806,
+          0.0
+        ],
+        "monument_D_x_mse_coping_east": [
+          0.119848,
+          0.0
+        ],
+        "monument_D_x_mse_east": [
+          0.46599,
+          0.0
+        ]
+      },
+      "overlaps_m3_remaining_before_after": {
+        "mse_coping_west_x_mse_return_west_-1": [
+          0.0,
+          0.0
+        ],
+        "mse_coping_west_x_mse_west": [
+          0.0,
+          0.0
+        ]
+      },
+      "contacts": {
+        "west_1": {
+          "end_wall_end_face_on_side_wall_rear_face_max_mm": 0.0,
+          "end_wall_end_face_area_m2": 1.1666,
+          "monument": "monument_A",
+          "monument_inner_face_on_side_wall_fraction": 0.7363,
+          "monument_inner_face_gap_max_mm": 38.2669,
+          "coping_end_to_monument_mm": 12.7,
+          "side_wall_bottom_minus_footing_top_mm": [
+            0.0,
+            0.0
+          ]
+        },
+        "west_-1": {
+          "end_wall_end_face_on_side_wall_rear_face_max_mm": 0.0,
+          "end_wall_end_face_area_m2": 1.1631,
+          "monument": "monument_B",
+          "monument_inner_face_on_side_wall_fraction": 0.619,
+          "monument_inner_face_gap_max_mm": 42.3501,
+          "coping_end_to_monument_mm": 12.7,
+          "side_wall_bottom_minus_footing_top_mm": [
+            -0.0,
+            0.0
+          ]
+        },
+        "east_1": {
+          "end_wall_end_face_on_side_wall_rear_face_max_mm": 0.0,
+          "end_wall_end_face_area_m2": 1.3181,
+          "monument": "monument_C",
+          "monument_inner_face_on_side_wall_fraction": 0.5403,
+          "monument_inner_face_gap_max_mm": 45.9639,
+          "coping_end_to_monument_mm": 12.7,
+          "side_wall_bottom_minus_footing_top_mm": [
+            -0.0,
+            0.0
+          ]
+        },
+        "east_-1": {
+          "end_wall_end_face_on_side_wall_rear_face_max_mm": 0.0,
+          "end_wall_end_face_area_m2": 1.323,
+          "monument": "monument_D",
+          "monument_inner_face_on_side_wall_fraction": 0.7448,
+          "monument_inner_face_gap_max_mm": 47.3974,
+          "coping_end_to_monument_mm": 12.7,
+          "side_wall_bottom_minus_footing_top_mm": [
+            -0.0,
+            0.0
+          ]
+        }
+      },
+      "side_wall_top_clearance_mm": {
+        "mse_return_east_-1": {
+          "deck": 27.31,
+          "approach_walk_east_-1": 224.79
+        },
+        "mse_return_east_1": {
+          "deck": 29.18,
+          "approach_walk_east_1": 224.19
+        },
+        "mse_return_west_-1": {
+          "deck": 27.33,
+          "approach_walk_west_-1": 224.26
+        },
+        "mse_return_west_1": {
+          "deck": 25.62,
+          "approach_walk_west_1": 221.87
+        },
+        "monument_A": {
+          "deck": 21.76
+        },
+        "monument_B": {
+          "deck": 25.13
+        },
+        "monument_C": {
+          "deck": 27.74
+        },
+        "monument_D": {
+          "deck": 22.55
+        }
+      },
+      "geometry_read": {
+        "corners_rear_face_sta": {
+          "west": {
+            "1": 1180.8327,
+            "-1": 1196.659
+          },
+          "east": {
+            "1": 1403.501,
+            "-1": 1419.3273
+          }
+        },
+        "end_wall_pad_step": {
+          "west": {
+            "rear_point_m": [
+              -34.348369,
+              1.273311
+            ],
+            "along_skew_from_corner_ft": 30.0
+          },
+          "east": {
+            "rear_point_m": [
+              34.348369,
+              -1.273311
+            ],
+            "along_skew_from_corner_ft": 30.0
+          }
+        },
+        "end_wall_rear_face_x_at_line_m_before_after": {
+          "west": [
+            -34.234,
+            -33.934645
+          ],
+          "east": [
+            34.234,
+            33.934645
+          ]
+        },
+        "pavement_end_x_m": {
+          "west": -43.737335,
+          "east": 43.737335
+        },
+        "side_walls": {
+          "mse_return_west_1": {
+            "wall": "54",
+            "segments": [
+              {
+                "stations": [
+                  1156.585,
+                  1160.0
+                ],
+                "top_el": [
+                  765.499,
+                  765.56
+                ],
+                "panel_bottom_el": 748.5
+              },
+              {
+                "stations": [
+                  1160.0,
+                  1178.0
+                ],
+                "top_el": [
+                  765.56,
+                  765.84
+                ],
+                "panel_bottom_el": 740.25
+              },
+              {
+                "stations": [
+                  1178.0,
+                  1181.578
+                ],
+                "top": "end-wall coping top",
+                "panel_bottom_el": 740.25
+              }
+            ],
+            "cut_under_coping_m3": 0.048331,
+            "pavement_end_sta": 1156.585,
+            "rear_face_y_m": 7.42315,
+            "front_face_y_m": 7.63905
+          },
+          "mse_return_west_-1": {
+            "wall": "55",
+            "segments": [
+              {
+                "stations": [
+                  1156.585,
+                  1180.0
+                ],
+                "top_el": [
+                  765.478,
+                  765.86
+                ],
+                "panel_bottom_el": 749.0
+              },
+              {
+                "stations": [
+                  1180.0,
+                  1195.0
+                ],
+                "top_el": [
+                  765.86,
+                  766.06
+                ],
+                "panel_bottom_el": 740.47
+              },
+              {
+                "stations": [
+                  1195.0,
+                  1197.404
+                ],
+                "top": "end-wall coping top",
+                "panel_bottom_el": 740.47
+              }
+            ],
+            "cut_under_coping_m3": 0.048331,
+            "pavement_end_sta": 1156.585,
+            "rear_face_y_m": -7.42315,
+            "front_face_y_m": -7.63905
+          },
+          "mse_return_east_1": {
+            "wall": "56",
+            "segments": [
+              {
+                "stations": [
+                  1443.575,
+                  1440.0
+                ],
+                "top_el": [
+                  765.101,
+                  765.18
+                ],
+                "panel_bottom_el": 753.5
+              },
+              {
+                "stations": [
+                  1440.0,
+                  1420.0
+                ],
+                "top_el": [
+                  765.18,
+                  765.53
+                ],
+                "panel_bottom_el": 746.14
+              },
+              {
+                "stations": [
+                  1420.0,
+                  1406.0
+                ],
+                "top_el": [
+                  765.53,
+                  765.76
+                ],
+                "panel_bottom_el": 737.93
+              },
+              {
+                "stations": [
+                  1406.0,
+                  1402.756
+                ],
+                "top": "end-wall coping top",
+                "panel_bottom_el": 737.93
+              }
+            ],
+            "cut_under_coping_m3": 0.048331,
+            "pavement_end_sta": 1443.575,
+            "rear_face_y_m": 7.42315,
+            "front_face_y_m": 7.63905
+          },
+          "mse_return_east_-1": {
+            "wall": "57",
+            "segments": [
+              {
+                "stations": [
+                  1443.575,
+                  1430.0
+                ],
+                "top_el": [
+                  765.102,
+                  765.36
+                ],
+                "panel_bottom_el": 743.5
+              },
+              {
+                "stations": [
+                  1430.0,
+                  1422.0
+                ],
+                "top_el": [
+                  765.36,
+                  765.51
+                ],
+                "panel_bottom_el": 737.67
+              },
+              {
+                "stations": [
+                  1422.0,
+                  1418.582
+                ],
+                "top": "end-wall coping top",
+                "panel_bottom_el": 737.67
+              }
+            ],
+            "cut_under_coping_m3": 0.048331,
+            "pavement_end_sta": 1443.575,
+            "rear_face_y_m": -7.42315,
+            "front_face_y_m": -7.63905
+          }
+        },
+        "monuments": {
+          "A": {
+            "shaft_y_ft_before": [
+              24.225,
+              25.975
+            ],
+            "shaft_y_ft_after": [
+              25.0625,
+              26.5625
+            ],
+            "footing_y_ft_before": [
+              21.7083,
+              25.9583
+            ],
+            "footing_y_ft_after": [
+              23.8333,
+              28.0833
+            ],
+            "footing_sta_before": [
+              1172.813,
+              1185.147
+            ],
+            "footing_sta_after": [
+              1173.698,
+              1186.032
+            ],
+            "table_P_Q": [
+              1173.7,
+              1186.03
+            ],
+            "length_ft": 12.3333
+          },
+          "B": {
+            "shaft_y_ft_before": [
+              24.225,
+              25.975
+            ],
+            "shaft_y_ft_after": [
+              25.0625,
+              26.5625
+            ],
+            "footing_y_ft_before": [
+              21.7083,
+              25.9583
+            ],
+            "footing_y_ft_after": [
+              23.8333,
+              28.0833
+            ],
+            "footing_sta_before": [
+              1190.073,
+              1202.407
+            ],
+            "footing_sta_after": [
+              1189.198,
+              1201.532
+            ],
+            "table_P_Q": [
+              1189.2,
+              1201.53
+            ],
+            "length_ft": 12.3333
+          },
+          "C": {
+            "shaft_y_ft_before": [
+              24.225,
+              25.975
+            ],
+            "shaft_y_ft_after": [
+              25.0625,
+              26.5625
+            ],
+            "footing_y_ft_before": [
+              21.7083,
+              25.9583
+            ],
+            "footing_y_ft_after": [
+              23.8333,
+              28.0833
+            ],
+            "footing_sta_before": [
+              1397.545,
+              1410.295
+            ],
+            "footing_sta_after": [
+              1398.43,
+              1411.18
+            ],
+            "table_P_Q": [
+              1411.18,
+              1398.43
+            ],
+            "length_ft": 12.75
+          },
+          "D": {
+            "shaft_y_ft_before": [
+              24.225,
+              25.975
+            ],
+            "shaft_y_ft_after": [
+              25.0625,
+              26.5625
+            ],
+            "footing_y_ft_before": [
+              21.7083,
+              25.9583
+            ],
+            "footing_y_ft_after": [
+              23.8333,
+              28.0833
+            ],
+            "footing_sta_before": [
+              1414.805,
+              1427.555
+            ],
+            "footing_sta_after": [
+              1413.91,
+              1426.66
+            ],
+            "table_P_Q": [
+              1426.66,
+              1413.91
+            ],
+            "length_ft": 12.75
+          }
+        }
+      },
+      "volumes_m3": {
+        "monument_A": [
+          8.290813,
+          7.106404
+        ],
+        "monument_A_footing": [
+          2.22641,
+          2.226409
+        ],
+        "monument_B": [
+          8.290813,
+          7.106403
+        ],
+        "monument_B_footing": [
+          2.226412,
+          2.226413
+        ],
+        "monument_C": [
+          9.32889,
+          7.996183
+        ],
+        "monument_C_footing": [
+          2.301628,
+          2.301628
+        ],
+        "monument_D": [
+          9.328882,
+          7.996176
+        ],
+        "monument_D_footing": [
+          2.301628,
+          2.301627
+        ],
+        "mse_coping_east": [
+          4.808506,
+          4.718162
+        ],
+        "mse_coping_west": [
+          4.808506,
+          4.718162
+        ],
+        "mse_east": [
+          18.677191,
+          19.581773
+        ],
+        "mse_return_east_-1": [
+          0.0,
+          11.722882
+        ],
+        "mse_return_east_1": [
+          0.0,
+          17.695501
+        ],
+        "mse_return_west_-1": [
+          0.0,
+          16.399751
+        ],
+        "mse_return_west_1": [
+          0.0,
+          11.616368
+        ],
+        "mse_west": [
+          16.618145,
+          17.274052
+        ]
+      }
+    },
+    "before_glb_sha256": "46eca999e7737c6677c275c8dc99ab22ebfab25d43e0d74f328e2bba45b34562",
+    "after_glb_sha256": "45c1c0c7b4d003bd3f73fcf3d03266f13ecb482c96cec83aa66adfa223c46ade",
+    "before_manifest_sha256": "0a78fb59e0ddf3af5734315bf8664c71df94e3e3e341322fc30f9426616d2c3b"
   }
 }

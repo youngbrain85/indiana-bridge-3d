@@ -61,7 +61,7 @@
         "render_glb": "bridges/21st-street-i465/model_render.glb",
         "deck_length_m": 71.35495,
         "spans": 2,
-        "components": 1944,
+        "components": 1948,
         "revision": "Drawing-based exterior geometry v1",
         "scope": "Exterior details; see coverage notes for estimates and simplifications",
         "detail_status": "needs_detail",
@@ -670,11 +670,11 @@
         "render_glb": "bridges/virginia-avenue/model_render.glb",
         "deck_length_m": 36.76967500000001,
         "spans": 1,
-        "components": 162,
+        "components": 166,
         "revision": "Proposed 2026 design with documented historical retention v1",
         "scope": "Whole-crossing exterior reconstruction with explicit source-state and approximation boundaries.",
         "detail_status": "needs_detail",
-        "detail_status_note": "Whole crossing present; amber because field elevations, wingwall shape, connections, rail/approach transitions and small fittings remain approximate. Proposed 2026 work is not proof of completion."
+        "detail_status_note": "Whole crossing present; amber because field elevations, wing footing levels, connections, rail/approach transitions and small fittings remain approximate. Proposed 2026 work is not proof of completion."
       }
     },
     {

@@ -5,8 +5,8 @@
  "designation": "1400825",
  "source": {
   "glb": "model.glb",
-  "sha256": "3d87af59b10ddfe9021a3c4dff47f3c282aae37684440e96bafc5dc2c47ddf1b",
-  "revision": "2.3-3d-review"
+  "sha256": "947a6b4927f0be47e04d5f2f734cf449907a394a64248ebca1e2c8b88801b318",
+  "revision": "2.4-3d-review-2"
  },
  "canvas_mm": [
   420.0,

@@ -20,7 +20,7 @@
   ],
   "deck_thickness_m": 0.2032,
   "source_note": "INDOT B-44576 primary 2026 design. Retained original framing and 2013 northbound girder replacement are sourced only from identified pages of document 9548460. Separate southbound/I-70, cathodic-protection and lighting pages are not dimensional authority. Original files remain unchanged.",
-  "status_note": "Whole crossing present; amber because field elevations, wingwall shape, connections, rail/approach transitions and small fittings remain approximate. Proposed 2026 work is not proof of completion.",
+  "status_note": "Whole crossing present; amber because field elevations, wing footing levels, connections, rail/approach transitions and small fittings remain approximate. Proposed 2026 work is not proof of completion.",
   "assumptions": [
     "Whole-crossing exterior reconstruction of the stated proposed design, not an as-built survey or confirmation of construction completion.",
     "Amber / needs_detail: fabrication tolerances, exact field seats, local notches and transitions, small fittings, and terrain remain incomplete.",
@@ -5003,70 +5003,172 @@
     },
     {
       "id": "wing_1_-1",
-      "name": "Abutment 1 | retained south wing envelope",
+      "name": "Abutment 1 | retained south wing (1971 Wing A) with abutment return",
       "layer": "abutments",
       "color": "#beb8a8",
       "pdf_pages": [
         31,
-        32
+        32,
+        38
       ],
-      "basis": "Historical wing presence; approximate 20 ft parallel envelope",
-      "note": "Source wings are splayed and battered. Their exact plan and top profile remain incomplete. Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37).",
-      "dimensions": {},
+      "basis": "Existing plans 9548460 S-3, S-4 and S-2 (PDF 60, 61, 62): Wing A plan, section and top elevations; retained unchanged by the 2026 contract (sheets 32, 38)",
+      "note": "Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37). 3D review correction 1.5: rebuilt as the 1971 plans draw Wing A (S-3, S-4). Splayed 24 deg 30 min from the abutment line toward the fill, 48 ft 6 1/2 in long from the C/L of the 1 in open joint; outer face plumb, 1 ft 2 in top, back face battered from El. 719.23 to 2 ft 6 in at the wing footing top El. 709.23; top El. 732.78 at the joint end, level for 1 ft 0 in, falling straight to El. 725.85 at the tip (Z 8.702 to 6.589; the envelope was flat at Z 5.753). Includes the 1 ft 0 in abutment return (Section E-E: 8 ft 3 1/2 in along the front face from the stem corner to the joint) from the coping-line end of the abutment envelope, top at the joint-end elevation (S-3 elevation; not dimensioned), bottom at the abutment footing top El. 707.23; the 1 in joint is a gap. Elevations by Z = 0.3048 El - 214.6496 m (sheet 31 P.G. at both bearing lines). Rebar, keyways, drains and chamfers omitted.",
+      "dimensions": {
+        "wing": "1971 Wing A",
+        "splay_from_abutment_line_deg": 24.5,
+        "direction_deg": 158.818333,
+        "length_from_joint_m": 14.7955,
+        "top_thickness_m": 0.3556,
+        "base_thickness_m": 0.762,
+        "batter": "back face, from the construction joint to the wing footing top",
+        "top_el_ft": {
+          "joint_end": 732.78,
+          "tip": 725.85
+        },
+        "level_top_from_joint_m": 0.3048,
+        "top_z_m": {
+          "joint_end": 8.701752,
+          "tip": 6.589488
+        },
+        "stem_base_el_ft": 709.23,
+        "batter_start_el_ft": 719.23,
+        "stem_base_z_m": 1.523712,
+        "joint_outer_xy_m": [
+          -28.791086,
+          10.792196
+        ],
+        "tip_outer_xy_m": [
+          -42.586994,
+          16.138198
+        ],
+        "open_joint_m": 0.0254,
+        "abutment_return": {
+          "thickness_m": 0.3048,
+          "outer_face_m": 2.65081,
+          "inner_face_m": 1.864242,
+          "drawn_from_stem_corner_m": 2.5273,
+          "bottom_z_m": 0.914112
+        },
+        "front_ground_el_ft": {
+          "joint_end": 712.97,
+          "tip": 724.85
+        },
+        "datum": "Z = 0.3048 El - 214.6496 m"
+      },
       "bounds_m": [
         [
-          -33.068243,
-          9.6498,
-          0.65
+          -42.862325,
+          9.8298,
+          0.914112
         ],
         [
-          -26.972243,
-          10.0098,
-          5.753332
+          -26.307525,
+          16.138198,
+          8.701752
         ]
       ],
-      "volume_m3": 11.199569071,
+      "volume_m3": 46.805532761,
       "source_refs": [
         {
           "source_id": "9683637",
           "pdf_pages": [
             31,
-            32
+            32,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            60,
+            61,
+            62
           ]
         }
       ]
     },
     {
       "id": "wing_1_1",
-      "name": "Abutment 1 | retained north wing envelope",
+      "name": "Abutment 1 | retained north wing (1971 Wing B) with abutment return",
       "layer": "abutments",
       "color": "#beb8a8",
       "pdf_pages": [
         31,
-        32
+        32,
+        38
       ],
-      "basis": "Historical wing presence; approximate 20 ft parallel envelope",
-      "note": "Source wings are splayed and battered. Their exact plan and top profile remain incomplete. Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37).",
-      "dimensions": {},
+      "basis": "Existing plans 9548460 S-3, S-4 and S-2 (PDF 60, 61, 62): Wing B plan, section and top elevations; retained unchanged by the 2026 contract (sheets 32, 38)",
+      "note": "Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37). 3D review correction 1.5: rebuilt as the 1971 plans draw Wing B (S-3, S-4). Splayed 65 deg 30 min from the abutment line toward the fill, 19 ft 6 3/4 in long from the C/L of the 1 in open joint; outer face plumb, 1 ft 2 in top, back face battered from El. 719.23 to 2 ft 6 in at the wing footing top El. 709.23; top El. 732.72 at the joint end, level for 1 ft 0 in, falling straight to El. 722.65 at the tip (Z 8.683 to 5.614; the envelope was flat at Z 5.753). Includes the 1 ft 0 in abutment return (Section E-E: 4 ft 11 1/4 in along the front face from the stem corner to the joint) from the coping-line end of the abutment envelope, top at the joint-end elevation (S-3 elevation; not dimensioned), bottom at the abutment footing top El. 707.23; the 1 in joint is a gap. Elevations by Z = 0.3048 El - 214.6496 m (sheet 31 P.G. at both bearing lines). Rebar, keyways, drains and chamfers omitted.",
+      "dimensions": {
+        "wing": "1971 Wing B",
+        "splay_from_abutment_line_deg": 65.5,
+        "direction_deg": -111.181667,
+        "length_from_joint_m": 5.96265,
+        "top_thickness_m": 0.3556,
+        "base_thickness_m": 0.762,
+        "batter": "back face, from the construction joint to the wing footing top",
+        "top_el_ft": {
+          "joint_end": 732.72,
+          "tip": 722.65
+        },
+        "level_top_from_joint_m": 0.3048,
+        "top_z_m": {
+          "joint_end": 8.683464,
+          "tip": 5.614128
+        },
+        "stem_base_el_ft": 709.23,
+        "batter_start_el_ft": 719.23,
+        "stem_base_z_m": 1.523712,
+        "joint_outer_xy_m": [
+          -8.203503,
+          -10.751206
+        ],
+        "tip_outer_xy_m": [
+          -10.357965,
+          -16.311016
+        ],
+        "open_joint_m": 0.0254,
+        "abutment_return": {
+          "thickness_m": 0.3048,
+          "outer_face_m": 0.975467,
+          "inner_face_m": 0.857355,
+          "drawn_from_stem_corner_m": 1.50495,
+          "bottom_z_m": 0.914112
+        },
+        "front_ground_el_ft": {
+          "joint_end": 712.02,
+          "tip": 721.65
+        },
+        "datum": "Z = 0.3048 El - 214.6496 m"
+      },
       "bounds_m": [
         [
-          -13.870957,
-          -10.0098,
-          0.65
+          -11.068484,
+          -16.311016,
+          0.914112
         ],
         [
-          -7.774957,
-          -9.6498,
-          5.753332
+          -7.846452,
+          -9.8298,
+          8.683464
         ]
       ],
-      "volume_m3": 11.199569071,
+      "volume_m3": 17.916247277,
       "source_refs": [
         {
           "source_id": "9683637",
           "pdf_pages": [
             31,
-            32
+            32,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            60,
+            61,
+            62
           ]
         }
       ]
@@ -5448,70 +5550,172 @@
     },
     {
       "id": "wing_2_-1",
-      "name": "Abutment 2 | retained south wing envelope",
+      "name": "Abutment 2 | retained south wing (1971 Wing C) with abutment return",
       "layer": "abutments",
       "color": "#beb8a8",
       "pdf_pages": [
         31,
-        32
+        32,
+        38
       ],
-      "basis": "Historical wing presence; approximate 20 ft parallel envelope",
-      "note": "Source wings are splayed and battered. Their exact plan and top profile remain incomplete. Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37).",
-      "dimensions": {},
+      "basis": "Existing plans 9548460 S-5, S-6 and S-2 (PDF 60, 63, 64): Wing C plan, section and top elevations; retained unchanged by the 2026 contract (sheets 32, 38)",
+      "note": "Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37). 3D review correction 1.5: rebuilt as the 1971 plans draw Wing C (S-5, S-6). Splayed 65 deg 30 min from the abutment line toward the fill, 19 ft 6 3/4 in long from the C/L of the 1 in open joint; outer face plumb, 1 ft 2 in top, back face battered from El. 718.30 to 2 ft 6 in at the wing footing top El. 708.30; top El. 732.48 at the joint end, level for 1 ft 0 in, falling straight to El. 723.05 at the tip (Z 8.610 to 5.736; the envelope was flat at Z 5.729). Includes the 1 ft 0 in abutment return (Section E-E: 4 ft 11 1/4 in along the front face from the stem corner to the joint) from the coping-line end of the abutment envelope, top at the joint-end elevation (S-5 elevation; not dimensioned), bottom at the abutment footing top El. 706.30; the 1 in joint is a gap. Elevations by Z = 0.3048 El - 214.6496 m (sheet 31 P.G. at both bearing lines). Rebar, keyways, drains and chamfers omitted.",
+      "dimensions": {
+        "wing": "1971 Wing C",
+        "splay_from_abutment_line_deg": 65.5,
+        "direction_deg": 68.818333,
+        "length_from_joint_m": 5.96265,
+        "top_thickness_m": 0.3556,
+        "base_thickness_m": 0.762,
+        "batter": "back face, from the construction joint to the wing footing top",
+        "top_el_ft": {
+          "joint_end": 732.48,
+          "tip": 723.05
+        },
+        "level_top_from_joint_m": 0.3048,
+        "top_z_m": {
+          "joint_end": 8.610312,
+          "tip": 5.736048
+        },
+        "stem_base_el_ft": 708.3,
+        "batter_start_el_ft": 718.3,
+        "stem_base_z_m": 1.240248,
+        "joint_outer_xy_m": [
+          8.203503,
+          10.751206
+        ],
+        "tip_outer_xy_m": [
+          10.357965,
+          16.311016
+        ],
+        "open_joint_m": 0.0254,
+        "abutment_return": {
+          "thickness_m": 0.3048,
+          "outer_face_m": 0.975467,
+          "inner_face_m": 0.857355,
+          "drawn_from_stem_corner_m": 1.50495,
+          "bottom_z_m": 0.65
+        },
+        "front_ground_el_ft": {
+          "joint_end": 712.27,
+          "tip": 722.05
+        },
+        "datum": "Z = 0.3048 El - 214.6496 m"
+      },
       "bounds_m": [
         [
-          7.774957,
-          9.6498,
+          7.846452,
+          9.8298,
           0.65
         ],
         [
-          13.870957,
-          10.0098,
-          5.72874
+          11.068484,
+          16.311016,
+          8.610312
         ]
       ],
-      "volume_m3": 11.145600451,
+      "volume_m3": 18.610800975,
       "source_refs": [
         {
           "source_id": "9683637",
           "pdf_pages": [
             31,
-            32
+            32,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            60,
+            63,
+            64
           ]
         }
       ]
     },
     {
       "id": "wing_2_1",
-      "name": "Abutment 2 | retained north wing envelope",
+      "name": "Abutment 2 | retained north wing (1971 Wing D) with abutment return",
       "layer": "abutments",
       "color": "#beb8a8",
       "pdf_pages": [
         31,
-        32
+        32,
+        38
       ],
-      "basis": "Historical wing presence; approximate 20 ft parallel envelope",
-      "note": "Source wings are splayed and battered. Their exact plan and top profile remain incomplete. Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37).",
-      "dimensions": {},
+      "basis": "Existing plans 9548460 S-5, S-6 and S-2 (PDF 60, 63, 64): Wing D plan, section and top elevations; retained unchanged by the 2026 contract (sheets 32, 38)",
+      "note": "Review correction 1.1: moved to the plan side (Girder 1 and the south path at plan-left looking up-station, sheets 31, 36, 37; existing sheet 10) and re-seated on the deck crowned at Line \"Vir\" (sheets 31, 37). 3D review correction 1.5: rebuilt as the 1971 plans draw Wing D (S-5, S-6). Splayed 24 deg 30 min from the abutment line toward the fill, 48 ft 6 1/2 in long from the C/L of the 1 in open joint; outer face plumb, 1 ft 2 in top, back face battered from El. 718.30 to 2 ft 6 in at the wing footing top El. 708.30; top El. 732.10 at the joint end, level for 1 ft 0 in, falling straight to El. 722.30 at the tip (Z 8.494 to 5.507; the envelope was flat at Z 5.729). Includes the 1 ft 0 in abutment return (Section E-E: 8 ft 3 1/2 in along the front face from the stem corner to the joint) from the coping-line end of the abutment envelope, top at the joint-end elevation (S-5 elevation; not dimensioned), bottom at the abutment footing top El. 706.30; the 1 in joint is a gap. Elevations by Z = 0.3048 El - 214.6496 m (sheet 31 P.G. at both bearing lines). Rebar, keyways, drains and chamfers omitted.",
+      "dimensions": {
+        "wing": "1971 Wing D",
+        "splay_from_abutment_line_deg": 24.5,
+        "direction_deg": -21.181667,
+        "length_from_joint_m": 14.7955,
+        "top_thickness_m": 0.3556,
+        "base_thickness_m": 0.762,
+        "batter": "back face, from the construction joint to the wing footing top",
+        "top_el_ft": {
+          "joint_end": 732.1,
+          "tip": 722.3
+        },
+        "level_top_from_joint_m": 0.3048,
+        "top_z_m": {
+          "joint_end": 8.494488,
+          "tip": 5.507448
+        },
+        "stem_base_el_ft": 708.3,
+        "batter_start_el_ft": 718.3,
+        "stem_base_z_m": 1.240248,
+        "joint_outer_xy_m": [
+          28.791086,
+          -10.792196
+        ],
+        "tip_outer_xy_m": [
+          42.586994,
+          -16.138198
+        ],
+        "open_joint_m": 0.0254,
+        "abutment_return": {
+          "thickness_m": 0.3048,
+          "outer_face_m": 2.65081,
+          "inner_face_m": 1.864242,
+          "drawn_from_stem_corner_m": 2.5273,
+          "bottom_z_m": 0.65
+        },
+        "front_ground_el_ft": {
+          "joint_end": 711.37,
+          "tip": 721.51
+        },
+        "datum": "Z = 0.3048 El - 214.6496 m"
+      },
       "bounds_m": [
         [
-          26.972243,
-          -10.0098,
+          26.307525,
+          -16.138198,
           0.65
         ],
         [
-          33.068243,
-          -9.6498,
-          5.72874
+          42.862325,
+          -9.8298,
+          8.494488
         ]
       ],
-      "volume_m3": 11.145600451,
+      "volume_m3": 44.991401387,
       "source_refs": [
         {
           "source_id": "9683637",
           "pdf_pages": [
             31,
-            32
+            32,
+            38
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            60,
+            63,
+            64
           ]
         }
       ]
@@ -7323,6 +7527,218 @@
         ]
       ],
       "volume_m3": 0.060517814
+    },
+    {
+      "id": "wing_footing_1_-1",
+      "name": "Abutment 1 | hidden south wing footing (1971 Wing A)",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Existing plans 9548460 S-3, S-4 (PDF 61, 62): Wing A footing plan and Section B-B",
+      "note": "Added in 3D review correction 1.5. 16 ft 0 in wide, 48 ft 6 1/2 in long from the C/L of the 1 in open joint to the tip, toe 2 ft 6 in outside the outer face of the wing, heel 11 ft 0 in behind its 2 ft 6 in base; top El. 709.23 (Z 1.524). Bottom at the abutment footing top El. 707.23, on which S-3 stacks it (Z 0.914; 0.264 m above the nominal footing_1 envelope, see known_deviations). Rebar and keyway omitted.",
+      "dimensions": {
+        "width_m": 4.8768,
+        "length_m": 14.7955,
+        "toe_m": 0.762,
+        "heel_m": 3.3528,
+        "thickness_m": 0.6096,
+        "top_el_ft": 709.23,
+        "bottom_el_ft": 707.23,
+        "top_z_m": 1.523712,
+        "bottom_z_m": 0.914112
+      },
+      "bounds_m": [
+        [
+          -44.073779,
+          6.955394,
+          0.914112
+        ],
+        [
+          -28.515756,
+          16.848717,
+          1.523712
+        ]
+      ],
+      "volume_m3": 43.985501706,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            60,
+            61,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wing_footing_1_1",
+      "name": "Abutment 1 | hidden north wing footing (1971 Wing B)",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Existing plans 9548460 S-3, S-4 (PDF 61, 62): Wing B footing plan and Section B-B",
+      "note": "Added in 3D review correction 1.5. 16 ft 0 in wide, 19 ft 6 3/4 in long from the C/L of the 1 in open joint to the tip, toe 2 ft 6 in outside the outer face of the wing, heel 11 ft 0 in behind its 2 ft 6 in base; top El. 709.23 (Z 1.524). Bottom at the abutment footing top El. 707.23, on which S-3 stacks it (Z 0.914; 0.264 m above the nominal footing_1 envelope, see known_deviations). Rebar and keyway omitted.",
+      "dimensions": {
+        "width_m": 4.8768,
+        "length_m": 5.96265,
+        "toe_m": 0.762,
+        "heel_m": 3.3528,
+        "thickness_m": 0.6096,
+        "top_el_ft": 709.23,
+        "bottom_el_ft": 707.23,
+        "top_z_m": 1.523712,
+        "bottom_z_m": 0.914112
+      },
+      "bounds_m": [
+        [
+          -14.194767,
+          -16.586347,
+          0.914112
+        ],
+        [
+          -7.492984,
+          -9.264421,
+          1.523712
+        ]
+      ],
+      "volume_m3": 17.726345967,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            60,
+            61,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wing_footing_2_-1",
+      "name": "Abutment 2 | hidden south wing footing (1971 Wing C)",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Existing plans 9548460 S-5, S-6 (PDF 63, 64): Wing C footing plan and Section B-B",
+      "note": "Added in 3D review correction 1.5. 16 ft 0 in wide, 19 ft 6 3/4 in long from the C/L of the 1 in open joint to the tip, toe 2 ft 6 in outside the outer face of the wing, heel 11 ft 0 in behind its 2 ft 6 in base; top El. 708.30 (Z 1.240). Bottom at the abutment footing top El. 706.30, on which S-5 stacks it, raised 19 mm to the top of the footing_2 envelope (Z 0.650; see known_deviations). Rebar and keyway omitted.",
+      "dimensions": {
+        "width_m": 4.8768,
+        "length_m": 5.96265,
+        "toe_m": 0.762,
+        "heel_m": 3.3528,
+        "thickness_m": 0.590248,
+        "top_el_ft": 708.3,
+        "bottom_el_ft": 706.3,
+        "top_z_m": 1.240248,
+        "bottom_z_m": 0.65
+      },
+      "bounds_m": [
+        [
+          7.492984,
+          9.264421,
+          0.65
+        ],
+        [
+          14.194767,
+          16.586347,
+          1.240248
+        ]
+      ],
+      "volume_m3": 17.163615902,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            60,
+            63,
+            64
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wing_footing_2_1",
+      "name": "Abutment 2 | hidden north wing footing (1971 Wing D)",
+      "layer": "foundations",
+      "color": "#8f9b9b",
+      "pdf_pages": [
+        31,
+        32
+      ],
+      "basis": "Existing plans 9548460 S-5, S-6 (PDF 63, 64): Wing D footing plan and Section B-B",
+      "note": "Added in 3D review correction 1.5. 16 ft 0 in wide, 48 ft 6 1/2 in long from the C/L of the 1 in open joint to the tip, toe 2 ft 6 in outside the outer face of the wing, heel 11 ft 0 in behind its 2 ft 6 in base; top El. 708.30 (Z 1.240). Bottom at the abutment footing top El. 706.30, on which S-5 stacks it, raised 19 mm to the top of the footing_2 envelope (Z 0.650; see known_deviations). Rebar and keyway omitted.",
+      "dimensions": {
+        "width_m": 4.8768,
+        "length_m": 14.7955,
+        "toe_m": 0.762,
+        "heel_m": 3.3528,
+        "thickness_m": 0.590248,
+        "top_el_ft": 708.3,
+        "bottom_el_ft": 706.3,
+        "top_z_m": 1.240248,
+        "bottom_z_m": 0.65
+      },
+      "bounds_m": [
+        [
+          28.515756,
+          -16.848717,
+          0.65
+        ],
+        [
+          44.073779,
+          -6.955394,
+          1.240248
+        ]
+      ],
+      "volume_m3": 42.58916406,
+      "source_refs": [
+        {
+          "source_id": "9683637",
+          "pdf_pages": [
+            31,
+            32
+          ]
+        },
+        {
+          "source_id": "9548460",
+          "pdf_pages": [
+            60,
+            63,
+            64
+          ]
+        }
+      ]
     }
   ],
   "layers": {
@@ -7352,7 +7768,7 @@
     {
       "feature": "Whole single-span steel crossing",
       "status": "modeled_with_simplifications",
-      "detail": "Nine girders, 2026 deck, broad south path, narrow north sidewalk, all bays, both wall abutments and approach slabs.",
+      "detail": "Nine girders, 2026 deck, broad south path, narrow north sidewalk, all bays, both wall abutments and approach slabs. Retained 1971 wings A to D splayed and battered as drawn, with their abutment returns and footings (existing S-2 to S-6).",
       "sources": [
         "Primary PDF p.31",
         "Primary PDF p.36",
@@ -7461,7 +7877,11 @@
         "jacking_frame_B2_5",
         "jacking_frame_B2_6",
         "jacking_frame_B2_7",
-        "jacking_frame_B2_8"
+        "jacking_frame_B2_8",
+        "wing_footing_1_-1",
+        "wing_footing_1_1",
+        "wing_footing_2_-1",
+        "wing_footing_2_1"
       ]
     },
     {
@@ -7613,7 +8033,7 @@
     {
       "feature": "Unresolved geometry",
       "status": "not_modeled",
-      "detail": "Exact field seats and camber, bolts/gussets, splayed wings and local abutment batter, transition rail terminals, paver pattern, exact rail molds, buried utilities and surrounding interstate.",
+      "detail": "Exact field seats and camber, bolts/gussets, local abutment batter, transition rail terminals, paver pattern, exact rail molds, buried utilities and surrounding interstate.",
       "sources": [
         "Primary PDF p.31",
         "Primary PDF p.35",
@@ -7624,7 +8044,7 @@
     }
   ],
   "review_correction": "transverse-mirror-crown-rails-approaches-end-frames",
-  "revision": "1.4-3d-review",
+  "revision": "1.5-3d-review-2",
   "review_correction_record": {
     "source": "External model review (findings F1-F7), each finding re-read against the drawings",
     "source_pdf_pages": [
@@ -7845,6 +8265,13 @@
       "source": "existing plans 9548460 sheet 14 (PDF 32): Intermediate Cross-Frame Details, northbound structure; sheet 10 (PDF 28): Framing Plan - N.B.",
       "deviation": "The 3/8 in gusset plate at the foot of the V is not modelled. The two L5x5x3/8 diagonals are carried down to the top of the bottom strut, where their centre lines meet at the bay centre, and meet each other on the bay centre plane (one V-shaped body standing on the strut); on sheet 14 they stop short of the strut and of each other and are bolted to the gusset, with the work point drawn within about 1 in of the strut top. The angles are their connected 5 in legs as 3/8 in strips; outstanding legs, the 7/8 in bolts (slotted holes at Girder 1) and the welds are omitted. The members end 0.02 m from the web centre lines (the generator's offset); sheet 14 draws the angle ends about 1 in off the webs.",
       "reason": "Sheet 14 draws the gusset and the angle ends but dimensions neither (the gusset scales about 14 1/2 x 12 in, which is not used). Which face of the connection plate the angles bear on is not dimensioned either; the sheet 10 framing plan draws the frame lines on the up-station side of the plate ticks, which is used. Shop drawings of the 2013 Girder 1 replacement or a field measurement would settle them."
+    },
+    {
+      "id": "wing-footing-levels",
+      "parts": "wing_1_-1, wing_1_1, wing_2_-1, wing_2_1, wing_footing_1_-1, wing_footing_1_1, wing_footing_2_-1, wing_footing_2_1",
+      "source": "existing plans 9548460 S-3 to S-6 (PDF 61 to 64): elevations Abutment 1 / 2, Section A-A, Section B-B",
+      "deviation": "The wing footings and the abutment returns in the wing parts are founded at the drawn abutment footing top (El. 707.23 at Abutment 1, 706.30 at Abutment 2), on which the S-3 / S-5 elevations stack the wing footings, but the retained footing_1 / footing_2 envelopes are nominal (Z 0 to 0.65 m at both abutments). At Abutment 1 the drawn level is Z 0.914, so the Abutment 1 wing footings and returns stand 0.264 m clear of footing_1 where they lie over it. At Abutment 2 it is Z 0.631, 19 mm below the footing_2 top, so they start at its top (Z 0.650) and the Abutment 2 wing footings are 1 ft 11 1/4 in thick instead of 2 ft 0 in.",
+      "reason": "Re-founding the abutment footing envelopes is outside this correction: footing_1 / footing_2 are nominal 17 ft envelopes (drawn: 109 ft 7 1/2 in along the skew, toe 5 ft 0 in, heel 10 ft 0 in, bottom El. 705.23 / 704.30, i.e. Z 0.305 / 0.021)."
     }
   ],
   "review_correction_2": "haunch-crown-mudwall-pejf-end-frame-copes",
@@ -9040,5 +9467,722 @@
     },
     "before_glb_sha256": "d802db50c458c6f6084c3f852e5ad35e3c837954a9f0481e9618be1a7811e2b0",
     "after_glb_sha256": "61d74bf6721c2ce4946d12c1a0a0ddb7570a4b0e937d091dca3d292ccbce0552"
+  },
+  "review_correction_3d_2": "wings-a-to-d-as-drawn-1971",
+  "review_correction_record_3d_2": {
+    "source": "Second 3D review of revision 1.4 (wing envelopes), re-measured on the GLB and re-read against the drawings",
+    "follows": "bay1-intermediate-frames-conn-plates",
+    "previous_revision": "1.4-3d-review",
+    "source_pdf_pages": [
+      31,
+      32,
+      38
+    ],
+    "printed_sheets": [
+      31,
+      32,
+      38
+    ],
+    "historical_source": {
+      "source_id": "9548460",
+      "pdf_pages": [
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "printed_sheets": [
+        "S-2",
+        "S-3",
+        "S-4",
+        "S-5",
+        "S-6"
+      ]
+    },
+    "native_axes": "X increasing station (X = 0 at 13+48.31 \"Vir\"), Y positive to the left looking up-station (south), Z up; GLB (X, Z, -Y)",
+    "findings": {
+      "Wing envelopes": "Resolved. The four wings were 20 ft x 0.36 m slabs along the coping lines with a flat top at Z 5.753 / 5.729, 2.42-2.96 m below the deck, path and approach-slab top beside them, so the approach fill stood above them; 0.70-0.86 m3 of each lay inside the abutment envelope. They are rebuilt as the 1971 plans draw Wings A to D: splayed 24 deg 30 min (A, D, 48 ft 6 1/2 in) and 65 deg 30 min (B, C, 19 ft 6 3/4 in) from the abutment line, 1 ft 2 in top, back face battered to 2 ft 6 in, top falling from the joint-end elevation (Z 8.494-8.702, 0.09-0.16 m above the path or sidewalk beside the root) to the tip (Z 5.507-6.589), each with its 1 ft 0 in abutment return against the abutment envelope and a 16 ft x 2 ft footing (new parts). Largest overlap with any part 0.0000 cm3 (float32 rounding of touching faces)."
+    },
+    "datum_checks": {
+      "datum_offset_m": 214.649592,
+      "profile_grade": {
+        "abutment_1": {
+          "pg_el": 732.06,
+          "z": 8.482296,
+          "model": 8.482296
+        },
+        "abutment_2": {
+          "pg_el": 731.52,
+          "z": 8.317704,
+          "model": 8.317704
+        }
+      },
+      "abutment_2_footing": {
+        "top_el": 706.3,
+        "z": 0.6306,
+        "envelope": 0.65,
+        "bottom_el": 704.3,
+        "z_bottom": 0.021,
+        "envelope_bottom": 0.0
+      },
+      "abutment_1_footing": {
+        "top_el": 707.23,
+        "z": 0.9141,
+        "envelope": 0.65,
+        "bottom_el": 705.23,
+        "z_bottom": 0.3045,
+        "envelope_bottom": 0.0
+      },
+      "bridge_seats": {
+        "abutment_1": {
+          "el": 724.225,
+          "z": 6.0942,
+          "model_seat_datum": 6.003332
+        },
+        "abutment_2": {
+          "el": 724.295,
+          "z": 6.1155,
+          "model_seat_datum": 5.97874
+        }
+      },
+      "plan": "The reconstructed outer faces lie within about 0.2 m of the existing wings drawn on the 2026 sheet 32 removal plan (vector linework), which also confirms which wing is which."
+    },
+    "decisions": {
+      "Wing identities": "By the drawn geometry, not the ids: S-2 puts Wings A / C at plan top, the left side looking up-station (+Y, south), B / D at plan bottom (-Y); A and B at Abutment 1. So wing_1_-1 = A, wing_1_1 = B, wing_2_-1 = C, wing_2_1 = D (the long wings A and D are at the obtuse corners). The 2026 sheet 32 plan draws them where they are rebuilt.",
+      "Plan": "S-3 / S-5 give the splay from the abutment line (24 deg 30 min, 65 deg 30 min; they sum to 90 deg) and the middle wall joint 2 ft 6 3/4 in from the W.P.; Section E-E gives the stem front face to its corners (46 ft 9 1/4 in, 41 ft 4 3/4 in) and the returns to the wing joints (4 ft 11 1/4 in, 8 ft 3 1/2 in); Section A-A puts the stem front face 1 ft 4 1/2 in ahead of the bearing line. Abutment 2 is the point image of Abutment 1 (S-5 / S-6 repeat every plan dimension).",
+      "Datum": "Z = 0.3048 El - 214.6496 m: the model grade passes through the sheet 31 P.G. at both bearing lines. It matches the drawn Abutment 2 footing to 2 cm; the model seat datum (bearing stacks) is 9 / 14 cm below the drawn seats and the footing_1 envelope 0.26 / 0.30 m below the drawn Abutment 1 footing (both envelopes are unchanged).",
+      "Top thickness": "Section B-B dimensions the top 1 ft 2 in overall (2 in + 1 ft 0 in); 1 ft 2 in is used.",
+      "Tip elevations": "The drawn tip elevations are used (Wing A El. 725.85, Wing B El. 722.65); the height dimensions above the wing footing (16 ft 7 1/8 in, 13 ft 4 5/8 in) give 0.03 ft less.",
+      "Abutment returns": "Section E-E draws 1 ft 0 in returns from the stem corners along the wing lines to the C/L of the 1 in joints. The abutment_1 / abutment_2 envelopes end at the coping lines, so each return is modelled in the wing part from that end face to the joint; its top is the wing's joint-end elevation (the S-3 / S-5 elevations draw the wall end rising to it; not dimensioned) and its bottom the abutment footing top.",
+      "Wing footings": "S-3 / S-5 wing footing plans: 16 ft 0 in x the wing length; Section B-B: 2 ft 0 in, toe 2 ft 6 in, heel 11 ft 0 in. Modelled from the C/L of the joint to the tip as new parts in the foundations layer (hidden by default, like footing_1 / footing_2); levels: known_deviations wing-footing-levels.",
+      "2026 contract": "No wing work: sheet 32 draws the wings outside the removal limits, sheet 38 draws them in the background of the abutment elevations, and the approach sheets 41 to 47 end at the coping lines."
+    },
+    "changed_parts": [
+      "wing_1_-1",
+      "wing_1_1",
+      "wing_2_-1",
+      "wing_2_1"
+    ],
+    "added_parts": [
+      "wing_footing_1_-1",
+      "wing_footing_1_1",
+      "wing_footing_2_-1",
+      "wing_footing_2_1"
+    ],
+    "removed_parts": [],
+    "before": {
+      "wing_1_-1": {
+        "name": "Abutment 1 | retained south wing envelope",
+        "bounds_m": [
+          [
+            -33.068243,
+            9.6498,
+            0.65
+          ],
+          [
+            -26.972243,
+            10.0098,
+            5.753332
+          ]
+        ],
+        "volume_m3": 11.199569071
+      },
+      "wing_1_1": {
+        "name": "Abutment 1 | retained north wing envelope",
+        "bounds_m": [
+          [
+            -13.870957,
+            -10.0098,
+            0.65
+          ],
+          [
+            -7.774957,
+            -9.6498,
+            5.753332
+          ]
+        ],
+        "volume_m3": 11.199569071
+      },
+      "wing_2_-1": {
+        "name": "Abutment 2 | retained south wing envelope",
+        "bounds_m": [
+          [
+            7.774957,
+            9.6498,
+            0.65
+          ],
+          [
+            13.870957,
+            10.0098,
+            5.72874
+          ]
+        ],
+        "volume_m3": 11.145600451
+      },
+      "wing_2_1": {
+        "name": "Abutment 2 | retained north wing envelope",
+        "bounds_m": [
+          [
+            26.972243,
+            -10.0098,
+            0.65
+          ],
+          [
+            33.068243,
+            -9.6498,
+            5.72874
+          ]
+        ],
+        "volume_m3": 11.145600451
+      },
+      "interfaces": {
+        "wing_1_-1": {
+          "overlaps_cm3": {
+            "wing_1_-1": {
+              "abutment_1": 701940.5829,
+              "footing_1": 0.0
+            }
+          },
+          "bounds_m": [
+            [
+              -33.068241,
+              9.6498,
+              0.65
+            ],
+            [
+              -26.972242,
+              10.0098,
+              5.753332
+            ]
+          ],
+          "top_z_m": 5.753332,
+          "deck_path_or_approach_top_beside_m": [
+            8.5315,
+            8.7091
+          ],
+          "below_it_m": [
+            2.7781,
+            2.9558
+          ]
+        },
+        "wing_1_1": {
+          "overlaps_cm3": {
+            "wing_1_1": {
+              "abutment_1": 863399.0633,
+              "footing_1": 0.0
+            }
+          },
+          "bounds_m": [
+            [
+              -13.870957,
+              -10.0098,
+              0.65
+            ],
+            [
+              -7.774958,
+              -9.6498,
+              5.753332
+            ]
+          ],
+          "top_z_m": 5.753332,
+          "deck_path_or_approach_top_beside_m": [
+            8.3138,
+            8.5459
+          ],
+          "below_it_m": [
+            2.5605,
+            2.7926
+          ]
+        },
+        "wing_2_-1": {
+          "overlaps_cm3": {
+            "wing_2_-1": {
+              "abutment_2": 859238.5184,
+              "footing_2": 0.0
+            }
+          },
+          "bounds_m": [
+            [
+              7.774958,
+              9.6498,
+              0.65
+            ],
+            [
+              13.870957,
+              10.0098,
+              5.72874
+            ]
+          ],
+          "top_z_m": 5.72874,
+          "deck_path_or_approach_top_beside_m": [
+            8.3633,
+            8.5121
+          ],
+          "below_it_m": [
+            2.6345,
+            2.7833
+          ]
+        },
+        "wing_2_1": {
+          "overlaps_cm3": {
+            "wing_2_1": {
+              "abutment_2": 698558.0736,
+              "footing_2": 0.0
+            }
+          },
+          "bounds_m": [
+            [
+              26.972242,
+              -10.0098,
+              0.65
+            ],
+            [
+              33.068241,
+              -9.6498,
+              5.72874
+            ]
+          ],
+          "top_z_m": 5.72874,
+          "deck_path_or_approach_top_beside_m": [
+            8.1456,
+            8.3524
+          ],
+          "below_it_m": [
+            2.4169,
+            2.6237
+          ]
+        }
+      }
+    },
+    "after": {
+      "wing_1_-1": {
+        "bounds_m": [
+          [
+            -42.862325,
+            9.8298,
+            0.914112
+          ],
+          [
+            -26.307525,
+            16.138198,
+            8.701752
+          ]
+        ],
+        "volume_m3": 46.805532761
+      },
+      "wing_1_1": {
+        "bounds_m": [
+          [
+            -11.068484,
+            -16.311016,
+            0.914112
+          ],
+          [
+            -7.846452,
+            -9.8298,
+            8.683464
+          ]
+        ],
+        "volume_m3": 17.916247277
+      },
+      "wing_2_-1": {
+        "bounds_m": [
+          [
+            7.846452,
+            9.8298,
+            0.65
+          ],
+          [
+            11.068484,
+            16.311016,
+            8.610312
+          ]
+        ],
+        "volume_m3": 18.610800975
+      },
+      "wing_2_1": {
+        "bounds_m": [
+          [
+            26.307525,
+            -16.138198,
+            0.65
+          ],
+          [
+            42.862325,
+            -9.8298,
+            8.494488
+          ]
+        ],
+        "volume_m3": 44.991401387
+      },
+      "wing_footing_1_-1": {
+        "bounds_m": [
+          [
+            -44.073779,
+            6.955394,
+            0.914112
+          ],
+          [
+            -28.515756,
+            16.848717,
+            1.523712
+          ]
+        ],
+        "volume_m3": 43.985501706
+      },
+      "wing_footing_1_1": {
+        "bounds_m": [
+          [
+            -14.194767,
+            -16.586347,
+            0.914112
+          ],
+          [
+            -7.492984,
+            -9.264421,
+            1.523712
+          ]
+        ],
+        "volume_m3": 17.726345967
+      },
+      "wing_footing_2_-1": {
+        "bounds_m": [
+          [
+            7.492984,
+            9.264421,
+            0.65
+          ],
+          [
+            14.194767,
+            16.586347,
+            1.240248
+          ]
+        ],
+        "volume_m3": 17.163615902
+      },
+      "wing_footing_2_1": {
+        "bounds_m": [
+          [
+            28.515756,
+            -16.848717,
+            0.65
+          ],
+          [
+            44.073779,
+            -6.955394,
+            1.240248
+          ]
+        ],
+        "volume_m3": 42.58916406
+      },
+      "interfaces": {
+        "wing_1_-1": {
+          "overlaps_cm3": {
+            "wing_1_-1": {
+              "abutment_1": 0.0,
+              "approach_1": 0.0,
+              "deck": 0.0,
+              "mudwall_1": 0.0,
+              "walk_-1": 0.0
+            },
+            "wing_footing_1_-1": {}
+          },
+          "bounds_m": [
+            [
+              -42.862324,
+              9.8298,
+              0.914112
+            ],
+            [
+              -26.307524,
+              16.138199,
+              8.701752
+            ]
+          ],
+          "top_z_m": 8.701752,
+          "abutment_contact_m2": 4.2931,
+          "wall_on_footing_gap_m": 0.0,
+          "wing_into_own_footing_cm3": 0.0,
+          "joint_gap_m": 0.025401,
+          "beside_root": {
+            "point_xy_m": [
+              -26.3075,
+              9.8198
+            ],
+            "top_of_deck_path_or_approach_m": 8.6154,
+            "wing_top_above_it_m": 0.0863
+          },
+          "footing_bounds_m": [
+            [
+              -44.07378,
+              6.955394,
+              0.914112
+            ],
+            [
+              -28.515755,
+              16.848717,
+              1.523712
+            ]
+          ]
+        },
+        "wing_1_1": {
+          "overlaps_cm3": {
+            "wing_1_1": {
+              "abutment_1": 0.0,
+              "approach_1": 0.0,
+              "deck": 0.0,
+              "mudwall_1": 0.0,
+              "walk_1": 0.0
+            },
+            "wing_footing_1_1": {
+              "abutment_1": 0.0
+            }
+          },
+          "bounds_m": [
+            [
+              -11.068483,
+              -16.311016,
+              0.914112
+            ],
+            [
+              -7.846452,
+              -9.8298,
+              8.683464
+            ]
+          ],
+          "top_z_m": 8.683464,
+          "abutment_contact_m2": 1.6636,
+          "wall_on_footing_gap_m": 0.0,
+          "wing_into_own_footing_cm3": 0.0,
+          "joint_gap_m": 0.0254,
+          "beside_root": {
+            "point_xy_m": [
+              -7.8465,
+              -9.8198
+            ],
+            "top_of_deck_path_or_approach_m": 8.521,
+            "wing_top_above_it_m": 0.1625
+          },
+          "footing_bounds_m": [
+            [
+              -14.194767,
+              -16.586348,
+              0.914112
+            ],
+            [
+              -7.492984,
+              -9.264421,
+              1.523712
+            ]
+          ]
+        },
+        "wing_2_-1": {
+          "overlaps_cm3": {
+            "wing_2_-1": {
+              "abutment_2": 0.0,
+              "approach_2": 0.0,
+              "deck": 0.0,
+              "footing_2": 0.0,
+              "mudwall_2": 0.0,
+              "walk_-1": 0.0
+            },
+            "wing_footing_2_-1": {
+              "abutment_2": 0.0,
+              "footing_2": 0.0
+            }
+          },
+          "bounds_m": [
+            [
+              7.846452,
+              9.8298,
+              0.65
+            ],
+            [
+              11.068483,
+              16.311016,
+              8.610312
+            ]
+          ],
+          "top_z_m": 8.610312,
+          "abutment_contact_m2": 1.7419,
+          "wall_on_footing_gap_m": 0.0,
+          "wing_into_own_footing_cm3": 0.0,
+          "joint_gap_m": 0.0254,
+          "beside_root": {
+            "point_xy_m": [
+              7.8465,
+              9.8198
+            ],
+            "top_of_deck_path_or_approach_m": 8.4537,
+            "wing_top_above_it_m": 0.1567
+          },
+          "footing_bounds_m": [
+            [
+              7.492984,
+              9.264421,
+              0.65
+            ],
+            [
+              14.194767,
+              16.586348,
+              1.240248
+            ]
+          ]
+        },
+        "wing_2_1": {
+          "overlaps_cm3": {
+            "wing_2_1": {
+              "abutment_2": 0.0,
+              "approach_2": 0.0,
+              "deck": 0.0,
+              "footing_2": 0.0,
+              "mudwall_2": 0.0,
+              "walk_1": 0.0
+            },
+            "wing_footing_2_1": {
+              "footing_2": 0.0
+            }
+          },
+          "bounds_m": [
+            [
+              26.307524,
+              -16.138199,
+              0.65
+            ],
+            [
+              42.862324,
+              -9.8298,
+              8.494488
+            ]
+          ],
+          "top_z_m": 8.494488,
+          "abutment_contact_m2": 4.4951,
+          "wall_on_footing_gap_m": 0.0,
+          "wing_into_own_footing_cm3": 0.0,
+          "joint_gap_m": 0.025401,
+          "beside_root": {
+            "point_xy_m": [
+              26.3075,
+              -9.8198
+            ],
+            "top_of_deck_path_or_approach_m": 8.3592,
+            "wing_top_above_it_m": 0.1353
+          },
+          "footing_bounds_m": [
+            [
+              28.515755,
+              -16.848717,
+              0.65
+            ],
+            [
+              44.07378,
+              -6.955394,
+              1.240248
+            ]
+          ]
+        }
+      },
+      "wings": {
+        "wing_1_-1": {
+          "joint_outer_xy_m": [
+            -28.791086,
+            10.792196
+          ],
+          "direction_deg": 158.818333,
+          "stem_front_corner_xy_m": [
+            -26.434532,
+            9.879016
+          ],
+          "tip_outer_xy_m": [
+            -42.586994,
+            16.138198
+          ],
+          "return_outer_face_m": 2.65081,
+          "return_inner_face_m": 1.864242,
+          "z": {
+            "root_top": 8.701752,
+            "tip_top": 6.589488,
+            "stem_base": 1.523712,
+            "batter_start": 4.571712,
+            "return_and_footing_bottom": 0.914112
+          }
+        },
+        "wing_1_1": {
+          "joint_outer_xy_m": [
+            -8.203503,
+            -10.751206
+          ],
+          "direction_deg": -111.181667,
+          "stem_front_corner_xy_m": [
+            -7.659725,
+            -9.347931
+          ],
+          "tip_outer_xy_m": [
+            -10.357965,
+            -16.311016
+          ],
+          "return_outer_face_m": 0.975467,
+          "return_inner_face_m": 0.857355,
+          "z": {
+            "root_top": 8.683464,
+            "tip_top": 5.614128,
+            "stem_base": 1.523712,
+            "batter_start": 4.571712,
+            "return_and_footing_bottom": 0.914112
+          }
+        },
+        "wing_2_-1": {
+          "joint_outer_xy_m": [
+            8.203503,
+            10.751206
+          ],
+          "direction_deg": 68.818333,
+          "stem_front_corner_xy_m": [
+            7.659725,
+            9.347931
+          ],
+          "tip_outer_xy_m": [
+            10.357965,
+            16.311016
+          ],
+          "return_outer_face_m": 0.975467,
+          "return_inner_face_m": 0.857355,
+          "z": {
+            "root_top": 8.610312,
+            "tip_top": 5.736048,
+            "stem_base": 1.240248,
+            "batter_start": 4.288248,
+            "return_and_footing_bottom": 0.65
+          }
+        },
+        "wing_2_1": {
+          "joint_outer_xy_m": [
+            28.791086,
+            -10.792196
+          ],
+          "direction_deg": -21.181667,
+          "stem_front_corner_xy_m": [
+            26.434532,
+            -9.879016
+          ],
+          "tip_outer_xy_m": [
+            42.586994,
+            -16.138198
+          ],
+          "return_outer_face_m": 2.65081,
+          "return_inner_face_m": 1.864242,
+          "z": {
+            "root_top": 8.494488,
+            "tip_top": 5.507448,
+            "stem_base": 1.240248,
+            "batter_start": 4.288248,
+            "return_and_footing_bottom": 0.65
+          }
+        }
+      }
+    },
+    "before_glb_sha256": "61d74bf6721c2ce4946d12c1a0a0ddb7570a4b0e937d091dca3d292ccbce0552",
+    "after_glb_sha256": "225646f4ff0e246846cdc34eb676e8962e2241fbe6acfeef5e6fb19201aa67cf"
   }
 }
