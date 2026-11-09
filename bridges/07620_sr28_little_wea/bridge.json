@@ -1,0 +1,45 @@
+{
+  "id": "007620",
+  "asset_name": "028-79-06804",
+  "name": "SR 28 over Little Wea Creek",
+  "location": {"city": "", "county": "Tippecanoe", "state": "Indiana", "lat": 40.25875, "lon": -86.9967, "note": "4.81 mi W of US 231"},
+  "inspection": {"date": "2022-01-14", "inspector": "Melvin Hughes", "report": "NBI_7620.pdf"},
+  "history": [["1989", "New bridge, Des 7929000, contract 17861"], ["2024", "Programmed thin deck overlay (R-42955)"]],
+  "type": {
+    "main": "concrete continuous slab (NBI 2-01)",
+    "deck": "cast-in-place concrete slab, monolithic wearing surface, epoxy-coated reinforcing",
+    "service_on": "highway, 2 lanes two-way",
+    "service_under": "waterway (Little Wea Creek)"
+  },
+  "geometry_ft": {
+    "structure_length": 71.5,
+    "deck_width_out_to_out": 39.0,
+    "roadway_width": 36.0,
+    "approach_roadway_width": 36.0,
+    "skew_deg": 20,
+    "spans": [
+      {"id": "A", "length": 22.25, "type": "RC slab", "over": "west bank"},
+      {"id": "B", "length": 27.0, "type": "RC slab", "over": "channel"},
+      {"id": "C", "length": 22.25, "type": "RC slab", "over": "east bank"}
+    ],
+    "substructure": [
+      {"id": "Bent 1", "type": "concrete abutment on steel-encased concrete piles, riprap slope", "length": 39.0},
+      {"id": "Pier 2", "type": "pile bent: 9 steel-encased concrete piles (black epoxy coating), cap integral with slab", "piles": 9},
+      {"id": "Pier 3", "type": "pile bent: 9 steel-encased concrete piles (black epoxy coating), cap integral with slab", "piles": 9},
+      {"id": "Bent 4", "type": "concrete abutment on piles, riprap slope", "length": 39.0}
+    ],
+    "slab_thickness_in": 20,
+    "channel": {"water_level_below_deck": 12.95, "high_water_mark_below_deck": 5.95, "bank_protection": "revetment riprap with geotextile", "q100_elevation": 715.2, "pile_tip_elevation": 690.5},
+    "joints": {"type": "poured silicone, transverse at both bents", "length_each": 39.0},
+    "railing": {"type": "reinforced concrete parapet on thick slab coping", "length_each": 71.5},
+    "approach_guardrail": "W-beam steel guardrail with posts, both approaches, transitions to the parapets",
+    "approach_slabs": {"count": 2}
+  },
+  "condition": {"deck": 6, "wearing_surface": 6, "superstructure": 6, "substructure": 6, "channel": 8, "sufficiency_rating": 97.7},
+  "model_notes": [
+    "Short 3-span flat slab on pile bents, 20 deg skew; the slab edge shows as a deep coping with the parapet on top (photos 1, 2, 17).",
+    "Piles are round, black-coated, about 14 in. diameter, ~9 per bent at ~4.5 ft spacing, standing in shallow water (photos 22, 25-28).",
+    "Banks are riprap under the bridge, grass beyond; flat farmland with bare winter fields and a tree line (photos 3-4, 14, 34).",
+    "Deck drains: 4 in. PVC spouts through the slab near the copings (photos 18, 23, 31)."
+  ]
+}

@@ -1,0 +1,236 @@
+[
+ {
+  "check": "nodes in model",
+  "expected": null,
+  "actual": 1472,
+  "tolerance": null,
+  "unit": "",
+  "status": "INFO",
+  "note": ""
+ },
+ {
+  "check": "deck width out-to-out (slab Y extent)",
+  "expected": 39.0,
+  "actual": 39.0,
+  "tolerance": 0.25,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "NBI item 52"
+ },
+ {
+  "check": "length between abutment lines (slab X extent minus skew offset)",
+  "expected": 71.5,
+  "actual": 71.50000034115718,
+  "tolerance": 0.5,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "sum of spans; NBI item 49 structure length = 71.5 (includes backwalls)"
+ },
+ {
+  "check": "skew angle derived from slab footprint",
+  "expected": 20.0,
+  "actual": 20.00000044257223,
+  "tolerance": 1.0,
+  "unit": "deg",
+  "status": "PASS",
+  "note": "NBI item 34"
+ },
+ {
+  "check": "deck top at Z = 0",
+  "expected": 0.0,
+  "actual": 0.0,
+  "tolerance": 0.1,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "roadway width curb-to-curb (DeckSurface Y extent)",
+  "expected": 36.0,
+  "actual": 36.0,
+  "tolerance": 0.25,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "NBI item 51"
+ },
+ {
+  "check": "parapet L height",
+  "expected": 2.75,
+  "actual": 2.75,
+  "tolerance": 0.15,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "reinforced concrete parapet on thick slab coping"
+ },
+ {
+  "check": "parapet L runs full length",
+  "expected": 71.5,
+  "actual": 71.5,
+  "tolerance": 1.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "between abutment lines"
+ },
+ {
+  "check": "parapet R height",
+  "expected": 2.75,
+  "actual": 2.75,
+  "tolerance": 0.15,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "reinforced concrete parapet on thick slab coping"
+ },
+ {
+  "check": "parapet R runs full length",
+  "expected": 71.5,
+  "actual": 71.5,
+  "tolerance": 1.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "between abutment lines"
+ },
+ {
+  "check": "number of substructure units",
+  "expected": 4,
+  "actual": 4,
+  "tolerance": 0,
+  "unit": "",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Bent 1 stem centre (3 ft stem behind the support line)",
+  "expected": -1.4095389311788626,
+  "actual": -1.409538984298706,
+  "tolerance": 0.5,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Bent 1 length",
+  "expected": 39.0,
+  "actual": 39.9999984545912,
+  "tolerance": 2.5,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "stem is W+1 ft long in the model (3 ft thick box rotated by the skew)"
+ },
+ {
+  "check": "Bent 1 wingwalls",
+  "expected": 2,
+  "actual": 2,
+  "tolerance": 0,
+  "unit": "",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Pier 2 cap centred on station",
+  "expected": 22.25,
+  "actual": 22.250000476837158,
+  "tolerance": 0.75,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Pier 2 piles",
+  "expected": 9,
+  "actual": 9,
+  "tolerance": 0,
+  "unit": "",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Pier 3 cap centred on station",
+  "expected": 49.25,
+  "actual": 49.25,
+  "tolerance": 0.75,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Pier 3 piles",
+  "expected": 9,
+  "actual": 9,
+  "tolerance": 0,
+  "unit": "",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Bent 4 stem centre (3 ft stem behind the support line)",
+  "expected": 72.90953893117886,
+  "actual": 72.90953826904297,
+  "tolerance": 0.5,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "Bent 4 length",
+  "expected": 39.0,
+  "actual": 39.9999984545912,
+  "tolerance": 2.5,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "stem is W+1 ft long in the model (3 ft thick box rotated by the skew)"
+ },
+ {
+  "check": "Bent 4 wingwalls",
+  "expected": 2,
+  "actual": 2,
+  "tolerance": 0,
+  "unit": "",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "water surface below deck",
+  "expected": 12.95,
+  "actual": 12.949999809265137,
+  "tolerance": 0.2,
+  "unit": "ft",
+  "status": "PASS",
+  "note": "NBI channel profile"
+ },
+ {
+  "check": "approach slab 0 length",
+  "expected": 20.5,
+  "actual": 20.49999972803781,
+  "tolerance": 1.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "approach slab 1 length",
+  "expected": 20.5,
+  "actual": 20.50000735743234,
+  "tolerance": 1.0,
+  "unit": "ft",
+  "status": "PASS",
+  "note": ""
+ },
+ {
+  "check": "structure bounding box X (ft)",
+  "expected": null,
+  "actual": "-14.8 .. 86.3",
+  "tolerance": null,
+  "unit": "",
+  "status": "INFO",
+  "note": ""
+ },
+ {
+  "check": "structure bounding box Z (ft)",
+  "expected": null,
+  "actual": "-19.0 .. 2.8",
+  "tolerance": null,
+  "unit": "",
+  "status": "INFO",
+  "note": ""
+ }
+]

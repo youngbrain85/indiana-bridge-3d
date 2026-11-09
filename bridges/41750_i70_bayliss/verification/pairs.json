@@ -1,0 +1,12 @@
+{
+ "notes": "Summer photos (Sep 2021): green grass, corn fields, blue sky. EB structure only; the WB twin is 30 ft north and modelled simplified.",
+ "pairs": [
+  {"view": "elevation", "photo": "photo_28.jpg", "check": "Profile: 3 slab spans (25+32+25), deep stepped coping with NJ-shape parapet, 15 deg skew, two round columns + cap at each pier, tall abutment walls with wingwalls, grass channel"},
+  {"view": "approach",  "photo": "photo_01.jpg", "check": "Interstate: 2 lanes one-way, white skip line, white right edge, yellow left edge, concrete approach slab, W-beam guardrail, twin WB bridge to the north"},
+  {"view": "deck",      "photo": "photo_12.jpg", "check": "Concrete wearing surface with longitudinal tining, NJ parapets, 39.5 ft roadway"},
+  {"view": "under",     "photo": "photo_22.jpg", "check": "Span A soffit looking south: flat slab underside, abutment wall, column + cap bent"},
+  {"view": "pier",      "photo": "photo_27.jpg", "check": "Pier 2: two 3 ft round columns, rectangular cap reading as a 46 ft wall from the side, 15 ft from deck to water"},
+  {"view": "channel",   "photo": "photo_30.jpg", "check": "Upstream: narrow grass ditch with a small water channel, cornfields either side"},
+  {"view": "aerial",    "photo": "photo_19.jpg", "check": "East bent: tall abutment wall + wingwalls parallel to the road, slab edge, embankment"}
+ ]
+}

@@ -1,0 +1,504 @@
+{
+ "19027": {
+  "id": "19027",
+  "folder": "19027_sagamore_pkwy",
+  "name": "WB Sagamore Parkway (US 52) over 9th Street, CSX Railroad and ramp",
+  "asset": "052X-79-02459 JCWB",
+  "county": "Tippecanoe",
+  "model": "../bridges/19027_sagamore_pkwy/model/bridge_19027_lite.glb",
+  "model_full": "../bridges/19027_sagamore_pkwy/model/bridge_19027.glb",
+  "renders": "../bridges/19027_sagamore_pkwy/renders/",
+  "report": "../bridges/19027_sagamore_pkwy/report_text.txt",
+  "sun": {
+   "elev": 42,
+   "rot": 200
+  },
+  "winter": false,
+  "length": 519,
+  "width": 43.0,
+  "cameras": {
+   "elevation": {
+    "pos": [
+     150,
+     -13,
+     -200
+    ],
+    "tgt": [
+     190,
+     -8,
+     0
+    ],
+    "lens": 28
+   },
+   "under": {
+    "pos": [
+     60,
+     -14,
+     14
+    ],
+    "tgt": [
+     200,
+     -8,
+     -4
+    ],
+    "lens": 24
+   },
+   "deck": {
+    "pos": [
+     -40,
+     5.5,
+     6
+    ],
+    "tgt": [
+     200,
+     0,
+     2
+    ],
+    "lens": 32
+   },
+   "pier": {
+    "pos": [
+     300,
+     -14,
+     40
+    ],
+    "tgt": [
+     378,
+     -5,
+     0
+    ],
+    "lens": 28
+   },
+   "ramp": {
+    "pos": [
+     448,
+     -14,
+     120
+    ],
+    "tgt": [
+     473,
+     -8,
+     0
+    ],
+    "lens": 28
+   },
+   "aerial": {
+    "pos": [
+     -80,
+     220,
+     420
+    ],
+    "tgt": [
+     260,
+     -10,
+     20
+    ],
+    "lens": 28
+   },
+   "street": {
+    "pos": [
+     78,
+     -16,
+     110
+    ],
+    "tgt": [
+     78,
+     -10,
+     -40
+    ],
+    "lens": 30
+   },
+   "rail": {
+    "pos": [
+     176,
+     -16,
+     -120
+    ],
+    "tgt": [
+     176,
+     -8,
+     30
+    ],
+    "lens": 30
+   }
+  },
+  "facts": [
+   "steel continuous stringer / multi-beam (NBI 4-02)",
+   "6 spans: 32.0 + 92.0 + 101.0 + 101.0 + 101.0 + 92.0 ft (525.2 ft structure length)",
+   "deck 43.0 ft out-to-out, 39.8 ft roadway, skew 0\u00b0",
+   "highway, 2 lanes one-way (WB); crosses highway (9th St, 4 lanes) + railroad (CSX) + ramp",
+   "built 1971, inspected 2021-06-03"
+  ],
+  "notes": [
+   "6 spans: 32 (concrete beams) + 92 + 101 + 101 + 101 + 92 (steel W36) = 519 ft between abutment faces; structure length 525.2 ft.",
+   "Piers 2 and 3 are solid walls flanking 9th Street; piers 4-6 are two 3.5 ft round columns with a tapered hammerhead cap 43.5 ft long.",
+   "Deck 43 ft out-to-out, 39.8 ft curb-to-curb, 1.6 ft safety-shape parapets both sides, chain-link fence over the CSX span.",
+   "Parallel EB structure (052X-79-02459 JCEB) ~50 ft to the south is modelled as a simplified twin.",
+   "Green painted steel with rust streaks, concrete piers with patched spalls (from photos 24-26, 29, 34, 36, 38)."
+  ],
+  "photos": [
+   {
+    "file": "../bridges/19027_sagamore_pkwy/photos/photo_21.jpg",
+    "caption": "Overall Span B with beam 4 damaged",
+    "view": "elevation"
+   },
+   {
+    "file": "../bridges/19027_sagamore_pkwy/photos/photo_20.jpg",
+    "caption": "Overall view under span A",
+    "view": "street"
+   },
+   {
+    "file": "../bridges/19027_sagamore_pkwy/photos/photo_34.jpg",
+    "caption": "Pier 4 with cap",
+    "view": "pier"
+   },
+   {
+    "file": "../bridges/19027_sagamore_pkwy/photos/photo_24.jpg",
+    "caption": "Overall cap conditions over pier 2 Span B",
+    "view": "under"
+   },
+   {
+    "file": "../bridges/19027_sagamore_pkwy/photos/photo_30.jpg",
+    "caption": "Span C looking west",
+    "view": "rail"
+   },
+   {
+    "file": "../bridges/19027_sagamore_pkwy/photos/photo_06.jpg",
+    "caption": "Wearing surface conditions looking east",
+    "view": "deck"
+   },
+   {
+    "file": "../bridges/19027_sagamore_pkwy/photos/photo_38.jpg",
+    "caption": "Pier before ramp",
+    "view": "ramp"
+   },
+   {
+    "file": "../bridges/19027_sagamore_pkwy/photos/photo_01.jpg",
+    "caption": "West road alignment",
+    "view": "aerial"
+   }
+  ]
+ },
+ "07620": {
+  "id": "07620",
+  "folder": "07620_sr28_little_wea",
+  "name": "SR 28 over Little Wea Creek",
+  "asset": "028-79-06804",
+  "county": "Tippecanoe",
+  "model": "../bridges/07620_sr28_little_wea/model/bridge_07620_lite.glb",
+  "model_full": "../bridges/07620_sr28_little_wea/model/bridge_07620.glb",
+  "renders": "../bridges/07620_sr28_little_wea/renders/",
+  "report": "../bridges/07620_sr28_little_wea/report_text.txt",
+  "sun": {
+   "elev": 28,
+   "rot": 200
+  },
+  "winter": true,
+  "length": 71.5,
+  "width": 39.0,
+  "cameras": {
+   "elevation": {
+    "pos": [
+     -14,
+     -2,
+     78
+    ],
+    "tgt": [
+     40,
+     -5,
+     0
+    ],
+    "lens": 30
+   },
+   "under": {
+    "pos": [
+     -12,
+     -9,
+     -30
+    ],
+    "tgt": [
+     60,
+     -8,
+     6
+    ],
+    "lens": 24
+   },
+   "deck": {
+    "pos": [
+     -70,
+     5.0,
+     8
+    ],
+    "tgt": [
+     60,
+     0,
+     0
+    ],
+    "lens": 32
+   },
+   "pier": {
+    "pos": [
+     20,
+     -10,
+     36
+    ],
+    "tgt": [
+     24,
+     -6,
+     0
+    ],
+    "lens": 35
+   },
+   "approach": {
+    "pos": [
+     -120,
+     4.5,
+     -12
+    ],
+    "tgt": [
+     40,
+     0,
+     0
+    ],
+    "lens": 35
+   },
+   "aerial": {
+    "pos": [
+     -120,
+     90,
+     140
+    ],
+    "tgt": [
+     36,
+     -6,
+     0
+    ],
+    "lens": 32
+   },
+   "channel": {
+    "pos": [
+     36,
+     -8,
+     120
+    ],
+    "tgt": [
+     36,
+     -6,
+     0
+    ],
+    "lens": 28
+   }
+  },
+  "facts": [
+   "concrete continuous slab (NBI 2-01)",
+   "3 spans: 22.25 + 27.0 + 22.25 ft (71.5 ft structure length)",
+   "deck 39.0 ft out-to-out, 36.0 ft roadway, skew 20\u00b0",
+   "highway, 2 lanes two-way; crosses waterway (Little Wea Creek)",
+   "built 1989, inspected 2022-01-14"
+  ],
+  "notes": [
+   "Short 3-span flat slab on pile bents, 20 deg skew; the slab edge shows as a deep coping with the parapet on top (photos 1, 2, 17).",
+   "Piles are round, black-coated, about 14 in. diameter, ~9 per bent at ~4.5 ft spacing, standing in shallow water (photos 22, 25-28).",
+   "Banks are riprap under the bridge, grass beyond; flat farmland with bare winter fields and a tree line (photos 3-4, 14, 34).",
+   "Deck drains: 4 in. PVC spouts through the slab near the copings (photos 18, 23, 31)."
+  ],
+  "photos": [
+   {
+    "file": "../bridges/07620_sr28_little_wea/photos/photo_01.jpg",
+    "caption": "North profile",
+    "view": "elevation"
+   },
+   {
+    "file": "../bridges/07620_sr28_little_wea/photos/photo_02.jpg",
+    "caption": "South profile",
+    "view": "channel"
+   },
+   {
+    "file": "../bridges/07620_sr28_little_wea/photos/photo_03.jpg",
+    "caption": "Road alignment looking east",
+    "view": "approach"
+   },
+   {
+    "file": "../bridges/07620_sr28_little_wea/photos/photo_10.jpg",
+    "caption": "Top of deck condition looking east",
+    "view": "deck"
+   },
+   {
+    "file": "../bridges/07620_sr28_little_wea/photos/photo_17.jpg",
+    "caption": "Span A underside condition",
+    "view": "under"
+   },
+   {
+    "file": "../bridges/07620_sr28_little_wea/photos/photo_22.jpg",
+    "caption": "Span B underside condition looking north",
+    "view": "pier"
+   },
+   {
+    "file": "../bridges/07620_sr28_little_wea/photos/photo_25.jpg",
+    "caption": "Upstream channel alignment looking north",
+    "view": "aerial"
+   }
+  ]
+ },
+ "41750": {
+  "id": "41750",
+  "folder": "41750_i70_bayliss",
+  "name": "I-70 EB over Bayliss State Ditch",
+  "asset": "I70-055-05179 BEBL",
+  "county": "Morgan",
+  "model": "../bridges/41750_i70_bayliss/model/bridge_41750_lite.glb",
+  "model_full": "../bridges/41750_i70_bayliss/model/bridge_41750.glb",
+  "renders": "../bridges/41750_i70_bayliss/renders/",
+  "report": "../bridges/41750_i70_bayliss/report_text.txt",
+  "sun": {
+   "elev": 42,
+   "rot": 200
+  },
+  "winter": false,
+  "length": 82.0,
+  "width": 43.0,
+  "cameras": {
+   "elevation": {
+    "pos": [
+     -45,
+     1,
+     135
+    ],
+    "tgt": [
+     45,
+     -6,
+     0
+    ],
+    "lens": 32
+   },
+   "under": {
+    "pos": [
+     -30,
+     -12,
+     -40
+    ],
+    "tgt": [
+     60,
+     -8,
+     10
+    ],
+    "lens": 24
+   },
+   "deck": {
+    "pos": [
+     -90,
+     5.0,
+     8
+    ],
+    "tgt": [
+     80,
+     0,
+     0
+    ],
+    "lens": 32
+   },
+   "pier": {
+    "pos": [
+     45,
+     -12,
+     40
+    ],
+    "tgt": [
+     57,
+     -7,
+     0
+    ],
+    "lens": 35
+   },
+   "approach": {
+    "pos": [
+     -150,
+     4.5,
+     -14
+    ],
+    "tgt": [
+     40,
+     0,
+     0
+    ],
+    "lens": 35
+   },
+   "aerial": {
+    "pos": [
+     -140,
+     110,
+     170
+    ],
+    "tgt": [
+     41,
+     -6,
+     -20
+    ],
+    "lens": 32
+   },
+   "channel": {
+    "pos": [
+     41,
+     -9,
+     150
+    ],
+    "tgt": [
+     41,
+     -6,
+     0
+    ],
+    "lens": 28
+   }
+  },
+  "facts": [
+   "concrete continuous slab (NBI 2-01)",
+   "3 spans: 25.0 + 32.0 + 25.0 ft (82.0 ft structure length)",
+   "deck 43.0 ft out-to-out, 39.5 ft roadway, skew 15\u00b0",
+   "highway, 2 lanes one-way (I-70 EB); crosses waterway (Bayliss State Ditch)",
+   "built 1966, inspected 2021-09-13"
+  ],
+  "notes": [
+   "Interstate twin: the WB structure (BWBL) sits ~30 ft to the north and is modelled as a mirrored twin.",
+   "Slab edge is a deep stepped coping with the parapet on top (photos 17-18); piers are two round columns (~3 ft) with a rectangular cap that reads as a wall from the side (photos 26-28, 31).",
+   "Abutments are tall concrete walls with wingwalls parallel to the roadway (photos 19-20); grass channel with a small ditch, cornfields either side (photos 29-31).",
+   "Heavy longitudinal tining on the 1995 overlay, wide cracks and patches (photos 12-15)."
+  ],
+  "photos": [
+   {
+    "file": "../bridges/41750_i70_bayliss/photos/photo_28.jpg",
+    "caption": "Profile looking South",
+    "view": "elevation"
+   },
+   {
+    "file": "../bridges/41750_i70_bayliss/photos/photo_01.jpg",
+    "caption": "Road alignment looking West",
+    "view": "approach"
+   },
+   {
+    "file": "../bridges/41750_i70_bayliss/photos/photo_12.jpg",
+    "caption": "Wearing surface condition overall view looking West",
+    "view": "deck"
+   },
+   {
+    "file": "../bridges/41750_i70_bayliss/photos/photo_22.jpg",
+    "caption": "Span A overall view looking South",
+    "view": "under"
+   },
+   {
+    "file": "../bridges/41750_i70_bayliss/photos/photo_27.jpg",
+    "caption": "Pier 2 East face",
+    "view": "pier"
+   },
+   {
+    "file": "../bridges/41750_i70_bayliss/photos/photo_30.jpg",
+    "caption": "Upstream alignment or looking north",
+    "view": "channel"
+   },
+   {
+    "file": "../bridges/41750_i70_bayliss/photos/photo_19.jpg",
+    "caption": "East bent condition",
+    "view": "aerial"
+   }
+  ]
+ }
+}

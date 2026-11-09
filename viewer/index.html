@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indiana Bridges 3D</title>
+<meta name="description" content="Interactive viewer for three INDOT bridges rebuilt in Blender from their NBI inspection reports: SR 28 over Little Wea Creek, I-70 over Bayliss State Ditch and the Sagamore Parkway viaduct in Lafayette.">
+<style>
+  /* full-bleed WebGL canvas; glass HUD top-left (collapsible), inspection photos top-right, facts bottom-right */
+  :root { --bg:#0f141a; --panel:rgba(14,18,24,0.62); --fg:#e8edf2; --muted:#9aa6b2; --accent:#7fc1ff; --border:rgba(255,255,255,0.12); color-scheme: dark; }
+  html,body { margin:0; height:100%; background:var(--bg); color:var(--fg); font:14px/1.45 -apple-system, "Segoe UI", "Malgun Gothic", Roboto, sans-serif; overflow:hidden; }
+  canvas#c { display:block; width:100vw; height:100vh; }
+  #hud { position:fixed; left:max(16px, env(safe-area-inset-left, 0px)); top:calc(16px + env(safe-area-inset-top, 0px)); max-width:min(400px, calc(100vw - 32px)); background:var(--panel); backdrop-filter:blur(8px); border:1px solid var(--border); border-radius:12px; padding:10px 14px 12px; opacity:0.88; transition:opacity .2s; }
+  #hud:not(:hover):not(:focus-within) { opacity:0.74; }
+  #hud .head { display:flex; align-items:center; gap:8px; }
+  #hud h1 { font-size:15px; margin:0; font-weight:600; flex:1; min-width:0; }
+  #hudToggle { background:rgba(255,255,255,0.08); color:var(--fg); border:1px solid var(--border); border-radius:8px; width:30px; height:30px; font-size:14px; cursor:pointer; flex:none; display:flex; align-items:center; justify-content:center; }
+  #hud .body { margin-top:4px; }
+  #hud.min { padding:6px 8px 6px 12px; opacity:0.55; border-radius:999px; max-width:min(300px, calc(100vw - 32px)); }
+  #hud.min:hover, #hud.min:focus-within { opacity:0.9; }
+  #hud.min h1 { font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  #hud.min .body { display:none; }
+  #hud.min #hudToggle { width:26px; height:26px; }
+  #hud .sub { color:var(--muted); font-size:12px; margin-bottom:8px; }
+  .row { display:flex; flex-wrap:wrap; gap:6px; margin:6px 0 8px; }
+  .row button, .links a, select { background:rgba(255,255,255,0.08); color:var(--fg); border:1px solid var(--border); border-radius:8px; padding:5px 9px; font-size:12px; cursor:pointer; text-decoration:none; display:inline-block; }
+  .row button:hover, .links a:hover { background:rgba(127,193,255,0.25); border-color:var(--accent); }
+  .row button.on { background:rgba(127,193,255,0.35); border-color:var(--accent); }
+  .toggles { display:flex; flex-wrap:wrap; gap:10px; font-size:12px; color:var(--muted); margin-bottom:8px; }
+  .toggles label { display:flex; gap:4px; align-items:center; cursor:pointer; }
+  .links { display:flex; flex-wrap:wrap; gap:6px; }
+  #status { font-size:12px; color:var(--accent); min-height:16px; }
+  #facts { position:fixed; right:max(16px, env(safe-area-inset-right, 0px)); bottom:calc(16px + env(safe-area-inset-bottom, 0px)); background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:10px 12px; font-size:12px; color:var(--muted); max-width:min(380px, calc(100vw - 32px)); }
+  #facts b { color:var(--fg); }
+  #facts ul { margin:4px 0 0; padding-left:16px; }
+  #photos { position:fixed; right:max(16px, env(safe-area-inset-right, 0px)); top:calc(16px + env(safe-area-inset-top, 0px)); width:160px; background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:8px; cursor:pointer; transition:width .2s; max-height:calc(100vh - 220px); overflow:auto; }
+  #photos.open { width:min(520px, calc(100vw - 32px)); }
+  #photos .t { font-size:11px; color:var(--muted); margin-bottom:6px; }
+  #photos img { width:100%; border-radius:6px; margin-bottom:6px; display:block; }
+  #photos .cap { font-size:11px; color:var(--muted); margin:-2px 0 8px; display:none; }
+  #photos.open .cap { display:block; }
+  #loader { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:var(--bg); color:var(--muted); font-size:14px; flex-direction:column; gap:10px; z-index:5; }
+  .spin { width:28px; height:28px; border:3px solid var(--border); border-top-color:var(--accent); border-radius:50%; animation:sp 1s linear infinite; }
+  @keyframes sp { to { transform:rotate(360deg); } }
+  @media (max-width:640px) { #photos { display:none; } #facts { display:none; } #hud { max-width:calc(100vw - 32px); } .row button { padding:7px 10px; font-size:13px; } }
+</style>
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.186.1/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.1/examples/jsm/" } }
+</script>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="loader"><div class="spin"></div><div id="status">Loading…</div></div>
+<div id="hud">
+  <div class="head">
+    <h1 id="title">Indiana Bridges – 3D</h1>
+    <button id="hudToggle" aria-label="Collapse menu" aria-expanded="true" title="Collapse / expand menu">&#x2212;</button>
+  </div>
+  <div class="body">
+  <div class="sub" id="subtitle">Blender scene rebuilt from the NBI inspection report · real-time preview</div>
+  <div class="row" id="bridgeRow"></div>
+  <div class="row" id="viewRow"></div>
+  <div class="toggles">
+    <label><input type="checkbox" id="tgTrees" checked> Trees</label>
+    <label><input type="checkbox" id="tgGrass" checked> Grass</label>
+    <label><input type="checkbox" id="tgTwin" checked> Twin structure</label>
+    <label><input type="checkbox" id="tgShadows" checked> Shadows</label>
+  </div>
+  <div class="links" id="links"></div>
+  <div id="hint" style="font-size:11px;color:var(--muted);margin-top:6px">Drag: orbit · Wheel: zoom · Right-drag: pan</div>
+  </div>
+</div>
+<div id="photos"><div class="t">Inspection photos – click to enlarge</div><div id="photoList"></div></div>
+<div id="facts"></div>
+<script>
+(function () {
+  var hud = document.getElementById('hud'), btn = document.getElementById('hudToggle');
+  var touch = matchMedia('(pointer: coarse)').matches;
+  if (touch) document.getElementById('hint').textContent = 'One finger: orbit · Pinch: zoom · Two fingers: pan';
+  var saved = null; try { saved = localStorage.getItem('hudMin'); } catch (e) {}
+  var min = saved !== null ? saved === '1' : (innerWidth < 700 || touch);
+  function apply() { hud.classList.toggle('min', min); btn.innerHTML = min ? '&#x2b;' : '&#x2212;'; btn.setAttribute('aria-expanded', String(!min)); }
+  apply();
+  btn.addEventListener('click', function () { min = !min; apply(); try { localStorage.setItem('hudMin', min ? '1' : '0'); } catch (e) {} });
+  window.__hudMinOnPick = function () { if (innerWidth < 700) { min = true; apply(); } };
+})();
+</script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

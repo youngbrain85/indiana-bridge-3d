@@ -1,0 +1,12 @@
+{
+ "notes": "Render view name (blender/bridge_gen.py cameras) paired with the inspection photo it should resemble. Winter photos (Jan 2022): bare fields, dry grass, low sun.",
+ "pairs": [
+  {"view": "elevation", "photo": "photo_01.jpg", "check": "3 flat slab spans, deep coping with vertical parapet on top, 20 deg skew, 9 black piles per bent standing in shallow water, riprap slopes under the bridge, W-beam guardrail on the approaches"},
+  {"view": "channel",   "photo": "photo_02.jpg", "check": "South profile: same elements from the other bank; abutment face visible above the riprap"},
+  {"view": "approach",  "photo": "photo_03.jpg", "check": "Two-lane asphalt road, double yellow centre line, white edge lines, concrete approach slab, guardrail flares, flat farmland"},
+  {"view": "deck",      "photo": "photo_10.jpg", "check": "Deck surface between two vertical concrete parapets, 36 ft between curbs"},
+  {"view": "under",     "photo": "photo_17.jpg", "check": "Flat slab soffit, integral pile cap, round black-coated piles, riprap slope to the abutment"},
+  {"view": "pier",      "photo": "photo_22.jpg", "check": "Pile bent in water, 9 piles ~4.5 ft apart, cap flush with slab soffit, water about 13 ft below the deck"},
+  {"view": "aerial",    "photo": "photo_25.jpg", "check": "Channel alignment: creek meanders gently and runs roughly parallel to the bents (20 deg to the road)"}
+ ]
+}

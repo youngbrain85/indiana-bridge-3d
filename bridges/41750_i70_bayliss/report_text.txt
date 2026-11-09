@@ -1,0 +1,1057 @@
+      Bridge Inspection Report
+                I70-055-05179 BEBL
+                      I-70 EB
+                        over
+                BAYLISS STATE DITCH
+
+
+
+
+  Inspection Date: 09/13/2021
+     Inspected By: Daniel W. Bewley
+Inspection Type(s): Routine
+                              TABLE OF CONTENTS
+
+
+                                                  PAGE NUMBER
+
+LOCATION MAP                                           3
+
+EXECUTIVE SUMMARY                                      4
+
+NATIONAL BRIDGE INVENTORY                              5
+
+ELEMENTS                                               9
+
+PICTURES                                              10
+
+MISCELLANEOUS ASSET DATA                              26
+
+MAINTENANCE - BRIDGE                                  28
+
+SCOUR CHANNEL PROFILE                                 30
+
+SCOUR MEMO I70-55-05179 BWBL 2-15-2019.PDF            31
+Inspector: Daniel W. Bewley                              Asset Name:         I70-055-05179
+                                                                             BEBL
+Inspection Date: 09/13/2021                              Facility Carried:   I-70 EB
+                              Bridge Inspection Report
+
+
+
+
+                                Latitude: 39.59214
+                              Longitude: -86.54533
+
+
+
+
+                                  Page 3 of 34
+Inspector: Daniel W. Bewley                                                 Asset Name:         I70-055-05179
+                                                                                                BEBL
+Inspection Date: 09/13/2021                                                 Facility Carried:   I-70 EB
+                                                 Bridge Inspection Report
+
+
+
+
+9/13/2021 Bridge is in overall fair condition.
+
+Maintenance Letter written to seal wide cracks & patch approaches
+
+No Inspector's Recommendations
+
+SPMS shows Des# 1800675, Contract # B-42822, Deck Overlay, Letting 7/13/2022
+
+Bridge History
+
+1/01/2024 Deck Overlay Programmed Des# 1800675, Contract# B-42822
+
+1/01/1995 Rehab B Deck Overlay Des# 9139376, Contract# R-20906
+
+1/01/1980 Rehab A Deck Overlay Des# Unknown, Contract# B-12748
+
+1/01/1966 New Bridge Des# Unknown, Contract# R-7092
+
+
+
+
+                                                     Page 4 of 34
+Inspector: Daniel W. Bewley                                                     Asset Name:           I70-055-05179
+                                                                                                      BEBL
+Inspection Date: 09/13/2021                                                     Facility Carried:     I-70 EB
+                                              Bridge Inspection Report
+
+
+
+IDENTIFICATION
+(1) STATE CODE:               185 - Indiana                (12) BASE HIGHWAY NETWORK: 1
+(8) STRUCTURE:                041750                       (13A) INVENTORY ROUTE:              0000000001
+(5 A-B-C-D-E) INV. ROUTE:     1 - 1 - 1 - 00070 - 0        (13B) SUBROUTE NUMBER:              01
+(2) HIGHWAY AGENCY            01 - Crawfordsville          (16) LATITUDE:                      39.59214
+DISTRICT:
+                                                           (17) LONGITUDE:                     -86.54533
+(3) COUNTY CODE:              055 - MORGAN
+                                                           (98) BORDER
+(4) PLACE CODE:               00000 - N/A
+                                                               A) STATE NAME:
+(6) FEATURES INTERSECTED:     BAYLISS STATE                    B) PERCENT                                 %
+                              DITCH
+                                                           (99) BORDER BRIDGE STRUCT.
+(7) FACILITY CARRIED:         I-70 EB                      NO:
+(9) LOCATION:                 03.76 W SR 39
+(11) MILEPOINT:               0055.450
+
+STRUCTURE TYPE AND MATERIAL
+(43) STRUCTURE TYPE, MAIN:                                 (45) NUMBER OF SPANS IN MAIN 003
+                                                           UNIT:
+ A) KIND OF                   2 - Concrete continuous      (46) NUMBER OF APPROACH      0000
+ MATERIAL/DESIGN:                                          SPANS:
+ B) TYPE OF DESIGN/CONSTR:    01 - Slab                    (107) DECK STRUCTURE TYPE: 1 - Concrete Cast-in-
+                                                                                        Place
+(44) STRUCTURE TYPE,                                       (108) WEARING SURFACE/PROT
+APPROACH SPANS:                                            SYS:
+  A) KIND OF                  0 - Other                       A) WEARING SURFACE:       3 - Latex Concrete or
+  MATERIAL/DESIGN:                                                                      similar additive
+ B) TYPE OF DESIGN/CONSTR:    00 - Other                      B) DECK MEMBRANE:                0 - None
+                                                              C) DECK PROTECTION:              0 - None
+
+
+
+
+AGE OF SERVICE
+(27) YEAR BUILT:              1966                         (28) LANES:
+(106) YEAR RECONSTRUCTED:     1995                            A) ON BRIDGE:                    02
+                                                              B) UNDER BRIDGE:                 00
+(42) TYPE OF SERVICE:                                      (29) AVERAGE DAILY TRAFFIC: 016214
+ A) ON BRIDGE:                1 - Highway
+                                                           (30) YEAR OF AVERAGE DAILY          2004
+ B) UNDER BRIDGE:             5 - Waterway                 TRAFFIC:
+                                                           (109) AVERAGE DAILY TRUCK           10       %
+                                                           TRAFFIC:
+                                                           (19) BYPASS DETOUR LENGTH:          001      MI
+
+
+
+
+                                                  Page 5 of 34
+Inspector: Daniel W. Bewley                                                                Asset Name:           I70-055-05179
+                                                                                                                 BEBL
+Inspection Date: 09/13/2021                                                                Facility Carried:     I-70 EB
+                                                        Bridge Inspection Report
+
+
+
+GEOMETRIC DATA
+(48) LENGTH OF MAX SPAN:              0032.0       FT                (35) STRUCTURE FLARED:                    0 - No flare
+(49) STRUCTURE LENGTH:                00082.0 FT                     (10) INV RTE, MIN VERT                    99.99 FT
+                                                                     CLEARANCE:
+(50) CURB/SIDEWALK WIDTHS:
+                                                                     (47) TOT HORIZ CLEARANCE:                 039.5 FT
+  A) LEFT                             00.0         FT
+                                                                     (53) VERT CLEAR OVER BR RDWY: 99.99 FT
+  B) RIGHT:                           00.0         FT
+                                                                     (54) MIN VERTICAL
+(51) BRDG RDWY WIDTH CURB- 039.5                   FT                UNDERCLEARANCE:
+TO-CURB:                                                                A) REFERENCE FEATURE:      N
+                                                                        B) MIN VERT UNDERCLEAR:    0     FT
+(52) DECK WIDTH, OUT-TO-OUT: 043.0                 FT
+                                                                     (55) LATERAL UNDERCLEARANCE
+(32) APPROACH ROADWAY                 038.0        FT                RIGHT:
+(33) BRIDGE MEDIAN:                   0 - No median                     A) REFERENCE FEATURE:      N
+                                                                        B) MIN LATERAL UNDERCLEAR: 000.0 FT
+(34) SKEW:                            15          DEG                (56) MIN LATERAL UNDERCLEAR               00.0    FT
+                                                                     ON LEFT:
+
+INSPECTIONS
+(90) INSPECTION DATE:                         09/13/2021             (91) DESIGNATED INSPECTION                24 MONTHS
+(92) CRITICAL FEATURE                                                FREQUENCY:
+INSPECTION:                                                          (93) CRITICAL FEATURE
+  A) FRACTURE CRITICAL                        N                      INSPECTION DATE:
+  REQUIRED/FREQUENCY:                                                   A) FRACTURE CRITICAL DATE:
+ B) UNDERWATER INSPECTION                    N                          B) UNDERWATER INSP DATE:
+ REQUIRED/FREQUENCY:
+ C) OTHER SPECIAL INSPECTION                 N                          C) OTHER SPECIAL INSP DATE:
+ REQUIRED/FREQUENCY:
+
+CONDITION
+(58) DECK:                            5 - Fair Condition             (60) SUBSTRUCTURE:                        7 - Good Condition
+                                      (minor section loss)                                                     (some minor
+                                                                                                               problems)
+(58.01) WEARING SURFACE:              6 - Satisfactory
+                                      Condition                      (61) CHANNEL/CHANNEL                      8 - Banks are
+                                                                     PROTECTION:                               protected
+(59) SUPERSTRUCTURE:                  5 - Fair Condition
+                                      (minor section loss)           (62) CULVERTS:                            N - Not Applicable
+
+CONDITION COMMENTS
+(58) DECK:                            5 - Fair Condition (minor section loss)
+Comments:
+The deck has spalling in spans A and B with rebar exposed; Span A has approximately 30 SF of spall & cracks (cs 3) & Span B has
+spalled areas and cracking with efflorescence 50 SF ( cs 3)
+Span C was good condition.
+(58.01) WEARING SURFACE: 6 - Satisfactory Condition
+Comments:
+The deck wearing surface has longitudinal wide width cracking in both lanes. 60 SF (cs 3) Wearing surface has 2’ x 17’ quick set
+concrete patch at SW corner. ( cs 2) At the East end of that patch there’s a small spall & asphalt patch. ( cs 2 & 3) 2 SF
+
+
+
+                                                            Page 6 of 34
+Inspector: Daniel W. Bewley                                                               Asset Name:              I70-055-05179
+                                                                                                                   BEBL
+Inspection Date: 09/13/2021                                                               Facility Carried:        I-70 EB
+                                                     Bridge Inspection Report
+
+
+
+(59) SUPERSTRUCTURE:                  5 - Fair Condition (minor section loss)
+Comments:
+See above comments
+(60) SUBSTRUCTURE:                    7 - Good Condition (some minor problems)
+Comments:
+Mostly in good condition. East bent has 4 spalled areas with exposed rebar (cs 3) 4 LF
+(61) CHANNEL/CHANNEL                  8 - Banks are protected
+PROTECTION
+Comments:
+Banks have good vegetation on each side of the bridge. Channel runs from the North towards the South and has good alignment to
+the bridge. Stream could be easily crossed.
+(62) CULVERTS:                        N - Not Applicable
+Comments:
+LOAD RATING AND POSTING
+(31) DESIGN LOAD:                     6 - HS 20+Mod                 (66) INVENTORY RATING:                    36
+(70) BRIDGE POSTING                   5 - Equal to or above         (65) INVENTORY RATING METHOD: 1 - Load Factor (LF)
+                                      legal loads
+                                                                    (66B) INVENTORY RATING (H):
+(41) STRUCTURE                        A - Open                      (66C) TONS POSTED :
+OPEN/POSTED/CLOSED:                                                 (66D) DATE POSTED/CLOSED:
+(64) OPERATING RATING:                59
+(63) OPERATING RATING                 1 - Load Factor (LF)
+METHOD:
+
+
+
+
+APPRAISAL
+SUFFICIENCY RATING:                   84.2                          (36) TRAFFIC SAFETY FEATURE:
+STATUS:                               0                                 36A) BRIDGE RAILINGS:                 1
+(67) STRUCTURAL EVALUATION: 5                                           36B) TRANSITIONS:                     1
+(68) DECK GEOMETRY:                   6                                 36C) APPROACH GUARDRAIL:              1
+(69) UNDERCLEARANCES,                 N                                 36D) APPROACH GUARDRAIL               1
+VERTICAL & HORIZONTAL:                                                  ENDS:
+(71) WATERWAY ADEQUACY:                          8 - Bridge Above Approaches
+      Comments:
+      Bridge deck above roadway approaches. Slight chance of over topping roadway approaches.
+      Low Concrete Elev. = 760.3'
+      Max High Water Elev. = 758.0'
+      Ave High Water Elev. = 754.5'
+(72) APPROACH ROADWAY ALIGNMENT:                8 - Equal to present desirable criteria
+      Comments:
+      The approaching roadway and bridge alignments do not impede traffic in anyway for vehicles traveling at the current speed
+      limit.
+
+
+
+
+                                                          Page 7 of 34
+Inspector: Daniel W. Bewley                                                                 Asset Name:          I70-055-05179
+                                                                                                                 BEBL
+Inspection Date: 09/13/2021                                                                 Facility Carried:    I-70 EB
+                                                     Bridge Inspection Report
+
+
+
+(113) SCOUR CRITICAL BRIDGES:                         3 - Foundations unstable for scour conditions
+       Comments:
+       All bents & piers are supported by steel encased concrete piles driven to 35 tons minimum bearing capacity.
+       Scour Memo date 2/15/2019 says bridge is Scour Critical
+CLASSIFICATION
+(20) TOLL:                            3 - On Free Road              (21) MAINT. RESPONSIBILITY:           01 - State Highway
+                                                                                                          Agency
+(22) OWNER:                           01 - State Highway
+                                      Agency                        (26) FUNCTIONAL CLASS OF              01 - Rural - Principal
+                                                                    INVENTORY RTE:                        Arterial - Interstate
+(37) HISTORICAL SIGNIFICANCE: 5 - Not eligible
+                                                                    (100) STRAHNET HIGHWAY:               Is on an Interstate
+(101) PARALLEL STRUCTURE:             R - Right structure                                                 STRAHNET route
+                                      (North or East)               (102) DIRECTION OF TRAFFIC:           1-way traffic
+(103) TEMPORARY STRUCTURE:
+
+                                                                    (104) HIGHWAY SYSTEM OF               1 - Structure/Route is on
+(105) FEDERAL LANDS                   0-Not Applicable              INVENTORY ROUTE:                      NHS
+HIGHWAYS:
+                                                                    (110) DESIGNATED NATIONAL Inventory route on
+(112) NBIS BRIDGE LENGTH:             Yes                           NETWORK:                  National Truck Network
+
+NAVIGATION DATA
+(38) NAVIGATION CONTROL:              0 - No navigation             (39) NAVIGATION VERTICAL CLEAR: 000.0                FT
+                                      control on waterway
+                                      (bridge permit not            (116) MINIMUM NAVIGATION VERT.                       FT
+                                      required)                     CLEARANCE, VERT. LIFT BRIDGE:
+
+(111) PIER OR ABUTMENT                                              (40) NAV HORIZONTAL CLEARANCE: 0000.0 FT
+PROTECTION:
+
+
+PROPOSED IMPROVEMENTS
+(75A) TYPE OF WORK:                                                 (95) ROADWAY IMPROVEMENT COST: $ 000000
+(75B) WORK DONE BY:
+                                                                    (96) TOTAL PROJECT COST:                    $ 000000
+(76) LENGTH OF IMPROVEMENT: 000000 FT
+                                                                    (97) YR OF IMPROVEMENT COST EST: 0000
+(94) BRIDGE IMPROVEMENT               $ 000000
+COST:                                                               (114) FUTURE AVG DAILY TRAFFIC:             029364
+                                                                    (115) YR OF FUTURE ADT:                     2030
+
+
+
+
+                                                          Page 8 of 34
+Inspector: Daniel W. Bewley                                                                   Asset Name:         I70-055-05179
+                                                                                                                  BEBL
+Inspection Date: 09/13/2021                                                                   Facility Carried:   I-70 EB
+                                                Bridge Inspection Report
+
+
+
+
+                                                                      Total                  Condition Condition Condition Condition
+                                                       Environment                 Units
+                                                                     Quantity                 State 1   State 2   State 3   State 4
+                 38 - Reinforced Concrete Slab            2 - Low      3507        sq. ft.     3427        0        80         0
+                                                       See comments in NBI Tab Item (58)
+
+                                                       81'‐6 3/4" long x 43' wide
+                              510 - Wearing Surfaces                   3222        sq. ft.     3122        40       60         0
+                                                       See comments in NBI Tab Item (58.01)
+
+                                                       81'‐6 3/4" long x 39'‐6" wide
+
+          210 - Reinforced Concrete Pier Wall             2 - Low       93           ft.        93         0         0         0
+                                                       See comments in NBI Tab Item (60)
+
+                                                       46'‐6" long x 2 piers
+
+
+         215 - Reinforced Concrete Abutment               2 - Low       91           ft.        87         0         4         0
+                                                       See comments in NBI Tab Item (60)
+
+                                                       45'‐6" long x 2 bents
+                  302 - Compression Joint Seal            2 - Low       91           ft.        1          10        0        80
+                                                       See comments in MAD Tab Joints
+
+                                                       45'‐6" long x 2 joints
+    321 - Reinforced Concrete Approach Slab               2 - Low      2038        sq. ft.     1981        0        57         0
+                                                       See comments in MAD Tab Approach Slabs
+
+                                                       20'‐6" & 31'‐1" long x 39'‐6" wide x 2 slabs
+    331 - Reinforced Concrete Bridge Railing              2 - Low       163          ft.        83         80        0         0
+                                                       81'‐6 3/4" long x 2 rails
+
+                                                       Approximately 30' scraped area on the North parapet wall.
+                                                       Approximately 50 hair line vertical cracks with minor efflorescence
+
+
+
+
+                                                       Page 9 of 34
+Inspector: Daniel W. Bewley                                                    Asset Name:         I70-055-05179
+                                                                                                   BEBL
+Inspection Date: 09/13/2021                                                    Facility Carried:   I-70 EB
+                                                    Bridge Inspection Report
+
+
+
+
+            PHOTO 1       Condition
+
+            Description    Road alignment looking West
+
+
+
+
+            PHOTO 2       Condition
+
+            Description    Road alignment East
+
+
+
+
+                                                         Page 10 of 34
+Inspector: Daniel W. Bewley                                                        Asset Name:         I70-055-05179
+                                                                                                       BEBL
+Inspection Date: 09/13/2021                                                        Facility Carried:   I-70 EB
+                                                        Bridge Inspection Report
+
+
+
+
+            PHOTO 3       Condition
+
+            Description    East terminal joint condition is poor
+
+
+
+
+            PHOTO 4       Condition
+
+            Description    West terminal joint is poor condition
+
+
+
+
+                                                             Page 11 of 34
+Inspector: Daniel W. Bewley                                                                        Asset Name:         I70-055-05179
+                                                                                                                       BEBL
+Inspection Date: 09/13/2021                                                                        Facility Carried:   I-70 EB
+                                                      Bridge Inspection Report
+
+
+
+
+            PHOTO 5       Condition
+
+            Description    East concrete approach slab overall view looking North
+
+
+
+
+            PHOTO 6
+
+            Description    East approach has transverse wide width crack in R lane ( cs 3) 16 SF
+
+
+
+
+                                                          Page 12 of 34
+Inspector: Daniel W. Bewley                                                                        Asset Name:         I70-055-05179
+                                                                                                                       BEBL
+Inspection Date: 09/13/2021                                                                        Facility Carried:   I-70 EB
+                                                       Bridge Inspection Report
+
+
+
+
+            PHOTO 7       Condition, Maintenance - Bridge
+
+            Description    East approach slab has small spall on center line next to joint ( cs 3) 1 SF
+
+
+
+
+            PHOTO 8       Condition
+
+            Description    West approach slab overall view looking East
+
+
+
+
+                                                            Page 13 of 34
+Inspector: Daniel W. Bewley                                                                    Asset Name:         I70-055-05179
+                                                                                                                   BEBL
+Inspection Date: 09/13/2021                                                                    Facility Carried:   I-70 EB
+                                                        Bridge Inspection Report
+
+
+
+
+            PHOTO 9       Condition
+
+            Description    West approach slab has wide width longitudinal & transverse cracks ( cs 3) 40 SF
+
+
+
+
+            PHOTO 10      Condition
+
+            Description    East joint is missing rubber material ( cs 4)
+
+
+
+
+                                                             Page 14 of 34
+Inspector: Daniel W. Bewley                                                        Asset Name:         I70-055-05179
+                                                                                                       BEBL
+Inspection Date: 09/13/2021                                                        Facility Carried:   I-70 EB
+                                                        Bridge Inspection Report
+
+
+
+
+            PHOTO 11      Condition
+
+            Description    West bridge joint is missing rubber material ( cs 4)
+
+
+
+
+            PHOTO 12      Condition
+
+            Description    Wearing surface condition overall view looking West
+
+
+
+
+                                                            Page 15 of 34
+Inspector: Daniel W. Bewley                                                                     Asset Name:            I70-055-05179
+                                                                                                                       BEBL
+Inspection Date: 09/13/2021                                                                     Facility Carried:      I-70 EB
+                                                      Bridge Inspection Report
+
+
+
+
+            PHOTO 13      Condition
+
+            Description    Wearing surface condition showing wide width cracks
+
+
+
+
+            PHOTO 14      Condition, Maintenance - Bridge
+
+            Description    Wearing surface Span A showing quick set patch 20’ x 2’ (cs 2) and an asphalt patch & small spall
+                           (cs 3) 4 SF
+
+
+
+
+                                                            Page 16 of 34
+Inspector: Daniel W. Bewley                                                       Asset Name:         I70-055-05179
+                                                                                                      BEBL
+Inspection Date: 09/13/2021                                                       Facility Carried:   I-70 EB
+                                                       Bridge Inspection Report
+
+
+
+
+            PHOTO 15      Condition
+
+            Description    Wearing surface condition showing wide width cracks
+
+
+
+
+            PHOTO 16      Condition
+
+            Description    Parapet wall condition typical
+
+
+
+
+                                                            Page 17 of 34
+Inspector: Daniel W. Bewley                                                    Asset Name:         I70-055-05179
+                                                                                                   BEBL
+Inspection Date: 09/13/2021                                                    Facility Carried:   I-70 EB
+                                                    Bridge Inspection Report
+
+
+
+
+            PHOTO 17      Elevation, Condition
+
+            Description    North coping condition
+
+
+
+
+            PHOTO 18      Elevation, Condition
+
+            Description    South coping condition
+
+
+
+
+                                                       Page 18 of 34
+Inspector: Daniel W. Bewley                                                         Asset Name:         I70-055-05179
+                                                                                                        BEBL
+Inspection Date: 09/13/2021                                                         Facility Carried:   I-70 EB
+                                                         Bridge Inspection Report
+
+
+
+
+            PHOTO 19      Condition
+
+            Description    East bent condition
+
+
+
+
+            PHOTO 20      Condition
+
+            Description    West bent condition is good
+
+
+
+
+                                                            Page 19 of 34
+Inspector: Daniel W. Bewley                                                      Asset Name:         I70-055-05179
+                                                                                                     BEBL
+Inspection Date: 09/13/2021                                                      Facility Carried:   I-70 EB
+                                                      Bridge Inspection Report
+
+
+
+
+            PHOTO 21      Condition
+
+            Description    Span A showing small spall on center line
+
+
+
+
+            PHOTO 22      Condition
+
+            Description    Span A overall view looking South
+
+
+
+
+                                                          Page 20 of 34
+Inspector: Daniel W. Bewley                                                      Asset Name:         I70-055-05179
+                                                                                                     BEBL
+Inspection Date: 09/13/2021                                                      Facility Carried:   I-70 EB
+                                                      Bridge Inspection Report
+
+
+
+
+            PHOTO 23      Condition
+
+            Description    Span B overall view looking South
+
+
+
+
+            PHOTO 24      Condition
+
+            Description    Span B showing areas of spall ( cs 3)
+
+
+
+
+                                                           Page 21 of 34
+Inspector: Daniel W. Bewley                                                      Asset Name:         I70-055-05179
+                                                                                                     BEBL
+Inspection Date: 09/13/2021                                                      Facility Carried:   I-70 EB
+                                                      Bridge Inspection Report
+
+
+
+
+            PHOTO 25      Condition
+
+            Description    Span C overall view looking North
+
+
+
+
+            PHOTO 26      Condition
+
+            Description    Pier 3 west face
+
+
+
+
+                                                          Page 22 of 34
+Inspector: Daniel W. Bewley                                                   Asset Name:         I70-055-05179
+                                                                                                  BEBL
+Inspection Date: 09/13/2021                                                   Facility Carried:   I-70 EB
+                                                   Bridge Inspection Report
+
+
+
+
+            PHOTO 27      Condition
+
+            Description    Pier 2 East face
+
+
+
+
+            PHOTO 28      Elevation, Condition
+
+            Description    Profile looking South
+
+
+
+
+                                                      Page 23 of 34
+Inspector: Daniel W. Bewley                                                        Asset Name:         I70-055-05179
+                                                                                                       BEBL
+Inspection Date: 09/13/2021                                                        Facility Carried:   I-70 EB
+                                                        Bridge Inspection Report
+
+
+
+
+            PHOTO 29      possible endangered species
+
+            Description    Possible endangered species nest
+
+
+
+
+            PHOTO 30      Condition
+
+            Description    Upstream alignment or looking north
+
+
+
+
+                                                           Page 24 of 34
+Inspector: Daniel W. Bewley                                                     Asset Name:         I70-055-05179
+                                                                                                    BEBL
+Inspection Date: 09/13/2021                                                     Facility Carried:   I-70 EB
+                                                     Bridge Inspection Report
+
+
+
+
+            PHOTO 31      Condition
+
+            Description    Down stream alignment or looking South
+
+
+
+
+                                                         Page 25 of 34
+                                  Miscellaneous Asset Data                             041750
+
+                                         Asset Management
+                _______________________________________________________________
+
+Load Rating 2:
+Has the dead load or the structural condition of the primary load             No - Load Rating Update Not
+carrying members changed since the last inspection?                           Required
+               _______________________________________________________________
+
+Extended Frequency:                                                           Submittal Date:
+Inspector:
+INDOT Reviewer:
+This bridge has been accepted into the Extended Frequency Program.            Approval Date:
+                _______________________________________________________________
+
+Joints:        * Indicate location, type, and rating of lowest rated joint.
+Transverse                              A - BS                                      4 - Poor Condition,
+North/East                                                                          leaking, noising damage,
+                                                                                    areas of adhesion loss
+Comments:
+
+Both joints have rubber material is pulling away from the sides of the concrete. total of 10 LF (cs 2)
+Both joints have rubber material missing on both ends. total of 80 LF (cs 4)
+               _______________________________________________________________
+
+Terminal Joints:        *Rating of lowest rated terminal joint.           4
+Comments:
+
+Both need asphalt
+
+               _______________________________________________________________
+
+Concrete Slopewall:            *Rating of lowest rated slopewall.         N
+
+Comments:
+
+
+
+               _______________________________________________________________
+
+Bearings:    * Indicate type, and rating of lowest rated bearing.
+N - No Bearing(s)
+Comments:
+
+
+
+
+Approach Slabs:        * Indicate if present & condition rating.
+1 - Approach Slabs                                7 - Good condition, minor cracking, wide spacing
+Comments:
+
+                                        Page 26 of 34
+West approach has 40 SF wide width cracks (cs 3)
+East approach has 16 SF of wide width cracks & 1 SF of spall on center line (cs 3)
+
+               _______________________________________________________________
+
+Paint: * Indicate if paint present , year painted & condition rating.
+N - No Paint                                 N
+Comments:
+
+
+
+
+Endangered Species: * If yes, add one photo to the dropdown field
+Bats: seen or heard under structure? *                                  N - No evidence of bats
+Birds/swallows/nests seen? Empty nests present? *                       Y
+               _______________________________________________________________
+
+                               BRIDGE Culvert Geometry:
+                                Barrel Length:
+                                Height:
+                                Width:
+
+
+
+
+                                       Page 27 of 34
+Inspector: Daniel W. Bewley                                                                Asset Name:           I70-055-05179
+                                                                                                                 BEBL
+Inspection Date: 09/13/2021                                                                Facility Carried:     I-70 EB
+                                                      Bridge Inspection Report
+
+
+
+Date Reported:     09/24/2021
+Priority:          Green - 3
+Work Code:         Approach Repair
+
+Deficiency Description:
+Small spall on East approach center line, both approaches have wide width cracks.
+Work Description:
+
+
+Date Repairs Completed:
+Maintenance Comments:
+
+
+Stage: Open                                                       Stage: Open
+
+
+
+
+PHOTO 1     Description   East approach has transverse wide       PHOTO 2    Description     East approach slab has small spall on
+                          width crack in R lane ( cs 3) 16 SF                                center line next to joint ( cs 3) 1 SF
+
+
+
+
+                                                          Page 28 of 34
+Inspector: Daniel W. Bewley                                                      Asset Name:         I70-055-05179
+                                                                                                     BEBL
+Inspection Date: 09/13/2021                                                      Facility Carried:   I-70 EB
+                                                      Bridge Inspection Report
+
+
+
+Stage: Open
+
+
+
+
+PHOTO 3    Description   West approach slab has wide width
+                         longitudinal & transverse cracks ( cs 3)
+                         40 SF
+
+
+
+
+                                                          Page 29 of 34
+Inspector:     Daniel W. Bewley                                      Structure Number:     041750
+Inspection Date:     09/13/2021                                      Facility Carried:     I-70 EB
+                                          Bridge Inspection Report
+
+Channel Measurement
+Date of Channel Measurements:         09/15/2021                                         Number of Fixed Objects in Channel:   4
+Distance Measured From:               0                                                  Water Level:                          15.0
+Depth Measured From:                  0                                                  High Water Mark:                      5.0
+Number of Measurement Points Taken:   7                                                  Measurement Type:                     Depth from
+                                                                                                                               Reference Point
+
+
+
+
+                                                                       Page 30 of 34
+                             100 North Senate Avenue               PHONE: (317) 233-2096   Eric Holcomb, Governor
+                             Room N642                             FAX: (317) 233-4929     Joe McGuinness, Commissioner
+                             Indianapolis, Indiana 46204
+
+
+
+                                                           February 15, 2019
+TO:             Richard Gilyeat
+                Project Manager, Crawfordsville District
+
+FROM:           Jessica Eichhorst, P.E.
+                Hydraulics Engineer
+
+SUBJECT:        SCOUR LETTER
+                Structure:  I70-55-05179 BWBL
+                Location:   3.76 miles west of SR 39
+                Des. #:     1800676
+                Crossing:   Bayliss State Ditch
+                Consultant: Scour done In-House
+
+HYDRAULICS SCOUR DATA - PROVIDED BY INDOT HYDRAULICS SECTION
+
+
+ANALSYIS:       Jessica Eichhorst, P.E.
+                Hydraulics Engineer
+
+REVIEWER:       Reviewer, P.E.
+                Hydraulics Engineer
+
+
+        Drainage Area =                     2.6    sq.mi.
+        Q100 =                              1,276 cfs
+        Q100 Elevation =                    754.47 ft.
+        Approved Scour Data                 Three-Span Bridge
+        Q100 Contraction Scour =            4.47   ft.
+        Q100 Total Scour =                  8.65   ft.
+        Flowline Elevation =                746.12 ft.
+        Q100 Low Scour Elevation =          737.47 ft.
+        Q100 Max Velocity =                 6.45   ft/s.
+        Q100 Average Velocity =             5.02   ft/s.
+
+The structure is a three-span concrete continuous slab bridge. There is a twin bridge, Structure Number I70-55-05179
+BEBL, also at this location.
+
+The following table is a summary of estimated pile elevations based on interpretations of the existing bridge plans and pile
+driving records.
+
+
+
+
+                                                         www.in.gov/dot/
+                                                  An Equal Opportunity Employer
+                                                           Page 31 of 34
+                              100 North Senate Avenue                PHONE: (317) 233-2096     Eric Holcomb, Governor
+                              Room N642                              FAX: (317) 233-4929       Joe McGuinness, Commissioner
+                              Indianapolis, Indiana 46204
+
+
+
+                                                                        Location (West Bound Lane)
+                                                            Bent 1         Pier 2         Pier 3          Bent 4
+            Footing Elevation                                N/A          741.90         741.80            N/A
+            Critical Low Pile Elevation (ft.)               715.33        701.50         706.40           696.38
+            Q100 Low Scour Elevation (ft.)                  737.47         737.47            737.47       737.47
+            Exposed Pile Length (ft.)                       20.26*          4.43              4.33        20.11*
+            Minimum Length of Pile Still
+                                                            22.14           35.97            31.07        41.09
+            Buried (ft.)
+            Maximum Length of Pile Still
+                                                            45.74           48.37            46.47        44.39
+            Buried (ft.)
+            D50 of Soil used in Scour
+                                                             0.01           0.01              0.01         0.01
+            Analysis (mm)
+            # of Piles                                        6              13               13            6
+            # of Rows of Piles                       1             1             1             1
+                                              Steel Encased Steel Encased Steel Encased Steel Encased
+            Pile Material
+                                                Concrete      Concrete      Concrete      Concrete
+            Pile Diameter (in.)                     12            12            12            12
+           *Length from bent cap to low scour elevation
+
+Part A of this scour letter is provided by the INDOT Hydraulics Section and identifies the low scour elevation from the
+hydraulic analysis and makes recommendations for scour mitigation measures. The information from Part A is used by
+the Bridge Section to make the Bridge Scour Critical Determination in Part B of this letter. The stamp and signature
+provided by the INDOT Hydraulics Section is for the information provided in Part A.
+
+If this bridge is determined to be scour critical, Revetment riprap will be required for erosion protection at the piers and
+abutments, placed in accordance with Figure 203-3B of the IDM. All elevations reported are NAVD 1988.
+
+If you have any questions or comments, please contact James Emerick at JEmerick@indot.IN.gov or (317) 232-2770.
+
+        Part A Bridge Scour Status
+
+        ☐ Final Determination – Parts B and C not applicable
+
+                ☐ Not Scour Critical
+
+                ☐ Scour Critical
+
+        ☒ Scour Status Pending Part B
+
+
+
+
+                                                          www.in.gov/dot/
+                                                   An Equal Opportunity Employer
+                                                              Page 32 of 34
+                            100 North Senate Avenue             PHONE: (317) 233-2096   Eric Holcomb, Governor
+                            Room N642                           FAX: (317) 233-4929     Joe McGuinness, Commissioner
+                            Indianapolis, Indiana 46204
+
+PART B – BRIDGE SCOUR CRITICAL DETERMINATION – PROVIDED BY INDOT BRIDGE DESIGN
+The recommendations given in Parts B and C are based on the Scope of Project indicated in the Subject of this memo.
+Changes to the project scope require a resubmittal of the scour analysis to INDOT Hydraulics Section.
+
+                                                                                                PE Stamp:
+DETERMINATION BY: Jeremy Hunter, PE                          PE Signature:
+                  Bridge Design Director                     Jeremy C Hunter
+
+
+
+       Part B Bridge Scour Status
+
+       ☐ Not Scour Critical – Part C not applicable
+
+       ☒ Scour Critical
+             ☒ Final Determination - The scour countermeasures indicated in Part A of this memo shall be installed,
+             even if the bridge may have sufficient structural and geotechnical capacity in the scoured condition. Part
+             C not applicable
+
+               ☐ Contingent Determination - If structural and geotechnical analysis indicates that the existing
+               foundations can accommodate all design loads while considering the potential loss of supporting material
+               to the scour depths given in Part A of this memo, the Bridge Engineer of Record may consider the bridge
+               to be Not Scour Critical. All applicable load cases shall be considered to ensure that the foundations are
+               adequate for all vertical, transverse, lateral, and flexural loads. Special attention should be given to
+               changes in bearing types during bridge rehabilitation projects that could lead to changes in the distribution
+               of longitudinal forces and thermal restraint induces forces to the substructure units. In cases where the
+               installation of scour countermeasures is not anticipated to result in significant environmental or economic
+               impacts, the Bridge Engineer of Record may choose to forego this investigation and consider the bridge to
+               be Scour Critical.
+
+               ☐ Contingent Determination - If Part A indicates that the scour countermeasures shown in the existing
+               plans are sufficient, the Bridge Engineer of Record may verify that these countermeasures are still in
+               place, and thereby determine the bridge to be Not Scour Critical due to the presence of previously
+               installed scour countermeasures.
+
+
+
+Justification/Comments:
+
+
+
+
+                                                        www.in.gov/dot/
+                                                 An Equal Opportunity Employer
+                                                          Page 33 of 34
+                               100 North Senate Avenue             PHONE: (317) 233-2096   Eric Holcomb, Governor
+                               Room N642                           FAX: (317) 233-4929     Joe McGuinness, Commissioner
+                               Indianapolis, Indiana 46204
+
+PART C – BRIDGE SCOUR CRITICAL DETERMINATION – PROVIDED BY BRIDGE ENGINEER OF RECORD
+
+The INDOT Project Manager, INDOT Bridge Asset Engineer, and the Bridge Engineer of Record may determine that a
+‘Scour Critical – Contingent Determination’ warrants further analysis due to environmental, economical, or other
+considerations. If the analysis concludes that the bridge has sufficient structural and geotechnical capacity in the scoured
+condition, the Bridge Engineer of Record may determine the bridge to be ‘Not Scour Critical’.
+
+
+                                                                                                     PE Stamp:
+DETERMINATION BY: XXXX XXXXX, PE                                 PE Signature:
+                 Bridge Engineer of Record
+
+
+
+
+        Part C Bridge Scour Status (Only required if ‘Scour Critical – Contingent Determination’ is being changed to
+        ‘Not Scour Critical’ through sufficient structural and geotechnical analysis, or by the verification of sufficient
+        existing scour countermeasures, by the Bridge Engineer of Record.)
+
+        ☐ Not Scour Critical
+
+
+Justification/Comments:
+
+
+
+
+                                                           www.in.gov/dot/
+                                                    An Equal Opportunity Employer
+                                                             Page 34 of 34
+

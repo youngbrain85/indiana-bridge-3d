@@ -1,0 +1,54 @@
+{
+  "id": "019027",
+  "asset_name": "052X-79-02459 JCWB",
+  "name": "WB Sagamore Parkway (US 52) over 9th Street, CSX Railroad and ramp",
+  "location": {"city": "Lafayette", "county": "Tippecanoe", "state": "Indiana", "lat": 40.44884, "lon": -86.87715},
+  "inspection": {"date": "2021-06-03", "inspector": "Al Naderi", "report": "NBI_19027.pdf"},
+  "history": [["1971", "New bridge, contract R-8471"], ["1991", "Rehab A, deck overlay"], ["2011", "Rehab B, deck overlay"], ["2017", "Rehab C, beam straightening after truck strike"]],
+  "type": {
+    "main": "steel continuous stringer / multi-beam (NBI 4-02)",
+    "approach": "concrete stringer / multi-beam (NBI 1-02)",
+    "deck": "cast-in-place concrete, latex overlay",
+    "service_on": "highway, 2 lanes one-way (WB)",
+    "service_under": "highway (9th St, 4 lanes) + railroad (CSX) + ramp"
+  },
+  "geometry_ft": {
+    "structure_length": 525.2,
+    "deck_width_out_to_out": 43.0,
+    "roadway_width": 39.8,
+    "approach_roadway_width": 38.0,
+    "skew_deg": 0,
+    "min_vertical_underclearance": 14.17,
+    "min_lateral_underclearance_right": 24.5,
+    "spans": [
+      {"id": "A", "length": 32.0, "type": "concrete beams", "beams": 6, "over": "slope wall / west embankment"},
+      {"id": "B", "length": 92.0, "type": "steel W36", "beams": 8, "over": "North 9th Street (4 lanes)"},
+      {"id": "C", "length": 101.0, "type": "steel W36", "beams": 8, "over": "CSX railroad"},
+      {"id": "D", "length": 101.0, "type": "steel W36", "beams": 8, "over": ""},
+      {"id": "E", "length": 101.0, "type": "steel W36", "beams": 8, "over": ""},
+      {"id": "F", "length": 92.0, "type": "steel W36", "beams": 8, "over": "ramp"}
+    ],
+    "substructure": [
+      {"id": "Bent 1", "type": "concrete abutment on slope wall", "length": 45.17},
+      {"id": "Pier 2", "type": "concrete pier wall, battered ends", "length": 44.0},
+      {"id": "Pier 3", "type": "concrete pier wall, battered ends", "length": 43.5},
+      {"id": "Pier 4", "type": "two round columns + hammerhead cap", "length": 43.5, "columns": 2},
+      {"id": "Pier 5", "type": "two round columns + hammerhead cap", "length": 43.5, "columns": 2},
+      {"id": "Pier 6", "type": "two round columns + hammerhead cap", "length": 43.5, "columns": 2},
+      {"id": "Bent 7", "type": "concrete abutment", "length": 45.17}
+    ],
+    "steel": {"sections": ["W36x160", "W36x170", "W36x194", "W36x230"], "beam_lines": 8, "paint": "green, freckled rust (CS2)"},
+    "bearings": {"movable": 40, "fixed": 8, "note": "rocker bearings, 1 fixed line"},
+    "joints": {"strip_seal": 2, "pourable": 2, "length_each": 43.0},
+    "railing": {"type": "reinforced concrete safety-shape parapet", "length_each": 525.25, "fence": "chain-link on parapet over the railroad span"},
+    "approach_slabs": {"count": 2, "length": 20.5, "width": 40.0}
+  },
+  "condition": {"deck": 6, "wearing_surface": 5, "superstructure": 6, "substructure": 6, "sufficiency_rating": 92.6},
+  "model_notes": [
+    "6 spans: 32 (concrete beams) + 92 + 101 + 101 + 101 + 92 (steel W36) = 519 ft between abutment faces; structure length 525.2 ft.",
+    "Piers 2 and 3 are solid walls flanking 9th Street; piers 4-6 are two 3.5 ft round columns with a tapered hammerhead cap 43.5 ft long.",
+    "Deck 43 ft out-to-out, 39.8 ft curb-to-curb, 1.6 ft safety-shape parapets both sides, chain-link fence over the CSX span.",
+    "Parallel EB structure (052X-79-02459 JCEB) ~50 ft to the south is modelled as a simplified twin.",
+    "Green painted steel with rust streaks, concrete piers with patched spalls (from photos 24-26, 29, 34, 36, 38)."
+  ]
+}

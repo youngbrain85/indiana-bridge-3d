@@ -1,0 +1,13 @@
+{
+ "notes": "Summer photos (Jun 2021). WB structure modelled in full; the EB twin 67 ft south is a simplified copy.",
+ "pairs": [
+  {"view": "elevation", "photo": "photo_21.jpg", "check": "Span B over 9th St: 8 green W36 girders, X cross-frames, rocker bearings on pier wall caps, NJ parapets, 14.2 ft clearance over the street"},
+  {"view": "street",    "photo": "photo_20.jpg", "check": "Under span A: concrete slope wall at bent 1, 6 concrete beams, pier 2 wall beyond"},
+  {"view": "pier",      "photo": "photo_34.jpg", "check": "Pier 4: two 3.5 ft round columns with a tapered hammerhead cap 43.5 ft long, girders + bearings on top"},
+  {"view": "under",     "photo": "photo_24.jpg", "check": "Pier 2 cap: solid pier wall with battered ends, bearings, girder ends, stiffeners"},
+  {"view": "rail",      "photo": "photo_30.jpg", "check": "Span C over the CSX track: ballast, ties, rails, chain-link fence on the parapets above"},
+  {"view": "deck",      "photo": "photo_06.jpg", "check": "2 WB lanes, white skip line, white edge lines, NJ parapets, latex overlay colour"},
+  {"view": "ramp",      "photo": "photo_38.jpg", "check": "Pier 6 before the ramp: hammerhead pier, ramp pavement curving under span F"},
+  {"view": "aerial",    "photo": "photo_01.jpg", "check": "Overall alignment: long straight viaduct, twin EB structure to the south"}
+ ]
+}

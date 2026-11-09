@@ -1,0 +1,980 @@
+      Bridge Inspection Report
+               052X-79-02459 JCWB
+                WB SAGAMORE PKWY
+                         over
+                9TH ST, CSX RR, RAMP
+
+
+
+
+  Inspection Date: 06/03/2021
+     Inspected By: Al Naderi
+Inspection Type(s): Routine
+                            TABLE OF CONTENTS
+
+
+                                                PAGE NUMBER
+
+LOCATION MAP                                         3
+
+EXECUTIVE SUMMARY                                    4
+
+NATIONAL BRIDGE INVENTORY                            5
+
+ELEMENTS                                             9
+
+PICTURES                                            11
+
+LOAD RATING - BRADIN                                32
+Inspector: Al Naderi                                     Asset Name:         052X-79-02459
+                                                                             JCWB
+Inspection Date: 06/03/2021                              Facility Carried:   WB SAGAMORE
+                                                                             PKWY
+                              Bridge Inspection Report
+
+
+
+
+                                Latitude: 40.44884
+                              Longitude: -86.87715
+
+
+
+
+                                  Page 3 of 32
+Inspector: Al Naderi                                                           Asset Name:         052X-79-02459
+                                                                                                   JCWB
+Inspection Date: 06/03/2021                                                    Facility Carried:   WB SAGAMORE
+                                                                                                   PKWY
+                                             Bridge Inspection Report
+
+
+
+6/3/2021: This bridge is over in good conditions. The damages that have happened previously were structurally
+addressed. However, another paint job is needed to take care of scratches that probably happened after repair
+work. No work is planned in SPMS for the structure and no Maintenance letter was made. (Al Naderi)
+Previous Inspection
+Bridge was struck on 1/4/2018 that resulted in a critical finding. Correspondence attached. National Bridge
+Inventory form is included for information only; no values were changed by this report. (NP 1/4/2018)
+  On the afternoon of 8/31/2015, I was notified by Customer Service from Crawfordsville District that this
+bridge had been hit by a Lafayette sanitation truck. The officer did not believe the bridge was in danger, so I
+checked the bridge on my way home. This bridge has been hit many times, especially by SB traffic. The
+sanitation truck hit the north facia beam over the SB lane of North 9th Street. The bottom flange is deflected
+approximately 12 inches toward the south. I was not able to observe any cracks. I am certain this is the
+location of the impact because of the fresh (not yet rusted) scrapes as well as the presence of hydraulic fluid on
+many of the beams just south of this location. I asked that Central Office determine how much deflection is
+acceptable. That correspondence is attached to this report. The National Bridge Inventory form is included for
+information only; no values were changed by this report. (NP 8/31/2015)
+Bridge History
+01/01/2017 Rehab C Straightening Beam Des# 1600916, Contract# B-39579
+01/01/2011 Rehab B Deck Overlay Des# 201211, Contract# R-31651
+01/01/1991 Rehab A Deck Overlay Des# 8715665, Contract# B-18549
+01/01/1971 New Bridge Des# Unknown, Contract# R-8471
+
+
+
+
+                                                  Page 4 of 32
+Inspector: Al Naderi                                                            Asset Name:           052X-79-02459
+                                                                                                      JCWB
+Inspection Date: 06/03/2021                                                     Facility Carried:     WB SAGAMORE
+                                                                                                      PKWY
+                                              Bridge Inspection Report
+
+
+IDENTIFICATION
+(1) STATE CODE:               185 - Indiana                (12) BASE HIGHWAY NETWORK: 0
+(8) STRUCTURE:                019027                       (13A) INVENTORY ROUTE:
+(5 A-B-C-D-E) INV. ROUTE:     1 - 2 - 1 - 00052 - 0        (13B) SUBROUTE NUMBER:
+(2) HIGHWAY AGENCY            01 - Crawfordsville          (16) LATITUDE:                      40.44884
+DISTRICT:
+                                                           (17) LONGITUDE:                     -86.87715
+(3) COUNTY CODE:              079 - TIPPECANOE
+                                                           (98) BORDER
+(4) PLACE CODE:               40788 - LAFAYETTE
+                                                               A) STATE NAME:
+(6) FEATURES INTERSECTED:     9TH ST, CSX RR,                  B) PERCENT                                 %
+                              RAMP
+                                                           (99) BORDER BRIDGE STRUCT.
+(7) FACILITY CARRIED:         WB SAGAMORE                  NO:
+                              PKWY
+(9) LOCATION:                 01.37 E HAPPY
+                              HOLLOW RD
+(11) MILEPOINT:               0012.220
+
+STRUCTURE TYPE AND MATERIAL
+(43) STRUCTURE TYPE, MAIN:                                 (45) NUMBER OF SPANS IN MAIN 005
+                                                           UNIT:
+ A) KIND OF                   4 - Steel continuous         (46) NUMBER OF APPROACH      0001
+ MATERIAL/DESIGN:                                          SPANS:
+ B) TYPE OF DESIGN/CONSTR:    02 - Stringer/Multi-         (107) DECK STRUCTURE TYPE: 1 - Concrete Cast-in-
+                              beam or Girder                                            Place
+(44) STRUCTURE TYPE,                                       (108) WEARING SURFACE/PROT
+APPROACH SPANS:                                            SYS:
+  A) KIND OF                  1 - Concrete                    A) WEARING SURFACE:       3 - Latex Concrete or
+  MATERIAL/DESIGN:                                                                      similar additive
+ B) TYPE OF DESIGN/CONSTR:    02 - Stringer/Multi-            B) DECK MEMBRANE:                0 - None
+                              beam or Girder
+                                                              C) DECK PROTECTION:              0 - None
+
+
+
+
+AGE OF SERVICE
+(27) YEAR BUILT:              1971                         (28) LANES:
+(106) YEAR RECONSTRUCTED:     2012                            A) ON BRIDGE:                    02
+                                                              B) UNDER BRIDGE:                 04
+(42) TYPE OF SERVICE:                                      (29) AVERAGE DAILY TRAFFIC: 014150
+ A) ON BRIDGE:                1 - Highway
+                                                           (30) YEAR OF AVERAGE DAILY          2010
+ B) UNDER BRIDGE:             4 - Highway - railroad       TRAFFIC:
+                                                           (109) AVERAGE DAILY TRUCK           07      %
+                                                           TRAFFIC:
+                                                           (19) BYPASS DETOUR LENGTH:          001     MI
+
+
+
+
+                                                  Page 5 of 32
+Inspector: Al Naderi                                                                    Asset Name:           052X-79-02459
+                                                                                                              JCWB
+Inspection Date: 06/03/2021                                                             Facility Carried:     WB SAGAMORE
+                                                                                                              PKWY
+                                                       Bridge Inspection Report
+
+
+GEOMETRIC DATA
+(48) LENGTH OF MAX SPAN:             0101.0       FT                (35) STRUCTURE FLARED:                  0 - No flare
+(49) STRUCTURE LENGTH:               00525.2 FT                     (10) INV RTE, MIN VERT                  99.99 FT
+                                                                    CLEARANCE:
+(50) CURB/SIDEWALK WIDTHS:
+                                                                    (47) TOT HORIZ CLEARANCE:               039.8 FT
+  A) LEFT                            00.0         FT
+                                                                    (53) VERT CLEAR OVER BR RDWY: 99.99 FT
+  B) RIGHT:                          00.0         FT
+                                                                    (54) MIN VERTICAL
+(51) BRDG RDWY WIDTH CURB- 039.8                  FT                UNDERCLEARANCE:
+TO-CURB:                                                               A) REFERENCE FEATURE:      H
+                                                                       B) MIN VERT UNDERCLEAR:    14.17 FT
+(52) DECK WIDTH, OUT-TO-OUT: 043.0                FT
+                                                                    (55) LATERAL UNDERCLEARANCE
+(32) APPROACH ROADWAY                038.0        FT                RIGHT:
+(33) BRIDGE MEDIAN:                  0 - No median                     A) REFERENCE FEATURE:      H
+                                                                       B) MIN LATERAL UNDERCLEAR: 024.5 FT
+(34) SKEW:                           00          DEG                (56) MIN LATERAL UNDERCLEAR             000.0 FT
+                                                                    ON LEFT:
+
+INSPECTIONS
+(90) INSPECTION DATE:                        06/03/2021             (91) DESIGNATED INSPECTION              24 MONTHS
+(92) CRITICAL FEATURE                                               FREQUENCY:
+INSPECTION:                                                         (93) CRITICAL FEATURE
+  A) FRACTURE CRITICAL                       N                      INSPECTION DATE:
+  REQUIRED/FREQUENCY:                                                  A) FRACTURE CRITICAL DATE:
+ B) UNDERWATER INSPECTION                    N                         B) UNDERWATER INSP DATE:
+ REQUIRED/FREQUENCY:
+ C) OTHER SPECIAL INSPECTION                 N                         C) OTHER SPECIAL INSP DATE:
+ REQUIRED/FREQUENCY:
+
+CONDITION
+(58) DECK:                           6 - Satisfactory               (60) SUBSTRUCTURE:                      6 - Satisfactory
+                                     Condition (minor                                                       Condition (minor
+                                     deterioration)                                                         deterioration)
+(58.01) WEARING SURFACE:             5 - Fair Condition             (61) CHANNEL/CHANNEL                    N - Not Applicable
+                                                                    PROTECTION:
+(59) SUPERSTRUCTURE:                 6 - Satisfactory
+                                     Condition (minor               (62) CULVERTS:                          N - Not Applicable
+                                     deterioration)
+CONDITION COMMENTS
+(58) DECK:                           6 - Satisfactory Condition (minor deterioration)
+Comments:
+Hairline and map cracking were observed on the deck and underside of the deck.
+(58.01) WEARING SURFACE: 5 - Fair Condition
+Comments:
+There map cracking on the wearing surface.
+
+
+
+
+                                                           Page 6 of 32
+Inspector: Al Naderi                                                                             Asset Name:              052X-79-02459
+                                                                                                                          JCWB
+Inspection Date: 06/03/2021                                                                      Facility Carried:        WB SAGAMORE
+                                                                                                                          PKWY
+                                                        Bridge Inspection Report
+
+
+(59) SUPERSTRUCTURE:                     6 - Satisfactory Condition (minor deterioration)
+Comments:
+There are still signs of previous hits under side of bridge over 9th Street. Holes at drilled location to prevent additional tears in the
+beam are working well and no additional tears were observed. Some hairline cracks and efflorescence are noticeable under side of
+Span A.
+Fix bearings are in CS 1.
+Movable bearings are in CS1.
+(60) SUBSTRUCTURE:                       6 - Satisfactory Condition (minor deterioration)
+Comments:
+Some minor (20') spalling at the Pier Cap CS3
+(61) CHANNEL/CHANNEL                     N - Not Applicable
+PROTECTION
+Comments:
+(62) CULVERTS:                           N - Not Applicable
+Comments:
+LOAD RATING AND POSTING
+(31) DESIGN LOAD:                        5 - HS 20                       (66) INVENTORY RATING:
+(70) BRIDGE POSTING                      5 - Equal to or above           (65) INVENTORY RATING METHOD: 8 - Load and
+                                         legal loads                                                   Resistance Factor
+                                                                                                       Rating (LRFR)
+(41) STRUCTURE                           A - Open                                                      rating report by
+OPEN/POSTED/CLOSED:                                                                                    rating factor (RF)
+                                                                                                       method using HL-93
+(64) OPERATING RATING:                                                                                 loadings.
+(63) OPERATING RATING                    8 - Load and Resistance
+                                                                         (66B) INVENTORY RATING (H):                 26
+METHOD:                                  Factor Rating (LRFR)
+                                         rating report by rating         (66C) TONS POSTED :
+                                         factor (RF) method using
+                                                                         (66D) DATE POSTED/CLOSED:
+                                         HL-93 loadings.
+APPRAISAL
+SUFFICIENCY RATING:                      92.6                           (36) TRAFFIC SAFETY FEATURE:
+STATUS:                                  2                                   36A) BRIDGE RAILINGS:                   1
+(67) STRUCTURAL EVALUATION: 3                                                36B) TRANSITIONS:                       1
+(68) DECK GEOMETRY:                      7                                   36C) APPROACH GUARDRAIL:                1
+(69) UNDERCLEARANCES,                    4                                   36D) APPROACH GUARDRAIL                 1
+VERTICAL & HORIZONTAL:                                                       ENDS:
+(71) WATERWAY ADEQUACY:                                 N - Not Applicable
+      Comments:
+(72) APPROACH ROADWAY ALIGNMENT:                    8 - Equal to present desirable criteria
+      Comments:
+      The existing speed limits seems adequate for the existing road alignment. Additional signs indicating vertical clearances may
+      be helpful.
+(113) SCOUR CRITICAL BRIDGES:                           N - Not over waterway
+       Comments:
+
+
+
+
+                                                             Page 7 of 32
+Inspector: Al Naderi                                                          Asset Name:         052X-79-02459
+                                                                                                  JCWB
+Inspection Date: 06/03/2021                                                   Facility Carried:   WB SAGAMORE
+                                                                                                  PKWY
+                                              Bridge Inspection Report
+
+
+CLASSIFICATION
+(20) TOLL:                      3 - On Free Road            (21) MAINT. RESPONSIBILITY:     01 - State Highway
+                                                                                            Agency
+(22) OWNER:                     01 - State Highway
+                                Agency                      (26) FUNCTIONAL CLASS OF        14 - Urban - Other
+                                                            INVENTORY RTE:                  Principal Arterial
+(37) HISTORICAL SIGNIFICANCE: 5 - Not eligible
+                                                            (100) STRAHNET HIGHWAY:         Not a STRAHNET route
+(101) PARALLEL STRUCTURE:       L - Left structure (South
+                                or West)                    (102) DIRECTION OF TRAFFIC:     1-way traffic
+(103) TEMPORARY STRUCTURE:
+
+                                                            (104) HIGHWAY SYSTEM OF         0 - Structure/Route is
+(105) FEDERAL LANDS             0-Not Applicable            INVENTORY ROUTE:                NOT on NHS
+HIGHWAYS:
+                                                            (110) DESIGNATED NATIONAL Inventory route on
+(112) NBIS BRIDGE LENGTH:       Yes                         NETWORK:                  National Truck Network
+
+NAVIGATION DATA
+(38) NAVIGATION CONTROL:        N - Not applicable, no      (39) NAVIGATION VERTICAL CLEAR: 000.0           FT
+                                waterway
+                                                            (116) MINIMUM NAVIGATION VERT.                  FT
+(111) PIER OR ABUTMENT                                      CLEARANCE, VERT. LIFT BRIDGE:
+PROTECTION:
+                                                            (40) NAV HORIZONTAL CLEARANCE: 0000.0 FT
+
+
+
+PROPOSED IMPROVEMENTS
+(75A) TYPE OF WORK:                                         (95) ROADWAY IMPROVEMENT COST: $ 000000
+(75B) WORK DONE BY:
+                                                            (96) TOTAL PROJECT COST:              $ 000000
+(76) LENGTH OF IMPROVEMENT: 00000.0 FT
+                                                            (97) YR OF IMPROVEMENT COST EST:
+(94) BRIDGE IMPROVEMENT         $ 000000
+COST:                                                       (114) FUTURE AVG DAILY TRAFFIC:       019939
+                                                            (115) YR OF FUTURE ADT:               2030
+
+
+
+
+                                                   Page 8 of 32
+Inspector: Al Naderi                                                                          Asset Name:         052X-79-02459
+                                                                                                                  JCWB
+Inspection Date: 06/03/2021                                                                   Facility Carried:   WB SAGAMORE
+                                                                                                                  PKWY
+                                                 Bridge Inspection Report
+
+
+
+
+                                                                       Total                 Condition Condition Condition Condition
+                                                        Environment                Units
+                                                                      Quantity                State 1   State 2   State 3   State 4
+                 12 - Reinforced Concrete Deck            3 - Mod.     22586       sq. ft.    22334       252        0            0
+                                                        The deck wearing surface has 1 small patch, 1 medium width
+                                                        longitudinal crack, and map cracking throughout the entire deck. The
+                                                        deck underside has approximately 252' of hairline cracks with white
+                                                        efflorescence widespread throughout all of the spans. CS 2
+
+                                                        Deck:   525'-3" long x 43' wide
+
+
+                              510 - Wearing Surfaces                   20400       sq. ft.      0         528      19872          0
+                                                        Wearing Surface:            510'-0" long x 40' wide
+
+                                                        The wearing surface appears to be in fair conditions, however
+                                                        previously reported of 19,672 sft seems to be excessive for CS3. It is
+                                                        closer to at 25% of wearing surface for 5,000 sft.
+                  107 - Steel Open Girder/Beam            3 - Mod.     3896          ft.       896       3000        0            0
+                                                        Beams: Steel: 8 beams x (92' + 101' + 101' + 101' + 92')
+
+                                                        There are some minor scrapes to many of the other beams in span B.
+                                                        All of the steel beams in all of the spans have freckled rust CS 2
+                       515 - Steel Protective Coating                  35974       sq. ft.    26980      8994        0            0
+                                                        Paint: W36x160              1988       ' x (2 beam depths x 36" + 3 flange
+                                                        widths x 12")
+                                                                W36x230             744        ' x (2 beam depths x 35 7/8" + 3
+                                                        flange widths x 16 1/2")
+                                                                W36x194             688        ' x (2 beam depths x 36 1/2" + 3
+                                                        flange widths x 12 1/8")
+                                                                W36x170             476        ' x (2 beam depths x 36 1/8" + 3
+                                                        flange widths x 12")
+                                                        CS 2
+               110 - Reinforced Concrete Open             3 - Mod.      192          ft.       189         3         0            0
+                                  Girder/Beam
+                                                        Beam 2 in span A has 3 minor cracks with white efflorescence 3 LF
+                                                        CS2
+
+                                                        Concrete: 6 beams x 32' long
+            205 - Reinforced Concrete Column              3 - Mod.       6         each         6          0         0            0
+                                                        Column:          2 per pier x 3 piers (piers 4, 5 & 6)
+                                                        CS1
+
+           210 - Reinforced Concrete Pier Wall            3 - Mod.      88           ft.        85         1        02            0
+                                                        Wall:   44'-0" (pier 2) & 43'-6" (pier 3) long
+
+                                                        Pier 2 has 1 LFT medium width crack in span A with CS 2
+                                                        Spalling of 2 LFT CS3 at Pier 2
+
+
+
+                                                        Page 9 of 32
+Inspector: Al Naderi                                                                   Asset Name:         052X-79-02459
+                                                                                                           JCWB
+Inspection Date: 06/03/2021                                                            Facility Carried:   WB SAGAMORE
+                                                                                                           PKWY
+                                              Bridge Inspection Report
+
+
+          215 - Reinforced Concrete Abutment          3 - Mod.       90        ft.      89           01      0        0
+                                                    Bent:   45'-2" long x 2 bents
+
+                                                    CS 2 of 1 LF on Bent 1
+           234 - Reinforced Concrete Pier Cap         3 - Mod.      131        ft.      111           0      20       0
+                                                    Cap:    43'-6" long x 3 piers (piers 4, 5 & 6)
+
+                                                    Pier cap 3, 20 LF CS3
+               300 - Strip Seal Expansion Joint       3 - Mod.       86        ft.      86            0      0        0
+                                                    Seal:   43' long x 2 pourable & 2 strip seal joints
+
+                                                    CS 1
+                       301 - Pourable Joint Seal      3 - Mod.       86        ft.      86            0      0        0
+                                                    43' long x 2 pourable & 2 strip seal joints
+                                                             1A joints are in CS1
+                         311 - Movable Bearing        3 - Mod.       40      each       40            0      0        0
+                                                    8 beam lines x 5 rocker & 1 fixed location per line
+
+
+                                                    Movable bearings are in CS1.
+                              313 - Fixed Bearing     3 - Mod.        8      each        8            0      0        0
+                                                    Pads:   8 beam lines x 5 rocker & 1 fixed location per line
+                                                    CS1
+    321 - Reinforced Concrete Approach Slab           3 - Mod.      1640     sq. ft.   1540          100     0        0
+                                                    Approach:       20'-6" long x 40' wide x 2 slabs
+                                                    100 SF cracking on West side CS 2
+    331 - Reinforced Concrete Bridge Railing          3 - Mod.      1051       ft.      608          440     3        0
+                                                    There are many medium width vertical cracks with and without white
+                                                    efflorescence
+
+                                                    Rail:   525'-3" long x 2 rails
+                                                    220' Each x2 =440 LF
+                                                    3' of spalling on north wall
+
+
+
+
+                                                    Page 10 of 32
+Inspector: Al Naderi                                                           Asset Name:         052X-79-02459
+                                                                                                   JCWB
+Inspection Date: 06/03/2021                                                    Facility Carried:   WB SAGAMORE
+                                                                                                   PKWY
+                                                    Bridge Inspection Report
+
+
+
+
+            PHOTO 1
+
+            Description   West road alignment
+
+
+
+
+            PHOTO 2
+
+            Description   Road east alignment looking east
+
+
+
+
+                                                         Page 11 of 32
+Inspector: Al Naderi                                                                Asset Name:         052X-79-02459
+                                                                                                        JCWB
+Inspection Date: 06/03/2021                                                         Facility Carried:   WB SAGAMORE
+                                                                                                        PKWY
+                                                         Bridge Inspection Report
+
+
+
+
+            PHOTO 3
+
+            Description   West bituminous relief joint
+
+
+
+
+            PHOTO 4
+
+            Description   West SS joints
+
+
+
+
+                                                            Page 12 of 32
+Inspector: Al Naderi                                                                    Asset Name:         052X-79-02459
+                                                                                                            JCWB
+Inspection Date: 06/03/2021                                                             Facility Carried:   WB SAGAMORE
+                                                                                                            PKWY
+                                                     Bridge Inspection Report
+
+
+
+
+            PHOTO 5
+
+            Description   Overall west approach with total of 100 SFT cracking of SC2
+
+
+
+
+            PHOTO 6
+
+            Description   Wearing surface conditions looking east
+
+
+
+
+                                                         Page 13 of 32
+Inspector: Al Naderi                                                                             Asset Name:            052X-79-02459
+                                                                                                                        JCWB
+Inspection Date: 06/03/2021                                                                      Facility Carried:      WB SAGAMORE
+                                                                                                                        PKWY
+                                                      Bridge Inspection Report
+
+
+
+
+            PHOTO 7
+
+            Description    Map cracking on Span D & C, and B T 5’ apart across the width over ramp road ,rail road , and city
+                           road
+
+
+
+
+            PHOTO 8       Condition, Maintenance - Bridge
+
+            Description    Wearing surface small spall at east end
+
+
+
+
+                                                            Page 14 of 32
+Inspector: Al Naderi                                                                            Asset Name:              052X-79-02459
+                                                                                                                         JCWB
+Inspection Date: 06/03/2021                                                                     Facility Carried:        WB SAGAMORE
+                                                                                                                         PKWY
+                                                        Bridge Inspection Report
+
+
+
+
+            PHOTO 9
+
+            Description   Three wide entire approach long crack at east approach CS 3 for 20’ each for total of 60 SFT
+
+
+
+
+            PHOTO 10
+
+            Description   220 vertical hair line on railing walls
+
+
+
+
+                                                             Page 15 of 32
+Inspector: Al Naderi                                                               Asset Name:         052X-79-02459
+                                                                                                       JCWB
+Inspection Date: 06/03/2021                                                        Facility Carried:   WB SAGAMORE
+                                                                                                       PKWY
+                                                        Bridge Inspection Report
+
+
+
+
+            PHOTO 11
+
+            Description   Total of 3 freet of spalling on walls
+
+
+
+
+            PHOTO 12
+
+            Description   Overall view of wearing surface looking west
+
+
+
+
+                                                             Page 16 of 32
+Inspector: Al Naderi                                                              Asset Name:         052X-79-02459
+                                                                                                      JCWB
+Inspection Date: 06/03/2021                                                       Facility Carried:   WB SAGAMORE
+                                                                                                      PKWY
+                                                       Bridge Inspection Report
+
+
+
+
+            PHOTO 13
+
+            Description   Overall view east approach
+
+
+
+
+            PHOTO 14
+
+            Description   East SS joint in good condition
+
+
+
+
+                                                            Page 17 of 32
+Inspector: Al Naderi                                                            Asset Name:         052X-79-02459
+                                                                                                    JCWB
+Inspection Date: 06/03/2021                                                     Facility Carried:   WB SAGAMORE
+                                                                                                    PKWY
+                                                     Bridge Inspection Report
+
+
+
+
+            PHOTO 15
+
+            Description   East joint
+
+
+
+
+            PHOTO 16
+
+            Description   Slope wall at bent 1 under span A
+
+
+
+
+                                                         Page 18 of 32
+Inspector: Al Naderi                                                               Asset Name:         052X-79-02459
+                                                                                                       JCWB
+Inspection Date: 06/03/2021                                                        Facility Carried:   WB SAGAMORE
+                                                                                                       PKWY
+                                                        Bridge Inspection Report
+
+
+
+
+            PHOTO 17
+
+            Description   Slope wall cracks at bent 1
+
+
+
+
+            PHOTO 18
+
+            Description   75 SFT patching under Span A with minor efflorescence
+
+
+
+
+                                                           Page 19 of 32
+Inspector: Al Naderi                                                             Asset Name:         052X-79-02459
+                                                                                                     JCWB
+Inspection Date: 06/03/2021                                                      Facility Carried:   WB SAGAMORE
+                                                                                                     PKWY
+                                                      Bridge Inspection Report
+
+
+
+
+            PHOTO 19
+
+            Description   Rust stain CS 2 1 foot
+
+
+
+
+            PHOTO 20
+
+            Description   Overall view under span A
+
+
+
+
+                                                         Page 20 of 32
+Inspector: Al Naderi                                                           Asset Name:         052X-79-02459
+                                                                                                   JCWB
+Inspection Date: 06/03/2021                                                    Facility Carried:   WB SAGAMORE
+                                                                                                   PKWY
+                                                    Bridge Inspection Report
+
+
+
+
+            PHOTO 21
+
+            Description   Overall Span B with beam 4 damaged
+
+
+
+
+            PHOTO 22
+
+            Description   Damaged beam 4 with drilled holes in Span B
+
+
+
+
+                                                        Page 21 of 32
+Inspector: Al Naderi                                                            Asset Name:         052X-79-02459
+                                                                                                    JCWB
+Inspection Date: 06/03/2021                                                     Facility Carried:   WB SAGAMORE
+                                                                                                    PKWY
+                                                     Bridge Inspection Report
+
+
+
+
+            PHOTO 23
+
+            Description   Previous hit on north side of beam 8 in span B
+
+
+
+
+            PHOTO 24
+
+            Description   Overall cap conditions over pier 2 Span B
+
+
+
+
+                                                          Page 22 of 32
+Inspector: Al Naderi                                                            Asset Name:         052X-79-02459
+                                                                                                    JCWB
+Inspection Date: 06/03/2021                                                     Facility Carried:   WB SAGAMORE
+                                                                                                    PKWY
+                                                     Bridge Inspection Report
+
+
+
+
+            PHOTO 25
+
+            Description   Patching on cap and stem wall
+                          20’ on cap and 3’ on wall Pier 2
+
+
+
+
+            PHOTO 26
+
+            Description   Bearing Out of alignment at beam of Span B
+
+
+
+
+                                                             Page 23 of 32
+Inspector: Al Naderi                                                            Asset Name:         052X-79-02459
+                                                                                                    JCWB
+Inspection Date: 06/03/2021                                                     Facility Carried:   WB SAGAMORE
+                                                                                                    PKWY
+                                                    Bridge Inspection Report
+
+
+
+
+            PHOTO 27
+
+            Description   Approach road north alignment
+
+
+
+
+            PHOTO 28
+
+            Description   South approach alignment pavement with minor spalls
+
+
+
+
+                                                          Page 24 of 32
+Inspector: Al Naderi                                                       Asset Name:         052X-79-02459
+                                                                                               JCWB
+Inspection Date: 06/03/2021                                                Facility Carried:   WB SAGAMORE
+                                                                                               PKWY
+                                                Bridge Inspection Report
+
+
+
+
+            PHOTO 29
+
+            Description   Pier 3 conditions
+
+
+
+
+            PHOTO 30
+
+            Description   Span C looking west
+
+
+
+
+                                                   Page 25 of 32
+Inspector: Al Naderi                                                            Asset Name:         052X-79-02459
+                                                                                                    JCWB
+Inspection Date: 06/03/2021                                                     Facility Carried:   WB SAGAMORE
+                                                                                                    PKWY
+                                                     Bridge Inspection Report
+
+
+
+
+            PHOTO 31
+
+            Description   Span C overall view with soot
+
+
+
+
+            PHOTO 32
+
+            Description   Looking west
+
+
+
+
+                                                          Page 26 of 32
+Inspector: Al Naderi                                                       Asset Name:         052X-79-02459
+                                                                                               JCWB
+Inspection Date: 06/03/2021                                                Facility Carried:   WB SAGAMORE
+                                                                                               PKWY
+                                                Bridge Inspection Report
+
+
+
+
+            PHOTO 33
+
+            Description   Span D looking east
+
+
+
+
+            PHOTO 34
+
+            Description   Pier 4 with cap
+
+
+
+
+                                                   Page 27 of 32
+Inspector: Al Naderi                                                   Asset Name:         052X-79-02459
+                                                                                           JCWB
+Inspection Date: 06/03/2021                                            Facility Carried:   WB SAGAMORE
+                                                                                           PKWY
+                                            Bridge Inspection Report
+
+
+
+
+            PHOTO 35
+
+            Description   Span E
+
+
+
+
+            PHOTO 36
+
+            Description   Pier 5 with cap
+
+
+
+
+                                               Page 28 of 32
+Inspector: Al Naderi                                                    Asset Name:         052X-79-02459
+                                                                                            JCWB
+Inspection Date: 06/03/2021                                             Facility Carried:   WB SAGAMORE
+                                                                                            PKWY
+                                             Bridge Inspection Report
+
+
+
+
+            PHOTO 37
+
+            Description   Span F
+
+
+
+
+            PHOTO 38
+
+            Description   Pier before ramp
+
+
+
+
+                                                Page 29 of 32
+Inspector: Al Naderi                                                           Asset Name:         052X-79-02459
+                                                                                                   JCWB
+Inspection Date: 06/03/2021                                                    Facility Carried:   WB SAGAMORE
+                                                                                                   PKWY
+                                                    Bridge Inspection Report
+
+
+
+
+            PHOTO 39
+
+            Description   Span F at east abutment
+
+
+
+
+            PHOTO 40
+
+            Description   Ramp alignment north approach
+
+
+
+
+                                                          Page 30 of 32
+Inspector: Al Naderi                                                          Asset Name:         052X-79-02459
+                                                                                                  JCWB
+Inspection Date: 06/03/2021                                                   Facility Carried:   WB SAGAMORE
+                                                                                                  PKWY
+                                                   Bridge Inspection Report
+
+
+
+
+            PHOTO 41
+
+            Description   Ramp road alignment south approach
+
+
+
+
+                                                       Page 31 of 32
+                                LOAD RATING - BRADIN                             Load Rating Date:   06-JUN-18
+
+
+
+National Bridge Inventory (NBI):
+
+                                 8         (31) DESIGN LOAD:                              5
+(65) INVENTORY RATING METHOD:
+
+(66) INVENTORY RATING:                     (70) BRIDGE POSTING:                           5
+
+
+(63) OPERATING RATING METHOD:    8         (41) STRUCTURE OPEN/POSTED/CLOSED:             A
+
+
+(64) OPERATING RATING:                     (66C) TONS POSTED:
+
+                                           (66D) DATE POSTED/CLOSED:
+Posting Configurations:
+
+Emergency Vehicles:
+
+EV2: LEGAL RF:                  1.573   5-Axles:
+
+EV3: LEGAL RF:                  1.028   AASHTO TYPE 3S2: LEGAL RF:                                      1.919
+
+                                        SU5: LEGAL RF:                                                  1.47
+
+                                        TOLL ROAD LOADING NO. 1: ROUTINE PERMIT RF:
+2-Axles:
+
+H20-44: LEGAL RF:               1.777   6+-Axles:
+
+ALTERNATE MILITARY: LEGAL RF:   1.403   AASHTO TYPE 3-3: LEGAL RF:                                      2.139
+
+                                        LANE TYPE: LEGAL RF:                                            2.079
+3-Axles:
+
+HS20: LEGAL RF:                 1.49    SU6: LEGAL RF:                                                  1.33
+
+AASHTO TYPE 3: LEGAL RF:        1.852   SPECIAL TOLL ROAD TRUCK: ROUTINE PERMIT RF:
+
+                                        SU7: LEGAL RF:                                                  1.261
+4-Axles:
+
+SU4: LEGAL RF:                  1.548   MICHIGAN TRAIN TRUCK NO. 5: ROUTINE PERMIT RF:
+
+
+TOLL ROAD LOADING NO. 2:                MICHIGAN TRAIN TRUCK NO. 8: ROUTINE PERMIT RF:
+ROUTINE PERMIT RF:
+
+
+Other Configurations:
+
+H20-44: DESIGN RF:              1.32    SUPERLOAD-11 AXLES: SPECIAL PERMIT RF:                          1.651
+
+
+NRL: LEGAL RF:                  1.199   SUPERLOAD-13 AXLES: SPECIAL PERMIT RF:                          1.934
+
+                                        SUPERLOAD-14 AXLES: SPECIAL PERMIT RF:                          1.249
+
+                                        SUPERLOAD-19 AXLES (152.5T): SPECIAL PERMIT RF:                 1.758
+
+                                        SUPERLOAD-19 AXLES (240.045T): SPECIAL PERMIT RF:               1.362
+
+
+
+
+                                        Page 32 of 32
+

@@ -1,0 +1,5 @@
+# Blender as a Python module (CPU Cycles). bpy 5.2.x wheels need CPython 3.13; use `pip install bpy==4.2.*` on 3.11.
+bpy==5.2.3
+numpy>=1.26
+pillow>=10
+scipy>=1.11

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indiana Bridges 3D</title>
+<meta name="description" content="Blender/Cycles reconstructions of three INDOT bridges built from their NBI inspection reports: SR 28 over Little Wea Creek, I-70 over Bayliss State Ditch and the Sagamore Parkway viaduct in Lafayette. Renders, interactive viewer, downloadable models and verification material.">
+<style>
+  /* dark editorial gallery: one section per bridge with a hero render, a grid of the other views and the source photos */
+  :root { --bg:#111519; --panel:#181d23; --fg:#e9edf1; --muted:#98a4b0; --accent:#8fc6ff; --border:rgba(255,255,255,0.1); color-scheme: dark; }
+  html,body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.55 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width:1180px; margin:0 auto; padding-block:28px 48px; padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); }
+  header h1 { font-size:clamp(24px, 3.4vw, 36px); margin:0 0 6px; letter-spacing:-0.01em; text-wrap:balance; }
+  header p, section > p { margin:0 0 10px; color:var(--muted); max-width:78ch; }
+  .actions { display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 26px; }
+  .actions a { background:var(--panel); border:1px solid var(--border); color:var(--fg); text-decoration:none; padding:9px 14px; border-radius:10px; font-size:14px; }
+  .actions a.primary { background:var(--accent); color:#0b1218; border-color:transparent; font-weight:600; }
+  .actions a:hover { border-color:var(--accent); }
+  figure { margin:0; }
+  figure img { width:100%; height:auto; display:block; border-radius:12px; border:1px solid var(--border); background:#0a0d10; }
+  figcaption { color:var(--muted); font-size:13px; margin:8px 2px 0; }
+  .hero { margin-bottom:18px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; }
+  .photos { display:grid; grid-template-columns:repeat(auto-fit, minmax(160px, 1fr)); gap:10px; margin-top:14px; }
+  .photos img { aspect-ratio:4/3; object-fit:cover; }
+  section { margin-top:44px; padding-top:28px; border-top:1px solid var(--border); }
+  section h2 { font-size:22px; margin:0 0 4px; }
+  section .meta { color:var(--muted); font-size:14px; margin-bottom:14px; }
+  .tbl { overflow-x:auto; margin-top:10px; }
+  table { border-collapse:collapse; width:100%; font-size:14px; }
+  th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--border); vertical-align:top; }
+  th { color:var(--muted); font-weight:500; }
+  footer { color:var(--muted); font-size:13px; margin-top:40px; }
+  a { color:var(--accent); }
+  code { font-size:13px; background:rgba(255,255,255,0.06); padding:1px 5px; border-radius:5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Indiana Bridges – 3D from inspection reports</h1>
+    <p>Three INDOT bridges rebuilt in Blender and rendered with Cycles using only their NBI inspection reports: the structure inventory data (type, spans, widths, skew, clearances), the element quantities and the inspection photographs. Each model is generated parametrically from the extracted data and checked back against the report.</p>
+  </header>
+  <div class="actions">
+    <a class="primary" href="viewer/">Interactive 3D viewer</a>
+    <a href="VERIFY.md">Verification checklist</a>
+    <a href="AGENTS.md">Agent instructions (Codex / GPT)</a>
+    <a href="https://github.com/youngbrain85/indiana-bridges-3d">Source on GitHub</a>
+  </div>
+
+  <section id="07620">
+    <h2>SR 28 over Little Wea Creek</h2>
+    <div class="meta">NBI 007620 · Tippecanoe County · 3-span reinforced-concrete slab on pile bents · 22.25 + 27 + 22.25 ft · 39 ft deck, 36 ft roadway · 20° skew · built 1989 · inspected Jan 2022</div>
+    <div class="actions">
+      <a class="primary" href="viewer/?bridge=07620">Open in viewer</a>
+      <a href="bridges/07620_sr28_little_wea/model/bridge_07620.glb" download>GLB model</a>
+      <a href="bridges/07620_sr28_little_wea/verification/compare_sheet.jpg">Render vs photo sheet</a>
+      <a href="bridges/07620_sr28_little_wea/verification/dimension_report.md">Dimension report</a>
+      <a href="bridges/07620_sr28_little_wea/bridge.json">bridge.json</a>
+    </div>
+    <figure class="hero"><img src="bridges/07620_sr28_little_wea/renders/elevation.png" alt="SR 28 slab bridge over Little Wea Creek, Cycles render" width="1920" height="1080"><figcaption>From the north bank: deep slab coping with the vertical parapet on top, nine black steel-encased piles per bent standing in the creek, riprap slopes, winter trees.</figcaption></figure>
+    <div class="grid">
+      <figure><img src="bridges/07620_sr28_little_wea/renders/pier.png" alt="Pile bent in the water" loading="lazy"><figcaption>Pier 2 pile bent: 14 in. epoxy-coated piles, cap integral with the slab, water 12.95 ft below the deck.</figcaption></figure>
+      <figure><img src="bridges/07620_sr28_little_wea/renders/under.png" alt="Abutment and riprap slope" loading="lazy"><figcaption>West abutment with wingwalls, riprap revetment and the slab soffit.</figcaption></figure>
+      <figure><img src="bridges/07620_sr28_little_wea/renders/approach.png" alt="Approach road" loading="lazy"><figcaption>West approach: two-lane asphalt, concrete approach slab, W-beam guardrail flaring into the parapets.</figcaption></figure>
+      <figure><img src="bridges/07620_sr28_little_wea/renders/deck.png" alt="Deck" loading="lazy"><figcaption>On the deck looking east.</figcaption></figure>
+      <figure><img src="bridges/07620_sr28_little_wea/renders/channel.png" alt="Channel" loading="lazy"><figcaption>Downstream channel alignment.</figcaption></figure>
+      <figure><img src="bridges/07620_sr28_little_wea/renders/aerial.png" alt="Aerial" loading="lazy"><figcaption>Aerial: the 20° skew of the bents follows the creek.</figcaption></figure>
+    </div>
+    <div class="photos">
+      <figure><img src="bridges/07620_sr28_little_wea/photos/photo_01.jpg" alt="inspection photo north profile" loading="lazy"><figcaption>Report photo 1 – north profile</figcaption></figure>
+      <figure><img src="bridges/07620_sr28_little_wea/photos/photo_22.jpg" alt="inspection photo span B underside" loading="lazy"><figcaption>Photo 22 – span B underside</figcaption></figure>
+      <figure><img src="bridges/07620_sr28_little_wea/photos/photo_03.jpg" alt="inspection photo road alignment" loading="lazy"><figcaption>Photo 3 – road alignment looking east</figcaption></figure>
+      <figure><img src="bridges/07620_sr28_little_wea/photos/photo_14.jpg" alt="inspection photo west slope" loading="lazy"><figcaption>Photo 14 – west slope</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="41750">
+    <h2>I-70 EB over Bayliss State Ditch</h2>
+    <div class="meta">NBI 041750 · Morgan County · 3-span reinforced-concrete slab on 2-column frame bents · 25 + 32 + 25 ft · 43 ft deck, 39.5 ft roadway · 15° skew · built 1966, overlays 1980/1995 · inspected Sep 2021</div>
+    <div class="actions">
+      <a class="primary" href="viewer/?bridge=41750">Open in viewer</a>
+      <a href="bridges/41750_i70_bayliss/model/bridge_41750.glb" download>GLB model</a>
+      <a href="bridges/41750_i70_bayliss/verification/compare_sheet.jpg">Render vs photo sheet</a>
+      <a href="bridges/41750_i70_bayliss/verification/dimension_report.md">Dimension report</a>
+      <a href="bridges/41750_i70_bayliss/bridge.json">bridge.json</a>
+    </div>
+    <figure class="hero"><img src="bridges/41750_i70_bayliss/renders/elevation.png" alt="I-70 slab bridge over Bayliss State Ditch, Cycles render" width="1920" height="1080"><figcaption>Profile from the south: deep stepped coping with the New Jersey parapet, two round columns and a rectangular cap at each pier, tall abutment walls, the WB twin behind.</figcaption></figure>
+    <div class="grid">
+      <figure><img src="bridges/41750_i70_bayliss/renders/pier.png" alt="Frame bent" loading="lazy"><figcaption>Pier 2: 3 ft round columns under the cap, 15 ft from deck to water.</figcaption></figure>
+      <figure><img src="bridges/41750_i70_bayliss/renders/approach.png" alt="Interstate approach" loading="lazy"><figcaption>East-bound approach: concrete pavement, white skip line, yellow left edge, approach slab, guardrail.</figcaption></figure>
+      <figure><img src="bridges/41750_i70_bayliss/renders/deck.png" alt="Deck" loading="lazy"><figcaption>On the deck: 39.5 ft between the parapets.</figcaption></figure>
+      <figure><img src="bridges/41750_i70_bayliss/renders/under.png" alt="Abutment" loading="lazy"><figcaption>West bent: abutment wall and wingwalls parallel to the roadway.</figcaption></figure>
+      <figure><img src="bridges/41750_i70_bayliss/renders/channel.png" alt="Ditch" loading="lazy"><figcaption>Upstream: the ditch in its shallow swale.</figcaption></figure>
+      <figure><img src="bridges/41750_i70_bayliss/renders/aerial.png" alt="Aerial" loading="lazy"><figcaption>Aerial with the twin WB structure.</figcaption></figure>
+    </div>
+    <div class="photos">
+      <figure><img src="bridges/41750_i70_bayliss/photos/photo_28.jpg" alt="inspection photo profile" loading="lazy"><figcaption>Report photo 28 – profile looking south</figcaption></figure>
+      <figure><img src="bridges/41750_i70_bayliss/photos/photo_27.jpg" alt="inspection photo pier 2" loading="lazy"><figcaption>Photo 27 – pier 2 east face</figcaption></figure>
+      <figure><img src="bridges/41750_i70_bayliss/photos/photo_19.jpg" alt="inspection photo east bent" loading="lazy"><figcaption>Photo 19 – east bent</figcaption></figure>
+      <figure><img src="bridges/41750_i70_bayliss/photos/photo_01.jpg" alt="inspection photo road alignment" loading="lazy"><figcaption>Photo 1 – road alignment looking west</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="19027">
+    <h2>WB Sagamore Parkway (US 52) over 9th Street, CSX Railroad and ramp</h2>
+    <div class="meta">NBI 019027 · Lafayette, Tippecanoe County · steel continuous multi-beam (8 × W36) + concrete-beam approach span · 32 + 92 + 101 + 101 + 101 + 92 ft (525.2 ft) · 43 ft deck, 39.8 ft roadway · built 1971, rehabs 1991/2011/2017 · inspected Jun 2021</div>
+    <div class="actions">
+      <a class="primary" href="viewer/?bridge=19027">Open in viewer</a>
+      <a href="bridges/19027_sagamore_pkwy/model/bridge_19027.glb" download>GLB model</a>
+      <a href="bridges/19027_sagamore_pkwy/verification/compare_sheet.jpg">Render vs photo sheet</a>
+      <a href="bridges/19027_sagamore_pkwy/verification/dimension_report.md">Dimension report</a>
+      <a href="bridges/19027_sagamore_pkwy/bridge.json">bridge.json</a>
+    </div>
+    <figure class="hero"><img src="bridges/19027_sagamore_pkwy/renders/elevation.png" alt="Sagamore Parkway viaduct, Cycles render" width="1920" height="1080"><figcaption>Spans C–E from the north: green-painted W36 girders, hammerhead piers, chain-link fence on the parapets over the CSX track.</figcaption></figure>
+    <div class="grid">
+      <figure><img src="bridges/19027_sagamore_pkwy/renders/under.png" alt="Pier 2 wall from 9th Street" loading="lazy"><figcaption>From 9th Street: pier 2 wall with battered ends, rocker bearings, cross-frames; the EB twin to the right.</figcaption></figure>
+      <figure><img src="bridges/19027_sagamore_pkwy/renders/street.png" alt="9th Street underpass" loading="lazy"><figcaption>9th Street (4 lanes) between piers 2 and 3, 14.2 ft clearance.</figcaption></figure>
+      <figure><img src="bridges/19027_sagamore_pkwy/renders/pier.png" alt="Hammerhead pier" loading="lazy"><figcaption>Pier 5: two 3.5 ft columns and the tapered hammerhead cap.</figcaption></figure>
+      <figure><img src="bridges/19027_sagamore_pkwy/renders/rail.png" alt="CSX track under span C" loading="lazy"><figcaption>CSX track under span C, fence above.</figcaption></figure>
+      <figure><img src="bridges/19027_sagamore_pkwy/renders/deck.png" alt="Deck" loading="lazy"><figcaption>Two WB lanes, NJ parapets, latex overlay.</figcaption></figure>
+      <figure><img src="bridges/19027_sagamore_pkwy/renders/ramp.png" alt="Ramp under span F" loading="lazy"><figcaption>Ramp under span F, pier 6 and the east abutment.</figcaption></figure>
+      <figure><img src="bridges/19027_sagamore_pkwy/renders/aerial.png" alt="Aerial" loading="lazy"><figcaption>Aerial: 525 ft WB structure with the EB twin to the south.</figcaption></figure>
+    </div>
+    <div class="photos">
+      <figure><img src="bridges/19027_sagamore_pkwy/photos/photo_21.jpg" alt="inspection photo span B" loading="lazy"><figcaption>Report photo 21 – span B</figcaption></figure>
+      <figure><img src="bridges/19027_sagamore_pkwy/photos/photo_24.jpg" alt="inspection photo pier 2 cap" loading="lazy"><figcaption>Photo 24 – pier 2 cap</figcaption></figure>
+      <figure><img src="bridges/19027_sagamore_pkwy/photos/photo_34.jpg" alt="inspection photo pier 4" loading="lazy"><figcaption>Photo 34 – pier 4 with cap</figcaption></figure>
+      <figure><img src="bridges/19027_sagamore_pkwy/photos/photo_30.jpg" alt="inspection photo span C" loading="lazy"><figcaption>Photo 30 – span C looking west</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>How it was built and checked</h2>
+    <p>The report text was parsed for the NBI items (43 structure type, 45/46 spans, 49 length, 51/52 widths, 34 skew, 54 clearance), the element list (deck, slab, girders, piers, piles, bearings, joints, railings) and the channel profile. <code>blender/bridge_gen.py</code> turns that data into a complete scene with Blender as a Python module: terrain, embankments, superstructure, substructure, pavement and markings, guardrail, riprap, water, trees and grass, a Nishita sky and PBR materials with generated textures. The renders are Cycles at 1920×1080 with OpenImageDenoise. <code>tools/verify_model.py</code> reads the exported GLB and checks every count and dimension against <code>bridge.json</code>; <code>tools/compare_photos.py</code> pairs each render with the inspection photo it should match, for review by a person or a vision model (see <a href="AGENTS.md">AGENTS.md</a>).</p>
+    <div class="tbl"><table>
+      <tr><th>Bridge</th><th>Superstructure</th><th>Substructure</th><th>Under the bridge</th></tr>
+      <tr><td>SR 28 / Little Wea Creek</td><td>20 in. RC slab, deep coping, vertical parapet, 4 in. PVC drains</td><td>Spill-through abutments on piles; 2 pile bents × 9 black steel-encased piles</td><td>Creek, riprap revetment, dry winter fields</td></tr>
+      <tr><td>I-70 / Bayliss State Ditch</td><td>22 in. RC slab, stepped coping, NJ parapet, latex overlay</td><td>Wall abutments with wingwalls; 2 frame bents × 2 round columns + cap</td><td>Grass swale with the ditch, corn fields, WB twin 30 ft north</td></tr>
+      <tr><td>Sagamore Pkwy viaduct</td><td>8 × W36 continuous girders (spans B–F), 6 concrete beams (span A), 7.5 in. deck, NJ parapets, fence over the track</td><td>Abutment on slope wall; 2 pier walls with battered ends; 3 two-column hammerhead piers; abutment</td><td>9th Street (4 lanes + sidewalks), CSX track, ramp; EB twin 67 ft south</td></tr>
+    </table></div>
+  </section>
+
+  <footer>Source data: INDOT bridge inspection reports (NBI 007620, 019027, 041750). Models, renders and code: <a href="https://github.com/youngbrain85/indiana-bridges-3d">github.com/youngbrain85/indiana-bridges-3d</a>.</footer>
+</div>
+</body>
+</html>

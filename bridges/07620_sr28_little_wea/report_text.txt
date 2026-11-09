@@ -1,0 +1,891 @@
+      Bridge Inspection Report
+                    028-79-06804
+                        SR 28
+                        over
+                 LITTLE WEA CREEK
+
+
+
+
+  Inspection Date: 01/14/2022
+     Inspected By: Melvin Hughes
+Inspection Type(s): Routine
+                            TABLE OF CONTENTS
+
+
+                                                PAGE NUMBER
+
+LOCATION MAP                                         3
+
+EXECUTIVE SUMMARY                                    4
+
+NATIONAL BRIDGE INVENTORY                            5
+
+PICTURES                                             9
+
+MISCELLANEOUS ASSET DATA                            26
+
+SCOUR ANALYSIS                                      28
+
+LOAD RATING - BRADIN                                29
+
+MAINTENANCE - BRIDGE                                30
+
+SCOUR CHANNEL PROFILE                               31
+Inspector: Melvin Hughes                                 Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                              Facility Carried:   SR 28
+                              Bridge Inspection Report
+
+
+
+
+                                Latitude: 40.25875
+                              Longitude: -86.99670
+
+
+
+
+                                  Page 3 of 31
+Inspector: Melvin Hughes                                                   Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                Facility Carried:   SR 28
+                                            Bridge Inspection Report
+
+
+
+Routine
+2022 Inspection, Bridge is in overall satisfactory condition. Has maintenance need for approach slab patching.
+Has work scheduled in SPMS / Des # 1800670 / Contract # R-42955 / Letting date 7/12/2023 / Bridge thin deck
+overlay / Program year 2024 / Active.
+History
+New Bridge / 1989 / Des # 7929000 / Contract # 17861
+
+
+
+
+                                                Page 4 of 31
+Inspector: Melvin Hughes                                                        Asset Name:           028-79-06804
+Inspection Date: 01/14/2022                                                     Facility Carried:     SR 28
+                                              Bridge Inspection Report
+
+
+
+IDENTIFICATION
+(1) STATE CODE:               185 - Indiana                (12) BASE HIGHWAY NETWORK: 0
+(8) STRUCTURE:                007620                       (13A) INVENTORY ROUTE:
+(5 A-B-C-D-E) INV. ROUTE:     1 - 3 - 1 - 00028 - 0        (13B) SUBROUTE NUMBER:
+(2) HIGHWAY AGENCY            01 - Crawfordsville          (16) LATITUDE:                      40.25875
+DISTRICT:
+                                                           (17) LONGITUDE:                     -86.99670
+(3) COUNTY CODE:              079 - TIPPECANOE
+                                                           (98) BORDER
+(4) PLACE CODE:               00000 - N/A
+                                                               A) STATE NAME:
+(6) FEATURES INTERSECTED:     LITTLE WEA CREEK                 B) PERCENT                                 %
+                                                           (99) BORDER BRIDGE STRUCT.
+(7) FACILITY CARRIED:         SR 28                        NO:
+(9) LOCATION:                 04.81 W US 231
+(11) MILEPOINT:               0007.420
+
+STRUCTURE TYPE AND MATERIAL
+(43) STRUCTURE TYPE, MAIN:                                 (45) NUMBER OF SPANS IN MAIN 003
+                                                           UNIT:
+ A) KIND OF                   2 - Concrete continuous      (46) NUMBER OF APPROACH      0000
+ MATERIAL/DESIGN:                                          SPANS:
+ B) TYPE OF DESIGN/CONSTR:    01 - Slab                    (107) DECK STRUCTURE TYPE: 1 - Concrete Cast-in-
+                                                                                        Place
+(44) STRUCTURE TYPE,                                       (108) WEARING SURFACE/PROT
+APPROACH SPANS:                                            SYS:
+  A) KIND OF                  0 - Other                       A) WEARING SURFACE:       1 - Monolithic Concrete
+  MATERIAL/DESIGN:                                                                      (concurrently placed
+                                                                                        with structural deck)
+ B) TYPE OF DESIGN/CONSTR:    00 - Other
+                                                              B) DECK MEMBRANE:                0 - None
+                                                              C) DECK PROTECTION:              1 - Epoxy Coated
+                                                                                               Reinforcing
+
+
+AGE OF SERVICE
+(27) YEAR BUILT:              1989                         (28) LANES:
+(106) YEAR RECONSTRUCTED:     0000                            A) ON BRIDGE:                    02
+                                                              B) UNDER BRIDGE:                 00
+(42) TYPE OF SERVICE:                                      (29) AVERAGE DAILY TRAFFIC: 000650
+ A) ON BRIDGE:                1 - Highway
+                                                           (30) YEAR OF AVERAGE DAILY          2006
+ B) UNDER BRIDGE:             5 - Waterway                 TRAFFIC:
+                                                           (109) AVERAGE DAILY TRUCK           27       %
+                                                           TRAFFIC:
+                                                           (19) BYPASS DETOUR LENGTH:          007      MI
+
+
+
+
+                                                  Page 5 of 31
+Inspector: Melvin Hughes                                                               Asset Name:           028-79-06804
+Inspection Date: 01/14/2022                                                            Facility Carried:     SR 28
+                                                      Bridge Inspection Report
+
+
+
+GEOMETRIC DATA
+(48) LENGTH OF MAX SPAN:            0027.0       FT                (35) STRUCTURE FLARED:                  0 - No flare
+(49) STRUCTURE LENGTH:              00071.5 FT                     (10) INV RTE, MIN VERT                  99.99 FT
+                                                                   CLEARANCE:
+(50) CURB/SIDEWALK WIDTHS:
+                                                                   (47) TOT HORIZ CLEARANCE:               036.0 FT
+  A) LEFT                           00.0         FT
+                                                                   (53) VERT CLEAR OVER BR RDWY: 99.99 FT
+  B) RIGHT:                         00.0         FT
+                                                                   (54) MIN VERTICAL
+(51) BRDG RDWY WIDTH CURB- 036.0                 FT                UNDERCLEARANCE:
+TO-CURB:                                                              A) REFERENCE FEATURE:      N
+                                                                      B) MIN VERT UNDERCLEAR:    0     FT
+(52) DECK WIDTH, OUT-TO-OUT: 039.0               FT
+                                                                   (55) LATERAL UNDERCLEARANCE
+(32) APPROACH ROADWAY               036.0        FT                RIGHT:
+(33) BRIDGE MEDIAN:                 0 - No median                     A) REFERENCE FEATURE:      N
+                                                                      B) MIN LATERAL UNDERCLEAR: 000.0 FT
+(34) SKEW:                          20          DEG                (56) MIN LATERAL UNDERCLEAR             00.0    FT
+                                                                   ON LEFT:
+
+INSPECTIONS
+(90) INSPECTION DATE:                       01/14/2022             (91) DESIGNATED INSPECTION              24 MONTHS
+(92) CRITICAL FEATURE                                              FREQUENCY:
+INSPECTION:                                                        (93) CRITICAL FEATURE
+  A) FRACTURE CRITICAL                      N                      INSPECTION DATE:
+  REQUIRED/FREQUENCY:                                                 A) FRACTURE CRITICAL DATE:
+ B) UNDERWATER INSPECTION                  N                          B) UNDERWATER INSP DATE:
+ REQUIRED/FREQUENCY:
+ C) OTHER SPECIAL INSPECTION               N                          C) OTHER SPECIAL INSP DATE:
+ REQUIRED/FREQUENCY:
+
+CONDITION
+(58) DECK:                          6 - Satisfactory               (60) SUBSTRUCTURE:                      6 - Satisfactory
+                                    Condition (minor                                                       Condition (minor
+                                    deterioration)                                                         deterioration)
+(58.01) WEARING SURFACE:            6 - Satisfactory               (61) CHANNEL/CHANNEL                    8 - Banks are
+                                    Condition                      PROTECTION:                             protected
+(59) SUPERSTRUCTURE:                6 - Satisfactory               (62) CULVERTS:                          N - Not Applicable
+                                    Condition (minor
+                                    deterioration)
+CONDITION COMMENTS
+(58) DECK:                          6 - Satisfactory Condition (minor deterioration)
+Comments:
+See superstructure comments
+(58.01) WEARING SURFACE: 6 - Satisfactory Condition
+Comments:
+(Monolithic) See superstructure comments
+
+
+
+
+                                                          Page 6 of 31
+Inspector: Melvin Hughes                                                                    Asset Name:             028-79-06804
+Inspection Date: 01/14/2022                                                                 Facility Carried:       SR 28
+                                                     Bridge Inspection Report
+
+
+
+(59) SUPERSTRUCTURE:                  6 - Satisfactory Condition (minor deterioration)
+Comments:
+The top of the slab has hair line to medium width longitudinal and diagonal cracking. The bottom has spalling around all the deck
+drains. There is hair line to narrow cracking throughout the bottom of the structure that has efflorescence.
+(60) SUBSTRUCTURE:                    6 - Satisfactory Condition (minor deterioration)
+Comments:
+The abutments are in generally good condition. There is some washing out under both abutments that is starting to expose the piles.
+The exposed portion of the pier piles have some rusting and the steel protective coating is flaking away.
+Piers 2 and 3 have the protective coating peeling off the piles in areas.
+(61) CHANNEL/CHANNEL                  8 - Banks are protected
+PROTECTION
+Comments:
+The banks outside of the bridge are well vegetated with grasses. The banks under the bridge have been stabilized with revetment
+riprap. The riprap has started to silt in but is still functioning as intended.
+(62) CULVERTS:                        N - Not Applicable
+Comments:
+LOAD RATING AND POSTING
+(31) DESIGN LOAD:                     5 - HS 20                     (66) INVENTORY RATING:                      36.576
+(70) BRIDGE POSTING                   5 - Equal to or above         (65) INVENTORY RATING METHOD: 1 - Load Factor (LF)
+                                      legal loads
+                                                                    (66B) INVENTORY RATING (H):
+(41) STRUCTURE                        A - Open                      (66C) TONS POSTED :
+OPEN/POSTED/CLOSED:                                                 (66D) DATE POSTED/CLOSED:
+(64) OPERATING RATING:                59.616
+(63) OPERATING RATING                 1 - Load Factor (LF)
+METHOD:
+
+
+
+
+APPRAISAL
+SUFFICIENCY RATING:                   97.7                          (36) TRAFFIC SAFETY FEATURE:
+STATUS:                               0                                 36A) BRIDGE RAILINGS:                   1
+(67) STRUCTURAL EVALUATION: 6                                           36B) TRANSITIONS:                       0
+(68) DECK GEOMETRY:                   7                                 36C) APPROACH GUARDRAIL:                0
+(69) UNDERCLEARANCES,                 N                                 36D) APPROACH GUARDRAIL                 0
+VERTICAL & HORIZONTAL:                                                  ENDS:
+(71) WATERWAY ADEQUACY:                             9 - Bridge Above Flood Water Elevations
+      Comments:
+      The plans show a Q100 elevation of 715.2
+(72) APPROACH ROADWAY ALIGNMENT:                    8 - Equal to present desirable criteria
+      Comments:
+      No problems.
+
+
+
+
+                                                          Page 7 of 31
+Inspector: Melvin Hughes                                                               Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                            Facility Carried:   SR 28
+                                                     Bridge Inspection Report
+
+
+
+(113) SCOUR CRITICAL BRIDGES:                        8 - Stable for scour conditions
+       Comments:
+       No scour memo on file.
+       Piles, rip rap, minor scour @ P.#3 has been rip rapped
+       Revetment rip rap with Geo textiles
+       Bent 2 Min Pile Tip Elevation is 690.5
+       Bent 3 Min Pile Tip Elevation is 690.5
+CLASSIFICATION
+(20) TOLL:                            3 - On Free Road              (21) MAINT. RESPONSIBILITY:      01 - State Highway
+                                                                                                     Agency
+(22) OWNER:                           01 - State Highway
+                                      Agency                        (26) FUNCTIONAL CLASS OF         06 - Rural - Minor
+                                                                    INVENTORY RTE:                   Arterial
+(37) HISTORICAL SIGNIFICANCE: 5 - Not eligible
+                                                                    (100) STRAHNET HIGHWAY:          Not a STRAHNET route
+(101) PARALLEL STRUCTURE:             N - No parallel structure
+                                                                    (102) DIRECTION OF TRAFFIC:      2-way traffic
+(103) TEMPORARY STRUCTURE:
+
+                                                                    (104) HIGHWAY SYSTEM OF          0 - Structure/Route is
+(105) FEDERAL LANDS                   0-Not Applicable              INVENTORY ROUTE:                 NOT on NHS
+HIGHWAYS:
+                                                                    (110) DESIGNATED NATIONAL Inventory route on
+(112) NBIS BRIDGE LENGTH:             Yes                           NETWORK:                  National Truck Network
+
+NAVIGATION DATA
+(38) NAVIGATION CONTROL:              0 - No navigation             (39) NAVIGATION VERTICAL CLEAR: 000.0            FT
+                                      control on waterway
+                                      (bridge permit not            (116) MINIMUM NAVIGATION VERT.                   FT
+                                      required)                     CLEARANCE, VERT. LIFT BRIDGE:
+
+(111) PIER OR ABUTMENT                                              (40) NAV HORIZONTAL CLEARANCE: 0000.0 FT
+PROTECTION:
+
+
+PROPOSED IMPROVEMENTS
+(75A) TYPE OF WORK:                                                 (95) ROADWAY IMPROVEMENT COST: $ 000000
+(75B) WORK DONE BY:
+                                                                   (96) TOTAL PROJECT COST:                $ 000000
+(76) LENGTH OF IMPROVEMENT: 000000 FT
+                                                                   (97) YR OF IMPROVEMENT COST EST:
+(94) BRIDGE IMPROVEMENT               $ 000000
+COST:                                                              (114) FUTURE AVG DAILY TRAFFIC:         000901
+                                                                   (115) YR OF FUTURE ADT:                 2032
+
+
+
+
+                                                          Page 8 of 31
+Inspector: Melvin Hughes                                              Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                           Facility Carried:   SR 28
+                                           Bridge Inspection Report
+
+
+
+
+            PHOTO 1       Condition
+
+            Description    North profile
+
+
+
+
+            PHOTO 2       Condition
+
+            Description    South profile
+
+
+
+
+                                               Page 9 of 31
+Inspector: Melvin Hughes                                                        Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                     Facility Carried:   SR 28
+                                                     Bridge Inspection Report
+
+
+
+
+            PHOTO 3       Condition
+
+            Description    Road alignment looking east
+
+
+
+
+            PHOTO 4       Condition
+
+            Description    Road alignment looking west
+
+
+
+
+                                                         Page 10 of 31
+Inspector: Melvin Hughes                                                            Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                         Facility Carried:   SR 28
+                                                         Bridge Inspection Report
+
+
+
+
+            PHOTO 5       Condition
+
+            Description    West joint and approach slab condition
+
+
+
+
+            PHOTO 6       Condition
+
+            Description    North bridge rail condition
+
+
+
+
+                                                            Page 11 of 31
+Inspector: Melvin Hughes                                                            Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                         Facility Carried:   SR 28
+                                                         Bridge Inspection Report
+
+
+
+
+            PHOTO 7       Condition
+
+            Description    South bridge rail condition
+
+
+
+
+            PHOTO 8       Condition
+
+            Description    south bridge rail spalled on the west end
+
+
+
+
+                                                            Page 12 of 31
+Inspector: Melvin Hughes                                                           Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                        Facility Carried:   SR 28
+                                                        Bridge Inspection Report
+
+
+
+
+            PHOTO 9       Condition
+
+            Description    Typical cracking in the bridge rails
+
+
+
+
+            PHOTO 10      Condition
+
+            Description    Top of deck condition looking east
+
+
+
+
+                                                             Page 13 of 31
+Inspector: Melvin Hughes                                                         Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                      Facility Carried:   SR 28
+                                                      Bridge Inspection Report
+
+
+
+
+            PHOTO 11      Condition
+
+            Description    Top of deck diagonal and longitudinal cracking
+
+
+
+
+            PHOTO 12      Condition
+
+            Description    Top of the deck has longitudinal cracking
+
+
+
+
+                                                           Page 14 of 31
+Inspector: Melvin Hughes                                                         Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                      Facility Carried:   SR 28
+                                                      Bridge Inspection Report
+
+
+
+
+            PHOTO 13      Condition
+
+            Description    East joint and approach slab condition
+
+
+
+
+            PHOTO 14      Condition
+
+            Description    West slope condition
+
+
+
+
+                                                           Page 15 of 31
+Inspector: Melvin Hughes                                                        Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                     Facility Carried:   SR 28
+                                                     Bridge Inspection Report
+
+
+
+
+            PHOTO 15      Condition
+
+            Description    West abutment condition
+
+
+
+
+            PHOTO 16      Condition
+
+            Description    West abutment undermining at south end
+
+
+
+
+                                                        Page 16 of 31
+Inspector: Melvin Hughes                                                               Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                            Facility Carried:   SR 28
+                                                        Bridge Inspection Report
+
+
+
+
+            PHOTO 17      Condition
+
+            Description    Span A underside condition
+
+
+
+
+            PHOTO 18      Condition
+
+            Description    Span A underside cracking and spalling at the center line
+
+
+
+
+                                                           Page 17 of 31
+Inspector: Melvin Hughes                                                          Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                       Facility Carried:   SR 28
+                                                       Bridge Inspection Report
+
+
+
+
+            PHOTO 19      Condition
+
+            Description    Span A spalled south side
+
+
+
+
+            PHOTO 20      Condition
+
+            Description    Southwest end of deck is cracking with efflorescence
+
+
+
+
+                                                          Page 18 of 31
+Inspector: Melvin Hughes                                                           Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                        Facility Carried:   SR 28
+                                                        Bridge Inspection Report
+
+
+
+
+            PHOTO 21      Condition
+
+            Description    Pier 2 east face condition
+
+
+
+
+            PHOTO 22      Condition
+
+            Description    Span B underside condition looking north
+
+
+
+
+                                                           Page 19 of 31
+Inspector: Melvin Hughes                                                                 Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                              Facility Carried:   SR 28
+                                                      Bridge Inspection Report
+
+
+
+
+            PHOTO 23      Condition
+
+            Description    Span B underside cracking and spalled under the center line
+
+
+
+
+            PHOTO 24      Condition
+
+            Description    Span B south coping cpondition
+
+
+
+
+                                                            Page 20 of 31
+Inspector: Melvin Hughes                                                        Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                     Facility Carried:   SR 28
+                                                     Bridge Inspection Report
+
+
+
+
+            PHOTO 25      Condition
+
+            Description    Upstream channel alignment looking north
+
+
+
+
+            PHOTO 26      Condition
+
+            Description    Downstream channel alignment looking south
+
+
+
+
+                                                         Page 21 of 31
+Inspector: Melvin Hughes                                                           Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                        Facility Carried:   SR 28
+                                                        Bridge Inspection Report
+
+
+
+
+            PHOTO 27      Condition
+
+            Description    Pier 3 west face condition
+
+
+
+
+            PHOTO 28      Condition
+
+            Description    Typical epoxy peeling on piles
+
+
+
+
+                                                            Page 22 of 31
+Inspector: Melvin Hughes                                                           Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                        Facility Carried:   SR 28
+                                                        Bridge Inspection Report
+
+
+
+
+            PHOTO 29      Condition
+
+            Description    Span C underside condition
+
+
+
+
+            PHOTO 30      Condition
+
+            Description    Span C underside has cracking and spall
+
+
+
+
+                                                           Page 23 of 31
+Inspector: Melvin Hughes                                                           Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                        Facility Carried:   SR 28
+                                                      Bridge Inspection Report
+
+
+
+
+            PHOTO 31      Condition
+
+            Description    Span C spalling at drain spout south side
+
+
+
+
+            PHOTO 32      Condition
+
+            Description    Southeast end of deck has cracking with efflorescence
+
+
+
+
+                                                           Page 24 of 31
+Inspector: Melvin Hughes                                                        Asset Name:         028-79-06804
+Inspection Date: 01/14/2022                                                     Facility Carried:   SR 28
+                                                     Bridge Inspection Report
+
+
+
+
+            PHOTO 33      Condition
+
+            Description    East abutment condition
+
+
+
+
+            PHOTO 34      Condition
+
+            Description    East slope condition
+
+
+
+
+                                                        Page 25 of 31
+                                  Miscellaneous Asset Data                             007620
+
+                                         Asset Management
+                _______________________________________________________________
+
+Load Rating 2:
+Has the dead load or the structural condition of the primary load             No
+carrying members changed since the last inspection?
+               _______________________________________________________________
+
+Extended Frequency:                                                           Submittal Date:
+Inspector:
+INDOT Reviewer:
+This bridge has been accepted into the Extended Frequency Program.            Approval Date:
+                _______________________________________________________________
+
+Joints:        * Indicate location, type, and rating of lowest rated joint.
+Transverse                              P - Poured Silicone                         0 - Failed
+North/East                              (narrow width, repla
+Comments:
+
+Both joints is missing rubber material and has been filled with crumb rubber..
+
+               _______________________________________________________________
+
+Terminal Joints:        *Rating of lowest rated terminal joint.           N
+Comments:
+
+
+
+               _______________________________________________________________
+
+Concrete Slopewall:            *Rating of lowest rated slopewall.         N
+
+Comments:
+
+
+
+               _______________________________________________________________
+
+Bearings:    * Indicate type, and rating of lowest rated bearing.
+N - No Bearing(s)
+Comments:
+
+
+
+
+Approach Slabs:        * Indicate if present & condition rating.
+1 - Approach Slabs                                5 - Fair condition, no settlement, moderate cracking and
+                                                  spalls, crack spacing > .5'
+Comments:
+
+                                        Page 26 of 31
+Both approach slabs have spalling and hair line to narrow width cracking.
+The east approach slab in the east bound lane sits a little higher than the deck, you can see where the
+plows are wearing on it.
+               _______________________________________________________________
+
+Paint: * Indicate if paint present , year painted & condition rating.
+N - No Paint                                 N
+Comments:
+
+
+
+
+Endangered Species: * If yes, add one photo to the dropdown field
+Bats: seen or heard under structure? *                                  N
+Birds/swallows/nests seen? Empty nests present? *                       Y
+               _______________________________________________________________
+
+                               BRIDGE Culvert Geometry:
+                                Barrel Length:
+                                Height:
+                                Width:
+
+
+
+
+                                       Page 27 of 31
+NBI Data come from National Inventory
+NBI 113: Scour Critical Bridges     8             NBI 113a Scour Critical Bridges Comments        No scour memo on file.
+                                                                                                  Piles, rip rap, minor scour @ P.#3
+To Be Completed by Hydraulics                                                                     has been rip rapped
+                                                                                                  Revetment rip rap with Geo textiles
+                                                                                                  Bent 2 Min Pile Tip Elevation is
+                                                                                                  690.5
+                                                                                                  Bent 3 Min Pile Tip Elevation is
+                                                                                                  690.5
+Scour Analysis Status    5-Scour        Scour Analysis Date                        Scour Analysis Determination
+                         Analysis
+                         not on file,
+                         scour
+                         analysis
+                         needed
+Hydraulics Comments
+
+
+
+To Be Completed by Bridge Inspection
+
+ Scour Critical Safety Status                      Date of Counter Measure Placed or Field Verified
+
+ Bridge Inspectoin Comments
+
+
+
+ Scour Delineators installed
+
+
+
+
+                                                              Page 28 of 31
+                                LOAD RATING - BRADIN                               Load Rating Date:   18-DEC-07
+
+
+
+National Bridge Inventory (NBI):
+
+                                 1           (31) DESIGN LOAD:                              5
+(65) INVENTORY RATING METHOD:
+
+(66) INVENTORY RATING:           36.576      (70) BRIDGE POSTING:                           5
+
+
+(63) OPERATING RATING METHOD:    1           (41) STRUCTURE OPEN/POSTED/CLOSED:             A
+
+
+(64) OPERATING RATING:           59.616      (66C) TONS POSTED:
+
+                                             (66D) DATE POSTED/CLOSED:
+Posting Configurations:
+
+Emergency Vehicles:
+
+EV2: LEGAL RF:                  1.858     5-Axles:
+
+EV3: LEGAL RF:                  1.287     AASHTO TYPE 3S2: LEGAL RF:                                      2.067
+
+                                          SU5: LEGAL RF:                                                  1.798
+
+                                          TOLL ROAD LOADING NO. 1: ROUTINE PERMIT RF:
+2-Axles:
+
+H20-44: LEGAL RF:               2.043     6+-Axles:
+
+ALTERNATE MILITARY: LEGAL RF:   1.687     AASHTO TYPE 3-3: LEGAL RF:                                      2.629
+
+                                          LANE TYPE: LEGAL RF:
+3-Axles:
+
+HS20: LEGAL RF:                 1.656     SU6: LEGAL RF:                                                  1.769
+
+AASHTO TYPE 3: LEGAL RF:        2.198     SPECIAL TOLL ROAD TRUCK: ROUTINE PERMIT RF:
+
+                                          SU7: LEGAL RF:                                                  1.711
+4-Axles:
+
+SU4: LEGAL RF:                  1.911     MICHIGAN TRAIN TRUCK NO. 5: ROUTINE PERMIT RF:
+
+
+TOLL ROAD LOADING NO. 2:                  MICHIGAN TRAIN TRUCK NO. 8: ROUTINE PERMIT RF:
+ROUTINE PERMIT RF:
+
+
+Other Configurations:
+
+H20-44: DESIGN RF:              1.223     SUPERLOAD-11 AXLES: SPECIAL PERMIT RF:                          1.004
+
+
+NRL: LEGAL RF:                  1.628     SUPERLOAD-13 AXLES: SPECIAL PERMIT RF:                          1.043
+
+                                          SUPERLOAD-14 AXLES: SPECIAL PERMIT RF:                          0.754
+
+                                          SUPERLOAD-19 AXLES (152.5T): SPECIAL PERMIT RF:                 1.052
+
+                                          SUPERLOAD-19 AXLES (240.045T): SPECIAL PERMIT RF:               0.821
+
+
+
+
+                                          Page 29 of 31
+Inspector: Melvin Hughes                                                                    Asset Name:           028-79-06804
+Inspection Date: 01/14/2022                                                                 Facility Carried:     SR 28
+                                                       Bridge Inspection Report
+
+
+
+Date Reported:     01/14/2022
+Priority:          Green - 3
+Work Code:         Approach Repair
+
+Deficiency Description:
+Both approach slabs have spalling. 6sft. total.
+Work Description:
+
+
+Date Repairs Completed:
+Maintenance Comments:
+
+
+Stage: Open                                                         Stage: Open
+
+
+
+
+PHOTO 1     Description    West joint and approach slab condition   PHOTO 2   Description     East joint and approach slab condition
+
+
+
+
+                                                           Page 30 of 31
+Inspector:     Melvin Hughes                                         Structure Number:     007620
+Inspection Date:     01/14/2022                                      Facility Carried:     SR 28
+                                          Bridge Inspection Report
+
+Channel Measurement
+Date of Channel Measurements:         01/14/2022                                         Number of Fixed Objects in Channel:   4
+Distance Measured From:               0                                                  Water Level:                          12.95
+Depth Measured From:                  0                                                  High Water Mark:                      5.95
+Number of Measurement Points Taken:   7                                                  Measurement Type:                     Depth from
+                                                                                                                               Reference Point
+
+
+
+
+                                                                       Page 31 of 31
+
