@@ -8,7 +8,7 @@ checked back against the report with the scripts in `tools/`.
 | Bridge | NBI # | Structure | Folder |
 |---|---|---|---|
 | SR 28 over Little Wea Creek, Tippecanoe Co. | 007620 | 3-span RC slab on 9-pile bents, 20° skew, 71.5 ft, 1989 | `bridges/07620_sr28_little_wea` |
-| I-70 EB over Bayliss State Ditch, Morgan Co. | 041750 | 3-span RC slab on 2-column frame bents, 15° skew, 82 ft, 1966 | `bridges/41750_i70_bayliss` |
+| I-70 EB over Bayliss State Ditch, Morgan Co. | 041750 | 3-span RC slab on solid pier walls, 15° skew, 82 ft, 1966 | `bridges/41750_i70_bayliss` |
 | WB Sagamore Pkwy (US 52) over 9th St, CSX RR and ramp, Lafayette | 019027 | 6-span steel W36 multi-beam viaduct + concrete-beam approach span, 525 ft, 1971 | `bridges/19027_sagamore_pkwy` |
 
 **Live:** [gallery](https://youngbrain85.github.io/indiana-bridges-3d/) · [3D viewer](https://youngbrain85.github.io/indiana-bridges-3d/viewer/)
@@ -28,7 +28,7 @@ checked back against the report with the scripts in `tools/`.
 `blender/bridge_gen.py` runs inside Blender (as the `bpy` Python module) and builds the whole scene procedurally:
 terrain with the channel or the streets/railroad under the bridge, approach embankments that spill around the
 wingwalls, the superstructure (slab + deep coping + parapet, or deck + W36 girders with cross-frames, stiffeners and
-rocker bearings), the substructure types found in the reports (pile bents, 2-column frame bents, hammerhead piers,
+rocker bearings), the substructure types found in the reports (pile bents, solid pier walls, hammerhead piers,
 pier walls with battered ends, spill-through and wall abutments with wingwalls), approach pavement with lane markings,
 W-beam guardrail, riprap, water, trees and scattered grass, and a Nishita sky. Materials are PBR with procedurally
 generated textures (`blender/gen_textures.py`). Everything is rebuilt from scratch in a few seconds:

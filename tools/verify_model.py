@@ -167,8 +167,8 @@ def verify(folder, nodes, rep):
             wings = find(nodes, prefix=f'Abut{k}_wing')
             rep.add(f"{s['id']} wingwalls", 2, len(wings), 0, '')
         else:
-            cap = union(find(nodes, exact=f'Pier{k}_cap'))
-            rep.add(f"{s['id']} cap centred on station", x_exp, centre(cap, 0), 0.75)
+            cap = union(find(nodes, exact=f'Pier{k}_cap') or find(nodes, exact=f'Pier{k}_wall'))
+            rep.add(f"{s['id']} cap/wall centred on station", x_exp, centre(cap, 0), 0.75)
             if 'length' in s and cap is not None:
                 Lcap = ext(cap, 1) / max(math.cos(skew), 1e-6) if abs(skew) > 1e-6 else ext(cap, 1)
                 rep.add(f"{s['id']} length", s['length'], Lcap, 2.0, note=s['type'][:60])
@@ -217,7 +217,7 @@ def verify(folder, nodes, rep):
             a = union(find(nodes, exact=f'ApproachSlab{e}'))
             exp = apr.get('length') or (apr.get('lengths') or [20.5])[min(e, len(apr.get('lengths', [1])) - 1)]
             wr = apr.get('width', Wr)
-            rep.add(f'approach slab {e} length', float(exp), None if a is None else ext(a, 0) - wr * abs(math.tan(skew)), 1.0, note='both modelled 20.5 ft' if apr.get('lengths') else '')
+            rep.add(f'approach slab {e} length', float(exp), None if a is None else ext(a, 0) - wr * abs(math.tan(skew)), 1.0, note='per-end lengths from the report' if apr.get('lengths') else '')
     core = [n for n in nodes if not n['name'].startswith(('FarGround', 'Terrain', 'Tree', 'Road', 'Approach', 'Shoulder', 'Water', 'CreekBed', 'Ballast', 'Rail', 'Ties', 'Sidewalk', 'WBeam', 'GRposts'))]
     if core:
         rep.info('structure bounding box X (ft)', f"{min(n['min'][0] for n in core):.1f} .. {max(n['max'][0] for n in core):.1f}")

@@ -16,13 +16,13 @@ the sheets in `bridges/<folder>/verification/`. Photo numbers refer to `photos/i
 | 7 | 4 in PVC deck drains through the slab near the copings | photo 31, model_notes | small spouts under the slab |
 | 8 | Winter: bare trees, bare/dry fields | photos 3-4, 25-26 | bare trees, dry grass tint |
 
-## 41750 — I-70 EB over Bayliss State Ditch (3-span RC slab on 2-column frame bents, 15° skew, built 1966)
+## 41750 — I-70 EB over Bayliss State Ditch (3-span RC slab on solid pier walls, 15° skew, built 1966)
 
 | # | Item | Source | Expect in model |
 |---|---|---|---|
 | 1 | Spans 25 + 32 + 25 = 82 ft, deck 43.0 o/o, 39.5 roadway | span table, items 49/51/52 | PASS |
 | 2 | Skew 15° | item 34 | |
-| 3 | Piers: two ~3 ft round columns + rectangular cap (reads as a 46.5 ft wall from the side) | photos 26-28, element list "pier wall 46.5" | `Pier2_col±`, `Pier2_cap` present, cap length ≈ 46 ft |
+| 3 | Piers: solid concrete walls 46.5 ft long with rounded ends, slab bearing directly on them | photos 26-28, element list "pier wall 46.5" | `Pier2_wall`, `Pier3_wall` present, length ≈ 46.5 ft |
 | 4 | Abutments: tall concrete walls with wingwalls parallel to the road | photos 19-20 | ~9 ft of exposed wall |
 | 5 | Deep stepped coping with NJ safety-shape parapet on top | photos 16-18 | |
 | 6 | Interstate markings: white skip, white right edge, yellow left edge; WB twin 30 ft north | photos 1-2, 12 | approach / aerial renders |
@@ -46,5 +46,4 @@ the sheets in `bridges/<folder>/verification/`. Photo numbers refer to `photos/i
 
 - Terrain, creek alignment, tree positions and the 9th St / ramp geometry are plausible reconstructions, not surveyed.
 - Twin structures are instanced copies of the modelled bridge.
-- Approach slabs for 41750 are both modelled at 20.5 ft (report: 20.5 and 31.08).
 - Deterioration (cracks, spalls, patches) is suggested by textures only; it is not modelled per element.

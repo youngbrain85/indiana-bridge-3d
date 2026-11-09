@@ -2,9 +2,37 @@
   "id": "041750",
   "asset_name": "I70-055-05179 BEBL",
   "name": "I-70 EB over Bayliss State Ditch",
-  "location": {"city": "", "county": "Morgan", "state": "Indiana", "lat": 39.59214, "lon": -86.54533, "note": "3.76 mi W of SR 39"},
-  "inspection": {"date": "2021-09-13", "inspector": "Daniel W. Bewley", "report": "NBI_41750.pdf"},
-  "history": [["1966", "New bridge, contract R-7092"], ["1980", "Rehab A, deck overlay"], ["1995", "Rehab B, deck overlay"], ["2024", "Programmed deck overlay (B-42822)"]],
+  "location": {
+    "city": "",
+    "county": "Morgan",
+    "state": "Indiana",
+    "lat": 39.59214,
+    "lon": -86.54533,
+    "note": "3.76 mi W of SR 39"
+  },
+  "inspection": {
+    "date": "2021-09-13",
+    "inspector": "Daniel W. Bewley",
+    "report": "NBI_41750.pdf"
+  },
+  "history": [
+    [
+      "1966",
+      "New bridge, contract R-7092"
+    ],
+    [
+      "1980",
+      "Rehab A, deck overlay"
+    ],
+    [
+      "1995",
+      "Rehab B, deck overlay"
+    ],
+    [
+      "2024",
+      "Programmed deck overlay (B-42822)"
+    ]
+  ],
   "type": {
     "main": "concrete continuous slab (NBI 2-01)",
     "deck": "cast-in-place concrete slab, latex concrete overlay",
@@ -18,27 +46,86 @@
     "approach_roadway_width": 38.0,
     "skew_deg": 15,
     "spans": [
-      {"id": "A", "length": 25.0, "type": "RC slab", "over": "west bank"},
-      {"id": "B", "length": 32.0, "type": "RC slab", "over": "channel"},
-      {"id": "C", "length": 25.0, "type": "RC slab", "over": "east bank"}
+      {
+        "id": "A",
+        "length": 25.0,
+        "type": "RC slab",
+        "over": "west bank"
+      },
+      {
+        "id": "B",
+        "length": 32.0,
+        "type": "RC slab",
+        "over": "channel"
+      },
+      {
+        "id": "C",
+        "length": 25.0,
+        "type": "RC slab",
+        "over": "east bank"
+      }
     ],
     "substructure": [
-      {"id": "Bent 1", "type": "concrete abutment wall with wingwalls, on steel-encased piles", "length": 45.5},
-      {"id": "Pier 2", "type": "frame bent: 2 round columns + rectangular cap (reported as pier wall 46.5 ft)", "length": 46.5, "columns": 2},
-      {"id": "Pier 3", "type": "frame bent: 2 round columns + rectangular cap (reported as pier wall 46.5 ft)", "length": 46.5, "columns": 2},
-      {"id": "Bent 4", "type": "concrete abutment wall with wingwalls, on steel-encased piles", "length": 45.5}
+      {
+        "id": "Bent 1",
+        "type": "concrete abutment wall with wingwalls, on steel-encased piles",
+        "length": 45.5
+      },
+      {
+        "id": "Pier 2",
+        "type": "solid concrete pier wall with rounded ends, cap integral with the slab",
+        "length": 46.5,
+        "thickness": 3.0
+      },
+      {
+        "id": "Pier 3",
+        "type": "solid concrete pier wall with rounded ends, cap integral with the slab",
+        "length": 46.5,
+        "thickness": 3.0
+      },
+      {
+        "id": "Bent 4",
+        "type": "concrete abutment wall with wingwalls, on steel-encased piles",
+        "length": 45.5
+      }
     ],
     "slab_thickness_in": 22,
-    "channel": {"water_level_below_deck": 15.0, "high_water_mark_below_deck": 5.0, "low_concrete_elev": 760.3, "max_high_water_elev": 758.0, "scour": "scour critical (memo 2019-02-15)"},
-    "joints": {"type": "compression seal (A-BS), transverse at both bents, failed", "length_each": 45.5},
-    "railing": {"type": "reinforced concrete parapet on deep slab coping", "length_each": 81.56},
+    "channel": {
+      "water_level_below_deck": 15.0,
+      "high_water_mark_below_deck": 5.0,
+      "low_concrete_elev": 760.3,
+      "max_high_water_elev": 758.0,
+      "scour": "scour critical (memo 2019-02-15)"
+    },
+    "joints": {
+      "type": "compression seal (A-BS), transverse at both bents, failed",
+      "length_each": 45.5
+    },
+    "railing": {
+      "type": "reinforced concrete parapet on deep slab coping",
+      "length_each": 81.56
+    },
     "approach_guardrail": "W-beam steel guardrail with posts, both approaches",
-    "approach_slabs": {"count": 2, "lengths": [20.5, 31.08], "width": 39.5}
+    "approach_slabs": {
+      "count": 2,
+      "lengths": [
+        20.5,
+        31.08
+      ],
+      "width": 39.5
+    }
   },
-  "condition": {"deck": 5, "wearing_surface": 6, "superstructure": 5, "substructure": 7, "channel": 8, "sufficiency_rating": 84.2},
+  "condition": {
+    "deck": 5,
+    "wearing_surface": 6,
+    "superstructure": 5,
+    "substructure": 7,
+    "channel": 8,
+    "sufficiency_rating": 84.2
+  },
   "model_notes": [
     "Interstate twin: the WB structure (BWBL) sits ~30 ft to the north and is modelled as a mirrored twin.",
-    "Slab edge is a deep stepped coping with the parapet on top (photos 17-18); piers are two round columns (~3 ft) with a rectangular cap that reads as a wall from the side (photos 26-28, 31).",
+    "Slab edge is a deep stepped coping with the parapet on top (photos 17-18); piers are solid concrete walls 46.5 ft long with rounded ends, the slab bearing directly on them (photos 26-28, 31; element list 'pier wall 46.5').",
     "Abutments are tall concrete walls with wingwalls parallel to the roadway (photos 19-20); grass channel with a small ditch, cornfields either side (photos 29-31).",
     "Heavy longitudinal tining on the 1995 overlay, wide cracks and patches (photos 12-15)."
   ]

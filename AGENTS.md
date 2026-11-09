@@ -23,7 +23,7 @@ viewer/                             three.js viewer (GitHub Pages)
 ```
 
 Bridge ids: `07620` (SR 28 over Little Wea Creek, 3-span RC slab on pile bents, 20° skew),
-`41750` (I-70 EB over Bayliss State Ditch, 3-span RC slab on 2-column frame bents, 15° skew),
+`41750` (I-70 EB over Bayliss State Ditch, 3-span RC slab on solid pier walls, 15° skew),
 `19027` (WB Sagamore Pkwy / US 52 over 9th St + CSX + ramp, 6-span steel W36 multi-beam viaduct, 525 ft).
 
 ## Setup

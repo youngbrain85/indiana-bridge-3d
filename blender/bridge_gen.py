@@ -58,14 +58,14 @@ BRIDGES = {
     '41750': dict(
         folder='41750_i70_bayliss', kind='slab', spans=[25.0, 32.0, 25.0], W=43.0, Wr=39.5, skew=15.0,
         parapet='nj', slab_t=1.83, coping=dict(w=1.5, d=1.2),
-        piers=[dict(type='abutment_wall', exposed=9.0), dict(type='frame', L=44.0, col_d=3.0, col_off=12.0, cap_w=3.0, cap_d=3.0),
-               dict(type='frame', L=44.0, col_d=3.0, col_off=12.0, cap_w=3.0, cap_d=3.0), dict(type='abutment_wall', exposed=9.0)],
+        piers=[dict(type='abutment_wall', exposed=9.0), dict(type='wall', L=46.5, thick=3.0, batter=False, round_ends=True),
+               dict(type='wall', L=46.5, thick=3.0, batter=False, round_ends=True), dict(type='abutment_wall', exposed=9.0)],
         ground=dict(kind='creek', z_nat=-11.0, water=-15.0, bed=-16.0, bed_w=8.0, bank_slope=3.0, fill_top=-0.3, berm=-12.0, side_slope=2.5, spill_slope=2.0, half_w=28.0, riprap=False, season='summer', fields=True),
-        twin=dict(offset=72.0), markings='interstate2', pavement='deck_concrete.jpg', approach_pavement='deck_concrete.jpg', guardrail='wbeam',
+        twin=dict(offset=72.0), markings='interstate2', pavement='deck_concrete.jpg', approach_pavement='deck_concrete.jpg', guardrail='wbeam', approach_slabs=(20.5, 31.08),
         trees=dict(density=0.00025, zones=[(-500, 500, -500, -120), (-500, 500, 120, 500)], avoid_roads=True, h=(30, 50), clumps=[(300, -260, 6), (-260, 300, 5)]),
         cameras=dict(
             elevation=((-45, -135, 1), (45, 0, -6), 32), under=((26, -34, -13), (-4, 2, -6), 24), deck=((-90, -8, 5.0), (80, 0, 0), 32),
-            pier=((45, -40, -12), (57, 0, -7), 35), approach=((-150, 14, 4.5), (40, 0, 0), 35), aerial=((-140, -170, 110), (41, 20, -6), 32),
+            pier=((44, -46, -13), (30, 0, -8), 28), approach=((-150, 14, 4.5), (40, 0, 0), 35), aerial=((-140, -170, 110), (41, 20, -6), 32),
             channel=((41, -150, -9), (41, 0, -6), 28)),
         panos={'bank': (-20, -50, -6), 'deck': (41, 0, 5.5), 'under': (41, 0, -12)},
     ),
@@ -353,21 +353,33 @@ def build_substructure(F, M, G):
                         q = j * 12 + i; F2.append([q, q + 1, q + 13, q + 12])
                 objs.append(mesh_from_arrays(f'SlopeWall{k}', V, F2, box_uv(V, F2, 0.08), 'Substructure', M['concrete_new'], smooth=True))
         elif typ == 'wall':
-            Lp = p['L']; H = F.soffit - 0.9 - zg; ztop = F.soffit - 0.9
-            # battered ends: trapezoid in elevation (plan length grows toward the base), 4 ft thick at base, 3 ft at top
-            def wall_pts(z):
-                f = (ztop - z) / max(H, 1); half = Lp / 2 + 0.5 * H * f * 0.6; th = 1.5 + 0.5 * f
-                return half, th
-            V = []; Fq = []
-            for zi, z in enumerate((zg - 3.0, ztop)):
-                half, th = wall_pts(z)
-                for (a, b) in ((-half, -th), (half, -th), (half, th), (-half, th)):
-                    px, py = F.on_line(x0, a); px += b * math.cos(F.s); py -= b * math.sin(F.s); V.append((px, py, z))
-            Fq = [[3, 2, 1, 0], [4, 5, 6, 7], [0, 1, 5, 4], [1, 2, 6, 5], [2, 3, 7, 6], [3, 0, 4, 7]]
-            objs.append(mesh_from_arrays(f'Pier{k}_wall', V, Fq, box_uv(V, Fq, 0.1), 'Substructure', M['concrete']))
-            # cap / bearing seat
-            cxp, cyp = F.on_line(x0, 0)
-            objs.append(box(f'Pier{k}_cap', cxp, cyp, ztop + 0.45, Lp + 0.5, 4.6, 0.9, M['concrete'], 'Substructure', rot_z=rot))
+            Lp = p['L']; ztop = F.soffit - (0.9 if B['kind'] == 'girder' else 0.0); H = ztop - zg
+            th0 = p.get('thick', 3.0) / 2
+            def to_xy(a, b):
+                px, py = F.on_line(x0, a); return (px + b * math.cos(F.s), py - b * math.sin(F.s))
+            if p.get('round_ends'):
+                # solid wall with semicircular ends (stadium plan), straight sides, cap integral with the slab
+                pts = []; n = 12
+                for i in range(n + 1): ang = -math.pi / 2 + math.pi * i / n; pts.append(to_xy(Lp / 2 - th0 + th0 * math.cos(ang), th0 * math.sin(ang)))
+                for i in range(n + 1): ang = math.pi / 2 + math.pi * i / n; pts.append(to_xy(-(Lp / 2 - th0) + th0 * math.cos(ang), th0 * math.sin(ang)))
+                objs.append(prism(f'Pier{k}_wall', pts, zg - 3.0, ztop, 'Substructure', M['concrete'], 0.1))
+            else:
+                # battered ends: trapezoid in elevation (plan length grows toward the base), 4 ft thick at base, 3 ft at top
+                batter = p.get('batter', True)
+                def wall_pts(z):
+                    f = (ztop - z) / max(H, 1) if batter else 0.0; half = Lp / 2 + 0.5 * H * f * 0.6; th = th0 + 0.5 * f
+                    return half, th
+                V = []; Fq = []
+                for zi, z in enumerate((zg - 3.0, ztop)):
+                    half, th = wall_pts(z)
+                    for (a, b) in ((-half, -th), (half, -th), (half, th), (-half, th)):
+                        V.append(to_xy(a, b) + (z,))
+                Fq = [[3, 2, 1, 0], [4, 5, 6, 7], [0, 1, 5, 4], [1, 2, 6, 5], [2, 3, 7, 6], [3, 0, 4, 7]]
+                objs.append(mesh_from_arrays(f'Pier{k}_wall', V, Fq, box_uv(V, Fq, 0.1), 'Substructure', M['concrete']))
+            if B['kind'] == 'girder':
+                # cap / bearing seat
+                cxp, cyp = F.on_line(x0, 0)
+                objs.append(box(f'Pier{k}_cap', cxp, cyp, ztop + 0.45, Lp + 0.5, 4.6, 0.9, M['concrete'], 'Substructure', rot_z=rot))
             if B['kind'] == 'girder':  # pedestals under the bearings
                 g = B['girder']; n = g['lines']; sp = (W - 2 * g['overhang']) / (n - 1)
                 for i in range(n):
@@ -439,8 +451,9 @@ def build_site(F, M, G, rng):
         for side in (-1, 1):
             spts = [(x, side * (F.Wr / 2 + 2.7)) for x in xs]
             objs.append(ribbon(f'Shoulder{end}{side}', spts, 5.4, M['asphalt'], lambda x, y: -0.02 - 0.25 * max(0.0, (abs(y) - F.Wr / 2) / 5.4), lift=0.0))
-        # approach slab (concrete) 20.5 ft, top slightly proud of the asphalt so it reads as concrete
-        sl = prism(f'ApproachSlab{end}', F.para(x0 + (ahead * 20.5 if ahead < 0 else 0), x0 + (ahead * 20.5 if ahead > 0 else 0), -F.Wr / 2, F.Wr / 2), g['fill_top'] - 0.5, 0.03, 'Site', M['concrete_new'], 0.1)
+        # approach slab (concrete), length per end from the report (default 20.5 ft), top slightly proud of the asphalt
+        asl = B.get('approach_slabs', (20.5, 20.5))[end]
+        sl = prism(f'ApproachSlab{end}', F.para(x0 + (ahead * asl if ahead < 0 else 0), x0 + (ahead * asl if ahead > 0 else 0), -F.Wr / 2, F.Wr / 2), g['fill_top'] - 0.5, 0.03, 'Site', M['concrete_new'], 0.1)
         objs.append(sl)
         # guardrail
         if B.get('guardrail'):
