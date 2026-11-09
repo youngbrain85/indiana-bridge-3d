@@ -244,11 +244,17 @@ export function planTerrain(input,{waterway='',site=null}={}){
   const wallTop=new Float64Array(N).fill(-Infinity),over=new Float64Array(N).fill(Infinity),deckUnder=new Float64Array(N).fill(Infinity);
   const span=p=>p.uc>uW&&p.uc<uE,later=[];
   // Rails, posts and drains go last: they stand on the structure where there is any under them, else on the ground.
-  const box=(p,pad,fn)=>{const i0=lower(us,p.u[0]-pad),i1=lower(us,p.u[1]+pad),j0=lower(zs,p.min[2]-pad),j1=lower(zs,p.max[2]+pad);for(let j=j0;j<j1;j++)for(let i=i0;i<i1;i++)fn(j*nu+i);};
-  const ceiling=(p,c)=>{raster(p,(v,y)=>{if(y-c<ceil[v])ceil[v]=y-c;if(y<over[v])over[v]=y;},false,.3);
+  const box=(p,pad,fn)=>{const i0=lower(us,p.u[0]-pad),i1=lower(us,p.u[1]+pad),j0=lower(zs,p.min[2]-pad),j1=lower(zs,p.max[2]+pad);
+    for(let j=j0;j<j1;j++)for(let i=i0;i<i1;i++){const v=j*nu+i;if(X[v]>=p.min[0]-pad&&X[v]<=p.max[0]+pad)fn(v);}};
+  // The back of each abutment (the furthest back of its retaining parts that cross the deck): a bearing on the seat in
+  // front of it holds no ground down behind it, and clearance does not reach round it (ceilMask below).
+  const wide=ends.filter(p=>retaining.has(p)&&p.max[2]-p.min[2]>=halfW),wideW=wide.filter(p=>p.uc<mu),wideE=wide.filter(p=>p.uc>=mu);
+  const backs=[wideW.length?Math.min(...wideW.map(p=>p.u[0])):-Infinity,wideE.length?Math.max(...wideE.map(p=>p.u[1])):Infinity];
+  const fore=(p,v)=>{if(p.layer!=='bearings')return true;const u=us[v%nu];return !(p.uc>backs[0]&&u<backs[0]-1e-6)&&!(p.uc<backs[1]&&u>backs[1]+1e-6);};
+  const ceiling=(p,c)=>{raster(p,(v,y)=>{if(!fore(p,v))return;if(y-c<ceil[v])ceil[v]=y-c;if(y<over[v])over[v]=y;},false,.3);
     // A small part (a bearing, a bolt) can fall between grid lines: its plan box, a little wider, holds the ground
     // below its lowest point.
-    if(p.u[1]-p.u[0]<2.5&&p.max[2]-p.min[2]<2.5){const y=p.min[1]-c;box(p,.3,v=>{if(y<ceil[v])ceil[v]=y;if(wall[v]&&p.min[1]<over[v])over[v]=p.min[1];});}};
+    if(p.u[1]-p.u[0]<2.5&&p.max[2]-p.min[2]<2.5){const y=p.min[1]-c;box(p,.3,v=>{if(!fore(p,v))return;if(y<ceil[v])ceil[v]=y;if(wall[v]&&p.min[1]<over[v])over[v]=p.min[1];});}};
   // A tall retaining wall (an MSE panel on its leveling pad) stands on the ground along its whole length, so the
   // ground beside it reaches its local bottom where the pad steps up, not only its lowest point.
   for(const p of retaining){const lb=grounded(p)?p.min[1]+EMBED:-Infinity,loc=p.layer==='walls'&&grounded(p)?new Map():null;
@@ -281,13 +287,22 @@ export function planTerrain(input,{waterway='',site=null}={}){
     if(!loc.size)box(p,.25,v=>loc.set(v,[p.min[1],p.max[1]]));
     const onStructure=(v,b)=>wall[v]||target[v]<b+.05||over[v]<b+.05;
     let on=0;for(const [v,[b]] of loc)if(onStructure(v,b))on++;
-    if(on>=.5*loc.size||(span(p)&&Math.abs(p.c[2]-zc)<=halfW+3)){ceiling(p,CLEAR);continue;}
+    if(on>=.5*loc.size||(span(p)&&Math.abs(p.c[2]-zc)<=halfW+3)){if(p.layer!=='drainage'){ceiling(p,CLEAR);continue;}
+      // A drain on the structure stays clear of the ground, except where it reaches down to it (a drop to the foot of
+      // a wall): there it neither holds the ground down nor, through the clearance slope, the fill behind a wing.
+      for(const [v,[b]] of loc){if(b<valley(us[v%nu])+.6)continue;if(b-CLEAR<ceil[v])ceil[v]=b-CLEAR;if(b<over[v])over[v]=b;}continue;}
     if(p.layer==='drainage')continue;
     for(const [v,[b,t]] of loc){if(onStructure(v,b))continue;
       if(t-b>.6||loc.size<=4){if(b+EMBED>hard[v])hard[v]=b+EMBED;}else if(b-.02<ceil[v])ceil[v]=b-.02;}}
+  // A berm between an end wall and the taller cap behind it (an integral end bent behind an MSE wall): the cap, not
+  // backfill, carries the deck there, and the fill stays at the wall's coping.
+  const bermTop=new Float64Array(N).fill(NaN);
+  const near=(j,i,dir)=>{for(let k=1;k<=6;k++){const ii=i+dir*k;if(ii<0||ii>=nu||Math.abs(us[ii]-us[i])>1.5)return null;if(wall[j*nu+ii])return wallTop[j*nu+ii];}return null;};
+  for(let j=0;j<nz;j++)for(let i=0;i<nu;i++){const v=j*nu+i;if(wall[v]||!behindFace(i))continue;const dir=us[i]<mu?1:-1,front=near(j,i,dir),back=near(j,i,-dir);
+    if(front!==null&&back!==null&&back>front+.3&&front>valley(us[i])+1)bermTop[v]=front;}
   for(let v=0;v<N;v++){if(keyTop[v]>-Infinity&&target[v]===Infinity)target[v]=keyTop[v];
     // Behind an abutment face the deck rests on backfill (away from its edges), where nothing hangs under it.
-    if(deckUnder[v]<Infinity){const i=v%nu,j=(v-i)/nu;let free=true;
+    if(deckUnder[v]<Infinity&&Number.isNaN(bermTop[v])){const i=v%nu,j=(v-i)/nu;let free=true;
       for(let dj=-2;dj<=2&&free;dj++)for(let di=-2;di<=2;di++){const ii=i+di,jj=j+dj;if(ii<0||jj<0||ii>=nu||jj>=nz)continue;if(over[jj*nu+ii]<deckUnder[v]-.05){free=false;break;}}
       if(free){slab[v]=1;if(deckUnder[v]<target[v])target[v]=deckUnder[v];}}}
   // Ground beside a part that stands on it reaches the part's bottom.
@@ -312,9 +327,9 @@ export function planTerrain(input,{waterway='',site=null}={}){
 
   // 1:2 cones from every source, in two sweeps each way over the grid; retaining parts block them.
   const nb=[[-1,0],[-1,-1],[0,-1],[1,-1]];
-  const cone=(f,rise,k=K)=>{for(let pass=0;pass<2;pass++)for(const dir of [1,-1]){
-    for(let jj=0;jj<nz;jj++){const j=dir>0?jj:nz-1-jj;for(let ii=0;ii<nu;ii++){const i=dir>0?ii:nu-1-ii,v=j*nu+i;if(wall[v])continue;let h=f[v];
-      for(const [a,b] of nb){const i2=i+dir*a,j2=j+dir*b;if(i2<0||j2<0||i2>=nu||j2>=nz)continue;const n=j2*nu+i2;if(wall[n])continue;
+  const cone=(f,rise,k=K,mask=wall)=>{for(let pass=0;pass<2;pass++)for(const dir of [1,-1]){
+    for(let jj=0;jj<nz;jj++){const j=dir>0?jj:nz-1-jj;for(let ii=0;ii<nu;ii++){const i=dir>0?ii:nu-1-ii,v=j*nu+i;if(mask[v])continue;let h=f[v];
+      for(const [a,b] of nb){const i2=i+dir*a,j2=j+dir*b;if(i2<0||j2<0||i2>=nu||j2>=nz)continue;const n=j2*nu+i2;if(mask[n])continue;
         const d=Math.hypot(X[v]-X[n],Z[v]-Z[n]);h=rise?Math.min(h,f[n]+k*d):Math.max(h,f[n]-k*d);}f[v]=h;}}}};
   // Under the bridge, between the abutment faces, embankment fill stays at the natural ground: it wraps round an
   // abutment's corners but does not run into the opening. Spill slopes under the bridge come from the parts
@@ -326,8 +341,13 @@ export function planTerrain(input,{waterway='',site=null}={}){
   const steep=new Float64Array(N);for(let v=0;v<N;v++)steep[v]=slab[v]?Math.max(hardRoad[v],target[v]):hardRoad[v];
   // Where an embankment and a crossed road's cut compete for the same ground, one even slope joins the road
   // shoulder and the crossed road: the local levels of both (nearly flat cones) and the distances to each give it.
+  // The clearance under the superstructure (bearings on a seat, beam ends) does not wrap round the ends of an
+  // abutment into the fill behind it: past the deck edges the line of the abutment's back stops it, as the abutment
+  // itself does within them.
+  const ceilMask=Uint8Array.from(wall);for(const uf of backs){if(!Number.isFinite(uf))continue;const i=lower(us,uf);const k=i>0&&Math.abs(us[i-1]-uf)<Math.abs(us[i]-uf)?i-1:i;
+    for(let j=0;j<nz;j++)ceilMask[j*nu+k]=1;}
   const roadLevel=Float64Array.from(steep),cutLevel=Float64Array.from(cutC),openLevel=Float64Array.from(open);
-  cone(lbSrc,false);cone(lbRoad,false);cone(open,true);cone(ceil,true,K_CLEAR);cone(steep,false,K_STEEP);if(roads.length||channel)cone(cutC,true,K_CUT);
+  cone(lbSrc,false);cone(lbRoad,false);cone(open,true);cone(ceil,true,K_CLEAR,ceilMask);cone(steep,false,K_STEEP);if(roads.length||channel)cone(cutC,true,K_CUT);
   cone(roadLevel,false,.02);cone(cutLevel,true,.02);cone(openLevel,true,.02);
   // Ground beside a road falls at 1:1.5 at most; where that meets a crossed road's cut or the natural ground under the
   // bridge too soon, one even slope joins the two levels instead (no cliff at either end).
@@ -339,12 +359,7 @@ export function planTerrain(input,{waterway='',site=null}={}){
     let st=steep[v];if(roads.length||channel)st=blend(v,st,cutC[v],cutLevel[v],K_CUT);st=blend(v,st,open[v],openLevel[v],K);
     if(inRoad[v])h=Math.min(h,cutC[v],ceil[v]);else h=Math.max(Math.min(Math.max(h,st),ceil[v]),hard[v],hardRoad[v]);
     if(target[v]<Infinity)h=target[v];H[v]=h;}
-  // A berm under the superstructure between an end wall and the taller cap behind it stays at the wall's top: the
-  // fill the wall holds does not rise over it against the cap.
-  const near=(j,i,dir,fn)=>{for(let k=1;k<=6;k++){const ii=i+dir*k;if(ii<0||ii>=nu||Math.abs(us[ii]-us[i])>1.5)return null;if(wall[j*nu+ii])return fn(j*nu+ii);}return null;};
-  for(let j=0;j<nz;j++)for(let i=0;i<nu;i++){const v=j*nu+i;if(wall[v]||over[v]===Infinity||target[v]<Infinity||!behindFace(i))continue;
-    const dir=us[i]<mu?1:-1,front=near(j,i,dir,n=>wallTop[n]),back=near(j,i,-dir,n=>wallTop[n]);
-    if(front!==null&&back!==null&&back>front+.3&&H[v]>front+.03&&H[v]<front+1.5)H[v]=Math.max(front+.03,hard[v],hardRoad[v]);}
+  for(let v=0;v<N;v++){const t=bermTop[v];if(!Number.isNaN(t)&&target[v]===Infinity)H[v]=Math.max(t+.03,hard[v],hardRoad[v]);}
   // Inside a retaining part the ground takes the height of the nearest outside point, so steps stay inside it.
   const dist=new Float64Array(N);for(let v=0;v<N;v++)dist[v]=wall[v]?Infinity:0;
   for(let pass=0;pass<2;pass++)for(const dir of [1,-1])for(let jj=0;jj<nz;jj++){const j=dir>0?jj:nz-1-jj;for(let ii=0;ii<nu;ii++){const i=dir>0?ii:nu-1-ii,v=j*nu+i;if(!wall[v])continue;
