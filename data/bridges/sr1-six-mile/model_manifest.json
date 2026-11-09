@@ -120,7 +120,7 @@
         7
       ],
       "basis": "Hypothetical support geometry, not drawn",
-      "note": "Wall type, height, width, thickness and location are illustrative. Two interior support lines represent the stated three-span topology.",
+      "note": "Wall type, height, width, thickness and location are illustrative. Two interior support lines represent the stated three-span topology. Its back projection beyond the deck end carries the hypothetical approach seat seat_0, on which approach_0 bears (3D review, revision 1.4-3d-review).",
       "dimensions": {
         "station_m": -10.914875,
         "assumed_thickness_m": 0.8,
@@ -294,7 +294,7 @@
         7
       ],
       "basis": "Hypothetical support geometry, not drawn",
-      "note": "Wall type, height, width, thickness and location are illustrative. Two interior support lines represent the stated three-span topology.",
+      "note": "Wall type, height, width, thickness and location are illustrative. Two interior support lines represent the stated three-span topology. Its back projection beyond the deck end carries the hypothetical approach seat seat_1, on which approach_1 bears (3D review, revision 1.4-3d-review).",
       "dimensions": {
         "station_m": 10.914875,
         "assumed_thickness_m": 0.8,
@@ -351,8 +351,13 @@
         7
       ],
       "basis": "Hypothetical wing envelope",
-      "note": "Length, flare and elevation are unverified; shown only to explain a possible end-support arrangement.",
-      "dimensions": {},
+      "note": "Length, flare and elevation are unverified; shown only to explain a possible end-support arrangement. Trimmed at the faces of support_0 in the 3D review (revision 1.4-3d-review): the wing started at the support line, so its 0.426 m (along the station) by 0.300 m corner lay inside the end wall over its full height (0.530 m3 counted twice). That corner is cut out; the wing now stops at the wall's back face and runs past the wall's end face to the support line. No sheet shows the wings or how they meet the end wall, so this division at the wall faces is a modelling choice.",
+      "dimensions": {
+        "trimmed_at": "support_0 back face and end face (3D review)",
+        "notch_along_station_m": 0.425671,
+        "notch_across_m": 0.3,
+        "overlap_removed_m3": 0.529961
+      },
       "bounds_m": [
         [
           -10.410086,
@@ -365,7 +370,7 @@
           5.4
         ]
       ],
-      "volume_m3": 3.735
+      "volume_m3": 3.205039469
     },
     {
       "id": "wing_0_1",
@@ -376,8 +381,13 @@
         7
       ],
       "basis": "Hypothetical wing envelope",
-      "note": "Length, flare and elevation are unverified; shown only to explain a possible end-support arrangement.",
-      "dimensions": {},
+      "note": "Length, flare and elevation are unverified; shown only to explain a possible end-support arrangement. Trimmed at the faces of support_0 in the 3D review (revision 1.4-3d-review): the wing started at the support line, so its 0.426 m (along the station) by 0.300 m corner lay inside the end wall over its full height (0.530 m3 counted twice). That corner is cut out; the wing now stops at the wall's back face and runs past the wall's end face to the support line. No sheet shows the wings or how they meet the end wall, so this division at the wall faces is a modelling choice.",
+      "dimensions": {
+        "trimmed_at": "support_0 back face and end face (3D review)",
+        "notch_along_station_m": 0.425671,
+        "notch_across_m": 0.3,
+        "overlap_removed_m3": 0.529961
+      },
       "bounds_m": [
         [
           -15.58345,
@@ -385,12 +395,12 @@
           1.25
         ],
         [
-          -13.419664,
+          -13.528855,
           7.33185,
           5.4
         ]
       ],
-      "volume_m3": 3.735
+      "volume_m3": 3.205039469
     },
     {
       "id": "wing_1_-1",
@@ -401,11 +411,16 @@
         7
       ],
       "basis": "Hypothetical wing envelope",
-      "note": "Length, flare and elevation are unverified; shown only to explain a possible end-support arrangement.",
-      "dimensions": {},
+      "note": "Length, flare and elevation are unverified; shown only to explain a possible end-support arrangement. Trimmed at the faces of support_3 in the 3D review (revision 1.4-3d-review): the wing started at the support line, so its 0.426 m (along the station) by 0.300 m corner lay inside the end wall over its full height (0.530 m3 counted twice). That corner is cut out; the wing now stops at the wall's back face and runs past the wall's end face to the support line. No sheet shows the wings or how they meet the end wall, so this division at the wall faces is a modelling choice.",
+      "dimensions": {
+        "trimmed_at": "support_3 back face and end face (3D review)",
+        "notch_along_station_m": 0.425671,
+        "notch_across_m": 0.3,
+        "overlap_removed_m3": 0.529961
+      },
       "bounds_m": [
         [
-          13.419664,
+          13.528855,
           -7.33185,
           1.25
         ],
@@ -415,7 +430,7 @@
           5.4
         ]
       ],
-      "volume_m3": 3.735
+      "volume_m3": 3.205039469
     },
     {
       "id": "wing_1_1",
@@ -426,8 +441,13 @@
         7
       ],
       "basis": "Hypothetical wing envelope",
-      "note": "Length, flare and elevation are unverified; shown only to explain a possible end-support arrangement.",
-      "dimensions": {},
+      "note": "Length, flare and elevation are unverified; shown only to explain a possible end-support arrangement. Trimmed at the faces of support_3 in the 3D review (revision 1.4-3d-review): the wing started at the support line, so its 0.426 m (along the station) by 0.300 m corner lay inside the end wall over its full height (0.530 m3 counted twice). That corner is cut out; the wing now stops at the wall's back face and runs past the wall's end face to the support line. No sheet shows the wings or how they meet the end wall, so this division at the wall faces is a modelling choice.",
+      "dimensions": {
+        "trimmed_at": "support_3 back face and end face (3D review)",
+        "notch_along_station_m": 0.425671,
+        "notch_across_m": 0.3,
+        "overlap_removed_m3": 0.529961
+      },
       "bounds_m": [
         [
           8.2463,
@@ -440,7 +460,7 @@
           5.4
         ]
       ],
-      "volume_m3": 3.735
+      "volume_m3": 3.205039469
     },
     {
       "id": "rail_-1_0",
@@ -651,7 +671,7 @@
         8
       ],
       "basis": "Overlay-plan outline; assumed slab thickness",
-      "note": "Unequal approach edge lengths are shown in the schematic. Source is not to scale; exact corner setting-out and 0.30 m slab thickness are assumed. The top within the 44 ft roadway receives a non-warranted polymer overlay (sheets 3 and 7; sheet 8: 279 SYS for both approaches); not modelled as a layer because its thickness is not given. Far end squared to S.R. 1, 28.5 ft from the bridge end on the S.R. 1 line, so that the 20.5 ft and 36.5 ft lengths fall on the 44 ft roadway edges as dimensioned on sheet 7 (was 1.40 deg off square with those lengths at the deck edges).",
+      "note": "Unequal approach edge lengths are shown in the schematic. Source is not to scale; exact corner setting-out and 0.30 m slab thickness are assumed. The top within the 44 ft roadway receives a non-warranted polymer overlay (sheets 3 and 7; sheet 8: 279 SYS for both approaches); not modelled as a layer because its thickness is not given. Far end squared to S.R. 1, 28.5 ft from the bridge end on the S.R. 1 line, so that the 20.5 ft and 36.5 ft lengths fall on the 44 ft roadway edges as dimensioned on sheet 7 (was 1.40 deg off square with those lengths at the deck edges). Bears on the hypothetical approach seat seat_0 on support_0, a 0.259 m strip (normal to the skew) at this slab's flat underside, Z = 5.587963 m (3D review, revision 1.4-3d-review); the seat is not drawn.",
       "dimensions": {
         "assumed_thickness_m": 0.3,
         "edge_lengths_ft": [
@@ -736,7 +756,7 @@
         8
       ],
       "basis": "Overlay-plan outline; assumed slab thickness",
-      "note": "Unequal approach edge lengths are shown in the schematic. Source is not to scale; exact corner setting-out and 0.30 m slab thickness are assumed. The top within the 44 ft roadway receives a non-warranted polymer overlay (sheets 3 and 7; sheet 8: 279 SYS for both approaches); not modelled as a layer because its thickness is not given. Far end squared to S.R. 1, 28.5 ft from the bridge end on the S.R. 1 line, so that the 20.5 ft and 36.5 ft lengths fall on the 44 ft roadway edges as dimensioned on sheet 7 (was 1.40 deg off square with those lengths at the deck edges).",
+      "note": "Unequal approach edge lengths are shown in the schematic. Source is not to scale; exact corner setting-out and 0.30 m slab thickness are assumed. The top within the 44 ft roadway receives a non-warranted polymer overlay (sheets 3 and 7; sheet 8: 279 SYS for both approaches); not modelled as a layer because its thickness is not given. Far end squared to S.R. 1, 28.5 ft from the bridge end on the S.R. 1 line, so that the 20.5 ft and 36.5 ft lengths fall on the 44 ft roadway edges as dimensioned on sheet 7 (was 1.40 deg off square with those lengths at the deck edges). Bears on the hypothetical approach seat seat_1 on support_3, a 0.259 m strip (normal to the skew) at this slab's flat underside, Z = 5.587963 m (3D review, revision 1.4-3d-review); the seat is not drawn.",
       "dimensions": {
         "assumed_thickness_m": 0.3,
         "edge_lengths_ft": [
@@ -809,6 +829,98 @@
         ]
       ],
       "volume_m3": 0.0100584
+    },
+    {
+      "id": "seat_0",
+      "name": "End 1 | hypothetical approach seat",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        3,
+        7
+      ],
+      "basis": "Hypothetical approach seat, not drawn",
+      "note": "Seat on the back of support_0 that carries approach_0. It fills the part of the assumed 0.80 m end wall that projects beyond the deck end (0.259 m normal to the skew, across the full 47 ft 1 1/2 in width), from the wall top at the deck soffit level (Z = 5.55 - 0.0156 |Y|) up to the flat approach-slab underside (Z = 5.587963 m): 38 mm high at the crown, 150 mm at the deck edges. Added in the 3D review (revision 1.4-3d-review) because the approach slab had no bearing. No sheet shows an end bent, paving notch, seat or approach slab section (sheets 3, 4, 7, 8): the seat level follows from the assumed 0.30 m approach and 0.45 m deck, and it may be read as a monolithic part of the hypothetical end wall.",
+      "dimensions": {
+        "top_elevation_m": 5.587963,
+        "height_m": [
+          0.037963,
+          0.15
+        ],
+        "height_at": [
+          "crown",
+          "deck edges"
+        ],
+        "width_along_station_m": 0.275671,
+        "width_normal_m": 0.259046,
+        "length_across_m": 14.3637,
+        "station_range_u_m": [
+          -11.340546,
+          -11.064875
+        ],
+        "rests_on": "support_0",
+        "carries": "approach_0",
+        "assumed": true
+      },
+      "bounds_m": [
+        [
+          -13.954526,
+          -7.18185,
+          5.437963
+        ],
+        [
+          -8.450895,
+          7.18185,
+          5.587963
+        ]
+      ],
+      "volume_m3": 0.372134792
+    },
+    {
+      "id": "seat_1",
+      "name": "End 2 | hypothetical approach seat",
+      "layer": "abutments",
+      "color": "#beb8a8",
+      "pdf_pages": [
+        3,
+        7
+      ],
+      "basis": "Hypothetical approach seat, not drawn",
+      "note": "Seat on the back of support_3 that carries approach_1. It fills the part of the assumed 0.80 m end wall that projects beyond the deck end (0.259 m normal to the skew, across the full 47 ft 1 1/2 in width), from the wall top at the deck soffit level (Z = 5.55 - 0.0156 |Y|) up to the flat approach-slab underside (Z = 5.587963 m): 38 mm high at the crown, 150 mm at the deck edges. Added in the 3D review (revision 1.4-3d-review) because the approach slab had no bearing. No sheet shows an end bent, paving notch, seat or approach slab section (sheets 3, 4, 7, 8): the seat level follows from the assumed 0.30 m approach and 0.45 m deck, and it may be read as a monolithic part of the hypothetical end wall.",
+      "dimensions": {
+        "top_elevation_m": 5.587963,
+        "height_m": [
+          0.037963,
+          0.15
+        ],
+        "height_at": [
+          "crown",
+          "deck edges"
+        ],
+        "width_along_station_m": 0.275671,
+        "width_normal_m": 0.259046,
+        "length_across_m": 14.3637,
+        "station_range_u_m": [
+          11.064875,
+          11.340546
+        ],
+        "rests_on": "support_3",
+        "carries": "approach_1",
+        "assumed": true
+      },
+      "bounds_m": [
+        [
+          8.450895,
+          -7.18185,
+          5.437963
+        ],
+        [
+          13.954526,
+          7.18185,
+          5.587963
+        ]
+      ],
+      "volume_m3": 0.372134792
     }
   ],
   "layers": {
@@ -849,7 +961,7 @@
     {
       "feature": "Hypothetical load-bearing scaffold",
       "status": "assumed_for_demonstration",
-      "detail": "450 mm structural slab, symmetric 6.664875 / 8.5 / 6.664875 m support spans, 150 mm end overhangs, wall piers, end walls and foundations are illustrative. NBI supplies three spans, continuous concrete slab type and 20-degree skew, not these details.",
+      "detail": "450 mm structural slab, symmetric 6.664875 / 8.5 / 6.664875 m support spans, 150 mm end overhangs, wall piers, end walls and foundations are illustrative. NBI supplies three spans, continuous concrete slab type and 20-degree skew, not these details. Hypothetical approach seats seat_0 and seat_1 sit on the end walls' back projections beyond the deck ends (0.259 m normal to the skew) and reach the flat approach-slab underside, so approach_0 and approach_1 bear on support_0 and support_3. No sheet shows an end bent, seat or approach slab section. The wings stop at the end-wall faces, so walls and wings share no volume; that division is not drawn either.",
       "sources": [
         "Primary PDF p.4",
         "Primary PDF p.7"
@@ -868,7 +980,9 @@
         "wing_0_-1",
         "wing_0_1",
         "wing_1_-1",
-        "wing_1_1"
+        "wing_1_1",
+        "seat_0",
+        "seat_1"
       ]
     },
     {
@@ -899,7 +1013,7 @@
     }
   ],
   "clear_roadway_correction": "clear-roadway-44ft-overlay-limits",
-  "revision": "1.3-deviations",
+  "revision": "1.4-3d-review",
   "clear_roadway_correction_record": {
     "source_pdf_pages": [
       3,
@@ -1131,5 +1245,235 @@
     "decisions": [],
     "before_glb_sha256": "e73cf93a482cc3f0f8a67ecbefd0941100d56078c5c2b253548bf63058b2effe",
     "after_glb_sha256": "1c4e8e0a463e20ce0fc038383d94a221630e897325a70649de4031985b0806d6"
+  },
+  "review_correction_3d": "approach-seats-on-end-walls",
+  "review_correction_record_3d": {
+    "review": "3D placement review, round 4",
+    "source_pdf_pages": [
+      3,
+      4,
+      7,
+      8
+    ],
+    "printed_sheets": [
+      3,
+      4,
+      7,
+      8
+    ],
+    "previous_revision": "1.3-deviations",
+    "findings": [
+      {
+        "id": "S01",
+        "verdict": "resolve",
+        "hypothetical": true,
+        "summary": "approach slabs did not bear on the end-wall shelf (38-150 mm air gap); explicitly hypothetical approach seats now carry them on the end walls"
+      },
+      {
+        "id": "wing-wall-overlap",
+        "verdict": "resolve",
+        "hypothetical": true,
+        "source": "found while verifying S01; fixed at the lead's request",
+        "summary": "each wing overlapped its end wall by 0.529960 m3 (2.12 m3 counted twice); the wings are trimmed at the end-wall faces, a division no sheet shows"
+      }
+    ],
+    "changed_parts": [
+      "wing_0_-1",
+      "wing_0_1",
+      "wing_1_-1",
+      "wing_1_1"
+    ],
+    "annotated_parts": [
+      "support_0",
+      "approach_0",
+      "support_3",
+      "approach_1"
+    ],
+    "added_parts": [
+      "seat_0",
+      "seat_1"
+    ],
+    "removed_parts": [],
+    "values": {
+      "seat_0": {
+        "seat_top_z_m": 5.587963,
+        "seat_height_m": "0.037963 (crown) to 0.150000 (deck edges)",
+        "seat_station_range_u_m": [
+          -11.340546,
+          -11.064875
+        ],
+        "seat_width_m": "0.275671 along the station = 0.259046 normal to the skew, x 14.363700 across",
+        "seat_area_m2": 3.959657,
+        "gap_under_approach_mm": "37.963 (crown) to 150.000 (deck edges) -> 0",
+        "contacts": "bottom on support_0 top, top under approach_0, riser on the deck end face; no overlap",
+        "bounds": [
+          [
+            -13.954526,
+            -7.18185,
+            5.437963
+          ],
+          [
+            -8.450895,
+            7.18185,
+            5.587963
+          ]
+        ],
+        "volume_m3": 0.372134792
+      },
+      "seat_1": {
+        "seat_top_z_m": 5.587963,
+        "seat_height_m": "0.037963 (crown) to 0.150000 (deck edges)",
+        "seat_station_range_u_m": [
+          11.064875,
+          11.340546
+        ],
+        "seat_width_m": "0.275671 along the station = 0.259046 normal to the skew, x 14.363700 across",
+        "seat_area_m2": 3.959657,
+        "gap_under_approach_mm": "37.963 (crown) to 150.000 (deck edges) -> 0",
+        "contacts": "bottom on support_3 top, top under approach_1, riser on the deck end face; no overlap",
+        "bounds": [
+          [
+            8.450895,
+            -7.18185,
+            5.437963
+          ],
+          [
+            13.954526,
+            7.18185,
+            5.587963
+          ]
+        ],
+        "volume_m3": 0.372134792
+      },
+      "wing_0_-1": {
+        "overlap_with_wall_m3": "0.529960 -> 0.000000000",
+        "notch_m": "0.425671 along the station x 0.300000 across (|Y| 6.881850 .. 7.181850) x 4.15 high",
+        "contacts": "wall back face (u = -11.340546) over |Y| 6.881850 .. 7.181850; wall end face (|Y| = 7.181850) over u -11.340546 .. -10.914875",
+        "vertices": "8 -> 12",
+        "bounds_before": [
+          [
+            -10.410086,
+            -7.33185,
+            1.25
+          ],
+          [
+            -8.2463,
+            -6.88185,
+            5.4
+          ]
+        ],
+        "bounds_after": [
+          [
+            -10.410086,
+            -7.33185,
+            1.25
+          ],
+          [
+            -8.2463,
+            -6.88185,
+            5.4
+          ]
+        ],
+        "volume_m3": "3.735 -> 3.205039469"
+      },
+      "wing_0_1": {
+        "overlap_with_wall_m3": "0.529961 -> 0.000000000",
+        "notch_m": "0.425671 along the station x 0.300000 across (|Y| 6.881850 .. 7.181850) x 4.15 high",
+        "contacts": "wall back face (u = -11.340546) over |Y| 6.881850 .. 7.181850; wall end face (|Y| = 7.181850) over u -11.340546 .. -10.914875",
+        "vertices": "8 -> 12",
+        "bounds_before": [
+          [
+            -15.58345,
+            6.88185,
+            1.25
+          ],
+          [
+            -13.419664,
+            7.33185,
+            5.4
+          ]
+        ],
+        "bounds_after": [
+          [
+            -15.58345,
+            6.88185,
+            1.25
+          ],
+          [
+            -13.528855,
+            7.33185,
+            5.4
+          ]
+        ],
+        "volume_m3": "3.735 -> 3.205039469"
+      },
+      "wing_1_-1": {
+        "overlap_with_wall_m3": "0.529961 -> 0.000000000",
+        "notch_m": "0.425671 along the station x 0.300000 across (|Y| 6.881850 .. 7.181850) x 4.15 high",
+        "contacts": "wall back face (u = +11.340546) over |Y| 6.881850 .. 7.181850; wall end face (|Y| = 7.181850) over u +10.914875 .. +11.340546",
+        "vertices": "8 -> 12",
+        "bounds_before": [
+          [
+            13.419664,
+            -7.33185,
+            1.25
+          ],
+          [
+            15.58345,
+            -6.88185,
+            5.4
+          ]
+        ],
+        "bounds_after": [
+          [
+            13.528855,
+            -7.33185,
+            1.25
+          ],
+          [
+            15.58345,
+            -6.88185,
+            5.4
+          ]
+        ],
+        "volume_m3": "3.735 -> 3.205039469"
+      },
+      "wing_1_1": {
+        "overlap_with_wall_m3": "0.529960 -> 0.000000000",
+        "notch_m": "0.425671 along the station x 0.300000 across (|Y| 6.881850 .. 7.181850) x 4.15 high",
+        "contacts": "wall back face (u = +11.340546) over |Y| 6.881850 .. 7.181850; wall end face (|Y| = 7.181850) over u +10.914875 .. +11.340546",
+        "vertices": "8 -> 12",
+        "bounds_before": [
+          [
+            8.2463,
+            6.88185,
+            1.25
+          ],
+          [
+            10.410086,
+            7.33185,
+            5.4
+          ]
+        ],
+        "bounds_after": [
+          [
+            8.2463,
+            6.88185,
+            1.25
+          ],
+          [
+            10.410086,
+            7.33185,
+            5.4
+          ]
+        ],
+        "volume_m3": "3.735 -> 3.205039469"
+      },
+      "basis": "no sheet shows the end bent, a seat, the wings or the approach slab section (sheet 3 general notes, sheet 4 location table, sheet 7 plan and deck-only typical section, sheet 8 quantities); seat level = assumed approach underside 6.0 - 0.0156 x 7.18185 - 0.30 = 5.587963 m; seat plan = the projection of the assumed 0.80 m end wall beyond the deck end; wings trimmed at the end-wall back and end faces"
+    },
+    "kept_deviations": [],
+    "decisions": [],
+    "before_glb_sha256": "1c4e8e0a463e20ce0fc038383d94a221630e897325a70649de4031985b0806d6",
+    "after_glb_sha256": "969db6e0252454589bdd876ef697242e433cd96998974e389ea07f6fc76951fb"
   }
 }

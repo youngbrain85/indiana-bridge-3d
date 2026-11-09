@@ -2732,7 +2732,7 @@
         15
       ],
       "basis": "Approximate external envelope",
-      "note": "Source 1 ft reconstructed mudwall. Lower retained portion, ledge and local top return simplify the source detail. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: rebuilt to sheet 11 (Section C-C, mudwall construction details) and sheet 15: 1 ft 0 in normal to the abutment from the Type I-A joint at the floor end to the span face at the PCF joint, top on the finished (overlay) surface with the crown; was 1 ft along Line \"A\" (0.87 ft normal) with a flat top 111 mm below the crown, under the deck end.",
+      "note": "Source 1 ft reconstructed mudwall. Lower retained portion and local top return simplify the source detail. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: rebuilt to sheet 11 (Section C-C, mudwall construction details) and sheet 15: 1 ft 0 in normal to the abutment from the Type I-A joint at the floor end to the span face at the PCF joint, top on the finished (overlay) surface with the crown; was 1 ft along Line \"A\" (0.87 ft normal) with a flat top 111 mm below the crown, under the deck end. Rev. 1.4: the existing 6 in pavement ledge on its back face is a separate part, pavement_ledge_1 (1985 sheet 5 Section A-A); this mesh is unchanged.",
       "dimensions": {
         "normal_width_m": 0.3048,
         "top": "finished surface, crowned 1.5625 % (flush with the overlay and the RCBA)",
@@ -3158,7 +3158,7 @@
         15
       ],
       "basis": "Approximate external envelope",
-      "note": "Source 1 ft reconstructed mudwall. Lower retained portion, ledge and local top return simplify the source detail. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: rebuilt to sheet 11 (Section C-C, mudwall construction details) and sheet 15: 1 ft 0 in normal to the abutment from the Type I-A joint at the floor end to the span face at the PCF joint, top on the finished (overlay) surface with the crown; was 1 ft along Line \"A\" (0.87 ft normal) with a flat top 111 mm below the crown, under the deck end.",
+      "note": "Source 1 ft reconstructed mudwall. Lower retained portion and local top return simplify the source detail. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: rebuilt to sheet 11 (Section C-C, mudwall construction details) and sheet 15: 1 ft 0 in normal to the abutment from the Type I-A joint at the floor end to the span face at the PCF joint, top on the finished (overlay) surface with the crown; was 1 ft along Line \"A\" (0.87 ft normal) with a flat top 111 mm below the crown, under the deck end. Rev. 1.4: the existing 6 in pavement ledge on its back face is a separate part, pavement_ledge_2 (1985 sheet 5 Section A-A); this mesh is unchanged.",
       "dimensions": {
         "normal_width_m": 0.3048,
         "top": "finished surface, crowned 1.5625 % (flush with the overlay and the RCBA)",
@@ -3612,12 +3612,13 @@
       "layer": "approaches",
       "color": "#bbc4c0",
       "pdf_pages": [
+        11,
         13,
         14,
         15
       ],
       "basis": "Dimensioned minimum length, width and thickness; skew-to-square plan",
-      "note": "Narrow corner curb and transition extensions are separate approximate envelopes. West slab 22 ft 0 in north / 22 ft 4 in south of Line A (sheet 14); top crowned 1.5625 % each side of Line A and flush with the bridge floor at the joint (sheets 3, 11, 15), was flat and 105 mm low at Line A. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east).",
+      "note": "Narrow corner curb and transition extensions are separate approximate envelopes. West slab 22 ft 0 in north / 22 ft 4 in south of Line A (sheet 14); top crowned 1.5625 % each side of Line A and flush with the bridge floor at the joint (sheets 3, 11, 15), was flat and 105 mm low at Line A. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.4: the end bears on the existing 6 in pavement ledge (pavement_ledge_1; sheet 11 Section C-C, sheet 15): thickened down to the ledge top, El. 830.51 (1985 sheet 5), from the root to 2 ft 0 in (6 in ledge + 1 ft 6 in, normal) behind the mudwall back face, then returning at 45 deg to the 1 ft 0 in soffit; the ledge is level and the top crowned, so the end is 14.3 to 18.8 in deep (\"Varies\" on sheets 11 and 15). It sits on the 9 in lean concrete base approach_base_-1. Was 1 ft 0 in throughout with nothing under the root. The 25 mm open joint at the root is kept (known_deviations rcba-root-joint).",
       "dimensions": {
         "min_length_m": 6.2484,
         "width_m": 13.512800000000002,
@@ -3625,13 +3626,20 @@
         "north_edge_offset_m": 6.7056,
         "south_edge_offset_m": 6.8072,
         "crossfall": 0.015625,
-        "grade": -0.002
+        "grade": -0.002,
+        "end_bearing": "pavement_ledge_1, top El. 830.51 (level)",
+        "end_flat_normal_m": 0.6096,
+        "end_return": "45 deg to the 1 ft 0 in soffit",
+        "end_depth_range_m": [
+          0.364376,
+          0.478599
+        ]
       },
       "bounds_m": [
         [
           -17.00923,
           -6.8072,
-          4.177424
+          4.117848
         ],
         [
           -2.959211,
@@ -3639,7 +3647,18 @@
           4.616686
         ]
       ],
-      "volume_m3": 41.801563201
+      "volume_m3": 43.041854029,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            6
+          ],
+          "detail": "Pvmt. Ledge El. 830.51 (Abut. 1, 1985 sheet 5) / 830.49 (Abut. 2, 1985 sheet 6): the RCBA end bearing level."
+        }
+      ]
     },
     {
       "id": "PCF_joint_-1",
@@ -3677,12 +3696,13 @@
       "layer": "approaches",
       "color": "#bbc4c0",
       "pdf_pages": [
+        11,
         13,
         14,
         15
       ],
       "basis": "Dimensioned minimum length, width and thickness; skew-to-square plan",
-      "note": "Narrow corner curb and transition extensions are separate approximate envelopes. East slab 22 ft 4 in north / 22 ft 0 in south of Line A, 22 ft 0 in under the NE extension (sheet 13); top crowned 1.5625 % each side of Line A and flush with the bridge floor at the joint (sheets 3, 11, 15), was flat and 105 mm low at Line A. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: the 4 in step of the north edge (22 ft 0 in under the NE extension, 22 ft 4 in beyond) is square with the extension far end, as drawn on sheet 13; was on the old skewed end.",
+      "note": "Narrow corner curb and transition extensions are separate approximate envelopes. East slab 22 ft 4 in north / 22 ft 0 in south of Line A, 22 ft 0 in under the NE extension (sheet 13); top crowned 1.5625 % each side of Line A and flush with the bridge floor at the joint (sheets 3, 11, 15), was flat and 105 mm low at Line A. Rev. 1.2: reflected to the drawn side, north = +Y, left of increasing station (sheets 7, 8: north arrow up, stations increasing to the east). Rev. 1.3: the 4 in step of the north edge (22 ft 0 in under the NE extension, 22 ft 4 in beyond) is square with the extension far end, as drawn on sheet 13; was on the old skewed end. Rev. 1.4: the end bears on the existing 6 in pavement ledge (pavement_ledge_2; sheet 11 Section C-C, sheet 15): thickened down to the ledge top, El. 830.49 (1985 sheet 6), from the root to 2 ft 0 in (6 in ledge + 1 ft 6 in, normal) behind the mudwall back face, then returning at 45 deg to the 1 ft 0 in soffit; the ledge is level and the top crowned, so the end is 13.6 to 18.0 in deep (\"Varies\" on sheets 11 and 15). It sits on the 9 in lean concrete base approach_base_1. Was 1 ft 0 in throughout with nothing under the root. The 25 mm open joint at the root is kept (known_deviations rcba-root-joint).",
       "dimensions": {
         "min_length_m": 6.2484,
         "width_m": 13.512800000000002,
@@ -3692,13 +3712,20 @@
         "crossfall": 0.015625,
         "grade": -0.002,
         "edge_under_ne_extension_offset_m": 6.7056,
-        "step_under_ne_extension": "square with the extension far end"
+        "step_under_ne_extension": "square with the extension far end",
+        "end_bearing": "pavement_ledge_2, top El. 830.49 (level)",
+        "end_flat_normal_m": 0.6096,
+        "end_return": "45 deg to the 1 ft 0 in soffit",
+        "end_depth_range_m": [
+          0.344619,
+          0.457137
+        ]
       },
       "bounds_m": [
         [
           3.01787,
           -6.7056,
-          4.137487
+          4.111752
         ],
         [
           17.00923,
@@ -3706,7 +3733,18 @@
           4.568889
         ]
       ],
-      "volume_m3": 41.653533808
+      "volume_m3": 42.639699222,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            6
+          ],
+          "detail": "Pvmt. Ledge El. 830.51 (Abut. 1, 1985 sheet 5) / 830.49 (Abut. 2, 1985 sheet 6): the RCBA end bearing level."
+        }
+      ]
     },
     {
       "id": "PCF_joint_1",
@@ -3916,6 +3954,170 @@
       ],
       "volume_m3": 0.392212319,
       "approximation": true
+    },
+    {
+      "id": "pavement_ledge_1",
+      "name": "Abutment 1 existing pavement ledge",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        15
+      ],
+      "basis": "Dimensioned section and elevation (1985 plans); existing, retained",
+      "note": "Existing 6 in pavement ledge on the back face of the Abutment 1 mudwall, on which the 2026 RCBA bears (sheet 11 mudwall plan \"Ex. 6 in Pav't Ledge\" and Section C-C; sheet 15 Typical Section Through Approach). 1985 sheet 5 Section A-A: 6 in wide (normal to the abutment) and 1 ft 0 in deep behind the 1 ft mudwall, whose rear face is flush with the cap; top level at \"Pvmt. Ledge El. 830.51\" (1985 sheet 5 elevation). It runs from the south end of the mudwall (23 ft 4 in) to the inner face of the acute-corner north (Wing A) root leg (22 ft 1 in), which occupies the corner. The 2026 sheets sketch a 45 deg underside below it (undimensioned reference linework); the 1985 construction section, a rectangle, is used. The reinforcement and the 1/2 in x 2 in preformed filler on its top (sheet 15) are not modelled.",
+      "dimensions": {
+        "width_normal_m": 0.1524,
+        "depth_m": 0.3048,
+        "top_el_ft": 830.51,
+        "top_z_m": 4.117848,
+        "front_face": "mudwall back face (floor end), u = -6.864350",
+        "y_extent_m": [
+          -7.112,
+          6.731
+        ]
+      },
+      "bounds_m": [
+        [
+          -10.926471,
+          -7.112,
+          3.813048
+        ],
+        [
+          -2.758235,
+          6.731,
+          4.117848
+        ]
+      ],
+      "volume_m3": 0.74250523,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            6
+          ],
+          "detail": "1985 sheet 5 Section A-A (6 in x 1 ft 0 in ledge) and the \"Pvmt. Ledge El.\" of the sheet 5 (Abut. 1, 830.51) and sheet 6 (Abut. 2, 830.49) elevations."
+        }
+      ]
+    },
+    {
+      "id": "pavement_ledge_2",
+      "name": "Abutment 2 existing pavement ledge",
+      "layer": "abutments",
+      "color": "#c59a54",
+      "pdf_pages": [
+        11,
+        15
+      ],
+      "basis": "Dimensioned section and elevation (1985 plans); existing, retained",
+      "note": "Existing 6 in pavement ledge on the back face of the Abutment 2 mudwall, on which the 2026 RCBA bears (sheet 11 mudwall plan \"Ex. 6 in Pav't Ledge\" and Section C-C; sheet 15 Typical Section Through Approach). 1985 sheet 5 Section A-A: 6 in wide (normal to the abutment) and 1 ft 0 in deep behind the 1 ft mudwall, whose rear face is flush with the cap; top level at \"Pvmt. Ledge El. 830.49\" (1985 sheet 6 elevation). It runs from the north end of the mudwall (23 ft 4 in) to the inner face of the acute-corner south (Wing D) root leg (22 ft 1 in), which occupies the corner. The 2026 sheets sketch a 45 deg underside below it (undimensioned reference linework); the 1985 construction section, a rectangle, is used. The reinforcement and the 1/2 in x 2 in preformed filler on its top (sheet 15) are not modelled.",
+      "dimensions": {
+        "width_normal_m": 0.1524,
+        "depth_m": 0.3048,
+        "top_el_ft": 830.49,
+        "top_z_m": 4.111752,
+        "front_face": "mudwall back face (floor end), u = +6.864350",
+        "y_extent_m": [
+          -6.731,
+          7.112
+        ]
+      },
+      "bounds_m": [
+        [
+          2.758235,
+          -6.731,
+          3.806952
+        ],
+        [
+          10.926471,
+          7.112,
+          4.111752
+        ]
+      ],
+      "volume_m3": 0.74250523,
+      "approximation": true,
+      "supplementary_sources": [
+        {
+          "document_id": "9548292",
+          "local_file": "sources/existing_plans_9548292.pdf",
+          "pdf_pages": [
+            5,
+            6
+          ],
+          "detail": "1985 sheet 5 Section A-A (6 in x 1 ft 0 in ledge) and the \"Pvmt. Ledge El.\" of the sheet 5 (Abut. 1, 830.51) and sheet 6 (Abut. 2, 830.49) elevations."
+        }
+      ]
+    },
+    {
+      "id": "approach_base_-1",
+      "name": "West approach lean concrete base",
+      "layer": "approaches",
+      "color": "#a9b1ad",
+      "pdf_pages": [
+        8,
+        13,
+        14,
+        15
+      ],
+      "basis": "Dimensioned thickness (sheet 15); plan of the RCBA",
+      "note": "9 in lean concrete base under the west RCBA (sheet 8 scope: \"new RCBA on Lean Concrete Base on Geotextiles for Pavement, Type 2B\"; sheet 15 Typical Section Through Approach and bill of materials: Lean Concrete Base, 9 In., the same area as the 12 in RCBA). From the back face of the existing pavement ledge to the square far end of the slab, under the slab plan of sheets 13-14 (22 ft 0 in north / 22 ft 4 in south of Line \"A\"). Top on the slab soffit, including the thickened end over the ledge and its 45 deg return; bottom parallel to the slab, 9 in below its 1 ft 0 in soffit, so it is thinner under the thickened end as sheet 15 draws it. Geotextile and polyethylene layers are not modelled; not under the RCBA extensions.",
+      "dimensions": {
+        "thickness_below_normal_soffit_m": 0.2286,
+        "start": "back face of the pavement ledge, u = -7.040326",
+        "far_end_x_m": -17.00923,
+        "crossfall": 0.015625,
+        "grade": -0.002
+      },
+      "bounds_m": [
+        [
+          -17.00923,
+          -6.8072,
+          3.949126
+        ],
+        [
+          -3.110188,
+          6.7056,
+          4.311886
+        ]
+      ],
+      "volume_m3": 29.891576847
+    },
+    {
+      "id": "approach_base_1",
+      "name": "East approach lean concrete base",
+      "layer": "approaches",
+      "color": "#a9b1ad",
+      "pdf_pages": [
+        8,
+        13,
+        14,
+        15
+      ],
+      "basis": "Dimensioned thickness (sheet 15); plan of the RCBA",
+      "note": "9 in lean concrete base under the east RCBA (sheet 8 scope: \"new RCBA on Lean Concrete Base on Geotextiles for Pavement, Type 2B\"; sheet 15 Typical Section Through Approach and bill of materials: Lean Concrete Base, 9 In., the same area as the 12 in RCBA). From the back face of the existing pavement ledge to the square far end of the slab, under the slab plan of sheets 13-14 (22 ft 4 in north, 22 ft 0 in under the NE extension, / 22 ft 0 in south of Line \"A\"). Top on the slab soffit, including the thickened end over the ledge and its 45 deg return; bottom parallel to the slab, 9 in below its 1 ft 0 in soffit, so it is thinner under the thickened end as sheet 15 draws it. Geotextile and polyethylene layers are not modelled; not under the RCBA extensions.",
+      "dimensions": {
+        "thickness_below_normal_soffit_m": 0.2286,
+        "start": "back face of the pavement ledge, u = +7.040326",
+        "far_end_x_m": 17.00923,
+        "crossfall": 0.015625,
+        "grade": -0.002
+      },
+      "bounds_m": [
+        [
+          3.168846,
+          -6.7056,
+          3.908887
+        ],
+        [
+          17.00923,
+          6.8072,
+          4.262383
+        ]
+      ],
+      "volume_m3": 29.993189746
     }
   ],
   "layers": {
@@ -3970,11 +4172,12 @@
     {
       "feature": "Historical support and framing topology",
       "status": "approximate",
-      "detail": "Twelve retained Type 7B bearing envelopes, end/interior concrete diaphragms, both solid abutments, shallow footings and four flared wings. Historical source is explicitly supplemental. Rev. 1.3: acute wings A/D with the root leg, kink and F-F top and the 2026 removal; obtuse wings B/C rooted at the coping corner on the abutment front face, battered (1985 sheets 5-7, sheet 10).",
+      "detail": "Twelve retained Type 7B bearing envelopes, end/interior concrete diaphragms, both solid abutments, shallow footings and four flared wings. Historical source is explicitly supplemental. Rev. 1.3: acute wings A/D with the root leg, kink and F-F top and the 2026 removal; obtuse wings B/C rooted at the coping corner on the abutment front face, battered (1985 sheets 5-7, sheet 10). Rev. 1.4: existing 6 in x 1 ft 0 in pavement ledges behind both mudwalls, tops El. 830.51 / 830.49 (1985 sheets 5-6).",
       "sources": [
         "Primary PDF p.8",
         "Primary PDF p.9",
-        "Primary PDF p.11"
+        "Primary PDF p.11",
+        "Primary PDF p.15"
       ],
       "part_ids": [
         "B1_bearing_1",
@@ -4025,13 +4228,15 @@
         "footing_2",
         "mudwall_2",
         "wing_1_-1",
-        "wing_1_1"
+        "wing_1_1",
+        "pavement_ledge_1",
+        "pavement_ledge_2"
       ]
     },
     {
       "feature": "2026 exterior repair design",
       "status": "modeled_with_simplifications",
-      "detail": "All twelve beam ends receive nominal wrap skins; reconstructed mudwalls, PCF strips, two approaches, three TFC transition envelopes, and retained midspan drain outlets. TFC sections follow sheet 12 C-C to F-F; mid-span drains are open 2 in cores through the slab (sheet 9; revision 1.2). Rev. 1.3: deck and overlay end at the PCF joints with the 1 ft mudwall top flush between the joints; new FC railings (5 ft 9 5/8 in NW/SE, 7 ft 10 5/8 in NE) and the NW/SE TFCs and extensions at the sheet 12 stations (sheets 10-14).",
+      "detail": "All twelve beam ends receive nominal wrap skins; reconstructed mudwalls, PCF strips, two approaches, three TFC transition envelopes, and retained midspan drain outlets. TFC sections follow sheet 12 C-C to F-F; mid-span drains are open 2 in cores through the slab (sheet 9; revision 1.2). Rev. 1.3: deck and overlay end at the PCF joints with the 1 ft mudwall top flush between the joints; new FC railings (5 ft 9 5/8 in NW/SE, 7 ft 10 5/8 in NE) and the NW/SE TFCs and extensions at the sheet 12 stations (sheets 10-14). Rev. 1.4: the RCBA ends bear on the existing 6 in pavement ledges, thickened to the ledge top with a 45 deg return, on 9 in lean concrete bases (sheets 11, 15).",
       "sources": [
         "Primary PDF p.8",
         "Primary PDF p.9",
@@ -4070,7 +4275,9 @@
         "midspan_drain_1",
         "FC_railing_-1_-1",
         "FC_railing_1_1",
-        "FC_railing_1_-1"
+        "FC_railing_1_-1",
+        "approach_base_-1",
+        "approach_base_1"
       ]
     },
     {
@@ -4103,14 +4310,21 @@
     },
     {
       "id": "ne-corner-wingwall-root",
-      "parts": "FC_railing_1_-1, wing_1_-1, extension_1_-1",
+      "parts": "FC_railing_1_-1, wing_1_-1, extension_1_-1, pavement_ledge_2",
       "source": "sheet 12 Section B-B and NE railing elevation; sheet 13; sheet 10 removal plan; 1985 sheet 6",
-      "deviation": "At the NE corner the square TFC and RCBA extension start at the floor end on the 22 ft 0 in line (sheet 13), so between the skewed mudwall back face and that square end (up to 0.23 m along the railing back face) the new 7 ft 10 5/8 in railing has nothing under its back half. Sheet 12 Section B-B shows the existing wingwall there, and sheet 10 traces Wing C back to the floor end, but the 1985 plan (which the model follows for Wing C) starts the wing at the coping line.",
-      "reason": "The outline of the existing wingwall root behind the mudwall at the NE corner is not dimensioned on either set; a field survey of the NE corner (or the pre-1985 plans) would settle it."
+      "deviation": "At the NE corner the square TFC and RCBA extension start at the floor end on the 22 ft 0 in line (sheet 13), so between the skewed mudwall back face and that square end (up to 0.23 m along the railing back face) the new 7 ft 10 5/8 in railing has nothing under its back half. Sheet 12 Section B-B shows the existing wingwall there, and sheet 10 traces Wing C back to the floor end, but the 1985 plan (which the model follows for Wing C) starts the wing at the coping line. Rev. 1.4: the square end of the RCBA extension also passes 53 mm over the back corner of pavement_ledge_2 (a 0.03 m2 triangle in plan); the main slab beside it is thickened onto the ledge (sheet 15), the 1 ft extension is not.",
+      "reason": "The outline of the existing wingwall root behind the mudwall at the NE corner is not dimensioned on either set; a field survey of the NE corner (or the pre-1985 plans) would settle it. Whether the extension end is thickened onto the ledge like the RCBA is on Standard Drawing E 609-TBAE (sheet 15 note 4), which is not in the set either."
+    },
+    {
+      "id": "rcba-root-joint",
+      "parts": "approach_-1, approach_1, mudwall_1, mudwall_2, pavement_ledge_1, pavement_ledge_2",
+      "source": "sheet 15 Typical Section Through Approach (Type I-A joint, preformed fillers; note 3: Standard E 609-RCBA); sheet 11 Section C-C",
+      "deviation": "Each slab root keeps the generator's 25 mm open joint along Line \"A\" (21.7 mm normal) to the mudwall back face and bears on the ledge from there; sheet 15 draws the RCBA end against the mudwall with a 1/2 in x 4 in preformed expansion joint filler at its foot, the Type I-A joint at the top and a 1/2 in x 2 in preformed filler on the back edge of the ledge, none of them modelled.",
+      "reason": "Sheet 15 is a typical section (1/2 in = 1 ft) that gives the filler sizes but not the joint opening or where each filler sits; those are on Standard Drawing E 609-RCBA (sheet 15 note 3), which is not in the set. E 609-RCBA would settle the joint; the slab lengths and the RCBA extensions measured from the root are unaffected either way."
     }
   ],
   "drawing_review_correction": "review-barrier-line-tfc-height-approach-crown-offsets-obtuse-wings",
-  "revision": "1.3-deviations",
+  "revision": "1.4-3d-review",
   "drawing_review_correction_record": {
     "source_pdf_pages": [
       3,
@@ -4894,5 +5108,170 @@
     "frame": "revision 1.2 frame: X east, Y north (left of increasing station), Z up, Z = 0 at El. 817.00",
     "before_glb_sha256": "f17de4574e3b36acd99294fe7814195c81d44c163aae8e492cb9d7fb02336d50",
     "after_glb_sha256": "fca5059995d5bca8d5e66dda9ece8f761e4b1679960443246361daf038ddc9e6"
+  },
+  "review_correction_3d": "3d-review-pavement-ledges-rcba-ends-lean-base",
+  "review_correction_record_3d": {
+    "review": "3D model review, finding S01 (physical plausibility of the assembled model)",
+    "source_pdf_pages": [
+      8,
+      11,
+      13,
+      14,
+      15
+    ],
+    "printed_sheets": [
+      8,
+      11,
+      13,
+      14,
+      15
+    ],
+    "supplementary_source": {
+      "document_id": "9548292",
+      "local_file": "sources/existing_plans_9548292.pdf",
+      "pdf_pages": [
+        5,
+        6
+      ]
+    },
+    "previous_revision": "1.3-deviations",
+    "findings": {
+      "S01": "RESOLVE - pavement ledges added; RCBA ends thickened onto them (sheets 11 C-C, 15); 9 in lean concrete bases added (sheet 15)"
+    },
+    "decisions": [
+      {
+        "id": "ledge-elevation",
+        "reading": "written 1985 \"Pvmt. Ledge El.\" 830.51 (Abut. 1, 1985 sheet 5) and 830.49 (Abut. 2, 1985 sheet 6), one level per abutment",
+        "rejected": "depth scaled from the 2026 sections: sheet 11 Section C-C draws 1 ft 4 1/2 in at the cut (about 1 in less than El. 830.51 gives there), sheet 15 about 1 ft 2 in (typical)",
+        "reasoning": "The 2026 sheets mark the depth \"Varies\" and give no value (C-C draws its 1 ft 6 in as 1 ft 5 in) and their existing details are based on the existing plans (sheet 8 general note 2); the 1985 elevations are the only written values for the existing ledge the 2026 RCBA bears on."
+      },
+      {
+        "id": "ledge-section",
+        "reading": "1985 sheet 5 Section A-A: 6 in x 1 ft 0 in rectangle",
+        "rejected": "45 deg underside sketched below the ledge in the existing (grey) linework of sheets 11 C-C and 15",
+        "reasoning": "Section A-A is the construction drawing of the ledge and dimensions it; the 2026 linework is undimensioned and, by sheet 8 general note 2, based on the existing plans and for reference only."
+      }
+    ],
+    "kept_deviations": [
+      "rcba-root-joint"
+    ],
+    "values": {
+      "ledge_width_normal_m": 0.1524,
+      "ledge_depth_m": 0.3048,
+      "rcba_flat_end_normal_m": 0.6096,
+      "lean_base_m": 0.2286,
+      "root_gap_u_m": 0.025,
+      "root_gap_normal_m": 0.021651,
+      "parts": {
+        "pavement_ledge_1": {
+          "top_el_ft": 830.51,
+          "top_z_m": 4.117848,
+          "u_m": [
+            -7.040326,
+            -6.86435
+          ],
+          "y_m": [
+            -7.112,
+            6.731
+          ]
+        },
+        "pavement_ledge_2": {
+          "top_el_ft": 830.49,
+          "top_z_m": 4.111752,
+          "u_m": [
+            6.86435,
+            7.040326
+          ],
+          "y_m": [
+            -6.731,
+            7.112
+          ]
+        },
+        "approach_-1": {
+          "thickening_volume_m3": 1.240294,
+          "ledge_top_z_m": 4.117848,
+          "end_depth_m": {
+            "y=-6.8072": 0.364376,
+            "y=+0.0000": 0.478599,
+            "y=+6.7056": 0.381567
+          },
+          "return_end_normal_m": {
+            "y=-6.8072": 0.670675,
+            "y=+0.0000": 0.785162,
+            "y=+6.7056": 0.687905
+          }
+        },
+        "approach_base_-1": {
+          "start_u_m": -7.040326,
+          "far_end_x_m": -17.00923,
+          "y_m": [
+            -6.8072,
+            6.7056
+          ],
+          "volume_m3": 29.891577
+        },
+        "approach_1": {
+          "thickening_volume_m3": 0.986165,
+          "ledge_top_z_m": 4.111752,
+          "end_depth_m": {
+            "y=-6.7056": 0.344619,
+            "y=+0.0000": 0.457137,
+            "y=+6.7056": 0.360105
+          },
+          "return_end_normal_m": {
+            "y=-6.7056": 0.647973,
+            "y=+0.0000": 0.760232,
+            "y=+6.7056": 0.663423
+          }
+        },
+        "approach_base_1": {
+          "start_u_m": 7.040326,
+          "far_end_x_m": 17.00923,
+          "y_m": [
+            -6.7056,
+            6.8072
+          ],
+          "volume_m3": 29.99319
+        }
+      },
+      "contacts": {
+        "approach_-1": {
+          "max_gap_slab_ledge_m": 0.0,
+          "bearing_strip_normal_m": 0.130749,
+          "bearing_strip_length_m": 15.603237,
+          "bearing_area_m2": 2.0401
+        },
+        "approach_1": {
+          "max_gap_slab_ledge_m": 0.0,
+          "bearing_strip_normal_m": 0.130749,
+          "bearing_strip_length_m": 15.48592,
+          "bearing_area_m2": 2.0248
+        }
+      },
+      "contact_overlaps_m3": {
+        "approach_-1|approach_base_-1": 6.8e-07,
+        "approach_1|approach_base_1": 6.04e-06
+      }
+    },
+    "changed_parts": [
+      "approach_-1",
+      "approach_1"
+    ],
+    "added_parts": [
+      "approach_base_-1",
+      "approach_base_1",
+      "pavement_ledge_1",
+      "pavement_ledge_2"
+    ],
+    "removed_parts": [],
+    "notes_updated": [
+      "mudwall_1",
+      "mudwall_2",
+      "known_deviations: ne-corner-wingwall-root"
+    ],
+    "source_ledger_change": null,
+    "frame": "revision 1.2 frame: X east, Y north (left of increasing station), Z up, Z = 0 at El. 817.00",
+    "before_glb_sha256": "fca5059995d5bca8d5e66dda9ece8f761e4b1679960443246361daf038ddc9e6",
+    "after_glb_sha256": "3319dbee4c7c38aa0045b41cde28fef2d0f69547706673b3435916343ee99803"
   }
 }

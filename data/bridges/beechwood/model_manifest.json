@@ -18223,7 +18223,7 @@
         50
       ],
       "basis": "Detailed exterior geometry",
-      "note": "Physical longitudinal saw grooves and 3/4 in diameter half-round underside drip grooves. Groove nominal width/depth/pitch from 2022 INDOT revision; contract special provisions not supplied.",
+      "note": "Physical longitudinal saw grooves and 3/4 in diameter half-round underside drip grooves. Groove nominal width/depth/pitch from 2022 INDOT revision; contract special provisions not supplied. Underside crowned 2 % parallel to the top, 8 in thick throughout (sheets 45, 46); it was a flat chord between the drip grooves, 11.83 in thick at the crown (3D review, revision 2.3-3d-review).",
       "dimensions": {
         "length_ft": 252,
         "width_ft": 33,
@@ -18233,7 +18233,8 @@
         "groove_depth_in": 0.1875,
         "groove_pitch_in": 0.75,
         "drip_diameter_in": 0.75,
-        "drip_offset_in": 6
+        "drip_offset_in": 6,
+        "underside_crossfall_pct": 2
       },
       "color": "#c9d1d4",
       "bounds_m": [
@@ -18248,7 +18249,7 @@
           12.761418
         ]
       ],
-      "volume_m3": 192.798006,
+      "volume_m3": 156.405109,
       "external_references": []
     },
     {
@@ -18458,107 +18459,139 @@
     },
     {
       "id": "b1_drain_0",
-      "name": "6 in end-bent drain collector / outlet",
+      "name": "6 in end-bent drain collector",
       "layer": "drainage",
       "sheets": [
+        30,
         32,
-        33
+        33,
+        35,
+        51
       ],
       "pdf_pages": [
+        31,
         33,
-        34
+        34,
+        36,
+        52
       ],
-      "basis": "Drawing diameter/quantity; selected routing",
-      "note": "58/56 ft total centreline, 1% grade and one outlet route selected from typical backfill detail. Final outlet route and pipe wall depend on site/product.",
+      "basis": "Drawing diameter and quantity; E 211-BFIL-04 route",
+      "note": "Rev. 2.4-3d-review-2 (3D review 2): along the back of End Bent 1 from the end cap 1/2 in inside Wing B and under Wing A (crown 6 in below its bottom, El. 424.34, at its inner face; E 211-BFIL-04 \"exits under wingwall\", 6 in (min.)) to a 45 degree bend 5 ft beyond the wing, falling 3.81 % (the cap end kept at the modelled level beside the bent, sheet 32 Section A-A). It ran 34 ft at 1 % with both ends 5 in into the wings. Routed with the outlet: 51.4 ft against 58 LFT drawn (sheets 30, 51). Pipe product (perforated PVC or Type SP tubing, 2022 Standard Specifications 715.02(h)) and wall selected.",
       "dimensions": {
         "inside_diameter_in": 6,
         "selected_wall_in": 0.2,
-        "length_ft": 34.001699957502126
+        "length_ft": 38.925390036236394,
+        "fall_pct": 3.812,
+        "crown_below_wing_bottom_in": 6,
+        "bend_beyond_wing_ft": 5.0
       },
       "color": "#66878b",
       "bounds_m": [
         [
-          -0.995676,
-          -5.182413,
-          10.434328
+          -0.99568,
+          -6.823395,
+          10.084625
         ],
         [
-          -0.833124,
-          5.182413,
-          10.700504
+          -0.83312,
+          5.038646,
+          10.698997
         ]
       ],
-      "volume_m3": 0.025972,
+      "volume_m3": 0.029733,
       "external_references": [
         "E211-BFIL-04"
       ]
     },
     {
       "id": "b1_drain_1",
-      "name": "6 in end-bent drain collector / outlet",
+      "name": "6 in end-bent drain outlet",
       "layer": "drainage",
       "sheets": [
+        30,
+        31,
         32,
-        33
+        33,
+        35,
+        51,
+        58,
+        60
       ],
       "pdf_pages": [
+        31,
+        32,
         33,
-        34
+        34,
+        36,
+        52,
+        59,
+        61
       ],
-      "basis": "Drawing diameter/quantity; selected routing",
-      "note": "58/56 ft total centreline, 1% grade and one outlet route selected from typical backfill detail. Final outlet route and pipe wall depend on site/product.",
+      "basis": "Drawing diameter and quantity; E 211-BFIL-04 route; outlet length selected",
+      "note": "Rev. 2.4-3d-review-2 (3D review 2): from the 45 degree bend 5 ft beyond Wing A toward the span (north-east) at 1 %, to daylight on the spill slope in front of the bent, beside the riprap envelope (mouth at Sta. 105+01.66, 31.2 ft right, invert El. 422.97); the plans wrap the Class 1 riprap round the wing to about 26-31 ft right (sheet 31). It ran 24 ft straight back into the approach fill (crown El. 424.53 at the mouth). The bend position and the outlet length are not dimensioned; no outlet protector is given for end bent drains.",
       "dimensions": {
         "inside_diameter_in": 6,
         "selected_wall_in": 0.2,
-        "length_ft": 24.0011999700015
+        "length_ft": 12.043436285188328,
+        "fall_pct": 1.0,
+        "plan_angle_to_bent_deg": 45,
+        "mouth_invert_el_ft": 422.972
       },
       "color": "#66878b",
       "bounds_m": [
         [
-          -8.230413,
-          -5.26288,
-          10.361172
+          -0.927224,
+          -9.581069,
+          10.044827
         ],
         [
-          -0.913587,
-          -5.10032,
-          10.596876
+          1.783269,
+          -6.870576,
+          10.244085
         ]
       ],
-      "volume_m3": 0.018334,
+      "volume_m3": 0.009199,
       "external_references": [
         "E211-BFIL-04"
       ]
     },
     {
       "id": "b1_drain_elbow",
-      "name": "Drain socket elbow",
+      "name": "Drain socket elbow, 45 degree",
       "layer": "drainage",
       "sheets": [
         32,
-        33
+        33,
+        35
       ],
       "pdf_pages": [
         33,
-        34
+        34,
+        36
       ],
-      "basis": "Selected fitting envelope",
-      "note": "Fitting shape requires the selected pipe supplier.",
-      "dimensions": {},
+      "basis": "Selected fitting envelope; E 211-BFIL-04 bend",
+      "note": "Rev. 2.4-3d-review-2 (3D review 2): the \"45 (max.) Bend, If Required\" of E 211-BFIL-04, 5 ft beyond Wing A; it was a 90 degree corner fitting inside the wing. Socket envelope (6 in centreline radius, 2 in sockets, 6.7 in outside) selected; the shape depends on the pipe supplier.",
+      "dimensions": {
+        "plan_deflection_deg": 45,
+        "deflection_deg": 45.014,
+        "centreline_radius_in": 6,
+        "socket_length_in": 2,
+        "socket_outside_diameter_in": 6.701
+      },
       "color": "#66878b",
       "bounds_m": [
         [
-          -0.952734,
-          -5.26669,
-          10.43051
+          -0.9995,
+          -7.024144,
+          10.077206
         ],
         [
-          -0.82931,
-          -5.143266,
-          10.60069
+          -0.773656,
+          -6.766294,
+          10.252819
         ]
       ],
-      "volume_m3": 0.000307,
+      "volume_m3": 0.00074,
       "external_references": [
         "E211-BFIL-04"
       ]
@@ -18569,134 +18602,173 @@
       "layer": "drainage",
       "sheets": [
         32,
-        33
+        33,
+        35
       ],
       "pdf_pages": [
         33,
-        34
+        34,
+        36
       ],
-      "basis": "Selected fitting envelope",
-      "note": "",
-      "dimensions": {},
-      "color": "#66878b",
-      "bounds_m": [
-        [
-          -0.99568,
-          5.1816,
-          10.537952
-        ],
-        [
-          -0.83312,
-          5.18795,
-          10.700512
-        ]
-      ],
-      "volume_m3": 0.000131,
-      "external_references": []
-    },
-    {
-      "id": "b4_drain_0",
-      "name": "6 in end-bent drain collector / outlet",
-      "layer": "drainage",
-      "sheets": [
-        32,
-        33
-      ],
-      "pdf_pages": [
-        33,
-        34
-      ],
-      "basis": "Drawing diameter/quantity; selected routing",
-      "note": "58/56 ft total centreline, 1% grade and one outlet route selected from typical backfill detail. Final outlet route and pipe wall depend on site/product.",
+      "basis": "Selected fitting envelope; E 211-BFIL-04 end cap",
+      "note": "Rev. 2.4-3d-review-2 (3D review 2): on the collector's high end 1/2 in inside Wing B (E 211-BFIL-04 End Cap); it lay inside the wing. 1/4 in disc, normal to the pipe.",
       "dimensions": {
-        "inside_diameter_in": 6,
-        "selected_wall_in": 0.2,
-        "length_ft": 34.001699957502126
+        "thickness_in": 0.25,
+        "clearance_to_wing_in": 0.5
       },
       "color": "#66878b",
       "bounds_m": [
         [
-          77.033124,
-          -5.182413,
-          7.172968
+          -0.99568,
+          5.032454,
+          10.536554
         ],
         [
-          77.195676,
-          5.182413,
-          7.439144
+          -0.83312,
+          5.044991,
+          10.699239
         ]
       ],
-      "volume_m3": 0.025972,
+      "volume_m3": 0.000131,
+      "external_references": [
+        "E211-BFIL-04"
+      ]
+    },
+    {
+      "id": "b4_drain_0",
+      "name": "6 in end-bent drain collector",
+      "layer": "drainage",
+      "sheets": [
+        30,
+        32,
+        33,
+        35,
+        51
+      ],
+      "pdf_pages": [
+        31,
+        33,
+        34,
+        36,
+        52
+      ],
+      "basis": "Drawing diameter and quantity; E 211-BFIL-04 route",
+      "note": "Rev. 2.4-3d-review-2 (3D review 2): along the back of End Bent 4 from the end cap 1/2 in inside Wing C and under Wing D (crown 6 in below its bottom, El. 413.64, at its inner face; E 211-BFIL-04 \"exits under wingwall\", 6 in (min.)) to a 45 degree bend 5 ft beyond the wing, falling 3.81 % (the cap end kept at the modelled level beside the bent, sheet 32 Section A-A). It ran 34 ft at 1 % with both ends 5 in into the wings. Routed with the outlet: 54.1 ft against 56 LFT drawn (sheets 30, 51). Pipe product (perforated PVC or Type SP tubing, 2022 Standard Specifications 715.02(h)) and wall selected.",
+      "dimensions": {
+        "inside_diameter_in": 6,
+        "selected_wall_in": 0.2,
+        "length_ft": 38.925390036236394,
+        "fall_pct": 3.812,
+        "crown_below_wing_bottom_in": 6,
+        "bend_beyond_wing_ft": 5.0
+      },
+      "color": "#66878b",
+      "bounds_m": [
+        [
+          77.033119,
+          -6.823395,
+          6.823265
+        ],
+        [
+          77.195679,
+          5.038646,
+          7.437636
+        ]
+      ],
+      "volume_m3": 0.029736,
       "external_references": [
         "E211-BFIL-04"
       ]
     },
     {
       "id": "b4_drain_1",
-      "name": "6 in end-bent drain collector / outlet",
+      "name": "6 in end-bent drain outlet",
       "layer": "drainage",
       "sheets": [
+        30,
+        31,
         32,
-        33
+        33,
+        35,
+        51,
+        58,
+        60
       ],
       "pdf_pages": [
+        31,
+        32,
         33,
-        34
+        34,
+        36,
+        52,
+        59,
+        61
       ],
-      "basis": "Drawing diameter/quantity; selected routing",
-      "note": "58/56 ft total centreline, 1% grade and one outlet route selected from typical backfill detail. Final outlet route and pipe wall depend on site/product.",
+      "basis": "Drawing diameter and quantity; E 211-BFIL-04 route; outlet length selected",
+      "note": "Rev. 2.4-3d-review-2 (3D review 2): from the 45 degree bend 5 ft beyond Wing D toward the span (south-east) at 1 %, to daylight on the spill slope in front of the bent, beside the riprap envelope (mouth at Sta. 107+38.39, 33.2 ft right, invert El. 412.25); the plans wrap the Class 1 riprap round the wing to about 26-31 ft right (sheet 31). It ran 22 ft straight back into the approach fill (crown El. 413.85 at the mouth). The bend position and the outlet length are not dimensioned; no outlet protector is given for end bent drains.",
       "dimensions": {
         "inside_diameter_in": 6,
         "selected_wall_in": 0.2,
-        "length_ft": 22.001099972501386
+        "length_ft": 14.793573781751006,
+        "fall_pct": 1.0,
+        "plan_angle_to_bent_deg": 45,
+        "mouth_invert_el_ft": 412.245
       },
       "color": "#66878b",
       "bounds_m": [
         [
-          77.113587,
-          -5.26288,
-          7.105908
+          73.824036,
+          -10.173766,
+          6.775084
         ],
         [
-          83.820813,
-          -5.10032,
-          7.335516
+          77.127228,
+          -6.870576,
+          6.982725
         ]
       ],
-      "volume_m3": 0.016806,
+      "volume_m3": 0.011301,
       "external_references": [
         "E211-BFIL-04"
       ]
     },
     {
       "id": "b4_drain_elbow",
-      "name": "Drain socket elbow",
+      "name": "Drain socket elbow, 45 degree",
       "layer": "drainage",
       "sheets": [
         32,
-        33
+        33,
+        35
       ],
       "pdf_pages": [
         33,
-        34
+        34,
+        36
       ],
-      "basis": "Selected fitting envelope",
-      "note": "Fitting shape requires the selected pipe supplier.",
-      "dimensions": {},
+      "basis": "Selected fitting envelope; E 211-BFIL-04 bend",
+      "note": "Rev. 2.4-3d-review-2 (3D review 2): the \"45 (max.) Bend, If Required\" of E 211-BFIL-04, 5 ft beyond Wing D; it was a 90 degree corner fitting inside the wing. Socket envelope (6 in centreline radius, 2 in sockets, 6.7 in outside) selected; the shape depends on the pipe supplier.",
+      "dimensions": {
+        "plan_deflection_deg": 45,
+        "deflection_deg": 45.014,
+        "centreline_radius_in": 6,
+        "socket_length_in": 2,
+        "socket_outside_diameter_in": 6.701
+      },
       "color": "#66878b",
       "bounds_m": [
         [
-          77.029312,
-          -5.26669,
-          7.16915
+          76.973656,
+          -7.024144,
+          6.815845
         ],
         [
-          77.152733,
-          -5.143265,
-          7.33933
+          77.199501,
+          -6.766294,
+          6.991459
         ]
       ],
-      "volume_m3": 0.000307,
+      "volume_m3": 0.00074,
       "external_references": [
         "E211-BFIL-04"
       ]
@@ -18707,30 +18779,37 @@
       "layer": "drainage",
       "sheets": [
         32,
-        33
+        33,
+        35
       ],
       "pdf_pages": [
         33,
-        34
+        34,
+        36
       ],
-      "basis": "Selected fitting envelope",
-      "note": "",
-      "dimensions": {},
+      "basis": "Selected fitting envelope; E 211-BFIL-04 end cap",
+      "note": "Rev. 2.4-3d-review-2 (3D review 2): on the collector's high end 1/2 in inside Wing C (E 211-BFIL-04 End Cap); it lay inside the wing. 1/4 in disc, normal to the pipe.",
+      "dimensions": {
+        "thickness_in": 0.25,
+        "clearance_to_wing_in": 0.5
+      },
       "color": "#66878b",
       "bounds_m": [
         [
-          77.03312,
-          5.1816,
-          7.276592
+          77.033119,
+          5.032454,
+          7.275195
         ],
         [
-          77.19568,
-          5.18795,
-          7.439152
+          77.195679,
+          5.044991,
+          7.437879
         ]
       ],
       "volume_m3": 0.000131,
-      "external_references": []
+      "external_references": [
+        "E211-BFIL-04"
+      ]
     },
     {
       "id": "marking_center",
@@ -20522,7 +20601,7 @@
       "external_references": []
     }
   ],
-  "revision": "2.2-wing-profile",
+  "revision": "2.4-3d-review-2",
   "detail_coverage": [
     {
       "feature": "HP12×84 section",
@@ -21010,17 +21089,22 @@
     },
     {
       "feature": "Abutment drain pipe",
-      "status": "Includes selected positions and routing",
+      "status": "Standard route (E 211-BFIL-04); bend position and outlet length selected",
       "sources": [
-        "32,33",
-        "E211-BFIL-04"
+        "30-33,35,51,58,60",
+        "E211-BFIL-04",
+        "INDOT 2022 Standard Specifications 715, 718"
       ],
-      "detail": "Includes 6 in hollow pipe, elbows, end caps and open outlets. One route represents drawing quantities of 58/56 ft; no confirmed site routing plan is available.",
+      "detail": "6 in pipe along the back of each end bent from an end cap inside the west wing, exiting under the east wing with its crown 6 in below the wing bottom, then a 45 degree bend toward the span and a 1 % outlet to daylight on the spill slope (E 211-BFIL-04). Routed 51.4 / 54.1 ft against 58 / 56 LFT drawn. No grading plan fixes the mouth; no outlet protector applies.",
       "part_ids": [
         "b1_drain_0",
         "b1_drain_1",
+        "b1_drain_elbow",
+        "b1_drain_cap",
         "b4_drain_0",
-        "b4_drain_1"
+        "b4_drain_1",
+        "b4_drain_elbow",
+        "b4_drain_cap"
       ]
     },
     {
@@ -21182,6 +21266,16 @@
     {
       "id": "INDOT 2022 grooving revision",
       "url": "https://www.in.gov/dot/div/contracts/standards/sc/2022/jan/SC_Approved%20Minutes%20220120.pdf"
+    },
+    {
+      "id": "INDOT 2022 Standard Specifications",
+      "url": "https://www.in.gov/dot/div/contracts/standards/book/sep21/2022%20Standard%20Specifications.pdf",
+      "edition": "2022"
+    },
+    {
+      "id": "E718-UNDR",
+      "url": "https://www.in.gov/dot/div/contracts/standards/drawings/sep22/700e/e700%20combined%20pdfs/E718-UNDR.pdf",
+      "edition": "September 2022 archive"
     }
   ],
   "geometry_correction": "column-spacing-22ft",
@@ -21248,5 +21342,421 @@
       "deviation": "Tapered top plate is 1 in thick at its centre (about 0.88-1.13 in at its ends); the plan gives 1 in to 1 1/4 in, about 1 1/8 in at the centre.",
       "reason": "The bearing stack is closed between the seat (El. 427.34 / 416.64) and the beam sole plate, both set from plan elevations; the plates are encased in Pour B and are not inspectable."
     }
-  ]
+  ],
+  "review_correction_3d": "deck-underside-crowned-8in",
+  "review_correction_record_3d": {
+    "source_pdf_pages": [
+      46,
+      47
+    ],
+    "printed_sheets": [
+      45,
+      46
+    ],
+    "previous_revision": "2.2-wing-profile",
+    "changed_parts": [
+      "deck"
+    ],
+    "added_parts": [],
+    "removed_parts": [],
+    "resolved": {
+      "S1": "Deck underside crowned 2 % parallel to the top: 8 in (0.2032 m) thick across the whole width, was a flat chord between the drip-groove inner edges (Y = -/+4.867275 m), 0.3005 m thick at the crown; it no longer fills the haunches, beam tops, pier diaphragm tops or Pour B tops, which were already fitted to the crowned underside (sheets 45, 46)."
+    },
+    "decisions": [],
+    "kept": [],
+    "values": {
+      "crown_thickness_m": {
+        "before": 0.300546,
+        "after": 0.2032
+      },
+      "removed_volume_m3": 36.392897,
+      "deck_volume_m3": {
+        "before": 192.798006,
+        "after": 156.405109
+      },
+      "chord_stations": 20,
+      "overlaps_with_deck": {
+        "haunch_A1": {
+          "before_m3": 0.527745,
+          "after_m3": 2e-06,
+          "max_penetration_mm": 0.001,
+          "max_gap_to_soffit_mm": 0.0
+        },
+        "haunch_A2": {
+          "before_m3": 1.297737,
+          "after_m3": 2e-06,
+          "max_penetration_mm": 0.001,
+          "max_gap_to_soffit_mm": 0.0
+        },
+        "haunch_A3": {
+          "before_m3": 1.297737,
+          "after_m3": 3e-06,
+          "max_penetration_mm": 0.001,
+          "max_gap_to_soffit_mm": 0.0
+        },
+        "haunch_A4": {
+          "before_m3": 0.527745,
+          "after_m3": 2e-06,
+          "max_penetration_mm": 0.001,
+          "max_gap_to_soffit_mm": 0.0
+        },
+        "haunch_B1": {
+          "before_m3": 0.588571,
+          "after_m3": 2e-06,
+          "max_penetration_mm": 0.001,
+          "max_gap_to_soffit_mm": 0.0
+        },
+        "haunch_B2": {
+          "before_m3": 1.655376,
+          "after_m3": 3e-06,
+          "max_penetration_mm": 0.001,
+          "max_gap_to_soffit_mm": 0.0
+        },
+        "haunch_B3": {
+          "before_m3": 1.655376,
+          "after_m3": 3e-06,
+          "max_penetration_mm": 0.001,
+          "max_gap_to_soffit_mm": 0.0
+        },
+        "haunch_B4": {
+          "before_m3": 0.588571,
+          "after_m3": 2e-06,
+          "max_penetration_mm": 0.001,
+          "max_gap_to_soffit_mm": 0.0
+        },
+        "haunch_C1": {
+          "before_m3": 0.527743,
+          "after_m3": 1.6e-05,
+          "max_penetration_mm": 0.009,
+          "max_gap_to_soffit_mm": 0.012
+        },
+        "haunch_C2": {
+          "before_m3": 1.230429,
+          "after_m3": 1.6e-05,
+          "max_penetration_mm": 0.009,
+          "max_gap_to_soffit_mm": 0.012
+        },
+        "haunch_C3": {
+          "before_m3": 1.230429,
+          "after_m3": 1.6e-05,
+          "max_penetration_mm": 0.009,
+          "max_gap_to_soffit_mm": 0.012
+        },
+        "haunch_C4": {
+          "before_m3": 0.527743,
+          "after_m3": 1.5e-05,
+          "max_penetration_mm": 0.009,
+          "max_gap_to_soffit_mm": 0.012
+        },
+        "girder_A1": {
+          "before_m3": 0.0,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 24.334
+        },
+        "girder_A2": {
+          "before_m3": 0.853847,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 22.673
+        },
+        "girder_A3": {
+          "before_m3": 0.853847,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 22.673
+        },
+        "girder_A4": {
+          "before_m3": 0.0,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 24.334
+        },
+        "girder_B1": {
+          "before_m3": 0.0,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 24.197
+        },
+        "girder_B2": {
+          "before_m3": 0.744204,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 24.734
+        },
+        "girder_B3": {
+          "before_m3": 0.744204,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 24.734
+        },
+        "girder_B4": {
+          "before_m3": 0.0,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 24.197
+        },
+        "girder_C1": {
+          "before_m3": 0.0,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 23.378
+        },
+        "girder_C2": {
+          "before_m3": 0.921153,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 22.863
+        },
+        "girder_C3": {
+          "before_m3": 0.921153,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 22.863
+        },
+        "girder_C4": {
+          "before_m3": 0.0,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0,
+          "min_clearance_to_soffit_mm": 23.378
+        },
+        "b2_diaphragm": {
+          "before_m3": 0.269162,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.001
+        },
+        "b3_diaphragm": {
+          "before_m3": 0.276823,
+          "after_m3": 1e-06,
+          "max_penetration_mm": 0.001
+        },
+        "b1_integral": {
+          "before_m3": 0.227491,
+          "after_m3": 0.0,
+          "max_penetration_mm": 0.0
+        },
+        "b4_integral": {
+          "before_m3": 0.227665,
+          "after_m3": 0.000166,
+          "max_penetration_mm": 0.042
+        }
+      }
+    },
+    "before_glb_sha256": "4ae98985d7c34cb74533dfb73170679169cf1dd75d1ecd214baa518d21945803",
+    "after_glb_sha256": "3d87af59b10ddfe9021a3c4dff47f3c282aae37684440e96bafc5dc2c47ddf1b"
+  },
+  "review_correction_3d_2": "end-bent-drains-exit-under-east-wings",
+  "review_correction_record_3d_2": {
+    "review": "3D review, round 2",
+    "follows": "deck-underside-crowned-8in",
+    "previous_revision": "2.3-3d-review",
+    "source_pdf_pages": [
+      31,
+      32,
+      33,
+      34,
+      36,
+      52,
+      59,
+      61
+    ],
+    "printed_sheets": [
+      30,
+      31,
+      32,
+      33,
+      35,
+      51,
+      58,
+      60
+    ],
+    "external_sources": [
+      "E211-BFIL-04",
+      "INDOT 2022 Standard Specifications 715.02(h), 715.13, 718.06",
+      "E718-UNDR-01 to -07"
+    ],
+    "native_axes": "X station increasing (north), +Y left looking up-station (west), Z up from El. 390 ft; GLB (X, Z, -Y) through the node matrices",
+    "findings": [
+      {
+        "id": "D1",
+        "verdict": "resolve",
+        "summary": "The two 6 in end-bent drain outlets ran 24 ft / 22 ft straight back from the bents at Y = -5.1816 m and stopped in the approach embankment (about 2.2 m / 1.6 m of fill over the mouths); the cap, both collector ends, the elbows and the first 2.3 m / 2.0 m of the outlets lay inside the wings. Now each drain exits under the east wing with its crown 6 in below the wing bottom, turns 45 degrees toward the span 5 ft beyond the wing and runs at 1 % to daylight on the spill slope",
+        "basis": "E 211-BFIL-04 PLAN and ELEVATION - END BENT (\"End bent drain pipe exits under wingwall. Slope to drain.\", 6 in (min.), \"45 (max.) Bend, If Required\", End Cap); sheets 32, 33 Section A-A (pipe behind the bent in the backfill aggregate); sheet 35 (wing bottoms); sheets 30, 51 (58 / 56 LFT); sheet 31 (berms, 2:1 spill slopes, Class 1 riprap round the wings); sheets 58, 60 (2:1 east side slopes at 105+00 and 107+50)"
+      }
+    ],
+    "decisions": [
+      "Outlet on the east (-Y, downstream) side and cap on the west side at both bents, as modelled; the plans do not fix the side. At End Bent 1 the east side is the low side (section 105+00: existing ground about El. 422 east, 431 west). End Bent 4 could also drain west: section 107+50 draws a 2:1 riprapped fill slope west of Wing C falling to El. 400.5 at 55 ft left, which a straight outlet under Wing C would meet about 31 ft left without a bend. The east side is kept there because its route also reaches the outlet level on the drawings (existing ground at the mouth within about 0.1 ft of the invert, see below) and the viewer's terrain has no valley west of the bent (it would cover a west mouth by about 0.5 m).",
+      "The collector keeps its modelled line (1 ft 6 in behind the back face) and its level at the cap end (6.1 in above the bent bottom; sheet 32 Section A-A draws the pipe beside the bent above its bottom) and falls straight to the crown 6 in below the east wing bottom at the wing's inner face (E 211-BFIL-04 6 in (min.)): 3.81 % at both bents. E 211-BFIL-04 only says \"Slope to drain\"; the 1 % of the old route is kept for the outlet.",
+      "The cap end is 1/2 in inside the west wing (selected); E 211-BFIL-04 draws the End Cap just inside the wing.",
+      "The 45 degree bend is 5 ft beyond the east wing's outer face (E 211-BFIL-04 draws it just outside the wing, not to scale; selected) and turns toward the front of the bent, as the standard plan draws it. It is required: going straight on, the pipe stays under the approach fill (behind End Bent 1 the ground rises to the approach, section 104+50) or meets ground above its invert (section 107+50: El. 412.9 and higher east of Wing D). With the bend 1 ft 6 in out, the outlet's plan centre would lie in front of the bent face, where the viewer's illustrative terrain (terrain.js) treats drainage parts as hanging and cuts the ground under them.",
+      "The outlet runs 12 ft 3 in (End Bent 1) / 15 ft 0 in (End Bent 4) in plan from the bend, to where its invert meets the spill slope represented in front of the bent, beside the riprap envelope (selected; no grading plan or outlet location is drawn). On the terrain the viewer builds from the model the ground at the mouths is El. 422.90 / 412.18 and the inverts are 0.02 m above it. No grading is drawn at the bent corners: interpolated between the drawn sections the existing ground at the mouths is about El. 422.3 (section 105+00, 31 ft right; invert El. 422.97) and El. 412.4 (sections 107+00 and 107+50, 33 ft right; invert El. 412.25); on section 105+00 the 2:1 slope east of the berm reaches the south invert level 24 ft right of the centre line, about 7 ft short of the modelled mouth. The model's riprap envelope stops 24 ft right, where the plan limits wrap round the wings to about 26-31 ft.",
+      "Routed lengths stay below the drawn 58 / 56 LFT; the plans do not show where the remainder goes.",
+      "No outlet protector, headwall or splash pad: neither the plans (no pay item) nor E 211-BFIL-04 give one for end bent drains; outlet protectors (2022 Standard Specifications 718.06, E 718-UNDR-04 to -07) are for underdrain outlets.",
+      "Elbow envelope (6 in centreline radius, 2 in sockets, 6.7 in outside diameter as the old elbow) and the 1/4 in cap are selected fitting envelopes; pipe wall 0.2 in as modelled."
+    ],
+    "kept": [
+      "Pipe diameter, wall, collector line, cap-end level, outlet side and the 1 % outlet grade."
+    ],
+    "changed_parts": [
+      "b1_drain_0",
+      "b1_drain_1",
+      "b1_drain_cap",
+      "b1_drain_elbow",
+      "b4_drain_0",
+      "b4_drain_1",
+      "b4_drain_cap",
+      "b4_drain_elbow"
+    ],
+    "added_parts": [],
+    "removed_parts": [],
+    "values": {
+      "end_bent_1": {
+        "route_axis_points_m": {
+          "cap_end": [
+            -0.9144,
+            5.0356,
+            10.6178
+          ],
+          "under_wing_inner_face": [
+            -0.9144,
+            -5.0546,
+            10.2332
+          ],
+          "bend": [
+            -0.9144,
+            -6.8834,
+            10.1634
+          ],
+          "mouth": [
+            1.7258,
+            -9.5236,
+            10.1261
+          ]
+        },
+        "collector_fall_pct": 3.812,
+        "outlet_fall_pct": 1.0,
+        "elbow_deflection_deg": 45.014,
+        "crown_below_wing_bottom_in": {
+          "before": -5.17,
+          "after": 6.0
+        },
+        "routed_centreline_ft": {
+          "before": 58.003,
+          "after": 51.383,
+          "drawn": 58,
+          "after_parts": {
+            "collector_to_bend": 39.133,
+            "bend_to_mouth": 12.251
+          }
+        },
+        "mouth": {
+          "before": {
+            "x_m": -8.2296,
+            "y_m": -5.1816,
+            "invert_z_m": 10.3663,
+            "crown_z_m": 10.5237,
+            "invert_el_ft": 424.01,
+            "crown_el_ft": 424.527
+          },
+          "after": {
+            "x_m": 1.7258,
+            "y_m": -9.5236,
+            "station": "105+01.66",
+            "offset_ft_right": 31.25,
+            "invert_z_m": 10.0499,
+            "crown_z_m": 10.2074,
+            "invert_el_ft": 422.972,
+            "crown_el_ft": 423.489
+          }
+        },
+        "clashes_with_structure_m3": {
+          "before": {
+            "b1_drain_0 / b1_wing_L": 0.0003183,
+            "b1_drain_0 / b1_wing_R": 0.0002285,
+            "b1_drain_1 / b1_wing_R": 0.003771,
+            "b1_drain_elbow / b1_wing_R": 0.0002316,
+            "b1_drain_cap / b1_wing_L": 0.0001309
+          },
+          "after": {}
+        },
+        "socket_overlaps_m3": {}
+      },
+      "end_bent_4": {
+        "route_axis_points_m": {
+          "cap_end": [
+            77.1144,
+            5.0356,
+            7.3564
+          ],
+          "under_wing_inner_face": [
+            77.1144,
+            -5.0546,
+            6.9718
+          ],
+          "bend": [
+            77.1144,
+            -6.8834,
+            6.9021
+          ],
+          "mouth": [
+            73.8815,
+            -10.1163,
+            6.8564
+          ]
+        },
+        "collector_fall_pct": 3.812,
+        "outlet_fall_pct": 1.0,
+        "elbow_deflection_deg": 45.014,
+        "crown_below_wing_bottom_in": {
+          "before": -5.17,
+          "after": 6.0
+        },
+        "routed_centreline_ft": {
+          "before": 56.003,
+          "after": 54.133,
+          "drawn": 56,
+          "after_parts": {
+            "collector_to_bend": 39.133,
+            "bend_to_mouth": 15.001
+          }
+        },
+        "mouth": {
+          "before": {
+            "x_m": 83.82,
+            "y_m": -5.1816,
+            "invert_z_m": 7.111,
+            "crown_z_m": 7.2685,
+            "invert_el_ft": 413.33,
+            "crown_el_ft": 413.847
+          },
+          "after": {
+            "x_m": 73.8815,
+            "y_m": -10.1163,
+            "station": "107+38.39",
+            "offset_ft_right": 33.19,
+            "invert_z_m": 6.7802,
+            "crown_z_m": 6.9376,
+            "invert_el_ft": 412.245,
+            "crown_el_ft": 412.761
+          }
+        },
+        "clashes_with_structure_m3": {
+          "before": {
+            "b4_drain_0 / b4_wing_L": 0.0003183,
+            "b4_drain_0 / b4_wing_R": 0.0002285,
+            "b4_drain_1 / b4_wing_R": 0.0033024,
+            "b4_drain_elbow / b4_wing_R": 0.0002316,
+            "b4_drain_cap / b4_wing_L": 0.0001309
+          },
+          "after": {}
+        },
+        "socket_overlaps_m3": {
+          "b4_drain_0 / b4_drain_elbow": 1e-09,
+          "b4_drain_1 / b4_drain_elbow": 9e-09
+        }
+      }
+    },
+    "before_glb_sha256": "3d87af59b10ddfe9021a3c4dff47f3c282aae37684440e96bafc5dc2c47ddf1b",
+    "after_glb_sha256": "947a6b4927f0be47e04d5f2f734cf449907a394a64248ebca1e2c8b88801b318"
+  }
 }

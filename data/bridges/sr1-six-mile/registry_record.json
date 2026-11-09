@@ -24,7 +24,7 @@
     "thumbnail": "bridges/sr1-six-mile/preview.png",
     "deck_length_m": 22.12975,
     "spans": 3,
-    "components": 24,
+    "components": 26,
     "revision": "2026 overlay envelope / hypothetical structural scaffold v1",
     "scope": "Drawing-backed surface envelope with explicitly assumed structural thickness and supports.",
     "detail_status": "needs_detail",

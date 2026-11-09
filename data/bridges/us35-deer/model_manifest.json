@@ -1081,24 +1081,31 @@
       "pdf_pages": [
         13,
         14,
-        15
+        15,
+        17
       ],
       "basis": "Approximate external envelope",
-      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Outer end follows the bent, moved 7 in along its line, sheet 13. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14). Rev. 1.3: end-side face moved from 0.38 m behind the bent centre line to the deck end (q = -17.8943), 11.7 mm, so the closure concrete stops at the face against which the approach slab is cast (sheet 15 sections A-A to C-C).",
-      "dimensions": {},
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Outer end follows the bent, moved 7 in along its line, sheet 13. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14). Rev. 1.3: end-side face moved from 0.38 m behind the bent centre line to the deck end (q = -17.8943), 11.7 mm, so the closure concrete stops at the face against which the approach slab is cast (sheet 15 sections A-A to C-C). Rev. 1.4 (3D review S01): inside the 1 ft column of Wing B (Y = 6.1968 to 6.5016 m) the bay rises from the deck soffit to the wing top (El. 851.45 at the bent centre line, +2.35 %), taking over the root of the wing above the deck soffit (0.0618 m3); the wing part now starts at the back face of the bent. Sheet 14 draws the bent up to the wing T/El. at its ends; sheet 17 bills only the projection as wingwall.",
+      "dimensions": {
+        "wing_column_y_m": [
+          6.196847,
+          6.501647
+        ],
+        "wing_column_top_el_at_bent_cl_ft": 851.45
+      },
       "bounds_m": [
         [
-          -16.482074,
+          -16.482073,
           5.2705,
           2.645789
         ],
         [
           -15.179081,
           6.501647,
-          4.191537
+          4.386004
         ]
       ],
-      "volume_m3": 1.828061763,
+      "volume_m3": 1.889840518,
       "approximation": true
     },
     {
@@ -1196,24 +1203,31 @@
       "pdf_pages": [
         13,
         14,
-        15
+        15,
+        17
       ],
       "basis": "Approximate external envelope",
-      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Outer end follows the bent, moved 7 in along its line, sheet 13. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14). Rev. 1.3: end-side face moved from 0.38 m behind the bent centre line to the deck end (q = -17.8943), 11.7 mm, so the closure concrete stops at the face against which the approach slab is cast (sheet 15 sections A-A to C-C).",
-      "dimensions": {},
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Outer end follows the bent, moved 7 in along its line, sheet 13. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14). Rev. 1.3: end-side face moved from 0.38 m behind the bent centre line to the deck end (q = -17.8943), 11.7 mm, so the closure concrete stops at the face against which the approach slab is cast (sheet 15 sections A-A to C-C). Rev. 1.4 (3D review S01): inside the 1 ft column of Wing A (Y = -6.1582 to -5.8534 m) the bay rises from the deck soffit to the wing top (El. 851.21 at the bent centre line, +2.35 %), taking over the root of the wing above the deck soffit (0.0611 m3); the wing part now starts at the back face of the bent. Sheet 14 draws the bent up to the wing T/El. at its ends; sheet 17 bills only the projection as wingwall.",
+      "dimensions": {
+        "wing_column_y_m": [
+          -6.158164,
+          -5.853364
+        ],
+        "wing_column_top_el_at_bent_cl_ft": 851.21
+      },
       "bounds_m": [
         [
-          -19.544375,
+          -19.544374,
           -6.158164,
           2.645789
         ],
         [
           -18.333418,
           -5.2705,
-          4.125163
+          4.312853
         ]
       ],
-      "volume_m3": 1.257913972,
+      "volume_m3": 1.319033304,
       "approximation": true
     },
     {
@@ -1224,11 +1238,13 @@
       "pdf_pages": [
         12,
         13,
+        14,
         15,
+        17,
         25
       ],
       "basis": "Drawn 9 in pavement ledge strip (sheet 15 sections A-A to C-C, sheet 25 pavement ledge detail); top at the 14 in slab soffit under the slab and extension",
-      "note": "Nominal rear closure strip. Skew beam-end copes and ledge details are unresolved. Ends moved with the bent, 7 in along its line, sheet 13. Top crowned with a centre-line vertex, at soffit level as before revision 1.1 (the flat top left a gap of up to 24.9 mm below the crowned approach slab), sheets 12, 25. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14). Rev. 1.3: rebuilt over the drawn 9\" pavement ledge, from the back face of the bent (q = -18.130808, flush with the cap) to the deck end (q = -17.8943), where the closure bays now stop (sheet 15: 9\" + 1'-2\" + 1'-11\"). Its top is the ledge at the soffit of the 14\" slab (12\" + 2\" over the ledge), 0.3556 m below the crowned surface, for Y = -5.8420 to 5.7658 m under the approach slab, its extension and the curb, so the slab bears on it instead of cutting into it (sheet 25 pavement ledge detail); beyond that toward the bent ends it stays at the deck soffit (the model's rule). Was 0.39-0.60 m behind the bent centre line with its top at the deck soffit throughout. The 1/2\" expanded polystyrene fillers are not modelled.",
+      "note": "Nominal rear closure strip. Skew beam-end copes and ledge details are unresolved. Ends moved with the bent, 7 in along its line, sheet 13. Top crowned with a centre-line vertex, at soffit level as before revision 1.1 (the flat top left a gap of up to 24.9 mm below the crowned approach slab), sheets 12, 25. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14). Rev. 1.3: rebuilt over the drawn 9\" pavement ledge, from the back face of the bent (q = -18.130808, flush with the cap) to the deck end (q = -17.8943), where the closure bays now stop (sheet 15: 9\" + 1'-2\" + 1'-11\"). Its top is the ledge at the soffit of the 14\" slab (12\" + 2\" over the ledge), 0.3556 m below the crowned surface, for Y = -5.8420 to 5.7658 m under the approach slab, its extension and the curb, so the slab bears on it instead of cutting into it (sheet 25 pavement ledge detail); beyond that toward the bent ends it stays at the deck soffit (the model's rule). Was 0.39-0.60 m behind the bent centre line with its top at the deck soffit throughout. The 1/2\" expanded polystyrene fillers are not modelled. Rev. 1.4 (3D review S01): inside the 1 ft wing columns at both bent ends (Y = -6.1582 to -5.8534 and 6.1968 to 6.5016 m) the strip rises to the wing tops, taking over the root of the wings above its former top (0.0299 m3); the wing parts now start at the back face of the bent and bear on it (sheets 14, 17).",
       "dimensions": {
         "crowned_top": true,
         "q_limits_m": [
@@ -1239,21 +1255,31 @@
           -5.842,
           5.7658
         ],
-        "ledge_width_normal_m": 0.2286
+        "ledge_width_normal_m": 0.2286,
+        "wing_columns_y_m": [
+          [
+            -6.158164,
+            -5.853364
+          ],
+          [
+            6.196847,
+            6.501647
+          ]
+        ]
       },
       "bounds_m": [
         [
-          -19.780883,
+          -19.780884,
           -6.158164,
           2.645789
         ],
         [
           -16.152189,
           6.501647,
-          4.161882
+          4.363137
         ]
       ],
-      "volume_m3": 4.162839021,
+      "volume_m3": 4.192701468,
       "approximation": true
     },
     {
@@ -1449,16 +1475,23 @@
         25
       ],
       "basis": "Approximate external envelope",
-      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified. Wing B: 12 ft measured from the span-face corner of the bent to the tip (the model had started the 12 ft at the bearing line, 0.6048 m too long); outer face on the bent end, moved with the bent 7 in along its line. Sheets 13 and 17. Top El. 851.45 at the bent centre line (sheets 14, 17 T/El.; was 0.095 m lower), straight at +2.35 % to El. 851.215 at the tip, where it meets the approach slab and extension at the coping line (\"Match Top of RCBA Elevation\", sheets 11, 17, 25). Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
+      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified. Wing B: 12 ft measured from the span-face corner of the bent to the tip (the model had started the 12 ft at the bearing line, 0.6048 m too long); outer face on the bent end, moved with the bent 7 in along its line. Sheets 13 and 17. Top El. 851.45 at the bent centre line (sheets 14, 17 T/El.; was 0.095 m lower), straight at +2.35 % to El. 851.215 at the tip, where it meets the approach slab and extension at the coping line (\"Match Top of RCBA Elevation\", sheets 11, 17, 25). Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14). Rev. 1.4 (3D review S01): the part now runs from the back face of the bent (q = -18.130808 m) to the unchanged tip, 2.4480 m (8'-0 3/8\") along the roadway: the projection that sheet 17 bills as wingwall concrete (5.7 CY for two wingwalls; this projection gives 5.70 CY for Wings C and D and 5.54 CY for Wings A and B). The drawn wall is still 12'-0\" from the tip to the span-face corner of the bent (sheets 13, 17); its root inside the 3'-10\" bent is end-bent concrete (sheet 14 draws the bent up to the wing T/El. at its ends) and is modelled by cap_1, integral_infill_0_0 and backwall_0. Before, the root (1.0754 m3) shared 0.9987 m3 with them and its outer face lay on the cap end face.",
       "dimensions": {
-        "length_m": 3.6576,
+        "length_m": 2.447983,
         "thickness_m": 0.3048,
-        "length_basis": "tip to span-face corner of the bent, parallel to the roadway",
+        "length_basis": "modelled part: back face of the bent to the tip, parallel to the roadway (the projection billed on sheet 17)",
         "projection_beyond_back_face_m": 2.447983,
         "plan_name": "Wing B",
         "top_el_at_bent_cl_ft": 851.45,
         "top_el_at_tip_ft": 851.215,
-        "top_grade": "+2.35 % along the roadway, level across the wall"
+        "top_grade": "+2.35 % along the roadway, level across the wall",
+        "drawn_length_m": 3.6576,
+        "drawn_length_basis": "tip to span-face corner of the bent, parallel to the roadway (sheets 13, 17); the root inside the bent is modelled with the bent",
+        "root_parts": [
+          "cap_1",
+          "integral_infill_0_0",
+          "backwall_0"
+        ]
       },
       "bounds_m": [
         [
@@ -1467,12 +1500,12 @@
           1.453896
         ],
         [
-          -15.179081,
+          -16.388697,
           6.501647,
-          4.386005
+          4.357579
         ]
       ],
-      "volume_m3": 3.219835335,
+      "volume_m3": 2.144389358,
       "approximation": true
     },
     {
@@ -1488,16 +1521,23 @@
         25
       ],
       "basis": "Approximate external envelope",
-      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified. Wing A: 12 ft measured from the span-face corner of the bent to the tip (the model had started the 12 ft at the bearing line, 0.6048 m too long); outer face on the bent end, moved with the bent 7 in along its line. Sheets 13 and 17. Top El. 851.21 at the bent centre line (sheets 14, 17 T/El.; was 0.093 m lower), straight at +2.35 % to El. 850.975 at the tip, where it meets the approach slab and extension at the coping line (\"Match Top of RCBA Elevation\", sheets 11, 17, 25). Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
+      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified. Wing A: 12 ft measured from the span-face corner of the bent to the tip (the model had started the 12 ft at the bearing line, 0.6048 m too long); outer face on the bent end, moved with the bent 7 in along its line. Sheets 13 and 17. Top El. 851.21 at the bent centre line (sheets 14, 17 T/El.; was 0.093 m lower), straight at +2.35 % to El. 850.975 at the tip, where it meets the approach slab and extension at the coping line (\"Match Top of RCBA Elevation\", sheets 11, 17, 25). Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14). Rev. 1.4 (3D review S01): the part now runs from the back face of the bent (q = -18.130808 m) to the unchanged tip, 2.4480 m (8'-0 3/8\") along the roadway: the projection that sheet 17 bills as wingwall concrete (5.7 CY for two wingwalls; this projection gives 5.70 CY for Wings C and D and 5.54 CY for Wings A and B). The drawn wall is still 12'-0\" from the tip to the span-face corner of the bent (sheets 13, 17); its root inside the 3'-10\" bent is end-bent concrete (sheet 14 draws the bent up to the wing T/El. at its ends) and is modelled by cap_1, integral_infill_0_8 and backwall_0. Before, the root (1.0485 m3) shared 0.9725 m3 with them and its outer face lay on the cap end face.",
       "dimensions": {
-        "length_m": 3.6576,
+        "length_m": 2.447983,
         "thickness_m": 0.3048,
-        "length_basis": "tip to span-face corner of the bent, parallel to the roadway",
+        "length_basis": "modelled part: back face of the bent to the tip, parallel to the roadway (the projection billed on sheet 17)",
         "projection_beyond_back_face_m": 2.447983,
         "plan_name": "Wing A",
         "top_el_at_bent_cl_ft": 851.21,
         "top_el_at_tip_ft": 850.975,
-        "top_grade": "+2.35 % along the roadway, level across the wall"
+        "top_grade": "+2.35 % along the roadway, level across the wall",
+        "drawn_length_m": 3.6576,
+        "drawn_length_basis": "tip to span-face corner of the bent, parallel to the roadway (sheets 13, 17); the root inside the bent is modelled with the bent",
+        "root_parts": [
+          "cap_1",
+          "integral_infill_0_8",
+          "backwall_0"
+        ]
       },
       "bounds_m": [
         [
@@ -1506,12 +1546,12 @@
           1.453896
         ],
         [
-          -18.489595,
+          -19.699213,
           -5.853364,
-          4.312853
+          4.284427
         ]
       ],
-      "volume_m3": 3.138287851,
+      "volume_m3": 2.089808977,
       "approximation": true
     },
     {
@@ -1666,11 +1706,18 @@
       "pdf_pages": [
         13,
         14,
-        15
+        15,
+        17
       ],
       "basis": "Approximate external envelope",
-      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Outer end follows the bent, moved 7 in along its line, sheet 13. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14). Rev. 1.3: end-side face moved from 0.38 m behind the bent centre line to the deck end (q = +17.8943), 11.7 mm, so the closure concrete stops at the face against which the approach slab is cast (sheet 15 sections A-A to C-C).",
-      "dimensions": {},
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Outer end follows the bent, moved 7 in along its line, sheet 13. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14). Rev. 1.3: end-side face moved from 0.38 m behind the bent centre line to the deck end (q = +17.8943), 11.7 mm, so the closure concrete stops at the face against which the approach slab is cast (sheet 15 sections A-A to C-C). Rev. 1.4 (3D review S01): inside the 1 ft column of Wing D (Y = 5.8534 to 6.1582 m) the bay rises from the deck soffit to the wing top (El. 854.16 at the bent centre line, +2.35 %), taking over the root of the wing above the deck soffit (0.0611 m3); the wing part now starts at the back face of the bent. Sheet 14 draws the bent up to the wing T/El. at its ends; sheet 17 bills only the projection as wingwall.",
+      "dimensions": {
+        "wing_column_y_m": [
+          5.853364,
+          6.158164
+        ],
+        "wing_column_top_el_at_bent_cl_ft": 854.16
+      },
       "bounds_m": [
         [
           18.333418,
@@ -1678,12 +1725,12 @@
           3.475861
         ],
         [
-          19.544375,
+          19.544374,
           6.158164,
-          5.009701
+          5.206455
         ]
       ],
-      "volume_m3": 1.309790039,
+      "volume_m3": 1.370851152,
       "approximation": true
     },
     {
@@ -1781,11 +1828,18 @@
       "pdf_pages": [
         13,
         14,
-        15
+        15,
+        17
       ],
       "basis": "Approximate external envelope",
-      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Outer end follows the bent, moved 7 in along its line, sheet 13. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14). Rev. 1.3: end-side face moved from 0.38 m behind the bent centre line to the deck end (q = +17.8943), 11.7 mm, so the closure concrete stops at the face against which the approach slab is cast (sheet 15 sections A-A to C-C).",
-      "dimensions": {},
+      "note": "Source integral closure topology. Nominal vertical infill avoids false isolated end bearings; local flange copes and concrete keys are omitted. Span face brought flush with the span face of the 3'-10\" bent (it stopped 0.2248 m short along X), sheet 15 sections A-A, B-B and C-C. Outer end follows the bent, moved 7 in along its line, sheet 13. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14). Rev. 1.3: end-side face moved from 0.38 m behind the bent centre line to the deck end (q = +17.8943), 11.7 mm, so the closure concrete stops at the face against which the approach slab is cast (sheet 15 sections A-A to C-C). Rev. 1.4 (3D review S01): inside the 1 ft column of Wing C (Y = -6.5016 to -6.1968 m) the bay rises from the deck soffit to the wing top (El. 853.91 at the bent centre line, +2.35 %), taking over the root of the wing above the deck soffit (0.0636 m3); the wing part now starts at the back face of the bent. Sheet 14 draws the bent up to the wing T/El. at its ends; sheet 17 bills only the projection as wingwall.",
+      "dimensions": {
+        "wing_column_y_m": [
+          -6.501647,
+          -6.196847
+        ],
+        "wing_column_top_el_at_bent_cl_ft": 853.91
+      },
       "bounds_m": [
         [
           15.179081,
@@ -1793,12 +1847,12 @@
           3.475861
         ],
         [
-          16.482074,
+          16.482073,
           -5.2705,
-          4.943327
+          5.130255
         ]
       ],
-      "volume_m3": 1.72498868,
+      "volume_m3": 1.788560814,
       "approximation": true
     },
     {
@@ -1809,11 +1863,13 @@
       "pdf_pages": [
         12,
         13,
+        14,
         15,
+        17,
         25
       ],
       "basis": "Drawn 9 in pavement ledge strip (sheet 15 sections A-A to C-C, sheet 25 pavement ledge detail); top at the 14 in slab soffit under the slab and extension",
-      "note": "Nominal rear closure strip. Skew beam-end copes and ledge details are unresolved. Ends moved with the bent, 7 in along its line, sheet 13. Top crowned with a centre-line vertex, at soffit level as before revision 1.1 (the flat top left a gap of up to 24.9 mm below the crowned approach slab), sheets 12, 25. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14). Rev. 1.3: rebuilt over the drawn 9\" pavement ledge, from the back face of the bent (q = +18.130808, flush with the cap) to the deck end (q = +17.8943), where the closure bays now stop (sheet 15: 9\" + 1'-2\" + 1'-11\"). Its top is the ledge at the soffit of the 14\" slab (12\" + 2\" over the ledge), 0.3556 m below the crowned surface, for Y = -5.7658 to 5.8420 m under the approach slab, its extension and the curb, so the slab bears on it instead of cutting into it (sheet 25 pavement ledge detail); beyond that toward the bent ends it stays at the deck soffit (the model's rule). Was 0.39-0.60 m behind the bent centre line with its top at the deck soffit throughout. The 1/2\" expanded polystyrene fillers are not modelled.",
+      "note": "Nominal rear closure strip. Skew beam-end copes and ledge details are unresolved. Ends moved with the bent, 7 in along its line, sheet 13. Top crowned with a centre-line vertex, at soffit level as before revision 1.1 (the flat top left a gap of up to 24.9 mm below the crowned approach slab), sheets 12, 25. Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14). Rev. 1.3: rebuilt over the drawn 9\" pavement ledge, from the back face of the bent (q = +18.130808, flush with the cap) to the deck end (q = +17.8943), where the closure bays now stop (sheet 15: 9\" + 1'-2\" + 1'-11\"). Its top is the ledge at the soffit of the 14\" slab (12\" + 2\" over the ledge), 0.3556 m below the crowned surface, for Y = -5.7658 to 5.8420 m under the approach slab, its extension and the curb, so the slab bears on it instead of cutting into it (sheet 25 pavement ledge detail); beyond that toward the bent ends it stays at the deck soffit (the model's rule). Was 0.39-0.60 m behind the bent centre line with its top at the deck soffit throughout. The 1/2\" expanded polystyrene fillers are not modelled. Rev. 1.4 (3D review S01): inside the 1 ft wing columns at both bent ends (Y = -6.5016 to -6.1968 and 5.8534 to 6.1582 m) the strip rises to the wing tops, taking over the root of the wings above its former top (0.0303 m3); the wing parts now start at the back face of the bent and bear on it (sheets 14, 17).",
       "dimensions": {
         "crowned_top": true,
         "q_limits_m": [
@@ -1824,7 +1880,17 @@
           -5.7658,
           5.842
         ],
-        "ledge_width_normal_m": 0.2286
+        "ledge_width_normal_m": 0.2286,
+        "wing_columns_y_m": [
+          [
+            -6.501647,
+            -6.196847
+          ],
+          [
+            5.853364,
+            6.158164
+          ]
+        ]
       },
       "bounds_m": [
         [
@@ -1833,12 +1899,12 @@
           3.475861
         ],
         [
-          19.780883,
+          19.780884,
           6.158164,
-          5.007428
+          5.212013
         ]
       ],
-      "volume_m3": 4.205820876,
+      "volume_m3": 4.236104914,
       "approximation": true
     },
     {
@@ -2034,20 +2100,27 @@
         25
       ],
       "basis": "Approximate external envelope",
-      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified. Wing D: 12 ft measured from the span-face corner of the bent to the tip (the model had started the 12 ft at the bearing line, 0.6048 m too long); outer face on the bent end, moved with the bent 7 in along its line. Sheets 13 and 17. Top El. 854.16 at the bent centre line (sheets 14, 17 T/El.; was 0.093 m lower), straight at +2.35 % to El. 854.395 at the tip, where it meets the approach slab and extension at the coping line (\"Match Top of RCBA Elevation\", sheets 11, 17, 25). Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
+      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified. Wing D: 12 ft measured from the span-face corner of the bent to the tip (the model had started the 12 ft at the bearing line, 0.6048 m too long); outer face on the bent end, moved with the bent 7 in along its line. Sheets 13 and 17. Top El. 854.16 at the bent centre line (sheets 14, 17 T/El.; was 0.093 m lower), straight at +2.35 % to El. 854.395 at the tip, where it meets the approach slab and extension at the coping line (\"Match Top of RCBA Elevation\", sheets 11, 17, 25). Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14). Rev. 1.4 (3D review S01): the part now runs from the back face of the bent (q = +18.130808 m) to the unchanged tip, 2.4480 m (8'-0 3/8\") along the roadway: the projection that sheet 17 bills as wingwall concrete (5.7 CY for two wingwalls; this projection gives 5.70 CY for Wings C and D and 5.54 CY for Wings A and B). The drawn wall is still 12'-0\" from the tip to the span-face corner of the bent (sheets 13, 17); its root inside the 3'-10\" bent is end-bent concrete (sheet 14 draws the bent up to the wing T/El. at its ends) and is modelled by cap_2, integral_infill_1_0 and backwall_1. Before, the root (1.0754 m3) shared 0.9995 m3 with them and its outer face lay on the cap end face.",
       "dimensions": {
-        "length_m": 3.6576,
+        "length_m": 2.447983,
         "thickness_m": 0.3048,
-        "length_basis": "tip to span-face corner of the bent, parallel to the roadway",
+        "length_basis": "modelled part: back face of the bent to the tip, parallel to the roadway (the projection billed on sheet 17)",
         "projection_beyond_back_face_m": 2.447983,
         "plan_name": "Wing D",
         "top_el_at_bent_cl_ft": 854.16,
         "top_el_at_tip_ft": 854.395,
-        "top_grade": "+2.35 % along the roadway, level across the wall"
+        "top_grade": "+2.35 % along the roadway, level across the wall",
+        "drawn_length_m": 3.6576,
+        "drawn_length_basis": "tip to span-face corner of the bent, parallel to the roadway (sheets 13, 17); the root inside the bent is modelled with the bent",
+        "root_parts": [
+          "cap_2",
+          "integral_infill_1_0",
+          "backwall_1"
+        ]
       },
       "bounds_m": [
         [
-          18.489595,
+          19.699213,
           5.853364,
           2.279904
         ],
@@ -2057,7 +2130,7 @@
           5.26954
         ]
       ],
-      "volume_m3": 3.283974444,
+      "volume_m3": 2.208524995,
       "approximation": true
     },
     {
@@ -2073,20 +2146,27 @@
         25
       ],
       "basis": "Approximate external envelope",
-      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified. Wing C: 12 ft measured from the span-face corner of the bent to the tip (the model had started the 12 ft at the bearing line, 0.6048 m too long); outer face on the bent end, moved with the bent 7 in along its line. Sheets 13 and 17. Top El. 853.91 at the bent centre line (sheets 14, 17 T/El.; was 0.101 m lower), straight at +2.35 % to El. 854.145 at the tip, where it meets the approach slab and extension at the coping line (\"Match Top of RCBA Elevation\", sheets 11, 17, 25). Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14).",
+      "note": "12 ft long, 1 ft thick source wings; plan flare and top elevation transitions simplified. Wing C: 12 ft measured from the span-face corner of the bent to the tip (the model had started the 12 ft at the bearing line, 0.6048 m too long); outer face on the bent end, moved with the bent 7 in along its line. Sheets 13 and 17. Top El. 853.91 at the bent centre line (sheets 14, 17 T/El.; was 0.101 m lower), straight at +2.35 % to El. 854.145 at the tip, where it meets the approach slab and extension at the coping line (\"Match Top of RCBA Elevation\", sheets 11, 17, 25). Rev. 1.2: reflected to the drawn side, north (Beam 1, Wings B and D) = +Y, left of increasing station (sheets 11, 13, 14). Rev. 1.4 (3D review S01): the part now runs from the back face of the bent (q = +18.130808 m) to the unchanged tip, 2.4480 m (8'-0 3/8\") along the roadway: the projection that sheet 17 bills as wingwall concrete (5.7 CY for two wingwalls; this projection gives 5.70 CY for Wings C and D and 5.54 CY for Wings A and B). The drawn wall is still 12'-0\" from the tip to the span-face corner of the bent (sheets 13, 17); its root inside the 3'-10\" bent is end-bent concrete (sheet 14 draws the bent up to the wing T/El. at its ends) and is modelled by cap_2, integral_infill_1_8 and backwall_1. Before, the root (1.0474 m3) shared 0.9683 m3 with them and its outer face lay on the cap end face.",
       "dimensions": {
-        "length_m": 3.6576,
+        "length_m": 2.447983,
         "thickness_m": 0.3048,
-        "length_basis": "tip to span-face corner of the bent, parallel to the roadway",
+        "length_basis": "modelled part: back face of the bent to the tip, parallel to the roadway (the projection billed on sheet 17)",
         "projection_beyond_back_face_m": 2.447983,
         "plan_name": "Wing C",
         "top_el_at_bent_cl_ft": 853.91,
         "top_el_at_tip_ft": 854.145,
-        "top_grade": "+2.35 % along the roadway, level across the wall"
+        "top_grade": "+2.35 % along the roadway, level across the wall",
+        "drawn_length_m": 3.6576,
+        "drawn_length_basis": "tip to span-face corner of the bent, parallel to the roadway (sheets 13, 17); the root inside the bent is modelled with the bent",
+        "root_parts": [
+          "cap_2",
+          "integral_infill_1_8",
+          "backwall_1"
+        ]
       },
       "bounds_m": [
         [
-          15.179081,
+          16.388697,
           -6.501647,
           2.279904
         ],
@@ -2096,7 +2176,7 @@
           5.19334
         ]
       ],
-      "volume_m3": 3.199018896,
+      "volume_m3": 2.151667032,
       "approximation": true
     },
     {
@@ -2818,12 +2898,13 @@
     {
       "feature": "Integral support topology",
       "status": "approximate",
-      "detail": "Both integral bents, 8 embedded source steel bearing assemblies, infill, wings and 12 hidden pile display stubs. Seat attachment and end copes remain approximate. Bents centred 7 in along their lines from the bridge centre line (sheet 13); integral concrete flush with the cap span face (sheet 15); wings 12 ft from the span-face corner to the tip (sheets 13, 17). Wing tops at the sheet 17 T/El. on the bent centre line, parallel to the grade; centre closure bays and back faces crowned (revision 1.2). Back strips over the 9 in pavement ledge with the slab bearing on them; closure bays stop at the deck end (sheets 15, 25; revision 1.3).",
+      "detail": "Both integral bents, 8 embedded source steel bearing assemblies, infill, wings and 12 hidden pile display stubs. Seat attachment and end copes remain approximate. Bents centred 7 in along their lines from the bridge centre line (sheet 13); integral concrete flush with the cap span face (sheet 15); wings 12 ft from the span-face corner to the tip (sheets 13, 17). Wing tops at the sheet 17 T/El. on the bent centre line, parallel to the grade; centre closure bays and back faces crowned (revision 1.2). Back strips over the 9 in pavement ledge with the slab bearing on them; closure bays stop at the deck end (sheets 15, 25; revision 1.3). Wing roots inside the 3'-10\" bent are end-bent concrete: cap, outer closure bays and back strips, which rise to the wing top in the 1 ft wing column; the wing parts run from the back face of the bent to the tip, the projection billed on sheet 17, so no volume is counted twice (sheets 13, 14, 17; revision 1.4).",
       "sources": [
         "Primary PDF p.13",
         "Primary PDF p.14",
         "Primary PDF p.15",
-        "Primary PDF p.17"
+        "Primary PDF p.17",
+        "Primary PDF p.16"
       ],
       "part_ids": [
         "B1_bearing_1",
@@ -2920,7 +3001,7 @@
     }
   ],
   "review_correction": "endbent-offset-integral-face-wings-fc-rail-approach-limits",
-  "revision": "1.3-deviations",
+  "revision": "1.4-3d-review",
   "review_correction_record": {
     "source_pdf_pages": [
       3,
@@ -3719,5 +3800,264 @@
     },
     "before_glb_sha256": "31cde8954bd0ea6daf7373fac2d009b84a861f7bd5a375af09a067286d5c8fb1",
     "after_glb_sha256": "06f820f3b5d218041452ccec46e335a3b3385ca6a10f53efd74b71cf45741db3"
+  },
+  "review_correction_3d": "wing-roots-partitioned-into-end-bent",
+  "review_correction_record_3d": {
+    "review": "3D placement review, round 4",
+    "source_pdf_pages": [
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "printed_sheets": [
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "previous_revision": "1.3-deviations",
+    "native_axes": "as revision 1.2: X along increasing station (east, X = 0 at Sta. 1271+60), Y positive to the left of increasing station (north), Z up from El. 837.11; q = X - tan(15 deg) Y",
+    "findings": [
+      {
+        "id": "US35-S01",
+        "verdict": "resolve",
+        "summary": "the four wing roots duplicated the end-bent concrete: 0.968-1.000 m3 per wing inside cap, outer closure bay and back strip (3.939 m3 counted twice), and 1.44 m2 of wing outer face on each cap end face; the wings are trimmed to the back face of the bent and their root above the deck soffit is part of the outer closure bay and back strip",
+        "basis": "sheet 17 bills 5.7 CY for two wingwalls = the projection beyond the back face of the bent (5.703 CY Wings C+D, 5.538 CY Wings A+B; the full 12 ft would be 8.3-8.5 CY); sheet 13 draws the 43'-0\" x 3'-10\" bent with the wing inner face hidden inside it; sheet 14 draws the bent outline up to the wing T/El. at its ends; sheet 17 draws the back face of the bent through the wing as a hidden line",
+        "shared_before_m3": {
+          "wing_0_-1": 0.998652,
+          "wing_0_1": 0.972503,
+          "wing_1_-1": 0.999546,
+          "wing_1_1": 0.968329
+        },
+        "shared_before_total_m3": 3.93903
+      }
+    ],
+    "changed_parts": [
+      "backwall_0",
+      "backwall_1",
+      "integral_infill_0_0",
+      "integral_infill_0_8",
+      "integral_infill_1_0",
+      "integral_infill_1_8",
+      "wing_0_-1",
+      "wing_0_1",
+      "wing_1_-1",
+      "wing_1_1"
+    ],
+    "moved_vertex_parts": [
+      "wing_0_-1",
+      "wing_0_1",
+      "wing_1_-1",
+      "wing_1_1"
+    ],
+    "rebuilt_parts": [
+      "backwall_0",
+      "backwall_1",
+      "integral_infill_0_0",
+      "integral_infill_0_8",
+      "integral_infill_1_0",
+      "integral_infill_1_8"
+    ],
+    "added_parts": [],
+    "removed_parts": [],
+    "decisions": [],
+    "kept_deviations": [],
+    "values": {
+      "wing_0_-1": {
+        "plan_name": "Wing B",
+        "q_m": [
+          -20.578792,
+          -18.130808
+        ],
+        "length_along_roadway_m": 2.447983,
+        "root_q_was_m": -16.921192,
+        "tip_x_m": [
+          -18.918352,
+          -18.836681
+        ],
+        "y_m": [
+          6.196847,
+          6.501647
+        ],
+        "shared_before_m3": {
+          "cap_1": 0.439439,
+          "integral_infill_0_0": 0.450698,
+          "backwall_0": 0.108515
+        },
+        "shared_before_total_m3": 0.998652,
+        "removed_root_m3": 1.075446,
+        "root_above_bent_top_m3": 0.076794,
+        "volume_m3": [
+          3.219835,
+          2.144389
+        ]
+      },
+      "integral_infill_0_0": {
+        "wing_column_y_m": [
+          6.196847,
+          6.501647
+        ],
+        "wing_column_top": "Wing B top, El. 851.45 at the bent centre line, +2.35 %",
+        "added_m3": 0.06178
+      },
+      "wing_0_1": {
+        "plan_name": "Wing A",
+        "q_m": [
+          -20.578792,
+          -18.130808
+        ],
+        "length_along_roadway_m": 2.447983,
+        "root_q_was_m": -16.921192,
+        "tip_x_m": [
+          -22.228867,
+          -22.147196
+        ],
+        "y_m": [
+          -6.158164,
+          -5.853364
+        ],
+        "shared_before_m3": {
+          "cap_1": 0.43944,
+          "integral_infill_0_8": 0.429661,
+          "backwall_0": 0.103402
+        },
+        "shared_before_total_m3": 0.972503,
+        "removed_root_m3": 1.048479,
+        "root_above_bent_top_m3": 0.075976,
+        "volume_m3": [
+          3.138288,
+          2.089809
+        ]
+      },
+      "integral_infill_0_8": {
+        "wing_column_y_m": [
+          -6.158164,
+          -5.853364
+        ],
+        "wing_column_top": "Wing A top, El. 851.21 at the bent centre line, +2.35 %",
+        "added_m3": 0.06112
+      },
+      "wing_1_-1": {
+        "plan_name": "Wing D",
+        "q_m": [
+          18.130808,
+          20.578792
+        ],
+        "length_along_roadway_m": 2.447983,
+        "root_q_was_m": 16.921192,
+        "tip_x_m": [
+          22.147196,
+          22.228867
+        ],
+        "y_m": [
+          5.853364,
+          6.158164
+        ],
+        "shared_before_m3": {
+          "cap_2": 0.440939,
+          "integral_infill_1_0": 0.448563,
+          "backwall_1": 0.110045
+        },
+        "shared_before_total_m3": 0.999546,
+        "removed_root_m3": 1.075449,
+        "root_above_bent_top_m3": 0.075903,
+        "volume_m3": [
+          3.283974,
+          2.208525
+        ]
+      },
+      "integral_infill_1_0": {
+        "wing_column_y_m": [
+          5.853364,
+          6.158164
+        ],
+        "wing_column_top": "Wing D top, El. 854.16 at the bent centre line, +2.35 %",
+        "added_m3": 0.061062
+      },
+      "wing_1_1": {
+        "plan_name": "Wing C",
+        "q_m": [
+          18.130808,
+          20.578792
+        ],
+        "length_along_roadway_m": 2.447983,
+        "root_q_was_m": 16.921192,
+        "tip_x_m": [
+          18.836681,
+          18.918352
+        ],
+        "y_m": [
+          -6.501647,
+          -6.196847
+        ],
+        "shared_before_m3": {
+          "cap_2": 0.440938,
+          "integral_infill_1_8": 0.423449,
+          "backwall_1": 0.103941
+        },
+        "shared_before_total_m3": 0.968329,
+        "removed_root_m3": 1.047352,
+        "root_above_bent_top_m3": 0.079023,
+        "volume_m3": [
+          3.199019,
+          2.151667
+        ]
+      },
+      "integral_infill_1_8": {
+        "wing_column_y_m": [
+          -6.501647,
+          -6.196847
+        ],
+        "wing_column_top": "Wing C top, El. 853.91 at the bent centre line, +2.35 %",
+        "added_m3": 0.063573
+      },
+      "backwall_0": {
+        "wing_columns_y_m": [
+          [
+            -6.158164,
+            -5.853364
+          ],
+          [
+            6.196847,
+            6.501647
+          ]
+        ],
+        "added_m3": 0.029877
+      },
+      "backwall_1": {
+        "wing_columns_y_m": [
+          [
+            -6.501647,
+            -6.196847
+          ],
+          [
+            5.853364,
+            6.158164
+          ]
+        ],
+        "added_m3": 0.030299
+      },
+      "bent_1": {
+        "union_before_m3": 29.887835,
+        "sum_after_m3": 29.887835,
+        "sum_before_m3": 31.858991,
+        "wings_beyond_back_face_m3": 4.234198,
+        "wings_beyond_back_face_cy": 5.538,
+        "sheet17_two_wingwalls_cy": 5.7
+      },
+      "bent_2": {
+        "union_before_m3": 30.070006,
+        "sum_after_m3": 30.070005,
+        "sum_before_m3": 32.037881,
+        "wings_beyond_back_face_m3": 4.360192,
+        "wings_beyond_back_face_cy": 5.703,
+        "sheet17_two_wingwalls_cy": 5.7
+      }
+    },
+    "before_glb_sha256": "06f820f3b5d218041452ccec46e335a3b3385ca6a10f53efd74b71cf45741db3",
+    "after_glb_sha256": "8cab1469234f49505d4005290a7d756deb2f33ed64527bb1255d458d8606d239"
   }
 }

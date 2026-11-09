@@ -11,8 +11,8 @@
   "drawing_sha256": "a3520ca96c85e5df175164477f26620dc04d6a5e1a25fe9fbb68061174c09775",
   "source_hashes": {
     "drawing": "a3520ca96c85e5df175164477f26620dc04d6a5e1a25fe9fbb68061174c09775",
-    "manifest": "d8565612cf6fd94976f12588246777858cb129bc5d0401f641de1deecf39d48b",
-    "model": "1c4e8e0a463e20ce0fc038383d94a221630e897325a70649de4031985b0806d6"
+    "manifest": "0f72d38018c328e5cdb97a58cc3bb76a5e904232f372ad8df751fb3845dbe949",
+    "model": "969db6e0252454589bdd876ef697242e433cd96998974e389ea07f6fc76951fb"
   },
   "sources": {
     "drawing": {
@@ -225,6 +225,8 @@
     "rail_1_0",
     "rail_1_1",
     "rail_1_2",
+    "seat_0",
+    "seat_1",
     "wing_0_-1",
     "wing_0_1",
     "wing_1_-1",
