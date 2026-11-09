@@ -1,0 +1,61 @@
+{
+ "notes": "Render view name (blender/bridge_gen.py cameras) paired with the inspection photo it should resemble. Winter photos (Jan 2022): bare fields, dry grass, low sun.",
+ "pairs": [
+  {
+   "view": "elevation",
+   "photo": "photo_01.jpg",
+   "caption": "North profile",
+   "check": "3 flat slab spans, deep coping with vertical parapet on top, 20 deg skew, 9 black piles per bent standing in shallow water, riprap slopes under the bridge, W-beam guardrail on the approaches",
+   "sheet": "bridges/07620_sr28_little_wea/verification/compare_elevation.jpg",
+   "render": "bridges/07620_sr28_little_wea/renders/elevation.png"
+  },
+  {
+   "view": "channel",
+   "photo": "photo_02.jpg",
+   "caption": "South profile",
+   "check": "South profile: same elements from the other bank; abutment face visible above the riprap",
+   "sheet": "bridges/07620_sr28_little_wea/verification/compare_channel.jpg",
+   "render": "bridges/07620_sr28_little_wea/renders/channel.png"
+  },
+  {
+   "view": "approach",
+   "photo": "photo_03.jpg",
+   "caption": "Road alignment looking east",
+   "check": "Two-lane asphalt road, double yellow centre line, white edge lines, concrete approach slab, guardrail flares, flat farmland",
+   "sheet": "bridges/07620_sr28_little_wea/verification/compare_approach.jpg",
+   "render": "bridges/07620_sr28_little_wea/renders/approach.png"
+  },
+  {
+   "view": "deck",
+   "photo": "photo_10.jpg",
+   "caption": "Top of deck condition looking east",
+   "check": "Deck surface between two vertical concrete parapets, 36 ft between curbs",
+   "sheet": "bridges/07620_sr28_little_wea/verification/compare_deck.jpg",
+   "render": "bridges/07620_sr28_little_wea/renders/deck.png"
+  },
+  {
+   "view": "under",
+   "photo": "photo_17.jpg",
+   "caption": "Span A underside condition",
+   "check": "Flat slab soffit, integral pile cap, round black-coated piles, riprap slope to the abutment",
+   "sheet": "bridges/07620_sr28_little_wea/verification/compare_under.jpg",
+   "render": "bridges/07620_sr28_little_wea/renders/under.png"
+  },
+  {
+   "view": "pier",
+   "photo": "photo_22.jpg",
+   "caption": "Span B underside condition looking north",
+   "check": "Pile bent in water, 9 piles ~4.5 ft apart, cap flush with slab soffit, water about 13 ft below the deck",
+   "sheet": "bridges/07620_sr28_little_wea/verification/compare_pier.jpg",
+   "render": "bridges/07620_sr28_little_wea/renders/pier.png"
+  },
+  {
+   "view": "aerial",
+   "photo": "photo_25.jpg",
+   "caption": "Upstream channel alignment looking north",
+   "check": "Channel alignment: creek meanders gently and runs roughly parallel to the bents (20 deg to the road)",
+   "sheet": "bridges/07620_sr28_little_wea/verification/compare_aerial.jpg",
+   "render": "bridges/07620_sr28_little_wea/renders/aerial.png"
+  }
+ ]
+}

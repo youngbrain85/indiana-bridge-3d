@@ -126,10 +126,9 @@ function applyView(name) {
   controls.target.set(...c.tgt); controls.update();
 }
 function applyToggles() {
-  const trees = document.getElementById('tgTrees').checked, grass = document.getElementById('tgGrass').checked, twin = document.getElementById('tgTwin').checked;
+  const trees = document.getElementById('tgTrees').checked, twin = document.getElementById('tgTwin').checked;
   scene.traverse(o => {
     if (/^Tree(Leaves|Wood)/.test(o.name)) o.visible = trees;
-    else if (/^GrassClump/.test(o.name)) o.visible = grass;
     else if (/^TwinBridge/.test(o.name) || /^Twin/.test(o.name)) o.visible = twin;
   });
   renderer.shadowMap.enabled = document.getElementById('tgShadows').checked; scene.traverse(o => { if (o.material) o.material.needsUpdate = true; });
@@ -140,7 +139,7 @@ async function main() {
   CFG = await (await fetch(CFG_URL)).json();
   const br = document.getElementById('bridgeRow');
   for (const [id, B] of Object.entries(CFG)) { const b = document.createElement('button'); b.textContent = B.name.replace(/ over .*| \(.*\)/, '').replace('WB Sagamore Parkway (US 52)', 'Sagamore Pkwy'); b.title = B.name; b.dataset.bridge = id; b.addEventListener('click', () => loadBridge(id).then(() => applyView(Object.keys(CFG[id].cameras)[0]))); br.appendChild(b); }
-  for (const id of ['tgTrees', 'tgGrass', 'tgTwin', 'tgShadows']) document.getElementById(id).addEventListener('change', applyToggles);
+  for (const id of ['tgTrees', 'tgTwin', 'tgShadows']) document.getElementById(id).addEventListener('change', applyToggles);
   const photos = document.getElementById('photos'); photos.addEventListener('click', () => photos.classList.toggle('open'));
   const first = params.get('bridge') || Object.keys(CFG)[0];
   await loadBridge(first); applyView(SHOT || params.get('view') || Object.keys(CFG[first].cameras)[0]);

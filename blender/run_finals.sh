@@ -19,7 +19,7 @@ for id in $IDS; do
   python3 bridge_gen.py --export "$id" --lite 2>&1 | grep -E "exported|Error|Traceback"
   lite="$ROOT/bridges/$folder/model/bridge_${id}_lite.glb"
   if [ -n "$GLTFPACK" ] && [ -f "$lite" ]; then
-    "$GLTFPACK" -i "$lite" -o "$lite.tmp" -cc -kn -km -vp 14 -vt 12 -noq && mv "$lite.tmp" "$lite" && echo "packed $(du -h "$lite" | cut -f1)"
+    "$GLTFPACK" -i "$lite" -o "${lite%.glb}_packed.glb" -cc -kn -km -vp 14 -vt 12 -noq && mv "${lite%.glb}_packed.glb" "$lite" && echo "packed $(du -h "$lite" | cut -f1)"
   fi
 done
 cd "$ROOT" && python3 tools/make_viewer_config.py 2>&1 | grep -v CUEW

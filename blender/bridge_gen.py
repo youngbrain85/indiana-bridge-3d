@@ -579,7 +579,8 @@ def build_vegetation(F, M, G, rng, terrain_inner):
             if blocked(x, y) and not (abs(y) < F.W / 2 + 6 and -2 < x < F.L + 2): return 0.0
             return 0.8 if abs(y) < 160 else 0.0
         if z < g['water'] + 0.3: return 0.0
-        if abs(y) < F.Wr / 2 + 5.6 and (x < 0 or x > F.L): return 0.0   # pavement + shoulders
+        if abs(y) < F.Wr / 2 + 7.6 and (x < 0 or x > F.L): return 0.0   # pavement + shoulders (+1 grid cell so no clump pokes through)
+        if B.get('twin') and abs(y - B['twin']['offset']) < F.Wr / 2 + 7.6 and (x < 0 or x > F.L): return 0.0
         if g.get('riprap') and -14 < x - y * F.tan < F.L + 14 and abs(y) < F.W / 2 + 10 and z < g['berm'] + 1: return 0.1
         return 0.9 if abs(y) < 160 and -120 < x < F.L + 120 else 0.0
     C.scatter_grass(terrain_inner, clumps, 60000 if g['kind'] != 'viaduct' else 45000, weight, size=0.6 if g.get('season') != 'winter' else 0.5)
